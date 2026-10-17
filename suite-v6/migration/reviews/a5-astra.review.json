@@ -1,0 +1,1815 @@
+{
+  "schemaVersion": "1.0",
+  "bundleId": "a5-veo-precision",
+  "bundleDigest": "b567221eaa252af043205238fe3b7c45f7d885a74ccad9424ec020936018bafd",
+  "status": "reviewed",
+  "reviewerModel": "gpt-6-astra",
+  "reviewedAt": "2026-09-12",
+  "scope": "All 223 bundle values, all 110 fixture bodies and catalog metadata, fixture states/output and source composition/event handlers read. 81 omitted source-scoped literals reviewed in supplement. Runtime migration pending.",
+  "decisions": [
+    {
+      "id": "text-015e013f16a4707798da",
+      "sourceIndex": 0,
+      "originalValue": "gentle focus shift, subtle transition between focus planes, soft and organic focus breathing, cinematic.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-02df22c84a0573228d0a",
+      "sourceIndex": 1,
+      "originalValue": "standard CCTV security footage, slight compression, fixed wide angle, institutional perspective, surveillance timestamp.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-04c2f85bbe2ea853c22c",
+      "sourceIndex": 2,
+      "originalValue": "Warped Reality",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-04fd4b182c1a25d5941f",
+      "sourceIndex": 3,
+      "originalValue": "Gentle Drift",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-06ae81becfd549141b03",
+      "sourceIndex": 4,
+      "originalValue": "sweeping crane arc, wide circular jib movement around subject, cinematic orbital motion, majestic reveal.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-07156bc6ac5d3d1720e5",
+      "sourceIndex": 5,
+      "originalValue": "extremely slow imperceptible zoom-in, creeping closer to subject, hypnotic gradual magnification, tension building.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-07cc4e6a55878b3740f5",
+      "sourceIndex": 6,
+      "originalValue": "Vintage Ana",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-080c3b45de3dfe8654cc",
+      "sourceIndex": 7,
+      "originalValue": "Slow Reveal",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-08ae197adb39e9f78a2a",
+      "sourceIndex": 8,
+      "originalValue": "subtle handheld camera, gentle organic sway, natural documentary cinematography, professional handheld technique.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-0a95ddab860491dd970f",
+      "sourceIndex": 9,
+      "originalValue": "terminal velocity FPV dive, extreme vertical plunge from altitude, sickening speed, aggressive pull-up, visceral G-force sensation.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-0af00a961575bf6ede9a",
+      "sourceIndex": 10,
+      "originalValue": "Tight Portrait",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-0bca432df3025a3a28df",
+      "sourceIndex": 11,
+      "originalValue": "snap zoom, rapid quick zoom punch-in to subject, sudden magnification, documentary energy, reactive camera work.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-0c46531e3486efcafb6e",
+      "sourceIndex": 12,
+      "originalValue": "Acro Freestyle",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-0c616233f501b4ac63b4",
+      "sourceIndex": 13,
+      "originalValue": "degraded CCTV signal, heavy compression artifacts, blocky pixelation, intermittent signal, washed out, old system.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-0d9b570ba4ae76a7544c",
+      "sourceIndex": 14,
+      "originalValue": "mild wide angle lens, subtle barrel distortion, expanded field of view, slight edge stretching, dynamic perspective.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-0e208ba5ceac2ebd2073",
+      "sourceIndex": 15,
+      "originalValue": "Super 8 home movie aesthetic, warm saturated colors, visible grain, slight overexposure, nostalgic family film feel.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-0ee25e2ef26cba9ce908",
+      "sourceIndex": 16,
+      "originalValue": "Grindhouse",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-0eff7b283b2fe586bb17",
+      "sourceIndex": 17,
+      "originalValue": "Violent Whip",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-11c90f20b9154ed1fea3",
+      "sourceIndex": 18,
+      "originalValue": "smooth dolly push-in, steady forward motion toward subject, cinematic dolly track on rails, slow and deliberate.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-13a478e7d8ce32e0b2c1",
+      "sourceIndex": 19,
+      "originalValue": "Gentle Float",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-16761ff882fe38ea51af",
+      "sourceIndex": 20,
+      "originalValue": "Subtle Organic",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-16da209f07aa021816f6",
+      "sourceIndex": 21,
+      "originalValue": "compositeLabel",
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Identifiant, message, titre de page ou balisage lu dans le runtime VEO Precision. Conserver sa fonction hors prompt compilé ; aucune suppression de fonctionnalité."
+    },
+    {
+      "id": "text-170ee592bd32178ac131",
+      "sourceIndex": 22,
+      "originalValue": "ultra-smooth steadicam glide, perfectly stabilized floating motion, weightless feel, no vibration, pristine gimbal.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-175dca0408fe10390f07",
+      "sourceIndex": 23,
+      "originalValue": "Sweeping Arc",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-17934f0c187a20e14b8f",
+      "sourceIndex": 24,
+      "originalValue": "Frenetic Chase",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-1a472e6b7c0709fc243b",
+      "sourceIndex": 25,
+      "originalValue": "freestyle FPV acrobatics, power loops and rolls, inverted flight, dynamic trick flying, aggressive maneuvers, disorienting spins.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-1acf15d99023710a6c39",
+      "sourceIndex": 26,
+      "originalValue": "Terminal Velocity",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-1be5d02ef8aa28f79a18",
+      "sourceIndex": 27,
+      "originalValue": "heavy anamorphic flares, dramatic blue-gold horizontal streaks, oval bokeh, strong squeeze characteristics, cinematic grandeur.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-1c985ef819c38aa545b4",
+      "sourceIndex": 28,
+      "originalValue": "Destroyed Tape",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-1cda64da89c329db338e",
+      "sourceIndex": 29,
+      "originalValue": "Composite Prompt — 0 layers",
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Identifiant, message, titre de page ou balisage lu dans le runtime VEO Precision. Conserver sa fonction hors prompt compilé ; aucune suppression de fonctionnalité."
+    },
+    {
+      "id": "text-1e3e8dd22d684b73f104",
+      "sourceIndex": 30,
+      "originalValue": "prowling steadicam, low and predatory camera movement, creeping forward, sinister smooth motion, atmospheric tension.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-2053dbbf6ec7135c4e99",
+      "sourceIndex": 31,
+      "originalValue": "static",
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Identifiant, message, titre de page ou balisage lu dans le runtime VEO Precision. Conserver sa fonction hors prompt compilé ; aucune suppression de fonctionnalité."
+    },
+    {
+      "id": "text-20e8b167b5942a73f525",
+      "sourceIndex": 32,
+      "originalValue": "Perfect Lock",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-22343ef68b095d801905",
+      "sourceIndex": 33,
+      "originalValue": "subtle tilt-shift, gentle selective focus plane, slightly tilted focus with soft edges, architectural photography style.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-227d628144afd6a8ae4b",
+      "sourceIndex": 34,
+      "originalValue": "Story Mode",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-22a335fe945383d89478",
+      "sourceIndex": 35,
+      "originalValue": "clean Super 8mm film, fine grain texture, slightly warm tones, vintage but well-preserved, authentic film gate weave.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-2332b35ff17df9b92c4f",
+      "sourceIndex": 36,
+      "originalValue": "Rack Focus",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-23961e1828e4bf3d6ea5",
+      "sourceIndex": 37,
+      "originalValue": "handheld documentary footage, natural organic shake, slight focus hunting, realistic human camera movement, raw feel.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-2428f9b30ec249e2f31c",
+      "sourceIndex": 38,
+      "originalValue": "gritty 16mm, pushed film stock, heavy visible grain, high contrast, raw texture, underground film aesthetic, lo-fi cinema.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-242c47e167267ef4b322",
+      "sourceIndex": 39,
+      "originalValue": "action POV camera, dynamic first-person perspective, GoPro style wide angle, immersive motion, activity footage.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-249993eec332cb78883a",
+      "sourceIndex": 40,
+      "originalValue": "bodycam",
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Identifiant, message, titre de page ou balisage lu dans le runtime VEO Precision. Conserver sa fonction hors prompt compilé ; aucune suppression de fonctionnalité."
+    },
+    {
+      "id": "text-265de3590b014e6afa63",
+      "sourceIndex": 41,
+      "originalValue": "Surveillance Lock",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-27937df708c4dbc8a84d",
+      "sourceIndex": 42,
+      "originalValue": "proximity FPV flying, close to surfaces and structures, dynamic flow through environment, controlled speed, immersive.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-2973dec99c3303bd7074",
+      "sourceIndex": 43,
+      "originalValue": "modern HD CCTV, clean security camera footage, high ceiling mount, wide angle, digital timestamp overlay, sharp image.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-29ecc47b7df6df5b77d5",
+      "sourceIndex": 44,
+      "originalValue": "Lateral Track",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-2a0a72ae57307b922acc",
+      "sourceIndex": 45,
+      "originalValue": "smooth FPV drone glide, gentle flowing movement, wide angle, low altitude cinematic flight, stable and graceful.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-2c4ee49c1c08074e088d",
+      "sourceIndex": 46,
+      "originalValue": "chest-mounted bodycam, stable torso movement, slight vertical bob from walking, wide angle POV, body-worn camera.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-2c594f17ba9b2023a75c",
+      "sourceIndex": 47,
+      "originalValue": "Cinematic Drone",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-2e935db74cb3a6ed1399",
+      "sourceIndex": 48,
+      "originalValue": "lateral tracking shot, smooth side-to-side dolly movement, subject moving parallel to camera, dolly on rails.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-2f5b4cd17e0f7e7167cc",
+      "sourceIndex": 49,
+      "originalValue": "Smooth Glide",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-31484f61aa1aecbbf219",
+      "sourceIndex": 50,
+      "originalValue": "Home Movie",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-32783d452fe42d87b750",
+      "sourceIndex": 51,
+      "originalValue": "gentle crane rise, slow vertical lift revealing the scene, smooth jib arm movement, elegant and controlled.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-32d2fa6ae7fe092e1885",
+      "sourceIndex": 52,
+      "originalValue": "crane reveal lift, camera rises from ground level to reveal vast landscape, dramatic vertical unveiling, epic scope.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-35bb99e04ef2d80b27b2",
+      "sourceIndex": 53,
+      "originalValue": "tight close-up, 85mm portrait lens, shallow depth of field, soft background separation, intimate framing.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-372a9d2347850b928c30",
+      "sourceIndex": 54,
+      "originalValue": "damaged Super 8 film print, heavy scratches, splice marks, color shift, frame jitter, worn projector artifacts, archival decay.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-383cf83b584bddaab4ae",
+      "sourceIndex": 55,
+      "originalValue": "FPV gap threading, flying through tight spaces and windows, precise high-speed navigation, thrilling proximity, narrow gaps.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-38bf7a6fc3ff8a045664",
+      "sourceIndex": 56,
+      "originalValue": "Trail Cam Day",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-39476a09c2a75e9e4464",
+      "sourceIndex": 57,
+      "originalValue": "Surreal Warp",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-39635914147a6521bbf7",
+      "sourceIndex": 58,
+      "originalValue": "circular fisheye, full 180° sphere visible in circular frame, extreme distortion, black circular vignette border, psychedelic.",
+      "action": "correct",
+      "role": "prompt-body",
+      "correctedValue": "circular fisheye, 180° field of view visible in circular frame, extreme distortion, black circular vignette border, psychedelic.",
+      "reason": "Une sphère complète et un champ de 180° sont confondus. Nommer le champ conserve le cadrage circulaire voulu.",
+      "evidence": "https://www.nikon.com/company/news/2017/0531_lens_01/"
+    },
+    {
+      "id": "text-39f400527f3166ad05a3",
+      "sourceIndex": 59,
+      "originalValue": "gentle drone hover, near-static aerial shot, slight drift, high altitude observation, calm bird's eye view.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-3a10ae5a2dd0ba19d557",
+      "sourceIndex": 60,
+      "originalValue": "slow cinematic drone reveal, gradual forward movement unveiling landscape, smooth altitude, aerial establishing shot.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-3ac26d4ea45f2648e1ef",
+      "sourceIndex": 61,
+      "originalValue": "Handheld & Raw",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-3d0ab5a284de53673cb1",
+      "sourceIndex": 62,
+      "originalValue": "Corrupted Glitch",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-3e128530c102c0dcba09",
+      "sourceIndex": 63,
+      "originalValue": "dolly zoom vertigo effect, simultaneous dolly out and zoom in, background warping, Hitchcock perspective distortion, surreal.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-3f3121039db8541c769b",
+      "sourceIndex": 64,
+      "originalValue": "Tracking Error",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-3ffd5dfdf68b031e6d09",
+      "sourceIndex": 65,
+      "originalValue": "compositePrompt",
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Identifiant, message, titre de page ou balisage lu dans le runtime VEO Precision. Conserver sa fonction hors prompt compilé ; aucune suppression de fonctionnalité."
+    },
+    {
+      "id": "text-405bbd70af9c741e001c",
+      "sourceIndex": 66,
+      "originalValue": "Seizure Cut",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-45a3ed4ccd97564068d7",
+      "sourceIndex": 67,
+      "originalValue": "quick snap pan, fast horizontal camera turn to new subject, snappy reframe, editorial precision.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-4659a397a138e9198147",
+      "sourceIndex": 68,
+      "originalValue": "Active une carte de catégorie pour construire ton prompt composite.",
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Identifiant, message, titre de page ou balisage lu dans le runtime VEO Precision. Conserver sa fonction hors prompt compilé ; aucune suppression de fonctionnalité."
+    },
+    {
+      "id": "text-46dc709f54d963089bd6",
+      "sourceIndex": 69,
+      "originalValue": "pristine 16mm film stock, clean fine grain, accurate color reproduction, professional cinematography, film texture.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-472d57a6ce805f388ccc",
+      "sourceIndex": 70,
+      "originalValue": "gentle steadicam float, smooth organic movement with subtle body sway, cinematic stabilization, elegant drift.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-47b7bb94d6e9aa1456a5",
+      "sourceIndex": 71,
+      "originalValue": "vintage anamorphic glass, Kowa or Iscorama character, swirly oval bokeh, warm flares, organic imperfections, 70s cinema texture.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-494d3465e65aeffec2af",
+      "sourceIndex": 72,
+      "originalValue": "Early Digital",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-4aa5e5cd4d311112abba",
+      "sourceIndex": 73,
+      "originalValue": "Night Drive",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-4e3147b05d4c904c4289",
+      "sourceIndex": 74,
+      "originalValue": "corrupted CCTV footage, extreme glitching, digital signal decay, flickering frame, VHS-era surveillance, horror aesthetic.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-4eae43a421e373f26f00",
+      "sourceIndex": 75,
+      "originalValue": "night dashcam footage, headlight illumination, lens flares from streetlights, dark surroundings, nighttime driving POV.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-51b968994c33c8e6480a",
+      "sourceIndex": 76,
+      "originalValue": "Heavy Flares",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-52781618bd3ae4eca56a",
+      "sourceIndex": 77,
+      "originalValue": "Swish Pan",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-52af7362415f9d6db23f",
+      "sourceIndex": 78,
+      "originalValue": " (incl. Blocking Studio move)",
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Identifiant, message, titre de page ou balisage lu dans le runtime VEO Precision. Conserver sa fonction hors prompt compilé ; aucune suppression de fonctionnalité."
+    },
+    {
+      "id": "text-53b926c8b7c19ec7fba7",
+      "sourceIndex": 79,
+      "originalValue": "Smartphone / UGC",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-53e3f0e80dd3b161d240",
+      "sourceIndex": 80,
+      "originalValue": "God's Eye Ascent",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-54adb8f0c0c1f52eec7b",
+      "sourceIndex": 81,
+      "originalValue": "Vertigo Effect",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-5539603ab4522e79bbaf",
+      "sourceIndex": 82,
+      "originalValue": "Low-Res Night",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-553a6a6065b8ea359c13",
+      "sourceIndex": 83,
+      "originalValue": "Dreamy Blur",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-573f40decdea8d552ac3",
+      "sourceIndex": 84,
+      "originalValue": "Dolly / Track",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-57632e7cfbf68b9097cb",
+      "sourceIndex": 85,
+      "originalValue": "War Reporter",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-5ba64fcc9e9f15df2a94",
+      "sourceIndex": 86,
+      "originalValue": "chaotic first-person POV, extreme motion, tumbling disoriented perspective, violent shaking, survival footage, raw terror.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-5daa940d3c7afca5923e",
+      "sourceIndex": 87,
+      "originalValue": "gentle horizontal camera drift, slow panning motion, smooth directional glide, contemplative movement.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-5dcfce7ea08353e1f734",
+      "sourceIndex": 88,
+      "originalValue": "Focus Pull",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-5ee245d1b42e7319ab39",
+      "sourceIndex": 89,
+      "originalValue": "BZ Camera Suite - Bespoke Edition",
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Identifiant, message, titre de page ou balisage lu dans le runtime VEO Precision. Conserver sa fonction hors prompt compilé ; aucune suppression de fonctionnalité."
+    },
+    {
+      "id": "text-61b997844a1c4edef284",
+      "sourceIndex": 90,
+      "originalValue": "early 2000s digital cinema, slightly sterile look, harsh highlights, early HD video feel, digital but not filmic.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-63a37e5e588f245aa453",
+      "sourceIndex": 91,
+      "originalValue": "Slow Push-In",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-641a9fcbaa08d87a5173",
+      "sourceIndex": 92,
+      "originalValue": "Extreme Oval Bokeh",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-64fb91bd82318bf64ab4",
+      "sourceIndex": 93,
+      "originalValue": "compositeBar",
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Identifiant, message, titre de page ou balisage lu dans le runtime VEO Precision. Conserver sa fonction hors prompt compilé ; aucune suppression de fonctionnalité."
+    },
+    {
+      "id": "text-658324af5967abaf21ab",
+      "sourceIndex": 94,
+      "originalValue": "epic drone pull-back reveal, starting close then rapidly ascending and pulling away to reveal massive scale, jaw-dropping scope.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-659fa11cb1fb47052950",
+      "sourceIndex": 95,
+      "originalValue": "skateboard fisheye, 16mm ultra-wide lens, noticeable barrel distortion, close-up low angle, action sports aesthetic.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-667ab1540e8a2d5128bc",
+      "sourceIndex": 96,
+      "originalValue": "DV Camcorder",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-679505f56cae4d837903",
+      "sourceIndex": 97,
+      "originalValue": "Destroyed Film",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-6834d7a4d08f216f5646",
+      "sourceIndex": 98,
+      "originalValue": "shot on smartphone, high-end stabilization, crisp 4K mobile sensor, modern mobile cinematic look, handheld but smooth.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-6a8027f3eb54d9e0641c",
+      "sourceIndex": 99,
+      "originalValue": "Super 8 / 8mm",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-6f034a99ec449853ad0e",
+      "sourceIndex": 100,
+      "originalValue": "clean dashcam footage, wide angle windshield mount, daylight driving, dashboard camera perspective, timestamp overlay.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-6ff32ed563d04f52eefd",
+      "sourceIndex": 101,
+      "originalValue": "shot on RED camera, ultra high resolution digital, sharp detail, slightly cooler tones, cinematic RAW digital look.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-704004bb84843bb4f85e",
+      "sourceIndex": 102,
+      "originalValue": "Quick Snap",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-70b6fd3cfeae1a387034",
+      "sourceIndex": 103,
+      "originalValue": "fast dolly push-in, dramatic forward camera rush toward subject, dynamic acceleration, cinematic urgency.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-737ad306ef03a11e08d1",
+      "sourceIndex": 104,
+      "originalValue": "deep focus, everything sharp from foreground to background, large depth of field, Citizen Kane style, all in focus.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-742397e540e01a72fcfd",
+      "sourceIndex": 105,
+      "originalValue": "Chest Mount",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-7798d974e6888c042d35",
+      "sourceIndex": 106,
+      "originalValue": "Deep Focus",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-77fd96030460fbbb50f4",
+      "sourceIndex": 107,
+      "originalValue": "Aggressive Rush",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-784d6ca881ed87f7c1e4",
+      "sourceIndex": 108,
+      "originalValue": "Composite Prompt — ${count} layer${count > 1 ? 's' : ''}${state.incoming ? ' (incl. Blocking Studio move)' : ''}",
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Identifiant, message, titre de page ou balisage lu dans le runtime VEO Precision. Conserver sa fonction hors prompt compilé ; aucune suppression de fonctionnalité."
+    },
+    {
+      "id": "text-787c8ccafede366e157f",
+      "sourceIndex": 109,
+      "originalValue": "dreamy lensbaby blur, single sweet spot of focus surrounded by swirly blur, romantic soft-focus, ethereal atmosphere.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-7a0bc5c1bfc25284b75d",
+      "sourceIndex": 110,
+      "originalValue": "Smooth Zoom",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-7b9da07a5d802581d8bd",
+      "sourceIndex": 111,
+      "originalValue": "disaster smartphone footage, extreme shaking, running while filming, heavy motion blur, unstable focus, raw citizen journalism.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-7e94c245d42da5049264",
+      "sourceIndex": 112,
+      "originalValue": "instagram story style, vertical smartphone video, quick movements, authentic social media aesthetic, selfie angle motion.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-7f65878d43af16310996",
+      "sourceIndex": 113,
+      "originalValue": "Earthquake",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-81b682fc902488dbcf8a",
+      "sourceIndex": 114,
+      "originalValue": "Static / Locked",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-83e6e3f5769ec0cc78ad",
+      "sourceIndex": 115,
+      "originalValue": "static mounted camera, slightly off-axis composition, institutional feel, utilitarian framing, cold observation.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-842196571f2720a82794",
+      "sourceIndex": 116,
+      "originalValue": "Proximity Flow",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-847cbe3133ae75aa3494",
+      "sourceIndex": 117,
+      "originalValue": "Damaged Print",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-84fc7a615a9ae0b589d7",
+      "sourceIndex": 118,
+      "originalValue": "Close Detail",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-854027d130b93c6f2650",
+      "sourceIndex": 119,
+      "originalValue": "Lenses & Optics",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-86ecb74265e55cdbecd1",
+      "sourceIndex": 120,
+      "originalValue": "Gentle Shift",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-876bb736181bd150f7ab",
+      "sourceIndex": 121,
+      "originalValue": "extremely subtle handheld micro-jitter, almost imperceptible organic motion, steady documentary style, tripod-like but human.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-8830539d053eac12bd36",
+      "sourceIndex": 122,
+      "originalValue": "helmet-mounted camera, head movement tracking, slight lag and wobble, action sports POV, first person view.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-89c9b59cfbf04ac4a9c9",
+      "sourceIndex": 123,
+      "originalValue": "Blackmagic",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-8c598e378d05c90a3dcf",
+      "sourceIndex": 124,
+      "originalValue": "panicked smartphone recording, shaky amateur footage, rapid movements, unfocused, chaotic handheld, raw upload quality.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-8ca329ea39d1d7fa3568",
+      "sourceIndex": 125,
+      "originalValue": "Circular Fish",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-8d67bac7801d1c0910ff",
+      "sourceIndex": 126,
+      "originalValue": "night trail cam, infrared flash, glowing animal eyes, monochrome green night vision, motion-triggered, eerie wildlife footage.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-8df6eed637d5d273e41f",
+      "sourceIndex": 127,
+      "originalValue": "Standard Feed",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-8f28c79717db9e2ae111",
+      "sourceIndex": 128,
+      "originalValue": "shot on ARRI Alexa, pristine digital cinema, beautiful color science, clean highlight roll-off, filmic digital sensor.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-914fa222cfcb4adac917",
+      "sourceIndex": 129,
+      "originalValue": "smooth cinematic zoom-in, controlled magnification, elegant lens zoom, professional zoom movement.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-9300e4b2eefacbaea273",
+      "sourceIndex": 130,
+      "originalValue": "Camera Movement",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-930b472c6b47b99b42ee",
+      "sourceIndex": 131,
+      "originalValue": "Bodycam / POV",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-9367cf76b0d25fd53f41",
+      "sourceIndex": 132,
+      "originalValue": "extreme selective focus slice, razor-thin horizontal band of sharpness, everything else dissolved in blur, surreal isolation.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-938c1ae52c2204bcb46e",
+      "sourceIndex": 133,
+      "originalValue": "Tactical POV",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-941fc47a2e5c8ee488a1",
+      "sourceIndex": 134,
+      "originalValue": "Fast Dolly",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-954e4be6ae1dfac8f5d6",
+      "sourceIndex": 135,
+      "originalValue": "dynamic drone chase, following subject from above at speed, tracking aerial shot, cinematic pursuit, energetic motion.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-955330232d7ecaa57803",
+      "sourceIndex": 136,
+      "originalValue": "locked surveillance-style static camera, high corner mount, wide angle, cold impersonal observation, no movement.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-95a8340f30a8c0dc580f",
+      "sourceIndex": 137,
+      "originalValue": "Disaster Footage",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-95a8d358f5a745f558b1",
+      "sourceIndex": 138,
+      "originalValue": "30px",
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Identifiant, message, titre de page ou balisage lu dans le runtime VEO Precision. Conserver sa fonction hors prompt compilé ; aucune suppression de fonctionnalité."
+    },
+    {
+      "id": "text-97b0560280ed60a5a1ea",
+      "sourceIndex": 139,
+      "originalValue": "current",
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Identifiant, message, titre de page ou balisage lu dans le runtime VEO Precision. Conserver sa fonction hors prompt compilé ; aucune suppression de fonctionnalité."
+    },
+    {
+      "id": "text-9929df8920911d0ea230",
+      "sourceIndex": 140,
+      "originalValue": "tactical bodycam footage, rapid movement, weapon-mounted or chest perspective, night-capable, high contrast, tactical operation.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-9a6e99007b9c2cf525a5",
+      "sourceIndex": 141,
+      "originalValue": "worn VHS tape, degraded color, horizontal noise bands, soft and blurry, magnetic tape wear, generation loss artifacts.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-9d321bf6abaefa3efed2",
+      "sourceIndex": 142,
+      "originalValue": "dramatic crane boom down, plunging downward from height to subject, powerful descending motion, cinematic impact.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-9f75adac5f472139b79d",
+      "sourceIndex": 143,
+      "originalValue": "Miniature Effect",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-a0e9eb17767157b6126e",
+      "sourceIndex": 144,
+      "originalValue": "super8",
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Identifiant, message, titre de page ou balisage lu dans le runtime VEO Precision. Conserver sa fonction hors prompt compilé ; aucune suppression de fonctionnalité."
+    },
+    {
+      "id": "text-a124a9d71bca559b3999",
+      "sourceIndex": 145,
+      "originalValue": "RED Raw",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-a1c335317372cd4afd4f",
+      "sourceIndex": 146,
+      "originalValue": "Prowl",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-a2c2e8cb6a4f4bcef264",
+      "sourceIndex": 147,
+      "originalValue": "Selective Slice",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-a3b0ea72834b037fd14e",
+      "sourceIndex": 148,
+      "originalValue": "Steadicam / Gimbal",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-a6e7588e1285e3c1188a",
+      "sourceIndex": 149,
+      "originalValue": "180px",
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Identifiant, message, titre de page ou balisage lu dans le runtime VEO Precision. Conserver sa fonction hors prompt compilé ; aucune suppression de fonctionnalité."
+    },
+    {
+      "id": "text-a8a96cae6626d9f77570",
+      "sourceIndex": 150,
+      "originalValue": "Tableau Vivant",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-a996d4e7bd1289967e8b",
+      "sourceIndex": 151,
+      "originalValue": "Full Fisheye",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-adb8c921831af757c211",
+      "sourceIndex": 152,
+      "originalValue": "aggressive dolly rush, explosive forward camera movement, visceral speed, slamming into the subject, adrenaline impact.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-b0704eba2497e30cab7b",
+      "sourceIndex": 153,
+      "originalValue": "extreme close-up, revealing fine detail and texture, very shallow depth of field, 100mm lens character.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-b094378468d47a3b2905",
+      "sourceIndex": 154,
+      "originalValue": "crash zoom, extreme rapid zoom-in, violent magnification, slamming focus onto subject, kung fu cinema energy.",
+      "action": "correct",
+      "role": "prompt-body",
+      "correctedValue": "crash zoom, extremely rapid zoom-in, violent magnification, slamming focus onto subject, kung fu cinema energy.",
+      "reason": "Adverbe extremely requis devant rapid ; même mouvement et même vigueur."
+    },
+    {
+      "id": "text-b0eb2ff6b54fa3454467",
+      "sourceIndex": 155,
+      "originalValue": "Slow Creep",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-b205a0d651ce43ec3032",
+      "sourceIndex": 156,
+      "originalValue": "16mm news reel footage, documentary grain, slightly overlit, journalistic camera work, archival news film aesthetic.",
+      "action": "correct",
+      "role": "prompt-body",
+      "correctedValue": "16mm newsreel footage, documentary grain, slightly overlit, journalistic camera work, archival news film aesthetic.",
+      "reason": "Newsreel est le nom composé des actualités filmées."
+    },
+    {
+      "id": "text-b2ec7c52452dc0a90d9a",
+      "sourceIndex": 157,
+      "originalValue": "Panic Record",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-b7abf2bff239162389b4",
+      "sourceIndex": 158,
+      "originalValue": "perfectly locked static camera, rock solid tripod, zero movement, clean composition, precise framing.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-bb094f4d90fe09d7804c",
+      "sourceIndex": 159,
+      "originalValue": "trail camera footage, static wildlife cam, daytime trigger, slight motion blur on subject, timestamp, nature observation.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-bb85aebbf33901eae985",
+      "sourceIndex": 160,
+      "originalValue": "Locked Glide",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-bcdd3dd64ac53e42a0b2",
+      "sourceIndex": 161,
+      "originalValue": "sweeping cinematic drone vista, wide arcing flight over landscape, golden hour aerial, majestic panoramic movement.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-bcfdf8a899e8c447cee7",
+      "sourceIndex": 162,
+      "originalValue": "Sweeping Vista",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-bebbd1dda021fa985473",
+      "sourceIndex": 163,
+      "originalValue": "Chaos POV",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-bee2be1fb40a68721e5a",
+      "sourceIndex": 164,
+      "originalValue": "intense war reporter handheld, urgent shaking footage, heavy breathing motion, unstable desperate framing, visceral realism.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-bf17fd481fc3474a0b94",
+      "sourceIndex": 165,
+      "originalValue": "Degraded Signal",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-c11d8f5225168567721e",
+      "sourceIndex": 166,
+      "originalValue": "very subtle slow dolly push-in, barely perceptible forward motion, smooth and hypnotic, studio dolly track.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-c140357f2041e185fe1a",
+      "sourceIndex": 167,
+      "originalValue": "Microscopic",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-c1b9d05f290ceab90e77",
+      "sourceIndex": 168,
+      "originalValue": "Recorded TV",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-c45cd9985cff2877a085",
+      "sourceIndex": 169,
+      "originalValue": "Walk & Talk",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-c6531327c2b8aeca57ba",
+      "sourceIndex": 170,
+      "originalValue": "Film Stock & Era",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-c6c289d52fc44127cc52",
+      "sourceIndex": 171,
+      "originalValue": "Rain Dashcam",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-c70a6a2e780c55616020",
+      "sourceIndex": 172,
+      "originalValue": "Classic Scope",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-c820f0bd1c3a1f04fdcf",
+      "sourceIndex": 173,
+      "originalValue": "swish pan, rapid horizontal camera whip with motion blur, dynamic scene transition, cinematic energy.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-c9c624425259e43f7681",
+      "sourceIndex": 174,
+      "originalValue": "extreme earthquake handheld, violent camera shaking, chaotic unstable footage, impossible to stabilize, raw survival footage.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-ca13a40466a804f0cd7e",
+      "sourceIndex": 175,
+      "originalValue": "Reveal Lift",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-ca25662b941f3e1230c3",
+      "sourceIndex": 176,
+      "originalValue": "Action POV",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-cb363b3b2fdd51cfd994",
+      "sourceIndex": 177,
+      "originalValue": "abstract defocus, subject dissolving into pure bokeh and blur, loss of form, painterly abstraction, dream state.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-ce0e72d782358139f565",
+      "sourceIndex": 178,
+      "originalValue": "Camera move received from Blocking Studio",
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Identifiant, message, titre de page ou balisage lu dans le runtime VEO Precision. Conserver sa fonction hors prompt compilé ; aucune suppression de fonctionnalité."
+    },
+    {
+      "id": "text-ced31e1a12861ea4718b",
+      "sourceIndex": 179,
+      "originalValue": "rack focus, sharp focus transition from foreground to background subject, dramatic depth shift, narrative focus pull.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-cf9b9e85b99a49d2f1eb",
+      "sourceIndex": 180,
+      "originalValue": "dolly",
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Identifiant, message, titre de page ou balisage lu dans le runtime VEO Precision. Conserver sa fonction hors prompt compilé ; aucune suppression de fonctionnalité."
+    },
+    {
+      "id": "text-cfb02605c0169302b267",
+      "sourceIndex": 181,
+      "originalValue": "News Reel",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-d230968353753fe0db36",
+      "sourceIndex": 182,
+      "originalValue": "violent whip pan, extreme speed horizontal camera movement, heavy motion blur streaks, disorienting energy.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-d38ef0d1d7e32388172d",
+      "sourceIndex": 183,
+      "originalValue": "classic anamorphic lens, 2.39:1 aspect ratio, oval bokeh, clean horizontal lens flares, cinematic widescreen scope.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-d48416793e11baf37c14",
+      "sourceIndex": 184,
+      "originalValue": "subtle anamorphic quality, gentle oval bokeh, faint horizontal flares, 2.39:1 widescreen, cinematic warmth.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-d58cf0e2a3fb08f0de9b",
+      "sourceIndex": 185,
+      "originalValue": "Epic Pull-Back",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-d6a7a704c60b7e9192fe",
+      "sourceIndex": 186,
+      "originalValue": "symmetrical static frame, centered composition, Wes Anderson style, meticulous geometric framing, pastel palette.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-d9af9ca7d8cbc116d95e",
+      "sourceIndex": 187,
+      "originalValue": "Bespoke Camera Motion · Optics · Film Stock",
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Identifiant, message, titre de page ou balisage lu dans le runtime VEO Precision. Conserver sa fonction hors prompt compilé ; aucune suppression de fonctionnalité."
+    },
+    {
+      "id": "text-da23da87de0b73c859b8",
+      "sourceIndex": 188,
+      "originalValue": "Helmet Cam",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-db87345b346f4d9c159b",
+      "sourceIndex": 189,
+      "originalValue": "Gritty 16mm",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-dbacc8ce23622a2f80c6",
+      "sourceIndex": 190,
+      "originalValue": "Casual Walk",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-dd00d28c8ee09629f5d5",
+      "sourceIndex": 191,
+      "originalValue": "Electron Micro",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-de80e49c062fe9fd5a24",
+      "sourceIndex": 192,
+      "originalValue": "seizure-speed whip cuts, strobing rapid pans between subjects, extreme motion blur, chaotic frantic energy, overwhelming speed.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-df09826b5648b1bdba58",
+      "sourceIndex": 193,
+      "originalValue": "Natural Shake",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-e065cfcc332c561c3106",
+      "sourceIndex": 194,
+      "originalValue": "Security Static",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-e06e1522315bc3045596",
+      "sourceIndex": 195,
+      "originalValue": "Dynamic Chase",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-e112a6868723fef3a04e",
+      "sourceIndex": 196,
+      "originalValue": "destroyed VHS tape, extreme magnetic deterioration, psychedelic color smearing, complete signal loss zones, abstract video decay.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-e189870dbe1afad7cb58",
+      "sourceIndex": 197,
+      "originalValue": "tilt-shift miniature effect, making real scenes look like tiny models, extreme shallow focus band, toylike perspective.",
+      "action": "correct",
+      "role": "prompt-body",
+      "correctedValue": "tilt-shift miniature effect, making real scenes look like tiny models, extremely shallow focus band, toylike perspective.",
+      "reason": "Adverbe extremely requis devant shallow ; effet miniature inchangé."
+    },
+    {
+      "id": "text-e202a8a51af792c7f9b8",
+      "sourceIndex": 198,
+      "originalValue": "Micro Push",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-e3222977048be66deb14",
+      "sourceIndex": 199,
+      "originalValue": "god's eye crane ascent, extreme vertical pull-up from close-up to vast aerial view, dizzying scale shift, epic reveal.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-e33f35e62de6776b7d28",
+      "sourceIndex": 200,
+      "originalValue": "clean VHS video, slight analog softness, authentic video look, warm color cast, subtle scan lines, 480i resolution.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-e4e70be8dbbf46b69b29",
+      "sourceIndex": 201,
+      "originalValue": "extreme anamorphic squeeze, exaggerated oval bokeh, massive horizontal flare streaks, heavy barrel distortion at edges, dreamlike.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-e70129705ccb7454df2d",
+      "sourceIndex": 202,
+      "originalValue": "static tableau vivant, painterly locked frame, subjects arranged like a living painting, no camera motion.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-e72de047a585aca46408",
+      "sourceIndex": 203,
+      "originalValue": "steadicam",
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Identifiant, message, titre de page ou balisage lu dans le runtime VEO Precision. Conserver sa fonction hors prompt compilé ; aucune suppression de fonctionnalité."
+    },
+    {
+      "id": "text-e97a9b8ed37cd2770e78",
+      "sourceIndex": 204,
+      "originalValue": "rain dashcam, water droplets on windshield, blurred wipers, refracted lights, wet road reflections, atmospheric driving.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-eb2f92b0aeb8192a2b02",
+      "sourceIndex": 205,
+      "originalValue": "Pristine 16mm",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-ec0d681be548e3876163",
+      "sourceIndex": 206,
+      "originalValue": "Dramatic Boom",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-ec5ecff8222fc233d3f0",
+      "sourceIndex": 207,
+      "originalValue": "Worn Tape",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-ed461b73542e305e540c",
+      "sourceIndex": 208,
+      "originalValue": "Skate Wide",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-ee4c26b83841b92dae7c",
+      "sourceIndex": 209,
+      "originalValue": "Trail Cam Night IR",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-f0eb6d7e7b3613b5f491",
+      "sourceIndex": 210,
+      "originalValue": "casual smartphone video, walking pace, natural micro-shakes, authentic UGC feel, organic mobile footage.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-f1b5ccd99d96988af91c",
+      "sourceIndex": 211,
+      "originalValue": "Snap Zoom",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-f20787c57ecf0b85dac5",
+      "sourceIndex": 212,
+      "originalValue": "True Macro",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-f399d1d5e09b012efba9",
+      "sourceIndex": 213,
+      "originalValue": "ARRI Clean",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-f3f2470072b6a3818675",
+      "sourceIndex": 214,
+      "originalValue": "Abstract Blur",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-f4d5fa103f4b36107f90",
+      "sourceIndex": 215,
+      "originalValue": "steadicam walk-and-talk, following subject through space, smooth stabilized handheld, natural forward momentum.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-f7f200daabf8a0022f3e",
+      "sourceIndex": 216,
+      "originalValue": "indie 16mm film, natural grain, slightly desaturated, available light cinematography, authentic independent cinema feel.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-f823389d368a7de4ffc3",
+      "sourceIndex": 217,
+      "originalValue": "Gap Threading",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-f99841e8621b1efda03b",
+      "sourceIndex": 218,
+      "originalValue": "shot on Blackmagic camera, rich digital film emulation, wide dynamic range, slightly organic digital texture, indie cinema.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-fa77b6d54e43c0afb37b",
+      "sourceIndex": 219,
+      "originalValue": "VHS recorded from TV, slight RF interference, channel bug remnant, analog broadcast texture, retro television quality.",
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-fbf75445d5ea9803f508",
+      "sourceIndex": 220,
+      "originalValue": "Indie Film",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-fc3f3b8dd6aab53b1449",
+      "sourceIndex": 221,
+      "originalValue": "Faded Memory",
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "retainInCatalog": true,
+      "reason": "Nom de famille, carte ou variante lu et conservé comme métadonnée de navigation ; le compilateur utilise le corps associé, pas ce libellé."
+    },
+    {
+      "id": "text-fd31c7a60adade17784b",
+      "sourceIndex": 222,
+      "originalValue": "frenetic steadicam chase, rapid stabilized pursuit through corridors, breathless speed, controlled chaos, visceral momentum.",
+      "action": "preserve",
+      "role": "prompt-body"
+    }
+  ]
+}

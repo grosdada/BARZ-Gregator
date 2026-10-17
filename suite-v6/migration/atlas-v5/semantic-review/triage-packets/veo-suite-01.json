@@ -1,0 +1,2641 @@
+{
+  "schemaVersion": "1.0",
+  "id": "triage-veo-suite-01",
+  "owner": "veo-suite",
+  "status": "pending-structural-triage",
+  "approximateTokens": 909,
+  "prompts": [
+    {
+      "id": "text-02df22c84a0573228d0a",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "standard CCTV security footage, slight compression, fixed wide angle, institutional perspective, surveillance timestamp.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 617,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-04c2f85bbe2ea853c22c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Warped Reality",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 560,
+          "column": 78,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-04fd4b182c1a25d5941f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Gentle Drift",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 473,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-07cc4e6a55878b3740f5",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Vintage Ana",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 538,
+          "column": 69,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-080c3b45de3dfe8654cc",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Slow Reveal",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 587,
+          "column": 34,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-0af00a961575bf6ede9a",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Tight Portrait",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 549,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-0c46531e3486efcafb6e",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Acro Freestyle",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 598,
+          "column": 69,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-0c616233f501b4ac63b4",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "degraded CCTV signal, heavy compression artifacts, blocky pixelation, intermittent signal, washed out, old system.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 619,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-0ee25e2ef26cba9ce908",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Grindhouse",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 652,
+          "column": 77,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-0eff7b283b2fe586bb17",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Violent Whip",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 473,
+          "column": 61,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-13a478e7d8ce32e0b2c1",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Gentle Float",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 451,
+          "column": 34,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-16761ff882fe38ea51af",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Subtle Organic",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 500,
+          "column": 34,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-16da209f07aa021816f6",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "compositeLabel",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 828,
+          "column": 43,
+          "kind": "string-literal",
+          "functionName": "updateCompositeBar",
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-175dca0408fe10390f07",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Sweeping Arc",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 462,
+          "column": 33,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-17934f0c187a20e14b8f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Frenetic Chase",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 451,
+          "column": 74,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-1acf15d99023710a6c39",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Terminal Velocity",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 598,
+          "column": 87,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-1c985ef819c38aa545b4",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Destroyed Tape",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 663,
+          "column": 77,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-1cda64da89c329db338e",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Composite Prompt — 0 layers",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 418,
+          "column": 63,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 837,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": "updateCompositeBar",
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-2053dbbf6ec7135c4e99",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "static",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 483,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-20e8b167b5942a73f525",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Perfect Lock",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 484,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-227d628144afd6a8ae4b",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Story Mode",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 511,
+          "column": 47,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-2332b35ff17df9b92c4f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Rack Focus",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 701,
+          "column": 48,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-249993eec332cb78883a",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "bodycam",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 521,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-265de3590b014e6afa63",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Surveillance Lock",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 484,
+          "column": 87,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-27937df708c4dbc8a84d",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "proximity FPV flying, close to surfaces and structures, dynamic flow through environment, controlled speed, immersive.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 601,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-29ecc47b7df6df5b77d5",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Lateral Track",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 440,
+          "column": 48,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-2c594f17ba9b2023a75c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Cinematic Drone",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 586,
+          "column": 35,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-2f5b4cd17e0f7e7167cc",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Smooth Glide",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 598,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-31484f61aa1aecbbf219",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Home Movie",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 641,
+          "column": 34,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-372a9d2347850b928c30",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "damaged Super 8 film print, heavy scratches, splice marks, color shift, frame jitter, worn projector artifacts, archival decay.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 646,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "prose-candidate"
+    },
+    {
+      "id": "text-38bf7a6fc3ff8a045664",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Trail Cam Day",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 625,
+          "column": 66,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-39476a09c2a75e9e4464",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Surreal Warp",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 571,
+          "column": 87,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-39635914147a6521bbf7",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "circular fisheye, full 180° sphere visible in circular frame, extreme distortion, black circular vignette border, psychedelic.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 565,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "prose-candidate"
+    },
+    {
+      "id": "text-3ac26d4ea45f2648e1ef",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Handheld & Raw",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 496,
+          "column": 12,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-3d0ab5a284de53673cb1",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Corrupted Glitch",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 614,
+          "column": 84,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-3f3121039db8541c769b",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Tracking Error",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 663,
+          "column": 59,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-3ffd5dfdf68b031e6d09",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "compositePrompt",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 829,
+          "column": 46,
+          "kind": "string-literal",
+          "functionName": "updateCompositeBar",
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-405bbd70af9c741e001c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Seizure Cut",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 473,
+          "column": 77,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-4659a397a138e9198147",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Active une carte de catégorie pour construire ton prompt composite.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 838,
+          "column": 32,
+          "kind": "string-literal",
+          "functionName": "updateCompositeBar",
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-494d3465e65aeffec2af",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Early Digital",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 674,
+          "column": 57,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-4aa5e5cd4d311112abba",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Night Drive",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 625,
+          "column": 35,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-4e3147b05d4c904c4289",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "corrupted CCTV footage, extreme glitching, digital signal decay, flickering frame, VHS-era surveillance, horror aesthetic.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 620,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-4eae43a421e373f26f00",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "night dashcam footage, headlight illumination, lens flares from streetlights, dark surroundings, nighttime driving POV.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 628,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-51b968994c33c8e6480a",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Heavy Flares",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 538,
+          "column": 53,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-52781618bd3ae4eca56a",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Swish Pan",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 473,
+          "column": 48,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-52af7362415f9d6db23f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": " (incl. Blocking Studio move)",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 834,
+          "column": 105,
+          "kind": "string-literal",
+          "functionName": "updateCompositeBar",
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-53b926c8b7c19ec7fba7",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Smartphone / UGC",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 510,
+          "column": 35,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-53e3f0e80dd3b161d240",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "God's Eye Ascent",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 462,
+          "column": 81,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-54adb8f0c0c1f52eec7b",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Vertigo Effect",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 690,
+          "column": 74,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-5539603ab4522e79bbaf",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Low-Res Night",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 614,
+          "column": 48,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-553a6a6065b8ea359c13",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Dreamy Blur",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 571,
+          "column": 53,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-573f40decdea8d552ac3",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Dolly / Track",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 439,
+          "column": 30,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-57632e7cfbf68b9097cb",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "War Reporter",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 500,
+          "column": 69,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-5dcfce7ea08353e1f734",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Focus Pull",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 701,
+          "column": 62,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-63a37e5e588f245aa453",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Slow Push-In",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 440,
+          "column": 32,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-641a9fcbaa08d87a5173",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Extreme Oval Bokeh",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 538,
+          "column": 84,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-64fb91bd82318bf64ab4",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "compositeBar",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 827,
+          "column": 41,
+          "kind": "string-literal",
+          "functionName": "updateCompositeBar",
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-659fa11cb1fb47052950",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "skateboard fisheye, 16mm ultra-wide lens, noticeable barrel distortion, close-up low angle, action sports aesthetic.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 563,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-667ab1540e8a2d5128bc",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "DV Camcorder",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 674,
+          "column": 74,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-679505f56cae4d837903",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Destroyed Film",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 641,
+          "column": 81,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-6a8027f3eb54d9e0641c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Super 8 / 8mm",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 640,
+          "column": 31,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-704004bb84843bb4f85e",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Quick Snap",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 473,
+          "column": 34,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-742397e540e01a72fcfd",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Chest Mount",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 522,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-7798d974e6888c042d35",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Deep Focus",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 701,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-77fd96030460fbbb50f4",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Aggressive Rush",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 440,
+          "column": 79,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-7a0bc5c1bfc25284b75d",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Smooth Zoom",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 690,
+          "column": 32,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-7f65878d43af16310996",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Earthquake",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 500,
+          "column": 85,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-81b682fc902488dbcf8a",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Static / Locked",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 483,
+          "column": 31,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-842196571f2720a82794",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Proximity Flow",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 598,
+          "column": 34,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-847cbe3133ae75aa3494",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Damaged Print",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 641,
+          "column": 64,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-84fc7a615a9ae0b589d7",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Close Detail",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 549,
+          "column": 36,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-854027d130b93c6f2650",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Lenses & Optics",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 534,
+          "column": 12,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-86ecb74265e55cdbecd1",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Gentle Shift",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 701,
+          "column": 32,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-89c9b59cfbf04ac4a9c9",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Blackmagic",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 674,
+          "column": 43,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-8c598e378d05c90a3dcf",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "panicked smartphone recording, shaky amateur footage, rapid movements, unfocused, chaotic handheld, raw upload quality.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 516,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-8ca329ea39d1d7fa3568",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Circular Fish",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 560,
+          "column": 61,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-8df6eed637d5d273e41f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Standard Feed",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 614,
+          "column": 31,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-9300e4b2eefacbaea273",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Camera Movement",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 436,
+          "column": 12,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-930b472c6b47b99b42ee",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Bodycam / POV",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 521,
+          "column": 32,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-9367cf76b0d25fd53f41",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "extreme selective focus slice, razor-thin horizontal band of sharpness, everything else dissolved in blur, surreal isolation.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 576,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "prose-candidate"
+    },
+    {
+      "id": "text-938c1ae52c2204bcb46e",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Tactical POV",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 522,
+          "column": 61,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-941fc47a2e5c8ee488a1",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Fast Dolly",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 440,
+          "column": 65,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-95a8340f30a8c0dc580f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Disaster Footage",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 511,
+          "column": 77,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-95a8d358f5a745f558b1",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "30px",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 860,
+          "column": 48,
+          "kind": "string-literal",
+          "functionName": "showToast",
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-97b0560280ed60a5a1ea",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "current",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 757,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "renderCard",
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-9a6e99007b9c2cf525a5",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "worn VHS tape, degraded color, horizontal noise bands, soft and blurry, magnetic tape wear, generation loss artifacts.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 667,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "prose-candidate"
+    },
+    {
+      "id": "text-9f75adac5f472139b79d",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Miniature Effect",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 571,
+          "column": 33,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-a0e9eb17767157b6126e",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "super8",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 640,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-a124a9d71bca559b3999",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "RED Raw",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 674,
+          "column": 32,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-a1c335317372cd4afd4f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Prowl",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 451,
+          "column": 65,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-a2c2e8cb6a4f4bcef264",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Selective Slice",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 571,
+          "column": 68,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-a3b0ea72834b037fd14e",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Steadicam / Gimbal",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 450,
+          "column": 34,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-a6e7588e1285e3c1188a",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "180px",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 860,
+          "column": 38,
+          "kind": "string-literal",
+          "functionName": "showToast",
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-a8a96cae6626d9f77570",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Tableau Vivant",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 484,
+          "column": 50,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-a996d4e7bd1289967e8b",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Full Fisheye",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 560,
+          "column": 45,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-b0eb2ff6b54fa3454467",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Slow Creep",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 690,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-b2ec7c52452dc0a90d9a",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Panic Record",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 511,
+          "column": 61,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-bb85aebbf33901eae985",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Locked Glide",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 451,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-bcfdf8a899e8c447cee7",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Sweeping Vista",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 587,
+          "column": 49,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-bebbd1dda021fa985473",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Chaos POV",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 522,
+          "column": 77,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-bf17fd481fc3474a0b94",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Degraded Signal",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 614,
+          "column": 65,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-c140357f2041e185fe1a",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Microscopic",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 549,
+          "column": 66,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-c1b9d05f290ceab90e77",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Recorded TV",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 663,
+          "column": 31,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-c45cd9985cff2877a085",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Walk & Talk",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 451,
+          "column": 50,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-c6531327c2b8aeca57ba",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Film Stock & Era",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 637,
+          "column": 12,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-c6c289d52fc44127cc52",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Rain Dashcam",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 625,
+          "column": 50,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-c70a6a2e780c55616020",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Classic Scope",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 538,
+          "column": 36,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-c88471e2cbd9a7d2bb15",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Toggle categories ON to build your composite prompt",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 412,
+          "column": 23,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-ca13a40466a804f0cd7e",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Reveal Lift",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 462,
+          "column": 49,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-ca25662b941f3e1230c3",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Action POV",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 522,
+          "column": 47,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-cf9b9e85b99a49d2f1eb",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "dolly",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 439,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-cfb02605c0169302b267",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "News Reel",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 652,
+          "column": 49,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-d58cf0e2a3fb08f0de9b",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Epic Pull-Back",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 587,
+          "column": 84,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-da23da87de0b73c859b8",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Helmet Cam",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 522,
+          "column": 33,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-db87345b346f4d9c159b",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Gritty 16mm",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 652,
+          "column": 62,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-dbacc8ce23622a2f80c6",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Casual Walk",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 511,
+          "column": 32,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-dd00d28c8ee09629f5d5",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Electron Micro",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 549,
+          "column": 81,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-df09826b5648b1bdba58",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Natural Shake",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 500,
+          "column": 52,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-e065cfcc332c561c3106",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Security Static",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 484,
+          "column": 68,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-e06e1522315bc3045596",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Dynamic Chase",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 587,
+          "column": 67,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-e202a8a51af792c7f9b8",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Micro Push",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 440,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-e4e70be8dbbf46b69b29",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "extreme anamorphic squeeze, exaggerated oval bokeh, massive horizontal flare streaks, heavy barrel distortion at edges, dreamlike.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 544,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "prose-candidate"
+    },
+    {
+      "id": "text-e72de047a585aca46408",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "steadicam",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 450,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-e97a9b8ed37cd2770e78",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "rain dashcam, water droplets on windshield, blurred wipers, refracted lights, wet road reflections, atmospheric driving.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 629,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-eb2f92b0aeb8192a2b02",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Pristine 16mm",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 652,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-ec0d681be548e3876163",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Dramatic Boom",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 462,
+          "column": 64,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-ec5ecff8222fc233d3f0",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Worn Tape",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 663,
+          "column": 46,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-ed461b73542e305e540c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Skate Wide",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 560,
+          "column": 31,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-ee4c26b83841b92dae7c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Trail Cam Night IR",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 625,
+          "column": 83,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-f1b5ccd99d96988af91c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Snap Zoom",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 690,
+          "column": 47,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-f20787c57ecf0b85dac5",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "True Macro",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 549,
+          "column": 52,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-f399d1d5e09b012efba9",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "ARRI Clean",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 674,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-f3f2470072b6a3818675",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Abstract Blur",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 701,
+          "column": 76,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-f7f200daabf8a0022f3e",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "indie 16mm film, natural grain, slightly desaturated, available light cinematography, authentic independent cinema feel.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 655,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-f823389d368a7de4ffc3",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Gap Threading",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 598,
+          "column": 52,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-fbf75445d5ea9803f508",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Indie Film",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 652,
+          "column": 35,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-fc3f3b8dd6aab53b1449",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Faded Memory",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 641,
+          "column": 48,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-fd31c7a60adade17784b",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "frenetic steadicam chase, rapid stabilized pursuit through corridors, breathless speed, controlled chaos, visceral momentum.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 457,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    }
+  ]
+}

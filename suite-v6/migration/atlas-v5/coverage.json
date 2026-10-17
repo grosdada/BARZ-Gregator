@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "1.0",
+  "createdAt": "2026-09-11T10:46:00.331Z",
+  "sourceRoot": "E:\\Fable 5-Project\\Meat Journey",
+  "shellSha256": "3af481136816f18c6fc38829fcadfc9a121c18089180cacd74ba50d7d4839a5d",
+  "registeredEntryCount": 27,
+  "distinctToolCount": 26,
+  "includedToolCount": 25,
+  "excludedTools": [
+    {
+      "id": "soul-prompts",
+      "title": "BZ Image DNA",
+      "reason": "excluded-by-user"
+    }
+  ],
+  "excludedSourcePatterns": [
+    "/(?:^|\\/)SOUL-PROMPTS-v02\\.html$/i",
+    "/(?:^|\\/)photo-dna-presets\\.json$/i"
+  ],
+  "sourceCount": 38,
+  "supplementalSourceCount": 9,
+  "uniqueLiteralCount": 13317,
+  "occurrenceCount": 20666,
+  "counts": {
+    "likely-prompt": 1891,
+    "review-candidate": 4897,
+    "context-only": 6529
+  },
+  "safety": {
+    "redactedSecretValues": 0,
+    "redactedSourceCount": 0,
+    "redactedSources": []
+  },
+  "approximateReviewTokens": 180814,
+  "corpusDigest": "255a8485e269ae7cfc69742e57959a9d6cb57172299a507d814a36efb99f212e",
+  "semanticReviewComplete": false,
+  "note": "Mechanical extraction only. Decoded values and raw source fragments are stored separately; visible HTML text is whitespace-normalized. Classification is a review aid, not a migration decision."
+}

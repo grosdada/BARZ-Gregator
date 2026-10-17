@@ -1,0 +1,1943 @@
+{
+  "schemaVersion": "1.0",
+  "artifactType": "semantic-review-staging",
+  "toolId": "imperfection",
+  "reviewedAt": "2026-09-11",
+  "reviewer": "Astra",
+  "status": {
+    "content": "reviewed",
+    "legacyOutputFixtures": "captured-23-cases",
+    "v6Parity": "verified-23-cases",
+    "migration": "integrated-v6"
+  },
+  "source": {
+    "path": "Barzy App/public/assets/HTML/imperfection_engine.html",
+    "sha256": "c47a1069bb0f19117b23771955e6f458db28f0c6b030fcc9c22ef903517cc010",
+    "compilerLines": [
+      1952,
+      2128
+    ]
+  },
+  "dependencies": [
+    {
+      "path": "Barzy App/public/assets/barzy-storage.js",
+      "sha256": "09e03335757fa4efda301023de13939d4715ccba3106f01162dd1769ddccb98e"
+    },
+    {
+      "path": "Barzy App/public/assets/barzy-theme.js",
+      "sha256": "5870fa2856910bef1fc8d130aecb72383b89e8d1c22540ca11af13c3bf5963d0"
+    }
+  ],
+  "defaults": {
+    "sections": {
+      "camera": true,
+      "human": true
+    },
+    "camera": {
+      "device": "smartphone_handheld",
+      "handDrift": 2.5,
+      "driftFreq": 1.2,
+      "microShake": 1,
+      "afBreathing": 2,
+      "aeShift": 0.3,
+      "gazeBreaks": true,
+      "reframing": true,
+      "zoomHunting": false,
+      "whipPan": false,
+      "freeRoam": false,
+      "orbit": false,
+      "orbitSpeed": 2,
+      "orbitDirection": "clockwise",
+      "stopMotionVib": 0
+    },
+    "human": {
+      "activityLevel": "casual",
+      "breathSway": 3,
+      "weightShift": 2,
+      "blinkRate": 3,
+      "gripAdjust": true,
+      "postureShift": true,
+      "fidget": false,
+      "handGesture": false,
+      "microExpressions": true,
+      "eyeDart": true,
+      "lipMovement": false,
+      "swallow": false,
+      "naturalPause": false,
+      "breathBetween": false,
+      "umFiller": false,
+      "headNod": false
+    },
+    "antiGlitch": {
+      "noMorphing": true,
+      "consistentFingers": true,
+      "noFlicker": true,
+      "stableClothing": true,
+      "naturalMotion": true,
+      "consistentLighting": true,
+      "noTextWarp": false,
+      "stableBackground": false,
+      "naturalHair": false,
+      "eyeContact": false
+    }
+  },
+  "presets": {
+    "ugc": {
+      "camera": {
+        "device": "smartphone_handheld",
+        "handDrift": 3,
+        "driftFreq": 1.5,
+        "microShake": 2,
+        "afBreathing": 3,
+        "aeShift": 0.4,
+        "gazeBreaks": true,
+        "reframing": true,
+        "zoomHunting": false,
+        "whipPan": false,
+        "freeRoam": false,
+        "orbit": false,
+        "orbitSpeed": 2,
+        "orbitDirection": "clockwise",
+        "stopMotionVib": 0
+      },
+      "human": {
+        "activityLevel": "casual",
+        "breathSway": 3,
+        "weightShift": 2,
+        "blinkRate": 3,
+        "gripAdjust": true,
+        "postureShift": true,
+        "fidget": false,
+        "handGesture": true,
+        "microExpressions": true,
+        "eyeDart": true,
+        "lipMovement": false,
+        "swallow": false,
+        "naturalPause": true,
+        "breathBetween": true,
+        "umFiller": false,
+        "headNod": true
+      }
+    },
+    "documentary": {
+      "camera": {
+        "device": "dslr_shoulder",
+        "handDrift": 1.5,
+        "driftFreq": 0.8,
+        "microShake": 1,
+        "afBreathing": 2,
+        "aeShift": 0.2,
+        "gazeBreaks": false,
+        "reframing": true,
+        "zoomHunting": false,
+        "whipPan": false,
+        "freeRoam": false,
+        "orbit": false,
+        "orbitSpeed": 2,
+        "orbitDirection": "clockwise",
+        "stopMotionVib": 0
+      },
+      "human": {
+        "activityLevel": "casual",
+        "breathSway": 3,
+        "weightShift": 3,
+        "blinkRate": 3,
+        "gripAdjust": true,
+        "postureShift": true,
+        "fidget": false,
+        "handGesture": false,
+        "microExpressions": true,
+        "eyeDart": true,
+        "lipMovement": false,
+        "swallow": true,
+        "naturalPause": true,
+        "breathBetween": true,
+        "umFiller": false,
+        "headNod": false
+      }
+    },
+    "found": {
+      "camera": {
+        "device": "smartphone_handheld",
+        "handDrift": 5,
+        "driftFreq": 2,
+        "microShake": 4,
+        "afBreathing": 4,
+        "aeShift": 0.6,
+        "gazeBreaks": true,
+        "reframing": true,
+        "zoomHunting": true,
+        "whipPan": true,
+        "freeRoam": false,
+        "orbit": false,
+        "orbitSpeed": 2,
+        "orbitDirection": "clockwise",
+        "stopMotionVib": 0
+      },
+      "human": {
+        "activityLevel": "nervous",
+        "breathSway": 4,
+        "weightShift": 4,
+        "blinkRate": 4,
+        "gripAdjust": true,
+        "postureShift": true,
+        "fidget": true,
+        "handGesture": true,
+        "microExpressions": true,
+        "eyeDart": true,
+        "lipMovement": true,
+        "swallow": true,
+        "naturalPause": true,
+        "breathBetween": true,
+        "umFiller": true,
+        "headNod": true
+      }
+    },
+    "dashcam": {
+      "camera": {
+        "device": "dashcam",
+        "handDrift": 0,
+        "driftFreq": 0.5,
+        "microShake": 0,
+        "afBreathing": 0,
+        "aeShift": 0.5,
+        "gazeBreaks": false,
+        "reframing": false,
+        "zoomHunting": false,
+        "whipPan": false,
+        "freeRoam": false,
+        "orbit": false,
+        "orbitSpeed": 2,
+        "orbitDirection": "clockwise",
+        "stopMotionVib": 0
+      },
+      "human": {
+        "activityLevel": "casual",
+        "breathSway": 2,
+        "weightShift": 1,
+        "blinkRate": 3,
+        "gripAdjust": false,
+        "postureShift": false,
+        "fidget": false,
+        "handGesture": false,
+        "microExpressions": true,
+        "eyeDart": true,
+        "lipMovement": false,
+        "swallow": false,
+        "naturalPause": false,
+        "breathBetween": false,
+        "umFiller": false,
+        "headNod": false
+      }
+    },
+    "vlog": {
+      "camera": {
+        "device": "smartphone_selfie",
+        "handDrift": 2,
+        "driftFreq": 1,
+        "microShake": 1,
+        "afBreathing": 2,
+        "aeShift": 0.3,
+        "gazeBreaks": true,
+        "reframing": true,
+        "zoomHunting": false,
+        "whipPan": false,
+        "freeRoam": false,
+        "orbit": false,
+        "orbitSpeed": 2,
+        "orbitDirection": "clockwise",
+        "stopMotionVib": 0
+      },
+      "human": {
+        "activityLevel": "casual",
+        "breathSway": 3,
+        "weightShift": 2,
+        "blinkRate": 3,
+        "gripAdjust": true,
+        "postureShift": true,
+        "fidget": false,
+        "handGesture": true,
+        "microExpressions": true,
+        "eyeDart": true,
+        "lipMovement": true,
+        "swallow": false,
+        "naturalPause": true,
+        "breathBetween": true,
+        "umFiller": true,
+        "headNod": true
+      }
+    },
+    "news": {
+      "camera": {
+        "device": "dslr_shoulder",
+        "handDrift": 2,
+        "driftFreq": 1.5,
+        "microShake": 2,
+        "afBreathing": 3,
+        "aeShift": 0.4,
+        "gazeBreaks": false,
+        "reframing": true,
+        "zoomHunting": true,
+        "whipPan": true,
+        "freeRoam": false,
+        "orbit": false,
+        "orbitSpeed": 2,
+        "orbitDirection": "clockwise",
+        "stopMotionVib": 0
+      },
+      "human": {
+        "activityLevel": "active",
+        "breathSway": 3,
+        "weightShift": 3,
+        "blinkRate": 3,
+        "gripAdjust": true,
+        "postureShift": true,
+        "fidget": false,
+        "handGesture": true,
+        "microExpressions": true,
+        "eyeDart": true,
+        "lipMovement": true,
+        "swallow": false,
+        "naturalPause": true,
+        "breathBetween": true,
+        "umFiller": false,
+        "headNod": true
+      }
+    },
+    "cinematic": {
+      "camera": {
+        "device": "dslr_handheld",
+        "handDrift": 1,
+        "driftFreq": 0.6,
+        "microShake": 1,
+        "afBreathing": 1,
+        "aeShift": 0.1,
+        "gazeBreaks": false,
+        "reframing": true,
+        "zoomHunting": false,
+        "whipPan": false,
+        "freeRoam": false,
+        "orbit": false,
+        "orbitSpeed": 2,
+        "orbitDirection": "clockwise",
+        "stopMotionVib": 0
+      },
+      "human": {
+        "activityLevel": "casual",
+        "breathSway": 3,
+        "weightShift": 2,
+        "blinkRate": 3,
+        "gripAdjust": true,
+        "postureShift": true,
+        "fidget": false,
+        "handGesture": false,
+        "microExpressions": true,
+        "eyeDart": true,
+        "lipMovement": false,
+        "swallow": true,
+        "naturalPause": false,
+        "breathBetween": false,
+        "umFiller": false,
+        "headNod": false
+      }
+    },
+    "musicvideo": {
+      "camera": {
+        "device": "dslr_handheld",
+        "handDrift": 4,
+        "driftFreq": 0.8,
+        "microShake": 2,
+        "afBreathing": 3,
+        "aeShift": 0.3,
+        "gazeBreaks": false,
+        "reframing": true,
+        "zoomHunting": true,
+        "whipPan": true,
+        "freeRoam": true,
+        "orbit": false,
+        "orbitSpeed": 2,
+        "orbitDirection": "clockwise",
+        "stopMotionVib": 0
+      },
+      "human": {
+        "activityLevel": "active",
+        "breathSway": 4,
+        "weightShift": 3,
+        "blinkRate": 3,
+        "gripAdjust": true,
+        "postureShift": true,
+        "fidget": false,
+        "handGesture": true,
+        "microExpressions": true,
+        "eyeDart": true,
+        "lipMovement": true,
+        "swallow": false,
+        "naturalPause": false,
+        "breathBetween": false,
+        "umFiller": false,
+        "headNod": true
+      }
+    },
+    "orbit": {
+      "camera": {
+        "device": "dslr_handheld",
+        "handDrift": 1.5,
+        "driftFreq": 0.8,
+        "microShake": 1,
+        "afBreathing": 2,
+        "aeShift": 0.2,
+        "gazeBreaks": false,
+        "reframing": false,
+        "zoomHunting": false,
+        "whipPan": false,
+        "freeRoam": false,
+        "orbit": true,
+        "orbitSpeed": 2,
+        "orbitDirection": "clockwise",
+        "stopMotionVib": 0
+      },
+      "human": {
+        "activityLevel": "casual",
+        "breathSway": 3,
+        "weightShift": 2,
+        "blinkRate": 3,
+        "gripAdjust": true,
+        "postureShift": true,
+        "fidget": false,
+        "handGesture": false,
+        "microExpressions": true,
+        "eyeDart": true,
+        "lipMovement": false,
+        "swallow": false,
+        "naturalPause": false,
+        "breathBetween": false,
+        "umFiller": false,
+        "headNod": false
+      }
+    },
+    "stopmotion": {
+      "camera": {
+        "device": "dslr_handheld",
+        "handDrift": 0,
+        "driftFreq": 0.5,
+        "microShake": 0,
+        "afBreathing": 0,
+        "aeShift": 0,
+        "gazeBreaks": false,
+        "reframing": false,
+        "zoomHunting": false,
+        "whipPan": false,
+        "freeRoam": false,
+        "orbit": false,
+        "orbitSpeed": 2,
+        "orbitDirection": "clockwise",
+        "stopMotionVib": 2
+      },
+      "human": {
+        "activityLevel": "puppet_stopmotion",
+        "breathSway": 0,
+        "weightShift": 0,
+        "blinkRate": 1,
+        "gripAdjust": false,
+        "postureShift": false,
+        "fidget": false,
+        "handGesture": false,
+        "microExpressions": false,
+        "eyeDart": false,
+        "lipMovement": false,
+        "swallow": false,
+        "naturalPause": false,
+        "breathBetween": false,
+        "umFiller": false,
+        "headNod": false
+      }
+    }
+  },
+  "ranges": [
+    {
+      "id": "handDrift",
+      "min": 0,
+      "max": 10,
+      "step": 0.5,
+      "default": 2.5
+    },
+    {
+      "id": "driftFreq",
+      "min": 0.5,
+      "max": 3,
+      "step": 0.1,
+      "default": 1.2
+    },
+    {
+      "id": "microShake",
+      "min": 0,
+      "max": 5,
+      "step": 1,
+      "default": 1
+    },
+    {
+      "id": "afBreathing",
+      "min": 0,
+      "max": 5,
+      "step": 1,
+      "default": 2
+    },
+    {
+      "id": "aeShift",
+      "min": 0,
+      "max": 1,
+      "step": 0.1,
+      "default": 0.3
+    },
+    {
+      "id": "orbitSpeed",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "default": 2
+    },
+    {
+      "id": "stopMotionVib",
+      "min": 0,
+      "max": 4,
+      "step": 1,
+      "default": 0
+    },
+    {
+      "id": "breathSway",
+      "min": 0,
+      "max": 5,
+      "step": 1,
+      "default": 3
+    },
+    {
+      "id": "weightShift",
+      "min": 0,
+      "max": 5,
+      "step": 1,
+      "default": 2
+    },
+    {
+      "id": "blinkRate",
+      "min": 0,
+      "max": 5,
+      "step": 1,
+      "default": 3
+    }
+  ],
+  "enums": [
+    {
+      "id": "deviceType",
+      "options": [
+        {
+          "value": "smartphone_handheld",
+          "label": "Smartphone (Handheld)"
+        },
+        {
+          "value": "smartphone_selfie",
+          "label": "Smartphone (Selfie Mode)"
+        },
+        {
+          "value": "action_cam",
+          "label": "Action Camera / GoPro"
+        },
+        {
+          "value": "dslr_shoulder",
+          "label": "DSLR (Shoulder Mount)"
+        },
+        {
+          "value": "dslr_handheld",
+          "label": "DSLR (Handheld)"
+        },
+        {
+          "value": "dashcam",
+          "label": "Dashcam / Fixed Mount"
+        },
+        {
+          "value": "security",
+          "label": "Security Camera"
+        },
+        {
+          "value": "webcam",
+          "label": "Webcam / Laptop"
+        }
+      ]
+    },
+    {
+      "id": "orbitDirection",
+      "options": [
+        {
+          "value": "clockwise",
+          "label": "Clockwise"
+        },
+        {
+          "value": "counterclockwise",
+          "label": "Counter-clockwise"
+        },
+        {
+          "value": "alternating",
+          "label": "Alternating"
+        }
+      ]
+    },
+    {
+      "id": "activityLevel",
+      "options": [
+        {
+          "value": "still",
+          "label": "Still / Seated"
+        },
+        {
+          "value": "casual",
+          "label": "Casual Standing"
+        },
+        {
+          "value": "active",
+          "label": "Active / Moving"
+        },
+        {
+          "value": "nervous",
+          "label": "Nervous / Agitated"
+        },
+        {
+          "value": "exhausted",
+          "label": "Exhausted / Low Energy"
+        },
+        {
+          "value": "puppet_henson",
+          "label": "Puppet – Jim Henson Style"
+        },
+        {
+          "value": "puppet_stopmotion",
+          "label": "Puppet – Stop Motion"
+        }
+      ]
+    }
+  ],
+  "compilerLiterals": [
+    {
+      "id": "text-79967f3c354006764306",
+      "value": "smartphone_handheld",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 1960,
+          "column": 21
+        }
+      ]
+    },
+    {
+      "id": "text-b1dd4a463c05bb919d0c",
+      "value": "handheld smartphone camera",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 1960,
+          "column": 44
+        }
+      ]
+    },
+    {
+      "id": "text-75d0742a787fa564fb74",
+      "value": "smartphone_selfie",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 1961,
+          "column": 21
+        }
+      ]
+    },
+    {
+      "id": "text-fb6a35fc384c7a4338e4",
+      "value": "smartphone selfie cam front-facing",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 1961,
+          "column": 42
+        }
+      ]
+    },
+    {
+      "id": "text-8ac45c5ee5d9b3d89d8a",
+      "value": "action_cam",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 1962,
+          "column": 21
+        }
+      ]
+    },
+    {
+      "id": "text-5dd07c1d9c92c3dda65d",
+      "value": "action camera GoPro-style wide angle",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 1962,
+          "column": 35
+        }
+      ]
+    },
+    {
+      "id": "text-f4657cc9ca5e0515bf68",
+      "value": "dslr_shoulder",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 1963,
+          "column": 21
+        }
+      ]
+    },
+    {
+      "id": "text-44d484bcbc0847aa9f4d",
+      "value": "DSLR camera shoulder-mounted documentary style",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 1963,
+          "column": 38
+        }
+      ]
+    },
+    {
+      "id": "text-6fb7561f68dbd1418bda",
+      "value": "dslr_handheld",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 1964,
+          "column": 21
+        }
+      ]
+    },
+    {
+      "id": "text-5377d39002dc82253809",
+      "value": "DSLR handheld cinema camera",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 1964,
+          "column": 38
+        }
+      ]
+    },
+    {
+      "id": "text-4deff0ac352abded86bd",
+      "value": "dashcam",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 1965,
+          "column": 21
+        }
+      ]
+    },
+    {
+      "id": "text-2dfa93425dcccba8a86c",
+      "value": "fixed dashcam perspective",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 1965,
+          "column": 32
+        }
+      ]
+    },
+    {
+      "id": "text-5d2d3ceb7abe55234427",
+      "value": "security",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 1966,
+          "column": 21
+        }
+      ]
+    },
+    {
+      "id": "text-4159ab204093f8abfb7f",
+      "value": "static security camera CCTV angle",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 1966,
+          "column": 33
+        }
+      ]
+    },
+    {
+      "id": "text-1b86a7b376b02f28c5e1",
+      "value": "webcam",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 1967,
+          "column": 21
+        }
+      ]
+    },
+    {
+      "id": "text-3bab6286871582609ccb",
+      "value": "laptop webcam fixed position",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 1967,
+          "column": 31
+        }
+      ]
+    },
+    {
+      "id": "text-bb9ce197dc446727a83d",
+      "value": "Shot on ${deviceDescriptions[state.camera.device]}.",
+      "classification": "likely-prompt",
+      "locations": [
+        {
+          "line": 1970,
+          "column": 34
+        }
+      ]
+    },
+    {
+      "id": "text-e1e0b801dfab894c44c3",
+      "value": "subtle hand drift of ${state.camera.handDrift}mm amplitude at ${state.camera.driftFreq} movements per second",
+      "classification": "likely-prompt",
+      "locations": [
+        {
+          "line": 1976,
+          "column": 42
+        }
+      ]
+    },
+    {
+      "id": "text-eef54893c46671c2106d",
+      "value": "barely perceptible",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 1980,
+          "column": 49
+        }
+      ]
+    },
+    {
+      "id": "text-5c7dad260e0b1d0f59ef",
+      "value": "slight",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 1980,
+          "column": 71
+        }
+      ]
+    },
+    {
+      "id": "text-34b953d3ca4ee7c462e1",
+      "value": "noticeable",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 1980,
+          "column": 81
+        }
+      ]
+    },
+    {
+      "id": "text-3e0a27866fb24546e727",
+      "value": "pronounced",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 1980,
+          "column": 95
+        },
+        {
+          "line": 2045,
+          "column": 91
+        }
+      ]
+    },
+    {
+      "id": "text-22d5925ed64680ab5f3f",
+      "value": "heavy",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 1980,
+          "column": 109
+        }
+      ]
+    },
+    {
+      "id": "text-f8737a184a3e8b869032",
+      "value": "${shakeIntensity} micro-shake from human hand instability",
+      "classification": "likely-prompt",
+      "locations": [
+        {
+          "line": 1981,
+          "column": 42
+        }
+      ]
+    },
+    {
+      "id": "text-a703788f832056626d71",
+      "value": "minimal",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 1985,
+          "column": 46
+        },
+        {
+          "line": 2045,
+          "column": 48
+        }
+      ]
+    },
+    {
+      "id": "text-2298c2ae6c6faae4e835",
+      "value": "subtle",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 1985,
+          "column": 57
+        },
+        {
+          "line": 2045,
+          "column": 59
+        }
+      ]
+    },
+    {
+      "id": "text-12765295db4f1e7911dd",
+      "value": "natural",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 1985,
+          "column": 67
+        },
+        {
+          "line": 2045,
+          "column": 69
+        }
+      ]
+    },
+    {
+      "id": "text-d42ef1497900bc6e542c",
+      "value": "visible",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 1985,
+          "column": 78
+        },
+        {
+          "line": 2045,
+          "column": 80
+        }
+      ]
+    },
+    {
+      "id": "text-e0cd61d0340f5b41194c",
+      "value": "prominent",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 1985,
+          "column": 89
+        }
+      ]
+    },
+    {
+      "id": "text-e5e0b16b7dd2ab6d9644",
+      "value": "${afIntensity} autofocus breathing and hunting",
+      "classification": "likely-prompt",
+      "locations": [
+        {
+          "line": 1986,
+          "column": 42
+        }
+      ]
+    },
+    {
+      "id": "text-ddfcfde1b5bdcf112e48",
+      "value": "auto-exposure micro-adjustments of +/-${state.camera.aeShift} stops",
+      "classification": "likely-prompt",
+      "locations": [
+        {
+          "line": 1990,
+          "column": 42
+        }
+      ]
+    },
+    {
+      "id": "text-d1ab5d5bf21ecadc2639",
+      "value": "Camera behavior: ${cameraMovements.join(', ')}.",
+      "classification": "likely-prompt",
+      "locations": [
+        {
+          "line": 1994,
+          "column": 38
+        }
+      ]
+    },
+    {
+      "id": "text-d2207e13d332acf3f146",
+      "value": "brief gaze breaks lasting 0.2-0.4 seconds",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 1999,
+          "column": 69
+        }
+      ]
+    },
+    {
+      "id": "text-35355bfda30e3faa382d",
+      "value": "subtle reframing adjustments",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 2000,
+          "column": 68
+        }
+      ]
+    },
+    {
+      "id": "text-218c8eab974dc4d30b8e",
+      "value": "occasional zoom hunting",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 2001,
+          "column": 70
+        }
+      ]
+    },
+    {
+      "id": "text-cecea00cc9035edc9a7c",
+      "value": "spontaneous whip pans",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 2002,
+          "column": 66
+        }
+      ]
+    },
+    {
+      "id": "text-3ded4a24cdef0ba5eb6a",
+      "value": "free-roaming camera movement exploring subject from multiple angles, pushing in for details then pulling back, circling loosely, finding new perspectives organically",
+      "classification": "likely-prompt",
+      "locations": [
+        {
+          "line": 2003,
+          "column": 67
+        }
+      ]
+    },
+    {
+      "id": "text-5e0cf7bd1dfa3831788b",
+      "value": "slow",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 2007,
+          "column": 49
+        }
+      ]
+    },
+    {
+      "id": "text-c082456a7766e23a18db",
+      "value": "medium",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 2007,
+          "column": 57
+        }
+      ]
+    },
+    {
+      "id": "text-115dc3606fbf8691fb69",
+      "value": "fast",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 2007,
+          "column": 67
+        }
+      ]
+    },
+    {
+      "id": "text-7ee6118994b5253368f0",
+      "value": "rapid",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 2007,
+          "column": 75
+        }
+      ]
+    },
+    {
+      "id": "text-469baa511b0da92ee293",
+      "value": "clockwise",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 2009,
+          "column": 25
+        },
+        {
+          "line": 2009,
+          "column": 38
+        }
+      ]
+    },
+    {
+      "id": "text-c6daa950c4e0412f81db",
+      "value": "counterclockwise",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 2010,
+          "column": 25
+        }
+      ]
+    },
+    {
+      "id": "text-38fb2979a858daea7cd9",
+      "value": "counter-clockwise",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 2010,
+          "column": 45
+        }
+      ]
+    },
+    {
+      "id": "text-dbfdf717cd28120f9b9f",
+      "value": "alternating",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 2011,
+          "column": 25
+        }
+      ]
+    },
+    {
+      "id": "text-36d842da5783573255d1",
+      "value": "alternating directions",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 2011,
+          "column": 40
+        }
+      ]
+    },
+    {
+      "id": "text-8c9563705d6de9b8e231",
+      "value": "smooth orbital camera movement circling around subject at ${orbitSpeedDesc} pace, ${orbitDirDesc}, maintaining consistent distance while tracking subject",
+      "classification": "likely-prompt",
+      "locations": [
+        {
+          "line": 2013,
+          "column": 44
+        }
+      ]
+    },
+    {
+      "id": "text-1e43abf7b6d858d936d0",
+      "value": "barely perceptible micro-vibration between frames like stop-motion camera bump",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 2018,
+          "column": 42
+        }
+      ]
+    },
+    {
+      "id": "text-408aea5586a722a3c96a",
+      "value": "subtle frame-to-frame position jitter characteristic of stop-motion animation",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 2018,
+          "column": 124
+        }
+      ]
+    },
+    {
+      "id": "text-fdc8482a312fe56added",
+      "value": "visible stop-motion camera vibration with slight position shifts each frame",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 2018,
+          "column": 205
+        }
+      ]
+    },
+    {
+      "id": "text-6c7688ad8f1294387b09",
+      "value": "pronounced stop-motion tremor with noticeable inter-frame camera displacement",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 2018,
+          "column": 284
+        }
+      ]
+    },
+    {
+      "id": "text-fd400b3fbcb2e97cc30a",
+      "value": "Stop-motion effect: ${vibDesc}.",
+      "classification": "likely-prompt",
+      "locations": [
+        {
+          "line": 2019,
+          "column": 38
+        }
+      ]
+    },
+    {
+      "id": "text-420aa67d1eb2cca2b8d0",
+      "value": "Operator behavior: ${operatorBehaviors.join(', ')}.",
+      "classification": "likely-prompt",
+      "locations": [
+        {
+          "line": 2023,
+          "column": 38
+        }
+      ]
+    },
+    {
+      "id": "text-94e8566ddfc123edf115",
+      "value": "still",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 2031,
+          "column": 21
+        }
+      ]
+    },
+    {
+      "id": "text-f2eef7ef3888d02c4cee",
+      "value": "Subject seated or still",
+      "classification": "likely-prompt",
+      "locations": [
+        {
+          "line": 2031,
+          "column": 30
+        }
+      ]
+    },
+    {
+      "id": "text-c633eb52f63cec1d6b02",
+      "value": "casual",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 2032,
+          "column": 21
+        }
+      ]
+    },
+    {
+      "id": "text-d6408f86fc6bb75d9cc3",
+      "value": "Subject in casual standing position",
+      "classification": "likely-prompt",
+      "locations": [
+        {
+          "line": 2032,
+          "column": 31
+        }
+      ]
+    },
+    {
+      "id": "text-96879611650f80a81392",
+      "value": "active",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 2033,
+          "column": 21
+        }
+      ]
+    },
+    {
+      "id": "text-635a3a5b7be348ff46cb",
+      "value": "Subject actively moving",
+      "classification": "likely-prompt",
+      "locations": [
+        {
+          "line": 2033,
+          "column": 31
+        }
+      ]
+    },
+    {
+      "id": "text-fb3a7850111f293bfc97",
+      "value": "nervous",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 2034,
+          "column": 21
+        }
+      ]
+    },
+    {
+      "id": "text-78f57a75632192308da2",
+      "value": "Subject displaying nervous energy",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 2034,
+          "column": 32
+        }
+      ]
+    },
+    {
+      "id": "text-ea4c55ca1f43fc93f10c",
+      "value": "exhausted",
+      "classification": "context-only",
+      "locations": [
+        {
+          "line": 2035,
+          "column": 21
+        }
+      ]
+    },
+    {
+      "id": "text-3ae798d17ab8b1468f3c",
+      "value": "Subject with low energy exhausted demeanor",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 2035,
+          "column": 34
+        }
+      ]
+    },
+    {
+      "id": "text-314f00ecd638563bc7aa",
+      "value": "puppet_henson",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 2036,
+          "column": 21
+        }
+      ]
+    },
+    {
+      "id": "text-fecc6e032ad7daa9ef31",
+      "value": "Subject moves like a Jim Henson foam puppet, gentle bouncy sway originating from below, head bobs and tilts expressively during speech, arms swing loosely with slight delay, exaggerated mouth movements, soft floaty quality to all motion, occasional looking-around head movements, body gently rocks side to side, movements have warmth and personality of classic Muppet performance",
+      "classification": "likely-prompt",
+      "locations": [
+        {
+          "line": 2036,
+          "column": 38
+        }
+      ]
+    },
+    {
+      "id": "text-66d841e484df8ded166f",
+      "value": "puppet_stopmotion",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 2037,
+          "column": 21
+        }
+      ]
+    },
+    {
+      "id": "text-555ce39e6f8df0a0d4a0",
+      "value": "Subject moves in stop-motion animation style at 12 frames per second, distinct stuttery motion with visible holds between poses, micro-jitter from animator touch, imperfect spacing between keyframes, slight position drift between frames, characteristic jerky puppet quality, movements have deliberate start-stop rhythm, subtle tremor artifacts from physical manipulation",
+      "classification": "likely-prompt",
+      "locations": [
+        {
+          "line": 2037,
+          "column": 42
+        }
+      ]
+    },
+    {
+      "id": "text-88c77a25ceff7027f79e",
+      "value": "${swayIntensity} breathing sway in torso and shoulders",
+      "classification": "likely-prompt",
+      "locations": [
+        {
+          "line": 2046,
+          "column": 37
+        }
+      ]
+    },
+    {
+      "id": "text-50270c12c086cb3616ad",
+      "value": "rare",
+      "classification": "context-only",
+      "locations": [
+        {
+          "line": 2050,
+          "column": 44
+        }
+      ]
+    },
+    {
+      "id": "text-b46253821445b83b9e86",
+      "value": "occasional",
+      "classification": "context-only",
+      "locations": [
+        {
+          "line": 2050,
+          "column": 52
+        }
+      ]
+    },
+    {
+      "id": "text-a8f9b083bb67e1d94f58",
+      "value": "periodic",
+      "classification": "context-only",
+      "locations": [
+        {
+          "line": 2050,
+          "column": 66
+        }
+      ]
+    },
+    {
+      "id": "text-403b8dc9df0dc3ced2f5",
+      "value": "frequent",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 2050,
+          "column": 78
+        }
+      ]
+    },
+    {
+      "id": "text-96f6549c6b97a641e4d1",
+      "value": "constant",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 2050,
+          "column": 90
+        }
+      ]
+    },
+    {
+      "id": "text-b6a3118277af5fe61458",
+      "value": "${shiftFreq} weight shifts between feet",
+      "classification": "likely-prompt",
+      "locations": [
+        {
+          "line": 2051,
+          "column": 37
+        }
+      ]
+    },
+    {
+      "id": "text-480dd7c6bdace042551b",
+      "value": "micro grip adjustments",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 2054,
+          "column": 61
+        }
+      ]
+    },
+    {
+      "id": "text-63e4bacf0e854b693b3c",
+      "value": "subtle posture corrections",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 2055,
+          "column": 63
+        }
+      ]
+    },
+    {
+      "id": "text-bd7c520788eb47510057",
+      "value": "idle fidgeting",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 2056,
+          "column": 57
+        }
+      ]
+    },
+    {
+      "id": "text-1d0321bf89062bbe4671",
+      "value": "natural hand gestures while speaking",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 2057,
+          "column": 62
+        }
+      ]
+    },
+    {
+      "id": "text-17061cd7930833729509",
+      "value": "Body micro-motion: ${bodyMotion.join(', ')}.",
+      "classification": "likely-prompt",
+      "locations": [
+        {
+          "line": 2060,
+          "column": 37
+        }
+      ]
+    },
+    {
+      "id": "text-cb947fd1315d48237dc7",
+      "value": "5-10 blinks per minute sparse",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 2067,
+          "column": 44
+        }
+      ]
+    },
+    {
+      "id": "text-12a8aed14060e812bf71",
+      "value": "10-15 blinks per minute slow",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 2067,
+          "column": 77
+        }
+      ]
+    },
+    {
+      "id": "text-462b8c7bd8c4ed88b673",
+      "value": "15-20 blinks per minute natural rate",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 2067,
+          "column": 109
+        }
+      ]
+    },
+    {
+      "id": "text-cbd527fb20b8037c1114",
+      "value": "20-25 blinks per minute frequent",
+      "classification": "context-only",
+      "locations": [
+        {
+          "line": 2067,
+          "column": 149
+        }
+      ]
+    },
+    {
+      "id": "text-ea553df9c53192d89f24",
+      "value": "25+ blinks per minute nervous rapid",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 2067,
+          "column": 185
+        }
+      ]
+    },
+    {
+      "id": "text-a95d5f47145621556120",
+      "value": "subtle micro-expressions",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 2071,
+          "column": 69
+        }
+      ]
+    },
+    {
+      "id": "text-ee5164fbed22d57c34a2",
+      "value": "natural eye saccades and micro-movements",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 2072,
+          "column": 60
+        }
+      ]
+    },
+    {
+      "id": "text-8f202601190175fc1528",
+      "value": "lip micro-movements",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 2073,
+          "column": 64
+        }
+      ]
+    },
+    {
+      "id": "text-77e79ed77cc7e2c67371",
+      "value": "occasional swallow reflex",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 2074,
+          "column": 60
+        }
+      ]
+    },
+    {
+      "id": "text-b72b050dcda6f8609667",
+      "value": "Facial micro-motion: ${facialMotion.join(', ')}.",
+      "classification": "likely-prompt",
+      "locations": [
+        {
+          "line": 2077,
+          "column": 37
+        }
+      ]
+    },
+    {
+      "id": "text-ec6faf8cb28fea0a0def",
+      "value": "natural pauses in speech",
+      "classification": "context-only",
+      "locations": [
+        {
+          "line": 2082,
+          "column": 67
+        }
+      ]
+    },
+    {
+      "id": "text-35090ac0b666a2d727d9",
+      "value": "audible breaths between sentences",
+      "classification": "context-only",
+      "locations": [
+        {
+          "line": 2083,
+          "column": 68
+        }
+      ]
+    },
+    {
+      "id": "text-75f6f2e0224b516e79cb",
+      "value": "occasional filler words um uh",
+      "classification": "context-only",
+      "locations": [
+        {
+          "line": 2084,
+          "column": 63
+        }
+      ]
+    },
+    {
+      "id": "text-d378ec8ffb7836fd755b",
+      "value": "head nods for emphasis while speaking",
+      "classification": "context-only",
+      "locations": [
+        {
+          "line": 2085,
+          "column": 62
+        }
+      ]
+    },
+    {
+      "id": "text-729cc470000a26d23ada",
+      "value": "Speech patterns: ${speechPatterns.join(', ')}.",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 2088,
+          "column": 37
+        }
+      ]
+    },
+    {
+      "id": "text-8ce9e41205b769e02882",
+      "value": "no face morphing or distortion",
+      "classification": "context-only",
+      "locations": [
+        {
+          "line": 2094,
+          "column": 67
+        }
+      ]
+    },
+    {
+      "id": "text-caf13da7291ecb7af5f4",
+      "value": "consistent finger count exactly five fingers per hand",
+      "classification": "context-only",
+      "locations": [
+        {
+          "line": 2095,
+          "column": 74
+        }
+      ]
+    },
+    {
+      "id": "text-7c72628fba468751d0e6",
+      "value": "no texture flickering or swimming artifacts",
+      "classification": "context-only",
+      "locations": [
+        {
+          "line": 2096,
+          "column": 66
+        }
+      ]
+    },
+    {
+      "id": "text-7c93c169afcaf9eec7a7",
+      "value": "stable consistent clothing and accessories",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 2097,
+          "column": 71
+        }
+      ]
+    },
+    {
+      "id": "text-ceaf424159910fa92979",
+      "value": "physically plausible motion only",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 2098,
+          "column": 70
+        }
+      ]
+    },
+    {
+      "id": "text-646914daed291c99cb95",
+      "value": "consistent lighting direction throughout",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 2099,
+          "column": 75
+        }
+      ]
+    },
+    {
+      "id": "text-a700596a12f7373e1c18",
+      "value": "no warping or morphing text or logos",
+      "classification": "context-only",
+      "locations": [
+        {
+          "line": 2100,
+          "column": 67
+        }
+      ]
+    },
+    {
+      "id": "text-a119af37e1350b089dca",
+      "value": "stable non-morphing background elements",
+      "classification": "context-only",
+      "locations": [
+        {
+          "line": 2101,
+          "column": 73
+        }
+      ]
+    },
+    {
+      "id": "text-2db96922794ccd897d51",
+      "value": "natural hair movement physics",
+      "classification": "context-only",
+      "locations": [
+        {
+          "line": 2102,
+          "column": 68
+        }
+      ]
+    },
+    {
+      "id": "text-14590a10234818e9f6b0",
+      "value": "maintain consistent eye contact direction",
+      "classification": "context-only",
+      "locations": [
+        {
+          "line": 2103,
+          "column": 67
+        }
+      ]
+    },
+    {
+      "id": "text-ff22faeed20791588022",
+      "value": "[CAMERA]\n",
+      "classification": "review-candidate",
+      "locations": [
+        {
+          "line": 2109,
+          "column": 31
+        }
+      ]
+    },
+    {
+      "id": "text-cb43756d7a3b4715ada1",
+      "value": "[SUBJECT]\n",
+      "classification": "likely-prompt",
+      "locations": [
+        {
+          "line": 2113,
+          "column": 31
+        }
+      ]
+    },
+    {
+      "id": "text-5d75c053902cb61d7805",
+      "value": "[CONSTRAINTS]\n",
+      "classification": "context-only",
+      "locations": [
+        {
+          "line": 2117,
+          "column": 31
+        }
+      ]
+    }
+  ],
+  "legacyCompilerSource": "        function generatePrompt() {\n            const cameraParts = [];\n            const humanParts = [];\n\n            // === CAMERA BEHAVIOR ===\n            if (state.sections.camera) {\n                // Device description\n                const deviceDescriptions = {\n                    'smartphone_handheld': 'handheld smartphone camera',\n                    'smartphone_selfie': 'smartphone selfie cam front-facing',\n                    'action_cam': 'action camera GoPro-style wide angle',\n                    'dslr_shoulder': 'DSLR camera shoulder-mounted documentary style',\n                    'dslr_handheld': 'DSLR handheld cinema camera',\n                    'dashcam': 'fixed dashcam perspective',\n                    'security': 'static security camera CCTV angle',\n                    'webcam': 'laptop webcam fixed position'\n                };\n\n                cameraParts.push(`Shot on ${deviceDescriptions[state.camera.device]}.`);\n\n                // Camera micro-movements\n                const cameraMovements = [];\n\n                if (state.camera.handDrift > 0) {\n                    cameraMovements.push(`subtle hand drift of ${state.camera.handDrift}mm amplitude at ${state.camera.driftFreq} movements per second`);\n                }\n\n                if (state.camera.microShake > 0) {\n                    const shakeIntensity = ['', 'barely perceptible', 'slight', 'noticeable', 'pronounced', 'heavy'][state.camera.microShake];\n                    cameraMovements.push(`${shakeIntensity} micro-shake from human hand instability`);\n                }\n\n                if (state.camera.afBreathing > 0) {\n                    const afIntensity = ['', 'minimal', 'subtle', 'natural', 'visible', 'prominent'][state.camera.afBreathing];\n                    cameraMovements.push(`${afIntensity} autofocus breathing and hunting`);\n                }\n\n                if (state.camera.aeShift > 0) {\n                    cameraMovements.push(`auto-exposure micro-adjustments of +/-${state.camera.aeShift} stops`);\n                }\n\n                if (cameraMovements.length > 0) {\n                    cameraParts.push(`Camera behavior: ${cameraMovements.join(', ')}.`);\n                }\n\n                // Operator behaviors\n                const operatorBehaviors = [];\n                if (state.camera.gazeBreaks) operatorBehaviors.push('brief gaze breaks lasting 0.2-0.4 seconds');\n                if (state.camera.reframing) operatorBehaviors.push('subtle reframing adjustments');\n                if (state.camera.zoomHunting) operatorBehaviors.push('occasional zoom hunting');\n                if (state.camera.whipPan) operatorBehaviors.push('spontaneous whip pans');\n                if (state.camera.freeRoam) operatorBehaviors.push('free-roaming camera movement exploring subject from multiple angles, pushing in for details then pulling back, circling loosely, finding new perspectives organically');\n\n                // Orbit movement\n                if (state.camera.orbit) {\n                    const orbitSpeedDesc = ['', 'slow', 'medium', 'fast', 'rapid'][state.camera.orbitSpeed];\n                    const orbitDirDesc = {\n                        'clockwise': 'clockwise',\n                        'counterclockwise': 'counter-clockwise',\n                        'alternating': 'alternating directions'\n                    }[state.camera.orbitDirection];\n                    operatorBehaviors.push(`smooth orbital camera movement circling around subject at ${orbitSpeedDesc} pace, ${orbitDirDesc}, maintaining consistent distance while tracking subject`);\n                }\n\n                // Stop motion frame vibration\n                if (state.camera.stopMotionVib > 0) {\n                    const vibDesc = ['', 'barely perceptible micro-vibration between frames like stop-motion camera bump', 'subtle frame-to-frame position jitter characteristic of stop-motion animation', 'visible stop-motion camera vibration with slight position shifts each frame', 'pronounced stop-motion tremor with noticeable inter-frame camera displacement'][state.camera.stopMotionVib];\n                    cameraParts.push(`Stop-motion effect: ${vibDesc}.`);\n                }\n\n                if (operatorBehaviors.length > 0) {\n                    cameraParts.push(`Operator behavior: ${operatorBehaviors.join(', ')}.`);\n                }\n            }\n\n            // === HUMAN MICRO-MOTION ===\n            if (state.sections.human) {\n                // Human activity level\n                const activityDescriptions = {\n                    'still': 'Subject seated or still',\n                    'casual': 'Subject in casual standing position',\n                    'active': 'Subject actively moving',\n                    'nervous': 'Subject displaying nervous energy',\n                    'exhausted': 'Subject with low energy exhausted demeanor',\n                    'puppet_henson': 'Subject moves like a Jim Henson foam puppet, gentle bouncy sway originating from below, head bobs and tilts expressively during speech, arms swing loosely with slight delay, exaggerated mouth movements, soft floaty quality to all motion, occasional looking-around head movements, body gently rocks side to side, movements have warmth and personality of classic Muppet performance',\n                    'puppet_stopmotion': 'Subject moves in stop-motion animation style at 12 frames per second, distinct stuttery motion with visible holds between poses, micro-jitter from animator touch, imperfect spacing between keyframes, slight position drift between frames, characteristic jerky puppet quality, movements have deliberate start-stop rhythm, subtle tremor artifacts from physical manipulation'\n                };\n                humanParts.push(activityDescriptions[state.human.activityLevel] + '.');\n\n                // Body micro-motion\n                const bodyMotion = [];\n\n                if (state.human.breathSway > 0) {\n                    const swayIntensity = ['', 'minimal', 'subtle', 'natural', 'visible', 'pronounced'][state.human.breathSway];\n                    bodyMotion.push(`${swayIntensity} breathing sway in torso and shoulders`);\n                }\n\n                if (state.human.weightShift > 0) {\n                    const shiftFreq = ['', 'rare', 'occasional', 'periodic', 'frequent', 'constant'][state.human.weightShift];\n                    bodyMotion.push(`${shiftFreq} weight shifts between feet`);\n                }\n\n                if (state.human.gripAdjust) bodyMotion.push('micro grip adjustments');\n                if (state.human.postureShift) bodyMotion.push('subtle posture corrections');\n                if (state.human.fidget) bodyMotion.push('idle fidgeting');\n                if (state.human.handGesture) bodyMotion.push('natural hand gestures while speaking');\n\n                if (bodyMotion.length > 0) {\n                    humanParts.push(`Body micro-motion: ${bodyMotion.join(', ')}.`);\n                }\n\n                // Facial micro-expressions\n                const facialMotion = [];\n\n                if (state.human.blinkRate > 0) {\n                    const blinkDesc = ['', '5-10 blinks per minute sparse', '10-15 blinks per minute slow', '15-20 blinks per minute natural rate', '20-25 blinks per minute frequent', '25+ blinks per minute nervous rapid'][state.human.blinkRate];\n                    facialMotion.push(blinkDesc);\n                }\n\n                if (state.human.microExpressions) facialMotion.push('subtle micro-expressions');\n                if (state.human.eyeDart) facialMotion.push('natural eye saccades and micro-movements');\n                if (state.human.lipMovement) facialMotion.push('lip micro-movements');\n                if (state.human.swallow) facialMotion.push('occasional swallow reflex');\n\n                if (facialMotion.length > 0) {\n                    humanParts.push(`Facial micro-motion: ${facialMotion.join(', ')}.`);\n                }\n\n                // Speech patterns\n                const speechPatterns = [];\n                if (state.human.naturalPause) speechPatterns.push('natural pauses in speech');\n                if (state.human.breathBetween) speechPatterns.push('audible breaths between sentences');\n                if (state.human.umFiller) speechPatterns.push('occasional filler words um uh');\n                if (state.human.headNod) speechPatterns.push('head nods for emphasis while speaking');\n\n                if (speechPatterns.length > 0) {\n                    humanParts.push(`Speech patterns: ${speechPatterns.join(', ')}.`);\n                }\n            }\n\n            // Anti-glitch rules (always included if active)\n            const antiGlitchRules = [];\n            if (state.antiGlitch.noMorphing) antiGlitchRules.push('no face morphing or distortion');\n            if (state.antiGlitch.consistentFingers) antiGlitchRules.push('consistent finger count exactly five fingers per hand');\n            if (state.antiGlitch.noFlicker) antiGlitchRules.push('no texture flickering or swimming artifacts');\n            if (state.antiGlitch.stableClothing) antiGlitchRules.push('stable consistent clothing and accessories');\n            if (state.antiGlitch.naturalMotion) antiGlitchRules.push('physically plausible motion only');\n            if (state.antiGlitch.consistentLighting) antiGlitchRules.push('consistent lighting direction throughout');\n            if (state.antiGlitch.noTextWarp) antiGlitchRules.push('no warping or morphing text or logos');\n            if (state.antiGlitch.stableBackground) antiGlitchRules.push('stable non-morphing background elements');\n            if (state.antiGlitch.naturalHair) antiGlitchRules.push('natural hair movement physics');\n            if (state.antiGlitch.eyeContact) antiGlitchRules.push('maintain consistent eye contact direction');\n\n            // Final assembly with separation\n            const allParts = [];\n\n            if (cameraParts.length > 0) {\n                allParts.push('[CAMERA]\\n' + cameraParts.join(' '));\n            }\n\n            if (humanParts.length > 0) {\n                allParts.push('[SUBJECT]\\n' + humanParts.join(' '));\n            }\n\n            if (antiGlitchRules.length > 0) {\n                allParts.push('[CONSTRAINTS]\\n' + antiGlitchRules.join('. ') + '.');\n            }\n\n            const finalPrompt = allParts.join('\\n\\n');\n            document.getElementById('outputPrompt').value = finalPrompt;\n\n            // Update stats\n            const realismScore = calculateRealismScore();\n            document.getElementById('realismScore').textContent = realismScore + '%';\n            document.getElementById('antiGlitchCount').textContent = antiGlitchRules.length + ' active';\n            document.getElementById('tokenCount').textContent = '~' + Math.ceil(finalPrompt.split(' ').length * 1.3);\n        }",
+  "legacyScoreSource": "        function calculateRealismScore() {\n            let score = 50; // Base score\n\n            // Camera factors\n            if (state.camera.handDrift > 0) score += Math.min(state.camera.handDrift * 3, 10);\n            if (state.camera.microShake > 0) score += state.camera.microShake * 2;\n            if (state.camera.afBreathing > 0) score += state.camera.afBreathing * 2;\n            if (state.camera.gazeBreaks) score += 5;\n            if (state.camera.reframing) score += 3;\n\n            // Human factors\n            if (state.human.breathSway > 0) score += state.human.breathSway * 2;\n            if (state.human.blinkRate > 0) score += 5;\n            if (state.human.microExpressions) score += 5;\n            if (state.human.eyeDart) score += 5;\n            if (state.human.gripAdjust) score += 3;\n\n            // Anti-glitch penalty (too few = risky)\n            const activeRules = Object.values(state.antiGlitch).filter(v => v).length;\n            if (activeRules < 4) score -= 10;\n\n            return Math.min(Math.max(score, 0), 100);\n        }",
+  "corrections": [
+    {
+      "id": "weight-shift-initial-label",
+      "kind": "ui-state",
+      "sourceLine": 1240,
+      "original": "8-12 sec",
+      "corrected": "12-20 sec",
+      "reason": "Initial weightShift is 2; the label table at line 1686 maps 2 to 12-20 sec. Derive label from state on initialization."
+    },
+    {
+      "id": "breathing-label",
+      "kind": "ui-copy",
+      "sourceLine": 1317,
+      "original": "Breath Between Words",
+      "corrected": "Breaths Between Sentences",
+      "reason": "Match the actual emitted instruction 'audible breaths between sentences'. Prompt unchanged."
+    },
+    {
+      "id": "checkbox-mark",
+      "kind": "ui-copy",
+      "sourceLine": 261,
+      "original": "?",
+      "corrected": "✓",
+      "reason": "Use a check mark for the selected checkbox glyph."
+    }
+  ],
+  "composition": [
+    "Fixed order: [CAMERA], [SUBJECT], [CONSTRAINTS]. Separate present sections by two newlines; join camera/subject sentences with one space; constraints with '. ' plus final period.",
+    "Camera and human sections are independently enabled. Active antiGlitch constraints remain even if both sections are disabled.",
+    "Slider values of zero omit the associated fragment. driftFreq matters only if handDrift > 0; orbitSpeed/direction only if orbit is enabled.",
+    "Stop-motion camera effect appears before Operator behavior even though orbit is computed first.",
+    "Device and activity are unconditional within enabled sections; empty selection does not represent a valid enum value.",
+    "Builtin presets merge camera/human only: retain current sections and antiGlitch. Custom presets also merge supplied sections/antiGlitch, so old partial presets depend on the prior state.",
+    "Output is a motion/camera modifier. No subject identity, environment, dialogue text, model ID, FPS setting or resolution parameter is collected.",
+    "Numbers, including 12 fps for puppet_stopmotion, are natural-language prompt requests; do not silently turn them into provider settings.",
+    "No prompt-generation API call in this module. Storage key imperfectionEnginePresets; legacy export is a name-to-state map in imperfection_engine_presets.json."
+  ],
+  "decisions": [
+    "Port as a small code adapter with declarative options/presets; current compileRecipe supports substitutions only, not conditional clauses/joins. Do not introduce executable user recipes.",
+    "Keep negative instructions inside [CONSTRAINTS] for output parity; do not transfer them silently to a separate negativePrompt.",
+    "Preserve generated prompt wording in this review. UI corrections above do not change prompt intent.",
+    "Store custom tool presets per named V6 setup with stable preset IDs and separate display names. Keep legacy name-to-state import.",
+    "Defaults restore should restore controls/catalog settings without deleting user presets. Setup snapshot/restore must include tool configuration.",
+    "Offer explicit append/replace placement of this modifier at the aggregator bridge; neither action starts paid generation."
+  ],
+  "issues": [
+    {
+      "id": "context-only-omissions",
+      "sourceLines": [
+        2050,
+        2067,
+        2082,
+        2117
+      ],
+      "finding": "17 compiler literals were classified context-only, including speech and negative constraints. This review includes all 107 compiler literals regardless of heuristic classification.",
+      "action": "Subsequent semantic reviews must read full emitting functions and their data dependencies."
+    },
+    {
+      "id": "initial-controls-not-synced",
+      "sourceLines": [
+        1123,
+        1128,
+        1240,
+        1543
+      ],
+      "finding": "Startup calls setupEventListeners/loadCustomPresets/generatePrompt but not updateUIFromState. Checked gazeBreaks/reframing lack active styling; weightShift label is inconsistent.",
+      "action": "Initialize the entire UI from validated state."
+    },
+    {
+      "id": "custom-name-html",
+      "sourceLines": [
+        1577
+      ],
+      "finding": "Preset display name enters innerHTML and an inline quoted JS handler. A name containing an apostrophe breaks that handler; markup is interpreted.",
+      "action": "Use textContent and addEventListener with stable preset IDs."
+    },
+    {
+      "id": "import-validation",
+      "sourceLines": [
+        1551,
+        1636,
+        1774
+      ],
+      "finding": "JSON imports lack state schema/range validation; unknown device can emit undefined, and invalid JSON in stored presets can interrupt initialization.",
+      "action": "Validate per field, bound imported data, retain previous data on failure and offer recovery."
+    },
+    {
+      "id": "label-checkbox-click",
+      "sourceLines": [
+        1884,
+        1901
+      ],
+      "finding": "Handlers on labels manually toggle their nested checkboxes, which can also be toggled by native label activation.",
+      "action": "Use input change handlers; verify mouse label click and keyboard. Browser reproduction pending."
+    },
+    {
+      "id": "realism-score",
+      "sourceLines": [
+        2130,
+        2151
+      ],
+      "finding": "The score is an uncalibrated sum of settings, ignores enabled sections and clamps at 100. Defaults score 95.5% even with both main sections disabled; reproduced in output fixtures.",
+      "action": "Do not present as measured visual realism. Replace with active setting/constraint counts in V6."
+    },
+    {
+      "id": "composition-conflicts",
+      "sourceLines": [
+        1512,
+        1536,
+        2095,
+        2098
+      ],
+      "finding": "Stop-motion preset inherits five-finger and physical-motion constraints; fixed devices can retain movement options; eye-contact lock can coexist with eye saccades.",
+      "action": "Preserve legacy settings/output in import; keep controls independently editable. Any creative resolution is a separate deliberate choice."
+    },
+    {
+      "id": "storage-fallback",
+      "finding": "barzyStorage can fall back silently to memory if localStorage is unavailable.",
+      "action": "Persist migrated presets through the V6 setup store and report failed writes."
+    }
+  ]
+}

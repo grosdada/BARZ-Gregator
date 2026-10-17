@@ -1,0 +1,914 @@
+{
+  "schemaVersion": "1.0",
+  "id": "triage-barzy-sheet-01",
+  "owner": "barzy-sheet",
+  "status": "pending-structural-triage",
+  "approximateTokens": 244,
+  "prompts": [
+    {
+      "id": "text-002994f1870844a52ca3",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "tech-organic",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1214,
+          "column": 50,
+          "kind": "html-attribute:data-prompt",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1220,
+          "column": 46,
+          "kind": "html-attribute:data-prompt",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1775,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "triageKind": "runtime-identifier"
+    },
+    {
+      "id": "text-008678a63a4e89a91a21",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Vintage Car Catalog",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1142,
+          "column": 48,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-0483c491afe4587b8cc5",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Object Sheet",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1017,
+          "column": 48,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-0577e4596f426c3d4886",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "tech-industrial",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1102,
+          "column": 50,
+          "kind": "html-attribute:data-prompt",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1108,
+          "column": 46,
+          "kind": "html-attribute:data-prompt",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1772,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "triageKind": "runtime-identifier"
+    },
+    {
+      "id": "text-0817271a6311352b3b99",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Generates a scientific documentation board for botanical or organic references with section views and labels.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1228,
+          "column": 51,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-0d068ade654adff54949",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "head tilts upward, chin raised",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1951,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-13aab87216677f830f63",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "tech-car",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1143,
+          "column": 50,
+          "kind": "html-attribute:data-prompt",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1149,
+          "column": 46,
+          "kind": "html-attribute:data-prompt",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1773,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "triageKind": "runtime-identifier"
+    },
+    {
+      "id": "text-146bd2ae321d1b66caa1",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Industrial Product Documentation",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1101,
+          "column": 48,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-15540c8e9e60281378c1",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Basic Expression Board",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1574,
+          "column": 48,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-1cecdd0c745c194f7486",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "head turns left, gaze direction follows or counters the turn",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1949,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-1e15eb3764bf2a4e0aa2",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "\n**FIGHTING POSE MODE — EMPTY HANDS:**\nAll 25 poses become fighting / combat poses with neutral bare hands. No weapon, no prop, no firearm. The hands stay clearly empty in every panel.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1859,
+          "column": 19,
+          "kind": "template-literal",
+          "functionName": "buildPoseWeaponText",
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "triageKind": "prose-candidate"
+    },
+    {
+      "id": "text-230ce172ec202703b5e1",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Simple Sheet",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1358,
+          "column": 48,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-297e36f445d4b21cb4a6",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "head turns right, neck rotation visible",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1950,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-30b563c4e3b0c5115e44",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Complex Sheet",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1423,
+          "column": 48,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-4f564f54d1f544cadd8a",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "BZ SHEET",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 6,
+          "column": 12,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1001,
+          "column": 17,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-55c8a4f3fc5c0cdec66f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "objectsheet",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1018,
+          "column": 50,
+          "kind": "html-attribute:data-prompt",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1024,
+          "column": 46,
+          "kind": "html-attribute:data-prompt",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "triageKind": "runtime-identifier"
+    },
+    {
+      "id": "text-5bdef31d20d232126ff3",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "simplesheet",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1359,
+          "column": 50,
+          "kind": "html-attribute:data-prompt",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1365,
+          "column": 46,
+          "kind": "html-attribute:data-prompt",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "triageKind": "runtime-identifier"
+    },
+    {
+      "id": "text-5e3f5dcaefb63a0b169d",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Standard Object Technical Board",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1175,
+          "column": 48,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-62228bd0413bd6bb139b",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "[FACS_SELECTION_PLACEHOLDER]",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1998,
+          "column": 30,
+          "kind": "string-literal",
+          "functionName": "updateDynamicPromptPreviews",
+          "owners": [
+            "barzy-sheet"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 2312,
+          "column": 41,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-63b744761bcd6459c665",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Organic Specimen Documentation",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1213,
+          "column": 48,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-661b59ffc487867c2a86",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Pose Sheet",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1492,
+          "column": 48,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-76a6b0615be74a4d3b85",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "poseWeaponSelect",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1842,
+          "column": 52,
+          "kind": "string-literal",
+          "functionName": "getWeaponLabel",
+          "owners": [
+            "barzy-sheet"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1850,
+          "column": 52,
+          "kind": "string-literal",
+          "functionName": "buildPoseWeaponText",
+          "owners": [
+            "barzy-sheet"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 2281,
+          "column": 33,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-7ad60f0bd2dac4e3e52f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Complex Expression Board",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1647,
+          "column": 48,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-7c384bd265fafc31ce31",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "head tilts right while expression remains controlled",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1947,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-84aa59f3a12fa24361bb",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "complexexpressionboard",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1649,
+          "column": 50,
+          "kind": "html-attribute:data-prompt",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1655,
+          "column": 46,
+          "kind": "html-attribute:data-prompt",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1997,
+          "column": 61,
+          "kind": "string-literal",
+          "functionName": "updateDynamicPromptPreviews",
+          "owners": [
+            "barzy-sheet"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 2311,
+          "column": 34,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "triageKind": "runtime-identifier"
+    },
+    {
+      "id": "text-89a64399c47ce96cc69a",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "complexsheet",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1424,
+          "column": 50,
+          "kind": "html-attribute:data-prompt",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1430,
+          "column": 46,
+          "kind": "html-attribute:data-prompt",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "triageKind": "runtime-identifier"
+    },
+    {
+      "id": "text-90099c6683c6f29e4a91",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "prompt-posesheet",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1993,
+          "column": 57,
+          "kind": "string-literal",
+          "functionName": "updateDynamicPromptPreviews",
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-9a79d0f4dc83ef47bf72",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "master-reference",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1258,
+          "column": 50,
+          "kind": "html-attribute:data-prompt",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1264,
+          "column": 46,
+          "kind": "html-attribute:data-prompt",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1765,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "triageKind": "runtime-identifier"
+    },
+    {
+      "id": "text-9f306fe7fb00938bf9f3",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "FACS",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1648,
+          "column": 85,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-a8cb818f26adb281599f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "posesheet",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1514,
+          "column": 50,
+          "kind": "html-attribute:data-prompt",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1520,
+          "column": 46,
+          "kind": "html-attribute:data-prompt",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1994,
+          "column": 94,
+          "kind": "string-literal",
+          "functionName": "updateDynamicPromptPreviews",
+          "owners": [
+            "barzy-sheet"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 2307,
+          "column": 34,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "triageKind": "runtime-identifier"
+    },
+    {
+      "id": "text-b5b299b6bcc9c507286b",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "expressionboard",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1575,
+          "column": 50,
+          "kind": "html-attribute:data-prompt",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1581,
+          "column": 46,
+          "kind": "html-attribute:data-prompt",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "triageKind": "runtime-identifier"
+    },
+    {
+      "id": "text-c50b62e027176a269574",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "prompt-complexexpressionboard",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1995,
+          "column": 57,
+          "kind": "string-literal",
+          "functionName": "updateDynamicPromptPreviews",
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-d995680f977cb44fb30f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "tech-object",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1176,
+          "column": 50,
+          "kind": "html-attribute:data-prompt",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1182,
+          "column": 46,
+          "kind": "html-attribute:data-prompt",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1774,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "triageKind": "runtime-identifier"
+    },
+    {
+      "id": "text-ebef0adc87d08b075f2f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "facsGrid",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 2012,
+          "column": 50,
+          "kind": "string-literal",
+          "functionName": "renderFacsGrid",
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-f012a20e2e594372d050",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "openFacsPicker",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 2264,
+          "column": 33,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    }
+  ]
+}

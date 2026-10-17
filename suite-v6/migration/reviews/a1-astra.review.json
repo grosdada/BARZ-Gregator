@@ -1,0 +1,2483 @@
+{
+  "schemaVersion": "1.0",
+  "bundleId": "a1-realism-beauty",
+  "bundleDigest": "416f170f770ba9ece383a981a88625cee0b5670fdb99394af96b52d48f14addb",
+  "status": "reviewed",
+  "reviewerModel": "gpt-6-astra",
+  "reviewedAt": "2026-09-11",
+  "scope": "All 400 bundled literals read in full, plus source compiler and fixture prompt fields; runtime migration and exhaustive corpus reconciliation remain pending.",
+  "decisions": [
+    {
+      "id": "text-0375fb1f9c804b6d4f72",
+      "sourceIndex": 0,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé d'état, classe CSS ou gabarit HTML utilisé par le code ; ne constitue pas un texte de prompt. Conserver son rôle si l'adaptateur en dépend."
+    },
+    {
+      "id": "text-0d266faaece034265f86",
+      "sourceIndex": 1,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé d'état, classe CSS ou gabarit HTML utilisé par le code ; ne constitue pas un texte de prompt. Conserver son rôle si l'adaptateur en dépend."
+    },
+    {
+      "id": "text-1ada80600e10f811029c",
+      "sourceIndex": 2,
+      "action": "preserve"
+    },
+    {
+      "id": "text-1b874c6717e7a52276de",
+      "sourceIndex": 3,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-1f5b29c7bbd984bf92fe",
+      "sourceIndex": 4,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-2027ac2d1b524127ef61",
+      "sourceIndex": 5,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé d'état, classe CSS ou gabarit HTML utilisé par le code ; ne constitue pas un texte de prompt. Conserver son rôle si l'adaptateur en dépend."
+    },
+    {
+      "id": "text-207cef07bef900d47ed3",
+      "sourceIndex": 6,
+      "action": "preserve"
+    },
+    {
+      "id": "text-2616ef974d47e9fa1d58",
+      "sourceIndex": 7,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé d'état, classe CSS ou gabarit HTML utilisé par le code ; ne constitue pas un texte de prompt. Conserver son rôle si l'adaptateur en dépend."
+    },
+    {
+      "id": "text-2797a76680ecf855e766",
+      "sourceIndex": 8,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-30232a9976d6f20b57d3",
+      "sourceIndex": 9,
+      "action": "preserve"
+    },
+    {
+      "id": "text-3ef3d755ab7d0c2aa479",
+      "sourceIndex": 10,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé d'état, classe CSS ou gabarit HTML utilisé par le code ; ne constitue pas un texte de prompt. Conserver son rôle si l'adaptateur en dépend."
+    },
+    {
+      "id": "text-40b8336e800026c4db9c",
+      "sourceIndex": 11,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé d'état, classe CSS ou gabarit HTML utilisé par le code ; ne constitue pas un texte de prompt. Conserver son rôle si l'adaptateur en dépend."
+    },
+    {
+      "id": "text-47a5caa1f580fa9eea06",
+      "sourceIndex": 12,
+      "action": "preserve",
+      "role": "compiler-fragment",
+      "note": "Conserver dans la composition interne ; résoudre les variables avant envoi au fournisseur."
+    },
+    {
+      "id": "text-49625d9b0db7cac94f44",
+      "sourceIndex": 13,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-4a9e299e0ae12b532262",
+      "sourceIndex": 14,
+      "action": "correct",
+      "correctedValue": "Ultra-realistic editorial 3x3 photo grid in a clean soft beige studio. Character (matches reference 100%) wearing (knolling board ref). Lighting: large diffused key light directly front-right, silver reflector left, subtle rim from top. Shots to include: 1. extreme close-up of lips + cheekbone with blurred hand partially covering (85mm, f/1.8, razor-thin DOF); 2. tight crop on eyes looking into lens with reflection of light strip visible (85mm, f/2.0); 3. black & white close portrait resting chin on fist, face filling frame (50mm, f/2.2); 4. over-shoulder shot, blurred foreground fabric curtain framing half face (85mm, f/2.0); 5. very close frontal with hands overlapping face, light streak across eyes (50mm, f/2.5); 6. tight angled portrait showing hair falling into eyes, soft-focus background (85mm, f/2.2); 7. crop of hands touching jawline, eyes cropped out (50mm, f/3.2, detail-focused); 8. half-body seated sideways on low cube, head turned sharply away, blurred foreground (35mm, f/4.5); 9. intense close-up of profile with single tear-like water droplet, cinematic light slice across (85mm, f/1.9). Angles: mostly tight headshots with slight high/low tilts, maintaining variation. Capture RAW, professional muted grade, smooth tonal contrast, subtle cinematic grain. Mood: intimate, introspective, character-led editorial minimalism with delicate use of fabric as prop.",
+      "reason": "Retire 'close-up of' devant la grille : le sujet attendu est une grille de neuf photos, dont un plan mi-corps, et non une photographie rapprochée de la grille. Les neuf cadrages restent inchangés."
+    },
+    {
+      "id": "text-50f53c42a62dd929275a",
+      "sourceIndex": 15,
+      "action": "exclude-non-prompt",
+      "role": "ui-copy",
+      "reason": "Texte de présentation, notification ou traduction de l'interface ; à conserver comme aide ou libellé, hors contenu envoyé au modèle."
+    },
+    {
+      "id": "text-51c5bcd80b19eeba1823",
+      "sourceIndex": 16,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-567df684c77527b9f1cf",
+      "sourceIndex": 17,
+      "action": "preserve"
+    },
+    {
+      "id": "text-5c4eb9e7bc6b77e02584",
+      "sourceIndex": 18,
+      "action": "preserve"
+    },
+    {
+      "id": "text-5cc93ff80d273f41853c",
+      "sourceIndex": 19,
+      "action": "preserve"
+    },
+    {
+      "id": "text-5f17fac51c3842d57f19",
+      "sourceIndex": 20,
+      "action": "correct",
+      "correctedValue": "Ultra-realistic editorial 3x3 photo grid in a clean soft beige studio. Male character (matches reference 100%) wearing lightweight dark navy shirt, ivory trousers, barefoot for raw simplicity. Lighting: large diffused key light directly front-right, silver reflector left, subtle rim from top. Shots to include: 1. extreme close-up of lips + jawline stubble with blurred hand partially covering (85mm, f/1.8, razor-thin DOF); 2. tight crop on eyes looking into lens with reflection of light strip visible (85mm, f/2.0); 3. black & white close portrait resting chin on fist, face filling frame (50mm, f/2.2); 4. over-shoulder shot, blurred foreground fabric curtain framing half face (85mm, f/2.0); 5. very close frontal with hands overlapping face, light streak across eyes (50mm, f/2.5); 6. tight angled portrait showing hair falling across forehead, soft-focus background (85mm, f/2.2); 7. crop of hands touching jawline, eyes cropped out (50mm, f/3.2, detail-focused); 8. half-body seated sideways on low cube, head turned sharply away, blurred foreground (35mm, f/4.5); 9. intense close-up of profile with single tear-like water droplet, cinematic light slice across (85mm, f/1.9). Angles: mostly tight headshots with slight high/low tilts, maintaining variation. Capture RAW, professional muted grade, smooth tonal contrast, subtle cinematic grain. Mood: intimate, introspective, character-led editorial minimalism with delicate use of fabric as prop.",
+      "reason": "Retire 'close-up of' devant la grille : le sujet attendu est une grille de neuf photos, dont un plan mi-corps, et non une photographie rapprochée de la grille. Les neuf cadrages restent inchangés."
+    },
+    {
+      "id": "text-6ebf30f929b7590b7f07",
+      "sourceIndex": 21,
+      "action": "preserve"
+    },
+    {
+      "id": "text-7191dfead51e651715ca",
+      "sourceIndex": 22,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-7555f54c5c7a67367fef",
+      "sourceIndex": 23,
+      "action": "preserve"
+    },
+    {
+      "id": "text-7a352fb178430300498d",
+      "sourceIndex": 24,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-7a6f91bcd75ba4bfe08d",
+      "sourceIndex": 25,
+      "action": "preserve"
+    },
+    {
+      "id": "text-7c35de127d3ea655f6e6",
+      "sourceIndex": 26,
+      "action": "preserve"
+    },
+    {
+      "id": "text-83e057dea95f9bb90a20",
+      "sourceIndex": 27,
+      "action": "preserve"
+    },
+    {
+      "id": "text-88b469c0c2e6667cfc9b",
+      "sourceIndex": 28,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé d'état, classe CSS ou gabarit HTML utilisé par le code ; ne constitue pas un texte de prompt. Conserver son rôle si l'adaptateur en dépend."
+    },
+    {
+      "id": "text-8b55a9da44733069e2e0",
+      "sourceIndex": 29,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-8cec345cd838291f83a3",
+      "sourceIndex": 30,
+      "action": "preserve"
+    },
+    {
+      "id": "text-8ed7c74364d6ecc79a0f",
+      "sourceIndex": 31,
+      "action": "preserve"
+    },
+    {
+      "id": "text-913bc7e70262d9835899",
+      "sourceIndex": 32,
+      "action": "preserve"
+    },
+    {
+      "id": "text-920bbcbb47e5f116f9ac",
+      "sourceIndex": 33,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé d'état, classe CSS ou gabarit HTML utilisé par le code ; ne constitue pas un texte de prompt. Conserver son rôle si l'adaptateur en dépend."
+    },
+    {
+      "id": "text-981fe88199394a677398",
+      "sourceIndex": 34,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé d'état, classe CSS ou gabarit HTML utilisé par le code ; ne constitue pas un texte de prompt. Conserver son rôle si l'adaptateur en dépend."
+    },
+    {
+      "id": "text-987bb9a94e14a528ec8b",
+      "sourceIndex": 35,
+      "action": "preserve"
+    },
+    {
+      "id": "text-9db78301a65668d412af",
+      "sourceIndex": 36,
+      "action": "preserve"
+    },
+    {
+      "id": "text-9e9bea143e8dc637acb8",
+      "sourceIndex": 37,
+      "action": "exclude-non-prompt",
+      "role": "ui-copy",
+      "reason": "Texte de présentation, notification ou traduction de l'interface ; à conserver comme aide ou libellé, hors contenu envoyé au modèle."
+    },
+    {
+      "id": "text-a092cd0c40995deeca29",
+      "sourceIndex": 38,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-a40f7b47e2a5163a6dfc",
+      "sourceIndex": 39,
+      "action": "correct",
+      "correctedValue": "Ultra-realistic editorial 3x3 photo grid in a clean soft beige studio. Male character (matches reference 100%) wearing (knolling board ref). Lighting: large diffused key light directly front-right, silver reflector left, subtle rim from top. Shots to include: 1. extreme close-up of lips + jawline stubble with blurred hand partially covering (85mm, f/1.8, razor-thin DOF); 2. tight crop on eyes looking into lens with reflection of light strip visible (85mm, f/2.0); 3. black & white close portrait resting chin on fist, face filling frame (50mm, f/2.2); 4. over-shoulder shot, blurred foreground fabric curtain framing half face (85mm, f/2.0); 5. very close frontal with hands overlapping face, light streak across eyes (50mm, f/2.5); 6. tight angled portrait showing hair falling across forehead, soft-focus background (85mm, f/2.2); 7. crop of hands touching jawline, eyes cropped out (50mm, f/3.2, detail-focused); 8. half-body seated sideways on low cube, head turned sharply away, blurred foreground (35mm, f/4.5); 9. intense close-up of profile with single tear-like water droplet, cinematic light slice across (85mm, f/1.9). Angles: mostly tight headshots with slight high/low tilts, maintaining variation. Capture RAW, professional muted grade, smooth tonal contrast, subtle cinematic grain. Mood: intimate, introspective, character-led editorial minimalism with delicate use of fabric as prop.",
+      "reason": "Retire 'close-up of' devant la grille : le sujet attendu est une grille de neuf photos, dont un plan mi-corps, et non une photographie rapprochée de la grille. Les neuf cadrages restent inchangés."
+    },
+    {
+      "id": "text-a43e01e1ae4613facc1e",
+      "sourceIndex": 40,
+      "action": "preserve"
+    },
+    {
+      "id": "text-a884fe1ea1cbd6a084f7",
+      "sourceIndex": 41,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-a9a8e0b5cf959381dbca",
+      "sourceIndex": 42,
+      "action": "preserve"
+    },
+    {
+      "id": "text-ac95f4985b30320dd5a0",
+      "sourceIndex": 43,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-c45bc26f5ad42c8b246b",
+      "sourceIndex": 44,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-c97927d4c52693abd570",
+      "sourceIndex": 45,
+      "action": "preserve"
+    },
+    {
+      "id": "text-cbbe95bc86379c7ebba7",
+      "sourceIndex": 46,
+      "action": "preserve"
+    },
+    {
+      "id": "text-cef0918e0374ad178db6",
+      "sourceIndex": 47,
+      "action": "preserve"
+    },
+    {
+      "id": "text-d1d39deb494a498f7f32",
+      "sourceIndex": 48,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé d'état, classe CSS ou gabarit HTML utilisé par le code ; ne constitue pas un texte de prompt. Conserver son rôle si l'adaptateur en dépend."
+    },
+    {
+      "id": "text-d37078fe6a1faa15fc48",
+      "sourceIndex": 49,
+      "action": "exclude-non-prompt",
+      "role": "ui-copy",
+      "reason": "Texte de présentation, notification ou traduction de l'interface ; à conserver comme aide ou libellé, hors contenu envoyé au modèle."
+    },
+    {
+      "id": "text-ddcfc8a0ed33762a2fe7",
+      "sourceIndex": 50,
+      "action": "correct",
+      "correctedValue": "Ultra-realistic editorial 3x3 photo grid in a clean soft beige studio. Character (matches reference 100%) wearing lightweight dark navy shirt, ivory trousers, barefoot for raw simplicity. Lighting: large diffused key light directly front-right, silver reflector left, subtle rim from top. Shots to include: 1. extreme close-up of lips + cheekbone with blurred hand partially covering (85mm, f/1.8, razor-thin DOF); 2. tight crop on eyes looking into lens with reflection of light strip visible (85mm, f/2.0); 3. black & white close portrait resting chin on fist, face filling frame (50mm, f/2.2); 4. over-shoulder shot, blurred foreground fabric curtain framing half face (85mm, f/2.0); 5. very close frontal with hands overlapping face, light streak across eyes (50mm, f/2.5); 6. tight angled portrait showing hair falling into eyes, soft-focus background (85mm, f/2.2); 7. crop of hands touching jawline, eyes cropped out (50mm, f/3.2, detail-focused); 8. half-body seated sideways on low cube, head turned sharply away, blurred foreground (35mm, f/4.5); 9. intense close-up of profile with single tear-like water droplet, cinematic light slice across (85mm, f/1.9). Angles: mostly tight headshots with slight high/low tilts, maintaining variation. Capture RAW, professional muted grade, smooth tonal contrast, subtle cinematic grain. Mood: intimate, introspective, character-led editorial minimalism with delicate use of fabric as prop.",
+      "reason": "Retire 'close-up of' devant la grille : le sujet attendu est une grille de neuf photos, dont un plan mi-corps, et non une photographie rapprochée de la grille. Les neuf cadrages restent inchangés."
+    },
+    {
+      "id": "text-e91dc8dc6a41b6c9e1a4",
+      "sourceIndex": 51,
+      "action": "preserve"
+    },
+    {
+      "id": "text-e9a3b443d8815ea38a19",
+      "sourceIndex": 52,
+      "action": "preserve"
+    },
+    {
+      "id": "text-ea36e99449d982b05138",
+      "sourceIndex": 53,
+      "action": "preserve"
+    },
+    {
+      "id": "text-eb93f864bda8d1065872",
+      "sourceIndex": 54,
+      "action": "preserve"
+    },
+    {
+      "id": "text-ec1dff9e3c5172b1d9f1",
+      "sourceIndex": 55,
+      "action": "preserve"
+    },
+    {
+      "id": "text-ecb6eaaabb40c1f0ea6c",
+      "sourceIndex": 56,
+      "action": "correct",
+      "correctedValue": "skin has pores, fine lines, peach fuzz, slight imperfections, oil variation. Authentic human subsurface scattering. authentic human color complexity. real skin stretches, compresses, and shows micro-movements. avoid oversimplified subsurface scattering (skin looks too plastic or waxy), overly uniform texture (too smooth or too uniformly bumpy), incorrect specular response (too shiny everywhere or not shiny enough), lack of fine vascular detail, and missing the subtle translucency at edges like ears or nostrils.",
+      "reason": "Corrige uniquement le nom 'compressions' en verbe 'compresses' dans la coordination avec 'stretches' et 'shows'."
+    },
+    {
+      "id": "text-f029f90856ec4793d511",
+      "sourceIndex": 57,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-f7f56c6376d410e9434d",
+      "sourceIndex": 58,
+      "action": "preserve"
+    },
+    {
+      "id": "text-f85900ec2e798c1594da",
+      "sourceIndex": 59,
+      "action": "preserve"
+    },
+    {
+      "id": "text-fb8c673d626d787dfdfe",
+      "sourceIndex": 60,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-fefe19f489f28ded6920",
+      "sourceIndex": 61,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé d'état, classe CSS ou gabarit HTML utilisé par le code ; ne constitue pas un texte de prompt. Conserver son rôle si l'adaptateur en dépend."
+    },
+    {
+      "id": "text-0257c5a5db58e6bc118a",
+      "sourceIndex": 62,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-02978be3af7568a8491f",
+      "sourceIndex": 63,
+      "action": "preserve"
+    },
+    {
+      "id": "text-034ad70c00bb61a03462",
+      "sourceIndex": 64,
+      "action": "preserve"
+    },
+    {
+      "id": "text-05a77c04b1b1be9c2779",
+      "sourceIndex": 65,
+      "action": "preserve"
+    },
+    {
+      "id": "text-05ae608ae7fc490bc2ba",
+      "sourceIndex": 66,
+      "action": "preserve"
+    },
+    {
+      "id": "text-05b9413410096abcdb30",
+      "sourceIndex": 67,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-073abe9872e15deda717",
+      "sourceIndex": 68,
+      "action": "preserve"
+    },
+    {
+      "id": "text-086ffcfb06a39ec39d74",
+      "sourceIndex": 69,
+      "action": "preserve"
+    },
+    {
+      "id": "text-09eaada8a1358e7fe265",
+      "sourceIndex": 70,
+      "action": "preserve"
+    },
+    {
+      "id": "text-0a7086c43a641281459f",
+      "sourceIndex": 71,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-0aa92e12c83238d66872",
+      "sourceIndex": 72,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-0bdc7730a3cd639e9840",
+      "sourceIndex": 73,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-0cddebd530c3fb425a96",
+      "sourceIndex": 74,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-0e0f341e73cf5d287c2c",
+      "sourceIndex": 75,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-0e19a1c30082f51db757",
+      "sourceIndex": 76,
+      "action": "exclude-non-prompt",
+      "role": "ui-copy",
+      "reason": "Texte de présentation, notification ou traduction de l'interface ; à conserver comme aide ou libellé, hors contenu envoyé au modèle."
+    },
+    {
+      "id": "text-0fe699235648413bc1f8",
+      "sourceIndex": 77,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-10eddbf007d8f1ec8cd8",
+      "sourceIndex": 78,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-10f453139a52784bd9f1",
+      "sourceIndex": 79,
+      "action": "preserve"
+    },
+    {
+      "id": "text-11392a7d35273d7cf6b9",
+      "sourceIndex": 80,
+      "action": "exclude-non-prompt",
+      "role": "ui-copy",
+      "reason": "Texte de présentation, notification ou traduction de l'interface ; à conserver comme aide ou libellé, hors contenu envoyé au modèle."
+    },
+    {
+      "id": "text-115a2cc92c1097ac4ebe",
+      "sourceIndex": 81,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-115d87b8e1fea3c43ec4",
+      "sourceIndex": 82,
+      "action": "preserve"
+    },
+    {
+      "id": "text-11a44c7760970d5c5466",
+      "sourceIndex": 83,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-11bff1dc37ced8b2c40c",
+      "sourceIndex": 84,
+      "action": "exclude-non-prompt",
+      "role": "ui-copy",
+      "reason": "Texte de présentation, notification ou traduction de l'interface ; à conserver comme aide ou libellé, hors contenu envoyé au modèle."
+    },
+    {
+      "id": "text-1246663aba9154fa7468",
+      "sourceIndex": 85,
+      "action": "preserve"
+    },
+    {
+      "id": "text-125f480f32eabfd9a8ad",
+      "sourceIndex": 86,
+      "action": "preserve"
+    },
+    {
+      "id": "text-12d5e195789e123b3aaf",
+      "sourceIndex": 87,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-134340b6ce4197503f97",
+      "sourceIndex": 88,
+      "action": "preserve"
+    },
+    {
+      "id": "text-135531b5cfd232981888",
+      "sourceIndex": 89,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-140f70bf0bcb9c2a5ad7",
+      "sourceIndex": 90,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-153fff11519ee27fb6c3",
+      "sourceIndex": 91,
+      "action": "preserve"
+    },
+    {
+      "id": "text-155f796955aa58a4e0c2",
+      "sourceIndex": 92,
+      "action": "preserve"
+    },
+    {
+      "id": "text-157ea8b7a527ac1554b3",
+      "sourceIndex": 93,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-15f2d82bbc9e43192843",
+      "sourceIndex": 94,
+      "action": "preserve"
+    },
+    {
+      "id": "text-1678feedc6d97d8e374d",
+      "sourceIndex": 95,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-167ede2a3d78b94b480c",
+      "sourceIndex": 96,
+      "action": "preserve"
+    },
+    {
+      "id": "text-174f5030873790c2e4e1",
+      "sourceIndex": 97,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-1908dc4a17959f839190",
+      "sourceIndex": 98,
+      "action": "preserve"
+    },
+    {
+      "id": "text-191fd179670c0d5f4a97",
+      "sourceIndex": 99,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-196b0417814eb096d7e3",
+      "sourceIndex": 100,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-19feed571baf139b357c",
+      "sourceIndex": 101,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-1b2c08a8733d7ff1d06e",
+      "sourceIndex": 102,
+      "action": "exclude-non-prompt",
+      "role": "ui-copy",
+      "reason": "Texte de présentation, notification ou traduction de l'interface ; à conserver comme aide ou libellé, hors contenu envoyé au modèle."
+    },
+    {
+      "id": "text-1b707249e9e03b31538e",
+      "sourceIndex": 103,
+      "action": "preserve"
+    },
+    {
+      "id": "text-1ba06037558825e46be9",
+      "sourceIndex": 104,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-1c94571b8cad746fddde",
+      "sourceIndex": 105,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé d'état, classe CSS ou gabarit HTML utilisé par le code ; ne constitue pas un texte de prompt. Conserver son rôle si l'adaptateur en dépend."
+    },
+    {
+      "id": "text-1d05b06a9a70349242ef",
+      "sourceIndex": 106,
+      "action": "preserve"
+    },
+    {
+      "id": "text-1d08cdf43abd00c70608",
+      "sourceIndex": 107,
+      "action": "preserve"
+    },
+    {
+      "id": "text-1e2403ea959945d0d333",
+      "sourceIndex": 108,
+      "action": "preserve"
+    },
+    {
+      "id": "text-2075b80f9fb93847417b",
+      "sourceIndex": 109,
+      "action": "exclude-non-prompt",
+      "role": "ui-copy",
+      "reason": "Texte de présentation, notification ou traduction de l'interface ; à conserver comme aide ou libellé, hors contenu envoyé au modèle."
+    },
+    {
+      "id": "text-21afe4570713c6142f62",
+      "sourceIndex": 110,
+      "action": "preserve"
+    },
+    {
+      "id": "text-21cfe5f98eed6b42bfbe",
+      "sourceIndex": 111,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-22c960ed59e804c700e6",
+      "sourceIndex": 112,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-23d98fadede9c82fffd1",
+      "sourceIndex": 113,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-23e7b495efd3e59d4056",
+      "sourceIndex": 114,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-242fffa3065441ccafdb",
+      "sourceIndex": 115,
+      "action": "exclude-non-prompt",
+      "role": "ui-copy",
+      "reason": "Texte de présentation, notification ou traduction de l'interface ; à conserver comme aide ou libellé, hors contenu envoyé au modèle."
+    },
+    {
+      "id": "text-249ad4fcc258cade80bb",
+      "sourceIndex": 116,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-24cf08756dcd53c0b468",
+      "sourceIndex": 117,
+      "action": "exclude-non-prompt",
+      "role": "ui-copy",
+      "reason": "Texte de présentation, notification ou traduction de l'interface ; à conserver comme aide ou libellé, hors contenu envoyé au modèle."
+    },
+    {
+      "id": "text-262d72339bd547ce6ae4",
+      "sourceIndex": 118,
+      "action": "preserve"
+    },
+    {
+      "id": "text-2689367b205c16ce32ed",
+      "sourceIndex": 119,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé d'état, classe CSS ou gabarit HTML utilisé par le code ; ne constitue pas un texte de prompt. Conserver son rôle si l'adaptateur en dépend."
+    },
+    {
+      "id": "text-26a44d2e788590a9492f",
+      "sourceIndex": 120,
+      "action": "preserve"
+    },
+    {
+      "id": "text-270c0a9e02f7a417fe9c",
+      "sourceIndex": 121,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-27fa580cd240484ba260",
+      "sourceIndex": 122,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-2878d7a64b4c056e2b7f",
+      "sourceIndex": 123,
+      "action": "preserve",
+      "role": "compiler-fragment",
+      "note": "Conserver dans la composition interne ; résoudre les variables avant envoi au fournisseur."
+    },
+    {
+      "id": "text-28988b8be07ce4ee2e8b",
+      "sourceIndex": 124,
+      "action": "preserve"
+    },
+    {
+      "id": "text-293f915ded848bf5656e",
+      "sourceIndex": 125,
+      "action": "exclude-non-prompt",
+      "role": "ui-copy",
+      "reason": "Texte de présentation, notification ou traduction de l'interface ; à conserver comme aide ou libellé, hors contenu envoyé au modèle."
+    },
+    {
+      "id": "text-2a0426dbc113c74fe5fa",
+      "sourceIndex": 126,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-2b4f569e1cfef7ebeafc",
+      "sourceIndex": 127,
+      "action": "preserve"
+    },
+    {
+      "id": "text-2c2240217b64aa2d2b96",
+      "sourceIndex": 128,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé d'état, classe CSS ou gabarit HTML utilisé par le code ; ne constitue pas un texte de prompt. Conserver son rôle si l'adaptateur en dépend."
+    },
+    {
+      "id": "text-2c5611228bd6d0931c98",
+      "sourceIndex": 129,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-2cf13d3e1b0b6f99ed28",
+      "sourceIndex": 130,
+      "action": "preserve"
+    },
+    {
+      "id": "text-2d0b955a535f059dedfd",
+      "sourceIndex": 131,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-2d7974895b37b15dcf15",
+      "sourceIndex": 132,
+      "action": "preserve"
+    },
+    {
+      "id": "text-2e44f0a7c9c23673adb3",
+      "sourceIndex": 133,
+      "action": "preserve"
+    },
+    {
+      "id": "text-2fa183e0a6c31a1b7bfb",
+      "sourceIndex": 134,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-2fd8344ee02fdf43c6d5",
+      "sourceIndex": 135,
+      "action": "exclude-non-prompt",
+      "role": "ui-copy",
+      "reason": "Texte de présentation, notification ou traduction de l'interface ; à conserver comme aide ou libellé, hors contenu envoyé au modèle."
+    },
+    {
+      "id": "text-309486a284b07912386b",
+      "sourceIndex": 136,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-31952a21691347c4fc52",
+      "sourceIndex": 137,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-31b9b858b1d5379ec4c5",
+      "sourceIndex": 138,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-339f21eef20d5bcb67b8",
+      "sourceIndex": 139,
+      "action": "exclude-non-prompt",
+      "role": "ui-copy",
+      "reason": "Texte de présentation, notification ou traduction de l'interface ; à conserver comme aide ou libellé, hors contenu envoyé au modèle."
+    },
+    {
+      "id": "text-3462d95f99f0a0874ad2",
+      "sourceIndex": 140,
+      "action": "exclude-non-prompt",
+      "role": "ui-copy",
+      "reason": "Texte de présentation, notification ou traduction de l'interface ; à conserver comme aide ou libellé, hors contenu envoyé au modèle."
+    },
+    {
+      "id": "text-36fdde008de13eb70fc2",
+      "sourceIndex": 141,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-37693f074791d463ac0c",
+      "sourceIndex": 142,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-37a636ef9e55b721f59b",
+      "sourceIndex": 143,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-39057e18207e89be39ce",
+      "sourceIndex": 144,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-39614a476f396d0308cf",
+      "sourceIndex": 145,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-3a1d85efb294db99e950",
+      "sourceIndex": 146,
+      "action": "preserve"
+    },
+    {
+      "id": "text-3b7748a0b32a5fa23c83",
+      "sourceIndex": 147,
+      "action": "preserve"
+    },
+    {
+      "id": "text-3bd9ff8fb535ec380b09",
+      "sourceIndex": 148,
+      "action": "preserve"
+    },
+    {
+      "id": "text-3c5c38a90294791d7751",
+      "sourceIndex": 149,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-3d2b192c3c6efdf0fb90",
+      "sourceIndex": 150,
+      "action": "exclude-non-prompt",
+      "role": "ui-copy",
+      "reason": "Texte de présentation, notification ou traduction de l'interface ; à conserver comme aide ou libellé, hors contenu envoyé au modèle."
+    },
+    {
+      "id": "text-3d8a05e2a91f514abfb9",
+      "sourceIndex": 151,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-3dbbd0c4542257d596a3",
+      "sourceIndex": 152,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-3dd3426a190e9ed20a99",
+      "sourceIndex": 153,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-3e8e67fc4e3fff0f32f6",
+      "sourceIndex": 154,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé d'état, classe CSS ou gabarit HTML utilisé par le code ; ne constitue pas un texte de prompt. Conserver son rôle si l'adaptateur en dépend."
+    },
+    {
+      "id": "text-3eb72d875a646103227a",
+      "sourceIndex": 155,
+      "action": "preserve"
+    },
+    {
+      "id": "text-3f279a89abf63f4edd77",
+      "sourceIndex": 156,
+      "action": "preserve"
+    },
+    {
+      "id": "text-3f771facad547e6f98eb",
+      "sourceIndex": 157,
+      "action": "preserve"
+    },
+    {
+      "id": "text-40853af3b25318fef37e",
+      "sourceIndex": 158,
+      "action": "exclude-non-prompt",
+      "role": "ui-copy",
+      "reason": "Texte de présentation, notification ou traduction de l'interface ; à conserver comme aide ou libellé, hors contenu envoyé au modèle."
+    },
+    {
+      "id": "text-40bc20de3690c30ac8c0",
+      "sourceIndex": 159,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-4113fc8ab7097bac1dfe",
+      "sourceIndex": 160,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-421d6ce98fff7ea1baf3",
+      "sourceIndex": 161,
+      "action": "preserve"
+    },
+    {
+      "id": "text-42e6296bad8a603298a7",
+      "sourceIndex": 162,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé d'état, classe CSS ou gabarit HTML utilisé par le code ; ne constitue pas un texte de prompt. Conserver son rôle si l'adaptateur en dépend."
+    },
+    {
+      "id": "text-45a823ecfdc14059f5fe",
+      "sourceIndex": 163,
+      "action": "exclude-non-prompt",
+      "role": "ui-copy",
+      "reason": "Texte de présentation, notification ou traduction de l'interface ; à conserver comme aide ou libellé, hors contenu envoyé au modèle."
+    },
+    {
+      "id": "text-46030e4bacffecd8f9e6",
+      "sourceIndex": 164,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-47cf0dffe113af0bb315",
+      "sourceIndex": 165,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-480d39dff3256ffbb336",
+      "sourceIndex": 166,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-483e6091570850b69f9b",
+      "sourceIndex": 167,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-48824c886d561dc631a2",
+      "sourceIndex": 168,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-49246755df26ff7d1987",
+      "sourceIndex": 169,
+      "action": "exclude-non-prompt",
+      "role": "ui-copy",
+      "reason": "Texte de présentation, notification ou traduction de l'interface ; à conserver comme aide ou libellé, hors contenu envoyé au modèle."
+    },
+    {
+      "id": "text-4986327fbfa79eae7404",
+      "sourceIndex": 170,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-4a182eaf77250f1c0bcd",
+      "sourceIndex": 171,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-4a28f799cd8237f43aea",
+      "sourceIndex": 172,
+      "action": "preserve"
+    },
+    {
+      "id": "text-4a4afe649dc2de5ff546",
+      "sourceIndex": 173,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé d'état, classe CSS ou gabarit HTML utilisé par le code ; ne constitue pas un texte de prompt. Conserver son rôle si l'adaptateur en dépend."
+    },
+    {
+      "id": "text-4af64dca9d7ce2b0b853",
+      "sourceIndex": 174,
+      "action": "preserve"
+    },
+    {
+      "id": "text-4b7a756d988838a13c4b",
+      "sourceIndex": 175,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-4c19b8215d6830eb8b44",
+      "sourceIndex": 176,
+      "action": "exclude-non-prompt",
+      "role": "ui-copy",
+      "reason": "Texte de présentation, notification ou traduction de l'interface ; à conserver comme aide ou libellé, hors contenu envoyé au modèle."
+    },
+    {
+      "id": "text-4c333c2e4a7dfca7a59b",
+      "sourceIndex": 177,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-4ce03fb28c61a3aa7696",
+      "sourceIndex": 178,
+      "action": "preserve"
+    },
+    {
+      "id": "text-4d990ff1e16a5acb8d81",
+      "sourceIndex": 179,
+      "action": "preserve"
+    },
+    {
+      "id": "text-4f0333958344546cf343",
+      "sourceIndex": 180,
+      "action": "preserve"
+    },
+    {
+      "id": "text-4f8b0c3393de5400bc76",
+      "sourceIndex": 181,
+      "action": "exclude-non-prompt",
+      "role": "ui-copy",
+      "reason": "Texte de présentation, notification ou traduction de l'interface ; à conserver comme aide ou libellé, hors contenu envoyé au modèle."
+    },
+    {
+      "id": "text-4fefb6dface102e0d1fb",
+      "sourceIndex": 182,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-510f292e420d617a0a58",
+      "sourceIndex": 183,
+      "action": "preserve"
+    },
+    {
+      "id": "text-51959f20231fafbc57dd",
+      "sourceIndex": 184,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-52e6fa02b006947c847e",
+      "sourceIndex": 185,
+      "action": "preserve"
+    },
+    {
+      "id": "text-5377cccb45e443e26683",
+      "sourceIndex": 186,
+      "action": "exclude-non-prompt",
+      "role": "ui-copy",
+      "reason": "Texte de présentation, notification ou traduction de l'interface ; à conserver comme aide ou libellé, hors contenu envoyé au modèle."
+    },
+    {
+      "id": "text-53939e5f1f13a8ceea6b",
+      "sourceIndex": 187,
+      "action": "preserve"
+    },
+    {
+      "id": "text-5400aecc9796675f0214",
+      "sourceIndex": 188,
+      "action": "preserve"
+    },
+    {
+      "id": "text-550438079b6a4d73888a",
+      "sourceIndex": 189,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-566f5f4d4b7fd4e87550",
+      "sourceIndex": 190,
+      "action": "preserve"
+    },
+    {
+      "id": "text-57957a182670d92dafa6",
+      "sourceIndex": 191,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-585a6f9224bc3b33be73",
+      "sourceIndex": 192,
+      "action": "preserve"
+    },
+    {
+      "id": "text-58e172585983386f51c9",
+      "sourceIndex": 193,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-5a69ae5880955659e58f",
+      "sourceIndex": 194,
+      "action": "preserve"
+    },
+    {
+      "id": "text-5a863940671364590b12",
+      "sourceIndex": 195,
+      "action": "preserve"
+    },
+    {
+      "id": "text-5af7f4746658a154d68e",
+      "sourceIndex": 196,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-5d7268e4c20c3fdc911e",
+      "sourceIndex": 197,
+      "action": "exclude-non-prompt",
+      "role": "ui-copy",
+      "reason": "Texte de présentation, notification ou traduction de l'interface ; à conserver comme aide ou libellé, hors contenu envoyé au modèle."
+    },
+    {
+      "id": "text-5d819de289dcfef9c71d",
+      "sourceIndex": 198,
+      "action": "preserve"
+    },
+    {
+      "id": "text-5db3bd638dcdaf6e9932",
+      "sourceIndex": 199,
+      "action": "preserve"
+    },
+    {
+      "id": "text-5dc667e71201f0b96d90",
+      "sourceIndex": 200,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-5dcf5d1ce08df0b2a80e",
+      "sourceIndex": 201,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-60c6b83f1dcf231e3881",
+      "sourceIndex": 202,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-60efd6027891ec83b6f0",
+      "sourceIndex": 203,
+      "action": "preserve"
+    },
+    {
+      "id": "text-63ab7115d38ab51a07a0",
+      "sourceIndex": 204,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-66ae90e3ff1dae957943",
+      "sourceIndex": 205,
+      "action": "preserve"
+    },
+    {
+      "id": "text-66dfd0071d636ea2ae06",
+      "sourceIndex": 206,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-67ace261e420b8a0b423",
+      "sourceIndex": 207,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-683469696c428b95e777",
+      "sourceIndex": 208,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-685e024932f61a92eb9f",
+      "sourceIndex": 209,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-69e32ab07b03cb8626f6",
+      "sourceIndex": 210,
+      "action": "preserve"
+    },
+    {
+      "id": "text-6c5254063ea331ba3d04",
+      "sourceIndex": 211,
+      "action": "preserve"
+    },
+    {
+      "id": "text-6dda9a6f1a8b67bb351f",
+      "sourceIndex": 212,
+      "action": "preserve"
+    },
+    {
+      "id": "text-6e00c1914837c7287269",
+      "sourceIndex": 213,
+      "action": "exclude-non-prompt",
+      "role": "ui-copy",
+      "reason": "Texte de présentation, notification ou traduction de l'interface ; à conserver comme aide ou libellé, hors contenu envoyé au modèle."
+    },
+    {
+      "id": "text-703451fb46622a417e64",
+      "sourceIndex": 214,
+      "action": "preserve"
+    },
+    {
+      "id": "text-708ca5f1f088ed81e6f6",
+      "sourceIndex": 215,
+      "action": "preserve"
+    },
+    {
+      "id": "text-70cf6e48c8096388a800",
+      "sourceIndex": 216,
+      "action": "preserve"
+    },
+    {
+      "id": "text-714de85a02a4ca2aa624",
+      "sourceIndex": 217,
+      "action": "preserve"
+    },
+    {
+      "id": "text-7300ba1521638d156726",
+      "sourceIndex": 218,
+      "action": "preserve"
+    },
+    {
+      "id": "text-738c22150a65ec0f4512",
+      "sourceIndex": 219,
+      "action": "preserve"
+    },
+    {
+      "id": "text-7396c013c0cfad7c98b4",
+      "sourceIndex": 220,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-74215a25caabd6bfde9e",
+      "sourceIndex": 221,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-7707a5920e35871c5370",
+      "sourceIndex": 222,
+      "action": "preserve"
+    },
+    {
+      "id": "text-773cb173d72703808500",
+      "sourceIndex": 223,
+      "action": "preserve"
+    },
+    {
+      "id": "text-77870e8d243d705d6cc9",
+      "sourceIndex": 224,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-780c5e54808340fcadc9",
+      "sourceIndex": 225,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-789d3c36d232fc1316a1",
+      "sourceIndex": 226,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé d'état, classe CSS ou gabarit HTML utilisé par le code ; ne constitue pas un texte de prompt. Conserver son rôle si l'adaptateur en dépend."
+    },
+    {
+      "id": "text-7953e6fa1e39a808e5a1",
+      "sourceIndex": 227,
+      "action": "preserve"
+    },
+    {
+      "id": "text-79e00417aee2f9bada97",
+      "sourceIndex": 228,
+      "action": "preserve"
+    },
+    {
+      "id": "text-7a0896f547e1c3ed6d9d",
+      "sourceIndex": 229,
+      "action": "preserve"
+    },
+    {
+      "id": "text-7b365907c2b7e65f9496",
+      "sourceIndex": 230,
+      "action": "preserve"
+    },
+    {
+      "id": "text-7e297594ed610eeda843",
+      "sourceIndex": 231,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-7ed7d2e7963dd0ad385b",
+      "sourceIndex": 232,
+      "action": "preserve"
+    },
+    {
+      "id": "text-7f06211de93391a4e368",
+      "sourceIndex": 233,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-7f29e815c563f2e42f96",
+      "sourceIndex": 234,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-8014df314f7f57cfcf6e",
+      "sourceIndex": 235,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-807c1357b8f27b0f93a5",
+      "sourceIndex": 236,
+      "action": "exclude-non-prompt",
+      "role": "ui-copy",
+      "reason": "Texte de présentation, notification ou traduction de l'interface ; à conserver comme aide ou libellé, hors contenu envoyé au modèle."
+    },
+    {
+      "id": "text-809b93eb171bc27c366b",
+      "sourceIndex": 237,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé d'état, classe CSS ou gabarit HTML utilisé par le code ; ne constitue pas un texte de prompt. Conserver son rôle si l'adaptateur en dépend."
+    },
+    {
+      "id": "text-80d8b9853278d3bf73ab",
+      "sourceIndex": 238,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-813d37965ba885db615f",
+      "sourceIndex": 239,
+      "action": "exclude-non-prompt",
+      "role": "ui-copy",
+      "reason": "Texte de présentation, notification ou traduction de l'interface ; à conserver comme aide ou libellé, hors contenu envoyé au modèle."
+    },
+    {
+      "id": "text-8178fa31217b99d65a82",
+      "sourceIndex": 240,
+      "action": "preserve"
+    },
+    {
+      "id": "text-81ebe73ee0aa137a3966",
+      "sourceIndex": 241,
+      "action": "preserve"
+    },
+    {
+      "id": "text-827c979484bae2899429",
+      "sourceIndex": 242,
+      "action": "preserve"
+    },
+    {
+      "id": "text-835591425034c32cdaf8",
+      "sourceIndex": 243,
+      "action": "exclude-non-prompt",
+      "role": "ui-copy",
+      "reason": "Texte de présentation, notification ou traduction de l'interface ; à conserver comme aide ou libellé, hors contenu envoyé au modèle."
+    },
+    {
+      "id": "text-836df1ade28c27706f49",
+      "sourceIndex": 244,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-84eac9e26e0527d7ad58",
+      "sourceIndex": 245,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-851e43bd44a2c3d30e5f",
+      "sourceIndex": 246,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé d'état, classe CSS ou gabarit HTML utilisé par le code ; ne constitue pas un texte de prompt. Conserver son rôle si l'adaptateur en dépend."
+    },
+    {
+      "id": "text-858892be19ec10d7371e",
+      "sourceIndex": 247,
+      "action": "preserve"
+    },
+    {
+      "id": "text-86e0d0be9cdfcac39285",
+      "sourceIndex": 248,
+      "action": "preserve"
+    },
+    {
+      "id": "text-8764d5c4babe22728043",
+      "sourceIndex": 249,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-881a3bb08433e3260c1d",
+      "sourceIndex": 250,
+      "action": "preserve"
+    },
+    {
+      "id": "text-8b96b31fe076e7c157e7",
+      "sourceIndex": 251,
+      "action": "preserve"
+    },
+    {
+      "id": "text-8bc39a14b4aad64e8d0d",
+      "sourceIndex": 252,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-8befb2a917a053581737",
+      "sourceIndex": 253,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-8cef8cd635c364425f38",
+      "sourceIndex": 254,
+      "action": "preserve"
+    },
+    {
+      "id": "text-8e60ab26b28e883e6d75",
+      "sourceIndex": 255,
+      "action": "preserve"
+    },
+    {
+      "id": "text-8ead7681853819e94c56",
+      "sourceIndex": 256,
+      "action": "preserve"
+    },
+    {
+      "id": "text-8efd97ce648fb9dd3e9d",
+      "sourceIndex": 257,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-8f7f1f40808523eba0fe",
+      "sourceIndex": 258,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-9306cd5668172c2ee051",
+      "sourceIndex": 259,
+      "action": "preserve"
+    },
+    {
+      "id": "text-9429b6720dc2048f1fcf",
+      "sourceIndex": 260,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-9490208aae8760714e4a",
+      "sourceIndex": 261,
+      "action": "preserve"
+    },
+    {
+      "id": "text-9548871fe7a2306caca6",
+      "sourceIndex": 262,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-95a295fe82e2dd2da489",
+      "sourceIndex": 263,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-968f1b6b1fd28542f4d2",
+      "sourceIndex": 264,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-97c7d264881026ca83a9",
+      "sourceIndex": 265,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-97d1056ef7e3b70a9016",
+      "sourceIndex": 266,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-981db9e30e93a8938530",
+      "sourceIndex": 267,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-984a00102c02b59babc2",
+      "sourceIndex": 268,
+      "action": "preserve"
+    },
+    {
+      "id": "text-99cefd1292467b69d36f",
+      "sourceIndex": 269,
+      "action": "exclude-non-prompt",
+      "role": "ui-copy",
+      "reason": "Texte de présentation, notification ou traduction de l'interface ; à conserver comme aide ou libellé, hors contenu envoyé au modèle."
+    },
+    {
+      "id": "text-9ab717d82f781f675e51",
+      "sourceIndex": 270,
+      "action": "preserve"
+    },
+    {
+      "id": "text-9ba94ce4a891a45e162b",
+      "sourceIndex": 271,
+      "action": "exclude-non-prompt",
+      "role": "ui-copy",
+      "reason": "Texte de présentation, notification ou traduction de l'interface ; à conserver comme aide ou libellé, hors contenu envoyé au modèle."
+    },
+    {
+      "id": "text-9be01cc7dace289ad3a4",
+      "sourceIndex": 272,
+      "action": "preserve"
+    },
+    {
+      "id": "text-9c450588dc2c41beb28b",
+      "sourceIndex": 273,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-9cc26b6f5c2c5256cd43",
+      "sourceIndex": 274,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-9cfcc09deb6bd68d2015",
+      "sourceIndex": 275,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-9f236a0a4d72b5c4e127",
+      "sourceIndex": 276,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-a03a69a2c4b04fc1283d",
+      "sourceIndex": 277,
+      "action": "exclude-non-prompt",
+      "role": "ui-copy",
+      "reason": "Texte de présentation, notification ou traduction de l'interface ; à conserver comme aide ou libellé, hors contenu envoyé au modèle."
+    },
+    {
+      "id": "text-a05fd303f004db35f844",
+      "sourceIndex": 278,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé d'état, classe CSS ou gabarit HTML utilisé par le code ; ne constitue pas un texte de prompt. Conserver son rôle si l'adaptateur en dépend."
+    },
+    {
+      "id": "text-a0dd344370f1a339bcff",
+      "sourceIndex": 279,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-a0f423187e1b85fbe53a",
+      "sourceIndex": 280,
+      "action": "preserve"
+    },
+    {
+      "id": "text-a1d2c4f657d9e56d0842",
+      "sourceIndex": 281,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-a1faaad312bf2b1db9e0",
+      "sourceIndex": 282,
+      "action": "preserve"
+    },
+    {
+      "id": "text-a27185cc624af781a3c8",
+      "sourceIndex": 283,
+      "action": "preserve"
+    },
+    {
+      "id": "text-a2ef62bb4b71e47c0ddb",
+      "sourceIndex": 284,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-a4adbbc01123857d5843",
+      "sourceIndex": 285,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-a4c04dd8b32067ddca9a",
+      "sourceIndex": 286,
+      "action": "exclude-non-prompt",
+      "role": "ui-copy",
+      "reason": "Texte de présentation, notification ou traduction de l'interface ; à conserver comme aide ou libellé, hors contenu envoyé au modèle."
+    },
+    {
+      "id": "text-a5cd7daaaa4a10dabfd6",
+      "sourceIndex": 287,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-a6dd1877f95d7363adcc",
+      "sourceIndex": 288,
+      "action": "preserve"
+    },
+    {
+      "id": "text-a717587288db405c38e9",
+      "sourceIndex": 289,
+      "action": "preserve"
+    },
+    {
+      "id": "text-a71c30953bab9c133dad",
+      "sourceIndex": 290,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé d'état, classe CSS ou gabarit HTML utilisé par le code ; ne constitue pas un texte de prompt. Conserver son rôle si l'adaptateur en dépend."
+    },
+    {
+      "id": "text-a72718d4a6e68cd0a8cf",
+      "sourceIndex": 291,
+      "action": "preserve"
+    },
+    {
+      "id": "text-a78155e1af21a8d855d8",
+      "sourceIndex": 292,
+      "action": "preserve"
+    },
+    {
+      "id": "text-a7b94a998d4f9ae2d5ed",
+      "sourceIndex": 293,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-a7e59cc5b284ba382bab",
+      "sourceIndex": 294,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-a7f0b0cc3fe61a9dcde1",
+      "sourceIndex": 295,
+      "action": "preserve"
+    },
+    {
+      "id": "text-a81b58e91adea3b62de3",
+      "sourceIndex": 296,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-a845b725f733992a0ef0",
+      "sourceIndex": 297,
+      "action": "preserve"
+    },
+    {
+      "id": "text-a943448f238023871703",
+      "sourceIndex": 298,
+      "action": "exclude-non-prompt",
+      "role": "ui-copy",
+      "reason": "Texte de présentation, notification ou traduction de l'interface ; à conserver comme aide ou libellé, hors contenu envoyé au modèle."
+    },
+    {
+      "id": "text-a99dd69574379f018cd3",
+      "sourceIndex": 299,
+      "action": "exclude-non-prompt",
+      "role": "ui-copy",
+      "reason": "Texte de présentation, notification ou traduction de l'interface ; à conserver comme aide ou libellé, hors contenu envoyé au modèle."
+    },
+    {
+      "id": "text-aa056588743e9ecd405e",
+      "sourceIndex": 300,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-aa1659ffe089ba33e44c",
+      "sourceIndex": 301,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-aa803812f236d9d09675",
+      "sourceIndex": 302,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-aae6cb22d8242ba93d31",
+      "sourceIndex": 303,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-ab1b73c22acda3ab58be",
+      "sourceIndex": 304,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-acb1504ec1123a0c66cc",
+      "sourceIndex": 305,
+      "action": "preserve"
+    },
+    {
+      "id": "text-ad16a3a2fb969119231a",
+      "sourceIndex": 306,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-ad22d8b6dcc7ac54b46d",
+      "sourceIndex": 307,
+      "action": "exclude-non-prompt",
+      "role": "ui-copy",
+      "reason": "Texte de présentation, notification ou traduction de l'interface ; à conserver comme aide ou libellé, hors contenu envoyé au modèle."
+    },
+    {
+      "id": "text-ae1ca4e670c35bdf2999",
+      "sourceIndex": 308,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-af924e7447dd8d5e406c",
+      "sourceIndex": 309,
+      "action": "preserve"
+    },
+    {
+      "id": "text-afcfdfe62c4b7556947e",
+      "sourceIndex": 310,
+      "action": "preserve"
+    },
+    {
+      "id": "text-b01a6a32c95df6f50c73",
+      "sourceIndex": 311,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-b0fcb018315bc9f0ba16",
+      "sourceIndex": 312,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-b4efc47f37a60e7b94e0",
+      "sourceIndex": 313,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-b4f0ef74797db4e44aac",
+      "sourceIndex": 314,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-b65c3a31255378a6ef2e",
+      "sourceIndex": 315,
+      "action": "preserve"
+    },
+    {
+      "id": "text-b7080316ec780e7c5478",
+      "sourceIndex": 316,
+      "action": "preserve"
+    },
+    {
+      "id": "text-b7636e07ef0fbe323346",
+      "sourceIndex": 317,
+      "action": "preserve"
+    },
+    {
+      "id": "text-b9bac804bd86e1157626",
+      "sourceIndex": 318,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-ba8ba522dcccdb0f2afc",
+      "sourceIndex": 319,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-bbf2866d0acb3b102db0",
+      "sourceIndex": 320,
+      "action": "preserve"
+    },
+    {
+      "id": "text-bca56cd85e3a5f5ea17e",
+      "sourceIndex": 321,
+      "action": "preserve"
+    },
+    {
+      "id": "text-bce93bc64d23d28b5d92",
+      "sourceIndex": 322,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-bd4904f94df1011a6c5e",
+      "sourceIndex": 323,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-be75ff3973aad9143103",
+      "sourceIndex": 324,
+      "action": "preserve"
+    },
+    {
+      "id": "text-bebbcb027e17acb64d55",
+      "sourceIndex": 325,
+      "action": "exclude-non-prompt",
+      "role": "ui-copy",
+      "reason": "Texte de présentation, notification ou traduction de l'interface ; à conserver comme aide ou libellé, hors contenu envoyé au modèle."
+    },
+    {
+      "id": "text-bff8d1c52fabcc12b195",
+      "sourceIndex": 326,
+      "action": "preserve"
+    },
+    {
+      "id": "text-c07c32a0600f737f4897",
+      "sourceIndex": 327,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-c1cd14d4f10d4777fbd8",
+      "sourceIndex": 328,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-c28b2f6c7d1bd43ce7f0",
+      "sourceIndex": 329,
+      "action": "preserve"
+    },
+    {
+      "id": "text-c43286b518b133625506",
+      "sourceIndex": 330,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-c48fd22c62046bb847c7",
+      "sourceIndex": 331,
+      "action": "preserve"
+    },
+    {
+      "id": "text-c4eebd87aff0941a25d3",
+      "sourceIndex": 332,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-c50aa82955dfe566f10c",
+      "sourceIndex": 333,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-c6781a58f5cf436fc729",
+      "sourceIndex": 334,
+      "action": "preserve"
+    },
+    {
+      "id": "text-c6e00291d5e2868a2f08",
+      "sourceIndex": 335,
+      "action": "preserve"
+    },
+    {
+      "id": "text-c8b7194a80411b26c456",
+      "sourceIndex": 336,
+      "action": "preserve"
+    },
+    {
+      "id": "text-c968b8bdf4441b13cbb5",
+      "sourceIndex": 337,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-ca70e16c2b292c098a47",
+      "sourceIndex": 338,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-caaab53903c202d293fd",
+      "sourceIndex": 339,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-cb2eae9b73e84a7a493e",
+      "sourceIndex": 340,
+      "action": "preserve"
+    },
+    {
+      "id": "text-cb66065e648cc0cc3bb7",
+      "sourceIndex": 341,
+      "action": "preserve"
+    },
+    {
+      "id": "text-cc3cbf204d78e7a2dbb0",
+      "sourceIndex": 342,
+      "action": "preserve"
+    },
+    {
+      "id": "text-ccedb5a2ffa5ba9c7a50",
+      "sourceIndex": 343,
+      "action": "preserve"
+    },
+    {
+      "id": "text-cd5394138ac1de53fb9e",
+      "sourceIndex": 344,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-cdab81ed72bac7feb34f",
+      "sourceIndex": 345,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-cde87ab69b9ac3a82610",
+      "sourceIndex": 346,
+      "action": "preserve"
+    },
+    {
+      "id": "text-cee1cfb2843f08dd40bb",
+      "sourceIndex": 347,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-cf05805f52045b83cdf9",
+      "sourceIndex": 348,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-cf134efaf5c68d82a80c",
+      "sourceIndex": 349,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-d18b93d1e8dfb7f49582",
+      "sourceIndex": 350,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-d1f92c3f752e3728f6b5",
+      "sourceIndex": 351,
+      "action": "preserve"
+    },
+    {
+      "id": "text-d2217c8f3653d751abee",
+      "sourceIndex": 352,
+      "action": "preserve"
+    },
+    {
+      "id": "text-d252dda5b8aafc3dd47f",
+      "sourceIndex": 353,
+      "action": "preserve"
+    },
+    {
+      "id": "text-d31ed229fcb9764d9a7f",
+      "sourceIndex": 354,
+      "action": "preserve"
+    },
+    {
+      "id": "text-d53bb9c70ed0d89b4fff",
+      "sourceIndex": 355,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé d'état, classe CSS ou gabarit HTML utilisé par le code ; ne constitue pas un texte de prompt. Conserver son rôle si l'adaptateur en dépend."
+    },
+    {
+      "id": "text-d8de3c2dd3e88966d11c",
+      "sourceIndex": 356,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé d'état, classe CSS ou gabarit HTML utilisé par le code ; ne constitue pas un texte de prompt. Conserver son rôle si l'adaptateur en dépend."
+    },
+    {
+      "id": "text-d97f6aa96baee5131558",
+      "sourceIndex": 357,
+      "action": "preserve"
+    },
+    {
+      "id": "text-da2b319f259b6b1dc2c5",
+      "sourceIndex": 358,
+      "action": "preserve"
+    },
+    {
+      "id": "text-dbf316b1e3300871efb0",
+      "sourceIndex": 359,
+      "action": "preserve"
+    },
+    {
+      "id": "text-dcc2af916424ff1c99bb",
+      "sourceIndex": 360,
+      "action": "preserve"
+    },
+    {
+      "id": "text-dd4bd476bffaea89cd51",
+      "sourceIndex": 361,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-ddbbfd66eec42b0d8277",
+      "sourceIndex": 362,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé d'état, classe CSS ou gabarit HTML utilisé par le code ; ne constitue pas un texte de prompt. Conserver son rôle si l'adaptateur en dépend."
+    },
+    {
+      "id": "text-ddce286e32f82dc5e07c",
+      "sourceIndex": 363,
+      "action": "preserve",
+      "role": "compiler-fragment",
+      "note": "Conserver dans la composition interne ; résoudre les variables avant envoi au fournisseur."
+    },
+    {
+      "id": "text-ddde4d46d8d8153f74e3",
+      "sourceIndex": 364,
+      "action": "preserve"
+    },
+    {
+      "id": "text-ddf7815a3c64b2e44d02",
+      "sourceIndex": 365,
+      "action": "preserve"
+    },
+    {
+      "id": "text-de0158fe11d09413800c",
+      "sourceIndex": 366,
+      "action": "preserve"
+    },
+    {
+      "id": "text-de1ea18a7270404e1c48",
+      "sourceIndex": 367,
+      "action": "preserve"
+    },
+    {
+      "id": "text-e0afe27935d6f028b203",
+      "sourceIndex": 368,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-e2c1dbea09d6278571fe",
+      "sourceIndex": 369,
+      "action": "preserve"
+    },
+    {
+      "id": "text-e46af865d62e31b52283",
+      "sourceIndex": 370,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-e606ff890e223009a03e",
+      "sourceIndex": 371,
+      "action": "preserve"
+    },
+    {
+      "id": "text-e6a641d23703e6ac59bd",
+      "sourceIndex": 372,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-e7883221282d80e00c42",
+      "sourceIndex": 373,
+      "action": "exclude-non-prompt",
+      "role": "ui-copy",
+      "reason": "Texte de présentation, notification ou traduction de l'interface ; à conserver comme aide ou libellé, hors contenu envoyé au modèle."
+    },
+    {
+      "id": "text-e8106faf344eda87cd69",
+      "sourceIndex": 374,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-ebc50f27efee7804d3ab",
+      "sourceIndex": 375,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-ec6edf7f938c0b23db7f",
+      "sourceIndex": 376,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-edb02ab1d7ec7574f6bf",
+      "sourceIndex": 377,
+      "action": "preserve"
+    },
+    {
+      "id": "text-ee03db3df31251188a00",
+      "sourceIndex": 378,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-eea223c888f93f8cb475",
+      "sourceIndex": 379,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-ef0cfe8a28be80c2f0cb",
+      "sourceIndex": 380,
+      "action": "preserve"
+    },
+    {
+      "id": "text-ef45b6b6e1a7eb658b6c",
+      "sourceIndex": 381,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-efc269c60c5e1d0cafc5",
+      "sourceIndex": 382,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-f22d6d944328c2541a61",
+      "sourceIndex": 383,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-f2c49057ffe8cbcd3773",
+      "sourceIndex": 384,
+      "action": "preserve"
+    },
+    {
+      "id": "text-f2f6a01889951edcdb1d",
+      "sourceIndex": 385,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-f2ffbe50610909b87d64",
+      "sourceIndex": 386,
+      "action": "preserve"
+    },
+    {
+      "id": "text-f33e1d566b83377351b5",
+      "sourceIndex": 387,
+      "action": "preserve"
+    },
+    {
+      "id": "text-f4a6d030753888efdd9f",
+      "sourceIndex": 388,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé d'état, classe CSS ou gabarit HTML utilisé par le code ; ne constitue pas un texte de prompt. Conserver son rôle si l'adaptateur en dépend."
+    },
+    {
+      "id": "text-f4bce55260048f2fe830",
+      "sourceIndex": 389,
+      "action": "preserve"
+    },
+    {
+      "id": "text-f507bef5e79e1f3452a3",
+      "sourceIndex": 390,
+      "action": "preserve"
+    },
+    {
+      "id": "text-f589c0d433c56a93da4b",
+      "sourceIndex": 391,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-f5f98bf9daeabf4f66af",
+      "sourceIndex": 392,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-f61cf518c35b8bbbe0a3",
+      "sourceIndex": 393,
+      "action": "preserve"
+    },
+    {
+      "id": "text-f6eb7001a3d7cf2b2cc5",
+      "sourceIndex": 394,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-f79d6b721b42ec610bd5",
+      "sourceIndex": 395,
+      "action": "preserve"
+    },
+    {
+      "id": "text-f818ad2d9e0e9b525012",
+      "sourceIndex": 396,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-f870db43e3d3151d3176",
+      "sourceIndex": 397,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-fa73831fa68e480d933b",
+      "sourceIndex": 398,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    },
+    {
+      "id": "text-fb3f37a750327d5da155",
+      "sourceIndex": 399,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de carte, badge technique ou libellé de choix distinct de sa valeur de prompt dans la source. Conserver dans le catalogue et les contrôles ; ne pas supprimer la carte ni sa valeur associée."
+    }
+  ]
+}

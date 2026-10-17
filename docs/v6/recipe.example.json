@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "1.0",
+  "id": "example-cinematic-shot-v1",
+  "revision": 1,
+  "title": "Cinematic Shot — synthetic contract fixture",
+  "fields": [
+    { "id": "subject", "type": "text", "required": true, "maxLength": 2000, "default": "A weathered wooden gate in a moonlit field" },
+    { "id": "motion", "type": "enum", "values": ["Locked-off shot", "Slow forward dolly"], "default": "Slow forward dolly" },
+    { "id": "action", "type": "text", "required": true, "maxLength": 2000, "default": "The gate slowly opens as mist crosses the path." }
+  ],
+  "outputs": [
+    {
+      "id": "main",
+      "mediaType": "video",
+      "template": "{{subject}}. {{motion}}. {{action}} Preserve the setting and lighting throughout the shot.",
+      "negativePrompt": "",
+      "settings": { "aspectRatio": "16:9" }
+    }
+  ],
+  "referenceSlots": []
+}

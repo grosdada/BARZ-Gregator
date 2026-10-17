@@ -1,0 +1,790 @@
+{
+  "schemaVersion": "1.0",
+  "status": "legacy-fixture-before-astra-review",
+  "sources": [
+    {
+      "owner": "facs-sheet-generator",
+      "role": "facs-sheet",
+      "path": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+      "sha256": "b8a2df542b66f2b11bd78e174b2088f5633d8a11f21a6840f730bba33814fbc3"
+    },
+    {
+      "owner": "barzy-board",
+      "role": "storyboard-motion",
+      "path": "Barzy App/public/assets/HTML/barzy-board.html",
+      "sha256": "08ab62d1f8e70f6ff3301a68a36e61d04f31aa0a8bdd827eb2cf86dabe1771a8"
+    }
+  ],
+  "facsSheet": {
+    "unitCount": 49,
+    "units": [
+      {
+        "n": 1,
+        "code": "AU1",
+        "name": "Inner Brow Raiser",
+        "cat": "brow"
+      },
+      {
+        "n": 2,
+        "code": "AU2",
+        "name": "Outer Brow Raiser",
+        "cat": "brow"
+      },
+      {
+        "n": 3,
+        "code": "AU4",
+        "name": "Brow Lowerer",
+        "cat": "brow"
+      },
+      {
+        "n": 4,
+        "code": "AU5",
+        "name": "Upper Lid Raiser",
+        "cat": "eye"
+      },
+      {
+        "n": 5,
+        "code": "AU6",
+        "name": "Cheek Raiser",
+        "cat": "cheek"
+      },
+      {
+        "n": 6,
+        "code": "AU7",
+        "name": "Lid Tightener",
+        "cat": "eye"
+      },
+      {
+        "n": 7,
+        "code": "AU9",
+        "name": "Nose Wrinkler",
+        "cat": "nose"
+      },
+      {
+        "n": 8,
+        "code": "AU10",
+        "name": "Upper Lip Raiser",
+        "cat": "mouth"
+      },
+      {
+        "n": 9,
+        "code": "AU11",
+        "name": "Nasolabial Deepener",
+        "cat": "mouth"
+      },
+      {
+        "n": 10,
+        "code": "AU12",
+        "name": "Lip Corner Puller",
+        "cat": "mouth"
+      },
+      {
+        "n": 11,
+        "code": "AU13",
+        "name": "Sharp Lip Puller",
+        "cat": "mouth"
+      },
+      {
+        "n": 12,
+        "code": "AU14",
+        "name": "Dimpler",
+        "cat": "mouth"
+      },
+      {
+        "n": 13,
+        "code": "AU15",
+        "name": "Lip Corner Depressor",
+        "cat": "mouth"
+      },
+      {
+        "n": 14,
+        "code": "AU16",
+        "name": "Lower Lip Depressor",
+        "cat": "mouth"
+      },
+      {
+        "n": 15,
+        "code": "AU17",
+        "name": "Chin Raiser",
+        "cat": "chin"
+      },
+      {
+        "n": 16,
+        "code": "AU18",
+        "name": "Lip Pucker",
+        "cat": "mouth"
+      },
+      {
+        "n": 17,
+        "code": "AU20",
+        "name": "Lip Stretcher",
+        "cat": "mouth"
+      },
+      {
+        "n": 18,
+        "code": "AU22",
+        "name": "Lip Funneler",
+        "cat": "mouth"
+      },
+      {
+        "n": 19,
+        "code": "AU23",
+        "name": "Lip Tightener",
+        "cat": "mouth"
+      },
+      {
+        "n": 20,
+        "code": "AU24",
+        "name": "Lip Pressor",
+        "cat": "mouth"
+      },
+      {
+        "n": 21,
+        "code": "AU25",
+        "name": "Lips Part",
+        "cat": "mouth"
+      },
+      {
+        "n": 22,
+        "code": "AU26",
+        "name": "Jaw Drop",
+        "cat": "jaw"
+      },
+      {
+        "n": 23,
+        "code": "AU27",
+        "name": "Mouth Stretch",
+        "cat": "mouth"
+      },
+      {
+        "n": 24,
+        "code": "AU28",
+        "name": "Lip Suck",
+        "cat": "mouth"
+      },
+      {
+        "n": 25,
+        "code": "AU41",
+        "name": "Lid Droop",
+        "cat": "eye"
+      },
+      {
+        "n": 26,
+        "code": "AU42",
+        "name": "Slit Eyes",
+        "cat": "eye"
+      },
+      {
+        "n": 27,
+        "code": "AU43",
+        "name": "Eyes Closed",
+        "cat": "eye"
+      },
+      {
+        "n": 28,
+        "code": "AU44",
+        "name": "Squint",
+        "cat": "eye"
+      },
+      {
+        "n": 29,
+        "code": "AU56",
+        "name": "Head Tilt Right",
+        "cat": "head"
+      },
+      {
+        "n": 30,
+        "code": "AU57",
+        "name": "Head Forward",
+        "cat": "head"
+      },
+      {
+        "n": 31,
+        "code": "AU58",
+        "name": "Head Turn Left",
+        "cat": "head"
+      },
+      {
+        "n": 32,
+        "code": "AU52",
+        "name": "Head Turn Right",
+        "cat": "head"
+      },
+      {
+        "n": 33,
+        "code": "AU53",
+        "name": "Head Up",
+        "cat": "head"
+      },
+      {
+        "n": 34,
+        "code": "AU54",
+        "name": "Head Down",
+        "cat": "head"
+      },
+      {
+        "n": 35,
+        "code": "AU55",
+        "name": "Head Tilt Left",
+        "cat": "head"
+      },
+      {
+        "n": 36,
+        "code": "AU56B",
+        "name": "Head Tilt Right Deep",
+        "cat": "head"
+      },
+      {
+        "n": 37,
+        "code": "AU57B",
+        "name": "Head Forward Deep",
+        "cat": "head"
+      },
+      {
+        "n": 38,
+        "code": "AU58B",
+        "name": "Head Back",
+        "cat": "head"
+      },
+      {
+        "n": 39,
+        "code": "AU61",
+        "name": "Eyes Turn Left",
+        "cat": "gaze"
+      },
+      {
+        "n": 40,
+        "code": "AU62",
+        "name": "Eyes Turn Right",
+        "cat": "gaze"
+      },
+      {
+        "n": 41,
+        "code": "AU63",
+        "name": "Eyes Up",
+        "cat": "gaze"
+      },
+      {
+        "n": 42,
+        "code": "AU64",
+        "name": "Eyes Down",
+        "cat": "gaze"
+      },
+      {
+        "n": 43,
+        "code": "AU71",
+        "name": "Brow Furrow",
+        "cat": "brow"
+      },
+      {
+        "n": 44,
+        "code": "AU72",
+        "name": "Brow Bulge",
+        "cat": "brow"
+      },
+      {
+        "n": 45,
+        "code": "AU81",
+        "name": "Chewing",
+        "cat": "jaw"
+      },
+      {
+        "n": 46,
+        "code": "AU82",
+        "name": "Nostril Dilator",
+        "cat": "nose"
+      },
+      {
+        "n": 47,
+        "code": "AU83",
+        "name": "Nostril Compressor",
+        "cat": "nose"
+      },
+      {
+        "n": 48,
+        "code": "AU84",
+        "name": "Tongue Up",
+        "cat": "mouth"
+      },
+      {
+        "n": 49,
+        "code": "AU85",
+        "name": "Tongue Out",
+        "cat": "mouth"
+      }
+    ],
+    "visibleByCode": {
+      "AU1": "inner eyebrow corners lift upward, soft worried crease in the middle forehead",
+      "AU2": "outer eyebrow corners arch upward, temples open, face reads alert",
+      "AU4": "brows pull down and together, vertical crease between them, intense glare",
+      "AU5": "upper eyelids open wide, iris fully exposed, startled alert eyes",
+      "AU6": "cheeks lift upward, lower eyelids bunch, warm smile pressure around eyes",
+      "AU7": "lower eyelids tighten, eyes narrow with focused tension",
+      "AU9": "nose wrinkles upward, bridge creases, upper lip lifts with mild disgust",
+      "AU10": "upper lip raises vertically and exposes the upper teeth slightly",
+      "AU11": "nasolabial folds deepen from nose to mouth corners",
+      "AU12": "mouth corners pull upward and back into a clear smile",
+      "AU13": "lip corners pull sharply upward into an angular mischievous smile",
+      "AU14": "dimples form at the mouth corners, lips closed in a restrained smirk",
+      "AU15": "mouth corners pull downward, sad disappointed mouth shape",
+      "AU16": "lower lip pulls down, lower teeth begin to show",
+      "AU17": "chin pushes upward, lower lip rises, dimpled chin tension",
+      "AU18": "lips push forward into a small round pucker",
+      "AU20": "mouth stretches horizontally, lips pulled flat and tense",
+      "AU22": "lips funnel forward into a rounded open O shape",
+      "AU23": "lips tighten together into a small narrow line",
+      "AU24": "lips press firmly together, mouth set and compressed",
+      "AU25": "lips part softly, relaxed neutral opening",
+      "AU26": "jaw drops open into a surprised oval mouth",
+      "AU27": "mouth opens very wide, stretched shout or scream shape",
+      "AU28": "lips roll inward and disappear between the teeth",
+      "AU41": "upper eyelids droop halfway, sleepy heavy-lidded gaze",
+      "AU42": "eyelids narrow into thin slits, suspicious look",
+      "AU43": "eyes close gently while the rest of the face stays relaxed",
+      "AU44": "eyes squint tightly with outer-corner creases",
+      "AU56": "head tilts toward the subject right shoulder",
+      "AU57": "head pushes forward toward camera, chin leading",
+      "AU58": "head turns toward subject left into a three-quarter view",
+      "AU52": "head turns toward subject right into a three-quarter view",
+      "AU53": "head tips back, chin lifted upward",
+      "AU54": "head tips down, chin tucked, eyes looking up from below",
+      "AU55": "head tilts toward the subject left shoulder",
+      "AU56B": "head tilts strongly toward the subject right shoulder",
+      "AU57B": "head thrusts forward more strongly, neck extended",
+      "AU58B": "head leans backward, chin lifted and throat extended",
+      "AU61": "eyes turn to image-left / viewer-left: both pupils slide toward the left edge of both eyes while the head stays perfectly forward",
+      "AU62": "eyes turn to image-right / viewer-right: both pupils slide toward the right edge of both eyes while the head stays perfectly forward",
+      "AU63": "eyes look upward while head stays forward",
+      "AU64": "eyes look downward while head stays forward",
+      "AU71": "brows knot tightly with deep vertical furrows",
+      "AU72": "brow ridge bulges forward, heavy shadow over the eyes",
+      "AU81": "jaw shifts sideways mid-chew, one cheek slightly bulged",
+      "AU82": "nostrils flare open with a strong inhale",
+      "AU83": "nostrils pinch inward and narrow",
+      "AU84": "tongue tip lifts upward toward the upper lip",
+      "AU85": "tongue extends fully past the lower lip"
+    },
+    "defaultText": {
+      "anchor": "[IMG_1], same character identity, same facial structure, same hairstyle, same proportions, photographed as a clean expression reference.",
+      "framing": "medium close-up portrait, soft frontal key light, neutral studio background, consistent lens and crop across every tile",
+      "wardrobe": "same simple wardrobe as the reference, no outfit changes"
+    },
+    "selectedCodes": [
+      "AU1",
+      "AU27",
+      "AU61",
+      "AU62",
+      "AU85"
+    ],
+    "defaultActing": "FACS acting layer: AU1 Inner Brow Raiser - inner eyebrow corners lift upward, soft worried crease in the middle forehead; AU27 Mouth Stretch - mouth opens very wide, stretched shout or scream shape; AU61 Eyes Turn Left - eyes turn to image-left / viewer-left: both pupils slide toward the left edge of both eyes while the head stays perfectly forward; AU62 Eyes Turn Right - eyes turn to image-right / viewer-right: both pupils slide toward the right edge of both eyes while the head stays perfectly forward; AU85 Tongue Out - tongue extends fully past the lower lip",
+    "defaultBoardPrompts": "[IMG_1], same character identity, same facial structure, same hairstyle, same proportions, photographed as a clean expression reference. same simple wardrobe as the reference, no outfit changes. The face shows: inner eyebrow corners lift upward, soft worried crease in the middle forehead. Keep all other facial regions neutral unless directly affected by this action unit. medium close-up portrait, soft frontal key light, neutral studio background, consistent lens and crop across every tile. AU1 - Inner Brow Raiser\n[IMG_1], same character identity, same facial structure, same hairstyle, same proportions, photographed as a clean expression reference. same simple wardrobe as the reference, no outfit changes. The face shows: mouth opens very wide, stretched shout or scream shape. Keep all other facial regions neutral unless directly affected by this action unit. medium close-up portrait, soft frontal key light, neutral studio background, consistent lens and crop across every tile. AU27 - Mouth Stretch\n[IMG_1], same character identity, same facial structure, same hairstyle, same proportions, photographed as a clean expression reference. same simple wardrobe as the reference, no outfit changes. The face shows: eyes turn to image-left / viewer-left: both pupils slide toward the left edge of both eyes while the head stays perfectly forward. Keep all other facial regions neutral unless directly affected by this action unit. medium close-up portrait, soft frontal key light, neutral studio background, consistent lens and crop across every tile. AU61 - Eyes Turn Left\n[IMG_1], same character identity, same facial structure, same hairstyle, same proportions, photographed as a clean expression reference. same simple wardrobe as the reference, no outfit changes. The face shows: eyes turn to image-right / viewer-right: both pupils slide toward the right edge of both eyes while the head stays perfectly forward. Keep all other facial regions neutral unless directly affected by this action unit. medium close-up portrait, soft frontal key light, neutral studio background, consistent lens and crop across every tile. AU62 - Eyes Turn Right\n[IMG_1], same character identity, same facial structure, same hairstyle, same proportions, photographed as a clean expression reference. same simple wardrobe as the reference, no outfit changes. The face shows: tongue extends fully past the lower lip. Keep all other facial regions neutral unless directly affected by this action unit. medium close-up portrait, soft frontal key light, neutral studio background, consistent lens and crop across every tile. AU85 - Tongue Out",
+    "defaultFullBoardPrompt": "Create one complete FACS ACTION UNITS reference sheet as a flat 7x7 contact sheet, 49 equal portrait tiles. Use a portrait 3:4 or 4:5 canvas; 9:16 is acceptable only if the 7x7 board fills the image. No perspective, no rounded cards, no decorative frames, no thick white gutters, no outer margin, no watermark, no logo. Use thin dark separators or no visible gutters. Each cell must contain one centered medium close-up portrait in the upper 75% of the cell, with a small readable AU code and name in a narrow bottom label band. Subject lock: [IMG_1]. Wardrobe lock: same simple wardrobe as the reference. Framing lock: medium close-up portrait, soft frontal key light, neutral studio background. Same character identity, face structure, hairstyle, lens, crop, lighting and background in every tile; only the facial action changes. Critical gaze disambiguation: AU61 Eyes Turn Left means both pupils move toward image-left / viewer-left, not anatomical left; AU62 Eyes Turn Right means both pupils move toward image-right / viewer-right. AU61 and AU62 must be visibly opposite gaze directions and must never look the same way. Use these 49 tiles in this exact left-to-right, top-to-bottom order: AU1 Inner Brow Raiser: inner eyebrow corners lift upward, soft worried crease in the middle forehead; AU2 Outer Brow Raiser: outer eyebrow corners arch upward, temples open, face reads alert; AU4 Brow Lowerer: brows pull down and together, vertical crease between them, intense glare; AU5 Upper Lid Raiser: upper eyelids open wide, iris fully exposed, startled alert eyes; AU6 Cheek Raiser: cheeks lift upward, lower eyelids bunch, warm smile pressure around eyes; AU7 Lid Tightener: lower eyelids tighten, eyes narrow with focused tension; AU9 Nose Wrinkler: nose wrinkles upward, bridge creases, upper lip lifts with mild disgust; AU10 Upper Lip Raiser: upper lip raises vertically and exposes the upper teeth slightly; AU11 Nasolabial Deepener: nasolabial folds deepen from nose to mouth corners; AU12 Lip Corner Puller: mouth corners pull upward and back into a clear smile; AU13 Sharp Lip Puller: lip corners pull sharply upward into an angular mischievous smile; AU14 Dimpler: dimples form at the mouth corners, lips closed in a restrained smirk; AU15 Lip Corner Depressor: mouth corners pull downward, sad disappointed mouth shape; AU16 Lower Lip Depressor: lower lip pulls down, lower teeth begin to show; AU17 Chin Raiser: chin pushes upward, lower lip rises, dimpled chin tension; AU18 Lip Pucker: lips push forward into a small round pucker; AU20 Lip Stretcher: mouth stretches horizontally, lips pulled flat and tense; AU22 Lip Funneler: lips funnel forward into a rounded open O shape; AU23 Lip Tightener: lips tighten together into a small narrow line; AU24 Lip Pressor: lips press firmly together, mouth set and compressed; AU25 Lips Part: lips part softly, relaxed neutral opening; AU26 Jaw Drop: jaw drops open into a surprised oval mouth; AU27 Mouth Stretch: mouth opens very wide, stretched shout or scream shape; AU28 Lip Suck: lips roll inward and disappear between the teeth; AU41 Lid Droop: upper eyelids droop halfway, sleepy heavy-lidded gaze; AU42 Slit Eyes: eyelids narrow into thin slits, suspicious look; AU43 Eyes Closed: eyes close gently while the rest of the face stays relaxed; AU44 Squint: eyes squint tightly with outer-corner creases; AU56 Head Tilt Right: head tilts toward the subject right shoulder; AU57 Head Forward: head pushes forward toward camera, chin leading; AU58 Head Turn Left: head turns toward subject left into a three-quarter view; AU52 Head Turn Right: head turns toward subject right into a three-quarter view; AU53 Head Up: head tips back, chin lifted upward; AU54 Head Down: head tips down, chin tucked, eyes looking up from below; AU55 Head Tilt Left: head tilts toward the subject left shoulder; AU56 Head Tilt Right Deep: head tilts strongly toward the subject right shoulder; AU57 Head Forward Deep: head thrusts forward more strongly, neck extended; AU58 Head Back: head leans backward, chin lifted and throat extended; AU61 Eyes Turn Left: eyes turn to image-left / viewer-left: both pupils slide toward the left edge of both eyes while the head stays perfectly forward; AU62 Eyes Turn Right: eyes turn to image-right / viewer-right: both pupils slide toward the right edge of both eyes while the head stays perfectly forward; AU63 Eyes Up: eyes look upward while head stays forward; AU64 Eyes Down: eyes look downward while head stays forward; AU71 Brow Furrow: brows knot tightly with deep vertical furrows; AU72 Brow Bulge: brow ridge bulges forward, heavy shadow over the eyes; AU81 Chewing: jaw shifts sideways mid-chew, one cheek slightly bulged; AU82 Nostril Dilator: nostrils flare open with a strong inhale; AU83 Nostril Compressor: nostrils pinch inward and narrow; AU84 Tongue Up: tongue tip lifts upward toward the upper lip; AU85 Tongue Out: tongue extends fully past the l...",
+    "payload": {
+      "type": "barzy:facs-payload",
+      "target": "motion",
+      "items": [
+        {
+          "code": "AU1",
+          "name": "Inner Brow Raiser",
+          "visible": "inner eyebrow corners lift upward, soft worried crease in the middle forehead",
+          "prompt": "[IMG_1], same character identity, same facial structure, same hairstyle, same proportions, photographed as a clean expression reference. same simple wardrobe as the reference, no outfit changes. The face shows: inner eyebrow corners lift upward, soft worried crease in the middle forehead. Keep all other facial regions neutral unless directly affected by this action unit. medium close-up portrait, soft frontal key light, neutral studio background, consistent lens and crop across every tile."
+        },
+        {
+          "code": "AU27",
+          "name": "Mouth Stretch",
+          "visible": "mouth opens very wide, stretched shout or scream shape",
+          "prompt": "[IMG_1], same character identity, same facial structure, same hairstyle, same proportions, photographed as a clean expression reference. same simple wardrobe as the reference, no outfit changes. The face shows: mouth opens very wide, stretched shout or scream shape. Keep all other facial regions neutral unless directly affected by this action unit. medium close-up portrait, soft frontal key light, neutral studio background, consistent lens and crop across every tile."
+        },
+        {
+          "code": "AU61",
+          "name": "Eyes Turn Left",
+          "visible": "eyes turn to image-left / viewer-left: both pupils slide toward the left edge of both eyes while the head stays perfectly forward",
+          "prompt": "[IMG_1], same character identity, same facial structure, same hairstyle, same proportions, photographed as a clean expression reference. same simple wardrobe as the reference, no outfit changes. The face shows: eyes turn to image-left / viewer-left: both pupils slide toward the left edge of both eyes while the head stays perfectly forward. Keep all other facial regions neutral unless directly affected by this action unit. medium close-up portrait, soft frontal key light, neutral studio background, consistent lens and crop across every tile."
+        },
+        {
+          "code": "AU62",
+          "name": "Eyes Turn Right",
+          "visible": "eyes turn to image-right / viewer-right: both pupils slide toward the right edge of both eyes while the head stays perfectly forward",
+          "prompt": "[IMG_1], same character identity, same facial structure, same hairstyle, same proportions, photographed as a clean expression reference. same simple wardrobe as the reference, no outfit changes. The face shows: eyes turn to image-right / viewer-right: both pupils slide toward the right edge of both eyes while the head stays perfectly forward. Keep all other facial regions neutral unless directly affected by this action unit. medium close-up portrait, soft frontal key light, neutral studio background, consistent lens and crop across every tile."
+        },
+        {
+          "code": "AU85",
+          "name": "Tongue Out",
+          "visible": "tongue extends fully past the lower lip",
+          "prompt": "[IMG_1], same character identity, same facial structure, same hairstyle, same proportions, photographed as a clean expression reference. same simple wardrobe as the reference, no outfit changes. The face shows: tongue extends fully past the lower lip. Keep all other facial regions neutral unless directly affected by this action unit. medium close-up portrait, soft frontal key light, neutral studio background, consistent lens and crop across every tile."
+        }
+      ],
+      "prompt": "[IMG_1], same character identity, same facial structure, same hairstyle, same proportions, photographed as a clean expression reference. same simple wardrobe as the reference, no outfit changes. The face shows: inner eyebrow corners lift upward, soft worried crease in the middle forehead. Keep all other facial regions neutral unless directly affected by this action unit. medium close-up portrait, soft frontal key light, neutral studio background, consistent lens and crop across every tile.\n\n[IMG_1], same character identity, same facial structure, same hairstyle, same proportions, photographed as a clean expression reference. same simple wardrobe as the reference, no outfit changes. The face shows: mouth opens very wide, stretched shout or scream shape. Keep all other facial regions neutral unless directly affected by this action unit. medium close-up portrait, soft frontal key light, neutral studio background, consistent lens and crop across every tile.\n\n[IMG_1], same character identity, same facial structure, same hairstyle, same proportions, photographed as a clean expression reference. same simple wardrobe as the reference, no outfit changes. The face shows: eyes turn to image-left / viewer-left: both pupils slide toward the left edge of both eyes while the head stays perfectly forward. Keep all other facial regions neutral unless directly affected by this action unit. medium close-up portrait, soft frontal key light, neutral studio background, consistent lens and crop across every tile.\n\n[IMG_1], same character identity, same facial structure, same hairstyle, same proportions, photographed as a clean expression reference. same simple wardrobe as the reference, no outfit changes. The face shows: eyes turn to image-right / viewer-right: both pupils slide toward the right edge of both eyes while the head stays perfectly forward. Keep all other facial regions neutral unless directly affected by this action unit. medium close-up portrait, soft frontal key light, neutral studio background, consistent lens and crop across every tile.\n\n[IMG_1], same character identity, same facial structure, same hairstyle, same proportions, photographed as a clean expression reference. same simple wardrobe as the reference, no outfit changes. The face shows: tongue extends fully past the lower lip. Keep all other facial regions neutral unless directly affected by this action unit. medium close-up portrait, soft frontal key light, neutral studio background, consistent lens and crop across every tile.",
+      "source": "FACS Sheet Generator"
+    },
+    "configuredValues": {
+      "anchor": "[IMG_9], angular heroine with a silver bob",
+      "wardrobe": "black velvet coat, unchanged",
+      "framing": "tight portrait, cyan rim light"
+    },
+    "configuredPrompts": [
+      {
+        "code": "AU1",
+        "prompt": "[IMG_9], angular heroine with a silver bob. black velvet coat, unchanged. The face shows: inner eyebrow corners lift upward, soft worried crease in the middle forehead. Keep all other facial regions neutral unless directly affected by this action unit. tight portrait, cyan rim light."
+      },
+      {
+        "code": "AU27",
+        "prompt": "[IMG_9], angular heroine with a silver bob. black velvet coat, unchanged. The face shows: mouth opens very wide, stretched shout or scream shape. Keep all other facial regions neutral unless directly affected by this action unit. tight portrait, cyan rim light."
+      },
+      {
+        "code": "AU61",
+        "prompt": "[IMG_9], angular heroine with a silver bob. black velvet coat, unchanged. The face shows: eyes turn to image-left / viewer-left: both pupils slide toward the left edge of both eyes while the head stays perfectly forward. Keep all other facial regions neutral unless directly affected by this action unit. tight portrait, cyan rim light."
+      },
+      {
+        "code": "AU62",
+        "prompt": "[IMG_9], angular heroine with a silver bob. black velvet coat, unchanged. The face shows: eyes turn to image-right / viewer-right: both pupils slide toward the right edge of both eyes while the head stays perfectly forward. Keep all other facial regions neutral unless directly affected by this action unit. tight portrait, cyan rim light."
+      },
+      {
+        "code": "AU85",
+        "prompt": "[IMG_9], angular heroine with a silver bob. black velvet coat, unchanged. The face shows: tongue extends fully past the lower lip. Keep all other facial regions neutral unless directly affected by this action unit. tight portrait, cyan rim light."
+      }
+    ],
+    "fullBoardPrompt": "Create one complete FACS ACTION UNITS reference sheet as a flat 7x7 contact sheet, 49 equal portrait tiles. Use a portrait 3:4 or 4:5 canvas; 9:16 is acceptable only if the 7x7 board fills the image. No perspective, no rounded cards, no decorative frames, no thick white gutters, no outer margin, no watermark, no logo. Use thin dark separators or no visible gutters. Each cell must contain one centered medium close-up portrait in the upper 75% of the cell, with a small readable AU code and name in a narrow bottom label band. Subject lock: [IMG_9], angular heroine with a silver bob. Wardrobe lock: black velvet coat, unchanged. Framing lock: tight portrait, cyan rim light. Same character identity, face structure, hairstyle, lens, crop, lighting and background in every tile; only the facial action changes. Critical gaze disambiguation: AU61 Eyes Turn Left means both pupils move toward image-left / viewer-left, not anatomical left; AU62 Eyes Turn Right means both pupils move toward image-right / viewer-right. AU61 and AU62 must be visibly opposite gaze directions and must never look the same way. Use these 49 tiles in this exact left-to-right, top-to-bottom order: AU1 Inner Brow Raiser: inner eyebrow corners lift upward, soft worried crease in the middle forehead; AU2 Outer Brow Raiser: outer eyebrow corners arch upward, temples open, face reads alert; AU4 Brow Lowerer: brows pull down and together, vertical crease between them, intense glare; AU5 Upper Lid Raiser: upper eyelids open wide, iris fully exposed, startled alert eyes; AU6 Cheek Raiser: cheeks lift upward, lower eyelids bunch, warm smile pressure around eyes; AU7 Lid Tightener: lower eyelids tighten, eyes narrow with focused tension; AU9 Nose Wrinkler: nose wrinkles upward, bridge creases, upper lip lifts with mild disgust; AU10 Upper Lip Raiser: upper lip raises vertically and exposes the upper teeth slightly; AU11 Nasolabial Deepener: nasolabial folds deepen from nose to mouth corners; AU12 Lip Corner Puller: mouth corners pull upward and back into a clear smile; AU13 Sharp Lip Puller: lip corners pull sharply upward into an angular mischievous smile; AU14 Dimpler: dimples form at the mouth corners, lips closed in a restrained smirk; AU15 Lip Corner Depressor: mouth corners pull downward, sad disappointed mouth shape; AU16 Lower Lip Depressor: lower lip pulls down, lower teeth begin to show; AU17 Chin Raiser: chin pushes upward, lower lip rises, dimpled chin tension; AU18 Lip Pucker: lips push forward into a small round pucker; AU20 Lip Stretcher: mouth stretches horizontally, lips pulled flat and tense; AU22 Lip Funneler: lips funnel forward into a rounded open O shape; AU23 Lip Tightener: lips tighten together into a small narrow line; AU24 Lip Pressor: lips press firmly together, mouth set and compressed; AU25 Lips Part: lips part softly, relaxed neutral opening; AU26 Jaw Drop: jaw drops open into a surprised oval mouth; AU27 Mouth Stretch: mouth opens very wide, stretched shout or scream shape; AU28 Lip Suck: lips roll inward and disappear between the teeth; AU41 Lid Droop: upper eyelids droop halfway, sleepy heavy-lidded gaze; AU42 Slit Eyes: eyelids narrow into thin slits, suspicious look; AU43 Eyes Closed: eyes close gently while the rest of the face stays relaxed; AU44 Squint: eyes squint tightly with outer-corner creases; AU56 Head Tilt Right: head tilts toward the subject right shoulder; AU57 Head Forward: head pushes forward toward camera, chin leading; AU58 Head Turn Left: head turns toward subject left into a three-quarter view; AU52 Head Turn Right: head turns toward subject right into a three-quarter view; AU53 Head Up: head tips back, chin lifted upward; AU54 Head Down: head tips down, chin tucked, eyes looking up from below; AU55 Head Tilt Left: head tilts toward the subject left shoulder; AU56 Head Tilt Right Deep: head tilts strongly toward the subject right shoulder; AU57 Head Forward Deep: head thrusts forward more strongly, neck extended; AU58 Head Back: head leans backward, chin lifted and throat extended; AU61 Eyes Turn Left: eyes turn to image-left / viewer-left: both pupils slide toward the left edge of both eyes while the head stays perfectly forward; AU62 Eyes Turn Right: eyes turn to image-right / viewer-right: both pupils slide toward the right edge of both eyes while the head stays perfectly forward; AU63 Eyes Up: eyes look upward while head stays forward; AU64 Eyes Down: eyes look downward while head stays forward; AU71 Brow Furrow: brows knot tightly with deep vertical furrows; AU72 Brow Bulge: brow ridge bulges forward, heavy shadow over the eyes; AU81 Chewing: jaw shifts sideways mid-chew, one cheek slightly bulged; AU82 Nostril Dilator: nostrils flare open with a strong inhale; AU83 Nostril Compressor: nostrils pinch inward and narrow; AU84 Tongue Up: tongue tip lifts upward toward the upper lip; AU85 Tongue Out: tongue extends fully past the lower lip. The resul..."
+  },
+  "board": {
+    "facsGroups": [
+      {
+        "group": "Sourcils & front",
+        "items": [
+          {
+            "code": "AU1",
+            "name": "Inner Brow Raiser"
+          },
+          {
+            "code": "AU2",
+            "name": "Outer Brow Raiser"
+          },
+          {
+            "code": "AU4",
+            "name": "Brow Lowerer"
+          },
+          {
+            "code": "AU71",
+            "name": "Brow Furrow"
+          },
+          {
+            "code": "AU72",
+            "name": "Brow Bulge"
+          }
+        ]
+      },
+      {
+        "group": "Yeux & paupières",
+        "items": [
+          {
+            "code": "AU5",
+            "name": "Upper Lid Raiser"
+          },
+          {
+            "code": "AU7",
+            "name": "Lid Tightener"
+          },
+          {
+            "code": "AU41",
+            "name": "Lid Droop"
+          },
+          {
+            "code": "AU42",
+            "name": "Slit Eyes"
+          },
+          {
+            "code": "AU43",
+            "name": "Eyes Closed"
+          },
+          {
+            "code": "AU44",
+            "name": "Squint"
+          },
+          {
+            "code": "AU61",
+            "name": "Eyes Turn Left"
+          },
+          {
+            "code": "AU62",
+            "name": "Eyes Turn Right"
+          },
+          {
+            "code": "AU63",
+            "name": "Eyes Up"
+          },
+          {
+            "code": "AU64",
+            "name": "Eyes Down"
+          }
+        ]
+      },
+      {
+        "group": "Joues & nez",
+        "items": [
+          {
+            "code": "AU6",
+            "name": "Cheek Raiser"
+          },
+          {
+            "code": "AU9",
+            "name": "Nose Wrinkler"
+          },
+          {
+            "code": "AU11",
+            "name": "Nasolabial Deepener"
+          },
+          {
+            "code": "AU82",
+            "name": "Nostril Dilator"
+          },
+          {
+            "code": "AU83",
+            "name": "Nostril Compressor"
+          }
+        ]
+      },
+      {
+        "group": "Bouche & lèvres",
+        "items": [
+          {
+            "code": "AU10",
+            "name": "Upper Lip Raiser"
+          },
+          {
+            "code": "AU12",
+            "name": "Lip Corner Puller"
+          },
+          {
+            "code": "AU13",
+            "name": "Sharp Lip Puller"
+          },
+          {
+            "code": "AU14",
+            "name": "Dimpler"
+          },
+          {
+            "code": "AU15",
+            "name": "Lip Corner Depressor"
+          },
+          {
+            "code": "AU16",
+            "name": "Lower Lip Depressor"
+          },
+          {
+            "code": "AU17",
+            "name": "Chin Raiser"
+          },
+          {
+            "code": "AU18",
+            "name": "Lip Pucker"
+          },
+          {
+            "code": "AU20",
+            "name": "Lip Stretcher"
+          },
+          {
+            "code": "AU22",
+            "name": "Lip Funneler"
+          },
+          {
+            "code": "AU23",
+            "name": "Lip Tightener"
+          },
+          {
+            "code": "AU24",
+            "name": "Lip Pressor"
+          },
+          {
+            "code": "AU25",
+            "name": "Lips Part"
+          },
+          {
+            "code": "AU26",
+            "name": "Jaw Drop"
+          },
+          {
+            "code": "AU27",
+            "name": "Mouth Stretch"
+          },
+          {
+            "code": "AU28",
+            "name": "Lip Suck"
+          }
+        ]
+      },
+      {
+        "group": "Tête",
+        "items": [
+          {
+            "code": "AU51",
+            "name": "Head Turn Left"
+          },
+          {
+            "code": "AU52",
+            "name": "Head Turn Right"
+          },
+          {
+            "code": "AU53",
+            "name": "Head Up"
+          },
+          {
+            "code": "AU54",
+            "name": "Head Down"
+          },
+          {
+            "code": "AU55",
+            "name": "Head Tilt Left"
+          },
+          {
+            "code": "AU56",
+            "name": "Head Tilt Right"
+          },
+          {
+            "code": "AU57",
+            "name": "Head Forward"
+          },
+          {
+            "code": "AU58",
+            "name": "Head Back"
+          }
+        ]
+      },
+      {
+        "group": "Langue & machoire",
+        "items": [
+          {
+            "code": "AU81",
+            "name": "Chewing"
+          },
+          {
+            "code": "AU84",
+            "name": "Tongue Up"
+          },
+          {
+            "code": "AU85",
+            "name": "Tongue Out"
+          }
+        ]
+      }
+    ],
+    "facsUnitCount": 47,
+    "configuredValues": {
+      "s-subject": "a weary lunar archivist in a charcoal coat",
+      "s-ref-char": "[IMG_1]",
+      "s-action": "crosses a flooded archive while protecting a glass key",
+      "s-env": "moonlit concrete stacks, ankle-deep water",
+      "s-ref-env": "[IMG_2]",
+      "s-secondary": "[IMG_3] = a silent brass automaton",
+      "s-cam": "handheld arthouse, whip pans, orbit movement, overhead, extreme negative space",
+      "s-panels": "12",
+      "s-ratio": "16:9",
+      "s-draw": "rough pencil B&W, minimal detail, strong silhouette, unfinished previs",
+      "s-draw-desc": "blue grease-pencil shadows",
+      "s-draw-ref": "@[ink ref]",
+      "s-final": "the glass key illuminates both faces",
+      "m-model": "seedance",
+      "m-ref-board": "@[storyboard ref]",
+      "m-ref-char": "[IMG_1]",
+      "m-ref-env": "[IMG_2]",
+      "m-ref-secondary": "[IMG_3], [IMG_4]",
+      "m-duration": "15",
+      "m-pace": "urgent quick cuts, whip transitions, match cuts, no pauses",
+      "m-final-hold": "1",
+      "m-subject": "",
+      "m-secondary": "",
+      "m-action": "",
+      "m-env": "",
+      "m-cam": "",
+      "m-audio": "Distant water drips; no dialogue."
+    },
+    "configuredChecks": {
+      "s-annot": true
+    },
+    "storyFacs": [
+      "AU1",
+      "AU27",
+      "AU61"
+    ],
+    "story": "REFERENCES:\n[IMG_1] = main character: a weary lunar archivist in a charcoal coat\n[IMG_2] = setting / environment: moonlit concrete stacks, ankle-deep water\n[IMG_3], [IMG_4], [IMG_5], [IMG_6] = secondary characters: [IMG_3] = a silent brass automaton\n\nCreate a 16:9 storyboard sheet with 12 cinematic panels, focused on crosses a flooded archive while protecting a glass key. Use [IMG_1] as the main character reference and [IMG_2] as the setting reference.\n\nStyle of drawing: rough pencil B&W, minimal detail, strong silhouette, unfinished previs. blue grease-pencil shadows. Reference image: @[ink ref]. Keep the artwork lightweight, dynamic and unfinished - early choreography previs energy.\n\nSubject: a weary lunar archivist in a charcoal coat.\n\nSecondary characters: [IMG_3] = a silent brass automaton.\n\nScene: crosses a flooded archive while protecting a glass key. Environment: moonlit concrete stacks, ankle-deep water.\n\nCinematography: handheld arthouse, whip pans, orbit movement, overhead, extreme negative space. Every panel must contain visible motion and strong body momentum - avoid static standing poses.\n\nAnnotation color system: red arrows = body movement; blue arrows = camera movement; green marks = framing / composition notes; orange marks = lighting direction; purple marks = vocal / emotional emphasis; black text = short lens notes and panel labels.\n\nEnd with: the glass key illuminates both faces.\n\nFacial acting / FACS cues: AU1 (Inner Brow Raiser), AU27 (Mouth Stretch), AU61 (Eyes Turn Left). Distribute these cues across readable close-up and key-action panels: eyes/brows for reaction beats, mouth/jaw for speech or strain, head/neck for direction changes. Keep the expression changes visible but anatomically natural.\n\nNo timestamps, no watermark.",
+    "motionByModel": [
+      {
+        "model": "seedance",
+        "prompt": "REFERENCES:\n[IMG_1] = main character: a weary lunar archivist in a charcoal coat\n[IMG_2] = setting / environment: moonlit concrete stacks, ankle-deep water\n[IMG_3], [IMG_4] = secondary characters: [IMG_3] = a silent brass automaton\n\nSeedance 2.0 Prompt: Use the storyboard reference @[storyboard ref] as the complete visual and choreography source for a 15-second video. Follow all 12 beats sequentially from left to right, top to bottom. Do not reinterpret the actions, poses, camera angles or emotional progression. Preserve shot order, movement logic, framing variety and final pose.\n\nCompress the full 12-beat sequence into 15 seconds. Each beat must appear clearly as a fast motion snapshot, not a full-length action. Pacing: urgent quick cuts, whip transitions, match cuts, no pauses.\n\nCharacter: [IMG_1] - a weary lunar archivist in a charcoal coat. Do not duplicate her/him.\n\nSecondary characters: [IMG_3] = a silent brass automaton.\n\nAction: crosses a flooded archive while protecting a glass key\n\nEnvironment: [IMG_2] - moonlit concrete stacks, ankle-deep water. Cinematography: handheld arthouse, whip pans, orbit movement, overhead, extreme negative space.\n\nFinal beat holds for the last 1 second(s). Distant water drips; no dialogue. Facial performance / FACS cues: AU1 (Inner Brow Raiser), AU27 (Mouth Stretch), AU61 (Eyes Turn Left). Apply them on close-up and key-action beats so the face, gaze, mouth, jaw and head movement stay consistent with the storyboard timing.\n\nNo text, no annotations, no timestamps, no watermark."
+      },
+      {
+        "model": "kling",
+        "prompt": "REFERENCES:\n[IMG_1] = main character: a weary lunar archivist in a charcoal coat\n[IMG_2] = setting / environment: moonlit concrete stacks, ankle-deep water\n[IMG_3], [IMG_4] = secondary characters: [IMG_3] = a silent brass automaton\n\nKling Prompt: Reference storyboard @[storyboard ref] as the visual and choreography source for a 15-second video. Follow all 12 beats in order. Preserve composition, action and final pose.\n\nCompress the full 12-beat sequence into 15 seconds. Each beat must appear clearly as a fast motion snapshot, not a full-length action. Pacing: urgent quick cuts, whip transitions, match cuts, no pauses.\n\nCharacter: [IMG_1] - a weary lunar archivist in a charcoal coat. Do not duplicate her/him.\n\nSecondary characters: [IMG_3] = a silent brass automaton.\n\nAction: crosses a flooded archive while protecting a glass key\n\nEnvironment: [IMG_2] - moonlit concrete stacks, ankle-deep water. Cinematography: handheld arthouse, whip pans, orbit movement, overhead, extreme negative space.\n\nFinal beat holds for the last 1 second(s). Distant water drips; no dialogue. Facial performance / FACS cues: AU1 (Inner Brow Raiser), AU27 (Mouth Stretch), AU61 (Eyes Turn Left). Apply them on close-up and key-action beats so the face, gaze, mouth, jaw and head movement stay consistent with the storyboard timing.\n\nNo text, no annotations, no timestamps, no watermark."
+      },
+      {
+        "model": "veo",
+        "prompt": "REFERENCES:\n[IMG_1] = main character: a weary lunar archivist in a charcoal coat\n[IMG_2] = setting / environment: moonlit concrete stacks, ankle-deep water\n[IMG_3], [IMG_4] = secondary characters: [IMG_3] = a silent brass automaton\n\nVeo 3.1 Prompt: Reference storyboard @[storyboard ref] for a 15-second sequence following 12 beats in order. Maintain shot logic and final pose.\n\nCompress the full 12-beat sequence into 15 seconds. Each beat must appear clearly as a fast motion snapshot, not a full-length action. Pacing: urgent quick cuts, whip transitions, match cuts, no pauses.\n\nCharacter: [IMG_1] - a weary lunar archivist in a charcoal coat. Do not duplicate her/him.\n\nSecondary characters: [IMG_3] = a silent brass automaton.\n\nAction: crosses a flooded archive while protecting a glass key\n\nEnvironment: [IMG_2] - moonlit concrete stacks, ankle-deep water. Cinematography: handheld arthouse, whip pans, orbit movement, overhead, extreme negative space.\n\nFinal beat holds for the last 1 second(s). Distant water drips; no dialogue. Facial performance / FACS cues: AU1 (Inner Brow Raiser), AU27 (Mouth Stretch), AU61 (Eyes Turn Left). Apply them on close-up and key-action beats so the face, gaze, mouth, jaw and head movement stay consistent with the storyboard timing.\n\nNo text, no annotations, no timestamps, no watermark."
+      }
+    ],
+    "motionOwnFacs": "REFERENCES:\n[IMG_1] = main character: a weary lunar archivist in a charcoal coat\n[IMG_2] = setting / environment: moonlit concrete stacks, ankle-deep water\n[IMG_3], [IMG_4] = secondary characters: [IMG_3] = a silent brass automaton\n\nSeedance 2.0 Prompt: Use the storyboard reference @[storyboard ref] as the complete visual and choreography source for a 15-second video. Follow all 12 beats sequentially from left to right, top to bottom. Do not reinterpret the actions, poses, camera angles or emotional progression. Preserve shot order, movement logic, framing variety and final pose.\n\nCompress the full 12-beat sequence into 15 seconds. Each beat must appear clearly as a fast motion snapshot, not a full-length action. Pacing: urgent quick cuts, whip transitions, match cuts, no pauses.\n\nCharacter: [IMG_1] - a weary lunar archivist in a charcoal coat. Do not duplicate her/him.\n\nSecondary characters: [IMG_3] = a silent brass automaton.\n\nAction: crosses a flooded archive while protecting a glass key\n\nEnvironment: [IMG_2] - moonlit concrete stacks, ankle-deep water. Cinematography: handheld arthouse, whip pans, orbit movement, overhead, extreme negative space.\n\nFinal beat holds for the last 1 second(s). Distant water drips; no dialogue. Facial performance / FACS cues: AU62 (Eyes Turn Right). Apply them on close-up and key-action beats so the face, gaze, mouth, jaw and head movement stay consistent with the storyboard timing.\n\nNo text, no annotations, no timestamps, no watermark."
+  },
+  "compatibility": {
+    "sharedCodes": [
+      "AU1",
+      "AU2",
+      "AU4",
+      "AU5",
+      "AU6",
+      "AU7",
+      "AU9",
+      "AU10",
+      "AU11",
+      "AU12",
+      "AU13",
+      "AU14",
+      "AU15",
+      "AU16",
+      "AU17",
+      "AU18",
+      "AU20",
+      "AU22",
+      "AU23",
+      "AU24",
+      "AU25",
+      "AU26",
+      "AU27",
+      "AU28",
+      "AU41",
+      "AU42",
+      "AU43",
+      "AU44",
+      "AU56",
+      "AU57",
+      "AU58",
+      "AU52",
+      "AU53",
+      "AU54",
+      "AU55",
+      "AU61",
+      "AU62",
+      "AU63",
+      "AU64",
+      "AU71",
+      "AU72",
+      "AU81",
+      "AU82",
+      "AU83",
+      "AU84",
+      "AU85"
+    ],
+    "sheetOnlyCodes": [
+      "AU56B",
+      "AU57B",
+      "AU58B"
+    ],
+    "boardOnlyCodes": [
+      "AU51"
+    ],
+    "conflictingNames": [
+      {
+        "code": "AU58",
+        "sheetName": "Head Turn Left",
+        "boardName": "Head Back"
+      }
+    ]
+  }
+}

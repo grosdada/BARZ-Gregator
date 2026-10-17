@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "1.0",
+  "defaultsVersion": "6.0.0-design",
+  "revision": 0,
+  "systemTabs": [
+    { "id": "deck", "title": "Deck", "anchor": "start", "mutable": false },
+    { "id": "utilities", "title": "Backstage", "anchor": "end", "order": 0, "mutable": false },
+    { "id": "build", "title": "Build", "anchor": "end", "order": 1, "mutable": false }
+  ],
+  "workshops": [
+    { "id": "prompt-forge", "title": "Idea Studio", "order": 0 },
+    { "id": "image-looks", "title": "Look Library", "order": 1 },
+    { "id": "character-lab", "title": "Character & Asset Lab", "order": 2 },
+    { "id": "grid-generation", "title": "Board & Sequence", "order": 3 },
+    { "id": "video-builder", "title": "Motion Studio", "order": 4 },
+    { "id": "camera-control", "title": "Camera Control", "order": 5 }
+  ],
+  "tools": [
+    { "id": "example-cinematic-shot", "title": "Cinematic Shot — example", "kind": "recipe", "recipeId": "example-cinematic-shot-v1" }
+  ],
+  "placements": [
+    { "id": "example-shot-in-idea", "toolId": "example-cinematic-shot", "workshopId": "prompt-forge", "order": 0 },
+    { "id": "example-shot-in-motion", "toolId": "example-cinematic-shot", "workshopId": "video-builder", "order": 0 }
+  ]
+}

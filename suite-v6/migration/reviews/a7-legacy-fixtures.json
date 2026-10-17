@@ -1,0 +1,667 @@
+{
+  "schemaVersion": "1.0",
+  "status": "legacy-fixture-before-astra-review",
+  "source": {
+    "owner": "barzy-sheet",
+    "path": "Barzy App/public/assets/HTML/barzy_sheet.html",
+    "sha256": "cdcf2a358c6dcedf26ca444ae12700c18ed31f5522e4c0753d6aa0c93efa20ae"
+  },
+  "sheet": {
+    "title": "BZ SHEET",
+    "subtitle": "Tech boards and character reference sheets",
+    "tabs": [
+      {
+        "id": "techboard",
+        "title": "Tech Board"
+      },
+      {
+        "id": "charsheet",
+        "title": "Character Sheet"
+      }
+    ],
+    "cardCount": 11,
+    "countsByTab": {
+      "techboard": 5,
+      "charsheet": 6
+    },
+    "cards": [
+      {
+        "id": "objectsheet",
+        "title": "Object Sheet",
+        "description": "Generates a product reference sheet with 9 views including orthographic angles, natural 3/4 views, and a technical specification panel. Perfect for product design, 3D modeling reference, or catalog documentation.",
+        "tab": "techboard",
+        "prompt": "Based on this image:\n\n**OBJECT REFERENCE SHEET — 3×3 GRID (9 VIEWS)**\n\nGenerate a professional product reference sheet with 9 views of this object on a [BG_COLOR_PLACEHOLDER] cyclorama, arranged in a 3×3 grid.\n\n**OBJECT CONSISTENCY — CRITICAL:**\nThis is the SAME OBJECT in all 9 views. NOT 9 different objects.\n- CLONE exact shape, proportions, details from reference\n- CLONE exact materials, colors, textures, surface finish\n- CLONE all markings, logos, wear, imperfections\n- Scale and details MUST be identical across all views\n\n**3×3 GRID LAYOUT:**\n\n**ROW 1 — ORTHOGRAPHIC VIEWS:**\n| FRONT | LEFT SIDE | RIGHT SIDE |\n\n1. **FRONT:** Direct front view, perpendicular to main face\n2. **LEFT SIDE:** Perfect 90° profile, left side visible\n3. **RIGHT SIDE:** Perfect 90° profile, right side visible opposite view of left side\n\n**ROW 2 — MORE ORTHOGRAPHIC + TOP/BOTTOM:**\n| BACK | TOP | BOTTOM |\n\n4. **BACK:** Direct rear view, perpendicular to back face\n5. **TOP:** Bird's eye view, looking straight down at object\n6. **BOTTOM:** View of underside, object flipped/transparent ground\n\n**ROW 3 — NATURAL VIEWS + TECHNICAL:**\n| 3/4 FRONT | 3/4 BACK | TECHNICAL SPEC |\n\n7. **3/4 FRONT:** 45° angle showing front + side, natural product shot angle\n8. **3/4 BACK:** 45° angle showing back + side, reveals hidden details\n9. **TECHNICAL BOARD:** Clean diagram view with:\n   - Estimated dimensions (H × W × D) with dimension lines\n   - Material callouts (metal, plastic, fabric, glass, etc.)\n   - Key component labels if applicable\n   - Scale reference indicator\n   - Orthographic side view in black and white\n\n**LIGHTING — PRODUCT PHOTOGRAPHY STYLE:**\n- Soft diffuse lighting from multiple sources\n- No harsh shadows — gentle gradients only\n- Even illumination revealing all surface details\n- Subtle reflections on glossy/metallic surfaces\n- Studio product photography quality\n\n**FORMAT — CRITICAL:**\n- 3×3 GRID: 9 panels of IDENTICAL width and height\n- Visible thin separator lines between panels\n- [BG_COLOR_PLACEHOLDER] background — consistent all panels\n- Object centered in each panel with padding\n- Same scale across views 1-8 (technical panel may adjust for labels)\n- NO TEXT except in Technical Spec panel (panel 9)\n\n**TECHNICAL:**\n- Sharp detail on materials, textures, surface quality\n- Accurate color representation\n- Clean edges, professional product rendering\n- Match visual style of reference\n\nSAME OBJECT in all 9 views — consistent in every detail."
+      },
+      {
+        "id": "tech-industrial",
+        "title": "Industrial Product Documentation",
+        "description": "Creates a clean product documentation board with a hero render, auxiliary views and precise callouts.",
+        "tab": "techboard",
+        "prompt": "{\n  \"reference\": { \"type\": \"image\", \"usage\": \"Use the uploaded image as the sole source of truth. Do not assume product category in advance.\" },\n  \"scene\": { \"description\": \"A minimalist, premium product presentation layout inspired by high-end industrial design and product documentation.\", \"background\": \"[BG_COLOR_PLACEHOLDER], clean, distraction-free\" },\n  \"layout\": {\n    \"top_left\": { \"content\": \"Brand name\", \"style\": \"Modern sans-serif typography\" },\n    \"left_column\": {\n      \"content\": \"Multiple auxiliary product views\",\n      \"views\": [\"Primary front\", \"Secondary side\", \"Alternate angle\", \"Detail view\"],\n      \"arrangement\": \"Vertically stacked\"\n    },\n    \"right_section\": { \"content\": \"Main hero product render\", \"style\": \"Large, dominant, photorealistic\", \"lighting\": \"Soft studio lighting\" }\n  },\n  \"annotations\": {\n    \"binding_rules\": [\"Each line points to one visible component\", \"Each label describes exact component function\", \"No marketing language\"],\n    \"line_style\": { \"type\": \"Hairline-thin vector lines\", \"color\": \"Neutral light gray\" }\n  },\n  \"visual_style\": { \"aesthetic\": \"Scandinavian, modern, industrial\", \"mood\": \"Calm, precise\" }\n}\n\n[Scene Description]"
+      },
+      {
+        "id": "tech-car",
+        "title": "Vintage Car Catalog",
+        "description": "Builds a catalog-style board for a vehicle reference, mixing lifestyle presentation and technical drawings.",
+        "tab": "techboard",
+        "prompt": "{\n  \"reference_images\": { \"usage_rule\": \"Exact visual reference for body shape, proportions, chrome details. Do not modernize.\" },\n  \"layout\": { \"canvas\": { \"orientation\": \"vertical\", \"aspect_ratio\": \"3:4\", \"background\": \"[BG_COLOR_PLACEHOLDER] paper / studio surface\" } },\n  \"top_section\": { \"type\": \"lifestyle_hero\", \"environment\": { \"setting\": \"minimal architectural urban space\", \"lighting\": \"natural sunlight\" } },\n  \"bottom_section\": {\n    \"type\": \"technical_specification_panel\",\n    \"technical_drawings\": { \"style\": \"automotive technical line drawings\", \"views\": [\"front view\", \"side profile\", \"three-quarter structural\"], \"line_style\": { \"color\": \"muted turquoise\", \"weight\": \"fine\" } },\n    \"materials_panel\": { \"textures\": [\"painted metal body\", \"chrome trim\", \"interior upholstery\"] }\n  }\n}\n\n[Scene Description]"
+      },
+      {
+        "id": "tech-object",
+        "title": "Standard Object Technical Board",
+        "description": "Turns an uploaded object into a technical manual board with orthographic views, indicators and material notes.",
+        "tab": "techboard",
+        "prompt": "{\n  \"reference\": { \"type\": \"uploaded_object\" },\n  \"layout\": {\n    \"composition\": \"Product exploded view or multi-angle grid\",\n    \"background\": \"[BG_COLOR_PLACEHOLDER] solid studio board\",\n    \"grid\": \"3x2 orthographic projection system\"\n  },\n  \"documentation\": {\n    \"style\": \"Technical manual aesthetic\",\n    \"callouts\": \"Minimal circle indicators with fine gray leader lines\",\n    \"text\": \"Lowercase technical sans-serif labels for materials and joinery\"\n  },\n  \"lighting\": \"Global illumination, zero hard shadows\",\n  \"fidelity\": \"Maintain absolute geometric ratios of the source object.\"\n}\n\n[Scene Description]"
+      },
+      {
+        "id": "tech-organic",
+        "title": "Organic Specimen Documentation",
+        "description": "Generates a scientific documentation board for botanical or organic references with section views and labels.",
+        "tab": "techboard",
+        "prompt": "{\n  \"reference\": { \"type\": \"organic_entity_image\", \"target\": \"fruit, botanical subject, or organic specimen\" },\n  \"layout\": {\n    \"primary\": \"Hero shot of the specimen in situ\",\n    \"secondary\": [\"Cross-section view\", \"Microscopic texture detail\", \"Growth stage or skeletal structure\"],\n    \"background\": \"[BG_COLOR_PLACEHOLDER] specimen board\"\n  },\n  \"annotations\": {\n    \"style\": \"Scientific Latinate labeling\",\n    \"lines\": \"Hand-drawn ink look or precise technical hairlines\",\n    \"content\": \"Focus on biological surfaces and internal anatomy visible in section.\"\n  },\n  \"rendering\": \"Biological accuracy, detailed surface texture, clean studio-documentation readability.\"\n}\n\n[Scene Description]"
+      },
+      {
+        "id": "master-reference",
+        "title": "MASTER CHARACTER REFERENCE SHEET",
+        "description": "Creates a unified 4:3 master character reference board with identity, scale views, expressions, head details, posture, wardrobe callouts, prop notes and hand gestures.",
+        "tab": "charsheet",
+        "prompt": "Create a single unified MASTER CHARACTER REFERENCE SHEET from these inputs:\n\n[STYLE]: [cinematic realism]\n[SUBJECT_DESCRIPTION]: [@IMG_1]\n\nCreate the board in a 4:3 horizontal layout. The board layout, background, typography and spacing must be clean, neutral, minimal and technical, on a [BG_COLOR_PLACEHOLDER] background. Use clear section titles, readable English labels, balanced spacing, no clutter, no watermark, no logo. Apply [STYLE] only to the character and visual elements, not to the board layout or UI. All text must be clearly readable at normal viewing size. Avoid tiny or dense text.\n\nInfer all missing details from the subject description, including name, alias if suitable, role, age, personality, core theme, accent, wardrobe details, accessories, key prop if clearly relevant, visual notes and a fitting color palette.\n\nUse this layout:\ntop row = left: title + horizontal info block, right: COLOR PALETTE\ncenter = large MAIN IDENTITY + SCALE SHEET as the biggest section\nright = EXPRESSION PROGRESSION + HEAD DETAIL SHEET + NEUTRAL BASELINE + POSTURE VARIATION + CLOSE-UP POSE\nbottom = WARDROBE / ACCESSORIES DETAILS + PROP + HAND GESTURES\n\nInclude:\n\nTitle: CHARACTER REFERENCE SHEET\n\n1. TOP INFO BLOCK\nName, Alias, Role, Age, Personality, Core Theme, Speech Accent\n\n2. COLOR PALETTE\nPlace this in the top-right header area.\nShow 6 to 8 minimal clean color swatches that match the subject's style, wardrobe, world and mood. Do not add labels.\n\n3. MAIN IDENTITY + SCALE SHEET\nThis must be the largest and most prominent section.\nShow the subject only, with no prop, no bag, no handheld object, no extra item interaction.\nShow:\nFront, 3/4 View, Side, Back\n\nPlace the character views over subtle measurement guide lines, like a clean model sheet scale background with height marks.\n\nAlso include a small SILHOUETTE GUIDE inside this same section:\n2 small clean silhouette thumbnails, Neutral Stance and Profile Silhouette.\nKeep the silhouettes small and secondary, placed in a corner of the MAIN IDENTITY + SCALE SHEET.\n\nThe subject should appear in a clean neutral presentation focused only on identity, body shape, outfit, silhouette and proportions.\nAdd a few small notes for silhouette, posture, special traits, visual identity.\n\n4. EXPRESSION PROGRESSION\nShow exactly 8 panels of the same subject:\nNeutral, Curious, Worried, Surprised, Afraid, Sad, Determined, Relieved\n\nMICRO EXPRESSIONS\nShow exactly 5 panels of the same subject:\nsubtle eye tension, slight smirk, lip tension, micro fear, controlled breath\n\nThese panels should function as both an expression sheet and a light emotional progression.\n\n5. HEAD DETAIL SHEET\nShow several close-up head references of the same subject from different angles:\n3/4 Headshot, Side Headshot, Top Angle, Low Angle, Diagonal Angle\n\nKeep facial structure, hairstyle, eyes, proportions and identity fully consistent.\n\n6. NEUTRAL BASELINE\n1 panel: fully relaxed, no emotion\n\n7. POSTURE VARIATION\n2-3 panels: relaxed, tense, confident\n\n8. CLOSE-UP POSE\nShow exactly 1 cinematic close-up pose of the same subject from chest-up or shoulder-up.\nUse a natural expressive pose that best fits the subject's personality and story tone.\nThis close-up should clearly show facial identity, hairstyle, expression, upper wardrobe detail and emotional presence.\n\n9. WARDROBE / ACCESSORIES DETAILS\nShow exactly 4 close-up callouts for important styling details such as hairstyle, outerwear, footwear, accessories, fabric or material detail.\n\n10. PROP\nOnly include this section if a prop is clearly important to the subject.\nShow exactly 1 single clean isolated image of the prop only.\nAdd a small info block:\nObject Name, Type, Traits\n\n11. HAND GESTURES\nrelaxed hand, tense fingers, pointing, gripping, subtle gesture near face"
+      },
+      {
+        "id": "simplesheet",
+        "title": "Simple Sheet",
+        "description": "Generates a basic character reference sheet with 4 essential views. Clean and efficient for quick character documentation.",
+        "tab": "charsheet",
+        "prompt": "Based on this image:\n\n**CHARACTER SHEET — SIMPLE 4-VIEW**\n\nGenerate a character reference sheet with 4 essential views of this character.\n\n**IDENTITY LOCK — CRITICAL:**\nThis is the SAME CHARACTER in all 4 views. NOT 4 different people.\n- CLONE exact face: bone structure, features, skin texture, expression\n- CLONE exact body: height, build, proportions\n- CLONE exact hair: color, style, length, texture\n- CLONE exact costume: every garment, color, pattern, accessory\n- Age, ethnicity, and all distinguishing features MUST be identical across views\n\n**4-VIEW LAYOUT (horizontal row):**\n| FRONT | LEFT SIDE | RIGHT SIDE | BACK |\n\n1. **FRONT VIEW:** Facing camera directly, relaxed standing pose, arms slightly away from body\n2. **LEFT SIDE VIEW:** Perfect 90° profile facing left, same pose\n3. **RIGHT SIDE VIEW:** Perfect 90° profile facing right, same pose\n4. **BACK VIEW:** Facing away from camera, same pose\n\n**POSE:**\n- Relaxed standing, weight evenly distributed\n- Arms slightly away from torso for silhouette clarity\n- Head straight, neutral expression\n- Same exact pose in all 4 views\n\n**FORMAT:**\n- Single horizontal row: 4 panels of IDENTICAL width/height\n- [BG_COLOR_PLACEHOLDER] background — consistent across all panels\n- Visible thin separator lines between panels\n- Character centered in each panel with padding\n- Same scale across all 4 views (heads at same height)\n- NO TEXT, NO LABELS\n\n**TECHNICAL:**\n- Even, soft lighting from front-top\n- Minimal shadows for clarity\n- Sharp details, clean edges\n- Print-ready quality\n\nSAME CHARACTER in all 4 views — faces and bodies must be identical."
+      },
+      {
+        "id": "complexsheet",
+        "title": "Complex Sheet",
+        "description": "Generates a professional character reference sheet with full-body turnaround and detailed portrait close-ups. Industry-standard layout for character design documentation.",
+        "tab": "charsheet",
+        "prompt": "Based on this image:\n\n**CHARACTER SHEET — PROFESSIONAL REFERENCE**\n\nCreate a professional character reference sheet. Match the EXACT visual style of the reference (realism level, rendering, texture, color treatment, aesthetic).\n\n**IDENTITY LOCK — CRITICAL:**\nThis is the SAME CHARACTER across ALL 7 panels. NOT different people.\n- CLONE exact face: bone structure, features, skin, wrinkles, moles\n- CLONE exact body: height, build, proportions\n- CLONE exact hair: color, style, length, texture, hairline\n- CLONE exact costume: every garment, accessory, detail, wear marks\n- Age and ethnicity MUST match source exactly\n\n**LAYOUT — TWO ROWS:**\n\n**TOP ROW — 4 FULL-BODY VIEWS (horizontal):**\n| FRONT | LEFT PROFILE | RIGHT PROFILE | BACK |\n\n- FRONT: Facing camera, relaxed A-pose, arms 30-45° from body\n- LEFT PROFILE: Perfect 90° facing left, same A-pose\n- RIGHT PROFILE: Perfect 90° facing right, same A-pose\n- BACK: Facing away, same A-pose\n\n**BOTTOM ROW — 3 PORTRAIT CLOSE-UPS (centered below):**\n| FRONT PORTRAIT | LEFT PORTRAIT | RIGHT PORTRAIT |\n\n- FRONT PORTRAIT: Head and shoulders, facing camera, neutral expression\n- LEFT PORTRAIT: Head and shoulders, 90° profile facing left\n- RIGHT PORTRAIT: Head and shoulders, 90° profile facing right\n\n**ALIGNMENT REQUIREMENTS:**\n- Full-body views: heads at identical height, same scale\n- Portraits: faces at identical scale, same crop level\n- Portraits centered beneath full-body row\n- Even spacing between all panels\n- Clean panel separation with thin lines\n\n**TECHNICAL:**\n- [BG_COLOR_PLACEHOLDER] plain background\n- Consistent lighting across ALL panels (same direction, intensity, softness)\n- Natural controlled shadows — detail preservation, no dramatic mood\n- Sharp details, crisp edges, print-ready quality\n- Accurate anatomy, clear silhouettes\n- NO TEXT, NO LABELS\n\nSAME CHARACTER in all 7 panels — perfect identity consistency."
+      },
+      {
+        "id": "posesheet",
+        "title": "Pose Sheet",
+        "description": "Generates a comprehensive 5×5 pose sheet with 25 different poses across 5 categories. Perfect for animation reference, game assets, or character acting range demonstration.",
+        "tab": "charsheet",
+        "prompt": "Based on this image:\n\n**CHARACTER POSE SHEET — 5×5 GRID (25 POSES)**\n\nGenerate a pose reference sheet with 25 different poses of this character, arranged in a 5×5 grid. Each pose unique, same character throughout.\n\n**IDENTITY LOCK — CRITICAL:**\nThis is the SAME CHARACTER in ALL 25 poses. NOT 25 different people.\n- CLONE exact face, body, hair, costume from reference\n- Identity MUST be recognizable in every single panel\n- Same clothing/outfit across all poses (adjusted for movement)\n- Age, ethnicity, features identical throughout\n[POSE_WEAPON_DIRECTIVE]\n\n**5×5 GRID LAYOUT:**\n\n[POSE_GRID_DIRECTIVE]\n\n**POSE REQUIREMENTS:**\n- Each pose distinct and readable at small size\n- Full body visible in each panel (head to toe)\n- Dynamic poses with clear silhouettes\n- Character fits within panel with padding\n- Action poses show peak moment of movement\n\n**FORMAT — CRITICAL:**\n- 5×5 GRID: 25 panels of IDENTICAL width and height\n- Visible thin separator lines between panels\n- [BG_COLOR_PLACEHOLDER] background — consistent all panels\n- NO TEXT, NO LABELS, NO NUMBERS\n- All panels same aspect ratio (square recommended)\n\n**TECHNICAL:**\n- Consistent lighting across all 25 panels\n- Same rendering style throughout\n- Sharp details, clean edges\n- Photorealistic matching reference style\n\nSAME CHARACTER in all 25 poses — identity must be unmistakable."
+      },
+      {
+        "id": "expressionboard",
+        "title": "Basic Expression Board",
+        "description": "Generates a facial expression reference board with 8 core emotions in a 2×4 grid. Close-up head shots showing the character's acting range.",
+        "tab": "charsheet",
+        "prompt": "Based on this image:\n\n**FACIAL EXPRESSION BOARD — 2×4 GRID (8 EXPRESSIONS)**\n\nGenerate a facial expression reference sheet with 8 different emotions, arranged in a 2×4 grid. Close-up head shots only.\n\n**IDENTITY LOCK — CRITICAL:**\nThis is the SAME CHARACTER in ALL 8 expressions. NOT 8 different people.\n- CLONE exact face from reference: bone structure, nose, eyes, lips, skin texture, moles, scars\n- CLONE exact hair: color, style, length, texture (hair may move slightly with expression)\n- Age, ethnicity, facial features MUST be identical across all 8 panels\n- Only the EXPRESSION changes — the face itself stays the same\n\n**2×4 GRID LAYOUT:**\n\n**ROW 1 (4 expressions):**\n| NEUTRAL | HAPPY | SAD | ANGRY |\n\n1. **NEUTRAL:** Relaxed, no emotion, baseline reference face, mouth closed, eyes forward\n2. **HAPPY:** Genuine smile, crow's feet, raised cheeks, teeth may show, bright eyes\n3. **SAD:** Downturned mouth, drooping eyelids, furrowed inner brows, dejected\n4. **ANGRY:** Furrowed brows, tense jaw, flared nostrils, intense glare, clenched teeth\n\n**ROW 2 (4 expressions):**\n| SURPRISED | SCARED | DISGUSTED | CONTEMPT |\n\n5. **SURPRISED:** Wide eyes, raised eyebrows, open mouth, shocked expression\n6. **SCARED/FEAR:** Wide eyes, raised inner brows, tense mouth, looking alarmed\n7. **DISGUSTED:** Wrinkled nose, raised upper lip, squinted eyes, repulsed\n8. **CONTEMPT:** Slight smirk, one corner of mouth raised, dismissive, superior look\n\n**FRAMING:**\n- Head and upper shoulders visible in each panel\n- Face centered, same scale across all 8 panels\n- Consistent head angle (slight 3/4 or direct front — same in all)\n- Eyes at same height across the row\n\n**FORMAT — CRITICAL:**\n- 2×4 GRID: 8 panels of IDENTICAL width and height\n- Visible thin separator lines between panels\n- [BG_COLOR_PLACEHOLDER] background — consistent all panels\n- NO TEXT, NO LABELS, NO EMOTION NAMES\n- Same aspect ratio all panels\n\n**TECHNICAL:**\n- Consistent soft lighting across all 8 panels (same direction, intensity)\n- Sharp detail on facial features, skin texture, eyes\n- Expressions must be clear and readable\n- Match visual style of reference (realism level, rendering)\n\nSAME FACE in all 8 panels — only the expression changes."
+      },
+      {
+        "id": "complexexpressionboard",
+        "title": "Complex Expression Board",
+        "description": "Builds a 2×4 expression board from 8 selected FACS action units. Use the FACS popup to choose the exact facial actions before copying.",
+        "tab": "charsheet",
+        "prompt": "Based on this image:\n\n**COMPLEX FACS EXPRESSION BOARD — 2×4 GRID (8 SELECTED FACIAL ACTIONS)**\n\nGenerate a facial acting reference sheet with exactly 8 close-up portrait panels arranged in a 2×4 grid. Each panel shows the same character performing one selected FACS action unit or compound facial action.\n\n**IDENTITY LOCK — CRITICAL:**\nThis is the SAME CHARACTER in ALL 8 panels. NOT 8 different people.\n- CLONE exact face from reference: bone structure, nose, eyes, lips, skin texture, moles, scars\n- CLONE exact hair: color, style, length, texture\n- Age, ethnicity, facial features and face volume MUST be identical across all 8 panels\n- Only the FACS facial action changes — no redesign, no beauty correction, no new hairstyle\n\n**SELECTED FACS ACTIONS — USE THESE 8 PANELS IN ORDER:**\n[FACS_SELECTION_PLACEHOLDER]\n\n**FACS EXECUTION RULES:**\n- Make each facial action readable but anatomically plausible\n- Keep all non-selected facial regions neutral unless they are naturally affected by the selected action\n- Do not exaggerate into cartoon unless the reference style is already cartoon\n- Preserve the same head angle, crop, lens, lighting and background across all panels\n\n**FRAMING:**\n- Head and upper shoulders visible in each panel\n- Face centered, same scale across all 8 panels\n- Consistent head angle, eyes at the same height across each row\n\n**FORMAT — CRITICAL:**\n- 2×4 GRID: 8 panels of IDENTICAL width and height\n- Visible thin separator lines between panels\n- [BG_COLOR_PLACEHOLDER] background — consistent all panels\n- NO TEXT, NO LABELS, NO AU CODES, NO WATERMARKS\n\n**TECHNICAL:**\n- Consistent soft lighting across all 8 panels\n- Sharp detail on facial features, skin texture, eyes and mouth shapes\n- The result must read like a professional FACS / facial acting reference board\n\nSAME FACE in all 8 panels — only the selected FACS action changes."
+      }
+    ],
+    "weaponOptions": [
+      {
+        "value": "none",
+        "label": "None",
+        "selected": true
+      },
+      {
+        "value": "ref",
+        "label": "REF [IMG_2]",
+        "selected": false
+      },
+      {
+        "value": "neutral",
+        "label": "neutral (main nu)",
+        "selected": false
+      },
+      {
+        "value": "Rifle",
+        "label": "Rifle",
+        "selected": false
+      },
+      {
+        "value": "Revolver",
+        "label": "Revolver",
+        "selected": false
+      },
+      {
+        "value": "axe",
+        "label": "axe",
+        "selected": false
+      },
+      {
+        "value": "sword",
+        "label": "sword",
+        "selected": false
+      },
+      {
+        "value": "Mace",
+        "label": "Mace",
+        "selected": false
+      },
+      {
+        "value": "Scepter",
+        "label": "Scepter",
+        "selected": false
+      },
+      {
+        "value": "Knife",
+        "label": "Knife",
+        "selected": false
+      },
+      {
+        "value": "Flame trower",
+        "label": "Flame trower",
+        "selected": false
+      },
+      {
+        "value": "Machine Gun",
+        "label": "Machine Gun",
+        "selected": false
+      },
+      {
+        "value": "golf club",
+        "label": "golf club",
+        "selected": false
+      },
+      {
+        "value": "agjustable wrench",
+        "label": "agjustable wrench",
+        "selected": false
+      },
+      {
+        "value": "Broken bottle",
+        "label": "Broken bottle",
+        "selected": false
+      },
+      {
+        "value": "A 10 machine gun (barillets tournant) HUGE with bullet reservoir in backpack",
+        "label": "A 10 machine gun HUGE + backpack reservoir",
+        "selected": false
+      },
+      {
+        "value": "1960 laser blaster",
+        "label": "1960 laser blaster",
+        "selected": false
+      },
+      {
+        "value": "gourdin",
+        "label": "gourdin",
+        "selected": false
+      },
+      {
+        "value": "matraque",
+        "label": "matraque",
+        "selected": false
+      }
+    ],
+    "lightingTexts": {
+      "original": "**LIGHTING:** Original Scene-Matched — Preserve exact lighting from source: shadow direction/hardness/density, color temperature, atmospheric qualities, specular highlight positions. If mixed lighting (practical + key), preserve ratio. Each view shows how original light wraps around subject from that angle.",
+      "diffuse": "**LIGHTING:** Diffuse Studio — Soft global illumination, minimal shadows (only subtle ambient occlusion), neutral daylight 5500-6000K, maximum detail visibility. No crushed blacks or blown highlights. Skin tones even, hair/costume details fully visible. Clinical turntable quality, information over mood."
+    },
+    "multiRefTexts": {
+      "single": "",
+      "multi": "**MULTI-IMAGE REFERENCE MODE:**\nYou have been provided with MULTIPLE source images of the same environment from different angles/positions.\n- CROSS-REFERENCE all provided images to ensure perfect consistency\n- Use visible details from ALL images to reconstruct accurate geometry\n- Where images show the same element, it MUST match exactly across your output\n- Resolve any ambiguities by finding the element in another reference image\n- Color grade must match across all source images — find the common baseline\n- This is NOT creative extrapolation — you have the references, USE THEM\n\n"
+    },
+    "subjectTexts": {
+      "human": "",
+      "puppet": "\n**PUPPET/FIGURINE MODE — CRITICAL:**\n[IMG_1] is a reference for a practical puppet, figurine, or stylized character.\n- Photograph this EXACT figurine with its EXACT proportions as-is\n- PRESERVE intentional non-realistic proportions: head size, limb thickness, body shape, joint style\n- Do NOT correct toward realistic human anatomy — this is a SCULPTED CHARACTER\n- Hands, feet, face may be stylized/simplified — keep them that way\n- Adapt clothing to the puppet's specific proportions, not human proportions\n- Fabric should drape and fold according to the figurine's unique body shape\n- Maintain the sculptural/crafted quality of the original character\n"
+    },
+    "accessoryTexts": {
+      "clothes": "",
+      "full": "\n**POCKET ITEMS & ACCESSORIES (also from knolling board):**\n- Include all non-wearable items visible in [IMG_2]: keys, lighter, comb, wallet, phone, cigarettes, cards, coins, etc.\n- Place these items logically: in pockets (visible bulge), in hands, clipped to belt, in bag\n- If item cannot be worn/carried in pose, place it nearby in scene naturally"
+    },
+    "backgrounds": {
+      "beige": "Beige (#B3A089)",
+      "blue": "Blue (#515973)",
+      "pink": "Pink (#DE7C68)",
+      "white": "White (#F2ECCA)"
+    },
+    "facs": [
+      {
+        "n": 1,
+        "code": "AU1",
+        "name": "Inner Brow Raiser",
+        "cat": "brow",
+        "visible": "inner eyebrow corners lift upward, soft worried crease in the middle forehead"
+      },
+      {
+        "n": 2,
+        "code": "AU2",
+        "name": "Outer Brow Raiser",
+        "cat": "brow",
+        "visible": "outer eyebrow corners arch upward, temples open, face reads alert"
+      },
+      {
+        "n": 3,
+        "code": "AU4",
+        "name": "Brow Lowerer",
+        "cat": "brow",
+        "visible": "brows pull down and together, vertical crease between them, intense glare"
+      },
+      {
+        "n": 4,
+        "code": "AU5",
+        "name": "Upper Lid Raiser",
+        "cat": "eye",
+        "visible": "upper eyelids open wide, iris fully exposed, startled alert eyes"
+      },
+      {
+        "n": 5,
+        "code": "AU6",
+        "name": "Cheek Raiser",
+        "cat": "cheek",
+        "visible": "cheeks lift upward, lower eyelids bunch, warm smile pressure around eyes"
+      },
+      {
+        "n": 6,
+        "code": "AU7",
+        "name": "Lid Tightener",
+        "cat": "eye",
+        "visible": "lower eyelids tighten, eyes narrow with focused tension"
+      },
+      {
+        "n": 7,
+        "code": "AU9",
+        "name": "Nose Wrinkler",
+        "cat": "nose",
+        "visible": "nose wrinkles upward, bridge creases, upper lip lifts with mild disgust"
+      },
+      {
+        "n": 8,
+        "code": "AU10",
+        "name": "Upper Lip Raiser",
+        "cat": "mouth",
+        "visible": "upper lip raises vertically and exposes the upper teeth slightly"
+      },
+      {
+        "n": 9,
+        "code": "AU11",
+        "name": "Nasolabial Deepener",
+        "cat": "mouth",
+        "visible": "nasolabial folds deepen from nose to mouth corners"
+      },
+      {
+        "n": 10,
+        "code": "AU12",
+        "name": "Lip Corner Puller",
+        "cat": "mouth",
+        "visible": "mouth corners pull upward and back into a clear smile"
+      },
+      {
+        "n": 11,
+        "code": "AU13",
+        "name": "Sharp Lip Puller",
+        "cat": "mouth",
+        "visible": "lip corners pull sharply upward into an angular mischievous smile"
+      },
+      {
+        "n": 12,
+        "code": "AU14",
+        "name": "Dimpler",
+        "cat": "mouth",
+        "visible": "dimples form at the mouth corners, lips closed in a restrained smirk"
+      },
+      {
+        "n": 13,
+        "code": "AU15",
+        "name": "Lip Corner Depressor",
+        "cat": "mouth",
+        "visible": "mouth corners pull downward, sad disappointed mouth shape"
+      },
+      {
+        "n": 14,
+        "code": "AU16",
+        "name": "Lower Lip Depressor",
+        "cat": "mouth",
+        "visible": "lower lip pulls down, lower teeth begin to show"
+      },
+      {
+        "n": 15,
+        "code": "AU17",
+        "name": "Chin Raiser",
+        "cat": "chin",
+        "visible": "chin pushes upward, lower lip rises, dimpled chin tension"
+      },
+      {
+        "n": 16,
+        "code": "AU18",
+        "name": "Lip Pucker",
+        "cat": "mouth",
+        "visible": "lips push forward into a small round pucker"
+      },
+      {
+        "n": 17,
+        "code": "AU20",
+        "name": "Lip Stretcher",
+        "cat": "mouth",
+        "visible": "mouth stretches horizontally, lips pulled flat and tense"
+      },
+      {
+        "n": 18,
+        "code": "AU22",
+        "name": "Lip Funneler",
+        "cat": "mouth",
+        "visible": "lips funnel forward into a rounded open O shape"
+      },
+      {
+        "n": 19,
+        "code": "AU23",
+        "name": "Lip Tightener",
+        "cat": "mouth",
+        "visible": "lips tighten together into a small narrow line"
+      },
+      {
+        "n": 20,
+        "code": "AU24",
+        "name": "Lip Pressor",
+        "cat": "mouth",
+        "visible": "lips press firmly together, mouth set and compressed"
+      },
+      {
+        "n": 21,
+        "code": "AU25",
+        "name": "Lips Part",
+        "cat": "mouth",
+        "visible": "lips part softly, relaxed neutral opening"
+      },
+      {
+        "n": 22,
+        "code": "AU26",
+        "name": "Jaw Drop",
+        "cat": "jaw",
+        "visible": "jaw drops open into a surprised oval mouth"
+      },
+      {
+        "n": 23,
+        "code": "AU27",
+        "name": "Mouth Stretch",
+        "cat": "mouth",
+        "visible": "mouth opens very wide, stretched shout or scream shape"
+      },
+      {
+        "n": 24,
+        "code": "AU28",
+        "name": "Lip Suck",
+        "cat": "mouth",
+        "visible": "lips roll inward and disappear between the teeth"
+      },
+      {
+        "n": 25,
+        "code": "AU41",
+        "name": "Lid Droop",
+        "cat": "eye",
+        "visible": "upper eyelids droop halfway, sleepy heavy-lidded gaze"
+      },
+      {
+        "n": 26,
+        "code": "AU42",
+        "name": "Slit Eyes",
+        "cat": "eye",
+        "visible": "eyes narrow into slits, sleepy or suspicious"
+      },
+      {
+        "n": 27,
+        "code": "AU43",
+        "name": "Eyes Closed",
+        "cat": "eye",
+        "visible": "eyes fully closed, eyelids relaxed shut"
+      },
+      {
+        "n": 28,
+        "code": "AU44",
+        "name": "Squint",
+        "cat": "eye",
+        "visible": "squinting eyes with compressed lids and focused strain"
+      },
+      {
+        "n": 29,
+        "code": "AU56",
+        "name": "Head Tilt Right",
+        "cat": "head",
+        "visible": "head tilts right while expression remains controlled"
+      },
+      {
+        "n": 30,
+        "code": "AU57",
+        "name": "Head Forward",
+        "cat": "head",
+        "visible": "head pushes forward, face approaches camera with intent"
+      },
+      {
+        "n": 31,
+        "code": "AU58",
+        "name": "Head Turn Left",
+        "cat": "head",
+        "visible": "head turns left, gaze direction follows or counters the turn"
+      },
+      {
+        "n": 32,
+        "code": "AU52",
+        "name": "Head Turn Right",
+        "cat": "head",
+        "visible": "head turns right, neck rotation visible"
+      },
+      {
+        "n": 33,
+        "code": "AU53",
+        "name": "Head Up",
+        "cat": "head",
+        "visible": "head tilts upward, chin raised"
+      },
+      {
+        "n": 34,
+        "code": "AU54",
+        "name": "Head Down",
+        "cat": "head",
+        "visible": "head drops downward, chin lowered"
+      },
+      {
+        "n": 35,
+        "code": "AU55",
+        "name": "Head Tilt Left",
+        "cat": "head",
+        "visible": "head tilts left while maintaining identity"
+      },
+      {
+        "n": 36,
+        "code": "AU56B",
+        "name": "Head Tilt Right Deep",
+        "cat": "head",
+        "visible": "deep right head tilt, stronger asymmetrical neck angle"
+      },
+      {
+        "n": 37,
+        "code": "AU57B",
+        "name": "Head Forward Deep",
+        "cat": "head",
+        "visible": "deep forward head movement, confrontational proximity"
+      },
+      {
+        "n": 38,
+        "code": "AU58B",
+        "name": "Head Back",
+        "cat": "head",
+        "visible": "head moves back, recoiling or distancing"
+      },
+      {
+        "n": 39,
+        "code": "AU61",
+        "name": "Eyes Turn Left",
+        "cat": "gaze",
+        "visible": "eyes look left without turning the head"
+      },
+      {
+        "n": 40,
+        "code": "AU62",
+        "name": "Eyes Turn Right",
+        "cat": "gaze",
+        "visible": "eyes look right without turning the head"
+      },
+      {
+        "n": 41,
+        "code": "AU63",
+        "name": "Eyes Up",
+        "cat": "gaze",
+        "visible": "eyes look upward, upper gaze visible"
+      },
+      {
+        "n": 42,
+        "code": "AU64",
+        "name": "Eyes Down",
+        "cat": "gaze",
+        "visible": "eyes look downward, gaze drops"
+      },
+      {
+        "n": 43,
+        "code": "AU71",
+        "name": "Brow Furrow",
+        "cat": "brow",
+        "visible": "brow furrows with a strong vertical crease"
+      },
+      {
+        "n": 44,
+        "code": "AU72",
+        "name": "Brow Bulge",
+        "cat": "brow",
+        "visible": "brow area bulges forward, heavy forehead pressure"
+      },
+      {
+        "n": 45,
+        "code": "AU81",
+        "name": "Chewing",
+        "cat": "jaw",
+        "visible": "jaw shifts sideways mid-chew, one cheek slightly bulged"
+      },
+      {
+        "n": 46,
+        "code": "AU82",
+        "name": "Nostril Dilator",
+        "cat": "nose",
+        "visible": "nostrils flare open with a strong inhale"
+      },
+      {
+        "n": 47,
+        "code": "AU83",
+        "name": "Nostril Compressor",
+        "cat": "nose",
+        "visible": "nostrils pinch inward and narrow"
+      },
+      {
+        "n": 48,
+        "code": "AU84",
+        "name": "Tongue Up",
+        "cat": "mouth",
+        "visible": "tongue tip lifts upward toward the upper lip"
+      },
+      {
+        "n": 49,
+        "code": "AU85",
+        "name": "Tongue Out",
+        "cat": "mouth",
+        "visible": "tongue extends fully past the lower lip"
+      }
+    ],
+    "defaultState": {
+      "tab": "techboard",
+      "backgrounds": {
+        "master-reference": "blue",
+        "simplesheet": "blue",
+        "complexsheet": "blue",
+        "posesheet": "blue",
+        "expressionboard": "blue",
+        "complexexpressionboard": "blue",
+        "objectsheet": "blue",
+        "tech-industrial": "blue",
+        "tech-car": "blue",
+        "tech-object": "blue",
+        "tech-organic": "blue"
+      },
+      "weapon": "none",
+      "facs": [
+        "AU1",
+        "AU4",
+        "AU5",
+        "AU6",
+        "AU9",
+        "AU12",
+        "AU15",
+        "AU26"
+      ]
+    },
+    "configuredState": {
+      "tab": "charsheet",
+      "backgrounds": {
+        "master-reference": "beige",
+        "simplesheet": "blue",
+        "complexsheet": "blue",
+        "posesheet": "blue",
+        "expressionboard": "blue",
+        "complexexpressionboard": "blue",
+        "objectsheet": "pink",
+        "tech-industrial": "blue",
+        "tech-car": "blue",
+        "tech-object": "blue",
+        "tech-organic": "blue"
+      },
+      "weapon": "ref",
+      "facs": [
+        "AU2",
+        "AU7",
+        "AU10",
+        "AU14",
+        "AU20",
+        "AU27",
+        "AU43",
+        "AU85"
+      ]
+    },
+    "defaultOutputs": {
+      "objectsheet": "Based on this image:\n\n**OBJECT REFERENCE SHEET — 3×3 GRID (9 VIEWS)**\n\nGenerate a professional product reference sheet with 9 views of this object on a Blue (#515973) cyclorama, arranged in a 3×3 grid.\n\n**OBJECT CONSISTENCY — CRITICAL:**\nThis is the SAME OBJECT in all 9 views. NOT 9 different objects.\n- CLONE exact shape, proportions, details from reference\n- CLONE exact materials, colors, textures, surface finish\n- CLONE all markings, logos, wear, imperfections\n- Scale and details MUST be identical across all views\n\n**3×3 GRID LAYOUT:**\n\n**ROW 1 — ORTHOGRAPHIC VIEWS:**\n| FRONT | LEFT SIDE | RIGHT SIDE |\n\n1. **FRONT:** Direct front view, perpendicular to main face\n2. **LEFT SIDE:** Perfect 90° profile, left side visible\n3. **RIGHT SIDE:** Perfect 90° profile, right side visible opposite view of left side\n\n**ROW 2 — MORE ORTHOGRAPHIC + TOP/BOTTOM:**\n| BACK | TOP | BOTTOM |\n\n4. **BACK:** Direct rear view, perpendicular to back face\n5. **TOP:** Bird's eye view, looking straight down at object\n6. **BOTTOM:** View of underside, object flipped/transparent ground\n\n**ROW 3 — NATURAL VIEWS + TECHNICAL:**\n| 3/4 FRONT | 3/4 BACK | TECHNICAL SPEC |\n\n7. **3/4 FRONT:** 45° angle showing front + side, natural product shot angle\n8. **3/4 BACK:** 45° angle showing back + side, reveals hidden details\n9. **TECHNICAL BOARD:** Clean diagram view with:\n   - Estimated dimensions (H × W × D) with dimension lines\n   - Material callouts (metal, plastic, fabric, glass, etc.)\n   - Key component labels if applicable\n   - Scale reference indicator\n   - Orthographic side view in black and white\n\n**LIGHTING — PRODUCT PHOTOGRAPHY STYLE:**\n- Soft diffuse lighting from multiple sources\n- No harsh shadows — gentle gradients only\n- Even illumination revealing all surface details\n- Subtle reflections on glossy/metallic surfaces\n- Studio product photography quality\n\n**FORMAT — CRITICAL:**\n- 3×3 GRID: 9 panels of IDENTICAL width and height\n- Visible thin separator lines between panels\n- [BG_COLOR_PLACEHOLDER] background — consistent all panels\n- Object centered in each panel with padding\n- Same scale across views 1-8 (technical panel may adjust for labels)\n- NO TEXT except in Technical Spec panel (panel 9)\n\n**TECHNICAL:**\n- Sharp detail on materials, textures, surface quality\n- Accurate color representation\n- Clean edges, professional product rendering\n- Match visual style of reference\n\nSAME OBJECT in all 9 views — consistent in every detail.",
+      "tech-industrial": "{\n  \"reference\": { \"type\": \"image\", \"usage\": \"Use the uploaded image as the sole source of truth. Do not assume product category in advance.\" },\n  \"scene\": { \"description\": \"A minimalist, premium product presentation layout inspired by high-end industrial design and product documentation.\", \"background\": \"Blue (#515973), clean, distraction-free\" },\n  \"layout\": {\n    \"top_left\": { \"content\": \"Brand name\", \"style\": \"Modern sans-serif typography\" },\n    \"left_column\": {\n      \"content\": \"Multiple auxiliary product views\",\n      \"views\": [\"Primary front\", \"Secondary side\", \"Alternate angle\", \"Detail view\"],\n      \"arrangement\": \"Vertically stacked\"\n    },\n    \"right_section\": { \"content\": \"Main hero product render\", \"style\": \"Large, dominant, photorealistic\", \"lighting\": \"Soft studio lighting\" }\n  },\n  \"annotations\": {\n    \"binding_rules\": [\"Each line points to one visible component\", \"Each label describes exact component function\", \"No marketing language\"],\n    \"line_style\": { \"type\": \"Hairline-thin vector lines\", \"color\": \"Neutral light gray\" }\n  },\n  \"visual_style\": { \"aesthetic\": \"Scandinavian, modern, industrial\", \"mood\": \"Calm, precise\" }\n}\n\n[Scene Description]",
+      "tech-car": "{\n  \"reference_images\": { \"usage_rule\": \"Exact visual reference for body shape, proportions, chrome details. Do not modernize.\" },\n  \"layout\": { \"canvas\": { \"orientation\": \"vertical\", \"aspect_ratio\": \"3:4\", \"background\": \"Blue (#515973) paper / studio surface\" } },\n  \"top_section\": { \"type\": \"lifestyle_hero\", \"environment\": { \"setting\": \"minimal architectural urban space\", \"lighting\": \"natural sunlight\" } },\n  \"bottom_section\": {\n    \"type\": \"technical_specification_panel\",\n    \"technical_drawings\": { \"style\": \"automotive technical line drawings\", \"views\": [\"front view\", \"side profile\", \"three-quarter structural\"], \"line_style\": { \"color\": \"muted turquoise\", \"weight\": \"fine\" } },\n    \"materials_panel\": { \"textures\": [\"painted metal body\", \"chrome trim\", \"interior upholstery\"] }\n  }\n}\n\n[Scene Description]",
+      "tech-object": "{\n  \"reference\": { \"type\": \"uploaded_object\" },\n  \"layout\": {\n    \"composition\": \"Product exploded view or multi-angle grid\",\n    \"background\": \"Blue (#515973) solid studio board\",\n    \"grid\": \"3x2 orthographic projection system\"\n  },\n  \"documentation\": {\n    \"style\": \"Technical manual aesthetic\",\n    \"callouts\": \"Minimal circle indicators with fine gray leader lines\",\n    \"text\": \"Lowercase technical sans-serif labels for materials and joinery\"\n  },\n  \"lighting\": \"Global illumination, zero hard shadows\",\n  \"fidelity\": \"Maintain absolute geometric ratios of the source object.\"\n}\n\n[Scene Description]",
+      "tech-organic": "{\n  \"reference\": { \"type\": \"organic_entity_image\", \"target\": \"fruit, botanical subject, or organic specimen\" },\n  \"layout\": {\n    \"primary\": \"Hero shot of the specimen in situ\",\n    \"secondary\": [\"Cross-section view\", \"Microscopic texture detail\", \"Growth stage or skeletal structure\"],\n    \"background\": \"Blue (#515973) specimen board\"\n  },\n  \"annotations\": {\n    \"style\": \"Scientific Latinate labeling\",\n    \"lines\": \"Hand-drawn ink look or precise technical hairlines\",\n    \"content\": \"Focus on biological surfaces and internal anatomy visible in section.\"\n  },\n  \"rendering\": \"Biological accuracy, detailed surface texture, clean studio-documentation readability.\"\n}\n\n[Scene Description]",
+      "master-reference": "Create a single unified MASTER CHARACTER REFERENCE SHEET from these inputs:\n\n[STYLE]: [cinematic realism]\n[SUBJECT_DESCRIPTION]: [@IMG_1]\n\nCreate the board in a 4:3 horizontal layout. The board layout, background, typography and spacing must be clean, neutral, minimal and technical, on a Blue (#515973) background. Use clear section titles, readable English labels, balanced spacing, no clutter, no watermark, no logo. Apply [STYLE] only to the character and visual elements, not to the board layout or UI. All text must be clearly readable at normal viewing size. Avoid tiny or dense text.\n\nInfer all missing details from the subject description, including name, alias if suitable, role, age, personality, core theme, accent, wardrobe details, accessories, key prop if clearly relevant, visual notes and a fitting color palette.\n\nUse this layout:\ntop row = left: title + horizontal info block, right: COLOR PALETTE\ncenter = large MAIN IDENTITY + SCALE SHEET as the biggest section\nright = EXPRESSION PROGRESSION + HEAD DETAIL SHEET + NEUTRAL BASELINE + POSTURE VARIATION + CLOSE-UP POSE\nbottom = WARDROBE / ACCESSORIES DETAILS + PROP + HAND GESTURES\n\nInclude:\n\nTitle: CHARACTER REFERENCE SHEET\n\n1. TOP INFO BLOCK\nName, Alias, Role, Age, Personality, Core Theme, Speech Accent\n\n2. COLOR PALETTE\nPlace this in the top-right header area.\nShow 6 to 8 minimal clean color swatches that match the subject's style, wardrobe, world and mood. Do not add labels.\n\n3. MAIN IDENTITY + SCALE SHEET\nThis must be the largest and most prominent section.\nShow the subject only, with no prop, no bag, no handheld object, no extra item interaction.\nShow:\nFront, 3/4 View, Side, Back\n\nPlace the character views over subtle measurement guide lines, like a clean model sheet scale background with height marks.\n\nAlso include a small SILHOUETTE GUIDE inside this same section:\n2 small clean silhouette thumbnails, Neutral Stance and Profile Silhouette.\nKeep the silhouettes small and secondary, placed in a corner of the MAIN IDENTITY + SCALE SHEET.\n\nThe subject should appear in a clean neutral presentation focused only on identity, body shape, outfit, silhouette and proportions.\nAdd a few small notes for silhouette, posture, special traits, visual identity.\n\n4. EXPRESSION PROGRESSION\nShow exactly 8 panels of the same subject:\nNeutral, Curious, Worried, Surprised, Afraid, Sad, Determined, Relieved\n\nMICRO EXPRESSIONS\nShow exactly 5 panels of the same subject:\nsubtle eye tension, slight smirk, lip tension, micro fear, controlled breath\n\nThese panels should function as both an expression sheet and a light emotional progression.\n\n5. HEAD DETAIL SHEET\nShow several close-up head references of the same subject from different angles:\n3/4 Headshot, Side Headshot, Top Angle, Low Angle, Diagonal Angle\n\nKeep facial structure, hairstyle, eyes, proportions and identity fully consistent.\n\n6. NEUTRAL BASELINE\n1 panel: fully relaxed, no emotion\n\n7. POSTURE VARIATION\n2-3 panels: relaxed, tense, confident\n\n8. CLOSE-UP POSE\nShow exactly 1 cinematic close-up pose of the same subject from chest-up or shoulder-up.\nUse a natural expressive pose that best fits the subject's personality and story tone.\nThis close-up should clearly show facial identity, hairstyle, expression, upper wardrobe detail and emotional presence.\n\n9. WARDROBE / ACCESSORIES DETAILS\nShow exactly 4 close-up callouts for important styling details such as hairstyle, outerwear, footwear, accessories, fabric or material detail.\n\n10. PROP\nOnly include this section if a prop is clearly important to the subject.\nShow exactly 1 single clean isolated image of the prop only.\nAdd a small info block:\nObject Name, Type, Traits\n\n11. HAND GESTURES\nrelaxed hand, tense fingers, pointing, gripping, subtle gesture near face",
+      "simplesheet": "Based on this image:\n\n**CHARACTER SHEET — SIMPLE 4-VIEW**\n\nGenerate a character reference sheet with 4 essential views of this character.\n\n**IDENTITY LOCK — CRITICAL:**\nThis is the SAME CHARACTER in all 4 views. NOT 4 different people.\n- CLONE exact face: bone structure, features, skin texture, expression\n- CLONE exact body: height, build, proportions\n- CLONE exact hair: color, style, length, texture\n- CLONE exact costume: every garment, color, pattern, accessory\n- Age, ethnicity, and all distinguishing features MUST be identical across views\n\n**4-VIEW LAYOUT (horizontal row):**\n| FRONT | LEFT SIDE | RIGHT SIDE | BACK |\n\n1. **FRONT VIEW:** Facing camera directly, relaxed standing pose, arms slightly away from body\n2. **LEFT SIDE VIEW:** Perfect 90° profile facing left, same pose\n3. **RIGHT SIDE VIEW:** Perfect 90° profile facing right, same pose\n4. **BACK VIEW:** Facing away from camera, same pose\n\n**POSE:**\n- Relaxed standing, weight evenly distributed\n- Arms slightly away from torso for silhouette clarity\n- Head straight, neutral expression\n- Same exact pose in all 4 views\n\n**FORMAT:**\n- Single horizontal row: 4 panels of IDENTICAL width/height\n- Blue (#515973) background — consistent across all panels\n- Visible thin separator lines between panels\n- Character centered in each panel with padding\n- Same scale across all 4 views (heads at same height)\n- NO TEXT, NO LABELS\n\n**TECHNICAL:**\n- Even, soft lighting from front-top\n- Minimal shadows for clarity\n- Sharp details, clean edges\n- Print-ready quality\n\nSAME CHARACTER in all 4 views — faces and bodies must be identical.",
+      "complexsheet": "Based on this image:\n\n**CHARACTER SHEET — PROFESSIONAL REFERENCE**\n\nCreate a professional character reference sheet. Match the EXACT visual style of the reference (realism level, rendering, texture, color treatment, aesthetic).\n\n**IDENTITY LOCK — CRITICAL:**\nThis is the SAME CHARACTER across ALL 7 panels. NOT different people.\n- CLONE exact face: bone structure, features, skin, wrinkles, moles\n- CLONE exact body: height, build, proportions\n- CLONE exact hair: color, style, length, texture, hairline\n- CLONE exact costume: every garment, accessory, detail, wear marks\n- Age and ethnicity MUST match source exactly\n\n**LAYOUT — TWO ROWS:**\n\n**TOP ROW — 4 FULL-BODY VIEWS (horizontal):**\n| FRONT | LEFT PROFILE | RIGHT PROFILE | BACK |\n\n- FRONT: Facing camera, relaxed A-pose, arms 30-45° from body\n- LEFT PROFILE: Perfect 90° facing left, same A-pose\n- RIGHT PROFILE: Perfect 90° facing right, same A-pose\n- BACK: Facing away, same A-pose\n\n**BOTTOM ROW — 3 PORTRAIT CLOSE-UPS (centered below):**\n| FRONT PORTRAIT | LEFT PORTRAIT | RIGHT PORTRAIT |\n\n- FRONT PORTRAIT: Head and shoulders, facing camera, neutral expression\n- LEFT PORTRAIT: Head and shoulders, 90° profile facing left\n- RIGHT PORTRAIT: Head and shoulders, 90° profile facing right\n\n**ALIGNMENT REQUIREMENTS:**\n- Full-body views: heads at identical height, same scale\n- Portraits: faces at identical scale, same crop level\n- Portraits centered beneath full-body row\n- Even spacing between all panels\n- Clean panel separation with thin lines\n\n**TECHNICAL:**\n- Blue (#515973) plain background\n- Consistent lighting across ALL panels (same direction, intensity, softness)\n- Natural controlled shadows — detail preservation, no dramatic mood\n- Sharp details, crisp edges, print-ready quality\n- Accurate anatomy, clear silhouettes\n- NO TEXT, NO LABELS\n\nSAME CHARACTER in all 7 panels — perfect identity consistency.",
+      "posesheet": "Based on this image:\n\n**CHARACTER POSE SHEET — 5×5 GRID (25 POSES)**\n\nGenerate a pose reference sheet with 25 different poses of this character, arranged in a 5×5 grid. Each pose unique, same character throughout.\n\n**IDENTITY LOCK — CRITICAL:**\nThis is the SAME CHARACTER in ALL 25 poses. NOT 25 different people.\n- CLONE exact face, body, hair, costume from reference\n- Identity MUST be recognizable in every single panel\n- Same clothing/outfit across all poses (adjusted for movement)\n- Age, ethnicity, features identical throughout\n\n\n**5×5 GRID LAYOUT:**\n\n**ROW 1 — LOCOMOTION (walk & run):**\n1. Standing idle | 2. Walk start | 3. Mid-walk stride | 4. Jog/light run | 5. Full sprint\n\n**ROW 2 — SPORT/ATHLETIC:**\n1. Stretching | 2. Jumping | 3. Crouching ready | 4. Throwing motion | 5. Victory/celebration pose\n\n**ROW 3 — ACTION / EMPTY-HAND:**\n1. Focused forward ready pose | 2. Alert side-ready pose | 3. Two-hand empty ready hold | 4. Taking cover | 5. Preparation / checking hands\n\n**ROW 4 — EXPRESSIONS/EMOTIONS:**\n1. Happy/smiling | 2. Sad/dejected | 3. Angry/aggressive | 4. Surprised/shocked | 5. Scared/fearful\n\n**ROW 5 — HAND-TO-HAND / IMPACT:**\n1. Neutral ready posture | 2. Punch thrown | 3. Kick motion | 4. Block/defend | 5. Knocked back/hit reaction\n\n**POSE REQUIREMENTS:**\n- Each pose distinct and readable at small size\n- Full body visible in each panel (head to toe)\n- Dynamic poses with clear silhouettes\n- Character fits within panel with padding\n- Action poses show peak moment of movement\n\n**FORMAT — CRITICAL:**\n- 5×5 GRID: 25 panels of IDENTICAL width and height\n- Visible thin separator lines between panels\n- Blue (#515973) background — consistent all panels\n- NO TEXT, NO LABELS, NO NUMBERS\n- All panels same aspect ratio (square recommended)\n\n**TECHNICAL:**\n- Consistent lighting across all 25 panels\n- Same rendering style throughout\n- Sharp details, clean edges\n- Photorealistic matching reference style\n\nSAME CHARACTER in all 25 poses — identity must be unmistakable.",
+      "expressionboard": "Based on this image:\n\n**FACIAL EXPRESSION BOARD — 2×4 GRID (8 EXPRESSIONS)**\n\nGenerate a facial expression reference sheet with 8 different emotions, arranged in a 2×4 grid. Close-up head shots only.\n\n**IDENTITY LOCK — CRITICAL:**\nThis is the SAME CHARACTER in ALL 8 expressions. NOT 8 different people.\n- CLONE exact face from reference: bone structure, nose, eyes, lips, skin texture, moles, scars\n- CLONE exact hair: color, style, length, texture (hair may move slightly with expression)\n- Age, ethnicity, facial features MUST be identical across all 8 panels\n- Only the EXPRESSION changes — the face itself stays the same\n\n**2×4 GRID LAYOUT:**\n\n**ROW 1 (4 expressions):**\n| NEUTRAL | HAPPY | SAD | ANGRY |\n\n1. **NEUTRAL:** Relaxed, no emotion, baseline reference face, mouth closed, eyes forward\n2. **HAPPY:** Genuine smile, crow's feet, raised cheeks, teeth may show, bright eyes\n3. **SAD:** Downturned mouth, drooping eyelids, furrowed inner brows, dejected\n4. **ANGRY:** Furrowed brows, tense jaw, flared nostrils, intense glare, clenched teeth\n\n**ROW 2 (4 expressions):**\n| SURPRISED | SCARED | DISGUSTED | CONTEMPT |\n\n5. **SURPRISED:** Wide eyes, raised eyebrows, open mouth, shocked expression\n6. **SCARED/FEAR:** Wide eyes, raised inner brows, tense mouth, looking alarmed\n7. **DISGUSTED:** Wrinkled nose, raised upper lip, squinted eyes, repulsed\n8. **CONTEMPT:** Slight smirk, one corner of mouth raised, dismissive, superior look\n\n**FRAMING:**\n- Head and upper shoulders visible in each panel\n- Face centered, same scale across all 8 panels\n- Consistent head angle (slight 3/4 or direct front — same in all)\n- Eyes at same height across the row\n\n**FORMAT — CRITICAL:**\n- 2×4 GRID: 8 panels of IDENTICAL width and height\n- Visible thin separator lines between panels\n- Blue (#515973) background — consistent all panels\n- NO TEXT, NO LABELS, NO EMOTION NAMES\n- Same aspect ratio all panels\n\n**TECHNICAL:**\n- Consistent soft lighting across all 8 panels (same direction, intensity)\n- Sharp detail on facial features, skin texture, eyes\n- Expressions must be clear and readable\n- Match visual style of reference (realism level, rendering)\n\nSAME FACE in all 8 panels — only the expression changes.",
+      "complexexpressionboard": "Based on this image:\n\n**COMPLEX FACS EXPRESSION BOARD — 2×4 GRID (8 SELECTED FACIAL ACTIONS)**\n\nGenerate a facial acting reference sheet with exactly 8 close-up portrait panels arranged in a 2×4 grid. Each panel shows the same character performing one selected FACS action unit or compound facial action.\n\n**IDENTITY LOCK — CRITICAL:**\nThis is the SAME CHARACTER in ALL 8 panels. NOT 8 different people.\n- CLONE exact face from reference: bone structure, nose, eyes, lips, skin texture, moles, scars\n- CLONE exact hair: color, style, length, texture\n- Age, ethnicity, facial features and face volume MUST be identical across all 8 panels\n- Only the FACS facial action changes — no redesign, no beauty correction, no new hairstyle\n\n**SELECTED FACS ACTIONS — USE THESE 8 PANELS IN ORDER:**\n1. **AU1 — Inner Brow Raiser:** inner eyebrow corners lift upward, soft worried crease in the middle forehead\n2. **AU4 — Brow Lowerer:** brows pull down and together, vertical crease between them, intense glare\n3. **AU5 — Upper Lid Raiser:** upper eyelids open wide, iris fully exposed, startled alert eyes\n4. **AU6 — Cheek Raiser:** cheeks lift upward, lower eyelids bunch, warm smile pressure around eyes\n5. **AU9 — Nose Wrinkler:** nose wrinkles upward, bridge creases, upper lip lifts with mild disgust\n6. **AU12 — Lip Corner Puller:** mouth corners pull upward and back into a clear smile\n7. **AU15 — Lip Corner Depressor:** mouth corners pull downward, sad disappointed mouth shape\n8. **AU26 — Jaw Drop:** jaw drops open into a surprised oval mouth\n\n**FACS EXECUTION RULES:**\n- Make each facial action readable but anatomically plausible\n- Keep all non-selected facial regions neutral unless they are naturally affected by the selected action\n- Do not exaggerate into cartoon unless the reference style is already cartoon\n- Preserve the same head angle, crop, lens, lighting and background across all panels\n\n**FRAMING:**\n- Head and upper shoulders visible in each panel\n- Face centered, same scale across all 8 panels\n- Consistent head angle, eyes at the same height across each row\n\n**FORMAT — CRITICAL:**\n- 2×4 GRID: 8 panels of IDENTICAL width and height\n- Visible thin separator lines between panels\n- Blue (#515973) background — consistent all panels\n- NO TEXT, NO LABELS, NO AU CODES, NO WATERMARKS\n\n**TECHNICAL:**\n- Consistent soft lighting across all 8 panels\n- Sharp detail on facial features, skin texture, eyes and mouth shapes\n- The result must read like a professional FACS / facial acting reference board\n\nSAME FACE in all 8 panels — only the selected FACS action changes."
+    },
+    "configuredOutputs": {
+      "objectsheet": "Based on this image:\n\n**OBJECT REFERENCE SHEET — 3×3 GRID (9 VIEWS)**\n\nGenerate a professional product reference sheet with 9 views of this object on a Pink (#DE7C68) cyclorama, arranged in a 3×3 grid.\n\n**OBJECT CONSISTENCY — CRITICAL:**\nThis is the SAME OBJECT in all 9 views. NOT 9 different objects.\n- CLONE exact shape, proportions, details from reference\n- CLONE exact materials, colors, textures, surface finish\n- CLONE all markings, logos, wear, imperfections\n- Scale and details MUST be identical across all views\n\n**3×3 GRID LAYOUT:**\n\n**ROW 1 — ORTHOGRAPHIC VIEWS:**\n| FRONT | LEFT SIDE | RIGHT SIDE |\n\n1. **FRONT:** Direct front view, perpendicular to main face\n2. **LEFT SIDE:** Perfect 90° profile, left side visible\n3. **RIGHT SIDE:** Perfect 90° profile, right side visible opposite view of left side\n\n**ROW 2 — MORE ORTHOGRAPHIC + TOP/BOTTOM:**\n| BACK | TOP | BOTTOM |\n\n4. **BACK:** Direct rear view, perpendicular to back face\n5. **TOP:** Bird's eye view, looking straight down at object\n6. **BOTTOM:** View of underside, object flipped/transparent ground\n\n**ROW 3 — NATURAL VIEWS + TECHNICAL:**\n| 3/4 FRONT | 3/4 BACK | TECHNICAL SPEC |\n\n7. **3/4 FRONT:** 45° angle showing front + side, natural product shot angle\n8. **3/4 BACK:** 45° angle showing back + side, reveals hidden details\n9. **TECHNICAL BOARD:** Clean diagram view with:\n   - Estimated dimensions (H × W × D) with dimension lines\n   - Material callouts (metal, plastic, fabric, glass, etc.)\n   - Key component labels if applicable\n   - Scale reference indicator\n   - Orthographic side view in black and white\n\n**LIGHTING — PRODUCT PHOTOGRAPHY STYLE:**\n- Soft diffuse lighting from multiple sources\n- No harsh shadows — gentle gradients only\n- Even illumination revealing all surface details\n- Subtle reflections on glossy/metallic surfaces\n- Studio product photography quality\n\n**FORMAT — CRITICAL:**\n- 3×3 GRID: 9 panels of IDENTICAL width and height\n- Visible thin separator lines between panels\n- [BG_COLOR_PLACEHOLDER] background — consistent all panels\n- Object centered in each panel with padding\n- Same scale across views 1-8 (technical panel may adjust for labels)\n- NO TEXT except in Technical Spec panel (panel 9)\n\n**TECHNICAL:**\n- Sharp detail on materials, textures, surface quality\n- Accurate color representation\n- Clean edges, professional product rendering\n- Match visual style of reference\n\nSAME OBJECT in all 9 views — consistent in every detail.",
+      "tech-industrial": "{\n  \"reference\": { \"type\": \"image\", \"usage\": \"Use the uploaded image as the sole source of truth. Do not assume product category in advance.\" },\n  \"scene\": { \"description\": \"A minimalist, premium product presentation layout inspired by high-end industrial design and product documentation.\", \"background\": \"Blue (#515973), clean, distraction-free\" },\n  \"layout\": {\n    \"top_left\": { \"content\": \"Brand name\", \"style\": \"Modern sans-serif typography\" },\n    \"left_column\": {\n      \"content\": \"Multiple auxiliary product views\",\n      \"views\": [\"Primary front\", \"Secondary side\", \"Alternate angle\", \"Detail view\"],\n      \"arrangement\": \"Vertically stacked\"\n    },\n    \"right_section\": { \"content\": \"Main hero product render\", \"style\": \"Large, dominant, photorealistic\", \"lighting\": \"Soft studio lighting\" }\n  },\n  \"annotations\": {\n    \"binding_rules\": [\"Each line points to one visible component\", \"Each label describes exact component function\", \"No marketing language\"],\n    \"line_style\": { \"type\": \"Hairline-thin vector lines\", \"color\": \"Neutral light gray\" }\n  },\n  \"visual_style\": { \"aesthetic\": \"Scandinavian, modern, industrial\", \"mood\": \"Calm, precise\" }\n}\n\n[Scene Description]",
+      "tech-car": "{\n  \"reference_images\": { \"usage_rule\": \"Exact visual reference for body shape, proportions, chrome details. Do not modernize.\" },\n  \"layout\": { \"canvas\": { \"orientation\": \"vertical\", \"aspect_ratio\": \"3:4\", \"background\": \"Blue (#515973) paper / studio surface\" } },\n  \"top_section\": { \"type\": \"lifestyle_hero\", \"environment\": { \"setting\": \"minimal architectural urban space\", \"lighting\": \"natural sunlight\" } },\n  \"bottom_section\": {\n    \"type\": \"technical_specification_panel\",\n    \"technical_drawings\": { \"style\": \"automotive technical line drawings\", \"views\": [\"front view\", \"side profile\", \"three-quarter structural\"], \"line_style\": { \"color\": \"muted turquoise\", \"weight\": \"fine\" } },\n    \"materials_panel\": { \"textures\": [\"painted metal body\", \"chrome trim\", \"interior upholstery\"] }\n  }\n}\n\n[Scene Description]",
+      "tech-object": "{\n  \"reference\": { \"type\": \"uploaded_object\" },\n  \"layout\": {\n    \"composition\": \"Product exploded view or multi-angle grid\",\n    \"background\": \"Blue (#515973) solid studio board\",\n    \"grid\": \"3x2 orthographic projection system\"\n  },\n  \"documentation\": {\n    \"style\": \"Technical manual aesthetic\",\n    \"callouts\": \"Minimal circle indicators with fine gray leader lines\",\n    \"text\": \"Lowercase technical sans-serif labels for materials and joinery\"\n  },\n  \"lighting\": \"Global illumination, zero hard shadows\",\n  \"fidelity\": \"Maintain absolute geometric ratios of the source object.\"\n}\n\n[Scene Description]",
+      "tech-organic": "{\n  \"reference\": { \"type\": \"organic_entity_image\", \"target\": \"fruit, botanical subject, or organic specimen\" },\n  \"layout\": {\n    \"primary\": \"Hero shot of the specimen in situ\",\n    \"secondary\": [\"Cross-section view\", \"Microscopic texture detail\", \"Growth stage or skeletal structure\"],\n    \"background\": \"Blue (#515973) specimen board\"\n  },\n  \"annotations\": {\n    \"style\": \"Scientific Latinate labeling\",\n    \"lines\": \"Hand-drawn ink look or precise technical hairlines\",\n    \"content\": \"Focus on biological surfaces and internal anatomy visible in section.\"\n  },\n  \"rendering\": \"Biological accuracy, detailed surface texture, clean studio-documentation readability.\"\n}\n\n[Scene Description]",
+      "master-reference": "Create a single unified MASTER CHARACTER REFERENCE SHEET from these inputs:\n\n[STYLE]: [cinematic realism]\n[SUBJECT_DESCRIPTION]: [@IMG_1]\n\nCreate the board in a 4:3 horizontal layout. The board layout, background, typography and spacing must be clean, neutral, minimal and technical, on a Beige (#B3A089) background. Use clear section titles, readable English labels, balanced spacing, no clutter, no watermark, no logo. Apply [STYLE] only to the character and visual elements, not to the board layout or UI. All text must be clearly readable at normal viewing size. Avoid tiny or dense text.\n\nInfer all missing details from the subject description, including name, alias if suitable, role, age, personality, core theme, accent, wardrobe details, accessories, key prop if clearly relevant, visual notes and a fitting color palette.\n\nUse this layout:\ntop row = left: title + horizontal info block, right: COLOR PALETTE\ncenter = large MAIN IDENTITY + SCALE SHEET as the biggest section\nright = EXPRESSION PROGRESSION + HEAD DETAIL SHEET + NEUTRAL BASELINE + POSTURE VARIATION + CLOSE-UP POSE\nbottom = WARDROBE / ACCESSORIES DETAILS + PROP + HAND GESTURES\n\nInclude:\n\nTitle: CHARACTER REFERENCE SHEET\n\n1. TOP INFO BLOCK\nName, Alias, Role, Age, Personality, Core Theme, Speech Accent\n\n2. COLOR PALETTE\nPlace this in the top-right header area.\nShow 6 to 8 minimal clean color swatches that match the subject's style, wardrobe, world and mood. Do not add labels.\n\n3. MAIN IDENTITY + SCALE SHEET\nThis must be the largest and most prominent section.\nShow the subject only, with no prop, no bag, no handheld object, no extra item interaction.\nShow:\nFront, 3/4 View, Side, Back\n\nPlace the character views over subtle measurement guide lines, like a clean model sheet scale background with height marks.\n\nAlso include a small SILHOUETTE GUIDE inside this same section:\n2 small clean silhouette thumbnails, Neutral Stance and Profile Silhouette.\nKeep the silhouettes small and secondary, placed in a corner of the MAIN IDENTITY + SCALE SHEET.\n\nThe subject should appear in a clean neutral presentation focused only on identity, body shape, outfit, silhouette and proportions.\nAdd a few small notes for silhouette, posture, special traits, visual identity.\n\n4. EXPRESSION PROGRESSION\nShow exactly 8 panels of the same subject:\nNeutral, Curious, Worried, Surprised, Afraid, Sad, Determined, Relieved\n\nMICRO EXPRESSIONS\nShow exactly 5 panels of the same subject:\nsubtle eye tension, slight smirk, lip tension, micro fear, controlled breath\n\nThese panels should function as both an expression sheet and a light emotional progression.\n\n5. HEAD DETAIL SHEET\nShow several close-up head references of the same subject from different angles:\n3/4 Headshot, Side Headshot, Top Angle, Low Angle, Diagonal Angle\n\nKeep facial structure, hairstyle, eyes, proportions and identity fully consistent.\n\n6. NEUTRAL BASELINE\n1 panel: fully relaxed, no emotion\n\n7. POSTURE VARIATION\n2-3 panels: relaxed, tense, confident\n\n8. CLOSE-UP POSE\nShow exactly 1 cinematic close-up pose of the same subject from chest-up or shoulder-up.\nUse a natural expressive pose that best fits the subject's personality and story tone.\nThis close-up should clearly show facial identity, hairstyle, expression, upper wardrobe detail and emotional presence.\n\n9. WARDROBE / ACCESSORIES DETAILS\nShow exactly 4 close-up callouts for important styling details such as hairstyle, outerwear, footwear, accessories, fabric or material detail.\n\n10. PROP\nOnly include this section if a prop is clearly important to the subject.\nShow exactly 1 single clean isolated image of the prop only.\nAdd a small info block:\nObject Name, Type, Traits\n\n11. HAND GESTURES\nrelaxed hand, tense fingers, pointing, gripping, subtle gesture near face",
+      "simplesheet": "Based on this image:\n\n**CHARACTER SHEET — SIMPLE 4-VIEW**\n\nGenerate a character reference sheet with 4 essential views of this character.\n\n**IDENTITY LOCK — CRITICAL:**\nThis is the SAME CHARACTER in all 4 views. NOT 4 different people.\n- CLONE exact face: bone structure, features, skin texture, expression\n- CLONE exact body: height, build, proportions\n- CLONE exact hair: color, style, length, texture\n- CLONE exact costume: every garment, color, pattern, accessory\n- Age, ethnicity, and all distinguishing features MUST be identical across views\n\n**4-VIEW LAYOUT (horizontal row):**\n| FRONT | LEFT SIDE | RIGHT SIDE | BACK |\n\n1. **FRONT VIEW:** Facing camera directly, relaxed standing pose, arms slightly away from body\n2. **LEFT SIDE VIEW:** Perfect 90° profile facing left, same pose\n3. **RIGHT SIDE VIEW:** Perfect 90° profile facing right, same pose\n4. **BACK VIEW:** Facing away from camera, same pose\n\n**POSE:**\n- Relaxed standing, weight evenly distributed\n- Arms slightly away from torso for silhouette clarity\n- Head straight, neutral expression\n- Same exact pose in all 4 views\n\n**FORMAT:**\n- Single horizontal row: 4 panels of IDENTICAL width/height\n- Blue (#515973) background — consistent across all panels\n- Visible thin separator lines between panels\n- Character centered in each panel with padding\n- Same scale across all 4 views (heads at same height)\n- NO TEXT, NO LABELS\n\n**TECHNICAL:**\n- Even, soft lighting from front-top\n- Minimal shadows for clarity\n- Sharp details, clean edges\n- Print-ready quality\n\nSAME CHARACTER in all 4 views — faces and bodies must be identical.",
+      "complexsheet": "Based on this image:\n\n**CHARACTER SHEET — PROFESSIONAL REFERENCE**\n\nCreate a professional character reference sheet. Match the EXACT visual style of the reference (realism level, rendering, texture, color treatment, aesthetic).\n\n**IDENTITY LOCK — CRITICAL:**\nThis is the SAME CHARACTER across ALL 7 panels. NOT different people.\n- CLONE exact face: bone structure, features, skin, wrinkles, moles\n- CLONE exact body: height, build, proportions\n- CLONE exact hair: color, style, length, texture, hairline\n- CLONE exact costume: every garment, accessory, detail, wear marks\n- Age and ethnicity MUST match source exactly\n\n**LAYOUT — TWO ROWS:**\n\n**TOP ROW — 4 FULL-BODY VIEWS (horizontal):**\n| FRONT | LEFT PROFILE | RIGHT PROFILE | BACK |\n\n- FRONT: Facing camera, relaxed A-pose, arms 30-45° from body\n- LEFT PROFILE: Perfect 90° facing left, same A-pose\n- RIGHT PROFILE: Perfect 90° facing right, same A-pose\n- BACK: Facing away, same A-pose\n\n**BOTTOM ROW — 3 PORTRAIT CLOSE-UPS (centered below):**\n| FRONT PORTRAIT | LEFT PORTRAIT | RIGHT PORTRAIT |\n\n- FRONT PORTRAIT: Head and shoulders, facing camera, neutral expression\n- LEFT PORTRAIT: Head and shoulders, 90° profile facing left\n- RIGHT PORTRAIT: Head and shoulders, 90° profile facing right\n\n**ALIGNMENT REQUIREMENTS:**\n- Full-body views: heads at identical height, same scale\n- Portraits: faces at identical scale, same crop level\n- Portraits centered beneath full-body row\n- Even spacing between all panels\n- Clean panel separation with thin lines\n\n**TECHNICAL:**\n- Blue (#515973) plain background\n- Consistent lighting across ALL panels (same direction, intensity, softness)\n- Natural controlled shadows — detail preservation, no dramatic mood\n- Sharp details, crisp edges, print-ready quality\n- Accurate anatomy, clear silhouettes\n- NO TEXT, NO LABELS\n\nSAME CHARACTER in all 7 panels — perfect identity consistency.",
+      "posesheet": "Based on this image:\n\n**CHARACTER POSE SHEET — 5×5 GRID (25 POSES)**\n\nGenerate a pose reference sheet with 25 different poses of this character, arranged in a 5×5 grid. Each pose unique, same character throughout.\n\n**IDENTITY LOCK — CRITICAL:**\nThis is the SAME CHARACTER in ALL 25 poses. NOT 25 different people.\n- CLONE exact face, body, hair, costume from reference\n- Identity MUST be recognizable in every single panel\n- Same clothing/outfit across all poses (adjusted for movement)\n- Age, ethnicity, features identical throughout\n\n**FIGHTING POSE MODE — WEAPON LOCK:**\nAll 25 poses become fighting / combat poses using the weapon from [IMG_2]. The selected weapon must appear consistently in every panel, with correct scale, grip, hand placement, weight, silhouette and continuity.\n\n**5×5 GRID LAYOUT:**\n\n**ROW 1 — ARMED LOCOMOTION / APPROACH:**\n1. Guarded idle with the weapon from [IMG_2] | 2. Advancing step with the weapon from [IMG_2] | 3. Side-step with the weapon from [IMG_2] | 4. Low tactical run with the weapon from [IMG_2] | 5. Full sprint while controlling the weapon from [IMG_2]\n\n**ROW 2 — ATTACK / THREAT READABILITY:**\n1. Ready attack pose with the weapon from [IMG_2] | 2. Mid-swing or aim with the weapon from [IMG_2] | 3. Crouched fighting pose with the weapon from [IMG_2] | 4. Overhead / forward strike or aim with the weapon from [IMG_2] | 5. Victory / intimidation pose with the weapon from [IMG_2]\n\n**ROW 3 — WEAPON HANDLING:**\n1. the weapon from [IMG_2] aimed or presented forward | 2. the weapon from [IMG_2] aimed or presented side | 3. Two-hand control of the weapon from [IMG_2] | 4. Taking cover while keeping the weapon from [IMG_2] active | 5. Reloading, resetting grip, or recovering the weapon from [IMG_2]\n\n**ROW 4 — ARMED EXPRESSIONS / EMOTIONS:**\n1. Confident armed smile | 2. Wounded / dejected while holding the weapon from [IMG_2] | 3. Angry attack glare with the weapon from [IMG_2] | 4. Surprised reaction while keeping the weapon from [IMG_2] | 5. Fearful defensive pose with the weapon from [IMG_2]\n\n**ROW 5 — DEFENSE / IMPACT WITH WEAPON:**\n1. Fighting pose with the weapon from [IMG_2] | 2. Strike / shot / thrust with the weapon from [IMG_2] | 3. Evasive kick or body shift while holding the weapon from [IMG_2] | 4. Block / defend using the weapon from [IMG_2] | 5. Knocked back / hit reaction while retaining the weapon from [IMG_2]\n\n**POSE REQUIREMENTS:**\n- Each pose distinct and readable at small size\n- Full body visible in each panel (head to toe)\n- Dynamic poses with clear silhouettes\n- Character fits within panel with padding\n- Action poses show peak moment of movement\n\n**FORMAT — CRITICAL:**\n- 5×5 GRID: 25 panels of IDENTICAL width and height\n- Visible thin separator lines between panels\n- Blue (#515973) background — consistent all panels\n- NO TEXT, NO LABELS, NO NUMBERS\n- All panels same aspect ratio (square recommended)\n\n**TECHNICAL:**\n- Consistent lighting across all 25 panels\n- Same rendering style throughout\n- Sharp details, clean edges\n- Photorealistic matching reference style\n\nSAME CHARACTER in all 25 poses — identity must be unmistakable.",
+      "expressionboard": "Based on this image:\n\n**FACIAL EXPRESSION BOARD — 2×4 GRID (8 EXPRESSIONS)**\n\nGenerate a facial expression reference sheet with 8 different emotions, arranged in a 2×4 grid. Close-up head shots only.\n\n**IDENTITY LOCK — CRITICAL:**\nThis is the SAME CHARACTER in ALL 8 expressions. NOT 8 different people.\n- CLONE exact face from reference: bone structure, nose, eyes, lips, skin texture, moles, scars\n- CLONE exact hair: color, style, length, texture (hair may move slightly with expression)\n- Age, ethnicity, facial features MUST be identical across all 8 panels\n- Only the EXPRESSION changes — the face itself stays the same\n\n**2×4 GRID LAYOUT:**\n\n**ROW 1 (4 expressions):**\n| NEUTRAL | HAPPY | SAD | ANGRY |\n\n1. **NEUTRAL:** Relaxed, no emotion, baseline reference face, mouth closed, eyes forward\n2. **HAPPY:** Genuine smile, crow's feet, raised cheeks, teeth may show, bright eyes\n3. **SAD:** Downturned mouth, drooping eyelids, furrowed inner brows, dejected\n4. **ANGRY:** Furrowed brows, tense jaw, flared nostrils, intense glare, clenched teeth\n\n**ROW 2 (4 expressions):**\n| SURPRISED | SCARED | DISGUSTED | CONTEMPT |\n\n5. **SURPRISED:** Wide eyes, raised eyebrows, open mouth, shocked expression\n6. **SCARED/FEAR:** Wide eyes, raised inner brows, tense mouth, looking alarmed\n7. **DISGUSTED:** Wrinkled nose, raised upper lip, squinted eyes, repulsed\n8. **CONTEMPT:** Slight smirk, one corner of mouth raised, dismissive, superior look\n\n**FRAMING:**\n- Head and upper shoulders visible in each panel\n- Face centered, same scale across all 8 panels\n- Consistent head angle (slight 3/4 or direct front — same in all)\n- Eyes at same height across the row\n\n**FORMAT — CRITICAL:**\n- 2×4 GRID: 8 panels of IDENTICAL width and height\n- Visible thin separator lines between panels\n- Blue (#515973) background — consistent all panels\n- NO TEXT, NO LABELS, NO EMOTION NAMES\n- Same aspect ratio all panels\n\n**TECHNICAL:**\n- Consistent soft lighting across all 8 panels (same direction, intensity)\n- Sharp detail on facial features, skin texture, eyes\n- Expressions must be clear and readable\n- Match visual style of reference (realism level, rendering)\n\nSAME FACE in all 8 panels — only the expression changes.",
+      "complexexpressionboard": "Based on this image:\n\n**COMPLEX FACS EXPRESSION BOARD — 2×4 GRID (8 SELECTED FACIAL ACTIONS)**\n\nGenerate a facial acting reference sheet with exactly 8 close-up portrait panels arranged in a 2×4 grid. Each panel shows the same character performing one selected FACS action unit or compound facial action.\n\n**IDENTITY LOCK — CRITICAL:**\nThis is the SAME CHARACTER in ALL 8 panels. NOT 8 different people.\n- CLONE exact face from reference: bone structure, nose, eyes, lips, skin texture, moles, scars\n- CLONE exact hair: color, style, length, texture\n- Age, ethnicity, facial features and face volume MUST be identical across all 8 panels\n- Only the FACS facial action changes — no redesign, no beauty correction, no new hairstyle\n\n**SELECTED FACS ACTIONS — USE THESE 8 PANELS IN ORDER:**\n1. **AU2 — Outer Brow Raiser:** outer eyebrow corners arch upward, temples open, face reads alert\n2. **AU7 — Lid Tightener:** lower eyelids tighten, eyes narrow with focused tension\n3. **AU10 — Upper Lip Raiser:** upper lip raises vertically and exposes the upper teeth slightly\n4. **AU14 — Dimpler:** dimples form at the mouth corners, lips closed in a restrained smirk\n5. **AU20 — Lip Stretcher:** mouth stretches horizontally, lips pulled flat and tense\n6. **AU27 — Mouth Stretch:** mouth opens very wide, stretched shout or scream shape\n7. **AU43 — Eyes Closed:** eyes fully closed, eyelids relaxed shut\n8. **AU85 — Tongue Out:** tongue extends fully past the lower lip\n\n**FACS EXECUTION RULES:**\n- Make each facial action readable but anatomically plausible\n- Keep all non-selected facial regions neutral unless they are naturally affected by the selected action\n- Do not exaggerate into cartoon unless the reference style is already cartoon\n- Preserve the same head angle, crop, lens, lighting and background across all panels\n\n**FRAMING:**\n- Head and upper shoulders visible in each panel\n- Face centered, same scale across all 8 panels\n- Consistent head angle, eyes at the same height across each row\n\n**FORMAT — CRITICAL:**\n- 2×4 GRID: 8 panels of IDENTICAL width and height\n- Visible thin separator lines between panels\n- Blue (#515973) background — consistent all panels\n- NO TEXT, NO LABELS, NO AU CODES, NO WATERMARKS\n\n**TECHNICAL:**\n- Consistent soft lighting across all 8 panels\n- Sharp detail on facial features, skin texture, eyes and mouth shapes\n- The result must read like a professional FACS / facial acting reference board\n\nSAME FACE in all 8 panels — only the selected FACS action changes."
+    },
+    "dormantControls": {
+      "reason": "No active prompt card contains these legacy placeholders.",
+      "lightingTargets": [
+        "apose",
+        "acting"
+      ],
+      "multiReferenceTargets": [
+        "4pov",
+        "360",
+        "freepov",
+        "locreconstruct"
+      ],
+      "accessoryTargets": [
+        "dresschar"
+      ]
+    }
+  }
+}

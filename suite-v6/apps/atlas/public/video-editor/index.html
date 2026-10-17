@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Video Director · Editor</title>
+  <link rel="stylesheet" href="./editor.css">
+  <link rel="stylesheet" href="/video-director-theme.css?v=0.23.2-dark">
+</head>
+<body class="video-editor-standalone">
+<div class="video-editor-app vd-panel vd-panel-editor active" id="videoEditorApp">
+            <div class="ve-toolbar">
+              <label class="video-import ve-import">
+                Import Media
+                <input id="videoEditorImport" type="file" accept="video/*,audio/*" multiple>
+              </label>
+              <div class="ve-tool-group" role="group" aria-label="Editor tools">
+                <button id="veToolGrab" class="ve-tool active" type="button" title="Move / select clips">Grab</button>
+                <button id="veToolCut" class="ve-tool" type="button" title="Cut clip at playhead">Cut</button>
+              </div>
+              <div class="ve-tool-group" role="group" aria-label="Add tracks">
+                <button id="veAddVideoTrack" class="ve-tool" type="button">+ Video track</button>
+                <button id="veAddAudioTrack" class="ve-tool" type="button">+ Audio track</button>
+              </div>
+              <div class="ve-tool-group" role="group" aria-label="Insert">
+                <button id="veTextBtn" class="ve-tool" type="button" title="Add a text clip (pick a font)">Text ▾</button>
+              </div>
+              <div class="ve-tool-group" role="group" aria-label="Project">
+                <button id="veSave" class="ve-tool" type="button" title="Save montage as JSON">Save</button>
+                <button id="veLoad" class="ve-tool" type="button" title="Load montage from JSON">Load</button>
+                <input id="veLoadInput" type="file" accept="application/json,.json" hidden>
+                <button id="veExport" class="ve-tool" type="button" title="Export the program to a video file (WebM / MP4)">Export…</button>
+                <button id="veExportXml" class="ve-tool" type="button" title="Export an FCP7 XML for Adobe Premiere Pro. Media will need re-linking inside Premiere (local paths).">Export XML</button>
+              </div>
+              <span class="video-analyzer-status" id="veStatus">No media imported</span>
+              <div class="ve-tool-group ve-fs-group" role="group" aria-label="View / Fullscreen">
+                <button id="veSplitToggle" class="ve-tool active" type="button" aria-pressed="true" title="Split = both monitors (blue). Click to toggle Mono (Program only).">Split</button>
+                <label class="ve-fs-check" title="Fullscreen the whole app"><input type="checkbox" id="veFsApp"> Fullscreen app</label>
+                <label class="ve-fs-check" title="Fullscreen the Program monitor only"><input type="checkbox" id="veFsMonitor"> Fullscreen monitor</label>
+              </div>
+            </div>
+            <div class="ve-info">Click a bin clip to load it in the Source monitor; the playhead drives the Program monitor. Drag clips from the bin onto the timeline tracks, drag edges to trim, drag the corner handles for fades. Right-click a clip for Speed / Duration or Block colour; right-click a track header for its colour. Spacebar = play/pause, ←/→ = step one frame, i / o = set IN / OUT at the playhead (drag the markers on the ruler). Export… renders WebM or MP4; Export XML builds an FCP7 sequence for Premiere.</div>
+
+            <div class="ve-monitors" id="veMonitors">
+              <div class="ve-monitor" data-monitor="source">
+                <div class="ve-monitor-label">Source / Rush</div>
+                <div class="ve-monitor-screen" id="veSourceScreen">
+                  <video id="veSourceVideo" playsinline controls></video>
+                  <audio id="veSourceAudio" controls></audio>
+                  <div class="ve-monitor-empty" id="veSourceEmpty">Click a clip in the bin to load it here</div>
+                </div>
+              </div>
+              <div class="ve-mon-handle" id="veMonHandle" title="Drag to resize the two monitors"></div>
+              <div class="ve-monitor" data-monitor="program" id="veProgramMonitor">
+                <div class="ve-monitor-label">Program / Edit</div>
+                <div class="ve-monitor-screen" id="veDropzone">
+                  <video id="vePreviewVideo" playsinline hidden></video>
+                  <audio id="vePreviewAudio" hidden></audio>
+                  <canvas id="veProgramCanvas" class="ve-program-canvas"></canvas>
+                  <div class="ve-monitor-empty" id="vePreviewEmpty">Import or drop video/audio, then build the timeline</div>
+                </div>
+                <div class="ve-aspect-bar">
+                  <button id="veAspectBtn" class="ve-aspect-btn" type="button" title="Aspect ratio of the Program / export">▤ Auto</button>
+                </div>
+              </div>
+            </div>
+            <div class="ve-resize-handle ve-resize-mid" id="veResizeMid" title="Drag to resize the monitors"></div>
+
+            <div class="ve-transport" role="group" aria-label="Transport">
+              <button id="veGoStart" class="ve-transport-btn" type="button" title="Go to start" aria-label="Go to start"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 5v14"/><path d="M19 5 9 12l10 7Z"/></svg></button>
+              <button id="veStepBack" class="ve-transport-btn" type="button" title="Step back one frame (←)" aria-label="Step back"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5 7 12l8 7Z"/><path d="M19 5v14"/></svg></button>
+              <button id="vePlayPause" class="ve-transport-btn ve-transport-main" type="button" title="Play / Pause (Space)" aria-label="Play"><svg class="ve-icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5 19 12 7 19.5Z"/></svg><svg class="ve-icon-pause" viewBox="0 0 24 24" fill="currentColor" hidden><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg></button>
+              <button id="veStepFwd" class="ve-transport-btn" type="button" title="Step forward one frame (→)" aria-label="Step forward"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5 17 12 9 19Z"/><path d="M5 5v14"/></svg></button>
+              <button id="veGoEnd" class="ve-transport-btn" type="button" title="Go to end" aria-label="Go to end"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 5v14"/><path d="M5 5 15 12 5 19Z"/></svg></button>
+              <button id="veLoop" class="ve-transport-btn ve-loop-btn" type="button" title="Loop playback of the IN/OUT region (or the whole montage)" aria-label="Loop" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 2l4 4-4 4"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><path d="M7 22l-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg></button>
+              <span class="ve-time" id="veTime">00:00.000</span>
+              <span class="ve-frames" id="veFrames" title="Timecode HH:MM:SS:FF · current frame / total (30 fps)">00:00:00:00 · f 0 / 0</span>
+            </div>
+
+            <div class="ve-bin" id="veBin" aria-label="Media bin">
+              <div class="ve-bin-head">
+                <span class="ve-bin-title">Media bin</span>
+                <button id="veBinClear" class="ve-tool ve-bin-clear" type="button" title="Remove all media from the bin">Clear</button>
+              </div>
+              <div class="ve-bin-list" id="veBinList"></div>
+            </div>
+
+            <div class="ve-timeline" id="veTimeline">
+              <div class="ve-tl-body">
+                <div class="ve-tl-headers" id="veTrackHeaders"></div>
+                <div class="ve-tl-scroll" id="veScroll">
+                  <div class="ve-ruler" id="veRuler"></div>
+                  <div class="ve-region" id="veRegion" hidden></div>
+                  <div class="ve-lanes" id="veTracks"></div>
+                  <div class="ve-markers" id="veMarkers"></div>
+                  <div class="ve-mark ve-mark-in" id="veMarkIn" title="IN (drag, or press i at the playhead)" hidden></div>
+                  <div class="ve-mark ve-mark-out" id="veMarkOut" title="OUT (drag, or press o at the playhead)" hidden></div>
+                  <div class="ve-playhead" id="vePlayhead"></div>
+                </div>
+              </div>
+              <label class="ve-zoom ve-zoom-fixed" title="Timeline zoom">
+                <span>Zoom</span>
+                <input id="veZoom" type="range" min="10" max="400" step="2" value="80">
+              </label>
+              <div class="ve-resize-handle ve-resize-bottom" id="veResizeBottom" title="Drag to resize the timeline"></div>
+            </div>
+
+            <div class="ve-context-menu" id="veContextMenu" hidden>
+              <button type="button" data-ve-action="toggle-link">Unlink audio</button>
+              <button type="button" data-ve-action="edit-text" hidden>Edit text…</button>
+              <button type="button" data-ve-action="speed">Speed / Duration…</button>
+              <button type="button" data-ve-action="effects">Effects…</button>
+              <button type="button" data-ve-action="duplicate">Duplicate</button>
+              <button type="button" data-ve-action="block-color">Block colour…</button>
+              <button type="button" data-ve-action="fade-in">Toggle fade in</button>
+              <button type="button" data-ve-action="fade-out">Toggle fade out</button>
+              <button type="button" data-ve-action="delete">Delete clip</button>
+            </div>
+
+            <div class="ve-context-menu" id="veTrackCtxMenu" hidden>
+              <button type="button" data-vetrack-action="add-video">Add video track</button>
+              <button type="button" data-vetrack-action="add-audio">Add audio track</button>
+              <button type="button" data-vetrack-action="add-solid">Add Solid…</button>
+              <button type="button" data-vetrack-action="color">Track colour…</button>
+              <button type="button" data-vetrack-action="delete">Delete track</button>
+            </div>
+
+            <div class="ve-context-menu" id="veTextMenu" hidden></div>
+
+            <div class="ve-context-menu ve-aspect-menu" id="veAspectMenu" hidden></div>
+
+            <div class="ve-context-menu ve-track-menu" id="veMarkerMenu" hidden>
+              <div class="ve-track-menu-title">Marker</div>
+              <div class="ve-track-swatches" id="veMarkerSwatches"></div>
+              <button type="button" class="ve-block-reset" id="veMarkerDelete">Delete marker</button>
+            </div>
+
+            <div class="ve-context-menu ve-track-menu" id="veTrackMenu" hidden>
+              <div class="ve-track-menu-title">Track colour</div>
+              <div class="ve-track-swatches" id="veTrackSwatches"></div>
+              <label class="ve-track-custom">Custom <input id="veTrackColorInput" type="color" value="#3b82f6"></label>
+            </div>
+
+            <div class="ve-context-menu ve-track-menu" id="veBlockMenu" hidden>
+              <div class="ve-track-menu-title">Block colour</div>
+              <div class="ve-track-swatches" id="veBlockSwatches"></div>
+              <label class="ve-track-custom">Custom <input id="veBlockColorInput" type="color" value="#3b82f6"></label>
+              <button type="button" class="ve-block-reset" id="veBlockReset">Reset to track colour</button>
+            </div>
+
+            <!-- Export popup: the compositing canvas lives here, hidden at rest. -->
+            <div class="ve-modal" id="veExportModal" hidden>
+              <div class="ve-modal-backdrop" data-ve-export-close></div>
+              <div class="ve-modal-card" role="dialog" aria-modal="true" aria-label="Export montage">
+                <div class="ve-modal-head">
+                  <span class="ve-modal-title">Export montage</span>
+                  <button type="button" class="ve-modal-x" id="veExportClose" data-ve-export-close aria-label="Close">✕</button>
+                </div>
+                <div class="ve-modal-body">
+                  <div class="ve-export-row">
+                    <label class="ve-export-field">Format
+                      <select id="veExportFormat">
+                        <option value="webm">WebM (VP9 / VP8)</option>
+                        <option value="mp4">MP4 (H.264)</option>
+                      </select>
+                    </label>
+                    <label class="ve-export-region" id="veExportRegionWrap" hidden>
+                      <input type="checkbox" id="veExportRegion"> Export IN→OUT region only
+                    </label>
+                  </div>
+                  <div class="ve-export-preview">
+                    <canvas id="veExportCanvas"></canvas>
+                  </div>
+                  <div class="ve-export-status" id="veExportStatus">Ready to render the program output.</div>
+                  <div class="ve-modal-actions">
+                    <button type="button" class="ve-tool ve-tool-primary" id="veExportStart">Start export</button>
+                    <button type="button" class="ve-tool" id="veExportCancelBtn" data-ve-export-close>Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Speed / Duration popup (replaces window.prompt, which is a no-op in Electron). -->
+            <div class="ve-modal" id="veSpeedModal" hidden>
+              <div class="ve-modal-backdrop" data-ve-speed-close></div>
+              <div class="ve-modal-card ve-modal-card-sm" role="dialog" aria-modal="true" aria-label="Speed / Duration">
+                <div class="ve-modal-head">
+                  <span class="ve-modal-title">Speed / Duration</span>
+                  <button type="button" class="ve-modal-x" data-ve-speed-close aria-label="Close">✕</button>
+                </div>
+                <div class="ve-modal-body">
+                  <label class="ve-export-field">Speed (×)
+                    <input id="veSpeedFactor" type="number" min="0.0625" max="16" step="0.05" value="1">
+                  </label>
+                  <label class="ve-export-field">Target timeline duration (s)
+                    <input id="veSpeedDuration" type="number" min="0.05" step="0.1">
+                  </label>
+                  <div class="ve-export-status" id="veSpeedHint">—</div>
+                  <div class="ve-modal-actions">
+                    <button type="button" class="ve-tool ve-tool-primary" id="veSpeedApply">Apply</button>
+                    <button type="button" class="ve-tool" data-ve-speed-close>Cancel</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Opacity popup (centred "T" button on each clip). -->
+            <div class="ve-context-menu ve-opacity-popup" id="veOpacityPopup" hidden>
+              <div class="ve-track-menu-title">Opacity <span id="veOpacityValue">100%</span></div>
+              <input id="veOpacityRange" type="range" min="0" max="100" step="1" value="100">
+              <label class="ve-anim-toggle"><input type="checkbox" id="veOpacityAnim"> Animate</label>
+              <div class="ve-anim-row" id="veOpacityAnimRow" hidden>
+                <select id="veOpacityInterp"><option value="normal">Normal</option><option value="bezier">Bezier</option><option value="hold">Hold</option></select>
+                <button type="button" id="veOpacityAddKey">+ Key</button>
+                <button type="button" id="veOpacityDelKey">– Key</button>
+                <span class="ve-anim-count" id="veOpacityKeys">0 keys</span>
+              </div>
+            </div>
+
+            <div class="ve-context-menu ve-opacity-popup" id="veSizePopup" hidden>
+              <div class="ve-track-menu-title">Size <span id="veSizeValue">100%</span></div>
+              <input id="veSizeRange" type="range" min="50" max="200" step="1" value="100">
+              <label class="ve-anim-toggle"><input type="checkbox" id="veSizeAnim"> Animate</label>
+              <div class="ve-anim-row" id="veSizeAnimRow" hidden>
+                <select id="veSizeInterp"><option value="normal">Normal</option><option value="bezier">Bezier</option><option value="hold">Hold</option></select>
+                <button type="button" id="veSizeAddKey">+ Key</button>
+                <button type="button" id="veSizeDelKey">– Key</button>
+                <span class="ve-anim-count" id="veSizeKeys">0 keys</span>
+              </div>
+            </div>
+
+            <!-- Effects deck (per-block, with checkboxes + copy/paste). -->
+            <div class="ve-modal ve-effects-panel" id="veEffectsModal" hidden>
+              <div class="ve-modal-backdrop" data-ve-effects-close></div>
+              <div class="ve-modal-card ve-modal-card-fx" role="dialog" aria-modal="true" aria-label="Effects">
+                <div class="ve-modal-head">
+                  <span class="ve-modal-title">Effects</span>
+                  <button type="button" class="ve-modal-x" data-ve-effects-close aria-label="Close">✕</button>
+                </div>
+                <div class="ve-modal-body">
+                  <div class="ve-fx-clipboard">
+                    <button type="button" class="ve-tool" id="veFxCopy" title="Copy the ticked effects">Copy</button>
+                    <button type="button" class="ve-tool" id="veFxPaste" title="Paste copied effects onto this block" disabled>Paste</button>
+                    <span class="ve-fx-cb-info" id="veFxClipboardInfo">Clipboard empty</span>
+                  </div>
+
+                  <section class="ve-fx-card">
+                    <label class="ve-fx-head"><input type="checkbox" id="veFxCcEnable"> <span>Color Correction</span></label>
+                    <div class="ve-fx-slider"><span>Color (hue)</span><input id="veFxHue" type="range" min="-180" max="180" step="1" value="0"><span class="ve-fx-val" id="veFxHueVal">0°</span></div>
+                    <div class="ve-fx-slider"><span>Saturation</span><input id="veFxSat" type="range" min="0" max="200" step="1" value="100"><span class="ve-fx-val" id="veFxSatVal">100%</span></div>
+                    <div class="ve-fx-slider"><span>Luminosité</span><input id="veFxBright" type="range" min="0" max="200" step="1" value="100"><span class="ve-fx-val" id="veFxBrightVal">100%</span></div>
+                    <div class="ve-fx-slider"><span>Gamma</span><input id="veFxGamma" type="range" min="0.2" max="3" step="0.05" value="1"><span class="ve-fx-val" id="veFxGammaVal">1.00</span></div>
+                    <label class="ve-anim-toggle"><input type="checkbox" id="veCcAnim"> Animate</label>
+                    <div class="ve-anim-row" id="veCcAnimRow" hidden>
+                      <select id="veCcInterp"><option value="normal">Normal</option><option value="bezier">Bezier</option><option value="hold">Hold</option></select>
+                      <button type="button" id="veCcAddKey">+ Key</button><button type="button" id="veCcDelKey">– Key</button><span class="ve-anim-count" id="veCcKeys">0 keys</span>
+                    </div>
+                  </section>
+
+                  <section class="ve-fx-card">
+                    <label class="ve-fx-head"><input type="checkbox" id="veFxWiggleEnable"> <span>Wiggle</span></label>
+                    <div class="ve-fx-slider"><span>Fréquence</span><input id="veFxFreq" type="range" min="0.5" max="10" step="0.1" value="2"><span class="ve-fx-val" id="veFxFreqVal">2 Hz</span></div>
+                    <div class="ve-fx-slider"><span>Intensité</span><input id="veFxAmp" type="range" min="0.1" max="50" step="0.1" value="8"><span class="ve-fx-val" id="veFxAmpVal">8 px</span></div>
+                    <label class="ve-anim-toggle"><input type="checkbox" id="veWgAnim"> Animate</label>
+                    <div class="ve-anim-row" id="veWgAnimRow" hidden>
+                      <select id="veWgInterp"><option value="normal">Normal</option><option value="bezier">Bezier</option><option value="hold">Hold</option></select>
+                      <button type="button" id="veWgAddKey">+ Key</button><button type="button" id="veWgDelKey">– Key</button><span class="ve-anim-count" id="veWgKeys">0 keys</span>
+                    </div>
+                  </section>
+
+                  <section class="ve-fx-card">
+                    <label class="ve-fx-head"><input type="checkbox" id="veFxNoiseEnable"> <span>Noise</span></label>
+                    <div class="ve-fx-slider"><span>Intensité</span><input id="veFxNoiseInt" type="range" min="0" max="100" step="1" value="30"><span class="ve-fx-val" id="veFxNoiseIntVal">30%</span></div>
+                    <div class="ve-fx-slider"><span>Taille du grain</span><input id="veFxGrain" type="range" min="1" max="10" step="1" value="2"><span class="ve-fx-val" id="veFxGrainVal">2</span></div>
+                    <label class="ve-anim-toggle"><input type="checkbox" id="veNsAnim"> Animate</label>
+                    <div class="ve-anim-row" id="veNsAnimRow" hidden>
+                      <select id="veNsInterp"><option value="normal">Normal</option><option value="bezier">Bezier</option><option value="hold">Hold</option></select>
+                      <button type="button" id="veNsAddKey">+ Key</button><button type="button" id="veNsDelKey">– Key</button><span class="ve-anim-count" id="veNsKeys">0 keys</span>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+
+            <!-- Text clip editor (content / colour / size / bold / font). -->
+            <div class="ve-modal" id="veTextModal" hidden>
+              <div class="ve-modal-backdrop" data-ve-text-close></div>
+              <div class="ve-modal-card ve-modal-card-sm" role="dialog" aria-modal="true" aria-label="Text clip">
+                <div class="ve-modal-head">
+                  <span class="ve-modal-title">Text clip</span>
+                  <button type="button" class="ve-modal-x" data-ve-text-close aria-label="Close">✕</button>
+                </div>
+                <div class="ve-modal-body">
+                  <label class="ve-export-field" style="align-items:flex-start">Text
+                    <textarea id="veTextInput" rows="2" style="flex:1;min-width:0;resize:vertical;background:rgba(255,255,255,0.06);color:#eee;border:1px solid rgba(255,255,255,0.18);border-radius:6px;padding:6px 8px;font:inherit"></textarea>
+                  </label>
+                  <label class="ve-export-field">Font
+                    <select id="veTextFont"></select>
+                  </label>
+                  <div class="ve-fx-slider"><span>Size</span><input id="veTextSize" type="range" min="2" max="40" step="1" value="12"><span class="ve-fx-val" id="veTextSizeVal">12%</span></div>
+                  <div class="ve-fx-slider"><span>Position X</span><input id="veTextPosX" type="range" min="0" max="100" step="1" value="50"><span class="ve-fx-val" id="veTextPosXVal">50%</span></div>
+                  <div class="ve-fx-slider"><span>Position Y</span><input id="veTextPosY" type="range" min="0" max="100" step="1" value="50"><span class="ve-fx-val" id="veTextPosYVal">50%</span></div>
+                  <div class="ve-export-row">
+                    <label class="ve-export-field">Colour <input id="veTextColor" type="color" value="#ffffff"></label>
+                    <label class="ve-export-region"><input type="checkbox" id="veTextBold" checked> Bold</label>
+                  </div>
+                  <div class="ve-modal-actions">
+                    <button type="button" class="ve-tool ve-tool-primary" data-ve-text-close>Done</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  <script src="./editor.js"></script>
+</body>
+</html>

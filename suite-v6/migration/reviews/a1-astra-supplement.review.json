@@ -1,0 +1,525 @@
+{
+  "schemaVersion": "1.0",
+  "reviewerModel": "gpt-6-astra",
+  "reviewedAt": "2026-09-11",
+  "fixtureSha256": "31879c98c0ea100755b4ad57c3cf72f49b23b3c87807ebeddb2b44a011b3eded",
+  "sources": [
+    {
+      "owner": "realism-forge",
+      "path": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+      "sha256": "8c3017ec438451907ca7e26faf6d0f8b236e72fa2affa48246fa030a7975e0eb"
+    },
+    {
+      "owner": "barz-beauty",
+      "path": "Barzy App/public/assets/HTML/md-beauty.html",
+      "sha256": "75700706709c344a69d97354e68f27592265208198b55ad7b11687f9ea6f70f2"
+    }
+  ],
+  "scope": "Supplemental prompt fields absent from A1 bundle; not blanket approval of all fixture metadata or of the entire owner corpus.",
+  "decisions": [
+    {
+      "path": "beauty.categories[2].entries[0].text",
+      "originalValue": "ultra-realistic editorial portrait photograph of a woman late 20s–early 30s, indoor near window, daytime. Close-up framing collarbone to top of head. slight downward gaze, calm neutral expression. Natural tied-back dark hair with flyaways, light grey cotton hoodie with clear fabric texture separation, small silver earrings. Skin realism focus: visible pores, fine micro-texture, organic acne marks (non-repeating), uneven pigmentation, subtle redness, natural oil sheen only on high points. No symmetry correction. Real daylight with slight warmth, accurate white balance, natural contrast. True-to-life colors. Shot on medium format digital, natural grain, controlled depth of field. No retouching, no smoothing, no beauty filters. Negatives: AI glow, plastic skin, skincare-ad look, cinematic lighting, studio light, pastel or faded colors, flat lighting, cartoon/3D style, logos or text.",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "beauty.categories[2].entries[3].text",
+      "originalValue": "Ultra-realistic close-up of feminine hands in a resting pose, fingers slightly interlaced. Natural skin texture, visible veins and fine wrinkles. Long almond-shaped nails with red and white minimalist nail art. Soft natural light, realistic proportions, shallow depth of field. Photorealistic hand anatomy, high detail macro shot.",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "beauty.categories[3].entries[0].text",
+      "originalValue": "ultra-realistic editorial portrait photograph of a man late 20s–early 30s, indoor near window, daytime. Close-up framing collarbone to top of head. slight downward gaze, calm neutral expression. Natural short dark hair slightly tousled, light grey cotton hoodie with clear fabric texture separation, subtle stubble with individual hair variation. Skin realism focus: visible pores, fine micro-texture, organic acne marks (non-repeating), uneven pigmentation, subtle redness, natural oil sheen only on high points, visible razor micro-irritation on neck. No symmetry correction. Real daylight with slight warmth, accurate white balance, natural contrast. True-to-life colors. Shot on medium format digital, natural grain, controlled depth of field. No retouching, no smoothing, no beauty filters. Negatives: AI glow, plastic skin, skincare-ad look, cinematic lighting, studio light, pastel or faded colors, flat lighting, cartoon/3D style, logos or text.",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "beauty.categories[3].entries[3].text",
+      "originalValue": "Ultra-realistic close-up of masculine hands in a resting pose, fingers slightly interlaced. Natural skin texture, visible veins, tendons, and fine wrinkles. Short trimmed nails with natural nail bed texture, slight cuticle roughness. Soft natural light, realistic proportions, shallow depth of field. Photorealistic hand anatomy, high detail macro shot.",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.outfits[0].v",
+      "originalValue": "Oversized vintage band t-shirt, denim shorts, barefoot",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.outfits[1].v",
+      "originalValue": "Plain white tee, chain necklace, dark jeans",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.outfits[2].v",
+      "originalValue": "Hoodie zipped halfway, joggers, beat-up sneakers",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.outfits[3].v",
+      "originalValue": "Floral summer dress, sandals, sun hat",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.outfits[4].v",
+      "originalValue": "Leather jacket, black turtleneck, slim jeans, boots",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.outfits[5].v",
+      "originalValue": "Hawaiian shirt unbuttoned over tank top, cargo shorts, flip flops",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.outfits[6].v",
+      "originalValue": "Office shirt slightly untucked, loosened tie, rolled-up sleeves",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.outfits[7].v",
+      "originalValue": "Tracksuit, gold chain, fresh white sneakers",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.outfits[8].v",
+      "originalValue": "Knitted oversized sweater, corduroy pants, wool socks",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.outfits[9].v",
+      "originalValue": "Crop top, high-waisted mom jeans, chunky platform sneakers",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.outfits[10].v",
+      "originalValue": "Flannel shirt open over graphic tee, beanie, worn jeans",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.outfits[11].v",
+      "originalValue": "Suit jacket over plain white tee, no tie, smart casual",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.outfits[12].v",
+      "originalValue": "Tank top, basketball shorts, flip flops",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.outfits[13].v",
+      "originalValue": "Puffy winter jacket, knit scarf, gloves, snow boots",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.outfits[14].v",
+      "originalValue": "Bathrobe, messy hair, worn-out slippers",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.outfits[15].v",
+      "originalValue": "Denim overalls over striped long-sleeve shirt",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.outfits[16].v",
+      "originalValue": "Vintage 90s windbreaker, mom jeans, retro Nike sneakers",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.outfits[17].v",
+      "originalValue": "Simple black dress, minimal silver jewelry, heels",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.outfits[18].v",
+      "originalValue": "Work polo shirt with company logo, khaki pants, sneakers",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.outfits[19].v",
+      "originalValue": "Festival outfit: crochet top, denim cutoffs, body glitter, boots",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.outfits[20].v",
+      "originalValue": "Pajama pants, oversized sleep t-shirt, bare feet, messy hair",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.poses[19].v",
+      "originalValue": "Caught mid-blink, eyes half-shut, accidental unflattering timing",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.poses[20].v",
+      "originalValue": "Holding a pet, looking down lovingly at the animal",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.poses[21].v",
+      "originalValue": "Blowing out birthday candles, face lit from below by cake",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.locations[0].v",
+      "originalValue": "Messy bedroom at night, unmade bed visible, clothes on chair, poster on wall",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.locations[1].v",
+      "originalValue": "House party, dim room, red solo cups, blurred people dancing in background",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.locations[2].v",
+      "originalValue": "Kitchen under harsh fluorescent light, cluttered counter, fridge with magnets",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.locations[3].v",
+      "originalValue": "Backyard barbecue, plastic lawn chairs, string lights, dusk sky",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.locations[4].v",
+      "originalValue": "Beach at golden hour, waves in background, sand on skin and towel",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.locations[5].v",
+      "originalValue": "City sidewalk at night, neon shop signs, wet pavement reflections",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.locations[6].v",
+      "originalValue": "Dive bar interior, wood paneling, neon beer signs, dim warm light, sticky tables",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.locations[7].v",
+      "originalValue": "Inside a car, window reflections, seatbelt visible, dashboard glow at night",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.locations[8].v",
+      "originalValue": "Park bench, trees in background, dappled sunlight filtering through leaves",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.locations[9].v",
+      "originalValue": "Bathroom mirror, cluttered sink counter with products, harsh overhead light",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.locations[10].v",
+      "originalValue": "School or university hallway, lockers, fluorescent lights, linoleum floor",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.locations[11].v",
+      "originalValue": "Office open space, computer screens glowing, coffee cups, stacked papers",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.locations[12].v",
+      "originalValue": "Living room, couch, TV glowing in background, warm side lamp",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.locations[13].v",
+      "originalValue": "Rooftop or balcony, city skyline in background, sunset light, wind",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.locations[14].v",
+      "originalValue": "Restaurant table, plates of food half-eaten, candlelight, wine glasses",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.locations[15].v",
+      "originalValue": "Subway or metro platform, harsh fluorescent tubes, tiled walls, crowd",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.locations[16].v",
+      "originalValue": "Forest trail, green filtered light, dirt path, ferns and moss",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.locations[17].v",
+      "originalValue": "Concert crowd, colored stage lights bleeding through smoke, phone screens glowing",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.locations[18].v",
+      "originalValue": "Gas station at night, harsh overhead fluorescent, parked car, wet asphalt",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.locations[19].v",
+      "originalValue": "Wedding reception, decorated tables, dance floor, fairy lights and flowers",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.locations[20].v",
+      "originalValue": "Swimming pool area, blue water reflections, wet concrete, towels, sunscreen",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.locations[21].v",
+      "originalValue": "Supermarket aisle, harsh lighting, shopping cart, colorful packaging",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.moods[0].v",
+      "originalValue": "candid",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.moods[1].v",
+      "originalValue": "laughing with genuine joy",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.moods[2].v",
+      "originalValue": "serious, composed",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.moods[9].v",
+      "originalValue": "visibly exhausted, dark under-eyes",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.moods[10].v",
+      "originalValue": "beaming with happiness",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.moods[16].v",
+      "originalValue": "sleepy, half-closed eyes, yawning",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.moods[17].v",
+      "originalValue": "deeply focused, furrowed brow",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.moods[18].v",
+      "originalValue": "flirtatious, playful eye contact",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.controls.moods[19].v",
+      "originalValue": "deadpan, completely neutral face",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.sliders[0].vals[5].t",
+      "originalValue": "Maximum direct flash, blown-out highlights, pitch-black background, extreme red-eye",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.sliders[1].vals[0].t",
+      "originalValue": "virtually no grain, clean processing",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.sliders[1].vals[1].t",
+      "originalValue": "subtle grain, ISO 100-200 equivalent",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.sliders[1].vals[2].t",
+      "originalValue": "moderate film grain, ISO 400-800",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.sliders[1].vals[3].t",
+      "originalValue": "heavy grain, ISO 1600, noise across all tones",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.sliders[1].vals[4].t",
+      "originalValue": "extreme grain, ISO 3200+, detail obscured",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.sliders[1].vals[5].t",
+      "originalValue": "maximum grain, ISO 6400+ dominating image",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.sliders[2].vals[0].t",
+      "originalValue": "deep focus f/11-f/16, everything sharp",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.sliders[2].vals[1].t",
+      "originalValue": "moderate f/5.6-f/8, slight background softening",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.sliders[2].vals[2].t",
+      "originalValue": "noticeable blur f/2.8-f/4, background separated",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.sliders[2].vals[3].t",
+      "originalValue": "shallow f/1.8-f/2, visible bokeh circles",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.sliders[2].vals[4].t",
+      "originalValue": "very shallow f/1.4, razor-thin focus plane",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.sliders[2].vals[5].t",
+      "originalValue": "extremely shallow f/1.2, only eyes sharp",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.sliders[3].vals[0].t",
+      "originalValue": "fresh clean image",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.sliders[3].vals[1].t",
+      "originalValue": "slight yellowing, minor fading",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.sliders[3].vals[2].t",
+      "originalValue": "noticeable aging, faded colors, slight crease",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.sliders[3].vals[3].t",
+      "originalValue": "heavily aged, curled edges, fingerprint marks, tape residue",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.sliders[3].vals[4].t",
+      "originalValue": "very aged, torn corners, water stains, foxing",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.sliders[3].vals[5].t",
+      "originalValue": "extreme damage, severe fading, cracking emulsion, brittle",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.sliders[4].vals[0].t",
+      "originalValue": "clean, no imperfections",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.sliders[4].vals[1].t",
+      "originalValue": "minor dust speck, slight horizon tilt",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.sliders[4].vals[2].t",
+      "originalValue": "dust on lens, finger at frame edge, minor light leak",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.sliders[4].vals[3].t",
+      "originalValue": "thumb in frame, lens flare, off-center, double exposure bleed",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.sliders[4].vals[4].t",
+      "originalValue": "significant light leaks, heavy vignetting, lens scratch, water damage",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    },
+    {
+      "path": "realism.sliders[4].vals[5].t",
+      "originalValue": "extreme: torn print, chemical stains, deep scratches across frame",
+      "action": "preserve",
+      "reason": "Valeur de prompt ou sortie dérivée lue dans la fixture A1 ; absente du paquet présélectionné."
+    }
+  ]
+}

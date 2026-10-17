@@ -1,0 +1,1919 @@
+{
+  "schemaVersion": "1.0",
+  "id": "triage-seedance-01",
+  "owner": "seedance",
+  "status": "pending-structural-triage",
+  "approximateTokens": 795,
+  "prompts": [
+    {
+      "id": "text-010a27e217d4705e362d",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "currentTemplate",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2176,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "selectTemplate",
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-0147f77821e55458699e",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "directorSelect",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1843,
+          "column": 52,
+          "kind": "string-literal",
+          "functionName": "populateDirectorSelect",
+          "owners": [
+            "seedance"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2174,
+          "column": 52,
+          "kind": "string-literal",
+          "functionName": "selectTemplate",
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-03fcc0aed3fb0963eb7c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "position:fixed;z-index:99999;left:",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2614,
+          "column": 34,
+          "kind": "string-literal",
+          "functionName": "_showImgPasteMenu",
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-045d5e05cc057c44e2d0",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Chris Cunningham",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1533,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-0575f29df888a27e85b6",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Template",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1078,
+          "column": 152,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-06520993ce60cb8ffeee",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Pick a Go action mode, optionally type a direction, then GO ACTION: the AI reads the images and writes the suite.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1069,
+          "column": 71,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-076cec2a38824e357446",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "goActionMode",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2415,
+          "column": 53,
+          "kind": "string-literal",
+          "functionName": "aiDirectSequence",
+          "owners": [
+            "seedance"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2477,
+          "column": 53,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-09934e76893c25334532",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "vmfFolderInput",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2105,
+          "column": 51,
+          "kind": "string-literal",
+          "functionName": "triggerFolderLoad",
+          "owners": [
+            "seedance"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2662,
+          "column": 52,
+          "kind": "string-literal",
+          "functionName": "bindVmfInputs",
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-099c1b06b89a9a760b67",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Subject: ${vmfCells[i].subject.trim()}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2157,
+          "column": 68,
+          "kind": "template-literal",
+          "functionName": "buildVmfReferences",
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-09fe70881253e3543d9f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "shots",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2228,
+          "column": 58,
+          "kind": "string-literal",
+          "functionName": "updateTemplate",
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-0fdcac9d1f633aeff7ee",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Kling timed sequence wording",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1981,
+          "column": 97,
+          "kind": "string-literal",
+          "functionName": "updateMovingSubtitle",
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-1376fbf02ad84e830bfe",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Jerry Bruckheimer",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1781,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-1c55d9b826e8dfa99437",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "OTHER",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1848,
+          "column": 56,
+          "kind": "string-literal",
+          "functionName": "populateDirectorSelect",
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-1e0584a25d9f43bf5cbd",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "header",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2539,
+          "column": 51,
+          "kind": "string-literal",
+          "functionName": "setupCompactInterface",
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-2264aca9e5f1f6816845",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "WILD CARDS",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1441,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1472,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1503,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1534,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1565,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-24f79ebb4246936bef61",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "10 static stills. Obsessive symmetry, vanishing points, mathematical precision, eerie formalism. Pure tableau.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1598,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-31763a2b5ddb24604e1b",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "px;top:",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2614,
+          "column": 77,
+          "kind": "string-literal",
+          "functionName": "_showImgPasteMenu",
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-335fd665f279a081079a",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "STANDARD",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1080,
+          "column": 65,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-3704b667f3ec99ea335b",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "David Fincher",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1130,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-37a94513f3fd9d86c8db",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "10 static stills. Contre-jour, nature monumental, ethereal handheld-inspired, golden/blue light, transcendence. No animation.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1567,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-3b28d2b5678bba4f58b6",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "10 static stills. Low-budget gritty, handheld suggestion, practical light, visceral detail. Raw documentary horror.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1629,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-3c929bb526172a0564ef",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Director template — steers lens, framing, light, colour and pacing",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1079,
+          "column": 69,
+          "kind": "html-attribute:title",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-4475fac406a1c1a955bd",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Wong Kar-wai",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1223,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-45a7c54c84f0cbde87f6",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "SIGNATURE",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1816,
+          "column": 59,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1817,
+          "column": 64,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-47d6e06547e05cc6280f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "templateContainer",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2265,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2392,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "renderAiDirectedPrompt",
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-4d202c84381cafa286c7",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Steven Spielberg",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1750,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-5879989fadd34223f27a",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Sofia Coppola",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1817,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-596348a09ed84eaa1bff",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "David Lynch: dreamlike, deep chiaroscuro, uneasy stillness, uncanny sound-led dread.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1829,
+          "column": 20,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-599a0e49894529b599af",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "movingDuration",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1869,
+          "column": 63,
+          "kind": "string-literal",
+          "functionName": "getMovingSettings",
+          "owners": [
+            "seedance"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2514,
+          "column": 24,
+          "kind": "string-literal",
+          "functionName": "sync",
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-5ea810c4efa254d51899",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Read the reference images and build a coherent suite that connects them.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2425,
+          "column": 35,
+          "kind": "string-literal",
+          "functionName": "aiDirectSequence",
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-63fbc66ad3928c6f2709",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "actionDirection",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1871,
+          "column": 59,
+          "kind": "string-literal",
+          "functionName": "getMovingSettings",
+          "owners": [
+            "seedance"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2024,
+          "column": 52,
+          "kind": "string-literal",
+          "functionName": "resetFields",
+          "owners": [
+            "seedance"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2333,
+          "column": 52,
+          "kind": "string-literal",
+          "functionName": "receiveAtlasPrompt",
+          "owners": [
+            "seedance"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2472,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2484,
+          "column": 51,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-6b9ed1b9050efd0a1a01",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "video shots",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1983,
+          "column": 73,
+          "kind": "string-literal",
+          "functionName": "updateMovingSubtitle",
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-6da62de6c11f5b607a8c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Wes Anderson: centered symmetry, pastel palettes, flat frontal tableaux, whip pans and dollhouse staging.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1826,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-6e862940d0bf2eea9e01",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "moving",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1006,
+          "column": 76,
+          "kind": "html-event:onclick:string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1968,
+          "column": 46,
+          "kind": "string-literal",
+          "functionName": "updateMovingVisibility",
+          "owners": [
+            "seedance"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1991,
+          "column": 73,
+          "kind": "string-literal",
+          "functionName": "setMode",
+          "owners": [
+            "seedance"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2012,
+          "column": 33,
+          "kind": "string-literal",
+          "functionName": "setMovingProvider",
+          "owners": [
+            "seedance"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2223,
+          "column": 33,
+          "kind": "string-literal",
+          "functionName": "updateTemplate",
+          "owners": [
+            "seedance"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2412,
+          "column": 33,
+          "kind": "string-literal",
+          "functionName": "aiDirectSequence",
+          "owners": [
+            "seedance"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2412,
+          "column": 51,
+          "kind": "string-literal",
+          "functionName": "aiDirectSequence",
+          "owners": [
+            "seedance"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2489,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-7063cbba4a16a6c1b8b2",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "movingShotsNumber",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2515,
+          "column": 39,
+          "kind": "string-literal",
+          "functionName": "sync",
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-72f28d9b6bee079777d0",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Tim Burton",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1192,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-7850e715a3c655b292df",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "movingDurationNumber",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2514,
+          "column": 42,
+          "kind": "string-literal",
+          "functionName": "sync",
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-7b414d50709d04a76791",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Kling sequence wording",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2227,
+          "column": 94,
+          "kind": "string-literal",
+          "functionName": "updateTemplate",
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-7ff06c0794e995cc85e4",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Step 3/3 — writing the suite of prompts...",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2457,
+          "column": 35,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-81ac49765bc6fbb2b9cf",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "stills",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1005,
+          "column": 83,
+          "kind": "html-event:onclick:string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1087,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1976,
+          "column": 33,
+          "kind": "string-literal",
+          "functionName": "updateMovingSubtitle",
+          "owners": [
+            "seedance"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1994,
+          "column": 26,
+          "kind": "string-literal",
+          "functionName": "setMode",
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-821d5e5feb742e3fe71b",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Apichatpong Weerasethakul",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1719,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-8741920b5066c4307abe",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "10 static stills. Time suspended, nature meditative, Thai landscape poetic, memory-dream quality. Slow cinema.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1722,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-8c7253434df258c1fa85",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "7 shots • 14 seconds • geometric tracking, symmetry maintenance, vanishing point reveals, mathematical progression",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1613,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-93b8856b80c9e1807d56",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Shot count",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1050,
+          "column": 50,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-992c591039edfbe724f1",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "AI returned an empty suite. Try again.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2459,
+          "column": 48,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-9d7f5f066e7e6f094286",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "AI direction failed",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2456,
+          "column": 67,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2464,
+          "column": 52,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-a0008eb36c8f6a383ddf",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "@image${loaded[0] + 1}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2187,
+          "column": 68,
+          "kind": "template-literal",
+          "functionName": "vmfPrimarySubject",
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-a260f0d278be01892c12",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "input-group char-limit-control",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2529,
+          "column": 39,
+          "kind": "string-literal",
+          "functionName": "setupCompactInterface",
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-a365d1be1df4f65121e4",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "movingShots",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1870,
+          "column": 64,
+          "kind": "string-literal",
+          "functionName": "getMovingSettings",
+          "owners": [
+            "seedance"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2515,
+          "column": 24,
+          "kind": "string-literal",
+          "functionName": "sync",
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-a3d9ff912e926f409433",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Go action mode",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1061,
+          "column": 162,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-a4203901ee448d4df636",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Sofia Coppola: soft diffused light, intimate quiet, hazy pastel tones, dreamy stillness.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1832,
+          "column": 22,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-a511f2b35314b31579fa",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "7 shots • 14 seconds • imperceptible geometric shifts, color wrongness increasing, formal alienation",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1272,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-a515a2fc43bc6067e813",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "@image${loaded[1] + 1}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2201,
+          "column": 70,
+          "kind": "template-literal",
+          "functionName": "vmfSecondarySubject",
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-a73fe21c3c6d6931c243",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Biologique",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2376,
+          "column": 94,
+          "kind": "string-literal",
+          "functionName": "buildMovingDraftLines",
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-a8c75086762c0ad429c0",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "promptCharLimit",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1876,
+          "column": 56,
+          "kind": "string-literal",
+          "functionName": "getPromptCharLimit",
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-ac38a967dc7ab44bf52a",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Nicolas Refn",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1440,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-b9b5d20218523032c046",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Yorgos Lanthimos",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1254,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-bd6096ab5ec04649027c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Paul Thomas Anderson",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1409,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-c068fe3cc70a91b2b28d",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "appTitle",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1995,
+          "column": 41,
+          "kind": "string-literal",
+          "functionName": "setMode",
+          "owners": [
+            "seedance"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1998,
+          "column": 41,
+          "kind": "string-literal",
+          "functionName": "setMode",
+          "owners": [
+            "seedance"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2540,
+          "column": 51,
+          "kind": "string-literal",
+          "functionName": "setupCompactInterface",
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-c2868f84f7d4766215b7",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "7 shots • 14 seconds • slow drone perspective shifts, horizon dominance, monumentality reveals",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1303,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-c98e1c00bb6968ec6294",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Still photograph: medium off-center, practical light source visible (harsh practical), [CONTEXT] minimal crude, gritty reality.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1632,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-c9b506bb4ad7263a0a61",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "7 shots • 14 seconds • temporal meditation, light passage suggestion, depth contemplation, sacred slowness",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1520,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-cb9b47cb59ad796446e7",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Andrei Tarkovsky: very long takes, water and light, slow contemplative drift, spiritual weight.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1831,
+          "column": 24,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-cbd93763e53448c8157f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": " src=\"${vmfCells[i].dataUrl}\"",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2059,
+          "column": 70,
+          "kind": "template-literal",
+          "functionName": "renderVmfRack",
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-cfd4166652e8990db3ba",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "aiDirectStatus",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2354,
+          "column": 52,
+          "kind": "string-literal",
+          "functionName": "setAiDirectStatus",
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-d306e981993cce69fbf5",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "10 static stills. Social realism, handheld verite, natural light, human dignity in struggle. Documentary authenticity.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1691,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-d330688eba8132391c35",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Global style",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1037,
+          "column": 36,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-d53772f1a4b72390b2c1",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "CORE",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1100,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1131,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1162,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1193,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1224,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1255,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-d5d8a725e0e5f8309944",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "7 shots • 14 seconds • temporal meditation, nature breathing, memory-dream logic, slow duration emphasis",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1737,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-db7530a61075d7d6f357",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "7 shots • 14 seconds • steadicam-like float, golden bokeh blooming, asymmetrical reveal, toxicity dance",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1427,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-df8d15319890806f6960",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Cut to",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2244,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": "updateTemplate",
+          "owners": [
+            "seedance"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2369,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": "buildMovingDraftLines",
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-eaa87f9821513a2a63f2",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "copyFeedback",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2344,
+          "column": 58,
+          "kind": "string-literal",
+          "functionName": "copyPrompt",
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-ecd07cd95c0a2e9ea799",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Stanley Kubrick: clinical symmetry, wide-angle one-point perspective, slow deliberate zooms, cold formal grandeur.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1823,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-edd23eebdbb7485a65cc",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "7 shots • 14 seconds • clinical geometry with precise tracking and light progression",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1148,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-ef6691545d2c5523efed",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Standard",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1099,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-f11c2f2bb70e391addfd",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Ari Aster",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1316,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-f17c996d8dce86ec4ec9",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "George A. Romero",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1626,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-f18861117e5002acfd65",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Seedance cut-to wording, no timecodes",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1981,
+          "column": 49,
+          "kind": "string-literal",
+          "functionName": "updateMovingSubtitle",
+          "owners": [
+            "seedance"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2227,
+          "column": 52,
+          "kind": "string-literal",
+          "functionName": "updateTemplate",
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-fdf8b1cf83d0795a9bb5",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "appSubtitle",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1974,
+          "column": 54,
+          "kind": "string-literal",
+          "functionName": "updateMovingSubtitle",
+          "owners": [
+            "seedance"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1996,
+          "column": 41,
+          "kind": "string-literal",
+          "functionName": "setMode",
+          "owners": [
+            "seedance"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1999,
+          "column": 41,
+          "kind": "string-literal",
+          "functionName": "setMode",
+          "owners": [
+            "seedance"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2013,
+          "column": 41,
+          "kind": "string-literal",
+          "functionName": "setMovingProvider",
+          "owners": [
+            "seedance"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2541,
+          "column": 54,
+          "kind": "string-literal",
+          "functionName": "setupCompactInterface",
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-fe6d3468cf5c74d8ec2a",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "standard",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1089,
+          "column": 31,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    }
+  ]
+}

@@ -1,0 +1,991 @@
+{
+  "schemaVersion": "1.0",
+  "id": "triage-barz-enhancer-01",
+  "owner": "barz-enhancer",
+  "status": "pending-structural-triage",
+  "approximateTokens": 346,
+  "prompts": [
+    {
+      "id": "text-07362cd2d7abdeac0db2",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "⚠ Experimental Feature",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 802,
+          "column": 29,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-enhancer"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-0c9ca15b0f5fc6b5afa3",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Ambient Occlusion Focus",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 880,
+          "column": 48,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-enhancer"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-158885d0f0f3f121ac11",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Character Lock",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 771,
+          "column": 137,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-enhancer"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-2018a361629cc9e02c6a",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Removes AI generation artifacts: weird textures, floating elements, impossible shadows.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 716,
+          "column": 46,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-enhancer"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-210039ddbc61961089bd",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "HIGH RIGHT",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 756,
+          "column": 149,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-enhancer"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-23eafabedb349016fcc1",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Style Lock",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 770,
+          "column": 127,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-enhancer"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-258a27ba823eb1161cbb",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "BZ ENHANCER",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 658,
+          "column": 17,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-enhancer"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-29653100302598e6d7e3",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Focused correction on hands, fingers and body proportions. Leaves everything else untouched.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 686,
+          "column": 46,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-enhancer"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-2cba9d25c1eaf7f3ef0e",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "LEFT",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 757,
+          "column": 151,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-enhancer"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-2dd791fb9c06970378c0",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Restoration and Colorization",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 733,
+          "column": 67,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-enhancer"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-2e3bf63452f75c58f0ee",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Quick Normal",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 859,
+          "column": 48,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-enhancer"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-2ed2702374f31a240e2b",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Technical Z-Pass",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 820,
+          "column": 48,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-enhancer"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-30f600b8de2a394091fa",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Refines facial features, eye symmetry and expression clarity without changing identity.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 692,
+          "column": 46,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-enhancer"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-352578a407f482b6e853",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Precision fixes without over-polishing. Corrects anatomy & geometry while preserving raw aesthetic.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 680,
+          "column": 46,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-enhancer"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-3c93d9f479f60e7d78f8",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Adds crisp detail to soft/blurry areas while maintaining depth of field.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 698,
+          "column": 46,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-enhancer"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-4943e8f40e898cf65a89",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "REF",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 758,
+          "column": 106,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-enhancer"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-54291800642e483f96dc",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Photo Enhancement (Contrast/Color)",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 727,
+          "column": 67,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-enhancer"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-5caa21b8217a21ec2e5c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Surgical Refinement",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 679,
+          "column": 66,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-enhancer"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-5cded13bd4e80749c5a0",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Face & Portrait Polish",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 691,
+          "column": 66,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-enhancer"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-5f2434625b73c559b85e",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Quick GI/AO",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 886,
+          "column": 48,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-enhancer"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-5fbdda1b8c72e849493a",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "LOW",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 761,
+          "column": 134,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-enhancer"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-63f4d8c404d194e187c1",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Artifact Cleanup",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 715,
+          "column": 66,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-enhancer"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-69b36351d5d5eb687b10",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Technical Normal Map",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 847,
+          "column": 48,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-enhancer"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-75260bda1e3f3c77a4ca",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Quick Fix (Compact)",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 721,
+          "column": 67,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-enhancer"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-7a1861e47d92e338be8a",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Copy All",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 785,
+          "column": 84,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-enhancer"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 987,
+          "column": 39,
+          "kind": "string-literal",
+          "functionName": "copyAllAngles",
+          "owners": [
+            "barz-enhancer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-804330c98a33db7fa9f4",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Maximum technical accuracy. Clean gradients, precise depth separation.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 821,
+          "column": 54,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-enhancer"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-92b4df4cb6c9ec22d90a",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Emphasizes contact shadows and crevice darkening.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 881,
+          "column": 54,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-enhancer"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-9f49d1769a7c92be5c80",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "customSubject",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 951,
+          "column": 53,
+          "kind": "string-literal",
+          "functionName": "renderAnglePrompts",
+          "owners": [
+            "barz-enhancer"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 972,
+          "column": 53,
+          "kind": "string-literal",
+          "functionName": "copyAllAngles",
+          "owners": [
+            "barz-enhancer"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 1000,
+          "column": 33,
+          "kind": "string-literal",
+          "functionName": "setPrefix",
+          "owners": [
+            "barz-enhancer"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-a162195c36fb248d269b",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "LOW RIGHT",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 762,
+          "column": 145,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-enhancer"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-a34b235d602ca950e475",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Standard normal map color encoding with accurate surface angles.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 848,
+          "column": 54,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-enhancer"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-b099dcb695f543eae7da",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "HIGH LEFT",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 754,
+          "column": 147,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-enhancer"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-b416c2c7197d11bc13ee",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Compact prompt for fast iterations.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 833,
+          "column": 54,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-enhancer"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 860,
+          "column": 54,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-enhancer"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 887,
+          "column": 54,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-enhancer"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-b43e72eed0488d784f1e",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "HIGH",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 755,
+          "column": 141,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-enhancer"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-be304c5f13d612b02a2c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Imported from BZ Helper enhancement prompts.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 728,
+          "column": 46,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-enhancer"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 734,
+          "column": 46,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-enhancer"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 740,
+          "column": 46,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-enhancer"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-c1e7e9e626c5057717ce",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Maximum preservation mode. Fixes only the most obvious errors.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 704,
+          "column": 46,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-enhancer"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-c4ce3c7ad82c8235da21",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "RIGHT",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 759,
+          "column": 153,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-enhancer"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-cd792cd472066b6bd888",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "tab-${tabId}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 907,
+          "column": 67,
+          "kind": "template-literal",
+          "functionName": "switchTab",
+          "owners": [
+            "barz-enhancer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-ce6f4d830c52da47c504",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Generated Prompts",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 784,
+          "column": 29,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-enhancer"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-d1dec16c3cdee2ac8c65",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Scene Lock",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 772,
+          "column": 135,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-enhancer"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-d43dd58ba76a78badb4f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Style Lock Enhance",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 703,
+          "column": 66,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-enhancer"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-d8c9509edf55d0ba6f8d",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Short-form prompt for fast iterations. Covers the essentials.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 722,
+          "column": 46,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-enhancer"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-debd0b2610e87079072e",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "generatedPrompts",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 950,
+          "column": 55,
+          "kind": "string-literal",
+          "functionName": "renderAnglePrompts",
+          "owners": [
+            "barz-enhancer"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-df8a938b969d4bb3cdc0",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Render Pass",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 669,
+          "column": 47,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-enhancer"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-df9a3066027bf5c20c5f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Quick Z-Depth",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 832,
+          "column": 48,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-enhancer"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-e1b311e16a857ad8fa99",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "LOW LEFT",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 760,
+          "column": 143,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-enhancer"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-e4524d084041aa41377d",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Detail Sharpen",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 697,
+          "column": 66,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-enhancer"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-ef62571b0855fa2c5a54",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Hand & Anatomy Fix",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 685,
+          "column": 66,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-enhancer"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-f56c10d56508fa4a06b3",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Technical GI Pass",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+          "line": 874,
+          "column": 48,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-enhancer"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    }
+  ]
+}

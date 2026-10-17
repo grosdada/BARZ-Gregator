@@ -1,0 +1,92 @@
+{
+  "syntax": "passed",
+  "interactions": "passed",
+  "layout": [
+    {
+      "viewport": 1100,
+      "variant": "Table de direction",
+      "width": 1068,
+      "scroll": 1068,
+      "body": 1068
+    },
+    {
+      "viewport": 1100,
+      "variant": "Argile",
+      "width": 1068,
+      "scroll": 1068,
+      "body": 1068
+    },
+    {
+      "viewport": 1100,
+      "variant": "Partition",
+      "width": 1068,
+      "scroll": 1068,
+      "body": 1068
+    },
+    {
+      "viewport": 800,
+      "variant": "Table de direction",
+      "width": 768,
+      "scroll": 768,
+      "body": 768
+    },
+    {
+      "viewport": 800,
+      "variant": "Argile",
+      "width": 768,
+      "scroll": 768,
+      "body": 768
+    },
+    {
+      "viewport": 800,
+      "variant": "Partition",
+      "width": 768,
+      "scroll": 768,
+      "body": 768
+    },
+    {
+      "viewport": 390,
+      "variant": "Table de direction",
+      "width": 358,
+      "scroll": 358,
+      "body": 358
+    },
+    {
+      "viewport": 390,
+      "variant": "Argile",
+      "width": 358,
+      "scroll": 358,
+      "body": 358
+    },
+    {
+      "viewport": 390,
+      "variant": "Partition",
+      "width": 358,
+      "scroll": 358,
+      "body": 358
+    },
+    {
+      "viewport": 320,
+      "variant": "Table de direction",
+      "width": 288,
+      "scroll": 288,
+      "body": 288
+    },
+    {
+      "viewport": 320,
+      "variant": "Argile",
+      "width": 288,
+      "scroll": 288,
+      "body": 288
+    },
+    {
+      "viewport": 320,
+      "variant": "Partition",
+      "width": 288,
+      "scroll": 288,
+      "body": 288
+    }
+  ],
+  "browserErrors": [],
+  "scope": "conceptual mockups only; no video generation"
+}

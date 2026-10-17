@@ -1,0 +1,18 @@
+{
+  "_name_or_path": "google/owlv2-base-patch16-ensemble",
+  "architectures": [
+    "Owlv2ForObjectDetection"
+  ],
+  "initializer_factor": 1.0,
+  "logit_scale_init_value": 2.6592,
+  "model_type": "owlv2",
+  "projection_dim": 512,
+  "text_config": {
+    "model_type": "owlv2_text_model"
+  },
+  "transformers_version": "4.37.2",
+  "vision_config": {
+    "image_size": 960,
+    "model_type": "owlv2_vision_model"
+  }
+}

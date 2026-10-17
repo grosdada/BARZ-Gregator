@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0",
+  "artifactType": "semantic-review-preflight",
+  "toolId": "banana-helper",
+  "proposedV6Id": "bz-goodies",
+  "preparedAt": "2026-09-11",
+  "preparedBy": "Sol",
+  "status": "astra-review-completed",
+  "reviewArtifact": "banana-goodies.review.json",
+  "reviewDecision": "Keep banana-helper as stable toolId; expose BZ Goodies. See semantic review for final decisions superseding this preflight.",
+  "source": {
+    "path": "Barzy App/public/assets/HTML/banana_helper.html",
+    "sha256": "3d29b8158aa51b5dbf45dbb9d6c2ebb868c4539d825209fd8b7bde606fb1bc7c",
+    "lines": 444,
+    "extractedOccurrences": 226
+  },
+  "reviewBatch": {
+    "id": "batch-06-01",
+    "fileName": "06-01-f9a306b9fd.json",
+    "approximateReviewTokens": 4502
+  },
+  "mechanicalInventory": {
+    "promptCount": 77,
+    "categoryCount": 8,
+    "categories": {
+      "1930s": 10,
+      "1940s": 10,
+      "1950s": 10,
+      "1960s": 10,
+      "1970s": 10,
+      "1980s": 10,
+      "2000s": 10,
+      "fun": 7
+    },
+    "duplicateTitleCount": 0,
+    "duplicatePromptCount": 0,
+    "sceneDescriptionPlaceholderCount": 77,
+    "promptsWithEmbeddedNoTextConstraint": 7
+  },
+  "confirmedLegacyIssues": [
+    {
+      "id": "stale-count-copy",
+      "kind": "ui-copy",
+      "detail": "The static subtitle and the Copy all toast say 70 although the catalog contains 77 prompts. Runtime code corrects the visible subtitle and button count, but the success toast stays wrong."
+    },
+    {
+      "id": "raw-copy-not-raw",
+      "kind": "behavior-label-mismatch",
+      "detail": "Copy without details calls finalPrompt with an empty detail, replaces [Scene Description] with [Details], and appends the common suffix. It does not copy the stored raw prompt."
+    },
+    {
+      "id": "repeated-negative-constraint",
+      "kind": "composition",
+      "detail": "The seven fun prompts already contain mandatory no-text wording, then receive the common no-readable-text suffix. Review must decide whether exact legacy output or one deduplicated constraint is the V6 baseline."
+    },
+    {
+      "id": "legacy-id-title-mismatch",
+      "kind": "naming",
+      "detail": "The registry ID is banana-helper while the user-facing title is BZ Goodies. V6 should expose BZ Goodies and keep banana-helper only as provenance or migration alias."
+    }
+  ],
+  "reviewQuestions": [
+    "Classify the 77 entries as prompt content and preserve category order.",
+    "Confirm the exact common suffix and placeholder substitution contract.",
+    "Decide the corrected V6 behavior for Copy without details.",
+    "Decide whether the duplicated no-text constraints in the seven fun prompts should be preserved or normalized, recording every change.",
+    "Record spelling or grammar corrections without creative rewriting.",
+    "Define character-for-character compile fixtures for filled and empty details, one entry per category, bulk category output, and bulk catalog output."
+  ],
+  "proposedMigration": {
+    "workshopId": "image-looks",
+    "adapterKind": "prompt-library",
+    "requiresProvider": false,
+    "aggregatorAction": "explicit-draft-only",
+    "setupState": [
+      "activeCategory",
+      "searchQuery",
+      "detailsByPrompt"
+    ]
+  }
+}

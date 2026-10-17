@@ -1,0 +1,1160 @@
+{
+  "schemaVersion": "1.0",
+  "id": "triage-barz-beauty-01",
+  "owner": "barz-beauty",
+  "status": "pending-structural-triage",
+  "approximateTokens": 692,
+  "prompts": [
+    {
+      "id": "text-0375fb1f9c804b6d4f72",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "negatives",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 399,
+          "column": 56,
+          "kind": "html-event:onclick:string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 633,
+          "column": 10,
+          "kind": "string-literal",
+          "functionName": "copyAllInTab",
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-03e7ba89c131b44669f4",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "BZ Beauty — Prompt Compiler",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 6,
+          "column": 8,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-06898b3bbfed3ef384e0",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Prompt Compiler",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 322,
+          "column": 27,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-07607d609f9a3592484e",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Lighting",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 331,
+          "column": 49,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-0d266faaece034265f86",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "portrait-prompts",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 603,
+          "column": 10,
+          "kind": "string-literal",
+          "functionName": "getPromptsForContainer",
+          "owners": [
+            "barz-beauty"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 663,
+          "column": 17,
+          "kind": "string-literal",
+          "functionName": "toggleGenderPortrait",
+          "owners": [
+            "barz-beauty"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 679,
+          "column": 15,
+          "kind": "string-literal",
+          "functionName": "toggleGenderPortrait",
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-1b874c6717e7a52276de",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Anti-AI General",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 561,
+          "column": 12,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-1f5b29c7bbd984bf92fe",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Anti-AI Hands",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 553,
+          "column": 12,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-2027ac2d1b524127ef61",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "gender-switch-portrait",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 659,
+          "column": 38,
+          "kind": "string-literal",
+          "functionName": "toggleGenderPortrait",
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-214ce65bea76e7b7a7b8",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Ready-made negative blocks to append. Keeps AI artifacts and uncanny valley at bay.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 397,
+          "column": 31,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-2616ef974d47e9fa1d58",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "lighting-prompts",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 605,
+          "column": 10,
+          "kind": "string-literal",
+          "functionName": "getPromptsForContainer",
+          "owners": [
+            "barz-beauty"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 681,
+          "column": 15,
+          "kind": "string-literal",
+          "functionName": "toggleGenderPortrait",
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-2797a76680ecf855e766",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Neon Gel Split",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 538,
+          "column": 12,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-2d33661c3d18771fc611",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Selfie Prompts",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 340,
+          "column": 32,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-3ef3d755ab7d0c2aa479",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "active-gender",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 652,
+          "column": 55,
+          "kind": "string-literal",
+          "functionName": "toggleGender",
+          "owners": [
+            "barz-beauty"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 653,
+          "column": 55,
+          "kind": "string-literal",
+          "functionName": "toggleGender",
+          "owners": [
+            "barz-beauty"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 661,
+          "column": 64,
+          "kind": "string-literal",
+          "functionName": "toggleGenderPortrait",
+          "owners": [
+            "barz-beauty"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 662,
+          "column": 64,
+          "kind": "string-literal",
+          "functionName": "toggleGenderPortrait",
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-40b8336e800026c4db9c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "selfie-prompts",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 602,
+          "column": 10,
+          "kind": "string-literal",
+          "functionName": "getPromptsForContainer",
+          "owners": [
+            "barz-beauty"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 654,
+          "column": 17,
+          "kind": "string-literal",
+          "functionName": "toggleGender",
+          "owners": [
+            "barz-beauty"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 678,
+          "column": 15,
+          "kind": "string-literal",
+          "functionName": "toggleGenderPortrait",
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-49625d9b0db7cac94f44",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Skin Close-Up",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 422,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 448,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-50f53c42a62dd929275a",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "All prompts copied",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 636,
+          "column": 59,
+          "kind": "string-literal",
+          "functionName": "copyAllInTab",
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-51c5bcd80b19eeba1823",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Navy Shirt Editorial",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 434,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 460,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-534c2824eb27f3cf844e",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Append these to any prompt to push realism for skin textures and material surfaces.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 377,
+          "column": 31,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-55c2bce1bb9917f297e0",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Femme",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 344,
+          "column": 61,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 362,
+          "column": 70,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-567df684c77527b9f1cf",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "editorial portrait photograph",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 475,
+          "column": 55,
+          "kind": "string-literal",
+          "functionName": "makePortraitPrompts",
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-6747ff29f40094540057",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Lighting Setups",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 386,
+          "column": 32,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-6ce7b5514cf0fc43788f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Smartphone selfie & close-up editorial prompts. Toggle gender to switch all prompts.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 341,
+          "column": 31,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-7191dfead51e651715ca",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Skin Realism",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 330,
+          "column": 45,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 491,
+          "column": 12,
+          "kind": "string-literal",
+          "functionName": "makePortraitPrompts",
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-7891f3b3726e9bf6be51",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Selfie",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 328,
+          "column": 54,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-7a352fb178430300498d",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Anti-AI Face",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 549,
+          "column": 12,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-7d249ed4eb75246b3d0e",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Beauty",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 321,
+          "column": 40,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-86e44366f5540da9e689",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Negatives",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 332,
+          "column": 50,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-88b469c0c2e6667cfc9b",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "negatives-prompts",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 606,
+          "column": 10,
+          "kind": "string-literal",
+          "functionName": "getPromptsForContainer",
+          "owners": [
+            "barz-beauty"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 682,
+          "column": 15,
+          "kind": "string-literal",
+          "functionName": "toggleGenderPortrait",
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-8b55a9da44733069e2e0",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Rembrandt Dramatic",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 530,
+          "column": 12,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-920bbcbb47e5f116f9ac",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "prompt-card",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 578,
+          "column": 22,
+          "kind": "string-literal",
+          "functionName": "renderPrompts",
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-96ef5e876a872e76a73f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Barz",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 321,
+          "column": 29,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-981fe88199394a677398",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "skin-prompts",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 604,
+          "column": 10,
+          "kind": "string-literal",
+          "functionName": "getPromptsForContainer",
+          "owners": [
+            "barz-beauty"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 680,
+          "column": 15,
+          "kind": "string-literal",
+          "functionName": "toggleGenderPortrait",
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-a092cd0c40995deeca29",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Golden Hour Window",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 518,
+          "column": 12,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-a43e01e1ae4613facc1e",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Hyper-realistic wax figure surface: characteristic waxy translucency with subsurface light diffusion giving skin an uncanny inner glow. Surface is ultra-smooth but not plastic — retains very subtle hand-sculpted tool marks at close inspection. Specular response is soft and broad, not sharp like plastic or latex. Slight color banding where pigment layers were built up — pinkish undertones visible at thin areas like nostrils and ear edges. Micro-cracks and hairline fissures in areas of thermal stress. Glass eyes with too-perfect iris detail and slightly mismatched specular highlights compared to skin. Hair insertion points visible where individual strands or clusters meet the wax scalp. Subtle dust accumulation in recessed areas. Temperature-affected surface — minor softening and fingerprint impressions near heat sources. Gravity effects: very slight droop or sag in unsupported thin areas over time.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 508,
+          "column": 11,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ],
+      "triageKind": "prose-candidate"
+    },
+    {
+      "id": "text-a783aa1c25ab6a799595",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Skin & Material Realism",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 376,
+          "column": 32,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-a884fe1ea1cbd6a084f7",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Anti-AI Lighting",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 557,
+          "column": 12,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-ac95f4985b30320dd5a0",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Anti-AI Skin",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 545,
+          "column": 12,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-c45bc26f5ad42c8b246b",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Natural Light Portrait",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 484,
+          "column": 44,
+          "kind": "string-literal",
+          "functionName": "makePortraitPrompts",
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-c59729c75faacd6ad4b8",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Same compositions adapted for studio/editorial portraits — no selfie or phone references.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 359,
+          "column": 31,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-d1d39deb494a498f7f32",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "label-m",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 653,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": "toggleGender",
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-d37078fe6a1faa15fc48",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Copied to clipboard",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 406,
+          "column": 31,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 641,
+          "column": 30,
+          "kind": "string-literal",
+          "functionName": "showToast",
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-d3b29485b9ed3e180592",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Portrait Prompts",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 358,
+          "column": 32,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-da2a47fe2687b251b9ba",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Negative Prompts",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 396,
+          "column": 32,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-e9a3b443d8815ea38a19",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "in a resting pose, fingers slightly interlaced.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 480,
+          "column": 53,
+          "kind": "string-literal",
+          "functionName": "makePortraitPrompts",
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-ea36e99449d982b05138",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Hyper-realistic latex material surface: smooth with micro-ripple distortions where stretched over contours. High specular reflection with sharp glossy highlights following light source direction. Surface tension visible at seams and edges where material meets skin — slight bunching, micro-wrinkles at flex points. Color is deep saturated with characteristic latex translucency — underlying surface faintly visible at thin-stretched areas. Fingerprint smudges and contact marks disrupting perfect gloss. Powder residue traces in creased areas. Material responds to body heat with subtle condensation at contact zones. Realistic rubber thickness variation — thinner at stretched peaks, thicker in valleys. Edge curl where material terminates. No matte zones on glossy latex, no CG-perfect uniformity.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 504,
+          "column": 11,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ],
+      "triageKind": "prose-candidate"
+    },
+    {
+      "id": "text-f029f90856ec4793d511",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Anti-AI Body",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 565,
+          "column": 12,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-f8abc1a335c036d82128",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Copy all prompts",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 351,
+          "column": 67,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 369,
+          "column": 69,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 379,
+          "column": 65,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 389,
+          "column": 69,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 399,
+          "column": 70,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-fb8c673d626d787dfdfe",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Selfie Mirror",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 418,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 444,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 484,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": "makePortraitPrompts",
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-fefe19f489f28ded6920",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "label-m-portrait",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 662,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": "toggleGenderPortrait",
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    }
+  ]
+}

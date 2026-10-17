@@ -1,0 +1,1038 @@
+{
+  "schemaVersion": "1.0",
+  "id": "a9-knolling-board",
+  "title": "A9 — Knolling Board Generator",
+  "owners": [
+    "knolling"
+  ],
+  "status": "pending-astra-review",
+  "policy": {
+    "preserveOriginalEnglish": true,
+    "noSilentNormalization": true,
+    "correctionsRequireReason": true,
+    "excludedTriageKinds": [
+      "ui-copy-candidate",
+      "runtime-identifier"
+    ]
+  },
+  "highConfidenceCount": 48,
+  "triageCount": 5,
+  "itemCount": 53,
+  "approximateTokens": 12121,
+  "digestAlgorithm": "sha256",
+  "bundleDigest": "27bd2578c1c68f24128acb4248c756303d08888c70097ba5f0310c91c8e57286",
+  "items": [
+    {
+      "id": "text-01c4e025933651acdc83",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Based on this image: **TATTOO KNOLLING EXTRACTION** Analyze the source image and isolate every visible tattoo as a clean tattoo design reference. Reconstruct the tattoo art as faithfully as possible, even if it is wrapped around skin, partly distorted by perspective, or interrupted by body curvature. **Extraction protocol:** 1. Detect every visible tattoo or tattoo fragment. 2. Identify the body zone for each tattoo from the source context. 3. Visually unwrap the tattoo from skin curvature into a flat readable design. 4. Preserve line weight, ink density, shading, color, negative space, style, symbols, text, aging, scars, and imperfect real-world details. 5. If part of the tattoo is hidden or distorted, reconstruct only what is strongly implied by visible continuity. Do not invent decorative filler. **Knolling board output:** - Neutral matte background. - Each tattoo isolated as a large flat design panel. - Arrange tattoos by body area or visual family. - Use clean spacing, no overlap, no mockup skin texture unless needed to explain placement. - Include tiny unobtrusive labels only if they help identify body zone. - The unfolded tattoo designs are the main subject and should occupy most of the frame. [TATTOO_PLACE_IT_PLACEHOLDER] **Quality lock:** - Faithful to the source tattoo first, aesthetic cleanup second. - Do not redesign the tattoo. - Do not turn the tattoo into generic flash art. - Keep the original tattoo identity, imperfections and proportions.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 1853,
+          "column": 75,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "owner": "knolling"
+    },
+    {
+      "id": "text-08b6747b56271b396f81",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Deconstructs a single object into its logical component parts. Creates an exploded-view style knolling showing internal structure and assembly.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 1298,
+          "column": 51,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "owner": "knolling"
+    },
+    {
+      "id": "text-123708b01c06c3887688",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "70/30 style hybrid fusion",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 1542,
+          "column": 69,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "owner": "knolling"
+    },
+    {
+      "id": "text-16203e5b7e89a71b0436",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Preserves scene lighting, shadows, color temperature, and atmospheric qualities from source",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2419,
+          "column": 53,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "owner": "knolling"
+    },
+    {
+      "id": "text-1f312116c47740a90cf9",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Based on this image: **KNOLLING OBJECT DECONSTRUCTION** Analyze the object in the image and generate a knolling board displaying all its component parts in a logical, exploded arrangement. **Deconstruction Protocol:** 1. **Identify the object type:** Mechanical, electronic, organic, composite 2. **Determine logical disassembly:** What parts can be separated? 3. **Categorize components:** - Structural elements (frame, body, housing) - Mechanical parts (gears, hinges, fasteners) - Electronic components (if applicable) - Consumable/replaceable parts - Decorative elements **Disassembly Logic:** - Follow actual assembly/disassembly sequence - Group related parts together - Show fasteners near their corresponding parts - Maintain left-to-right or top-to-bottom assembly flow - Smallest components (screws, washers) arranged in neat rows **Knolling Rules:** - Neutral grey background (#d0d0d0) - All parts at strict 90° angles to frame edges - No overlapping — clear separation between all items - Parts cleaned and displayed at optimal viewing angle - Scale preserved — show actual size relationships - Shadow direction consistent (soft, upper-left source) **Output Composition:** - Overhead camera, perpendicular to surface - Main body/housing positioned centrally or upper-left - Components radiate outward in logical groups - Include subtle part-count impression (the satisfaction of seeing everything) - High detail on textures, wear marks, material qualities Generate as a technical flat lay photograph with museum-quality precision.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 1299,
+          "column": 68,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "owner": "knolling"
+    },
+    {
+      "id": "text-1f9b59c12d36a78f8e97",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Based on this image: **ACTOR EXTRACTION — ACTING POSE TURNAROUND** Extract actors marked with red dot. Generate 3-view turnaround preserving EXACT pose from source. **IDENTITY LOCK — CRITICAL:** This is the SAME PERSON from source shown from 3 angles. NOT 3 different people. - CLONE exact face from source: bone structure, nose shape, eye spacing, lips, skin texture, wrinkles, moles - CLONE exact body: height, weight, build, proportions from source - CLONE exact hair: precise color, style, length, hairline, texture from source - CLONE exact costume: same clothes, colors, patterns, fabric, fit, details from source - CLONE all accessories and held objects exactly as shown - Age and ethnicity MUST match source exactly **POSE LOCK — CRITICAL:** Camera rotates around FROZEN moment. Pose NEVER changes. - EXACT joint angles from source in all 3 views - EXACT hand positions, finger poses, grip on objects - EXACT facial expression, head tilt, gaze direction - EXACT weight distribution, spine curve, shoulder rotation - Fabric/hair frozen mid-motion, same in all views **3-VIEW OUTPUT:** | FRONT | SIDE (90°) | BACK | **FORMAT — CRITICAL:** - TRIPTYCH: 3 panels IDENTICAL width/height - Separator lines between panels - Character scaled with padding, same scale all views - NO TEXT/LABELS anywhere - Background: grey (#2e2e2e) [LIGHTING_PLACEHOLDER] SAME PERSON, SAME POSE in all 3 views — frozen moment from 3 angles.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2489,
+          "column": 68,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "owner": "knolling"
+    },
+    {
+      "id": "text-231ceb6a51afd063f6d3",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Extracts actors marked with a red dot and generates a 3-view turnaround (front, side, back) in standard A-Pose. Mark your actors before using this prompt. Ideal for character sheets and 3D reference.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2441,
+          "column": 51,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "owner": "knolling"
+    },
+    {
+      "id": "text-24ef904c88072a81eeee",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Based on this image: **KNOLLING SCENE DECONSTRUCTION** Analyze the scene/environment in the image and generate a knolling board displaying all identifiable elements organized into 5 distinct categories. **Scene Analysis Protocol:** 1. **Survey the environment type:** Interior, exterior, urban, rural, industrial, domestic 2. **Identify all discrete elements** that could theoretically be isolated 3. **Assign to exactly 5 categories** (no more, no less) **Category Framework Examples:** FOR EXTERIOR/URBAN SCENES: - Category A: ARCHITECTURE (buildings, structures, facades, doorways) - Category B: STREET FURNITURE (benches, bins, bollards, signage) - Category C: VEHICLES (cars, bikes, any transport) - Category D: INFRASTRUCTURE (poles, wires, road sections, drains) - Category E: NATURE/ORGANIC (trees, plants, birds, sky elements) FOR INTERIOR/DOMESTIC SCENES: - Category A: FURNITURE (major pieces — bed, sofa, table, chairs) - Category B: WALL ELEMENTS (posters, art, mirrors, clocks, switches) - Category C: LIGHTING (lamps, fixtures, candles, windows as light sources) - Category D: TEXTILES (rugs, curtains, cushions, blankets) - Category E: OBJECTS/DECOR (books, plants, ornaments, personal items) **Knolling Rules:** - Neutral background (#c8c8c8) - Image divided into 5 horizontal rows OR 5 labeled zones - Each category clearly separated with visual breathing room - Items within categories arranged at 90° angles - NO overlapping between any elements - Scale adjusted for composition (miniaturized buildings, proportional small items) - Largest/most significant item per category anchors that row **Output Composition:** - Overhead view, flat perspective - Each category row labeled with small, clean typography (optional) - Consistent lighting across all elements - Elements should look like architectural model pieces or props - Total composition fills frame with balanced density Generate as a taxonomic inventory photograph — every element of the scene laid bare.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 1354,
+          "column": 67,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "owner": "knolling"
+    },
+    {
+      "id": "text-2f7fc5b8b80348eb276a",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Based on this image/theme: **KNOLLING BOARD EXPLORER — SEASONAL SHIFTS GRID** **Phase 1: Visual Analysis & Knolling Deconstruction** 1. Identify Core Elements: List all objects, their seasonal appropriateness, material weights. 2. Extract Style DNA: What is the core identity that must survive seasonal adaptation? 3. Map Functional Needs: How does weather change what this person needs? 4. Preserve Recognition: The style must be instantly recognizable across all seasons. **Phase 2: The 3x3 Seasonal Shift Grid** --- **ROW 1 — WINTER SPECTRUM:** 1. **DEEP WINTER (Survival Mode)** Heaviest layering, maximum protection. Swap items for: insulated outerwear, thermal layers, waterproof boots, wool accessories (gloves, scarf, beanie). Colors shift darker, richer. Add: hand warmers, heavy-duty bag, chapstick. Background: cool grey. Texture emphasis on wool, down, rubber, technical fabrics. The \"blizzard-ready\" version. 2. **HOLIDAY WINTER (Festive)** Winter weight but with celebratory accents. Keep silhouette cozy but add: velvet textures, metallic touches, richer colors (burgundy, forest green, gold). Add objects: gift wrap fragment, invitation card, cocktail napkin. Background: deep green or burgundy. The \"office party to family dinner\" version. Elevated, intentional, slightly dressy. 3. **LATE WINTER (Thaw Pending)** Transitional. Lighter layers starting to appear under heavy coat. Mix of winter staples and early spring optimism. Add: umbrella, waterproof layer, transitional boots. Colors: grey, navy, emerging pastels. Background: slate grey. Puddle-ready. The \"sick of winter but not risking it\" version. --- **ROW 2 — SPRING/SUMMER ARC:** 4. **EARLY SPRING (Cautious Emergence)** Layers that can be added/removed. Light jacket over lighter layers. Swap heavy boots for transitional footwear. Colors brighten: soft blues, greens, creams. Add: sunglasses, allergy medication implied, light scarf. Background: soft sage. The \"might be warm, might snow\" version. Hopeful but prepared. 5. **PEAK SUMMER (Heat Maximum)** Minimum viable coverage. Lightest fabrics, most skin, breathable everything. Swap for: shorts/skirt, sandals or light sneakers, tank or linen shirt. Add: sunscreen, water bottle, sweat-wicking items. Colors: whites, naturals, bright accents. Background: warm cream. The \"function over form, survival over style\" version. 6. **LATE SUMMER (Golden Hour)** Still warm but richer. Summer items in harvest tones — amber, terracotta, olive, cream. Slightly more coverage returning. Add: light cardigan for evening, warmer accessories. Background: wheat/golden. The \"last beach weekend\" version. Nostalgic summer, golden light, end-of-season energy. --- **ROW 3 — AUTUMN DESCENT:** 7. **EARLY AUTUMN (Crisp Optimism)** The favorite season version. Perfect layering weather. Swap for: medium-weight jacket, boots return, scarves for style not survival. Colors: rust, burgundy, camel, olive. Add: coffee cup ring stain, fallen leaf. Background: warm taupe. The \"finally can wear real clothes\" version. Cozy but not heavy. 8. **DEEP AUTUMN (Pre-Winter)** Darker, heavier, preparing for cold. Substantial coat, heavier boots, gloves appearing. Colors deepen: charcoal, brown, deep red. Add: tissues, umbrella, comfort items. Background: dark brown. Rain-ready, wind-resistant. The \"denial about winter\" version. 9. **EXTREME WEATHER (Climate Event)** Pick a weather extreme and adapt: HEATWAVE (emergency cooling, minimal layers, wet towel), MONSOON (full waterproofing, sealed bags, rain boots), DUST STORM (face coverage, goggles, sealed layers), HUMID TROPICAL (anti-moisture, breathable mesh, moisture-wicking everything). Background matches climate. The \"survival\" version. --- **Technical Execution:** - All 9 boards maintain same arrangement logic - Object SUBSTITUTION not just color change — different actual items per season - Style DNA must remain recognizable (same subculture/aesthetic, different expression) - Consistent overhead lighting, temperature-appropriate color grading - Final output: 3x3 contact sheet showing full seasonal wardrobe **TO USE:** 1. Provide source image OR describe the base style/knolling 2. Specify if any items are \"sacred\" (must appear in all seasons) 3. For #9 (Extreme): specify the weather event 4. Indicate geographic context (affects seasonal interpretation)",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 1711,
+          "column": 70,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "owner": "knolling"
+    },
+    {
+      "id": "text-31b7431c0e183905fec7",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Based on this image/theme: **KNOLLING BOARD EXPLORER — COLOR MUTATIONS GRID** **Phase 1: Visual Analysis & Knolling Deconstruction** 1. Identify Core Elements: List all objects, original colors, material properties. 2. Extract Color DNA: Dominant hues, accent colors, neutral base, color temperature. 3. Map Material Response: How would each material accept color change? (fabric absorbs, metal reflects, leather patinas) 4. Preserve Recognition: Objects must remain identifiable despite color shift. **Phase 2: The 3x3 Color Mutation Grid** --- **ROW 1 — MONOCHROME STUDIES:** 1. **VOID BLACK (Total Absorption)** Every item rendered in matte black. Different textures create variation — soft black fabric, glossy black leather, rough black metal. Background: pure white for maximum contrast. The silhouette becomes everything. Objects read as shadow-forms, defined only by shape and texture grain. 2. **CLINICAL WHITE (Bleached Clean)** All items in pure white and off-white variants. Cream, ivory, bone, chalk, porcelain. Background: light grey to separate objects. Hospital sterile. Objects feel sanitized, specimens, forensic evidence bags. Texture and form dominate. Ghost version of the original. 3. **SINGLE HUE SPECTRUM (Monochromatic Gradient)** Choose ONE color (specify: red, blue, green, etc.). All items rendered in variations of that single hue — from near-black deep tones to pale tints. Background: complementary neutral. Creates a color study, like a Pantone exploration. Objects unified by hue, differentiated by saturation/value. --- **ROW 2 — PALETTE MANIPULATIONS:** 4. **INVERTED/NEGATIVE** Colors flipped to their photographic negative. Blue becomes orange, red becomes cyan, dark becomes light. Background inverts too. Unsettling, alien, like looking at an X-ray of the style. Objects feel like they're from a parallel dimension. 5. **DESATURATED ARCHIVE (Faded Memory)** Drain 70% saturation from all items. Colors become whispers — pale, dusty, sun-bleached. Add subtle sepia/yellow undertone. Background: warm grey. Objects feel like they've been stored in an attic for decades. The nostalgia filter. Melancholic, distant, remembered rather than present. 6. **OVERSATURATED FEVER (Color Amplified)** Push all colors to maximum saturation. Reds become crimson, blues become electric, greens become toxic. Background: black to make colors pop violently. Objects feel radioactive, synthetic, candy-coated. The fever dream version. Too much, deliberately overwhelming. --- **ROW 3 — MATERIAL TRANSFORMATIONS:** 7. **METALLIC TRANSMUTATION** All items rendered in metallic finishes. Specify: GOLD (warm, luxurious, baroque), SILVER (cold, futuristic, clinical), COPPER (warm, industrial, steampunk), or MIXED (each item different metal). Background: black velvet. Objects become trophies, artifacts, precious relics. The \"everything you own, cast in bronze\" museum. 8. **NEON CONTAMINATION** Keep original color base but add neon edge-glow and highlights. Fluorescent pink, electric blue, acid green bleeding into natural colors. Background: deep black. Objects look like they're under UV club lighting. Synthetic, nocturnal, cyberpunk residue. 9. **NATURAL DYE SHIFT** Recolor all items using only pigments available from natural dyes — indigo, madder red, turmeric yellow, walnut brown, iron black. Background: raw linen. Colors become earthy, imperfect, handmade-feeling. Objects feel artisanal, pre-industrial, craft-made. The heritage version. --- **Technical Execution:** - All 9 boards maintain identical composition/arrangement - Only COLOR changes — shapes, positions, objects remain constant - Consistent overhead lighting (adjust temperature per variation) - Background color specified per variation - Final output: 3x3 contact sheet showing color progression **TO USE:** 1. Provide source image OR describe the original knolling 2. For #3 (Single Hue): specify the color 3. For #7 (Metallic): specify gold, silver, copper, or mixed 4. Indicate if any specific items should resist color change",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 1573,
+          "column": 70,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "owner": "knolling"
+    },
+    {
+      "id": "text-3244665a1a5e94610151",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "[TATTOO_PLACE_IT_PLACEHOLDER]",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2915,
+          "column": 41,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "knolling"
+    },
+    {
+      "id": "text-333cd8216762fb31e36c",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "[MULTI_IMAGE_PLACEHOLDER]Based on this image: **DECOR EXTRACTION — 360° EQUIRECTANGULAR PANORAMA** Remove ALL human figures. Generate a true EQUIRECTANGULAR projection panorama (NOT fisheye, NOT wide-angle crop). **CHARACTER REMOVAL:** - Remove all people/animals completely - Inpaint with environment from source - Maintain lighting consistency **EQUIRECTANGULAR PROJECTION — TECHNICAL SPEC:** This is a SPECIFIC projection format used for HDRI, VR, and 3D environment maps. **VISUAL CHARACTERISTICS OF EQUIRECTANGULAR:** - Aspect ratio: EXACTLY 2:1 (example: 4096×2048, 8192×4096) - Horizontal lines (tables, horizons) stay STRAIGHT in the middle, curve toward top/bottom - Vertical lines (walls, doors) stay STRAIGHT throughout - Top edge = ceiling directly above camera (zenith) — appears STRETCHED horizontally - Bottom edge = floor directly below camera (nadir) — appears STRETCHED horizontally - Left and right edges = the SAME point in space (seamless wrap) - Objects near top/bottom edges appear horizontally stretched/distorted - Objects at horizon level (middle band) appear most natural **WHAT EQUIRECTANGULAR IS NOT:** - NOT a fisheye (fisheye is circular, equirectangular is rectangular 2:1) - NOT a wide panorama crop (those don't cover full 180° vertical) - NOT a perspective photo with wide lens - NOT curved at the sides like barrel distortion **REFERENCE:** Google \"equirectangular projection\" or \"HDRI environment map\" — the output should look exactly like those examples. **SEAMLESS WRAP:** - Left edge and right edge must be IDENTICAL (they represent same point in 360° space) - When wrapped into a sphere, no visible seam - Test: mentally scroll image left-to-right in loop — transition must be invisible **FIDELITY:** - Extend source environment faithfully — don't invent major elements - Match materials, colors, lighting throughout 360° - Keep unseen areas simple if not evidenced in source **COLOR GRADING LOCK:** - EXACT color grade from source across entire panorama - No drift from left to right edge - Clone the grade, no auto-correction **OUTPUT:** - Single image, STRICT 2:1 ratio - High resolution (4K+ width recommended) - NO TEXT/LABELS - Ready for: HDRI lighting, VR viewer, Blender/Unity skybox",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2282,
+          "column": 65,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "owner": "knolling"
+    },
+    {
+      "id": "text-35973cf134766447f5c4",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Knolling Scene",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 1344,
+          "column": 48,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "owner": "knolling"
+    },
+    {
+      "id": "text-37b0fe2603a2a5f24d68",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "**ZONE MODE:** No fixed zone selected. Place the tattoo reference(s) on the most natural visible skin area of the character/body image, respecting the source pose and anatomy.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2657,
+          "column": 24,
+          "kind": "template-literal",
+          "functionName": "buildTattooZoneText",
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "owner": "knolling"
+    },
+    {
+      "id": "text-4998a907034e7e061532",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Applies tattoo references to a character. Choose zone opens a body schema; clicked zones are injected in order as [IMG_1], [IMG_2], etc.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 1915,
+          "column": 51,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "owner": "knolling"
+    },
+    {
+      "id": "text-4a3618a4528e42ffb76d",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Generates a seamless 360° equirectangular panorama of the environment, suitable for HDRI lighting or VR backgrounds. Characters removed.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2281,
+          "column": 51,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "owner": "knolling"
+    },
+    {
+      "id": "text-4b4cfd91a239f7e10985",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Generate Knolling Board",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 1141,
+          "column": 64,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "owner": "knolling"
+    },
+    {
+      "id": "text-52a4f77afcb1c4b93718",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Deconstructs a character or subject into a comprehensive wardrobe flat lay. Extracts all visible clothing, footwear, accessories, and personal items.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 1162,
+          "column": 51,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "owner": "knolling"
+    },
+    {
+      "id": "text-59665f11d813ecc357ae",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "**PLACE IT MODE:**\n- Add a minimal body placement schema beside the unfolded tattoo design(s).\n- Automatically infer where each tattoo sits on the body from the source image.\n- If the source only shows one local area, do NOT draw a full body. Draw only the relevant anatomical region: shoulder, hand, forearm, neck, chest, etc.\n- If the source shows several tattoos across the body, include several unfolded tattoo panels and one simplified full-body map with estimated placement markers.\n- The unfolded tattoo designs stay large and dominant; the body schema is secondary, clean, minimal and explanatory.\n- Use thin placement outlines, small numbered callouts, and no decorative anatomy rendering.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2646,
+          "column": 17,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "owner": "knolling"
+    },
+    {
+      "id": "text-61a77e0eddfb1f9f70cf",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "tattooZoneSummary",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2816,
+          "column": 53,
+          "kind": "string-literal",
+          "functionName": "refreshTattooZoneUI",
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "knolling"
+    },
+    {
+      "id": "text-6514094d369b1d21a1d4",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "- [IMG_${index + 1}] tattoo reference goes on: ${zone}.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2660,
+          "column": 68,
+          "kind": "template-literal",
+          "functionName": "buildTattooZoneText",
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "owner": "knolling"
+    },
+    {
+      "id": "text-710363db2e05e14fedd7",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Based on this image: **ACTOR EXTRACTION — A-POSE TURNAROUND** Extract actors marked with red dot. Generate 3-view turnaround in A-Pose. **IDENTITY LOCK — CRITICAL:** This is the SAME PERSON from source shown from 3 angles. NOT 3 different people. - CLONE exact face from source: bone structure, nose shape, eye spacing, lips, skin texture, wrinkles, moles - CLONE exact body: height, weight, build, proportions from source - CLONE exact hair: precise color, style, length, hairline, texture from source - CLONE exact costume: same clothes, colors, patterns, fabric, fit, details from source - CLONE all accessories: same jewelry, watch, glasses in same positions - Age and ethnicity MUST match source exactly **A-POSE:** Standing upright, head forward, neutral expression, arms 45° down (A-shape), palms forward, legs shoulder-width, feet flat. **3-VIEW OUTPUT:** | FRONT | SIDE (90°) | BACK | **FORMAT — CRITICAL:** - TRIPTYCH: 3 panels IDENTICAL width/height - Separator lines between panels - Character scaled with padding, same scale all views - NO TEXT/LABELS anywhere - Background: grey (#2e2e2e) [LIGHTING_PLACEHOLDER] SAME PERSON in all 3 views — faces must be identical.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2442,
+          "column": 67,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "owner": "knolling"
+    },
+    {
+      "id": "text-7e37c5a433626916f1ad",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Reconstructs a location from panoramic reference photos (5-6 images). Generates 8 rotation views + overhead camera map. Removes all people and vehicles, neutral grey overcast sky.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2127,
+          "column": 51,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "owner": "knolling"
+    },
+    {
+      "id": "text-7e6f770fb26e56791a65",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Based on this image/theme: **KNOLLING BOARD EXPLORER — 9 VARIATIONS GRID** **Phase 1: Visual Analysis & Knolling Deconstruction** 1. Identify Core Elements: List all objects, categories, materials, colors, era markers. 2. Extract Style DNA: Subculture, aesthetic, era, lifestyle. Signature items vs. supporting details. 3. Map Color Palette: Primary tones, accents, background, material textures. 4. Assess Composition Logic: Arrangement, density, negative space, scale hierarchy. **Phase 2: The 3x3 Knolling Variation Grid** --- **ROW 1 — AUTEUR INTERPRETATIONS:** 1. **WES ANDERSON CURATION** Pastel background (pink, mint, or cream). Symmetry obsessive. Items arranged with mathematical precision. Add whimsical ephemera: vintage postcard, enamel pin, obscure book. Futura Bold label beneath each object. Everything looks like it belongs to a fictional private school or a melancholic European hotel. 2. **DAVID LYNCH EVIDENCE** Black velvet background. Lighting slightly off — too bright in spots, shadow pools elsewhere. Objects feel like they shouldn't be together. Add one inexplicable item (a tooth, a key to nothing, a burned photograph). Something red. Something humming with wrongness. The knolling of a dream you can't quite remember. 3. **HELMUT LANG REDUCTION** Industrial concrete or raw steel background. Strip the selection to monochrome — black, white, grey, bone. Remove all branding, all logos. What remains is sculptural. Negative space dominates. Each object earns its presence through form alone. Cold, austere, untouchable. --- **ROW 2 — MATERIAL & STATE MUTATIONS:** 4. **ENTROPY STUDY (Worn/Destroyed)** Same objects but at the end of their life. Leather cracked, fabric frayed, metal oxidized, paper yellowed. The knolling of a style lived hard. Signs of use, repair, devotion. Objects that have stories embedded in their damage. 5. **ESSENTIAL (Core DNA Only)** Strip everything back to 4-6 objects maximum. Only the irreducible signatures that define the style — if you removed any single item, the identity collapses. No redundancy, no decoration, no \"nice to have.\" Brutal editorial selection. Maximum negative space. Each object is load-bearing. 6. **GORE VERSION (Violence Applied)** Same objects but subjected to physical trauma. Fabric slashed and hanging. Leather punctured. Fresh blood splatter — still wet, viscous, catching light. Burn marks with blackened edges and exposed material beneath. Broken glass. Melted plastic. The violence is recent. Something happened here. Clinical overhead lighting makes it more disturbing — forensic, not cinematic. --- **ROW 3 — NARRATIVE & HYBRID:** 7. **CROSS-POLLINATION (Hybrid)** Merge this style with an unexpected second influence. Specify the collision: Skinhead × Techwear / Mod × Solarpunk / Ivy League × Fetish. 70% original DNA + 30% foreign injection. The objects should create productive tension — familiar but mutated. 8. **NARRATIVE ARTIFACT (Story Evidence)** Add 3-5 objects that imply a specific story — concert ticket stub, handwritten note with phone number, hospital bracelet, stained item, cracked phone screen, polaroid of someone cropped out. The knolling becomes forensic evidence. Prompt: \"What happened to this person?\" 9. **GEOGRAPHIC TRANSPLANT** Same subculture but different city's interpretation. Specify: TOKYO version (tighter fits, obscure local brands, meticulous), BERLIN version (darker, worn harder, club residue), LAGOS version (bolder patterns, different textiles, local craft meets imported signifiers), MEXICO CITY version (warmer palette, silver jewelry, specific local codes). How does geography mutate a style? --- **Technical Execution:** - All 9 boards use IDENTICAL aspect ratio - Consistent overhead lighting (varies per concept where noted) - Strict 90° knolling arrangement throughout - Final output: 3x3 contact sheet, variation title in corner **TO USE:** 1. Provide source image OR describe style/theme 2. For #7: specify the second style to inject 3. For #8: suggest story tone (romantic, violent, mundane, mysterious) 4. For #9: name the city",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 1436,
+          "column": 70,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "owner": "knolling"
+    },
+    {
+      "id": "text-7e7543c36d4ec5d977cf",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Generate 4 POV",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2341,
+          "column": 48,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "owner": "knolling"
+    },
+    {
+      "id": "text-7f889bce6428c7d84a9b",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Generate 360",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2272,
+          "column": 48,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "owner": "knolling"
+    },
+    {
+      "id": "text-805b9791e2361414b97b",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Based on this image: **KNOLLING OUTFIT EXTRACTION** Analyze the subject in the image and generate a comprehensive knolling board displaying their complete outfit and accessories. **Extraction Protocol:** 1. **Identify all garments:** Outerwear, tops, bottoms, undergarments (if visible/implied), layers 2. **Footwear:** Exact style, color, condition, brand markers if visible 3. **Accessories:** Jewelry, watches, belts, bags, hats, scarves, glasses 4. **Personal items:** Wallet, phone, keys, any carried objects 5. **Hair representation:** Styled wig or hair piece matching subject's hair 6. **Grooming items:** Implied toiletries, makeup, fragrance (contextual) **Knolling Rules:** - Light grey seamless background (#e5e5e5) - All items arranged at strict 90° angles - No overlapping — minimum 2cm visual gap between items - Clothing laid flat, smoothed, no wrinkles - Shoes positioned sole-down or profile view - Small items grouped by category - Largest items (outerwear, pants) anchor the composition - Maintain realistic scale relationships **Output Composition:** - Overhead camera angle, perfectly perpendicular to surface - Soft, even lighting with minimal shadows - High resolution, sharp detail on textures and materials - Items should fill 70-80% of frame with balanced negative space Generate the knolling board as a single cohesive flat lay photograph.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 1163,
+          "column": 68,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "owner": "knolling"
+    },
+    {
+      "id": "text-85b9f5f4f27c0f1aeb4b",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Free style POV version of the 360° reconstruction prompt: one fixed pivot, eight invented coherent directions, and one overhead map.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2058,
+          "column": 51,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "owner": "knolling"
+    },
+    {
+      "id": "text-8fb6747676da72afba91",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "360° Panoramic Reconstruction — 3×3 Grid · Free Style POV",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2049,
+          "column": 48,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "owner": "knolling"
+    },
+    {
+      "id": "text-9178c6724b7c83626680",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Based on the provided image references: **TATTOO CHARACTER APPLICATION** Apply the tattoo reference image(s) onto the character/body image while preserving the character identity, anatomy, pose, lighting, camera angle, skin texture, wardrobe and background. **Tattoo integration rules:** - Preserve each tattoo reference design as faithfully as possible. - Warp the tattoo naturally over the selected body surface, following skin curvature, muscle volume, foreshortening and perspective. - Ink must sit inside the skin: no sticker edges, no floating graphic, no decal shine. - Match skin pores, compression, blur, shadows, highlights and depth of field. - Preserve original tattoo linework, shading, colors, text orientation and scale logic. - If multiple tattoo references are provided, keep each one distinct and do not merge designs unless explicitly implied. [TATTOO_ZONE_PLACEHOLDER] **Output:** - One coherent character image with believable tattoo placement. - Same character and scene as the source. - No extra tattoos beyond the requested references. - No body redesign, no clothing changes unless the chosen zone must be visible.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 1916,
+          "column": 77,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "owner": "knolling"
+    },
+    {
+      "id": "text-92cef01bac2d509eed4d",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "**CHOOSE ZONE MODE - ORDER LOCK:**\nUse the clicked zones in this exact order. Do not swap references between zones.\n${lines.join('\n')}\n\nIf a character/body source image is also provided, preserve it exactly and use the listed [IMG_n] tattoo references as tattoo designs. If only tattoo references are provided, create a neutral character/body view that clearly shows the selected zones.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2661,
+          "column": 20,
+          "kind": "template-literal",
+          "functionName": "buildTattooZoneText",
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "owner": "knolling"
+    },
+    {
+      "id": "text-93b3ddbd495df607bf4a",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "[MULTI_IMAGE_PLACEHOLDER]Based on these reference images (panoramic coverage of the location): **LOCATION RECONSTRUCT — 3×3 ROTATION GRID** **OBJECTIVE:** Reconstruct this location as a complete environment from the provided reference photos. Generate a 3×3 grid showing 8 rotation views + 1 overhead camera map. **LOCATION CLEANING — CRITICAL:** - REMOVE all people, pedestrians, crowds completely - REMOVE all vehicles (cars, bikes, scooters, trucks, buses) - REMOVE all temporary objects (trash, signs, market stalls) - INPAINT removed areas with logical environment continuation (pavement, walls, ground) - Result: empty, pristine location — architecture and permanent fixtures only **SKY & LIGHTING REPLACEMENT:** - Replace sky with NEUTRAL OVERCAST grey (flat, even, no sun visible) - Soft diffuse lighting — no harsh shadows, no directional sun - Even ambient illumination from all directions - Shadow behavior: subtle ambient occlusion only, no cast shadows - Color temperature: neutral daylight (~5500K), desaturated **3×3 GRID LAYOUT:** **ROW A — FRONT ARC (0° to 90°):** | A1: 0° | A2: 45° | A3: 90° | **ROW B — REAR ARC (135° to 225°):** | B1: 135° | B2: 180° | B3: 225° | **ROW C — SIDE ARC + MAP (270° to 315° + overhead):** | C1: 270° | C2: 315° | C3: CAMERA MAP | **ROTATION VIEWS (A1 ? C2):** - Camera at FIXED center point of location, eye level (~160cm) - Each view rotates around this center point - 0° = primary/entrance direction from references - Consistent lens/focal length across all 8 views - Horizon line at same height in all panels **PANEL C3 — OVERHEAD CAMERA MAP:** - Bird's eye view / floor plan style diagram of the location - Show location footprint (walls, major features) in simplified form - Mark camera position at CENTER with icon - Draw 8 directional arrows or camera icons showing: - A1 (0°), A2 (45°), A3 (90°) - B1 (135°), B2 (180°), B3 (225°) - C1 (270°), C2 (315°) - Label each direction with its grid reference (A1, A2, etc.) - Clean technical diagram style, black lines on light background **RECONSTRUCTION FIDELITY:** - Cross-reference ALL provided images to ensure accuracy - Architecture, textures, materials must match references exactly - Extend visible elements logically — don't invent major features - Where references overlap, ensure perfect consistency - Scale and proportions must remain constant across all views **FORMAT — CRITICAL:** - 3×3 GRID: 9 panels of IDENTICAL width and height - Visible thin separator lines between panels - Views A1-C2: photorealistic render of cleaned location - View C3: technical diagram/map style - NO TEXT except labels in C3 camera map **CONSISTENCY CHECK:** - Same location in all 8 rotation views - Architectural elements visible from multiple angles MUST match - Ground plane continuous and level - Lighting identical across all views (overcast, diffuse) Empty location, neutral grey sky, 8 rotation views + camera map.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2128,
+          "column": 76,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "owner": "knolling"
+    },
+    {
+      "id": "text-9663c21cf4c64f7f961a",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "[MULTI_IMAGE_PLACEHOLDER]**360° PANORAMIC RECONSTRUCTION — 3×3 GRID** **METAPHOR:** A photographer stands still at one fixed point, takes a photo [IMG_1]= A1, the REFERENCE), then rotates 45° clockwise in place and shoots again (= A2), and so on for 8 photos total. Camera stays at the same height, perfectly horizontal, throughout. The 8 shots tile a complete 360° panorama around that spot. Panel C3 is a top-down map of the spot. **SOURCE:** The attached reference photo IS panel A1. Panels A2 → C2 show new directions from the SAME exact spot, INVENTED but coherent with the reference's architecture, materials, light, atmosphere. **OUTPUT:** 3×3 grid, 8 photorealistic rotation views + 1 overhead diagram (C3). **GRID — each panel = +45° clockwise yaw from A1:** - A1: REFERENCE (forward) - A2: 45° right of A1 - A3: 90° right (perpendicular right) - B1: 135° (behind-right) - B2: 180° — DIRECTLY OPPOSITE A1, what was BEHIND the photographer. NONE of A1's buildings appear here. - B3: 225° (behind-left) - C1: 270° (perpendicular left) - C2: 315° (45° left of A1) - C3: overhead camera map (diagram only) **CAMERA — IDENTICAL ACROSS A1 → C2:** - Single fixed pivot, never translates, only rotates. - YAW ONLY — horizontal body rotation in place. Lens axis parallel to ground. - Camera perfectly LEVEL. No pitch, no tilt, no roll, no Dutch angle. - FORBIDDEN: aerial, bird's-eye, top-down, drone, high-angle, low-angle, oblique. \"45°/90°\" refer ONLY to body rotation, NEVER to camera tilt. - Eye level (~160 cm). HFOV ~50°. Horizon locked at identical pixel height in all panels. - Focal length, exposure, white balance, color grading all locked to the reference. **LANDMARK ISOLATION — CRITICAL:** The reference's distinctive elements (most colorful/unique buildings, specific façade colors, dominant foreground mass) appear in A1 ONLY. Their outer edge may show at the inner borders of A2 and C2 (adjacent to A1). They do NOT appear in A3, B1, B2, B3, C1. B2 especially faces the opposite side of the world — show only what was BEHIND the photographer. **SEAMLESS EDGES:** The 8 panels tile one stitched 360° cylindrical panorama. Adjacent borders share content: A1 right → A2 left → A3 left → B1 left → B2 left → B3 left → C1 left → C2 left → A1 left (loop closes). Buildings, rooflines, roads, vegetation, mountain silhouettes touching a panel border MUST continue uninterrupted into the adjacent panel, as if you sliced one stitched panorama at arbitrary points. **EXTRAPOLATION — INVENT, DON'T COPY:** Read the reference for era, typology, materials, patina, density, vegetation, haze, palette, light direction, weather. Propagate the same vocabulary into invented directions. New buildings share era, materials, proportions with the reference — but are PLAUSIBLE NEW STRUCTURES, never mirrored copies. Urban density, street logic, mountains, sky, haze wrap coherently around the full 360°. NO anachronisms, NO foreign styles, NO modern signage, NO flipping or duplication of A1's buildings. **CLEANING:** Remove people, vehicles, stalls, signage, trash, animals. Keep only permanent architecture, roads, vegetation, terrain. Inpaint cleared zones with surrounding ground material. **LIGHT/ATMOSPHERE:** Preserve reference's palette, light direction, mood, exposure, white balance across all 8 panels. Haze increases consistently with distance. Sky and horizon continue coherently around the full 360°. **PANEL C3 — OVERHEAD MAP (diagram, not photo):** Top-down architectural diagram. Camera icon at geometric center. 8 arrows radiating outward, labeled A1 (0°), A2 (45°), A3 (90°), B1 (135°), B2 (180°), B3 (225°), C1 (270°), C2 (315°). Simplified building footprints consistent with each rotation view. Thin black lines on light neutral background, clean technical style. **FORMAT:** 3×3 grid, 9 panels of identical size, thin separator lines. A1 → C2 photorealistic. C3 technical diagram. No text except direction labels in C3. **VERIFY:** - All 8 views eye-level, perfectly horizontal — no aerial, no tilt, no Dutch. - A1's distinctive landmarks appear ONLY in A1 (and edges of A2/C2). - B2 = opposite side, no A1 features. - Same horizon height, light, exposure throughout. - Adjacent borders align as if cut from one stitched panorama.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2059,
+          "column": 73,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "owner": "knolling"
+    },
+    {
+      "id": "text-9b6d49e0801293e66eb2",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Removes all characters and generates 4 views of the empty decor with a camera rotating 90° from center point. Perfect for environment reference sheets.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2350,
+          "column": 51,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "owner": "knolling"
+    },
+    {
+      "id": "text-a877ecd3557c1941ed4a",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Generate Free POV",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2205,
+          "column": 48,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "owner": "knolling"
+    },
+    {
+      "id": "text-b04c9051e2e28610df4b",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Explores the knolling through auteur visual styles, material degradation states, and narrative injections. From Wes Anderson symmetry to forensic evidence.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 1435,
+          "column": 55,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "owner": "knolling"
+    },
+    {
+      "id": "text-b6f23c0ea46d71ade549",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "explorerSource",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2732,
+          "column": 52,
+          "kind": "string-literal",
+          "functionName": "moveExplorerIntoGenerate",
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "knolling"
+    },
+    {
+      "id": "text-b919e9928accd6e4a828",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Unfolds the existing explorer variations at the end of Generate Knolling Board.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 1407,
+          "column": 51,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "owner": "knolling"
+    },
+    {
+      "id": "text-ba8814d3ee278e9d0808",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Generates 9 creative camera angles of the empty environment. Characters removed. Explores the space cinematically with varied heights, distances, and compositions.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2214,
+          "column": 51,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "owner": "knolling"
+    },
+    {
+      "id": "text-c1b3333bcbcfa7b7871f",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "[IMG_${index + 1}] ${zone}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2819,
+          "column": 60,
+          "kind": "template-literal",
+          "functionName": "refreshTattooZoneUI",
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "owner": "knolling"
+    },
+    {
+      "id": "text-c6a871962c80a37ee5ac",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Uses one reference as A1 and reconstructs a coherent 360° eye-level panorama in a 3×3 grid with a technical overhead map.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 1989,
+          "column": 51,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "owner": "knolling"
+    },
+    {
+      "id": "text-cb1cbc0e11749426d737",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Extracts visible tattoos from a source image into a faithful tattoo knolling board. Place it adds a minimal body-zone placement map only when useful.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 1852,
+          "column": 51,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "owner": "knolling"
+    },
+    {
+      "id": "text-cfcd0b97aa5c810e9825",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Explores the knolling through radical color transformations. From total desaturation to neon overload, metallic finishes to inverted palettes.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 1572,
+          "column": 55,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "owner": "knolling"
+    },
+    {
+      "id": "text-e53bcfa7f566e4f84850",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Extracts actors marked with a red dot and generates a 3-view turnaround (front, side, back) preserving their exact pose from the source. Mark your actors before using. Captures performance and gesture from all angles.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2488,
+          "column": 51,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "owner": "knolling"
+    },
+    {
+      "id": "text-e5503a0a0f5b157fa412",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Deconstructs an entire scene or environment into categorized object groups. Separates architectural elements, furniture, props, and atmospheric details into a taxonomic flat lay.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 1353,
+          "column": 51,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "owner": "knolling"
+    },
+    {
+      "id": "text-e71455cfb67fad225dea",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Adapts the knolling to different seasons and climatic conditions. Same style identity filtered through weather, temperature, and seasonal material logic.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 1710,
+          "column": 55,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "owner": "knolling"
+    },
+    {
+      "id": "text-e78a4451a0981e6e784e",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "**Placement map:** Disabled. Do not include a body placement schema; output only the unfolded tattoo design board.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2645,
+          "column": 18,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "prose-candidate",
+      "owner": "knolling"
+    },
+    {
+      "id": "text-e810b7fdc251975a650f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "[TATTOO_ZONE_PLACEHOLDER]",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2919,
+          "column": 41,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "knolling"
+    },
+    {
+      "id": "text-f0210ba3fc0c7e77cd1b",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "[MULTI_IMAGE_PLACEHOLDER]**360° PANORAMIC RECONSTRUCTION — 3×3 GRID** **METAPHOR:** A photographer stands still at one fixed point, takes a photo [IMG_1]= A1, the REFERENCE, then rotates 45° clockwise in place and shoots again (= A2), and so on for 8 photos total. Camera stays at the same height, perfectly horizontal, throughout. The 8 shots tile a complete 360° panorama around that spot. Panel C3 is a top-down map of the spot. **SOURCE:** The attached reference photo IS panel A1. Panels A2 → C2 show new directions from the SAME exact spot, INVENTED but coherent with the reference's architecture, materials, light, atmosphere. **OUTPUT:** 3×3 grid, 8 photorealistic rotation views + 1 overhead diagram (C3). **GRID — each panel = +45° clockwise yaw from A1:** - A1: REFERENCE (forward) - A2: 45° right of A1 - A3: 90° right (perpendicular right) - B1: 135° (behind-right) - B2: 180° — DIRECTLY OPPOSITE A1, what was BEHIND the photographer. NONE of A1's buildings appear here. - B3: 225° (behind-left) - C1: 270° (perpendicular left) - C2: 315° (45° left of A1) - C3: overhead camera map (diagram only) **CAMERA — IDENTICAL ACROSS A1 → C2:** - Single fixed pivot, never translates, only rotates. - YAW ONLY — horizontal body rotation in place. Lens axis parallel to ground. - Camera perfectly LEVEL. No pitch, no tilt, no roll, no Dutch angle. - FORBIDDEN: aerial, bird's-eye, top-down, drone, high-angle, low-angle, oblique. \"45°/90°\" refer ONLY to body rotation, NEVER to camera tilt. - Eye level (~160 cm). HFOV ~50°. Horizon locked at identical pixel height in all panels. - Focal length, exposure, white balance, color grading all locked to the reference. **LANDMARK ISOLATION — CRITICAL:** The reference's distinctive elements (most colorful/unique buildings, specific façade colors, dominant foreground mass) appear in A1 ONLY. Their outer edge may show at the inner borders of A2 and C2 (adjacent to A1). They do NOT appear in A3, B1, B2, B3, C1. B2 especially faces the opposite side of the world — show only what was BEHIND the photographer. **SEAMLESS EDGES:** The 8 panels tile one stitched 360° cylindrical panorama. Adjacent borders share content: A1 right → A2 left → A3 left → B1 left → B2 left → B3 left → C1 left → C2 left → A1 left (loop closes). Buildings, rooflines, roads, vegetation, mountain silhouettes touching a panel border MUST continue uninterrupted into the adjacent panel, as if you sliced one stitched panorama at arbitrary points. **EXTRAPOLATION — INVENT, DON'T COPY:** Read the reference for era, typology, materials, patina, density, vegetation, haze, palette, light direction, weather. Propagate the same vocabulary into invented directions. New buildings share era, materials, proportions with the reference — but are PLAUSIBLE NEW STRUCTURES, never mirrored copies. Urban density, street logic, mountains, sky, haze wrap coherently around the full 360°. NO anachronisms, NO foreign styles, NO modern signage, NO flipping or duplication of A1's buildings. **CLEANING:** Remove people, vehicles, stalls, signage, trash, animals. Keep only permanent architecture, roads, vegetation, terrain. Inpaint cleared zones with surrounding ground material. **LIGHT/ATMOSPHERE:** Preserve reference's palette, light direction, mood, exposure, white balance across all 8 panels. Haze increases consistently with distance. Sky and horizon continue coherently around the full 360°. **PANEL C3 — OVERHEAD MAP (diagram, not photo):** Top-down architectural diagram. Camera icon at geometric center. 8 arrows radiating outward, labeled A1 (0°), A2 (45°), A3 (90°), B1 (135°), B2 (180°), B3 (225°), C1 (270°), C2 (315°). Simplified building footprints consistent with each rotation view. Thin black lines on light neutral background, clean technical style. **FORMAT:** 3×3 grid, 9 panels of identical size, thin separator lines. A1 → C2 photorealistic. C3 technical diagram. No text except direction labels in C3. **VERIFY:** - All 8 views eye-level, perfectly horizontal — no aerial, no tilt, no Dutch. - A1's distinctive landmarks appear ONLY in A1 (and edges of A2/C2). - B2 = opposite side, no A1 features. - Same horizon height, light, exposure throughout. - Adjacent borders align as if cut from one stitched panorama.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 1990,
+          "column": 73,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "owner": "knolling"
+    },
+    {
+      "id": "text-f04b1c5b9b9a15bb3a1e",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "[MULTI_IMAGE_PLACEHOLDER]Based on this image: **DECOR EXTRACTION — 4 POV ROTATION** Remove ALL human figures. Generate 4 views rotating 90° from center. STRICT FIDELITY to source — do NOT invent or add elements. **CHARACTER REMOVAL:** - Remove all people/animals completely - Inpaint removed areas with environment already visible in source (extend floors, walls, patterns) - NO new furniture, NO new objects — only extend what's already visible - Maintain exact lighting from source **FIDELITY RULE — CRITICAL:** This is RECONSTRUCTION, not imagination. - Only show elements that are VISIBLE or PARTIALLY VISIBLE in source image - Extend existing patterns (floor tiles, wallpaper, moldings) — don't invent new ones - If an area is unknown, keep it simple: plain wall continuation, floor continuation - DO NOT add furniture, decorations, or objects not evidenced in source - When in doubt, leave it empty/plain rather than invent **CAMERA SETUP:** - Camera at room center, eye level (~160cm) - Pure 90° rotation between views (no zoom, no tilt change) - Same lens/focal length all views **4-VIEW OUTPUT (2x2 grid):** | VIEW 1: 0° (source direction) | VIEW 2: 90° right | | VIEW 3: 180° (behind camera) | VIEW 4: 270° left | - VIEW 1: Source angle, figures removed — this is your REFERENCE for accuracy - VIEW 2: 90° right — extend visible right-side elements, keep simple where unknown - VIEW 3: 180° — minimal invention, plain walls if not evidenced, extend floor only - VIEW 4: 270° left — extend visible left-side elements, keep simple where unknown **CONSISTENCY:** - SAME room, SAME lighting, SAME materials in all 4 views - Objects visible from multiple angles MUST match exactly - Floor/ceiling continuous and matching - Light direction consistent (sun position, shadows) **COLOR GRADING LOCK:** - EXACT color grade from source: temperature, contrast, saturation, exposure - Film grain/texture if present - No auto-correction — clone the grade **FORMAT:** - 2x2 GRID: 4 panels IDENTICAL size - Separator lines between panels - NO TEXT/LABELS",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2351,
+          "column": 66,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "owner": "knolling"
+    },
+    {
+      "id": "text-f242aa863708a2fb7eed",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Dresses a character [IMG_1] with clothing from a knolling board [IMG_2]. Adapts garments to the character's exact proportions and pose. Requires two images: the character and the knolling board.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 1214,
+          "column": 51,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "owner": "knolling"
+    },
+    {
+      "id": "text-f256f35801b6638dad09",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "[MULTI_IMAGE_PLACEHOLDER]Based on this image: **DECOR EXTRACTION — 9 FREE POV GRID** Remove ALL human figures from the scene. Generate 9 different camera angles exploring the environment cinematically. This is the SAME location shown from 9 different viewpoints. **CHARACTER REMOVAL:** - Remove all people, animals, moving figures completely - Fill removed areas with consistent environment (inpaint with matching textures, furniture, architectural elements) - Maintain lighting consistency where figures were removed - No ghosting, no artifacts, no blur — clean seamless removal **9 POV GRID (3x3):** **ROW 1 — HEIGHT VARIATIONS:** 1. **WORM'S EYE:** Camera on floor level (10-20cm) looking up — ceiling dominates composition, furniture towers above, dramatic perspective distortion, floor texture in immediate foreground 2. **EYE LEVEL:** Standard human height (~160cm) — neutral documentary feel, how a person standing would see the space, balanced perspective 3. **BIRD'S EYE:** Camera near ceiling looking down at 45-60° angle — floor plan becomes visible, tops of furniture, spatial relationships clear, architectural overview **ROW 2 — DISTANCE VARIATIONS:** 4. **EXTREME WIDE:** Maximum possible distance, entire space visible edge-to-edge, architectural context dominant, establishing shot feel, may require wider lens simulation 5. **MEDIUM SHOT:** Partial room visible, focus on key furniture grouping or functional area, context present but secondary, comfortable viewing distance 6. **INTIMATE CORNER:** Tight crop on one specific area — detail textures visible, object surfaces, a vignette of the space, almost macro feeling for environment **ROW 3 — CREATIVE ANGLES:** 7. **DUTCH ANGLE:** Camera tilted 15-25° off horizontal axis, creates tension and unease, dramatic and cinematic, same content as eye level but destabilized 8. **THROUGH FRAME:** Shot composed through a doorway, window frame, architectural arch, or furniture piece — creates depth layers, foreground/midground/background separation, voyeuristic quality 9. **REFLECTION VIEW:** If mirror or reflective surface exists in space, capture environment via that reflection; if no mirror, use low angle capturing floor reflection or window reflection — adds conceptual layer **ENVIRONMENT CONSISTENCY — CRITICAL:** - This is ONE location — every view must show the SAME room/space - SAME furniture pieces in SAME positions (visible from different angles) - SAME wall colors, floor materials, ceiling details - SAME props, decorations, objects — if a lamp is on a table in view 1, it's there in view 5 - SAME lighting setup: direction, color temperature, shadow behavior - SAME time of day, weather conditions visible through windows - Architecture must be geometrically consistent (room dimensions don't change) **COLOR GRADING LOCK — CRITICAL:** - EXACT same color grade as source image across all 9 panels - Match color temperature (warm/cool cast), saturation levels, contrast curve - Match exposure level, black point, white point, gamma - Match film stock look / digital sensor characteristics of source - If source has grain, match grain. If source is clean, stay clean. - No auto-correction, no \"enhancement\" — clone the exact color science **FORMAT:** - 3x3 GRID: 9 panels of IDENTICAL width and height - Visible thin separator lines between panels - NO TEXT, NO LABELS, NO NUMBERS anywhere on the image - All 9 panels must have same aspect ratio",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2215,
+          "column": 69,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "owner": "knolling"
+    },
+    {
+      "id": "text-f4ffc71cc58b533f8d25",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Based on these two images: - **[IMG_1]:** Character reference (body, pose, proportions) - **[IMG_2]:** Knolling board with clothing and accessories **DRESS CHARACTER — OUTFIT TRANSFER** Transfer the clothing from the knolling board [IMG_2] onto the character in [IMG_1], adapting every garment to fit the character's exact body proportions and current pose. [SUBJECT_PLACEHOLDER] **CHARACTER PRESERVATION — CRITICAL:** - KEEP exact face, hair, skin tone, body proportions from [IMG_1] - KEEP exact pose, gesture, body position from [IMG_1] - KEEP exact camera angle and framing from [IMG_1] - KEEP original background/environment from [IMG_1] - Only the CLOTHING changes — the person stays identical **CLOTHING ADAPTATION — CRITICAL:** - TAKE all garments from knolling board [IMG_2] - ADAPT each garment to fit [IMG_1] character's body shape and size - ADAPT clothing to [IMG_1] character's pose (stretch, fold, drape naturally) - MAINTAIN fabric behavior: how it wrinkles, falls, moves with the pose - PRESERVE exact colors, patterns, textures, logos, wear marks from [IMG_2] - Layer garments logically (underwear ? shirt ? jacket, etc.) **FITTING RULES:** - Sleeves follow arm positions from [IMG_1] - Pants/skirts follow leg positions from [IMG_1] - Collar sits naturally on character's neck - Shoulders align with character's shoulder width - Waistline matches character's waist position - Footwear fits character's feet in their current position **GARMENTS TO TRANSFER (from knolling board):** - All visible clothing: outerwear, tops, bottoms, footwear - Wearable accessories: hats, scarves, belts, jewelry, watches, glasses, bags [ACCESSORY_PLACEHOLDER] **TECHNICAL:** - Photorealistic integration — clothing must look naturally worn, not composited - Lighting on clothing matches [IMG_1] scene lighting - Shadows and folds respond to [IMG_1] pose - Fabric physics accurate to pose and movement implied **OUTPUT:** - Single image of [IMG_1] character wearing [IMG_2] outfit - Same framing, angle, background as [IMG_1] - Seamless, professional result Character from [IMG_1] now wearing complete outfit from [IMG_2] — perfectly fitted to their body and pose.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 1215,
+          "column": 71,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "owner": "knolling"
+    }
+  ]
+}

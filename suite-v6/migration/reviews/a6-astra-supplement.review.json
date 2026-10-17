@@ -1,0 +1,2081 @@
+{
+  "schemaVersion": "1.0",
+  "status": "reviewed",
+  "reviewerModel": "gpt-6-astra",
+  "reviewedAt": "2026-09-12",
+  "source": {
+    "owner": "cccp",
+    "path": "Barzy App/public/assets/HTML/cccp.html",
+    "sha256": "e231f3766eadb89d5ea9ec1b3099a651d163384d05a04fe0fbe830a42293069b"
+  },
+  "fixtureDigest": "ba42759e53c446976d8a998e81b9a0fa1b2b64aff3bc1867b60e4a913d5ba727",
+  "corpusDigest": "bd15fa2df1b2effbf833d1ac484e9306b76e6f9945e372d2697ce86ebf79a126",
+  "additionalLiteralCount": 51,
+  "scope": "All decisions apply only to cccp.html occurrences. UI exclusions retain their functional role. No other owner is approved by shared IDs.",
+  "decisions": [
+    {
+      "id": "text-0521aba38d3a2abbe672",
+      "sourceIndex": 0,
+      "originalValue": "Step B",
+      "occurrences": [
+        {
+          "raw": "Step B",
+          "kind": "html-text",
+          "line": 466,
+          "column": 51,
+          "functionName": null,
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-metadata",
+      "reason": "Occurrence CCP lue : navigation, mode, stockage, message ou rendu de page. Conservation fonctionnelle hors texte compilé ; cette décision ne concerne aucun autre propriétaire du même ID."
+    },
+    {
+      "id": "text-05d970572dcc735756d9",
+      "sourceIndex": 1,
+      "originalValue": "CCP - Consistent Character Processus",
+      "occurrences": [
+        {
+          "raw": "CCP - Consistent Character Processus",
+          "kind": "html-text",
+          "line": 6,
+          "column": 12,
+          "functionName": null,
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-metadata",
+      "reason": "Occurrence CCP lue : navigation, mode, stockage, message ou rendu de page. Conservation fonctionnelle hors texte compilé ; cette décision ne concerne aucun autre propriétaire du même ID."
+    },
+    {
+      "id": "text-0a8fa55cc6aadfe1f95c",
+      "sourceIndex": 2,
+      "originalValue": "Character Sheet - Professional Reference",
+      "occurrences": [
+        {
+          "raw": "Character Sheet - Professional Reference",
+          "kind": "html-text",
+          "line": 441,
+          "column": 33,
+          "functionName": null,
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-metadata",
+      "reason": "Occurrence CCP lue : navigation, mode, stockage, message ou rendu de page. Conservation fonctionnelle hors texte compilé ; cette décision ne concerne aucun autre propriétaire du même ID."
+    },
+    {
+      "id": "text-0cf67fc72b3c86c7a454",
+      "sourceIndex": 3,
+      "originalValue": "load",
+      "occurrences": [
+        {
+          "raw": "load",
+          "kind": "string-literal",
+          "line": 889,
+          "column": 33,
+          "functionName": "downloadApp",
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Occurrence CCP lue : navigation, mode, stockage, message ou rendu de page. Conservation fonctionnelle hors texte compilé ; cette décision ne concerne aucun autre propriétaire du même ID."
+    },
+    {
+      "id": "text-0fafae1dfc922e42781f",
+      "sourceIndex": 4,
+      "originalValue": "Step A1",
+      "occurrences": [
+        {
+          "raw": "Step A1",
+          "kind": "html-text",
+          "line": 419,
+          "column": 51,
+          "functionName": null,
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-metadata",
+      "reason": "Occurrence CCP lue : navigation, mode, stockage, message ou rendu de page. Conservation fonctionnelle hors texte compilé ; cette décision ne concerne aucun autre propriétaire du même ID."
+    },
+    {
+      "id": "text-16730bfc71e5bcfbc11f",
+      "sourceIndex": 5,
+      "originalValue": "Iterate",
+      "occurrences": [
+        {
+          "raw": "Iterate",
+          "kind": "html-text",
+          "line": 474,
+          "column": 176,
+          "functionName": null,
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-metadata",
+      "reason": "Occurrence CCP lue : navigation, mode, stockage, message ou rendu de page. Conservation fonctionnelle hors texte compilé ; cette décision ne concerne aucun autre propriétaire du même ID."
+    },
+    {
+      "id": "text-1d5c2f3e131656952744",
+      "sourceIndex": 6,
+      "originalValue": "Step A2",
+      "occurrences": [
+        {
+          "raw": "Step A2",
+          "kind": "html-text",
+          "line": 439,
+          "column": 51,
+          "functionName": null,
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-metadata",
+      "reason": "Occurrence CCP lue : navigation, mode, stockage, message ou rendu de page. Conservation fonctionnelle hors texte compilé ; cette décision ne concerne aucun autre propriétaire du même ID."
+    },
+    {
+      "id": "text-2348f998744212575d85",
+      "sourceIndex": 7,
+      "originalValue": "open",
+      "occurrences": [
+        {
+          "raw": "open",
+          "kind": "string-literal",
+          "line": 758,
+          "column": 36,
+          "functionName": "toggleStage",
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        },
+        {
+          "raw": "open",
+          "kind": "string-literal",
+          "line": 796,
+          "column": 44,
+          "functionName": "iterateStoryboard",
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        },
+        {
+          "raw": "open",
+          "kind": "string-literal",
+          "line": 808,
+          "column": 44,
+          "functionName": "receiveAtlasPrompt",
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Occurrence CCP lue : navigation, mode, stockage, message ou rendu de page. Conservation fonctionnelle hors texte compilé ; cette décision ne concerne aucun autre propriétaire du même ID."
+    },
+    {
+      "id": "text-234e9243651f1b1dcaca",
+      "sourceIndex": 8,
+      "originalValue": "Regenerate the sequence with a fresh variation",
+      "occurrences": [
+        {
+          "raw": "Regenerate the sequence with a fresh variation",
+          "kind": "html-attribute:title",
+          "line": 474,
+          "column": 121,
+          "functionName": null,
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-metadata",
+      "reason": "Occurrence CCP lue : navigation, mode, stockage, message ou rendu de page. Conservation fonctionnelle hors texte compilé ; cette décision ne concerne aucun autre propriétaire du même ID."
+    },
+    {
+      "id": "text-36d7f57d1711e31bed5b",
+      "sourceIndex": 9,
+      "originalValue": "Ultra-high resolution 4K frame isolation from storyboard",
+      "occurrences": [
+        {
+          "raw": "Ultra-high resolution 4K frame isolation from storyboard",
+          "kind": "html-text",
+          "line": 501,
+          "column": 32,
+          "functionName": null,
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-metadata",
+      "reason": "Occurrence CCP lue : navigation, mode, stockage, message ou rendu de page. Conservation fonctionnelle hors texte compilé ; cette décision ne concerne aucun autre propriétaire du même ID."
+    },
+    {
+      "id": "text-39462ae2bc9f545365bd",
+      "sourceIndex": 10,
+      "originalValue": "CCP",
+      "occurrences": [
+        {
+          "raw": "CCP",
+          "kind": "html-text",
+          "line": 408,
+          "column": 31,
+          "functionName": null,
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-metadata",
+      "reason": "Occurrence CCP lue : navigation, mode, stockage, message ou rendu de page. Conservation fonctionnelle hors texte compilé ; cette décision ne concerne aucun autre propriétaire du même ID."
+    },
+    {
+      "id": "text-44032f8ced20d50fa488",
+      "sourceIndex": 11,
+      "originalValue": "${cols}x${rows}",
+      "occurrences": [
+        {
+          "raw": "${cols}x${rows}",
+          "kind": "template-literal",
+          "line": 703,
+          "column": 60,
+          "functionName": "normalizeAtlasGrid",
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "compiler-template"
+    },
+    {
+      "id": "text-44fa5f4f82fb6d72a972",
+      "sourceIndex": 12,
+      "originalValue": "Download app",
+      "occurrences": [
+        {
+          "raw": "Download app",
+          "kind": "html-attribute:title",
+          "line": 410,
+          "column": 66,
+          "functionName": null,
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-metadata",
+      "reason": "Occurrence CCP lue : navigation, mode, stockage, message ou rendu de page. Conservation fonctionnelle hors texte compilé ; cette décision ne concerne aucun autre propriétaire du même ID."
+    },
+    {
+      "id": "text-4b02e0c6135a59245212",
+      "sourceIndex": 13,
+      "originalValue": "puppet",
+      "occurrences": [
+        {
+          "raw": "puppet",
+          "kind": "html-event:onclick:string-literal",
+          "line": 454,
+          "column": 103,
+          "functionName": null,
+          "attributeRaw": "switchA2Mode('puppet')",
+          "locationExact": true,
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        },
+        {
+          "raw": "puppet",
+          "kind": "html-event:onclick:string-literal",
+          "line": 486,
+          "column": 101,
+          "functionName": null,
+          "attributeRaw": "switchBMode('puppet')",
+          "locationExact": true,
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        },
+        {
+          "raw": "puppet",
+          "kind": "html-event:onclick:string-literal",
+          "line": 518,
+          "column": 99,
+          "functionName": null,
+          "attributeRaw": "switchCMode('puppet')",
+          "locationExact": true,
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        },
+        {
+          "raw": "puppet",
+          "kind": "string-literal",
+          "line": 675,
+          "column": 29,
+          "functionName": null,
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        },
+        {
+          "raw": "puppet",
+          "kind": "string-literal",
+          "line": 676,
+          "column": 28,
+          "functionName": null,
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        },
+        {
+          "raw": "puppet",
+          "kind": "string-literal",
+          "line": 677,
+          "column": 28,
+          "functionName": null,
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        },
+        {
+          "raw": "puppet",
+          "kind": "string-literal",
+          "line": 815,
+          "column": 51,
+          "functionName": "updatePromptC",
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        },
+        {
+          "raw": "puppet",
+          "kind": "string-literal",
+          "line": 822,
+          "column": 58,
+          "functionName": "switchA2Mode",
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        },
+        {
+          "raw": "puppet",
+          "kind": "string-literal",
+          "line": 823,
+          "column": 100,
+          "functionName": "switchA2Mode",
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        },
+        {
+          "raw": "puppet",
+          "kind": "string-literal",
+          "line": 831,
+          "column": 90,
+          "functionName": "switchBMode",
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        },
+        {
+          "raw": "puppet",
+          "kind": "string-literal",
+          "line": 841,
+          "column": 88,
+          "functionName": "switchCMode",
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        },
+        {
+          "raw": "puppet",
+          "kind": "string-literal",
+          "line": 860,
+          "column": 55,
+          "functionName": "copyPrompt",
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Occurrence CCP lue : navigation, mode, stockage, message ou rendu de page. Conservation fonctionnelle hors texte compilé ; cette décision ne concerne aucun autre propriétaire du même ID."
+    },
+    {
+      "id": "text-57a13f2acdcd0f15fa91",
+      "sourceIndex": 14,
+      "originalValue": "Contact Sheet Prompt ver. 2.0",
+      "occurrences": [
+        {
+          "raw": "Contact Sheet Prompt ver. 2.0",
+          "kind": "html-text",
+          "line": 421,
+          "column": 33,
+          "functionName": null,
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-metadata",
+      "reason": "Occurrence CCP lue : navigation, mode, stockage, message ou rendu de page. Conservation fonctionnelle hors texte compilé ; cette décision ne concerne aucun autre propriétaire du même ID."
+    },
+    {
+      "id": "text-59ba814ed87eab71ad01",
+      "sourceIndex": 15,
+      "originalValue": "barzy-grid",
+      "occurrences": [
+        {
+          "raw": "barzy-grid",
+          "kind": "string-literal",
+          "line": 743,
+          "column": 63,
+          "functionName": "applyAtlasGrid",
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Occurrence CCP lue : navigation, mode, stockage, message ou rendu de page. Conservation fonctionnelle hors texte compilé ; cette décision ne concerne aucun autre propriétaire du même ID."
+    },
+    {
+      "id": "text-5e23ec6a300dc60a7964",
+      "sourceIndex": 16,
+      "originalValue": "Mode",
+      "occurrences": [
+        {
+          "raw": "Mode",
+          "kind": "html-text",
+          "line": 452,
+          "column": 52,
+          "functionName": null,
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        },
+        {
+          "raw": "Mode",
+          "kind": "html-text",
+          "line": 484,
+          "column": 52,
+          "functionName": null,
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        },
+        {
+          "raw": "Mode",
+          "kind": "html-text",
+          "line": 516,
+          "column": 52,
+          "functionName": null,
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-metadata",
+      "reason": "Occurrence CCP lue : navigation, mode, stockage, message ou rendu de page. Conservation fonctionnelle hors texte compilé ; cette décision ne concerne aucun autre propriétaire du même ID."
+    },
+    {
+      "id": "text-60f14ec271cbd1eba422",
+      "sourceIndex": 17,
+      "originalValue": "Consistent Character Processus",
+      "occurrences": [
+        {
+          "raw": "Consistent Character Processus",
+          "kind": "html-text",
+          "line": 409,
+          "column": 33,
+          "functionName": null,
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-metadata",
+      "reason": "Occurrence CCP lue : navigation, mode, stockage, message ou rendu de page. Conservation fonctionnelle hors texte compilé ; cette décision ne concerne aucun autre propriétaire du même ID."
+    },
+    {
+      "id": "text-6d77cb1bb4b57a75f4f9",
+      "sourceIndex": 18,
+      "originalValue": "prompt-atlas:send-prompt",
+      "occurrences": [
+        {
+          "raw": "prompt-atlas:send-prompt",
+          "kind": "string-literal",
+          "line": 885,
+          "column": 34,
+          "functionName": "downloadApp",
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Occurrence CCP lue : navigation, mode, stockage, message ou rendu de page. Conservation fonctionnelle hors texte compilé ; cette décision ne concerne aucun autre propriétaire du même ID."
+    },
+    {
+      "id": "text-74234e98afe7498fb5da",
+      "sourceIndex": 19,
+      "originalValue": "null",
+      "occurrences": [
+        {
+          "raw": "null",
+          "kind": "string-literal",
+          "line": 743,
+          "column": 80,
+          "functionName": "applyAtlasGrid",
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        },
+        {
+          "raw": "null",
+          "kind": "string-literal",
+          "line": 892,
+          "column": 97,
+          "functionName": "downloadApp",
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Occurrence CCP lue : navigation, mode, stockage, message ou rendu de page. Conservation fonctionnelle hors texte compilé ; cette décision ne concerne aucun autre propriétaire du même ID."
+    },
+    {
+      "id": "text-74a46607690f51eaee66",
+      "sourceIndex": 20,
+      "originalValue": "Panel Code",
+      "occurrences": [
+        {
+          "raw": "Panel Code",
+          "kind": "html-text",
+          "line": 511,
+          "column": 52,
+          "functionName": null,
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-metadata",
+      "reason": "Occurrence CCP lue : navigation, mode, stockage, message ou rendu de page. Conservation fonctionnelle hors texte compilé ; cette décision ne concerne aucun autre propriétaire du même ID."
+    },
+    {
+      "id": "text-79a5478768d2447431a9",
+      "sourceIndex": 21,
+      "originalValue": "human",
+      "occurrences": [
+        {
+          "raw": "human",
+          "kind": "html-event:onclick:string-literal",
+          "line": 455,
+          "column": 95,
+          "functionName": null,
+          "attributeRaw": "switchA2Mode('human')",
+          "locationExact": true,
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        },
+        {
+          "raw": "human",
+          "kind": "html-event:onclick:string-literal",
+          "line": 487,
+          "column": 93,
+          "functionName": null,
+          "attributeRaw": "switchBMode('human')",
+          "locationExact": true,
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        },
+        {
+          "raw": "human",
+          "kind": "html-event:onclick:string-literal",
+          "line": 519,
+          "column": 91,
+          "functionName": null,
+          "attributeRaw": "switchCMode('human')",
+          "locationExact": true,
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        },
+        {
+          "raw": "human",
+          "kind": "string-literal",
+          "line": 822,
+          "column": 38,
+          "functionName": "switchA2Mode",
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        },
+        {
+          "raw": "human",
+          "kind": "string-literal",
+          "line": 822,
+          "column": 48,
+          "functionName": "switchA2Mode",
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        },
+        {
+          "raw": "human",
+          "kind": "string-literal",
+          "line": 824,
+          "column": 99,
+          "functionName": "switchA2Mode",
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        },
+        {
+          "raw": "human",
+          "kind": "string-literal",
+          "line": 832,
+          "column": 89,
+          "functionName": "switchBMode",
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        },
+        {
+          "raw": "human",
+          "kind": "string-literal",
+          "line": 842,
+          "column": 87,
+          "functionName": "switchCMode",
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Occurrence CCP lue : navigation, mode, stockage, message ou rendu de page. Conservation fonctionnelle hors texte compilé ; cette décision ne concerne aucun autre propriétaire du même ID."
+    },
+    {
+      "id": "text-79cda54994dc3f8929d3",
+      "sourceIndex": 22,
+      "originalValue": "${atlasGrid.total} frames",
+      "occurrences": [
+        {
+          "raw": "${atlasGrid.total} frames",
+          "kind": "template-literal",
+          "line": 723,
+          "column": 53,
+          "functionName": "adaptGridPrompt",
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "compiler-template"
+    },
+    {
+      "id": "text-832833af0f40da0a3167",
+      "sourceIndex": 23,
+      "originalValue": "mode-a2-puppet",
+      "occurrences": [
+        {
+          "raw": "mode-a2-puppet",
+          "kind": "string-literal",
+          "line": 823,
+          "column": 37,
+          "functionName": "switchA2Mode",
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Occurrence CCP lue : navigation, mode, stockage, message ou rendu de page. Conservation fonctionnelle hors texte compilé ; cette décision ne concerne aucun autre propriétaire du même ID."
+    },
+    {
+      "id": "text-83624e8de2c07ad32f11",
+      "sourceIndex": 24,
+      "originalValue": "GRID GENERATION",
+      "occurrences": [
+        {
+          "raw": "GRID GENERATION",
+          "kind": "html-text",
+          "line": 407,
+          "column": 36,
+          "functionName": null,
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-metadata",
+      "reason": "Occurrence CCP lue : navigation, mode, stockage, message ou rendu de page. Conservation fonctionnelle hors texte compilé ; cette décision ne concerne aucun autre propriétaire du même ID."
+    },
+    {
+      "id": "text-8456222c117db8c7c70f",
+      "sourceIndex": 25,
+      "originalValue": "Storyboard Sequence",
+      "occurrences": [
+        {
+          "raw": "Storyboard Sequence",
+          "kind": "html-text",
+          "line": 468,
+          "column": 33,
+          "functionName": null,
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-metadata",
+      "reason": "Occurrence CCP lue : navigation, mode, stockage, message ou rendu de page. Conservation fonctionnelle hors texte compilé ; cette décision ne concerne aucun autre propriétaire du même ID."
+    },
+    {
+      "id": "text-8a2119fd80f52f8f73bf",
+      "sourceIndex": 26,
+      "originalValue": "ccp.html",
+      "occurrences": [
+        {
+          "raw": "ccp.html",
+          "kind": "string-literal",
+          "line": 876,
+          "column": 26,
+          "functionName": "downloadApp",
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Occurrence CCP lue : navigation, mode, stockage, message ou rendu de page. Conservation fonctionnelle hors texte compilé ; cette décision ne concerne aucun autre propriétaire du même ID."
+    },
+    {
+      "id": "text-96879611650f80a81392",
+      "sourceIndex": 27,
+      "originalValue": "active",
+      "occurrences": [
+        {
+          "raw": "active",
+          "kind": "string-literal",
+          "line": 823,
+          "column": 72,
+          "functionName": "switchA2Mode",
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        },
+        {
+          "raw": "active",
+          "kind": "string-literal",
+          "line": 824,
+          "column": 71,
+          "functionName": "switchA2Mode",
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        },
+        {
+          "raw": "active",
+          "kind": "string-literal",
+          "line": 831,
+          "column": 71,
+          "functionName": "switchBMode",
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        },
+        {
+          "raw": "active",
+          "kind": "string-literal",
+          "line": 832,
+          "column": 70,
+          "functionName": "switchBMode",
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        },
+        {
+          "raw": "active",
+          "kind": "string-literal",
+          "line": 841,
+          "column": 69,
+          "functionName": "switchCMode",
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        },
+        {
+          "raw": "active",
+          "kind": "string-literal",
+          "line": 842,
+          "column": 68,
+          "functionName": "switchCMode",
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Occurrence CCP lue : navigation, mode, stockage, message ou rendu de page. Conservation fonctionnelle hors texte compilé ; cette décision ne concerne aucun autre propriétaire du même ID."
+    },
+    {
+      "id": "text-97170e7aab7d1863f07f",
+      "sourceIndex": 28,
+      "originalValue": "cccp",
+      "occurrences": [
+        {
+          "raw": "cccp",
+          "kind": "string-literal",
+          "line": 803,
+          "column": 48,
+          "functionName": "receiveAtlasPrompt",
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Occurrence CCP lue : navigation, mode, stockage, message ou rendu de page. Conservation fonctionnelle hors texte compilé ; cette décision ne concerne aucun autre propriétaire du même ID."
+    },
+    {
+      "id": "text-97a611ef573ef0689dac",
+      "sourceIndex": 29,
+      "originalValue": "3x3",
+      "occurrences": [
+        {
+          "raw": "3x3",
+          "kind": "string-literal",
+          "line": 674,
+          "column": 61,
+          "functionName": null,
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "compiler-template"
+    },
+    {
+      "id": "text-98b84e1a905a9062330b",
+      "sourceIndex": 30,
+      "originalValue": "7 professional reference views with perfect alignment",
+      "occurrences": [
+        {
+          "raw": "7 professional reference views with perfect alignment",
+          "kind": "html-text",
+          "line": 442,
+          "column": 32,
+          "functionName": null,
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-metadata",
+      "reason": "Occurrence CCP lue : navigation, mode, stockage, message ou rendu de page. Conservation fonctionnelle hors texte compilé ; cette décision ne concerne aucun autre propriétaire du même ID."
+    },
+    {
+      "id": "text-9ffa865f2bc6e850157b",
+      "sourceIndex": 31,
+      "originalValue": "Human",
+      "occurrences": [
+        {
+          "raw": "Human",
+          "kind": "html-text",
+          "line": 455,
+          "column": 105,
+          "functionName": null,
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        },
+        {
+          "raw": "Human",
+          "kind": "html-text",
+          "line": 487,
+          "column": 103,
+          "functionName": null,
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        },
+        {
+          "raw": " Human",
+          "kind": "html-text",
+          "line": 519,
+          "column": 101,
+          "functionName": null,
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-metadata",
+      "reason": "Occurrence CCP lue : navigation, mode, stockage, message ou rendu de page. Conservation fonctionnelle hors texte compilé ; cette décision ne concerne aucun autre propriétaire du même ID."
+    },
+    {
+      "id": "text-a9859821dbf5678f67ef",
+      "sourceIndex": 32,
+      "originalValue": "Single Image Render",
+      "occurrences": [
+        {
+          "raw": "Single Image Render",
+          "kind": "html-text",
+          "line": 500,
+          "column": 33,
+          "functionName": null,
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-metadata",
+      "reason": "Occurrence CCP lue : navigation, mode, stockage, message ou rendu de page. Conservation fonctionnelle hors texte compilé ; cette décision ne concerne aucun autre propriétaire du même ID."
+    },
+    {
+      "id": "text-ab530a13e45914982b79",
+      "sourceIndex": 33,
+      "originalValue": "message",
+      "occurrences": [
+        {
+          "raw": "message",
+          "kind": "string-literal",
+          "line": 738,
+          "column": 33,
+          "functionName": "applyAtlasGrid",
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        },
+        {
+          "raw": "message",
+          "kind": "string-literal",
+          "line": 883,
+          "column": 33,
+          "functionName": "downloadApp",
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Occurrence CCP lue : navigation, mode, stockage, message ou rendu de page. Conservation fonctionnelle hors texte compilé ; cette décision ne concerne aucun autre propriétaire du même ID."
+    },
+    {
+      "id": "text-adaa62fa4edcb44745ee",
+      "sourceIndex": 34,
+      "originalValue": "DOWNLOAD",
+      "occurrences": [
+        {
+          "raw": "DOWNLOAD",
+          "kind": "html-text",
+          "line": 410,
+          "column": 87,
+          "functionName": null,
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-metadata",
+      "reason": "Occurrence CCP lue : navigation, mode, stockage, message ou rendu de page. Conservation fonctionnelle hors texte compilé ; cette décision ne concerne aucun autre propriétaire du même ID."
+    },
+    {
+      "id": "text-bb4770ff4ac5b7d2be41",
+      "sourceIndex": 35,
+      "originalValue": "text/html",
+      "occurrences": [
+        {
+          "raw": "text/html",
+          "kind": "string-literal",
+          "line": 872,
+          "column": 51,
+          "functionName": "downloadApp",
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Occurrence CCP lue : navigation, mode, stockage, message ou rendu de page. Conservation fonctionnelle hors texte compilé ; cette décision ne concerne aucun autre propriétaire du même ID."
+    },
+    {
+      "id": "text-bc382cc23d6e37bb5620",
+      "sourceIndex": 36,
+      "originalValue": "Puppet",
+      "occurrences": [
+        {
+          "raw": "Puppet",
+          "kind": "html-text",
+          "line": 454,
+          "column": 114,
+          "functionName": null,
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        },
+        {
+          "raw": "Puppet",
+          "kind": "html-text",
+          "line": 486,
+          "column": 112,
+          "functionName": null,
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        },
+        {
+          "raw": " Puppet",
+          "kind": "html-text",
+          "line": 518,
+          "column": 110,
+          "functionName": null,
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-metadata",
+      "reason": "Occurrence CCP lue : navigation, mode, stockage, message ou rendu de page. Conservation fonctionnelle hors texte compilé ; cette décision ne concerne aucun autre propriétaire du même ID."
+    },
+    {
+      "id": "text-c75e37d8a7c3d2b84b5c",
+      "sourceIndex": 37,
+      "originalValue": "Step C",
+      "occurrences": [
+        {
+          "raw": "Step C",
+          "kind": "html-text",
+          "line": 498,
+          "column": 51,
+          "functionName": null,
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-metadata",
+      "reason": "Occurrence CCP lue : navigation, mode, stockage, message ou rendu de page. Conservation fonctionnelle hors texte compilé ; cette décision ne concerne aucun autre propriétaire du même ID."
+    },
+    {
+      "id": "text-cb1b363af48f12a87672",
+      "sourceIndex": 38,
+      "originalValue": "[data-stage=\"a1\"] .stage-details p",
+      "occurrences": [
+        {
+          "raw": "[data-stage=\"a1\"] .stage-details p",
+          "kind": "string-literal",
+          "line": 729,
+          "column": 53,
+          "functionName": "applyAtlasGrid",
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Occurrence CCP lue : navigation, mode, stockage, message ou rendu de page. Conservation fonctionnelle hors texte compilé ; cette décision ne concerne aucun autre propriétaire du même ID."
+    },
+    {
+      "id": "text-d47c9468111af10b24c7",
+      "sourceIndex": 39,
+      "originalValue": "mode-a2-human",
+      "occurrences": [
+        {
+          "raw": "mode-a2-human",
+          "kind": "string-literal",
+          "line": 824,
+          "column": 37,
+          "functionName": "switchA2Mode",
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Occurrence CCP lue : navigation, mode, stockage, message ou rendu de page. Conservation fonctionnelle hors texte compilé ; cette décision ne concerne aucun autre propriétaire du même ID."
+    },
+    {
+      "id": "text-d72483890b2764c5aff2",
+      "sourceIndex": 40,
+      "originalValue": "[data-stage=\"b\"]",
+      "occurrences": [
+        {
+          "raw": "[data-stage=\"b\"]",
+          "kind": "string-literal",
+          "line": 795,
+          "column": 50,
+          "functionName": "iterateStoryboard",
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Occurrence CCP lue : navigation, mode, stockage, message ou rendu de page. Conservation fonctionnelle hors texte compilé ; cette décision ne concerne aucun autre propriétaire du même ID."
+    },
+    {
+      "id": "text-e0b6e75f42152f3ccae1",
+      "sourceIndex": 41,
+      "originalValue": "gridRows",
+      "occurrences": [
+        {
+          "raw": "gridRows",
+          "kind": "string-literal",
+          "line": 708,
+          "column": 56,
+          "functionName": "atlasGridFromUrl",
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        },
+        {
+          "raw": "gridRows",
+          "kind": "string-literal",
+          "line": 711,
+          "column": 34,
+          "functionName": "atlasGridFromUrl",
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Occurrence CCP lue : navigation, mode, stockage, message ou rendu de page. Conservation fonctionnelle hors texte compilé ; cette décision ne concerne aucun autre propriétaire du même ID."
+    },
+    {
+      "id": "text-e21f935f11d7e966dbba",
+      "sourceIndex": 42,
+      "originalValue": "Copy",
+      "occurrences": [
+        {
+          "raw": "Copy",
+          "kind": "html-text",
+          "line": 426,
+          "column": 106,
+          "functionName": null,
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        },
+        {
+          "raw": "Copy",
+          "kind": "html-text",
+          "line": 446,
+          "column": 106,
+          "functionName": null,
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        },
+        {
+          "raw": "Copy",
+          "kind": "html-text",
+          "line": 473,
+          "column": 105,
+          "functionName": null,
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        },
+        {
+          "raw": "Copy",
+          "kind": "html-text",
+          "line": 505,
+          "column": 105,
+          "functionName": null,
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-metadata",
+      "reason": "Occurrence CCP lue : navigation, mode, stockage, message ou rendu de page. Conservation fonctionnelle hors texte compilé ; cette décision ne concerne aucun autre propriétaire du même ID."
+    },
+    {
+      "id": "text-e663ff5da3ee4adb78f2",
+      "sourceIndex": 43,
+      "originalValue": "${atlasGrid.cols}x${atlasGrid.rows}",
+      "occurrences": [
+        {
+          "raw": "${atlasGrid.cols}x${atlasGrid.rows}",
+          "kind": "template-literal",
+          "line": 716,
+          "column": 31,
+          "functionName": "adaptGridPrompt",
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "compiler-template"
+    },
+    {
+      "id": "text-e73a87f25ac2cba8d759",
+      "sourceIndex": 44,
+      "originalValue": "[data-stage=\"b\"] .stage-details p",
+      "occurrences": [
+        {
+          "raw": "[data-stage=\"b\"] .stage-details p",
+          "kind": "string-literal",
+          "line": 730,
+          "column": 52,
+          "functionName": "applyAtlasGrid",
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Occurrence CCP lue : navigation, mode, stockage, message ou rendu de page. Conservation fonctionnelle hors texte compilé ; cette décision ne concerne aucun autre propriétaire du même ID."
+    },
+    {
+      "id": "text-e76588dffbe6fe2c584f",
+      "sourceIndex": 45,
+      "originalValue": "barzy:grid",
+      "occurrences": [
+        {
+          "raw": "barzy:grid",
+          "kind": "string-literal",
+          "line": 739,
+          "column": 51,
+          "functionName": "applyAtlasGrid",
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Occurrence CCP lue : navigation, mode, stockage, message ou rendu de page. Conservation fonctionnelle hors texte compilé ; cette décision ne concerne aucun autre propriétaire du même ID."
+    },
+    {
+      "id": "text-ea61bc15688d1e482ae5",
+      "sourceIndex": 46,
+      "originalValue": "Copied!",
+      "occurrences": [
+        {
+          "raw": "Copied!",
+          "kind": "string-literal",
+          "line": 865,
+          "column": 23,
+          "functionName": "copyPrompt",
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Occurrence CCP lue : navigation, mode, stockage, message ou rendu de page. Conservation fonctionnelle hors texte compilé ; cette décision ne concerne aucun autre propriétaire du même ID."
+    },
+    {
+      "id": "text-f38cdf2b0741bc3caaee",
+      "sourceIndex": 47,
+      "originalValue": "gridCols",
+      "occurrences": [
+        {
+          "raw": "gridCols",
+          "kind": "string-literal",
+          "line": 708,
+          "column": 29,
+          "functionName": "atlasGridFromUrl",
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        },
+        {
+          "raw": "gridCols",
+          "kind": "string-literal",
+          "line": 710,
+          "column": 34,
+          "functionName": "atlasGridFromUrl",
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Occurrence CCP lue : navigation, mode, stockage, message ou rendu de page. Conservation fonctionnelle hors texte compilé ; cette décision ne concerne aucun autre propriétaire du même ID."
+    },
+    {
+      "id": "text-ff6c19843b03c395608a",
+      "sourceIndex": 48,
+      "originalValue": ".stage",
+      "occurrences": [
+        {
+          "raw": ".stage",
+          "kind": "string-literal",
+          "line": 807,
+          "column": 41,
+          "functionName": "receiveAtlasPrompt",
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Occurrence CCP lue : navigation, mode, stockage, message ou rendu de page. Conservation fonctionnelle hors texte compilé ; cette décision ne concerne aucun autre propriétaire du même ID."
+    },
+    {
+      "id": "text-ff885ada945214d3a2a4",
+      "sourceIndex": 49,
+      "originalValue": "prompt-atlas-pending-send",
+      "occurrences": [
+        {
+          "raw": "prompt-atlas-pending-send",
+          "kind": "string-literal",
+          "line": 892,
+          "column": 65,
+          "functionName": "downloadApp",
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Occurrence CCP lue : navigation, mode, stockage, message ou rendu de page. Conservation fonctionnelle hors texte compilé ; cette décision ne concerne aucun autre propriétaire du même ID."
+    },
+    {
+      "id": "text-ffa4747fb5b6e99fd7fd",
+      "sourceIndex": 50,
+      "originalValue": "e.g., A1, B2, C3...",
+      "occurrences": [
+        {
+          "raw": "e.g., A1, B2, C3...",
+          "kind": "html-attribute:placeholder",
+          "line": 512,
+          "column": 77,
+          "functionName": null,
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-metadata",
+      "reason": "Occurrence CCP lue : navigation, mode, stockage, message ou rendu de page. Conservation fonctionnelle hors texte compilé ; cette décision ne concerne aucun autre propriétaire du même ID."
+    }
+  ],
+  "catalog": {
+    "stages": [
+      {
+        "id": "a1",
+        "title": "Contact Sheet Prompt ver. 2.0",
+        "modes": []
+      },
+      {
+        "id": "a2",
+        "title": "Character Sheet - Professional Reference",
+        "modes": [
+          "puppet",
+          "human"
+        ]
+      },
+      {
+        "id": "b",
+        "title": "Storyboard Sequence",
+        "modes": [
+          "puppet",
+          "human"
+        ]
+      },
+      {
+        "id": "c",
+        "title": "Single Image Render",
+        "modes": [
+          "puppet",
+          "human"
+        ]
+      }
+    ],
+    "templates": [
+      {
+        "key": "a1",
+        "id": "cccp-a1",
+        "literalId": "text-d44aa018fe7659363321",
+        "originalPrompt": "Act as a professional Storyboard Artist. Generate a high-quality 3x3 grid contact sheet,\ncomposed of 9 distinct cinematic frames. This grid must be based precisely on the character\nand overall visual style of the provided reference image.\nCharacter Consistency – Top Priority:\n- The character in every single panel must look exactly like the character in the\nreference image. All physical features, outfit, and appearance must remain identical\nacross all nine panels.\n- Do not alter, reinterpret, or stylize the character in any way. The reference image is\nthe absolute ground truth.\n- Every panel must show the character from a different angle or framing – the goal is to\nbuild a complete 360-degree visual understanding of the character.\nTechnical Specifications & Labeling:\n- The output must be a single image containing a 3-row by 3-column grid.\n- Each individual panel must be clearly labeled with a technical alphanumeric identifier\nin its top-left corner, ranging from A1 to C3.\n- The only variables between panels are the camera angle, framing, and shot size.\nEverything else stays consistent.\nThe 9-Panel Shot List:\nRow A (Establishing Spatial Context):\n- Panel A1: Extreme Wide Shot (EWS), High-Angle Bird's Eye View.\n- Panel A2: Full Shot (FS), Eye-Level Neutral. Full body, head to toe.\n- Panel A3: Wide Shot (WS), Dramatic Low-Angle (Worm's Eye).\nRow B (Character & Dynamics):\n- Panel B1: Medium Shot (MS), Dutch Angle (Canted Frame). Waist up.\n- Panel B2: Medium Close-Up (MCU), Eye-Level Portrait. Head and torso.\n- Panel B3: Three-Quarter Back Shot. Character viewed from behind and slightly to\none side.\nRow C (Intimacy & Detail):\n- Panel C1: Close-Up (CU), Low-Angle \"Hero\" framing. Head from slightly below.\n- Panel C2: High-Angle Medium Shot. Looking down onto the character from above\neye-level.\n- Panel C3: Extreme Close-Up (ECU) Detail Insert. A macro focus on a key detail of\nthe outfit, filling the frame.",
+        "prompt": "Act as a professional Storyboard Artist. Generate a high-quality 3x3 grid contact sheet,\ncomposed of 9 distinct cinematic frames. This grid must be based precisely on the character\nand overall visual style of the provided reference image.\nCharacter Consistency – Top Priority:\n- The character in every single panel must look exactly like the character in the\nreference image. All physical features, outfit, and appearance must remain identical\nacross all nine panels.\n- Do not alter, reinterpret, or stylize the character in any way. The reference image is\nthe absolute ground truth.\n- Every panel must show the character from a different angle or framing – the goal is to\nbuild a complete 360-degree visual understanding of the character.\nTechnical Specifications & Labeling:\n- The output must be a single image containing a 3-row by 3-column grid.\n- Each individual panel must be clearly labeled with a technical alphanumeric identifier\nin its top-left corner, ranging from A1 to C3.\n- The only variables between panels are the camera angle, framing, and shot size.\nEverything else stays consistent.\nThe 9-Panel Shot List:\nRow A (Establishing Spatial Context):\n- Panel A1: Extreme Wide Shot (EWS), High-Angle Bird's Eye View.\n- Panel A2: Full Shot (FS), Eye-Level Neutral. Full body, head to toe.\n- Panel A3: Wide Shot (WS), Dramatic Low-Angle (Worm's Eye).\nRow B (Character & Dynamics):\n- Panel B1: Medium Shot (MS), Dutch Angle (Canted Frame). Waist up.\n- Panel B2: Medium Close-Up (MCU), Eye-Level Portrait. Head and torso.\n- Panel B3: Three-Quarter Back Shot. Character viewed from behind and slightly to\none side.\nRow C (Intimacy & Detail):\n- Panel C1: Close-Up (CU), Low-Angle \"Hero\" framing. Head from slightly below.\n- Panel C2: High-Angle Medium Shot. Looking down onto the character from above\neye-level.\n- Panel C3: Extreme Close-Up (ECU) Detail Insert. A macro focus on a key detail of\nthe outfit, filling the frame.",
+        "occurrences": [
+          {
+            "raw": "Act as a professional Storyboard Artist. Generate a high-quality 3x3 grid contact sheet,\ncomposed of 9 distinct cinematic frames. This grid must be based precisely on the character\nand overall visual style of the provided reference image.\nCharacter Consistency – Top Priority:\n- The character in every single panel must look exactly like the character in the\nreference image. All physical features, outfit, and appearance must remain identical\nacross all nine panels.\n- Do not alter, reinterpret, or stylize the character in any way. The reference image is\nthe absolute ground truth.\n- Every panel must show the character from a different angle or framing – the goal is to\nbuild a complete 360-degree visual understanding of the character.\nTechnical Specifications & Labeling:\n- The output must be a single image containing a 3-row by 3-column grid.\n- Each individual panel must be clearly labeled with a technical alphanumeric identifier\nin its top-left corner, ranging from A1 to C3.\n- The only variables between panels are the camera angle, framing, and shot size.\nEverything else stays consistent.\nThe 9-Panel Shot List:\nRow A (Establishing Spatial Context):\n- Panel A1: Extreme Wide Shot (EWS), High-Angle Bird's Eye View.\n- Panel A2: Full Shot (FS), Eye-Level Neutral. Full body, head to toe.\n- Panel A3: Wide Shot (WS), Dramatic Low-Angle (Worm's Eye).\nRow B (Character & Dynamics):\n- Panel B1: Medium Shot (MS), Dutch Angle (Canted Frame). Waist up.\n- Panel B2: Medium Close-Up (MCU), Eye-Level Portrait. Head and torso.\n- Panel B3: Three-Quarter Back Shot. Character viewed from behind and slightly to\none side.\nRow C (Intimacy & Detail):\n- Panel C1: Close-Up (CU), Low-Angle \"Hero\" framing. Head from slightly below.\n- Panel C2: High-Angle Medium Shot. Looking down onto the character from above\neye-level.\n- Panel C3: Extreme Close-Up (ECU) Detail Insert. A macro focus on a key detail of\nthe outfit, filling the frame.",
+            "kind": "template-literal",
+            "line": 532,
+            "column": 17,
+            "functionName": null,
+            "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+            "owners": [
+              "cccp"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "a2",
+        "id": "cccp-a2",
+        "literalId": "text-a3e118eda56102ae10c2",
+        "originalPrompt": "Create a professional character reference sheet. Match the EXACT visual style of the reference (realism level, rendering, texture, color treatment, aesthetic).\nIDENTITY LOCK - CRITICAL:\nThis is the SAME CHARACTER across ALL 7 panels. NOT different people.\n- CLONE exact face: bone structure, features, skin, wrinkles, moles\n- CLONE exact body: height, build, proportions\n- CLONE exact hair: color, style, length, texture, hairline\n- CLONE exact costume: every garment, accessory, detail, wear marks\n- Age and ethnicity MUST match source exactly\nLAYOUT - TWO ROWS:\nTOP ROW - 4 FULL-BODY VIEWS (horizontal):\n| FRONT | LEFT PROFILE | RIGHT PROFILE | BACK |\n- FRONT: Facing camera, relaxed A-pose, arms 30-45° from body\n- LEFT PROFILE: Perfect 90° facing left, same A-pose\n- RIGHT PROFILE: Perfect 90° facing right, same A-pose\n- BACK: Facing away, same A-pose\nBOTTOM ROW - 3 PORTRAIT CLOSE-UPS (centered below):\n| FRONT PORTRAIT | LEFT PORTRAIT | RIGHT PORTRAIT |\n- FRONT PORTRAIT: Head and shoulders, facing camera, neutral expression\n- LEFT PORTRAIT: Head and shoulders, 90° profile facing left\n- RIGHT PORTRAIT: Head and shoulders, 90° profile facing right\nALIGNMENT REQUIREMENTS:\n- Full-body views: heads at identical height, same scale\n- Portraits: faces at identical scale, same crop level\n- Portraits centered beneath full-body row\n- Even spacing between all panels\n- Clean panel separation with thin lines\nTECHNICAL:\n- Neutral plain background (light grey #d5d5d5)\n- Consistent lighting across ALL panels (same direction, intensity, softness)\n- Natural controlled shadows — detail preservation, no dramatic mood\n- Sharp details, crisp edges, print-ready quality\n- Accurate anatomy, clear silhouettes\n- NO TEXT, NO LABELS\nSAME CHARACTER in all 7 panels - perfect identity consistency.",
+        "prompt": "Create a professional character reference sheet. Match the EXACT visual style of the reference (realism level, rendering, texture, color treatment, aesthetic).\nIDENTITY LOCK - CRITICAL:\nThis is the SAME CHARACTER across ALL 7 panels. NOT different people.\n- CLONE exact face: bone structure, features, skin, wrinkles, moles\n- CLONE exact body: height, build, proportions\n- CLONE exact hair: color, style, length, texture, hairline\n- CLONE exact costume: every garment, accessory, detail, wear marks\n- Age and ethnicity MUST match source exactly\nLAYOUT - TWO ROWS:\nTOP ROW - 4 FULL-BODY VIEWS (horizontal):\n| FRONT | LEFT PROFILE | RIGHT PROFILE | BACK |\n- FRONT: Facing camera, relaxed A-pose, arms 30-45° from body\n- LEFT PROFILE: Perfect 90° facing left, same A-pose\n- RIGHT PROFILE: Perfect 90° facing right, same A-pose\n- BACK: Facing away, same A-pose\nBOTTOM ROW - 3 PORTRAIT CLOSE-UPS (centered below):\n| FRONT PORTRAIT | LEFT PORTRAIT | RIGHT PORTRAIT |\n- FRONT PORTRAIT: Head and shoulders, facing camera, neutral expression\n- LEFT PORTRAIT: Head and shoulders, 90° profile facing left\n- RIGHT PORTRAIT: Head and shoulders, 90° profile facing right\nALIGNMENT REQUIREMENTS:\n- Full-body views: heads at identical height, same scale\n- Portraits: faces at identical scale, same crop level\n- Portraits centered beneath full-body row\n- Even spacing between all panels\n- Clean panel separation with thin lines\nTECHNICAL:\n- Neutral plain background (light grey #d5d5d5)\n- Consistent lighting across ALL panels (same direction, intensity, softness)\n- Natural controlled shadows — detail preservation, no dramatic mood\n- Sharp details, crisp edges, print-ready quality\n- Accurate anatomy, clear silhouettes\n- NO TEXT, NO LABELS\nSAME CHARACTER in all 7 panels - perfect identity consistency.",
+        "occurrences": [
+          {
+            "raw": "Create a professional character reference sheet. Match the EXACT visual style of the reference (realism level, rendering, texture, color treatment, aesthetic).\nIDENTITY LOCK - CRITICAL:\nThis is the SAME CHARACTER across ALL 7 panels. NOT different people.\n- CLONE exact face: bone structure, features, skin, wrinkles, moles\n- CLONE exact body: height, build, proportions\n- CLONE exact hair: color, style, length, texture, hairline\n- CLONE exact costume: every garment, accessory, detail, wear marks\n- Age and ethnicity MUST match source exactly\nLAYOUT - TWO ROWS:\nTOP ROW - 4 FULL-BODY VIEWS (horizontal):\n| FRONT | LEFT PROFILE | RIGHT PROFILE | BACK |\n- FRONT: Facing camera, relaxed A-pose, arms 30-45° from body\n- LEFT PROFILE: Perfect 90° facing left, same A-pose\n- RIGHT PROFILE: Perfect 90° facing right, same A-pose\n- BACK: Facing away, same A-pose\nBOTTOM ROW - 3 PORTRAIT CLOSE-UPS (centered below):\n| FRONT PORTRAIT | LEFT PORTRAIT | RIGHT PORTRAIT |\n- FRONT PORTRAIT: Head and shoulders, facing camera, neutral expression\n- LEFT PORTRAIT: Head and shoulders, 90° profile facing left\n- RIGHT PORTRAIT: Head and shoulders, 90° profile facing right\nALIGNMENT REQUIREMENTS:\n- Full-body views: heads at identical height, same scale\n- Portraits: faces at identical scale, same crop level\n- Portraits centered beneath full-body row\n- Even spacing between all panels\n- Clean panel separation with thin lines\nTECHNICAL:\n- Neutral plain background (light grey #d5d5d5)\n- Consistent lighting across ALL panels (same direction, intensity, softness)\n- Natural controlled shadows — detail preservation, no dramatic mood\n- Sharp details, crisp edges, print-ready quality\n- Accurate anatomy, clear silhouettes\n- NO TEXT, NO LABELS\nSAME CHARACTER in all 7 panels - perfect identity consistency.",
+            "kind": "template-literal",
+            "line": 566,
+            "column": 17,
+            "functionName": null,
+            "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+            "owners": [
+              "cccp"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "b",
+        "id": "cccp-b",
+        "literalId": "text-1124b4960bc18c81a7cd",
+        "originalPrompt": "Act as a Lead Storyboard Artist and Cinematographer for a high-budget film\nproduction. Your task is to generate a comprehensive 9-panel (3x3 grid)\nstoryboard sequence that visually narrates a dynamic action scene.\nCRITICAL CONSTRAINTS & EXECUTION STANDARDS:\nAI SCENE ELABORATION: Based on the concise \"USER SCENE INPUT\"\nprovided below, you are to autonomously elaborate and craft a detailed, vivid,\nand cinematic scene description. This description must define the specific\nenvironment, time of day, weather, lighting, and atmospheric effects necessary\nfor a high-octane film sequence.\nVIDEO-READY REALISM & DETAIL: The output must consist of photo realistic,\nultra-high-detail cinematic still frames. Focus on lifelike textures, professional\nlighting, motion blur (where appropriate), and cinematic depth of field. This\ngrid serves as a direct visual blueprint for AI video generation.\nPANEL LABELING: Each individual panel within the 3x3 grid must be clearly\nlabeled with a technical alphanumeric identifier in its top-left corner, ranging\nfrom A1 to C3.\nSUBJECT REFERENCE (Universal Consistency):\nPrimary ID: Use the Main Hero Image to define the core identity, facial features,\nand the primary high-end cinematic aesthetic.\nTechnical ID: Use the Character Shot Sheet (3x3 Grid 1) as a definitive spatial\nreference to maintain absolute visual fidelity from every camera angle.\nMeticulously replicate all unique identifiers, costume components, material\nproperties, and structural details exactly as they appear in the reference\nimages. Every visual trait of the subject must be mapped directly from the\nsources to ensure 1:1 consistency across all 9 panels.\nCINEMATIC VARIETY: Ensure a professional flow of shots. Mix Wide Shots\n(WS) for scale, Medium Shots (MS) for action, Close-Ups (CU) for focus, and\ndynamic angles (POV, Low Angle, or Dutch Angle) for intensity. The 9 frames\nmust tell a clear, sequential visual story.\nUSER SCENE INPUT:",
+        "prompt": "Act as a Lead Storyboard Artist and Cinematographer for a high-budget film\nproduction. Your task is to generate a comprehensive 9-panel (3x3 grid)\nstoryboard sequence that visually narrates a dynamic action scene.\nCRITICAL CONSTRAINTS & EXECUTION STANDARDS:\nAI SCENE ELABORATION: Based on the concise \"USER SCENE INPUT\"\nprovided below, you are to autonomously elaborate and craft a detailed, vivid,\nand cinematic scene description. This description must define the specific\nenvironment, time of day, weather, lighting, and atmospheric effects necessary\nfor a high-octane film sequence.\nVIDEO-READY REALISM & DETAIL: The output must consist of photo realistic,\nultra-high-detail cinematic still frames. Focus on lifelike textures, professional\nlighting, motion blur (where appropriate), and cinematic depth of field. This\ngrid serves as a direct visual blueprint for AI video generation.\nPANEL LABELING: Each individual panel within the 3x3 grid must be clearly\nlabeled with a technical alphanumeric identifier in its top-left corner, ranging\nfrom A1 to C3.\nSUBJECT REFERENCE (Universal Consistency):\nPrimary ID: Use the Main Hero Image to define the core identity, facial features,\nand the primary high-end cinematic aesthetic.\nTechnical ID: Use the Character Shot Sheet (3x3 Grid 1) as a definitive spatial\nreference to maintain absolute visual fidelity from every camera angle.\nMeticulously replicate all unique identifiers, costume components, material\nproperties, and structural details exactly as they appear in the reference\nimages. Every visual trait of the subject must be mapped directly from the\nsources to ensure 1:1 consistency across all 9 panels.\nCINEMATIC VARIETY: Ensure a professional flow of shots. Mix Wide Shots\n(WS) for scale, Medium Shots (MS) for action, Close-Ups (CU) for focus, and\ndynamic angles (POV, Low Angle, or Dutch Angle) for intensity. The 9 frames\nmust tell a clear, sequential visual story.\nUSER SCENE INPUT:",
+        "occurrences": [
+          {
+            "raw": "Act as a Lead Storyboard Artist and Cinematographer for a high-budget film\nproduction. Your task is to generate a comprehensive 9-panel (3x3 grid)\nstoryboard sequence that visually narrates a dynamic action scene.\nCRITICAL CONSTRAINTS & EXECUTION STANDARDS:\nAI SCENE ELABORATION: Based on the concise \"USER SCENE INPUT\"\nprovided below, you are to autonomously elaborate and craft a detailed, vivid,\nand cinematic scene description. This description must define the specific\nenvironment, time of day, weather, lighting, and atmospheric effects necessary\nfor a high-octane film sequence.\nVIDEO-READY REALISM & DETAIL: The output must consist of photo realistic,\nultra-high-detail cinematic still frames. Focus on lifelike textures, professional\nlighting, motion blur (where appropriate), and cinematic depth of field. This\ngrid serves as a direct visual blueprint for AI video generation.\nPANEL LABELING: Each individual panel within the 3x3 grid must be clearly\nlabeled with a technical alphanumeric identifier in its top-left corner, ranging\nfrom A1 to C3.\nSUBJECT REFERENCE (Universal Consistency):\nPrimary ID: Use the Main Hero Image to define the core identity, facial features,\nand the primary high-end cinematic aesthetic.\nTechnical ID: Use the Character Shot Sheet (3x3 Grid 1) as a definitive spatial\nreference to maintain absolute visual fidelity from every camera angle.\nMeticulously replicate all unique identifiers, costume components, material\nproperties, and structural details exactly as they appear in the reference\nimages. Every visual trait of the subject must be mapped directly from the\nsources to ensure 1:1 consistency across all 9 panels.\nCINEMATIC VARIETY: Ensure a professional flow of shots. Mix Wide Shots\n(WS) for scale, Medium Shots (MS) for action, Close-Ups (CU) for focus, and\ndynamic angles (POV, Low Angle, or Dutch Angle) for intensity. The 9 frames\nmust tell a clear, sequential visual story.\nUSER SCENE INPUT:",
+            "kind": "template-literal",
+            "line": 601,
+            "column": 16,
+            "functionName": null,
+            "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+            "owners": [
+              "cccp"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "c",
+        "id": "cccp-c",
+        "literalId": "text-357501cd437fd38cc26b",
+        "originalPrompt": "Act as a professional Digital Imaging Technician and Cinematographer. Your\ntask is to generate a single, ultra-high-resolution cinematic photograph by\nisolating a specific frame from the provided 3x3 storyboard grid and rendering\nit with absolute visual fidelity.\nInstructions:\n1. Frame Selection & Composition: Isolate exactly the composition,\ncamera angle, and framing corresponding to the user-specified panel\ncode: [INSERT PANEL CODE HERE, e.g., A2] from the provided 3x3\nstoryboard grid.\n2. Visual Consistency Enforcement: The final rendered image must\nmaintain perfect consistency with both reference images provided:\n- Character Reference Image (Physical Attributes Only): Use this\nONLY to maintain the exact character model, facial features, body\nproportions, costume design, accessories, hair style, and any\nspecific physical details of the character.\n- Scene Grid Reference (Lighting & Atmosphere): Use the scene\ngrid image to accurately capture and reproduce the environment,\nlighting conditions, atmospheric mood, color palette, time of day,\nweather effects, and overall visual tone of the specific scene\nbeing depicted.\n3. Lighting & Atmosphere Priority: The lighting direction, quality\n(soft/hard), color temperature, contrast ratio, shadows, and atmospheric\neffects must be taken exclusively from the scene grid panel being\nisolated, NOT from the character reference image. The character\nreference serves only to ensure physical consistency of the subject.\n4. Final Output Quality: Generate a single, standalone image in ultra-high\nresolution (4K cinematic standard). Ensure the final render is photo\nrealistic and removes any panel labels (e.g., \"A1\") or grid lines from the\nsource storyboard.",
+        "prompt": "Act as a professional Digital Imaging Technician and Cinematographer. Your\ntask is to generate a single, ultra-high-resolution cinematic photograph by\nisolating a specific frame from the provided 3x3 storyboard grid and rendering\nit with absolute visual fidelity.\nInstructions:\n1. Frame Selection & Composition: Isolate exactly the composition,\ncamera angle, and framing corresponding to the user-specified panel\ncode: [INSERT PANEL CODE HERE, e.g., A2] from the provided 3x3\nstoryboard grid.\n2. Visual Consistency Enforcement: The final rendered image must\nmaintain perfect consistency with both reference images provided:\n- Character Reference Image (Physical Attributes Only): Use this\nONLY to maintain the exact character model, facial features, body\nproportions, costume design, accessories, hair style, and any\nspecific physical details of the character.\n- Scene Grid Reference (Lighting & Atmosphere): Use the scene\ngrid image to accurately capture and reproduce the environment,\nlighting conditions, atmospheric mood, color palette, time of day,\nweather effects, and overall visual tone of the specific scene\nbeing depicted.\n3. Lighting & Atmosphere Priority: The lighting direction, quality\n(soft/hard), color temperature, contrast ratio, shadows, and atmospheric\neffects must be taken exclusively from the scene grid panel being\nisolated, NOT from the character reference image. The character\nreference serves only to ensure physical consistency of the subject.\n4. Final Output Quality: Generate a single, standalone image in ultra-high\nresolution (4K cinematic standard). Ensure the final render is photo\nrealistic and removes any panel labels (e.g., \"A1\") or grid lines from the\nsource storyboard.",
+        "occurrences": [
+          {
+            "raw": "Act as a professional Digital Imaging Technician and Cinematographer. Your\ntask is to generate a single, ultra-high-resolution cinematic photograph by\nisolating a specific frame from the provided 3x3 storyboard grid and rendering\nit with absolute visual fidelity.\nInstructions:\n1. Frame Selection & Composition: Isolate exactly the composition,\ncamera angle, and framing corresponding to the user-specified panel\ncode: [INSERT PANEL CODE HERE, e.g., A2] from the provided 3x3\nstoryboard grid.\n2. Visual Consistency Enforcement: The final rendered image must\nmaintain perfect consistency with both reference images provided:\n- Character Reference Image (Physical Attributes Only): Use this\nONLY to maintain the exact character model, facial features, body\nproportions, costume design, accessories, hair style, and any\nspecific physical details of the character.\n- Scene Grid Reference (Lighting & Atmosphere): Use the scene\ngrid image to accurately capture and reproduce the environment,\nlighting conditions, atmospheric mood, color palette, time of day,\nweather effects, and overall visual tone of the specific scene\nbeing depicted.\n3. Lighting & Atmosphere Priority: The lighting direction, quality\n(soft/hard), color temperature, contrast ratio, shadows, and atmospheric\neffects must be taken exclusively from the scene grid panel being\nisolated, NOT from the character reference image. The character\nreference serves only to ensure physical consistency of the subject.\n4. Final Output Quality: Generate a single, standalone image in ultra-high\nresolution (4K cinematic standard). Ensure the final render is photo\nrealistic and removes any panel labels (e.g., \"A1\") or grid lines from the\nsource storyboard.",
+            "kind": "template-literal",
+            "line": 632,
+            "column": 16,
+            "functionName": null,
+            "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+            "owners": [
+              "cccp"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "c_puppet",
+        "id": "cccp-c_puppet",
+        "literalId": "text-c22e7d1bfc5b69cf8628",
+        "originalPrompt": "Act as a professional Digital Imaging Technician and Cinematographer. Your task is to generate a single, ultra-high-resolution cinematic photograph by isolating a specific frame from the provided 3x3 storyboard grid and rendering it with absolute visual fidelity, framing, posing. lighting and render.\n\nInstructions: 1. Frame Selection & Composition: Isolate exactly the composition, camera angle, and framing corresponding to the user-specified panel code: [PANEL_CODE] from the provided 3x3 storyboard grid.\n2. Visual Consistency Enforcement: The final rendered image must maintain perfect consistency with both reference images provided: Character Reference Image (Physical Attributes Only): Use this ONLY to maintain the exact character model, facial features, body proportions, costume design, accessories, hair style, and any specific physical details of the character. Scene Grid Reference (Lighting & Atmosphere): Use the scene grid image to accurately capture and reproduce the environment, lighting conditions, atmospheric mood, color palette, time of day, weather effects, and overall visual tone of the specific scene being depicted.\n3. Lighting & Atmosphere Priority: The lighting direction, quality (soft/hard), color temperature, contrast ratio, shadows, and atmospheric effects must be taken exclusively from the scene grid panel being isolated, NOT from the character reference image. The character reference serves only to ensure physical consistency of the subject.\n4. Final Output Quality: Generate a single, standalone image in ultra-high resolution (4K cinematic standard). Ensure the final render is photo realistic and removes any panel labels (e.g., \"A1\") or grid lines from the source storyboard.\n\nImportant: This are references for a practical puppet/figurine characters. Photograph this exact figurine - with its exact proportions, head size, limb thickness, body shape — as-is in a real location. Do not apply realistic human anatomy. This is NOT a human, it is a sculpted character with intentional non-realistic proportions.\nMANDATORY: RESPECT the Framing. No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+        "prompt": "Act as a professional Digital Imaging Technician and Cinematographer. Your task is to generate a single, ultra-high-resolution cinematic photograph by isolating a specific frame from the provided 3x3 storyboard grid and rendering it with absolute visual fidelity, framing, posing, lighting and render.\n\nInstructions: 1. Frame Selection & Composition: Isolate exactly the composition, camera angle, and framing corresponding to the user-specified panel code: [PANEL_CODE] from the provided 3x3 storyboard grid.\n2. Visual Consistency Enforcement: The final rendered image must maintain perfect consistency with both reference images provided: Character Reference Image (Physical Attributes Only): Use this ONLY to maintain the exact character model, facial features, body proportions, costume design, accessories, hair style, and any specific physical details of the character. Scene Grid Reference (Lighting & Atmosphere): Use the scene grid image to accurately capture and reproduce the environment, lighting conditions, atmospheric mood, color palette, time of day, weather effects, and overall visual tone of the specific scene being depicted.\n3. Lighting & Atmosphere Priority: The lighting direction, quality (soft/hard), color temperature, contrast ratio, shadows, and atmospheric effects must be taken exclusively from the scene grid panel being isolated, NOT from the character reference image. The character reference serves only to ensure physical consistency of the subject.\n4. Final Output Quality: Generate a single, standalone image in ultra-high resolution (4K cinematic standard). Ensure the final render is photo realistic and removes any panel labels (e.g., \"A1\") or grid lines from the source storyboard.\n\nImportant: These are references for a practical puppet/figurine character. Photograph this exact figurine - with its exact proportions, head size, limb thickness, body shape — as-is in a real location. Do not apply realistic human anatomy. This is NOT a human, it is a sculpted character with intentional non-realistic proportions.\nMANDATORY: RESPECT the Framing. No text on the image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+        "occurrences": [
+          {
+            "raw": "Act as a professional Digital Imaging Technician and Cinematographer. Your task is to generate a single, ultra-high-resolution cinematic photograph by isolating a specific frame from the provided 3x3 storyboard grid and rendering it with absolute visual fidelity, framing, posing. lighting and render.\n\nInstructions: 1. Frame Selection & Composition: Isolate exactly the composition, camera angle, and framing corresponding to the user-specified panel code: [PANEL_CODE] from the provided 3x3 storyboard grid.\n2. Visual Consistency Enforcement: The final rendered image must maintain perfect consistency with both reference images provided: Character Reference Image (Physical Attributes Only): Use this ONLY to maintain the exact character model, facial features, body proportions, costume design, accessories, hair style, and any specific physical details of the character. Scene Grid Reference (Lighting & Atmosphere): Use the scene grid image to accurately capture and reproduce the environment, lighting conditions, atmospheric mood, color palette, time of day, weather effects, and overall visual tone of the specific scene being depicted.\n3. Lighting & Atmosphere Priority: The lighting direction, quality (soft/hard), color temperature, contrast ratio, shadows, and atmospheric effects must be taken exclusively from the scene grid panel being isolated, NOT from the character reference image. The character reference serves only to ensure physical consistency of the subject.\n4. Final Output Quality: Generate a single, standalone image in ultra-high resolution (4K cinematic standard). Ensure the final render is photo realistic and removes any panel labels (e.g., \"A1\") or grid lines from the source storyboard.\n\nImportant: This are references for a practical puppet/figurine characters. Photograph this exact figurine - with its exact proportions, head size, limb thickness, body shape — as-is in a real location. Do not apply realistic human anatomy. This is NOT a human, it is a sculpted character with intentional non-realistic proportions.\nMANDATORY: RESPECT the Framing. No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+            "kind": "template-literal",
+            "line": 662,
+            "column": 23,
+            "functionName": null,
+            "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+            "owners": [
+              "cccp"
+            ]
+          }
+        ]
+      }
+    ],
+    "modes": [
+      {
+        "id": "cccp-a2-puppet",
+        "stage": "a2",
+        "mode": "puppet",
+        "originalPrompt": "MODE: Puppet / figurine character. IMG_1 is a reference for a practical puppet/figurine character. Photograph this exact figurine - with its exact proportions, head size, limb thickness, body shape — as-is in a reallocation. Do not apply realistic human anatomy. This is NOT a human, it is a sculpted character with intentionalnon-realistic proportions",
+        "prompt": "MODE: Puppet / figurine character. IMG_1 is a reference for a practical puppet/figurine character. Photograph this exact figurine - with its exact proportions, head size, limb thickness, body shape — as-is in a real location. Do not apply realistic human anatomy. This is NOT a human, it is a sculpted character with intentional non-realistic proportions",
+        "literalIds": [
+          "text-d41eb5e8adea6370be2a",
+          "text-7f13671784a03f29059c"
+        ],
+        "occurrences": [
+          {
+            "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+            "line": 691,
+            "column": 21,
+            "kind": "template-literal",
+            "functionName": null,
+            "owners": [
+              "cccp"
+            ]
+          },
+          {
+            "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+            "line": 688,
+            "column": 44,
+            "kind": "template-literal",
+            "functionName": null,
+            "owners": [
+              "cccp"
+            ]
+          }
+        ]
+      },
+      {
+        "stage": "a2",
+        "mode": "human",
+        "id": "cccp-a2-human",
+        "literalId": "text-842aa97f3e3c929b567b",
+        "originalPrompt": "MODE: Human character. Preserve identity, face, body proportions, costume and styling from the reference while keeping realistic human anatomy and clean professional reference-sheet anatomy.",
+        "prompt": "MODE: Human character. Preserve identity, face, body proportions, costume and styling from the reference while keeping realistic human anatomy and clean professional reference-sheet anatomy.",
+        "occurrences": [
+          {
+            "raw": "MODE: Human character. Preserve identity, face, body proportions, costume and styling from the reference while keeping realistic human anatomy and clean professional reference-sheet anatomy.",
+            "kind": "template-literal",
+            "line": 692,
+            "column": 20,
+            "functionName": null,
+            "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+            "owners": [
+              "cccp"
+            ]
+          }
+        ]
+      },
+      {
+        "stage": "b",
+        "mode": "puppet",
+        "id": "cccp-b-puppet",
+        "literalId": "text-efa74016ac16842a0dad",
+        "originalPrompt": "MODE: Puppet / figurine character. Preserve the exact non-human proportions, head size, limb thickness, body shape, material feel, and stylized construction of the reference. Do not normalize the body toward human anatomy.",
+        "prompt": "MODE: Puppet / figurine character. Preserve the exact non-human proportions, head size, limb thickness, body shape, material feel, and stylized construction of the reference. Do not normalize the body toward human anatomy.",
+        "occurrences": [
+          {
+            "raw": "MODE: Puppet / figurine character. Preserve the exact non-human proportions, head size, limb thickness, body shape, material feel, and stylized construction of the reference. Do not normalize the body toward human anatomy.",
+            "kind": "template-literal",
+            "line": 696,
+            "column": 21,
+            "functionName": null,
+            "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+            "owners": [
+              "cccp"
+            ]
+          }
+        ]
+      },
+      {
+        "stage": "b",
+        "mode": "human",
+        "id": "cccp-b-human",
+        "literalId": "text-5f4d66a759c56b2c01b2",
+        "originalPrompt": "MODE: Human character. Preserve identity, face, body proportions, costume and styling from the reference while keeping realistic human anatomy and cinematic body mechanics.",
+        "prompt": "MODE: Human character. Preserve identity, face, body proportions, costume and styling from the reference while keeping realistic human anatomy and cinematic body mechanics.",
+        "occurrences": [
+          {
+            "raw": "MODE: Human character. Preserve identity, face, body proportions, costume and styling from the reference while keeping realistic human anatomy and cinematic body mechanics.",
+            "kind": "template-literal",
+            "line": 697,
+            "column": 20,
+            "functionName": null,
+            "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+            "owners": [
+              "cccp"
+            ]
+          }
+        ]
+      }
+    ],
+    "variations": [
+      {
+        "index": 0,
+        "id": "cccp-variation-0",
+        "literalId": "text-6945b44edd25f724ba04",
+        "originalPrompt": "fresh coverage: change the camera angles, shot sizes and staging from any previous version while keeping the same scene, character and story beats",
+        "prompt": "fresh coverage: change the camera angles, shot sizes and staging from any previous version while keeping the same scene, character and story beats",
+        "occurrences": [
+          {
+            "raw": "fresh coverage: change the camera angles, shot sizes and staging from any previous version while keeping the same scene, character and story beats",
+            "kind": "string-literal",
+            "line": 682,
+            "column": 13,
+            "functionName": null,
+            "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+            "owners": [
+              "cccp"
+            ]
+          }
+        ]
+      },
+      {
+        "index": 1,
+        "id": "cccp-variation-1",
+        "literalId": "text-2b550c4a7a7461502d0c",
+        "originalPrompt": "alternate pacing: re-order the dramatic beats and vary the rhythm (more close-ups, punch-ins and reaction frames) for a distinctly different edit",
+        "prompt": "alternate pacing: re-order the dramatic beats and vary the rhythm (more close-ups, punch-ins and reaction frames) for a distinctly different edit",
+        "occurrences": [
+          {
+            "raw": "alternate pacing: re-order the dramatic beats and vary the rhythm (more close-ups, punch-ins and reaction frames) for a distinctly different edit",
+            "kind": "string-literal",
+            "line": 683,
+            "column": 13,
+            "functionName": null,
+            "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+            "owners": [
+              "cccp"
+            ]
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "id": "cccp-variation-2",
+        "literalId": "text-0754dc4507a6b6201a2b",
+        "originalPrompt": "new lensing: shift focal lengths, camera height and movement (low angles, dutch tilts, tracking) to reinterpret the same action",
+        "prompt": "new lensing: shift focal lengths, camera height and movement (low angles, dutch tilts, tracking) to reinterpret the same action",
+        "occurrences": [
+          {
+            "raw": "new lensing: shift focal lengths, camera height and movement (low angles, dutch tilts, tracking) to reinterpret the same action",
+            "kind": "string-literal",
+            "line": 684,
+            "column": 13,
+            "functionName": null,
+            "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+            "owners": [
+              "cccp"
+            ]
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "id": "cccp-variation-3",
+        "literalId": "text-4b8d3e32066cbe1f3e0d",
+        "originalPrompt": "different energy: push the mood and lighting in a new direction (harder contrast, new key light direction) while preserving identity and continuity",
+        "prompt": "different energy: push the mood and lighting in a new direction (harder contrast, new key light direction) while preserving identity and continuity",
+        "occurrences": [
+          {
+            "raw": "different energy: push the mood and lighting in a new direction (harder contrast, new key light direction) while preserving identity and continuity",
+            "kind": "string-literal",
+            "line": 685,
+            "column": 13,
+            "functionName": null,
+            "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+            "owners": [
+              "cccp"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "metadataCorrections": [
+    {
+      "id": "text-60f14ec271cbd1eba422",
+      "before": "Consistent Character Processus",
+      "after": "Consistent Character Process",
+      "reason": "Processus est français ; Process est le nom anglais."
+    },
+    {
+      "id": "text-05d970572dcc735756d9",
+      "before": "CCP - Consistent Character Processus",
+      "after": "CCP - Consistent Character Process",
+      "reason": "Même correction du sous-titre dans le titre de page."
+    }
+  ],
+  "approvedComposition": {
+    "outputSuffix": "OUTPUT GRID: Generate exactly {{total}} panels in a {{grid}} grid. Label panels row by row from left to right, in this order: {{codes}}. Only these panel labels may appear.",
+    "coverageInstruction": "Shot coverage palette (not a panel count or a fixed layout):\nSelect and adapt the following framing ideas to fill exactly {{total}} distinct panels. For fewer panels, choose a balanced subset; for more panels, vary these framings. Preserve character identity in every panel.",
+    "a1": "3x3 retains the nine numbered source shots. Other grids remove row headings and panel prefixes from that list, retaining all nine framing bodies as an explicitly unnumbered palette. Adapt count, rows/columns and label range; append exact row-major codes.",
+    "a2": "Always seven views (four full-body plus three portraits), independent of grid. Append only its selected mode. Puppet mode inherits the corrected source fragment.",
+    "b": "Remove the reference-only parenthesis (3x3 Grid 1) before adapting the OUTPUT dimensions. Append output suffix, mode, USER SCENE INPUT, intact user scene, then optional iteration. Reference sheet dimensions are never inferred from output dimensions.",
+    "c": "Substitute selected SOURCE grid and valid panel in the selected human/puppet body. Never append any output-grid suffix. One standalone image, no labels.",
+    "userText": "Adapt built-in templates before inserting user text. Render user values literally. Custom final prompts stay unchanged until explicit recompile."
+  },
+  "approvedExpectedOutputs": {
+    "defaultOutputs": {
+      "a1": "Act as a professional Storyboard Artist. Generate a high-quality 3x3 grid contact sheet,\ncomposed of 9 distinct cinematic frames. This grid must be based precisely on the character\nand overall visual style of the provided reference image.\nCharacter Consistency – Top Priority:\n- The character in every single panel must look exactly like the character in the\nreference image. All physical features, outfit, and appearance must remain identical\nacross all 9 panels.\n- Do not alter, reinterpret, or stylize the character in any way. The reference image is\nthe absolute ground truth.\n- Every panel must show the character from a different angle or framing – the goal is to\nbuild a complete 360-degree visual understanding of the character.\nTechnical Specifications & Labeling:\n- The output must be a single image containing a 3-row by 3-column grid.\n- Each individual panel must be clearly labeled with a technical alphanumeric identifier\nin its top-left corner, ranging from A1 to C3.\n- The only variables between panels are the camera angle, framing, and shot size.\nEverything else stays consistent.\nThe 9-panel Shot List:\nRow A (Establishing Spatial Context):\n- Panel A1: Extreme Wide Shot (EWS), High-Angle Bird's Eye View.\n- Panel A2: Full Shot (FS), Eye-Level Neutral. Full body, head to toe.\n- Panel A3: Wide Shot (WS), Dramatic Low-Angle (Worm's Eye).\nRow B (Character & Dynamics):\n- Panel B1: Medium Shot (MS), Dutch Angle (Canted Frame). Waist up.\n- Panel B2: Medium Close-Up (MCU), Eye-Level Portrait. Head and torso.\n- Panel B3: Three-Quarter Back Shot. Character viewed from behind and slightly to\none side.\nRow C (Intimacy & Detail):\n- Panel C1: Close-Up (CU), Low-Angle \"Hero\" framing. Head from slightly below.\n- Panel C2: High-Angle Medium Shot. Looking down onto the character from above\neye-level.\n- Panel C3: Extreme Close-Up (ECU) Detail Insert. A macro focus on a key detail of\nthe outfit, filling the frame.\n\nOUTPUT GRID: Generate exactly 9 panels in a 3x3 grid. Label panels row by row from left to right, in this order: A1, A2, A3, B1, B2, B3, C1, C2, C3. Only these panel labels may appear.",
+      "a2": "Create a professional character reference sheet. Match the EXACT visual style of the reference (realism level, rendering, texture, color treatment, aesthetic).\nIDENTITY LOCK - CRITICAL:\nThis is the SAME CHARACTER across ALL 7 panels. NOT different people.\n- CLONE exact face: bone structure, features, skin, wrinkles, moles\n- CLONE exact body: height, build, proportions\n- CLONE exact hair: color, style, length, texture, hairline\n- CLONE exact costume: every garment, accessory, detail, wear marks\n- Age and ethnicity MUST match source exactly\nLAYOUT - TWO ROWS:\nTOP ROW - 4 FULL-BODY VIEWS (horizontal):\n| FRONT | LEFT PROFILE | RIGHT PROFILE | BACK |\n- FRONT: Facing camera, relaxed A-pose, arms 30-45° from body\n- LEFT PROFILE: Perfect 90° facing left, same A-pose\n- RIGHT PROFILE: Perfect 90° facing right, same A-pose\n- BACK: Facing away, same A-pose\nBOTTOM ROW - 3 PORTRAIT CLOSE-UPS (centered below):\n| FRONT PORTRAIT | LEFT PORTRAIT | RIGHT PORTRAIT |\n- FRONT PORTRAIT: Head and shoulders, facing camera, neutral expression\n- LEFT PORTRAIT: Head and shoulders, 90° profile facing left\n- RIGHT PORTRAIT: Head and shoulders, 90° profile facing right\nALIGNMENT REQUIREMENTS:\n- Full-body views: heads at identical height, same scale\n- Portraits: faces at identical scale, same crop level\n- Portraits centered beneath full-body row\n- Even spacing between all panels\n- Clean panel separation with thin lines\nTECHNICAL:\n- Neutral plain background (light grey #d5d5d5)\n- Consistent lighting across ALL panels (same direction, intensity, softness)\n- Natural controlled shadows — detail preservation, no dramatic mood\n- Sharp details, crisp edges, print-ready quality\n- Accurate anatomy, clear silhouettes\n- NO TEXT, NO LABELS\nSAME CHARACTER in all 7 panels - perfect identity consistency.\n\nMODE: Puppet / figurine character. IMG_1 is a reference for a practical puppet/figurine character. Photograph this exact figurine - with its exact proportions, head size, limb thickness, body shape — as-is in a real location. Do not apply realistic human anatomy. This is NOT a human, it is a sculpted character with intentional non-realistic proportions",
+      "b": "Act as a Lead Storyboard Artist and Cinematographer for a high-budget film\nproduction. Your task is to generate a comprehensive 9-panel (3x3 grid)\nstoryboard sequence that visually narrates a dynamic action scene.\nCRITICAL CONSTRAINTS & EXECUTION STANDARDS:\nAI SCENE ELABORATION: Based on the concise \"USER SCENE INPUT\"\nprovided below, you are to autonomously elaborate and craft a detailed, vivid,\nand cinematic scene description. This description must define the specific\nenvironment, time of day, weather, lighting, and atmospheric effects necessary\nfor a high-octane film sequence.\nVIDEO-READY REALISM & DETAIL: The output must consist of photo realistic,\nultra-high-detail cinematic still frames. Focus on lifelike textures, professional\nlighting, motion blur (where appropriate), and cinematic depth of field. This\ngrid serves as a direct visual blueprint for AI video generation.\nPANEL LABELING: Each individual panel within the 3x3 grid must be clearly\nlabeled with a technical alphanumeric identifier in its top-left corner, ranging\nfrom A1 to C3.\nSUBJECT REFERENCE (Universal Consistency):\nPrimary ID: Use the Main Hero Image to define the core identity, facial features,\nand the primary high-end cinematic aesthetic.\nTechnical ID: Use the Character Shot Sheet as a definitive spatial\nreference to maintain absolute visual fidelity from every camera angle.\nMeticulously replicate all unique identifiers, costume components, material\nproperties, and structural details exactly as they appear in the reference\nimages. Every visual trait of the subject must be mapped directly from the\nsources to ensure 1:1 consistency across all 9 panels.\nCINEMATIC VARIETY: Ensure a professional flow of shots. Mix Wide Shots\n(WS) for scale, Medium Shots (MS) for action, Close-Ups (CU) for focus, and\ndynamic angles (POV, Low Angle, or Dutch Angle) for intensity. The 9 frames\nmust tell a clear, sequential visual story.\n\nOUTPUT GRID: Generate exactly 9 panels in a 3x3 grid. Label panels row by row from left to right, in this order: A1, A2, A3, B1, B2, B3, C1, C2, C3. Only these panel labels may appear.\n\nMODE: Puppet / figurine character. Preserve the exact non-human proportions, head size, limb thickness, body shape, material feel, and stylized construction of the reference. Do not normalize the body toward human anatomy.\n\nUSER SCENE INPUT:\n",
+      "c": "Act as a professional Digital Imaging Technician and Cinematographer. Your task is to generate a single, ultra-high-resolution cinematic photograph by isolating a specific frame from the provided 3x3 storyboard grid and rendering it with absolute visual fidelity, framing, posing, lighting and render.\n\nInstructions: 1. Frame Selection & Composition: Isolate exactly the composition, camera angle, and framing corresponding to the user-specified panel code: A1 from the provided 3x3 storyboard grid.\n2. Visual Consistency Enforcement: The final rendered image must maintain perfect consistency with both reference images provided: Character Reference Image (Physical Attributes Only): Use this ONLY to maintain the exact character model, facial features, body proportions, costume design, accessories, hair style, and any specific physical details of the character. Scene Grid Reference (Lighting & Atmosphere): Use the scene grid image to accurately capture and reproduce the environment, lighting conditions, atmospheric mood, color palette, time of day, weather effects, and overall visual tone of the specific scene being depicted.\n3. Lighting & Atmosphere Priority: The lighting direction, quality (soft/hard), color temperature, contrast ratio, shadows, and atmospheric effects must be taken exclusively from the scene grid panel being isolated, NOT from the character reference image. The character reference serves only to ensure physical consistency of the subject.\n4. Final Output Quality: Generate a single, standalone image in ultra-high resolution (4K cinematic standard). Ensure the final render is photo realistic and removes any panel labels (e.g., \"A1\") or grid lines from the source storyboard.\n\nImportant: These are references for a practical puppet/figurine character. Photograph this exact figurine - with its exact proportions, head size, limb thickness, body shape — as-is in a real location. Do not apply realistic human anatomy. This is NOT a human, it is a sculpted character with intentional non-realistic proportions.\nMANDATORY: RESPECT the Framing. No text on the image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only."
+    },
+    "configuredOutputs": {
+      "a1": "Act as a professional Storyboard Artist. Generate a high-quality 4x2 grid contact sheet,\ncomposed of 8 distinct cinematic frames. This grid must be based precisely on the character\nand overall visual style of the provided reference image.\nCharacter Consistency – Top Priority:\n- The character in every single panel must look exactly like the character in the\nreference image. All physical features, outfit, and appearance must remain identical\nacross all 8 panels.\n- Do not alter, reinterpret, or stylize the character in any way. The reference image is\nthe absolute ground truth.\n- Every panel must show the character from a different angle or framing – the goal is to\nbuild a complete 360-degree visual understanding of the character.\nTechnical Specifications & Labeling:\n- The output must be a single image containing a 2-row by 4-column grid.\n- Each individual panel must be clearly labeled with a technical alphanumeric identifier\nin its top-left corner, ranging from A1 to B4.\n- The only variables between panels are the camera angle, framing, and shot size.\nEverything else stays consistent.\nShot coverage palette (not a panel count or a fixed layout):\nSelect and adapt the following framing ideas to fill exactly 8 distinct panels. For fewer panels, choose a balanced subset; for more panels, vary these framings. Preserve character identity in every panel.\n- Extreme Wide Shot (EWS), High-Angle Bird's Eye View.\n- Full Shot (FS), Eye-Level Neutral. Full body, head to toe.\n- Wide Shot (WS), Dramatic Low-Angle (Worm's Eye).\n- Medium Shot (MS), Dutch Angle (Canted Frame). Waist up.\n- Medium Close-Up (MCU), Eye-Level Portrait. Head and torso.\n- Three-Quarter Back Shot. Character viewed from behind and slightly to\none side.\n- Close-Up (CU), Low-Angle \"Hero\" framing. Head from slightly below.\n- High-Angle Medium Shot. Looking down onto the character from above\neye-level.\n- Extreme Close-Up (ECU) Detail Insert. A macro focus on a key detail of\nthe outfit, filling the frame.\n\nOUTPUT GRID: Generate exactly 8 panels in a 4x2 grid. Label panels row by row from left to right, in this order: A1, A2, A3, A4, B1, B2, B3, B4. Only these panel labels may appear.",
+      "a2": "Create a professional character reference sheet. Match the EXACT visual style of the reference (realism level, rendering, texture, color treatment, aesthetic).\nIDENTITY LOCK - CRITICAL:\nThis is the SAME CHARACTER across ALL 7 panels. NOT different people.\n- CLONE exact face: bone structure, features, skin, wrinkles, moles\n- CLONE exact body: height, build, proportions\n- CLONE exact hair: color, style, length, texture, hairline\n- CLONE exact costume: every garment, accessory, detail, wear marks\n- Age and ethnicity MUST match source exactly\nLAYOUT - TWO ROWS:\nTOP ROW - 4 FULL-BODY VIEWS (horizontal):\n| FRONT | LEFT PROFILE | RIGHT PROFILE | BACK |\n- FRONT: Facing camera, relaxed A-pose, arms 30-45° from body\n- LEFT PROFILE: Perfect 90° facing left, same A-pose\n- RIGHT PROFILE: Perfect 90° facing right, same A-pose\n- BACK: Facing away, same A-pose\nBOTTOM ROW - 3 PORTRAIT CLOSE-UPS (centered below):\n| FRONT PORTRAIT | LEFT PORTRAIT | RIGHT PORTRAIT |\n- FRONT PORTRAIT: Head and shoulders, facing camera, neutral expression\n- LEFT PORTRAIT: Head and shoulders, 90° profile facing left\n- RIGHT PORTRAIT: Head and shoulders, 90° profile facing right\nALIGNMENT REQUIREMENTS:\n- Full-body views: heads at identical height, same scale\n- Portraits: faces at identical scale, same crop level\n- Portraits centered beneath full-body row\n- Even spacing between all panels\n- Clean panel separation with thin lines\nTECHNICAL:\n- Neutral plain background (light grey #d5d5d5)\n- Consistent lighting across ALL panels (same direction, intensity, softness)\n- Natural controlled shadows — detail preservation, no dramatic mood\n- Sharp details, crisp edges, print-ready quality\n- Accurate anatomy, clear silhouettes\n- NO TEXT, NO LABELS\nSAME CHARACTER in all 7 panels - perfect identity consistency.\n\nMODE: Human character. Preserve identity, face, body proportions, costume and styling from the reference while keeping realistic human anatomy and clean professional reference-sheet anatomy.",
+      "b": "Act as a Lead Storyboard Artist and Cinematographer for a high-budget film\nproduction. Your task is to generate a comprehensive 8-panel (4x2 grid)\nstoryboard sequence that visually narrates a dynamic action scene.\nCRITICAL CONSTRAINTS & EXECUTION STANDARDS:\nAI SCENE ELABORATION: Based on the concise \"USER SCENE INPUT\"\nprovided below, you are to autonomously elaborate and craft a detailed, vivid,\nand cinematic scene description. This description must define the specific\nenvironment, time of day, weather, lighting, and atmospheric effects necessary\nfor a high-octane film sequence.\nVIDEO-READY REALISM & DETAIL: The output must consist of photo realistic,\nultra-high-detail cinematic still frames. Focus on lifelike textures, professional\nlighting, motion blur (where appropriate), and cinematic depth of field. This\ngrid serves as a direct visual blueprint for AI video generation.\nPANEL LABELING: Each individual panel within the 4x2 grid must be clearly\nlabeled with a technical alphanumeric identifier in its top-left corner, ranging\nfrom A1 to B4.\nSUBJECT REFERENCE (Universal Consistency):\nPrimary ID: Use the Main Hero Image to define the core identity, facial features,\nand the primary high-end cinematic aesthetic.\nTechnical ID: Use the Character Shot Sheet as a definitive spatial\nreference to maintain absolute visual fidelity from every camera angle.\nMeticulously replicate all unique identifiers, costume components, material\nproperties, and structural details exactly as they appear in the reference\nimages. Every visual trait of the subject must be mapped directly from the\nsources to ensure 1:1 consistency across all 8 panels.\nCINEMATIC VARIETY: Ensure a professional flow of shots. Mix Wide Shots\n(WS) for scale, Medium Shots (MS) for action, Close-Ups (CU) for focus, and\ndynamic angles (POV, Low Angle, or Dutch Angle) for intensity. The 8 frames\nmust tell a clear, sequential visual story.\n\nOUTPUT GRID: Generate exactly 8 panels in a 4x2 grid. Label panels row by row from left to right, in this order: A1, A2, A3, A4, B1, B2, B3, B4. Only these panel labels may appear.\n\nMODE: Human character. Preserve identity, face, body proportions, costume and styling from the reference while keeping realistic human anatomy and cinematic body mechanics.\n\nUSER SCENE INPUT:\nA courier crosses a flooded archive while the ceiling collapses.\n\nITERATION - Take 3: Generate a NEW variation of this 8-panel storyboard. alternate pacing: re-order the dramatic beats and vary the rhythm (more close-ups, punch-ins and reaction frames) for a distinctly different edit. Do not reproduce the previous layout; deliver a genuinely different take on the same scene.",
+      "c": "Act as a professional Digital Imaging Technician and Cinematographer. Your\ntask is to generate a single, ultra-high-resolution cinematic photograph by\nisolating a specific frame from the provided 4x2 storyboard grid and rendering\nit with absolute visual fidelity.\nInstructions:\n1. Frame Selection & Composition: Isolate exactly the composition,\ncamera angle, and framing corresponding to the user-specified panel\ncode: B2 from the provided 4x2\nstoryboard grid.\n2. Visual Consistency Enforcement: The final rendered image must\nmaintain perfect consistency with both reference images provided:\n- Character Reference Image (Physical Attributes Only): Use this\nONLY to maintain the exact character model, facial features, body\nproportions, costume design, accessories, hair style, and any\nspecific physical details of the character.\n- Scene Grid Reference (Lighting & Atmosphere): Use the scene\ngrid image to accurately capture and reproduce the environment,\nlighting conditions, atmospheric mood, color palette, time of day,\nweather effects, and overall visual tone of the specific scene\nbeing depicted.\n3. Lighting & Atmosphere Priority: The lighting direction, quality\n(soft/hard), color temperature, contrast ratio, shadows, and atmospheric\neffects must be taken exclusively from the scene grid panel being\nisolated, NOT from the character reference image. The character\nreference serves only to ensure physical consistency of the subject.\n4. Final Output Quality: Generate a single, standalone image in ultra-high\nresolution (4K cinematic standard). Ensure the final render is photo\nrealistic and removes any panel labels (e.g., \"A1\") or grid lines from the\nsource storyboard."
+    },
+    "gridCases": [
+      {
+        "grid": {
+          "cols": 2,
+          "rows": 2
+        },
+        "panelCodes": [
+          "A1",
+          "A2",
+          "B1",
+          "B2"
+        ],
+        "outputDigests": {
+          "a1": "59eed9c374811f046b3be59dd6fe89a510ae9bc7ec2d14ac249e70043fa9aa59",
+          "a2": "e3063e41a194ab862509b28227bd4f003f915be9f10ec199bd6b775f86d049a7",
+          "b": "9f82f77f171329e79c117e1e5d3e1857f6edc59e2280b2bdfdb10658ee10b04c",
+          "c": "eb5591c53658097655f4109a49329f391cf4845e5f2a020a54c9f4062bed8c76"
+        }
+      },
+      {
+        "grid": {
+          "cols": 3,
+          "rows": 2
+        },
+        "panelCodes": [
+          "A1",
+          "A2",
+          "A3",
+          "B1",
+          "B2",
+          "B3"
+        ],
+        "outputDigests": {
+          "a1": "3a506d106d179a0aafe6631cf77f6bfece0a81de591621feeee2e4b5786124f5",
+          "a2": "e3063e41a194ab862509b28227bd4f003f915be9f10ec199bd6b775f86d049a7",
+          "b": "67b3bbd51c0ed29c487fc016f01353596c2e58399120e52a5a03233a5f42bea3",
+          "c": "1f90630c9bb9a715702e1fa90c2457ad1411b86d109203d5093805c7981b4985"
+        }
+      },
+      {
+        "grid": {
+          "cols": 4,
+          "rows": 2
+        },
+        "panelCodes": [
+          "A1",
+          "A2",
+          "A3",
+          "A4",
+          "B1",
+          "B2",
+          "B3",
+          "B4"
+        ],
+        "outputDigests": {
+          "a1": "7f6ec38871f6f11a85b0d76f0e2bf2f80b0c9decf08a6552cb9db037cb049dc8",
+          "a2": "e3063e41a194ab862509b28227bd4f003f915be9f10ec199bd6b775f86d049a7",
+          "b": "7f95847401fa67fce896e576fdf2fbacb2d6267bcefb9dd6b6d5ec10e2054bfb",
+          "c": "d5fa2732759fcdb7a37a09f140941b3bd9f363241098bb4818022974c5bee5b0"
+        }
+      },
+      {
+        "grid": {
+          "cols": 2,
+          "rows": 3
+        },
+        "panelCodes": [
+          "A1",
+          "A2",
+          "B1",
+          "B2",
+          "C1",
+          "C2"
+        ],
+        "outputDigests": {
+          "a1": "652be7a8643a55b874bdee31191de70eaaf6dc7e6ab8d91c4b6f2668796331f0",
+          "a2": "e3063e41a194ab862509b28227bd4f003f915be9f10ec199bd6b775f86d049a7",
+          "b": "24464604532897767e41f1d774f79ba33eeb2d8ce12b657532dfaf9c57fd35d7",
+          "c": "6c58d4cc1c4cac423cdac4b083e1e9d43202bfa7a0142dac9455b426c1e47dc7"
+        }
+      },
+      {
+        "grid": {
+          "cols": 3,
+          "rows": 3
+        },
+        "panelCodes": [
+          "A1",
+          "A2",
+          "A3",
+          "B1",
+          "B2",
+          "B3",
+          "C1",
+          "C2",
+          "C3"
+        ],
+        "outputDigests": {
+          "a1": "7ec8d2f7ed395caf82ef96565307189ce014c2c4b2e677f61cef38b0b6fb425b",
+          "a2": "e3063e41a194ab862509b28227bd4f003f915be9f10ec199bd6b775f86d049a7",
+          "b": "9d586fa36b4402d8988890cbf1142a5b3df5b9aab28c760b97d69fb9aa9ff943",
+          "c": "e1c8f37898e8309e0c766681405efab54520c67093b8f298758921f40e593eca"
+        }
+      },
+      {
+        "grid": {
+          "cols": 4,
+          "rows": 3
+        },
+        "panelCodes": [
+          "A1",
+          "A2",
+          "A3",
+          "A4",
+          "B1",
+          "B2",
+          "B3",
+          "B4",
+          "C1",
+          "C2",
+          "C3",
+          "C4"
+        ],
+        "outputDigests": {
+          "a1": "9c722af93ccbe263c0e3bc380fb1f9555a3d8a6d2c57dafce96bb4dba8d57a34",
+          "a2": "e3063e41a194ab862509b28227bd4f003f915be9f10ec199bd6b775f86d049a7",
+          "b": "086455a57916422b7a3dd1bbdc8959c2af00ac3238f600ccb0814e1ae9c9b64b",
+          "c": "d0413961dad778db9cad8f240b14d52641bee871a08439105b8d97579d9df29b"
+        }
+      },
+      {
+        "grid": {
+          "cols": 2,
+          "rows": 4
+        },
+        "panelCodes": [
+          "A1",
+          "A2",
+          "B1",
+          "B2",
+          "C1",
+          "C2",
+          "D1",
+          "D2"
+        ],
+        "outputDigests": {
+          "a1": "319aea4b45ba52152cab2f1feb624ba81e24f0e9c6e392c00606c731b1d19e59",
+          "a2": "e3063e41a194ab862509b28227bd4f003f915be9f10ec199bd6b775f86d049a7",
+          "b": "f5712ecb1dccb5606ea54fd5f272ef6341b6c44e14203feaabf938c1d570265a",
+          "c": "76445f6b032ae4abc5de14db5b9521dd8a205c5c50c47c87d806bc814d111399"
+        }
+      },
+      {
+        "grid": {
+          "cols": 3,
+          "rows": 4
+        },
+        "panelCodes": [
+          "A1",
+          "A2",
+          "A3",
+          "B1",
+          "B2",
+          "B3",
+          "C1",
+          "C2",
+          "C3",
+          "D1",
+          "D2",
+          "D3"
+        ],
+        "outputDigests": {
+          "a1": "434367d9ccf9b2c793a7e918af6992d884904328df6dbb7ab3607e669ab21631",
+          "a2": "e3063e41a194ab862509b28227bd4f003f915be9f10ec199bd6b775f86d049a7",
+          "b": "d2aa373b83dafc21e058fbed616be10df1180996073fa70b979bef5042781181",
+          "c": "4f571fada7a2c6c01f788195dcacbc2347dbfbf87d4af3b542c090f574db92ad"
+        }
+      },
+      {
+        "grid": {
+          "cols": 4,
+          "rows": 4
+        },
+        "panelCodes": [
+          "A1",
+          "A2",
+          "A3",
+          "A4",
+          "B1",
+          "B2",
+          "B3",
+          "B4",
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "D1",
+          "D2",
+          "D3",
+          "D4"
+        ],
+        "outputDigests": {
+          "a1": "2fd902e6bc6f27bd04b6c11f4504789af40f66990f63ccdd4f4f83d56694b9e5",
+          "a2": "e3063e41a194ab862509b28227bd4f003f915be9f10ec199bd6b775f86d049a7",
+          "b": "44ad269e6c49d38780b315d7d7f12835511f5a64348a9d0da8b0bdef36a42207",
+          "c": "5549e3a2bf8d55c2dd31373a2ba650eaf4fd85cc2593988502a54b3f5f961fb3"
+        }
+      }
+    ]
+  },
+  "fixtureLimitations": [
+    "Fixtures execute isolated data and selected compiler functions, not full DOM, clipboard, postMessage or persistence.",
+    "Legacy source hash verified at review time. Fixture JSON remains unchanged and deliberately preserves the single-image/grid contradiction.",
+    "Eight fixture outputs do not prove transitions. Sol must test mode independence, iteration cycle/reset, invalid inputs, per-setup persistence and bridge.",
+    "The review oracle creates expected texts only. It is not a runtime implementation or evidence of successful image generation."
+  ]
+}

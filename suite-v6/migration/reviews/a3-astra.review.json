@@ -1,0 +1,3139 @@
+{
+  "schemaVersion": "1.0",
+  "bundleId": "a3-acting-gen",
+  "bundleDigest": "9b8bf45b1e390374d9568a3d2b87bbf638434c6a7212105f0ae54145bd9e1121",
+  "status": "reviewed",
+  "reviewerModel": "gpt-6-astra",
+  "reviewedAt": "2026-09-11",
+  "scope": "All 509 bundle values read in full, all 435 titled fixture bodies and their grouping reviewed, source runtime and 225 omitted literals reviewed. A3 only; runtime integration pending.",
+  "decisions": [
+    {
+      "id": "text-007359e297bb306ac36e",
+      "sourceIndex": 0,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-00da17e380d1645b31fb",
+      "sourceIndex": 1,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-01020c1647aecc0df9bc",
+      "sourceIndex": 2,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-015caa0d2be29b84c8b3",
+      "sourceIndex": 3,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-039f28ff0cba82cb6a2e",
+      "sourceIndex": 4,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-0408868587f44ae81bd7",
+      "sourceIndex": 5,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-044f75b45f9868ce7834",
+      "sourceIndex": 6,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-0467af3d10c1ff0aa8e3",
+      "sourceIndex": 7,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-04ac45dab7cf00a61c47",
+      "sourceIndex": 8,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-04e838faa1312c493067",
+      "sourceIndex": 9,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-0566aa78d93f9251a544",
+      "sourceIndex": 10,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-05e20a6a785483dc5747",
+      "sourceIndex": 11,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-05e23c273f545d6b0a73",
+      "sourceIndex": 12,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-06397db7e1ad81c6fe27",
+      "sourceIndex": 13,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-064229764cb64250f80d",
+      "sourceIndex": 14,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-06fee361ae826c419170",
+      "sourceIndex": 15,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-0706df126273f20bef3b",
+      "sourceIndex": 16,
+      "action": "exclude-non-prompt",
+      "role": "ui-copy",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-07f7c18a4e94734ffa4e",
+      "sourceIndex": 17,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-08480dd3aa61909f5cf3",
+      "sourceIndex": 18,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-08a753fe7cc6d8af7b57",
+      "sourceIndex": 19,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-08c56235ab24c688381f",
+      "sourceIndex": 20,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-08cfcda386a5def8a5b5",
+      "sourceIndex": 21,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-09df6f156e8cd13e4639",
+      "sourceIndex": 22,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-0a0a66838233f1518772",
+      "sourceIndex": 23,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-0c11df51bcdb9fad44f4",
+      "sourceIndex": 24,
+      "action": "exclude-non-prompt",
+      "role": "ui-copy",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-0c2730fe805dbc349f24",
+      "sourceIndex": 25,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-0c27f8d7da86c6f700d5",
+      "sourceIndex": 26,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-0cfd8130fd1270a8d9ee",
+      "sourceIndex": 27,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-0d143d496a9912af02a5",
+      "sourceIndex": 28,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-0e9f293db7803f935ce3",
+      "sourceIndex": 29,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-0fea7bc9d8500182765e",
+      "sourceIndex": 30,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-10f544d4074bdf90230c",
+      "sourceIndex": 31,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-121372aab8eb7a2b4ebd",
+      "sourceIndex": 32,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-125c62e795e30f9881ae",
+      "sourceIndex": 33,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-146a98c05fd5aec34a27",
+      "sourceIndex": 34,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-147b4d89c577c35a6dfe",
+      "sourceIndex": 35,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-15d4731ddce496017fee",
+      "sourceIndex": 36,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-162750f537390cd29146",
+      "sourceIndex": 37,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-165a0b0eeff12363ec35",
+      "sourceIndex": 38,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-166d3534a72db9ec67de",
+      "sourceIndex": 39,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-1753f706c0b39f6da6b2",
+      "sourceIndex": 40,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-185a3c6b415a91fb8e4b",
+      "sourceIndex": 41,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-195501ece7d432ce5f88",
+      "sourceIndex": 42,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-19cd5137ca4cad591843",
+      "sourceIndex": 43,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-1a8adc8fd864fd555d07",
+      "sourceIndex": 44,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-1c6a73792544b87bafc7",
+      "sourceIndex": 45,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-1d0ce4ead2b004d3f0c6",
+      "sourceIndex": 46,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-1d2ac5de8098238b83a2",
+      "sourceIndex": 47,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-1d861bc8964ba80a67d1",
+      "sourceIndex": 48,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-1dcecfc06e1fdcd519a4",
+      "sourceIndex": 49,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-1e2e623d037dbbac2202",
+      "sourceIndex": 50,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-1ebe15f0f728144d44a8",
+      "sourceIndex": 51,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-1f64d7e2cfdee018d5f3",
+      "sourceIndex": 52,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-1f752f78469cdd3ec001",
+      "sourceIndex": 53,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-1fae284f7449dedf81d5",
+      "sourceIndex": 54,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-218adc095b8fbf978b71",
+      "sourceIndex": 55,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-21ad8488e8724ca37d49",
+      "sourceIndex": 56,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-21f8b126a0c517dc17cb",
+      "sourceIndex": 57,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-229c0b1da6d63f0abd33",
+      "sourceIndex": 58,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-22f3921e074c97264dce",
+      "sourceIndex": 59,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-2330338342712c7ed20c",
+      "sourceIndex": 60,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-23b3c5c4bd770b2629c9",
+      "sourceIndex": 61,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-23cd83dbfa4096821164",
+      "sourceIndex": 62,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-23d2d73543f9d7d92ac7",
+      "sourceIndex": 63,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-23f1291c140d29fdf846",
+      "sourceIndex": 64,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-24dc56027fd4e13ce2df",
+      "sourceIndex": 65,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-25562003a768dea998c3",
+      "sourceIndex": 66,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-2699ef7ba6bfb1c6f245",
+      "sourceIndex": 67,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-273effedfa9a24096d9b",
+      "sourceIndex": 68,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-27d9f1f1c329e73eb8ad",
+      "sourceIndex": 69,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-28cf20d9b36a58e02157",
+      "sourceIndex": 70,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-2941ece54766f9a6d06b",
+      "sourceIndex": 71,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-29b0740306386f429f2d",
+      "sourceIndex": 72,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-29d9843b570c567ff0ea",
+      "sourceIndex": 73,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-2a500a15821496ed38bf",
+      "sourceIndex": 74,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-2a9518af8c519ae1d882",
+      "sourceIndex": 75,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-2ac82c108ccbe6008009",
+      "sourceIndex": 76,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-2ae4b41cc386315e7054",
+      "sourceIndex": 77,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-2b217bd75c25d03200c3",
+      "sourceIndex": 78,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-2b67bdbdfd6ef2f1035e",
+      "sourceIndex": 79,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-2b8e0c7a17a175df0cb6",
+      "sourceIndex": 80,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-2b9aafbb7e30bb87b382",
+      "sourceIndex": 81,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-2bdf582ca2e97b3f23b8",
+      "sourceIndex": 82,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-2be61aada90b63b01240",
+      "sourceIndex": 83,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-2c0f434a97fe91d5af7f",
+      "sourceIndex": 84,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-2c1b3849f4b7a5c7a4bc",
+      "sourceIndex": 85,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-2c293116b7d416690c0e",
+      "sourceIndex": 86,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-2c5e0d5d45b5a97c7f17",
+      "sourceIndex": 87,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-2cc4099a6c72edc50669",
+      "sourceIndex": 88,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-2d0d6a826a8c99e8f0b3",
+      "sourceIndex": 89,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-2d21f86607269d0c89dc",
+      "sourceIndex": 90,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-2d36870f10e2a2d3b812",
+      "sourceIndex": 91,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-2d76c517723d3721856d",
+      "sourceIndex": 92,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-2dc7fa1759ced73c8a2e",
+      "sourceIndex": 93,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-2ecf9e02fc0b5c97f2f4",
+      "sourceIndex": 94,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-2f23d82adfea437fd826",
+      "sourceIndex": 95,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-2fb92b498f6556893021",
+      "sourceIndex": 96,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-2fcf70ec4c846ccba1b6",
+      "sourceIndex": 97,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-311ef56dca922f2f1bd2",
+      "sourceIndex": 98,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-314393cdb5f6f1ca5cf4",
+      "sourceIndex": 99,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-316ee1b66ea7ac540e6b",
+      "sourceIndex": 100,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-3313eb7dd9b21a122ca1",
+      "sourceIndex": 101,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-3395b7e486833058c2bb",
+      "sourceIndex": 102,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-339f0a2a38375bc8085e",
+      "sourceIndex": 103,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-33bf04fb92dced81c2bc",
+      "sourceIndex": 104,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-34d3b27bbc14d49ba8a5",
+      "sourceIndex": 105,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-34f012e31662ebb0c29e",
+      "sourceIndex": 106,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-35252fe566804bf6819d",
+      "sourceIndex": 107,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-362919dee8fb13e0e39c",
+      "sourceIndex": 108,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-363fefd0c72472123cf3",
+      "sourceIndex": 109,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-36664dc1a391af471f03",
+      "sourceIndex": 110,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-36fad36d360e4873cd49",
+      "sourceIndex": 111,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-37639ab7b77cb0149c59",
+      "sourceIndex": 112,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-37b50df6a4937be0c02e",
+      "sourceIndex": 113,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-385c2e18cafe0609f5c5",
+      "sourceIndex": 114,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-3a2e05b4b34dd9ca396b",
+      "sourceIndex": 115,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-3a7c646d3ef2c5603f1e",
+      "sourceIndex": 116,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-3b17bbff4455ff55e327",
+      "sourceIndex": 117,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-3b714cc4a5c842f1d566",
+      "sourceIndex": 118,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-3c56eba249ad0259e59c",
+      "sourceIndex": 119,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-3c73997635c85e60f8ea",
+      "sourceIndex": 120,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-3c74e53923d35759ce4c",
+      "sourceIndex": 121,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-3c7b8194c0f28d53a2aa",
+      "sourceIndex": 122,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-3c8a2e252e35df60bd06",
+      "sourceIndex": 123,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-3ceea93ca4a9847f97fc",
+      "sourceIndex": 124,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-3fc56a133b3c77daaa2e",
+      "sourceIndex": 125,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-3fd7e75e3800b54f9e27",
+      "sourceIndex": 126,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-401d25cbdeb0e3b44f22",
+      "sourceIndex": 127,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-404575b82c6e13e95535",
+      "sourceIndex": 128,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-4092fb08cc01cc24a116",
+      "sourceIndex": 129,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-40ff9c4666fc51e4a26e",
+      "sourceIndex": 130,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-42224fb79b458e40a78d",
+      "sourceIndex": 131,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-42b59813bad953e8f85f",
+      "sourceIndex": 132,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-42e2459f438fff6039a2",
+      "sourceIndex": 133,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-43828bbf443025dcb990",
+      "sourceIndex": 134,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-43c0522f28f4ea44f9b5",
+      "sourceIndex": 135,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-43cdfeddb4f787017dbb",
+      "sourceIndex": 136,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-43d45d610b1038671980",
+      "sourceIndex": 137,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-44bd41c1e4a9a6feb06b",
+      "sourceIndex": 138,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-44d1f33a1ff096517c55",
+      "sourceIndex": 139,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-45107a6a47c43555b545",
+      "sourceIndex": 140,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-454ff46f849c2d7df8d6",
+      "sourceIndex": 141,
+      "action": "exclude-non-prompt",
+      "role": "ui-copy",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-4567b6a6fd04d94deaa3",
+      "sourceIndex": 142,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-470babf186a3de669889",
+      "sourceIndex": 143,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-472be54d1db8d89a9465",
+      "sourceIndex": 144,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-47c46186fb9b0c78b03b",
+      "sourceIndex": 145,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-482cb2198086d5a5c6fa",
+      "sourceIndex": 146,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-489b2f6a42b349d31c2e",
+      "sourceIndex": 147,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-48ec244ba82eefa663c7",
+      "sourceIndex": 148,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-4974651a90803a1db42b",
+      "sourceIndex": 149,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-49feebbf1ad10daa42b5",
+      "sourceIndex": 150,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-4a1b54dce0e4857afe15",
+      "sourceIndex": 151,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-4a27dcf1fc9943fd7487",
+      "sourceIndex": 152,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-4a3e0f2a89f6b25f7c9c",
+      "sourceIndex": 153,
+      "action": "preserve",
+      "role": "iteration-fragment"
+    },
+    {
+      "id": "text-4a7d8676a692dce0cc64",
+      "sourceIndex": 154,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-4b12093c8c9acaa77d93",
+      "sourceIndex": 155,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-4c92f23ba09aaf4c8e8c",
+      "sourceIndex": 156,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-4cb62839beb66d0478a5",
+      "sourceIndex": 157,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-4d3bdd76672f7b05f7fd",
+      "sourceIndex": 158,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-4e2b8b9b73502bdddfe8",
+      "sourceIndex": 159,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-4ea9b1d7d8e2c92f535b",
+      "sourceIndex": 160,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-4f8c447f7ccab8555ef5",
+      "sourceIndex": 161,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-4fbf8c492972066eb140",
+      "sourceIndex": 162,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-4fc7f795c4d4a876b695",
+      "sourceIndex": 163,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-503551f6af5b534a7c53",
+      "sourceIndex": 164,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-504394b4f3f9c75e6c74",
+      "sourceIndex": 165,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-51000b96ac99b109c83f",
+      "sourceIndex": 166,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-51aa998cd83cd73fc935",
+      "sourceIndex": 167,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-525dd4d4dc8de8b28efd",
+      "sourceIndex": 168,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-52f7fff8416182a545ab",
+      "sourceIndex": 169,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-537314204f750612e298",
+      "sourceIndex": 170,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-53f2ff01ce2dd229ba94",
+      "sourceIndex": 171,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-546a950fdd23d0ef19c9",
+      "sourceIndex": 172,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-56f5a8421fc4fca8e3a4",
+      "sourceIndex": 173,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-570ff0bbf444990bc4bc",
+      "sourceIndex": 174,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-571c940150ac12b115d8",
+      "sourceIndex": 175,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-58353b2ad85b1d8eb4ee",
+      "sourceIndex": 176,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-58771f465a50b4c31c14",
+      "sourceIndex": 177,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-5980fadcb66fd0226754",
+      "sourceIndex": 178,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-5998da79e7737a7248db",
+      "sourceIndex": 179,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-599f785ccbc40bb857f0",
+      "sourceIndex": 180,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-59ec787bee2f87858f92",
+      "sourceIndex": 181,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-5a490c55de078b2cc708",
+      "sourceIndex": 182,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-5a59011331c11c63b7bd",
+      "sourceIndex": 183,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-5a7b037b18035660ccaf",
+      "sourceIndex": 184,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-5bbb11dae982544a8fa8",
+      "sourceIndex": 185,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-5bff0905c78ce36219ac",
+      "sourceIndex": 186,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-5c31692e408b07a0da62",
+      "sourceIndex": 187,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-5c66f085e091278b3a78",
+      "sourceIndex": 188,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-5cad00af0c139cf5d13b",
+      "sourceIndex": 189,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-5cea9e6c90ae9a9b297b",
+      "sourceIndex": 190,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-5d31394ab4be1d000ae1",
+      "sourceIndex": 191,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-5d6c9aaf337221d8f041",
+      "sourceIndex": 192,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-5d7bb99597b26541a1d3",
+      "sourceIndex": 193,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-5e013d362fbe7573c317",
+      "sourceIndex": 194,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-5e0701cb8b2be946ede8",
+      "sourceIndex": 195,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-5ea9dc13476c072904da",
+      "sourceIndex": 196,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-5f9f028d0dcdc411a241",
+      "sourceIndex": 197,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-61848638faf203d4d52f",
+      "sourceIndex": 198,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-61efec2a89a1b2361f5a",
+      "sourceIndex": 199,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-6321146a6844782554ae",
+      "sourceIndex": 200,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-658af4a1fc0d8957ac8b",
+      "sourceIndex": 201,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-66dfec90ba5637425012",
+      "sourceIndex": 202,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-66e37d652db3eee03bc5",
+      "sourceIndex": 203,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-6863f4acb1e17acb3433",
+      "sourceIndex": 204,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-688233189c1aa7e6ea52",
+      "sourceIndex": 205,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-68dca4b32524391a87df",
+      "sourceIndex": 206,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-69444de654a7854bf504",
+      "sourceIndex": 207,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-6a3143a1ee2847f4a80a",
+      "sourceIndex": 208,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-6be3760f633979d3b421",
+      "sourceIndex": 209,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-6c1275f67b71f3a3604c",
+      "sourceIndex": 210,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-6d2454df393f44a66dde",
+      "sourceIndex": 211,
+      "action": "preserve",
+      "role": "iteration-fragment"
+    },
+    {
+      "id": "text-6ea2f94493974793ded5",
+      "sourceIndex": 212,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-6eb9093cd73286c72fd9",
+      "sourceIndex": 213,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-6f0999e74173a5261c29",
+      "sourceIndex": 214,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-6f9ae8aebc90f13359a7",
+      "sourceIndex": 215,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-7106ee0b6082c006c579",
+      "sourceIndex": 216,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-71bee197a7f5159d5ca9",
+      "sourceIndex": 217,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-723002bd1311a5cd8222",
+      "sourceIndex": 218,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-72867cc7e07574a6ba1e",
+      "sourceIndex": 219,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-72ab73b02d6de5a5e305",
+      "sourceIndex": 220,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-7339b8710b709a852664",
+      "sourceIndex": 221,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-736ca2fc12df30903204",
+      "sourceIndex": 222,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-74aef1309bddc0dba2ec",
+      "sourceIndex": 223,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-751fe0a4cd831282e74f",
+      "sourceIndex": 224,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-754e24ef58e93eb91c1f",
+      "sourceIndex": 225,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-75568bb9e35a8c79c1c3",
+      "sourceIndex": 226,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-759d5bb9a15e9cc0a781",
+      "sourceIndex": 227,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-760314bb7230ac91b7fd",
+      "sourceIndex": 228,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-774d81b87d28df4bf598",
+      "sourceIndex": 229,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-77c45dd8a7a508e00b0d",
+      "sourceIndex": 230,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-79bbd52c4c0264b63627",
+      "sourceIndex": 231,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-79bdc452807d49f80562",
+      "sourceIndex": 232,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-79d9ddcd58f28b35a500",
+      "sourceIndex": 233,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-7abb9499100825e1b231",
+      "sourceIndex": 234,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-7bf9ece336175c5086a1",
+      "sourceIndex": 235,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-7ca1e9f5cee458d8e964",
+      "sourceIndex": 236,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-7d0bc51280fefcf11bbd",
+      "sourceIndex": 237,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-7e6abb936e9121b19451",
+      "sourceIndex": 238,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-7f5c88931a7e4e561527",
+      "sourceIndex": 239,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-7f65ec6a0ca41b1bfbcd",
+      "sourceIndex": 240,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-805e18dc302b4f0e9a30",
+      "sourceIndex": 241,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-80931d64e58afd865ec3",
+      "sourceIndex": 242,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-809b6a6709521e58c2ca",
+      "sourceIndex": 243,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-816005cdaa1da0caf535",
+      "sourceIndex": 244,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-8181b0a4de197539d99b",
+      "sourceIndex": 245,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-81cb8ba827be5515218f",
+      "sourceIndex": 246,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-82d75821bfbcba6c75a3",
+      "sourceIndex": 247,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-82e5db8a0e5d77e0318c",
+      "sourceIndex": 248,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-82fb89f4b7b51a678cc7",
+      "sourceIndex": 249,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-83332a11072345f61a69",
+      "sourceIndex": 250,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-83e189d78906e12e3873",
+      "sourceIndex": 251,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-8423b489fabb0b70cbad",
+      "sourceIndex": 252,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-842cfc7547a5877312a7",
+      "sourceIndex": 253,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-84310514c1994aca5256",
+      "sourceIndex": 254,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-84feb47a106498e33423",
+      "sourceIndex": 255,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-8502843e13a171d6e939",
+      "sourceIndex": 256,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-8727140a68d3f005341e",
+      "sourceIndex": 257,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-877d66e42535074e69eb",
+      "sourceIndex": 258,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-882e5913d3a8f51f2f2c",
+      "sourceIndex": 259,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-886eeee7a0aa3dbd3ca0",
+      "sourceIndex": 260,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-88a0bb736181c6a99337",
+      "sourceIndex": 261,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-894fa195f6a62950c0e2",
+      "sourceIndex": 262,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-8973634471dccfb73e5d",
+      "sourceIndex": 263,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-89d9e9fff0a8bad68a50",
+      "sourceIndex": 264,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-8a45e6230f6c1a1a9cfc",
+      "sourceIndex": 265,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-8a6ce54f5203922af8a7",
+      "sourceIndex": 266,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-8a92869507e055b2b09d",
+      "sourceIndex": 267,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-8b50f1e6af2727c8574c",
+      "sourceIndex": 268,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-8c50ef4eee79f5e418c1",
+      "sourceIndex": 269,
+      "action": "exclude-non-prompt",
+      "role": "ui-copy",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-8c58faa14b02f00f54b4",
+      "sourceIndex": 270,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-8d31a673cbeb627057bd",
+      "sourceIndex": 271,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-8d35a2209ba6efcc9a2b",
+      "sourceIndex": 272,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-8e7cc734477c20ee862e",
+      "sourceIndex": 273,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-90db41d5622dd3752008",
+      "sourceIndex": 274,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-91b6e0fb73dd3f664342",
+      "sourceIndex": 275,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-927b45d942e034d787a6",
+      "sourceIndex": 276,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-92bf1b8e595829c6e94e",
+      "sourceIndex": 277,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-9341af4da909c9ba59b0",
+      "sourceIndex": 278,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-935f441487618a388cfc",
+      "sourceIndex": 279,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-95523bba006d0f138c65",
+      "sourceIndex": 280,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-963212279a8f3aaf376d",
+      "sourceIndex": 281,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-97b7bbb47cf7076cb4e6",
+      "sourceIndex": 282,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-980471dd073c21b1f8f5",
+      "sourceIndex": 283,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-9824b8c400f061546507",
+      "sourceIndex": 284,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-98b52bdf17d948d20570",
+      "sourceIndex": 285,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-9997594bfb8646700de7",
+      "sourceIndex": 286,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-99dbedf676299afbdabb",
+      "sourceIndex": 287,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-99e1f1eba1c6fefdc6d2",
+      "sourceIndex": 288,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-9a776a4167911850c3f7",
+      "sourceIndex": 289,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-9b0b0a4d7e00caaecac1",
+      "sourceIndex": 290,
+      "action": "correct",
+      "role": "prompt-body",
+      "correctedValue": "Same action repeating identically, stuck in cycle, attempting to proceed but resetting, broken record of existence, error state inescapable",
+      "reason": "Corrige le mot final de RECURSIVE LOOP ; la répétition impossible à interrompre reste intentionnelle."
+    },
+    {
+      "id": "text-9b71bdfb06b03c6bb942",
+      "sourceIndex": 291,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-9ba1008b4091ac80052a",
+      "sourceIndex": 292,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-9c3e0539aaa25e07f588",
+      "sourceIndex": 293,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-9c7a5d4c0d1f6326b0ba",
+      "sourceIndex": 294,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-9cfb506947e1fa9487aa",
+      "sourceIndex": 295,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-9e219654c8d74bf367df",
+      "sourceIndex": 296,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-9e53f4d86c703fba5f6b",
+      "sourceIndex": 297,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-9efd6c1ebfa72309e3ac",
+      "sourceIndex": 298,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-9f13816a511a1b2ba1f5",
+      "sourceIndex": 299,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-9f89fb22f39c18994901",
+      "sourceIndex": 300,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-a02ae25935452b4b066b",
+      "sourceIndex": 301,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-a02ba1947b23b79a0645",
+      "sourceIndex": 302,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-a032b2b247d84d68f9d3",
+      "sourceIndex": 303,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-a0397610a4a04821b8c9",
+      "sourceIndex": 304,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-a0512fa78a980cf9e3ec",
+      "sourceIndex": 305,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-a0bfa0cd11421c11fefd",
+      "sourceIndex": 306,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-a0c4f5108c80d12ad777",
+      "sourceIndex": 307,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-a0cd033ac495f5a5914f",
+      "sourceIndex": 308,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-a147f2842d497e4eda85",
+      "sourceIndex": 309,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-a17bf45e5f42dd3eeab6",
+      "sourceIndex": 310,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-a1e2d042a39bc20fc49e",
+      "sourceIndex": 311,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-a20eedbb56f8715409cc",
+      "sourceIndex": 312,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-a235ebdf4667a0ca2849",
+      "sourceIndex": 313,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-a251b5ed94b779b4b9a7",
+      "sourceIndex": 314,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-a28f69dff7385f530f8a",
+      "sourceIndex": 315,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-a2a5acb91834f0363c80",
+      "sourceIndex": 316,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-a32d25e3e49593dd0fd5",
+      "sourceIndex": 317,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-a348d05a2dc4869f4e98",
+      "sourceIndex": 318,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-a34d911a5c6d00d6bf12",
+      "sourceIndex": 319,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-a3c949b181b3fb4c24be",
+      "sourceIndex": 320,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-a41b1cfddb77ff41757a",
+      "sourceIndex": 321,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-a5778ad13b0eae111a58",
+      "sourceIndex": 322,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-a5e311cac90cbdd9fa1d",
+      "sourceIndex": 323,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-a6183b8e047f06829a8c",
+      "sourceIndex": 324,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-a69e0c249c42ea6ceeac",
+      "sourceIndex": 325,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-a716d3c2a2bc0906f341",
+      "sourceIndex": 326,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-a75bf02116c2d10b5926",
+      "sourceIndex": 327,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-a9fe77ced7f656cf0fe2",
+      "sourceIndex": 328,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-aa2d52b5bf0b7e6f8ab1",
+      "sourceIndex": 329,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-aac78bfc56afec996684",
+      "sourceIndex": 330,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-ab791406e4da27f2fcb7",
+      "sourceIndex": 331,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-ac453b99641bd82952a5",
+      "sourceIndex": 332,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-ac66f7800cd31839aeb9",
+      "sourceIndex": 333,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-ad28642d1098efa29ea8",
+      "sourceIndex": 334,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-adbb7439dcdee0e4c1ef",
+      "sourceIndex": 335,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-ade370996df59ccb65e8",
+      "sourceIndex": 336,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-ae1af4acff7caef9f5b5",
+      "sourceIndex": 337,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-ae4bed07f34921f531da",
+      "sourceIndex": 338,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-ae7a707865a902a760af",
+      "sourceIndex": 339,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-aea5838670fbf7296284",
+      "sourceIndex": 340,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-aec0444f1fdf11af8130",
+      "sourceIndex": 341,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-af8c6c944cd426ab7c9f",
+      "sourceIndex": 342,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-afcb4993573c9bce1952",
+      "sourceIndex": 343,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-b0b79bc6a625757be734",
+      "sourceIndex": 344,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-b1193cb087cf03d358dd",
+      "sourceIndex": 345,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-b194316dba0a54bb3454",
+      "sourceIndex": 346,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-b1e42a57f25cd1fa6bce",
+      "sourceIndex": 347,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-b2c241186280548d20da",
+      "sourceIndex": 348,
+      "action": "exclude-non-prompt",
+      "role": "ui-copy",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-b3e890bddddcc0655a79",
+      "sourceIndex": 349,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-b4887887f16b30898150",
+      "sourceIndex": 350,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-b4932c40e858be4cb4dc",
+      "sourceIndex": 351,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-b55f53e4f31870628352",
+      "sourceIndex": 352,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-b5c7e02a42b088e1b4b8",
+      "sourceIndex": 353,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-b66340fa6c067043b84c",
+      "sourceIndex": 354,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-b6a65a3a68f53997a89b",
+      "sourceIndex": 355,
+      "action": "preserve",
+      "role": "iteration-fragment"
+    },
+    {
+      "id": "text-b735ed0210f16c52d09b",
+      "sourceIndex": 356,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-b7bc2de17ba7fff15c9d",
+      "sourceIndex": 357,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-b88a346637ab52eb7102",
+      "sourceIndex": 358,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-b8dd6de32e5165858d10",
+      "sourceIndex": 359,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-b973a6c1758ed7819581",
+      "sourceIndex": 360,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-b9b50893aeb83e7a1588",
+      "sourceIndex": 361,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-ba14b8a318bf38af2094",
+      "sourceIndex": 362,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-ba467afa2960da86ef65",
+      "sourceIndex": 363,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-baba38c336a58608ec48",
+      "sourceIndex": 364,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-bb7ab943c909ddc1e620",
+      "sourceIndex": 365,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-bc026e27e758ae3dfc66",
+      "sourceIndex": 366,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-bc27c609afb5020a1838",
+      "sourceIndex": 367,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-bc647613be39e56c7e8f",
+      "sourceIndex": 368,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-bc7b1137e0a34e91bcba",
+      "sourceIndex": 369,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-bc91b09582a3b95bfc28",
+      "sourceIndex": 370,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-bce49f00baef028b5894",
+      "sourceIndex": 371,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-bd7a884ca8b853ba41d3",
+      "sourceIndex": 372,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-bde6c323346a8d780f70",
+      "sourceIndex": 373,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-bdf572dbd705899b3c32",
+      "sourceIndex": 374,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-be35a1427c3dcc0df117",
+      "sourceIndex": 375,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-bef7e1af912dc103f32a",
+      "sourceIndex": 376,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-bf0dd0c645cfb7daf787",
+      "sourceIndex": 377,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-bfa0d9a58836641e80f9",
+      "sourceIndex": 378,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-c0b7af1ca907716e433f",
+      "sourceIndex": 379,
+      "action": "exclude-non-prompt",
+      "role": "ui-copy",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-c0fd2851693f3aac1265",
+      "sourceIndex": 380,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-c11aa81e71078a312584",
+      "sourceIndex": 381,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-c1cee1aa5ff9385c515a",
+      "sourceIndex": 382,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-c1d6e1d5083842493898",
+      "sourceIndex": 383,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-c269067737c3cabcf25a",
+      "sourceIndex": 384,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-c28b82a858bb1c5ac708",
+      "sourceIndex": 385,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-c2cae94b343ff19afc8f",
+      "sourceIndex": 386,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-c2d9f30b72a945a76d07",
+      "sourceIndex": 387,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-c318951644dde32d13a5",
+      "sourceIndex": 388,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-c3da0b2ed857cce66c01",
+      "sourceIndex": 389,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-c4b3551616cf30e92a6f",
+      "sourceIndex": 390,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-c552cb99eb40d850270b",
+      "sourceIndex": 391,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-c5a1e250e6ae7df8bd5e",
+      "sourceIndex": 392,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-c5f0292a4f2c5bfe841d",
+      "sourceIndex": 393,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-c68c8c1e1482b4265b16",
+      "sourceIndex": 394,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-c6987acf87b62411beed",
+      "sourceIndex": 395,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-c727802912d61a7febb7",
+      "sourceIndex": 396,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-c7ff50767555af3edf94",
+      "sourceIndex": 397,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-c80a51e5b66d5c0cdeab",
+      "sourceIndex": 398,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-c80b142ed432a2278952",
+      "sourceIndex": 399,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-c830978e3b3805ee7615",
+      "sourceIndex": 400,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-c8f85c3654febde0c326",
+      "sourceIndex": 401,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-c99a3aae61992e55d827",
+      "sourceIndex": 402,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-ca681906337996ff5f69",
+      "sourceIndex": 403,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-ca740e2f61c605037cab",
+      "sourceIndex": 404,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-cb7e22fb677696de0273",
+      "sourceIndex": 405,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-cc13ffb1d39aa060e2c3",
+      "sourceIndex": 406,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-ccb4f05d488b29283041",
+      "sourceIndex": 407,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-ce4cc43182ad8885c036",
+      "sourceIndex": 408,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-d0517c82fe8d196c4bd9",
+      "sourceIndex": 409,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-d1559d008f78f3cbe1d4",
+      "sourceIndex": 410,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-d1d5e2d3828012bbae5f",
+      "sourceIndex": 411,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-d20e501d3d68e958eddb",
+      "sourceIndex": 412,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-d2210fd70d6c6eaf3877",
+      "sourceIndex": 413,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-d27d5e0847db14a26ceb",
+      "sourceIndex": 414,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-d2c12ba415c029ea50a5",
+      "sourceIndex": 415,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-d4e632dc233d7e428494",
+      "sourceIndex": 416,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-d6910aa71f5cdcb2d52e",
+      "sourceIndex": 417,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-d6c18241d321026223b3",
+      "sourceIndex": 418,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-d733ae3abf4db882adca",
+      "sourceIndex": 419,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-d74a5e9c97be6c31f9da",
+      "sourceIndex": 420,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-d76176ecbba095fbd2d8",
+      "sourceIndex": 421,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-d78d609fa0d3b59cbb5e",
+      "sourceIndex": 422,
+      "action": "correct",
+      "role": "prompt-body",
+      "correctedValue": "Afterimages trailing from movement, multiple copies existing briefly, ghost versions overlapping, motion blur taken literally, echo forms haunting",
+      "reason": "Rétablit l'adverbe dans DUPLICATION ARTIFACT sans changer les doubles, fantômes ou effets de mouvement."
+    },
+    {
+      "id": "text-d7a10a16453696f12d05",
+      "sourceIndex": 423,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-d82e00bcb8ce257ae76a",
+      "sourceIndex": 424,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-d8b52bd80ce203feefef",
+      "sourceIndex": 425,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-d98c1b54d4e5fc2ccf20",
+      "sourceIndex": 426,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-d9c86918e3ad42746e20",
+      "sourceIndex": 427,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-db0eff2b96a8d5bbf54a",
+      "sourceIndex": 428,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-db570a8de0996a55d0cb",
+      "sourceIndex": 429,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-db83a5171aa5ffd4aa28",
+      "sourceIndex": 430,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-dbd923d6515775b9c8a5",
+      "sourceIndex": 431,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-dc6925a94d3b6c210657",
+      "sourceIndex": 432,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-dc9f470088d72dbb7aae",
+      "sourceIndex": 433,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-dcb0d62af97a8e734921",
+      "sourceIndex": 434,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-dce1900fed1f721ca4bc",
+      "sourceIndex": 435,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-ddf5914d430852bef944",
+      "sourceIndex": 436,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-de65eb34ff186561d7fe",
+      "sourceIndex": 437,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-df4c1acbd11e521342df",
+      "sourceIndex": 438,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-df6ba4d44607b770a6cd",
+      "sourceIndex": 439,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-df8fb9b6f747feaf0263",
+      "sourceIndex": 440,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-dfa51fb122c26905d60e",
+      "sourceIndex": 441,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-e036db6d8e2e8b812948",
+      "sourceIndex": 442,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-e0b99213e24f50b262c7",
+      "sourceIndex": 443,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-e14f9526d49eb0925803",
+      "sourceIndex": 444,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-e17c51ece8c348fda580",
+      "sourceIndex": 445,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-e1f8ff4f13d7b8be5647",
+      "sourceIndex": 446,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-e23bee81ca6ce3fcb1c1",
+      "sourceIndex": 447,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-e23e986e7005d936a0eb",
+      "sourceIndex": 448,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-e263c564372a7bcd5973",
+      "sourceIndex": 449,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-e2bc3cabb4f93a89618c",
+      "sourceIndex": 450,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-e341f925c26c903c0cd5",
+      "sourceIndex": 451,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-e3866483c1b06da68b19",
+      "sourceIndex": 452,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-e49fae973aed1872a147",
+      "sourceIndex": 453,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-e4bebbc826b7a070f066",
+      "sourceIndex": 454,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-e5eef2d77ba03f5cc6db",
+      "sourceIndex": 455,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-e6b528e69657f5c14301",
+      "sourceIndex": 456,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-e7209140527a9ba4c3ec",
+      "sourceIndex": 457,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-e757e338787d283f35ab",
+      "sourceIndex": 458,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-e837977158f7ae7194aa",
+      "sourceIndex": 459,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-e8698377d413f58df7b8",
+      "sourceIndex": 460,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-e8f4fa05baed4a283492",
+      "sourceIndex": 461,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-e946aa88a18c6bea9597",
+      "sourceIndex": 462,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-e9cbe9b19eb021cc8914",
+      "sourceIndex": 463,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-ea9802dd0bf5f634cfe5",
+      "sourceIndex": 464,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-eaa4b203f7b006affc01",
+      "sourceIndex": 465,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-eb61b084d18f7a786ff5",
+      "sourceIndex": 466,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-ebd279a97c162679ba11",
+      "sourceIndex": 467,
+      "action": "preserve",
+      "role": "iteration-fragment"
+    },
+    {
+      "id": "text-ec1620260c53c848a672",
+      "sourceIndex": 468,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-eca29410bc67398e80ce",
+      "sourceIndex": 469,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-ecb19bada2de315daf2a",
+      "sourceIndex": 470,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-ecfae336a1014e0f1fe4",
+      "sourceIndex": 471,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-ed523f1d8087edcea309",
+      "sourceIndex": 472,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-ed6537f7db0d0bbe2c6a",
+      "sourceIndex": 473,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-ed9cce33b139585e5bc3",
+      "sourceIndex": 474,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-ee1f222e1e972a9fafe4",
+      "sourceIndex": 475,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-ef6f7a7d00822b6f9ae3",
+      "sourceIndex": 476,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-f0066121a63eebece5b5",
+      "sourceIndex": 477,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-f06c94771c7bb1f96566",
+      "sourceIndex": 478,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-f072a9303205782d2f11",
+      "sourceIndex": 479,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-f08e566acc2bf2fd770c",
+      "sourceIndex": 480,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-f13083459378714a8c0a",
+      "sourceIndex": 481,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-f29b90c3f309e9f4974f",
+      "sourceIndex": 482,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-f2b66905197c864aa09b",
+      "sourceIndex": 483,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-f338fe0e5ebd6063f318",
+      "sourceIndex": 484,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-f36c6807274273fc2e4b",
+      "sourceIndex": 485,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-f3dec06e7eb40deb87aa",
+      "sourceIndex": 486,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-f3f7cc6b4ad7610da9c9",
+      "sourceIndex": 487,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-f4747adba2f4374cf6ec",
+      "sourceIndex": 488,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-f491a41f78b04e3cdbc5",
+      "sourceIndex": 489,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-f5518927f1a13e1f184c",
+      "sourceIndex": 490,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-f682745a4dc359ad6556",
+      "sourceIndex": 491,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-f6979fb54afde7b0bc24",
+      "sourceIndex": 492,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-f750592c76552ebc1c87",
+      "sourceIndex": 493,
+      "action": "exclude-non-prompt",
+      "role": "ui-copy",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-f8081b39f364f656cb07",
+      "sourceIndex": 494,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-f816b88038257836f35c",
+      "sourceIndex": 495,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-f82c7729eca21c6978ea",
+      "sourceIndex": 496,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-f86d78997808b3d8b7a2",
+      "sourceIndex": 497,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-f929823002f4764037ad",
+      "sourceIndex": 498,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-fbc20a9326dc2de25dcc",
+      "sourceIndex": 499,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-fbcc74d22cd57b952379",
+      "sourceIndex": 500,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-fbfdab519814944db9bb",
+      "sourceIndex": 501,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-fc910277fb5985fa44e2",
+      "sourceIndex": 502,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    },
+    {
+      "id": "text-fca7d1dc8a3d41b728f4",
+      "sourceIndex": 503,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-fcb05eb1dc2ae1dcd40a",
+      "sourceIndex": 504,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-fce31e4c956ccb041dde",
+      "sourceIndex": 505,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-ff1ef8560ff3f8677ed1",
+      "sourceIndex": 506,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-ff73eca260d77d6b94fc",
+      "sourceIndex": 507,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-ff7b9a8a6088f6eea85f",
+      "sourceIndex": 508,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Identifiant technique, libellé ou métadonnée lu intégralement. Conserver son rôle hors corps de prompt ; cette décision ne supprime ni titre, ni catégorie, ni fonctionnalité."
+    }
+  ]
+}

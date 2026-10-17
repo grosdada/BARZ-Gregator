@@ -1,0 +1,390 @@
+{
+  "schemaVersion": "1.0",
+  "sourceCreatedAt": "2026-09-11T10:46:00.331Z",
+  "sourceLiteralCount": 13317,
+  "dispositionCounts": {
+    "prompt-review": 1817,
+    "code-or-ui-noise": 166,
+    "context-document": 8,
+    "manual-triage": 4185,
+    "fragment-review": 612,
+    "context-only": 6529
+  },
+  "reviewedOwnerIds": [
+    "banana-helper",
+    "barz-enhancer",
+    "imperfection"
+  ],
+  "excludedOwnerIds": [
+    "soul-prompts"
+  ],
+  "packetCount": 23,
+  "queuedPromptCount": 2263,
+  "approximateReviewTokens": 119620,
+  "owners": [
+    "acting-gen",
+    "barz-beauty",
+    "barz-designer",
+    "barzy-board",
+    "barzy-sheet",
+    "cccp",
+    "cinema-helper",
+    "cinematic-shoot",
+    "facs-sheet-generator",
+    "image-slicer",
+    "knolling",
+    "multishot",
+    "realism-forge",
+    "seedance",
+    "shared-shell",
+    "veo-suite",
+    "workflow-3d"
+  ],
+  "ownerSummaries": [
+    {
+      "owner": "acting-gen",
+      "packetCount": 2,
+      "promptCount": 251,
+      "promptReviewCount": 239,
+      "fragmentReviewCount": 12,
+      "approximateTokens": 12394,
+      "sourcePaths": [
+        "Barzy App/public/assets/HTML/acting_gen.html",
+        "Barzy App/public/assets/HTML/drunk_dance_prompts_tabs.html"
+      ]
+    },
+    {
+      "owner": "barz-beauty",
+      "packetCount": 1,
+      "promptCount": 31,
+      "promptReviewCount": 23,
+      "fragmentReviewCount": 8,
+      "approximateTokens": 4363,
+      "sourcePaths": [
+        "Barzy App/public/assets/HTML/md-beauty.html"
+      ]
+    },
+    {
+      "owner": "barz-designer",
+      "packetCount": 1,
+      "promptCount": 103,
+      "promptReviewCount": 95,
+      "fragmentReviewCount": 8,
+      "approximateTokens": 7271,
+      "sourcePaths": [
+        "Barzy App/public/assets/HTML/barz_designer.html"
+      ]
+    },
+    {
+      "owner": "barzy-board",
+      "packetCount": 1,
+      "promptCount": 39,
+      "promptReviewCount": 20,
+      "fragmentReviewCount": 19,
+      "approximateTokens": 840,
+      "sourcePaths": [
+        "Barzy App/public/assets/HTML/barzy-board.html"
+      ]
+    },
+    {
+      "owner": "barzy-sheet",
+      "packetCount": 1,
+      "promptCount": 30,
+      "promptReviewCount": 24,
+      "fragmentReviewCount": 6,
+      "approximateTokens": 5575,
+      "sourcePaths": [
+        "Barzy App/public/assets/HTML/barzy_sheet.html"
+      ]
+    },
+    {
+      "owner": "cccp",
+      "packetCount": 1,
+      "promptCount": 25,
+      "promptReviewCount": 22,
+      "fragmentReviewCount": 3,
+      "approximateTokens": 3020,
+      "sourcePaths": [
+        "Barzy App/public/assets/HTML/cccp.html"
+      ]
+    },
+    {
+      "owner": "cinema-helper",
+      "packetCount": 1,
+      "promptCount": 281,
+      "promptReviewCount": 135,
+      "fragmentReviewCount": 146,
+      "approximateTokens": 9354,
+      "sourcePaths": [
+        "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html"
+      ]
+    },
+    {
+      "owner": "cinematic-shoot",
+      "packetCount": 1,
+      "promptCount": 94,
+      "promptReviewCount": 90,
+      "fragmentReviewCount": 4,
+      "approximateTokens": 8013,
+      "sourcePaths": [
+        "Barzy App/public/assets/HTML/cinematic_shoot.html"
+      ]
+    },
+    {
+      "owner": "facs-sheet-generator",
+      "packetCount": 1,
+      "promptCount": 17,
+      "promptReviewCount": 10,
+      "fragmentReviewCount": 7,
+      "approximateTokens": 847,
+      "sourcePaths": [
+        "Barzy App/public/assets/HTML/facs_sheet_generator.html"
+      ]
+    },
+    {
+      "owner": "image-slicer",
+      "packetCount": 1,
+      "promptCount": 6,
+      "promptReviewCount": 4,
+      "fragmentReviewCount": 2,
+      "approximateTokens": 61,
+      "sourcePaths": [
+        "Barzy App/public/assets/HTML/image-slicer.html"
+      ]
+    },
+    {
+      "owner": "knolling",
+      "packetCount": 2,
+      "promptCount": 48,
+      "promptReviewCount": 41,
+      "fragmentReviewCount": 7,
+      "approximateTokens": 12068,
+      "sourcePaths": [
+        "Barzy App/public/assets/HTML/knolling-board-generator.html"
+      ]
+    },
+    {
+      "owner": "multishot",
+      "packetCount": 2,
+      "promptCount": 69,
+      "promptReviewCount": 57,
+      "fragmentReviewCount": 12,
+      "approximateTokens": 13976,
+      "sourcePaths": [
+        "Barzy App/public/assets/HTML/MD Multishot.html"
+      ]
+    },
+    {
+      "owner": "realism-forge",
+      "packetCount": 1,
+      "promptCount": 76,
+      "promptReviewCount": 41,
+      "fragmentReviewCount": 35,
+      "approximateTokens": 2447,
+      "sourcePaths": [
+        "Barzy App/public/assets/HTML/realism-forge-v2.html"
+      ]
+    },
+    {
+      "owner": "seedance",
+      "packetCount": 2,
+      "promptCount": 459,
+      "promptReviewCount": 405,
+      "fragmentReviewCount": 54,
+      "approximateTokens": 15172,
+      "sourcePaths": [
+        "Barzy App/public/assets/HTML/seedance_framing_final.html"
+      ]
+    },
+    {
+      "owner": "shared-shell",
+      "packetCount": 2,
+      "promptCount": 426,
+      "promptReviewCount": 283,
+      "fragmentReviewCount": 143,
+      "approximateTokens": 11156,
+      "sourcePaths": [
+        "Barzy App/prompt Atlas V2/app.js",
+        "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+        "Barzy App/public/assets/HTML/MD Multishot.html",
+        "Barzy App/public/assets/HTML/banana_helper.html",
+        "Barzy App/public/assets/HTML/barz_designer.html",
+        "Barzy App/public/assets/HTML/barzy-board.html",
+        "Barzy App/public/assets/HTML/barzy_sheet.html",
+        "Barzy App/public/assets/HTML/cccp.html",
+        "Barzy App/public/assets/HTML/cinematic_shoot.html",
+        "Barzy App/public/assets/HTML/drunk_dance_prompts_tabs.html",
+        "Barzy App/public/assets/HTML/knolling-board-generator.html",
+        "Barzy App/public/assets/HTML/md_enhancer.html",
+        "Barzy App/public/assets/HTML/seedance_framing_final.html",
+        "Barzy App/public/assets/barzy-theme.js",
+        "lib/blocking-fit.js",
+        "public/js/aggregator-bridge.js",
+        "public/js/apg-data.js",
+        "public/js/app.js",
+        "server.js"
+      ]
+    },
+    {
+      "owner": "veo-suite",
+      "packetCount": 1,
+      "promptCount": 86,
+      "promptReviewCount": 50,
+      "fragmentReviewCount": 36,
+      "approximateTokens": 2452,
+      "sourcePaths": [
+        "Barzy App/public/assets/HTML/veo_precision.html"
+      ]
+    },
+    {
+      "owner": "workflow-3d",
+      "packetCount": 2,
+      "promptCount": 222,
+      "promptReviewCount": 140,
+      "fragmentReviewCount": 82,
+      "approximateTokens": 10611,
+      "sourcePaths": [
+        "Barzy App/public/assets/HTML/3D-IA-Workflow.html"
+      ]
+    }
+  ],
+  "decisionIndex": "decision-index.json",
+  "triagePacketDirectory": "triage-packets",
+  "manualTriageCount": 4185,
+  "manualTriagePacketCount": 20,
+  "manualTriageApproximateTokens": 32582,
+  "triageKindCounts": {
+    "ui-copy-candidate": 554,
+    "short-atom-candidate": 2453,
+    "prose-candidate": 250,
+    "unresolved-candidate": 541,
+    "prompt-context-candidate": 361,
+    "runtime-identifier": 26
+  },
+  "astraBundleDirectory": "astra-bundles",
+  "astraBundles": [
+    {
+      "id": "a1-realism-beauty",
+      "title": "A1 — Realism Forge + Beauty",
+      "owners": [
+        "realism-forge",
+        "barz-beauty"
+      ],
+      "itemCount": 400,
+      "approximateTokens": 9749,
+      "file": "a1-realism-beauty.json"
+    },
+    {
+      "id": "a2-cinematic-shoot",
+      "title": "A2 — Cinematic Shoot",
+      "owners": [
+        "cinematic-shoot"
+      ],
+      "itemCount": 162,
+      "approximateTokens": 8396,
+      "file": "a2-cinematic-shoot.json"
+    },
+    {
+      "id": "a3-acting-gen",
+      "title": "A3 — Acting Gen",
+      "owners": [
+        "acting-gen"
+      ],
+      "itemCount": 509,
+      "approximateTokens": 21338,
+      "file": "a3-acting-gen.json"
+    },
+    {
+      "id": "a4-facs-board",
+      "title": "A4 — FACS Sheet Generator + BZ Board",
+      "owners": [
+        "facs-sheet-generator",
+        "barzy-board"
+      ],
+      "itemCount": 175,
+      "approximateTokens": 2403,
+      "file": "a4-facs-board.json"
+    },
+    {
+      "id": "a5-veo-precision",
+      "title": "A5 — VEO Precision",
+      "owners": [
+        "veo-suite"
+      ],
+      "itemCount": 223,
+      "approximateTokens": 3348,
+      "file": "a5-veo-precision.json"
+    },
+    {
+      "id": "a6-consistent-character-process",
+      "title": "A6 — Consistent Character Process",
+      "owners": [
+        "cccp"
+      ],
+      "itemCount": 44,
+      "approximateTokens": 3088,
+      "file": "a6-consistent-character-process.json"
+    },
+    {
+      "id": "a7-character-sheet",
+      "title": "A7 — BZ Sheet",
+      "owners": [
+        "barzy-sheet"
+      ],
+      "itemCount": 41,
+      "approximateTokens": 5696,
+      "file": "a7-character-sheet.json"
+    },
+    {
+      "id": "a8-bz-designer",
+      "title": "A8 — BZ Designer",
+      "owners": [
+        "barz-designer"
+      ],
+      "itemCount": 203,
+      "approximateTokens": 7958,
+      "file": "a8-bz-designer.json"
+    },
+    {
+      "id": "a9-knolling-board",
+      "title": "A9 — Knolling Board Generator",
+      "owners": [
+        "knolling"
+      ],
+      "itemCount": 53,
+      "approximateTokens": 12121,
+      "file": "a9-knolling-board.json"
+    },
+    {
+      "id": "a10-multishot",
+      "title": "A10 — MD Multishot",
+      "owners": [
+        "multishot"
+      ],
+      "itemCount": 154,
+      "approximateTokens": 14556,
+      "file": "a10-multishot.json"
+    },
+    {
+      "id": "a11-seedance-framing",
+      "title": "A11 — Seedance Framing",
+      "owners": [
+        "seedance"
+      ],
+      "itemCount": 532,
+      "approximateTokens": 15907,
+      "file": "a11-seedance-framing.json"
+    },
+    {
+      "id": "a12-cinema-helper",
+      "title": "A12 — Cinema Helper",
+      "owners": [
+        "cinema-helper"
+      ],
+      "itemCount": 1032,
+      "approximateTokens": 13127,
+      "file": "a12-cinema-helper.json"
+    }
+  ],
+  "manualTriageStatus": "quarantined-for-structural-triage"
+}

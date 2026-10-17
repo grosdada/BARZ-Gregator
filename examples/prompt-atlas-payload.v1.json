@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "1.0",
+  "source": {
+    "app": "prompt-atlas",
+    "version": "5.2.3",
+    "module": "Video Multi Framing"
+  },
+  "mediaType": "video",
+  "prompt": "A controlled cinematic camera move through a rain-soaked workshop.",
+  "negativePrompt": "flicker, unstable anatomy, background drift",
+  "target": {
+    "modelFamily": "Kling",
+    "modelHint": "latest verified video model"
+  },
+  "settings": {
+    "aspectRatio": "16:9",
+    "durationSeconds": 8
+  },
+  "references": [],
+  "createdAt": "2026-09-09T16:00:00.000Z"
+}

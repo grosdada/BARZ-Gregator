@@ -1,0 +1,417 @@
+:root {
+  color-scheme: dark;
+  --vd-black: #070909;
+  --vd-graphite: #0d1010;
+  --vd-steel: #151918;
+  --vd-raised: #1c211f;
+  --vd-line: #2b3230;
+  --vd-line-strong: #46504d;
+  --vd-ink: #f0eee8;
+  --vd-muted: #999f9b;
+  --vd-dim: #68706c;
+  --vd-signal: #ff5b3a;
+  --vd-signal-dark: #522117;
+  --vd-cold: #84aebe;
+  --vd-safe: #8cc7a3;
+  --vd-warning: #f1a36f;
+  --vd-font: "Arial Narrow", "Roboto Condensed", "Aptos Narrow", "Segoe UI", sans-serif;
+}
+
+html,
+body.video-editor-standalone,
+body.me-root {
+  background: var(--vd-black) !important;
+  color: var(--vd-ink) !important;
+  font-family: var(--vd-font) !important;
+}
+
+body.video-editor-standalone,
+body.me-root {
+  scrollbar-color: var(--vd-line-strong) var(--vd-graphite);
+}
+
+body.video-editor-standalone ::selection,
+body.me-root ::selection {
+  background: var(--vd-signal-dark);
+  color: var(--vd-ink);
+}
+
+body.video-editor-standalone :is(button, input, select, textarea):focus-visible,
+body.me-root :is(button, input, select, textarea):focus-visible {
+  outline: 2px solid var(--vd-signal) !important;
+  outline-offset: 2px;
+}
+
+/* Editor — preserve the NLE structure, replace the detached blue/rounded skin. */
+body.video-editor-standalone .video-editor-app {
+  gap: 10px;
+  padding: 12px;
+  background: var(--vd-black);
+}
+
+body.video-editor-standalone .ve-toolbar {
+  gap: 7px;
+  min-height: 52px;
+  padding: 8px;
+  border: 1px solid var(--vd-line);
+  background: linear-gradient(180deg, var(--vd-steel), var(--vd-graphite));
+}
+
+body.video-editor-standalone .ve-tool-group {
+  gap: 2px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+body.video-editor-standalone :is(.ve-tool, .ve-transport-btn, .ve-th-mute, .ve-aspect-btn) {
+  min-height: 32px;
+  border: 1px solid var(--vd-line-strong);
+  border-radius: 0;
+  background: var(--vd-steel);
+  color: var(--vd-ink);
+  font-family: var(--vd-font);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+body.video-editor-standalone :is(.ve-tool, .ve-transport-btn, .ve-th-mute, .ve-aspect-btn):hover:not(:disabled) {
+  border-color: var(--vd-signal);
+  background: var(--vd-raised);
+  color: #ffb39b;
+}
+
+body.video-editor-standalone :is(.ve-tool.active, .ve-tool-primary, .ve-transport-main) {
+  border-color: #743621;
+  background: var(--vd-signal-dark);
+  color: #ff9d7b;
+  box-shadow: inset 0 2px var(--vd-signal);
+}
+
+body.video-editor-standalone .video-import {
+  min-height: 34px;
+  border: 1px solid #743621;
+  border-radius: 0;
+  background: var(--vd-signal-dark);
+  color: #ffb39b;
+  font: 800 11px/32px var(--vd-font);
+}
+
+body.video-editor-standalone .video-analyzer-status {
+  color: var(--vd-muted);
+  font-size: 10px;
+}
+
+body.video-editor-standalone .ve-fs-group {
+  margin-left: auto;
+  padding-left: 8px;
+  border-left: 1px solid var(--vd-line);
+}
+
+body.video-editor-standalone .ve-fs-check {
+  color: var(--vd-muted);
+  font-size: 10px;
+}
+
+body.video-editor-standalone input[type="checkbox"],
+body.video-editor-standalone input[type="radio"] {
+  accent-color: var(--vd-signal);
+}
+
+body.video-editor-standalone .ve-info {
+  margin: 0;
+  padding: 8px 10px;
+  border-left: 2px solid var(--vd-cold);
+  background: var(--vd-graphite);
+  color: var(--vd-muted);
+  font-size: 10px;
+  line-height: 1.45;
+  opacity: 1;
+}
+
+body.video-editor-standalone .ve-monitor-label,
+body.video-editor-standalone .ve-bin-title,
+body.video-editor-standalone .ve-th-name {
+  color: var(--vd-muted);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  opacity: 1;
+}
+
+body.video-editor-standalone .ve-monitor-screen {
+  border: 1px solid var(--vd-line);
+  border-radius: 0;
+  background: #020303;
+  box-shadow: inset 0 0 0 1px #000;
+}
+
+body.video-editor-standalone .ve-monitor-empty {
+  color: var(--vd-dim);
+  font-size: 11px;
+}
+
+body.video-editor-standalone .ve-mon-handle::before,
+body.video-editor-standalone .ve-resize-handle::before {
+  border-radius: 0;
+  background: var(--vd-line-strong);
+}
+
+body.video-editor-standalone .ve-mon-handle:hover::before,
+body.video-editor-standalone .ve-resize-handle:hover::before {
+  background: var(--vd-signal);
+}
+
+body.video-editor-standalone .ve-transport,
+body.video-editor-standalone .ve-bin,
+body.video-editor-standalone .ve-timeline {
+  border: 1px solid var(--vd-line);
+  border-radius: 0;
+  background: var(--vd-graphite);
+}
+
+body.video-editor-standalone .ve-transport {
+  padding: 6px 10px;
+}
+
+body.video-editor-standalone .ve-transport-btn {
+  width: 32px;
+  height: 30px;
+  min-height: 30px;
+}
+
+body.video-editor-standalone .ve-transport-main {
+  width: 42px;
+}
+
+body.video-editor-standalone .ve-loop-btn.active {
+  border-color: var(--vd-safe);
+  background: #163426;
+  color: var(--vd-safe);
+  box-shadow: none;
+}
+
+body.video-editor-standalone .ve-time {
+  color: var(--vd-ink);
+}
+
+body.video-editor-standalone .ve-frames {
+  border: 1px solid #29463b;
+  border-radius: 0;
+  background: #0d1d17;
+  color: var(--vd-safe);
+  text-shadow: none;
+}
+
+body.video-editor-standalone .ve-bin-item {
+  border: 1px solid var(--vd-line);
+  border-radius: 0;
+  background: var(--vd-steel);
+}
+
+body.video-editor-standalone .ve-bin-item.audio { border-left-color: var(--vd-safe); }
+body.video-editor-standalone .ve-bin-item.video { border-left-color: var(--vd-cold); }
+body.video-editor-standalone .ve-bin-item.selected { outline: 1px solid var(--vd-signal); }
+
+body.video-editor-standalone .ve-timeline { padding: 0; }
+body.video-editor-standalone .ve-tl-headers { border-right-color: var(--vd-line-strong); background: #090b0b; }
+body.video-editor-standalone .ve-track-header { border-bottom-color: var(--vd-line); }
+body.video-editor-standalone .ve-ruler { border-bottom-color: var(--vd-line-strong); background: #0b0e0d; }
+body.video-editor-standalone .ve-tick { border-left-color: var(--vd-line); color: var(--vd-dim); }
+body.video-editor-standalone .ve-track { border-bottom-color: var(--vd-line); background: #0a0d0c; }
+body.video-editor-standalone .ve-track.video { background: #0d1416; }
+body.video-editor-standalone .ve-track.audio { background: #0d1612; }
+body.video-editor-standalone .ve-track.drag-over { outline-color: var(--vd-signal); }
+body.video-editor-standalone .ve-playhead { background: var(--vd-signal); }
+
+body.video-editor-standalone :is(.ve-context-menu, .ve-modal-card, .ve-opacity-popup) {
+  border: 1px solid var(--vd-line-strong);
+  border-radius: 0;
+  background: var(--vd-steel);
+  color: var(--vd-ink);
+  box-shadow: 0 20px 60px rgb(0 0 0 / 55%);
+}
+
+body.video-editor-standalone .ve-context-menu button {
+  color: var(--vd-ink);
+}
+
+body.video-editor-standalone .ve-context-menu button:hover {
+  background: var(--vd-signal-dark);
+  color: #ffb39b;
+}
+
+body.video-editor-standalone .ve-modal-backdrop { background: rgb(0 0 0 / 74%); }
+body.video-editor-standalone .ve-modal-head { border-bottom-color: var(--vd-line); background: var(--vd-graphite); }
+body.video-editor-standalone .ve-modal-body { background: var(--vd-steel); }
+body.video-editor-standalone :is(input, select, textarea) {
+  border-color: var(--vd-line-strong);
+  border-radius: 0;
+  background: var(--vd-graphite);
+  color: var(--vd-ink);
+}
+
+body.video-editor-standalone input[type="range"] { accent-color: var(--vd-signal); }
+body.video-editor-standalone .ve-fx-card { border-color: var(--vd-line); border-radius: 0; background: var(--vd-graphite); }
+
+/* Motion Emulator — same Atlas palette, no light surfaces. */
+body.me-root {
+  --barzy-bg: var(--vd-black);
+  --barzy-bg-2: var(--vd-graphite);
+  --barzy-panel: var(--vd-steel);
+  --barzy-text: var(--vd-ink);
+  --barzy-muted: var(--vd-muted);
+  --barzy-line: var(--vd-line);
+  --barzy-line-strong: var(--vd-line-strong);
+  --barzy-copper: var(--vd-signal);
+  --barzy-danger: #d35d52;
+  --barzy-code-bg: #050707;
+  --barzy-code-text: #d9dedc;
+  --barzy-radius: 0px;
+  overflow: auto;
+}
+
+body.me-root .me-shell { min-height: 100%; background: var(--vd-black); }
+body.me-root.barzy-themed[data-barzy-theme] .me-header {
+  height: 50px;
+  border-bottom-color: var(--vd-line);
+  /* Override the legacy Rouge Editorial header rule, which is intentionally
+     light and uses !important in the shared historical theme. */
+  background: linear-gradient(180deg, var(--vd-steel), var(--vd-graphite)) !important;
+}
+
+body.me-root .me-mark {
+  border: 1px solid #743621;
+  border-radius: 0;
+  background: var(--vd-signal-dark);
+  color: #ffb39b;
+}
+
+body.me-root .me-title { color: var(--vd-ink); font-size: 16px; }
+body.me-root .me-badge,
+body.me-root .me-chip {
+  border-color: var(--vd-line);
+  border-radius: 0;
+  background: var(--vd-graphite);
+  color: var(--vd-muted);
+}
+
+body.me-root .me-main { grid-template-columns: 240px minmax(0, 1fr) 300px; background: var(--vd-black); }
+body.me-root .me-rail,
+body.me-root .me-prompt {
+  border-color: var(--vd-line);
+  background: var(--vd-graphite);
+}
+body.me-root .me-prompt { display: flex; }
+body.me-root .me-center { background: var(--vd-black); }
+
+body.me-root .me-card,
+body.me-root .me-progress,
+body.me-root .me-export-row,
+body.me-root .me-transport,
+body.me-root .me-figure,
+body.me-root .me-toast {
+  border-color: var(--vd-line);
+  border-radius: 0;
+  background: var(--vd-steel);
+  color: var(--vd-ink);
+}
+
+body.me-root .me-eyebrow,
+body.me-root .field-label,
+body.me-root .me-figcap {
+  color: var(--vd-muted);
+  font-size: 9px;
+  font-weight: 800;
+}
+
+body.me-root .me-eyebrow {
+  padding-bottom: 7px;
+  border-bottom: 1px solid var(--vd-line);
+  color: var(--vd-ink);
+}
+
+body.me-root .me-drop {
+  border: 1px dashed var(--vd-line-strong);
+  border-radius: 0;
+  background: #090b0b;
+  color: var(--vd-ink);
+}
+
+body.me-root .me-drop:hover,
+body.me-root .me-drop.drop-active {
+  border-color: var(--vd-signal) !important;
+  background: var(--vd-signal-dark) !important;
+}
+
+body.me-root :is(.me-input, .me-prompt-out) {
+  border-color: var(--vd-line-strong) !important;
+  border-radius: 0;
+  background: #080a0a !important;
+  color: var(--vd-ink) !important;
+}
+
+body.me-root :is(.me-btn, .me-mini-btn, .me-btn-clear, .me-tab) {
+  border-color: var(--vd-line-strong) !important;
+  border-radius: 0;
+  background: var(--vd-steel) !important;
+  color: var(--vd-ink) !important;
+}
+
+body.me-root :is(.me-btn, .me-mini-btn, .me-btn-clear, .me-tab):hover:not(:disabled) {
+  border-color: var(--vd-signal) !important;
+  background: var(--vd-raised) !important;
+  color: #ffb39b !important;
+}
+
+body.me-root .me-btn-primary {
+  border-color: #743621 !important;
+  border-radius: 0;
+  background: var(--vd-signal-dark) !important;
+  color: #ffb39b !important;
+  box-shadow: inset 0 2px var(--vd-signal);
+}
+
+body.me-root .me-btn-primary:disabled {
+  border-color: var(--vd-line) !important;
+  background: var(--vd-graphite) !important;
+  color: var(--vd-dim) !important;
+  box-shadow: none;
+}
+
+body.me-root .me-tab { opacity: 1; }
+body.me-root .me-tab.tab-active {
+  border-color: var(--vd-line) !important;
+  background: var(--vd-raised) !important;
+  color: var(--vd-signal) !important;
+  box-shadow: inset 0 2px var(--vd-signal);
+}
+
+body.me-root .me-figcap { border-bottom-color: var(--vd-line); background: var(--vd-graphite); }
+body.me-root .me-figbody { background: #020303; }
+body.me-root .me-empty { color: var(--vd-dim); }
+body.me-root .me-progress-track { border-radius: 0; background: #050707; }
+body.me-root .me-progress-bar { border-radius: 0; background: var(--vd-signal); }
+body.me-root .me-play { border-color: #743621 !important; background: var(--vd-signal-dark) !important; color: #ffb39b !important; }
+body.me-root .me-scrub { accent-color: var(--vd-signal); }
+body.me-root input:is([type="checkbox"], [type="radio"]) { accent-color: var(--vd-signal); }
+body.me-root .me-viewport3d { border-color: var(--vd-line); border-radius: 0; background: #020303; }
+
+@media (max-width: 1049px) {
+  body.me-root .me-main { grid-template-columns: 220px minmax(0, 1fr); overflow: visible; }
+  body.me-root .me-prompt { grid-column: 1 / -1; min-height: 480px; border-top: 1px solid var(--vd-line); border-left: 0; }
+}
+
+@media (max-width: 760px) {
+  body.me-root .me-main { grid-template-columns: 1fr; }
+  body.me-root .me-rail,
+  body.me-root .me-prompt { grid-column: 1; border: 0; border-bottom: 1px solid var(--vd-line); }
+  body.me-root .me-previews { grid-template-columns: 1fr; min-height: 720px; }
+  body.me-root .me-header { height: auto; align-items: flex-start; gap: 8px; flex-direction: column; padding-block: 10px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.video-editor-standalone *,
+  body.me-root * { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+}

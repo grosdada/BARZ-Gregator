@@ -1,0 +1,2417 @@
+{
+  "schemaVersion": "1.0",
+  "reviewerModel": "gpt-6-astra",
+  "reviewedAt": "2026-09-11",
+  "fixtureSha256": "70e6992c6808ab11da8a8ac915e2cfc868d30446506dc7351e27cd81470435c1",
+  "batchSha256": "85c440a5e4e7a38f2f623bd019a67adfbd0b480f99ce5a4683a93addc173d3eb",
+  "source": {
+    "owner": "cinematic-shoot",
+    "path": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+    "sha256": "f737729ea48bdd8681eb56514192e53c672726b64d4dd4de8568da3f0d18e2f2"
+  },
+  "scope": "Reconciliation of all 219 extracted literals in this source only; not approval of other owners sharing their IDs. Compiler behavior review is in the handoff.",
+  "bodyCoverage": [
+    {
+      "recipeId": "cinematic-gold",
+      "family": "editorial",
+      "bundleItemId": "text-14df3053eb49e1300ede",
+      "action": "preserve"
+    },
+    {
+      "recipeId": "cinematic-1",
+      "family": "editorial",
+      "bundleItemId": "text-9b8d7bd1734af3537743",
+      "action": "preserve"
+    },
+    {
+      "recipeId": "cinematic-2",
+      "family": "editorial",
+      "bundleItemId": "text-c09205e035565b7cce33",
+      "action": "preserve"
+    },
+    {
+      "recipeId": "cinematic-3",
+      "family": "action",
+      "bundleItemId": "text-19001fa23a108380d701",
+      "action": "preserve"
+    },
+    {
+      "recipeId": "cinematic-4",
+      "family": "action",
+      "bundleItemId": "text-7d40e1722a0f2ec9ae85",
+      "action": "preserve"
+    },
+    {
+      "recipeId": "cinematic-5",
+      "family": "action",
+      "bundleItemId": "text-4e13af0008a03246cdc5",
+      "action": "preserve"
+    },
+    {
+      "recipeId": "cinematic-6",
+      "family": "action",
+      "bundleItemId": "text-f9c23a332ad1244574cd",
+      "action": "correct"
+    },
+    {
+      "recipeId": "cinematic-7",
+      "family": "adventure",
+      "bundleItemId": "text-292b374c9030e768c459",
+      "action": "preserve"
+    },
+    {
+      "recipeId": "cinematic-8",
+      "family": "adventure",
+      "bundleItemId": "text-4186cabd145d33392a6e",
+      "action": "preserve"
+    },
+    {
+      "recipeId": "cinematic-9",
+      "family": "adventure",
+      "bundleItemId": "text-0563dd27225324cdf081",
+      "action": "preserve"
+    },
+    {
+      "recipeId": "cinematic-10",
+      "family": "scifi",
+      "bundleItemId": "text-486d1d97283953424f73",
+      "action": "preserve"
+    },
+    {
+      "recipeId": "cinematic-11",
+      "family": "historical",
+      "bundleItemId": "text-1e1d96cbced541973417",
+      "action": "preserve"
+    },
+    {
+      "recipeId": "cinematic-12",
+      "family": "horror",
+      "bundleItemId": "text-8fd738f8715a41288aec",
+      "action": "preserve"
+    },
+    {
+      "recipeId": "cinematic-13",
+      "family": "horror",
+      "bundleItemId": "text-a93a498a464dbe16e99f",
+      "action": "preserve"
+    },
+    {
+      "recipeId": "cinematic-14",
+      "family": "scifi",
+      "bundleItemId": "text-7408aeaac44fcdcc352f",
+      "action": "preserve"
+    },
+    {
+      "recipeId": "cinematic-15",
+      "family": "scifi",
+      "bundleItemId": "text-aca3bc8e151229fa8a28",
+      "action": "preserve"
+    },
+    {
+      "recipeId": "cinematic-16",
+      "family": "action",
+      "bundleItemId": "text-1840b5d68e6e13c9c2c6",
+      "action": "preserve"
+    },
+    {
+      "recipeId": "cinematic-17",
+      "family": "scifi",
+      "bundleItemId": "text-a7dc5d7867b28d4222af",
+      "action": "preserve"
+    },
+    {
+      "recipeId": "cinematic-18",
+      "family": "action",
+      "bundleItemId": "text-e4cccd81a261fb61eeda",
+      "action": "preserve"
+    },
+    {
+      "recipeId": "cinematic-19",
+      "family": "adventure",
+      "bundleItemId": "text-a91af79b5b5fa9d77b49",
+      "action": "preserve"
+    },
+    {
+      "recipeId": "cinematic-20",
+      "family": "adventure",
+      "bundleItemId": "text-daa073fb68fbb43e9ae9",
+      "action": "preserve"
+    },
+    {
+      "recipeId": "cinematic-21",
+      "family": "action",
+      "bundleItemId": "text-cae89528278f0369aab3",
+      "action": "preserve"
+    },
+    {
+      "recipeId": "cinematic-22",
+      "family": "adventure",
+      "bundleItemId": "text-28d107329a9a7accdd31",
+      "action": "preserve"
+    },
+    {
+      "recipeId": "cinematic-23",
+      "family": "action",
+      "bundleItemId": "text-f070e998c906d154fefa",
+      "action": "preserve"
+    },
+    {
+      "recipeId": "cinematic-24",
+      "family": "action",
+      "bundleItemId": "text-3f27cbe7e508cd34b8bb",
+      "action": "correct"
+    },
+    {
+      "recipeId": "cinematic-25",
+      "family": "adventure",
+      "bundleItemId": "text-a4cf0849eb60b3e994e2",
+      "action": "preserve"
+    },
+    {
+      "recipeId": "cinematic-26",
+      "family": "historical",
+      "bundleItemId": "text-460441b5583f9ad5b38b",
+      "action": "preserve"
+    },
+    {
+      "recipeId": "cinematic-27",
+      "family": "historical",
+      "bundleItemId": "text-25f453106b70b88f5897",
+      "action": "preserve"
+    },
+    {
+      "recipeId": "cinematic-28",
+      "family": "historical",
+      "bundleItemId": "text-edd7df0ec6eff4de4d64",
+      "action": "preserve"
+    },
+    {
+      "recipeId": "cinematic-29",
+      "family": "historical",
+      "bundleItemId": "text-c33279e0797fc82d61f4",
+      "action": "preserve"
+    },
+    {
+      "recipeId": "cinematic-30",
+      "family": "historical",
+      "bundleItemId": "text-780110f2f5f097121db6",
+      "action": "preserve"
+    },
+    {
+      "recipeId": "cinematic-31",
+      "family": "scifi",
+      "bundleItemId": "text-09ffe35d9cee7ed0521d",
+      "action": "preserve"
+    },
+    {
+      "recipeId": "cinematic-32",
+      "family": "scifi",
+      "bundleItemId": "text-db8b92f3e0b9f30c82e2",
+      "action": "preserve"
+    },
+    {
+      "recipeId": "cinematic-33",
+      "family": "horror",
+      "bundleItemId": "text-fa82e2d4b15288707b73",
+      "action": "preserve"
+    },
+    {
+      "recipeId": "cinematic-34",
+      "family": "horror",
+      "bundleItemId": "text-9987b9ee69e34dc8b9a7",
+      "action": "preserve"
+    },
+    {
+      "recipeId": "cinematic-35",
+      "family": "horror",
+      "bundleItemId": "text-fca865c2cd42df1761e9",
+      "action": "preserve"
+    },
+    {
+      "recipeId": "cinematic-36",
+      "family": "adventure",
+      "bundleItemId": "text-c00afb20660c3bb2ce4f",
+      "action": "correct"
+    },
+    {
+      "recipeId": "cinematic-37",
+      "family": "adventure",
+      "bundleItemId": "text-2896d54758f73ad46088",
+      "action": "preserve"
+    },
+    {
+      "recipeId": "cinematic-38",
+      "family": "adventure",
+      "bundleItemId": "text-d70ce90739d9422c736c",
+      "action": "preserve"
+    },
+    {
+      "recipeId": "cinematic-39",
+      "family": "adventure",
+      "bundleItemId": "text-de963ffee7e428d4f1c7",
+      "action": "preserve"
+    },
+    {
+      "recipeId": "cinematic-40",
+      "family": "adventure",
+      "bundleItemId": "text-cf8d33a015941eab302e",
+      "action": "preserve"
+    }
+  ],
+  "metadataCorrections": [
+    {
+      "recipeId": "cinematic-33",
+      "field": "title",
+      "originalValue": "3x3 JSON: Occult Ritual Ritual",
+      "correctedValue": "3x3 JSON: Occult Ritual",
+      "reason": "Supprime la répétition accidentelle du titre. Conserver l'ID, la famille et le corps."
+    },
+    {
+      "recipeId": "cinematic-40",
+      "field": "title",
+      "originalValue": "The Abyss Abysses",
+      "correctedValue": "The Abyss",
+      "reason": "Supprime le doublon singulier/pluriel du titre, sans modifier la scène abyssale."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "text-a9491f4c1bf7b0cffbad",
+      "sourceIndex": 73,
+      "originalValue": "subject",
+      "occurrences": [
+        {
+          "line": 719,
+          "column": 56,
+          "kind": "string-literal",
+          "functionName": "parseSceneDetails",
+          "raw": "subject"
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-f2b92bda5abda88df685",
+      "sourceIndex": 89,
+      "originalValue": "Cinematic Shoot",
+      "occurrences": [
+        {
+          "line": 6,
+          "column": 10,
+          "kind": "html-text",
+          "functionName": null,
+          "raw": "Cinematic Shoot"
+        },
+        {
+          "line": 401,
+          "column": 11,
+          "kind": "html-text",
+          "functionName": null,
+          "raw": "Cinematic Shoot"
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "ui-or-catalog-metadata",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-96012bb06c0b025f8694",
+      "sourceIndex": 106,
+      "originalValue": "Character Swap & Morphological Lock (Gold)",
+      "occurrences": [
+        {
+          "line": 424,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "Character Swap & Morphological Lock (Gold)"
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "ui-or-catalog-metadata",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-12ea12eace7d655f471c",
+      "sourceIndex": 117,
+      "originalValue": "change",
+      "occurrences": [
+        {
+          "line": 909,
+          "column": 35,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "change"
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-16730bfc71e5bcfbc11f",
+      "sourceIndex": 118,
+      "originalValue": "Iterate",
+      "occurrences": [
+        {
+          "line": 884,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": "renderCard",
+          "raw": "Iterate"
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "ui-or-catalog-metadata",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-1aca80e8b55c802f7b43",
+      "sourceIndex": 120,
+      "originalValue": "label",
+      "occurrences": [
+        {
+          "line": 904,
+          "column": 47,
+          "kind": "string-literal",
+          "functionName": "renderCard",
+          "raw": "label"
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-1c6333509debf060200e",
+      "sourceIndex": 121,
+      "originalValue": "show",
+      "occurrences": [
+        {
+          "line": 761,
+          "column": 31,
+          "kind": "string-literal",
+          "functionName": "showToast",
+          "raw": "show"
+        },
+        {
+          "line": 763,
+          "column": 76,
+          "kind": "string-literal",
+          "functionName": "showToast",
+          "raw": "show"
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-24d7f03d8dc3c3666969",
+      "sourceIndex": 122,
+      "originalValue": "gold",
+      "occurrences": [
+        {
+          "line": 425,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "gold"
+        },
+        {
+          "line": 850,
+          "column": 70,
+          "kind": "string-literal",
+          "functionName": "renderCard",
+          "raw": "gold"
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-2a222bd79b1a5483900b",
+      "sourceIndex": 124,
+      "originalValue": " active",
+      "occurrences": [
+        {
+          "line": 827,
+          "column": 73,
+          "kind": "string-literal",
+          "functionName": "renderTabs",
+          "raw": " active"
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-2b0dcdd40016096b852d",
+      "sourceIndex": 125,
+      "originalValue": "actions",
+      "occurrences": [
+        {
+          "line": 861,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": "renderCard",
+          "raw": "actions"
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-3487351bcb0f9b682963",
+      "sourceIndex": 127,
+      "originalValue": "searchInput",
+      "occurrences": [
+        {
+          "line": 663,
+          "column": 39,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "searchInput"
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-37a0025aa1f2e29f9f88",
+      "sourceIndex": 128,
+      "originalValue": "span",
+      "occurrences": [
+        {
+          "line": 910,
+          "column": 45,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "span"
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-3e9cf9b3cf3ee226ca2b",
+      "sourceIndex": 129,
+      "originalValue": "aria-expanded",
+      "occurrences": [
+        {
+          "line": 867,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": "renderCard",
+          "raw": "aria-expanded"
+        },
+        {
+          "line": 870,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": "renderCard",
+          "raw": "aria-expanded"
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-4b02e0c6135a59245212",
+      "sourceIndex": 133,
+      "originalValue": "puppet",
+      "occurrences": [
+        {
+          "line": 654,
+          "column": 22,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "puppet"
+        },
+        {
+          "line": 736,
+          "column": 35,
+          "kind": "string-literal",
+          "functionName": "buildSemanticLayer",
+          "raw": "puppet"
+        },
+        {
+          "line": 929,
+          "column": 58,
+          "kind": "string-literal",
+          "functionName": "switchCharacterMode",
+          "raw": "puppet"
+        },
+        {
+          "line": 930,
+          "column": 73,
+          "kind": "string-literal",
+          "functionName": "switchCharacterMode",
+          "raw": "puppet"
+        },
+        {
+          "line": 975,
+          "column": 72,
+          "kind": "string-literal",
+          "functionName": "render",
+          "raw": "puppet"
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-5e23ec6a300dc60a7964",
+      "sourceIndex": 141,
+      "originalValue": "Mode",
+      "occurrences": [
+        {
+          "line": 410,
+          "column": 32,
+          "kind": "html-text",
+          "functionName": null,
+          "raw": "Mode"
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "ui-or-catalog-metadata",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-5e345dd239691e2f3362",
+      "sourceIndex": 142,
+      "originalValue": "Hide prompt",
+      "occurrences": [
+        {
+          "line": 871,
+          "column": 73,
+          "kind": "string-literal",
+          "functionName": "renderCard",
+          "raw": "Hide prompt"
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "ui-or-catalog-metadata",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-5ef5ef0364b6939c4ca6",
+      "sourceIndex": 143,
+      "originalValue": "all",
+      "occurrences": [
+        {
+          "line": 633,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "all"
+        },
+        {
+          "line": 651,
+          "column": 15,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "all"
+        },
+        {
+          "line": 675,
+          "column": 61,
+          "kind": "string-literal",
+          "functionName": "resolveFamily",
+          "raw": "all"
+        },
+        {
+          "line": 825,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "renderTabs",
+          "raw": "all"
+        },
+        {
+          "line": 845,
+          "column": 57,
+          "kind": "string-literal",
+          "functionName": "visiblePrompts",
+          "raw": "all"
+        },
+        {
+          "line": 947,
+          "column": 41,
+          "kind": "string-literal",
+          "functionName": "renderSections",
+          "raw": "all"
+        },
+        {
+          "line": 948,
+          "column": 53,
+          "kind": "string-literal",
+          "functionName": "renderSections",
+          "raw": "all"
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-6105d6cc76af400325e9",
+      "sourceIndex": 144,
+      "originalValue": "image",
+      "occurrences": [
+        {
+          "line": 802,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": "iteratePrompt",
+          "raw": "image"
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-66ba2129a90d4a5810ec",
+      "sourceIndex": 145,
+      "originalValue": "aria-label",
+      "occurrences": [
+        {
+          "line": 866,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": "renderCard",
+          "raw": "aria-label"
+        },
+        {
+          "line": 871,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": "renderCard",
+          "raw": "aria-label"
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-66dbef057b5d552f850e",
+      "sourceIndex": 146,
+      "originalValue": "prompt-",
+      "occurrences": [
+        {
+          "line": 778,
+          "column": 38,
+          "kind": "string-literal",
+          "functionName": "getPromptBox",
+          "raw": "prompt-"
+        },
+        {
+          "line": 917,
+          "column": 16,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "prompt-"
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-6f5a6034e770acbfb3f7",
+      "sourceIndex": 148,
+      "originalValue": "copy",
+      "occurrences": [
+        {
+          "line": 772,
+          "column": 28,
+          "kind": "string-literal",
+          "functionName": "copyText",
+          "raw": "copy"
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-74234e98afe7498fb5da",
+      "sourceIndex": 153,
+      "originalValue": "null",
+      "occurrences": [
+        {
+          "line": 989,
+          "column": 74,
+          "kind": "string-literal",
+          "functionName": "applyGrid",
+          "raw": "null"
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-79a5478768d2447431a9",
+      "sourceIndex": 154,
+      "originalValue": "human",
+      "occurrences": [
+        {
+          "line": 929,
+          "column": 38,
+          "kind": "string-literal",
+          "functionName": "switchCharacterMode",
+          "raw": "human"
+        },
+        {
+          "line": 929,
+          "column": 48,
+          "kind": "string-literal",
+          "functionName": "switchCharacterMode",
+          "raw": "human"
+        },
+        {
+          "line": 931,
+          "column": 72,
+          "kind": "string-literal",
+          "functionName": "switchCharacterMode",
+          "raw": "human"
+        },
+        {
+          "line": 976,
+          "column": 71,
+          "kind": "string-literal",
+          "functionName": "render",
+          "raw": "human"
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-821f983459b6cfc99dff",
+      "sourceIndex": 158,
+      "originalValue": "collapsed",
+      "occurrences": [
+        {
+          "line": 869,
+          "column": 51,
+          "kind": "string-literal",
+          "functionName": "renderCard",
+          "raw": "collapsed"
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-85eb00994d09e4d052a0",
+      "sourceIndex": 160,
+      "originalValue": "Content-Type",
+      "occurrences": [
+        {
+          "line": 799,
+          "column": 22,
+          "kind": "string-literal",
+          "functionName": "iteratePrompt",
+          "raw": "Content-Type"
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-8cb9af5ab3d715b090c3",
+      "sourceIndex": 163,
+      "originalValue": "[OUTFIT_INSTRUCTION]",
+      "occurrences": [
+        {
+          "line": 745,
+          "column": 32,
+          "kind": "string-literal",
+          "functionName": "buildPrompt",
+          "raw": "[OUTFIT_INSTRUCTION]"
+        },
+        {
+          "line": 749,
+          "column": 43,
+          "kind": "string-literal",
+          "functionName": "buildPrompt",
+          "raw": "[OUTFIT_INSTRUCTION]"
+        },
+        {
+          "line": 903,
+          "column": 70,
+          "kind": "string-literal",
+          "functionName": "renderCard",
+          "raw": "[OUTFIT_INSTRUCTION]"
+        }
+      ],
+      "action": "preserve",
+      "role": "compiler-token",
+      "reason": "Jeton ou fragment de composition lu dans la source ; conserver et résoudre au stade approprié."
+    },
+    {
+      "id": "text-93a5d9cb882935382736",
+      "sourceIndex": 165,
+      "originalValue": "outfit-",
+      "occurrences": [
+        {
+          "line": 743,
+          "column": 46,
+          "kind": "string-literal",
+          "functionName": "buildPrompt",
+          "raw": "outfit-"
+        },
+        {
+          "line": 907,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": "renderCard",
+          "raw": "outfit-"
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-96879611650f80a81392",
+      "sourceIndex": 166,
+      "originalValue": "active",
+      "occurrences": [
+        {
+          "line": 930,
+          "column": 39,
+          "kind": "string-literal",
+          "functionName": "switchCharacterMode",
+          "raw": "active"
+        },
+        {
+          "line": 931,
+          "column": 38,
+          "kind": "string-literal",
+          "functionName": "switchCharacterMode",
+          "raw": "active"
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-97422eb9019a8a2d7b46",
+      "sourceIndex": 168,
+      "originalValue": "AI iteration failed.",
+      "occurrences": [
+        {
+          "line": 808,
+          "column": 59,
+          "kind": "string-literal",
+          "functionName": "iteratePrompt",
+          "raw": "AI iteration failed."
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "ui-or-catalog-metadata",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-97a611ef573ef0689dac",
+      "sourceIndex": 169,
+      "originalValue": "3x3",
+      "occurrences": [
+        {
+          "line": 653,
+          "column": 49,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "3x3"
+        }
+      ],
+      "action": "preserve",
+      "role": "compiler-token",
+      "reason": "Jeton ou fragment de composition lu dans la source ; conserver et résoudre au stade approprié."
+    },
+    {
+      "id": "text-97af556fd3b920aed84d",
+      "sourceIndex": 170,
+      "originalValue": "Search theme or prompt...",
+      "occurrences": [
+        {
+          "line": 407,
+          "column": 58,
+          "kind": "html-attribute:placeholder",
+          "functionName": null,
+          "raw": "Search theme or prompt..."
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "ui-or-catalog-metadata",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-982d9e3eb996f559e633",
+      "sourceIndex": 171,
+      "originalValue": "text",
+      "occurrences": [
+        {
+          "line": 897,
+          "column": 20,
+          "kind": "string-literal",
+          "functionName": "renderCard",
+          "raw": "text"
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-9aee6b1bcdf617d8e39b",
+      "sourceIndex": 172,
+      "originalValue": "POST",
+      "occurrences": [
+        {
+          "line": 798,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": "iteratePrompt",
+          "raw": "POST"
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-a52ace420f2175d08b15",
+      "sourceIndex": 176,
+      "originalValue": "All",
+      "occurrences": [
+        {
+          "line": 633,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "All"
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "ui-or-catalog-metadata",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-a56145270ce6b3bebd1d",
+      "sourceIndex": 177,
+      "originalValue": "id",
+      "occurrences": [
+        {
+          "line": 428,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "id"
+        },
+        {
+          "line": 433,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "id"
+        },
+        {
+          "line": 438,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "id"
+        },
+        {
+          "line": 443,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "id"
+        },
+        {
+          "line": 448,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "id"
+        },
+        {
+          "line": 453,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "id"
+        },
+        {
+          "line": 458,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "id"
+        },
+        {
+          "line": 463,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "id"
+        },
+        {
+          "line": 468,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "id"
+        },
+        {
+          "line": 473,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "id"
+        },
+        {
+          "line": 478,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "id"
+        },
+        {
+          "line": 483,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "id"
+        },
+        {
+          "line": 488,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "id"
+        },
+        {
+          "line": 493,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "id"
+        },
+        {
+          "line": 498,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "id"
+        },
+        {
+          "line": 503,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "id"
+        },
+        {
+          "line": 508,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "id"
+        },
+        {
+          "line": 513,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "id"
+        },
+        {
+          "line": 518,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "id"
+        },
+        {
+          "line": 523,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "id"
+        },
+        {
+          "line": 528,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "id"
+        },
+        {
+          "line": 533,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "id"
+        },
+        {
+          "line": 538,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "id"
+        },
+        {
+          "line": 543,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "id"
+        },
+        {
+          "line": 548,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "id"
+        },
+        {
+          "line": 553,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "id"
+        },
+        {
+          "line": 558,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "id"
+        },
+        {
+          "line": 563,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "id"
+        },
+        {
+          "line": 568,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "id"
+        },
+        {
+          "line": 573,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "id"
+        },
+        {
+          "line": 578,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "id"
+        },
+        {
+          "line": 583,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "id"
+        },
+        {
+          "line": 588,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "id"
+        },
+        {
+          "line": 593,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "id"
+        },
+        {
+          "line": 598,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "id"
+        },
+        {
+          "line": 603,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "id"
+        },
+        {
+          "line": 608,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "id"
+        },
+        {
+          "line": 613,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "id"
+        },
+        {
+          "line": 618,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "id"
+        },
+        {
+          "line": 623,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "id"
+        },
+        {
+          "line": 628,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "id"
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-a60ec1cf58f49cd2fab6",
+      "sourceIndex": 178,
+      "originalValue": "toast",
+      "occurrences": [
+        {
+          "line": 667,
+          "column": 38,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "toast"
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-aaf2320646108059a87a",
+      "sourceIndex": 180,
+      "originalValue": "title",
+      "occurrences": [
+        {
+          "line": 424,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "title"
+        },
+        {
+          "line": 431,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "title"
+        },
+        {
+          "line": 436,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "title"
+        },
+        {
+          "line": 441,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "title"
+        },
+        {
+          "line": 446,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "title"
+        },
+        {
+          "line": 451,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "title"
+        },
+        {
+          "line": 456,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "title"
+        },
+        {
+          "line": 461,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "title"
+        },
+        {
+          "line": 466,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "title"
+        },
+        {
+          "line": 471,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "title"
+        },
+        {
+          "line": 476,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "title"
+        },
+        {
+          "line": 481,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "title"
+        },
+        {
+          "line": 486,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "title"
+        },
+        {
+          "line": 491,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "title"
+        },
+        {
+          "line": 496,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "title"
+        },
+        {
+          "line": 501,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "title"
+        },
+        {
+          "line": 506,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "title"
+        },
+        {
+          "line": 511,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "title"
+        },
+        {
+          "line": 516,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "title"
+        },
+        {
+          "line": 521,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "title"
+        },
+        {
+          "line": 526,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "title"
+        },
+        {
+          "line": 531,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "title"
+        },
+        {
+          "line": 536,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "title"
+        },
+        {
+          "line": 541,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "title"
+        },
+        {
+          "line": 546,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "title"
+        },
+        {
+          "line": 551,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "title"
+        },
+        {
+          "line": 556,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "title"
+        },
+        {
+          "line": 561,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "title"
+        },
+        {
+          "line": 566,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "title"
+        },
+        {
+          "line": 571,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "title"
+        },
+        {
+          "line": 576,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "title"
+        },
+        {
+          "line": 581,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "title"
+        },
+        {
+          "line": 586,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "title"
+        },
+        {
+          "line": 591,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "title"
+        },
+        {
+          "line": 596,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "title"
+        },
+        {
+          "line": 601,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "title"
+        },
+        {
+          "line": 606,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "title"
+        },
+        {
+          "line": 611,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "title"
+        },
+        {
+          "line": 616,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "title"
+        },
+        {
+          "line": 621,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "title"
+        },
+        {
+          "line": 626,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "title"
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-ab530a13e45914982b79",
+      "sourceIndex": 181,
+      "originalValue": "message",
+      "occurrences": [
+        {
+          "line": 984,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": "applyGrid",
+          "raw": "message"
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-af42cee1abdfd2c15ea0",
+      "sourceIndex": 184,
+      "originalValue": "Show prompt",
+      "occurrences": [
+        {
+          "line": 866,
+          "column": 41,
+          "kind": "string-literal",
+          "functionName": "renderCard",
+          "raw": "Show prompt"
+        },
+        {
+          "line": 871,
+          "column": 57,
+          "kind": "string-literal",
+          "functionName": "renderCard",
+          "raw": "Show prompt"
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "ui-or-catalog-metadata",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-bacb769b46f6d169fb22",
+      "sourceIndex": 186,
+      "originalValue": "application/json",
+      "occurrences": [
+        {
+          "line": 799,
+          "column": 38,
+          "kind": "string-literal",
+          "functionName": "iteratePrompt",
+          "raw": "application/json"
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-bd938c688f49b77c7fc5",
+      "sourceIndex": 188,
+      "originalValue": "action",
+      "occurrences": [
+        {
+          "line": 635,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "action"
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-c174ca4f03eb7c6b42b8",
+      "sourceIndex": 189,
+      "originalValue": "/api/ai/refine",
+      "occurrences": [
+        {
+          "line": 797,
+          "column": 38,
+          "kind": "string-literal",
+          "functionName": "iteratePrompt",
+          "raw": "/api/ai/refine"
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-c3e2d78f3ff335724b40",
+      "sourceIndex": 191,
+      "originalValue": "button",
+      "occurrences": [
+        {
+          "line": 826,
+          "column": 47,
+          "kind": "string-literal",
+          "functionName": "renderTabs",
+          "raw": "button"
+        },
+        {
+          "line": 828,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": "renderTabs",
+          "raw": "button"
+        },
+        {
+          "line": 862,
+          "column": 45,
+          "kind": "string-literal",
+          "functionName": "renderCard",
+          "raw": "button"
+        },
+        {
+          "line": 864,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": "renderCard",
+          "raw": "button"
+        },
+        {
+          "line": 873,
+          "column": 43,
+          "kind": "string-literal",
+          "functionName": "renderCard",
+          "raw": "button"
+        },
+        {
+          "line": 875,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": "renderCard",
+          "raw": "button"
+        },
+        {
+          "line": 881,
+          "column": 46,
+          "kind": "string-literal",
+          "functionName": "renderCard",
+          "raw": "button"
+        },
+        {
+          "line": 883,
+          "column": 22,
+          "kind": "string-literal",
+          "functionName": "renderCard",
+          "raw": "button"
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-c55394776b1492cf0c21",
+      "sourceIndex": 192,
+      "originalValue": "Prompt copied",
+      "occurrences": [
+        {
+          "line": 879,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": "renderCard",
+          "raw": "Prompt copied"
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "ui-or-catalog-metadata",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-c96c6d5be8d08a12e7b5",
+      "sourceIndex": 195,
+      "originalValue": "input",
+      "occurrences": [
+        {
+          "line": 895,
+          "column": 44,
+          "kind": "string-literal",
+          "functionName": "renderCard",
+          "raw": "input"
+        },
+        {
+          "line": 899,
+          "column": 30,
+          "kind": "string-literal",
+          "functionName": "renderCard",
+          "raw": "input"
+        },
+        {
+          "line": 906,
+          "column": 49,
+          "kind": "string-literal",
+          "functionName": "renderCard",
+          "raw": "input"
+        },
+        {
+          "line": 921,
+          "column": 28,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "input"
+        },
+        {
+          "line": 970,
+          "column": 33,
+          "kind": "string-literal",
+          "functionName": "render",
+          "raw": "input"
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-cd35a2426062b7d58fd4",
+      "sourceIndex": 196,
+      "originalValue": "div",
+      "occurrences": [
+        {
+          "line": 852,
+          "column": 43,
+          "kind": "string-literal",
+          "functionName": "renderCard",
+          "raw": "div"
+        },
+        {
+          "line": 860,
+          "column": 46,
+          "kind": "string-literal",
+          "functionName": "renderCard",
+          "raw": "div"
+        },
+        {
+          "line": 890,
+          "column": 43,
+          "kind": "string-literal",
+          "functionName": "renderCard",
+          "raw": "div"
+        },
+        {
+          "line": 893,
+          "column": 46,
+          "kind": "string-literal",
+          "functionName": "renderCard",
+          "raw": "div"
+        },
+        {
+          "line": 940,
+          "column": 46,
+          "kind": "string-literal",
+          "functionName": "renderSections",
+          "raw": "div"
+        },
+        {
+          "line": 957,
+          "column": 45,
+          "kind": "string-literal",
+          "functionName": "renderSections",
+          "raw": "div"
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-cf07194ee232eb531e15",
+      "sourceIndex": 197,
+      "originalValue": "prompt",
+      "occurrences": [
+        {
+          "line": 427,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "prompt"
+        },
+        {
+          "line": 432,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "prompt"
+        },
+        {
+          "line": 437,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "prompt"
+        },
+        {
+          "line": 442,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "prompt"
+        },
+        {
+          "line": 447,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "prompt"
+        },
+        {
+          "line": 452,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "prompt"
+        },
+        {
+          "line": 457,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "prompt"
+        },
+        {
+          "line": 462,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "prompt"
+        },
+        {
+          "line": 467,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "prompt"
+        },
+        {
+          "line": 472,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "prompt"
+        },
+        {
+          "line": 477,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "prompt"
+        },
+        {
+          "line": 482,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "prompt"
+        },
+        {
+          "line": 487,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "prompt"
+        },
+        {
+          "line": 492,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "prompt"
+        },
+        {
+          "line": 497,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "prompt"
+        },
+        {
+          "line": 502,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "prompt"
+        },
+        {
+          "line": 507,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "prompt"
+        },
+        {
+          "line": 512,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "prompt"
+        },
+        {
+          "line": 517,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "prompt"
+        },
+        {
+          "line": 522,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "prompt"
+        },
+        {
+          "line": 527,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "prompt"
+        },
+        {
+          "line": 532,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "prompt"
+        },
+        {
+          "line": 537,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "prompt"
+        },
+        {
+          "line": 542,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "prompt"
+        },
+        {
+          "line": 547,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "prompt"
+        },
+        {
+          "line": 552,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "prompt"
+        },
+        {
+          "line": 557,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "prompt"
+        },
+        {
+          "line": 562,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "prompt"
+        },
+        {
+          "line": 567,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "prompt"
+        },
+        {
+          "line": 572,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "prompt"
+        },
+        {
+          "line": 577,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "prompt"
+        },
+        {
+          "line": 582,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "prompt"
+        },
+        {
+          "line": 587,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "prompt"
+        },
+        {
+          "line": 592,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "prompt"
+        },
+        {
+          "line": 597,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "prompt"
+        },
+        {
+          "line": 602,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "prompt"
+        },
+        {
+          "line": 607,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "prompt"
+        },
+        {
+          "line": 612,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "prompt"
+        },
+        {
+          "line": 617,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "prompt"
+        },
+        {
+          "line": 622,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "prompt"
+        },
+        {
+          "line": 627,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "prompt"
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-dc2243944ab79ba41807",
+      "sourceIndex": 201,
+      "originalValue": "hasOutfitToggle",
+      "occurrences": [
+        {
+          "line": 426,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "hasOutfitToggle"
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-dc2c5be187f6f31e70a8",
+      "sourceIndex": 202,
+      "originalValue": "highlight",
+      "occurrences": [
+        {
+          "line": 425,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "highlight"
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-e0b6e75f42152f3ccae1",
+      "sourceIndex": 203,
+      "originalValue": "gridRows",
+      "occurrences": [
+        {
+          "line": 687,
+          "column": 50,
+          "kind": "string-literal",
+          "functionName": "gridFromUrl",
+          "raw": "gridRows"
+        },
+        {
+          "line": 690,
+          "column": 26,
+          "kind": "string-literal",
+          "functionName": "gridFromUrl",
+          "raw": "gridRows"
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-e21f935f11d7e966dbba",
+      "sourceIndex": 204,
+      "originalValue": "Copy",
+      "occurrences": [
+        {
+          "line": 876,
+          "column": 26,
+          "kind": "string-literal",
+          "functionName": "renderCard",
+          "raw": "Copy"
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "ui-or-catalog-metadata",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-e5c7ffac26fed654fe62",
+      "sourceIndex": 207,
+      "originalValue": "click",
+      "occurrences": [
+        {
+          "line": 830,
+          "column": 33,
+          "kind": "string-literal",
+          "functionName": "renderTabs",
+          "raw": "click"
+        },
+        {
+          "line": 868,
+          "column": 31,
+          "kind": "string-literal",
+          "functionName": "renderCard",
+          "raw": "click"
+        },
+        {
+          "line": 877,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": "renderCard",
+          "raw": "click"
+        },
+        {
+          "line": 885,
+          "column": 32,
+          "kind": "string-literal",
+          "functionName": "renderCard",
+          "raw": "click"
+        },
+        {
+          "line": 975,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "render",
+          "raw": "click"
+        },
+        {
+          "line": 976,
+          "column": 36,
+          "kind": "string-literal",
+          "functionName": "render",
+          "raw": "click"
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-e76588dffbe6fe2c584f",
+      "sourceIndex": 208,
+      "originalValue": "barzy:grid",
+      "occurrences": [
+        {
+          "line": 985,
+          "column": 45,
+          "kind": "string-literal",
+          "functionName": "applyGrid",
+          "raw": "barzy:grid"
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-ee67f93d65ceec713d42",
+      "sourceIndex": 213,
+      "originalValue": "textarea",
+      "occurrences": [
+        {
+          "line": 768,
+          "column": 43,
+          "kind": "string-literal",
+          "functionName": "copyText",
+          "raw": "textarea"
+        },
+        {
+          "line": 916,
+          "column": 42,
+          "kind": "string-literal",
+          "functionName": null,
+          "raw": "textarea"
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-fcbcf165908dd18a9e49",
+      "sourceIndex": 215,
+      "originalValue": "false",
+      "occurrences": [
+        {
+          "line": 867,
+          "column": 44,
+          "kind": "string-literal",
+          "functionName": "renderCard",
+          "raw": "false"
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Élément lu dans la source : aide, titre, événement, identifiant ou paramètre technique. Conserver son rôle ; il ne forme pas un corps de prompt."
+    },
+    {
+      "id": "text-ffdc50bbbd370b513f17",
+      "sourceIndex": 216,
+      "originalValue": "[IMG_1]",
+      "occurrences": [
+        {
+          "line": 707,
+          "column": 28,
+          "kind": "string-literal",
+          "functionName": "normalizeSubject",
+          "raw": "[IMG_1]"
+        }
+      ],
+      "action": "preserve",
+      "role": "compiler-token",
+      "reason": "Jeton ou fragment de composition lu dans la source ; conserver et résoudre au stade approprié."
+    },
+    {
+      "id": "text-49774f07a81ea97ec956",
+      "sourceIndex": 217,
+      "originalValue": "SUBJECT: ",
+      "occurrences": [
+        {
+          "line": 733,
+          "column": 9,
+          "kind": "string-literal",
+          "functionName": "buildSemanticLayer",
+          "raw": "SUBJECT: "
+        }
+      ],
+      "action": "preserve",
+      "role": "compiler-token",
+      "reason": "Jeton ou fragment de composition lu dans la source ; conserver et résoudre au stade approprié."
+    }
+  ]
+}

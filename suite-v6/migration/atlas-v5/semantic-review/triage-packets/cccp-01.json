@@ -1,0 +1,497 @@
+{
+  "schemaVersion": "1.0",
+  "id": "triage-cccp-01",
+  "owner": "cccp",
+  "status": "pending-structural-triage",
+  "approximateTokens": 86,
+  "prompts": [
+    {
+      "id": "text-16a36e86f6fed5d465ff",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "A1",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "line": 814,
+          "column": 89,
+          "kind": "string-literal",
+          "functionName": "updatePromptC",
+          "owners": [
+            "cccp"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "line": 859,
+          "column": 93,
+          "kind": "string-literal",
+          "functionName": "copyPrompt",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-1fca0aa610381c2746c4",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "mode-human",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "line": 842,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "switchCMode",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-267d63f1774c8f1173f1",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "prompt-c",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "line": 817,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "updatePromptC",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-2c3a4249d77070058649",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "a2",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "line": 446,
+          "column": 99,
+          "kind": "html-event:onclick:string-literal",
+          "functionName": null,
+          "owners": [
+            "cccp"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "line": 854,
+          "column": 34,
+          "kind": "string-literal",
+          "functionName": "copyPrompt",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-2e7b572982fb2f3dc996",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "${atlasGrid.total}-panel",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "line": 719,
+          "column": 52,
+          "kind": "template-literal",
+          "functionName": "adaptGridPrompt",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-3bb316fd59fc0da4b592",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "all ${atlasGrid.total}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "line": 722,
+          "column": 53,
+          "kind": "template-literal",
+          "functionName": "adaptGridPrompt",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-3e5aa67f52f60b269a8c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "${atlasGrid.total} distinct",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "line": 721,
+          "column": 55,
+          "kind": "template-literal",
+          "functionName": "adaptGridPrompt",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-556701da21f7ce9bd954",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "${atlasGrid.total} panels",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "line": 720,
+          "column": 53,
+          "kind": "template-literal",
+          "functionName": "adaptGridPrompt",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-57a13f2acdcd0f15fa91",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Contact Sheet Prompt ver. 2.0",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "line": 421,
+          "column": 33,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-7c85f0103465423140ad",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "[INSERT PANEL CODE HERE, e.g., A2]",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "line": 816,
+          "column": 107,
+          "kind": "string-literal",
+          "functionName": "updatePromptC",
+          "owners": [
+            "cccp"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "line": 861,
+          "column": 99,
+          "kind": "string-literal",
+          "functionName": "copyPrompt",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-82a2748a61a220daeed9",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "[PANEL_CODE]",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "line": 816,
+          "column": 72,
+          "kind": "string-literal",
+          "functionName": "updatePromptC",
+          "owners": [
+            "cccp"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "line": 861,
+          "column": 64,
+          "kind": "string-literal",
+          "functionName": "copyPrompt",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-83b01d9e29ca649bcc97",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "mode-puppet",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "line": 841,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "switchCMode",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-9ad86a62cbce60f84437",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "prompt-a2",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "line": 766,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "updatePromptA2",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-a91e80445a25ce08cbd0",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "prompt-b",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "line": 787,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "updatePromptB",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-a9859821dbf5678f67ef",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Single Image Render",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "line": 500,
+          "column": 33,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-aa94fd5c7c686a031ea0",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "input-b",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "line": 776,
+          "column": 51,
+          "kind": "string-literal",
+          "functionName": "storyboardFullPrompt",
+          "owners": [
+            "cccp"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "line": 804,
+          "column": 51,
+          "kind": "string-literal",
+          "functionName": "receiveAtlasPrompt",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-d68fdd66b1701224a9d4",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "input-c",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "line": 814,
+          "column": 55,
+          "kind": "string-literal",
+          "functionName": "updatePromptC",
+          "owners": [
+            "cccp"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "line": 859,
+          "column": 59,
+          "kind": "string-literal",
+          "functionName": "copyPrompt",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-e5d99204cd7ad3c7ac6c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "mode-b-puppet",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "line": 831,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "switchBMode",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-e941610f9b4b1855a0bb",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "prompt-a1",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "line": 762,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "updatePromptA1",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-f543f48b84a8688fa26f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "mode-b-human",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "line": 832,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "switchBMode",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-f55ff16f66f43360266b",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "a1",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "line": 426,
+          "column": 99,
+          "kind": "html-event:onclick:string-literal",
+          "functionName": null,
+          "owners": [
+            "cccp"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "line": 852,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": "copyPrompt",
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-ffa4747fb5b6e99fd7fd",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "e.g., A1, B2, C3...",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "line": 512,
+          "column": 77,
+          "kind": "html-attribute:placeholder",
+          "functionName": null,
+          "owners": [
+            "cccp"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    }
+  ]
+}

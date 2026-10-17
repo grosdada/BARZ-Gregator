@@ -1,0 +1,135 @@
+{
+  "schemaVersion": "1.0",
+  "id": "semantic-workflow-3d-02",
+  "owner": "workflow-3d",
+  "status": "pending-astra-review",
+  "approximateTokens": 660,
+  "prompts": [
+    {
+      "id": "text-f8b6e075b8af17f0b433",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Operate a meticulous pose transfer. Reconstruct the target character from [IMG_1], preserving their complete identity, features, expression, and clothing. The character's entire physical posture, including skeletal alignment, joint angles, and limb positions, must be strictly mapped from the reference person in [IMG_2] (which may be a photo or a 3D previz). Integrate this newly posed character seamlessly back into the original composition, background, lighting scheme, and color grading of [IMG_1]. Ensure 100% structural fidelity of the scene and all elements except the character's pose. MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1182,
+          "column": 15,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f96a30ee87388f293272",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "${out}\n\nSCENE RULE:\n${identity}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1547,
+          "column": 10,
+          "kind": "template-literal",
+          "functionName": "adaptPromptToTarget",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-fa35362c833c35beb2ca",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "the object's 3D orientation, exact frame placement, scale relative to the frame, negative space, and shot scale",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1415,
+          "column": 15,
+          "kind": "string-literal",
+          "functionName": "targetTransferShort",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-fb8b4e34da8e42d76232",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "@video_1 · Motion Driver",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1038,
+          "column": 32,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-fc601e9dc5fd08508fd7",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Infrared thermal imaging camera, heat signature palette",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 896,
+          "column": 23,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-fd81ebdde014b55a0794",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "shot on DJI Inspire 3, Zenmuse X9-8K, 18mm aerial wide lens",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 870,
+          "column": 23,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-fdc8a76472b9d1521da1",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "MULTI-REFERENCE POSE TRANSFER — generate a single photographic image.\n\n• POSE SOURCE — [IMG_1]\n${sourceInstr}\n\nTRANSFER LEVEL — ${transferLabel.toUpperCase()}:\n${transferInstr}\n\n• HERO IDENTITY & PROPORTIONS — [IMG_2]   ? ABSOLUTE PRIORITY\n[IMG_2] is a reference for a practical puppet/figurine character. Photograph this exact figurine — with its exact proportions, head size, limb thickness, body shape — as-is in a real location. Do not apply realistic human anatomy. This is NOT a human, it is a sculpted character with intentional non-realistic proportions.\n\nDo NOT inherit [IMG_2]'s clean studio lighting or render quality — the final character is re-photographed in the light and lens of the final scene${decorOn ? ' (i.e. [IMG_3])' : (bgMode === 'cyc') ? ` (i.e. ${cycColor.name} cyclorama studio)` : ''}.\n\nThe pose from [IMG_1] adapts to this figurine's anatomy — never the reverse.${decorBlock}\n\nDIRECTIVE: Render [IMG_2] performing the pose of [IMG_1]${decorOn ? ' with [IMG_3] used only as visual style' : (bgMode === 'cyc') ? ` on a ${cycColor.name} (${cycColor.hex}) studio cyclorama` : ''}, using the framing and 3D orientation specified by the TRANSFER LEVEL. Pose, framing, camera, and 3D body orientation come from [IMG_1].${decorOn ? ' Grade, grain, contrast, and light mood come from [IMG_3] without copying its place.' : ''}${subjectLine}${matLine}${techLine}${physicsLine}\n\nOUTPUT: Photoreal, in-camera footage. No CG look. Single frame. ${decorOn ? 'A real photograph with [IMG_1] setup, [IMG_2] identity, and [IMG_3] style only.' : (bgMode === 'cyc') ? 'Clean studio commercial photography aesthetic.' : 'Seamless integration.'}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1701,
+          "column": 10,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    }
+  ]
+}

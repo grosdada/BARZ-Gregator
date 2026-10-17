@@ -1,0 +1,261 @@
+{
+  "schemaVersion": "1.0",
+  "id": "semantic-multishot-02",
+  "owner": "multishot",
+  "status": "pending-astra-review",
+  "approximateTokens": 4416,
+  "prompts": [
+    {
+      "id": "text-d93ff177d30b0dcf5e0c",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "**Phase 1: Casting & World Building**\n1. **Subjects:** Two drivers—Subject A (an experienced getaway driver in a sleek black car) vs. Subject B (a young, reckless pursuer in a red sports car).\n2. **Setting:** An urban cityscape at night. Neon-lit streets, elevated highways, industrial warehouses. Rain-slicked roads reflecting the city lights.\n3. **The Conflict:** Subject A is fleeing; Subject B is relentlessly pursuing through traffic. High stakes, split-second decisions.\n4. **Aesthetic:** John Wick meets Drive. Kinetic, handheld realism with stylized color grading (magenta/cyan neon glow). Extreme motion blur during high-speed passes. Close-ups of hands on steering wheels, eyes locked in focus.\n\n**Phase 2: The 3x3 High-Speed Sequence**\n\n**Row 1 (The Chase Begins):**\n1. **Wide Night Shot:** Subject A's black car weaves through downtown traffic, tail lights streaking red.\n2. **POV From Driver A:** Forward-facing view of an empty highway opening up ahead, speedometer climbing. Subject B's red car visible in the side mirror, closing in rapidly.\n3. **Aerial Overhead Shot:** Two cars navigate a highway interchange, Subject B threading aggressively through traffic.\n\n**Row 2 (The Escalation):**\n4. **Tight POV From Subject B's Car:** Windshield view, Subject B's hands gripping the wheel, determination etched in his jaw and eyes. Subject A's car ahead barely visible through the rain.\n5. **Side Profile Medium Shot:** Both cars side by side on an elevated freeway section. Headlights illuminating each other. Subject A glances over at Subject B with cold calculation.\n6. **Crash/Swerve Moment:** Subject A's car narrowly avoids a collision, tires squealing, sparks flying off the guardrail. Subject B is close behind, brakes flaring.\n\n**Row 3 (The Escape):**\n7. **Extreme Close-Up (Engine Detail):** Subject A's car engine roars, turbo spooling, undercarriage lights glowing. Raw mechanical power.\n8. **Wide Shot of Route Separation:** Subject A's car exits the highway into a dark industrial area. Subject B overshoots the exit, has to swerve back onto the main road.\n9. **Receding Taillights:** Subject A's car disappears into a neon-soaked alleyway, its red taillights fading into the distance. Subject B's car doesn't follow. Mission complete.\n\n**Technical Notes:**\nAll frames feature night cinematography with neon ambient lighting, rain reflections, intense motion blur, and dynamic camera movement.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1064,
+          "column": 29,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ddcc50e84b01e35e679b",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Observation, shared perspective, dialogue",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 435,
+          "column": 175,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e2da99702f41602e50e0",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Based on this image:\n\n**Phase 1: Visual Analysis & Reference Extraction**\n1. **Analyze the Image:** Identify all visual elements—subjects, environment, lighting, color palette, textures, composition, props, clothing, spatial depth.\n2. **Extract Key Details:** Note camera angle used, distance from subject, depth of field characteristics, light direction, shadows, highlights, mood.\n3. **Identify Cinematic Potential:** What dynamic camera moves could enhance or reframe this moment? What would extreme close-ups reveal? What would a wider view show?\n4. **Aesthetic Framework:** Determine the film/style inspiration—documentary realism, high-fashion, sci-fi, thriller, romantic, action, horror, etc.\n\n**Phase 2: The 3x3 Cinematic Exploration Grid**\nGenerate 9 sequential shots that explore the image's content from radically different camera perspectives and movements.\n\n**Row 1 (Static & Observational):**\n1. **Wide Master Shot (Establishing):** Full context view of the entire scene as presented in the image. All elements visible. Environmental scope clear.\n2. **Medium Shot (Subject Focus):** Closer framing isolating main subjects/focal point from the image. Context still visible but secondary.\n3. **Detail Close-Up (Texture):** Extreme close-up of a specific detail from the image—texture, expression, material, micro-moment captured.\n\n**Row 2 (Dynamic Movement & Reframing):**\n4. **Dolly/Tracking Shot (Approach):** Moving forward through the image's space, perspective shifting dynamically. What reveals itself as we move closer?\n5. **Orbital/Rotating Shot (Perspective Shift):** Circling around the scene's focal point. How does the image change from different angles? What's hidden, what's revealed?\n6. **Crane/Vertical Movement (Elevation Change):** Moving vertically within the frame—either ascending to reveal scale or descending to intensify intimacy.\n\n**Row 3 (Reinterpretation & Abstraction):**\n7. **Unorthodox Angle (Creative Distortion):** Shooting from an extreme/unexpected angle suggested by the image's composition. What makes this disorienting but compelling?\n8. **Light & Shadow Play (Chiaroscuro Focus):** Reframing to emphasize the image's light sources, shadows, and contrast. Abstracted beauty through tonality.\n9. **Conceptual Departure (Implied Motion):** Final shot that extrapolates beyond the image—what happens next? What came before? The narrative suggestion beyond the frame.\n\n**Technical Execution:**\n- All 9 shots must maintain visual continuity with the source image (same subjects, same environment, same session).\n- Vary depth of field naturally (deep for wide shots, shallow for close-ups).\n- Use the image's existing lighting as reference, enhance cinematic qualities.\n- Transitions between shots should suggest a choreographed camera movement sequence.\n- Final output: 3x3 contact sheet of 9 frames with detailed shot descriptions.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 951,
+          "column": 29,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e30873eaab5a3f2bc66d",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Subject / reference description — ex: a young woman with red curly hair wearing a green vintage coat, standing in a neon-lit alley at night",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 328,
+          "column": 79,
+          "kind": "html-attribute:placeholder",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e31a8213eaeb9a450ef0",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "**Phase 1: Casting & World Building**\n1. **Subjects:** Subject A (detective) and Subject B (suspect).\n2. **Setting:** Rain-soaked apartment. Shadows dominating. Claustrophobic.\n3. **The Conflict:** An interrogation. Truth vs. deception.\n4. **Aesthetic:** Fincher noir. High-contrast, cool blue/gray grading.\n\n**Phase 2: The 2x3 Interrogation Sequence**\n\n**Row 1 (The Setup):**\n1. **Wide Shot:** Rain through window. Subject A circling Subject B seated at table.\n2. **Medium Close-Up of Subject B:** Expressionless, hands flat on table.\n3. **Extreme Close-Up of Subject A's Eyes:** Intense stare, cold determination.\n\n**Row 2 (The Pressure):**\n4. **Claustrophobic Close-Up:** Subject A leaning close to Subject B's face.\n5. **Low Angle Ominous:** Subject B looking down with slight smile. Power shift.\n6. **Extreme Close-Up (Iris Reflection):** Detective's pupil reflects suspect's face.\n\n**Technical Notes:**\nHigh-contrast noir lighting, cool grading, psychological tension.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1185,
+          "column": 29,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e3a8d5986802a73e5285",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "' and the same grid / sequence structure, but invent new scene beats, camera moments, wardrobe and material details, lighting and atmosphere. Return only the prompt.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1520,
+          "column": 104,
+          "kind": "string-literal",
+          "functionName": "bzIteratePrompt",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e485a1465591689ee692",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Archive complete wardrobe construction: seams, hems, construction quality, fabric weight, pattern placement, symmetry, hardware positioning, wear indicators, craftsmanship markers.\nRotate around subject systematically showing all viewpoints. Maintain exact appearance and styling.\nOutput: 2×3 contact sheet + comprehensive construction breakdown\n\nRequired 6-Frame 360° Documentation\n1. Direct Front Center\nSubject centered, facing camera directly, all front-facing garment details visible, construction seams and closures evident, controlled studio lighting.\n\n2. Quarter-Turn Right\n45-degree rotation showing side-front transition, seam alignment, sleeve construction, pattern flow continuity, detail clarity.\n\n3. Pure Side Profile\n90-degree rotation, complete side view of garment structure, silhouette clarity, hem accuracy, profile proportions documented, side seams and construction visible.\n\n4. Quarter-Turn Back\n135-degree rotation showing back-side transition, rear garment details, back seam quality, fastening systems from behind.\n\n5. Direct Back Center\nFull back view, rear construction documentation, seam alignment, neck construction, back closure systems, pattern placement on back.\n\n6. Overhead/Flat Construction Detail\nBird's-eye view showing garment laid structure clarity, dimensional form, shoulder construction, neckline precision, overall architectural integrity.\n\nAesthetic: Documentation photography with consistent studio lighting from multiple fixed positions, neutral background, color-accurate rendering. Fashion garment as engineered object. Professional product photography standard for archival and quality documentation.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 887,
+          "column": 29,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e49eac9c6d51c19c2735",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Décris ton sujet (ou colle la description de ton image de référence). Le prompt génère une grille du même sujet en changeant uniquement l'angle de caméra, calée sur le GRID BUILDER courant.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 327,
+          "column": 45,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e81af59887392c67384a",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "**Phase 1: Casting & World Building**\n1. **Subjects:** Subject A (tech specialist) and Subject B (infiltration expert/thief).\n2. **Setting:** High-security downtown bank vault. Modern architectural steel and glass. Laser grids in darkness. Security cameras everywhere. Time pressure: 90 seconds.\n3. **The Conflict:** Breaking in without triggering alarms. One mistake means capture.\n4. **Aesthetic:** Ocean's 11 meets Tron. Sleek, calculated precision. Neon colors in darkness (blues/teals). Sharp focus mixed with soft bokeh of lasers. Clock ticking. Tension through perfectionism.\n\n**Phase 2: The 3x3 Heist Sequence**\n\n**Row 1 (The Preparation):**\n1. **Wide Overhead Shot:** Bank floor layout visible, blueprints projected. Subject A analyzing security patterns. Subject B studying the route. Intense focus.\n2. **Close-Up of Subject A:** Fingers flying across keyboard, lines of code reflecting in glasses. Expressions of concentration. Bypassing the system.\n3. **POV from Subject B:** Walking through darkened hallway, red laser grids creating geometric patterns. Each step calculated. Grace under pressure.\n\n**Row 2 (The Infiltration):**\n4. **Extreme Close-Up (Laser Grid Navigation):** Subject B's face as they squeeze through laser grid impossibly close. Breath held. One millimeter from disaster.\n5. **Detail Shot (Vault Door Mechanism):** Subject A's hands working rapid precision on a keypad, scanning. Security readout flashing green. System compromised.\n6. **Split Screen:** Subject A watching monitor showing Subject B's position; Subject B approaching vault. Real-time tension. Eyes communicating across distance.\n\n**Row 3 (The Score):**\n7. **Slow Motion Detail:** Subject B reaching into vault, hand closing around the target object. Golden light spilling out.\n8. **Wide Shot Escape:** Subject B running back through laser grid, no longer caring about avoidance. Alarms starting to sound. Subject A triggering false fire exit doors.\n9. **Silhouette Departure:** Both subjects silhouetted in window as they abseil down the building's exterior glass. Night city lights below. Clean escape. Perfect execution.\n\n**Technical Notes:**\nAll frames feature high-tech aesthetic, neon accents in darkness, precise camera movement, and heist cinema tension.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1256,
+          "column": 29,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ee90007b96b7419785ba",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "**Phase 1: Casting & World Building**\n1. **Analyze Inputs:** Identify the two distinct subjects.\n   * **Subject A (The Pilot):** The bald, bearded man.\n   * **Subject B (The Runner):** The blonde man.\n2. **Setting:** An exotic exoplanet. Desert terrain mixed with strange, alien vegetation. Harsh, dramatic sunlight.\n3. **The Threat:** A massive, grotesque \"Alien Larva\" creature. Segmented, slimy, and terrifying.\n4. **Aesthetic:** High-budget Sci-Fi blockbuster (e.g., Prometheus, Dune). Photorealistic, anamorphic lens, cinematic color grading (teal/orange or dusty sepia), heavy motion blur in action shots.\n\n**Phase 2: The 3x3 Narrative Action Grid**\nGenerate a 3x3 grid of 9 sequential cinematic stills telling the escape story.\n\n**Row 1 (The Warning & The Run):**\n1. **Wide Shot (The Pilot):** Subject A (Bald) stands at the open ramp of a weathered spaceship. He looks panicked, screaming and waving frantically for someone to come. The alien landscape surrounds the ship.\n2. **Mid-Shot (The Runner):** Subject B (Blonde) is sprinting towards the camera, sweat on his face, terrified. Background shows blurred alien flora whipping past.\n3. **Aerial Drone Shot (The Scale):** High-angle view establishing the geometry: The Spaceship (left), Subject A at the door, Subject B running across the gap, and the massive Alien Larva chasing close behind B.\n\n**Row 2 (The Climax at the Door):**\n4. **First-Person POV (The Reach):** Shot from INSIDE the ship looking out. In the foreground, Subject A's arm reaches out desperately. In the center, Subject B is feet away from the ramp. The Alien Larva is right behind him, jaws open. High tension.\n5. **Low Angle/Ground Level (The Dive):** Camera on the dirty ramp floor. Subject B dives/slides into the ship, kicking up dust. The ship's hydraulics are engaging.\n6. **Extreme Close-Up (The Seal):** The heavy metallic blast door slams shut tight. Sparks or steam seal the mechanism. No people, just the industrial texture of safety.\n\n**Row 3 (The Escape):**\n7. **Over-the-Creature (The Frustration):** Shot from behind the Alien Larva. We see its slimy texture in the foreground. In the mid-ground, the spaceship's thrusters ignite, blasting the creature's face. The spaceship is rising.\n8. **Wide Shot (Liftoff):** The spaceship lifting off the ground, angled upwards. The landing gear retracts. The creature is small on the ground below.\n9. **Epic Rear View (Ascent):** The spaceship ascending vertically into the exoplanet's sky/upper atmosphere, leaving a trail of exhaust. Freedom.\n\n**Technical Notes:**\nAll frames feature photorealistic CGI, cinematic lighting, and intense action.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1010,
+          "column": 29,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f35a15f45b1714ec6178",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Analyze the input image and silently inventory all fashion-critical details: the subject(s), exact wardrobe pieces, materials, colors, textures, accessories, hair, makeup, body proportions, environment, set geometry, light direction, and shadow quality.\nAll wardrobe, styling, hair, makeup, lighting, environment must remain 100% unchanged across all frames.\nDo not add or remove anything. Do not reinterpret materials or colors. Do not output any reasoning.\nPerfectly replicate the exact facial features of the model.\nYour visible output must be:\nOne 3×3 contact sheet image (9 frames).\nThen a keyframe breakdown for each frame.\nEach frame must represent a resting point after a dramatic camera move — only describe the final camera position and what the subject is doing, never the motion itself.\nThe nine frames must be spatially dynamic, non-linear, and visually distinct.\n\nRequired 9-Frame Shot List\n1. High-Fashion Beauty Portrait (Close, Editorial, Intimate)\nCamera positioned very close to the subject's face, slightly above or slightly below eye level, using an elegant offset angle that enhances bone structure and highlights key wardrobe elements near the neckline. Shallow depth of field, flawless texture rendering, and a sculptural fashion-forward composition.\n\n2. High-Angle Three-Quarter Frame\nCamera positioned overhead but off-center, capturing the subject from a diagonal downward angle. This frame should create strong shape abstraction and reveal wardrobe details from above.\n\n3. Low-Angle Oblique Full-Body Frame\nCamera positioned low to the ground and angled obliquely toward the subject. This elongates the silhouette, emphasizes footwear, and creates a dramatic perspective distinct from Frames 1 and 2.\n\n4. Side-On Compression Frame (Long Lens)\nCamera placed far to one side of the subject, using a tighter focal length to compress space. The subject appears in clean profile or near-profile, showcasing garment structure in a flattened, editorial manner.\n\n5. Intimate Close Portrait From an Unexpected Height\nCamera positioned very close to the subject's face (or upper torso) but slightly above or slightly below eye level. The angle should feel fashion-editorial, not conventional — offset, elegant, and expressive.\n\n6. Extreme Detail Frame From a Non-Intuitive Angle\nCamera positioned extremely close to a wardrobe detail, accessory, or texture, but from an unusual spatial direction (e.g., from below, from behind, from the side of a neckline). This must be a striking, abstract, editorial detail frame.\n\n7. Wide Environmental Master Shot\nFull-body shot with significant negative space, showing the subject within the complete studio environment. Establishes spatial context and full wardrobe visibility.\n\n8. Dynamic Three-Quarter Movement Pose\nSubject captured in a fashion-forward pose from three-quarter angle, emphasizing garment drape and silhouette movement. Energy and attitude visible.\n\n9. Abstract Geometric Composition\nSubject positioned to create strong geometric lines and shapes within the frame. Fashion as architectural form, abstract editorial aesthetic.\n\nContinuity & Technical Requirements\nMaintain perfect wardrobe fidelity in every frame: exact garment type, silhouette, material, color, texture, stitching, accessories, closures, jewelry, shoes, hair, and makeup.\nEnvironment, textures, and lighting must remain consistent.\nDepth of field shifts naturally with focal length (deep for distant shots, shallow for close/detail shots).\nPhotoreal textures and physically plausible light behavior required.\nFrames must feel like different camera placements within the same scene, not different scenes.\nAll keyframes must be the exact same aspect ratio, and exactly 9 keyframes should be output. Maintain the exact visual style in all keyframes, where the image is shot on Fuji Velvia film{{FLASH_OPTION}}, the light is concentrated on the subject and fades slightly toward the edges of the frame. The skin appears shiny (almost oily), and there are harsh white reflections on the glasses frames.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 655,
+          "column": 29,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f71466ca72fddc154fea",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Macro shot focusing on [character]'s [specific feature], extreme detail, cinematic lighting",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 430,
+          "column": 79,
+          "kind": "string-literal",
+          "functionName": "bzPaintActiveTab",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f9153e9ac745b44f1637",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Bird's eye view overhead shot of [character] standing in landscape, directly from above",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 436,
+          "column": 84,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-fea3792c456d10eaf78b",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Medium shot of [character] standing in environment, cinematic composition",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 431,
+          "column": 80,
+          "kind": "string-literal",
+          "functionName": "bzPaintActiveTab",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ]
+    }
+  ]
+}

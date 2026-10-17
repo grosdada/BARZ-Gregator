@@ -1,0 +1,62 @@
+html[data-theme="light"] {
+  color-scheme: light;
+  --ink: #2f2b27;
+  --muted: #665f58;
+  --dim: #887f76;
+  --black: #f2e8dc;
+  --panel: #eadfd2;
+  --panel-raised: #e1d4c6;
+  --line: #c8b8a8;
+  --line-strong: #aa9786;
+  --paper: #342f2a;
+  --safe: #39755b;
+  --signal-soft: #efd0c3;
+  --button-beige: #ad8b70;
+  --button-beige-hover: #98745a;
+  --button-orange: #ef654b;
+  --button-orange-hover: #db5239;
+}
+.rail-preferences { display: grid; grid-template-columns: 1fr 1fr; gap: 7px; width: 100%; margin-top: 9px; }
+.preference-switch { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); overflow: hidden; border: 1px solid var(--line-strong); border-radius: 4px; background: var(--panel); }
+.preference-switch button { min-height: 32px; padding: 4px 6px; border: 0; border-right: 1px solid var(--line-strong); background: transparent; color: var(--dim); font-size: 11px; font-weight: 850; letter-spacing: .04em; }
+.preference-switch button:last-child { border-right: 0; }
+.preference-switch button:hover { color: var(--ink); background: var(--panel-raised); }
+.preference-switch button.is-active { color: #fff; background: var(--button-orange, var(--signal)); box-shadow: inset 0 -2px rgb(115 39 25 / 34%); }
+html[data-theme="light"] body,
+html[data-theme="light"] .topbar,
+html[data-theme="light"] .media-rail,
+html[data-theme="light"] .activity-panel,
+html[data-theme="light"] .modal-card,
+html[data-theme="light"] .asset-detail,
+html[data-theme="light"] .settings-panel,
+html[data-theme="light"] .spending-panel { background: var(--black); color: var(--ink); }
+html[data-theme="light"] .composer,
+html[data-theme="light"] .reference-deck,
+html[data-theme="light"] .job-card,
+html[data-theme="light"] .asset-card,
+html[data-theme="light"] .api-provider-card,
+html[data-theme="light"] .director-panel { background: var(--panel); color: var(--ink); }
+html[data-theme="light"] textarea,
+html[data-theme="light"] input,
+html[data-theme="light"] select { background: #f8f0e7; color: #2f2b27; border-color: var(--line-strong); }
+html[data-theme="light"] .media-tab,
+html[data-theme="light"] .app-switch,
+html[data-theme="light"] .plain-button,
+html[data-theme="light"] .secondary-button,
+html[data-theme="light"] .reference-action,
+html[data-theme="light"] .asset-filter,
+html[data-theme="light"] .collection-row,
+html[data-theme="light"] .api-action:not(.primary),
+html[data-theme="light"] button:not(.global-ai-image) { background: var(--button-beige) !important; color: #fff !important; border-color: #c9ad96 !important; }
+html[data-theme="light"] button:not(.global-ai-image):hover:not(:disabled) { background: var(--button-beige-hover) !important; color: #fff !important; }
+html[data-theme="light"] .media-tab.active,
+html[data-theme="light"] button.active,
+html[data-theme="light"] button.is-active,
+html[data-theme="light"] button.is-primary,
+html[data-theme="light"] button.generate-button,
+html[data-theme="light"] button.confirm-button,
+html[data-theme="light"] button[aria-pressed="true"],
+html[data-theme="light"] button[aria-selected="true"] { background: var(--button-orange) !important; color: #fff !important; border-color: var(--button-orange) !important; }
+html[data-theme="light"] .brand-mark,
+html[data-theme="light"] .app-switch-mark { color: #111; }
+@media (max-width: 1080px) { .rail-preferences { width: 136px; flex: 0 0 136px; margin: 5px; } }

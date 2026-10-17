@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Object Scale Chart → Prompt Atlas — note pour Codex</title>
+<style>
+:root{--fond:#15171b;--carte:#1e2127;--carte2:#242831;--trait:#343946;--encre:#eeece7;--sourd:#aaa69d;--or:#e8b84a;--orange:#e0623a;--vert:#76b977;--bleu:#78aee0;--rouge:#dd7067;--code:#d3deed}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--fond);color:var(--encre);font:15px/1.62 system-ui,-apple-system,"Segoe UI",sans-serif}main{max-width:1050px;margin:0 auto;padding:38px 24px 90px}h1{font-size:28px;line-height:1.2;margin:0 0 6px}h2{font-size:20px;margin:46px 0 12px;padding-top:15px;border-top:1px solid var(--trait);color:var(--or)}h3{font-size:16px;margin:27px 0 7px}.sous,.petit{color:var(--sourd)}.sous{margin:0 0 25px}.petit{font-size:13px}p{margin:8px 0}a{color:var(--bleu)}code,kbd{font:13px/1.4 ui-monospace,"Cascadia Code",Consolas,monospace;color:var(--code);background:#292d36;padding:1px 5px;border-radius:4px}kbd{border:1px solid var(--trait)}pre{background:#0f1115;border:1px solid var(--trait);border-radius:9px;padding:13px 15px;overflow:auto;font:12.5px/1.52 ui-monospace,Consolas,monospace;color:var(--code)}pre code{background:none;padding:0}table{width:100%;border-collapse:collapse;margin:11px 0 16px;font-size:13.5px}th,td{border:1px solid var(--trait);padding:7px 10px;text-align:left;vertical-align:top}th{background:var(--carte2);color:var(--or);font-weight:650}td code{white-space:normal}.encart{background:var(--carte);border:1px solid var(--trait);border-left:4px solid var(--or);border-radius:9px;padding:13px 17px;margin:15px 0}.encart.ok{border-left-color:var(--vert)}.encart.alerte{border-left-color:var(--rouge)}.encart.info{border-left-color:var(--bleu)}.encart b:first-child{color:var(--or)}.encart.ok b:first-child{color:var(--vert)}.encart.alerte b:first-child{color:var(--rouge)}nav{background:var(--carte);border:1px solid var(--trait);border-radius:9px;padding:13px 18px;margin:20px 0 10px;columns:2;column-gap:30px}nav a{color:var(--encre);text-decoration:none;display:block;padding:2px 0;break-inside:avoid}nav a:hover{color:var(--or)}ul,ol{margin:7px 0 11px;padding-left:23px}li{margin:4px 0}.tag{display:inline-block;font-size:11px;padding:1px 7px;border:1px solid var(--trait);border-radius:10px;color:var(--sourd);margin-left:6px;vertical-align:2px}.path{word-break:break-all}.steps>li{margin:9px 0}.status{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin:15px 0}.status div{background:var(--carte);border:1px solid var(--trait);border-radius:8px;padding:11px}.status b{display:block;color:var(--or);font-size:12px;text-transform:uppercase;letter-spacing:.06em}.status span{font-size:15px}@media(max-width:760px){nav{columns:1}.status{grid-template-columns:1fr}main{padding:25px 15px 70px}}
+</style>
+</head>
+<body>
+<main>
+<h1>Intégrer Object Scale Chart dans Prompt Atlas</h1>
+<p class="sous">Note de transmission pour Codex — 3 octobre 2026. Cette page indique où se trouve le code source, comment l’application fonctionne, ce qu’il faut copier, les contrats à préserver et le chemin d’intégration recommandé dans BARZ Suite 6 / Prompt Atlas.</p>
+
+<div class="encart ok"><b>Mission.</b> Ajouter à Prompt Atlas l’application <b>Échelle / Object Scale Chart</b> comme outil natif de l’atelier <b>Board &amp; Sequence</b>. Elle produit une image de référence graduée et une instruction textuelle décrivant les proportions physiques de sujets, créatures, véhicules et bâtiments. Le calcul est local et déterministe ; aucun LLM n’est nécessaire.</div>
+
+<div class="encart"><b>Source de vérité.</b> Tout le code fonctionnel est dans <code class="path">E:\Codex-Proj\Object scale chart</code>. Ne pars ni de l’exécutable, ni de <code>dist/</code>, ni d’une copie placée dans un payload d’installeur. Le dépôt amont est <a href="https://github.com/grosdada/Object-scale-chart">github.com/grosdada/Object-scale-chart</a>.</div>
+
+<div class="status">
+  <div><b>Version applicative</b><span>1.1.0</span></div>
+  <div><b>Code fonctionnel poussé</b><span><code>df6dee9</code></span></div>
+  <div><b>Presets intégrés</b><span>136 silhouettes SVG</span></div>
+</div>
+
+<p class="petit">Le HEAD local <code>c7dff79</code> ajoute uniquement un workflow de release brouillon qui n’a pas été poussé. Pour l’intégration produit, prendre les fichiers applicatifs du répertoire de travail ; ignorer <code>.github/</code> et <code>RELEASE_NOTES.md</code>.</p>
+
+<nav>
+<a href="#sources">1 · Où trouver chaque morceau de code</a>
+<a href="#fonction">2 · Fonction et périmètre</a>
+<a href="#architecture">3 · Architecture actuelle</a>
+<a href="#donnees">4 · Modèles de données</a>
+<a href="#persistance">5 · Persistance et bibliothèque</a>
+<a href="#detourage">6 · Détourage IA local</a>
+<a href="#integration">7 · Intégration recommandée</a>
+<a href="#atlas">8 · Fichiers Prompt Atlas à modifier</a>
+<a href="#bridge">9 · Pont avec Prompt Atlas / Aggregator</a>
+<a href="#securite">10 · CSP, sécurité et licences</a>
+<a href="#installeur">11 · Installeur BARZ Suite 6</a>
+<a href="#tests">12 · Tests et critères d’acceptation</a>
+<a href="#pieges">13 · Pièges à éviter</a>
+<a href="#commande">14 · Commandes utiles</a>
+<a href="#brief">15 · Brief d’exécution pour Codex</a>
+</nav>
+
+<h2 id="sources">1 · Où trouver chaque morceau de code</h2>
+<p>Racine source : <code class="path">E:\Codex-Proj\Object scale chart\</code></p>
+<table>
+<tr><th>Fichier / dossier</th><th>Rôle</th><th>À intégrer ?</th></tr>
+<tr><td><code>index.html</code></td><td>Structure complète de l’interface : catalogue, import, tableau SVG, inspecteur, prompt, dialogues d’export.</td><td><b>Oui</b></td></tr>
+<tr><td><code>styles.css</code></td><td>Interface responsive, thèmes Light gris clair / Night, mise en page du tableau.</td><td><b>Oui</b></td></tr>
+<tr><td><code>app.js</code></td><td>Contrôleur UI : sélection, glisser/redimensionner, calage vertical, import, sauvegarde, export et traduction EN/FR.</td><td><b>Oui</b></td></tr>
+<tr><td><code>core.js</code></td><td>Moteur pur : unités, dimensions, échelle, placement, graduations, prompt, validation des projets.</td><td><b>Oui</b></td></tr>
+<tr><td><code>catalogue.js</code></td><td>Métadonnées des 136 presets : noms, catégories, dimensions physiques, axe mesuré, sections.</td><td><b>Oui</b></td></tr>
+<tr><td><code>subject-vectors.js</code></td><td>Les 136 silhouettes vectorisées en chemins SVG, sans pixelisation. Environ 534 Ko.</td><td><b>Oui</b></td></tr>
+<tr><td><code>cutout.js</code></td><td>Détourage rapide de secours basé sur les couleurs de bord.</td><td><b>Oui</b></td></tr>
+<tr><td><code>ai-cutout.js</code></td><td>Bundle navigateur IS-Net + ONNX Runtime pour le détourage IA local. Environ 881 Ko.</td><td><b>Oui</b>, ou reconstruire</td></tr>
+<tr><td><code>ai-cutout-entry.js</code></td><td>Entrée lisible du bundle IA. Sert à reconstruire <code>ai-cutout.js</code>.</td><td>Source de build</td></tr>
+<tr><td><code>version.js</code></td><td>Expose <code>window.APP_VERSION = '1.1.0'</code>.</td><td>Oui, ou remplacer par la version Atlas</td></tr>
+<tr><td><code>server.cjs</code></td><td>Petit serveur statique autonome sur le port 4173.</td><td><b>Non</b> dans Atlas</td></tr>
+<tr><td><code>electron-main.cjs</code>, <code>electron-preload.cjs</code></td><td>Coque Electron autonome, bibliothèque disque et vérification des releases GitHub.</td><td><b>Non</b> tels quels ; reprendre les contrats utiles côté serveur Atlas</td></tr>
+<tr><td><code>assets/source-grids/</code></td><td>Les 16 planches Ideogram originales 3 × 3.</td><td>Historique / régénération uniquement</td></tr>
+<tr><td><code>assets/subjects/</code></td><td>Découpes PNG intermédiaires et manifeste de correspondance.</td><td>Non au runtime ; utile au pipeline</td></tr>
+<tr><td><code>scripts/process_subject_grids.py</code></td><td>Découpe, nettoyage et alignement des cellules sur le sol.</td><td>Pipeline de maintenance</td></tr>
+<tr><td><code>scripts/vectorize_subjects.cjs</code></td><td>Potrace → <code>subject-vectors.js</code>.</td><td>Pipeline de maintenance</td></tr>
+<tr><td><code>tests/</code></td><td>17 tests Node, smoke navigateur Playwright et smoke du vrai modèle IA.</td><td><b>À conserver comme référence</b></td></tr>
+<tr><td><code>README.md</code></td><td>Description fonctionnelle et commandes à jour.</td><td><b>À lire</b></td></tr>
+<tr><td><code>THIRD_PARTY_NOTICES.md</code></td><td>Notice IMG.LY / ONNX Runtime.</td><td><b>À conserver</b></td></tr>
+</table>
+
+<div class="encart alerte"><b>Ne pas copier.</b> <code>node_modules/</code>, <code>dist/</code>, <code>test-results/</code>, les exécutables et le workflow de release ne font pas partie du module à intégrer. Le runtime web utile tient dans les neuf fichiers indiqués « Oui ».</div>
+
+<h2 id="fonction">2 · Fonction et périmètre</h2>
+<ul>
+<li>136 presets : 6 humains, 30 animaux, 50 véhicules, 50 bâtiments / monuments.</li>
+<li>Tableau SVG à une échelle linéaire commune avec repères horizontaux et verticaux.</li>
+<li>Dimensions de référence en mm, cm, m ou km ; axe mesuré = hauteur ou largeur/longueur.</li>
+<li>Glisser horizontal, redimensionnement proportionnel par poignées et alignement automatique au sol.</li>
+<li>Les images importées peuvent aussi être déplacées verticalement pour caler leurs pieds ou leur base visible sur le sol ; réglage fin avec <kbd>↑</kbd>/<kbd>↓</kbd>.</li>
+<li>Import PNG, JPEG, WebP ; suppression des marges transparentes ; taille maximale 15 Mo / 50 mégapixels, redimensionnement à 1400 px sur le grand côté.</li>
+<li>Détourage IA local IS-Net, plus algorithme rapide de secours.</li>
+<li>Bibliothèque personnelle « My subjects » avec nom, type, taille, axe, aspect et calage vertical.</li>
+<li>Maximum 15 humains, 60 sujets au total et environ 90 Mo d’images encodées par projet.</li>
+<li>Fond, graduations, grille et silhouettes personnalisables ; thèmes clair, sombre et plan bleu.</li>
+<li>Interface anglaise par défaut, bascule française.</li>
+<li>Générateur de prompt déterministe FR/EN : ordre gauche→droite, dimensions, rapports de hauteur, sujet de référence et consigne de maintien des proportions.</li>
+<li>Export PNG 1920/3840, SVG, prompt TXT et projet JSON.</li>
+<li>Sauvegarde automatique, annuler/rétablir, duplication et répartition automatique.</li>
+</ul>
+<p>Les choix « Universel », « Seedance », « MiniMax H3 » et « Wan 3 » n’appellent aucun service : le texte physique produit est actuellement commun aux quatre destinations. L’image et le prompt sont destinés à être envoyés ensemble dans le générateur vidéo.</p>
+
+<h2 id="architecture">3 · Architecture actuelle</h2>
+<pre><code>index.html
+  ├─ styles.css
+  ├─ catalogue.js          → window.CATALOGUE / CATEGORIES
+  ├─ subject-vectors.js    → window.SUBJECT_VECTORS
+  ├─ core.js               → window.ScaleCore (moteur pur)
+  ├─ cutout.js             → détourage rapide
+  ├─ ai-cutout.js          → window.LocalAICutout
+  ├─ version.js            → window.APP_VERSION
+  └─ app.js                → IIFE, branche tous les éléments par leurs IDs</code></pre>
+<p>L’application est écrite sans framework. <code>app.js</code> suppose qu’il contrôle le document complet et cherche des IDs fixes avec <code>document.getElementById</code>. Un port direct dans le DOM de <code>tool-workspace.js</code> demanderait un refactoring important. Pour une première intégration sûre, garder ce document autonome dans une iframe même origine.</p>
+<p><code>core.js</code> est volontairement indépendant du navigateur et exporte également via <code>module.exports</code>. Ses fonctions clés sont <code>dimensions</code>, <code>layout</code>, <code>tickStep</code>, <code>prompt</code> et <code>validateProject</code>.</p>
+
+<h2 id="donnees">4 · Modèles de données</h2>
+<h3>Projet JSON — schéma 1</h3>
+<pre><code>{
+  "version": 1,
+  "title": "Scale study",
+  "items": [ /* sujets */ ],
+  "settings": {
+    "background": "#ffffff",
+    "gridColor": "#b9c6d8",
+    "showGrid": true,
+    "model": "Universel",
+    "language": "en",
+    "referenceId": "uuid-du-sujet",
+    "action": "",
+    "lock": true
+  },
+  "promptOverride": null
+}</code></pre>
+
+<h3>Sujet preset</h3>
+<pre><code>{
+  "id": "uuid",
+  "presetId": "animal-9",
+  "name": "Gorilla",
+  "category": "animal",
+  "size": 1.75,
+  "axis": "height",
+  "aspect": 0.93,
+  "unit": "m",
+  "color": "#7787a1",
+  "x": 2.1
+}</code></pre>
+
+<h3>Sujet importé</h3>
+<pre><code>{
+  "id": "uuid",
+  "name": "Sujeto 028",
+  "category": "vehicle",
+  "size": 8,
+  "axis": "width",
+  "aspect": 2.4,
+  "unit": "m",
+  "color": "#7787a1",
+  "x": 0,
+  "image": "data:image/png;base64,...",
+  "offsetY": 0.12
+}</code></pre>
+
+<table>
+<tr><th>Champ</th><th>Contrat</th></tr>
+<tr><td><code>size</code></td><td>Toujours stocké en <b>mètres</b>, même si l’UI affiche mm/cm/km. Intervalle validé : <code>1e-6</code> à <code>1e6</code>.</td></tr>
+<tr><td><code>axis</code></td><td><code>height</code> ou <code>width</code>. Si width : hauteur = size / aspect. Si height : largeur = size × aspect.</td></tr>
+<tr><td><code>aspect</code></td><td>Largeur / hauteur du contenu. Pour un preset, la validation reprend l’aspect du tracé SVG de référence.</td></tr>
+<tr><td><code>x</code></td><td>Position horizontale dans le monde physique, en mètres.</td></tr>
+<tr><td><code>offsetY</code></td><td>Décalage visuel vertical de l’image importée, exprimé comme fraction de sa hauteur, borné à −0,5…+0,5.</td></tr>
+<tr><td><code>image</code></td><td>Data URL PNG/JPEG/WebP ; la bibliothèque desktop exige actuellement du PNG. Maximum validé par sujet : environ 12 millions de caractères.</td></tr>
+<tr><td><code>category</code></td><td><code>human</code>, <code>animal</code>, <code>creature</code>, <code>vehicle</code>, <code>building</code>, <code>object</code>.</td></tr>
+</table>
+
+<h3>Bibliothèque personnelle disque</h3>
+<p>Le fichier autonome est nommé <code>echelle-subjects.json</code> :</p>
+<pre><code>{
+  "version": 1,
+  "subjects": [
+    { "id": "personal-...", "name": "...", "category": "...", "size": 1.8,
+      "axis": "height", "aspect": 0.42, "unit": "m", "color": "#7787a1",
+      "image": "data:image/png;base64,...", "offsetY": 0 }
+  ]
+}</code></pre>
+
+<h2 id="persistance">5 · Persistance et bibliothèque</h2>
+<p>Dans un navigateur, <code>app.js</code> ouvre IndexedDB <code>echelle-studio</code>, version 2 :</p>
+<ul>
+<li>store <code>projects</code>, clé <code>current</code> : projet autosauvegardé ;</li>
+<li>store <code>personalSubjects</code>, <code>keyPath: id</code> : bibliothèque My subjects.</li>
+</ul>
+<p>Dans Electron, <code>window.desktopApp</code> remplace la bibliothèque IndexedDB par des IPC qui lisent et écrivent <code>echelle-subjects.json</code> dans un dossier choisi. Les méthodes sont :</p>
+<pre><code>desktopApp.getVersion()
+desktopApp.latestRelease()
+desktopApp.openUpdate(url)
+desktopApp.getLibrary()
+desktopApp.chooseLibraryFolder()
+desktopApp.savePersonalSubject(subject)
+desktopApp.deletePersonalSubject(id)</code></pre>
+
+<div class="encart alerte"><b>Contrainte Atlas.</b> Ne mets pas un projet Échelle avec ses images base64 dans la configuration générique d’un outil Atlas : le registre est limité à 2 Mio et les configurations sont liées aux setups. Un projet Échelle peut approcher 90 Mo. Pour la première intégration, IndexedDB même origine convient. Pour une persistance installée robuste, ajouter des endpoints dédiés qui écrivent sous <code>dataDirectory/object-scale-chart/</code>, c’est-à-dire sous <code>%APPDATA%\BARZ Suite 6\Prompt Atlas\object-scale-chart\</code> dans l’installeur.</div>
+
+<p>Endpoints recommandés si la persistance serveur est implémentée :</p>
+<pre><code>GET  /api/v1/object-scale/project
+PUT  /api/v1/object-scale/project
+GET  /api/v1/object-scale/library
+POST /api/v1/object-scale/library/subjects
+DELETE /api/v1/object-scale/library/subjects/:id</code></pre>
+<p>Faire des écritures atomiques <code>.tmp</code> → rename, appliquer <code>ScaleCore.validateProject</code> et réutiliser les validations strictes de <code>electron-main.cjs</code>.</p>
+
+<h2 id="detourage">6 · Détourage IA local</h2>
+<p><code>ai-cutout-entry.js</code> utilise <code>@imgly/background-removal@1.7.0</code> avec le modèle <code>isnet_quint8</code>, CPU, sortie PNG. Le modèle et les fichiers ONNX/WASM sont téléchargés au premier usage depuis :</p>
+<pre><code>https://staticimgly.com/@imgly/background-removal-data/1.7.0/dist/</code></pre>
+<p>Le modèle représente environ 40 Mo et reste dans le cache du navigateur. L’image utilisateur n’est jamais envoyée : seuls les fichiers du modèle descendent. Si l’inférence échoue, <code>cutout.js</code> fournit un mode rapide fondé sur les couleurs des bords.</p>
+<div class="encart info"><b>Pour une suite réellement hors ligne.</b> Vendoriser les ressources IMG.LY sous <code>apps/atlas/public/assets/vendor/imgly-background-removal/</code>, passer un <code>publicPath</code> local dans <code>ai-cutout-entry.js</code>, puis reconstruire le bundle. Sinon, autoriser explicitement <code>https://staticimgly.com</code> dans le <code>connect-src</code> de la CSP Atlas. Ne pas élargir la CSP avec un joker.</div>
+
+<h2 id="integration">7 · Intégration recommandée</h2>
+<h3>Phase 1 — iframe même origine <span class="tag">recommandée</span></h3>
+<ol class="steps">
+<li>Créer <code>apps/atlas/public/object-scale-chart/</code>.</li>
+<li>Y copier les neuf fichiers runtime : <code>index.html</code>, <code>styles.css</code>, <code>app.js</code>, <code>core.js</code>, <code>catalogue.js</code>, <code>subject-vectors.js</code>, <code>cutout.js</code>, <code>ai-cutout.js</code>, <code>version.js</code>, plus <code>THIRD_PARTY_NOTICES.md</code>.</li>
+<li>Dans <code>server.js</code>, autoriser le préfixe <code>object-scale-chart/</code> dans <code>embeddedPublicAsset()</code>.</li>
+<li>Créer <code>apps/atlas/public/object-scale-chart-tool.js</code> exportant <code>mountObjectScaleChart({host, header, toast, onPrompt, onExport})</code>. Il ajoute le header Atlas et une iframe <code>/object-scale-chart/index.html?embedded=1</code>.</li>
+<li>Ajouter un petit bridge <code>postMessage</code> strictement même origine pour recevoir prompt/projet/export si Prompt Atlas doit les exploiter.</li>
+<li>Ajouter l’outil au registre et à <code>tool-workspace.js</code>.</li>
+</ol>
+<p>Cette phase conserve l’application testée presque intacte, isole ses IDs et son CSS, et évite une réécriture risquée de <code>app.js</code>.</p>
+
+<h3>Phase 2 — adaptation produit</h3>
+<ul>
+<li>Ajouter un mode <code>embedded=1</code> qui masque la marque, le bouton Update autonome et les commandes de projet redondantes si Prompt Atlas les remplace.</li>
+<li>Synchroniser langue et thème avec les préférences Atlas par <code>postMessage</code>.</li>
+<li>Ajouter « Envoyer à BZ Aggregator » avec l’image PNG du tableau comme référence et le prompt comme texte.</li>
+<li>Brancher une persistance serveur dédiée sous le dataDirectory Atlas.</li>
+<li>Éventuellement extraire plus tard <code>ScaleCore</code> et transformer l’UI en composant natif ; ne pas faire cette réécriture pendant la première intégration.</li>
+</ul>
+
+<h2 id="atlas">8 · Fichiers Prompt Atlas à modifier</h2>
+<p>Racine Prompt Atlas : <code class="path">E:\Codex-Proj\Barz-Gregator\suite-v6\</code></p>
+<table>
+<tr><th>Fichier Atlas</th><th>Modification attendue</th></tr>
+<tr><td><code>packages/registry/src/defaults.js</code></td><td>Ajouter le tool builtin <code>object-scale-chart</code>, adapterId identique, puis une placement dans <code>grid-generation</code> (titre visible : Board &amp; Sequence).</td></tr>
+<tr><td><code>apps/atlas/server.js</code></td><td>Ajouter l’ID à <code>BUILTIN_TOOL_IDS</code>, le module wrapper à <code>STATIC_FILES</code>, le préfixe <code>object-scale-chart/</code> dans <code>embeddedPublicAsset</code>, et éventuellement les APIs de persistance.</td></tr>
+<tr><td><code>apps/atlas/public/tool-workspace.js</code></td><td>Importer <code>mountObjectScaleChart</code>, créer <code>renderObjectScaleChart()</code>, puis ajouter <code>else if (toolId === "object-scale-chart") renderObjectScaleChart()</code> dans <code>openTool</code>.</td></tr>
+<tr><td><code>apps/atlas/public/object-scale-chart-tool.js</code></td><td>Nouveau wrapper iframe + bridge de messages.</td></tr>
+<tr><td><code>apps/atlas/public/object-scale-chart/</code></td><td>Copie vendoriée des fichiers runtime Échelle.</td></tr>
+<tr><td><code>packages/tool-adapters/src/index.js</code></td><td>Ajouter une configuration minimale uniquement si Atlas exige un default pour chaque builtin. Ne jamais y stocker les images ou le projet complet.</td></tr>
+<tr><td><code>tests/build-server.test.js</code></td><td>Vérifier GET/HEAD du module et refus des traversées de chemin.</td></tr>
+<tr><td><code>tests/registry-store.test.js</code> ou test dédié</td><td>Vérifier outil, placement et ordre.</td></tr>
+<tr><td><code>tests/installer-components.test.js</code></td><td>Vérifier que les fichiers Échelle sont présents dans le payload Atlas.</td></tr>
+</table>
+
+<h3>Entrées de registre proposées</h3>
+<pre><code>{
+  id: "object-scale-chart",
+  title: "Object Scale Chart",
+  kind: "builtin",
+  adapterId: "object-scale-chart",
+  origin: "builtin"
+}
+
+{
+  id: "object-scale-chart-in-board",
+  toolId: "object-scale-chart",
+  targetId: "grid-generation",
+  order: 5,
+  origin: "builtin"
+}</code></pre>
+
+<h3>Wrapper minimal proposé</h3>
+<pre><code>export function mountObjectScaleChart({ host, header }) {
+  const frame = document.createElement("iframe");
+  frame.className = "object-scale-chart-frame";
+  frame.title = "Object Scale Chart";
+  frame.src = "/object-scale-chart/index.html?embedded=1";
+  frame.allow = "clipboard-read; clipboard-write";
+  const shell = document.createElement("section");
+  shell.className = "object-scale-chart-shell";
+  shell.append(header, frame);
+  host.replaceChildren(shell);
+  return () =&gt; frame.remove();
+}</code></pre>
+
+<h2 id="bridge">9 · Pont avec Prompt Atlas / Aggregator</h2>
+<p>Le livrable naturel d’Échelle contient deux éléments liés :</p>
+<ol>
+<li>le tableau exporté en PNG ou SVG ;</li>
+<li>le prompt de proportions contenu dans <code>#prompt-output</code>.</li>
+</ol>
+<p>Ajouter dans la page embarquée un message sortant explicite, sans sérialiser automatiquement les images à chaque modification :</p>
+<pre><code>window.parent.postMessage({
+  type: "barz-object-scale:export",
+  version: 1,
+  prompt,
+  project,
+  image: pngDataUrl
+}, location.origin);</code></pre>
+<p>Le parent doit vérifier <code>event.source === frame.contentWindow</code>, <code>event.origin === location.origin</code>, <code>type</code> et les limites de taille avant d’accepter. Pour Aggregator, créer un brouillon image avec le prompt comme texte et le PNG comme image de référence. Ne jamais inclure la grille dans le prompt comme élément à rendre : <code>ScaleCore.prompt()</code> contient déjà cette interdiction.</p>
+
+<h2 id="securite">10 · CSP, sécurité et licences</h2>
+<ul>
+<li>La route statique Atlas utilise <code>X-Frame-Options: SAMEORIGIN</code> et <code>frame-ancestors 'self'</code> : l’iframe même origine est compatible.</li>
+<li>Conserver la protection de traversal de <code>embeddedPublicAsset</code> : <code>path.resolve</code> puis vérification du préfixe racine.</li>
+<li>Les images utilisateur restent des Data URLs et sont validées avant sauvegarde.</li>
+<li>Le projet JSON doit toujours passer par <code>ScaleCore.validateProject</code>.</li>
+<li>Limiter les messages bridge à l’origine et à la fenêtre attendues.</li>
+<li>Le bouton Update autonome parle à GitHub ; en mode intégré il peut être masqué, car l’installeur BARZ porte la version produit.</li>
+</ul>
+
+<div class="encart alerte"><b>Licence à traiter avant distribution.</b> <code>@imgly/background-removal</code> est annoncé AGPL-3.0 dans <code>THIRD_PARTY_NOTICES.md</code>. Conserver la notice et faire valider les obligations de redistribution du code source/modifications pour BARZ Suite. Le dépôt Object Scale Chart ne contient actuellement pas de fichier <code>LICENSE</code> propre : ne pas inventer une licence. Si l’AGPL n’est pas compatible avec la politique produit, remplacer ce moteur par un composant autorisé, puis refaire les tests de détourage.</div>
+
+<h2 id="installeur">11 · Installeur BARZ Suite 6</h2>
+<p>Racine installeur : <code class="path">E:\Codex-Proj\Barz-Gregator\suite-v6\installer\</code>.</p>
+<p><code>prepare-product-payload.mjs</code> copie déjà l’intégralité des dossiers <code>apps</code>, <code>packages</code>, <code>migration</code>, le package racine et les modules dans <code>payload/atlas/app</code>. Une fois le module ajouté sous <code>apps/atlas/public/</code>, aucun nouveau composant NSIS n’est nécessaire : Object Scale Chart fait partie de Prompt Atlas.</p>
+<ul>
+<li>Ne pas ajouter l’exécutable Electron Échelle dans l’installeur : cela dupliquerait Chromium, l’interface et le système de mise à jour.</li>
+<li>Ne pas modifier directement <code>installer/payload/atlas/app</code> : ce dossier est régénéré et effacé par <code>prepare-product-payload.mjs</code>.</li>
+<li>Modifier la source sous <code>suite-v6/apps/atlas</code>, puis exécuter <code>npm run build:installer</code>.</li>
+<li>Les données persistantes doivent rester sous <code>%APPDATA%\BARZ Suite 6\Prompt Atlas</code>, répertoire déjà injecté par les launchers.</li>
+</ul>
+
+<h2 id="tests">12 · Tests et critères d’acceptation</h2>
+<h3>Tests source existants</h3>
+<pre><code>cd "E:\Codex-Proj\Object scale chart"
+npm test
+npm start
+node tests/browser-smoke.cjs</code></pre>
+<p>Le test Node couvre 17 cas. Le smoke navigateur couvre rendu, échelle physique, undo, redimensionnement, pétrolier, détourage, calage vertical direct, persistance, exports, limite de 15 humains et mobile.</p>
+
+<h3>Critères d’acceptation dans Prompt Atlas</h3>
+<ol class="steps">
+<li>L’outil apparaît dans Board &amp; Sequence et s’ouvre sans navigation hors de Prompt Atlas.</li>
+<li>Les 136 presets utilisent uniquement les nouveaux tracés SVG ; gorille, chien, chat et six humains sont présents.</li>
+<li>Le gorille conserve son aspect et les pieds/bases des presets touchent le sol.</li>
+<li>Une image importée peut être détourée, glissée verticalement, puis retrouve son calage après rechargement.</li>
+<li>Un humain de 1,80 m et un pétrolier de 330 m gardent exactement leur rapport d’échelle.</li>
+<li>EN/FR et Light/Night fonctionnent en mode embarqué.</li>
+<li>Le fond et les graduations sont personnalisables et présents dans PNG/SVG.</li>
+<li>Le prompt et le tableau peuvent être exportés ; le pont Aggregator joint les deux sans réencodage destructif.</li>
+<li>Les projets proches de la limite ne sont pas écrits dans le registre Atlas.</li>
+<li>L’installeur reconstruit un payload contenant le module et les tests généraux de <code>suite-v6</code> passent.</li>
+</ol>
+
+<h2 id="pieges">13 · Pièges à éviter</h2>
+<ol class="steps">
+<li><b>Ne pas refaire les icônes.</b> <code>subject-vectors.js</code> est le résultat validé des planches fournies. Les anciennes silhouettes ont été retirées.</li>
+<li><b>Ne pas forcer width et height indépendamment.</b> L’aspect vient du viewBox SVG ou du contenu raster détouré. C’est ce qui a corrigé le gorille déformé.</li>
+<li><b>Ne pas recadrer les pieds.</b> Les scripts de production alignent chaque tracé sur le bas réel de son viewBox.</li>
+<li><b>Le calage vertical raster est visuel.</b> Il ne modifie pas la dimension physique ; <code>offsetY</code> déplace l’image dans sa boîte mesurée.</li>
+<li><b>Ne pas stocker 90 Mo dans le registre.</b> IndexedDB ou fichiers dédiés uniquement.</li>
+<li><b>Ne pas casser l’ordre des scripts.</b> <code>app.js</code> attend que catalogue, vectors, core et moteurs de détourage existent déjà.</li>
+<li><b>Ne pas servir l’IA sous la CSP principale sans adaptation.</b> Le modèle distant sera bloqué tant que <code>staticimgly.com</code> n’est pas autorisé ou vendorisé.</li>
+<li><b>Ne pas reprendre Electron dans Atlas.</b> Les IPC sont un contrat à transposer côté serveur local, pas une seconde application à lancer.</li>
+<li><b>Ne pas écrire dans installer/payload.</b> Le build supprime ce dossier avant de le recréer.</li>
+</ol>
+
+<h2 id="commande">14 · Commandes utiles</h2>
+<pre><code># App autonome
+cd "E:\Codex-Proj\Object scale chart"
+npm test
+npm start                       # http://127.0.0.1:4173
+npm run build:ai                # reconstruit ai-cutout.js
+npm run dist:win                # portable Windows autonome
+
+# Prompt Atlas
+cd "E:\Codex-Proj\Barz-Gregator\suite-v6"
+npm test
+npm run start:build             # http://127.0.0.1:4326
+npm run build:installer
+
+# Dépôt source Échelle
+git -C "E:\Codex-Proj\Object scale chart" remote -v
+git -C "E:\Codex-Proj\Object scale chart" log --oneline -5</code></pre>
+
+<h2 id="brief">15 · Brief d’exécution pour Codex</h2>
+<div class="encart"><b>À faire.</b> Intégrer Object Scale Chart depuis <code>E:\Codex-Proj\Object scale chart</code> dans Prompt Atlas sous forme d’outil builtin <code>object-scale-chart</code> placé dans <code>grid-generation</code>. Commencer par une iframe même origine servie depuis <code>apps/atlas/public/object-scale-chart/</code>. Conserver tous les calculs de <code>core.js</code>, les 136 tracés de <code>subject-vectors.js</code>, les validations et la persistance hors registre. Ajouter un bridge strict pour exporter prompt + PNG vers Atlas/Aggregator, adapter la CSP pour le modèle IA ou vendoriser ses ressources, puis couvrir registre, routes, iframe, calage vertical, export et payload installeur par des tests.</div>
+<div class="encart alerte"><b>Définition de terminé.</b> Le travail n’est pas terminé quand une carte « Object Scale Chart » apparaît. Il est terminé quand l’outil s’ouvre dans Atlas, fonctionne hors de l’app Electron, sauvegarde ses sujets, détoure ou fournit son fallback, exporte le tableau et le prompt, passe les tests Object Scale Chart + suite-v6, et se retrouve dans le payload régénéré de l’installeur.</div>
+
+<p class="petit">Documents complémentaires : <code>E:\Codex-Proj\Object scale chart\README.md</code>, <code>THIRD_PARTY_NOTICES.md</code>, <code>tests/</code> et <code>E:\Codex-Proj\Barz-Gregator\suite-v6\installer\README.md</code>.</p>
+</main>
+</body>
+</html>

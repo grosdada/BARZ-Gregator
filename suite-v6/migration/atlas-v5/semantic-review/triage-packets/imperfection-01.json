@@ -1,0 +1,3468 @@
+{
+  "schemaVersion": "1.0",
+  "id": "triage-imperfection-01",
+  "owner": "imperfection",
+  "status": "pending-structural-triage",
+  "approximateTokens": 514,
+  "prompts": [
+    {
+      "id": "text-057b5de48d7b90f123ec",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Minimal",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1681,
+          "column": 76,
+          "kind": "string-literal",
+          "functionName": "updateUIFromState",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1685,
+          "column": 81,
+          "kind": "string-literal",
+          "functionName": "updateUIFromState",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1821,
+          "column": 40,
+          "kind": "string-literal",
+          "functionName": "setupEventListeners",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1853,
+          "column": 43,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-06c059827ca8c0c203a2",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "breathSway",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1673,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "updateUIFromState",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1851,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-09b148adcc517922bc19",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": " stops",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1682,
+          "column": 90,
+          "kind": "string-literal",
+          "functionName": "updateUIFromState",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1828,
+          "column": 88,
+          "kind": "string-literal",
+          "functionName": "setupEventListeners",
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-0efef22cc0c11ccbb214",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "tokenCount",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 2127,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-12a8aed14060e812bf71",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "10-15 blinks per minute slow",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 2067,
+          "column": 77,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-17eb3c0168d0d7b21ede",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "disabled",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1713,
+          "column": 35,
+          "kind": "string-literal",
+          "functionName": "toggleSection",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1723,
+          "column": 39,
+          "kind": "string-literal",
+          "functionName": "updateSectionToggles",
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-192d92ad37db7ce16ea3",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Preset \"${name}\" deleted",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1656,
+          "column": 33,
+          "kind": "template-literal",
+          "functionName": "deleteCustomPreset",
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-1d0321bf89062bbe4671",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "natural hand gestures while speaking",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 2057,
+          "column": 62,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-1d2c73dc01f2359b03a9",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Static",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1685,
+          "column": 71,
+          "kind": "string-literal",
+          "functionName": "updateUIFromState",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1853,
+          "column": 33,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-1ee7644fd6e6560756b8",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "stopMotionVib",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1671,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "updateUIFromState",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1844,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "setupEventListeners",
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-218c8eab974dc4d30b8e",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "occasional zoom hunting",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 2001,
+          "column": 70,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-229ca0b213a0df00e629",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "breathSwayValue",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1685,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "updateUIFromState",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1854,
+          "column": 41,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-22d5925ed64680ab5f3f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "heavy",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1980,
+          "column": 109,
+          "kind": "string-literal",
+          "functionName": "generatePrompt",
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-236f989cb2883d1049d8",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "realismScore",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 2125,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-263b6c9c9292d2e36a2c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "handDrift",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1664,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "updateUIFromState",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1799,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "setupEventListeners",
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-27b27d788ae2741b11e2",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Security Camera",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1061,
+          "column": 54,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-2859f0748230ef35c791",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Webcam / Laptop",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1062,
+          "column": 52,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-29ac7e56b3b4654f5246",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Orbit",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1027,
+          "column": 60,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-2dfa93425dcccba8a86c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "fixed dashcam perspective",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1965,
+          "column": 32,
+          "kind": "string-literal",
+          "functionName": "generatePrompt",
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-302e22e2b56e7870b3aa",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "deviceType",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1663,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "updateUIFromState",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1873,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-314f00ecd638563bc7aa",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "puppet_henson",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1219,
+          "column": 37,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 2036,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-34b953d3ca4ee7c462e1",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "noticeable",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1980,
+          "column": 81,
+          "kind": "string-literal",
+          "functionName": "generatePrompt",
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-35355bfda30e3faa382d",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "subtle reframing adjustments",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 2000,
+          "column": 68,
+          "kind": "string-literal",
+          "functionName": "generatePrompt",
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-36d842da5783573255d1",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "alternating directions",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 2011,
+          "column": 40,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-38fb2979a858daea7cd9",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "counter-clockwise",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 2010,
+          "column": 45,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-39b970ad63724e045b2d",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Exaggerated",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1685,
+          "column": 126,
+          "kind": "string-literal",
+          "functionName": "updateUIFromState",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1853,
+          "column": 88,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-3bab6286871582609ccb",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "laptop webcam fixed position",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1967,
+          "column": 31,
+          "kind": "string-literal",
+          "functionName": "generatePrompt",
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-3d03a1dea561d0dbeadf",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Toggle",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1709,
+          "column": 62,
+          "kind": "string-literal",
+          "functionName": "toggleSection",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1720,
+          "column": 66,
+          "kind": "string-literal",
+          "functionName": "updateSectionToggles",
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-3e0a27866fb24546e727",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "pronounced",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1980,
+          "column": 95,
+          "kind": "string-literal",
+          "functionName": "generatePrompt",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 2045,
+          "column": 91,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-3eadecfbd53379b9a317",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Subtle",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1104,
+          "column": 76,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1681,
+          "column": 87,
+          "kind": "string-literal",
+          "functionName": "updateUIFromState",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1684,
+          "column": 81,
+          "kind": "string-literal",
+          "functionName": "updateUIFromState",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1685,
+          "column": 92,
+          "kind": "string-literal",
+          "functionName": "updateUIFromState",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1821,
+          "column": 51,
+          "kind": "string-literal",
+          "functionName": "setupEventListeners",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1846,
+          "column": 40,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1853,
+          "column": 54,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-403b8dc9df0dc3ced2f5",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "frequent",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 2050,
+          "column": 78,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-4356d6743238eccd320b",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "weightShift",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1674,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "updateUIFromState",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1858,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-450e1373a3b8c48029f0",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "orbitDirection",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1670,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "updateUIFromState",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1839,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "setupEventListeners",
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-462b8c7bd8c4ed88b673",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "15-20 blinks per minute natural rate",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 2067,
+          "column": 109,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-469baa511b0da92ee293",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "clockwise",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1177,
+          "column": 37,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1463,
+          "column": 33,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1501,
+          "column": 266,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1505,
+          "column": 263,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1509,
+          "column": 262,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1513,
+          "column": 256,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1517,
+          "column": 262,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1521,
+          "column": 259,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1525,
+          "column": 261,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1529,
+          "column": 258,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1533,
+          "column": 263,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1537,
+          "column": 260,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 2009,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 2009,
+          "column": 38,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-480dd7c6bdace042551b",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "micro grip adjustments",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 2054,
+          "column": 61,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-494ca78f7374e46fb2de",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Custom",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1030,
+          "column": 96,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-499df825866b8cb007cd",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "outputPrompt",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 2121,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 2155,
+          "column": 54,
+          "kind": "string-literal",
+          "functionName": "copyPrompt",
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-4a9e70819cd60b159a89",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Imported ${importedCount} preset(s)",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1784,
+          "column": 41,
+          "kind": "template-literal",
+          "functionName": "importPresets",
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-4b2bebbf33aeb7aea11c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Slow",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1683,
+          "column": 75,
+          "kind": "string-literal",
+          "functionName": "updateUIFromState",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1834,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "setupEventListeners",
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-5205d4955162d5773510",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "stopMotionVibValue",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1684,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "updateUIFromState",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1847,
+          "column": 41,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-534e3eab881dbaaf27eb",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Compiled Prompt",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1399,
+          "column": 44,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-5c7dad260e0b1d0f59ef",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "slight",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1980,
+          "column": 71,
+          "kind": "string-literal",
+          "functionName": "generatePrompt",
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-5d2d3ceb7abe55234427",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "security",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1061,
+          "column": 37,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1966,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": "generatePrompt",
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-5d8c012efdba367bc97c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "blinkValue",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1687,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "updateUIFromState",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1868,
+          "column": 41,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-5e0cf7bd1dfa3831788b",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "slow",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 2007,
+          "column": 49,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-63e4bacf0e854b693b3c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "subtle posture corrections",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 2055,
+          "column": 63,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-66d841e484df8ded166f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "puppet_stopmotion",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1220,
+          "column": 37,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1538,
+          "column": 41,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 2037,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-6c582b62e0e5aa056473",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Fast",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1683,
+          "column": 93,
+          "kind": "string-literal",
+          "functionName": "updateUIFromState",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1834,
+          "column": 55,
+          "kind": "string-literal",
+          "functionName": "setupEventListeners",
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-6fb7561f68dbd1418bda",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "dslr_handheld",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1059,
+          "column": 37,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1525,
+          "column": 35,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1529,
+          "column": 35,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1533,
+          "column": 35,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1537,
+          "column": 35,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1964,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": "generatePrompt",
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-7370f12b33e341a54491",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Frame Vibration",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1189,
+          "column": 35,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-75d0742a787fa564fb74",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "smartphone_selfie",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1056,
+          "column": 37,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1517,
+          "column": 35,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1961,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": "generatePrompt",
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-77e79ed77cc7e2c67371",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "occasional swallow reflex",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 2074,
+          "column": 60,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-7831005d85cb7abb36b9",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Exported ${presetCount} preset(s)",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1761,
+          "column": 33,
+          "kind": "template-literal",
+          "functionName": "exportPresets",
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-79967f3c354006764306",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "smartphone_handheld",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1055,
+          "column": 37,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1450,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1501,
+          "column": 35,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1509,
+          "column": 35,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1960,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": "generatePrompt",
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-7c93c169afcaf9eec7a7",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "stable consistent clothing and accessories",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 2097,
+          "column": 71,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-7ee6118994b5253368f0",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "rapid",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 2007,
+          "column": 75,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-808da87f72cef5502081",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Handheld Cinematic",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1025,
+          "column": 64,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-82f162bfdb41a6a90ac4",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "preset-btn custom",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1575,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "loadCustomPresets",
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-85bd683e10a363109690",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "microShake",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1666,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "updateUIFromState",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1812,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "setupEventListeners",
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-863b7163a75ed8404640",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "savePresetModal",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1592,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "openSavePresetModal",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1598,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "closeSavePresetModal",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1734,
+          "column": 33,
+          "kind": "string-literal",
+          "functionName": "updateSectionToggles",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1735,
+          "column": 33,
+          "kind": "string-literal",
+          "functionName": "updateSectionToggles",
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-87099c8eebcb1172f0a0",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Prompt copied to clipboard",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1428,
+          "column": 35,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-889e99ea1638923033cb",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Very Fast",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1683,
+          "column": 101,
+          "kind": "string-literal",
+          "functionName": "updateUIFromState",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1834,
+          "column": 63,
+          "kind": "string-literal",
+          "functionName": "setupEventListeners",
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-89a43635689428426a1d",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "orbitSpeed",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1669,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "updateUIFromState",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1832,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "setupEventListeners",
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-8ac45c5ee5d9b3d89d8a",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "action_cam",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1057,
+          "column": 37,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1962,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": "generatePrompt",
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-8e588cd187741f1cd76f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Medium",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1166,
+          "column": 78,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1680,
+          "column": 81,
+          "kind": "string-literal",
+          "functionName": "updateUIFromState",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1683,
+          "column": 83,
+          "kind": "string-literal",
+          "functionName": "updateUIFromState",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1684,
+          "column": 100,
+          "kind": "string-literal",
+          "functionName": "updateUIFromState",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1814,
+          "column": 48,
+          "kind": "string-literal",
+          "functionName": "setupEventListeners",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1834,
+          "column": 45,
+          "kind": "string-literal",
+          "functionName": "setupEventListeners",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1846,
+          "column": 59,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-8f202601190175fc1528",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "lip micro-movements",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 2073,
+          "column": 64,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-8fa1dddd53606ceb933c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "mm",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1678,
+          "column": 90,
+          "kind": "string-literal",
+          "functionName": "updateUIFromState",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1801,
+          "column": 86,
+          "kind": "string-literal",
+          "functionName": "setupEventListeners",
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-8fca425ffb0679da58f1",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Extreme",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1680,
+          "column": 99,
+          "kind": "string-literal",
+          "functionName": "updateUIFromState",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1814,
+          "column": 66,
+          "kind": "string-literal",
+          "functionName": "setupEventListeners",
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-92340695899bd2d86223",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Active",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1044,
+          "column": 52,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1203,
+          "column": 52,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-94e8566ddfc123edf115",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "still",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1214,
+          "column": 37,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 2031,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-96f6549c6b97a641e4d1",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "constant",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 2050,
+          "column": 90,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-9852209a0c8c7b3eda2d",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "IMPERFECTION ENGINE",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1011,
+          "column": 17,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-9c2d9f3b075c70176dfe",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "activityLevel",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1672,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "updateUIFromState",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1878,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-a196ebe9b09304faa418",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "driftValue",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1678,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "updateUIFromState",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1801,
+          "column": 41,
+          "kind": "string-literal",
+          "functionName": "setupEventListeners",
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-a52deb33fee8fe975437",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "afBreathValue",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1681,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "updateUIFromState",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1822,
+          "column": 41,
+          "kind": "string-literal",
+          "functionName": "setupEventListeners",
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-a6b8e3b6b356a7b3af57",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "aeShiftValue",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1682,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "updateUIFromState",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1828,
+          "column": 41,
+          "kind": "string-literal",
+          "functionName": "setupEventListeners",
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-a703788f832056626d71",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "minimal",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1985,
+          "column": 46,
+          "kind": "string-literal",
+          "functionName": "generatePrompt",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 2045,
+          "column": 48,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-a95d5f47145621556120",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "subtle micro-expressions",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 2071,
+          "column": 69,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-a971bd6f76abf2ef9a29",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Chaotic",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1680,
+          "column": 110,
+          "kind": "string-literal",
+          "functionName": "updateUIFromState",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1814,
+          "column": 77,
+          "kind": "string-literal",
+          "functionName": "setupEventListeners",
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-aaaf49051d65cd0c4e5a",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "blinkRate",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1675,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "updateUIFromState",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1865,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-ab909fa18e3eff7f8a4a",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "shakeValue",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1680,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "updateUIFromState",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1815,
+          "column": 41,
+          "kind": "string-literal",
+          "functionName": "setupEventListeners",
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-af80a49358f4a5f706e9",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "\"Perfection is the red flag. The goal isn't perfect footage — it's believable imperfection.\"",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1013,
+          "column": 35,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-b1dd4a463c05bb919d0c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "handheld smartphone camera",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1960,
+          "column": 44,
+          "kind": "string-literal",
+          "functionName": "generatePrompt",
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-b8979030bb535398f0e3",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Prominent",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1685,
+          "column": 113,
+          "kind": "string-literal",
+          "functionName": "updateUIFromState",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1853,
+          "column": 75,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-bbc0994ef5620e6043fc",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Body Micro-Motion",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1225,
+          "column": 51,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-bd7c520788eb47510057",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "idle fidgeting",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 2056,
+          "column": 57,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-c082456a7766e23a18db",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "medium",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 2007,
+          "column": 57,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-c4ebc6d4a5832cd9415f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "High",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1680,
+          "column": 91,
+          "kind": "string-literal",
+          "functionName": "updateUIFromState",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1814,
+          "column": 58,
+          "kind": "string-literal",
+          "functionName": "setupEventListeners",
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-c633eb52f63cec1d6b02",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "casual",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1215,
+          "column": 37,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1467,
+          "column": 32,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1502,
+          "column": 41,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1506,
+          "column": 41,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1514,
+          "column": 41,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1518,
+          "column": 41,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1526,
+          "column": 41,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1534,
+          "column": 41,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 2032,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-c6daa950c4e0412f81db",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "counterclockwise",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1178,
+          "column": 37,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 2010,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-c723666a5e025b20ecd3",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "weightShiftValue",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1686,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "updateUIFromState",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1861,
+          "column": 41,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-c8ce1e824437493c59fc",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Action Camera / GoPro",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1057,
+          "column": 56,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-ca5ea6c787edcb220d7d",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Human Micro-Motion",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1201,
+          "column": 49,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-ca7981b46ecf2c1787b6",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Off",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1190,
+          "column": 81,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1681,
+          "column": 69,
+          "kind": "string-literal",
+          "functionName": "updateUIFromState",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1684,
+          "column": 74,
+          "kind": "string-literal",
+          "functionName": "updateUIFromState",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1821,
+          "column": 33,
+          "kind": "string-literal",
+          "functionName": "setupEventListeners",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1846,
+          "column": 33,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-caaba84670559b5bd406",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Heavy",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1681,
+          "column": 122,
+          "kind": "string-literal",
+          "functionName": "updateUIFromState",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1684,
+          "column": 110,
+          "kind": "string-literal",
+          "functionName": "updateUIFromState",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1821,
+          "column": 86,
+          "kind": "string-literal",
+          "functionName": "setupEventListeners",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1846,
+          "column": 69,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-cb947fd1315d48237dc7",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "5-10 blinks per minute sparse",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 2067,
+          "column": 44,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-cecea00cc9035edc9a7c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "spontaneous whip pans",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 2002,
+          "column": 66,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-d084f88938505776feba",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "afBreathing",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1667,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "updateUIFromState",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1819,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "setupEventListeners",
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-d0f6eea915f168ad268e",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "aeShift",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1668,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "updateUIFromState",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1826,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "setupEventListeners",
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-d203fd0b924dddab18c2",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Preset \"${name}\" saved",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1622,
+          "column": 33,
+          "kind": "template-literal",
+          "functionName": "saveCustomPreset",
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-d2207e13d332acf3f146",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "brief gaze breaks lasting 0.2-0.4 seconds",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1999,
+          "column": 69,
+          "kind": "string-literal",
+          "functionName": "generatePrompt",
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-d26da17d66817e2d5ae0",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Camera Behavior",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1042,
+          "column": 49,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-dbfdf717cd28120f9b9f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "alternating",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1179,
+          "column": 37,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 2011,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-dc725197e70abbfa1f3b",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "driftFreq",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1665,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "updateUIFromState",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1806,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "setupEventListeners",
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-e0cd61d0340f5b41194c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "prominent",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1985,
+          "column": 89,
+          "kind": "string-literal",
+          "functionName": "generatePrompt",
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-e637e7fb29b80f6b9243",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Puppet – Stop Motion",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1220,
+          "column": 63,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-ea553df9c53192d89f24",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "25+ blinks per minute nervous rapid",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 2067,
+          "column": 185,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-ee5164fbed22d57c34a2",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "natural eye saccades and micro-movements",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 2072,
+          "column": 60,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-eef54893c46671c2106d",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "barely perceptible",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1980,
+          "column": 49,
+          "kind": "string-literal",
+          "functionName": "generatePrompt",
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-f019ef4cd12b37e1fddd",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Stop Motion",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1028,
+          "column": 65,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1184,
+          "column": 51,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-f069d5b1adfbd140cc3b",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "DSLR (Shoulder Mount)",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1058,
+          "column": 59,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-f4657cc9ca5e0515bf68",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "dslr_shoulder",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1058,
+          "column": 37,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1505,
+          "column": 35,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1521,
+          "column": 35,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1963,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": "generatePrompt",
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-f793de205ead5ac302c4",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Low",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1092,
+          "column": 73,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1680,
+          "column": 74,
+          "kind": "string-literal",
+          "functionName": "updateUIFromState",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1814,
+          "column": 41,
+          "kind": "string-literal",
+          "functionName": "setupEventListeners",
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-f91d2ef4f38737cc59e8",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "imperfectionEnginePresets",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1551,
+          "column": 49,
+          "kind": "string-literal",
+          "functionName": "getCustomPresets",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1556,
+          "column": 34,
+          "kind": "string-literal",
+          "functionName": "saveCustomPresetsToStorage",
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-f94254c6438b6593eee4",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Noticeable",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1681,
+          "column": 108,
+          "kind": "string-literal",
+          "functionName": "updateUIFromState",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1821,
+          "column": 72,
+          "kind": "string-literal",
+          "functionName": "setupEventListeners",
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-fb3a7850111f293bfc97",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "nervous",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1217,
+          "column": 37,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1510,
+          "column": 41,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 2034,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-fb6a35fc384c7a4338e4",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "smartphone selfie cam front-facing",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1961,
+          "column": 42,
+          "kind": "string-literal",
+          "functionName": "generatePrompt",
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-fde49f93b1884426fa1a",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "orbitSpeedValue",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1683,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "updateUIFromState",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1835,
+          "column": 41,
+          "kind": "string-literal",
+          "functionName": "setupEventListeners",
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-fe9ddb336c9a56d9a096",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "driftFreqValue",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1679,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "updateUIFromState",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1808,
+          "column": 41,
+          "kind": "string-literal",
+          "functionName": "setupEventListeners",
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-ff0fd311491d10ece6c2",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "/sec",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1679,
+          "column": 94,
+          "kind": "string-literal",
+          "functionName": "updateUIFromState",
+          "owners": [
+            "imperfection"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+          "line": 1808,
+          "column": 90,
+          "kind": "string-literal",
+          "functionName": "setupEventListeners",
+          "owners": [
+            "imperfection"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    }
+  ]
+}

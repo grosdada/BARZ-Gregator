@@ -1,0 +1,11 @@
+Universal Animation Library by Quaternius
+
+License: Creative Commons Zero v1.0 Universal (CC0 1.0)
+https://creativecommons.org/publicdomain/zero/1.0/
+
+Official pack:
+https://quaternius.com/packs/universalanimationlibrary.html
+https://quaternius.itch.io/universal-animation-library
+
+Bundled file: UAL1_Standard.glb (in-place Standard edition)
+The original author permits personal, educational, and commercial use.

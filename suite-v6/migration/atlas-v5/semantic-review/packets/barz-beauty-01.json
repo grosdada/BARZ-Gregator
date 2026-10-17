@@ -1,0 +1,567 @@
+{
+  "schemaVersion": "1.0",
+  "id": "semantic-barz-beauty-01",
+  "owner": "barz-beauty",
+  "status": "pending-astra-review",
+  "approximateTokens": 4363,
+  "prompts": [
+    {
+      "id": "text-1ada80600e10f811029c",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Authentic aging skin characteristics: fine crow's feet radiating from outer eye corners with asymmetric depth, nasolabial folds with natural shadow gradation, forehead lines varying in depth — some deep-set permanent, others faint dynamic lines. Subtle loss of volume in temples and under-eye hollows with visible orbital fat redistribution. Skin shows mixed texture: smoother on cheekbones, crepey under eyes, slightly rougher on jaw. Age spots and solar lentigines in sun-exposed areas — irregular in shape and color, not uniform dots. Visible capillary networks on nose and cheek areas. Slight skin laxity at jawline with micro-sagging. Pore size variation — enlarged on nose, finer on forehead. Thinning skin revealing underlying vein color on temples and hands. Natural hair graying with inconsistent salt-and-pepper distribution.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 500,
+          "column": 11,
+          "kind": "template-literal",
+          "functionName": "makePortraitPrompts",
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-207cef07bef900d47ed3",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Overcast daylight, large diffused sky acting as enormous softbox. 5500K neutral color temperature. Extremely soft shadows with gradual falloff. Light wraps evenly around all facial contours. Subtle downward directionality from overhead sky creating faint under-chin shadow and gentle eye socket shading. Skin reads with full tonal range and natural color accuracy. No harsh highlights, no specular hotspots. Ideal for revealing skin texture without masking in shadow.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 523,
+          "column": 11,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-30232a9976d6f20b57d3",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Single hard light source 45° camera-right and slightly above eye level. Creates signature Rembrandt triangle of light on shadow-side cheek. Deep defined shadows on opposite side of face with minimal fill — shadow side at 3-4 stops under key. Nose shadow connects to cheek shadow. Strong jawline definition. Specular highlight on tip of nose, forehead, and cheekbone ridge. Background falls to near-black. Warm tungsten tone 3000K optional. Painterly chiaroscuro mood.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 531,
+          "column": 11,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-47a5caa1f580fa9eea06",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "[${p.title}]\n${p.text}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 635,
+          "column": 32,
+          "kind": "template-literal",
+          "functionName": "copyAllInTab",
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-4a9e299e0ae12b532262",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Ultra-realistic close-up of Editorial 3x3 photo grid in a clean soft beige studio. Character (matches reference 100%) wearing (knolling board ref). Lighting: large diffused key light directly front-right, silver reflector left, subtle rim from top. Shots to include: 1. extreme close-up of lips + cheekbone with blurred hand partially covering (85mm, f/1.8, razor-thin DOF); 2. tight crop on eyes looking into lens with reflection of light strip visible (85mm, f/2.0); 3. black & white close portrait resting chin on fist, face filling frame (50mm, f/2.2); 4. over-shoulder shot, blurred foreground fabric curtain framing half face (85mm, f/2.0); 5. very close frontal with hands overlapping face, light streak across eyes (50mm, f/2.5); 6. tight angled portrait showing hair falling into eyes, soft-focus background (85mm, f/2.2); 7. crop of hands touching jawline, eyes cropped out (50mm, f/3.2, detail-focused); 8. half-body seated sideways on low cube, head turned sharply away, blurred foreground (35mm, f/4.5); 9. intense close-up of profile with single tear-like water droplet, cinematic light slice across (85mm, f/1.9). Angles: mostly tight headshots with slight high/low tilts, maintaining variation. Capture RAW, professional muted grade, smooth tonal contrast, subtle cinematic grain. Mood: intimate, introspective, character-led editorial minimalism with delicate use of fabric as prop.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 439,
+          "column": 13,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-5c4eb9e7bc6b77e02584",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Negatives: extra fingers, fused fingers, missing fingers, wrong number of fingers, distorted knuckles, impossibly long fingers, webbed fingers, boneless-looking hands, fingernails on wrong side, floating hands, hands merging into objects, wrong thumb direction, mirrored hands, baby-sized hands on adult body.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 554,
+          "column": 11,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-5cc93ff80d273f41853c",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Negatives: AI glow, plastic skin, porcelain-doll finish, airbrushed texture, beauty-filter smoothing, uniform skin tone, symmetrical blemish placement, synthetic subsurface scattering, wax-figure sheen, uncanny valley skin, overly uniform pore pattern, CG skin shader, foundation-covered look.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 546,
+          "column": 11,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-5f17fac51c3842d57f19",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Ultra-realistic close-up of Editorial 3x3 photo grid in a clean soft beige studio. Male character (matches reference 100%) wearing lightweight dark navy shirt, ivory trousers, barefoot for raw simplicity. Lighting: large diffused key light directly front-right, silver reflector left, subtle rim from top. Shots to include: 1. extreme close-up of lips + jawline stubble with blurred hand partially covering (85mm, f/1.8, razor-thin DOF); 2. tight crop on eyes looking into lens with reflection of light strip visible (85mm, f/2.0); 3. black & white close portrait resting chin on fist, face filling frame (50mm, f/2.2); 4. over-shoulder shot, blurred foreground fabric curtain framing half face (85mm, f/2.0); 5. very close frontal with hands overlapping face, light streak across eyes (50mm, f/2.5); 6. tight angled portrait showing hair falling across forehead, soft-focus background (85mm, f/2.2); 7. crop of hands touching jawline, eyes cropped out (50mm, f/3.2, detail-focused); 8. half-body seated sideways on low cube, head turned sharply away, blurred foreground (35mm, f/4.5); 9. intense close-up of profile with single tear-like water droplet, cinematic light slice across (85mm, f/1.9). Angles: mostly tight headshots with slight high/low tilts, maintaining variation. Capture RAW, professional muted grade, smooth tonal contrast, subtle cinematic grain. Mood: intimate, introspective, character-led editorial minimalism with delicate use of fabric as prop.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 461,
+          "column": 13,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-6ebf30f929b7590b7f07",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Classic clamshell beauty lighting: large octabox directly above and in front of subject angled down 45°, white reflector below chin bouncing fill upward. Creates butterfly shadow under nose, gentle shadow under lower lip, catchlights at 12 o'clock in both eyes. Even illumination across both cheekbones. Subtle falloff toward ears and hairline. White seamless background lit separately to medium grey. 5600K daylight-balanced strobes, 1/125s sync.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 527,
+          "column": 11,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-7555f54c5c7a67367fef",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Negatives: perfectly symmetrical face, uncanny valley proportions, dead eyes, lifeless stare, puppet-like expression, AI-typical vacant smile, merged facial features, blurred iris detail, distorted teeth, extra teeth rows, floating eyebrows, makeup that looks painted on, philtrum distortion, lip texture smearing.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 550,
+          "column": 11,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-7a6f91bcd75ba4bfe08d",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Shot on medium format digital, natural grain, controlled depth of field.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 479,
+          "column": 96,
+          "kind": "string-literal",
+          "functionName": "makePortraitPrompts",
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-7c35de127d3ea655f6e6",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Extreme close-up of a male human eye and surrounding skin, ultra-realistic macro photography. Visible fine lines, pores, natural skin sheen, subtle under-eye texture, faint brow hair detail. Thicker skin texture around orbital bone. Soft diffused lighting, realistic shadows, high dynamic range. Editorial beauty photography, no airbrushing, hyper-detailed skin realism.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 453,
+          "column": 13,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-83e057dea95f9bb90a20",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Extreme close-up of a human eye and surrounding skin, ultra-realistic macro photography. Visible fine lines, pores, natural skin sheen, subtle under-eye texture. Soft diffused lighting, realistic shadows, high dynamic range. Editorial beauty photography, no airbrushing, hyper-detailed skin realism.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 427,
+          "column": 13,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-8cec345cd838291f83a3",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "ultra-realistic smartphone mirror selfie of a man late 20s–early 30s, indoor near window, daytime. Close-up framing collarbone to top of head. Phone partially covering face, slight downward gaze, calm neutral expression. Natural short dark hair slightly tousled, light grey cotton hoodie with clear fabric texture separation, subtle stubble with individual hair variation. Skin realism focus: visible pores, fine micro-texture, organic acne marks (non-repeating), uneven pigmentation, subtle redness, natural oil sheen only on high points, visible razor micro-irritation on neck. No symmetry correction. Real daylight with slight warmth, accurate white balance, natural contrast. True-to-life colors. Phone-camera realism, subtle sensor grain, slight edge softness. No retouching, no smoothing, no beauty filters. Negatives: AI glow, plastic skin, skincare-ad look, cinematic lighting, studio light, pastel or faded colors, flat lighting, cartoon/3D style, logos or text.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 445,
+          "column": 13,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-8ed7c74364d6ecc79a0f",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Hyper-realistic painted plastic figurine surface: visible brush stroke direction in hand-painted areas, spray-coat smoothness on base layers with orange-peel micro-texture at close range. Paint accumulation in recessed details — eye sockets, nostrils, between fingers. Dry-brush highlighting on raised edges with slightly chalky finish. Subtle paint layer thickness visible at sharp edges where primer peeks through. Mold seam lines partially sanded but faintly visible along bilateral symmetry axis. Injection molding gate mark on hidden surface. Gloss variation between different paint types — matte skin, semi-gloss clothing, high-gloss eyes. Micro air bubbles in clear-coat. Slight color bleed where masked areas meet. Fingerprint in varnish layer. Scale-appropriate: pores and fine lines are sculpted, not real — visible tool marks. Eyes are decals or printed with slight registration offset. Plastic material reads through at thin unpainted edges.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 512,
+          "column": 11,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-913bc7e70262d9835899",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Ultra-realistic close-up of feminine hands holding a smartphone. Natural skin texture, visible veins and fine wrinkles. Long almond-shaped nails with red and white minimalist nail art. Soft natural light, realistic proportions, shallow depth of field. Photorealistic hand anatomy, high detail macro shot.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 431,
+          "column": 13,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-987bb9a94e14a528ec8b",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Negatives: distorted anatomy, elongated limbs, extra limbs, missing limbs, impossible joint angles, twisted torso, broken spine pose, merged body parts, floating clothing, clothing fused with skin, wrong body proportions, giant head, tiny hands, asymmetric shoulders unless intentional, mannequin body, doll joints visible.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 566,
+          "column": 11,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-9db78301a65668d412af",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "On-axis ring light creating signature circular catchlights in both eyes. Completely flat frontal illumination eliminating almost all facial shadows. Even exposure across entire face. Subtle shadow outline around head and shoulders on background. Slight falloff at extreme edges of face. Reveals every pore and texture detail due to lack of shadow relief — ideal for skin-texture-focused work. Background receives spill, reads mid-grey. 5000K neutral.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 535,
+          "column": 11,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-9e9bea143e8dc637acb8",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Modular lighting descriptions to append or insert into any beauty/portrait prompt.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 387,
+          "column": 31,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-a40f7b47e2a5163a6dfc",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Ultra-realistic close-up of Editorial 3x3 photo grid in a clean soft beige studio. Male character (matches reference 100%) wearing (knolling board ref). Lighting: large diffused key light directly front-right, silver reflector left, subtle rim from top. Shots to include: 1. extreme close-up of lips + jawline stubble with blurred hand partially covering (85mm, f/1.8, razor-thin DOF); 2. tight crop on eyes looking into lens with reflection of light strip visible (85mm, f/2.0); 3. black & white close portrait resting chin on fist, face filling frame (50mm, f/2.2); 4. over-shoulder shot, blurred foreground fabric curtain framing half face (85mm, f/2.0); 5. very close frontal with hands overlapping face, light streak across eyes (50mm, f/2.5); 6. tight angled portrait showing hair falling across forehead, soft-focus background (85mm, f/2.2); 7. crop of hands touching jawline, eyes cropped out (50mm, f/3.2, detail-focused); 8. half-body seated sideways on low cube, head turned sharply away, blurred foreground (35mm, f/4.5); 9. intense close-up of profile with single tear-like water droplet, cinematic light slice across (85mm, f/1.9). Angles: mostly tight headshots with slight high/low tilts, maintaining variation. Capture RAW, professional muted grade, smooth tonal contrast, subtle cinematic grain. Mood: intimate, introspective, character-led editorial minimalism with delicate use of fabric as prop.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 465,
+          "column": 13,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-a9a8e0b5cf959381dbca",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Negatives: flat uniform lighting, multiple conflicting shadow directions, shadowless face, ambient occlusion artifacts, halo glow around subject, light source inside body, inconsistent specular highlights, bloom on skin, HDR tonemapping artifacts, over-processed look, nuclear-white highlights with zero gradation.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 558,
+          "column": 11,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-c97927d4c52693abd570",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "ultra-realistic smartphone mirror selfie of a woman late 20s–early 30s, indoor near window, daytime. Close-up framing collarbone to top of head. Phone partially covering face, slight downward gaze, calm neutral expression. Natural tied-back dark hair with flyaways, light grey cotton hoodie with clear fabric texture separation, small silver earrings. Skin realism focus: visible pores, fine micro-texture, organic acne marks (non-repeating), uneven pigmentation, subtle redness, natural oil sheen only on high points. No symmetry correction. Real daylight with slight warmth, accurate white balance, natural contrast. True-to-life colors. Phone-camera realism, subtle sensor grain, slight edge softness. No retouching, no smoothing, no beauty filters. Negatives: AI glow, plastic skin, skincare-ad look, cinematic lighting, studio light, pastel or faded colors, flat lighting, cartoon/3D style, logos or text.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 419,
+          "column": 13,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-cbbe95bc86379c7ebba7",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Negatives: cartoon, 3D render, CGI, illustration, anime, painting, drawing, sketch, watercolor, low resolution, blurry, noisy, jpeg artifacts, watermark, signature, text, logo, banner, stock photo, oversaturated, desaturated, chromatic aberration, lens flare, vignette, Instagram filter, HDR, overprocessed, deepfake artifacts.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 562,
+          "column": 11,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-cef0918e0374ad178db6",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Warm golden hour daylight streaming through large window, 3200K–4000K color temperature. Single natural key light from camera-left creating long soft shadows across face. No fill — deep natural shadows on opposite side with ambient bounce from light walls. Subtle light wrap around jawline. Dust particles visible in light beam. Window frame casting geometric shadow pattern on background wall. Authentic white balance, no orange push.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 519,
+          "column": 11,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ddcfc8a0ed33762a2fe7",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Ultra-realistic close-up of Editorial 3x3 photo grid in a clean soft beige studio. Character (matches reference 100%) wearing lightweight dark navy shirt, ivory trousers, barefoot for raw simplicity. Lighting: large diffused key light directly front-right, silver reflector left, subtle rim from top. Shots to include: 1. extreme close-up of lips + cheekbone with blurred hand partially covering (85mm, f/1.8, razor-thin DOF); 2. tight crop on eyes looking into lens with reflection of light strip visible (85mm, f/2.0); 3. black & white close portrait resting chin on fist, face filling frame (50mm, f/2.2); 4. over-shoulder shot, blurred foreground fabric curtain framing half face (85mm, f/2.0); 5. very close frontal with hands overlapping face, light streak across eyes (50mm, f/2.5); 6. tight angled portrait showing hair falling into eyes, soft-focus background (85mm, f/2.2); 7. crop of hands touching jawline, eyes cropped out (50mm, f/3.2, detail-focused); 8. half-body seated sideways on low cube, head turned sharply away, blurred foreground (35mm, f/4.5); 9. intense close-up of profile with single tear-like water droplet, cinematic light slice across (85mm, f/1.9). Angles: mostly tight headshots with slight high/low tilts, maintaining variation. Capture RAW, professional muted grade, smooth tonal contrast, subtle cinematic grain. Mood: intimate, introspective, character-led editorial minimalism with delicate use of fabric as prop.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 435,
+          "column": 13,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e91dc8dc6a41b6c9e1a4",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Photorealistic close-up of a man's cheek and jawline, natural skin texture with visible pores, ingrown hair marks and subtle redness from shaving. Bare skin, no product, soft side lighting emphasizing texture. Visible stubble follicle pattern at varying growth stages. Editorial realism, cinematic color grading, ultra-high resolution, unretouched photography.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 449,
+          "column": 13,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-eb93f864bda8d1065872",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Photorealistic close-up of a woman's cheek and lips, natural skin texture with visible pores, acne scars and redness. Bare skin, no makeup, soft side lighting emphasizing texture. Editorial realism, cinematic color grading, ultra-high resolution, unretouched beauty photography.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 423,
+          "column": 13,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ec1dff9e3c5172b1d9f1",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Dual-source split lighting: saturated cyan/teal gel from camera-left, magenta/pink gel from camera-right. Each source at 90° creating hard split down center of face. Gel colors mix to near-white on nose bridge where both sources overlap. Deep color saturation in shadows — no neutral zones. Specular highlights take on gel color. Rim light or hair light optional in opposing gel color. Black negative-fill behind subject. Futuristic editorial mood, high color contrast.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 539,
+          "column": 11,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ecb6eaaabb40c1f0ea6c",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "skin has pores, fine lines, peach fuzz, slight imperfections, oil variation. Authentic human subsurface scattering. authentic human color complexity. real skin stretches, compressions, and shows micro-movements. avoid oversimplified subsurface scattering (skin looks too plastic or waxy), overly uniform texture (too smooth or too uniformly bumpy), incorrect specular response (too shiny everywhere or not shiny enough), lack of fine vascular detail, and missing the subtle translucency at edges like ears or nostrils.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 492,
+          "column": 11,
+          "kind": "template-literal",
+          "functionName": "makePortraitPrompts",
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f7f56c6376d410e9434d",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Ultra-realistic close-up of masculine hands holding a smartphone. Natural skin texture, visible veins, tendons, and fine wrinkles. Short trimmed nails with natural nail bed texture, slight cuticle roughness. Soft natural light, realistic proportions, shallow depth of field. Photorealistic hand anatomy, high detail macro shot.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 457,
+          "column": 13,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f85900ec2e798c1594da",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Skin exhibits authentic acne presentation: mix of active inflamed papules with reddish-pink raised areas, closed comedones as small flesh-colored bumps under the surface, scattered blackheads in T-zone areas, occasional cystic nodule with deep redness and slight swelling. Post-inflammatory hyperpigmentation marks in various stages of healing — some dark brown, some fading pink. No two blemishes identical in size, shape, or color. Acne distribution follows realistic sebaceous gland density patterns — concentrated on cheeks, chin, forehead, sparse near eyes. Surrounding skin shows normal texture between breakouts. Subtle shine variation where oily zones meet dry patches. No symmetrical or pattern-based placement. No airbrushed halo around blemishes.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+          "line": 496,
+          "column": 11,
+          "kind": "template-literal",
+          "functionName": "makePortraitPrompts",
+          "owners": [
+            "barz-beauty"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,927 @@
+{
+  "schemaVersion": "1.0",
+  "id": "semantic-acting-gen-02",
+  "owner": "acting-gen",
+  "status": "pending-astra-review",
+  "approximateTokens": 2429,
+  "prompts": [
+    {
+      "id": "text-ca740e2f61c605037cab",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "The subject floats in zero gravity, pushing off invisible walls, spinning slowly end over end, reaching for objects drifting past, completely unable to control trajectory, tumbling through invisible space station.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/drunk_dance_prompts_tabs.html",
+          "line": 1311,
+          "column": 38,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "acting-gen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-cb7e22fb677696de0273",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Person sinks to ground, arms wrapped around self, face buried in knees, rocking gently, world collapsed to bubble of pain, profound loss made physical",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/acting_gen.html",
+          "line": 1208,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "acting-gen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ccb4f05d488b29283041",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "The subject performs capoeira ginga with invisible partner, flowing in and out of combat range, executing kicks that miss by feet, cartwheel au that sends them rolling, getting back into ginga seamlessly.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/drunk_dance_prompts_tabs.html",
+          "line": 1198,
+          "column": 38,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "acting-gen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d20e501d3d68e958eddb",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "The subject shakes one leg in stanky leg, the shake traveling up the body uncontrollably, entire torso oscillating, head bobbing, the vibration amplifying until they fall like a struck tuning fork.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/drunk_dance_prompts_tabs.html",
+          "line": 537,
+          "column": 38,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "acting-gen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d2c12ba415c029ea50a5",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "The subject dances on pure muscle memory at 6am, eyes barely open, movements slowing to quarter speed, still bouncing mechanically, nodding off mid-bounce, jerking awake, nodding off again, still dancing.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/drunk_dance_prompts_tabs.html",
+          "line": 1109,
+          "column": 38,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "acting-gen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d4e632dc233d7e428494",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "The subject performs exaggerated courtly bows and minuet steps, hat-tipping gestures to nobody, small precise steps that become increasingly chaotic and unbalanced, bowing to the floor.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/drunk_dance_prompts_tabs.html",
+          "line": 370,
+          "column": 38,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "acting-gen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d733ae3abf4db882adca",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "The subject paddles furiously in an invisible dragon boat, powerful synchronized strokes, the boat veering sideways, paddling harder on one side, overcorrecting, the phantom boat spinning in circles.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/drunk_dance_prompts_tabs.html",
+          "line": 1186,
+          "column": 38,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "acting-gen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d74a5e9c97be6c31f9da",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "The subject runs from invisible Bollywood villain, ducking, hiding behind invisible pillars, peeking out, running again, the chase suddenly becoming a spontaneous choreographed number mid-escape, villain joining in.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/drunk_dance_prompts_tabs.html",
+          "line": 1383,
+          "column": 38,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "acting-gen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d78d609fa0d3b59cbb5e",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Afterimages trailing from movement, multiple copies existing briefly, ghost versions overlapping, motion blur taken literal, echo forms haunting",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/acting_gen.html",
+          "line": 1584,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "acting-gen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d7a10a16453696f12d05",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Energy-based morph transformation, form dissolving into pure light or electricity, plasma state transition, aurora-like color flows, matter to energy to matter conversion, radiant metamorphosis",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/acting_gen.html",
+          "line": 1876,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "acting-gen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d8b52bd80ce203feefef",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Three-dimensional light construct wavering, scan lines visible, transparency varying, technological ghost image, projected presence glitching, hard light struggling",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/acting_gen.html",
+          "line": 1680,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "acting-gen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d9c86918e3ad42746e20",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "The subject passionately dances tango with a street lamppost, dipping dramatically, embracing the pole, spinning around it with drunken elegance, stumbling but recovering with exaggerated pride.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/drunk_dance_prompts_tabs.html",
+          "line": 322,
+          "column": 38,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "acting-gen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-db0eff2b96a8d5bbf54a",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Dancer descends smoothly to floor, body rolling across surface in fluid spiral, arms and legs trailing and leading, continuous motion from standing to grounded to rising, emotional expression through gravity play",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/acting_gen.html",
+          "line": 1034,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "acting-gen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-db570a8de0996a55d0cb",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "The subject flosses with archaeological seriousness, explaining to nobody that this ancient ritual dance form carries deep cultural meaning, performing it with solemn gravity as arms swing and hips counter-swing.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/drunk_dance_prompts_tabs.html",
+          "line": 1240,
+          "column": 38,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "acting-gen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-dc6925a94d3b6c210657",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "The subject dances at normal tempo, the invisible BPM rising, movements getting faster, switching from house to techno to gabber speeds, moving at physically impossible speed, heart exploding, collapsing in heap.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/drunk_dance_prompts_tabs.html",
+          "line": 1097,
+          "column": 38,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "acting-gen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-dce1900fed1f721ca4bc",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Eyes stare unfocused into distance, face slack, heavy lidded gaze, shoulders slumped, presence elsewhere in memory or thought, isolated within sadness",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/acting_gen.html",
+          "line": 1200,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "acting-gen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ddf5914d430852bef944",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "The subject does jerky robot dance moves that glitch and break down, stiff mechanical movements becoming chaotic spasms, freezing mid-pose then restarting erratically with a different corrupted routine.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/drunk_dance_prompts_tabs.html",
+          "line": 727,
+          "column": 38,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "acting-gen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-df4c1acbd11e521342df",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "The subject spins continuously in elegant Viennese waltz circles, getting progressively dizzier, arms floating wide, stumbling outward, catching balance against a wall, resuming the eternal spin.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/drunk_dance_prompts_tabs.html",
+          "line": 352,
+          "column": 38,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "acting-gen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-df6ba4d44607b770a6cd",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "The subject does Saturday Night Fever pointing, first at sky, then floor, then sideways, getting confused about which direction is correct, pointing everywhere simultaneously, spinning in existential disco panic.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/drunk_dance_prompts_tabs.html",
+          "line": 876,
+          "column": 38,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "acting-gen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-df8fb9b6f747feaf0263",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Body contorting, bones cracking and reforming under skin, face elongating into snout, fur sprouting across flesh, clothing tearing, fingers becoming claws, painful metamorphosis",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/acting_gen.html",
+          "line": 1488,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "acting-gen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-dfa51fb122c26905d60e",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "The subject performs a sweeping operatic curtain call, bowing deeply with one arm extended dramatically, overbalancing, crashing forward, rising to bow again to an invisible standing ovation.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/drunk_dance_prompts_tabs.html",
+          "line": 376,
+          "column": 38,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "acting-gen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e1f8ff4f13d7b8be5647",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "DNA helix inspired morph, double spiral unwinding and rewinding, genetic code rewriting visible, chromosome-level transformation, cellular mitosis aesthetic, biological blueprint shifting, evolution compressed",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/acting_gen.html",
+          "line": 1880,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "acting-gen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e23bee81ca6ce3fcb1c1",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Dancer pops chest forward while rest of body stays still, then rolls movement through torso, head tick to opposite side, robotic precision of isolated body parts, attitude and style dripping from every gesture",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/acting_gen.html",
+          "line": 1030,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "acting-gen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e23e986e7005d936a0eb",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "The subject bows and extends a hand for a formal dance invitation to an empty chair, waits patiently, accepts the imaginary acceptance, leads the empty chair onto the floor for a solemn waltz.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/drunk_dance_prompts_tabs.html",
+          "line": 430,
+          "column": 38,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "acting-gen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e341f925c26c903c0cd5",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "The subject performs expressive Bollywood mudra arm gestures, each hand telling a different story, expressions shifting from joy to sorrow to surprise, the narrative getting so dramatic they fall to their knees weeping.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/drunk_dance_prompts_tabs.html",
+          "line": 1144,
+          "column": 38,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "acting-gen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e5eef2d77ba03f5cc6db",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "A person fires handgun in rapid succession, muzzle rise minimal through proper grip pressure, front sight tracking back to target between shots, stance athletic and aggressive, empty brass cascading, group staying tight despite speed of fire",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/acting_gen.html",
+          "line": 808,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "acting-gen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e6b528e69657f5c14301",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "The subject dodges invisible bullets in slow motion, bending backward impossibly, time slowing around them, snapping back up, dodging left, right, completely losing orientation, matrix-running in wrong direction.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/drunk_dance_prompts_tabs.html",
+          "line": 1335,
+          "column": 38,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "acting-gen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e7209140527a9ba4c3ec",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Fractal-based morphing transformation, recursive patterns emerging and dissolving, mathematical chaos beauty, infinite zoom feeling, self-similar structures bridging forms, Mandelbrot-inspired transition, organic mathematical evolution",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/acting_gen.html",
+          "line": 1860,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "acting-gen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e9cbe9b19eb021cc8914",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Person appears as motion blur, multiple ghost images trailing, objects disturbed in passing, arriving at destination before departure seemed finished, time and space compressed through velocity",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/acting_gen.html",
+          "line": 1118,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "acting-gen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ebd279a97c162679ba11",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Fresh variation of an Acting Gen video prompt: '",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/acting_gen.html",
+          "line": 2032,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": "bzIterate",
+          "owners": [
+            "acting-gen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ec1620260c53c848a672",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Fast movement leaving smeared trail, form elongated in direction of travel, speed made visible through blur, temporal integration showing path",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/acting_gen.html",
+          "line": 1714,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "acting-gen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-eca29410bc67398e80ce",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "The subject attempts graceful swan arms, rising on tiptoes, wobbling dangerously, flapping arms for balance, collapsing to knees in slow motion, rising with trembling dignity to try again.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/drunk_dance_prompts_tabs.html",
+          "line": 340,
+          "column": 38,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "acting-gen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ecb19bada2de315daf2a",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "The subject skanks in ska style, pumping elbows and knees, moving faster and faster in tighter circles, a spinning dervish of plaid and elbows, finally flying outward and rolling to a stop.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/drunk_dance_prompts_tabs.html",
+          "line": 668,
+          "column": 38,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "acting-gen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ecfae336a1014e0f1fe4",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "The subject shuffles in Melbourne Shuffle style, feet sliding in T-step patterns, getting faster, both feet sliding in opposite directions simultaneously, doing full splits by accident, shuffling from floor level.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/drunk_dance_prompts_tabs.html",
+          "line": 1007,
+          "column": 38,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "acting-gen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ed523f1d8087edcea309",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Body stops mid-motion, eyes wide, mouth slightly open, processing unexpected input, brain catching up to perception, moment of pure unfiltered reaction",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/acting_gen.html",
+          "line": 1318,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "acting-gen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ee1f222e1e972a9fafe4",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "The subject performs solo kecak, making chak-chak-chak sounds, raised arms trembling like the Balinese fire dance chorus of one, narrating the Ramayana to themselves, voices and gestures multiplying impossibly.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/drunk_dance_prompts_tabs.html",
+          "line": 1246,
+          "column": 38,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "acting-gen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ef6f7a7d00822b6f9ae3",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "One person shows technique to another, hands guiding, correcting position, demonstrating motion then watching attempt, nodding with encouragement or adjusting errors, patient transfer of knowledge, mentor and student dynamic",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/acting_gen.html",
+          "line": 912,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "acting-gen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f08e566acc2bf2fd770c",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "The subject spins in tight circles while headbanging violently, hair whipping, arms flailing, getting dizzy, stumbling outward in an expanding spiral, crashing, returning to spin more.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/drunk_dance_prompts_tabs.html",
+          "line": 602,
+          "column": 38,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "acting-gen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f13083459378714a8c0a",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "The subject reacts to gravity shifting randomly, leaning hard left, stumbling right, pressing down against the ground, floating upward slightly, completely disoriented by physics failing.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/drunk_dance_prompts_tabs.html",
+          "line": 769,
+          "column": 38,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "acting-gen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f338fe0e5ebd6063f318",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "The subject does aggressive hardcore two-step, swinging arms in wide arcs, kicking out randomly, spinning with fists extended, almost punching themselves in the face repeatedly.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/drunk_dance_prompts_tabs.html",
+          "line": 644,
+          "column": 38,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "acting-gen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f3f7cc6b4ad7610da9c9",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "A person launches into the air horizontally, back parallel to ground, legs scissoring overhead in perfect bicycle kick motion, body rotating with balletic grace, eyes fixed on approaching ball, arms spread for balance, suspended impossibly against gravity",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/acting_gen.html",
+          "line": 738,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "acting-gen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f491a41f78b04e3cdbc5",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "The subject does elaborate hand jive patterns, slapping, crossing, pointing in sequence, the sequence speeding up until hands are a blur, then forgetting the next step and improvising wildly.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/drunk_dance_prompts_tabs.html",
+          "line": 924,
+          "column": 38,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "acting-gen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f6979fb54afde7b0bc24",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Mechanical morph with industrial precision, interlocking gears and sliding metallic panels, clockwork mechanisms, engineered transformation, sharp mechanical movements, synchronized robotic components clicking into place",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/acting_gen.html",
+          "line": 1832,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "acting-gen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f750592c76552ebc1c87",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "VIDEO PROMPT LIBRARY v1.0",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/acting_gen.html",
+          "line": 649,
+          "column": 27,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "acting-gen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f816b88038257836f35c",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "The subject builds up invisible static electricity, hair rising, fingertips sparking imaginary bolts, body stiffening, jerking with each discharge, being launched sideways by phantom electric shocks.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/drunk_dance_prompts_tabs.html",
+          "line": 829,
+          "column": 38,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "acting-gen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f929823002f4764037ad",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "The subject staggers forward in Drunken Fist style, stumbling becoming combat moves, falling turning into sweeps, the entire drunk walk being perfect martial arts form that defeats invisible attackers.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/drunk_dance_prompts_tabs.html",
+          "line": 1317,
+          "column": 38,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "acting-gen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-fbc20a9326dc2de25dcc",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Movement at different speeds in same frame, some things flowing normally while others crawl or race, temporal differential visible, time zones adjacent",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/acting_gen.html",
+          "line": 1734,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "acting-gen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-fca7d1dc8a3d41b728f4",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "The subject attempts a clumsy moonwalk, sliding backward, losing balance, windmilling arms wildly, recovering with drunk confidence, trying again with even worse results each time.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/drunk_dance_prompts_tabs.html",
+          "line": 453,
+          "column": 38,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "acting-gen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-fcb05eb1dc2ae1dcd40a",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "The subject swings arms in huge arcs through invisible crowd members, spinning with each hit, fighting the phantom crowd back, losing footing, sinking into the imaginary bodies around them.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/drunk_dance_prompts_tabs.html",
+          "line": 680,
+          "column": 38,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "acting-gen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-fce31e4c956ccb041dde",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "The subject kicks legs high in chaotic can-can style, alternating legs faster and faster, losing rhythm, kicking randomly, falling but still kicking aggressively from the ground.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/drunk_dance_prompts_tabs.html",
+          "line": 608,
+          "column": 38,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "acting-gen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ff1ef8560ff3f8677ed1",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "The subject's left arm dances differently from the right, legs going in opposite directions, head nodding counter to the beat, each body part following its own music, the entire figure in internal civil war.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/drunk_dance_prompts_tabs.html",
+          "line": 823,
+          "column": 38,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "acting-gen"
+          ]
+        }
+      ]
+    }
+  ]
+}

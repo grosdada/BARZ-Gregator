@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "2.0",
+  "product": "BARZ Suite 6",
+  "version": "0.33.45",
+  "components": {
+    "core": {
+      "required": true,
+      "source": "payload/core"
+    },
+    "atlas": {
+      "required": false,
+      "selectedByDefault": true,
+      "source": "payload/atlas"
+    },
+    "aggregator": {
+      "required": false,
+      "selectedByDefault": true,
+      "source": "payload/aggregator"
+    }
+  }
+}

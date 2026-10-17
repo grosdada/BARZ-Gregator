@@ -1,0 +1,1172 @@
+{
+  "schemaVersion": "1.0",
+  "bundleId": "a4-facs-board",
+  "bundleDigest": "c56499d141b9c30bb61e0a94aa8dd1219d2caea34d0328e06b6e54be9fe2759d",
+  "status": "reviewed",
+  "reviewerModel": "gpt-6-astra",
+  "reviewedAt": "2026-09-12",
+  "scope": "175 bundle values, complete A4 fixture and relevant source composition read. 209 additional source-scoped literals reviewed separately. No runtime implementation.",
+  "decisions": [
+    {
+      "id": "text-01187ac5900048bcb6c8",
+      "sourceIndex": 0,
+      "originalValue": "Import subject, style and action from the Story tab",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-02231e2afd48b37a1429",
+      "sourceIndex": 1,
+      "originalValue": " (ignore if not provided)",
+      "action": "preserve"
+    },
+    {
+      "id": "text-0328f11bb00a47bd9a58",
+      "sourceIndex": 2,
+      "originalValue": "s-panels",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-033955d469b620d6612c",
+      "sourceIndex": 3,
+      "originalValue": "Fill",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-05910f2b4962c421cd4a",
+      "sourceIndex": 4,
+      "originalValue": "Fill the board first, then GPT can refine it.",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-05c66727f428f62ea55e",
+      "sourceIndex": 5,
+      "originalValue": "m-action",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-0ec0026dd89420695f23",
+      "sourceIndex": 6,
+      "originalValue": "s-output",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-10def1babc7055094c99",
+      "sourceIndex": 7,
+      "originalValue": " beats in order. Maintain shot logic and final pose.",
+      "action": "preserve"
+    },
+    {
+      "id": "text-112e4cc201d79c12c0e5",
+      "sourceIndex": 8,
+      "originalValue": " for a ",
+      "action": "preserve"
+    },
+    {
+      "id": "text-188f38f8ba0ec18c481e",
+      "sourceIndex": 9,
+      "originalValue": " cinematic panels, focused on ",
+      "action": "correct",
+      "correctedValue": " cinematic panels. Action / choreography: ",
+      "reason": "Le champ action peut contenir un verbe conjugué : focused on crosses est agrammatical. Un libellé autonome accepte aussi les groupes nominaux sans réécrire la saisie."
+    },
+    {
+      "id": "text-18d558d5c0507fb84c14",
+      "sourceIndex": 10,
+      "originalValue": ". Distribute these cues across readable close-up and key-action panels: eyes/brows for reaction beats, mouth/jaw for speech or strain, head/neck for direction changes. Keep the expression changes visible but anatomically natural.",
+      "action": "preserve"
+    },
+    {
+      "id": "text-19b87ac5ecb1afe2d7f3",
+      "sourceIndex": 11,
+      "originalValue": "pace",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-1a479a3479a327fb1c82",
+      "sourceIndex": 12,
+      "originalValue": "Action: ",
+      "action": "preserve"
+    },
+    {
+      "id": "text-1e80bbc4f76e803a3913",
+      "sourceIndex": 13,
+      "originalValue": "ex: [IMG_3] = dancer in red coat; [IMG_4] = security guard; [IMG_5], [IMG_6] ignore if not provided",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-22775e051c94958e2da4",
+      "sourceIndex": 14,
+      "originalValue": " as the main character reference and ",
+      "action": "preserve"
+    },
+    {
+      "id": "text-23d3c780aa4c2861bb60",
+      "sourceIndex": 15,
+      "originalValue": "s-facs-container",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-25083b27b4e5f279e215",
+      "sourceIndex": 16,
+      "originalValue": " second(s).",
+      "action": "preserve"
+    },
+    {
+      "id": "text-25381272224268b0f9f0",
+      "sourceIndex": 17,
+      "originalValue": "-beat sequence into ",
+      "action": "preserve"
+    },
+    {
+      "id": "text-2aa346215ffa46fdb776",
+      "sourceIndex": 18,
+      "originalValue": "Veo 3.1 Prompt: Reference storyboard ",
+      "action": "preserve"
+    },
+    {
+      "id": "text-2ef0a10f50a164a69af0",
+      "sourceIndex": 19,
+      "originalValue": "Import from Story or fill the overrides...",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-30a4d74ce57ded1a9c01",
+      "sourceIndex": 20,
+      "originalValue": "Environment: ",
+      "action": "preserve"
+    },
+    {
+      "id": "text-3466aa5e62a729f16530",
+      "sourceIndex": 21,
+      "originalValue": "Style of drawing: ",
+      "action": "preserve"
+    },
+    {
+      "id": "text-359563dab100dec9a909",
+      "sourceIndex": 22,
+      "originalValue": " characters",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-3734272564b0c0475716",
+      "sourceIndex": 23,
+      "originalValue": "video motion prompt",
+      "action": "preserve"
+    },
+    {
+      "id": "text-373bc878f6a21b9aa92c",
+      "sourceIndex": 24,
+      "originalValue": "Kling Prompt: Reference storyboard ",
+      "action": "preserve"
+    },
+    {
+      "id": "text-3830a252745d7cfbe2b1",
+      "sourceIndex": 25,
+      "originalValue": ". Use ",
+      "action": "preserve"
+    },
+    {
+      "id": "text-391fc76976e35766e696",
+      "sourceIndex": 26,
+      "originalValue": "Create a ",
+      "action": "preserve"
+    },
+    {
+      "id": "text-39e42e3fed2d40d50bfa",
+      "sourceIndex": 27,
+      "originalValue": "GPT is refining the ",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-3bc4df60f544ea8c12b5",
+      "sourceIndex": 28,
+      "originalValue": "the described action",
+      "action": "preserve"
+    },
+    {
+      "id": "text-3bd3e0c33494dc110baf",
+      "sourceIndex": 29,
+      "originalValue": "m-facs-search",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-455a327ec0d0d5f78b97",
+      "sourceIndex": 30,
+      "originalValue": "Global AI is off.",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-4640816a9453a1880648",
+      "sourceIndex": 31,
+      "originalValue": "the character from the storyboard reference",
+      "action": "preserve"
+    },
+    {
+      "id": "text-47278a3d7198198c6761",
+      "sourceIndex": 32,
+      "originalValue": "story-facs-body",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-4ac3e122058bf67b287d",
+      "sourceIndex": 33,
+      "originalValue": "ai-motion",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-4d54dd76c51024a907c1",
+      "sourceIndex": 34,
+      "originalValue": ". Keep the artwork lightweight, dynamic and unfinished - early choreography previs energy.\n\n",
+      "action": "preserve"
+    },
+    {
+      "id": "text-4f00d102adca390435bf",
+      "sourceIndex": 35,
+      "originalValue": "No annotations, no arrows, no overlays - clean storyboard panels only.",
+      "action": "preserve"
+    },
+    {
+      "id": "text-4fc5e2a03cef0f3fca03",
+      "sourceIndex": 36,
+      "originalValue": "m-duration",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-50384ce624aab59a5f47",
+      "sourceIndex": 37,
+      "originalValue": "s-facs-search",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-52fb9edc46449780982d",
+      "sourceIndex": 38,
+      "originalValue": "refBoard",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-53ab0ab4d38156eaec4f",
+      "sourceIndex": 39,
+      "originalValue": "REFERENCES:\n",
+      "action": "preserve"
+    },
+    {
+      "id": "text-543d6ac8fbb4713b1c74",
+      "sourceIndex": 40,
+      "originalValue": "Compress the full ",
+      "action": "preserve"
+    },
+    {
+      "id": "text-572a3acfd983df5cac01",
+      "sourceIndex": 41,
+      "originalValue": "Importe",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-584e9dd1819644b58ceb",
+      "sourceIndex": 42,
+      "originalValue": "hypnotic loop, repetitive motion, rhythmic snap",
+      "action": "preserve"
+    },
+    {
+      "id": "text-58b8991fd97aecc4fe6e",
+      "sourceIndex": 43,
+      "originalValue": "No text, no annotations, no timestamps, no watermark.",
+      "action": "preserve"
+    },
+    {
+      "id": "text-5b2053b220ac4ac3a584",
+      "sourceIndex": 44,
+      "originalValue": " = main character",
+      "action": "preserve"
+    },
+    {
+      "id": "text-5b6bb3cfb7ca648df44d",
+      "sourceIndex": 45,
+      "originalValue": "No timestamps, no watermark.",
+      "action": "preserve"
+    },
+    {
+      "id": "text-5c8b6b3dddc9b913662b",
+      "sourceIndex": 46,
+      "originalValue": "s-action",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-5d6c9b1945cfa0f33324",
+      "sourceIndex": 47,
+      "originalValue": "Secondary characters: ",
+      "action": "preserve"
+    },
+    {
+      "id": "text-609e5c0fe4da6d2d9dd7",
+      "sourceIndex": 48,
+      "originalValue": "Prompt Atlas default",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-628575156b0b8963e322",
+      "sourceIndex": 49,
+      "originalValue": " seconds. Each beat must appear clearly as a fast motion snapshot, not a full-length action. Pacing: ",
+      "action": "preserve"
+    },
+    {
+      "id": "text-63bff83c5adf7ead5e7c",
+      "sourceIndex": 50,
+      "originalValue": "Character: ",
+      "action": "preserve"
+    },
+    {
+      "id": "text-63dbd3cf760b62310b7c",
+      "sourceIndex": 51,
+      "originalValue": "BZ Board - Storyboard to Motion",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-6433580f0811c918cdaf",
+      "sourceIndex": 52,
+      "originalValue": "storyboard prompt",
+      "action": "preserve"
+    },
+    {
+      "id": "text-645b2a0b11294c0347c0",
+      "sourceIndex": 53,
+      "originalValue": "s-char",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-6720dd1b35929f120332",
+      "sourceIndex": 54,
+      "originalValue": " as the setting reference.\n\n",
+      "action": "preserve"
+    },
+    {
+      "id": "text-68eb5e5bc8464db03c83",
+      "sourceIndex": 55,
+      "originalValue": ". Every panel must contain visible motion and strong body momentum - avoid static standing poses.\n\n",
+      "action": "preserve"
+    },
+    {
+      "id": "text-6936e69679fbaf9b55a2",
+      "sourceIndex": 56,
+      "originalValue": "Final beat holds for the last ",
+      "action": "preserve"
+    },
+    {
+      "id": "text-698a8287a6e929759ca9",
+      "sourceIndex": 57,
+      "originalValue": "Reference image: ",
+      "action": "preserve"
+    },
+    {
+      "id": "text-6a8622baf06c305f77c4",
+      "sourceIndex": 58,
+      "originalValue": "BZ Board writes the selected codes with their names and asks the storyboard to distribute them across readable close-up/key-action panels.",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-6ad95cc9a4b686cf260c",
+      "sourceIndex": 59,
+      "originalValue": "refSecondary",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-6bdcd44c608635047cd9",
+      "sourceIndex": 60,
+      "originalValue": "Subject: ",
+      "action": "preserve"
+    },
+    {
+      "id": "text-6c58d5efa217acb69ef4",
+      "sourceIndex": 61,
+      "originalValue": "-second sequence following ",
+      "action": "preserve"
+    },
+    {
+      "id": "text-6d4d4912394edcbd0574",
+      "sourceIndex": 62,
+      "originalValue": "End with: ",
+      "action": "preserve"
+    },
+    {
+      "id": "text-707a3c64c7c00e52ae88",
+      "sourceIndex": 63,
+      "originalValue": "cam",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-751f5c9e14c0e2890146",
+      "sourceIndex": 64,
+      "originalValue": ". Cinematography: ",
+      "action": "preserve"
+    },
+    {
+      "id": "text-75fb39b345ad2c91eb80",
+      "sourceIndex": 65,
+      "originalValue": " storyboard sheet with ",
+      "action": "preserve"
+    },
+    {
+      "id": "text-76c823b9b2b903f02b80",
+      "sourceIndex": 66,
+      "originalValue": "Global AI is off. Turn AI on in the top-right Prompt Atlas controls.",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-777e312e52640ab30f03",
+      "sourceIndex": 67,
+      "originalValue": ". Do not duplicate her/him.\n\n",
+      "action": "preserve"
+    },
+    {
+      "id": "text-782a6d2471efe49e6b91",
+      "sourceIndex": 68,
+      "originalValue": "refEnv",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-7e6671d618f3e359203a",
+      "sourceIndex": 69,
+      "originalValue": "m-subject",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-8057a97d4e99e69c02ef",
+      "sourceIndex": 70,
+      "originalValue": "Seedance 2.0 Prompt: Use the storyboard reference ",
+      "action": "preserve"
+    },
+    {
+      "id": "text-83330f1fc5cd16146f45",
+      "sourceIndex": 71,
+      "originalValue": "m-char",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-8536374096198f38376d",
+      "sourceIndex": 72,
+      "originalValue": "Fill at least the subject, style or action to generate the prompt...",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-85f856f7b94429e44ace",
+      "sourceIndex": 73,
+      "originalValue": "s-facs-clear",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-8712499478e06079ba9a",
+      "sourceIndex": 74,
+      "originalValue": "m-ref-env",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-88ac44d5d6f8a784d5f9",
+      "sourceIndex": 75,
+      "originalValue": "use brow/eye AUs during reaction beats, mouth/jaw AUs during dialogue or exertion, and head AUs when the camera or character changes direction.",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-8d6a018a9c48f2e6b996",
+      "sourceIndex": 76,
+      "originalValue": "s-ref-char",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-8f36171b8243a42c5b2d",
+      "sourceIndex": 77,
+      "originalValue": "rewrite as a production-ready BZ Board prompt, keep all concrete inputs and FACS cues, improve narrative sequence, camera logic, motion clarity, and prompt economy",
+      "action": "preserve"
+    },
+    {
+      "id": "text-90290f40c0cfb1a224d2",
+      "sourceIndex": 78,
+      "originalValue": "optional extra style notes",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-93bc63b3aa926ccf81f2",
+      "sourceIndex": 79,
+      "originalValue": "classical fixed tripod, pans and tilts on axis only, controlled zooms",
+      "action": "preserve"
+    },
+    {
+      "id": "text-96ff316209a6605c43db",
+      "sourceIndex": 80,
+      "originalValue": "BZ Board adds these cues as precise facial performance instructions, tied to the storyboard timing and visible close-up/key-action beats.",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-985ccdc78e40a143dc86",
+      "sourceIndex": 81,
+      "originalValue": "s-subject",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-9cb3489da5a907297b7c",
+      "sourceIndex": 82,
+      "originalValue": "s-annot",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-9f8e96c5268c2e3c2f4d",
+      "sourceIndex": 83,
+      "originalValue": "Remplis",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-a001f4f76973c0765bd6",
+      "sourceIndex": 84,
+      "originalValue": "m-import",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-a0280ca5791ca60709fe",
+      "sourceIndex": 85,
+      "originalValue": "Cinematography: ",
+      "action": "preserve"
+    },
+    {
+      "id": "text-a044f857a905d99876ea",
+      "sourceIndex": 86,
+      "originalValue": "m-ref-char",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-a4d596fe40213ad0d319",
+      "sourceIndex": 87,
+      "originalValue": "barzy_board_v1",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-a7522790638911290105",
+      "sourceIndex": 88,
+      "originalValue": "Motion - two-step pipeline",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-a77b048c957f9a75e895",
+      "sourceIndex": 89,
+      "originalValue": " beats sequentially from left to right, top to bottom. Do not reinterpret the actions, poses, camera angles or emotional progression. Preserve shot order, movement logic, framing variety and final pose.",
+      "action": "preserve"
+    },
+    {
+      "id": "text-a8677b3c8cec8dfd99cf",
+      "sourceIndex": 90,
+      "originalValue": "Include the color annotation system (red=body, blue=camera, green=framing, orange=light, violet=emotion, black=lens)",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-a90c09e829643304fb4d",
+      "sourceIndex": 91,
+      "originalValue": "m-ref-secondary",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-ac9592def8b6e66b1d93",
+      "sourceIndex": 92,
+      "originalValue": "Subject / character (override)",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-ad5bde4cbefcdc0901fa",
+      "sourceIndex": 93,
+      "originalValue": "GPT request failed",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-af0144e9101911e4bcb1",
+      "sourceIndex": 94,
+      "originalValue": "motion-facs-body",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-b00bf0b7f9b1dd6d1bbf",
+      "sourceIndex": 95,
+      "originalValue": "each selected AU becomes an acting cue in the Story prompt, so GPT knows which facial muscles and emotional beats to draw into the storyboard.",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-b48acac6f1eae147aa6b",
+      "sourceIndex": 96,
+      "originalValue": "m-final-hold",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-b5ac45af273933aebc08",
+      "sourceIndex": 97,
+      "originalValue": "OpenAI connection failed. Local prompt is ready below.",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-b740856cc45235fcb746",
+      "sourceIndex": 98,
+      "originalValue": "m-audio",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-b826a6d1236af8bdcb67",
+      "sourceIndex": 99,
+      "originalValue": " prompt...",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-bec75fb07d50487dbfcc",
+      "sourceIndex": 100,
+      "originalValue": "m-output",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-bedb85a45948423a7bd0",
+      "sourceIndex": 101,
+      "originalValue": " beats in order. Preserve composition, action and final pose.",
+      "action": "preserve"
+    },
+    {
+      "id": "text-c0f1779c16d26bac92c4",
+      "sourceIndex": 102,
+      "originalValue": "smooth",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-c0f69e19ba252767f183",
+      "sourceIndex": 103,
+      "originalValue": "secondary",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-c133f7e210e650389222",
+      "sourceIndex": 104,
+      "originalValue": "selected AUs become performance continuity notes for the motion prompt, helping the video model keep face, gaze, mouth, jaw and head action coherent.",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-c161ee3e0aec85bddc5a",
+      "sourceIndex": 105,
+      "originalValue": ". Apply them on close-up and key-action beats so the face, gaze, mouth, jaw and head movement stay consistent with the storyboard timing.",
+      "action": "preserve"
+    },
+    {
+      "id": "text-c2aee1cafac7b2d14026",
+      "sourceIndex": 106,
+      "originalValue": "finalHold",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-c4287b24eb448979a04d",
+      "sourceIndex": 107,
+      "originalValue": " as the complete visual and choreography source for a ",
+      "action": "preserve"
+    },
+    {
+      "id": "text-c6aa6cfec50938cabb14",
+      "sourceIndex": 108,
+      "originalValue": "as described in storyboard",
+      "action": "preserve"
+    },
+    {
+      "id": "text-c8a2afc19177a001c1a8",
+      "sourceIndex": 109,
+      "originalValue": "Drawing style - describe",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-c9429d99e8b1202674f9",
+      "sourceIndex": 110,
+      "originalValue": "Annotation color system: red arrows = body movement; blue arrows = camera movement; green marks = framing / composition notes; orange marks = lighting direction; purple marks = vocal / emotional emphasis; black text = short lens notes and panel labels.",
+      "action": "preserve"
+    },
+    {
+      "id": "text-caa79af4db67695cce51",
+      "sourceIndex": 111,
+      "originalValue": "duration",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-cc5967b6a64b4daf7193",
+      "sourceIndex": 112,
+      "originalValue": "choose eye/brow AUs for reaction shots, mouth/jaw AUs for speech or effort, and head/neck AUs for direction changes. Place stronger FACS on close-ups or key panels, lighter FACS on transitions.",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-ce57a0afc562d684b6c6",
+      "sourceIndex": 113,
+      "originalValue": "refChar",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-cf13b06683f266506a72",
+      "sourceIndex": 114,
+      "originalValue": "Build a precise storyboard-to-motion prompt for AI generation. Preserve user fields, improve continuity, make the action readable, and keep the final prompt directly usable.",
+      "action": "preserve"
+    },
+    {
+      "id": "text-cfa225a4372512eaa337",
+      "sourceIndex": 115,
+      "originalValue": "m-ref-board",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-d3450bd2b596b588dc1d",
+      "sourceIndex": 116,
+      "originalValue": "[IMG_3], [IMG_4], [IMG_5], [IMG_6] = secondary characters",
+      "action": "preserve"
+    },
+    {
+      "id": "text-d6a5d7526d1734abca50",
+      "sourceIndex": 117,
+      "originalValue": "perform the selected acting and facial action cues with clear readable movement",
+      "action": "preserve"
+    },
+    {
+      "id": "text-dd5e8a4aef0d581b76fc",
+      "sourceIndex": 118,
+      "originalValue": "Scene: ",
+      "action": "preserve"
+    },
+    {
+      "id": "text-dd7ec405d196133a278f",
+      "sourceIndex": 119,
+      "originalValue": "m-facs-container",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-df4d0e89f0c67c883c93",
+      "sourceIndex": 120,
+      "originalValue": "[IMG_3], [IMG_4], [IMG_5], [IMG_6]",
+      "action": "preserve"
+    },
+    {
+      "id": "text-e0b908b9f83e4edccf55",
+      "sourceIndex": 121,
+      "originalValue": "m-model",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-e21e77b6d684aed9f617",
+      "sourceIndex": 122,
+      "originalValue": "@[drawing style ref] or leave empty",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-e3e23faf4fcf3f0bc247",
+      "sourceIndex": 123,
+      "originalValue": "m-cam",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-e6f546ceff5217dc2d2f",
+      "sourceIndex": 124,
+      "originalValue": "Fill at least the main character, action, drawing style notes or secondary characters to generate the prompt...",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-e766fc154bfcd45d7d46",
+      "sourceIndex": 125,
+      "originalValue": "m-facs-clear",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-ee1e9fd092a62aa82af3",
+      "sourceIndex": 126,
+      "originalValue": "-second video. Follow all ",
+      "action": "preserve"
+    },
+    {
+      "id": "text-f021606a9d33e7383788",
+      "sourceIndex": 127,
+      "originalValue": "Using global model: ${modelLabel(atlasAiModel) || 'Prompt Atlas default'}.",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-f1c809c860af090d1497",
+      "sourceIndex": 128,
+      "originalValue": "ignore if not provided",
+      "action": "preserve"
+    },
+    {
+      "id": "text-f1e81bfa50e171d57c80",
+      "sourceIndex": 129,
+      "originalValue": "m-",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-f29263255f685198cd46",
+      "sourceIndex": 130,
+      "originalValue": "ai-copy",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-f595c028b4b5c4b75d58",
+      "sourceIndex": 131,
+      "originalValue": "handheld arthouse, whip pans, orbit movement, overhead, extreme negative space",
+      "action": "preserve"
+    },
+    {
+      "id": "text-f780059673c89f3b00ef",
+      "sourceIndex": 132,
+      "originalValue": "@[storyboard ref]",
+      "action": "preserve"
+    },
+    {
+      "id": "text-fc6afc31d33b02a18627",
+      "sourceIndex": 133,
+      "originalValue": " as the visual and choreography source for a ",
+      "action": "preserve"
+    },
+    {
+      "id": "text-ffe9d72aa9ab84d2fae7",
+      "sourceIndex": 134,
+      "originalValue": "ai-story",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-00b44f7fe21ec0065948",
+      "sourceIndex": 135,
+      "originalValue": "Create one complete FACS ACTION UNITS reference sheet as a flat 7x7 contact sheet, 49 equal portrait tiles. Use a portrait 3:4 or 4:5 canvas; 9:16 is acceptable only if the 7x7 board fills the image. No perspective, no rounded cards, no decorative frames, no thick white gutters, no outer margin, no watermark, no logo. Use thin dark separators or no visible gutters. Each cell must contain one centered medium close-up portrait in the upper 75% of the cell, with a small readable AU code and name in a narrow bottom label band. Subject lock: ",
+      "action": "preserve"
+    },
+    {
+      "id": "text-1340c518c0fe44c21e19",
+      "sourceIndex": 136,
+      "originalValue": "\" alt=\"",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-2308dbbc25b33bb18297",
+      "sourceIndex": 137,
+      "originalValue": "outputTitle",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-288476f18421f84ed7ff",
+      "sourceIndex": 138,
+      "originalValue": ". Same character identity, face structure, hairstyle, lens, crop, lighting and background in every tile; only the facial action changes. Critical gaze disambiguation: AU61 Eyes Turn Left means both pupils move toward image-left / viewer-left, not anatomical left; AU62 Eyes Turn Right means both pupils move toward image-right / viewer-right. AU61 and AU62 must be visibly opposite gaze directions and must never look the same way. Use these 49 tiles in this exact left-to-right, top-to-bottom order: ",
+      "action": "preserve"
+    },
+    {
+      "id": "text-293f8e9c32fa897fbfe5",
+      "sourceIndex": 139,
+      "originalValue": "FACS board creation",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-3124e7e5ab4b554c1076",
+      "sourceIndex": 140,
+      "originalValue": "customCardButton",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-32ed779eaad1ec923e91",
+      "sourceIndex": 141,
+      "originalValue": "head turns toward subject left into a three-quarter view",
+      "action": "correct",
+      "correctedValue": "head turns toward the subject's left into a three-quarter view",
+      "reason": "Ajout du possessif ; la direction reste celle du personnage."
+    },
+    {
+      "id": "text-33b74583dc0ab75f3c4f",
+      "sourceIndex": 142,
+      "originalValue": " FACS board creation prompt",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-36852fee4c5ec10bea69",
+      "sourceIndex": 143,
+      "originalValue": "FACS acting instructions",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-42d40d6565992932ae21",
+      "sourceIndex": 144,
+      "originalValue": "head turns toward subject right into a three-quarter view",
+      "action": "correct",
+      "correctedValue": "head turns toward the subject's right into a three-quarter view",
+      "reason": "Ajout du possessif ; la direction reste celle du personnage."
+    },
+    {
+      "id": "text-42fa761e22ca57d33c7b",
+      "sourceIndex": 145,
+      "originalValue": "Full FACS board prompt - ",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-460d4f5abe327eb8fef6",
+      "sourceIndex": 146,
+      "originalValue": "head tilts toward the subject left shoulder",
+      "action": "correct",
+      "correctedValue": "head tilts toward the subject's left shoulder",
+      "reason": "Ajout du possessif sans modifier le mouvement."
+    },
+    {
+      "id": "text-4cd7d6a4f4e081b1f091",
+      "sourceIndex": 147,
+      "originalValue": "medium close-up portrait, soft frontal key light, neutral studio background, consistent lens and crop across every tile",
+      "action": "preserve"
+    },
+    {
+      "id": "text-4d0a25df5fa9c5a4d400",
+      "sourceIndex": 148,
+      "originalValue": "sendSelectedMotion",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-54f0d75b8b2bb1f738f1",
+      "sourceIndex": 149,
+      "originalValue": "<h2>FACS board not recognized</h2><p>The imported file could not be read as a usable image or is too small to cut into 49 cells.</p><p>Use <strong>Create Full FACS Board</strong>, choose a character, generate a visible 7x7 FACS board with Nano Banana, GPT Image 2, or your preferred image aggregator, then import the final image here. Any aspect ratio is OK as long as the 7x7 board is visible.</p>",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-5f6c14edc654e49142e0",
+      "sourceIndex": 150,
+      "originalValue": "eyes turn to image-left / viewer-left: both pupils slide toward the left edge of both eyes while the head stays perfectly forward",
+      "action": "preserve"
+    },
+    {
+      "id": "text-65c4d1533fff94c730f8",
+      "sourceIndex": 151,
+      "originalValue": "<h2>Create Full FACS Board</h2><p>Best pipe: generate a flat 7x7 contact sheet in portrait <strong>3:4 or 4:5</strong>. 9:16 also works if the board fills the image and is not floating in a big empty poster.</p><p>Ask for: 49 equal cells, thin dark separators or no gutters, no thick white grid lines, no outer margin, one centered portrait per cell, labels kept in a narrow bottom band, same lens/crop/light/background across all tiles. Import that final board here; the app crops inside each cell and ignores the label band.</p><p>Important gaze lock: AU61 must look to <strong>image-left / viewer-left</strong>; AU62 must look to <strong>image-right / viewer-right</strong>. They must be visibly opposite, never mirrored into the same direction.</p>",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-68cabeddc68a54ae8ba7",
+      "sourceIndex": 152,
+      "originalValue": "Select expression buttons to build a FACS acting layer.",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-6ac9a32c0ca8e84e5bf0",
+      "sourceIndex": 153,
+      "originalValue": "cards",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-6bc4783be42dfa8bed4c",
+      "sourceIndex": 154,
+      "originalValue": "\" type=\"button\" aria-label=\"Select ",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-79bfb0e2ba76b9d44760",
+      "sourceIndex": 155,
+      "originalValue": "anchor",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-7d482f80b26ea3ce0f1c",
+      "sourceIndex": 156,
+      "originalValue": "medium close-up portrait, soft frontal key light, neutral studio background",
+      "action": "preserve"
+    },
+    {
+      "id": "text-7d4b47cf84bb52b6cab5",
+      "sourceIndex": 157,
+      "originalValue": "wardrobe",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-8c7384fff6789323e40c",
+      "sourceIndex": 158,
+      "originalValue": "prompt-atlas-facs-cards",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-8ea1da99500779230b19",
+      "sourceIndex": 159,
+      "originalValue": "Import a FACS board generated from Create Full FACS Board. Custom cards are stored locally; Save custom cards forces the current library to persist for the next app launch.",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-9330eee4145283041cb3",
+      "sourceIndex": 160,
+      "originalValue": "Select expression buttons to build FACS board creation prompts.",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-93f01c9b20ca83c2745d",
+      "sourceIndex": 161,
+      "originalValue": "head tilts strongly toward the subject right shoulder",
+      "action": "correct",
+      "correctedValue": "head tilts strongly toward the subject's right shoulder",
+      "reason": "Ajout du possessif ; la variante forte est conservée."
+    },
+    {
+      "id": "text-980aa8af0a886684ad84",
+      "sourceIndex": 162,
+      "originalValue": "49 facial action buttons with stylized expression heads, real-time prompt output and direct send to BZ Board.",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-9ed1afdf42375806c703",
+      "sourceIndex": 163,
+      "originalValue": " chars",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-aeb982d4c67a623a15b4",
+      "sourceIndex": 164,
+      "originalValue": "head tips back, chin lifted upward",
+      "action": "preserve"
+    },
+    {
+      "id": "text-afcdad0138d8246eae01",
+      "sourceIndex": 165,
+      "originalValue": "[IMG_1], same character identity, same facial structure, same hairstyle, same proportions, photographed as a clean expression reference.",
+      "action": "preserve"
+    },
+    {
+      "id": "text-b30a4ce96db5be658bed",
+      "sourceIndex": 166,
+      "originalValue": "normalRefMode",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-bee2690d02691a4f4a19",
+      "sourceIndex": 167,
+      "originalValue": "eyes turn to image-right / viewer-right: both pupils slide toward the right edge of both eyes while the head stays perfectly forward",
+      "action": "preserve"
+    },
+    {
+      "id": "text-c852e54c39199dbf31d9",
+      "sourceIndex": 168,
+      "originalValue": "<h2>No custom cards yet</h2><p>Import a FACS sheet first, then save it here to keep it available after reopening the app.</p>",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-ca13b21719f7d598024e",
+      "sourceIndex": 169,
+      "originalValue": ". Framing lock: ",
+      "action": "preserve"
+    },
+    {
+      "id": "text-d0e08aeb9b7123222dd7",
+      "sourceIndex": 170,
+      "originalValue": ". The result must read like a professional facial acting / expression reference chart that can be sliced into 49 clean cards.",
+      "action": "preserve"
+    },
+    {
+      "id": "text-ea738ab1fe955f850a78",
+      "sourceIndex": 171,
+      "originalValue": "head pushes forward toward camera, chin leading",
+      "action": "preserve"
+    },
+    {
+      "id": "text-ef33f76c7b94204f9323",
+      "sourceIndex": 172,
+      "originalValue": " FACS acting instruction",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-f8a524125f73875602b5",
+      "sourceIndex": 173,
+      "originalValue": " reference for ",
+      "action": "exclude-non-prompt",
+      "reason": "Texte lu dans son contexte : identifiant, balisage, aide, exemple de saisie ou état de l’interface. Conserver ce rôle hors texte compilé ; aucune fonctionnalité ni donnée utilisateur supprimée."
+    },
+    {
+      "id": "text-fbf75608ef48a13a41be",
+      "sourceIndex": 174,
+      "originalValue": "head tilts toward the subject right shoulder",
+      "action": "correct",
+      "correctedValue": "head tilts toward the subject's right shoulder",
+      "reason": "Ajout du possessif sans modifier le mouvement."
+    }
+  ]
+}

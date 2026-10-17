@@ -1,0 +1,671 @@
+{
+  "schemaVersion": "1.0",
+  "createdAt": "2026-09-11T10:46:00.331Z",
+  "batches": [
+    {
+      "id": "batch-01-01",
+      "sourcePath": "Barzy App/prompt Atlas V2/app.js",
+      "sourcePart": 1,
+      "sourcePartCount": 1,
+      "owners": [
+        "blocking-studio",
+        "image-analyzer",
+        "image-graber",
+        "paint-studio",
+        "video-analyzer"
+      ],
+      "likelyPromptCount": 141,
+      "reviewCandidateCount": 636,
+      "contextOnlyCount": 807,
+      "reviewCharacters": 34296,
+      "approximateReviewTokens": 8574,
+      "fileName": "01-01-dfd312608a.json",
+      "status": "extracted"
+    },
+    {
+      "id": "batch-03-01",
+      "sourcePath": "Barzy App/public/assets/barzy-theme.js",
+      "sourcePart": 1,
+      "sourcePartCount": 1,
+      "owners": [
+        "acting-gen",
+        "banana-helper",
+        "barz-beauty",
+        "barz-designer",
+        "barz-enhancer",
+        "barzy-board",
+        "barzy-sheet",
+        "cccp",
+        "cinema-helper",
+        "cinematic-shoot",
+        "facs-sheet-generator",
+        "image-slicer",
+        "imperfection",
+        "knolling",
+        "multishot",
+        "realism-forge",
+        "seedance",
+        "veo-suite",
+        "workflow-3d"
+      ],
+      "likelyPromptCount": 14,
+      "reviewCandidateCount": 46,
+      "contextOnlyCount": 117,
+      "reviewCharacters": 4262,
+      "approximateReviewTokens": 1066,
+      "fileName": "03-01-f51df5c6b9.json",
+      "status": "extracted"
+    },
+    {
+      "id": "batch-04-01",
+      "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+      "sourcePart": 1,
+      "sourcePartCount": 1,
+      "owners": [
+        "workflow-3d"
+      ],
+      "likelyPromptCount": 145,
+      "reviewCandidateCount": 306,
+      "contextOnlyCount": 262,
+      "reviewCharacters": 47055,
+      "approximateReviewTokens": 11764,
+      "fileName": "04-01-5fded1e648.json",
+      "status": "extracted"
+    },
+    {
+      "id": "batch-05-01",
+      "sourcePath": "Barzy App/public/assets/HTML/acting_gen.html",
+      "sourcePart": 1,
+      "sourcePartCount": 1,
+      "owners": [
+        "acting-gen"
+      ],
+      "likelyPromptCount": 80,
+      "reviewCandidateCount": 313,
+      "contextOnlyCount": 266,
+      "reviewCharacters": 54747,
+      "approximateReviewTokens": 13687,
+      "fileName": "05-01-09415c6e56.json",
+      "status": "extracted"
+    },
+    {
+      "id": "batch-06-01",
+      "sourcePath": "Barzy App/public/assets/HTML/banana_helper.html",
+      "sourcePart": 1,
+      "sourcePartCount": 1,
+      "owners": [
+        "banana-helper"
+      ],
+      "likelyPromptCount": 91,
+      "reviewCandidateCount": 104,
+      "contextOnlyCount": 15,
+      "reviewCharacters": 18005,
+      "approximateReviewTokens": 4502,
+      "fileName": "06-01-f9a306b9fd.json",
+      "status": "extracted"
+    },
+    {
+      "id": "batch-07-01",
+      "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+      "sourcePart": 1,
+      "sourcePartCount": 1,
+      "owners": [
+        "barz-designer"
+      ],
+      "likelyPromptCount": 103,
+      "reviewCandidateCount": 185,
+      "contextOnlyCount": 29,
+      "reviewCharacters": 35255,
+      "approximateReviewTokens": 8814,
+      "fileName": "07-01-adc9f6ff37.json",
+      "status": "extracted"
+    },
+    {
+      "id": "batch-08-01",
+      "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+      "sourcePart": 1,
+      "sourcePartCount": 1,
+      "owners": [
+        "barzy-sheet"
+      ],
+      "likelyPromptCount": 29,
+      "reviewCandidateCount": 97,
+      "contextOnlyCount": 260,
+      "reviewCharacters": 28107,
+      "approximateReviewTokens": 7027,
+      "fileName": "08-01-766a40991a.json",
+      "status": "extracted"
+    },
+    {
+      "id": "batch-09-01",
+      "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+      "sourcePart": 1,
+      "sourcePartCount": 1,
+      "owners": [
+        "barzy-board"
+      ],
+      "likelyPromptCount": 22,
+      "reviewCandidateCount": 199,
+      "contextOnlyCount": 196,
+      "reviewCharacters": 6612,
+      "approximateReviewTokens": 1653,
+      "fileName": "09-01-b31f999252.json",
+      "status": "extracted"
+    },
+    {
+      "id": "batch-10-01",
+      "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+      "sourcePart": 1,
+      "sourcePartCount": 1,
+      "owners": [
+        "cccp"
+      ],
+      "likelyPromptCount": 24,
+      "reviewCandidateCount": 46,
+      "contextOnlyCount": 25,
+      "reviewCharacters": 12591,
+      "approximateReviewTokens": 3148,
+      "fileName": "10-01-ba5052990b.json",
+      "status": "extracted"
+    },
+    {
+      "id": "batch-11-01",
+      "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+      "sourcePart": 1,
+      "sourcePartCount": 1,
+      "owners": [
+        "cinematic-shoot"
+      ],
+      "likelyPromptCount": 92,
+      "reviewCandidateCount": 127,
+      "contextOnlyCount": 39,
+      "reviewCharacters": 33879,
+      "approximateReviewTokens": 8470,
+      "fileName": "11-01-d6a6731da9.json",
+      "status": "extracted"
+    },
+    {
+      "id": "batch-12-01",
+      "sourcePath": "Barzy App/public/assets/HTML/drunk_dance_prompts_tabs.html",
+      "sourcePart": 1,
+      "sourcePartCount": 1,
+      "owners": [
+        "acting-gen"
+      ],
+      "likelyPromptCount": 162,
+      "reviewCandidateCount": 179,
+      "contextOnlyCount": 27,
+      "reviewCharacters": 35194,
+      "approximateReviewTokens": 8799,
+      "fileName": "12-01-5526e1f81a.json",
+      "status": "extracted"
+    },
+    {
+      "id": "batch-13-01",
+      "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+      "sourcePart": 1,
+      "sourcePartCount": 1,
+      "owners": [
+        "facs-sheet-generator"
+      ],
+      "likelyPromptCount": 11,
+      "reviewCandidateCount": 86,
+      "contextOnlyCount": 283,
+      "reviewCharacters": 6337,
+      "approximateReviewTokens": 1585,
+      "fileName": "13-01-d7df0fd849.json",
+      "status": "extracted"
+    },
+    {
+      "id": "batch-14-01",
+      "sourcePath": "Barzy App/public/assets/HTML/image-slicer.html",
+      "sourcePart": 1,
+      "sourcePartCount": 1,
+      "owners": [
+        "image-slicer"
+      ],
+      "likelyPromptCount": 4,
+      "reviewCandidateCount": 41,
+      "contextOnlyCount": 80,
+      "reviewCharacters": 650,
+      "approximateReviewTokens": 163,
+      "fileName": "14-01-6b39ade3f9.json",
+      "status": "extracted"
+    },
+    {
+      "id": "batch-15-01",
+      "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+      "sourcePart": 1,
+      "sourcePartCount": 1,
+      "owners": [
+        "imperfection"
+      ],
+      "likelyPromptCount": 21,
+      "reviewCandidateCount": 167,
+      "contextOnlyCount": 127,
+      "reviewCharacters": 4728,
+      "approximateReviewTokens": 1182,
+      "fileName": "15-01-543226877b.json",
+      "status": "extracted"
+    },
+    {
+      "id": "batch-16-01",
+      "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+      "sourcePart": 1,
+      "sourcePartCount": 1,
+      "owners": [
+        "knolling"
+      ],
+      "likelyPromptCount": 46,
+      "reviewCandidateCount": 103,
+      "contextOnlyCount": 130,
+      "reviewCharacters": 52234,
+      "approximateReviewTokens": 13059,
+      "fileName": "16-01-1dc72baa41.json",
+      "status": "extracted"
+    },
+    {
+      "id": "batch-17-01",
+      "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+      "sourcePart": 1,
+      "sourcePartCount": 2,
+      "owners": [
+        "multishot"
+      ],
+      "likelyPromptCount": 65,
+      "reviewCandidateCount": 98,
+      "contextOnlyCount": 25,
+      "reviewCharacters": 59993,
+      "approximateReviewTokens": 14999,
+      "fileName": "17-01-730191f6d3.json",
+      "status": "extracted"
+    },
+    {
+      "id": "batch-17-02",
+      "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+      "sourcePart": 2,
+      "sourcePartCount": 2,
+      "owners": [
+        "multishot"
+      ],
+      "likelyPromptCount": 0,
+      "reviewCandidateCount": 55,
+      "contextOnlyCount": 0,
+      "reviewCharacters": 810,
+      "approximateReviewTokens": 203,
+      "fileName": "17-02-730191f6d3.json",
+      "status": "extracted"
+    },
+    {
+      "id": "batch-18-01",
+      "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+      "sourcePart": 1,
+      "sourcePartCount": 1,
+      "owners": [
+        "barz-enhancer"
+      ],
+      "likelyPromptCount": 38,
+      "reviewCandidateCount": 73,
+      "contextOnlyCount": 22,
+      "reviewCharacters": 10643,
+      "approximateReviewTokens": 2661,
+      "fileName": "18-01-fd5724661d.json",
+      "status": "extracted"
+    },
+    {
+      "id": "batch-19-01",
+      "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+      "sourcePart": 1,
+      "sourcePartCount": 1,
+      "owners": [
+        "barz-beauty"
+      ],
+      "likelyPromptCount": 24,
+      "reviewCandidateCount": 74,
+      "contextOnlyCount": 21,
+      "reviewCharacters": 20657,
+      "approximateReviewTokens": 5165,
+      "fileName": "19-01-6df2357216.json",
+      "status": "extracted"
+    },
+    {
+      "id": "batch-20-01",
+      "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+      "sourcePart": 1,
+      "sourcePartCount": 1,
+      "owners": [
+        "cinema-helper"
+      ],
+      "likelyPromptCount": 142,
+      "reviewCandidateCount": 1061,
+      "contextOnlyCount": 2589,
+      "reviewCharacters": 59481,
+      "approximateReviewTokens": 14871,
+      "fileName": "20-01-d2d6fd1fb1.json",
+      "status": "extracted"
+    },
+    {
+      "id": "batch-21-01",
+      "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+      "sourcePart": 1,
+      "sourcePartCount": 1,
+      "owners": [
+        "realism-forge"
+      ],
+      "likelyPromptCount": 47,
+      "reviewCandidateCount": 336,
+      "contextOnlyCount": 340,
+      "reviewCharacters": 24752,
+      "approximateReviewTokens": 6188,
+      "fileName": "21-01-06a217c4d7.json",
+      "status": "extracted"
+    },
+    {
+      "id": "batch-22-01",
+      "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+      "sourcePart": 1,
+      "sourcePartCount": 2,
+      "owners": [
+        "seedance"
+      ],
+      "likelyPromptCount": 415,
+      "reviewCandidateCount": 29,
+      "contextOnlyCount": 75,
+      "reviewCharacters": 59968,
+      "approximateReviewTokens": 14992,
+      "fileName": "22-01-324ca65788.json",
+      "status": "extracted"
+    },
+    {
+      "id": "batch-22-02",
+      "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+      "sourcePart": 2,
+      "sourcePartCount": 2,
+      "owners": [
+        "seedance"
+      ],
+      "likelyPromptCount": 0,
+      "reviewCandidateCount": 161,
+      "contextOnlyCount": 0,
+      "reviewCharacters": 6422,
+      "approximateReviewTokens": 1606,
+      "fileName": "22-02-324ca65788.json",
+      "status": "extracted"
+    },
+    {
+      "id": "batch-23-01",
+      "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+      "sourcePart": 1,
+      "sourcePartCount": 1,
+      "owners": [
+        "veo-suite"
+      ],
+      "likelyPromptCount": 53,
+      "reviewCandidateCount": 191,
+      "contextOnlyCount": 60,
+      "reviewCharacters": 14925,
+      "approximateReviewTokens": 3732,
+      "fileName": "23-01-0247500aad.json",
+      "status": "extracted"
+    },
+    {
+      "id": "batch-24-01",
+      "sourcePath": "docs/ATLAS_BRAIN.md",
+      "sourcePart": 1,
+      "sourcePartCount": 1,
+      "owners": [
+        "prompt-forge"
+      ],
+      "likelyPromptCount": 1,
+      "reviewCandidateCount": 0,
+      "contextOnlyCount": 0,
+      "reviewCharacters": 22205,
+      "approximateReviewTokens": 5552,
+      "fileName": "24-01-8189abcc4d.json",
+      "status": "extracted"
+    },
+    {
+      "id": "batch-25-01",
+      "sourcePath": "docs/AUTO-BLOCKING.md",
+      "sourcePart": 1,
+      "sourcePartCount": 1,
+      "owners": [
+        "blocking-studio"
+      ],
+      "likelyPromptCount": 1,
+      "reviewCandidateCount": 0,
+      "contextOnlyCount": 0,
+      "reviewCharacters": 4515,
+      "approximateReviewTokens": 1129,
+      "fileName": "25-01-e03f763c24.json",
+      "status": "extracted"
+    },
+    {
+      "id": "batch-26-01",
+      "sourcePath": "docs/CINE-DNA.md",
+      "sourcePart": 1,
+      "sourcePartCount": 1,
+      "owners": [
+        "image-analyzer"
+      ],
+      "likelyPromptCount": 1,
+      "reviewCandidateCount": 0,
+      "contextOnlyCount": 0,
+      "reviewCharacters": 7157,
+      "approximateReviewTokens": 1790,
+      "fileName": "26-01-842891075d.json",
+      "status": "extracted"
+    },
+    {
+      "id": "batch-27-01",
+      "sourcePath": "docs/DIRECTING-EDITING.md",
+      "sourcePart": 1,
+      "sourcePartCount": 1,
+      "owners": [
+        "seedance"
+      ],
+      "likelyPromptCount": 1,
+      "reviewCandidateCount": 0,
+      "contextOnlyCount": 0,
+      "reviewCharacters": 3721,
+      "approximateReviewTokens": 931,
+      "fileName": "27-01-ae06ec3618.json",
+      "status": "extracted"
+    },
+    {
+      "id": "batch-28-01",
+      "sourcePath": "docs/video-models/KLING.md",
+      "sourcePart": 1,
+      "sourcePartCount": 1,
+      "owners": [
+        "seedance"
+      ],
+      "likelyPromptCount": 1,
+      "reviewCandidateCount": 0,
+      "contextOnlyCount": 0,
+      "reviewCharacters": 3005,
+      "approximateReviewTokens": 752,
+      "fileName": "28-01-b2bea1be28.json",
+      "status": "extracted"
+    },
+    {
+      "id": "batch-29-01",
+      "sourcePath": "docs/video-models/SEEDANCE.md",
+      "sourcePart": 1,
+      "sourcePartCount": 1,
+      "owners": [
+        "seedance"
+      ],
+      "likelyPromptCount": 1,
+      "reviewCandidateCount": 0,
+      "contextOnlyCount": 0,
+      "reviewCharacters": 2650,
+      "approximateReviewTokens": 663,
+      "fileName": "29-01-c3080b2151.json",
+      "status": "extracted"
+    },
+    {
+      "id": "batch-30-01",
+      "sourcePath": "docs/video-models/VEO.md",
+      "sourcePart": 1,
+      "sourcePartCount": 1,
+      "owners": [
+        "seedance"
+      ],
+      "likelyPromptCount": 1,
+      "reviewCandidateCount": 0,
+      "contextOnlyCount": 0,
+      "reviewCharacters": 3310,
+      "approximateReviewTokens": 828,
+      "fileName": "30-01-4f2a8bbdac.json",
+      "status": "extracted"
+    },
+    {
+      "id": "batch-31-01",
+      "sourcePath": "docs/video-models/WAN.md",
+      "sourcePart": 1,
+      "sourcePartCount": 1,
+      "owners": [
+        "seedance"
+      ],
+      "likelyPromptCount": 1,
+      "reviewCandidateCount": 0,
+      "contextOnlyCount": 0,
+      "reviewCharacters": 2555,
+      "approximateReviewTokens": 639,
+      "fileName": "31-01-ed903b3e20.json",
+      "status": "extracted"
+    },
+    {
+      "id": "batch-32-01",
+      "sourcePath": "lib/blocking-fit.js",
+      "sourcePart": 1,
+      "sourcePartCount": 1,
+      "owners": [
+        "blocking-studio",
+        "image-analyzer",
+        "prompt-forge",
+        "seedance",
+        "video-analyzer"
+      ],
+      "likelyPromptCount": 1,
+      "reviewCandidateCount": 5,
+      "contextOnlyCount": 14,
+      "reviewCharacters": 217,
+      "approximateReviewTokens": 55,
+      "fileName": "32-01-278cd30b60.json",
+      "status": "extracted"
+    },
+    {
+      "id": "batch-33-01",
+      "sourcePath": "lib/blocking-refine.js",
+      "sourcePart": 1,
+      "sourcePartCount": 1,
+      "owners": [
+        "blocking-studio",
+        "image-analyzer",
+        "prompt-forge",
+        "seedance",
+        "video-analyzer"
+      ],
+      "likelyPromptCount": 0,
+      "reviewCandidateCount": 3,
+      "contextOnlyCount": 10,
+      "reviewCharacters": 48,
+      "approximateReviewTokens": 12,
+      "fileName": "33-01-cc2e5fb9eb.json",
+      "status": "extracted"
+    },
+    {
+      "id": "batch-34-01",
+      "sourcePath": "lib/reproject.js",
+      "sourcePart": 1,
+      "sourcePartCount": 1,
+      "owners": [
+        "blocking-studio",
+        "image-analyzer",
+        "prompt-forge",
+        "seedance",
+        "video-analyzer"
+      ],
+      "likelyPromptCount": 0,
+      "reviewCandidateCount": 2,
+      "contextOnlyCount": 9,
+      "reviewCharacters": 8,
+      "approximateReviewTokens": 2,
+      "fileName": "34-01-03b73fe29d.json",
+      "status": "extracted"
+    },
+    {
+      "id": "batch-35-01",
+      "sourcePath": "public/js/aggregator-bridge.js",
+      "sourcePart": 1,
+      "sourcePartCount": 1,
+      "owners": [
+        "image-analyzer",
+        "prompt-forge"
+      ],
+      "likelyPromptCount": 1,
+      "reviewCandidateCount": 14,
+      "contextOnlyCount": 1,
+      "reviewCharacters": 274,
+      "approximateReviewTokens": 69,
+      "fileName": "35-01-174041587a.json",
+      "status": "extracted"
+    },
+    {
+      "id": "batch-36-01",
+      "sourcePath": "public/js/apg-data.js",
+      "sourcePart": 1,
+      "sourcePartCount": 1,
+      "owners": [
+        "image-analyzer",
+        "prompt-forge"
+      ],
+      "likelyPromptCount": 4,
+      "reviewCandidateCount": 553,
+      "contextOnlyCount": 780,
+      "reviewCharacters": 13706,
+      "approximateReviewTokens": 3427,
+      "fileName": "36-01-f2b10976e8.json",
+      "status": "extracted"
+    },
+    {
+      "id": "batch-37-01",
+      "sourcePath": "public/js/app.js",
+      "sourcePart": 1,
+      "sourcePartCount": 1,
+      "owners": [
+        "image-analyzer",
+        "prompt-forge"
+      ],
+      "likelyPromptCount": 31,
+      "reviewCandidateCount": 193,
+      "contextOnlyCount": 122,
+      "reviewCharacters": 6800,
+      "approximateReviewTokens": 1700,
+      "fileName": "37-01-5fce359791.json",
+      "status": "extracted"
+    },
+    {
+      "id": "batch-38-01",
+      "sourcePath": "server.js",
+      "sourcePart": 1,
+      "sourcePartCount": 1,
+      "owners": [
+        "blocking-studio",
+        "image-analyzer",
+        "prompt-forge",
+        "seedance",
+        "video-analyzer"
+      ],
+      "likelyPromptCount": 110,
+      "reviewCandidateCount": 222,
+      "contextOnlyCount": 295,
+      "reviewCharacters": 21418,
+      "approximateReviewTokens": 5355,
+      "fileName": "38-01-a4c65ede64.json",
+      "status": "extracted"
+    }
+  ]
+}

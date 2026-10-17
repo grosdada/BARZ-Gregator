@@ -1,0 +1,1317 @@
+:root {
+  --barzy-logo-bg: #0e1c22;
+  --barzy-radius: 8px;
+  --barzy-header-text: #f4e8db;
+  --barzy-header-muted: #8fa0a5;
+  --barzy-code-bg: #05090b;
+  --barzy-code-text: #e8f0ee;
+  --barzy-code-muted: #9fb0b5;
+}
+
+body[data-barzy-theme="rouge-editorial"] {
+  --barzy-logo-bg: #f6e2d5;
+  --barzy-header-text: #1d1a16;
+  --barzy-header-muted: #7a7065;
+  --barzy-bg: #eee8dc;
+  --barzy-bg-2: #e4dccc;
+  --barzy-panel: #f8f2e8;
+  --barzy-panel-2: #e8dfcf;
+  --barzy-text: #1d1a16;
+  --barzy-muted: #6e675d;
+  --barzy-copper: #bd3d35;
+  --barzy-copper-2: #14120f;
+  --barzy-danger: #9e2f28;
+  --barzy-line: rgba(29, 26, 22, 0.18);
+  --barzy-line-strong: rgba(189, 61, 53, 0.36);
+  --barzy-code-bg: #fffaf2;
+  --barzy-code-text: #1d1a16;
+  --barzy-code-muted: #6e675d;
+}
+
+body[data-barzy-theme="noir-atelier"] {
+  --barzy-logo-bg: #080809;
+  --barzy-bg: #0b0b0c;
+  --barzy-bg-2: #111113;
+  --barzy-panel: #1d1d21;
+  --barzy-panel-2: #27272c;
+  --barzy-text: #eee7da;
+  --barzy-muted: #989087;
+  --barzy-copper: #c9a05f;
+  --barzy-copper-2: #f4d08e;
+  --barzy-danger: #bd3d35;
+  --barzy-line: rgba(244, 239, 229, 0.1);
+  --barzy-line-strong: rgba(201, 160, 95, 0.34);
+  --barzy-code-bg: #080809;
+  --barzy-code-text: #f4efe5;
+  --barzy-code-muted: #a99f91;
+}
+
+body[data-barzy-theme="mint-blueprint"] {
+  --barzy-logo-bg: #11191b;
+  --barzy-bg: #11191b;
+  --barzy-bg-2: #0b1113;
+  --barzy-panel: #172224;
+  --barzy-panel-2: #10181a;
+  --barzy-text: #e6f0ea;
+  --barzy-muted: #9fb2ad;
+  --barzy-copper: #9be0bb;
+  --barzy-copper-2: #e9dc78;
+  --barzy-danger: #d77a68;
+  --barzy-line: rgba(155, 224, 187, 0.18);
+  --barzy-line-strong: rgba(155, 224, 187, 0.36);
+  --barzy-code-bg: #0b1113;
+  --barzy-code-text: #e9f4ee;
+  --barzy-code-muted: #9fb2ad;
+}
+
+body[data-barzy-theme="la-regie"] {
+  --barzy-logo-bg: #07090d;
+  --barzy-bg: #0a0d12;
+  --barzy-bg-2: #0d1118;
+  --barzy-panel: #151a23;
+  --barzy-panel-2: #1d2330;
+  --barzy-text: #dce5ee;
+  --barzy-muted: #8492a2;
+  --barzy-copper: #e0463a;
+  --barzy-copper-2: #f2b63c;
+  --barzy-danger: #ff5544;
+  --barzy-steel: #5d7186;
+  --barzy-line: rgba(220, 229, 238, 0.10);
+  --barzy-line-strong: rgba(224, 70, 58, 0.36);
+  --barzy-code-bg: #04060a;
+  --barzy-code-text: #b9efc9;
+  --barzy-code-muted: #6f9a80;
+}
+
+/* Prompt Atlas V6 — the default skin for embedded studio tools.
+   The former cream treatment remains available as `rouge-editorial`. */
+body[data-barzy-theme="atlas-studio"] {
+  --barzy-logo-bg: #050606;
+  --barzy-header-text: #f0eee8;
+  --barzy-header-muted: #999f9b;
+  --barzy-bg: #070909;
+  --barzy-bg-2: #0d1010;
+  --barzy-panel: #151918;
+  --barzy-panel-2: #1c211f;
+  --barzy-text: #f0eee8;
+  --barzy-muted: #999f9b;
+  --barzy-copper: #ff5b3a;
+  --barzy-copper-2: #f1a36f;
+  --barzy-danger: #ff7257;
+  --barzy-steel: #84aebe;
+  --barzy-line: #2b3230;
+  --barzy-line-strong: #46504d;
+  --barzy-code-bg: #050707;
+  --barzy-code-text: #f0eee8;
+  --barzy-code-muted: #999f9b;
+}
+
+body[data-barzy-theme="atlas-studio"].barzy-themed {
+  background:
+    radial-gradient(circle at 76% -20%, rgba(132, 174, 190, 0.08), transparent 420px),
+    linear-gradient(180deg, var(--barzy-bg), var(--barzy-bg-2)) !important;
+}
+
+body[data-barzy-theme="nocturne"] {
+  --barzy-bg: #071318;
+  --barzy-bg-2: #102229;
+  --barzy-panel: #142d35;
+  --barzy-panel-2: #17313a;
+  --barzy-text: #f5eee6;
+  --barzy-muted: #aeb9bd;
+  --barzy-copper: #c58b54;
+  --barzy-copper-2: #e0b57e;
+  --barzy-steel: #687a84;
+  --barzy-line: rgba(245, 238, 230, 0.14);
+  --barzy-line-strong: rgba(245, 238, 230, 0.28);
+  --barzy-code-bg: #05090b;
+  --barzy-code-text: #e8f0ee;
+  --barzy-code-muted: #9fb0b5;
+}
+
+body[data-barzy-theme="copper-night"],
+body:not([data-barzy-theme]) {
+  --barzy-bg: #0d0d10;
+  --barzy-bg-2: #0b0b0e;
+  --barzy-panel: #1c1c20;
+  --barzy-panel-2: #242429;
+  --barzy-text: #f0ebe2;
+  --barzy-muted: #8a8480;
+  --barzy-copper: #c8a870;
+  --barzy-copper-2: #e0c088;
+  --barzy-steel: #6b8eb5;
+  --barzy-danger: #c45f3c;
+  --barzy-line: rgba(255, 255, 255, 0.10);
+  --barzy-line-strong: rgba(200, 168, 112, 0.28);
+  --barzy-code-bg: #090909;
+  --barzy-code-text: #ede6d8;
+  --barzy-code-muted: #8a8480;
+}
+
+body[data-barzy-theme="sand"] {
+  --barzy-bg: #deceb9;
+  --barzy-bg-2: #eadcc9;
+  --barzy-panel: #f1e3d1;
+  --barzy-panel-2: #d8c6ad;
+  --barzy-text: #241b16;
+  --barzy-muted: #6f5b49;
+  --barzy-copper: #c58b54;
+  --barzy-copper-2: #7a624a;
+  --barzy-steel: #8f8173;
+  --barzy-line: rgba(36, 27, 22, 0.16);
+  --barzy-line-strong: rgba(36, 27, 22, 0.32);
+  --barzy-code-bg: #efe2cf;
+  --barzy-code-text: #1f2d32;
+  --barzy-code-muted: #5e6e73;
+}
+
+body[data-barzy-theme="sand"].barzy-themed {
+  --barzy-header-bg: #f1e3d1;
+  --barzy-header-text: #1e2629;
+  --barzy-header-muted: #60757b;
+  --barzy-dark-surface: #f1e3d1;
+  --barzy-dark-surface-2: #e8d9c4;
+  --barzy-readable-soft: #2d3d42;
+  --barzy-readable-muted: #60757b;
+  --s1: #f1e3d1 !important;
+  --s2: #eadcc9 !important;
+  --s3: #ddcbb3 !important;
+  --s4: #cdb899 !important;
+  --tx: #1e2629 !important;
+  --tx2: #2d3d42 !important;
+  --tx3: #60757b !important;
+  --tx4: #7b6a59 !important;
+  --red-g: rgba(197, 139, 84, 0.14) !important;
+  --grn-g: rgba(45, 61, 66, 0.09) !important;
+  --bg-card: #f1e3d1 !important;
+  --bg-secondary: #eadcc9 !important;
+  --bg-tertiary: #ddcbb3 !important;
+}
+
+body[data-barzy-theme="brown"] {
+  --barzy-bg: #1d1714;
+  --barzy-bg-2: #2a211c;
+  --barzy-panel: #3b2b22;
+  --barzy-panel-2: #4a382e;
+  --barzy-text: #f4e3d2;
+  --barzy-muted: #cfb79f;
+  --barzy-copper: #d1a06d;
+  --barzy-copper-2: #e0b57e;
+  --barzy-steel: #8b6a50;
+  --barzy-line: rgba(244, 227, 210, 0.14);
+  --barzy-line-strong: rgba(209, 160, 109, 0.36);
+  --barzy-code-bg: #090706;
+  --barzy-code-text: #f4e3d2;
+  --barzy-code-muted: #d1b89f;
+}
+
+body[data-barzy-theme="bluegray"] {
+  --barzy-bg: #263942;
+  --barzy-bg-2: #526a73;
+  --barzy-panel: #e4e8e4;
+  --barzy-panel-2: #afbec1;
+  --barzy-text: #102229;
+  --barzy-muted: #465e66;
+  --barzy-copper: #bd8955;
+  --barzy-copper-2: #7b5739;
+  --barzy-steel: #6f828a;
+  --barzy-line: rgba(16, 34, 41, 0.16);
+  --barzy-line-strong: rgba(16, 34, 41, 0.32);
+  --barzy-code-bg: #071318;
+  --barzy-code-text: #eef4f4;
+  --barzy-code-muted: #b8c9cc;
+}
+
+body.barzy-themed {
+  --bg: var(--barzy-bg) !important;
+  --bg-dark: var(--barzy-bg) !important;
+  --bg-primary: var(--barzy-bg) !important;
+  --bg-card: var(--barzy-panel) !important;
+  --bg-secondary: var(--barzy-panel-2) !important;
+  --bg-tertiary: var(--barzy-panel) !important;
+  --bg-hover: var(--barzy-panel-2) !important;
+  --background: var(--barzy-bg) !important;
+  --surface: var(--barzy-panel) !important;
+  --card: var(--barzy-panel) !important;
+  --panel: var(--barzy-panel) !important;
+  --ink: var(--barzy-text) !important;
+  --paper: var(--barzy-text) !important;
+  --text: var(--barzy-text) !important;
+  --text-main: var(--barzy-text) !important;
+  --text-primary: var(--barzy-text) !important;
+  --text-secondary: var(--barzy-muted) !important;
+  --text-muted: var(--barzy-muted) !important;
+  --text-dim: var(--barzy-muted) !important;
+  --muted: var(--barzy-muted) !important;
+  --tx: var(--barzy-text) !important;
+  --tx2: var(--barzy-muted) !important;
+  --brd: var(--barzy-line) !important;
+  --r: var(--barzy-radius) !important;
+  --border: var(--barzy-line) !important;
+  --line: var(--barzy-line) !important;
+  --accent: var(--barzy-copper) !important;
+  --accent-orange: var(--barzy-copper) !important;
+  --accent-yellow: var(--barzy-copper-2) !important;
+  --gold: var(--barzy-copper-2) !important;
+  color: var(--barzy-text) !important;
+  background:
+    radial-gradient(circle at top left, color-mix(in srgb, var(--barzy-copper) 12%, transparent), transparent 360px),
+    linear-gradient(180deg, var(--barzy-bg), var(--barzy-bg-2)) !important;
+}
+
+body[data-barzy-theme="mint-blueprint"].barzy-themed {
+  background:
+    linear-gradient(rgba(155, 224, 187, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(155, 224, 187, 0.045) 1px, transparent 1px),
+    linear-gradient(180deg, var(--barzy-bg), var(--barzy-bg-2)) !important;
+  background-size: 22px 22px, 22px 22px, auto !important;
+}
+
+body[data-barzy-theme="la-regie"].barzy-themed {
+  background:
+    repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.15) 0 1px, transparent 1px 3px),
+    radial-gradient(ellipse at 50% 0%, rgba(93, 113, 134, 0.10), transparent 55%),
+    linear-gradient(180deg, var(--barzy-bg), var(--barzy-bg-2)) !important;
+}
+
+body[data-barzy-theme="rouge-editorial"].barzy-themed header,
+body[data-barzy-theme="rouge-editorial"].barzy-themed .header,
+body[data-barzy-theme="rouge-editorial"].barzy-themed .topbar,
+body[data-barzy-theme="rouge-editorial"].barzy-themed .app-header,
+body[data-barzy-theme="rouge-editorial"].barzy-themed nav,
+body[data-barzy-theme="rouge-editorial"].barzy-themed .tabs,
+body[data-barzy-theme="rouge-editorial"].barzy-themed .main-tabs,
+body[data-barzy-theme="rouge-editorial"].barzy-themed .sub-tabs {
+  background: linear-gradient(90deg, #f6e2d5, #fbf3e7) !important;
+  color: #1d1a16 !important;
+}
+
+body.barzy-themed header,
+body.barzy-themed .header,
+body.barzy-themed .topbar,
+body.barzy-themed .app-header,
+body.barzy-themed nav,
+body.barzy-themed .tabs,
+body.barzy-themed .main-tabs,
+body.barzy-themed .sub-tabs {
+  background: var(--barzy-header-bg, var(--barzy-logo-bg)) !important;
+  color: var(--barzy-header-text) !important;
+  border-color: var(--barzy-line) !important;
+}
+
+body.barzy-themed header *,
+body.barzy-themed .header *,
+body.barzy-themed .topbar *,
+body.barzy-themed .app-header *,
+body.barzy-themed nav *,
+body.barzy-themed .tabs *,
+body.barzy-themed .main-tabs *,
+body.barzy-themed .sub-tabs * {
+  color: inherit;
+}
+
+body.barzy-themed header p,
+body.barzy-themed .header p,
+body.barzy-themed header .subtitle,
+body.barzy-themed .header .subtitle,
+body.barzy-themed header .hint,
+body.barzy-themed .header .hint,
+body.barzy-themed nav .hint,
+body.barzy-themed .tabs .hint,
+body.barzy-themed .main-tabs .hint {
+  color: var(--barzy-header-muted) !important;
+}
+
+body.barzy-themed nav button,
+body.barzy-themed .tabs button,
+body.barzy-themed .main-tabs button,
+body.barzy-themed .sub-tabs button,
+body.barzy-themed .tab,
+body.barzy-themed .tab-btn,
+body.barzy-themed .main-tab,
+body.barzy-themed .sub-tab-btn {
+  color: var(--barzy-header-muted) !important;
+}
+
+body.barzy-themed nav button.active,
+body.barzy-themed .tabs button.active,
+body.barzy-themed .main-tabs button.active,
+body.barzy-themed .sub-tabs button.active,
+body.barzy-themed .tab.active,
+body.barzy-themed .tab-btn.active,
+body.barzy-themed .main-tab.active,
+body.barzy-themed .sub-tab-btn.active {
+  color: var(--barzy-header-text) !important;
+  background-color: var(--barzy-copper) !important;
+}
+
+body.barzy-themed .container,
+body.barzy-themed .card,
+body.barzy-themed .prompt-card,
+body.barzy-themed .prompt-box,
+body.barzy-themed .panel,
+body.barzy-themed .section,
+body.barzy-themed .category,
+body.barzy-themed .tab-content,
+body.barzy-themed .modal-content,
+body.barzy-themed .output,
+body.barzy-themed .output-panel,
+body.barzy-themed .prompt-display,
+body.barzy-themed textarea,
+body.barzy-themed input,
+body.barzy-themed select {
+  background-color: var(--barzy-panel) !important;
+  color: var(--barzy-text) !important;
+  border-color: var(--barzy-line) !important;
+}
+
+body.barzy-themed .card-title,
+body.barzy-themed .card-body,
+body.barzy-themed .batch-name,
+body.barzy-themed .batch-preview,
+body.barzy-themed .saved-item-text,
+body.barzy-themed .prompt-title,
+body.barzy-themed .item-title {
+  color: var(--barzy-text) !important;
+}
+
+body.barzy-themed .card-num,
+body.barzy-themed .card-arrow,
+body.barzy-themed .batch-num {
+  color: var(--barzy-muted) !important;
+  opacity: 0.82 !important;
+}
+
+body.barzy-themed .btn-copy,
+body.barzy-themed .btn-add-batch,
+body.barzy-themed .batch-copy {
+  color: var(--barzy-text) !important;
+  background-color: color-mix(in srgb, var(--barzy-panel) 88%, var(--barzy-copper) 12%) !important;
+  border-color: var(--barzy-line) !important;
+}
+
+body.barzy-themed .prompt-content,
+body.barzy-themed .prompt-box[id^="prompt-display"],
+body.barzy-themed .prompt-text[id^="prompt-"],
+body.barzy-themed .prompt-out,
+body.barzy-themed .output-body,
+body.barzy-themed .output-text,
+body.barzy-themed .output-content,
+body.barzy-themed .output-textarea,
+body.barzy-themed .generated-prompts,
+body.barzy-themed .generated-prompt,
+body.barzy-themed .composite-prompt,
+body.barzy-themed .tf-output,
+body.barzy-themed .code-block,
+body.barzy-themed .prompt-code,
+body.barzy-themed pre,
+body.barzy-themed textarea.prompt-content {
+  background-color: var(--barzy-code-bg) !important;
+  color: var(--barzy-code-text) !important;
+  border-color: color-mix(in srgb, var(--barzy-code-text) 18%, transparent) !important;
+}
+
+body.barzy-themed .prompt-content *,
+body.barzy-themed .prompt-box[id^="prompt-display"] *,
+body.barzy-themed .prompt-text[id^="prompt-"] *,
+body.barzy-themed .prompt-out *,
+body.barzy-themed .output-body *,
+body.barzy-themed .output-text *,
+body.barzy-themed .output-content *,
+body.barzy-themed .output-textarea *,
+body.barzy-themed .generated-prompts *,
+body.barzy-themed .generated-prompt *,
+body.barzy-themed .composite-prompt *,
+body.barzy-themed .tf-output *,
+body.barzy-themed .code-block *,
+body.barzy-themed .prompt-code *,
+body.barzy-themed pre * {
+  color: inherit !important;
+}
+
+body.barzy-themed .prompt-content::selection,
+body.barzy-themed .prompt-box[id^="prompt-display"]::selection,
+body.barzy-themed .prompt-text[id^="prompt-"]::selection,
+body.barzy-themed .prompt-out::selection,
+body.barzy-themed .output-body::selection,
+body.barzy-themed .output-text::selection,
+body.barzy-themed .output-content::selection,
+body.barzy-themed .output-textarea::selection,
+body.barzy-themed pre::selection {
+  color: var(--barzy-code-bg);
+  background: var(--barzy-code-text);
+}
+
+body.barzy-themed button,
+body.barzy-themed .btn,
+body.barzy-themed .tab,
+body.barzy-themed .tab-btn,
+body.barzy-themed .main-tab,
+body.barzy-themed .copy-btn,
+body.barzy-themed .open-link {
+  border-color: var(--barzy-line) !important;
+}
+
+body.barzy-themed button:hover,
+body.barzy-themed .btn:hover,
+body.barzy-themed .tab:hover,
+body.barzy-themed .tab-btn:hover,
+body.barzy-themed .main-tab:hover,
+body.barzy-themed .copy-btn:hover {
+  border-color: var(--barzy-copper) !important;
+}
+
+body.barzy-themed .active,
+body.barzy-themed .selected,
+body.barzy-themed .tab.active,
+body.barzy-themed .tab-btn.active,
+body.barzy-themed .main-tab.active {
+  border-color: var(--barzy-copper) !important;
+  color: var(--barzy-copper-2) !important;
+}
+
+body.barzy-themed a,
+body.barzy-themed h1,
+body.barzy-themed h2,
+body.barzy-themed h3,
+body.barzy-themed .title,
+body.barzy-themed .prompt-title {
+  color: var(--barzy-text) !important;
+}
+
+body.barzy-themed .brand,
+body.barzy-themed .logo,
+body.barzy-themed .version,
+body.barzy-themed .tag,
+body.barzy-themed .badge,
+body.barzy-themed .count {
+  color: var(--barzy-copper-2) !important;
+}
+
+body.barzy-themed header h1,
+body.barzy-themed header h2,
+body.barzy-themed header h3,
+body.barzy-themed .header h1,
+body.barzy-themed .header h2,
+body.barzy-themed .header h3,
+body.barzy-themed .topbar h1,
+body.barzy-themed .topbar h2,
+body.barzy-themed .app-header h1,
+body.barzy-themed .app-header h2,
+body.barzy-themed header .title,
+body.barzy-themed .header .title,
+body.barzy-themed header .brand,
+body.barzy-themed .header .brand {
+  color: var(--barzy-header-text) !important;
+}
+
+body.barzy-themed header .subtitle,
+body.barzy-themed .header .subtitle,
+body.barzy-themed header .version,
+body.barzy-themed .header .version,
+body.barzy-themed header small,
+body.barzy-themed .header small {
+  color: var(--barzy-header-muted) !important;
+}
+
+body.barzy-themed nav .active,
+body.barzy-themed .tabs .active,
+body.barzy-themed .main-tabs .active,
+body.barzy-themed .sub-tabs .active,
+body.barzy-themed nav button.active,
+body.barzy-themed .tabs button.active,
+body.barzy-themed .main-tabs button.active,
+body.barzy-themed .sub-tabs button.active {
+  color: #0e1c22 !important;
+  background-color: var(--barzy-copper) !important;
+}
+
+body[data-barzy-theme="sand"].barzy-themed .hdr,
+body[data-barzy-theme="sand"].barzy-themed .header,
+body[data-barzy-theme="sand"].barzy-themed .header-top,
+body[data-barzy-theme="sand"].barzy-themed .topbar,
+body[data-barzy-theme="sand"].barzy-themed .tabs,
+body[data-barzy-theme="sand"].barzy-themed .tabs-bar,
+body[data-barzy-theme="sand"].barzy-themed .tab-bar,
+body[data-barzy-theme="sand"].barzy-themed .mode-bar,
+body[data-barzy-theme="sand"].barzy-themed .main-tabs,
+body[data-barzy-theme="sand"].barzy-themed .sub-tabs,
+body[data-barzy-theme="sand"].barzy-themed .nav,
+body[data-barzy-theme="sand"].barzy-themed nav,
+body[data-barzy-theme="sand"].barzy-themed .stage-header,
+body[data-barzy-theme="sand"].barzy-themed .prompt-header,
+body[data-barzy-theme="sand"].barzy-themed .section-header,
+body[data-barzy-theme="sand"].barzy-themed .card-header,
+body[data-barzy-theme="sand"].barzy-themed .toolbar,
+body[data-barzy-theme="sand"].barzy-themed .controls,
+body[data-barzy-theme="sand"].barzy-themed .preset-tabs,
+body[data-barzy-theme="sand"].barzy-themed .category-tabs,
+body[data-barzy-theme="sand"].barzy-themed .tab-content > .tabs,
+body[data-barzy-theme="sand"].barzy-themed [class*="header"],
+body[data-barzy-theme="sand"].barzy-themed [class*="tabs"],
+body[data-barzy-theme="sand"].barzy-themed [class*="bar"] {
+  background-color: var(--barzy-dark-surface) !important;
+  color: var(--barzy-header-text) !important;
+  border-color: var(--barzy-line) !important;
+}
+
+body[data-barzy-theme="sand"].barzy-themed .main,
+body[data-barzy-theme="sand"].barzy-themed .content,
+body[data-barzy-theme="sand"].barzy-themed .container,
+body[data-barzy-theme="sand"].barzy-themed .panel,
+body[data-barzy-theme="sand"].barzy-themed .card,
+body[data-barzy-theme="sand"].barzy-themed .stage,
+body[data-barzy-theme="sand"].barzy-themed .prompt-card,
+body[data-barzy-theme="sand"].barzy-themed .prompt-row,
+body[data-barzy-theme="sand"].barzy-themed .saved-item,
+body[data-barzy-theme="sand"].barzy-themed .batch-item,
+body[data-barzy-theme="sand"].barzy-themed .tab-content {
+  background-color: var(--barzy-panel) !important;
+  color: var(--barzy-text) !important;
+  border-color: var(--barzy-line) !important;
+}
+
+body[data-barzy-theme="sand"].barzy-themed h1,
+body[data-barzy-theme="sand"].barzy-themed h2,
+body[data-barzy-theme="sand"].barzy-themed h3,
+body[data-barzy-theme="sand"].barzy-themed h4,
+body[data-barzy-theme="sand"].barzy-themed p,
+body[data-barzy-theme="sand"].barzy-themed span,
+body[data-barzy-theme="sand"].barzy-themed label,
+body[data-barzy-theme="sand"].barzy-themed div,
+body[data-barzy-theme="sand"].barzy-themed button,
+body[data-barzy-theme="sand"].barzy-themed input,
+body[data-barzy-theme="sand"].barzy-themed textarea,
+body[data-barzy-theme="sand"].barzy-themed select {
+  color: inherit;
+}
+
+body[data-barzy-theme="sand"].barzy-themed .subtitle,
+body[data-barzy-theme="sand"].barzy-themed .hint,
+body[data-barzy-theme="sand"].barzy-themed .description,
+body[data-barzy-theme="sand"].barzy-themed .card-body,
+body[data-barzy-theme="sand"].barzy-themed .card-title,
+body[data-barzy-theme="sand"].barzy-themed .saved-item-text,
+body[data-barzy-theme="sand"].barzy-themed .tab-btn,
+body[data-barzy-theme="sand"].barzy-themed .mode-btn,
+body[data-barzy-theme="sand"].barzy-themed .count {
+  color: var(--barzy-readable-soft) !important;
+}
+
+body[data-barzy-theme="sand"].barzy-themed .card-title,
+body[data-barzy-theme="sand"].barzy-themed .prompt-title,
+body[data-barzy-theme="sand"].barzy-themed .title,
+body[data-barzy-theme="sand"].barzy-themed .btn-copy,
+body[data-barzy-theme="sand"].barzy-themed .copy-btn {
+  color: #17262b !important;
+}
+
+body[data-barzy-theme="sand"].barzy-themed input,
+body[data-barzy-theme="sand"].barzy-themed textarea,
+body[data-barzy-theme="sand"].barzy-themed select,
+body[data-barzy-theme="sand"].barzy-themed .search-input,
+body[data-barzy-theme="sand"].barzy-themed .tf-textarea,
+body[data-barzy-theme="sand"].barzy-themed .tf-input-subject {
+  background-color: #efe2cf !important;
+  color: #17262b !important;
+  border-color: rgba(36, 27, 22, 0.22) !important;
+}
+
+body[data-barzy-theme="sand"].barzy-themed input::placeholder,
+body[data-barzy-theme="sand"].barzy-themed textarea::placeholder {
+  color: #6f7c7e !important;
+  opacity: 1 !important;
+}
+
+body[data-barzy-theme="sand"].barzy-themed .prompt-content,
+body[data-barzy-theme="sand"].barzy-themed .prompt-box[id^="prompt-display"],
+body[data-barzy-theme="sand"].barzy-themed .prompt-text[id^="prompt-"],
+body[data-barzy-theme="sand"].barzy-themed .prompt-out,
+body[data-barzy-theme="sand"].barzy-themed .output-body,
+body[data-barzy-theme="sand"].barzy-themed .output-text,
+body[data-barzy-theme="sand"].barzy-themed .output-content,
+body[data-barzy-theme="sand"].barzy-themed .output-textarea,
+body[data-barzy-theme="sand"].barzy-themed .generated-prompts,
+body[data-barzy-theme="sand"].barzy-themed .generated-prompt,
+body[data-barzy-theme="sand"].barzy-themed .composite-prompt,
+body[data-barzy-theme="sand"].barzy-themed .tf-output,
+body[data-barzy-theme="sand"].barzy-themed .code-block,
+body[data-barzy-theme="sand"].barzy-themed .prompt-code,
+body[data-barzy-theme="sand"].barzy-themed pre,
+body[data-barzy-theme="sand"].barzy-themed textarea.prompt-content {
+  background-color: #efe2cf !important;
+  color: #17262b !important;
+  border-color: rgba(36, 27, 22, 0.22) !important;
+}
+
+body[data-barzy-theme="sand"].barzy-themed .group-card,
+body[data-barzy-theme="sand"].barzy-themed .preset-card,
+body[data-barzy-theme="sand"].barzy-themed .settings-panel,
+body[data-barzy-theme="sand"].barzy-themed .sf-panel,
+body[data-barzy-theme="sand"].barzy-themed .pc,
+body[data-barzy-theme="sand"].barzy-themed .batch-panel,
+body[data-barzy-theme="sand"].barzy-themed .batch-select-panel,
+body[data-barzy-theme="sand"].barzy-themed .saved-panel,
+body[data-barzy-theme="sand"].barzy-themed .modal,
+body[data-barzy-theme="sand"].barzy-themed .modal-content,
+body[data-barzy-theme="sand"].barzy-themed .controls-section,
+body[data-barzy-theme="sand"].barzy-themed .control-section,
+body[data-barzy-theme="sand"].barzy-themed .tool-section,
+body[data-barzy-theme="sand"].barzy-themed .prompt-section,
+body[data-barzy-theme="sand"].barzy-themed .result-section {
+  background-color: #f1e3d1 !important;
+  color: #1e2629 !important;
+  border-color: rgba(36, 27, 22, 0.18) !important;
+}
+
+body[data-barzy-theme="sand"].barzy-themed .group-card *,
+body[data-barzy-theme="sand"].barzy-themed .preset-card *,
+body[data-barzy-theme="sand"].barzy-themed .settings-panel *,
+body[data-barzy-theme="sand"].barzy-themed .sf-panel *,
+body[data-barzy-theme="sand"].barzy-themed .pc *,
+body[data-barzy-theme="sand"].barzy-themed .batch-panel *,
+body[data-barzy-theme="sand"].barzy-themed .batch-select-panel *,
+body[data-barzy-theme="sand"].barzy-themed .saved-panel *,
+body[data-barzy-theme="sand"].barzy-themed .controls-section *,
+body[data-barzy-theme="sand"].barzy-themed .control-section *,
+body[data-barzy-theme="sand"].barzy-themed .tool-section *,
+body[data-barzy-theme="sand"].barzy-themed .prompt-section *,
+body[data-barzy-theme="sand"].barzy-themed .result-section * {
+  color: inherit;
+}
+
+body[data-barzy-theme="sand"].barzy-themed .group-desc,
+body[data-barzy-theme="sand"].barzy-themed .pc-desc,
+body[data-barzy-theme="sand"].barzy-themed .hint,
+body[data-barzy-theme="sand"].barzy-themed .muted,
+body[data-barzy-theme="sand"].barzy-themed .label,
+body[data-barzy-theme="sand"].barzy-themed small {
+  color: #60757b !important;
+}
+
+body[data-barzy-theme="sand"].barzy-themed .tab-btn,
+body[data-barzy-theme="sand"].barzy-themed .main-tab,
+body[data-barzy-theme="sand"].barzy-themed .sub-nav-item,
+body[data-barzy-theme="sand"].barzy-themed .preset-btn,
+body[data-barzy-theme="sand"].barzy-themed .mode-btn,
+body[data-barzy-theme="sand"].barzy-themed .filter-btn {
+  background-color: #eadcc9 !important;
+  color: #1e2629 !important;
+  border-color: rgba(36, 27, 22, 0.18) !important;
+}
+
+body[data-barzy-theme="sand"].barzy-themed .tab-btn.active,
+body[data-barzy-theme="sand"].barzy-themed .main-tab.active,
+body[data-barzy-theme="sand"].barzy-themed .sub-nav-item.active,
+body[data-barzy-theme="sand"].barzy-themed .preset-btn.active,
+body[data-barzy-theme="sand"].barzy-themed .mode-btn.active,
+body[data-barzy-theme="sand"].barzy-themed .filter-btn.active {
+  background-color: var(--barzy-copper) !important;
+  color: #0e1c22 !important;
+}
+
+/* Targeted light-mode cleanup for older embedded apps with their own heavy CSS. */
+body[data-barzy-theme="sand"].barzy-themed table,
+body[data-barzy-theme="sand"].barzy-themed thead,
+body[data-barzy-theme="sand"].barzy-themed tbody,
+body[data-barzy-theme="sand"].barzy-themed tr,
+body[data-barzy-theme="sand"].barzy-themed td,
+body[data-barzy-theme="sand"].barzy-themed th,
+body[data-barzy-theme="sand"].barzy-themed .table-container,
+body[data-barzy-theme="sand"].barzy-themed .multishot-item,
+body[data-barzy-theme="sand"].barzy-themed .multishot-header,
+body[data-barzy-theme="sand"].barzy-themed .multishot-content,
+body[data-barzy-theme="sand"].barzy-themed .grid-selector,
+body[data-barzy-theme="sand"].barzy-themed .toggle-container,
+body[data-barzy-theme="sand"].barzy-themed .controls-row,
+body[data-barzy-theme="sand"].barzy-themed .filter-controls {
+  background-color: #f1e3d1 !important;
+  color: #1e2629 !important;
+  border-color: rgba(36, 27, 22, 0.18) !important;
+}
+
+body[data-barzy-theme="sand"].barzy-themed th,
+body[data-barzy-theme="sand"].barzy-themed .multishot-header,
+body[data-barzy-theme="sand"].barzy-themed .tab-btn,
+body[data-barzy-theme="sand"].barzy-themed .grid-option {
+  background-color: #eadcc9 !important;
+  color: #1e2629 !important;
+}
+
+body[data-barzy-theme="sand"].barzy-themed .angle-name,
+body[data-barzy-theme="sand"].barzy-themed .angle-prompt,
+body[data-barzy-theme="sand"].barzy-themed .multishot-title,
+body[data-barzy-theme="sand"].barzy-themed .multishot-text,
+body[data-barzy-theme="sand"].barzy-themed .prompt,
+body[data-barzy-theme="sand"].barzy-themed .type-cell,
+body[data-barzy-theme="sand"].barzy-themed td > div,
+body[data-barzy-theme="sand"].barzy-themed td > p {
+  color: #1e2629 !important;
+}
+
+body[data-barzy-theme="sand"].barzy-themed .badge,
+body[data-barzy-theme="sand"].barzy-themed .badge-distance,
+body[data-barzy-theme="sand"].barzy-themed .badge-angle,
+body[data-barzy-theme="sand"].barzy-themed .badge-creative,
+body[data-barzy-theme="sand"].barzy-themed .badge-movement,
+body[data-barzy-theme="sand"].barzy-themed .tag,
+body[data-barzy-theme="sand"].barzy-themed .chip {
+  background-color: #d8c6ad !important;
+  color: #1e2629 !important;
+  border-color: rgba(36, 27, 22, 0.18) !important;
+}
+
+body[data-barzy-theme="sand"].barzy-themed .copy-btn,
+body[data-barzy-theme="sand"].barzy-themed .multishot-copy-btn,
+body[data-barzy-theme="sand"].barzy-themed .multishot-copy-btn-header {
+  background-color: #eadcc9 !important;
+  color: #1e2629 !important;
+  border: 1px solid rgba(36, 27, 22, 0.22) !important;
+}
+
+body[data-barzy-theme="sand"].barzy-themed .copy-btn:hover,
+body[data-barzy-theme="sand"].barzy-themed .multishot-copy-btn:hover,
+body[data-barzy-theme="sand"].barzy-themed .multishot-copy-btn-header:hover {
+  background-color: #d8c6ad !important;
+  color: #0e1c22 !important;
+}
+
+body[data-barzy-theme="sand"].barzy-themed .bg-\[\#0f172a\],
+body[data-barzy-theme="sand"].barzy-themed .bg-\[\#1e293b\],
+body[data-barzy-theme="sand"].barzy-themed .bg-gray-700\/50,
+body[data-barzy-theme="sand"].barzy-themed .bg-white\/10,
+body[data-barzy-theme="sand"].barzy-themed .min-h-screen,
+body[data-barzy-theme="sand"].barzy-themed .shadow-2xl,
+body[data-barzy-theme="sand"].barzy-themed .shadow-lg,
+body[data-barzy-theme="sand"].barzy-themed .card,
+body[data-barzy-theme="sand"].barzy-themed .prompt-item {
+  background-color: #f1e3d1 !important;
+  color: #1e2629 !important;
+  border-color: rgba(36, 27, 22, 0.18) !important;
+}
+
+body[data-barzy-theme="sand"].barzy-themed .prompt-box,
+body[data-barzy-theme="sand"].barzy-themed .description-input,
+body[data-barzy-theme="sand"].barzy-themed .whitespace-pre-wrap,
+body[data-barzy-theme="sand"].barzy-themed .font-mono,
+body[data-barzy-theme="sand"].barzy-themed pre,
+body[data-barzy-theme="sand"].barzy-themed code {
+  background-color: #efe2cf !important;
+  color: #17262b !important;
+  border-color: rgba(36, 27, 22, 0.22) !important;
+  opacity: 1 !important;
+}
+
+body[data-barzy-theme="sand"].barzy-themed .text-gray-100,
+body[data-barzy-theme="sand"].barzy-themed .text-gray-400,
+body[data-barzy-theme="sand"].barzy-themed .text-gray-900,
+body[data-barzy-theme="sand"].barzy-themed .text-white {
+  color: #1e2629 !important;
+}
+
+body[data-barzy-theme="sand"].barzy-themed .text-yellow-500 {
+  color: #a96f28 !important;
+}
+
+body[data-barzy-theme="sand"].barzy-themed .text-pink-500 {
+  color: #a8276b !important;
+}
+
+body[data-barzy-theme="sand"].barzy-themed .text-green-500 {
+  color: #327b4a !important;
+}
+
+body[data-barzy-theme="sand"].barzy-themed .bg-yellow-500,
+body[data-barzy-theme="sand"].barzy-themed .bg-\[\#eab308\],
+body[data-barzy-theme="sand"].barzy-themed .tab-button.active {
+  background-color: var(--barzy-copper) !important;
+  color: #0e1c22 !important;
+}
+
+/* Prompt Atlas 3.1 unified visual layer.
+   Keeps app-specific layouts, but normalizes color, typography, controls and cards. */
+body.barzy-themed {
+  --accent-cyan: var(--barzy-copper) !important;
+  --accent-magenta: var(--barzy-copper-2) !important;
+  --accent-orange: var(--barzy-copper) !important;
+  --accent-green: var(--barzy-copper) !important;
+  --accent-purple: var(--barzy-copper-2) !important;
+  --accent-primary: var(--barzy-copper) !important;
+  --accent-secondary: var(--barzy-copper-2) !important;
+  --accent-safe: var(--barzy-copper) !important;
+  --accent-warning: var(--barzy-danger, #c45f3c) !important;
+  --blue: var(--barzy-panel-2) !important;
+  --green: var(--barzy-copper) !important;
+  --pink: var(--barzy-copper-2) !important;
+  --red: var(--barzy-danger, #c45f3c) !important;
+  --signal: var(--barzy-copper) !important;
+  --signal-2: var(--barzy-copper-2) !important;
+  --pose: var(--barzy-copper) !important;
+  --hero: var(--barzy-copper-2) !important;
+  --decor: var(--barzy-danger, #c45f3c) !important;
+  --bg-dark: var(--barzy-bg) !important;
+  --bg-card: var(--barzy-panel) !important;
+  --bg-hover: var(--barzy-panel-2) !important;
+  --border-subtle: var(--barzy-line) !important;
+  --text-primary: var(--barzy-text) !important;
+  --text-muted: var(--barzy-muted) !important;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  letter-spacing: 0 !important;
+}
+
+body.barzy-themed,
+body.barzy-themed *:not(code):not(pre):not(textarea) {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+}
+
+body.barzy-themed::before,
+body.barzy-themed::after {
+  opacity: 0 !important;
+  background: none !important;
+}
+
+body.barzy-themed .logo,
+body.barzy-themed .app-logo,
+body.barzy-themed .root-node,
+body.barzy-themed .map-btn.active,
+body.barzy-themed [class*="blue"],
+body.barzy-themed [style*="#145"],
+body.barzy-themed [style*="#00f"],
+body.barzy-themed [style*="cyan"],
+body.barzy-themed [style*="magenta"] {
+  background-image: none !important;
+  -webkit-text-fill-color: currentColor !important;
+}
+
+body.barzy-themed .logo,
+body.barzy-themed .root-node,
+body.barzy-themed .map-btn span:first-child,
+body.barzy-themed .section-title,
+body.barzy-themed .category-title,
+body.barzy-themed .prompt-title,
+body.barzy-themed .transfer-title,
+body.barzy-themed .family-title,
+body.barzy-themed .deck-title {
+  color: var(--barzy-text) !important;
+  letter-spacing: 0 !important;
+}
+
+body.barzy-themed .root-node {
+  background: var(--barzy-panel-2) !important;
+  border: 1px solid var(--barzy-line) !important;
+  border-radius: 8px !important;
+  color: var(--barzy-text) !important;
+}
+
+body.barzy-themed .eyebrow,
+body.barzy-themed .kicker,
+body.barzy-themed .mode-label,
+body.barzy-themed .label,
+body.barzy-themed .node-tag,
+body.barzy-themed .tagline,
+body.barzy-themed .logo-sub {
+  color: var(--barzy-copper) !important;
+  letter-spacing: 0.13em !important;
+  text-transform: uppercase;
+}
+
+body.barzy-themed button,
+body.barzy-themed .btn,
+body.barzy-themed .deck-btn,
+body.barzy-themed .control-btn,
+body.barzy-themed .copy,
+body.barzy-themed .copy-btn,
+body.barzy-themed .transfer-copy,
+body.barzy-themed .icon-btn,
+body.barzy-themed .info,
+body.barzy-themed .map-btn,
+body.barzy-themed .family-btn,
+body.barzy-themed .mode-btn,
+body.barzy-themed .provider-btn,
+body.barzy-themed .toggle-btn,
+body.barzy-themed .workspace-tab,
+body.barzy-themed .tab-button,
+body.barzy-themed .sub-nav-item,
+body.barzy-themed .filter-btn {
+  border: 1px solid var(--barzy-line) !important;
+  border-radius: 8px !important;
+  background: var(--barzy-panel) !important;
+  color: var(--barzy-text) !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+body.barzy-themed button:hover,
+body.barzy-themed .btn:hover,
+body.barzy-themed .deck-btn:hover,
+body.barzy-themed .control-btn:hover,
+body.barzy-themed .copy:hover,
+body.barzy-themed .copy-btn:hover,
+body.barzy-themed .transfer-copy:hover,
+body.barzy-themed .map-btn:hover,
+body.barzy-themed .family-btn:hover,
+body.barzy-themed .mode-btn:hover,
+body.barzy-themed .workspace-tab:hover,
+body.barzy-themed .tab-button:hover,
+body.barzy-themed .sub-nav-item:hover,
+body.barzy-themed .filter-btn:hover {
+  border-color: var(--barzy-copper) !important;
+  background: color-mix(in srgb, var(--barzy-panel-2) 88%, var(--barzy-copper)) !important;
+}
+
+body.barzy-themed button.active,
+body.barzy-themed .btn-primary,
+body.barzy-themed .primary,
+body.barzy-themed .copy,
+body.barzy-themed .copy-btn,
+body.barzy-themed .transfer-copy,
+body.barzy-themed .deck-btn:first-child,
+body.barzy-themed .tab.active,
+body.barzy-themed .tab-btn.active,
+body.barzy-themed .main-tab.active,
+body.barzy-themed .sub-nav-item.active,
+body.barzy-themed .family-btn.active,
+body.barzy-themed .mode-btn.active,
+body.barzy-themed .workspace-tab.active,
+body.barzy-themed .provider-btn.active,
+body.barzy-themed .toggle-btn.active,
+body.barzy-themed .tab-button.active {
+  background: var(--barzy-copper) !important;
+  border-color: var(--barzy-copper) !important;
+  color: #101616 !important;
+}
+
+body.barzy-themed .danger,
+body.barzy-themed .clear,
+body.barzy-themed .clear-deck,
+body.barzy-themed .delete,
+body.barzy-themed [class*="trash"],
+body.barzy-themed [class*="danger"] {
+  background: var(--barzy-danger, #c45f3c) !important;
+  border-color: var(--barzy-danger, #c45f3c) !important;
+  color: #fff7ed !important;
+}
+
+body.barzy-themed .card,
+body.barzy-themed .prompt-card,
+body.barzy-themed .prompt-item,
+body.barzy-themed .transfer-card,
+body.barzy-themed .module-card,
+body.barzy-themed .stage,
+body.barzy-themed .node-card,
+body.barzy-themed .item,
+body.barzy-themed article,
+body.barzy-themed .map,
+body.barzy-themed .deck-container,
+body.barzy-themed .panel,
+body.barzy-themed .section-head,
+body.barzy-themed .modal-content {
+  background: var(--barzy-panel) !important;
+  border-color: var(--barzy-line) !important;
+  color: var(--barzy-text) !important;
+  box-shadow: none !important;
+}
+
+body.barzy-themed .prompt-card:hover,
+body.barzy-themed .card:hover,
+body.barzy-themed .item:hover,
+body.barzy-themed article:hover,
+body.barzy-themed .transfer-card:hover {
+  border-color: var(--barzy-copper) !important;
+  transform: none !important;
+  box-shadow: 0 0 0 1px rgba(215, 163, 111, 0.16) !important;
+}
+
+body.barzy-themed input,
+body.barzy-themed textarea,
+body.barzy-themed select,
+body.barzy-themed .field,
+body.barzy-themed .search,
+body.barzy-themed .search-input,
+body.barzy-themed .description-input {
+  background: var(--barzy-code-bg) !important;
+  border: 1px solid var(--barzy-line) !important;
+  border-radius: 8px !important;
+  color: var(--barzy-code-text) !important;
+}
+
+body.barzy-themed input:focus,
+body.barzy-themed textarea:focus,
+body.barzy-themed select:focus,
+body.barzy-themed .field:focus,
+body.barzy-themed .search:focus,
+body.barzy-themed .search-input:focus {
+  border-color: var(--barzy-copper) !important;
+  outline: 0 !important;
+}
+
+body.barzy-themed .prompt,
+body.barzy-themed .prompt-text,
+body.barzy-themed .prompt-box,
+body.barzy-themed .prompt-output,
+body.barzy-themed .output,
+body.barzy-themed .output-body,
+body.barzy-themed .transfer-output,
+body.barzy-themed pre,
+body.barzy-themed code {
+  background: var(--barzy-code-bg) !important;
+  color: var(--barzy-code-text) !important;
+  border-color: var(--barzy-line) !important;
+}
+
+body.barzy-themed .prompt-card::before,
+body.barzy-themed .main-tab.active::after,
+body.barzy-themed .section-title::after,
+body.barzy-themed .family-title::after {
+  background: var(--barzy-line) !important;
+}
+
+body.barzy-themed .toast,
+body.barzy-themed .notification,
+body.barzy-themed .status-message {
+  background: var(--barzy-copper) !important;
+  color: #101616 !important;
+}
+
+body.barzy-themed .text-pink-500,
+body.barzy-themed .text-green-500,
+body.barzy-themed .text-blue-500,
+body.barzy-themed .text-cyan-500,
+body.barzy-themed .text-purple-500,
+body.barzy-themed .card.pink .title,
+body.barzy-themed .card.green .title,
+body.barzy-themed .card.red .title {
+  color: var(--barzy-copper-2) !important;
+}
+
+body.barzy-themed .container,
+body.barzy-themed .app-container,
+body.barzy-themed .page,
+body.barzy-themed main {
+  max-width: none !important;
+}
+
+body.barzy-themed .tab.active::after,
+body.barzy-themed .tab-btn.active::after {
+  background: var(--barzy-copper) !important;
+}
+
+body.barzy-themed .settings-btn {
+  display: none !important;
+}
+
+body.cinema-helper.barzy-themed .tabs .tab.active {
+  background: #174f78 !important;
+  border-color: #5aa9d8 !important;
+  color: #eaf7ff !important;
+}
+
+body.cinema-helper.barzy-themed .tabs .tab.active::after {
+  background: #5aa9d8 !important;
+}
+
+body.cinema-helper.barzy-themed .tabs .tab.active:hover {
+  background: #1d5f8f !important;
+  border-color: #78c7f2 !important;
+}
+
+body.cinema-helper.barzy-themed .deck-btn.random-current-tab {
+  background: linear-gradient(135deg, #e64b37, #d8ad63) !important;
+  color: #111111 !important;
+  border-color: rgba(230, 75, 55, 0.45) !important;
+  box-shadow: 0 0 0 1px rgba(230, 75, 55, 0.24), 0 10px 24px rgba(230, 75, 55, 0.28) !important;
+}
+
+body.cinema-helper.barzy-themed .deck-btn.random-current-tab:hover {
+  background: linear-gradient(135deg, #ff674f, #e6be74) !important;
+  border-color: rgba(255, 103, 79, 0.6) !important;
+}
+
+body.cinema-helper.barzy-themed .tabs .tab.active[data-category="favorites"] { background: #ffd700 !important; border-color: #ffd700 !important; color: #111111 !important; }
+body.cinema-helper.barzy-themed .tabs .tab.active[data-category="framing"] { background: #2196f3 !important; border-color: #2196f3 !important; color: #ffffff !important; }
+body.cinema-helper.barzy-themed .tabs .tab.active[data-category="camera"] { background: #ff5722 !important; border-color: #ff5722 !important; color: #111111 !important; }
+body.cinema-helper.barzy-themed .tabs .tab.active[data-category="subjects"] { background: #00bcd4 !important; border-color: #00bcd4 !important; color: #111111 !important; }
+body.cinema-helper.barzy-themed .tabs .tab.active[data-category="action"] { background: #ff9800 !important; border-color: #ff9800 !important; color: #111111 !important; }
+body.cinema-helper.barzy-themed .tabs .tab.active[data-category="acting"] { background: #00bfa5 !important; border-color: #00bfa5 !important; color: #111111 !important; }
+body.cinema-helper.barzy-themed .tabs .tab.active[data-category="objects"] { background: #e91e63 !important; border-color: #e91e63 !important; color: #ffffff !important; }
+body.cinema-helper.barzy-themed .tabs .tab.active[data-category="adjectives"] { background: #9c27b0 !important; border-color: #9c27b0 !important; color: #ffffff !important; }
+body.cinema-helper.barzy-themed .tabs .tab.active[data-category="backgrounds"] { background: #4caf50 !important; border-color: #4caf50 !important; color: #111111 !important; }
+body.cinema-helper.barzy-themed .tabs .tab.active[data-category="lighting"] { background: #ffc107 !important; border-color: #ffc107 !important; color: #111111 !important; }
+body.cinema-helper.barzy-themed .tabs .tab.active[data-category="templates"] { background: #ff9800 !important; border-color: #ff9800 !important; color: #111111 !important; }
+
+body.cinema-helper.barzy-themed .tabs .tab.active[data-category="favorites"]::after { background: #ffa500 !important; }
+body.cinema-helper.barzy-themed .tabs .tab.active[data-category="framing"]::after { background: #1976d2 !important; }
+body.cinema-helper.barzy-themed .tabs .tab.active[data-category="camera"]::after { background: #f4511e !important; }
+body.cinema-helper.barzy-themed .tabs .tab.active[data-category="subjects"]::after { background: #0097a7 !important; }
+body.cinema-helper.barzy-themed .tabs .tab.active[data-category="action"]::after { background: #f57c00 !important; }
+body.cinema-helper.barzy-themed .tabs .tab.active[data-category="acting"]::after { background: #00897b !important; }
+body.cinema-helper.barzy-themed .tabs .tab.active[data-category="objects"]::after { background: #c2185b !important; }
+body.cinema-helper.barzy-themed .tabs .tab.active[data-category="adjectives"]::after { background: #7b1fa2 !important; }
+body.cinema-helper.barzy-themed .tabs .tab.active[data-category="backgrounds"]::after { background: #388e3c !important; }
+body.cinema-helper.barzy-themed .tabs .tab.active[data-category="lighting"]::after { background: #ffa000 !important; }
+body.cinema-helper.barzy-themed .tabs .tab.active[data-category="templates"]::after { background: #f57c00 !important; }
+
+/* === 4.5.0 theme contrast fixes ====================================== */
+
+/* Dark skins: --red is remapped to --barzy-danger, which was too dark to
+   read on near-black module surfaces (Realism Forge title, FOOL GEMINI
+   badge, red-coded card titles). Brighten it per dark theme. */
+body[data-barzy-theme="noir-atelier"].barzy-themed {
+  --red: #e2654d !important;
+  --red-g: rgba(226, 101, 77, 0.13) !important;
+}
+
+body[data-barzy-theme="mint-blueprint"].barzy-themed {
+  --red: #e88a72 !important;
+  --red-g: rgba(232, 138, 114, 0.13) !important;
+}
+
+body[data-barzy-theme="la-regie"].barzy-themed {
+  --red: #ff6b5c !important;
+  --red-g: rgba(255, 107, 92, 0.13) !important;
+}
+
+/* Rouge Editorial: modules built on the dark --s1..--s4 surface scale
+   (Realism Forge & co) kept black panels inside the paper shell, while
+   their text vars were remapped to near-black. Give them paper surfaces. */
+body[data-barzy-theme="rouge-editorial"].barzy-themed {
+  --s1: #f8f2e8 !important;
+  --s2: #efe6d6 !important;
+  --s3: #e4d8c2 !important;
+  --s4: #d6c6aa !important;
+  --brd: rgba(29, 26, 22, 0.18) !important;
+  --brd2: rgba(29, 26, 22, 0.32) !important;
+  --tx3: #857b6d !important;
+  --tx4: #9c9080 !important;
+  --red-g: rgba(158, 47, 40, 0.10) !important;
+  /* BZ Camera Suite light pass: labels used pale silver on cream. */
+  --silver: #1d1a16 !important;
+  --dim: rgba(29, 26, 22, 0.55) !important;
+  --charcoal: #f8f2e8 !important;
+  --charcoal2: #e8dfcf !important;
+}
+
+/* Rouge Editorial: header bands are now light paper, so header accents use
+   the editorial red instead of light terracotta. */
+body[data-barzy-theme="rouge-editorial"].barzy-themed .hdr-logo,
+body[data-barzy-theme="rouge-editorial"].barzy-themed .hdr-badge {
+  color: #bd3d35 !important;
+}
+
+body[data-barzy-theme="rouge-editorial"].barzy-themed .hdr-badge {
+  border-color: rgba(189, 61, 53, 0.55) !important;
+  background: rgba(189, 61, 53, 0.10) !important;
+}
+
+body[data-barzy-theme="rouge-editorial"].barzy-themed header .eyebrow,
+body[data-barzy-theme="rouge-editorial"].barzy-themed .header .eyebrow,
+body[data-barzy-theme="rouge-editorial"].barzy-themed .hero .eyebrow {
+  color: #bd3d35 !important;
+}
+
+/* Headers that hardcode dark backdrops or light-on-dark titles need a paper
+   pass in Rouge Editorial (CCP gradient title is fine; subtitles were #999). */
+body[data-barzy-theme="rouge-editorial"].barzy-themed .header .subtitle,
+body[data-barzy-theme="rouge-editorial"].barzy-themed header .subtitle {
+  color: #7a7065 !important;
+}
+
+/* Info popups: hardcoded near-black panels were unreadable once the text
+   color got remapped per theme. Use theme panel + text in all skins. */
+body.barzy-themed .prompt-info-pop,
+body.barzy-themed .info-pop,
+body.barzy-themed .info-panel,
+body.barzy-themed .barzy-prompt-info-panel {
+  background: var(--barzy-panel) !important;
+  color: var(--barzy-text) !important;
+  border: 1px solid var(--barzy-line-strong) !important;
+  box-shadow: 0 16px 36px rgba(20, 14, 10, 0.22) !important;
+}
+
+/* CCP: keep the download button off the band edge. */
+body.barzy-themed .btn-download {
+  right: 18px !important;
+}
+
+/* Knolling lighting/accessory chips: pink accent was washed out on paper. */
+body[data-barzy-theme="rouge-editorial"].barzy-themed {
+  --accent-pink: #bd3d35 !important;
+  --accent-pink-dim: rgba(189, 61, 53, 0.45) !important;
+  --accent-pink-glow: rgba(189, 61, 53, 0.10) !important;
+  --accent-red: #bd3d35 !important;
+  --accent-red-dim: rgba(189, 61, 53, 0.45) !important;
+  --accent-red-glow: rgba(189, 61, 53, 0.10) !important;
+}
+
+/* Rouge Editorial: BZ Designer dark translucent tool strips over paper. */
+body[data-barzy-theme="rouge-editorial"].barzy-themed.bz-designer-page .section-tools,
+body[data-barzy-theme="rouge-editorial"].barzy-themed.bz-designer-page .grid {
+  background: rgba(255, 250, 242, 0.55) !important;
+}
+
+/* BZ Board: FACS inbox banner was a fixed navy strip whose text color is
+   remapped per theme (dark red on navy in Rouge). Re-skin it per theme. */
+body.barzy-themed .bz-inbox {
+  background: color-mix(in srgb, var(--barzy-copper) 12%, var(--barzy-panel)) !important;
+  border-color: var(--barzy-line-strong) !important;
+  color: var(--barzy-text) !important;
+}
+
+body.barzy-themed .bz-inbox strong {
+  color: var(--barzy-copper) !important;
+}
+
+/* Active tabs: a late generic rule painted their text with --barzy-copper-2,
+   which is near-black on the red active background in Rouge Editorial and
+   pale gold on gold in Noir Atelier. Use a proper on-accent color. */
+:root {
+  --barzy-on-copper: #14120f;
+}
+
+body[data-barzy-theme="rouge-editorial"] {
+  --barzy-on-copper: #fff8ee;
+}
+
+body[data-barzy-theme="la-regie"] {
+  --barzy-on-copper: #fff4f0;
+}
+
+body.barzy-themed nav button.active,
+body.barzy-themed .tabs button.active,
+body.barzy-themed .main-tabs button.active,
+body.barzy-themed .sub-tabs button.active,
+body.barzy-themed .tab.active,
+body.barzy-themed .tab-btn.active,
+body.barzy-themed .main-tab.active,
+body.barzy-themed .sub-tab-btn.active {
+  color: var(--barzy-on-copper) !important;
+}
+
+/* Copy buttons painted with the accent background need on-accent text too. */
+body.barzy-themed .copy-btn {
+  color: var(--barzy-on-copper) !important;
+}
+
+/* Acting Gen & friends: the prompt text reads better as a soft tinted window
+   instead of a framed box, and the search strip should stay in-palette. */
+body.barzy-themed .prompt-card .prompt-text {
+  background: color-mix(in srgb, var(--barzy-muted) 10%, var(--barzy-panel)) !important;
+  border: 0 !important;
+  border-radius: 8px !important;
+  padding: 10px 12px !important;
+}
+
+body.barzy-themed .search-bar {
+  background: color-mix(in srgb, var(--barzy-panel-2) 70%, transparent) !important;
+}
+
+/* Rouge Editorial: big display titles were pale gradients tuned for black
+   bands. On paper they become editorial red. */
+body[data-barzy-theme="rouge-editorial"].barzy-themed header h1,
+body[data-barzy-theme="rouge-editorial"].barzy-themed .header h1,
+body[data-barzy-theme="rouge-editorial"].barzy-themed .header .title,
+body[data-barzy-theme="rouge-editorial"].barzy-themed .hdr-title {
+  background: none !important;
+  -webkit-text-fill-color: currentColor !important;
+  color: #bd3d35 !important;
+}

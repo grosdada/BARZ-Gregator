@@ -1,0 +1,1340 @@
+{
+  "schemaVersion": "1.0",
+  "id": "triage-cinematic-shoot-01",
+  "owner": "cinematic-shoot",
+  "status": "pending-structural-triage",
+  "approximateTokens": 390,
+  "prompts": [
+    {
+      "id": "text-083ec36cc6984e6f3f31",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "3x3 JSON: Russian Submarine",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 496,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-0b37d726253244d485a5",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "toggle-row",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 905,
+          "column": 28,
+          "kind": "string-literal",
+          "functionName": "renderCard",
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-10b8ba1f9092971407bc",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "3x3 JSON: Haunted Asylum Escape",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 596,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-12ac4a4f85162f372305",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Prompt iterated",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 813,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": "iteratePrompt",
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-18a0d85eb8a2a2543e9f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "prompt-card collapsed",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 850,
+          "column": 24,
+          "kind": "string-literal",
+          "functionName": "renderCard",
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-1dac18ca4e893b823b59",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "3x3 JSON: Police / Detective",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 456,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-21c868540ec91f5820f2",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "3x3 JSON: Everest Summit Storm",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 611,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-28416897bba2bfab6b74",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "3x3 JSON: Firefighter Action",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 451,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-2ae0da3138626cfc96c9",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "\n\nPROMPT ATLAS GRID OVERRIDE: Use exactly ",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 702,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": "adaptGridPrompt",
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-2b87eb2d92f587b97c37",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "3x3 JSON: Zombie Apocalypse Mall",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 601,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-2e1cfa82b035c26cbbbd",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "empty",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 941,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": "renderSections",
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-3fc48a172fc0237f0fc4",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "3x3 JSON: Ancient Egypt Construction",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 556,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-445322aa5630e2b45542",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "3x3 JSON: Horror Movie",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 491,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-45571174e3f9ad6a2b1e",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "3x3 JSON: Free Fall Skydiving",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 551,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-460b55a43980539677da",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "No prompt matches this filter.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 942,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": "renderSections",
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-49d669a2677186dcbd9c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "action-btn",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 882,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": "renderCard",
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-4abbffcbc1d6e9c77228",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "-FRAME",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 698,
+          "column": 63,
+          "kind": "string-literal",
+          "functionName": "adaptGridPrompt",
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-4b3397df97a47421d71b",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "AI iteration failed",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 815,
+          "column": 36,
+          "kind": "string-literal",
+          "functionName": "iteratePrompt",
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-4ce86ca068948b7419a8",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "3x3 JSON: Versailles Intrigue",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 571,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-51a85c6b56911fd8973f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "3x3 JSON: Creepy Slaughterhouse",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 486,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-55ddfc41e1a170de62ea",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": " frames in a ",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 702,
+          "column": 89,
+          "kind": "string-literal",
+          "functionName": "adaptGridPrompt",
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-58011877507671509ea9",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "3x3 JSON: Abandoned Factory",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 511,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-5ac5130b499c7fcc435e",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "family-btn",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 827,
+          "column": 28,
+          "kind": "string-literal",
+          "functionName": "renderTabs",
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-5b2946afc4502ee17423",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "3x3 JSON: House Party",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 516,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-5defcca4770de00ae0eb",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "3x3 JSON: Space Station Drift",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 586,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-6828d55a6069c498e293",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "3x3 Storyboard Grid (Standard)",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 436,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-6fe9eb8f468b58433d5a",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "checkbox",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 908,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-7159f8d9408cbca07620",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "3x3 JSON: Vintage Bathroom",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 481,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-732705022cc4f09d060e",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "3x3 JSON: Artist Atelier",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 541,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-735c5f663a35ca8fef9f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "prompt-body",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 891,
+          "column": 24,
+          "kind": "string-literal",
+          "functionName": "renderCard",
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-7e18373f6b70cbb26bed",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "prompt-title",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 856,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": "renderCard",
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-7f97fbc7a32a2e3b1586",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "3x3 JSON: Asian Kitchen",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 546,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-803146bde734e7c5ca8f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "3x3 JSON: Gym Session",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 506,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-81c403606683cbc0ffc6",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "3x3 JSON: Occult Ritual Ritual",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 591,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-84393add8c489d335693",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "article",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 849,
+          "column": 43,
+          "kind": "string-literal",
+          "functionName": "renderCard",
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-855acb23e686b282afa6",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "3x3 JSON: Lost Aztec Jungle",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 606,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-87d818644b415eccacb2",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "3x3 JSON: Snow Tundra",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 521,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-8bcda584118e64d1e5c4",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "3x3 JSON: Oceanic Expedition",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 466,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-8eb4da3e6b59508bef17",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "3x3 JSON: Ghetto Street",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 531,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-96d04d12975fa2f6a29f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "familyTabs",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 661,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-97af556fd3b920aed84d",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Search theme or prompt...",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 407,
+          "column": 58,
+          "kind": "html-attribute:placeholder",
+          "functionName": null,
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-9b921f4f088b83866b02",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "3x3 JSON: Giant Crystal Caves",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 616,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-9d8a82d85374e12d6605",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "3x3 JSON: Volcano Expedition",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 471,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-9f1b09ca82676497f0af",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "The Abyss Abysses",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 626,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-a3d256f06dc86691a283",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "details-",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 742,
+          "column": 47,
+          "kind": "string-literal",
+          "functionName": "buildPrompt",
+          "owners": [
+            "cinematic-shoot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 896,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": "renderCard",
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-a80224626fc80c2f17d8",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "The AI returned an empty prompt.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 810,
+          "column": 36,
+          "kind": "string-literal",
+          "functionName": "iteratePrompt",
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-a8a6d89cbc49ec3e184f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "prompt-box",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 918,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-ab551d7f6cf4e18c9997",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "3x3 JSON: Desert Expedition",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 461,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-ab80552ea93c8f663b22",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "3x3 JSON: Wild West High Noon Duel",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 566,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-ad2a49d48ed602c700b2",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "3x3 JSON: Free Diving",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 526,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-b1d670e8cb57707ec897",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Savannah Lion Hunt",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 621,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-b33e28215f8b06bae5ec",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "3x3 JSON: Feudal Japan Duel",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 561,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-b78c68460c881bc46367",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "3x3 JSON: Alien Invasion NY",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 581,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-b86d11b80331f579122c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "3x3 JSON: Soviet Atomic Lab",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 501,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-bcfb117e90fd557d1f6c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "card-head",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 853,
+          "column": 24,
+          "kind": "string-literal",
+          "functionName": "renderCard",
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-c2bd73c179e224766ae7",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "PUPPET MODE: ",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 736,
+          "column": 56,
+          "kind": "string-literal",
+          "functionName": "buildSemanticLayer",
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-c7a3751c028742c473d1",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "prompt-grid",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 958,
+          "column": 26,
+          "kind": "string-literal",
+          "functionName": "renderSections",
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-c86db632e43e48de8115",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "action-btn primary",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 874,
+          "column": 24,
+          "kind": "string-literal",
+          "functionName": "renderCard",
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-d142ef4190e343a1d1b7",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": " gold",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 850,
+          "column": 79,
+          "kind": "string-literal",
+          "functionName": "renderCard",
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-d368245ef63dc49a5720",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "3x3 JSON: Cosmonaut 1965",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 476,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-d9b35fac268aeb90fddf",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": " UNIQUE FRAMES",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 701,
+          "column": 71,
+          "kind": "string-literal",
+          "functionName": "adaptGridPrompt",
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-e291a607e6c155f5e7e7",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Contact Sheet Vogue (16:9)",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 431,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-e3316bcfeb95ee7ea51b",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "3x3 JSON: Free Climbing",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 536,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-ec76ab8193adc36fc7a1",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "3x3 JSON: Firefighter Station",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 446,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-ec86830580e8ad7d7192",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "3x3 JSON: Car Race",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 441,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-eca896bb9e5cc0dc3bb1",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "detail-row",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 894,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": "renderCard",
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-ed7002b439e9ac845f22",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "content",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 662,
+          "column": 40,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-ee7fcc79e1911749f867",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "3x3 JSON: Ice Age Survival",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 576,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-f998fe06afa0cfbe73e0",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "h2",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 855,
+          "column": 44,
+          "kind": "string-literal",
+          "functionName": "renderCard",
+          "owners": [
+            "cinematic-shoot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 954,
+          "column": 46,
+          "kind": "string-literal",
+          "functionName": "renderSections",
+          "owners": [
+            "cinematic-shoot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    }
+  ]
+}

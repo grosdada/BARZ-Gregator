@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Motion Emulator — Seedance Control Signal Studio</title>
+  <!-- Prompt Atlas integration: Tailwind/Google-Fonts CDNs replaced by the local Barzy
+       theme + motion-emulator.css (offline, harmonised with Video Director). -->
+  <link rel="stylesheet" href="../../barzy-theme.css?v=5.2.3">
+  <link rel="stylesheet" href="motion-emulator.css?v=5.2.3">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "../../vendor/three/three.module.min.js",
+        "three/addons/": "../../vendor/three/addons/"
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="/video-director-theme.css?v=0.23.2-dark">
+</head>
+
+<body class="me-root">
+  <div class="me-shell">
+
+    <!-- ═══════════════ Header ═══════════════ -->
+    <header class="me-header">
+      <div class="me-header-left">
+        <div class="me-mark">M</div>
+        <h1 class="me-title">Motion Emulator</h1>
+        <span class="me-badge">Seedance control studio</span>
+      </div>
+      <div class="me-header-right">
+        <span id="chip-pose" data-name="Pose model" class="me-chip">
+          <span data-dot class="me-dot is-idle"></span>
+          <span data-label>Pose model: idle</span>
+        </span>
+        <span id="chip-depth" data-name="Depth model" class="me-chip">
+          <span data-dot class="me-dot is-idle"></span>
+          <span data-label>Depth model: idle</span>
+        </span>
+      </div>
+    </header>
+
+    <!-- ═══════════════ Main 3-column layout ═══════════════ -->
+    <main class="me-main">
+
+      <!-- ─────────── Left control rail ─────────── -->
+      <aside class="me-rail">
+
+        <!-- Source -->
+        <section class="me-section">
+          <h2 class="me-eyebrow">Source</h2>
+          <div id="drop-zone" class="me-drop">
+            <div class="me-drop-icon">&#127902;&#65039;</div>
+            <p class="me-drop-main">Drop a video or image here</p>
+            <p class="me-drop-sub">or click to browse</p>
+            <input id="file-input" type="file"
+              accept="video/mp4,video/webm,video/quicktime,image/png,image/jpeg,image/webp,image/gif,image/avif"
+              class="hidden" />
+          </div>
+          <p id="video-meta" class="me-meta"></p>
+          <button id="btn-clear" class="me-btn me-btn-clear hidden" type="button">&#10005; Clear source</button>
+        </section>
+
+        <!-- Settings -->
+        <section class="me-section me-card">
+          <h2 class="me-eyebrow">Extraction settings</h2>
+          <div class="me-fields">
+            <div>
+              <label class="field-label" for="fps-select">Target FPS</label>
+              <select id="fps-select" class="me-input"></select>
+            </div>
+            <div>
+              <label class="field-label" for="res-select">Output resolution</label>
+              <select id="res-select" class="me-input"></select>
+            </div>
+            <div>
+              <label class="field-label" for="cmap-select">Depth colormap</label>
+              <select id="cmap-select" class="me-input">
+                <option value="gray" selected>Grayscale (recommended for control)</option>
+                <option value="turbo">Turbo</option>
+                <option value="inferno">Inferno</option>
+              </select>
+            </div>
+          </div>
+        </section>
+
+        <!-- Output selector -->
+        <section class="me-section me-card">
+          <h2 class="me-eyebrow">Control outputs</h2>
+          <div class="me-radio-group">
+            <label class="me-radio">
+              <input type="radio" name="mode" value="depth" />
+              <span>Depth map only</span>
+            </label>
+            <label class="me-radio">
+              <input type="radio" name="mode" value="skeleton" />
+              <span>Skeleton / pose only</span>
+            </label>
+            <label class="me-radio">
+              <input type="radio" name="mode" value="both" checked />
+              <span>Both</span>
+            </label>
+            <label class="me-radio me-radio-sub">
+              <input type="checkbox" id="sbs-check" checked />
+              <span>Also export side-by-side composite</span>
+            </label>
+          </div>
+        </section>
+
+        <!-- Process -->
+        <section class="me-section me-process">
+          <button id="btn-process" disabled class="me-btn-primary" type="button">Process source</button>
+          <button id="btn-cancel" class="me-btn-cancel hidden" type="button">Cancel</button>
+          <div id="progress-wrap" class="me-progress hidden">
+            <div class="me-progress-track">
+              <div id="progress-bar" class="me-progress-bar" style="width:0%"></div>
+            </div>
+            <div class="me-progress-info">
+              <span id="progress-label">&mdash;</span>
+              <span id="progress-eta"></span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Exports -->
+        <section class="me-section me-card">
+          <h2 class="me-eyebrow">Exports</h2>
+          <div id="exports-list" class="me-exports">
+            <p class="me-hint">Process a video or image to generate downloads.</p>
+          </div>
+        </section>
+      </aside>
+
+      <!-- ─────────── Center: previews ─────────── -->
+      <div class="me-center">
+        <!-- Tabs -->
+        <div class="me-tabs" role="tablist">
+          <button data-tab="preview" role="tab" aria-selected="true" class="me-tab tab-active" type="button">Preview</button>
+          <button data-tab="pose3d" role="tab" aria-selected="false" class="me-tab" type="button">3D Pose</button>
+        </div>
+
+        <!-- Preview panel -->
+        <div data-panel="preview" class="me-panel me-panel-preview">
+          <div class="me-previews">
+            <figure class="me-figure">
+              <figcaption class="me-figcap"><span>Source</span></figcaption>
+              <div class="me-figbody">
+                <video id="video" playsinline muted></video>
+                <img id="source-image" class="hidden" alt="Loaded source image" />
+                <div id="video-empty" class="me-empty">No video or image loaded</div>
+              </div>
+            </figure>
+            <figure class="me-figure">
+              <figcaption class="me-figcap">
+                <span id="out-label">Output (live skeleton)</span>
+                <button id="btn-test-depth" class="me-mini-btn" type="button">Test depth on this frame</button>
+              </figcaption>
+              <div class="me-figbody">
+                <canvas id="out-canvas"></canvas>
+              </div>
+            </figure>
+          </div>
+
+          <!-- Transport -->
+          <div id="transport" class="me-transport">
+            <button id="btn-play" disabled class="me-play" title="Play / pause (Space)" type="button">
+              <svg id="icon-play" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              <svg id="icon-pause" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" class="hidden"><path d="M6 4h4v16H6zM14 4h4v16h-4z"/></svg>
+            </button>
+            <input id="scrub" type="range" min="0" max="1000" value="0" disabled class="me-scrub" />
+            <span id="time-label" class="me-time">0:00.00 / 0:00.00</span>
+          </div>
+        </div>
+
+        <!-- 3D panel -->
+        <div data-panel="pose3d" class="me-panel me-panel-3d hidden">
+          <div id="viewport3d" class="me-viewport3d"></div>
+          <p class="me-note">World landmarks (metric, hip-centered) &middot; drag to orbit &middot; scroll to zoom &middot; right-drag to pan</p>
+        </div>
+      </div>
+
+      <!-- ─────────── Right: Seedance prompt ─────────── -->
+      <aside class="me-prompt">
+        <div class="me-prompt-head">
+          <h2 class="me-prompt-title">Seedance prompt</h2>
+          <span class="me-badge">auto-assembled</span>
+        </div>
+
+        <div class="me-fields">
+          <div><label class="field-label" for="f-subject">Subject</label>
+            <input id="f-subject" type="text" class="me-input" /></div>
+          <div><label class="field-label" for="f-wardrobe">Wardrobe</label>
+            <input id="f-wardrobe" type="text" class="me-input" /></div>
+          <div><label class="field-label" for="f-setting">Setting</label>
+            <input id="f-setting" type="text" class="me-input" /></div>
+          <div><label class="field-label" for="f-lighting">Lighting</label>
+            <input id="f-lighting" type="text" class="me-input" /></div>
+          <div class="me-fields-2col">
+            <div><label class="field-label" for="f-camera">Camera movement</label>
+              <input id="f-camera" type="text" class="me-input" /></div>
+            <div><label class="field-label" for="f-lens">Lens</label>
+              <input id="f-lens" type="text" class="me-input" /></div>
+          </div>
+          <div><label class="field-label" for="f-style">Art style</label>
+            <input id="f-style" type="text" class="me-input" /></div>
+          <div>
+            <div class="me-motion-head">
+              <label class="field-label" for="f-motion">Motion (auto-derived from pose)</label>
+              <button id="btn-remotion" class="me-link-btn" type="button">&#8635; re-derive</button>
+            </div>
+            <textarea id="f-motion" rows="4" class="me-input me-textarea"></textarea>
+          </div>
+        </div>
+
+        <div class="me-prompt-out-wrap">
+          <label class="field-label" for="prompt-out">Assembled prompt</label>
+          <textarea id="prompt-out" readonly class="me-prompt-out"></textarea>
+        </div>
+
+        <div class="me-prompt-actions">
+          <button id="btn-copy-prompt" class="me-btn-primary" type="button">Copy prompt</button>
+          <button id="btn-download-prompt" class="me-btn" title="Download seedance_prompt.txt" type="button">&#11015;</button>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <!-- Toasts -->
+  <div id="toast-root" class="me-toast-root"></div>
+
+  <script type="module" src="js/main.js"></script>
+  <script src="../../barzy-theme.js?v=5.2.3"></script>
+</body>
+</html>

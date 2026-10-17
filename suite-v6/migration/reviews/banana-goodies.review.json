@@ -1,0 +1,4673 @@
+{
+  "schemaVersion": "1.0",
+  "artifactType": "semantic-review-staging",
+  "toolId": "banana-helper",
+  "title": "BZ Goodies",
+  "reviewer": "Astra",
+  "reviewedAt": "2026-09-11",
+  "status": {
+    "content": "reviewed",
+    "referenceFixtures": "captured-and-checked",
+    "v6Runtime": "integrated-and-tested"
+  },
+  "source": {
+    "path": "Barzy App/public/assets/HTML/banana_helper.html",
+    "sha256": "3d29b8158aa51b5dbf45dbb9d6c2ebb868c4539d825209fd8b7bde606fb1bc7c",
+    "contentLines": [
+      235,
+      330
+    ],
+    "behaviorLines": [
+      332,
+      438
+    ]
+  },
+  "dependency": {
+    "path": "Barzy App/public/assets/barzy-theme.js",
+    "sha256": "5870fa2856910bef1fc8d130aecb72383b89e8d1c22540ca11af13c3bf5963d0",
+    "finding": "cleanText and MutationObserver can alter displayed prompt whitespace or branding without changing clipboard output. Do not port them into the prompt renderer."
+  },
+  "categories": [
+    {
+      "id": "1930s",
+      "title": "1930s",
+      "order": 0,
+      "count": 10
+    },
+    {
+      "id": "1940s",
+      "title": "1940s",
+      "order": 1,
+      "count": 10
+    },
+    {
+      "id": "1950s",
+      "title": "1950s",
+      "order": 2,
+      "count": 10
+    },
+    {
+      "id": "1960s",
+      "title": "1960s",
+      "order": 3,
+      "count": 10
+    },
+    {
+      "id": "1970s",
+      "title": "1970s",
+      "order": 4,
+      "count": 10
+    },
+    {
+      "id": "1980s",
+      "title": "1980s",
+      "order": 5,
+      "count": 10
+    },
+    {
+      "id": "2000s",
+      "title": "2000s",
+      "order": 6,
+      "count": 10
+    },
+    {
+      "id": "fun",
+      "title": "Fun",
+      "order": 7,
+      "count": 7
+    }
+  ],
+  "entries": [
+    {
+      "id": "goodies-1930s-art-deco-lobby-portrait",
+      "categoryId": "1930s",
+      "order": 0,
+      "title": "Art Deco Lobby Portrait",
+      "classification": "prompt-template",
+      "corpusId": "text-e404fe331a77402b8ace",
+      "sourceLine": 238,
+      "original": "Turn [Scene Description] into a 1930s Art Deco hotel lobby portrait: polished black marble, brass geometry, fan-shaped wall lights, elegant evening wear, hard glamour lighting, crisp studio shadows, nitrate film sheen.",
+      "text": "Turn [Scene Description] into a 1930s Art Deco hotel lobby portrait: polished black marble, brass geometry, fan-shaped wall lights, elegant evening wear, hard glamour lighting, crisp studio shadows, nitrate film sheen.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1930s-art-deco-lobby-portrait-v1",
+        "revision": 1,
+        "title": "Art Deco Lobby Portrait",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Turn {{scene}} into a 1930s Art Deco hotel lobby portrait: polished black marble, brass geometry, fan-shaped wall lights, elegant evening wear, hard glamour lighting, crisp studio shadows, nitrate film sheen. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1930s-dust-bowl-documentary",
+      "categoryId": "1930s",
+      "order": 1,
+      "title": "Dust Bowl Documentary",
+      "classification": "prompt-template",
+      "corpusId": "text-1dc53f5cf9b8dc2c800e",
+      "sourceLine": 239,
+      "original": "Render [Scene Description] as a 1930s Dust Bowl documentary photograph: windblown dust, worn cotton clothing, weathered hands, sparse farm horizon, honest social-realist framing, silver gelatin texture.",
+      "text": "Render [Scene Description] as a 1930s Dust Bowl documentary photograph: windblown dust, worn cotton clothing, weathered hands, sparse farm horizon, honest social-realist framing, silver gelatin texture.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1930s-dust-bowl-documentary-v1",
+        "revision": 1,
+        "title": "Dust Bowl Documentary",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Render {{scene}} as a 1930s Dust Bowl documentary photograph: windblown dust, worn cotton clothing, weathered hands, sparse farm horizon, honest social-realist framing, silver gelatin texture. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1930s-noir-alley-setup",
+      "categoryId": "1930s",
+      "order": 2,
+      "title": "Noir Alley Setup",
+      "classification": "prompt-template",
+      "corpusId": "text-04b46773a53b258f5762",
+      "sourceLine": 240,
+      "original": "Rebuild [Scene Description] as a late-1930s proto-noir alley: wet cobblestones, venetian blind shadows, cigarette haze, fedora silhouettes, one hard streetlamp, high-contrast monochrome.",
+      "text": "Rebuild [Scene Description] as a late-1930s proto-noir alley: wet cobblestones, venetian blind shadows, cigarette haze, fedora silhouettes, one hard streetlamp, high-contrast monochrome.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1930s-noir-alley-setup-v1",
+        "revision": 1,
+        "title": "Noir Alley Setup",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Rebuild {{scene}} as a late-1930s proto-noir alley: wet cobblestones, venetian blind shadows, cigarette haze, fedora silhouettes, one hard streetlamp, high-contrast monochrome. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1930s-streamline-product-ad",
+      "categoryId": "1930s",
+      "order": 3,
+      "title": "Streamline Product Ad",
+      "classification": "prompt-template",
+      "corpusId": "text-ce2583a024470c4eaa85",
+      "sourceLine": 241,
+      "original": "Transform [Scene Description] into a 1930s streamline moderne product advertisement image: chrome curves, aerodynamic composition, glossy enamel surfaces, theatrical studio rim light, premium catalog polish.",
+      "text": "Transform [Scene Description] into a 1930s streamline moderne product advertisement image: chrome curves, aerodynamic composition, glossy enamel surfaces, theatrical studio rim light, premium catalog polish.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1930s-streamline-product-ad-v1",
+        "revision": 1,
+        "title": "Streamline Product Ad",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Transform {{scene}} into a 1930s streamline moderne product advertisement image: chrome curves, aerodynamic composition, glossy enamel surfaces, theatrical studio rim light, premium catalog polish. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1930s-cabaret-backstage",
+      "categoryId": "1930s",
+      "order": 4,
+      "title": "Cabaret Backstage",
+      "classification": "prompt-template",
+      "corpusId": "text-fdb3461bffae42685fde",
+      "sourceLine": 242,
+      "original": "Stage [Scene Description] inside a 1930s cabaret backstage room: velvet curtains, bulb mirrors, feather accessories, champagne glass reflections, decadent but slightly tired atmosphere, warm tungsten glow.",
+      "text": "Stage [Scene Description] inside a 1930s cabaret backstage room: velvet curtains, bulb mirrors, feather accessories, champagne glass reflections, decadent but slightly tired atmosphere, warm tungsten glow.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1930s-cabaret-backstage-v1",
+        "revision": 1,
+        "title": "Cabaret Backstage",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Stage {{scene}} inside a 1930s cabaret backstage room: velvet curtains, bulb mirrors, feather accessories, champagne glass reflections, decadent but slightly tired atmosphere, warm tungsten glow. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1930s-expedition-news-photo",
+      "categoryId": "1930s",
+      "order": 5,
+      "title": "Expedition News Photo",
+      "classification": "prompt-template",
+      "corpusId": "text-6fb4dd7b157788e032f7",
+      "sourceLine": 243,
+      "original": "Make [Scene Description] look like a 1930s expedition press photograph: canvas tents, labeled crates without readable text, khaki fabric, field camera depth, harsh noon light, archival print grain.",
+      "text": "Make [Scene Description] look like a 1930s expedition press photograph: canvas tents, labeled crates without readable text, khaki fabric, field camera depth, harsh noon light, archival print grain.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1930s-expedition-news-photo-v1",
+        "revision": 1,
+        "title": "Expedition News Photo",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Make {{scene}} look like a 1930s expedition press photograph: canvas tents, labeled crates without readable text, khaki fabric, field camera depth, harsh noon light, archival print grain. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1930s-radio-drama-still",
+      "categoryId": "1930s",
+      "order": 6,
+      "title": "Radio Drama Still",
+      "classification": "prompt-template",
+      "corpusId": "text-0c486e5f1578bfdbf148",
+      "sourceLine": 244,
+      "original": "Create [Scene Description] as a 1930s radio studio drama still: ribbon microphones, acoustic panels, script pages turned away, intense actor pose, moody overhead light, black-and-white publicity photo.",
+      "text": "Create [Scene Description] as a 1930s radio studio drama still: ribbon microphones, acoustic panels, script pages turned away, intense actor pose, moody overhead light, black-and-white publicity photo.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1930s-radio-drama-still-v1",
+        "revision": 1,
+        "title": "Radio Drama Still",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Create {{scene}} as a 1930s radio studio drama still: ribbon microphones, acoustic panels, script pages turned away, intense actor pose, moody overhead light, black-and-white publicity photo. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1930s-grand-train-terminal",
+      "categoryId": "1930s",
+      "order": 7,
+      "title": "Grand Train Terminal",
+      "classification": "prompt-template",
+      "corpusId": "text-ed0e67092001168511bc",
+      "sourceLine": 245,
+      "original": "Place [Scene Description] in a 1930s grand train terminal: steam haze, monumental windows, tailored coats, polished luggage, cinematic scale, symmetrical composition, soft monochrome glow.",
+      "text": "Place [Scene Description] in a 1930s grand train terminal: steam haze, monumental windows, tailored coats, polished luggage, cinematic scale, symmetrical composition, soft monochrome glow.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1930s-grand-train-terminal-v1",
+        "revision": 1,
+        "title": "Grand Train Terminal",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Place {{scene}} in a 1930s grand train terminal: steam haze, monumental windows, tailored coats, polished luggage, cinematic scale, symmetrical composition, soft monochrome glow. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1930s-circus-poster-photo",
+      "categoryId": "1930s",
+      "order": 8,
+      "title": "Circus Poster Photo",
+      "classification": "prompt-template",
+      "corpusId": "text-545b3f7486f53cb959c6",
+      "sourceLine": 246,
+      "original": "Turn [Scene Description] into a 1930s traveling circus publicity photograph: canvas ring, painted props, practical costumes, dramatic footlights, slightly eerie joy, hand-tinted print feeling without text.",
+      "text": "Turn [Scene Description] into a 1930s traveling circus publicity photograph: canvas ring, painted props, practical costumes, dramatic footlights, slightly eerie joy, hand-tinted print feeling without text.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1930s-circus-poster-photo-v1",
+        "revision": 1,
+        "title": "Circus Poster Photo",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Turn {{scene}} into a 1930s traveling circus publicity photograph: canvas ring, painted props, practical costumes, dramatic footlights, slightly eerie joy, hand-tinted print feeling without text. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1930s-society-magazine-spread",
+      "categoryId": "1930s",
+      "order": 9,
+      "title": "Society Magazine Spread",
+      "classification": "prompt-template",
+      "corpusId": "text-1ac6e9f9b8fd0385df88",
+      "sourceLine": 247,
+      "original": "Render [Scene Description] as a 1930s society magazine fashion spread: satin gowns or sharp tuxedos, mirrored salon, sculptural shadows, poised expression, luxe editorial composition.",
+      "text": "Render [Scene Description] as a 1930s society magazine fashion spread: satin gowns or sharp tuxedos, mirrored salon, sculptural shadows, poised expression, luxe editorial composition.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1930s-society-magazine-spread-v1",
+        "revision": 1,
+        "title": "Society Magazine Spread",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Render {{scene}} as a 1930s society magazine fashion spread: satin gowns or sharp tuxedos, mirrored salon, sculptural shadows, poised expression, luxe editorial composition. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1940s-homefront-kitchen",
+      "categoryId": "1940s",
+      "order": 0,
+      "title": "Homefront Kitchen",
+      "classification": "prompt-template",
+      "corpusId": "text-35daec98b156fee46186",
+      "sourceLine": 250,
+      "original": "Convert [Scene Description] into a 1940s homefront kitchen scene: enamel appliances, checked cloth, ration-era simplicity, practical warm light, careful domestic composition, Kodachrome softness.",
+      "text": "Convert [Scene Description] into a 1940s homefront kitchen scene: enamel appliances, checked cloth, ration-era simplicity, practical warm light, careful domestic composition, Kodachrome softness.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1940s-homefront-kitchen-v1",
+        "revision": 1,
+        "title": "Homefront Kitchen",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Convert {{scene}} into a 1940s homefront kitchen scene: enamel appliances, checked cloth, ration-era simplicity, practical warm light, careful domestic composition, Kodachrome softness. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1940s-wartime-factory-hero",
+      "categoryId": "1940s",
+      "order": 1,
+      "title": "Wartime Factory Hero",
+      "classification": "prompt-template",
+      "corpusId": "text-6279da4337d2efee54ae",
+      "sourceLine": 251,
+      "original": "Stage [Scene Description] as a 1940s wartime factory hero image: riveted metal, rolled sleeves, sparks, disciplined posture, strong diagonal composition, patriotic but text-free production still.",
+      "text": "Stage [Scene Description] as a 1940s wartime factory hero image: riveted metal, rolled sleeves, sparks, disciplined posture, strong diagonal composition, patriotic but text-free production still.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1940s-wartime-factory-hero-v1",
+        "revision": 1,
+        "title": "Wartime Factory Hero",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Stage {{scene}} as a 1940s wartime factory hero image: riveted metal, rolled sleeves, sparks, disciplined posture, strong diagonal composition, patriotic but text-free production still. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1940s-noir-detective-office",
+      "categoryId": "1940s",
+      "order": 2,
+      "title": "Noir Detective Office",
+      "classification": "prompt-template",
+      "corpusId": "text-aeb6c29f473ebee2d2b5",
+      "sourceLine": 252,
+      "original": "Make [Scene Description] a 1940s detective office noir still: slatted window light, desk lamp, fogged glass door, cigarette smoke, trench coat silhouette, deep black shadows.",
+      "text": "Make [Scene Description] a 1940s detective office noir still: slatted window light, desk lamp, fogged glass door, cigarette smoke, trench coat silhouette, deep black shadows.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1940s-noir-detective-office-v1",
+        "revision": 1,
+        "title": "Noir Detective Office",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Make {{scene}} a 1940s detective office noir still: slatted window light, desk lamp, fogged glass door, cigarette smoke, trench coat silhouette, deep black shadows. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1940s-victory-garden-portrait",
+      "categoryId": "1940s",
+      "order": 3,
+      "title": "Victory Garden Portrait",
+      "classification": "prompt-template",
+      "corpusId": "text-3cf946c07da226a9bf1b",
+      "sourceLine": 253,
+      "original": "Render [Scene Description] as a 1940s victory garden portrait: modest garden rows, practical clothing, tin watering can, optimistic restraint, gentle midday color, documentary realism.",
+      "text": "Render [Scene Description] as a 1940s victory garden portrait: modest garden rows, practical clothing, tin watering can, optimistic restraint, gentle midday color, documentary realism.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1940s-victory-garden-portrait-v1",
+        "revision": 1,
+        "title": "Victory Garden Portrait",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Render {{scene}} as a 1940s victory garden portrait: modest garden rows, practical clothing, tin watering can, optimistic restraint, gentle midday color, documentary realism. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1940s-swing-club-night",
+      "categoryId": "1940s",
+      "order": 4,
+      "title": "Swing Club Night",
+      "classification": "prompt-template",
+      "corpusId": "text-2d2d89f8f027df73781d",
+      "sourceLine": 254,
+      "original": "Place [Scene Description] in a 1940s swing club: polished dance floor, brass instruments, motion blur from dancers, smoky air, warm spotlight pools, lively but elegant frame.",
+      "text": "Place [Scene Description] in a 1940s swing club: polished dance floor, brass instruments, motion blur from dancers, smoky air, warm spotlight pools, lively but elegant frame.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1940s-swing-club-night-v1",
+        "revision": 1,
+        "title": "Swing Club Night",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Place {{scene}} in a 1940s swing club: polished dance floor, brass instruments, motion blur from dancers, smoky air, warm spotlight pools, lively but elegant frame. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1940s-field-hospital-still",
+      "categoryId": "1940s",
+      "order": 5,
+      "title": "Field Hospital Still",
+      "classification": "prompt-template",
+      "corpusId": "text-6b8aa36ff0f288d0b2c4",
+      "sourceLine": 255,
+      "original": "Turn [Scene Description] into a 1940s field hospital cinematic still: canvas walls, enamel instruments, cotton bandages, anxious faces, subdued olive palette, humane documentary texture.",
+      "text": "Turn [Scene Description] into a 1940s field hospital cinematic still: canvas walls, enamel instruments, cotton bandages, anxious faces, subdued olive palette, humane documentary texture.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1940s-field-hospital-still-v1",
+        "revision": 1,
+        "title": "Field Hospital Still",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Turn {{scene}} into a 1940s field hospital cinematic still: canvas walls, enamel instruments, cotton bandages, anxious faces, subdued olive palette, humane documentary texture. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1940s-pulp-adventure-cover",
+      "categoryId": "1940s",
+      "order": 6,
+      "title": "Pulp Adventure Cover",
+      "classification": "prompt-template",
+      "corpusId": "text-c083ae0c481780b75fa3",
+      "sourceLine": 256,
+      "original": "Rebuild [Scene Description] as a 1940s pulp adventure cover image without typography: dramatic cliff light, bold heroic pose, painted realism, saturated reds and yellows, exaggerated danger.",
+      "text": "Rebuild [Scene Description] as a 1940s pulp adventure cover image without typography: dramatic cliff light, bold heroic pose, painted realism, saturated reds and yellows, exaggerated danger.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1940s-pulp-adventure-cover-v1",
+        "revision": 1,
+        "title": "Pulp Adventure Cover",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Rebuild {{scene}} as a 1940s pulp adventure cover image without typography: dramatic cliff light, bold heroic pose, painted realism, saturated reds and yellows, exaggerated danger. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1940s-blackout-street",
+      "categoryId": "1940s",
+      "order": 7,
+      "title": "Blackout Street",
+      "classification": "prompt-template",
+      "corpusId": "text-84befbb089a67dbc881a",
+      "sourceLine": 257,
+      "original": "Set [Scene Description] on a 1940s blackout street: covered windows, dim lantern pools, rain-soaked pavement, cautious figures, quiet suspense, silver nitrate contrast.",
+      "text": "Set [Scene Description] on a 1940s blackout street: covered windows, dim lantern pools, rain-soaked pavement, cautious figures, quiet suspense, silver nitrate contrast.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1940s-blackout-street-v1",
+        "revision": 1,
+        "title": "Blackout Street",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Set {{scene}} on a 1940s blackout street: covered windows, dim lantern pools, rain-soaked pavement, cautious figures, quiet suspense, silver nitrate contrast. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1940s-utility-fashion-editorial",
+      "categoryId": "1940s",
+      "order": 8,
+      "title": "Utility Fashion Editorial",
+      "classification": "prompt-template",
+      "corpusId": "text-6ee9fd1159fca93b7f2a",
+      "sourceLine": 258,
+      "original": "Transform [Scene Description] into a 1940s utility fashion editorial: structured jackets, practical skirts or suits, clean studio backdrop, precise tailoring, sober elegance, soft film grain.",
+      "text": "Transform [Scene Description] into a 1940s utility fashion editorial: structured jackets, practical skirts or suits, clean studio backdrop, precise tailoring, sober elegance, soft film grain.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1940s-utility-fashion-editorial-v1",
+        "revision": 1,
+        "title": "Utility Fashion Editorial",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Transform {{scene}} into a 1940s utility fashion editorial: structured jackets, practical skirts or suits, clean studio backdrop, precise tailoring, sober elegance, soft film grain. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1940s-technicolor-melodrama",
+      "categoryId": "1940s",
+      "order": 9,
+      "title": "Technicolor Melodrama",
+      "classification": "prompt-template",
+      "corpusId": "text-0ee712f6ab66614c1d13",
+      "sourceLine": 259,
+      "original": "Render [Scene Description] as a 1940s Technicolor melodrama frame: rich saturated fabrics, emotional close framing, painted interior light, theatrical color separation, polished studio finish.",
+      "text": "Render [Scene Description] as a 1940s Technicolor melodrama frame: rich saturated fabrics, emotional close framing, painted interior light, theatrical color separation, polished studio finish.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1940s-technicolor-melodrama-v1",
+        "revision": 1,
+        "title": "Technicolor Melodrama",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Render {{scene}} as a 1940s Technicolor melodrama frame: rich saturated fabrics, emotional close framing, painted interior light, theatrical color separation, polished studio finish. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1950s-atomic-age-kitchen-ad",
+      "categoryId": "1950s",
+      "order": 0,
+      "title": "Atomic Age Kitchen Ad",
+      "classification": "prompt-template",
+      "corpusId": "text-3bb90cc24000c7a887b4",
+      "sourceLine": 262,
+      "original": "Turn [Scene Description] into a 1950s atomic-age kitchen advertisement image: pastel appliances, chrome trim, gleaming surfaces, cheerful product pose, optimistic studio lighting, no readable slogan.",
+      "text": "Turn [Scene Description] into a 1950s atomic-age kitchen advertisement image: pastel appliances, chrome trim, gleaming surfaces, cheerful product pose, optimistic studio lighting, no readable slogan.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1950s-atomic-age-kitchen-ad-v1",
+        "revision": 1,
+        "title": "Atomic Age Kitchen Ad",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Turn {{scene}} into a 1950s atomic-age kitchen advertisement image: pastel appliances, chrome trim, gleaming surfaces, cheerful product pose, optimistic studio lighting, no readable slogan. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1950s-drive-in-movie-night",
+      "categoryId": "1950s",
+      "order": 1,
+      "title": "Drive-In Movie Night",
+      "classification": "prompt-template",
+      "corpusId": "text-4001fc96637a63d84dc1",
+      "sourceLine": 263,
+      "original": "Place [Scene Description] at a 1950s drive-in theater: car interior foreground, giant screen glow, milkshake colors, summer night haze, romantic Americana mood.",
+      "text": "Place [Scene Description] at a 1950s drive-in theater: car interior foreground, giant screen glow, milkshake colors, summer night haze, romantic Americana mood.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1950s-drive-in-movie-night-v1",
+        "revision": 1,
+        "title": "Drive-In Movie Night",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Place {{scene}} at a 1950s drive-in theater: car interior foreground, giant screen glow, milkshake colors, summer night haze, romantic Americana mood. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1950s-hollywood-glamour-headshot",
+      "categoryId": "1950s",
+      "order": 2,
+      "title": "Hollywood Glamour Headshot",
+      "classification": "prompt-template",
+      "corpusId": "text-d77d70806d321e62fcf7",
+      "sourceLine": 264,
+      "original": "Render [Scene Description] as a 1950s Hollywood glamour headshot: sculpted key light, glossy hair, elegant wardrobe, soft focus edges, high contrast studio portrait.",
+      "text": "Render [Scene Description] as a 1950s Hollywood glamour headshot: sculpted key light, glossy hair, elegant wardrobe, soft focus edges, high contrast studio portrait.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1950s-hollywood-glamour-headshot-v1",
+        "revision": 1,
+        "title": "Hollywood Glamour Headshot",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Render {{scene}} as a 1950s Hollywood glamour headshot: sculpted key light, glossy hair, elegant wardrobe, soft focus edges, high contrast studio portrait. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1950s-suburban-lawn-snapshot",
+      "categoryId": "1950s",
+      "order": 3,
+      "title": "Suburban Lawn Snapshot",
+      "classification": "prompt-template",
+      "corpusId": "text-a4991a6478de9695d20f",
+      "sourceLine": 265,
+      "original": "Make [Scene Description] a 1950s suburban lawn color snapshot: trimmed grass, sprinkler sparkle, ranch house background, clean family-photo composition, sun-faded Kodachrome warmth.",
+      "text": "Make [Scene Description] a 1950s suburban lawn color snapshot: trimmed grass, sprinkler sparkle, ranch house background, clean family-photo composition, sun-faded Kodachrome warmth.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1950s-suburban-lawn-snapshot-v1",
+        "revision": 1,
+        "title": "Suburban Lawn Snapshot",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Make {{scene}} a 1950s suburban lawn color snapshot: trimmed grass, sprinkler sparkle, ranch house background, clean family-photo composition, sun-faded Kodachrome warmth. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1950s-rockabilly-stage",
+      "categoryId": "1950s",
+      "order": 4,
+      "title": "Rockabilly Stage",
+      "classification": "prompt-template",
+      "corpusId": "text-9cd4839268199910abde",
+      "sourceLine": 266,
+      "original": "Stage [Scene Description] as a 1950s rockabilly performance still: upright bass, checked floor, pompadour or swing dress styling, sharp spotlight, kinetic music energy.",
+      "text": "Stage [Scene Description] as a 1950s rockabilly performance still: upright bass, checked floor, pompadour or swing dress styling, sharp spotlight, kinetic music energy.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1950s-rockabilly-stage-v1",
+        "revision": 1,
+        "title": "Rockabilly Stage",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Stage {{scene}} as a 1950s rockabilly performance still: upright bass, checked floor, pompadour or swing dress styling, sharp spotlight, kinetic music energy. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1950s-sci-fi-b-movie-lab",
+      "categoryId": "1950s",
+      "order": 5,
+      "title": "Sci-Fi B-Movie Lab",
+      "classification": "prompt-template",
+      "corpusId": "text-9ffcd4f2eff0920ea2d8",
+      "sourceLine": 267,
+      "original": "Transform [Scene Description] into a 1950s sci-fi B-movie laboratory: blinking consoles, glass tubes, rubber-suit mood, practical props, colored gel lighting, playful tension.",
+      "text": "Transform [Scene Description] into a 1950s sci-fi B-movie laboratory: blinking consoles, glass tubes, rubber-suit mood, practical props, colored gel lighting, playful tension.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1950s-sci-fi-b-movie-lab-v1",
+        "revision": 1,
+        "title": "Sci-Fi B-Movie Lab",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Transform {{scene}} into a 1950s sci-fi B-movie laboratory: blinking consoles, glass tubes, rubber-suit mood, practical props, colored gel lighting, playful tension. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1950s-soda-fountain-scene",
+      "categoryId": "1950s",
+      "order": 6,
+      "title": "Soda Fountain Scene",
+      "classification": "prompt-template",
+      "corpusId": "text-2d5c21b0ba96af56b25d",
+      "sourceLine": 268,
+      "original": "Place [Scene Description] inside a 1950s soda fountain: chrome stools, checkerboard floor, glass sundae cups, soft pastel palette, wholesome magazine-photo energy.",
+      "text": "Place [Scene Description] inside a 1950s soda fountain: chrome stools, checkerboard floor, glass sundae cups, soft pastel palette, wholesome magazine-photo energy.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1950s-soda-fountain-scene-v1",
+        "revision": 1,
+        "title": "Soda Fountain Scene",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Place {{scene}} inside a 1950s soda fountain: chrome stools, checkerboard floor, glass sundae cups, soft pastel palette, wholesome magazine-photo energy. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1950s-pin-up-garage-calendar",
+      "categoryId": "1950s",
+      "order": 7,
+      "title": "Pin-Up Garage Calendar",
+      "classification": "prompt-template",
+      "corpusId": "text-3d320b39fb0c3fc01755",
+      "sourceLine": 269,
+      "original": "Render [Scene Description] as a 1950s garage calendar photo without text: polished tools, classic car fender, staged smile or confident pose, saturated studio flash.",
+      "text": "Render [Scene Description] as a 1950s garage calendar photo without text: polished tools, classic car fender, staged smile or confident pose, saturated studio flash.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1950s-pin-up-garage-calendar-v1",
+        "revision": 1,
+        "title": "Pin-Up Garage Calendar",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Render {{scene}} as a 1950s garage calendar photo without text: polished tools, classic car fender, staged smile or confident pose, saturated studio flash. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1950s-corporate-training-film",
+      "categoryId": "1950s",
+      "order": 8,
+      "title": "Corporate Training Film",
+      "classification": "prompt-template",
+      "corpusId": "text-cf537c42af4a404259b2",
+      "sourceLine": 270,
+      "original": "Make [Scene Description] look like a 1950s corporate training film still: clean office set, practical demonstration pose, neutral suits, bright flat lighting, educational sincerity.",
+      "text": "Make [Scene Description] look like a 1950s corporate training film still: clean office set, practical demonstration pose, neutral suits, bright flat lighting, educational sincerity.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1950s-corporate-training-film-v1",
+        "revision": 1,
+        "title": "Corporate Training Film",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Make {{scene}} look like a 1950s corporate training film still: clean office set, practical demonstration pose, neutral suits, bright flat lighting, educational sincerity. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1950s-monster-matinee-still",
+      "categoryId": "1950s",
+      "order": 9,
+      "title": "Monster Matinee Still",
+      "classification": "prompt-template",
+      "corpusId": "text-d154fd480c33e6757967",
+      "sourceLine": 271,
+      "original": "Turn [Scene Description] into a 1950s monster matinee still: foggy miniature street, theatrical frightened pose, practical creature-lighting feel, black-and-white high contrast.",
+      "text": "Turn [Scene Description] into a 1950s monster matinee still: foggy miniature street, theatrical frightened pose, practical creature-lighting feel, black-and-white high contrast.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1950s-monster-matinee-still-v1",
+        "revision": 1,
+        "title": "Monster Matinee Still",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Turn {{scene}} into a 1950s monster matinee still: foggy miniature street, theatrical frightened pose, practical creature-lighting feel, black-and-white high contrast. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1960s-mod-fashion-studio",
+      "categoryId": "1960s",
+      "order": 0,
+      "title": "Mod Fashion Studio",
+      "classification": "prompt-template",
+      "corpusId": "text-37bdb06f2c022eccd5f9",
+      "sourceLine": 274,
+      "original": "Render [Scene Description] as a 1960s mod fashion studio image: geometric set, bold color blocks, mini-dress or tailored suit energy, graphic composition, crisp flash.",
+      "text": "Render [Scene Description] as a 1960s mod fashion studio image: geometric set, bold color blocks, mini-dress or tailored suit energy, graphic composition, crisp flash.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1960s-mod-fashion-studio-v1",
+        "revision": 1,
+        "title": "Mod Fashion Studio",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Render {{scene}} as a 1960s mod fashion studio image: geometric set, bold color blocks, mini-dress or tailored suit energy, graphic composition, crisp flash. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1960s-french-new-wave-street",
+      "categoryId": "1960s",
+      "order": 1,
+      "title": "French New Wave Street",
+      "classification": "prompt-template",
+      "corpusId": "text-b86ac4ac405aff182112",
+      "sourceLine": 275,
+      "original": "Place [Scene Description] in a 1960s French New Wave street frame: handheld black-and-white, cafe windows, cigarette mood, imperfect framing, youthful existential cool.",
+      "text": "Place [Scene Description] in a 1960s French New Wave street frame: handheld black-and-white, cafe windows, cigarette mood, imperfect framing, youthful existential cool.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1960s-french-new-wave-street-v1",
+        "revision": 1,
+        "title": "French New Wave Street",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Place {{scene}} in a 1960s French New Wave street frame: handheld black-and-white, cafe windows, cigarette mood, imperfect framing, youthful existential cool. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1960s-space-age-catalog",
+      "categoryId": "1960s",
+      "order": 2,
+      "title": "Space Age Catalog",
+      "classification": "prompt-template",
+      "corpusId": "text-1cb3df0614a384d9fdb4",
+      "sourceLine": 276,
+      "original": "Turn [Scene Description] into a 1960s space-age catalog photo: white plastic furniture, silver fabric, bubble forms, optimistic futurism, clean seamless studio light.",
+      "text": "Turn [Scene Description] into a 1960s space-age catalog photo: white plastic furniture, silver fabric, bubble forms, optimistic futurism, clean seamless studio light.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1960s-space-age-catalog-v1",
+        "revision": 1,
+        "title": "Space Age Catalog",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Turn {{scene}} into a 1960s space-age catalog photo: white plastic furniture, silver fabric, bubble forms, optimistic futurism, clean seamless studio light. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1960s-psychedelic-poster-photo",
+      "categoryId": "1960s",
+      "order": 3,
+      "title": "Psychedelic Poster Photo",
+      "classification": "prompt-template",
+      "corpusId": "text-fd8d712d4964871ad30f",
+      "sourceLine": 277,
+      "original": "Make [Scene Description] a 1960s psychedelic promo photo without typography: swirling projected colors, saturated gels, long hair or velvet styling, dreamy lens bloom.",
+      "text": "Make [Scene Description] a 1960s psychedelic promo photo without typography: swirling projected colors, saturated gels, long hair or velvet styling, dreamy lens bloom.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1960s-psychedelic-poster-photo-v1",
+        "revision": 1,
+        "title": "Psychedelic Poster Photo",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Make {{scene}} a 1960s psychedelic promo photo without typography: swirling projected colors, saturated gels, long hair or velvet styling, dreamy lens bloom. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1960s-diner-kodachrome",
+      "categoryId": "1960s",
+      "order": 4,
+      "title": "Diner Kodachrome",
+      "classification": "prompt-template",
+      "corpusId": "text-228cf666eeae5baa9b9d",
+      "sourceLine": 278,
+      "original": "Stage [Scene Description] inside a 1960s roadside diner: red vinyl booths, chrome edge highlights, jukebox glow, Kodachrome color, slightly nostalgic everyday realism.",
+      "text": "Stage [Scene Description] inside a 1960s roadside diner: red vinyl booths, chrome edge highlights, jukebox glow, Kodachrome color, slightly nostalgic everyday realism.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1960s-diner-kodachrome-v1",
+        "revision": 1,
+        "title": "Diner Kodachrome",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Stage {{scene}} inside a 1960s roadside diner: red vinyl booths, chrome edge highlights, jukebox glow, Kodachrome color, slightly nostalgic everyday realism. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1960s-spy-thriller-briefing",
+      "categoryId": "1960s",
+      "order": 5,
+      "title": "Spy Thriller Briefing",
+      "classification": "prompt-template",
+      "corpusId": "text-f6c31e7bd369e18ac47a",
+      "sourceLine": 279,
+      "original": "Transform [Scene Description] into a 1960s spy thriller briefing room: maps turned abstract, tailored silhouettes, hidden tension, cool grey palette, sharp modernist lighting.",
+      "text": "Transform [Scene Description] into a 1960s spy thriller briefing room: maps turned abstract, tailored silhouettes, hidden tension, cool grey palette, sharp modernist lighting.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1960s-spy-thriller-briefing-v1",
+        "revision": 1,
+        "title": "Spy Thriller Briefing",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Transform {{scene}} into a 1960s spy thriller briefing room: maps turned abstract, tailored silhouettes, hidden tension, cool grey palette, sharp modernist lighting. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1960s-pop-art-product-shot",
+      "categoryId": "1960s",
+      "order": 6,
+      "title": "Pop Art Product Shot",
+      "classification": "prompt-template",
+      "corpusId": "text-125340f8acc6c6226a83",
+      "sourceLine": 280,
+      "original": "Rebuild [Scene Description] as a 1960s pop-art product photograph: flat bright color backdrop, repeated shapes, playful consumer object styling, clean graphic shadow.",
+      "text": "Rebuild [Scene Description] as a 1960s pop-art product photograph: flat bright color backdrop, repeated shapes, playful consumer object styling, clean graphic shadow.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1960s-pop-art-product-shot-v1",
+        "revision": 1,
+        "title": "Pop Art Product Shot",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Rebuild {{scene}} as a 1960s pop-art product photograph: flat bright color backdrop, repeated shapes, playful consumer object styling, clean graphic shadow. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1960s-beatnik-basement",
+      "categoryId": "1960s",
+      "order": 7,
+      "title": "Beatnik Basement",
+      "classification": "prompt-template",
+      "corpusId": "text-8b894b3b0c2ef5e20ead",
+      "sourceLine": 281,
+      "original": "Place [Scene Description] in a 1960s beatnik basement club: low ceiling, small stage, poetry-mic energy, black turtlenecks, smoky tungsten pools, intimate framing.",
+      "text": "Place [Scene Description] in a 1960s beatnik basement club: low ceiling, small stage, poetry-mic energy, black turtlenecks, smoky tungsten pools, intimate framing.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1960s-beatnik-basement-v1",
+        "revision": 1,
+        "title": "Beatnik Basement",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Place {{scene}} in a 1960s beatnik basement club: low ceiling, small stage, poetry-mic energy, black turtlenecks, smoky tungsten pools, intimate framing. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1960s-desert-road-cinema",
+      "categoryId": "1960s",
+      "order": 8,
+      "title": "Desert Road Cinema",
+      "classification": "prompt-template",
+      "corpusId": "text-0b43ff2e98e020689e5c",
+      "sourceLine": 282,
+      "original": "Render [Scene Description] as a 1960s desert road cinema still: faded car, hard sun, motel sign shapes without readable words, dry colors, widescreen loneliness.",
+      "text": "Render [Scene Description] as a 1960s desert road cinema still: faded car, hard sun, motel sign shapes without readable words, dry colors, widescreen loneliness.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1960s-desert-road-cinema-v1",
+        "revision": 1,
+        "title": "Desert Road Cinema",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Render {{scene}} as a 1960s desert road cinema still: faded car, hard sun, motel sign shapes without readable words, dry colors, widescreen loneliness. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1960s-swinging-london-editorial",
+      "categoryId": "1960s",
+      "order": 9,
+      "title": "Swinging London Editorial",
+      "classification": "prompt-template",
+      "corpusId": "text-506c6fcb93a1846defb8",
+      "sourceLine": 283,
+      "original": "Turn [Scene Description] into a 1960s Swinging London editorial: street fashion, wet pavement, playful pose, compact cars, bright overcast light, magazine polish.",
+      "text": "Turn [Scene Description] into a 1960s Swinging London editorial: street fashion, wet pavement, playful pose, compact cars, bright overcast light, magazine polish.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1960s-swinging-london-editorial-v1",
+        "revision": 1,
+        "title": "Swinging London Editorial",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Turn {{scene}} into a 1960s Swinging London editorial: street fashion, wet pavement, playful pose, compact cars, bright overcast light, magazine polish. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1970s-wood-panel-apartment",
+      "categoryId": "1970s",
+      "order": 0,
+      "title": "Wood Panel Apartment",
+      "classification": "prompt-template",
+      "corpusId": "text-f56712821d3c13c3f152",
+      "sourceLine": 286,
+      "original": "Place [Scene Description] in a 1970s wood-panel apartment: amber lamps, shag carpet, houseplants, brown-orange palette, intimate domestic cinema, soft grain.",
+      "text": "Place [Scene Description] in a 1970s wood-panel apartment: amber lamps, shag carpet, houseplants, brown-orange palette, intimate domestic cinema, soft grain.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1970s-wood-panel-apartment-v1",
+        "revision": 1,
+        "title": "Wood Panel Apartment",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Place {{scene}} in a 1970s wood-panel apartment: amber lamps, shag carpet, houseplants, brown-orange palette, intimate domestic cinema, soft grain. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1970s-disco-floor-flash",
+      "categoryId": "1970s",
+      "order": 1,
+      "title": "Disco Floor Flash",
+      "classification": "prompt-template",
+      "corpusId": "text-3ca41f142d7df5859a0e",
+      "sourceLine": 287,
+      "original": "Render [Scene Description] as a 1970s disco floor flash photo: mirror ball fragments, metallic fabric, sweaty motion, colored lights, energetic off-camera flash.",
+      "text": "Render [Scene Description] as a 1970s disco floor flash photo: mirror ball fragments, metallic fabric, sweaty motion, colored lights, energetic off-camera flash.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1970s-disco-floor-flash-v1",
+        "revision": 1,
+        "title": "Disco Floor Flash",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Render {{scene}} as a 1970s disco floor flash photo: mirror ball fragments, metallic fabric, sweaty motion, colored lights, energetic off-camera flash. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1970s-polaroid-road-trip",
+      "categoryId": "1970s",
+      "order": 2,
+      "title": "Polaroid Road Trip",
+      "classification": "prompt-template",
+      "corpusId": "text-20ca2f8e1f76ecb0f0c2",
+      "sourceLine": 288,
+      "original": "Make [Scene Description] feel like a 1970s Polaroid road trip memory: sun-faded edges, motel pool, denim, warm haze, casual imperfect composition.",
+      "text": "Make [Scene Description] feel like a 1970s Polaroid road trip memory: sun-faded edges, motel pool, denim, warm haze, casual imperfect composition.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1970s-polaroid-road-trip-v1",
+        "revision": 1,
+        "title": "Polaroid Road Trip",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Make {{scene}} feel like a 1970s Polaroid road trip memory: sun-faded edges, motel pool, denim, warm haze, casual imperfect composition. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1970s-giallo-corridor",
+      "categoryId": "1970s",
+      "order": 3,
+      "title": "Giallo Corridor",
+      "classification": "prompt-template",
+      "corpusId": "text-c48dd5fe59f45daea7a6",
+      "sourceLine": 289,
+      "original": "Transform [Scene Description] into a 1970s giallo corridor still: saturated red and green gels, patterned wallpaper, gloved hand suspense, baroque shadow.",
+      "text": "Transform [Scene Description] into a 1970s giallo corridor still: saturated red and green gels, patterned wallpaper, gloved hand suspense, baroque shadow.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1970s-giallo-corridor-v1",
+        "revision": 1,
+        "title": "Giallo Corridor",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Transform {{scene}} into a 1970s giallo corridor still: saturated red and green gels, patterned wallpaper, gloved hand suspense, baroque shadow. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1970s-vinyl-listening-room",
+      "categoryId": "1970s",
+      "order": 4,
+      "title": "Vinyl Listening Room",
+      "classification": "prompt-template",
+      "corpusId": "text-88f6690ce66daf95a8a2",
+      "sourceLine": 290,
+      "original": "Stage [Scene Description] in a 1970s vinyl listening room: stacked records, low sofa, hi-fi receiver glow, relaxed pose, dusty warm film texture.",
+      "text": "Stage [Scene Description] in a 1970s vinyl listening room: stacked records, low sofa, hi-fi receiver glow, relaxed pose, dusty warm film texture.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1970s-vinyl-listening-room-v1",
+        "revision": 1,
+        "title": "Vinyl Listening Room",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Stage {{scene}} in a 1970s vinyl listening room: stacked records, low sofa, hi-fi receiver glow, relaxed pose, dusty warm film texture. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1970s-folk-festival-field",
+      "categoryId": "1970s",
+      "order": 5,
+      "title": "Folk Festival Field",
+      "classification": "prompt-template",
+      "corpusId": "text-57a89f29d9ba5878df8d",
+      "sourceLine": 291,
+      "original": "Turn [Scene Description] into a 1970s folk festival field image: canvas stage, sun hats, handmade clothing, golden hour, communal documentary mood.",
+      "text": "Turn [Scene Description] into a 1970s folk festival field image: canvas stage, sun hats, handmade clothing, golden hour, communal documentary mood.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1970s-folk-festival-field-v1",
+        "revision": 1,
+        "title": "Folk Festival Field",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Turn {{scene}} into a 1970s folk festival field image: canvas stage, sun hats, handmade clothing, golden hour, communal documentary mood. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1970s-corporate-brown-office",
+      "categoryId": "1970s",
+      "order": 6,
+      "title": "Corporate Brown Office",
+      "classification": "prompt-template",
+      "corpusId": "text-636da4d8b8aef2a8331a",
+      "sourceLine": 292,
+      "original": "Render [Scene Description] as a 1970s corporate brown office still: beige phones, typewriter desk, boxy suits, fluorescent haze, quietly absurd professionalism.",
+      "text": "Render [Scene Description] as a 1970s corporate brown office still: beige phones, typewriter desk, boxy suits, fluorescent haze, quietly absurd professionalism.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1970s-corporate-brown-office-v1",
+        "revision": 1,
+        "title": "Corporate Brown Office",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Render {{scene}} as a 1970s corporate brown office still: beige phones, typewriter desk, boxy suits, fluorescent haze, quietly absurd professionalism. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1970s-skate-magazine-shot",
+      "categoryId": "1970s",
+      "order": 7,
+      "title": "Skate Magazine Shot",
+      "classification": "prompt-template",
+      "corpusId": "text-2c198abb7b20bc529143",
+      "sourceLine": 293,
+      "original": "Make [Scene Description] a 1970s skate magazine action photo: empty pool concrete, fisheye lens, tube socks, sunburnt colors, freeze-frame grit.",
+      "text": "Make [Scene Description] a 1970s skate magazine action photo: empty pool concrete, fisheye lens, tube socks, sunburnt colors, freeze-frame grit.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1970s-skate-magazine-shot-v1",
+        "revision": 1,
+        "title": "Skate Magazine Shot",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Make {{scene}} a 1970s skate magazine action photo: empty pool concrete, fisheye lens, tube socks, sunburnt colors, freeze-frame grit. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1970s-occult-paperback-scene",
+      "categoryId": "1970s",
+      "order": 8,
+      "title": "Occult Paperback Scene",
+      "classification": "prompt-template",
+      "corpusId": "text-990b55c71332834d3deb",
+      "sourceLine": 294,
+      "original": "Rebuild [Scene Description] as a 1970s occult paperback cover image without text: candle smoke, velvet cloth, anxious faces, lurid painted-realism color.",
+      "text": "Rebuild [Scene Description] as a 1970s occult paperback cover image without text: candle smoke, velvet cloth, anxious faces, lurid painted-realism color.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1970s-occult-paperback-scene-v1",
+        "revision": 1,
+        "title": "Occult Paperback Scene",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Rebuild {{scene}} as a 1970s occult paperback cover image without text: candle smoke, velvet cloth, anxious faces, lurid painted-realism color. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1970s-airport-lounge-glam",
+      "categoryId": "1970s",
+      "order": 9,
+      "title": "Airport Lounge Glam",
+      "classification": "prompt-template",
+      "corpusId": "text-0156de091e6c136fd2d9",
+      "sourceLine": 295,
+      "original": "Place [Scene Description] in a 1970s airport lounge: smoked glass, chrome chairs, patterned carpet, stylish traveler posture, cinematic waiting-room melancholy.",
+      "text": "Place [Scene Description] in a 1970s airport lounge: smoked glass, chrome chairs, patterned carpet, stylish traveler posture, cinematic waiting-room melancholy.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1970s-airport-lounge-glam-v1",
+        "revision": 1,
+        "title": "Airport Lounge Glam",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Place {{scene}} in a 1970s airport lounge: smoked glass, chrome chairs, patterned carpet, stylish traveler posture, cinematic waiting-room melancholy. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1980s-neon-mall-portrait",
+      "categoryId": "1980s",
+      "order": 0,
+      "title": "Neon Mall Portrait",
+      "classification": "prompt-template",
+      "corpusId": "text-0c8d8bd1e9d5cf11b74f",
+      "sourceLine": 298,
+      "original": "Turn [Scene Description] into a 1980s neon mall portrait: glossy tile, arcade glow, big hair or bold jacket, magenta-cyan reflections, consumer-dream atmosphere.",
+      "text": "Turn [Scene Description] into an 1980s neon mall portrait: glossy tile, arcade glow, big hair or bold jacket, magenta-cyan reflections, consumer-dream atmosphere.",
+      "corrections": [
+        {
+          "kind": "grammar",
+          "before": "a 1980s",
+          "after": "an 1980s",
+          "reason": "The spoken decade begins with a vowel sound (eighties)."
+        }
+      ],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1980s-neon-mall-portrait-v1",
+        "revision": 1,
+        "title": "Neon Mall Portrait",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Turn {{scene}} into an 1980s neon mall portrait: glossy tile, arcade glow, big hair or bold jacket, magenta-cyan reflections, consumer-dream atmosphere. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1980s-vhs-fitness-tape",
+      "categoryId": "1980s",
+      "order": 1,
+      "title": "VHS Fitness Tape",
+      "classification": "prompt-template",
+      "corpusId": "text-e2f35a2a4812dc3c3cec",
+      "sourceLine": 299,
+      "original": "Render [Scene Description] as a 1980s VHS fitness tape still: leotard colors, studio cyclorama, soft analog blur, tracking noise feeling, energetic pose.",
+      "text": "Render [Scene Description] as an 1980s VHS fitness tape still: leotard colors, studio cyclorama, soft analog blur, tracking noise feeling, energetic pose.",
+      "corrections": [
+        {
+          "kind": "grammar",
+          "before": "a 1980s",
+          "after": "an 1980s",
+          "reason": "The spoken decade begins with a vowel sound (eighties)."
+        }
+      ],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1980s-vhs-fitness-tape-v1",
+        "revision": 1,
+        "title": "VHS Fitness Tape",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Render {{scene}} as an 1980s VHS fitness tape still: leotard colors, studio cyclorama, soft analog blur, tracking noise feeling, energetic pose. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1980s-corporate-power-shot",
+      "categoryId": "1980s",
+      "order": 2,
+      "title": "Corporate Power Shot",
+      "classification": "prompt-template",
+      "corpusId": "text-e3008b410a549c7c15fd",
+      "sourceLine": 300,
+      "original": "Make [Scene Description] a 1980s corporate power portrait: glass tower lobby, shoulder pads, polished briefcase, hard flash, cool authority, high contrast.",
+      "text": "Make [Scene Description] an 1980s corporate power portrait: glass tower lobby, shoulder pads, polished briefcase, hard flash, cool authority, high contrast.",
+      "corrections": [
+        {
+          "kind": "grammar",
+          "before": "a 1980s",
+          "after": "an 1980s",
+          "reason": "The spoken decade begins with a vowel sound (eighties)."
+        }
+      ],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1980s-corporate-power-shot-v1",
+        "revision": 1,
+        "title": "Corporate Power Shot",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Make {{scene}} an 1980s corporate power portrait: glass tower lobby, shoulder pads, polished briefcase, hard flash, cool authority, high contrast. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1980s-synthwave-car-night",
+      "categoryId": "1980s",
+      "order": 3,
+      "title": "Synthwave Car Night",
+      "classification": "prompt-template",
+      "corpusId": "text-cb7bab0da00d94d571aa",
+      "sourceLine": 301,
+      "original": "Place [Scene Description] beside a 1980s synthwave car at night: wet asphalt, neon strip lights, smoky horizon, cinematic chrome reflections, moody hero framing.",
+      "text": "Place [Scene Description] beside an 1980s synthwave car at night: wet asphalt, neon strip lights, smoky horizon, cinematic chrome reflections, moody hero framing.",
+      "corrections": [
+        {
+          "kind": "grammar",
+          "before": "a 1980s",
+          "after": "an 1980s",
+          "reason": "The spoken decade begins with a vowel sound (eighties)."
+        }
+      ],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1980s-synthwave-car-night-v1",
+        "revision": 1,
+        "title": "Synthwave Car Night",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Place {{scene}} beside an 1980s synthwave car at night: wet asphalt, neon strip lights, smoky horizon, cinematic chrome reflections, moody hero framing. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1980s-horror-rental-cover",
+      "categoryId": "1980s",
+      "order": 4,
+      "title": "Horror Rental Cover",
+      "classification": "prompt-template",
+      "corpusId": "text-1e56d4fe361b59c5e9bf",
+      "sourceLine": 302,
+      "original": "Transform [Scene Description] into an 1980s horror rental cover image without typography: practical fog, flashlight beam, saturated blue shadows, lurid threat composition.",
+      "text": "Transform [Scene Description] into an 1980s horror rental cover image without typography: practical fog, flashlight beam, saturated blue shadows, lurid threat composition.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1980s-horror-rental-cover-v1",
+        "revision": 1,
+        "title": "Horror Rental Cover",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Transform {{scene}} into an 1980s horror rental cover image without typography: practical fog, flashlight beam, saturated blue shadows, lurid threat composition. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1980s-teen-bedroom-poster",
+      "categoryId": "1980s",
+      "order": 5,
+      "title": "Teen Bedroom Poster",
+      "classification": "prompt-template",
+      "corpusId": "text-567b746b213e380a3f36",
+      "sourceLine": 303,
+      "original": "Stage [Scene Description] in a 1980s teen bedroom: cassette deck, posters turned abstract, desk lamp, denim textures, warm nostalgic clutter.",
+      "text": "Stage [Scene Description] in an 1980s teen bedroom: cassette deck, posters turned abstract, desk lamp, denim textures, warm nostalgic clutter.",
+      "corrections": [
+        {
+          "kind": "grammar",
+          "before": "a 1980s",
+          "after": "an 1980s",
+          "reason": "The spoken decade begins with a vowel sound (eighties)."
+        }
+      ],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1980s-teen-bedroom-poster-v1",
+        "revision": 1,
+        "title": "Teen Bedroom Poster",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Stage {{scene}} in an 1980s teen bedroom: cassette deck, posters turned abstract, desk lamp, denim textures, warm nostalgic clutter. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1980s-music-video-freeze",
+      "categoryId": "1980s",
+      "order": 6,
+      "title": "Music Video Freeze",
+      "classification": "prompt-template",
+      "corpusId": "text-2e0c73754862c8a1e061",
+      "sourceLine": 304,
+      "original": "Render [Scene Description] as a 1980s music video freeze-frame: Venetian blinds, colored smoke, dramatic pose, glossy skin highlights, overlit theatrical style.",
+      "text": "Render [Scene Description] as an 1980s music video freeze-frame: Venetian blinds, colored smoke, dramatic pose, glossy skin highlights, overlit theatrical style.",
+      "corrections": [
+        {
+          "kind": "grammar",
+          "before": "a 1980s",
+          "after": "an 1980s",
+          "reason": "The spoken decade begins with a vowel sound (eighties)."
+        }
+      ],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1980s-music-video-freeze-v1",
+        "revision": 1,
+        "title": "Music Video Freeze",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Render {{scene}} as an 1980s music video freeze-frame: Venetian blinds, colored smoke, dramatic pose, glossy skin highlights, overlit theatrical style. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1980s-arcade-cabinet-glow",
+      "categoryId": "1980s",
+      "order": 7,
+      "title": "Arcade Cabinet Glow",
+      "classification": "prompt-template",
+      "corpusId": "text-3b78cd790fbcc87415e5",
+      "sourceLine": 305,
+      "original": "Place [Scene Description] in a 1980s arcade: cabinet light on face, joystick foreground, saturated carpet, dark room, pixel-color glow, shallow depth.",
+      "text": "Place [Scene Description] in an 1980s arcade: cabinet light on face, joystick foreground, saturated carpet, dark room, pixel-color glow, shallow depth.",
+      "corrections": [
+        {
+          "kind": "grammar",
+          "before": "a 1980s",
+          "after": "an 1980s",
+          "reason": "The spoken decade begins with a vowel sound (eighties)."
+        }
+      ],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1980s-arcade-cabinet-glow-v1",
+        "revision": 1,
+        "title": "Arcade Cabinet Glow",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Place {{scene}} in an 1980s arcade: cabinet light on face, joystick foreground, saturated carpet, dark room, pixel-color glow, shallow depth. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1980s-cyberpunk-newsstand",
+      "categoryId": "1980s",
+      "order": 8,
+      "title": "Cyberpunk Newsstand",
+      "classification": "prompt-template",
+      "corpusId": "text-27b1f09e853edea5ec45",
+      "sourceLine": 306,
+      "original": "Make [Scene Description] a 1980s cyberpunk newsstand still: rain, plastic ponchos, CRT glare, dense cables, hand-painted neon futurism, analog grit.",
+      "text": "Make [Scene Description] an 1980s cyberpunk newsstand still: rain, plastic ponchos, CRT glare, dense cables, hand-painted neon futurism, analog grit.",
+      "corrections": [
+        {
+          "kind": "grammar",
+          "before": "a 1980s",
+          "after": "an 1980s",
+          "reason": "The spoken decade begins with a vowel sound (eighties)."
+        }
+      ],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1980s-cyberpunk-newsstand-v1",
+        "revision": 1,
+        "title": "Cyberpunk Newsstand",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Make {{scene}} an 1980s cyberpunk newsstand still: rain, plastic ponchos, CRT glare, dense cables, hand-painted neon futurism, analog grit. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-1980s-luxury-cologne-ad",
+      "categoryId": "1980s",
+      "order": 9,
+      "title": "Luxury Cologne Ad",
+      "classification": "prompt-template",
+      "corpusId": "text-bc35d7812ae373a9f60f",
+      "sourceLine": 307,
+      "original": "Turn [Scene Description] into a 1980s luxury cologne advertisement image: black glass, chrome, wind machine drama, tuxedo or silk styling, moody blue highlights.",
+      "text": "Turn [Scene Description] into an 1980s luxury cologne advertisement image: black glass, chrome, wind machine drama, tuxedo or silk styling, moody blue highlights.",
+      "corrections": [
+        {
+          "kind": "grammar",
+          "before": "a 1980s",
+          "after": "an 1980s",
+          "reason": "The spoken decade begins with a vowel sound (eighties)."
+        }
+      ],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-1980s-luxury-cologne-ad-v1",
+        "revision": 1,
+        "title": "Luxury Cologne Ad",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Turn {{scene}} into an 1980s luxury cologne advertisement image: black glass, chrome, wind machine drama, tuxedo or silk styling, moody blue highlights. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-2000s-y2k-chrome-portrait",
+      "categoryId": "2000s",
+      "order": 0,
+      "title": "Y2K Chrome Portrait",
+      "classification": "prompt-template",
+      "corpusId": "text-3213508a314923e75cee",
+      "sourceLine": 310,
+      "original": "Render [Scene Description] as an early-2000s Y2K chrome portrait: silver accessories, glossy plastic, blue-white light, low-rise futurism, compact digital camera flash.",
+      "text": "Render [Scene Description] as an early-2000s Y2K chrome portrait: silver accessories, glossy plastic, blue-white light, low-rise futurism, compact digital camera flash.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-2000s-y2k-chrome-portrait-v1",
+        "revision": 1,
+        "title": "Y2K Chrome Portrait",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Render {{scene}} as an early-2000s Y2K chrome portrait: silver accessories, glossy plastic, blue-white light, low-rise futurism, compact digital camera flash. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-2000s-flip-phone-night-out",
+      "categoryId": "2000s",
+      "order": 1,
+      "title": "Flip Phone Night Out",
+      "classification": "prompt-template",
+      "corpusId": "text-28d04e5f4a34ebf8cccb",
+      "sourceLine": 311,
+      "original": "Place [Scene Description] in a 2000s night-out snapshot: flip phone glow, tiny purse details, club bathroom mirror light, flash glare, candid chaos.",
+      "text": "Place [Scene Description] in a 2000s night-out snapshot: flip phone glow, tiny purse details, club bathroom mirror light, flash glare, candid chaos.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-2000s-flip-phone-night-out-v1",
+        "revision": 1,
+        "title": "Flip Phone Night Out",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Place {{scene}} in a 2000s night-out snapshot: flip phone glow, tiny purse details, club bathroom mirror light, flash glare, candid chaos. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-2000s-reality-tv-confessional",
+      "categoryId": "2000s",
+      "order": 2,
+      "title": "Reality TV Confessional",
+      "classification": "prompt-template",
+      "corpusId": "text-38727d817f1f61d3b640",
+      "sourceLine": 312,
+      "original": "Make [Scene Description] look like a 2000s reality TV confessional frame: soft sofa, practical lamp, shallow digital video depth, awkward direct address.",
+      "text": "Make [Scene Description] look like a 2000s reality TV confessional frame: soft sofa, practical lamp, shallow digital video depth, awkward direct address.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-2000s-reality-tv-confessional-v1",
+        "revision": 1,
+        "title": "Reality TV Confessional",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Make {{scene}} look like a 2000s reality TV confessional frame: soft sofa, practical lamp, shallow digital video depth, awkward direct address. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-2000s-nu-metal-warehouse",
+      "categoryId": "2000s",
+      "order": 3,
+      "title": "Nu-Metal Warehouse",
+      "classification": "prompt-template",
+      "corpusId": "text-575634a504a91da0f57c",
+      "sourceLine": 313,
+      "original": "Transform [Scene Description] into a 2000s nu-metal warehouse promo shot: chain-link fence, cargo pants, hard sidelight, concrete texture, desaturated aggression.",
+      "text": "Transform [Scene Description] into a 2000s nu-metal warehouse promo shot: chain-link fence, cargo pants, hard sidelight, concrete texture, desaturated aggression.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-2000s-nu-metal-warehouse-v1",
+        "revision": 1,
+        "title": "Nu-Metal Warehouse",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Transform {{scene}} into a 2000s nu-metal warehouse promo shot: chain-link fence, cargo pants, hard sidelight, concrete texture, desaturated aggression. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-2000s-myspace-bedroom",
+      "categoryId": "2000s",
+      "order": 4,
+      "title": "MySpace Bedroom",
+      "classification": "prompt-template",
+      "corpusId": "text-fb4292480886e3202242",
+      "sourceLine": 314,
+      "original": "Stage [Scene Description] in a 2000s MySpace bedroom: fairy lights, webcam angle, messy desk, band posters abstracted, low-res digital nostalgia.",
+      "text": "Stage [Scene Description] in a 2000s MySpace bedroom: fairy lights, webcam angle, messy desk, band posters abstracted, low-res digital nostalgia.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-2000s-myspace-bedroom-v1",
+        "revision": 1,
+        "title": "MySpace Bedroom",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Stage {{scene}} in a 2000s MySpace bedroom: fairy lights, webcam angle, messy desk, band posters abstracted, low-res digital nostalgia. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-2000s-luxury-tabloid-flash",
+      "categoryId": "2000s",
+      "order": 5,
+      "title": "Luxury Tabloid Flash",
+      "classification": "prompt-template",
+      "corpusId": "text-364218978876b60b8747",
+      "sourceLine": 315,
+      "original": "Render [Scene Description] as a 2000s tabloid flash photo: hotel entrance, overexposed skin, black SUV reflections, paparazzi angle, chaotic glam.",
+      "text": "Render [Scene Description] as a 2000s tabloid flash photo: hotel entrance, overexposed skin, black SUV reflections, paparazzi angle, chaotic glam.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-2000s-luxury-tabloid-flash-v1",
+        "revision": 1,
+        "title": "Luxury Tabloid Flash",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Render {{scene}} as a 2000s tabloid flash photo: hotel entrance, overexposed skin, black SUV reflections, paparazzi angle, chaotic glam. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-2000s-cyber-cafe-quest",
+      "categoryId": "2000s",
+      "order": 6,
+      "title": "Cyber Cafe Quest",
+      "classification": "prompt-template",
+      "corpusId": "text-ea4040cf72436ba0c5be",
+      "sourceLine": 316,
+      "original": "Place [Scene Description] in a 2000s cyber cafe: bulky monitors, blue fluorescent light, snack wrappers, wired headphones, compressed digital-photo realism.",
+      "text": "Place [Scene Description] in a 2000s cyber cafe: bulky monitors, blue fluorescent light, snack wrappers, wired headphones, compressed digital-photo realism.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-2000s-cyber-cafe-quest-v1",
+        "revision": 1,
+        "title": "Cyber Cafe Quest",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Place {{scene}} in a 2000s cyber cafe: bulky monitors, blue fluorescent light, snack wrappers, wired headphones, compressed digital-photo realism. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-2000s-indie-sleaze-alley",
+      "categoryId": "2000s",
+      "order": 7,
+      "title": "Indie Sleaze Alley",
+      "classification": "prompt-template",
+      "corpusId": "text-cd7cf10759147d857712",
+      "sourceLine": 317,
+      "original": "Make [Scene Description] an indie-sleaze alley photo: skinny jeans, leather jacket, cigarette glow, cheap flash, grainy digital point-and-shoot, messy cool.",
+      "text": "Make [Scene Description] an indie-sleaze alley photo: skinny jeans, leather jacket, cigarette glow, cheap flash, grainy digital point-and-shoot, messy cool.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-2000s-indie-sleaze-alley-v1",
+        "revision": 1,
+        "title": "Indie Sleaze Alley",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Make {{scene}} an indie-sleaze alley photo: skinny jeans, leather jacket, cigarette glow, cheap flash, grainy digital point-and-shoot, messy cool. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-2000s-tech-product-launch",
+      "categoryId": "2000s",
+      "order": 8,
+      "title": "Tech Product Launch",
+      "classification": "prompt-template",
+      "corpusId": "text-3f104945a615ea67d6cf",
+      "sourceLine": 318,
+      "original": "Turn [Scene Description] into a 2000s tech product launch image: glossy white stage, translucent plastic vibe, presenter silhouette, blue gradients, clean showroom light.",
+      "text": "Turn [Scene Description] into a 2000s tech product launch image: glossy white stage, translucent plastic vibe, presenter silhouette, blue gradients, clean showroom light.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-2000s-tech-product-launch-v1",
+        "revision": 1,
+        "title": "Tech Product Launch",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Turn {{scene}} into a 2000s tech product launch image: glossy white stage, translucent plastic vibe, presenter silhouette, blue gradients, clean showroom light. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-2000s-skate-video-still",
+      "categoryId": "2000s",
+      "order": 9,
+      "title": "Skate Video Still",
+      "classification": "prompt-template",
+      "corpusId": "text-078f1f0d8a0eb993aa71",
+      "sourceLine": 319,
+      "original": "Render [Scene Description] as a 2000s skate video still: fisheye curb angle, baggy clothes, blown highlights, DV camcorder texture, kinetic urban frame.",
+      "text": "Render [Scene Description] as a 2000s skate video still: fisheye curb angle, baggy clothes, blown highlights, DV camcorder texture, kinetic urban frame.",
+      "corrections": [],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-2000s-skate-video-still-v1",
+        "revision": 1,
+        "title": "Skate Video Still",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Render {{scene}} as a 2000s skate video still: fisheye curb angle, baggy clothes, blown highlights, DV camcorder texture, kinetic urban frame. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-fun-character-design-sheet",
+      "categoryId": "fun",
+      "order": 0,
+      "title": "Character Design Sheet",
+      "classification": "prompt-template",
+      "corpusId": "text-8c7e158a91c42fe00a6f",
+      "sourceLine": 322,
+      "original": "Generate character design for me (Character Design). Proportion design (different height comparisons, head-to-body ratio, etc.). Three views (front, side, back). Expression design (Expression Sheet). Pose design (Pose Sheet) with various common poses. Costume design (Costume Design). [Scene Description] MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "text": "Generate a character design for me (Character Design). Proportion design (different height comparisons, head-to-body ratio, etc.). Three views (front, side, back). Expression design (Expression Sheet). Pose design (Pose Sheet) with various common poses. Costume design (Costume Design). [Scene Description] MANDATORY: No text on the image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "corrections": [
+        {
+          "kind": "grammar",
+          "before": "No text on image.",
+          "after": "No text on the image.",
+          "reason": "Restore the missing definite article."
+        },
+        {
+          "kind": "grammar",
+          "before": "Generate character design for me",
+          "after": "Generate a character design for me",
+          "reason": "Restore the missing indefinite article."
+        }
+      ],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-fun-character-design-sheet-v1",
+        "revision": 1,
+        "title": "Character Design Sheet",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Generate a character design for me (Character Design). Proportion design (different height comparisons, head-to-body ratio, etc.). Three views (front, side, back). Expression design (Expression Sheet). Pose design (Pose Sheet) with various common poses. Costume design (Costume Design). {{scene}} MANDATORY: No text on the image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-fun-3d-action-figure",
+      "categoryId": "fun",
+      "order": 1,
+      "title": "3D Action Figure",
+      "classification": "prompt-template",
+      "corpusId": "text-47b4129b763637594b79",
+      "sourceLine": 323,
+      "original": "Create a 3D miniature figurine of this person, styled like a collectible toy. Position: standing with crossed arms and a confident smile. Texture: glossy plastic with subtle paint details, base with metallic accents. Lighting: soft studio spotlight, white background. [Scene Description] MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "text": "Create a 3D miniature figurine of this person, styled like a collectible toy. Position: standing with crossed arms and a confident smile. Texture: glossy plastic with subtle paint details, base with metallic accents. Lighting: soft studio spotlight, white background. [Scene Description] MANDATORY: No text on the image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "corrections": [
+        {
+          "kind": "grammar",
+          "before": "No text on image.",
+          "after": "No text on the image.",
+          "reason": "Restore the missing definite article."
+        }
+      ],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-fun-3d-action-figure-v1",
+        "revision": 1,
+        "title": "3D Action Figure",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Create a 3D miniature figurine of this person, styled like a collectible toy. Position: standing with crossed arms and a confident smile. Texture: glossy plastic with subtle paint details, base with metallic accents. Lighting: soft studio spotlight, white background. {{scene}} MANDATORY: No text on the image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-fun-character-combat",
+      "categoryId": "fun",
+      "order": 2,
+      "title": "Character Combat",
+      "classification": "prompt-template",
+      "corpusId": "text-23595b116d54d0a38d1b",
+      "sourceLine": 324,
+      "original": "Have these two characters fight using dynamic action poses. Add appropriate visual backgrounds and scene interactions. Cinematic lighting. [Scene Description] MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "text": "Have these two characters fight using dynamic action poses. Add appropriate visual backgrounds and scene interactions. Cinematic lighting. [Scene Description] MANDATORY: No text on the image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "corrections": [
+        {
+          "kind": "grammar",
+          "before": "No text on image.",
+          "after": "No text on the image.",
+          "reason": "Restore the missing definite article."
+        }
+      ],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-fun-character-combat-v1",
+        "revision": 1,
+        "title": "Character Combat",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Have these two characters fight using dynamic action poses. Add appropriate visual backgrounds and scene interactions. Cinematic lighting. {{scene}} MANDATORY: No text on the image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-fun-pet-as-human",
+      "categoryId": "fun",
+      "order": 3,
+      "title": "Pet as Human",
+      "classification": "prompt-template",
+      "corpusId": "text-3aad2e879bc28fb53f32",
+      "sourceLine": 325,
+      "original": "Create a photorealistic portrait of a human character that captures the character and vibe of this pet. Ensure that the expression of the human character matches the expression of the pet and keep its pose and attitude consistent. [Scene Description] MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "text": "Create a photorealistic portrait of a human character that captures the character and vibe of this pet. Ensure that the expression of the human character matches the expression of the pet and keep its pose and attitude consistent. [Scene Description] MANDATORY: No text on the image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "corrections": [
+        {
+          "kind": "grammar",
+          "before": "No text on image.",
+          "after": "No text on the image.",
+          "reason": "Restore the missing definite article."
+        }
+      ],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-fun-pet-as-human-v1",
+        "revision": 1,
+        "title": "Pet as Human",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Create a photorealistic portrait of a human character that captures the character and vibe of this pet. Ensure that the expression of the human character matches the expression of the pet and keep its pose and attitude consistent. {{scene}} MANDATORY: No text on the image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-fun-realistic-origami",
+      "categoryId": "fun",
+      "order": 4,
+      "title": "Realistic Origami",
+      "classification": "prompt-template",
+      "corpusId": "text-5d5a096c4a7f30dbb954",
+      "sourceLine": 326,
+      "original": "Transform this image of this character into realistic origami art. Intricately folded white paper, with visible creases, edges, and layered folds. Simple, neutral background. [Scene Description] MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "text": "Transform this image of this character into realistic origami art. Intricately folded white paper, with visible creases, edges, and layered folds. Simple, neutral background. [Scene Description] MANDATORY: No text on the image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "corrections": [
+        {
+          "kind": "grammar",
+          "before": "No text on image.",
+          "after": "No text on the image.",
+          "reason": "Restore the missing definite article."
+        }
+      ],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-fun-realistic-origami-v1",
+        "revision": 1,
+        "title": "Realistic Origami",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Transform this image of this character into realistic origami art. Intricately folded white paper, with visible creases, edges, and layered folds. Simple, neutral background. {{scene}} MANDATORY: No text on the image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-fun-food-explosion",
+      "categoryId": "fun",
+      "order": 5,
+      "title": "Food Explosion",
+      "classification": "prompt-template",
+      "corpusId": "text-bf4887f830699b08f7c9",
+      "sourceLine": 327,
+      "original": "Create a dynamic, high-speed photograph of the meal in the uploaded photo in mid-explosion. Ingredients scattering outward. Liquids splashing vigorously. Lighting is sharp, highlighting textures. [Scene Description] MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "text": "Create a dynamic, high-speed photograph of the meal in the uploaded photo in mid-explosion. Ingredients scattering outward. Liquids splashing vigorously. Lighting is sharp, highlighting textures. [Scene Description] MANDATORY: No text on the image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "corrections": [
+        {
+          "kind": "grammar",
+          "before": "No text on image.",
+          "after": "No text on the image.",
+          "reason": "Restore the missing definite article."
+        }
+      ],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-fun-food-explosion-v1",
+        "revision": 1,
+        "title": "Food Explosion",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Create a dynamic, high-speed photograph of the meal in the uploaded photo in mid-explosion. Ingredients scattering outward. Liquids splashing vigorously. Lighting is sharp, highlighting textures. {{scene}} MANDATORY: No text on the image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    },
+    {
+      "id": "goodies-fun-multiple-image-fusion",
+      "categoryId": "fun",
+      "order": 6,
+      "title": "Multiple Image Fusion",
+      "classification": "prompt-template",
+      "corpusId": "text-52b17af866fa10ea8af6",
+      "sourceLine": 328,
+      "original": "Combine multiple images ([Image1], [Image2], [Image3], ...) into a single cohesive image. Keep all key subjects recognizable and maintain their proportions and details. Blend the images naturally with consistent lighting, shadows, perspective, and style. Photorealistic, high-resolution, seamless integration. [Scene Description] MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "text": "Combine multiple images ([Image1], [Image2], [Image3], ...) into a single cohesive image. Keep all key subjects recognizable and maintain their proportions and details. Blend the images naturally with consistent lighting, shadows, perspective, and style. Photorealistic, high-resolution, seamless integration. [Scene Description] MANDATORY: No text on the image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "corrections": [
+        {
+          "kind": "grammar",
+          "before": "No text on image.",
+          "after": "No text on the image.",
+          "reason": "Restore the missing definite article."
+        }
+      ],
+      "recipe": {
+        "schemaVersion": "1.0",
+        "id": "goodies-fun-multiple-image-fusion-v1",
+        "revision": 1,
+        "title": "Multiple Image Fusion",
+        "fields": [
+          {
+            "id": "scene",
+            "label": "Détails",
+            "type": "text",
+            "maxLength": 4000,
+            "default": "[Details]"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "main",
+            "mediaType": "image",
+            "template": "Combine multiple images ([Image1], [Image2], [Image3], ...) into a single cohesive image. Keep all key subjects recognizable and maintain their proportions and details. Blend the images naturally with consistent lighting, shadows, perspective, and style. Photorealistic, high-resolution, seamless integration. {{scene}} MANDATORY: No text on the image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only. Preserve the uploaded subject identity or object design when a reference is provided. Use {{scene}} as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+            "negativePrompt": "",
+            "settings": {}
+          }
+        ],
+        "referenceSlots": [],
+        "origin": "builtin"
+      }
+    }
+  ],
+  "composition": {
+    "suffix": " Preserve the uploaded subject identity or object design when a reference is provided. Use [Scene Description] as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+    "corpusId": "text-3cddd62bb78732956752",
+    "sourceLine": 235,
+    "marker": "[Scene Description]",
+    "fallback": "[Details]",
+    "trimOuterWhitespace": true,
+    "preserveInteriorWhitespace": true,
+    "replacement": "literal-single-pass",
+    "legacyFunction": "function finalPrompt(item, detail) {\n      const scene = detail && detail.trim() ? detail.trim() : \"[Details]\";\n      return (item.prompt + suffix).replaceAll(\"[Scene Description]\", scene);\n    }",
+    "legacyFunctionSha256": "7b5ae54fdf60435fd60d593d0e0066ab8b97aea09489c2d635465a2815e981be",
+    "bulkEntryHeader": "categoryId / title\nprompt",
+    "bulkSeparator": "\n\n",
+    "bulkIncludesDetails": false
+  },
+  "decisions": [
+    {
+      "id": "identity",
+      "decision": "Keep stable toolId banana-helper; expose BZ Goodies. Use adapterId prompt-library for the generic library renderer. No duplicate registration under bz-goodies."
+    },
+    {
+      "id": "copy-without-details",
+      "decision": "Preserve the actual legacy operation: compile with [Details] and common suffix. Keep label Copier sans détails, correct misleading Raw prompt copied toast. This label is not itself a defect. No extra raw-copy control is needed."
+    },
+    {
+      "id": "text-constraints",
+      "decision": "Preserve both constraints and their order, including typography exception in the common suffix. Removing either would change the creative contract. The seven Fun entries remain explicitly text-free; expose full editable text in the future library editor."
+    },
+    {
+      "id": "stable-entry-state",
+      "decision": "Persist detailsByPrompt using entry IDs, never filtered indexes. Preserve edits across search, categories, tool switches, setup duplicates and saved versions."
+    },
+    {
+      "id": "literal-input",
+      "decision": "Repair dollar replacement-token expansion by using the existing callback-based V6 recipe compiler. Only the detail boundary is trimmed; inner spaces, line breaks, dollar signs and markup stay literal."
+    },
+    {
+      "id": "bulk",
+      "decision": "Keep category and full-catalog copy in canonical order with blank details. Label Copier la catégorie sans détails / Tout copier sans détails. Search changes visible cards only, not these explicit bulk scopes."
+    },
+    {
+      "id": "references",
+      "decision": "Retain historical [Image1], [Image2], [Image3] as prompt text. They are not V6 referenceSlot IDs and do not attach images. Do not silently remap them to @imageN without an explicit reference binding."
+    },
+    {
+      "id": "creative-fidelity",
+      "decision": "All entries emit image prompts, including VHS and video-still themes. Preserve all decades (no invented 1990s category), scene motifs, suffix and distinct Fun uses; apply only the 17 recorded grammar substitutions."
+    }
+  ],
+  "verification": {
+    "promptCount": 77,
+    "correctedEntryCount": 16,
+    "grammarSubstitutions": 17,
+    "fixtureCount": 39,
+    "recipeCompileChecks": 231,
+    "providerCalls": 0,
+    "browserChecked": false,
+    "scope": "Offline source/review/compiler checks; runtime UI and persistence remain for Sol."
+  },
+  "corpusClassification": [
+    {
+      "corpusId": "text-0156de091e6c136fd2d9",
+      "role": "prompt-template",
+      "sourceLines": [
+        295
+      ]
+    },
+    {
+      "corpusId": "text-04b46773a53b258f5762",
+      "role": "prompt-template",
+      "sourceLines": [
+        240
+      ]
+    },
+    {
+      "corpusId": "text-0b43ff2e98e020689e5c",
+      "role": "prompt-template",
+      "sourceLines": [
+        282
+      ]
+    },
+    {
+      "corpusId": "text-0c486e5f1578bfdbf148",
+      "role": "prompt-template",
+      "sourceLines": [
+        244
+      ]
+    },
+    {
+      "corpusId": "text-0c8d8bd1e9d5cf11b74f",
+      "role": "prompt-template",
+      "sourceLines": [
+        298
+      ]
+    },
+    {
+      "corpusId": "text-0ee712f6ab66614c1d13",
+      "role": "prompt-template",
+      "sourceLines": [
+        259
+      ]
+    },
+    {
+      "corpusId": "text-125340f8acc6c6226a83",
+      "role": "prompt-template",
+      "sourceLines": [
+        280
+      ]
+    },
+    {
+      "corpusId": "text-1ac6e9f9b8fd0385df88",
+      "role": "prompt-template",
+      "sourceLines": [
+        247
+      ]
+    },
+    {
+      "corpusId": "text-1cb3df0614a384d9fdb4",
+      "role": "prompt-template",
+      "sourceLines": [
+        276
+      ]
+    },
+    {
+      "corpusId": "text-1dc53f5cf9b8dc2c800e",
+      "role": "prompt-template",
+      "sourceLines": [
+        239
+      ]
+    },
+    {
+      "corpusId": "text-1e56d4fe361b59c5e9bf",
+      "role": "prompt-template",
+      "sourceLines": [
+        302
+      ]
+    },
+    {
+      "corpusId": "text-228cf666eeae5baa9b9d",
+      "role": "prompt-template",
+      "sourceLines": [
+        278
+      ]
+    },
+    {
+      "corpusId": "text-23595b116d54d0a38d1b",
+      "role": "prompt-template",
+      "sourceLines": [
+        324
+      ]
+    },
+    {
+      "corpusId": "text-2d2d89f8f027df73781d",
+      "role": "prompt-template",
+      "sourceLines": [
+        254
+      ]
+    },
+    {
+      "corpusId": "text-2d5c21b0ba96af56b25d",
+      "role": "prompt-template",
+      "sourceLines": [
+        268
+      ]
+    },
+    {
+      "corpusId": "text-2e0c73754862c8a1e061",
+      "role": "prompt-template",
+      "sourceLines": [
+        304
+      ]
+    },
+    {
+      "corpusId": "text-3213508a314923e75cee",
+      "role": "prompt-template",
+      "sourceLines": [
+        310
+      ]
+    },
+    {
+      "corpusId": "text-35daec98b156fee46186",
+      "role": "prompt-template",
+      "sourceLines": [
+        250
+      ]
+    },
+    {
+      "corpusId": "text-37bdb06f2c022eccd5f9",
+      "role": "prompt-template",
+      "sourceLines": [
+        274
+      ]
+    },
+    {
+      "corpusId": "text-3aad2e879bc28fb53f32",
+      "role": "prompt-template",
+      "sourceLines": [
+        325
+      ]
+    },
+    {
+      "corpusId": "text-3bb90cc24000c7a887b4",
+      "role": "prompt-template",
+      "sourceLines": [
+        262
+      ]
+    },
+    {
+      "corpusId": "text-3ca41f142d7df5859a0e",
+      "role": "prompt-template",
+      "sourceLines": [
+        287
+      ]
+    },
+    {
+      "corpusId": "text-3cddd62bb78732956752",
+      "role": "composition-suffix",
+      "sourceLines": [
+        235
+      ]
+    },
+    {
+      "corpusId": "text-3cf946c07da226a9bf1b",
+      "role": "prompt-template",
+      "sourceLines": [
+        253
+      ]
+    },
+    {
+      "corpusId": "text-3d320b39fb0c3fc01755",
+      "role": "prompt-template",
+      "sourceLines": [
+        269
+      ]
+    },
+    {
+      "corpusId": "text-3f104945a615ea67d6cf",
+      "role": "prompt-template",
+      "sourceLines": [
+        318
+      ]
+    },
+    {
+      "corpusId": "text-4001fc96637a63d84dc1",
+      "role": "prompt-template",
+      "sourceLines": [
+        263
+      ]
+    },
+    {
+      "corpusId": "text-47b4129b763637594b79",
+      "role": "prompt-template",
+      "sourceLines": [
+        323
+      ]
+    },
+    {
+      "corpusId": "text-506c6fcb93a1846defb8",
+      "role": "prompt-template",
+      "sourceLines": [
+        283
+      ]
+    },
+    {
+      "corpusId": "text-52b17af866fa10ea8af6",
+      "role": "prompt-template",
+      "sourceLines": [
+        328
+      ]
+    },
+    {
+      "corpusId": "text-545b3f7486f53cb959c6",
+      "role": "prompt-template",
+      "sourceLines": [
+        246
+      ]
+    },
+    {
+      "corpusId": "text-575634a504a91da0f57c",
+      "role": "prompt-template",
+      "sourceLines": [
+        313
+      ]
+    },
+    {
+      "corpusId": "text-5d5a096c4a7f30dbb954",
+      "role": "prompt-template",
+      "sourceLines": [
+        326
+      ]
+    },
+    {
+      "corpusId": "text-6279da4337d2efee54ae",
+      "role": "prompt-template",
+      "sourceLines": [
+        251
+      ]
+    },
+    {
+      "corpusId": "text-636da4d8b8aef2a8331a",
+      "role": "prompt-template",
+      "sourceLines": [
+        292
+      ]
+    },
+    {
+      "corpusId": "text-6b8aa36ff0f288d0b2c4",
+      "role": "prompt-template",
+      "sourceLines": [
+        255
+      ]
+    },
+    {
+      "corpusId": "text-6ee9fd1159fca93b7f2a",
+      "role": "prompt-template",
+      "sourceLines": [
+        258
+      ]
+    },
+    {
+      "corpusId": "text-6fb4dd7b157788e032f7",
+      "role": "prompt-template",
+      "sourceLines": [
+        243
+      ]
+    },
+    {
+      "corpusId": "text-84befbb089a67dbc881a",
+      "role": "prompt-template",
+      "sourceLines": [
+        257
+      ]
+    },
+    {
+      "corpusId": "text-8b894b3b0c2ef5e20ead",
+      "role": "prompt-template",
+      "sourceLines": [
+        281
+      ]
+    },
+    {
+      "corpusId": "text-8c7e158a91c42fe00a6f",
+      "role": "prompt-template",
+      "sourceLines": [
+        322
+      ]
+    },
+    {
+      "corpusId": "text-9cd4839268199910abde",
+      "role": "prompt-template",
+      "sourceLines": [
+        266
+      ]
+    },
+    {
+      "corpusId": "text-9ffcd4f2eff0920ea2d8",
+      "role": "prompt-template",
+      "sourceLines": [
+        267
+      ]
+    },
+    {
+      "corpusId": "text-a4991a6478de9695d20f",
+      "role": "prompt-template",
+      "sourceLines": [
+        265
+      ]
+    },
+    {
+      "corpusId": "text-aeb6c29f473ebee2d2b5",
+      "role": "prompt-template",
+      "sourceLines": [
+        252
+      ]
+    },
+    {
+      "corpusId": "text-b14e4cb1650218b3abcf",
+      "role": "ui-or-runtime-context",
+      "sourceLines": [
+        374
+      ]
+    },
+    {
+      "corpusId": "text-b86ac4ac405aff182112",
+      "role": "prompt-template",
+      "sourceLines": [
+        275
+      ]
+    },
+    {
+      "corpusId": "text-bc35d7812ae373a9f60f",
+      "role": "prompt-template",
+      "sourceLines": [
+        307
+      ]
+    },
+    {
+      "corpusId": "text-bf4887f830699b08f7c9",
+      "role": "prompt-template",
+      "sourceLines": [
+        327
+      ]
+    },
+    {
+      "corpusId": "text-c083ae0c481780b75fa3",
+      "role": "prompt-template",
+      "sourceLines": [
+        256
+      ]
+    },
+    {
+      "corpusId": "text-cb7bab0da00d94d571aa",
+      "role": "prompt-template",
+      "sourceLines": [
+        301
+      ]
+    },
+    {
+      "corpusId": "text-ce2583a024470c4eaa85",
+      "role": "prompt-template",
+      "sourceLines": [
+        241
+      ]
+    },
+    {
+      "corpusId": "text-cf537c42af4a404259b2",
+      "role": "prompt-template",
+      "sourceLines": [
+        270
+      ]
+    },
+    {
+      "corpusId": "text-d154fd480c33e6757967",
+      "role": "prompt-template",
+      "sourceLines": [
+        271
+      ]
+    },
+    {
+      "corpusId": "text-d77d70806d321e62fcf7",
+      "role": "prompt-template",
+      "sourceLines": [
+        264
+      ]
+    },
+    {
+      "corpusId": "text-e404fe331a77402b8ace",
+      "role": "prompt-template",
+      "sourceLines": [
+        238
+      ]
+    },
+    {
+      "corpusId": "text-ed0e67092001168511bc",
+      "role": "prompt-template",
+      "sourceLines": [
+        245
+      ]
+    },
+    {
+      "corpusId": "text-f6c31e7bd369e18ac47a",
+      "role": "prompt-template",
+      "sourceLines": [
+        279
+      ]
+    },
+    {
+      "corpusId": "text-fd8d712d4964871ad30f",
+      "role": "prompt-template",
+      "sourceLines": [
+        277
+      ]
+    },
+    {
+      "corpusId": "text-fdb3461bffae42685fde",
+      "role": "prompt-template",
+      "sourceLines": [
+        242
+      ]
+    },
+    {
+      "corpusId": "text-078f1f0d8a0eb993aa71",
+      "role": "prompt-template",
+      "sourceLines": [
+        319
+      ]
+    },
+    {
+      "corpusId": "text-20ca2f8e1f76ecb0f0c2",
+      "role": "prompt-template",
+      "sourceLines": [
+        288
+      ]
+    },
+    {
+      "corpusId": "text-27b1f09e853edea5ec45",
+      "role": "prompt-template",
+      "sourceLines": [
+        306
+      ]
+    },
+    {
+      "corpusId": "text-28d04e5f4a34ebf8cccb",
+      "role": "prompt-template",
+      "sourceLines": [
+        311
+      ]
+    },
+    {
+      "corpusId": "text-2c198abb7b20bc529143",
+      "role": "prompt-template",
+      "sourceLines": [
+        293
+      ]
+    },
+    {
+      "corpusId": "text-364218978876b60b8747",
+      "role": "prompt-template",
+      "sourceLines": [
+        315
+      ]
+    },
+    {
+      "corpusId": "text-36daedd149997d0bae89",
+      "role": "ui-or-runtime-context",
+      "sourceLines": [
+        373
+      ]
+    },
+    {
+      "corpusId": "text-38727d817f1f61d3b640",
+      "role": "prompt-template",
+      "sourceLines": [
+        312
+      ]
+    },
+    {
+      "corpusId": "text-3b78cd790fbcc87415e5",
+      "role": "prompt-template",
+      "sourceLines": [
+        305
+      ]
+    },
+    {
+      "corpusId": "text-567b746b213e380a3f36",
+      "role": "prompt-template",
+      "sourceLines": [
+        303
+      ]
+    },
+    {
+      "corpusId": "text-57a89f29d9ba5878df8d",
+      "role": "prompt-template",
+      "sourceLines": [
+        291
+      ]
+    },
+    {
+      "corpusId": "text-88f6690ce66daf95a8a2",
+      "role": "prompt-template",
+      "sourceLines": [
+        290
+      ]
+    },
+    {
+      "corpusId": "text-990b55c71332834d3deb",
+      "role": "prompt-template",
+      "sourceLines": [
+        294
+      ]
+    },
+    {
+      "corpusId": "text-c48dd5fe59f45daea7a6",
+      "role": "prompt-template",
+      "sourceLines": [
+        289
+      ]
+    },
+    {
+      "corpusId": "text-cd7cf10759147d857712",
+      "role": "prompt-template",
+      "sourceLines": [
+        317
+      ]
+    },
+    {
+      "corpusId": "text-e2f35a2a4812dc3c3cec",
+      "role": "prompt-template",
+      "sourceLines": [
+        299
+      ]
+    },
+    {
+      "corpusId": "text-e3008b410a549c7c15fd",
+      "role": "prompt-template",
+      "sourceLines": [
+        300
+      ]
+    },
+    {
+      "corpusId": "text-ea4040cf72436ba0c5be",
+      "role": "prompt-template",
+      "sourceLines": [
+        316
+      ]
+    },
+    {
+      "corpusId": "text-f56712821d3c13c3f152",
+      "role": "prompt-template",
+      "sourceLines": [
+        286
+      ]
+    },
+    {
+      "corpusId": "text-fb4292480886e3202242",
+      "role": "prompt-template",
+      "sourceLines": [
+        314
+      ]
+    },
+    {
+      "corpusId": "text-03609b62de1f614d98e3",
+      "role": "ui-or-runtime-context",
+      "sourceLines": [
+        358
+      ]
+    },
+    {
+      "corpusId": "text-2b5e909f6bb813ed7a78",
+      "role": "ui-or-runtime-context",
+      "sourceLines": [
+        429
+      ]
+    },
+    {
+      "corpusId": "text-63b20ab2a6cc607cffb3",
+      "role": "ui-or-runtime-context",
+      "sourceLines": [
+        213
+      ]
+    },
+    {
+      "corpusId": "text-e677b39d1a95a0ad50e2",
+      "role": "ui-or-runtime-context",
+      "sourceLines": [
+        433
+      ]
+    },
+    {
+      "corpusId": "text-03aecb18bdcc310bfdc1",
+      "role": "composition-marker",
+      "sourceLines": [
+        342
+      ]
+    },
+    {
+      "corpusId": "text-041139510137576ba04f",
+      "role": "ui-or-runtime-context",
+      "sourceLines": [
+        370
+      ]
+    },
+    {
+      "corpusId": "text-0680c6385211c84b7bd4",
+      "role": "ui-or-runtime-context",
+      "sourceLines": [
+        338
+      ]
+    },
+    {
+      "corpusId": "text-547956132b2000ad427e",
+      "role": "ui-or-runtime-context",
+      "sourceLines": [
+        372
+      ]
+    },
+    {
+      "corpusId": "text-883126632a08b4d0e06a",
+      "role": "entry-title",
+      "sourceLines": [
+        268
+      ]
+    },
+    {
+      "corpusId": "text-e1163cd383d2f1cadd50",
+      "role": "entry-title",
+      "sourceLines": [
+        294
+      ]
+    },
+    {
+      "corpusId": "text-f3c423c260fcd9173eb3",
+      "role": "ui-or-runtime-context",
+      "sourceLines": [
+        430
+      ]
+    },
+    {
+      "corpusId": "text-caec1f8d194c845e35ad",
+      "role": "ui-or-runtime-context",
+      "sourceLines": [
+        398
+      ]
+    },
+    {
+      "corpusId": "text-00c4285274fcc5d6fba2",
+      "role": "category-id",
+      "sourceLines": [
+        321
+      ]
+    },
+    {
+      "corpusId": "text-0101e65da70d60db2e60",
+      "role": "entry-title",
+      "sourceLines": [
+        307
+      ]
+    },
+    {
+      "corpusId": "text-0295e0d817bee4f0eb8b",
+      "role": "entry-title",
+      "sourceLines": [
+        258
+      ]
+    },
+    {
+      "corpusId": "text-05618c7f1ea38d3d7b66",
+      "role": "entry-title",
+      "sourceLines": [
+        265
+      ]
+    },
+    {
+      "corpusId": "text-061d715c03b921aedfc2",
+      "role": "entry-title",
+      "sourceLines": [
+        244
+      ]
+    },
+    {
+      "corpusId": "text-092c759a6d8ef0dabd8b",
+      "role": "category-id",
+      "sourceLines": [
+        285
+      ]
+    },
+    {
+      "corpusId": "text-09e4930be610d573e857",
+      "role": "entry-title",
+      "sourceLines": [
+        242
+      ]
+    },
+    {
+      "corpusId": "text-0f2a693e93e2ed7008fe",
+      "role": "ui-or-runtime-context",
+      "sourceLines": [
+        333
+      ]
+    },
+    {
+      "corpusId": "text-0f730d85cde0d42de81b",
+      "role": "entry-title",
+      "sourceLines": [
+        314
+      ]
+    },
+    {
+      "corpusId": "text-105f8b9972680f9d9d6b",
+      "role": "entry-title",
+      "sourceLines": [
+        241
+      ]
+    },
+    {
+      "corpusId": "text-114b1655a1509f09958d",
+      "role": "entry-title",
+      "sourceLines": [
+        239
+      ]
+    },
+    {
+      "corpusId": "text-12172cd54d1578cead54",
+      "role": "ui-or-runtime-context",
+      "sourceLines": [
+        6,
+        212
+      ]
+    },
+    {
+      "corpusId": "text-15b41c5710a4ce6ac8d9",
+      "role": "ui-or-runtime-context",
+      "sourceLines": [
+        423
+      ]
+    },
+    {
+      "corpusId": "text-16639ebf2b9824962eca",
+      "role": "entry-title",
+      "sourceLines": [
+        270
+      ]
+    },
+    {
+      "corpusId": "text-169069f9f446c76a7aba",
+      "role": "entry-title",
+      "sourceLines": [
+        325
+      ]
+    },
+    {
+      "corpusId": "text-1b5586b64125402e6415",
+      "role": "entry-title",
+      "sourceLines": [
+        301
+      ]
+    },
+    {
+      "corpusId": "text-1c6333509debf060200e",
+      "role": "ui-or-runtime-context",
+      "sourceLines": [
+        348,
+        349
+      ]
+    },
+    {
+      "corpusId": "text-1ce7240dd0c39c41b427",
+      "role": "entry-title",
+      "sourceLines": [
+        259
+      ]
+    },
+    {
+      "corpusId": "text-1e19dafcf43c2c14f969",
+      "role": "entry-title",
+      "sourceLines": [
+        276
+      ]
+    },
+    {
+      "corpusId": "text-2348f998744212575d85",
+      "role": "ui-or-runtime-context",
+      "sourceLines": [
+        403,
+        408,
+        412,
+        413
+      ]
+    },
+    {
+      "corpusId": "text-252052fcbd8876f4291a",
+      "role": "entry-title",
+      "sourceLines": [
+        279
+      ]
+    },
+    {
+      "corpusId": "text-29422839d0b8dec1e5f4",
+      "role": "category-id",
+      "sourceLines": [
+        273
+      ]
+    },
+    {
+      "corpusId": "text-2a4c20856e6115fd645a",
+      "role": "entry-title",
+      "sourceLines": [
+        262
+      ]
+    },
+    {
+      "corpusId": "text-2b3a8f6cbe795a7c0e9b",
+      "role": "entry-title",
+      "sourceLines": [
+        251
+      ]
+    },
+    {
+      "corpusId": "text-2e8ae1b15dc7e59ae209",
+      "role": "entry-title",
+      "sourceLines": [
+        283
+      ]
+    },
+    {
+      "corpusId": "text-303aed4572f5083b1d07",
+      "role": "entry-title",
+      "sourceLines": [
+        250
+      ]
+    },
+    {
+      "corpusId": "text-32d3fedad4cfedcc9ea8",
+      "role": "ui-or-runtime-context",
+      "sourceLines": [
+        332
+      ]
+    },
+    {
+      "corpusId": "text-383aa20b31865ac5c0c0",
+      "role": "entry-title",
+      "sourceLines": [
+        245
+      ]
+    },
+    {
+      "corpusId": "text-3a7944692034c0b1f11d",
+      "role": "category-id",
+      "sourceLines": [
+        249
+      ]
+    },
+    {
+      "corpusId": "text-3b5996667d5a4676f15a",
+      "role": "entry-title",
+      "sourceLines": [
+        255
+      ]
+    },
+    {
+      "corpusId": "text-3b8f01b7b1d29f2ac204",
+      "role": "entry-title",
+      "sourceLines": [
+        289
+      ]
+    },
+    {
+      "corpusId": "text-3e4698ede877c8b55192",
+      "role": "ui-or-runtime-context",
+      "sourceLines": [
+        418
+      ]
+    },
+    {
+      "corpusId": "text-3e9cf9b3cf3ee226ca2b",
+      "role": "ui-or-runtime-context",
+      "sourceLines": [
+        409,
+        414
+      ]
+    },
+    {
+      "corpusId": "text-3fc4a2ce9dca56845239",
+      "role": "entry-title",
+      "sourceLines": [
+        316
+      ]
+    },
+    {
+      "corpusId": "text-4097d776ced59f464dc8",
+      "role": "entry-title",
+      "sourceLines": [
+        253
+      ]
+    },
+    {
+      "corpusId": "text-412d2ccea97fb37e2497",
+      "role": "entry-title",
+      "sourceLines": [
+        324
+      ]
+    },
+    {
+      "corpusId": "text-4947f7cc0009b142e8d6",
+      "role": "entry-title",
+      "sourceLines": [
+        246
+      ]
+    },
+    {
+      "corpusId": "text-4bfa4521134774e86ab4",
+      "role": "entry-title",
+      "sourceLines": [
+        266
+      ]
+    },
+    {
+      "corpusId": "text-51cce9fbedbe52c22208",
+      "role": "entry-title",
+      "sourceLines": [
+        243
+      ]
+    },
+    {
+      "corpusId": "text-54c85f220b6ad2462166",
+      "role": "entry-title",
+      "sourceLines": [
+        277
+      ]
+    },
+    {
+      "corpusId": "text-57a1766d50d6d79a6a7d",
+      "role": "entry-title",
+      "sourceLines": [
+        264
+      ]
+    },
+    {
+      "corpusId": "text-58e2456a6bffbc92303d",
+      "role": "entry-title",
+      "sourceLines": [
+        292
+      ]
+    },
+    {
+      "corpusId": "text-64e379e052c08a4658cc",
+      "role": "entry-title",
+      "sourceLines": [
+        281
+      ]
+    },
+    {
+      "corpusId": "text-66d5ba0f996da7c6409a",
+      "role": "entry-title",
+      "sourceLines": [
+        267
+      ]
+    },
+    {
+      "corpusId": "text-6cfe99027b48112f14ec",
+      "role": "entry-title",
+      "sourceLines": [
+        238
+      ]
+    },
+    {
+      "corpusId": "text-6d0316903e9006831df2",
+      "role": "entry-title",
+      "sourceLines": [
+        298
+      ]
+    },
+    {
+      "corpusId": "text-6ff993b28106982b7463",
+      "role": "entry-title",
+      "sourceLines": [
+        299
+      ]
+    },
+    {
+      "corpusId": "text-70ffaaf522b47c29edd5",
+      "role": "entry-title",
+      "sourceLines": [
+        322
+      ]
+    },
+    {
+      "corpusId": "text-77346b2fc9ac96ccdf6a",
+      "role": "entry-title",
+      "sourceLines": [
+        271
+      ]
+    },
+    {
+      "corpusId": "text-775afff8c937973672ec",
+      "role": "category-id",
+      "sourceLines": [
+        261
+      ]
+    },
+    {
+      "corpusId": "text-79eaa989798e23988a89",
+      "role": "ui-or-runtime-context",
+      "sourceLines": [
+        434
+      ]
+    },
+    {
+      "corpusId": "text-7e154e0a8049a9bd6225",
+      "role": "entry-title",
+      "sourceLines": [
+        312
+      ]
+    },
+    {
+      "corpusId": "text-7f8f0c446e70c3440a93",
+      "role": "ui-or-runtime-context",
+      "sourceLines": [
+        338,
+        432
+      ]
+    },
+    {
+      "corpusId": "text-8195a8e8042346891fdc",
+      "role": "entry-title",
+      "sourceLines": [
+        305
+      ]
+    },
+    {
+      "corpusId": "text-8592387ae842aae3cf5a",
+      "role": "entry-title",
+      "sourceLines": [
+        286
+      ]
+    },
+    {
+      "corpusId": "text-85ea5624c803c0867c4a",
+      "role": "entry-title",
+      "sourceLines": [
+        318
+      ]
+    },
+    {
+      "corpusId": "text-88304a00d6b7df8a8f5c",
+      "role": "entry-title",
+      "sourceLines": [
+        315
+      ]
+    },
+    {
+      "corpusId": "text-8d525e5f158b9afe05f3",
+      "role": "ui-or-runtime-context",
+      "sourceLines": [
+        231,
+        345
+      ]
+    },
+    {
+      "corpusId": "text-9533dead0a07df16291a",
+      "role": "entry-title",
+      "sourceLines": [
+        263
+      ]
+    },
+    {
+      "corpusId": "text-96879611650f80a81392",
+      "role": "ui-or-runtime-context",
+      "sourceLines": [
+        358
+      ]
+    },
+    {
+      "corpusId": "text-96cd68dfe01310db498e",
+      "role": "entry-title",
+      "sourceLines": [
+        252
+      ]
+    },
+    {
+      "corpusId": "text-97b9edef7366dd597a5b",
+      "role": "entry-title",
+      "sourceLines": [
+        274
+      ]
+    },
+    {
+      "corpusId": "text-98e1eab18510dd29fa30",
+      "role": "entry-title",
+      "sourceLines": [
+        247
+      ]
+    },
+    {
+      "corpusId": "text-9a47bd2a14cef57b27f9",
+      "role": "entry-title",
+      "sourceLines": [
+        291
+      ]
+    },
+    {
+      "corpusId": "text-9cd816d9eeb4cd1b8195",
+      "role": "entry-title",
+      "sourceLines": [
+        310
+      ]
+    },
+    {
+      "corpusId": "text-a2dfc8db1610ed104d2e",
+      "role": "entry-title",
+      "sourceLines": [
+        278
+      ]
+    },
+    {
+      "corpusId": "text-a60ec1cf58f49cd2fab6",
+      "role": "ui-or-runtime-context",
+      "sourceLines": [
+        335
+      ]
+    },
+    {
+      "corpusId": "text-aa05ccc345c07555b732",
+      "role": "category-id",
+      "sourceLines": [
+        297
+      ]
+    },
+    {
+      "corpusId": "text-aa0a77e77f2cc629c0bc",
+      "role": "entry-title",
+      "sourceLines": [
+        327
+      ]
+    },
+    {
+      "corpusId": "text-ac9e83714abda7a91cd8",
+      "role": "entry-title",
+      "sourceLines": [
+        287
+      ]
+    },
+    {
+      "corpusId": "text-b10122b93f9fb10159ea",
+      "role": "entry-title",
+      "sourceLines": [
+        302
+      ]
+    },
+    {
+      "corpusId": "text-b377fdd3d2a6b17a78bd",
+      "role": "entry-title",
+      "sourceLines": [
+        317
+      ]
+    },
+    {
+      "corpusId": "text-b39f318830241fccdbc8",
+      "role": "ui-or-runtime-context",
+      "sourceLines": [
+        406
+      ]
+    },
+    {
+      "corpusId": "text-b3b6c6c256632dfa7e27",
+      "role": "entry-title",
+      "sourceLines": [
+        282
+      ]
+    },
+    {
+      "corpusId": "text-b561b0b4d756dcb29fd3",
+      "role": "ui-or-runtime-context",
+      "sourceLines": [
+        211
+      ]
+    },
+    {
+      "corpusId": "text-bacc91a01862fa8a46bd",
+      "role": "entry-title",
+      "sourceLines": [
+        295
+      ]
+    },
+    {
+      "corpusId": "text-bcb6a505a9021c61de1e",
+      "role": "entry-title",
+      "sourceLines": [
+        275
+      ]
+    },
+    {
+      "corpusId": "text-be324db61e98036e7dee",
+      "role": "entry-title",
+      "sourceLines": [
+        326
+      ]
+    },
+    {
+      "corpusId": "text-bf4af42b00ff0dcffe10",
+      "role": "category-id",
+      "sourceLines": [
+        309
+      ]
+    },
+    {
+      "corpusId": "text-c490796ccebacac2452a",
+      "role": "composition-fallback",
+      "sourceLines": [
+        341
+      ]
+    },
+    {
+      "corpusId": "text-c4b58093cd424f4ce832",
+      "role": "entry-title",
+      "sourceLines": [
+        288
+      ]
+    },
+    {
+      "corpusId": "text-c55394776b1492cf0c21",
+      "role": "ui-or-runtime-context",
+      "sourceLines": [
+        417
+      ]
+    },
+    {
+      "corpusId": "text-c96c6d5be8d08a12e7b5",
+      "role": "ui-or-runtime-context",
+      "sourceLines": [
+        404,
+        427
+      ]
+    },
+    {
+      "corpusId": "text-ca2634c545e77fbbf604",
+      "role": "entry-title",
+      "sourceLines": [
+        313
+      ]
+    },
+    {
+      "corpusId": "text-ccd18a4c5bed2ae1954a",
+      "role": "entry-title",
+      "sourceLines": [
+        300
+      ]
+    },
+    {
+      "corpusId": "text-ce1c5418813cca3d7589",
+      "role": "entry-title",
+      "sourceLines": [
+        240
+      ]
+    },
+    {
+      "corpusId": "text-cea10ce6c91cc43582e5",
+      "role": "entry-title",
+      "sourceLines": [
+        269
+      ]
+    },
+    {
+      "corpusId": "text-d1dc4af165907d786f60",
+      "role": "entry-title",
+      "sourceLines": [
+        323
+      ]
+    },
+    {
+      "corpusId": "text-d80cf5ea021c7540560c",
+      "role": "category-id",
+      "sourceLines": [
+        237
+      ]
+    },
+    {
+      "corpusId": "text-d96bbb29207dddf21652",
+      "role": "entry-title",
+      "sourceLines": [
+        293
+      ]
+    },
+    {
+      "corpusId": "text-dbe5ea3fcd81fe06b01e",
+      "role": "entry-title",
+      "sourceLines": [
+        280
+      ]
+    },
+    {
+      "corpusId": "text-dd866501ed01604234c2",
+      "role": "entry-title",
+      "sourceLines": [
+        306
+      ]
+    },
+    {
+      "corpusId": "text-de098b4342d9fddad1c1",
+      "role": "entry-title",
+      "sourceLines": [
+        303
+      ]
+    },
+    {
+      "corpusId": "text-e2a4e0b3875fe280f9ed",
+      "role": "entry-title",
+      "sourceLines": [
+        328
+      ]
+    },
+    {
+      "corpusId": "text-e538046787858be896ba",
+      "role": "entry-title",
+      "sourceLines": [
+        257
+      ]
+    },
+    {
+      "corpusId": "text-e5c7ffac26fed654fe62",
+      "role": "ui-or-runtime-context",
+      "sourceLines": [
+        360,
+        405,
+        417,
+        418,
+        423,
+        428,
+        432
+      ]
+    },
+    {
+      "corpusId": "text-e871c918209bada1f9e2",
+      "role": "entry-title",
+      "sourceLines": [
+        319
+      ]
+    },
+    {
+      "corpusId": "text-ec888ebc46be4fd86b7f",
+      "role": "entry-title",
+      "sourceLines": [
+        304
+      ]
+    },
+    {
+      "corpusId": "text-ece2ae3a89be430d05ae",
+      "role": "entry-title",
+      "sourceLines": [
+        311
+      ]
+    },
+    {
+      "corpusId": "text-efec7e05f53b208186c8",
+      "role": "entry-title",
+      "sourceLines": [
+        254
+      ]
+    },
+    {
+      "corpusId": "text-f01d63748f0b4215ca65",
+      "role": "entry-title",
+      "sourceLines": [
+        290
+      ]
+    },
+    {
+      "corpusId": "text-fbd56662924f70215943",
+      "role": "entry-title",
+      "sourceLines": [
+        256
+      ]
+    },
+    {
+      "corpusId": "text-fcbcf165908dd18a9e49",
+      "role": "ui-or-runtime-context",
+      "sourceLines": [
+        409
+      ]
+    },
+    {
+      "corpusId": "text-2fc07ac85f887c696dab",
+      "role": "ui-or-runtime-context",
+      "sourceLines": [
+        224
+      ]
+    },
+    {
+      "corpusId": "text-0052e01dcf8b558e4c07",
+      "role": "ui-or-runtime-context",
+      "sourceLines": [
+        401
+      ]
+    },
+    {
+      "corpusId": "text-0f0da34d94111d590f2f",
+      "role": "ui-or-runtime-context",
+      "sourceLines": [
+        418
+      ]
+    },
+    {
+      "corpusId": "text-12e220fd4bac034de0e5",
+      "role": "ui-or-runtime-context",
+      "sourceLines": [
+        397
+      ]
+    },
+    {
+      "corpusId": "text-1e165ab954af10ddb9b1",
+      "role": "ui-or-runtime-context",
+      "sourceLines": [
+        221
+      ]
+    },
+    {
+      "corpusId": "text-2419329067823cab5b4e",
+      "role": "ui-or-runtime-context",
+      "sourceLines": [
+        334
+      ]
+    },
+    {
+      "corpusId": "text-3b1b98aecfa4ecdc9f95",
+      "role": "ui-or-runtime-context",
+      "sourceLines": [
+        428
+      ]
+    },
+    {
+      "corpusId": "text-3b7ea51793e9d906afa0",
+      "role": "ui-or-runtime-context",
+      "sourceLines": [
+        225
+      ]
+    },
+    {
+      "corpusId": "text-3ee49e8e34db400f8878",
+      "role": "ui-or-runtime-context",
+      "sourceLines": [
+        216
+      ]
+    },
+    {
+      "corpusId": "text-6279b7656522db882266",
+      "role": "ui-or-runtime-context",
+      "sourceLines": [
+        337
+      ]
+    },
+    {
+      "corpusId": "text-6f645bfa853426ed4a20",
+      "role": "ui-or-runtime-context",
+      "sourceLines": [
+        400
+      ]
+    },
+    {
+      "corpusId": "text-97c85d6ea28bb2090fa6",
+      "role": "ui-or-runtime-context",
+      "sourceLines": [
+        359
+      ]
+    },
+    {
+      "corpusId": "text-ad3f67334f7940c955ac",
+      "role": "ui-or-runtime-context",
+      "sourceLines": [
+        417
+      ]
+    },
+    {
+      "corpusId": "text-bd4c7938f079a7e3ad21",
+      "role": "ui-or-runtime-context",
+      "sourceLines": [
+        217
+      ]
+    },
+    {
+      "corpusId": "text-caf26fc99b1c648e9056",
+      "role": "ui-or-runtime-context",
+      "sourceLines": [
+        402,
+        409
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4275 @@
+{
+  "schemaVersion": "1.0",
+  "bundleId": "a8-bz-designer",
+  "bundleDigest": "df03eadd319a6a5f88f2a4c8b12a90101c4f79d8cbdc0a2e0adff88ccd0160e3",
+  "status": "reviewed",
+  "reviewerModel": "gpt-6-astra",
+  "reviewedAt": "2026-09-12",
+  "decisions": [
+    {
+      "id": "text-00328cf3dd0f286c97a4",
+      "sourceIndex": 0,
+      "originalValue": "Shonen Battle Ink",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 200,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-05b44f4aa0e1b1de75c4",
+      "sourceIndex": 1,
+      "originalValue": "manga",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 197,
+          "column": 12,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-05ecc2a0a8ee940965cc",
+      "sourceIndex": 2,
+      "originalValue": "soft watercolor manga poster: transparent washes, delicate ink, emotional atmosphere, light bloom, poetic color transitions.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 208,
+          "column": 71,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-06363555054de198a87c",
+      "sourceIndex": 3,
+      "originalValue": "clay",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 181,
+          "column": 12,
+          "kind": "string-literal",
+          "functionName": "sketchStylePrompt",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-063d93f08be1b7d1c1fd",
+      "sourceIndex": 4,
+      "originalValue": "\" data-tab-key=\"",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 287,
+          "column": 216,
+          "kind": "string-literal",
+          "functionName": "renderSections",
+          "owners": [
+            "barz-designer"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 293,
+          "column": 431,
+          "kind": "string-literal",
+          "functionName": "renderSections",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-0697f890602f04382c77",
+      "sourceIndex": 5,
+      "originalValue": "IMG_1 is a reference for a practical puppet/figurine character.\nPhotograph this exact figurine — with its exact proportions,head size, limb thickness, body shape — as-is in a reallocation. Do not apply realistic human anatomy. This is NOTa human, it is a sculpted character with intentionalnon-realistic proportions.Full body shot, dancing in a L.A ghetto zone, sunny day.High key lighting. S16mm, 50mm. Alec Soth style. 16:9. MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 116,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "correct",
+      "role": "prompt-body",
+      "correctedValue": "IMG_1 is a reference for a practical puppet/figurine character.\nPhotograph this exact figurine — with its exact proportions, head size, limb thickness, body shape — as-is on location. Do not apply realistic human anatomy. This is NOT a human, it is a sculpted character with intentional non-realistic proportions. Full body shot, dancing in an L.A ghetto zone, sunny day. High key lighting. S16mm, 50mm. Alec Soth style. 16:9. MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "reason": "Ancienne variante archivée : réparer les mots collés et reallocation, sans changer la scène.",
+      "replacements": [
+        [
+          "proportions,head",
+          "proportions, head"
+        ],
+        [
+          "in a reallocation",
+          "on location"
+        ],
+        [
+          "NOTa human",
+          "NOT a human"
+        ],
+        [
+          "intentionalnon-realistic",
+          "intentional non-realistic"
+        ],
+        [
+          "proportions.Full",
+          "proportions. Full"
+        ],
+        [
+          "in a L.A",
+          "in an L.A"
+        ],
+        [
+          "day.High",
+          "day. High"
+        ]
+      ]
+    },
+    {
+      "id": "text-073c1634c496cdb649d1",
+      "sourceIndex": 6,
+      "originalValue": "status",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 310,
+          "column": 40,
+          "kind": "string-literal",
+          "functionName": "openGroup",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-078064f929e43261d838",
+      "sourceIndex": 7,
+      "originalValue": "Make it a photo with same pixel-perfect design replica Goal: apply photoreal textures and studio light onto the exact drawing, without changing any line. MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 62,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "correct",
+      "role": "prompt-body",
+      "correctedValue": "Make it a photo with the same pixel-perfect design. Goal: apply photoreal textures and studio light onto the exact drawing, without changing any line. MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "reason": "Réparer la phrase et séparer le titre Goal ; même objectif de copie du dessin.",
+      "replacements": [
+        [
+          "Make it a photo with same pixel-perfect design replica Goal:",
+          "Make it a photo with the same pixel-perfect design. Goal:"
+        ]
+      ]
+    },
+    {
+      "id": "text-0837d6d19118b59716c6",
+      "sourceIndex": 8,
+      "originalValue": "Make this drawing a photo you must keep the exact same composition and the exact same weird and deformed design but with real realistic materials. It must look like 80 mm macro photo of hyperrealistic sculpture in the style of \" Ron Mueck\", handmade craft quality, subsurface scattering skin effect, tilt shift focus. You must strictly respect the head design even if it's weird and project the ultra realistic style on the exact lines and contour of the angular drawing, be very precise. In a plain subtil textured studio cyclorama background, hi quality professional diffuse lighting. MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 54,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "correct",
+      "role": "prompt-body",
+      "correctedValue": "Make this drawing a photo you must keep the exact same composition and the exact same weird and deformed design but with real realistic materials. It must look like an 80 mm macro photo of a hyperrealistic sculpture in the style of \"Ron Mueck\", handmade craft quality, subsurface scattering skin effect, tilt shift focus. You must strictly respect the head design even if it's weird and project the ultra realistic style on the exact lines and contour of the angular drawing, be very precise. In a plain subtly textured studio cyclorama background, hi quality professional diffuse lighting. MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "reason": "Corriger les articles et subtil textured ; conserver la référence artistique.",
+      "replacements": [
+        [
+          "like 80 mm macro photo of hyperrealistic sculpture",
+          "like an 80 mm macro photo of a hyperrealistic sculpture"
+        ],
+        [
+          "\" Ron Mueck\"",
+          "\"Ron Mueck\""
+        ],
+        [
+          "subtil textured",
+          "subtly textured"
+        ]
+      ]
+    },
+    {
+      "id": "text-086ec0da446413720406",
+      "sourceIndex": 9,
+      "originalValue": "Wax crayon texture on cheap white paper, heavy pressure marks, broken contour lines, colors outside the edges, accidental smudges, simple flat background.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 232,
+          "column": 251,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-09c5e56303cdb0120110",
+      "sourceIndex": 10,
+      "originalValue": "toy-like clay diorama: cute collectible proportions, polished but handmade, tiny set dressing, bright commercial tabletop lighting, playful catalog clarity.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 190,
+          "column": 74,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-0c414eb5cbfec315ac07",
+      "sourceIndex": 11,
+      "originalValue": "Ben-Day dots, aged pulp paper, green/purple/orange accents, sharp shadow shapes, exaggerated hands and eyes, no cover text or speech balloons.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 222,
+          "column": 222,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-0e6155d8dc4091a47e16",
+      "sourceIndex": 12,
+      "originalValue": "Polish Puppet Animation",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 186,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": "sketchStylePrompt",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-0ea537b71a1d28a850be",
+      "sourceIndex": 13,
+      "originalValue": "Classroom Art Show",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 237,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-0fc44fb940dafde1e24d",
+      "sourceIndex": 14,
+      "originalValue": "Pop Halftone Poster Comic",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 225,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-1028bc24974e6683eae3",
+      "sourceIndex": 15,
+      "originalValue": "Silver Age Superhero",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 217,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-11f47641c584f704490f",
+      "sourceIndex": 16,
+      "originalValue": "Luxury Clay Editorial",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 193,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-12715f6506e475ef3ee0",
+      "sourceIndex": 17,
+      "originalValue": "Left-Hand Doodle",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 236,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-128df13c1e54ffaaafcc",
+      "sourceIndex": 18,
+      "originalValue": "hex",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 85,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 89,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 93,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 97,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-134a4d71c48152cfc391",
+      "sourceIndex": 19,
+      "originalValue": "Conversion / fidelity",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 29,
+          "column": 15,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-14ac1c193888df2c3ca2",
+      "sourceIndex": 20,
+      "originalValue": "Builds or completes the body while preserving the head, stylized proportions and render continuity.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 267,
+          "column": 709,
+          "kind": "string-literal",
+          "functionName": "infoText",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-154c6acf3907c023de7a",
+      "sourceIndex": 21,
+      "originalValue": "No readable text, use abstract light panels instead of signs, black ink shadows, electric color accents, screentone rain, lens-like highlights and crowded depth.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 209,
+          "column": 195,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-1860376f167ee8ef99b1",
+      "sourceIndex": 22,
+      "originalValue": "modern cinematic graphic novel: painterly but ink-led finish, moody color script, grounded anatomy, expressive faces, prestige cover polish.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 218,
+          "column": 68,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-1adfa6e61ed332a06348",
+      "sourceIndex": 23,
+      "originalValue": "Photorealistic Conversion (No Correction)",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 41,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-1b57f1bef17def5ed084",
+      "sourceIndex": 24,
+      "originalValue": "Kindergarten Crayon Portrait",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 232,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-1bd5bae2764f504d498e",
+      "sourceIndex": 25,
+      "originalValue": "classic silver-age superhero comic: bold heroic anatomy, bright primary colors, confident contour inks, dramatic action pose, optimistic print energy.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 217,
+          "column": 68,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-1fe553c1829ea517fb6b",
+      "sourceIndex": 26,
+      "originalValue": "Body Ref",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 103,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-21288a3615702367b14a",
+      "sourceIndex": 27,
+      "originalValue": "Crayon plus marker, wobbly action lines, uneven speech-bubble-like shapes must stay blank or abstract, thick accidental outlines, off-register color fill, notebook-paper texture.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 241,
+          "column": 235,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-234dc45c6cb0ee65b6d8",
+      "sourceIndex": 28,
+      "originalValue": "Newspaper Strip Cartoon",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 224,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-24c6fbbcd85dfad300d2",
+      "sourceIndex": 29,
+      "originalValue": "primitive sticker-book collage: naive cutout shapes, mismatched scale, cheerful weirdness, flat symbolic composition, playful paper-toy logic.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 240,
+          "column": 78,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-2504108f05c11d19372f",
+      "sourceIndex": 30,
+      "originalValue": "80s Mecha Manga",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 205,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-2514bfed02b961f3bed7",
+      "sourceIndex": 31,
+      "originalValue": "make a photorealistic picture inspired by this image, try to keep the same composition and the same design but with real realistic materials. it must look like 35 mm photo of wax figurines in a plain grey studio. [Scene Description] MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 66,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "correct",
+      "role": "prompt-body",
+      "correctedValue": "make a photorealistic picture inspired by this image, try to keep the same composition and the same design but with real realistic materials. it must look like a 35 mm photo of wax figurines in a plain grey studio. [Scene Description] MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "reason": "Ajouter l’article manquant devant 35 mm photo.",
+      "replacements": [
+        [
+          "like 35 mm photo",
+          "like a 35 mm photo"
+        ]
+      ]
+    },
+    {
+      "id": "text-2697e9aa207084e01985",
+      "sourceIndex": 32,
+      "originalValue": "Uses the Original Drawing Weight slider: lower values let the style reshape the sketch, higher values keep the source geometry closer.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 267,
+          "column": 146,
+          "kind": "string-literal",
+          "functionName": "infoText",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-280fd195500343ea5950",
+      "sourceIndex": 33,
+      "originalValue": "[IMG_1] is a practical sculpted figurine/puppet character. Photograph this exact figurine — with its exact proportions, head size, limb thickness, body shape — as-is, physically present on location. Do not apply realistic human anatomy. This is NOT a human, it is a sculpted character with intentional non-realistic proportions. Do not correct or normalize proportions.\nFull body shot. [IMG_2 / ...description du décor...].\nThe character is physically present in the scene, not composited. Cast shadows from the character fall naturally on the ground surface, consistent with the sun angle and direction of the scene. The character's skin, clothing and materials pick up ambient light, bounce light and color cast from the environment. Color grade, contrast, saturation and film grain are uniform across the entire image — character and background share the same photographic treatment. No difference in sharpness, noise level or color temperature between the character and the environment.\n[...style cinéma : caméra, focale, réalisateur référence, ratio...]\nMANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 121,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-2dc01c1641cc6e08f605",
+      "sourceIndex": 34,
+      "originalValue": "Dark Folk Clay Horror",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 191,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-2e4d410f21e996157d3f",
+      "sourceIndex": 35,
+      "originalValue": "naive kindergarten crayon drawing: oversized head, uneven arms, simple dot eyes, awkward smile, sun-in-the-corner energy, charmingly wrong proportions.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 232,
+          "column": 96,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-2ec716e4dc4329cdd25b",
+      "sourceIndex": 36,
+      "originalValue": "kids",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 229,
+          "column": 12,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-2f0f712eeac3d5f02951",
+      "sourceIndex": 37,
+      "originalValue": "gekiga-inspired dramatic realism: grounded adult character design, social realist mood, expressive wrinkles, raw documentary framing.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 203,
+          "column": 66,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-306eee26526761669234",
+      "sourceIndex": 38,
+      "originalValue": "weird school notebook margin creature: restless doodle energy, strange hybrid anatomy, funny aggressive shapes, chaotic imagination.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 238,
+          "column": 90,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-31cbbb7c0d8c5bd7c18d",
+      "sourceIndex": 39,
+      "originalValue": "Aardman-Style Clay Comedy",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 184,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": "sketchStylePrompt",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-32960f18f1e174a29ed9",
+      "sourceIndex": 40,
+      "originalValue": "Crayon and pencil on slightly wrinkled paper, tape corners, uneven color pressure, simplified ground line, big sky area, crude but sincere face details.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 235,
+          "column": 233,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-37ac72516c8d98c9cc71",
+      "sourceIndex": 41,
+      "originalValue": "high-energy shonen manga: bold black ink, explosive pose emphasis, speed lines, impact bursts, sharp silhouettes, heroic readability.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 200,
+          "column": 83,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-38496c1763ba96796da8",
+      "sourceIndex": 42,
+      "originalValue": "Economical shapes, expressive brows and hands, clean silhouette, small prop details, restrained shading, print-paper texture, no captions or speech bubbles.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 224,
+          "column": 215,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-38989589b329e53b44d8",
+      "sourceIndex": 43,
+      "originalValue": "\" style=\"background:",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 291,
+          "column": 289,
+          "kind": "string-literal",
+          "functionName": "renderSections",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-39e8b4f213f68f3a5474",
+      "sourceIndex": 44,
+      "originalValue": "Ready-to-copy utility prompt that can be enriched with scene details.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 267,
+          "column": 1207,
+          "kind": "string-literal",
+          "functionName": "infoText",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-3c3d713c4f35347ddd0a",
+      "sourceIndex": 45,
+      "originalValue": "Underground Zine",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 220,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-3d03746450fb6212427f",
+      "sourceIndex": 46,
+      "originalValue": "psychological horror manga: obsessive line texture, warped expression, claustrophobic blacks, uncanny stillness, dread over gore.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 206,
+          "column": 86,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-3dd918399a41216ce3e6",
+      "sourceIndex": 47,
+      "originalValue": ".card.open",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 273,
+          "column": 53,
+          "kind": "string-literal",
+          "functionName": "togglePrompt",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-3ddbd778c8382e80f956",
+      "sourceIndex": 48,
+      "originalValue": "Generate a full-body character by strictly combining [IMG_1] and [IMG_2].\n\nAbsolute Head Preservation ([IMG_1]): The head from [IMG_1] must be preserved exactly as it is without any alterations. Do not change the facial features, expression, skin texture, or the specific directional lighting of the face. It must remain an exact, identical 1:1 match to the provided reference [IMG_1].\n\nStructure and Proportions ([IMG_2]): Use [IMG_2] as a strict structural reference for the body. Strictly respect the exact pose, the overall silhouette, the shape of the clothing, and the stylized head-to-body size ratio as drawn in the sketch. The dimensions and proportions of the sketch are sacred.\n\nBody and Lighting Adaptation: The generated body must seamlessly adapt its rendering, textures, and lighting to match the exact complex photographic lighting and hyper-realism of the head in [IMG_1]. The shadows, highlights, and material textures on the body and clothing must flawlessly align with the light source and environment implied by the head.\n\nFusion and Environment: Create a seamless, organic blend at the neck connecting the entirely unaltered head to the newly generated body. Place the final, cohesive full-body character against a clean, plain blue-grey cyclorama background (hex code #404135). MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 105,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-3e3251ac841f78198e50",
+      "sourceIndex": 49,
+      "originalValue": "Sketch to Manga",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 198,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-3f2eadd8f454d1247599",
+      "sourceIndex": 50,
+      "originalValue": "fashion editorial manga cover: elongated elegant silhouette, refined outfit detail, confident pose, glossy magazine color, stylish negative space.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 207,
+          "column": 67,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-3ffb44fbc7066b45c2d0",
+      "sourceIndex": 51,
+      "originalValue": "Torn colored paper, crayon outlines, sticker-like eyes, glue shadows, rough scissors edges, flat tabletop scan feeling, deliberately simple shapes.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 240,
+          "column": 224,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-467bb2d2e4c9d79fe523",
+      "sourceIndex": 52,
+      "originalValue": "Layered waxy texture, smeared blues and grays, uneven pressure, simple rain lines, small figure on a ground stripe, paper fibers visible.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 239,
+          "column": 211,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-47a2a1a579c0779f2a25",
+      "sourceIndex": 53,
+      "originalValue": "1970s-1980s television claymation: saturated colors, chunky rounded clay, cheerful oddness, simple stage backgrounds, analog studio charm.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 188,
+          "column": 88,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-47b1522bb118adada821",
+      "sourceIndex": 54,
+      "originalValue": "Preserve Geometry (No Aesthetic Fixes)",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 45,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-49894a41e88907b0c4a1",
+      "sourceIndex": 55,
+      "originalValue": "Franco-Belgian ligne claire: clean uniform outlines, flat vivid colors, precise readable shapes, elegant adventure-album clarity.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 216,
+          "column": 95,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-4cdc7682bd671f6df640",
+      "sourceIndex": 56,
+      "originalValue": "Sketch to Clay",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 182,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": "sketchStylePrompt",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-4d29483d65cf41d8c97e",
+      "sourceIndex": 57,
+      "originalValue": "Polish art-house puppet animation: surreal folk-modern shapes, poetic melancholy, handmade theatrical staging, muted poster colors, symbolic props, quiet uncanny mood.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 186,
+          "column": 71,
+          "kind": "string-literal",
+          "functionName": "sketchStylePrompt",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-4e00b7caa446b67ec218",
+      "sourceIndex": 58,
+      "originalValue": "Generate a full-body character by using the red line sketches.\nAbsolute upper body Preservation: it  must be preserved exactly as it is without any alterations. Do not change the facial features, expression, skin texture, or the specific directional lighting of the face. It must remain an exact, identical 1:1 match to the provided reference.\n\nStructure and Proportions: Use the red line sketches as a strict structural reference for the lower body. Strictly respect the exact pose, the overall silhouette, the shape of the clothing, and the stylized head-to-body size ratio as drawn in the sketch. The dimensions and proportions of the sketch are sacred.\nImportant: Respect the weird  proportion, do not try to adapt real proportions.\n\n\"Body and Lighting Adaptation: The generated body must seamlessly adapt its rendering, textures, and lighting to match the exact complex photographic lighting and hyper-realism of the upper body. The shadows, highlights, and material textures on the new body parts and clothing must flawlessly align with the light source and environment implied by the upper body.\n\nIn a plain grey/blue background cyclorama\n\nFusion and Environment: Create a seamless, organic blend at the neck connecting the entirely unaltered head to the newly generated body. Place the final, cohesive full-body character against a clean, plain blue-grey cyclorama background (hex code #404135). MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.\"",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 77,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "correct",
+      "role": "prompt-body",
+      "correctedValue": "Generate a full-body character by using the red line sketches.\nAbsolute upper body Preservation: it  must be preserved exactly as it is without any alterations. Do not change the facial features, expression, skin texture, or the specific directional lighting of the face. It must remain an exact, identical 1:1 match to the provided reference.\n\nStructure and Proportions: Use the red line sketches as a strict structural reference for the lower body. Strictly respect the exact pose, the overall silhouette, the shape of the clothing, and the stylized head-to-body size ratio as drawn in the sketch. The dimensions and proportions of the sketch are sacred.\nImportant: Respect the weird proportions, do not try to adapt real proportions.\n\nBody and Lighting Adaptation: The generated body must seamlessly adapt its rendering, textures, and lighting to match the exact complex photographic lighting and hyper-realism of the upper body. The shadows, highlights, and material textures on the new body parts and clothing must flawlessly align with the light source and environment implied by the upper body.\n\nIn a plain grey/blue background cyclorama\n\nFusion and Environment: Create a seamless, organic blend at the neck connecting the entirely unaltered head to the newly generated body. Place the final, cohesive full-body character against a clean, plain blue-grey cyclorama background (hex code #404135). MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "reason": "Corriger proportions et retirer les guillemets accidentels autour de la fin du prompt.",
+      "replacements": [
+        [
+          "Respect the weird  proportion,",
+          "Respect the weird proportions,"
+        ],
+        [
+          "\"Body and Lighting Adaptation:",
+          "Body and Lighting Adaptation:"
+        ],
+        [
+          "Pure cinematic imagery only.\"",
+          "Pure cinematic imagery only."
+        ]
+      ]
+    },
+    {
+      "id": "text-4eab8bb94b05cc9ae711",
+      "sourceIndex": 59,
+      "originalValue": "Bleeding marker edges, saturated primary colors, thick shaky contour, accidental ink pools, simple shapes, no polished rendering, keep it handmade and wrong.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 234,
+          "column": 254,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-5218b7871c6e9b91420a",
+      "sourceIndex": 60,
+      "originalValue": "has-tools",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 295,
+          "column": 346,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-53127f7da60899feefd4",
+      "sourceIndex": 61,
+      "originalValue": "Czech Surreal Clay Theatre",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 187,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-53229cfca0c330be0d50",
+      "sourceIndex": 62,
+      "originalValue": "Franco-Belgian Ligne Claire",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 216,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-543a47676d762ac9fdec",
+      "sourceIndex": 63,
+      "originalValue": "Black spotted inks, limited amber/cyan/red palette, halftone grit, dramatic silhouette, low-angle staging if compatible with the sketch, no written signage.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 219,
+          "column": 206,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-565c68390b0caab0530b",
+      "sourceIndex": 64,
+      "originalValue": "[DRAWING_WEIGHT]",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 267,
+          "column": 119,
+          "kind": "string-literal",
+          "functionName": "infoText",
+          "owners": [
+            "barz-designer"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 268,
+          "column": 189,
+          "kind": "string-literal",
+          "functionName": "currentPrompt",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "compiler-token"
+    },
+    {
+      "id": "text-566fb18fceef63536e79",
+      "sourceIndex": 65,
+      "originalValue": "Sketch to Photo",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 28,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 177,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": "sketchStylePrompt",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-569718cf8ab78a9405ed",
+      "sourceIndex": 66,
+      "originalValue": "Turns a drawing or design into a finished image while keeping the original structure as needed.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 267,
+          "column": 972,
+          "kind": "string-literal",
+          "functionName": "infoText",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-57ed41c6af5684e5c089",
+      "sourceIndex": 67,
+      "originalValue": "Linework / body build",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 72,
+          "column": 15,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-5b7cda063a8fd65494e9",
+      "sourceIndex": 68,
+      "originalValue": "preserve Weird design",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 114,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 248,
+          "column": 12,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-5daebf5f125bb43e5c8b",
+      "sourceIndex": 69,
+      "originalValue": "Smooth clay planes with subtle fingerprints, controlled seams, matte ceramic-clay skin, stylized fashion materials, cyclorama background, soft rim light and macro polish.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 193,
+          "column": 225,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-5e5e76a9c29785e6ead6",
+      "sourceIndex": 70,
+      "originalValue": "\" aria-expanded=\"false\" aria-controls=\"prompt-",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 293,
+          "column": 216,
+          "kind": "string-literal",
+          "functionName": "renderSections",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-5f1743eecebeeeebde58",
+      "sourceIndex": 71,
+      "originalValue": "warm British claymation comedy: rounded plasticine forms, broad friendly faces, expressive brows, handmade miniature props, cozy practical set lighting, charming stop-motion imperfections.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 184,
+          "column": 93,
+          "kind": "string-literal",
+          "functionName": "sketchStylePrompt",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-601c022bb24af855bcbd",
+      "sourceIndex": 72,
+      "originalValue": "Ultra-Realistic Photo Conversion (Strict Linework)",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 37,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-6039f6746952536ce242",
+      "sourceIndex": 73,
+      "originalValue": "comics",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 213,
+          "column": 12,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-64995737db2ca9a51676",
+      "sourceIndex": 74,
+      "originalValue": "Clean ink, selective screentone, polished color flats, fabric folds and accessories emphasized, decorative typography-free cover composition.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 207,
+          "column": 217,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-655ba64e3f5132f56a31",
+      "sourceIndex": 75,
+      "originalValue": "kawaii chibi manga: tiny body, oversized head, simplified rounded shapes, cute expression, soft candy palette, toy-like charm.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 204,
+          "column": 89,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-6936bb8357c73f6c49ab",
+      "sourceIndex": 76,
+      "originalValue": "Kids Naive Drawing",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 230,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-695224efe7536c5c857f",
+      "sourceIndex": 77,
+      "originalValue": "Hand-inked contour, watercolor or muted flat colors, small gestures, natural posture, modest background detail, visible paper texture.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 221,
+          "column": 211,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-6c8f864aae6ed4b2a75d",
+      "sourceIndex": 78,
+      "originalValue": "Dense ink shadows, fine crosshatching, subtle screentones, textured paper grain, realistic hands and faces, low-key lighting, precise negative space.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 201,
+          "column": 206,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-6ec183172dc0cd5bdee0",
+      "sourceIndex": 79,
+      "originalValue": "Gekiga Documentary",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 203,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-6faede4166fe1493372e",
+      "sourceIndex": 80,
+      "originalValue": "Primitive Sticker Book Collage",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 240,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-702513d794ece967dc05",
+      "sourceIndex": 81,
+      "originalValue": "Strong composition, controlled edges, layered color, subtle grain, realistic lighting simplified into graphic shadow blocks, source design readable but stylized.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 218,
+          "column": 212,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-71bfbc149a7ba2ad1c46",
+      "sourceIndex": 82,
+      "originalValue": "Fashion Manga Cover",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 207,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-728f5685b457c2921fb0",
+      "sourceIndex": 83,
+      "originalValue": "mature seinen noir: realistic anatomy, heavy blacks, controlled hatching, urban tension, cinematic rain/night mood, restrained emotion.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 201,
+          "column": 67,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-7311b98fce973a390f76",
+      "sourceIndex": 84,
+      "originalValue": "make it a black and white drawing, no shadows, just the pencil line. [Scene Description] MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 145,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-7433646f59ffe0874748",
+      "sourceIndex": 85,
+      "originalValue": "classic drawing-on-the-fridge look: innocent family-picture composition, stiff stick-like body logic, big symbolic shapes, cheerful emotional directness.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 235,
+          "column": 76,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-7459cd77f7875ea669d8",
+      "sourceIndex": 86,
+      "originalValue": "No hatching, no gradients, balanced cartoon figure against slightly more detailed environment, crisp contour, calm composition, clean color separations.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 216,
+          "column": 228,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-769b6445d01fca010f49",
+      "sourceIndex": 87,
+      "originalValue": "Visible pencil grain, overlapping strokes, white gaps in the fill, hesitant outlines, erased marks, off-center composition, school-desk paper texture.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 233,
+          "column": 232,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-77397a63fd195efc4a87",
+      "sourceIndex": 88,
+      "originalValue": "Blue ruled notebook paper, ballpoint pen plus colored pencil, scribbled shadows, crossed-out experiments, arrows or text-like marks must become abstract non-readable doodle marks.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 238,
+          "column": 226,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-78b640272b87e10b17ec",
+      "sourceIndex": 89,
+      "originalValue": "Fine hair strands, light screentone gradients, petals, star textures, soft flowing costume edges, graceful proportions, dreamy white space.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 202,
+          "column": 227,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-799e805d253fa8af2f02",
+      "sourceIndex": 90,
+      "originalValue": "\" data-color-index=\"",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 291,
+          "column": 229,
+          "kind": "string-literal",
+          "functionName": "renderSections",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-7b520e30a787a1c657c8",
+      "sourceIndex": 91,
+      "originalValue": "Vintage Horror Anthology",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 222,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-7bf81624b1be5a5e3dfc",
+      "sourceIndex": 92,
+      "originalValue": "rainy-day wax crayon mood: soft childish melancholy, thick wax strokes, simple emotional weather, naive character design, cozy awkwardness.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 239,
+          "column": 68,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-7d7eb94ec02c58bf0b68",
+      "sourceIndex": 93,
+      "originalValue": "Noir Pulp Comic",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 219,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-8166f834d53c4788dfe7",
+      "sourceIndex": 94,
+      "originalValue": "Plasticine color blocks, soft hand-sculpted contours, visible fingerprints, simple felt props, gentle tungsten lighting, slight stop-motion pose stiffness.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 188,
+          "column": 230,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-82a3537ff0dbce7eec35",
+      "sourceIndex": 95,
+      "originalValue": "name",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 84,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 88,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 92,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 96,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-85325288060b2c17706a",
+      "sourceIndex": 96,
+      "originalValue": "style-led reinterpretation",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 266,
+          "column": 216,
+          "kind": "string-literal",
+          "functionName": "drawingWeightLabel",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "weight-label-in-prompt"
+    },
+    {
+      "id": "text-8559f1898fc3e59ca352",
+      "sourceIndex": 97,
+      "originalValue": "Fridge Magnet Family Drawing",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 235,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-857ae93889a68869d844",
+      "sourceIndex": 98,
+      "originalValue": "shojo romance manga: elegant faces, delicate linework, luminous eyes, floral atmosphere, emotional softness, decorative sparkle fields.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 202,
+          "column": 88,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-85b89e62f593c84f86d0",
+      "sourceIndex": 99,
+      "originalValue": "Use [IMG_1] as the source sketch and convert it into a finished image in this style.\nOriginal drawing weight: [DRAWING_WEIGHT]% ([DRAWING_WEIGHT_LABEL]).\nFidelity rule: preserve the source pose, silhouette, composition, main costume/object shapes, facial attitude, and readable identity according to this weight. At low weight, let the style reinterpret proportions and surface details. At high weight, keep the linework, landmarks, and proportions closer to the sketch.\nStyle priority: ${styleDirection}\nCraft details: ${craftDetails}\nLet the chosen style lead the materials, palette, lighting, anatomy simplification, and finishing. Avoid photorealism unless the style explicitly needs it. Avoid generic AI smoothness. MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure image only.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 164,
+          "column": 10,
+          "kind": "template-literal",
+          "functionName": "sketchStylePrompt",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "style-template"
+    },
+    {
+      "id": "text-87611d64c167bcdae549",
+      "sourceIndex": 100,
+      "originalValue": "Sculpted clay figure on a miniature base, matte plasticine finish, clean contact shadows, tiny props, color-coded background, macro lens and crisp product-photo composition.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 190,
+          "column": 234,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-87f716ee54a54fbd2fad",
+      "sourceIndex": 101,
+      "originalValue": "newspaper strip cartoon: simple high-readability character, minimal background, confident black line, gag-strip clarity, warm limited color.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 224,
+          "column": 71,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-8859db7be657e22915df",
+      "sourceIndex": 102,
+      "originalValue": "Modern Graphic Novel",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 218,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-889391595831a4973ee1",
+      "sourceIndex": 103,
+      "originalValue": "weird felt-tip kid monster style: bright marker colors, strange teeth, too many eyes or fingers if the source suggests them, funny scary energy, naive invention.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 234,
+          "column": 89,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-8bfc3c5e7957d5be503c",
+      "sourceIndex": 104,
+      "originalValue": "\" data-index=\"",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 291,
+          "column": 206,
+          "kind": "string-literal",
+          "functionName": "renderSections",
+          "owners": [
+            "barz-designer"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 293,
+          "column": 479,
+          "kind": "string-literal",
+          "functionName": "renderSections",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-8d3313d72bb12dbe43f3",
+      "sourceIndex": 105,
+      "originalValue": "balanced style freedom",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 266,
+          "column": 184,
+          "kind": "string-literal",
+          "functionName": "drawingWeightLabel",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "weight-label-in-prompt"
+    },
+    {
+      "id": "text-8d4d1a36385e61065f12",
+      "sourceIndex": 106,
+      "originalValue": "figurine",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 267,
+          "column": 352,
+          "kind": "string-literal",
+          "functionName": "infoText",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-8d4ea9569bea4c7328ec",
+      "sourceIndex": 107,
+      "originalValue": "Pixel-Perfect Design Replica",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 61,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-8e9a7e820504e17accbe",
+      "sourceIndex": 108,
+      "originalValue": "[IMG_1] is a practical sculpted figurine/puppet character. Photograph this exact figurine with its exact proportions, head size, limb thickness, body shape as-is, physically present on location. Do not apply realistic human anatomy. This is NOT a human, it is a sculpted character with intentional non-realistic proportions. Do not correct or normalize proportions.\nFull body shot. [IMG_2 / ...description du decor...].\nThe character is physically present in the scene, not composited. Cast shadows from the character fall naturally on the ground surface, consistent with the sun angle and direction of the scene. The character skin, clothing and materials pick up ambient light, bounce light and color cast from the environment. Color grade, contrast, saturation and film grain are uniform across the entire image: character and background share the same photographic treatment. No difference in sharpness, noise level or color temperature between the character and the environment.\n[...style cinema: camera, focal length, director reference, ratio...]\nMANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 255,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "correct",
+      "role": "prompt-body",
+      "correctedValue": "[IMG_1] is a practical sculpted figurine/puppet character. Photograph this exact figurine with its exact proportions, head size, limb thickness, body shape as-is, physically present on location. Do not apply realistic human anatomy. This is NOT a human, it is a sculpted character with intentional non-realistic proportions. Do not correct or normalize proportions.\nFull body shot. [IMG_2 / ...description du decor...].\nThe character is physically present in the scene, not composited. Cast shadows from the character fall naturally on the ground surface, consistent with the sun angle and direction of the scene. The character's skin, clothing and materials pick up ambient light, bounce light and color cast from the environment. Color grade, contrast, saturation and film grain are uniform across the entire image: character and background share the same photographic treatment. No difference in sharpness, noise level or color temperature between the character and the environment.\n[...style cinema: camera, focal length, director reference, ratio...]\nMANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "reason": "Ajouter le possessif anglais à character skin.",
+      "replacements": [
+        [
+          "The character skin,",
+          "The character's skin,"
+        ]
+      ]
+    },
+    {
+      "id": "text-8ed219f9a9e1942ad911",
+      "sourceIndex": 109,
+      "originalValue": "source-led style transfer",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 266,
+          "column": 136,
+          "kind": "string-literal",
+          "functionName": "drawingWeightLabel",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "weight-label-in-prompt"
+    },
+    {
+      "id": "text-8edba60b1e235419c9fa",
+      "sourceIndex": 110,
+      "originalValue": "Sketch to Image",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 172,
+          "column": 10,
+          "kind": "string-literal",
+          "functionName": "sketchStylePrompt",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-8fa523bdee50a6a36f6e",
+      "sourceIndex": 111,
+      "originalValue": "Central European surreal stop-motion theatre: antique objects, dusty workshop palette, absurd transformations, carved puppet faces, eerie tactile realism.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 187,
+          "column": 74,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-9185ece69adf239070f0",
+      "sourceIndex": 112,
+      "originalValue": "Keep the source identity readable but allow major proportion compression, clean ink outline, pastel color flats, tiny hands, glossy eyes, sticker-like clarity.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 204,
+          "column": 219,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-934fd4b70f367e2a17f0",
+      "sourceIndex": 113,
+      "originalValue": "Soft Preschool Clay World",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 192,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-93528abeeea30f239633",
+      "sourceIndex": 114,
+      "originalValue": "overconfident kid comic drawing: heroic but badly proportioned figure, big action pose, exaggerated expression, chaotic fun, no adult polish.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 241,
+          "column": 90,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-9454aceb01170a7e460f",
+      "sourceIndex": 115,
+      "originalValue": "Cyberpunk Manga Panel",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 209,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-94590bfbe53511fceba7",
+      "sourceIndex": 116,
+      "originalValue": "underground zine comic: rough photocopied energy, rebellious hand-drawn imperfections, punk textures, expressive distortion.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 220,
+          "column": 64,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-955c6bf3c20ee4c50b4c",
+      "sourceIndex": 117,
+      "originalValue": "Wobbly one-pass contour, mismatched eyes, uneven limbs, broken perspective, sparse color pencil fill, tiny mistakes preserved as the main style.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 236,
+          "column": 207,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-98d6b1fd69d00dbe9160",
+      "sourceIndex": 118,
+      "originalValue": "hasColorChoice",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 81,
+          "column": 9,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-9a49af8b7f855602529b",
+      "sourceIndex": 119,
+      "originalValue": "make it a black and white drawing, no shadows, just the pencil line. MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 259,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-9aa9f56eb57c06846417",
+      "sourceIndex": 120,
+      "originalValue": "Transform this exact sillustration into a photorealistic image by mapping ultra-realistic human skin, hair, clothing, and materials directly onto every precise line, contour, shape, and deformity of the original drawing as a strict blueprint—do not alter, interpret, smooth, correct, or modify any feature, proportion, asymmetry, or caricatural element, especially on the head, keep the exact same hard angle shape for the nose; faithfully reproduce every single detail pixel by pixel without any changes even if weird or deformed. Maintain identical composition, pose, and structure with absolute fidelity. Render as an 80mm macro photo of alive, real-life characters with tilt-shift focus for depth, natural features preserved exactly::1. Plain light beige studio background, high-quality professional studio lighting, hyper-detailed and sharp, no artistic liberty. MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 42,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "correct",
+      "role": "prompt-body",
+      "correctedValue": "Transform this exact illustration into a photorealistic image by mapping ultra-realistic human skin, hair, clothing, and materials directly onto every precise line, contour, shape, and deformity of the original drawing as a strict blueprint—do not alter, interpret, smooth, correct, or modify any feature, proportion, asymmetry, or caricatural element, especially on the head, keep the exact same hard angle shape for the nose; faithfully reproduce every single detail pixel by pixel without any changes even if weird or deformed. Maintain identical composition, pose, and structure with absolute fidelity. Render as an 80mm macro photo of alive, real-life characters with tilt-shift focus for depth, natural features preserved exactly::1. Plain light beige studio background, high-quality professional studio lighting, hyper-detailed and sharp, no artistic liberty. MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "reason": "Corriger la faute sillustration, sans modifier les contraintes de fidélité.",
+      "replacements": [
+        [
+          "sillustration",
+          "illustration"
+        ]
+      ]
+    },
+    {
+      "id": "text-9ab886d16cdb0ae13ebc",
+      "sourceIndex": 121,
+      "originalValue": "deliberately left-hand naive doodle: unstable lines, awkward spacing, lopsided features, accidental charm, anti-polished sketchbook energy.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 236,
+          "column": 64,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-9ac38639c9016eae11ba",
+      "sourceIndex": 122,
+      "originalValue": "Convert this drawing into an ultra-realistic photo with zero redesign. Pixel-lock the outer silhouette and all internal shapes—do not alter any line, angle, or proportion. HEADS MUST MATCH EXACTLY: keep the same skull volume, nose length, hairline, ear shape, mouth, eye position, wrinkles, and asymmetries. Do not fix anatomy or beautify. Keep identical composition, scale, perspective, pose, spacing, and framing. Only map realistic materials (leather, brocade textile, human skin, wood, metal) onto the original linework; textures must not cross or smooth the contours. No rounding, no smoothing, no reinterpretation of volumes; preserve all distortions and caricature features as drawn. Lighting: professional studio lighting on a plain light-beige background. Lens: 80 mm macro look with tilt-shift shallow depth of field (subject sharp, gentle bokeh). If uncertain, do not invent details—stay subtle and neutral. Structural fidelity > realism. If there’s a conflict, preserve the drawing lines. Lock the head silhouette and all facial landmarks (brow–nose–mouth–chin–ears) to the drawing. Any deviation is an error. MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 38,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-9ccad4bace02b930ddf3",
+      "sourceIndex": 123,
+      "originalValue": "Rainy Day Wax Crayon",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 239,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-9ef9b6b3da312ac735d0",
+      "sourceIndex": 124,
+      "originalValue": "Visible thumb-smoothed clay, tiny fingerprints, replacement-mouth feel, soft squash in the cheeks and hands, tactile fabric and clay seams, tabletop-scale depth of field.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 184,
+          "column": 285,
+          "kind": "string-literal",
+          "functionName": "sketchStylePrompt",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-9efc334836700493afb6",
+      "sourceIndex": 125,
+      "originalValue": "1980s mecha/sci-fi manga: mechanical line density, retro tech panels, heroic helmet shapes, cockpit drama, hard-surface detail.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 205,
+          "column": 63,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-9f8c61c906a6c1b4bacf",
+      "sourceIndex": 126,
+      "originalValue": "bad colored-pencil remake: sincere but clumsy drawing, uneven anatomy, wobbly outline, patchy coloring, strange color choices, lovable amateur confidence.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 233,
+          "column": 74,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-a358b3e2c0a901234299",
+      "sourceIndex": 127,
+      "originalValue": "Body Draw",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 71,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-a37b98c363fa47a04406",
+      "sourceIndex": 128,
+      "originalValue": "pop-art comic poster: bold flat color, thick graphic outline, halftone dots, punchy design, high-impact commercial illustration.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 225,
+          "column": 92,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-a4870b649685fda78b74",
+      "sourceIndex": 129,
+      "originalValue": "Locks non-human proportions and tells the model to respect the sculpted design instead of normalizing it.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 267,
+          "column": 371,
+          "kind": "string-literal",
+          "functionName": "infoText",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-a4aaea28dcdd58ae0fe1",
+      "sourceIndex": 130,
+      "originalValue": "Seinen Noir Realism",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 201,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-a4d98fa4ccc60cc0aff8",
+      "sourceIndex": 131,
+      "originalValue": "European sci-fi bande dessinee: elegant alien architecture, clean technical detail, surreal landscape scale, refined color palette.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 223,
+          "column": 69,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-a4eacb01ff4fc42a5028",
+      "sourceIndex": 132,
+      "originalValue": "Retro 80s Claymation",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 188,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-a62ed7b95a2fe9e8759c",
+      "sourceIndex": 133,
+      "originalValue": "useful",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 109,
+          "column": 3,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 267,
+          "column": 1079,
+          "kind": "string-literal",
+          "functionName": "infoText",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-a659897100def6a4d339",
+      "sourceIndex": 134,
+      "originalValue": "\" data-color-group=\"",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 291,
+          "column": 263,
+          "kind": "string-literal",
+          "functionName": "renderSections",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-a7c1c8bc3f899f528c5d",
+      "sourceIndex": 135,
+      "originalValue": "Precise ink line, flat-to-soft color blocks, intricate machinery and costumes, wide atmospheric composition, source sketch adapted into a polished adventure panel.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 223,
+          "column": 204,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-a7f40c75683839ca73fa",
+      "sourceIndex": 136,
+      "originalValue": "info-",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 272,
+          "column": 61,
+          "kind": "string-literal",
+          "functionName": "toggleInfo",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-a8425968532bbe2776d6",
+      "sourceIndex": 137,
+      "originalValue": "Kawaii Chibi Redesign",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 204,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-a88d8aac9492a94a77d0",
+      "sourceIndex": 138,
+      "originalValue": "Converts or rebuilds while treating the source lines, angles, volumes and silhouette as the main constraint.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 267,
+          "column": 565,
+          "kind": "string-literal",
+          "functionName": "infoText",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-ab3491d0d01b18ccec5c",
+      "sourceIndex": 139,
+      "originalValue": "[BG_COLOR]",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 268,
+          "column": 125,
+          "kind": "string-literal",
+          "functionName": "currentPrompt",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "compiler-token"
+    },
+    {
+      "id": "text-ab47e9c28e772d7f7312",
+      "sourceIndex": 140,
+      "originalValue": "Pencil Line Drawing",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 144,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 258,
+          "column": 12,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-abbe03ba2ec4d95adb4b",
+      "sourceIndex": 141,
+      "originalValue": "Puppeteer Convert",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 32,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-ac39b5a1ea812e19cced",
+      "sourceIndex": 142,
+      "originalValue": "Crisp inked machinery, screen-tone metal, speed-line background, cel-era color accents if color is used, angular armor and readable silhouette based on the sketch.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 205,
+          "column": 194,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-ac5430eecb32df6a692a",
+      "sourceIndex": 143,
+      "originalValue": "Clay Painting Bas-Relief",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 189,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-ac5eebe23c19777aec92",
+      "sourceIndex": 144,
+      "originalValue": "Wire-armature puppet logic, sculpted eyelids, spidery limbs, painted clay skin, miniature graveyard/cabinet textures, high-contrast blue-black lighting with warm candle accents.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 185,
+          "column": 252,
+          "kind": "string-literal",
+          "functionName": "sketchStylePrompt",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-b02f809d99616c608f18",
+      "sourceIndex": 145,
+      "originalValue": "1950s horror anthology comic: lurid color, dramatic fear expression, thick inks, graveyard/lab/candle mood, theatrical suspense.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 222,
+          "column": 90,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-b0a2a39b0b4952490673",
+      "sourceIndex": 146,
+      "originalValue": "Useful Prompts",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 110,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-b11c64a28271b83db3a7",
+      "sourceIndex": 147,
+      "originalValue": "kicker",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 29,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 72,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 111,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-b157e2c5bf91bedc3038",
+      "sourceIndex": 148,
+      "originalValue": "Miniature Clay Toy Diorama",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 190,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-b221fe64e72d83b43bd2",
+      "sourceIndex": 149,
+      "originalValue": "Notebook Margin Creature",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 238,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-b2a29abcff03e35749b8",
+      "sourceIndex": 150,
+      "originalValue": "cyberpunk manga: neon city tension, techwear, cables, reflective rain, dense signage-free urban detail, high contrast ink.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 209,
+          "column": 69,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-b478dbd9f47c618d0a97",
+      "sourceIndex": 151,
+      "originalValue": "Thick black outlines, flat color separations, halftone paper texture, punchy rim shadows, clear muscles/folds where relevant, no text balloons or captions.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 217,
+          "column": 222,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-b54d8008a386ab68751a",
+      "sourceIndex": 152,
+      "originalValue": "clay painting / bas-relief animation: the sketch becomes a flat sculpted clay image, painterly smears, raised edges, tactile color masses, frame-by-frame handmade texture.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 189,
+          "column": 72,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-b8071afb58e5b36e76e0",
+      "sourceIndex": 153,
+      "originalValue": "No sharp edges, squashy clay hands and feet, clean colored backdrop, toy-scale props, softbox light, clear silhouette, charming imperfections without creepiness.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 192,
+          "column": 217,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-c1398699bcac500c0fca",
+      "sourceIndex": 154,
+      "originalValue": "Construction-paper palette, crayon fill, glue-like collage edges where useful, thick black classroom marker outline, simple decorative border, handmade display feeling.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 237,
+          "column": 218,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-c13dafed38cdc442d0f7",
+      "sourceIndex": 155,
+      "originalValue": "Transform this drawing into a photorealistic image. ABSOLUTE PRIORITY: Preserve every line, curve, and contour from the original drawing with ZERO interpretation. FACIAL FEATURES - NON-NEGOTIABLE: - Trace the nose EXACTLY as drawn - every bump, angle, length, and width must match perfectly - Follow the chin/jaw contours precisely - do not round or soften any angles - Match the exact distance ratios between features (eye spacing, nose length, etc.) - Keep all caricatural exaggerations and deformations INTACT - If a feature looks 'wrong' or 'too extreme' - that's correct, keep it PROCESS: 1. Overlay the drawing's linework as an absolute template 2. Apply ONLY realistic textures (skin pores, fabric weave, hair strands) onto these exact shapes 3. Do NOT adjust proportions for anatomical correctness or aesthetic appeal PHOTOGRAPHY: - 80mm macro with tilt-shift focus - Professional studio lighting on plain light beige background Remember: You are NOT redesigning or improving the character - you are purely converting drawing materials into photorealistic materials while maintaining IDENTICAL geometry. MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 46,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-c18e8df6f5ac5957bcbd",
+      "sourceIndex": 156,
+      "originalValue": "Rugged ink, imperfect human faces, textured clothes, dense black areas, restrained screentone, gritty street or room atmosphere, serious stillness.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 203,
+          "column": 203,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-c2184707be5df23012a7",
+      "sourceIndex": 157,
+      "originalValue": "IMG_1 is a reference for a practical puppet/figurine character.\nPhotograph this exact figurine with its exact proportions, head size, limb thickness, body shape as-is in a reallocation. Do not apply realistic human anatomy. This is NOT a human, it is a sculpted character with intentional non-realistic proportions. MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 250,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "correct",
+      "role": "prompt-body",
+      "correctedValue": "IMG_1 is a reference for a practical puppet/figurine character.\nPhotograph this exact figurine with its exact proportions, head size, limb thickness, body shape as-is on location. Do not apply realistic human anatomy. This is NOT a human, it is a sculpted character with intentional non-realistic proportions. MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "reason": "reallocation est une corruption de on location confirmée par la carte Puppet Integration.",
+      "replacements": [
+        [
+          "in a reallocation",
+          "on location"
+        ]
+      ]
+    },
+    {
+      "id": "text-c26b7460dc951cc8b8d3",
+      "sourceIndex": 158,
+      "originalValue": "Fine scratch lines, stippled shadows, distorted but controlled facial landmarks, black void backgrounds, paper grain, high-contrast eye and mouth details.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 206,
+          "column": 219,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-c31ca720268b15e6cc46",
+      "sourceIndex": 159,
+      "originalValue": "Rough clay and papier-mache surfaces, hand-painted textures, visible seams, slightly asymmetrical puppet anatomy, shallow stage depth, simple spotlight and shadow play.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 186,
+          "column": 242,
+          "kind": "string-literal",
+          "functionName": "sketchStylePrompt",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-c33ab258e4b0f1107aed",
+      "sourceIndex": 160,
+      "originalValue": "Production shortcuts",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 111,
+          "column": 15,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-c40cd1fe9d6448a69850",
+      "sourceIndex": 161,
+      "originalValue": "CMYK-style color blocks, offset print texture, strong black contour, simplified shadows, source silhouette kept clear, no text, no typography.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 225,
+          "column": 224,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-c6587a4a3a6379c01efb",
+      "sourceIndex": 162,
+      "originalValue": "European Sci-Fi Album",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 223,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-c7cd0066a1e24b299cae",
+      "sourceIndex": 163,
+      "originalValue": "Shojo Romance Sparkle",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 202,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-c8229e2db9f93b01c2ad",
+      "sourceIndex": 164,
+      "originalValue": "Badly Drawn Colored Pencil",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 233,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-c83bc591c29cbfe9ea1e",
+      "sourceIndex": 165,
+      "originalValue": "B&W body Convert",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 80,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-c9a2910d860a4919868d",
+      "sourceIndex": 166,
+      "originalValue": "Turn this drawing into a photograph—while maintaining the exact same composition and the exact same quirky, distorted design, you must use genuinely realistic materials (hair, fur, skin, fabric, glass, etc.). The result should look like an 80mm macro photo of real persons, with high-quality artisanal precision, uncanny valley vibe featuring highly detailed skin with exaggerated subsurface scattering, tilt-shift focus.\nIMPORTANT: You must strictly adhere to the head’s original design—even if it’s unusual—and project the ultra-realistic style precisely along the exact lines and contours of the angular drawing; be extremely meticulous. MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 50,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-ca5db34f3ab2095ceb22",
+      "sourceIndex": 167,
+      "originalValue": "Horror Manga Etching",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 206,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-ccbdc7b3b8b1c1389645",
+      "sourceIndex": 168,
+      "originalValue": "Uncanny Valley Conversion",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 49,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-cd75f05719dacbdefadd",
+      "sourceIndex": 169,
+      "originalValue": "Overconfident Kid Comic",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 241,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-d152ab8fa12f8c882630",
+      "sourceIndex": 170,
+      "originalValue": "Transform this exact sillustration into a photorealistic image by mapping ultra-realistic human skin, hair, clothing, and materials directly onto every precise line, contour, shape, and deformity of the original drawing as a strict blueprint—do not alter, interpret, smooth, correct, or modify any feature, proportion, asymmetry, or caricatural element, especially on the head, keep the exact same hard angle shape for the nose; faithfully reproduce every single detail pixel by pixel without any changes even if weird or deformed. Maintain identical composition, pose, and structure with absolute fidelity. Render as an 80mm macro photo of alive, real-life characters with tilt-shift focus for depth, natural features preserved exactly::1.  high-quality professional studio lighting, hyper-detailed and sharp, no artistic liberty.\nIMG_1 is a reference for a practical puppet/figurine character.\nPhotograph this exact figurine — with its exact proportions,head size, limb thickness, body shape — as-is in a reallocation. Do not apply realistic human anatomy. This is NOTa human, it is a sculpted character with intentionalnon-realistic proportions.\n\"Act as a professional color grader. apply a strict color match using [IMG_ 1] as the only palette reference. Perform a 'Luminance and Chrominance transfer' only: keep color temperature to perfectly align with the grading of [IMG_ 1]. Do not introduce any new elements.\" MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 34,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "correct",
+      "role": "prompt-body",
+      "correctedValue": "Transform this exact illustration into a photorealistic image by mapping ultra-realistic human skin, hair, clothing, and materials directly onto every precise line, contour, shape, and deformity of the original drawing as a strict blueprint—do not alter, interpret, smooth, correct, or modify any feature, proportion, asymmetry, or caricatural element, especially on the head, keep the exact same hard angle shape for the nose; faithfully reproduce every single detail pixel by pixel without any changes even if weird or deformed. Maintain identical composition, pose, and structure with absolute fidelity. Render as an 80mm macro photo of alive, real-life characters with tilt-shift focus for depth, natural features preserved exactly::1.  high-quality professional studio lighting, hyper-detailed and sharp, no artistic liberty.\nIMG_1 is a reference for a practical puppet/figurine character.\nPhotograph this exact figurine — with its exact proportions, head size, limb thickness, body shape — as-is on location. Do not apply realistic human anatomy. This is NOT a human, it is a sculpted character with intentional non-realistic proportions.\n\"Act as a professional color grader. Apply a strict color match using [IMG_1] as the only palette reference. Perform a 'Luminance and Chrominance transfer' only: keep color temperature to perfectly align with the grading of [IMG_1]. Do not introduce any new elements.\" MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "reason": "Corriger les fautes de frappe et la référence IMG_ 1 mal espacée ; conserver le parti pris figurine.",
+      "replacements": [
+        [
+          "sillustration",
+          "illustration"
+        ],
+        [
+          "proportions,head",
+          "proportions, head"
+        ],
+        [
+          "in a reallocation",
+          "on location"
+        ],
+        [
+          "NOTa human",
+          "NOT a human"
+        ],
+        [
+          "intentionalnon-realistic",
+          "intentional non-realistic"
+        ],
+        [
+          "[IMG_ 1]",
+          "[IMG_1]"
+        ],
+        [
+          "color grader. apply",
+          "color grader. Apply"
+        ]
+      ]
+    },
+    {
+      "id": "text-d198f3ec5f049ae81bde",
+      "sourceIndex": 171,
+      "originalValue": "Watercolor Manga Poster",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 208,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-d4f5e7e7a7cd3f635b34",
+      "sourceIndex": 172,
+      "originalValue": "[DRAWING_WEIGHT_LABEL]",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 268,
+          "column": 248,
+          "kind": "string-literal",
+          "functionName": "currentPrompt",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "compiler-token"
+    },
+    {
+      "id": "text-d53e32f2c21f70707031",
+      "sourceIndex": 173,
+      "originalValue": "Mix clay, worn wood, metal scraps, thread, glass eyes, miniature drawers, patina, grime, practical overhead light, frame-by-frame object-animation feeling.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 187,
+          "column": 232,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-d598448fc01d97a562f1",
+      "sourceIndex": 174,
+      "originalValue": "Conversion / style transfer",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 173,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": "sketchStylePrompt",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-d78ea704160399e877ea",
+      "sourceIndex": 175,
+      "originalValue": "premium clay editorial image: sculptural art-object finish, refined color palette, gallery lighting, elegant handmade puppet as a high-end design piece.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 193,
+          "column": 69,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-d84265916b7728413c3b",
+      "sourceIndex": 176,
+      "originalValue": "gentle preschool clay animation: simple readable shapes, rounded safe forms, bright matte colors, soft smiles, friendly object-world design.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 192,
+          "column": 73,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-dd80f9c15a0ca44cec60",
+      "sourceIndex": 177,
+      "originalValue": "Sketch to Comics",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 214,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-ddc7becaf91b599875de",
+      "sourceIndex": 178,
+      "originalValue": "strict source fidelity",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 266,
+          "column": 91,
+          "kind": "string-literal",
+          "functionName": "drawingWeightLabel",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "weight-label-in-prompt"
+    },
+    {
+      "id": "text-df5897a4eb72ddb91990",
+      "sourceIndex": 179,
+      "originalValue": "dark gothic clay fairytale: tall angular silhouettes, pale moonlit faces, crooked buildings, striped shadows, theatrical sadness, elegant macabre whimsy.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 185,
+          "column": 95,
+          "kind": "string-literal",
+          "functionName": "sketchStylePrompt",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-e009d44519839b85691e",
+      "sourceIndex": 180,
+      "originalValue": "Body draw Line",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 75,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-e272ca64fe23b5217573",
+      "sourceIndex": 181,
+      "originalValue": "\" title=\"",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 291,
+          "column": 322,
+          "kind": "string-literal",
+          "functionName": "renderSections",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-e5e7a3aa50a63e744992",
+      "sourceIndex": 182,
+      "originalValue": "Cracked clay, straw, wool, wood splinters, stitched fabric, waxy eyes, soot marks, rough finger-built surfaces, dramatic low practical lighting.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 191,
+          "column": 245,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-e7f833d507769d3ba777",
+      "sourceIndex": 183,
+      "originalValue": "Ron Mueck Sculpture Style",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 53,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-e8a11ea9d7b4a0d21a40",
+      "sourceIndex": 184,
+      "originalValue": "Black-and-white manga finish, strong contour hierarchy, screentone shadows, dynamic panel energy even in a single image, motion arcs, dramatic foreshortening where the source allows.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 200,
+          "column": 220,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-e94f1d1d246c41457fe3",
+      "sourceIndex": 185,
+      "originalValue": "Generate character design for me (Character Design). Proportion design (different height comparisons, head-to-body ratio, etc.). Three views (front, side, back). Expression design (Expression Sheet). Pose design (Pose Sheet) → various common poses. Costume design (Costume Design). [Scene Description] MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 125,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-ea3891c31353a80150d4",
+      "sourceIndex": 186,
+      "originalValue": "Gothic Stop-Motion Fairytale",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 185,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": "sketchStylePrompt",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-ec89cd89b50795341c84",
+      "sourceIndex": 187,
+      "originalValue": "Wax Figurine",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 65,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-ee8a0a6271809254f93b",
+      "sourceIndex": 188,
+      "originalValue": "Preserve the sketch structure under loose watercolor edges, visible paper texture, pale washes, fine line cleanup, soft backlight and airy composition.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 208,
+          "column": 199,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-efdebcd054dae8de0961",
+      "sourceIndex": 189,
+      "originalValue": "noir pulp comic: hard shadows, venetian-blind lighting, smoke, rain, trenchcoat mood, dangerous high-contrast atmosphere.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 219,
+          "column": 81,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-efee72debdd0253a3fa4",
+      "sourceIndex": 190,
+      "originalValue": "Flattened clay pressed onto a board, palette-knife marks, soft smudged gradients, relief outlines following the original sketch, overhead rostrum-camera composition.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 189,
+          "column": 247,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-f090376fb0b9817331ba",
+      "sourceIndex": 191,
+      "originalValue": " MANDATORY:",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 268,
+          "column": 448,
+          "kind": "string-literal",
+          "functionName": "currentPrompt",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "compiler-token"
+    },
+    {
+      "id": "text-f275612c6d405f7add0f",
+      "sourceIndex": 192,
+      "originalValue": "The head is locked and must remain completely untouched — do not alter, relight, rerender, or modify any way, not a single pixel. Only the drawn/sketched body below the head must be transformed into a fully photorealistic render. Preserve every aspect of the original drawing exactly as-is: body proportions, silhouette, pose, clothing design, accessories, and the size ratio between head and body. Replace only the sketch textures and materials with photorealistic fabric, skin, and material renders, fully consistent in lighting and tone with the existing head. The body must match the raw photographic quality of the head: real fabric weave, fabric wrinkles, worn material imperfections, skin with visible pores and texture on hands and arms, no CG smoothness, no illustration sheen. Lighting must be uneven and naturalistic, not studio-perfect. The neckline of the clothing must blend seamlessly into the existing neck and head — adjust the collar and fabric geometry to naturally receive the neck as-is, without generating any new neck geometry or skin. The transition between head and body must be seamless, with no visible cut, edge, or compositing artifact. The character stands in a seamless cyclorama studio with background color [BG_COLOR], with soft natural ground shadow beneath the feet and subtle curved wall-to-floor transition visible behind. Do not interpret, correct, or normalize any proportions — this is intentional character design. Same framing and crop as the original image. Do not correct or normalize proportions. MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 100,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "correct",
+      "role": "prompt-body",
+      "correctedValue": "The head is locked and must remain completely untouched — do not alter, relight, rerender, or modify it in any way, not a single pixel. Only the drawn/sketched body below the head must be transformed into a fully photorealistic render. Preserve every aspect of the original drawing exactly as-is: body proportions, silhouette, pose, clothing design, accessories, and the size ratio between head and body. Replace only the sketch textures and materials with photorealistic fabric, skin, and material renders, fully consistent in lighting and tone with the existing head. The body must match the raw photographic quality of the head: real fabric weave, fabric wrinkles, worn material imperfections, skin with visible pores and texture on hands and arms, no CG smoothness, no illustration sheen. Lighting must be uneven and naturalistic, not studio-perfect. The neckline of the clothing must blend seamlessly into the existing neck and head — adjust the collar and fabric geometry to naturally receive the neck as-is, without generating any new neck geometry or skin. The transition between head and body must be seamless, with no visible cut, edge, or compositing artifact. The character stands in a seamless cyclorama studio with background color [BG_COLOR], with soft natural ground shadow beneath the feet and subtle curved wall-to-floor transition visible behind. Do not interpret, correct, or normalize any proportions — this is intentional character design. Same framing and crop as the original image. Do not correct or normalize proportions. MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "reason": "Réparer modify any way en modify it in any way.",
+      "replacements": [
+        [
+          "or modify any way,",
+          "or modify it in any way,"
+        ]
+      ]
+    },
+    {
+      "id": "text-f2dce1c94edf7425071b",
+      "sourceIndex": 193,
+      "originalValue": "Weird Felt-Tip Monster",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 234,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-f3528c4da0d4b2f360bc",
+      "sourceIndex": 194,
+      "originalValue": "Production shortcut for a recurring behavior: integration, sheet, combat, origami or quick conversion.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 267,
+          "column": 1095,
+          "kind": "string-literal",
+          "functionName": "infoText",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-f3d42fba459ab10c5ad7",
+      "sourceIndex": 195,
+      "originalValue": "Indie Slice-of-Life Comic",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 221,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-f45fdc2dc89098e32b9d",
+      "sourceIndex": 196,
+      "originalValue": "elementary classroom art-show piece: bold simple subject, proud color blocking, paper-craft innocence, readable but not refined.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 237,
+          "column": 86,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-f4d75775cf9f906b8695",
+      "sourceIndex": 197,
+      "originalValue": "puppet integration",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 119,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 253,
+          "column": 12,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-f7ab4a84204400b97386",
+      "sourceIndex": 198,
+      "originalValue": "High-Fidelity Macro Conversion",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 57,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "exclude-non-prompt",
+      "role": "interface-or-runtime",
+      "reason": "Titre, description d’aide, clé de navigation ou fragment HTML lu dans son usage. Conserver comme métadonnée ou fonction ; ne pas injecter dans le prompt."
+    },
+    {
+      "id": "text-fa9ff8b6edaeed854ece",
+      "sourceIndex": 199,
+      "originalValue": "Scratchy ink, xerox noise, uneven line weight, cut-and-paste feeling, limited two-color risograph palette, rough but intentional character exaggeration.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 220,
+          "column": 192,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-fb28c6282bed8ad8cff7",
+      "sourceIndex": 200,
+      "originalValue": "Make this drawing a photo you must keep the exact same composition and the exact same weird and deformed design but with real realistic materials. It must look like 80 mm macro photo of real life alive characters with tilt shift focus. you must strictly respect the head design even if it's weird and project the ultra realistic style on the exact lines and contour of the design, be very precise. In a plain beige studio background, hi quality professional studio lighting MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 58,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "correct",
+      "role": "prompt-body",
+      "correctedValue": "Make this drawing a photo you must keep the exact same composition and the exact same weird and deformed design but with real realistic materials. It must look like an 80 mm macro photo of real life alive characters with tilt shift focus. you must strictly respect the head design even if it's weird and project the ultra realistic style on the exact lines and contour of the design, be very precise. In a plain beige studio background, hi quality professional studio lighting MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "reason": "Ajouter l’article manquant devant 80 mm macro photo.",
+      "replacements": [
+        [
+          "like 80 mm macro photo",
+          "like an 80 mm macro photo"
+        ]
+      ]
+    },
+    {
+      "id": "text-fc2314f5acc742674ba9",
+      "sourceIndex": 201,
+      "originalValue": "indie literary comic: soft human observation, quiet composition, simple expressive line, muted palette, emotionally honest atmosphere.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 221,
+          "column": 73,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    },
+    {
+      "id": "text-fd97ed8d6aee7ced62f5",
+      "sourceIndex": 202,
+      "originalValue": "folk-horror clay puppet style: rough rural materials, unsettling handmade face, candlelit miniatures, earthy palette, ritual objects, slow nightmare mood.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 191,
+          "column": 87,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "action": "preserve",
+      "role": "prompt-body-or-fragment"
+    }
+  ],
+  "scope": "203 bundle entries, 114 additional source-scoped literals, 55 cards, 80 style fragments, compiler and render initialization reviewed. Runtime port pending."
+}

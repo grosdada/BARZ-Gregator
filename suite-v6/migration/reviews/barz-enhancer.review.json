@@ -1,0 +1,391 @@
+{
+  "schemaVersion": "1.0",
+  "artifactType": "semantic-review-staging",
+  "toolId": "barz-enhancer",
+  "reviewedAt": "2026-09-11",
+  "reviewer": "Astra",
+  "status": {
+    "content": "reviewed",
+    "runtimeFixtures": "implemented-and-tested",
+    "migration": "integrated-v6"
+  },
+  "source": {
+    "path": "Barzy App/public/assets/HTML/md_enhancer.html",
+    "sha256": "0956b462d734851864e16e61d3d4194b09e88daa9943a2d45a0246de73ede853"
+  },
+  "dependency": {
+    "path": "Barzy App/public/assets/barzy-theme.js",
+    "sha256": "5870fa2856910bef1fc8d130aecb72383b89e8d1c22540ca11af13c3bf5963d0",
+    "role": "Theme, text normalization and explanatory UI; not a generation API."
+  },
+  "cards": [
+    {
+      "id": "barz-enhancer-surgical-refinement",
+      "title": "Surgical Refinement",
+      "description": "Precision fixes without over-polishing. Corrects anatomy & geometry while preserving raw aesthetic.",
+      "sourceLine": 681,
+      "original": "Enhance this reference image with surgical precision. Preserve exactly: lighting direction, color palette, compositional framing, atmospheric mood, and any intentional stylistic roughness or painterly texture. Selectively refine ONLY where needed: correct anatomical inconsistencies (hands, fingers, limbs), clarify facial features and eye alignment, resolve ambiguous or broken geometry, sharpen focal details. Do NOT over-smooth, do NOT add artificial sheen, do NOT alter the original artistic grain or mood. Maintain the image's raw character while fixing obvious generative artifacts.",
+      "corpusId": "text-53c6c58be5b029de6dc4",
+      "section": "enhancement",
+      "text": "Enhance this reference image with surgical precision. Preserve exactly: lighting direction, color palette, compositional framing, atmospheric mood, and any intentional stylistic roughness or painterly texture. Selectively refine ONLY where needed: correct anatomical inconsistencies (hands, fingers, limbs), clarify facial features and eye alignment, resolve ambiguous or broken geometry, sharpen focal details. Do NOT over-smooth, do NOT add artificial sheen, do NOT alter the original artistic grain or mood. Maintain the image's raw character while fixing obvious generative artifacts.",
+      "corrections": []
+    },
+    {
+      "id": "barz-enhancer-hand-anatomy-fix",
+      "title": "Hand & Anatomy Fix",
+      "description": "Focused correction on hands, fingers and body proportions. Leaves everything else untouched.",
+      "sourceLine": 687,
+      "original": "Reference image anatomy correction pass. Focus exclusively on: hand structure (correct finger count, natural joint angles, proper proportions), arm/limb continuity, body proportion consistency. Preserve ALL other elements exactly: face, lighting, colors, composition, texture, mood, background details. Only modify anatomical errors—treat this as targeted surgery, not global enhancement.",
+      "corpusId": "text-15e06fc7bc4a9ae74571",
+      "section": "enhancement",
+      "text": "Reference image anatomy correction pass. Focus exclusively on: hand structure (correct finger count, natural joint angles, proper proportions), arm/limb continuity, body proportion consistency. Preserve ALL other elements exactly: face, lighting, colors, composition, texture, mood, background details. Only modify anatomical errors—treat this as targeted surgery, not global enhancement.",
+      "corrections": []
+    },
+    {
+      "id": "barz-enhancer-face-portrait-polish",
+      "title": "Face & Portrait Polish",
+      "description": "Refines facial features, eye symmetry and expression clarity without changing identity.",
+      "sourceLine": 693,
+      "original": "Portrait refinement pass on reference image. Enhance facial clarity: eye symmetry and alignment, iris detail and catchlights, natural skin texture (no plastic smoothing), lip definition, subtle expression refinement. Preserve: original lighting direction and mood, color grade, face shape and identity, hair texture and style, all background elements. Maintain character—enhance definition without beautification filters.",
+      "corpusId": "text-37d53bebd78732ec3b4d",
+      "section": "enhancement",
+      "text": "Portrait refinement pass on reference image. Enhance facial clarity: eye symmetry and alignment, iris detail and catchlights, natural skin texture (no plastic smoothing), lip definition, subtle expression refinement. Preserve: original lighting direction and mood, color grade, face shape and identity, hair texture and style, all background elements. Maintain character—enhance definition without beautification filters.",
+      "corrections": []
+    },
+    {
+      "id": "barz-enhancer-detail-sharpen",
+      "title": "Detail Sharpen",
+      "description": "Adds crisp detail to soft/blurry areas while maintaining depth of field.",
+      "sourceLine": 699,
+      "original": "Detail enhancement pass on reference image. Sharpen focal areas: increase textural definition, enhance edge clarity on primary subjects, add micro-detail where softness appears unintentional. Preserve: intentional depth of field and bokeh, atmospheric haze or fog, original color palette, compositional balance. Do not sharpen background elements meant to be soft. Enhance perceived resolution without introducing artifacts or halos.",
+      "corpusId": "text-19aaec11d9071ffeb433",
+      "section": "enhancement",
+      "text": "Detail enhancement pass on reference image. Sharpen focal areas: increase textural definition, enhance edge clarity on primary subjects, add micro-detail where softness appears unintentional. Preserve: intentional depth of field and bokeh, atmospheric haze or fog, original color palette, compositional balance. Do not sharpen background elements meant to be soft. Enhance perceived resolution without introducing artifacts or halos.",
+      "corrections": []
+    },
+    {
+      "id": "barz-enhancer-style-lock-enhance",
+      "title": "Style Lock Enhance",
+      "description": "Maximum preservation mode. Fixes only the most obvious errors.",
+      "sourceLine": 705,
+      "original": "Minimal intervention enhancement. This reference image has a specific artistic style that must be preserved at all costs. Fix ONLY: catastrophic anatomical failures, completely broken geometry, unreadable focal elements. Do NOT touch: color grading, lighting, texture, grain, painterly effects, stylistic blur, mood, composition. If in doubt, leave it alone. The original artist's intent takes absolute priority over technical perfection.",
+      "corpusId": "text-67f26da946959aab344f",
+      "section": "enhancement",
+      "text": "Minimal intervention enhancement. This reference image has a specific artistic style that must be preserved at all costs. Fix ONLY: catastrophic anatomical failures, completely broken geometry, unreadable focal elements. Do NOT touch: color grading, lighting, texture, grain, painterly effects, stylistic blur, mood, composition. If in doubt, leave it alone. The original artist's intent takes absolute priority over technical perfection.",
+      "corrections": []
+    },
+    {
+      "id": "barz-enhancer-cinematic-grade",
+      "title": "Cinematic Grade",
+      "description": "Adds film-like quality: subtle grain, refined contrast, cinematic color.",
+      "sourceLine": 711,
+      "original": "Cinematic enhancement pass on reference image. Apply: subtle film grain (not digital noise), refined contrast curve with lifted blacks, cinematic color grade respecting original palette temperature, enhanced atmospheric depth. Preserve: original composition, subject placement, lighting direction. Add subtle vignette if compositionally appropriate. Target aesthetic: captured on film, not digitally generated. Maintain all existing details while adding analog character.",
+      "corpusId": "text-8e74774d150eb16c1d62",
+      "section": "enhancement",
+      "text": "Cinematic enhancement pass on reference image. Apply: subtle film grain (not digital noise), refined contrast curve with lifted blacks, cinematic color grade respecting original palette temperature, enhanced atmospheric depth. Preserve: original composition, subject placement, lighting direction. Add subtle vignette if compositionally appropriate. Target aesthetic: captured on film, not digitally generated. Maintain all existing details while adding analog character.",
+      "corrections": []
+    },
+    {
+      "id": "barz-enhancer-artifact-cleanup",
+      "title": "Artifact Cleanup",
+      "description": "Removes AI generation artifacts: weird textures, floating elements, impossible shadows.",
+      "sourceLine": 717,
+      "original": "Generative artifact removal pass. Identify and fix: impossible shadows or lighting inconsistencies, floating or disconnected elements, texture anomalies (melted details, repeating patterns), edge bleeding or halos, physically impossible geometry. Preserve: artistic style, intentional surrealism or abstraction, color palette, mood, composition. Only remove elements that read as technical errors, not stylistic choices.",
+      "corpusId": "text-e523cd2bef9a0783de4c",
+      "section": "enhancement",
+      "text": "Generative artifact removal pass. Identify and fix: impossible shadows or lighting inconsistencies, floating or disconnected elements, texture anomalies (melted details, repeating patterns), edge bleeding or halos, physically impossible geometry. Preserve: artistic style, intentional surrealism or abstraction, color palette, mood, composition. Only remove elements that read as technical errors, not stylistic choices.",
+      "corrections": []
+    },
+    {
+      "id": "barz-enhancer-quick-fix-compact",
+      "title": "Quick Fix (Compact)",
+      "description": "Short-form prompt for fast iterations. Covers the essentials.",
+      "sourceLine": 723,
+      "original": "Reference image refinement. Preserve: lighting, palette, composition, mood, intentional texture. Fix only: hand/finger anatomy, facial clarity, broken geometry, soft focal areas. No over-polishing—keep raw aesthetic intact.",
+      "corpusId": "text-bb240072df760a3893fc",
+      "section": "enhancement",
+      "text": "Reference image refinement. Preserve: lighting, palette, composition, mood, intentional texture. Fix only: hand/finger anatomy, facial clarity, broken geometry, soft focal areas. No over-polishing—keep raw aesthetic intact.",
+      "corrections": []
+    },
+    {
+      "id": "barz-enhancer-photo-enhancement-contrast-color",
+      "title": "Photo Enhancement (Contrast/Color)",
+      "description": "Imported from BZ Helper enhancement prompts.",
+      "sourceLine": 729,
+      "original": "This photo is very boring and plain. Enhance it! Increase the contrast, boost the colors, and improve the lighting to make it richer. You can crop and delete details that affect the composition. [Scene Description] MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "corpusId": "text-16e1074002ee37d1b7f6",
+      "section": "enhancement",
+      "text": "This photo is very boring and plain. Enhance it! Increase the contrast, boost the colors, and improve the lighting to make it richer. You can crop and delete details that affect the composition. [Scene Description] MANDATORY: No text on the image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "corrections": [
+        {
+          "kind": "grammar",
+          "before": "No text on image.",
+          "after": "No text on the image.",
+          "reason": "Add the missing definite article; retain the prohibition and all surrounding wording."
+        }
+      ]
+    },
+    {
+      "id": "barz-enhancer-restoration-and-colorization",
+      "title": "Restoration and Colorization",
+      "description": "Imported from BZ Helper enhancement prompts.",
+      "sourceLine": 735,
+      "original": "Restore and colorize this photo, fixing any blemishes, tears, or fading. Maintain a natural, photorealistic look. MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "corpusId": "text-a918b0ccc9d23e0cae12",
+      "section": "enhancement",
+      "text": "Restore and colorize this photo, fixing any blemishes, tears, or fading. Maintain a natural, photorealistic look. MANDATORY: No text on the image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "corrections": [
+        {
+          "kind": "grammar",
+          "before": "No text on image.",
+          "after": "No text on the image.",
+          "reason": "Add the missing definite article; retain the prohibition and all surrounding wording."
+        }
+      ]
+    },
+    {
+      "id": "barz-enhancer-multiple-image-fusion",
+      "title": "Multiple Image Fusion",
+      "description": "Imported from BZ Helper enhancement prompts.",
+      "sourceLine": 741,
+      "original": "Combine multiple images ([Image1], [Image2], [Image3], …) into a single cohesive image. Keep all key subjects recognizable and maintain their proportions and details. Blend the images naturally with consistent lighting, shadows, perspective, and style. Photorealistic, high-resolution, seamless integration. [Scene Description] MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "corpusId": "text-0886913dde7541c7c4f1",
+      "section": "enhancement",
+      "text": "Combine multiple images ([Image1], [Image2], [Image3], …) into a single cohesive image. Keep all key subjects recognizable and maintain their proportions and details. Blend the images naturally with consistent lighting, shadows, perspective, and style. Photorealistic, high-resolution, seamless integration. [Scene Description] MANDATORY: No text on the image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "corrections": [
+        {
+          "kind": "grammar",
+          "before": "No text on image.",
+          "after": "No text on the image.",
+          "reason": "Add the missing definite article; retain the prohibition and all surrounding wording."
+        }
+      ]
+    },
+    {
+      "id": "barz-enhancer-technical-z-pass",
+      "title": "Technical Z-Pass",
+      "description": "Maximum technical accuracy. Clean gradients, precise depth separation.",
+      "sourceLine": 822,
+      "original": "Generate a depth map Z-pass of this reference image. Grayscale only, white represents closest elements to camera, black represents furthest elements. No textures, no details—pure depth information as smooth gradients. Maintain exact silhouettes and spatial relationships from the original composition. Clean technical render output.",
+      "corpusId": "text-041835ad8fe19bfd2c5b",
+      "section": "z-depth",
+      "text": "Generate a depth map Z-pass of this reference image. Grayscale only, white represents closest elements to camera, black represents furthest elements. No textures, no details—pure depth information as smooth gradients. Maintain exact silhouettes and spatial relationships from the original composition. Clean technical render output.",
+      "corrections": []
+    },
+    {
+      "id": "barz-enhancer-render-style-depth",
+      "title": "Render-Style Depth",
+      "description": "3D render aesthetic with smooth depth layers and clear occlusion.",
+      "sourceLine": 828,
+      "original": "Convert this reference image to a 3D render depth pass. Monochromatic Z-depth visualization, near=white far=black, smooth gradient transitions between depth layers. Preserve all silhouettes and occlusion relationships. Clean technical output like a 3D software render pass, no artistic interpretation.",
+      "corpusId": "text-3c6aa00d28b0103f4f4b",
+      "section": "z-depth",
+      "text": "Convert this reference image to a 3D render depth pass. Monochromatic Z-depth visualization, near=white far=black, smooth gradient transitions between depth layers. Preserve all silhouettes and occlusion relationships. Clean technical output like a 3D software render pass, no artistic interpretation.",
+      "corrections": []
+    },
+    {
+      "id": "barz-enhancer-quick-z-depth",
+      "title": "Quick Z-Depth",
+      "description": "Compact prompt for fast iterations.",
+      "sourceLine": 834,
+      "original": "Z-depth pass of reference image. Grayscale depth map, white=near black=far. Smooth gradients, exact silhouettes preserved, no texture detail. Technical render output.",
+      "corpusId": "text-ac1aae4b57cfb5d3ae96",
+      "section": "z-depth",
+      "text": "Z-depth pass of reference image. Grayscale depth map, white=near black=far. Smooth gradients, exact silhouettes preserved, no texture detail. Technical render output.",
+      "corrections": []
+    },
+    {
+      "id": "barz-enhancer-technical-normal-map",
+      "title": "Technical Normal Map",
+      "description": "Standard normal map color encoding with accurate surface angles.",
+      "sourceLine": 849,
+      "original": "Generate a normal map pass of this reference image. RGB color encoding: blue channel for surfaces facing camera, red for left/right angles, green for up/down angles. Flat surfaces should be uniform blue-purple (#8080FF), angled surfaces show appropriate color shifts. Maintain exact silhouettes, smooth gradients on curved surfaces. Technical 3D render output, no textures or details—pure surface orientation data.",
+      "corpusId": "text-db810f2bfb76d9868651",
+      "section": "normal-map",
+      "text": "Generate a normal map pass of this reference image. RGB color encoding: blue channel for surfaces facing camera, red for left/right angles, green for up/down angles. Flat surfaces should be uniform blue-purple (#8080FF), angled surfaces show appropriate color shifts. Maintain exact silhouettes, smooth gradients on curved surfaces. Technical 3D render output, no textures or details—pure surface orientation data.",
+      "corrections": []
+    },
+    {
+      "id": "barz-enhancer-render-style-normal",
+      "title": "Render-Style Normal",
+      "description": "3D software render aesthetic with clear surface definition.",
+      "sourceLine": 855,
+      "original": "Convert this reference image to a 3D normal map render pass. Surface normals encoded as RGB colors—blue for camera-facing, red-green shifts for angled surfaces. Smooth gradient transitions on curved geometry, sharp edges on hard surfaces. Preserve all silhouettes and surface relationships. Clean technical output like Maya or Blender normal pass.",
+      "corpusId": "text-16ed797c29b23a0d2dde",
+      "section": "normal-map",
+      "text": "Convert this reference image to a 3D normal map render pass. Surface normals encoded as RGB colors—blue for camera-facing, red-green shifts for angled surfaces. Smooth gradient transitions on curved geometry, sharp edges on hard surfaces. Preserve all silhouettes and surface relationships. Clean technical output like Maya or Blender normal pass.",
+      "corrections": []
+    },
+    {
+      "id": "barz-enhancer-quick-normal",
+      "title": "Quick Normal",
+      "description": "Compact prompt for fast iterations.",
+      "sourceLine": 861,
+      "original": "Normal map pass of reference image. RGB surface orientation encoding, blue=facing camera, red/green=angled. Smooth curved surfaces, sharp hard edges. Exact silhouettes, technical render output.",
+      "corpusId": "text-c12d3a3c7bcb8bc9c705",
+      "section": "normal-map",
+      "text": "Normal map pass of reference image. RGB surface orientation encoding, blue=facing camera, red/green=angled. Smooth curved surfaces, sharp hard edges. Exact silhouettes, technical render output.",
+      "corrections": []
+    },
+    {
+      "id": "barz-enhancer-technical-gi-pass",
+      "title": "Technical GI Pass",
+      "description": "Clean indirect lighting visualization with ambient occlusion.",
+      "sourceLine": 876,
+      "original": "Generate a global illumination render pass of this reference image. Show only indirect lighting and light bounce—no direct light sources. Include ambient occlusion in crevices and contact shadows. Soft diffuse illumination, subtle color bleeding between adjacent surfaces. Grayscale or desaturated output. Maintain exact silhouettes and spatial relationships. Technical render aesthetic.",
+      "corpusId": "text-6834d07a8f286a76d556",
+      "section": "global-illumination",
+      "text": "Generate a global illumination render pass of this reference image. Show only indirect lighting and light bounce—no direct light sources. Include ambient occlusion in crevices and contact shadows. Soft diffuse illumination, subtle color bleeding between adjacent surfaces. Grayscale or desaturated output. Maintain exact silhouettes and spatial relationships. Technical render aesthetic.",
+      "corrections": []
+    },
+    {
+      "id": "barz-enhancer-ambient-occlusion-focus",
+      "title": "Ambient Occlusion Focus",
+      "description": "Emphasizes contact shadows and crevice darkening.",
+      "sourceLine": 882,
+      "original": "Convert this reference image to an ambient occlusion render pass. Grayscale visualization showing contact shadows, crevice darkening, and soft shadowing where surfaces meet. White for exposed areas, dark gray/black for occluded areas. Smooth falloff gradients. Preserve all silhouettes and geometric relationships. Clean technical 3D render output.",
+      "corpusId": "text-dc10894f236b24e3e1f5",
+      "section": "global-illumination",
+      "text": "Convert this reference image to an ambient occlusion render pass. Grayscale visualization showing contact shadows, crevice darkening, and soft shadowing where surfaces meet. White for exposed areas, dark gray/black for occluded areas. Smooth falloff gradients. Preserve all silhouettes and geometric relationships. Clean technical 3D render output.",
+      "corrections": []
+    },
+    {
+      "id": "barz-enhancer-quick-gi-ao",
+      "title": "Quick GI/AO",
+      "description": "Compact prompt for fast iterations.",
+      "sourceLine": 888,
+      "original": "Global illumination pass of reference image. Indirect lighting and ambient occlusion only. Grayscale, soft shadows in crevices, light falloff on surfaces. Exact silhouettes, technical render output.",
+      "corpusId": "text-f8950c7f8d16b57fe16f",
+      "section": "global-illumination",
+      "text": "Global illumination pass of reference image. Indirect lighting and ambient occlusion only. Grayscale, soft shadows in crevices, light falloff on surfaces. Exact silhouettes, technical render output.",
+      "corrections": []
+    }
+  ],
+  "angles": [
+    {
+      "id": "high-left",
+      "prompt": "high angle shot from upper left, looking down diagonally",
+      "label": "HIGH LEFT",
+      "sourceLine": 754,
+      "selectable": true
+    },
+    {
+      "id": "high-center",
+      "prompt": "high angle overhead shot, bird's eye view tilted",
+      "label": "HIGH",
+      "sourceLine": 755,
+      "selectable": true
+    },
+    {
+      "id": "high-right",
+      "prompt": "high angle shot from upper right, looking down diagonally",
+      "label": "HIGH RIGHT",
+      "sourceLine": 756,
+      "selectable": true
+    },
+    {
+      "id": "eye-left",
+      "prompt": "eye level shot from the left side, three-quarter profile view",
+      "label": "LEFT",
+      "sourceLine": 757,
+      "selectable": true
+    },
+    {
+      "id": "center",
+      "prompt": "[REFERENCE]",
+      "label": "REF",
+      "sourceLine": 758,
+      "selectable": false
+    },
+    {
+      "id": "eye-right",
+      "prompt": "eye level shot from the right side, three-quarter profile view",
+      "label": "RIGHT",
+      "sourceLine": 759,
+      "selectable": true
+    },
+    {
+      "id": "low-left",
+      "prompt": "low angle shot from lower left, looking up diagonally",
+      "label": "LOW LEFT",
+      "sourceLine": 760,
+      "selectable": true
+    },
+    {
+      "id": "low-center",
+      "prompt": "low angle shot from below, worm's eye view",
+      "label": "LOW",
+      "sourceLine": 761,
+      "selectable": true
+    },
+    {
+      "id": "low-right",
+      "prompt": "low angle shot from lower right, looking up diagonally",
+      "label": "LOW RIGHT",
+      "sourceLine": 762,
+      "selectable": true
+    }
+  ],
+  "preservationModes": [
+    {
+      "label": "None",
+      "value": "",
+      "sourceLine": 769
+    },
+    {
+      "label": "Style Lock",
+      "value": "Same subject, same style, same lighting. ",
+      "sourceLine": 770
+    },
+    {
+      "label": "Character Lock",
+      "value": "Maintain exact character design and color palette. ",
+      "sourceLine": 771
+    },
+    {
+      "label": "Scene Lock",
+      "value": "Preserve scene composition and atmospheric mood. ",
+      "sourceLine": 772
+    }
+  ],
+  "composition": {
+    "sourceLines": [
+      938,
+      961,
+      979,
+      980
+    ],
+    "order": "DOM grid order, not selection order; center is excluded",
+    "subject": "Trim outer whitespace; preserve internal whitespace and Unicode",
+    "emptySubject": "[your subject/reference]",
+    "displayTemplate": "${currentPrefix}${angle.prompt}, ${baseSubject}. Preserve original style, lighting quality, and color palette from reference.",
+    "copyTemplate": "[${angle.label}]\n${currentPrefix}${angle.prompt}, ${subject}. Preserve original style, lighting quality, and color palette from reference.",
+    "separator": "\n\n",
+    "prefixTrailingSpaces": "Significant; do not trim",
+    "emptySelection": "Empty preview message; Copy All returns without writing the clipboard"
+  },
+  "renderPassDisclaimer": "These prompts attempt to generate render passes from images. Results are approximations—not pixel-accurate technical outputs. Best for creative/visual use, not precision compositing.",
+  "extractionFindings": {
+    "batchId": "batch-18-01",
+    "fixedCardsPresent": 20,
+    "missingSelectableAngles": 8,
+    "missingNonemptyPrefixes": 3,
+    "scope": "HTML data-prompt attributes and JavaScript strings in inline onclick handlers were not extracted.",
+    "overallCoverage": "Not exhaustive. Repair extraction and re-audit before reviewing all other families."
+  },
+  "preservationNotes": [
+    "Scene Lock asks to preserve composition while changing viewpoint. Retain for compatibility; any behavioral change requires an explicit separate decision.",
+    "Photo Enhancement permits cropping/deleting details, unlike preservation recipes. Keep separate.",
+    "Scene Description and Image1/Image2/Image3 placeholders remain literal until an explicit V6 input mapping is implemented.",
+    "None disables the additional prefix only; the common style/lighting/palette preservation suffix still applies.",
+    "No source-local AI request or project storage. Shared theme stores theme settings and can normalize displayed text.",
+    "Render-pass terminology is creative approximative output, not a calibrated normals/depth/GI contract; do not silently rewrite prompts."
+  ],
+  "portingRequirements": [
+    "Use textContent/DOM nodes for subject and generated text, never unescaped innerHTML.",
+    "Do not run shared theme cleanText() over V6 prompt payloads; test display/copy equivalence including markup-like text and repeated whitespace.",
+    "Send each angle as a separate output; Copy All retains labeled blocks separated by two newlines.",
+    "Preserve ordered selection, empty prefix, Unicode and significant trailing prefix spaces.",
+    "Test clipboard failures visibly and add the explicit send-to-aggregator action without triggering generation."
+  ]
+}

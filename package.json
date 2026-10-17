@@ -1,0 +1,25 @@
+{
+  "name": "barz-aggregator",
+  "version": "0.25.0",
+  "private": true,
+  "description": "Local AI media generation router for BARZ workflows",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build:director": "esbuild src/director-browser.js --bundle --format=esm --platform=browser --target=es2022 --outfile=public/director-runtime.js",
+    "extract:atlas-v5": "node scripts/extract-atlas-prompts-v6.mjs",
+    "prestart": "npm run build:director",
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test test/*.test.js"
+  },
+  "dependencies": {
+    "@fal-ai/client": "^1.11.0-alpha.3",
+    "@fal-ai/server-proxy": "^1.3.0-alpha.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  }
+}

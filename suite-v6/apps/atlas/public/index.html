@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en" data-theme="dark" data-language="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prompt Atlas V6 — Build</title>
+  <script>
+    (() => {
+      try {
+        const theme = localStorage.getItem("barz-atlas-theme");
+        const language = localStorage.getItem("barz-atlas-language");
+        document.documentElement.dataset.theme = theme === "light" ? "light" : "dark";
+        document.documentElement.dataset.language = language === "fr" ? "fr" : "en";
+        document.documentElement.lang = language === "fr" ? "fr" : "en";
+      } catch {}
+    })();
+  </script>
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/global-ai-controls.css">
+  <script defer src="/preferences.js"></script>
+  <script type="module" src="/global-ai-controls.js"></script>
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="atlas-rail" aria-label="Navigation Prompt Atlas">
+      <div class="brand" aria-label="Prompt Atlas V6"><span>PA</span><b>6</b></div>
+      <nav id="navigation" class="navigation"></nav>
+      <a class="suite-switch" href="http://127.0.0.1:4317/" target="barz-aggregator"
+        aria-label="Ouvrir BZ Aggregator">
+        <span class="suite-switch-mark" aria-hidden="true">BZ</span>
+        <span>Aggregator</span>
+      </a>
+      <div class="rail-preferences" aria-label="Display preferences">
+        <div class="preference-switch theme-preference" role="group" aria-label="Theme">
+          <button type="button" data-theme-choice="light" aria-label="Light theme" title="Light theme"><span aria-hidden="true">☀</span></button>
+          <button type="button" data-theme-choice="dark" aria-label="Dark theme" title="Dark theme"><span aria-hidden="true">☾</span></button>
+        </div>
+        <div class="preference-switch language-preference" role="group" aria-label="Language">
+          <button type="button" data-language-choice="en" aria-label="English">EN</button>
+          <button type="button" data-language-choice="fr" aria-label="Français">FR</button>
+        </div>
+      </div>
+      <div class="rail-status"><span class="status-light"></span>Local</div>
+    </aside>
+
+    <main id="build-stage" class="build-stage">
+      <header class="stage-head">
+        <div>
+          <h1>Build</h1>
+          <p>Construis Atlas sans toucher au code.</p>
+        </div>
+      </header>
+
+      <section class="setup-strip" aria-label="Setup Prompt Atlas actif">
+        <div class="setup-identity">
+          <span class="setup-kicker">Setup Atlas</span>
+          <select id="setup-select" aria-label="Changer de setup"></select>
+          <span id="setup-count" class="setup-count">—</span>
+        </div>
+        <div class="setup-actions">
+          <button id="new-setup" type="button" title="Créer un setup vide">Nouveau</button>
+          <button id="duplicate-setup" type="button" title="Dupliquer le setup actif">Dupliquer</button>
+          <button id="rename-setup" type="button">Renommer</button>
+          <span class="setup-divider" aria-hidden="true"></span>
+          <button id="save-version" class="version-action" type="button">Enregistrer une version</button>
+          <button id="show-versions" type="button">Historique</button>
+        </div>
+      </section>
+
+      <section class="workbench" aria-label="Éditeur des ateliers">
+        <div class="workshop-panel">
+          <div class="panel-head">
+            <div>
+              <h2>Ateliers</h2>
+              <p>Glisse pour organiser. Deck, Backstage et Build restent fixes.</p>
+            </div>
+            <button id="add-workshop" class="icon-button signal" type="button" aria-label="Créer un atelier" title="Créer un atelier">+</button>
+          </div>
+          <div id="workshop-list" class="workshop-list" aria-label="Ateliers réorganisables"></div>
+          <div class="panel-actions">
+            <button id="reset-all" class="quiet-button" type="button">Réglages par défaut</button>
+            <button id="show-backups" class="quiet-button" type="button">Sauvegardes</button>
+          </div>
+        </div>
+
+        <aside class="inspector" aria-label="Inspecteur">
+          <div id="empty-inspector" class="empty-inspector">
+            <span class="empty-mark">↳</span>
+            <h2>Choisis un atelier</h2>
+            <p>Son nom, ses prompts et son ordre apparaîtront ici.</p>
+          </div>
+
+          <div id="workshop-inspector" hidden>
+            <div class="inspector-kicker"><span id="origin-label">Atelier</span><b id="selected-position">—</b></div>
+            <form id="rename-form" class="rename-form">
+              <label for="workshop-title">Nom de l’atelier</label>
+              <div class="inline-control">
+                <input id="workshop-title" name="title" maxlength="120" required autocomplete="off">
+                <button type="submit">Enregistrer</button>
+              </div>
+            </form>
+            <div class="order-controls" aria-label="Déplacer l’atelier">
+              <button id="move-up" type="button">Monter</button>
+              <button id="move-down" type="button">Descendre</button>
+              <button id="reset-current" class="danger-quiet" type="button">Réinitialiser cet atelier</button>
+            </div>
+
+            <section class="tool-section">
+              <div class="section-heading">
+                <div>
+                  <h2>Prompts et outils</h2>
+                  <p id="tool-count">0 élément</p>
+                </div>
+                <div class="section-actions">
+                  <button id="add-library" class="small-button" type="button">Nouvelle bibliothèque</button>
+                  <button id="add-recipe" class="small-button" type="button">Prompt simple</button>
+                </div>
+              </div>
+              <div id="tool-list" class="tool-list"></div>
+            </section>
+
+            <section id="recipe-tester" class="recipe-tester" hidden>
+              <div class="tester-head">
+                <div><span>Recette active</span><h2 id="recipe-title"></h2></div>
+                <span id="recipe-media" class="media-chip"></span>
+              </div>
+              <form id="compile-form"></form>
+              <div id="compiled-output" class="compiled-output" aria-live="polite" hidden>
+                <div><span>Prompt compilé</span><button id="copy-output" type="button">Copier</button></div>
+                <pre id="output-text"></pre>
+              </div>
+            </section>
+
+            <section id="library-editor" class="library-editor" hidden>
+              <div class="library-head">
+                <div><span id="library-origin">Bibliothèque</span><h2 id="library-title">—</h2></div>
+                <button id="new-library-entry" class="small-button" type="button">Nouvelle carte</button>
+              </div>
+              <form id="library-rename-form" class="inline-library-form">
+                <input id="library-name" name="title" maxlength="120" required aria-label="Nom de la bibliothèque">
+                <button type="submit">Renommer</button>
+              </form>
+              <div class="library-shelf-head">
+                <div id="library-categories" class="library-categories" aria-label="Catégories"></div>
+                <button id="new-library-category" class="icon-button signal" type="button" aria-label="Créer une catégorie" title="Créer une catégorie">+</button>
+              </div>
+              <label class="hidden-toggle"><input id="show-hidden-entries" type="checkbox"> Voir les cartes masquées</label>
+              <div id="library-entry-list" class="library-entry-list"></div>
+              <form id="library-entry-form" class="library-entry-form" hidden>
+                <div class="editor-status"><span id="entry-origin">Carte</span><b id="entry-status">—</b></div>
+                <div class="form-grid">
+                  <label>Titre<input name="title" maxlength="120" required></label>
+                  <label>Catégorie<select name="categoryId" required></select></label>
+                </div>
+                <label>Description<textarea name="description" maxlength="2000" rows="2"></textarea></label>
+                <label>Type de sortie<select name="mediaType"><option value="image">Image</option><option value="video">Vidéo</option><option value="music">Son</option><option value="text">Texte</option></select></label>
+                <label>Prompt<textarea name="template" maxlength="50000" rows="8" required></textarea></label>
+                <div class="entry-editor-actions">
+                  <button id="insert-scene-token" type="button">Insérer les détails</button>
+                  <span><code>{{scene}}</code> marque l’emplacement des détails.</span>
+                </div>
+                <div class="library-save-actions">
+                  <button id="duplicate-library-entry" type="button">Dupliquer</button>
+                  <button id="revert-library-entry" type="button">Revenir à l’original</button>
+                  <button id="hide-library-entry" type="button" class="danger-quiet">Masquer</button>
+                  <button type="submit" class="primary-action">Enregistrer</button>
+                </div>
+              </form>
+            </section>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <main id="tool-stage" class="tool-stage" hidden>
+      <header class="tool-stage-head">
+        <div>
+          <button id="back-to-build" class="text-button" type="button">← Build</button>
+          <h1 id="runtime-workshop-title">Atelier</h1>
+        </div>
+        <div class="setup-runtime-badge"><span>Setup actif</span><b id="runtime-setup-name">—</b></div>
+      </header>
+      <nav id="runtime-tool-picker" class="runtime-tool-picker" aria-label="Outils de l’atelier"></nav>
+      <section id="runtime-tool-host" class="runtime-tool-host" aria-live="polite"></section>
+    </main>
+  </div>
+
+  <dialog id="workshop-dialog">
+    <form id="workshop-create-form" class="dialog-form">
+      <div class="dialog-head"><h2>Nouvel atelier</h2><button type="button" data-close aria-label="Fermer">×</button></div>
+      <p>Crée un nouvel espace dans la barre de gauche. Tu pourras ensuite y ranger tes prompts.</p>
+      <label for="new-workshop-title">Nom</label>
+      <input id="new-workshop-title" name="title" maxlength="120" required autocomplete="off" placeholder="Ex. Dialogues">
+      <div class="dialog-actions"><button type="button" data-close>Annuler</button><button type="submit" class="primary">Créer l’atelier</button></div>
+    </form>
+  </dialog>
+
+  <dialog id="setup-dialog">
+    <form id="setup-form" class="dialog-form">
+      <div class="dialog-head"><h2 id="setup-dialog-title">Nouveau setup</h2><button type="button" data-close aria-label="Fermer">×</button></div>
+      <p id="setup-dialog-description">Crée une nouvelle configuration indépendante de Prompt Atlas.</p>
+      <label for="setup-name">Nom du setup</label>
+      <input id="setup-name" name="name" maxlength="120" required autocomplete="off" placeholder="Ex. Films analogiques">
+      <div class="dialog-actions"><button type="button" data-close>Annuler</button><button id="setup-submit" type="submit" class="primary">Créer</button></div>
+    </form>
+  </dialog>
+
+  <dialog id="version-dialog">
+    <form id="version-form" class="dialog-form">
+      <div class="dialog-head"><h2>Enregistrer une version</h2><button type="button" data-close aria-label="Fermer">×</button></div>
+      <p>Fige l’organisation et les prompts du setup actif. Tu pourras y revenir sans perdre les versions suivantes.</p>
+      <label for="version-name">Nom de cette direction</label>
+      <input id="version-name" name="name" maxlength="120" required autocomplete="off" placeholder="Ex. Montage cinéma validé">
+      <div class="dialog-actions"><button type="button" data-close>Annuler</button><button type="submit" class="primary">Enregistrer la version</button></div>
+    </form>
+  </dialog>
+
+  <dialog id="version-history-dialog">
+    <div class="dialog-form version-history-form">
+      <div class="dialog-head"><div><span class="history-kicker">Historique du setup</span><h2 id="version-history-title">—</h2></div><button type="button" data-close aria-label="Fermer">×</button></div>
+      <p>Restaurer une version enregistre d’abord automatiquement l’état actuel.</p>
+      <div id="version-list" class="version-list"></div>
+      <div class="dialog-actions"><button type="button" data-close>Fermer</button></div>
+    </div>
+  </dialog>
+
+  <dialog id="recipe-dialog">
+    <form id="recipe-create-form" class="dialog-form wide-dialog">
+      <div class="dialog-head"><h2>Nouveau prompt</h2><button type="button" data-close aria-label="Fermer">×</button></div>
+      <p>Ce pilote crée une recette avec un champ texte. Le formulaire complet arrivera avec la migration des banques.</p>
+      <div class="form-grid">
+        <label>Titre<input name="title" maxlength="120" required placeholder="Ex. Portrait dramatique"></label>
+        <label>Atelier<select name="targetId" id="recipe-target" required></select></label>
+      </div>
+      <label>Nom du champ<input name="fieldLabel" maxlength="120" required value="Sujet"></label>
+      <label>Template du prompt<textarea name="template" maxlength="50000" rows="6" required>Portrait cinématographique de {{input}}, lumière sculptée, composition précise.</textarea></label>
+      <p class="field-help">Utilise <code>{{input}}</code> à l’endroit où la saisie doit apparaître. Le contenu reste du texte littéral.</p>
+      <label>Type de média<select name="mediaType"><option value="image">Image</option><option value="video">Vidéo</option><option value="music">Son</option><option value="text">Texte</option></select></label>
+      <div class="dialog-actions"><button type="button" data-close>Annuler</button><button type="submit" class="primary">Ajouter le prompt</button></div>
+    </form>
+  </dialog>
+
+  <dialog id="library-dialog">
+    <form id="library-create-form" class="dialog-form">
+      <div class="dialog-head"><h2>Nouvelle bibliothèque</h2><button type="button" data-close aria-label="Fermer">×</button></div>
+      <p>Crée une banque indépendante dans l’atelier sélectionné. Elle fonctionne immédiatement dans Atlas.</p>
+      <label>Nom<input name="title" maxlength="120" required autocomplete="off" placeholder="Ex. Matières organiques"></label>
+      <label>Première catégorie<input name="categoryTitle" maxlength="120" required autocomplete="off" value="Principal"></label>
+      <div class="dialog-actions"><button type="button" data-close>Annuler</button><button type="submit" class="primary">Créer la bibliothèque</button></div>
+    </form>
+  </dialog>
+
+  <dialog id="category-dialog">
+    <form id="category-create-form" class="dialog-form">
+      <div class="dialog-head"><h2>Nouvelle catégorie</h2><button type="button" data-close aria-label="Fermer">×</button></div>
+      <label>Nom<input name="title" maxlength="120" required autocomplete="off"></label>
+      <div class="dialog-actions"><button type="button" data-close>Annuler</button><button type="submit" class="primary">Créer la catégorie</button></div>
+    </form>
+  </dialog>
+
+  <dialog id="reset-dialog">
+    <form id="reset-form" class="dialog-form">
+      <div class="dialog-head"><h2>Revenir aux réglages par défaut ?</h2><button type="button" data-close aria-label="Fermer">×</button></div>
+      <p id="reset-description"></p>
+      <div id="reset-impact" class="impact-list"></div>
+      <p class="safe-note">Tes ateliers, prompts et outils personnels seront conservés. Une sauvegarde récupérable sera créée avant le changement.</p>
+      <div class="dialog-actions"><button type="button" data-close>Annuler</button><button type="submit" class="warning">Créer la sauvegarde et réinitialiser</button></div>
+    </form>
+  </dialog>
+
+  <dialog id="backup-dialog">
+    <div class="dialog-form">
+      <div class="dialog-head"><h2>Sauvegardes des réglages</h2><button type="button" data-close aria-label="Fermer">×</button></div>
+      <p>Restaurer une sauvegarde crée d’abord un nouveau point de récupération.</p>
+      <div id="backup-list" class="backup-list"></div>
+      <div class="dialog-actions"><button type="button" data-close>Fermer</button></div>
+    </div>
+  </dialog>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

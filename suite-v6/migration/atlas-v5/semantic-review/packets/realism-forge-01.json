@@ -1,0 +1,1387 @@
+{
+  "schemaVersion": "1.0",
+  "id": "semantic-realism-forge-01",
+  "owner": "realism-forge",
+  "status": "pending-astra-review",
+  "approximateTokens": 2447,
+  "prompts": [
+    {
+      "id": "text-05a77c04b1b1be9c2779",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Moderate on-camera flash, balanced with ambient",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 458,
+          "column": 112,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-05ae608ae7fc490bc2ba",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Samsung over-saturation and over-sharpening, motion ghosting from multi-frame stacking, watercolor smoothing in textures, $imperf",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 397,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-086ffcfb06a39ec39d74",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Shot on Fujifilm QuickSnap Flash 400 disposable camera, 35mm Fujicolor Superia 400 film, fixed f/10 plastic lens, 32mm focal length",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 307,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-09eaada8a1358e7fe265",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Harsh flash, overexposed foreground, dark background falloff, strong red-eye",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 458,
+          "column": 257,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-10f453139a52784bd9f1",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Shot on Pentax K1000 35mm SLR (classic student camera), SMC Pentax 50mm f/2, Fujifilm Superia X-TRA 800",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 363,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-115d87b8e1fea3c43ec4",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "VHS interlacing lines, tape tracking noise at bottom, analog noise, color bleeding, REC indicator and date stamp overlay, motion blur, VHS generation loss, $imperf",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 421,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-125f480f32eabfd9a8ad",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still frame from 1960s broadcast television studio camera (RCA TK-41 or similar), Image Orthicon tube sensor, 525-line NTSC resolution, 4.5 MHz bandwidth, interlaced 2:1 scanning, studio pedestal mount",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 431,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-167ede2a3d78b94b480c",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Still from dashboard camera, 1080p, 170° ultra-wide f/1.8, loop recording, windshield mount, speed overlay",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 411,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-1908dc4a17959f839190",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Shot on Sony Cyber-shot DSC-W300, 13.6MP 1/1.7\" CCD, Carl Zeiss Vario-Tessar f/2.8-5.5, 36-108mm equivalent",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 375,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-1d05b06a9a70349242ef",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Motion blur despite VR, aggressive oversharpening halos, washed-out shadows, digital noise at full crop, chromatic aberration at zoom extremes, $imperf",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 381,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-1d08cdf43abd00c70608",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Organic Portra fine grain, slightly soft manual focus, subtle light leak along film door, scanner dust specks, slight orange mask color cast, $imperf",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 357,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-28988b8be07ce4ee2e8b",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Slight motion blur despite head brace, tarnishing and oxidation at plate edges, mirror-like surface, stiff formal pose, hand-tinted color on cheeks and clothing, $imperf",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 337,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-2cf13d3e1b0b6f99ed28",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Looking directly at camera, relaxed natural posture",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 178,
+          "column": 6,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-3b7748a0b32a5fa23c83",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Shot on Nikon Coolpix S6200, 16MP 1/2.3\" CCD, Nikkor 10x zoom f/3.2-5.8, 25-250mm equivalent, VR",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 379,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-3d2b192c3c6efdf0fb90",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "VHS, VHS-C, Hi8, MiniDV. Frames extraits de vidéos familiales — entrelacement, artefacts de bande, flou de mouvement.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 416,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-3f279a89abf63f4edd77",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Large format wet plate collodion process, brass-mounted Petzval portrait lens f/4, glass plate negative, 3 to 15 second exposure, albumen print on carte de visite card mount",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 343,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-3f771facad547e6f98eb",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Computational sharpening halo on edges, HDR ghosting on movement, Portrait mode bokeh with hair edge detection errors, $imperf",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 393,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-40853af3b25318fef37e",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Broadcast tube cameras from Vidicon, Plumbicon and Saticon eras. Studio TV, news footage, scan lines and phosphor persistence.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 615,
+          "column": 47,
+          "kind": "string-literal",
+          "functionName": "prepareEnglishUi",
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-421d6ce98fff7ea1baf3",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Studio news desk lighting, $flash, cool fluorescent-mixed key light typical of 1990s news studios, $grain",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 444,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-49246755df26ff7d1987",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "VHS, VHS-C, Hi8 and MiniDV stills. Interlacing, tape artifacts, motion blur and family-video texture.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 614,
+          "column": 40,
+          "kind": "string-literal",
+          "functionName": "prepareEnglishUi",
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-4a28f799cd8237f43aea",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "$flash, strong flash falloff creating pitch-dark background beyond 3m, harsh direct illumination on foreground subject, $grain",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 304,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-4af64dca9d7ce2b0b853",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Heavy noise, lossy compression artifacts, washed colors, barrel distortion, motion blur at 1/30s, low resolution, unflattering chin angle, $imperf",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 405,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-4d990ff1e16a5acb8d81",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Shot on AGFA LeBox Flash disposable camera, 35mm AGFA Vista 400 film, fixed f/9 plastic lens, strong built-in flash unit with extended reach",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 311,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-4f0333958344546cf343",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Shot on Canon AE-1 Program 35mm SLR, Canon FD 50mm f/1.8 wide open, Kodak Portra 400 color negative film",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 355,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-53939e5f1f13a8ceea6b",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Shot on Canon PowerShot A540, 6MP 1/2.5\" CCD sensor, f/2.6-5.5 zoom, 35-140mm equivalent, Auto mode, JPEG",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 371,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-5d819de289dcfef9c71d",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "$flash, Polaroid chemical color palette with cyan-shifted blues and warm yellow undertones, limited dynamic range, $grain",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 320,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-5db3bd638dcdaf6e9932",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Crouching down, elbows on knees, looking up at camera",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 187,
+          "column": 6,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-60efd6027891ec83b6f0",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still frame from early 2000s standard definition digital broadcast camera (Sony HDC-950 or Panasonic AK-HC900), 2/3 inch 3-CCD sensor, MPEG-2 compression for broadcast, 480i/576i interlaced SD output, digital signal chain",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 447,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-66ae90e3ff1dae957943",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Still frame from CCTV security camera, 2MP 1/2.8\" CMOS, f/1.4 varifocal 2.8-12mm, H.264 compression, ceiling-mounted",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 407,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-6c5254063ea331ba3d04",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "distracted, looking at something off-camera",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 240,
+          "column": 6,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-6dda9a6f1a8b67bb351f",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Shot on iPhone 6, 8MP iSight, f/2.2, 29mm equivalent, 1.5μm pixels, no OIS, JPEG",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 387,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-703451fb46622a417e64",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Plumbicon tube comet tailing on bright moving highlights, visible scan line structure, color fringing from tube registration errors (RGB tubes slightly misaligned), analog video noise, slight barrel distortion, U-matic tape dropout artifacts as horizontal white streaks, $imperf",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 437,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-738c22150a65ec0f4512",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Beautiful Tri-X grain texture, deep blacks, slight halation on bright highlights, hand-developed marks and uneven agitation, $imperf",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 361,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-7396c013c0cfad7c98b4",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Sony Cyber-shot — Sortie entre amis",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 374,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-789d3c36d232fc1316a1",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "<option value=\"${esc(c.v)}\"${S.celeb===c.v?' selected':''}>${c.c} ${c.v}</option>",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 670,
+          "column": 29,
+          "kind": "template-literal",
+          "functionName": "renderApp",
+          "owners": [
+            "realism-forge"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 673,
+          "column": 29,
+          "kind": "template-literal",
+          "functionName": "renderApp",
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-7ed7d2e7963dd0ad385b",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Studio north-facing skylight, $flash, reflected light from white fabric screens, no electrical lighting, $grain",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 336,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-81ebe73ee0aa137a3966",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Extreme fisheye distortion, windshield reflections, dashboard ghosting, dirty smudges, timestamp+speed overlay, motion blur, $imperf",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 413,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-827c979484bae2899429",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Available outdoor light or harsh portable sun-gun lamp, $flash, high contrast from limited tube dynamic range, $grain",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 436,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-881a3bb08433e3260c1d",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Shot on Kodak FunSaver disposable camera, 35mm Kodak MAX Versatility 800 film, fixed f/10 single-element plastic lens, 30mm focal length, 1/140s fixed shutter speed",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 303,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-8cef8cd635c364425f38",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Shot on Samsung Galaxy S24 Ultra, 200MP binned to 12MP, f/1.7, 23mm equivalent, Nightography mode",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 395,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-8e60ab26b28e883e6d75",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Strong direct flash, hard shadows behind subject, specular skin highlights",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 458,
+          "column": 171,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-9306cd5668172c2ee051",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Shot on Nikon FM2 mechanical 35mm SLR, Nikkor 50mm f/1.4 AI-S, Kodak Tri-X 400 B&W film, manual exposure",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 359,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-99cefd1292467b69d36f",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "From iPhone 4 to Pixel 9. Older phones reveal their limits; modern phones can feel too computational.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 612,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "prepareEnglishUi",
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-9ab717d82f781f675e51",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "JPEG compression blocking in shadows, CCD bloom and purple fringing, red-eye from flash, slow AF misfocus, date stamp burned in corner, $imperf",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 373,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-9ba94ce4a891a45e162b",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Canon PowerShot, Sony Cyber-shot, Nikon Coolpix. CCD, JPEG, mode auto. Le digicam 2000-2012 redevenu tendance.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 368,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-9be01cc7dace289ad3a4",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Early CCD smear artifacts on bright highlights, interlaced field rendering creating comb effect on movement, Betacam tape compression, analog-to-digital transition artifacts, chroma subsampling visible on saturated colors, lower third graphics overlay area, 4:3 with possible letterbox, $imperf",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 445,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-a03a69a2c4b04fc1283d",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Laptop webcams, CCTV, doorbell cameras and dashcams. Low quality is part of the believable reference language.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 613,
+          "column": 49,
+          "kind": "string-literal",
+          "functionName": "prepareEnglishUi",
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-a1faaad312bf2b1db9e0",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Bright studio flood lights and Fresnel spots, $flash, extremely flat high-key lighting to compensate for tube sensitivity limitations, visible heat from tungsten lamps, $grain",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 432,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-a6dd1877f95d7363adcc",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "DV compression blocking, interlace combing on movement, auto-focus hunting creating soft patches, 4:3 aspect ratio, possible anamorphic stretch, $imperf",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 425,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-a717587288db405c38e9",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still frame from 1980s television studio camera (Ikegami HK-357 or Sony BVP-360), Saticon tube sensors (3-tube RGB), Betacam SP recording, broadcast-quality 525/625 lines, studio configuration on heavy pedestal",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 439,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-a845b725f733992a0ef0",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Image Orthicon tube characteristic halo/bloom around bright objects, visible scan lines, limited contrast ratio, slight geometric distortion from tube curvature, burn-in ghosting from static graphics, 4:3 aspect ratio with rounded screen corners, slight phosphor lag on movement, $imperf",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 433,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-a99dd69574379f018cd3",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Canon AE-1, Nikon FM2 and Pentax K1000. Manual focus, real film grain, organic color and deliberate frame economy.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 610,
+          "column": 40,
+          "kind": "string-literal",
+          "functionName": "prepareEnglishUi",
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-acb1504ec1123a0c66cc",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Back to camera, looking over shoulder toward lens",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 194,
+          "column": 6,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ad22d8b6dcc7ac54b46d",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Canon PowerShot, Sony Cyber-shot and Nikon Coolpix. CCD sensors, JPEG compression, auto mode and 2000-2012 digital nostalgia.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 611,
+          "column": 44,
+          "kind": "string-literal",
+          "functionName": "prepareEnglishUi",
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b7080316ec780e7c5478",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Lying on grass, looking up at camera held above",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 188,
+          "column": 6,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b7636e07ef0fbe323346",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Professional multi-point studio lighting with strong key light, fill, and colored gels on backlight, $flash, characteristic 1980s TV warm color temperature and saturated look, $grain",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 440,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-bebbcb027e17acb64d55",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Webcams laptop, CCTV, Ring doorbell, dashcams. Qualité basse par design — c'est ce qui les rend crédibles.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 400,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-bff8d1c52fabcc12b195",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Shot on Polaroid 600 OneStep camera, Polaroid 600 integral instant film, 106mm f/14.6 single-element plastic lens, automatic flash, 3.1×3.1 inch print area within white border frame",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 319,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-c28b2f6c7d1bd43ce7f0",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Walking toward camera, mid-stride, candid movement blur",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 182,
+          "column": 6,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-c6e00291d5e2868a2f08",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still frame from early 1990s broadcast camera (Sony BVP-700 or Ikegami HK-388), transitional era from tube to CCD sensors, 3-CCD chip camera, Betacam SP or Digital Betacam recording, 4:3 broadcast standard",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 443,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-c8b7194a80411b26c456",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "$flash, top-mounted camera light creating harsh overhead illumination, $grain",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 420,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-cb2eae9b73e84a7a493e",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Shot on iPhone 15 Pro, 48MP, f/1.78, 24mm equivalent, sensor-shift OIS, Photonic Engine, Smart HDR 5",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 391,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-cc3cbf204d78e7a2dbb0",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Coarse ISO 800 grain, amateur exposure errors, camera shake (no stabilization), possible light leak from worn seals, yellow-shifted whites, $imperf",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 365,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-cde87ab69b9ac3a82610",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Mixed fluorescent and LED studio panels, $flash, cleaner digital color but still constrained by SD resolution, early digital color correction look, $grain",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 448,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d1f92c3f752e3728f6b5",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Shot on Polaroid SX-70 folding SLR instant camera, SX-70 film cartridge, 116mm f/8 four-element glass lens, SLR viewfinder with manual focus ring",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 323,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d2217c8f3653d751abee",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Dancing, blurred arms and hair, caught mid-motion",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 189,
+          "column": 6,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d252dda5b8aafc3dd47f",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Shot on Kodak Brownie box camera, 620 roll film, single-element meniscus lens f/11, fixed focus at 10 feet, waist-level brilliant viewfinder",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 339,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d97f6aa96baee5131558",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Night scene, $flash, Samsung AI noise reduction, oversaturated warm white balance, $grain",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 396,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-dcc2af916424ff1c99bb",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Shot on Leica M3 rangefinder, Leitz Summicron 50mm f/2 collapsible, Kodak Tri-X 400 pushed to 1600, hand-processed in D-76",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 347,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-de1ea18a7270404e1c48",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Daguerreotype process on silvered copper plate, Petzval-type portrait lens f/3.6, 10 to 60 second exposure requiring absolute stillness, mercury vapor development",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 335,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e2c1dbea09d6278571fe",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Looking away from camera, profile view, unaware of being photographed",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 185,
+          "column": 6,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f2c49057ffe8cbcd3773",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Eating or drinking, mouth full, caught off-guard by camera",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 190,
+          "column": 6,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f4bce55260048f2fe830",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Shot on Fujifilm Instax Mini 12, 60mm f/12.7 two-element lens, ISO 800 Instax Mini instant film, automatic exposure with built-in flash, credit-card sized print",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 327,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f507bef5e79e1f3452a3",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still frame from 1970s Electronic News Gathering camera (Ikegami HL-77 or RCA TK-76), Plumbicon tube sensor, portable shoulder-mounted, recorded to 3/4\" U-matic tape, NTSC 525 lines",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 435,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f61cf518c35b8bbbe0a3",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Saticon tube slight image lag on fast movement, analog video noise in shadows, characteristic warm broadcast color grading of 1980s, slight RGB tube misregistration visible on high-contrast edges, studio monitor scanline texture, 4:3 aspect ratio, $imperf",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 441,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f79d6b721b42ec610bd5",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Shot on generic laptop webcam, 720p, 1.3MP CMOS, f/2.0 plastic lens, 2.8mm, 30fps, auto exposure",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+          "line": 403,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "realism-forge"
+          ]
+        }
+      ]
+    }
+  ]
+}

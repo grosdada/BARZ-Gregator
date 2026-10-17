@@ -1,0 +1,525 @@
+{
+  "schemaVersion": "1.0",
+  "createdAt": "2026-09-11T10:46:00.331Z",
+  "sources": [
+    {
+      "sourcePath": "Barzy App/prompt Atlas V2/app.js",
+      "owners": [
+        "blocking-studio",
+        "image-analyzer",
+        "image-graber",
+        "paint-studio",
+        "video-analyzer"
+      ],
+      "bytes": 364291,
+      "lines": 8852,
+      "sha256": "3af481136816f18c6fc38829fcadfc9a121c18089180cacd74ba50d7d4839a5d",
+      "dependencies": [],
+      "extractedOccurrences": 2887
+    },
+    {
+      "sourcePath": "Barzy App/public/assets/barzy-storage.js",
+      "owners": [
+        "cccp",
+        "cinema-helper",
+        "imperfection",
+        "multishot",
+        "realism-forge"
+      ],
+      "bytes": 976,
+      "lines": 41,
+      "sha256": "09e03335757fa4efda301023de13939d4715ccba3106f01162dd1769ddccb98e",
+      "dependencies": [],
+      "extractedOccurrences": 2
+    },
+    {
+      "sourcePath": "Barzy App/public/assets/barzy-theme.js",
+      "owners": [
+        "acting-gen",
+        "banana-helper",
+        "barz-beauty",
+        "barz-designer",
+        "barz-enhancer",
+        "barzy-board",
+        "barzy-sheet",
+        "cccp",
+        "cinema-helper",
+        "cinematic-shoot",
+        "facs-sheet-generator",
+        "image-slicer",
+        "imperfection",
+        "knolling",
+        "multishot",
+        "realism-forge",
+        "seedance",
+        "veo-suite",
+        "workflow-3d"
+      ],
+      "bytes": 19502,
+      "lines": 407,
+      "sha256": "5870fa2856910bef1fc8d130aecb72383b89e8d1c22540ca11af13c3bf5963d0",
+      "dependencies": [],
+      "extractedOccurrences": 243
+    },
+    {
+      "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+      "owners": [
+        "workflow-3d"
+      ],
+      "bytes": 123405,
+      "lines": 2129,
+      "sha256": "a65b8217c29a9697379a1e6bc4fce6262c1f307a19e04b1c3477238c7e6a321b",
+      "dependencies": [
+        "Barzy App/public/assets/barzy-theme.js"
+      ],
+      "extractedOccurrences": 902
+    },
+    {
+      "sourcePath": "Barzy App/public/assets/HTML/acting_gen.html",
+      "owners": [
+        "acting-gen"
+      ],
+      "bytes": 114442,
+      "lines": 2190,
+      "sha256": "e6c2c58e6e2d7d06f3185ce1a96fd619ea0fd4f098eab1719fea91ab9e2148e4",
+      "dependencies": [
+        "Barzy App/public/assets/HTML/drunk_dance_prompts_tabs.html",
+        "Barzy App/public/assets/barzy-theme.js"
+      ],
+      "extractedOccurrences": 705
+    },
+    {
+      "sourcePath": "Barzy App/public/assets/HTML/banana_helper.html",
+      "owners": [
+        "banana-helper"
+      ],
+      "bytes": 30666,
+      "lines": 444,
+      "sha256": "3d29b8158aa51b5dbf45dbb9d6c2ebb868c4539d825209fd8b7bde606fb1bc7c",
+      "dependencies": [
+        "Barzy App/public/assets/barzy-theme.js"
+      ],
+      "extractedOccurrences": 226
+    },
+    {
+      "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+      "owners": [
+        "barz-designer"
+      ],
+      "bytes": 56245,
+      "lines": 319,
+      "sha256": "0dd0bbc432b5a46370f51cb1d9cafdf8bc00633e124de6e6322ee4c124e868bd",
+      "dependencies": [
+        "Barzy App/public/assets/barzy-theme.js"
+      ],
+      "extractedOccurrences": 430
+    },
+    {
+      "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+      "owners": [
+        "barzy-sheet"
+      ],
+      "bytes": 101127,
+      "lines": 2342,
+      "sha256": "cdcf2a358c6dcedf26ca444ae12700c18ed31f5522e4c0753d6aa0c93efa20ae",
+      "dependencies": [
+        "Barzy App/public/assets/barzy-theme.js"
+      ],
+      "extractedOccurrences": 657
+    },
+    {
+      "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+      "owners": [
+        "barzy-board"
+      ],
+      "bytes": 52694,
+      "lines": 1153,
+      "sha256": "08ab62d1f8e70f6ff3301a68a36e61d04f31aa0a8bdd827eb2cf86dabe1771a8",
+      "dependencies": [
+        "Barzy App/public/assets/barzy-theme.js"
+      ],
+      "extractedOccurrences": 667
+    },
+    {
+      "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+      "owners": [
+        "cccp"
+      ],
+      "bytes": 38279,
+      "lines": 902,
+      "sha256": "e231f3766eadb89d5ea9ec1b3099a651d163384d05a04fe0fbe830a42293069b",
+      "dependencies": [
+        "Barzy App/public/assets/barzy-storage.js",
+        "Barzy App/public/assets/barzy-theme.js"
+      ],
+      "extractedOccurrences": 141
+    },
+    {
+      "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+      "owners": [
+        "cinematic-shoot"
+      ],
+      "bytes": 61995,
+      "lines": 1001,
+      "sha256": "f737729ea48bdd8681eb56514192e53c672726b64d4dd4de8568da3f0d18e2f2",
+      "dependencies": [
+        "Barzy App/public/assets/barzy-theme.js"
+      ],
+      "extractedOccurrences": 429
+    },
+    {
+      "sourcePath": "Barzy App/public/assets/HTML/drunk_dance_prompts_tabs.html",
+      "owners": [
+        "acting-gen"
+      ],
+      "bytes": 96093,
+      "lines": 1424,
+      "sha256": "7aed0d0ce678f45f2736e4db9b24e60a7969d364040e92371f29f3be7220a549",
+      "dependencies": [
+        "Barzy App/public/assets/barzy-theme.js"
+      ],
+      "extractedOccurrences": 539
+    },
+    {
+      "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+      "owners": [
+        "facs-sheet-generator"
+      ],
+      "bytes": 55323,
+      "lines": 890,
+      "sha256": "b8a2df542b66f2b11bd78e174b2088f5633d8a11f21a6840f730bba33814fbc3",
+      "dependencies": [
+        "Barzy App/public/assets/barzy-theme.js"
+      ],
+      "extractedOccurrences": 584
+    },
+    {
+      "sourcePath": "Barzy App/public/assets/HTML/image-slicer.html",
+      "owners": [
+        "image-slicer"
+      ],
+      "bytes": 34233,
+      "lines": 1112,
+      "sha256": "4eaf0cc762f261606448b7d856ed208f1e98e8473cead3e2146b86b2a25b78b0",
+      "dependencies": [
+        "Barzy App/public/assets/barzy-theme.js"
+      ],
+      "extractedOccurrences": 183
+    },
+    {
+      "sourcePath": "Barzy App/public/assets/HTML/imperfection_engine.html",
+      "owners": [
+        "imperfection"
+      ],
+      "bytes": 90332,
+      "lines": 2167,
+      "sha256": "c47a1069bb0f19117b23771955e6f458db28f0c6b030fcc9c22ef903517cc010",
+      "dependencies": [
+        "Barzy App/public/assets/barzy-storage.js",
+        "Barzy App/public/assets/barzy-theme.js"
+      ],
+      "extractedOccurrences": 519
+    },
+    {
+      "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+      "owners": [
+        "knolling"
+      ],
+      "bytes": 136925,
+      "lines": 2949,
+      "sha256": "2d55737b5c128422a9cc45ef7e1f53fe401a9c41cdb564c8cadb1cc177c26b1f",
+      "dependencies": [
+        "Barzy App/public/assets/barzy-theme.js"
+      ],
+      "extractedOccurrences": 375
+    },
+    {
+      "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+      "owners": [
+        "multishot"
+      ],
+      "bytes": 96329,
+      "lines": 1571,
+      "sha256": "40c01bcfcd00ecef5dd57bc4cd6e982b036b539728f540aee4810324a066d25d",
+      "dependencies": [
+        "Barzy App/public/assets/barzy-storage.js",
+        "Barzy App/public/assets/barzy-theme.js"
+      ],
+      "extractedOccurrences": 342
+    },
+    {
+      "sourcePath": "Barzy App/public/assets/HTML/md_enhancer.html",
+      "owners": [
+        "barz-enhancer"
+      ],
+      "bytes": 42467,
+      "lines": 1006,
+      "sha256": "0956b462d734851864e16e61d3d4194b09e88daa9943a2d45a0246de73ede853",
+      "dependencies": [
+        "Barzy App/public/assets/barzy-theme.js"
+      ],
+      "extractedOccurrences": 149
+    },
+    {
+      "sourcePath": "Barzy App/public/assets/HTML/md-beauty.html",
+      "owners": [
+        "barz-beauty"
+      ],
+      "bytes": 37230,
+      "lines": 688,
+      "sha256": "75700706709c344a69d97354e68f27592265208198b55ad7b11687f9ea6f70f2",
+      "dependencies": [
+        "Barzy App/public/assets/barzy-theme.js"
+      ],
+      "extractedOccurrences": 157
+    },
+    {
+      "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+      "owners": [
+        "cinema-helper"
+      ],
+      "bytes": 330907,
+      "lines": 5940,
+      "sha256": "df89fd59d50fbab1bb1fd564f2bdb8c58e48528fc4d328b7529c901c63c35d4e",
+      "dependencies": [
+        "Barzy App/public/assets/barzy-storage.js",
+        "Barzy App/public/assets/barzy-theme.js"
+      ],
+      "extractedOccurrences": 5648
+    },
+    {
+      "sourcePath": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+      "owners": [
+        "realism-forge"
+      ],
+      "bytes": 58308,
+      "lines": 731,
+      "sha256": "8c3017ec438451907ca7e26faf6d0f8b236e72fa2affa48246fa030a7975e0eb",
+      "dependencies": [
+        "Barzy App/public/assets/barzy-storage.js",
+        "Barzy App/public/assets/barzy-theme.js"
+      ],
+      "extractedOccurrences": 787
+    },
+    {
+      "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+      "owners": [
+        "seedance"
+      ],
+      "bytes": 158926,
+      "lines": 2696,
+      "sha256": "bf72fa1f0443603dd840a7ca5bc925781d98e7d2ca35da0cfffe76ad716e04ae",
+      "dependencies": [
+        "Barzy App/public/assets/barzy-theme.js"
+      ],
+      "extractedOccurrences": 798
+    },
+    {
+      "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+      "owners": [
+        "veo-suite"
+      ],
+      "bytes": 37612,
+      "lines": 882,
+      "sha256": "6a4dd63fdb3f18ec0fec4ad0ef6acf08f0f6191d2414382c80bad401a770e0af",
+      "dependencies": [
+        "Barzy App/public/assets/barzy-theme.js"
+      ],
+      "extractedOccurrences": 307
+    },
+    {
+      "sourcePath": "docs/ATLAS_BRAIN.md",
+      "owners": [
+        "prompt-forge"
+      ],
+      "bytes": 22417,
+      "lines": 274,
+      "sha256": "ed8d8ff694ec5af7657cb9f436c4f830e6710e01eddd32af8af8af5d824df7c9",
+      "dependencies": [],
+      "extractedOccurrences": 1
+    },
+    {
+      "sourcePath": "docs/AUTO-BLOCKING.md",
+      "owners": [
+        "blocking-studio"
+      ],
+      "bytes": 4543,
+      "lines": 82,
+      "sha256": "dc1a58ae9cddab8a5155653e6059423fd1efb2a6a1422a083f116fe0ee115612",
+      "dependencies": [],
+      "extractedOccurrences": 1
+    },
+    {
+      "sourcePath": "docs/CINE-DNA.md",
+      "owners": [
+        "image-analyzer"
+      ],
+      "bytes": 7213,
+      "lines": 132,
+      "sha256": "4ca1fc1c21defe69ce388c46ebd3e1351158d4e1c1c50869a3e28b671dec7343",
+      "dependencies": [],
+      "extractedOccurrences": 1
+    },
+    {
+      "sourcePath": "docs/DIRECTING-EDITING.md",
+      "owners": [
+        "seedance"
+      ],
+      "bytes": 3813,
+      "lines": 60,
+      "sha256": "4616a9d6813d9c96259032bab84d23b5a908e0a76c2acffa1c6ae6af3191429b",
+      "dependencies": [],
+      "extractedOccurrences": 1
+    },
+    {
+      "sourcePath": "docs/video-models/KLING.md",
+      "owners": [
+        "seedance"
+      ],
+      "bytes": 3027,
+      "lines": 49,
+      "sha256": "bd2e43a39d1590de164a0f78aa3db389c52eb00201d68a9853ae0c150d936687",
+      "dependencies": [],
+      "extractedOccurrences": 1
+    },
+    {
+      "sourcePath": "docs/video-models/SEEDANCE.md",
+      "owners": [
+        "seedance"
+      ],
+      "bytes": 2670,
+      "lines": 28,
+      "sha256": "5fefb95125e35c51b363d564d59ddc18190ce0280f860205fae94b09c4af493d",
+      "dependencies": [],
+      "extractedOccurrences": 1
+    },
+    {
+      "sourcePath": "docs/video-models/VEO.md",
+      "owners": [
+        "seedance"
+      ],
+      "bytes": 3320,
+      "lines": 57,
+      "sha256": "a3ae8e774d510fb2d3680a552372fc669b3553b89b61239623418a9c38dad409",
+      "dependencies": [],
+      "extractedOccurrences": 1
+    },
+    {
+      "sourcePath": "docs/video-models/WAN.md",
+      "owners": [
+        "seedance"
+      ],
+      "bytes": 2616,
+      "lines": 49,
+      "sha256": "f44cbcc2cf0ed37c173702ca290378fcea97190ac520d6a4fd9f9e747c7dbaec",
+      "dependencies": [],
+      "extractedOccurrences": 1
+    },
+    {
+      "sourcePath": "lib/blocking-fit.js",
+      "owners": [
+        "blocking-studio",
+        "image-analyzer",
+        "prompt-forge",
+        "seedance",
+        "video-analyzer"
+      ],
+      "bytes": 18267,
+      "lines": 321,
+      "sha256": "f3da5ec6539cd4b53813d8f45bfad1070663ddc7014df5b107ee62be53ccd0a9",
+      "dependencies": [],
+      "extractedOccurrences": 57
+    },
+    {
+      "sourcePath": "lib/blocking-refine.js",
+      "owners": [
+        "blocking-studio",
+        "image-analyzer",
+        "prompt-forge",
+        "seedance",
+        "video-analyzer"
+      ],
+      "bytes": 10266,
+      "lines": 204,
+      "sha256": "dd68a07693d19db7d4b3a5a4b4076fd56553ec9cf2497dfab9f87b3525b55cc7",
+      "dependencies": [
+        "lib/reproject.js"
+      ],
+      "extractedOccurrences": 13
+    },
+    {
+      "sourcePath": "lib/reproject.js",
+      "owners": [
+        "blocking-studio",
+        "image-analyzer",
+        "prompt-forge",
+        "seedance",
+        "video-analyzer"
+      ],
+      "bytes": 10818,
+      "lines": 227,
+      "sha256": "0e59a5a9d999f433d332df2b7052faa9bc947def3288a6260447c18bb55b7a3c",
+      "dependencies": [
+        "lib/blocking-fit.js"
+      ],
+      "extractedOccurrences": 14
+    },
+    {
+      "sourcePath": "public/js/aggregator-bridge.js",
+      "owners": [
+        "image-analyzer",
+        "prompt-forge"
+      ],
+      "bytes": 1848,
+      "lines": 69,
+      "sha256": "826caa6cd5af164f6feb092cd254a15cfabcb85a191ea8960c2ca108d3bc627e",
+      "dependencies": [],
+      "extractedOccurrences": 18
+    },
+    {
+      "sourcePath": "public/js/apg-data.js",
+      "owners": [
+        "image-analyzer",
+        "prompt-forge"
+      ],
+      "bytes": 50618,
+      "lines": 480,
+      "sha256": "ae2fdb13dd10e6b20fea6dd92297d6962a98c0e6fb583f1d35ee7e857d61df27",
+      "dependencies": [],
+      "extractedOccurrences": 1385
+    },
+    {
+      "sourcePath": "public/js/app.js",
+      "owners": [
+        "image-analyzer",
+        "prompt-forge"
+      ],
+      "bytes": 68091,
+      "lines": 1773,
+      "sha256": "794d0d2ee86295c82e22ee3e959098d86001731e49948d86eadebc2f5b3ccfee",
+      "dependencies": [
+        "public/js/aggregator-bridge.js",
+        "public/js/apg-data.js"
+      ],
+      "extractedOccurrences": 541
+    },
+    {
+      "sourcePath": "server.js",
+      "owners": [
+        "blocking-studio",
+        "image-analyzer",
+        "prompt-forge",
+        "seedance",
+        "video-analyzer"
+      ],
+      "bytes": 124421,
+      "lines": 2738,
+      "sha256": "f3ff0a6f0b707b97554465fcf026ffd6a939e5b8b9eba2f4f916f3457c476389",
+      "dependencies": [
+        "lib/blocking-fit.js",
+        "lib/blocking-refine.js"
+      ],
+      "extractedOccurrences": 953
+    }
+  ]
+}

@@ -1,0 +1,841 @@
+{
+  "schemaVersion": "1.0",
+  "id": "semantic-barzy-board-01",
+  "owner": "barzy-board",
+  "status": "pending-astra-review",
+  "approximateTokens": 840,
+  "prompts": [
+    {
+      "id": "text-01187ac5900048bcb6c8",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Import subject, style and action from the Story tab",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 437,
+          "column": 13,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-10def1babc7055094c99",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": " beats in order. Maintain shot logic and final pose.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1014,
+          "column": 121,
+          "kind": "string-literal",
+          "functionName": "buildMotion",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-188f38f8ba0ec18c481e",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": " cinematic panels, focused on ",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 966,
+          "column": 60,
+          "kind": "string-literal",
+          "functionName": "buildStory",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-1e80bbc4f76e803a3913",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "ex: [IMG_3] = dancer in red coat; [IMG_4] = security guard; [IMG_5], [IMG_6] ignore if not provided",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 322,
+          "column": 36,
+          "kind": "html-attribute:placeholder",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-22775e051c94958e2da4",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": " as the main character reference and ",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 966,
+          "column": 145,
+          "kind": "string-literal",
+          "functionName": "buildStory",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-4640816a9453a1880648",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the character from the storyboard reference",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 998,
+          "column": 38,
+          "kind": "string-literal",
+          "functionName": "buildMotion",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-584e9dd1819644b58ceb",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "hypnotic loop, repetitive motion, rhythmic snap",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 486,
+          "column": 19,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-628575156b0b8963e322",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": " seconds. Each beat must appear clearly as a fast motion snapshot, not a full-length action. Pacing: ",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1019,
+          "column": 69,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-63dbd3cf760b62310b7c",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "BZ Board - Storyboard to Motion",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 6,
+          "column": 8,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-68eb5e5bc8464db03c83",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": ". Every panel must contain visible motion and strong body momentum - avoid static standing poses.\n\n",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 971,
+          "column": 32,
+          "kind": "string-literal",
+          "functionName": "buildStory",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-6a8622baf06c305f77c4",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "BZ Board writes the selected codes with their names and asks the storyboard to distribute them across readable close-up/key-action panels.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 421,
+          "column": 45,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-6bdcd44c608635047cd9",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Subject: ",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 968,
+          "column": 9,
+          "kind": "string-literal",
+          "functionName": "buildStory",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-7e6671d618f3e359203a",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "m-subject",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 814,
+          "column": 22,
+          "kind": "string-literal",
+          "functionName": "saveState",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 988,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": "buildMotion",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1045,
+          "column": 108,
+          "kind": "string-literal",
+          "functionName": "regen",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1061,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": "regen",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1110,
+          "column": 6,
+          "kind": "string-literal",
+          "functionName": "copy",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-8536374096198f38376d",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Fill at least the subject, style or action to generate the prompt...",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 406,
+          "column": 45,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-88ac44d5d6f8a784d5f9",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "use brow/eye AUs during reaction beats, mouth/jaw AUs during dialogue or exertion, and head AUs when the camera or character changes direction.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 557,
+          "column": 51,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-8f36171b8243a42c5b2d",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "rewrite as a production-ready BZ Board prompt, keep all concrete inputs and FACS cues, improve narrative sequence, camera logic, motion clarity, and prompt economy",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 728,
+          "column": 22,
+          "kind": "string-literal",
+          "functionName": "refineWithGPT",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-90290f40c0cfb1a224d2",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "optional extra style notes",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 367,
+          "column": 45,
+          "kind": "html-attribute:placeholder",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-96ff316209a6605c43db",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "BZ Board adds these cues as precise facial performance instructions, tied to the storyboard timing and visible close-up/key-action beats.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 558,
+          "column": 45,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-985ccdc78e40a143dc86",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "s-subject",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 806,
+          "column": 22,
+          "kind": "string-literal",
+          "functionName": "saveState",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 829,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": "loadState",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 936,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": "buildStory",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 988,
+          "column": 41,
+          "kind": "string-literal",
+          "functionName": "buildMotion",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1044,
+          "column": 4,
+          "kind": "string-literal",
+          "functionName": "regen",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1061,
+          "column": 52,
+          "kind": "string-literal",
+          "functionName": "regen",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1100,
+          "column": 6,
+          "kind": "string-literal",
+          "functionName": "copy",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-a7522790638911290105",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Motion - two-step pipeline",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 269,
+          "column": 38,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-a77b048c957f9a75e895",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": " beats sequentially from left to right, top to bottom. Do not reinterpret the actions, poses, camera angles or emotional progression. Preserve shot order, movement logic, framing variety and final pose.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1010,
+          "column": 180,
+          "kind": "string-literal",
+          "functionName": "buildMotion",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-a8677b3c8cec8dfd99cf",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Include the color annotation system (red=body, blue=camera, green=framing, orange=light, violet=emotion, black=lens)",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 384,
+          "column": 28,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ac9592def8b6e66b1d93",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Subject / character (override)",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 498,
+          "column": 16,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b00bf0b7f9b1dd6d1bbf",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "each selected AU becomes an acting cue in the Story prompt, so GPT knows which facial muscles and emotional beats to draw into the storyboard.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 419,
+          "column": 44,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-bedb85a45948423a7bd0",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": " beats in order. Preserve composition, action and final pose.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1012,
+          "column": 156,
+          "kind": "string-literal",
+          "functionName": "buildMotion",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-c133f7e210e650389222",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "selected AUs become performance continuity notes for the motion prompt, helping the video model keep face, gaze, mouth, jaw and head action coherent.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 556,
+          "column": 44,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-c161ee3e0aec85bddc5a",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": ". Apply them on close-up and key-action beats so the face, gaze, mouth, jaw and head movement stay consistent with the storyboard timing.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 756,
+          "column": 53,
+          "kind": "string-literal",
+          "functionName": "facsPromptBlock",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-c8a2afc19177a001c1a8",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Drawing style - describe",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 366,
+          "column": 16,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-c9429d99e8b1202674f9",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Annotation color system: red arrows = body movement; blue arrows = camera movement; green marks = framing / composition notes; orange marks = lighting direction; purple marks = vocal / emotional emphasis; black text = short lens notes and panel labels.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 955,
+          "column": 9,
+          "kind": "string-literal",
+          "functionName": "buildStory",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-cc5967b6a64b4daf7193",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "choose eye/brow AUs for reaction shots, mouth/jaw AUs for speech or effort, and head/neck AUs for direction changes. Place stronger FACS on close-ups or key panels, lighter FACS on transitions.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 420,
+          "column": 51,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-cf13b06683f266506a72",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Build a precise storyboard-to-motion prompt for AI generation. Preserve user fields, improve continuity, make the action readable, and keep the final prompt directly usable.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 729,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": "refineWithGPT",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d3450bd2b596b588dc1d",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "[IMG_3], [IMG_4], [IMG_5], [IMG_6] = secondary characters",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 963,
+          "column": 9,
+          "kind": "string-literal",
+          "functionName": "buildStory",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d6a5d7526d1734abca50",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "perform the selected acting and facial action cues with clear readable movement",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 999,
+          "column": 36,
+          "kind": "string-literal",
+          "functionName": "buildMotion",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-df4d0e89f0c67c883c93",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "[IMG_3], [IMG_4], [IMG_5], [IMG_6]",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 476,
+          "column": 49,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 984,
+          "column": 50,
+          "kind": "string-literal",
+          "functionName": "buildMotion",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1113,
+          "column": 54,
+          "kind": "string-literal",
+          "functionName": "copy",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e21e77b6d684aed9f617",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "@[drawing style ref] or leave empty",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 374,
+          "column": 44,
+          "kind": "html-attribute:placeholder",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e6f546ceff5217dc2d2f",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Fill at least the main character, action, drawing style notes or secondary characters to generate the prompt...",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 952,
+          "column": 63,
+          "kind": "string-literal",
+          "functionName": "buildStory",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ee1e9fd092a62aa82af3",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "-second video. Follow all ",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1010,
+          "column": 144,
+          "kind": "string-literal",
+          "functionName": "buildMotion",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1012,
+          "column": 120,
+          "kind": "string-literal",
+          "functionName": "buildMotion",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f021606a9d33e7383788",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Using global model: ${modelLabel(atlasAiModel) || 'Prompt Atlas default'}.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 660,
+          "column": 11,
+          "kind": "template-literal",
+          "functionName": "syncAtlasAI",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f595c028b4b5c4b75d58",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "handheld arthouse, whip pans, orbit movement, overhead, extreme negative space",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 330,
+          "column": 19,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ]
+    }
+  ]
+}

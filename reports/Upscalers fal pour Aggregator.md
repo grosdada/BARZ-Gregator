@@ -1,0 +1,58 @@
+# Les upscalers fal rendent Seedance abordable
+
+**BARZ Aggregator a intérêt à ajouter un onglet Upscale pour l’image et la vidéo**, surtout comme voie économique après un draft Seedance 2.5 en 480p. Sur un clip de 15 secondes, le draft coûte environ **3,97 $**, puis un upscale ByteDance Standard vers 1080p environ **0,11 $**, soit **4,08 $ au total**, contre environ **21,43 $** pour le draft suivi de la finalisation Seedance native en 1080p. La réduction atteint donc près de **81 %**, sans imposer un moteur bas de gamme : fal propose aussi Topaz Precision pour la fidélité, Topaz Starlight pour reconstruire le détail, FlashVSR pour préserver l’audio et FLUX pour une interprétation créative. L’upscale ne doit toutefois pas être présenté comme l’équivalent de la finalisation native : Seedance régénère le résultat à haute résolution depuis le `draft_id`, tandis qu’un upscaler conserve le mouvement, le montage et les éventuelles erreurs du draft. Le bon produit est donc un choix explicite entre **« Finaliser avec Seedance »** et **« Upscaler le draft »**, avec prix séparé avant paiement. Aucun benchmark indépendant commun ni test payant sur le corpus BARZ ne permet encore de déclarer un vainqueur absolu en qualité ; le modèle recommandé doit être validé sur quelques plans difficiles avant lancement.
+
+## ByteDance ramène un final Seedance à 4,08 $
+
+Le cas Seedance justifie à lui seul l’onglet. Le draft Seedance 2.5 US en 480p est annoncé à environ **0,2646 $/s**, soit **3,97 $ pour 15 secondes** ([Seedance 2.5 US](https://fal.ai/models/bytedance/seedance-2.5/us/text-to-video)). Sa finalisation officielle en 1080p coûte environ **1,164 $/s**, soit **17,46 $ supplémentaires** ; elle relance une génération à partir du `draft_id`, valable sept jours pour l’appelant d’origine ([Draft Completion](https://fal.ai/models/bytedance/seedance-2.5/draft/complete)). À l’inverse, ByteDance Upscaler Standard facture le 1080p/30 fps **0,0072 $/s**, donc seulement **0,108 $ pour 15 secondes**, et fournit un preset `aigc` destiné aux sources générées par IA ([ByteDance Upscaler](https://fal.ai/models/fal-ai/bytedance-upscaler/upscale/video); [schéma API](https://fal.ai/models/fal-ai/bytedance-upscaler/upscale/video/api)).
+
+| Parcours 15 s vers 1080p | Coût de l’étape finale | Total avec draft à 3,97 $ | Usage recommandé |
+|---|---:|---:|---|
+| Seedance Draft Completion | ≈ 17,46 $ | **≈ 21,43 $** | Régénération native, choix qualité maximal |
+| ByteDance Standard | ≈ 0,11 $ | **≈ 4,08 $** | Défaut économique pour vidéo IA |
+| Topaz Precision / Proteus | ≈ 0,30 $ | **≈ 4,27 $** | Fidélité, peu de réinterprétation |
+| FlashVSR, 24 fps | ≈ 0,37 $ | **≈ 4,34 $** | Rapide, audio explicitement préservable |
+| SeedVR2, 24 fps | ≈ 0,75 $ | **≈ 4,72 $** | Cible 1080p directe, cohérence temporelle |
+| Topaz Starlight Fast 2 | ≈ 0,90 $ | **≈ 4,87 $** | Reconstruction IA économique |
+| Topaz Starlight Precise 2.6 | ≈ 1,80 $ | **≈ 5,77 $** | Reconstruction IA de meilleure qualité |
+| FLUX précis / créatif | 2,10 $ / 3,00 $ | **6,07 $ / 6,97 $** | Détail fidèle ou guidé par prompt |
+| Topaz Astra 2 | ≈ 4,50 $ | **≈ 8,47 $** | Transformation créative avancée |
+
+Ces montants viennent des unités publiées par fal : FlashVSR facture **0,0005 $ par mégapixel-image**, SeedVR2 **0,001 $**, Topaz Starlight **0,60 $ ou 1,20 $ par tranche de 10 secondes** jusqu’à 1080p, et FLUX **0,14 $/s en mode précis** ou **0,20 $/s en mode créatif** ([FlashVSR](https://fal.ai/models/fal-ai/flashvsr/upscale/video); [SeedVR2](https://fal.ai/models/fal-ai/seedvr/upscale/video); [Topaz Generative](https://fal.ai/models/topaz/upscale/video/generative); [FLUX Video Upscale](https://fal.ai/models/blackforestlabs/flux-video-upscale)). Les estimations au mégapixel supposent une sortie 1920 × 1080 et 24 fps ; BARZ doit recalculer le devis avec les dimensions, la cadence et la durée réelles. Surtout, le gain financier ne prouve pas l’équivalence visuelle : un visage instable, un texte faux ou une occlusion ratée dans le draft restera généralement une erreur à améliorer, pas une scène à régénérer.
+
+## Trois profils vidéo suffisent au lancement
+
+Le meilleur rapport coût/fonction pour BARZ est **ByteDance Standard avec preset `aigc`, fidélité élevée et cible 1080p**. Il accepte des sorties de 1080p à 8K, des tiers Fast, Standard et Pro, plusieurs presets par type de source et une profondeur de 8 bits hors mode Pro ; le mode Pro coûte dix fois le tarif standard ([API ByteDance](https://fal.ai/models/fal-ai/bytedance-upscaler/upscale/video/api)). Il mérite le profil visible **Économique**, mais pas l’étiquette « meilleure qualité » tant qu’aucun A/B BARZ ne le confirme.
+
+Pour le profil **Fidèle**, Topaz Precision est plus sûr conceptuellement : il est non génératif, accepte un facteur jusqu’à 4× et propose Proteus par défaut, Iris pour les visages, Artemis pour les sources dégradées, Gaia pour le CG et l’animation, ainsi que plusieurs corrections d’artefacts. Les vidéos peuvent durer jusqu’à **cinq minutes** et sortir en H.264 ou H.265 ([Topaz Precision API](https://fal.ai/models/topaz/upscale/video/precision/api)). Pour le profil **Restauration IA**, Topaz Starlight Fast 2 offre le bon compromis coût/reconstruction, tandis que Precise 2.6 convient lorsque le détail compte davantage que le prix ([Topaz Generative API](https://fal.ai/models/topaz/upscale/video/generative/api)). Ces moteurs peuvent reconstruire des détails absents : ce bénéfice devient un risque sur les identités, les petits textes et les motifs fins.
+
+FLUX doit rester une option **Créative** avancée. Il propose un mode précis et un mode guidé par prompt, mais impose un MP4 de **20 secondes et 50 Mo maximum** ([FLUX API](https://fal.ai/models/blackforestlabs/flux-video-upscale/api)). FlashVSR mérite une option spécifique **Préserver l’audio**, car son schéma expose explicitement `preserve_audio` ainsi que X264, VP9, ProRes et GIF ([FlashVSR API](https://fal.ai/models/fal-ai/flashvsr/upscale/video/api)). Bria préserve également l’audio, mais n’accepte que 2× ou 4× et limite l’entrée à moins de 30 secondes ; un draft Seedance 864 × 496 doublé donne 1728 × 992, pas un vrai 1920 × 1080 ([Bria API](https://fal.ai/models/bria/video/increase-resolution/api)). Pour les autres moteurs, BARZ doit conserver la piste source et la remuxer localement au lieu de promettre une préservation non documentée.
+
+## Les images gagnent en qualité pour quelques cents
+
+L’offre image est assez mature pour partager le même onglet. **Topaz Precision** est le choix fidèle : il agrandit jusqu’à 4×, offre des variantes pour haute fidélité, basse résolution, CGI, texte et visages, et coûte **0,08 $ par tranche commencée de 24 MP de sortie** ([Topaz Precision](https://fal.ai/models/topaz/upscale/image/precision); [API](https://fal.ai/models/topaz/upscale/image/precision/api)). **Topaz Wonder 3.5** est le choix de reconstruction : il invente le détail manquant et coûte **0,08 $ par tranche commencée de 8 MP**, alors que Bloom 2, destiné aux images IA créatives, facture la même somme par tranche de 2 MP ([Topaz Generative](https://fal.ai/models/topaz/upscale/image/generative); [Topaz Creative](https://fal.ai/models/topaz/upscale/image/creative)). **Crystal** se distingue sur les portraits avec un contrôle de créativité et un tarif de **0,016 $ par mégapixel de sortie** ([Crystal Upscaler](https://fal.ai/models/clarityai/crystal-upscaler)).
+
+| Entrée 1024 × 1024 | Sortie 2048 × 2048 | Sortie 4096 × 4096 | Limite importante |
+|---|---:|---:|---|
+| Topaz Precision | 0,08 $ | 0,08 $ | 4×, jusqu’à 512 MP |
+| Topaz Wonder 3.5 | 0,08 $ | 0,24 $ | Peut inventer des détails |
+| Topaz Bloom 2 | 0,24 $ | 0,72 $ | Créatif, plus cher |
+| Crystal Portrait | ≈ 0,067 $ | ≈ 0,268 $ | Facturation linéaire au MP |
+| SeedVR2 Seamless | ≈ 0,010 $ | ≈ 0,042 $ | Spécialisé textures raccordables |
+| Recraft Crisp | 0,004 $ | Non garanti | Pas de cible 2K/4K documentée |
+
+Recraft Crisp est une excellente passe **Économique** à **0,004 $ par image**, mais son schéma n’expose ni facteur ni résolution cible ; l’interface ne doit donc pas lui faire promettre du 2K ou du 4K ([Recraft Crisp](https://fal.ai/models/fal-ai/recraft/upscale/crisp)). SeedVR2 Seamless convient aux textures 3D raccordables à **0,0025 $/MP**, et Topaz Transparent conserve l’alpha avec une sortie PNG fixe à 4× ([SeedVR2 Seamless](https://fal.ai/models/fal-ai/seedvr/upscale/image/seamless); [Topaz Transparent](https://fal.ai/models/topaz/upscale/image/transparent/api)). Ces deux usages spécialisés peuvent rester dans le panneau avancé. Les fiches recommandées portent le badge d’usage commercial sur fal, mais ce badge ne règle pas les droits sur l’image source, les personnes, les marques ou les œuvres représentées.
+
+## Un onglet dédié réduit les erreurs coûteuses
+
+L’interface ne doit pas exposer une douzaine d’endpoints à plat. Pour la vidéo, les choix visibles devraient être **Économique**, **Fidèle**, **Restauration IA** et **Créatif** ; pour l’image, **Fidèle**, **Reconstruire**, **Portrait** et **Économique**. La source doit provenir du disque ou des Assets, avec un bouton **Envoyer vers Upscale** sur chaque résultat terminé. La cible, la cadence, le codec, la préservation de l’audio et le prix estimé doivent rester visibles, tandis que les réglages propres à chaque moteur peuvent vivre dans **Avancé**.
+
+Le job doit rester distinct d’une génération ordinaire, car l’upscale ne demande généralement pas de prompt et transforme une seule source. BARZ peut toutefois réutiliser sa file fal et sa barrière de dépense : inspection locale des métadonnées, devis sans upload, préparation d’un job immuable, confirmation explicite, nouvelle vérification du prix, upload, soumission asynchrone puis copie immédiate du résultat dans Assets. L’inspection par FFprobe est indispensable, car plusieurs tarifs dépendent de la résolution, du nombre d’images ou du FPS. L’upload ne doit commencer qu’après confirmation, et une variation de tarif doit invalider le devis plutôt que lancer silencieusement la dépense.
+
+Après un draft Seedance, deux boutons séparés sont nécessaires : **« Finaliser avec Seedance en 1080p — ≈ 17,46 $ »** et **« Upscaler le draft en 1080p — dès ≈ 0,11 $ »**. Le second doit préciser que le mouvement et les erreurs du draft restent inchangés. Avant de définir ByteDance comme recommandation automatique, un A/B payant très limité doit comparer ByteDance Standard et Pro, Topaz Proteus, Starlight Fast 2 et la finalisation native sur trois à cinq clips couvrant visage, texte, mouvement rapide, basse lumière et particules. Cette validation coûterait peu au regard des économies futures et fournirait enfin une base propre au corpus BARZ, absente des comparatifs éditoriaux fal.
+
+## Conclusion
+
+L’onglet Upscale est pertinent non comme accessoire, mais comme **contrôle budgétaire central** : il transforme le draft Seedance en résultat exploitable à partir d’environ 4,08 $ tout compris, tout en laissant la régénération native disponible pour les plans qui exigent réellement un nouveau rendu. Le meilleur MVP associe ByteDance à l’économie, Topaz Precision à la fidélité, Starlight à la reconstruction et FlashVSR à la conservation audio, avec FLUX et Astra relégués aux usages créatifs explicites.
+
+La vraie décision produit n’est donc pas de choisir un unique « meilleur upscaler », mais de séparer clairement **préserver**, **restaurer** et **réinventer**. Cette distinction protège les identités et le mouvement, rend le prix intelligible et évite de payer 17,46 $ pour chaque draft satisfaisant lorsqu’une amélioration de quelques centimes suffit.

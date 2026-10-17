@@ -1,0 +1,3577 @@
+{
+  "schemaVersion": "1.0",
+  "id": "a10-multishot",
+  "title": "A10 — MD Multishot",
+  "owners": [
+    "multishot"
+  ],
+  "status": "pending-astra-review",
+  "policy": {
+    "preserveOriginalEnglish": true,
+    "noSilentNormalization": true,
+    "correctionsRequireReason": true,
+    "excludedTriageKinds": [
+      "ui-copy-candidate",
+      "runtime-identifier"
+    ]
+  },
+  "highConfidenceCount": 69,
+  "triageCount": 85,
+  "itemCount": 154,
+  "approximateTokens": 14556,
+  "digestAlgorithm": "sha256",
+  "bundleDigest": "203c3439d259c9ab98cf4788cf39250485dfd519434b3af279127fdbe4c42bab",
+  "items": [
+    {
+      "id": "text-005802db1bb05630330c",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Grid ${g.cols}×${g.rows} · ${g.total} panels",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 552,
+          "column": 35,
+          "kind": "template-literal",
+          "functionName": "updateMultiAngleReadout",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-020c4f0222adc0e1edc1",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Smooth tracking shot following [character] as they walk, cinematic movement",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 440,
+          "column": 86,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-051f01f095a28b04433f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Track",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 448,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-05d9dd2b6f9895b3f629",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Analyze and preserve: accessory specifications (brand details, hardware, clasps, materials), placement, wear patterns, complementary styling, background negative space, light catchment on reflective surfaces.\nAll accessories, jewelry, footwear must remain identical across frames. No styling changes. Perfect consistency.\nOutput: 3×3 contact sheet + 9-frame breakdown\n\nRequired 9-Frame Sequence\n1. Full-Figure with Accessories Prominent\nWide shot showing complete outfit with all accessories visible and in focus, balanced composition highlighting accessory placement.\n\n2. Footwear Detail Statement\nClose-up emphasizing shoes, sole detail, material, heel height, with minimal background context, fashion photography style.\n\n3. Hand & Jewelry Intimate Close\nHands in natural position showcasing rings, bracelets, watchbands, nails, texture of jewelry metals and stones, shallow focus.\n\n4. Bag/Carryable Asset Hero Shot\nDetailed close angle of primary bag or accessory, showing hardware, brand markers, texture, carrying position, ergonomic fit.\n\n5. Accessory Layering Full Portrait\nUpper body portrait showing multiple accessories (necklace, earrings, scarf detail) in spatial relationship, elegant composition.\n\n6. Hidden Detail Reveal\nMacro shot of overlooked accessory detail (interior label, clasp mechanism, engraved mark, unique feature) from unique angle, editorial surprise.\n\n7. Footwear in Motion Context\nFeet and shoes captured mid-step or in natural stance, showing wear and movement relationship.\n\n8. Wrist & Hand Composition\nArtistic arrangement of hand accessories, watches, bracelets in elegant posed composition.\n\n9. Full Accessory Flat Lay\nBird's eye view of all accessories arranged aesthetically, product photography style, complete inventory visible.\n\nAesthetic: Shot on Hasselblad with controlled studio lighting, accessories rendered with maximum material clarity and luxury finish. Perfect shadows showing form and dimension.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 789,
+          "column": 29,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-063d44f02ebb801ee196",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Multishot 02 - Lifestyle Movement & Texture Focus",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 703,
+          "column": 24,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-0735e4f1553e117802f5",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Isolation, surveillance, god's view",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 436,
+          "column": 184,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-0772e5f961f8c3377b93",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "dutch-angle dynamic",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 536,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": "updateGridReadouts",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-0b11740f0fb71c39e6a3",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Iterate this BZ Multishot prompt. Keep the theme '",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1520,
+          "column": 36,
+          "kind": "string-literal",
+          "functionName": "bzIteratePrompt",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-0c5c67226f77ece86784",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Based on this image:\n\n**Phase 1: Visual Analysis & Reference Extraction**\n1. **Analyze the Image:** Identify all visual elements—subjects, environment, lighting, color palette, textures, composition, props, clothing, spatial depth.\n2. **Extract Key Details:** Note camera angle used, distance from subject, depth of field characteristics, light direction, shadows, highlights, mood.\n3. **Identify Cinematic Potential:** What dynamic camera moves could enhance or reframe this moment?\n4. **Aesthetic Framework:** Determine the film/style inspiration—documentary realism, high-fashion, sci-fi, thriller, romantic, action, horror, etc.\n\n**Phase 2: The 2x3 Cinematic Exploration Grid**\nGenerate 6 sequential shots that explore the image's content from radically different camera perspectives and movements.\n\n**Row 1 (Static & Observational):**\n1. **Wide Master Shot (Establishing):** Full context view of the entire scene as presented in the image. All elements visible. Environmental scope clear.\n2. **Medium Shot (Subject Focus):** Closer framing isolating main subjects/focal point from the image. Context still visible but secondary.\n3. **Detail Close-Up (Texture):** Extreme close-up of a specific detail from the image—texture, expression, material, micro-moment captured.\n\n**Row 2 (Dynamic & Conceptual):**\n4. **Dolly/Tracking Shot (Approach):** Moving forward through the image's space, perspective shifting dynamically.\n5. **Orbital/Rotating Shot (Perspective Shift):** Circling around the scene's focal point from a different angle.\n6. **Conceptual Departure (Implied Motion):** Final shot that extrapolates beyond the image—what happens next?\n\n**Technical Execution:**\n- All 6 shots must maintain visual continuity with the source image.\n- Final output: 2x3 contact sheet of 6 frames with detailed shot descriptions.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 983,
+          "column": 29,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-0c9aa60955b02ee126ae",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "**Phase 1: Casting & World Building**\n1. **Subjects:** Two individuals—Subject A (reserved, mysterious) and Subject B (warm, vulnerable).\n2. **Setting:** Golden hour on a secluded beach. Crashing waves, soft sand, distant cliffs. Golden sunlight diffusing through ocean mist. Intimate and ethereal.\n3. **The Moment:** A turning point in their relationship. From hesitation to connection. Tender, charged with emotion.\n4. **Aesthetic:** Romanticist cinema (Portrait of a Lady on Fire, Call Me By Your Name). Soft focus, warm color grading (amber/gold), natural diffused light. Shallow depth of field emphasizing closeness and isolation from the world.\n\n**Phase 2: The 3x3 Romantic Narrative**\n\n**Row 1 (The Approach):**\n1. **Wide Environmental Shot:** Both subjects standing apart on the beach, golden light between them. Uncertainty visible in their body language.\n2. **Medium Shot of Subject A:** Walking slowly forward, eyes meeting Subject B's for the first time. Vulnerability in expression. Waves crashing gently behind.\n3. **POV Shot (From A's perspective):** Close-up of Subject B's face as A approaches. Soft focus, backlit hair glowing. Breath visible, slight smile.\n\n**Row 2 (The Connection):**\n4. **Over-the-Shoulder Intimate:** Subject A's shoulder in foreground, Subject B's face close, eyes locked. Gentle, unforced proximity.\n5. **Extreme Close-Up (Hands Touching):** Fingertips barely touching first. Electricity in the contact. Shallow depth of field. Warm skin tones glowing.\n6. **Soft Focus Portrait:** Both subjects nearly face-to-face, foreheads almost touching. Breathing the same air. Moment suspended in time.\n\n**Row 3 (The Intimacy):**\n7. **Wide Shot Embracing:** Both subjects embracing on the beach, silhouetted against golden ocean light. The vast world around them, yet only each other visible.\n8. **Detail Shot (Hair/Neck):** Subject B's hand running through Subject A's hair. Intimate, sensual texture and movement.\n9. **Golden Hour Departure:** Both subjects walking together hand-in-hand along the beach, sunset behind them casting long shadows. Peace. Belonging.\n\n**Technical Notes:**\nAll frames feature warm golden color grading, soft natural diffusion, shallow depth of field, and romantic intimate camera work.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1112,
+          "column": 29,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-0ddeafa2b410a494d157",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Multishot 04 - Conceptual & Artistic Movement",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 825,
+          "column": 24,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-0ea39ef6a9573eb0ea3b",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Multishot 01 - High-Fashion Beauty Editorial",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 617,
+          "column": 24,
+          "kind": "string-literal",
+          "functionName": "applyAtlasGrid",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-14c52f21e2fc612153b8",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "over-the-shoulder",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 531,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": "updateGridReadouts",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-1563e8712d5783a27ff5",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Inventory all environmental and lifestyle details: subject positioning, gesture, movement flow, fabric interactions, material tactility, natural light diffusion, spatial relationships with surroundings.\nPreserve exact wardrobe, styling continuity, and environmental context across all 9 frames.\nOutput: 3×3 contact sheet + keyframe breakdown\n\n9-Frame Shot List\n1. Wide Environmental Establishing\nSubject positioned in full environment showing context and spatial scale, natural movement stance, environmental lighting unmodified.\n\n2. Medium Texture & Material Focus\nMid-distance shot emphasizing fabric interaction, textile details, material quality in natural light, subject in relaxed pose.\n\n3. Close-Up Gestural Detail\nHands or movement detail close-up, capturing fabric drape, material behavior, accessories in motion, shallow depth of field.\n\n4. Dynamic Three-Quarter Movement Frame\nSubject captured mid-gesture, three-quarter angle showing full outfit silhouette, fabric flow, movement direction clear but pose held.\n\n5. Intimate Environmental Interaction\nSubject interacting naturally with environment, showing relationship between wardrobe and setting, authentic moment captured.\n\n6. Macro Material & Texture Abstract\nExtreme close-up of fabric weave, seam detail, material texture, or accessory micro-detail from unexpected angle, abstract editorial aesthetic.\n\n7. Full-Body Movement Sequence\nSubject in natural walking or turning motion, complete outfit visible, capturing fabric behavior during movement.\n\n8. Environmental Detail with Subject\nBackground elements in focus with subject softly present, showing context-wardrobe relationship.\n\n9. Intimate Portrait with Texture Context\nClose portrait with visible fabric texture near face/neck, combining human and material elements.\n\nStyle: Shot on Kodak Portra 400 film with soft window light, warm color grading, natural grain, clothing materials rendered with tactile realism. Movement captured in held poses, not motion blur.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 728,
+          "column": 29,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-1968034b13f84d0c3e44",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Angle",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 432,
+          "column": 64,
+          "kind": "string-literal",
+          "functionName": "bzPaintActiveTab",
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 433,
+          "column": 63,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 434,
+          "column": 63,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-1a17563e91249b771687",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Sudden attention shift, surprise, kinetic energy",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 450,
+          "column": 219,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-1a7d7548579a107c806b",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "3/4 front-right view",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 525,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": "updateGridReadouts",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-1c4f43afc2032901fb2e",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Neutral, equal, natural conversation",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 434,
+          "column": 157,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-20155e8a0aa83b88636c",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "**Phase 1: Casting & World Building**\n1. **Subjects:** Subject A (seasoned gunslinger) vs Subject B (young upstart).\n2. **Setting:** Abandoned desert town. High noon. Dusty street.\n3. **The Conflict:** A final confrontation. Only one walks away.\n4. **Aesthetic:** Sergio Leone westerns. Golden grading, extreme close-ups.\n\n**Phase 2: The 2x3 Duel Sequence**\n\n**Row 1 (The Standoff):**\n1. **Wide Master Shot:** Both subjects at opposite ends of street. Complete stillness.\n2. **Medium Close-Up of Subject A:** Weathered face, hand near holster.\n3. **Extreme Close-Up of Subject B's Eyes:** Sweat rolling down, finger twitching.\n\n**Row 2 (The Draw):**\n4. **Detail Shot (Hands):** Both hands poised near holsters. Moment stretches.\n5. **Fast Mid-Shot (The Draw):** Guns clearing holsters, dust erupting.\n6. **Wide Shot Aftermath:** Subject A holstering gun, B collapsing. Legend confirmed.\n\n**Technical Notes:**\nDesert golden hour, extreme close-ups, Western aesthetic.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1233,
+          "column": 29,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-22d0330d1eb2abb29d22",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Camera orbits around [character], smooth rotation, cinematic movement",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 441,
+          "column": 83,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-2a527abf970fc574aa6f",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "(describe your subject / reference image here)",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 559,
+          "column": 50,
+          "kind": "string-literal",
+          "functionName": "buildMultiAnglePrompt",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-2a585b5184a92a173a14",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": ".tab-btn.active",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 424,
+          "column": 49,
+          "kind": "string-literal",
+          "functionName": "bzPaintActiveTab",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-2bce1f4a654f7970df94",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Shots",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 311,
+          "column": 47,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 311,
+          "column": 33,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 428,
+          "column": 39,
+          "kind": "string-literal",
+          "functionName": "bzPaintActiveTab",
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 429,
+          "column": 47,
+          "kind": "string-literal",
+          "functionName": "bzPaintActiveTab",
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 430,
+          "column": 41,
+          "kind": "string-literal",
+          "functionName": "bzPaintActiveTab",
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 431,
+          "column": 42,
+          "kind": "string-literal",
+          "functionName": "bzPaintActiveTab",
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 432,
+          "column": 46,
+          "kind": "string-literal",
+          "functionName": "bzPaintActiveTab",
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 433,
+          "column": 45,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 434,
+          "column": 45,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 435,
+          "column": 48,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 436,
+          "column": 46,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 437,
+          "column": 34,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 438,
+          "column": 42,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 439,
+          "column": 46,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-2c7e63313045bbdff6db",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Creative",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 435,
+          "column": 66,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 436,
+          "column": 64,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 437,
+          "column": 52,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 438,
+          "column": 60,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 439,
+          "column": 64,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-2d142e9f36290f304b4d",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "multishotContainer",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1357,
+          "column": 55,
+          "kind": "string-literal",
+          "functionName": "initializeMultishots",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-2dab9f6b3fdd8ea484ce",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Fresh variation of a BZ Multishot cinematic reference prompt: '",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1519,
+          "column": 33,
+          "kind": "string-literal",
+          "functionName": "bzIteratePrompt",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-2fe2b971d833e427c6d1",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": " with a hard flash",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1375,
+          "column": 58,
+          "kind": "string-literal",
+          "functionName": "initializeMultishots",
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1426,
+          "column": 62,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1448,
+          "column": 66,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-308a466e4a6ac3c1841b",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Silhouette shot of [character] backlit against [background], dramatic contrast",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 439,
+          "column": 84,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-31db336e6fd8477334d8",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Board-07 - Horror Creature Encounter",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1303,
+          "column": 24,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-33f2cbe892fe27f74e6a",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Extreme close-up of [character]'s face, showing detailed emotional expression, cinematic lighting",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 429,
+          "column": 85,
+          "kind": "string-literal",
+          "functionName": "bzPaintActiveTab",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-3490e786bd68637b158f",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Action, following, movement sequences",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 440,
+          "column": 174,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-3493d519f0bbdaf1280a",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Archive complete wardrobe construction: seams, hems, construction quality, fabric weight, pattern placement, symmetry, hardware positioning, wear indicators, craftsmanship markers.\nRotate around subject systematically showing all viewpoints. Maintain exact appearance and styling.\nOutput: 3×3 contact sheet + comprehensive construction breakdown\n\nRequired 9-Frame 360° Documentation\n1. Direct Front Center\nSubject centered, facing camera directly, all front-facing garment details visible, construction seams and closures evident, controlled studio lighting.\n\n2. Quarter-Turn Right (Front)\n45-degree rotation showing side-front transition, seam alignment, sleeve construction, pattern flow continuity, detail clarity.\n\n3. Pure Side Profile Right\n90-degree rotation, complete side view of garment structure, silhouette clarity, hem accuracy, profile proportions documented, side seams and construction visible.\n\n4. Quarter-Turn Right (Back)\n135-degree rotation showing back-side transition, rear garment details, back seam quality, fastening systems from behind.\n\n5. Direct Back Center\nFull back view, rear construction documentation, seam alignment, neck construction, back closure systems, pattern placement on back.\n\n6. Quarter-Turn Left (Back)\n225-degree rotation, opposite back-side transition, symmetry verification, construction consistency check.\n\n7. Pure Side Profile Left\n270-degree rotation, opposite side view for symmetry comparison, construction quality verification.\n\n8. Quarter-Turn Left (Front)\n315-degree rotation, completing the rotation cycle, front-side transition from opposite direction.\n\n9. Overhead/Flat Construction Detail\nBird's-eye view showing garment laid structure clarity, dimensional form, shoulder construction, neckline precision, overall architectural integrity.\n\nAesthetic: Documentation photography with consistent studio lighting from multiple fixed positions, neutral background, color-accurate rendering. Fashion garment as engineered object. Professional product photography standard for archival and quality documentation.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 911,
+          "column": 29,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-35e9b29dd420f9444624",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "{{FLASH_OPTION}}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1376,
+          "column": 45,
+          "kind": "string-literal",
+          "functionName": "initializeMultishots",
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1427,
+          "column": 63,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1449,
+          "column": 67,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-39e89abad98402706bcc",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Suspense, anticipation, detail focus",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 430,
+          "column": 183,
+          "kind": "string-literal",
+          "functionName": "bzPaintActiveTab",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-3ecbc2d7f601dc2ea606",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Crane Up",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 444,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-40ce9c1b4cac5fc117bc",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Dynamic reveal, dramatic emphasis, confrontational energy",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 449,
+          "column": 167,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-44facc0b63e9648e9b54",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "'. Keep the same multishot / contact-sheet grid principle, the cinematic reference style, character morphology consistency and the no-text constraints.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1519,
+          "column": 114,
+          "kind": "string-literal",
+          "functionName": "bzIteratePrompt",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-453ba3c1d5345656bcb2",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Dutch Angle",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 438,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-46339facf665a13ef413",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "The camera moves with organic yet steady motion to track the subject.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 448,
+          "column": 78,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-46e09f164f49daba9e75",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "typeFilter",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 457,
+          "column": 55,
+          "kind": "string-literal",
+          "functionName": "renderCameraTable",
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 482,
+          "column": 33,
+          "kind": "string-literal",
+          "functionName": "renderCameraTable",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-48b33f0a99b0af9307b1",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Multishot 05 - 360° Product & Construction Detail",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 886,
+          "column": 24,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-49ba63e89af69e4d6d4c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Movement",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 440,
+          "column": 66,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 441,
+          "column": 63,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 442,
+          "column": 60,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 443,
+          "column": 61,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 444,
+          "column": 61,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 445,
+          "column": 56,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 447,
+          "column": 68,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 448,
+          "column": 58,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 449,
+          "column": 56,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 450,
+          "column": 61,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 451,
+          "column": 66,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 452,
+          "column": 63,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-4a9a6d1ea52081157b8d",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "**Phase 1: Casting & World Building**\n1. **Subjects:** Subject A and Subject B (explorers/survivors).\n2. **Setting:** Ancient underground cave. Bioluminescent glow. Oppressive darkness.\n3. **The Threat:** An unseen creature. Ancient. Hungry.\n4. **Aesthetic:** Alien meets Cabin in the Woods. Minimal lighting, body horror.\n\n**Phase 2: The 2x3 Horror Sequence**\n\n**Row 1 (The Exploration):**\n1. **Wide Shot of Cave:** Massive cavern revealed by flashlight. Shadows everywhere.\n2. **POV Flashlight Beam:** Something moves in distance. Unnatural gait.\n3. **Extreme Close-Up (Creature Reveals):** Silhouette emerging. Too many limbs.\n\n**Row 2 (The Survival):**\n4. **Claustrophobic Two-Shot:** Creature emerging fully, illuminated. Nightmare.\n5. **Detail Horror Close-Up:** Creature's mandibles snapping near face.\n6. **Wide Shot of Exit:** Subjects reaching daylight. Creature stops at threshold. Barely escaped.\n\n**Technical Notes:**\nPractical horror cinematography, minimal lighting, survival tension.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1329,
+          "column": 29,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-5269a041b9e2e7df205d",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "**Phase 1: Casting & World Building**\n1. **Subjects:** Two individuals—Subject A (reserved) and Subject B (warm, vulnerable).\n2. **Setting:** Golden hour on a secluded beach. Crashing waves, golden sunlight.\n3. **The Moment:** A turning point in their relationship. Tender, charged with emotion.\n4. **Aesthetic:** Romanticist cinema. Soft focus, warm amber/gold grading.\n\n**Phase 2: The 2x3 Romantic Narrative**\n\n**Row 1 (The Approach):**\n1. **Wide Environmental Shot:** Both subjects standing apart on the beach, golden light between them.\n2. **Medium Shot of Subject A:** Walking forward, eyes meeting Subject B's. Vulnerability in expression.\n3. **Extreme Close-Up (Hands Touching):** Fingertips barely touching. Electricity in the contact.\n\n**Row 2 (The Connection):**\n4. **Soft Focus Portrait:** Both subjects face-to-face, foreheads almost touching.\n5. **Wide Shot Embracing:** Both embracing, silhouetted against golden ocean light.\n6. **Golden Hour Departure:** Walking hand-in-hand along the beach, sunset behind them.\n\n**Technical Notes:**\nWarm golden grading, soft diffusion, shallow depth of field, romantic camera work.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1137,
+          "column": 29,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-542581fd4df58a64f545",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "border-bottom-color",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 405,
+          "column": 40,
+          "kind": "string-literal",
+          "functionName": "bzPaintActiveTab",
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 410,
+          "column": 45,
+          "kind": "string-literal",
+          "functionName": "bzPaintActiveTab",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-55a77e7d726fa4336b0c",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Inventory conceptual intent: pose emotion, spatial abstraction, light symbolism, color psychology, subject-environment dialogue, negative space usage.\nMaintain wardrobe and appearance consistency. Embrace creative camera positioning and unconventional framing.\nOutput: 3×3 contact sheet + conceptual keyframe breakdown\n\nRequired 9-Frame Artistic Sequence\n1. Negative Space Dominance\nSubject positioned small within frame, surrounded by significant negative space, emphasizing isolation or environmental scale, conceptual framing.\n\n2. Symmetry & Geometric Abstraction\nSubject framed to create geometric patterns or mirror planes, abstract compositional structure, fashion as design element in larger visual system.\n\n3. Fragmentation & Layered Depth\nSubject partially obscured by foreground or background elements, creating visual complexity, surreal juxtaposition, layered storytelling.\n\n4. Extreme Perspective Distortion\nWide-angle or fish-eye perspective showing radical spatial distortion while maintaining subject recognition, abstract fashion presentation.\n\n5. Light & Shadow Silhouette Play\nSubject backlit or sidelit creating dramatic shadow patterns, clothing silhouette as pure form, emotional intensity through chiaroscuro.\n\n6. Conceptual Color Field\nSubject positioned to create intentional color harmony or discord with background, fashion as color statement, chromatic meaning-making.\n\n7. Motion Blur Abstraction\nSubject captured with intentional motion blur, fashion as fluid form, temporal distortion aesthetic.\n\n8. Reflection & Doubles\nSubject with mirror, water, or glass reflection creating visual duality, identity questioning through repetition.\n\n9. Surreal Scale Manipulation\nSubject positioned with objects or environment suggesting impossible scale relationships, dreamlike fashion fantasy.\n\nAesthetic: Inspired by fashion editorials from experimental photographers (Viviane Sassen, Tim Walker). Shot on film with artistic color grading, unconventional composition celebrated. Wardrobe rendered with perfect fidelity amid conceptual chaos.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 850,
+          "column": 29,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-55d4856620f1da90bffa",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Tension, disorientation, danger, instability",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 438,
+          "column": 171,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-56a17a5d8b58aff4a3fc",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Camera cranes up from [character], rising movement revealing landscape, cinematic ascent",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 444,
+          "column": 81,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-5989b1d5200cc087bb97",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Mystery, drama, artistic, anonymous",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 439,
+          "column": 175,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-5b444f8b74323714fe2e",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Analyze and preserve: accessory specifications (brand details, hardware, clasps, materials), placement, wear patterns, complementary styling, background negative space, light catchment on reflective surfaces.\nAll accessories, jewelry, footwear must remain identical across frames. No styling changes. Perfect consistency.\nOutput: 2×3 contact sheet + 6-frame breakdown\n\nRequired 6-Frame Sequence\n1. Full-Figure with Accessories Prominent\nWide shot showing complete outfit with all accessories visible and in focus, balanced composition highlighting accessory placement.\n\n2. Footwear Detail Statement\nClose-up emphasizing shoes, sole detail, material, heel height, with minimal background context, fashion photography style.\n\n3. Hand & Jewelry Intimate Close\nHands in natural position showcasing rings, bracelets, watchbands, nails, texture of jewelry metals and stones, shallow focus.\n\n4. Bag/Carryable Asset Hero Shot\nDetailed close angle of primary bag or accessory, showing hardware, brand markers, texture, carrying position, ergonomic fit.\n\n5. Accessory Layering Full Portrait\nUpper body portrait showing multiple accessories (necklace, earrings, scarf detail) in spatial relationship, elegant composition.\n\n6. Hidden Detail Reveal\nMacro shot of overlooked accessory detail (interior label, clasp mechanism, engraved mark, unique feature) from unique angle, editorial surprise.\n\nAesthetic: Shot on Hasselblad with controlled studio lighting, accessories rendered with maximum material clarity and luxury finish. Perfect shadows showing form and dimension.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 765,
+          "column": 29,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-5c7324f79a1ee9ea8ca0",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Slow pull out from [character], revealing environment, smooth backward movement",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 443,
+          "column": 81,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-5c8b34735637898ba3c8",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Following action, natural movement, continuous flow",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 448,
+          "column": 160,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-5d74486781f8ba36eadf",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Using the provided reference image as the SINGLE source of truth, generate a ${g.cols}x${g.rows} grid (${n} panels) of the EXACT SAME subject. Change ONLY the camera angle between panels. Keep the character, face, body proportions, wardrobe, colors, materials, lighting and environment perfectly identical and consistent across every panel. Do not add, remove or restyle anything; do not change time of day or art style.\n\nSubject: ${subject}\n\nPanel camera angles (number panels row by row, left to right):\n${angleList}\n\nClean even grid, equal panel sizes, consistent global illumination and identical color grade across all panels, sharp focus, high detail, photoreal.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 563,
+          "column": 20,
+          "kind": "template-literal",
+          "functionName": "buildMultiAnglePrompt",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-5e3816800de5f3048c56",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Inventory conceptual intent: pose emotion, spatial abstraction, light symbolism, color psychology, subject-environment dialogue, negative space usage.\nMaintain wardrobe and appearance consistency. Embrace creative camera positioning and unconventional framing.\nOutput: 2×3 contact sheet + conceptual keyframe breakdown\n\nRequired 6-Frame Artistic Sequence\n1. Negative Space Dominance\nSubject positioned small within frame, surrounded by significant negative space, emphasizing isolation or environmental scale, conceptual framing.\n\n2. Symmetry & Geometric Abstraction\nSubject framed to create geometric patterns or mirror planes, abstract compositional structure, fashion as design element in larger visual system.\n\n3. Fragmentation & Layered Depth\nSubject partially obscured by foreground or background elements, creating visual complexity, surreal juxtaposition, layered storytelling.\n\n4. Extreme Perspective Distortion\nWide-angle or fish-eye perspective showing radical spatial distortion while maintaining subject recognition, abstract fashion presentation.\n\n5. Light & Shadow Silhouette Play\nSubject backlit or sidelit creating dramatic shadow patterns, clothing silhouette as pure form, emotional intensity through chiaroscuro.\n\n6. Conceptual Color Field\nSubject positioned to create intentional color harmony or discord with background, fashion as color statement, chromatic meaning-making.\n\nAesthetic: Inspired by fashion editorials from experimental photographers (Viviane Sassen, Tim Walker). Shot on film with artistic color grading, unconventional composition celebrated. Wardrobe rendered with perfect fidelity amid conceptual chaos.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 826,
+          "column": 29,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-62a2ce9dde017566daae",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Intimacy, intensity, fear, vulnerability",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 429,
+          "column": 195,
+          "kind": "string-literal",
+          "functionName": "bzPaintActiveTab",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-64e8ba6cfdc6348c6260",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Building intensity, focusing attention, emphasis",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 442,
+          "column": 174,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-6958044d7fdbe7cad2c7",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "multishot-item",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1362,
+          "column": 34,
+          "kind": "string-literal",
+          "functionName": "initializeMultishots",
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1465,
+          "column": 34,
+          "kind": "string-literal",
+          "functionName": "initializeActionBoards",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-6b3cd1325faa32b533c9",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "back view",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 528,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": "updateGridReadouts",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-6c4b5ec056209b40758a",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Connection, engagement, neutral conversation",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 428,
+          "column": 184,
+          "kind": "string-literal",
+          "functionName": "bzPaintActiveTab",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-6c6ad72e957cb833a988",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "full profile side view (right)",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 527,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": "updateGridReadouts",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-6ecbdce5667e355a38a8",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "full profile side view (left)",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 526,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": "updateGridReadouts",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-6f62e0869001e707d102",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "${text}\n\nPROMPT ATLAS GRID OVERRIDE: Use exactly ${atlasGrid.total} frames in a ${gridLabel} grid. If the prompt contains a longer shot list, keep its intent but compress or expand it to the selected grid. Number panels row by row from left to right.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 586,
+          "column": 20,
+          "kind": "template-literal",
+          "functionName": "adaptGridPrompt",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-719b28e29c67308d07ca",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "**Phase 1: Casting & World Building**\n1. **Subjects:** Two drivers—Subject A (getaway driver, black car) vs. Subject B (pursuer, red sports car).\n2. **Setting:** Urban cityscape at night. Neon-lit streets, rain-slicked roads.\n3. **The Conflict:** High-speed pursuit through traffic.\n4. **Aesthetic:** John Wick meets Drive. Neon glow, motion blur, kinetic energy.\n\n**Phase 2: The 2x3 High-Speed Sequence**\n\n**Row 1 (The Chase):**\n1. **Wide Night Shot:** Subject A's black car weaves through downtown traffic, tail lights streaking.\n2. **POV From Driver A:** Highway ahead, Subject B's red car visible in mirror, closing in rapidly.\n3. **Side Profile Shot:** Both cars side by side, headlights illuminating each other.\n\n**Row 2 (The Escape):**\n4. **Crash/Swerve Moment:** Subject A's car narrowly avoids collision, sparks flying off guardrail.\n5. **Wide Shot of Route Separation:** Subject A exits into dark industrial area, Subject B overshoots.\n6. **Receding Taillights:** Subject A disappears into neon alleyway. Mission complete.\n\n**Technical Notes:**\nNight cinematography, neon lighting, rain reflections, motion blur.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1089,
+          "column": 29,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-726884d3ac2f29f25439",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "High angle shot of [character] seen from above, looking up, cinematic lighting",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 432,
+          "column": 81,
+          "kind": "string-literal",
+          "functionName": "bzPaintActiveTab",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-7291b1b6320fe0737cd6",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Arc",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 449,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-733b1604941504718417",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": " Image Board - Template",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 950,
+          "column": 24,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-746c7317dcd582dc3634",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "cinematic reference helper",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 296,
+          "column": 33,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-7499c820e43053fe21c8",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Epic reveal, showing scale, transitioning",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 444,
+          "column": 182,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-75be4d0a917ad0436c60",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "high-angle shot",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 530,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": "updateGridReadouts",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-75f650451fd2a140706a",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Documentary realism, authenticity, intimate tension",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 447,
+          "column": 280,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-7a61886b667f63314ec8",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Silhouette Shot",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 439,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-7bb4e391215f2d68045a",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Board-06 - Heist Infiltration Sequence",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1255,
+          "column": 24,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-7c64d6b3329628b249b5",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "The camera performs a rapid, aggressive horizontal whip pan with motion blur from a fixed location to focus on a new subject.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 450,
+          "column": 81,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-7d40c50d1898b03e8a45",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "3/4 front-left view",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 524,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": "updateGridReadouts",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-7ec086af8b32fb299fd2",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "The camera has a subtle, organic handheld shake, mimicking a documentary style. There are minor, natural shifts in framing and focus, characteristic of someone holding the camera.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 447,
+          "column": 88,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-8113296225e01eba4a46",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Point of view shot from [character]'s perspective, looking out at [what they see]",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 437,
+          "column": 72,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-8210a30935b2954334e0",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Context reveal, scale, emotional distance",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 443,
+          "column": 173,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-87c23c775ac6dec1cf30",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Immersion, action, first-person experience",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 437,
+          "column": 166,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-884dff41b45a3858b8aa",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Board-02 - High-Speed Car Chase",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1063,
+          "column": 24,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-88ea6058d4337ba09a37",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "tableBody",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 465,
+          "column": 51,
+          "kind": "string-literal",
+          "functionName": "renderCameraTable",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-8933675910454f866837",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Inventory all environmental and lifestyle details: subject positioning, gesture, movement flow, fabric interactions, material tactility, natural light diffusion, spatial relationships with surroundings.\nPreserve exact wardrobe, styling continuity, and environmental context across all 6 frames.\nOutput: 2×3 contact sheet + keyframe breakdown\n\n6-Frame Shot List\n1. Wide Environmental Establishing\nSubject positioned in full environment showing context and spatial scale, natural movement stance, environmental lighting unmodified.\n\n2. Medium Texture & Material Focus\nMid-distance shot emphasizing fabric interaction, textile details, material quality in natural light, subject in relaxed pose.\n\n3. Close-Up Gestural Detail\nHands or movement detail close-up, capturing fabric drape, material behavior, accessories in motion, shallow depth of field.\n\n4. Dynamic Three-Quarter Movement Frame\nSubject captured mid-gesture, three-quarter angle showing full outfit silhouette, fabric flow, movement direction clear but pose held.\n\n5. Intimate Environmental Interaction\nSubject interacting naturally with environment, showing relationship between wardrobe and setting, authentic moment captured.\n\n6. Macro Material & Texture Abstract\nExtreme close-up of fabric weave, seam detail, material texture, or accessory micro-detail from unexpected angle, abstract editorial aesthetic.\n\nStyle: Shot on Kodak Portra 400 film with soft window light, warm color grading, natural grain, clothing materials rendered with tactile realism. Movement captured in held poses, not motion blur.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 704,
+          "column": 29,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-89455029266ccd943ba4",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Board-05 - Western Duel Showdown",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1207,
+          "column": 24,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-89d1eceaec24f9215f7c",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "**Phase 1: Casting & World Building**\n1. **Analyze Inputs:** Identify the two distinct subjects.\n   * **Subject A (The Pilot):** The bald, bearded man.\n   * **Subject B (The Runner):** The blonde man.\n2. **Setting:** An exotic exoplanet. Desert terrain mixed with strange, alien vegetation. Harsh, dramatic sunlight.\n3. **The Threat:** A massive, grotesque \"Alien Larva\" creature.\n4. **Aesthetic:** High-budget Sci-Fi blockbuster. Photorealistic, anamorphic lens, cinematic color grading.\n\n**Phase 2: The 2x3 Narrative Action Grid**\nGenerate a 2x3 grid of 6 sequential cinematic stills telling the escape story.\n\n**Row 1 (The Chase):**\n1. **Wide Shot (The Pilot):** Subject A stands at the open ramp of a weathered spaceship, screaming and waving frantically.\n2. **Mid-Shot (The Runner):** Subject B is sprinting towards the camera, terrified. Alien Larva visible behind.\n3. **First-Person POV (The Reach):** Shot from INSIDE the ship, Subject A's arm reaches out, Subject B feet away, creature behind him.\n\n**Row 2 (The Escape):**\n4. **Low Angle (The Dive):** Subject B dives/slides into the ship as the door begins closing.\n5. **Extreme Close-Up (The Seal):** The blast door slams shut tight. Safety achieved.\n6. **Epic Rear View (Ascent):** The spaceship ascending into the sky, leaving a trail of exhaust. Freedom.\n\n**Technical Notes:**\nAll frames feature photorealistic CGI, cinematic lighting, and intense action.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1038,
+          "column": 29,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-89f9cd62508cdcb4deea",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "**Phase 1: Casting & World Building**\n1. **Subjects:** Subject A (obsessive detective) and Subject B (enigmatic suspect).\n2. **Setting:** Rain-soaked urban apartment. Flickering neon signs outside. Shadows dominating. Claustrophobic. Details matter.\n3. **The Conflict:** An interrogation. Truth vs. deception. Psychological cat-and-mouse game.\n4. **Aesthetic:** Fincher meets Lynch. High-contrast noir lighting. Cool color grading (blue/gray). Dutch angles. Extreme close-ups of faces. Silence punctuated by ambient dread.\n\n**Phase 2: The 3x3 Interrogation Sequence**\n\n**Row 1 (The Setup):**\n1. **Wide Shot of Apartment:** Rain streaking through window. Subject A circling Subject B. Predatory energy. Subject B seated, composed but tense.\n2. **Medium Close-Up of Subject B:** Expressionless face, only eyes betraying slight discomfort. Hands flat on table. Controlled breathing.\n3. **Extreme Close-Up of Subject A's Eyes:** Intense stare. Pupils dilated. Years of experience reading people. Cold determination.\n\n**Row 2 (The Pressure):**\n4. **Two-Shot Over-the-Shoulder:** Subject A's silhouette interrogating, Subject B's face illuminated by harsh single light source. Shadows under eyes. Sweat on brow.\n5. **Claustrophobic Close-Up:** Subject A leaning in close to Subject B's face. Psychological invasion of space. Subject B's jaw clenching.\n6. **Detail Shot (Hands on Table):** Subject A's hand slams table between them. Tremor visible in Subject B's fingers. Micro-expression of fear registers.\n\n**Row 3 (The Revelation/Doubt):**\n7. **Low Angle Ominous:** Subject B's face from below, looking down at Subject A with slight smile. Power shift. Who is interrogating whom?\n8. **Split Screen Style:** Subject A on left looking uncertain, Subject B on right completely calm. Doubt creeping in.\n9. **Extreme Close-Up (Iris Reflection):** Detective's pupil reflects the suspect's face. Trapped. The truth remains elusive.\n\n**Technical Notes:**\nAll frames feature high-contrast noir lighting, cool color grading, psychological tension, and unsettling camera angles.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1160,
+          "column": 29,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-8be4d1919db9524d00cc",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Amat (Handheld)",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 447,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-8d39843f85bbe27d6d43",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Dramatic reveal, 360 showcase, hero moment",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 441,
+          "column": 165,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-93184af12b2c859f857d",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Medium Shot",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 431,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": "bzPaintActiveTab",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-93c613d1d5d00051c083",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "POV / detail insert",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 537,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": "updateGridReadouts",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-951861642ef33af4a397",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Low angle shot of [character] seen from below, looking down, cinematic lighting",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 433,
+          "column": 80,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-95c59bacbdbffa113457",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Shock, urgency, dramatic punctuation, impact moment",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 452,
+          "column": 251,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-96dbb42d5307a8480a0f",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": ".container, header, .tabs, .tab-content, .controls, .filter-group, .grid-selector, .toggle-container, table, thead, tbody, tr, th, td, .multishot-item, .multishot-header, .multishot-content, .multishot-text",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1555,
+          "column": 47,
+          "kind": "string-literal",
+          "functionName": "apply",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-973dc0ec807d7cc27092",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Dutch angle tilted shot of [character], off-kilter framing, cinematic lighting",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 438,
+          "column": 80,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-97747fedaa87f4ae68cb",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "multiAngleSubject",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 558,
+          "column": 57,
+          "kind": "string-literal",
+          "functionName": "buildMultiAnglePrompt",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-97ddfe19292a534f7669",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "#multishot-tab .grid-selector, #actionboard-tab .grid-selector",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 511,
+          "column": 39,
+          "kind": "string-literal",
+          "functionName": "updateGridReadouts",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-9960cbf6cb4bfdeec148",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Slow horizontal pan across [scene/character], smooth sweeping movement",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 445,
+          "column": 76,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-9ac2eae13bf97d992c0b",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Eye level shot of [character], neutral angle, cinematic lighting",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 434,
+          "column": 80,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-9b02e99ab9bd364b3ba5",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Board-03 - Romantic Intimate Moment",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1111,
+          "column": 24,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-9b9d49b29de9faf456af",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "wide establishing shot",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 522,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": "updateGridReadouts",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-9ca5626801e2bf3c0a19",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "bird's-eye top-down",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 535,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": "updateGridReadouts",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-9d6c5b2dc3224a8be9d1",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Product Orbit",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 451,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-9ee74825b8d86ad0e8ff",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Product showcase, 360 view, commercial presentation",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 451,
+          "column": 234,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-9fcdc592780fbbbc9ee9",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "#flashToggle-${data.id}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1442,
+          "column": 60,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-a09b2a40fe37395ed407",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "**Phase 1: Casting & World Building**\n1. **Subjects:** Subject A (tech specialist) and Subject B (infiltration expert).\n2. **Setting:** High-security bank vault. Laser grids, security cameras. 90 seconds.\n3. **The Conflict:** Breaking in without triggering alarms.\n4. **Aesthetic:** Ocean's 11 meets Tron. Neon blues/teals in darkness.\n\n**Phase 2: The 2x3 Heist Sequence**\n\n**Row 1 (The Infiltration):**\n1. **Wide Overhead Shot:** Bank layout, Subject A at computer, Subject B ready.\n2. **POV from Subject B:** Walking through laser grids, each step calculated.\n3. **Extreme Close-Up (Laser Navigation):** Subject B squeezing through lasers.\n\n**Row 2 (The Score):**\n4. **Detail Shot (Vault Door):** Security readout flashing green. System compromised.\n5. **Slow Motion Detail:** Hand closing around target object. Golden light.\n6. **Silhouette Departure:** Both subjects abseiling down building. Perfect execution.\n\n**Technical Notes:**\nHigh-tech aesthetic, neon accents, heist tension.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1281,
+          "column": 29,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-a0a77b3a45d8776f2d27",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Slow push in toward [character], smooth forward camera movement, building tension",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 442,
+          "column": 80,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-a140dc6c599264d08c92",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "The camera executes an aggressive, sweeping horizontal arc around the subject.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 449,
+          "column": 76,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-a1b9469bc204a16b11a2",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Eye-level close-up shot of [character], cinematic lighting, showing detailed facial expression",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 428,
+          "column": 77,
+          "kind": "string-literal",
+          "functionName": "bzPaintActiveTab",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-a2e7ab9f1e28e11d3abc",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "close-up on face",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 533,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": "updateGridReadouts",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-a5657c5b5f73efd08ec8",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Initial Model Prompt",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 614,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": "applyAtlasGrid",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-a6d0f10a06026f1791a7",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Show me a high fashion photoshoot image of the model wearing the oversized jacket and glasses, the image should show the a full body shot of the subject. The model is looking past the camera slightly bored expression and eyebrows raised. They have one hand raised with two fingers tapping the side of the glasses. The setting is a studio environment with a blue background. The model is wearing fashionable, dark grey baggy cotton pants. The jacket is extremely, almost comically oversized on the model. The image is from a low angle looking up at the subject. The image is shot on fuji velvia film on a 55mm prime lens with a hard flash, the light is concentrated on the subject and fades slightly toward the edges of the frame. The image is over exposed showing significant film grain and is oversaturated. The skin appears shiny (almost oily), and there are harsh white reflections on the glasses frames. 3:2 aspect ratio",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 614,
+          "column": 61,
+          "kind": "string-literal",
+          "functionName": "applyAtlasGrid",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-a8991cbdbac102c27210",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Board-04 - Psychological Thriller/Suspense Investigation",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1159,
+          "column": 24,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-a9ccfd4631b9f2b0a869",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "extreme close-up (eyes/detail)",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 534,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": "updateGridReadouts",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-aa67c85fe24aba2ecb17",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Board-01 - Sci-Fi Alien Escape",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1009,
+          "column": 24,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-aacde49a745b9fb80256",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "${atlasGrid.total}-Frame",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 582,
+          "column": 55,
+          "kind": "template-literal",
+          "functionName": "adaptGridPrompt",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-ac08a4a416ed031f5c6e",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "${atlasGrid.total}-frame",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 583,
+          "column": 55,
+          "kind": "template-literal",
+          "functionName": "adaptGridPrompt",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-ae94e594011efd27a65d",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "--bg",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1548,
+          "column": 94,
+          "kind": "string-literal",
+          "functionName": "apply",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-b33100ed0f9c5bf489d7",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "low-angle hero shot",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 529,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": "updateGridReadouts",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-b5f1c8d2e6469c24ce4f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "medium shot, chest up",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 532,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": "updateGridReadouts",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-b7bdf7a2d6e73e58d69a",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Distance",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 428,
+          "column": 57,
+          "kind": "string-literal",
+          "functionName": "bzPaintActiveTab",
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 429,
+          "column": 65,
+          "kind": "string-literal",
+          "functionName": "bzPaintActiveTab",
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 430,
+          "column": 59,
+          "kind": "string-literal",
+          "functionName": "bzPaintActiveTab",
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 431,
+          "column": 60,
+          "kind": "string-literal",
+          "functionName": "bzPaintActiveTab",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-ba1f7cf60335ed78faf9",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "**Phase 1: Casting & World Building**\n1. **Subjects:** Subject A (seasoned gunslinger, weathered) vs Subject B (young upstart with something to prove).\n2. **Setting:** Abandoned desert town. High noon. Dusty main street. Tumbleweeds. Old wooden buildings. Harsh sunlight creating stark shadows. Heat shimmer on horizon.\n3. **The Conflict:** A final confrontation. Legacy vs. ambition. Only one walks away.\n4. **Aesthetic:** Sergio Leone's operatic westerns. Golden/amber color grading. Extreme close-ups of faces and hands. Wide shots emphasizing isolation. Dust particles visible in light. Tense silence.\n\n**Phase 2: The 3x3 Duel Sequence**\n\n**Row 1 (The Standoff):**\n1. **Wide Master Shot:** Both subjects standing at opposite ends of main street, dozens of meters apart. Complete stillness. Wind howling faintly. Dust swirling.\n2. **Medium Close-Up of Subject A:** Weathered face, squinted eyes looking down the street. Hand near holster. Breathing calm and controlled. Lifetime of this moment.\n3. **Medium Close-Up of Subject B:** Younger, intense expression. Hand trembling slightly near gun. Pride mixed with fear. Proof seeking.\n\n**Row 2 (The Wait):**\n4. **Extreme Close-Up of Subject A's Eyes:** Cold, calculating. Reading the wind. Reading the opponent. Not blinking.\n5. **Extreme Close-Up of Subject B's Face:** Sweat rolling down temple. Jaw grinding. Finger twitching near trigger guard. Waiting.\n6. **Detail Shot (Hands Near Holsters):** Both subjects' hands visible from waist down, poised. Leather creaking. Moment stretches infinitely.\n\n**Row 3 (The Draw):**\n7. **Fast Mid-Shot During Draw:** Both subjects' guns clearing holsters simultaneously. Dust erupting. Bullets visible in air (stylized). Movement frozen in frame.\n8. **Close-Up Impact:** Subject B staggers back, hand clutching chest wound. Shock registering. Realization he lost.\n9. **Wide Shot Aftermath:** Subject A holstering gun with practiced precision. Subject B collapsing into dust. The old gunslinger walks away into the golden sunset. Legend confirmed.\n\n**Technical Notes:**\nAll frames feature desert golden hour cinematography, extreme close-ups, stark shadows, operatic tension, and Western film aesthetic.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1208,
+          "column": 29,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-bb42b4968b1012c39558",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "**Phase 1: Casting & World Building**\n1. **Subjects:** Subject A (curious explorer/survivor) and Subject B (equally trapped, initially unaware of danger).\n2. **Setting:** Ancient underground temple/cave system. Bioluminescent fungi casting eerie green glow. Wet stone surfaces. Echoing drips. Oppressive darkness beyond flashlight beam.\n3. **The Threat:** An unseen creature in the shadows. Something ancient. Something hungry.\n4. **Aesthetic:** Cabin in the Woods meets Alien. Practical shadows, minimal lighting. Unsettling sound design. Body horror undertones. Dread pervasive.\n\n**Phase 2: The 3x3 Horror Sequence**\n\n**Row 1 (The Exploration):**\n1. **Wide Shot of Cave Interior:** Massive cavern revealed slowly by flashlight. Subject A and B entering cautiously. Shadows consuming most of frame. Unease pervasive.\n2. **POV Flashlight Beam:** Walking forward, wall texture visible, then... something moves in distance. Too quickly. Unnatural gait.\n3. **Medium Shot of Subjects:** Subject A and B freeze, noticing the movement. Exchange of glances. Realization dawning that they're not alone.\n\n**Row 2 (The Dread):**\n4. **Extreme Close-Up (Bioluminescent Glow Reveals):** Silhouette of creature's outline emerging from darkness. Biomechanical structure. Too many limbs. Teeth. Subject A's face registering absolute terror.\n5. **Low Angle Creature POV:** From the creature's perspective. Subject B becoming aware of the thing. Slow-motion moment of comprehension and primal fear.\n6. **Claustrophobic Two-Shot:** Subject A pulling Subject B behind them. Creature emerging fully from shadows, illuminated by bioluminescence. Massive. Impossibly detailed nightmare.\n\n**Row 3 (The Survival):**\n7. **Action Shot (Escape Attempt):** Subject A and B scrambling backward, creature lunging with impossible reach. Dynamic motion blur. Thrashing chaos.\n8. **Detail Horror Close-Up:** Creature's head filling frame, mandibles snapping inches from Subject B's face. Visceral terror captured. Guttural sound design implied.\n9. **Wide Shot of Exit:** Subject A and B reaching cave entrance, silhouetted against daylight. Behind them, creature stops at threshold, hissing. Crossing into light would expose it. Barely escaped. Humanity restored.\n\n**Technical Notes:**\nAll frames feature practical horror cinematography, minimal light design, unsettling creature detail, and survival tension.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1304,
+          "column": 29,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-bbf9a1dede2aea72f509",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Over shoulder shot looking past [character] toward [what they're looking at]",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 435,
+          "column": 86,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-bfedd644b99d59a9eca1",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Environment reveal, following action, breadth",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 445,
+          "column": 159,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-cf683383b0af2c6d2066",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Analyze the input image and silently inventory all fashion-critical details: the subject(s), exact wardrobe pieces, materials, colors, textures, accessories, hair, makeup, body proportions, environment, set geometry, light direction, and shadow quality.\nAll wardrobe, styling, hair, makeup, lighting, environment must remain 100% unchanged across all frames.\nDo not add or remove anything. Do not reinterpret materials or colors. Do not output any reasoning.\nPerfectly replicate the exact facial features of the model.\nYour visible output must be:\nOne 2×3 contact sheet image (6 frames).\nThen a keyframe breakdown for each frame.\nEach frame must represent a resting point after a dramatic camera move — only describe the final camera position and what the subject is doing, never the motion itself.\nThe six frames must be spatially dynamic, non-linear, and visually distinct.\n\nRequired 6-Frame Shot List\n1. High-Fashion Beauty Portrait (Close, Editorial, Intimate)\nCamera positioned very close to the subject's face, slightly above or slightly below eye level, using an elegant offset angle that enhances bone structure and highlights key wardrobe elements near the neckline. Shallow depth of field, flawless texture rendering, and a sculptural fashion-forward composition.\n\n2. High-Angle Three-Quarter Frame\nCamera positioned overhead but off-center, capturing the subject from a diagonal downward angle. This frame should create strong shape abstraction and reveal wardrobe details from above.\n\n3. Low-Angle Oblique Full-Body Frame\nCamera positioned low to the ground and angled obliquely toward the subject. This elongates the silhouette, emphasizes footwear, and creates a dramatic perspective distinct from Frames 1 and 2.\n\n4. Side-On Compression Frame (Long Lens)\nCamera placed far to one side of the subject, using a tighter focal length to compress space. The subject appears in clean profile or near-profile, showcasing garment structure in a flattened, editorial manner.\n\n5. Intimate Close Portrait From an Unexpected Height\nCamera positioned very close to the subject's face (or upper torso) but slightly above or slightly below eye level. The angle should feel fashion-editorial, not conventional — offset, elegant, and expressive.\n\n6. Extreme Detail Frame From a Non-Intuitive Angle\nCamera positioned extremely close to a wardrobe detail, accessory, or texture, but from an unusual spatial direction (e.g., from below, from behind, from the side of a neckline). This must be a striking, abstract, editorial detail frame.\n\nContinuity & Technical Requirements\nMaintain perfect wardrobe fidelity in every frame: exact garment type, silhouette, material, color, texture, stitching, accessories, closures, jewelry, shoes, hair, and makeup.\nEnvironment, textures, and lighting must remain consistent.\nDepth of field shifts naturally with focal length (deep for distant shots, shallow for close/detail shots).\nPhotoreal textures and physically plausible light behavior required.\nFrames must feel like different camera placements within the same scene, not different scenes.\nAll keyframes must be the exact same aspect ratio, and exactly 6 keyframes should be output. Maintain the exact visual style in all keyframes, where the image is shot on Fuji Velvia film{{FLASH_OPTION}}, the light is concentrated on the subject and fades slightly toward the edges of the frame. The skin appears shiny (almost oily), and there are harsh white reflections on the glasses frames.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 619,
+          "column": 29,
+          "kind": "template-literal",
+          "functionName": "applyAtlasGrid",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-d1df56ccc04ac3099baf",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "The camera performs an extremely rapid, aggressive crash zoom. The zoom should be sudden, disorienting, and conclude with a sharp focus on the focal point.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 452,
+          "column": 83,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-d3f33cab142456361988",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "The camera moves to execute a smooth, horizontal orbit around the object with a consistent pace. Start and end on the exact same frame.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 451,
+          "column": 86,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-d748c380530f0ee53958",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Over-the-Shoulder",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 435,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-d93ff177d30b0dcf5e0c",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "**Phase 1: Casting & World Building**\n1. **Subjects:** Two drivers—Subject A (an experienced getaway driver in a sleek black car) vs. Subject B (a young, reckless pursuer in a red sports car).\n2. **Setting:** An urban cityscape at night. Neon-lit streets, elevated highways, industrial warehouses. Rain-slicked roads reflecting the city lights.\n3. **The Conflict:** Subject A is fleeing; Subject B is relentlessly pursuing through traffic. High stakes, split-second decisions.\n4. **Aesthetic:** John Wick meets Drive. Kinetic, handheld realism with stylized color grading (magenta/cyan neon glow). Extreme motion blur during high-speed passes. Close-ups of hands on steering wheels, eyes locked in focus.\n\n**Phase 2: The 3x3 High-Speed Sequence**\n\n**Row 1 (The Chase Begins):**\n1. **Wide Night Shot:** Subject A's black car weaves through downtown traffic, tail lights streaking red.\n2. **POV From Driver A:** Forward-facing view of an empty highway opening up ahead, speedometer climbing. Subject B's red car visible in the side mirror, closing in rapidly.\n3. **Aerial Overhead Shot:** Two cars navigate a highway interchange, Subject B threading aggressively through traffic.\n\n**Row 2 (The Escalation):**\n4. **Tight POV From Subject B's Car:** Windshield view, Subject B's hands gripping the wheel, determination etched in his jaw and eyes. Subject A's car ahead barely visible through the rain.\n5. **Side Profile Medium Shot:** Both cars side by side on an elevated freeway section. Headlights illuminating each other. Subject A glances over at Subject B with cold calculation.\n6. **Crash/Swerve Moment:** Subject A's car narrowly avoids a collision, tires squealing, sparks flying off the guardrail. Subject B is close behind, brakes flaring.\n\n**Row 3 (The Escape):**\n7. **Extreme Close-Up (Engine Detail):** Subject A's car engine roars, turbo spooling, undercarriage lights glowing. Raw mechanical power.\n8. **Wide Shot of Route Separation:** Subject A's car exits the highway into a dark industrial area. Subject B overshoots the exit, has to swerve back onto the main road.\n9. **Receding Taillights:** Subject A's car disappears into a neon-soaked alleyway, its red taillights fading into the distance. Subject B's car doesn't follow. Mission complete.\n\n**Technical Notes:**\nAll frames feature night cinematography with neon ambient lighting, rain reflections, intense motion blur, and dynamic camera movement.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1064,
+          "column": 29,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-d95d0b2246ab09332dfd",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "${i + 1}. ${angle}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 561,
+          "column": 36,
+          "kind": "template-literal",
+          "functionName": "buildMultiAnglePrompt",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-dade38afd80e6a943b07",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Defeat, submission, vulnerability, weakness",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 432,
+          "column": 172,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-dda262fb64b5d5ebd676",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Isolation, context, establishing",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 431,
+          "column": 166,
+          "kind": "string-literal",
+          "functionName": "bzPaintActiveTab",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-ddcc50e84b01e35e679b",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Observation, shared perspective, dialogue",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 435,
+          "column": 175,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-e2da99702f41602e50e0",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Based on this image:\n\n**Phase 1: Visual Analysis & Reference Extraction**\n1. **Analyze the Image:** Identify all visual elements—subjects, environment, lighting, color palette, textures, composition, props, clothing, spatial depth.\n2. **Extract Key Details:** Note camera angle used, distance from subject, depth of field characteristics, light direction, shadows, highlights, mood.\n3. **Identify Cinematic Potential:** What dynamic camera moves could enhance or reframe this moment? What would extreme close-ups reveal? What would a wider view show?\n4. **Aesthetic Framework:** Determine the film/style inspiration—documentary realism, high-fashion, sci-fi, thriller, romantic, action, horror, etc.\n\n**Phase 2: The 3x3 Cinematic Exploration Grid**\nGenerate 9 sequential shots that explore the image's content from radically different camera perspectives and movements.\n\n**Row 1 (Static & Observational):**\n1. **Wide Master Shot (Establishing):** Full context view of the entire scene as presented in the image. All elements visible. Environmental scope clear.\n2. **Medium Shot (Subject Focus):** Closer framing isolating main subjects/focal point from the image. Context still visible but secondary.\n3. **Detail Close-Up (Texture):** Extreme close-up of a specific detail from the image—texture, expression, material, micro-moment captured.\n\n**Row 2 (Dynamic Movement & Reframing):**\n4. **Dolly/Tracking Shot (Approach):** Moving forward through the image's space, perspective shifting dynamically. What reveals itself as we move closer?\n5. **Orbital/Rotating Shot (Perspective Shift):** Circling around the scene's focal point. How does the image change from different angles? What's hidden, what's revealed?\n6. **Crane/Vertical Movement (Elevation Change):** Moving vertically within the frame—either ascending to reveal scale or descending to intensify intimacy.\n\n**Row 3 (Reinterpretation & Abstraction):**\n7. **Unorthodox Angle (Creative Distortion):** Shooting from an extreme/unexpected angle suggested by the image's composition. What makes this disorienting but compelling?\n8. **Light & Shadow Play (Chiaroscuro Focus):** Reframing to emphasize the image's light sources, shadows, and contrast. Abstracted beauty through tonality.\n9. **Conceptual Departure (Implied Motion):** Final shot that extrapolates beyond the image—what happens next? What came before? The narrative suggestion beyond the frame.\n\n**Technical Execution:**\n- All 9 shots must maintain visual continuity with the source image (same subjects, same environment, same session).\n- Vary depth of field naturally (deep for wide shots, shallow for close-ups).\n- Use the image's existing lighting as reference, enhance cinematic qualities.\n- Transitions between shots should suggest a choreographed camera movement sequence.\n- Final output: 3x3 contact sheet of 9 frames with detailed shot descriptions.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 951,
+          "column": 29,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-e30873eaab5a3f2bc66d",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Subject / reference description — ex: a young woman with red curly hair wearing a green vintage coat, standing in a neon-lit alley at night",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 328,
+          "column": 79,
+          "kind": "html-attribute:placeholder",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-e31a8213eaeb9a450ef0",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "**Phase 1: Casting & World Building**\n1. **Subjects:** Subject A (detective) and Subject B (suspect).\n2. **Setting:** Rain-soaked apartment. Shadows dominating. Claustrophobic.\n3. **The Conflict:** An interrogation. Truth vs. deception.\n4. **Aesthetic:** Fincher noir. High-contrast, cool blue/gray grading.\n\n**Phase 2: The 2x3 Interrogation Sequence**\n\n**Row 1 (The Setup):**\n1. **Wide Shot:** Rain through window. Subject A circling Subject B seated at table.\n2. **Medium Close-Up of Subject B:** Expressionless, hands flat on table.\n3. **Extreme Close-Up of Subject A's Eyes:** Intense stare, cold determination.\n\n**Row 2 (The Pressure):**\n4. **Claustrophobic Close-Up:** Subject A leaning close to Subject B's face.\n5. **Low Angle Ominous:** Subject B looking down with slight smile. Power shift.\n6. **Extreme Close-Up (Iris Reflection):** Detective's pupil reflects suspect's face.\n\n**Technical Notes:**\nHigh-contrast noir lighting, cool grading, psychological tension.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1185,
+          "column": 29,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-e3a8d5986802a73e5285",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "' and the same grid / sequence structure, but invent new scene beats, camera moments, wardrobe and material details, lighting and atmosphere. Return only the prompt.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1520,
+          "column": 104,
+          "kind": "string-literal",
+          "functionName": "bzIteratePrompt",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-e485a1465591689ee692",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Archive complete wardrobe construction: seams, hems, construction quality, fabric weight, pattern placement, symmetry, hardware positioning, wear indicators, craftsmanship markers.\nRotate around subject systematically showing all viewpoints. Maintain exact appearance and styling.\nOutput: 2×3 contact sheet + comprehensive construction breakdown\n\nRequired 6-Frame 360° Documentation\n1. Direct Front Center\nSubject centered, facing camera directly, all front-facing garment details visible, construction seams and closures evident, controlled studio lighting.\n\n2. Quarter-Turn Right\n45-degree rotation showing side-front transition, seam alignment, sleeve construction, pattern flow continuity, detail clarity.\n\n3. Pure Side Profile\n90-degree rotation, complete side view of garment structure, silhouette clarity, hem accuracy, profile proportions documented, side seams and construction visible.\n\n4. Quarter-Turn Back\n135-degree rotation showing back-side transition, rear garment details, back seam quality, fastening systems from behind.\n\n5. Direct Back Center\nFull back view, rear construction documentation, seam alignment, neck construction, back closure systems, pattern placement on back.\n\n6. Overhead/Flat Construction Detail\nBird's-eye view showing garment laid structure clarity, dimensional form, shoulder construction, neckline precision, overall architectural integrity.\n\nAesthetic: Documentation photography with consistent studio lighting from multiple fixed positions, neutral background, color-accurate rendering. Fashion garment as engineered object. Professional product photography standard for archival and quality documentation.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 887,
+          "column": 29,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-e49eac9c6d51c19c2735",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Décris ton sujet (ou colle la description de ton image de référence). Le prompt génère une grille du même sujet en changeant uniquement l'angle de caméra, calée sur le GRID BUILDER courant.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 327,
+          "column": 45,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-e6fc898c91f973440a0e",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Close-Up",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 428,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": "bzPaintActiveTab",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-e7e197c055b46f85717c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Hero moment, authority, threat, dominance",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 433,
+          "column": 172,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-e81af59887392c67384a",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "**Phase 1: Casting & World Building**\n1. **Subjects:** Subject A (tech specialist) and Subject B (infiltration expert/thief).\n2. **Setting:** High-security downtown bank vault. Modern architectural steel and glass. Laser grids in darkness. Security cameras everywhere. Time pressure: 90 seconds.\n3. **The Conflict:** Breaking in without triggering alarms. One mistake means capture.\n4. **Aesthetic:** Ocean's 11 meets Tron. Sleek, calculated precision. Neon colors in darkness (blues/teals). Sharp focus mixed with soft bokeh of lasers. Clock ticking. Tension through perfectionism.\n\n**Phase 2: The 3x3 Heist Sequence**\n\n**Row 1 (The Preparation):**\n1. **Wide Overhead Shot:** Bank floor layout visible, blueprints projected. Subject A analyzing security patterns. Subject B studying the route. Intense focus.\n2. **Close-Up of Subject A:** Fingers flying across keyboard, lines of code reflecting in glasses. Expressions of concentration. Bypassing the system.\n3. **POV from Subject B:** Walking through darkened hallway, red laser grids creating geometric patterns. Each step calculated. Grace under pressure.\n\n**Row 2 (The Infiltration):**\n4. **Extreme Close-Up (Laser Grid Navigation):** Subject B's face as they squeeze through laser grid impossibly close. Breath held. One millimeter from disaster.\n5. **Detail Shot (Vault Door Mechanism):** Subject A's hands working rapid precision on a keypad, scanning. Security readout flashing green. System compromised.\n6. **Split Screen:** Subject A watching monitor showing Subject B's position; Subject B approaching vault. Real-time tension. Eyes communicating across distance.\n\n**Row 3 (The Score):**\n7. **Slow Motion Detail:** Subject B reaching into vault, hand closing around the target object. Golden light spilling out.\n8. **Wide Shot Escape:** Subject B running back through laser grid, no longer caring about avoidance. Alarms starting to sound. Subject A triggering false fire exit doors.\n9. **Silhouette Departure:** Both subjects silhouetted in window as they abseil down the building's exterior glass. Night city lights below. Clean escape. Perfect execution.\n\n**Technical Notes:**\nAll frames feature high-tech aesthetic, neon accents in darkness, precise camera movement, and heist cinema tension.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1256,
+          "column": 29,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-e8bb516c2e9c1eedea20",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Extreme Close-Up",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 429,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": "bzPaintActiveTab",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-e90abdc73fb200aad06a",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Multishot 03 - Accessories & Detail Showcase",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 764,
+          "column": 24,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-e9af67760537fd02023e",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "multishot-copy-btn-header",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1411,
+          "column": 54,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1484,
+          "column": 54,
+          "kind": "string-literal",
+          "functionName": "initializeActionBoards",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-ee7a425e7320f39ea102",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "POV",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 437,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-ee90007b96b7419785ba",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "**Phase 1: Casting & World Building**\n1. **Analyze Inputs:** Identify the two distinct subjects.\n   * **Subject A (The Pilot):** The bald, bearded man.\n   * **Subject B (The Runner):** The blonde man.\n2. **Setting:** An exotic exoplanet. Desert terrain mixed with strange, alien vegetation. Harsh, dramatic sunlight.\n3. **The Threat:** A massive, grotesque \"Alien Larva\" creature. Segmented, slimy, and terrifying.\n4. **Aesthetic:** High-budget Sci-Fi blockbuster (e.g., Prometheus, Dune). Photorealistic, anamorphic lens, cinematic color grading (teal/orange or dusty sepia), heavy motion blur in action shots.\n\n**Phase 2: The 3x3 Narrative Action Grid**\nGenerate a 3x3 grid of 9 sequential cinematic stills telling the escape story.\n\n**Row 1 (The Warning & The Run):**\n1. **Wide Shot (The Pilot):** Subject A (Bald) stands at the open ramp of a weathered spaceship. He looks panicked, screaming and waving frantically for someone to come. The alien landscape surrounds the ship.\n2. **Mid-Shot (The Runner):** Subject B (Blonde) is sprinting towards the camera, sweat on his face, terrified. Background shows blurred alien flora whipping past.\n3. **Aerial Drone Shot (The Scale):** High-angle view establishing the geometry: The Spaceship (left), Subject A at the door, Subject B running across the gap, and the massive Alien Larva chasing close behind B.\n\n**Row 2 (The Climax at the Door):**\n4. **First-Person POV (The Reach):** Shot from INSIDE the ship looking out. In the foreground, Subject A's arm reaches out desperately. In the center, Subject B is feet away from the ramp. The Alien Larva is right behind him, jaws open. High tension.\n5. **Low Angle/Ground Level (The Dive):** Camera on the dirty ramp floor. Subject B dives/slides into the ship, kicking up dust. The ship's hydraulics are engaging.\n6. **Extreme Close-Up (The Seal):** The heavy metallic blast door slams shut tight. Sparks or steam seal the mechanism. No people, just the industrial texture of safety.\n\n**Row 3 (The Escape):**\n7. **Over-the-Creature (The Frustration):** Shot from behind the Alien Larva. We see its slimy texture in the foreground. In the mid-ground, the spaceship's thrusters ignite, blasting the creature's face. The spaceship is rising.\n8. **Wide Shot (Liftoff):** The spaceship lifting off the ground, angled upwards. The landing gear retracts. The creature is small on the ground below.\n9. **Epic Rear View (Ascent):** The spaceship ascending vertically into the exoplanet's sky/upper atmosphere, leaving a trail of exhaust. Freedom.\n\n**Technical Notes:**\nAll frames feature photorealistic CGI, cinematic lighting, and intense action.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1010,
+          "column": 29,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-ef71206f398d862a0d09",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Movements",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 312,
+          "column": 51,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 312,
+          "column": 33,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 440,
+          "column": 44,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 441,
+          "column": 41,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 442,
+          "column": 38,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 443,
+          "column": 39,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 444,
+          "column": 39,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 445,
+          "column": 34,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 447,
+          "column": 46,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 448,
+          "column": 36,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 449,
+          "column": 34,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 450,
+          "column": 39,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 451,
+          "column": 44,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 452,
+          "column": 41,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-f35a15f45b1714ec6178",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Analyze the input image and silently inventory all fashion-critical details: the subject(s), exact wardrobe pieces, materials, colors, textures, accessories, hair, makeup, body proportions, environment, set geometry, light direction, and shadow quality.\nAll wardrobe, styling, hair, makeup, lighting, environment must remain 100% unchanged across all frames.\nDo not add or remove anything. Do not reinterpret materials or colors. Do not output any reasoning.\nPerfectly replicate the exact facial features of the model.\nYour visible output must be:\nOne 3×3 contact sheet image (9 frames).\nThen a keyframe breakdown for each frame.\nEach frame must represent a resting point after a dramatic camera move — only describe the final camera position and what the subject is doing, never the motion itself.\nThe nine frames must be spatially dynamic, non-linear, and visually distinct.\n\nRequired 9-Frame Shot List\n1. High-Fashion Beauty Portrait (Close, Editorial, Intimate)\nCamera positioned very close to the subject's face, slightly above or slightly below eye level, using an elegant offset angle that enhances bone structure and highlights key wardrobe elements near the neckline. Shallow depth of field, flawless texture rendering, and a sculptural fashion-forward composition.\n\n2. High-Angle Three-Quarter Frame\nCamera positioned overhead but off-center, capturing the subject from a diagonal downward angle. This frame should create strong shape abstraction and reveal wardrobe details from above.\n\n3. Low-Angle Oblique Full-Body Frame\nCamera positioned low to the ground and angled obliquely toward the subject. This elongates the silhouette, emphasizes footwear, and creates a dramatic perspective distinct from Frames 1 and 2.\n\n4. Side-On Compression Frame (Long Lens)\nCamera placed far to one side of the subject, using a tighter focal length to compress space. The subject appears in clean profile or near-profile, showcasing garment structure in a flattened, editorial manner.\n\n5. Intimate Close Portrait From an Unexpected Height\nCamera positioned very close to the subject's face (or upper torso) but slightly above or slightly below eye level. The angle should feel fashion-editorial, not conventional — offset, elegant, and expressive.\n\n6. Extreme Detail Frame From a Non-Intuitive Angle\nCamera positioned extremely close to a wardrobe detail, accessory, or texture, but from an unusual spatial direction (e.g., from below, from behind, from the side of a neckline). This must be a striking, abstract, editorial detail frame.\n\n7. Wide Environmental Master Shot\nFull-body shot with significant negative space, showing the subject within the complete studio environment. Establishes spatial context and full wardrobe visibility.\n\n8. Dynamic Three-Quarter Movement Pose\nSubject captured in a fashion-forward pose from three-quarter angle, emphasizing garment drape and silhouette movement. Energy and attitude visible.\n\n9. Abstract Geometric Composition\nSubject positioned to create strong geometric lines and shapes within the frame. Fashion as architectural form, abstract editorial aesthetic.\n\nContinuity & Technical Requirements\nMaintain perfect wardrobe fidelity in every frame: exact garment type, silhouette, material, color, texture, stitching, accessories, closures, jewelry, shoes, hair, and makeup.\nEnvironment, textures, and lighting must remain consistent.\nDepth of field shifts naturally with focal length (deep for distant shots, shallow for close/detail shots).\nPhotoreal textures and physically plausible light behavior required.\nFrames must feel like different camera placements within the same scene, not different scenes.\nAll keyframes must be the exact same aspect ratio, and exactly 9 keyframes should be output. Maintain the exact visual style in all keyframes, where the image is shot on Fuji Velvia film{{FLASH_OPTION}}, the light is concentrated on the subject and fades slightly toward the edges of the frame. The skin appears shiny (almost oily), and there are harsh white reflections on the glasses frames.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 655,
+          "column": 29,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-f71466ca72fddc154fea",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Macro shot focusing on [character]'s [specific feature], extreme detail, cinematic lighting",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 430,
+          "column": 79,
+          "kind": "string-literal",
+          "functionName": "bzPaintActiveTab",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-f9153e9ac745b44f1637",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Bird's eye view overhead shot of [character] standing in landscape, directly from above",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 436,
+          "column": 84,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    },
+    {
+      "id": "text-facf4f34aee3dff0b6fa",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Macro Shot",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 430,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": "bzPaintActiveTab",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-fba0b7564fe077841b5f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Empty prompt returned.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1526,
+          "column": 44,
+          "kind": "string-literal",
+          "functionName": "bzIteratePrompt",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-fbc29029aadf57f1c4dd",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "full-body front view, eye-level",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 523,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": "updateGridReadouts",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-fd92d952db92eff57586",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Pan",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 445,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "multishot"
+    },
+    {
+      "id": "text-fea3792c456d10eaf78b",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Medium shot of [character] standing in environment, cinematic composition",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 431,
+          "column": 80,
+          "kind": "string-literal",
+          "functionName": "bzPaintActiveTab",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "owner": "multishot"
+    }
+  ]
+}

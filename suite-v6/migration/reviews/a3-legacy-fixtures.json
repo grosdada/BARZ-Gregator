@@ -1,0 +1,2143 @@
+{
+  "schemaVersion": "1.0",
+  "status": "legacy-fixture-before-astra-review",
+  "sources": [
+    {
+      "owner": "acting-gen",
+      "role": "acting-core",
+      "path": "Barzy App/public/assets/HTML/acting_gen.html",
+      "sha256": "e6c2c58e6e2d7d06f3185ce1a96fd619ea0fd4f098eab1719fea91ab9e2148e4"
+    },
+    {
+      "owner": "acting-gen",
+      "role": "dance-library",
+      "path": "Barzy App/public/assets/HTML/drunk_dance_prompts_tabs.html",
+      "sha256": "7aed0d0ce678f45f2736e4db9b24e60a7969d364040e92371f29f3be7220a549"
+    }
+  ],
+  "acting": {
+    "groupCount": 26,
+    "groups": [
+      {
+        "section": "action",
+        "category": "sport",
+        "entries": [
+          {
+            "title": "SPRINT START",
+            "text": "A person explosively launches from a crouched starting position, muscles tensing as feet dig into the ground, arms pumping in perfect opposition to legs, body leaning forward at aggressive angle, dust particles rising from the impact, captured in dramatic slow motion with shallow depth of field"
+          },
+          {
+            "title": "BASKETBALL SLAM DUNK",
+            "text": "A person soars through the air toward a basketball hoop, arm fully extended above head, ball gripped firmly, body arched backward then snapping forward with tremendous force, rim bending under impact, sweat droplets suspended in motion, powerful athletic movement frozen at peak height"
+          },
+          {
+            "title": "SOCCER BICYCLE KICK",
+            "text": "A person launches into the air horizontally, back parallel to ground, legs scissoring overhead in perfect bicycle kick motion, body rotating with balletic grace, eyes fixed on approaching ball, arms spread for balance, suspended impossibly against gravity"
+          },
+          {
+            "title": "SWIMMING DIVE",
+            "text": "A person springs from diving platform, body forming perfect streamlined arrow, arms pressed tight against ears, toes pointed, entering water with minimal splash, underwater bubbles trailing along body, graceful transition from air to liquid environment"
+          },
+          {
+            "title": "TENNIS SERVE",
+            "text": "A person coils entire body like compressed spring, ball tossed high, racket arm drawing back then whipping forward with explosive rotational power, body fully extended at contact point, feet leaving ground from sheer force, intense concentration on face"
+          },
+          {
+            "title": "SKATEBOARD KICKFLIP",
+            "text": "A person ollies off concrete, back foot flicking board into rapid horizontal spin, body floating weightlessly while board rotates beneath, arms spread for balance, knees pulling up to chest, eyes tracking spinning deck, preparing for clean catch and landing"
+          },
+          {
+            "title": "BOXING COMBINATION",
+            "text": "A person throws rapid jab-cross-hook combination, weight shifting fluidly between feet, shoulders rotating with each punch, chin tucked behind lead shoulder, gloved fists snapping out then immediately returning to guard position, sweat flying off impact"
+          },
+          {
+            "title": "GYMNAST VAULT",
+            "text": "A person sprints toward vault table, launches off springboard with explosive power, hands briefly touching apparatus, body twisting and flipping through multiple rotations, legs pressed tightly together, arms controlling spin rate, preparing for blind landing"
+          },
+          {
+            "title": "GOLF SWING",
+            "text": "A person executes perfect golf swing, club drawing back in wide arc, weight transferring from back foot to front, hips rotating ahead of shoulders, arms maintaining triangle shape, club head accelerating through impact zone, eyes remaining fixed on ball position"
+          },
+          {
+            "title": "SURFING TUBE RIDE",
+            "text": "A person crouches low on surfboard inside massive curling wave, one hand trailing in water wall, body compressed for stability, eyes fixed on tube exit, ocean spray surrounding figure, emerald water light filtering through overhead curl"
+          },
+          {
+            "title": "PARKOUR WALL RUN",
+            "text": "A person sprints toward vertical wall, first foot plants high, body momentum carrying them upward in defiance of gravity, second step pushes higher still, arms reaching for ledge above, muscles straining with effort, urban environment blurring around dynamic movement"
+          },
+          {
+            "title": "WEIGHTLIFTING CLEAN AND JERK",
+            "text": "A person explosively pulls barbell from floor to shoulders in single powerful motion, dropping under weight with lightning speed, then driving upward with legs, pressing bar overhead with locked arms, body rigid and trembling with maximum effort, veins prominent"
+          }
+        ]
+      },
+      {
+        "section": "action",
+        "category": "gun",
+        "entries": [
+          {
+            "title": "TACTICAL RELOAD",
+            "text": "A person ejects empty magazine with thumb release, fresh mag already drawn from belt, inserting with practiced precision, palm slapping baseplate to seat, slide released with sharp metallic snap, eyes never leaving forward sight picture, movements economical and drilled"
+          },
+          {
+            "title": "DUAL WIELD FIRE",
+            "text": "A person stands in wide stance, arms extended with pistol in each hand, alternating shots left-right in controlled rhythm, muzzle flash illuminating determined face, brass casings ejecting symmetrically, absorbing recoil through bent knees and firm grip"
+          },
+          {
+            "title": "SNIPER BREATH CONTROL",
+            "text": "A person lies prone behind scoped rifle, body perfectly still, finger resting gently on trigger, slow exhale visible in cold air, heartbeat slowing to minimum, eye pressed to scope, making minute windage adjustments, patience embodied in every controlled micromovement"
+          },
+          {
+            "title": "SHOTGUN PUMP ACTION",
+            "text": "A person racks shotgun pump with authoritative motion, spent shell ejecting in smoking arc, fresh round chambering with satisfying chunk, weapon shoulder-mounted, cheek welded to stock, eyes narrowing down barrel, controlled aggression in every line of body"
+          },
+          {
+            "title": "PISTOL QUICK DRAW",
+            "text": "A person's hand blurs to holstered sidearm, fingers wrapping grip as weapon clears leather, arm extending toward target, other hand slapping to support grip, sights aligning in fraction of a second, entire motion fluid and instinctive from countless repetitions"
+          },
+          {
+            "title": "RIFLE TRANSITION",
+            "text": "A person drops primary rifle on single-point sling, weapon swinging to side, hand simultaneously drawing pistol from thigh holster, arm punching out toward threat, seamless transition under pressure, maintaining visual on target throughout weapon switch"
+          },
+          {
+            "title": "TACTICAL CORNER PEEK",
+            "text": "A person slices the pie around corner edge, weapon leading, minimizing exposure while maximizing sight angle, body canted, weight on balls of feet ready to retreat or advance, systematic scanning of revealed space sector by sector"
+          },
+          {
+            "title": "RECOIL MANAGEMENT",
+            "text": "A person fires handgun in rapid succession, muzzle rise minimal through proper grip pressure, front sight tracking back to target between shots, stance athletic and aggressive, empty brass cascading, group staying tight despite speed of fire"
+          },
+          {
+            "title": "KNEELING RELOAD",
+            "text": "A person drops to one knee behind cover, weapon angled safely, fingers finding magazine by touch alone, performing combat reload without visual reference, head on swivel maintaining situational awareness, rising smoothly with fresh ammunition ready"
+          },
+          {
+            "title": "MALFUNCTION CLEARANCE",
+            "text": "A person recognizes stoppage instantly, weapon tilted for visual confirmation, tap-rack-bang drill executed with mechanical precision, palm striking magazine base, hand ripping slide fully rearward, ejecting problem, chambering fresh round, back on target in seconds"
+          },
+          {
+            "title": "SUPPRESSED SHOT",
+            "text": "A person fires suppressed weapon, reduced muzzle flash in dim light, subsonic round departing with muffled thump, shooter maintaining sight picture through follow-through, minimal disturbance to environment, precise elimination of threat with surgical efficiency"
+          },
+          {
+            "title": "ROOM ENTRY",
+            "text": "A person flows through doorway in dynamic entry, weapon up and tracking, button-hooking along wall, rapidly processing threat indicators, muzzle following eyes to corners, controlled breathing despite adrenaline, dominating space through speed and aggression"
+          }
+        ]
+      },
+      {
+        "section": "action",
+        "category": "daily",
+        "entries": [
+          {
+            "title": "MORNING COFFEE RITUAL",
+            "text": "A person stands in kitchen morning light, hands wrapped around warm mug, steam rising past contemplative face, first sip bringing visible relaxation to shoulders, eyes closing briefly in simple pleasure, bathrobe slightly disheveled, peaceful domestic moment"
+          },
+          {
+            "title": "TYPING AT DESK",
+            "text": "A person sits at computer workspace, fingers dancing across keyboard with practiced rhythm, eyes scanning screen, occasional pauses for thought, subtle head tilts and expressions reflecting on-screen content, ambient office light casting soft shadows"
+          },
+          {
+            "title": "COOKING STIR FRY",
+            "text": "A person stands at stove, wok in hand, tossing vegetables with confident flick of wrist, ingredients catching air then landing back in pan, other hand adjusting heat, steam billowing upward, focused concentration on timing and technique"
+          },
+          {
+            "title": "READING A BOOK",
+            "text": "A person reclines with open book, fingers holding pages apart, eyes moving left to right, occasional page turns with careful corner grasp, facial expressions subtly shifting with narrative, completely absorbed in written world, peaceful concentration"
+          },
+          {
+            "title": "PHONE CONVERSATION",
+            "text": "A person walks while talking on phone, free hand gesturing to emphasize invisible points, facial expressions animated despite unseen audience, pace varying with conversation energy, occasional pauses to listen with head tilted, natural communication rhythm"
+          },
+          {
+            "title": "GETTING DRESSED",
+            "text": "A person pulls shirt overhead, arms emerging through sleeves, tugging fabric down torso, turning to mirror for quick assessment, making minor adjustments to collar and hem, movements practiced and efficient, personal preparation routine"
+          },
+          {
+            "title": "WASHING DISHES",
+            "text": "A person stands at sink, soapy water and methodical scrubbing, rinsing under running water, placing items in drying rack with care, rhythmic domestic task, mind visibly elsewhere in quiet contemplation, simple satisfying work"
+          },
+          {
+            "title": "UNLOCKING DOOR",
+            "text": "A person approaches door, keys retrieved from pocket, correct key selected by feel, insertion and turn with practiced motion, door opening to reveal interior space, stepping through threshold, transition between outside and inside worlds"
+          },
+          {
+            "title": "BRUSHING TEETH",
+            "text": "A person stands at bathroom mirror, toothbrush working in circular motions, foam at corners of mouth, eyes meeting own reflection, spitting and rinsing routine, final smile check in mirror, small daily act of self-care"
+          },
+          {
+            "title": "YAWNING AND STRETCHING",
+            "text": "A person releases enormous yawn, jaw stretching wide, arms extending overhead, back arching in full-body stretch, eyes squeezing shut, all tension releasing from muscles, satisfied exhale at conclusion, body awakening or preparing for rest"
+          },
+          {
+            "title": "TYING SHOELACES",
+            "text": "A person bends down to shoe, fingers working laces with automatic precision, loops forming and tightening, standing back up with small adjustment of pant leg over ankle, ready to walk, mundane act of preparation"
+          },
+          {
+            "title": "EATING A MEAL",
+            "text": "A person sits at table with food, fork and knife working in coordination, lifting portion to mouth, chewing with appreciation, occasional pause to drink, napkin dabbing at lips, enjoying nourishment with present awareness"
+          }
+        ]
+      },
+      {
+        "section": "action",
+        "category": "interaction",
+        "entries": [
+          {
+            "title": "HANDSHAKE GREETING",
+            "text": "Two people meet with extended hands, grips clasping firmly, brief pump and release with eye contact, smiles exchanged, bodies oriented toward each other, professional warmth in posture, mutual acknowledgment of respect and greeting"
+          },
+          {
+            "title": "EMBRACE REUNION",
+            "text": "Two people rush together, arms wrapping around each other tightly, faces pressed into shoulders, bodies swaying slightly, eyes squeezed shut with emotion, relief and joy visible in every line, long-awaited connection finally fulfilled"
+          },
+          {
+            "title": "ARGUMENT CONFRONTATION",
+            "text": "Two people face each other with aggressive postures, fingers pointing, voices raised though silent, bodies leaning forward into conflict, hand gestures sharp and emphatic, emotions raw and unfiltered, tense confrontation crackling between them"
+          },
+          {
+            "title": "DANCE PARTNERS",
+            "text": "Two people move in synchronized rhythm, hands joined in proper frame, bodies flowing together through space, lead guiding with subtle pressure, follow interpreting and embellishing, wordless communication through movement, elegant partnership"
+          },
+          {
+            "title": "HELPING UP",
+            "text": "One person extends hand to another on ground, grip clasping wrist, pulling upward while other pushes, rising together, steadying wobble, brief moment of support and gratitude exchanged, simple human kindness in action"
+          },
+          {
+            "title": "WHISPERED SECRET",
+            "text": "One person leans close to another's ear, hand cupping to direct words, recipient's eyes widening with information received, conspiratorial closeness, shared knowledge binding them, visible reaction to unheard revelation"
+          },
+          {
+            "title": "HIGH FIVE CELEBRATION",
+            "text": "Two people raise hands simultaneously, palms connecting with satisfying slap at apex, shared triumph expressed, grins matching, possibly transitioning to additional gestures of celebration, energy and joy radiating from successful collaboration"
+          },
+          {
+            "title": "COMFORTING EMBRACE",
+            "text": "One person holds another who shows distress, arms wrapped protectively, hand stroking back or hair, chin resting on head, providing shelter from emotional storm, patient presence, silent support through physical closeness"
+          },
+          {
+            "title": "TEACHING DEMONSTRATION",
+            "text": "One person shows technique to another, hands guiding, correcting position, demonstrating motion then watching attempt, nodding with encouragement or adjusting errors, patient transfer of knowledge, mentor and student dynamic"
+          },
+          {
+            "title": "PLAYFUL SHOVE",
+            "text": "One person pushes another with friendly force, recipient stumbling with surprised laugh, mock offense taken, possible retaliation beginning, easy physical affection between friends, boundaries understood through years of familiarity"
+          },
+          {
+            "title": "CARRYING INJURED",
+            "text": "One person supports another with arm over shoulder, injured party limping, helper taking weight, slow careful progress together, concern on helper's face, grimace of pain on other, determination to reach safety"
+          },
+          {
+            "title": "FACE TO FACE STAREDOWN",
+            "text": "Two people stand inches apart, eyes locked unblinking, neither yielding ground, jaw muscles tight, breathing controlled, testosterone or aggression palpable in air between them, contest of wills in frozen moment"
+          }
+        ]
+      },
+      {
+        "section": "action",
+        "category": "violence",
+        "entries": [
+          {
+            "title": "PUNCH IMPACT",
+            "text": "Fist connects with jaw in explosive impact, head snapping to side, sweat and spit flying in spray pattern, knuckles compressing flesh, shockwave visible traveling through face, aggressor's arm fully extended at moment of contact"
+          },
+          {
+            "title": "TACKLE TAKEDOWN",
+            "text": "One person launches horizontally at another, shoulder driving into midsection, arms wrapping around waist, both bodies leaving ground briefly, crashing down together, attacker landing on top, wind visibly knocked from recipient"
+          },
+          {
+            "title": "KNIFE SLASH",
+            "text": "Blade arcs through space in horizontal slash, edge catching light, target recoiling backward, fabric or surface parting in blade's wake, wielder following through with committed motion, violence of edged weapon in controlled movement"
+          },
+          {
+            "title": "CHOKEHOLD STRUGGLE",
+            "text": "One person's arm wrapped around another's neck from behind, recipient's hands clawing at restricting arm, face reddening with effort, legs kicking for leverage, desperate struggle for air, dominance through positional control"
+          },
+          {
+            "title": "GROUND POUND",
+            "text": "One person mounted atop another, fists raining down in hammer strikes, recipient's arms raised defensively, head turning to avoid impacts, brutal ground fighting, dominant position exploited with striking volume"
+          },
+          {
+            "title": "HEADBUTT",
+            "text": "Person snaps head forward, forehead connecting with opponent's nose, violent close-quarters strike, hands gripping victim's collar for control, impact sending head snapping backward, primitive aggressive technique executed with commitment"
+          },
+          {
+            "title": "WALL SLAM",
+            "text": "One person shoves another against wall with both hands on chest, recipient's back hitting surface with force, head snapping back, hands grabbing attacker's wrists, pinned position of vulnerability, aggression channeled through position"
+          },
+          {
+            "title": "KICK TO STOMACH",
+            "text": "Foot drives into midsection with chambered knee snap, recipient folding over impact point, air expelled from lungs, body doubling forward, kicker's leg following through before returning to stance, devastating body blow"
+          },
+          {
+            "title": "HAIR GRAB CONTROL",
+            "text": "Hand seizes handful of hair near scalp, yanking head to angle of control, victim's face contorting with pain, neck straining at awkward position, controller maintaining leverage through grip, dominant position through painful manipulation"
+          },
+          {
+            "title": "ELBOW STRIKE",
+            "text": "Elbow drives horizontally into target, short-range devastating blow, connected arm forming perfect angle, body rotation powering strike, victim's head jerking from impact, bone meeting flesh with crushing force"
+          },
+          {
+            "title": "THROW TO GROUND",
+            "text": "One person lifts another, hip positioned under center of gravity, rotation sending victim over and down, back hitting ground with full-body impact, thrower maintaining grip through completion, martial technique executed cleanly"
+          },
+          {
+            "title": "KNEE STRIKE",
+            "text": "Knee drives upward into opponent's midsection or face, hands gripping head to pull down into rising knee, explosive collision of bone and soft tissue, victim's body snapping around impact point, thai boxing technique"
+          }
+        ]
+      },
+      {
+        "section": "action",
+        "category": "fly",
+        "entries": [
+          {
+            "title": "SUPERHERO LAUNCH",
+            "text": "Person crouches low then explodes upward, arms thrust overhead in flying position, body becoming horizontal as altitude increases, cape or clothing trailing, ground falling away rapidly below, triumphant ascension into sky"
+          },
+          {
+            "title": "HOVERING STILLNESS",
+            "text": "Person floats motionless in midair, arms relaxed at sides, hair and clothing drifting in unseen currents, serene expression of complete control, defying gravity with apparent ease, god-like suspension above ground"
+          },
+          {
+            "title": "DIVING DESCENT",
+            "text": "Person plummets headfirst toward ground, arms pressed back along body, wind distorting face, clothes rippling violently, terminal velocity approach, ground rushing up at terrifying speed, commitment to vertical drop"
+          },
+          {
+            "title": "BANKING TURN",
+            "text": "Person tilts body to angle through aerial turn, one shoulder dropping, arms adjusting for balance, arc described through clouds or sky, flight path curving smoothly, piloting body through three-dimensional space"
+          },
+          {
+            "title": "LANDING APPROACH",
+            "text": "Person descends feet-first toward landing spot, body transitioning vertical, arms spread for balance, knees bending to absorb impact, touchdown generating dust or debris ring, controlled return to earth"
+          },
+          {
+            "title": "AERIAL COMBAT DODGE",
+            "text": "Person barrel rolls through sky to avoid projectile or threat, body spinning along longitudinal axis, arms and legs tucked then extending, continuing flight path after evasion, acrobatic aerial maneuver at speed"
+          },
+          {
+            "title": "CARRYING WHILE FLYING",
+            "text": "Person holds another in arms while flying, passenger's limbs dangling, wind whipping both, flyer straining with additional weight, protective grip around precious cargo, rescue or transport through sky"
+          },
+          {
+            "title": "BURST OF SPEED",
+            "text": "Person accelerates from hover to incredible velocity, sonic boom ripple visible, body elongating into blur, air distorting around form, leaving contrail of disturbed atmosphere, explosive demonstration of flight power"
+          },
+          {
+            "title": "FLOATING MEDITATION",
+            "text": "Person sits cross-legged in lotus position while hovering, eyes closed, hands resting on knees, gentle bob in air, robes or hair floating upward, spiritual elevation made literal, peaceful levitation"
+          },
+          {
+            "title": "CRASH LANDING",
+            "text": "Person descends uncontrolled, tumbling through air, arms flailing for stability, impacting ground with body roll, skidding through dirt or debris, finally coming to rest, recovery from failed flight"
+          }
+        ]
+      },
+      {
+        "section": "action",
+        "category": "dance",
+        "entries": [
+          {
+            "title": "BREAKING WINDMILL",
+            "text": "Dancer spins on upper back, legs extended in continuous circular rotation, momentum carrying body through multiple revolutions, arms positioned to push and guide, floor work mastery demonstrated, athletic breakdance power move"
+          },
+          {
+            "title": "BALLET PIROUETTE",
+            "text": "Dancer spots and spins on single pointed foot, arms drawing in to accelerate rotation, leg extended or tucked in perfect position, multiple revolutions with unwavering vertical axis, classical technique and core strength"
+          },
+          {
+            "title": "HIP HOP ISOLATION",
+            "text": "Dancer pops chest forward while rest of body stays still, then rolls movement through torso, head tick to opposite side, robotic precision of isolated body parts, attitude and style dripping from every gesture"
+          },
+          {
+            "title": "CONTEMPORARY FLOOR ROLL",
+            "text": "Dancer descends smoothly to floor, body rolling across surface in fluid spiral, arms and legs trailing and leading, continuous motion from standing to grounded to rising, emotional expression through gravity play"
+          },
+          {
+            "title": "SALSA SPIN COMBINATION",
+            "text": "Dancer executes rapid turns on balls of feet, hips maintaining rhythm throughout, arms styling in complementary patterns, weight transfer precise and musical, latin fire expressed through technical footwork and body movement"
+          },
+          {
+            "title": "KRUMP CHEST POP",
+            "text": "Dancer explosively pops chest forward with aggressive energy, arms thrown back, face grimacing with intensity, raw power channeled through movement, street dance energy and expression, controlled release of force"
+          },
+          {
+            "title": "WALTZ BOX STEP",
+            "text": "Dancer glides through classic box step pattern, rise and fall through knees, frame held elegant and wide, sweeping across floor with partner, one-two-three rhythm visible in body, formal ballroom grace"
+          },
+          {
+            "title": "TUTTING GEOMETRIC",
+            "text": "Dancer creates angular shapes with arms and hands, ninety-degree angles maintained precisely, shapes transforming through space, finger tutting adding detail, intricate geometry carved in air, architectural body manipulation"
+          },
+          {
+            "title": "FLAMENCO ZAPATEADO",
+            "text": "Dancer's feet strike floor in rapid rhythmic pattern, heels and toes creating percussive staccato, arms held overhead with tension, proud upright carriage, passionate Spanish expression, floor as instrument"
+          },
+          {
+            "title": "VOGUING DUCKWALK",
+            "text": "Dancer drops low, walking forward in crouch, legs working in stylized pattern, arms framing face and body, fierce attitude projected, ballroom house dance culture embodied, confident strut at floor level"
+          }
+        ]
+      },
+      {
+        "section": "action",
+        "category": "vehicle",
+        "entries": [
+          {
+            "title": "MOTORCYCLE WHEELIE",
+            "text": "Rider pulls back on handlebars, front wheel rising from pavement, balance maintained through throttle and body position, bike vertical at extreme angle, engine roaring with power, controlled chaos of one-wheel riding"
+          },
+          {
+            "title": "CAR DRIFT",
+            "text": "Driver initiates controlled oversteer, rear tires breaking loose, car sliding sideways through turn, opposite lock steering applied, smoke billowing from spinning rubber, counter-steering through extended slide"
+          },
+          {
+            "title": "HELICOPTER EXIT",
+            "text": "Person steps onto helicopter skid, wind from rotors whipping hair and clothes, crouching then jumping to ground below, controlled landing, aircraft hovering nearby, transition from aerial to terrestrial"
+          },
+          {
+            "title": "SPEEDBOAT JUMP",
+            "text": "Boat launches off wave at speed, hull completely airborne, occupants gripping for stability, water spray trailing behind, suspended over ocean surface, dramatic hang time before splash-down landing"
+          },
+          {
+            "title": "MOTORCYCLE MOUNT",
+            "text": "Person swings leg over motorcycle seat, settling into riding position, hands finding grips, foot finding peg, kickstand retracted, engine already running, ready to ride, efficient boarding motion"
+          },
+          {
+            "title": "CAR DOOR EXIT",
+            "text": "Door swings open, leg extending to pavement, body rising from seated position, standing beside vehicle, door closing with satisfying thunk, arriving at destination, transition from passenger to pedestrian"
+          },
+          {
+            "title": "BICYCLE BUNNY HOP",
+            "text": "Cyclist compresses then springs upward, pulling bike with body, both wheels leaving ground simultaneously, clearing obstacle below, landing smoothly and continuing ride, technical mountain bike or BMX maneuver"
+          },
+          {
+            "title": "SKATEBOARD MANUAL",
+            "text": "Skater lifts front trucks while rolling, balancing on rear wheels, arms adjusting for equilibrium, covering distance on two wheels only, controlled wheelie of skateboarding, balance point maintained"
+          },
+          {
+            "title": "JET SKI SPRAY TURN",
+            "text": "Rider carves hard turn at speed, watercraft digging into water, massive spray roostertail arcing outward, body leaning into turn, throttle applied through exit, aquatic drifting equivalent"
+          },
+          {
+            "title": "PARACHUTE LANDING",
+            "text": "Person descends under canopy, toggles held in hands, legs pressed together and forward, flaring at last moment, feet touching down, body rolling through landing, canopy deflating behind, successful jump completed"
+          }
+        ]
+      },
+      {
+        "section": "action",
+        "category": "supernatural",
+        "entries": [
+          {
+            "title": "TELEKINESIS LIFT",
+            "text": "Person extends hand toward object, fingers spread, concentration intense, object rising from surface without contact, floating smoothly through air toward controller, mental power made visible through effect"
+          },
+          {
+            "title": "PHASING THROUGH WALL",
+            "text": "Person walks forward into solid wall, body becoming translucent at point of contact, passing through structure as if water, emerging from other side fully solid, casual transcendence of physical barriers"
+          },
+          {
+            "title": "ENERGY BALL CHARGE",
+            "text": "Hands cup together at chest level, visible energy forming between palms, light intensifying, hair and clothes reacting to power buildup, preparation for projectile attack, raw power contained momentarily"
+          },
+          {
+            "title": "SUPER SPEED BLUR",
+            "text": "Person appears as motion blur, multiple ghost images trailing, objects disturbed in passing, arriving at destination before departure seemed finished, time and space compressed through velocity"
+          },
+          {
+            "title": "INVISIBILITY FADE",
+            "text": "Person's form becomes translucent, details fading, edges blurring, figure disappearing section by section until nothing visible remains, only disturbed air or dust indicating presence, vanishing from perception"
+          },
+          {
+            "title": "SHAPESHIFTING MORPH",
+            "text": "Body contorts and flows, features melting and reforming, size shifting, skeletal structure visibly reorganizing beneath skin, emerging as entirely different form, biological transformation process"
+          },
+          {
+            "title": "TIME FREEZE GESTURE",
+            "text": "Person makes commanding gesture, everything around them stopping mid-motion, suspended raindrops or debris, other figures caught in statue poses, controller walking freely through frozen moment"
+          },
+          {
+            "title": "PORTAL CREATION",
+            "text": "Person traces circle in air, reality tearing open along path, swirling vortex forming within ring, showing different location through opening, doorway between spaces created, dimensional manipulation"
+          },
+          {
+            "title": "MIND CONTROL STARE",
+            "text": "Person locks eyes with target, subtle energy visible between gazes, target's expression going slack then shifting to compliance, will overridden, puppet strings of psychic control established"
+          },
+          {
+            "title": "HEALING TOUCH",
+            "text": "Hands hover over wound or injured person, warm light emanating from palms, damage visibly reversing, tissues knitting together, color returning to face, miraculous restoration through supernatural contact"
+          }
+        ]
+      },
+      {
+        "section": "emotion",
+        "category": "joy",
+        "entries": [
+          {
+            "title": "ECSTATIC CELEBRATION",
+            "text": "Person throws arms overhead, head tilted back, enormous smile stretching face, jumping slightly, body radiating pure elation, eyes squeezed shut in overwhelming happiness, uncontained emotional release"
+          },
+          {
+            "title": "QUIET CONTENTMENT",
+            "text": "Person sits with soft smile, eyes gently closed, shoulders relaxed, breathing slow and deep, subtle satisfaction visible in every feature, peaceful internal state reflected outward, serenity embodied"
+          },
+          {
+            "title": "SURPRISED DELIGHT",
+            "text": "Eyes widen, mouth drops open then curves into huge smile, hands rising to cheeks in surprise, small laugh escaping, posture straightening with pleasant shock, unexpected joy breaking through"
+          },
+          {
+            "title": "CHILDLIKE GLEE",
+            "text": "Person bounces on heels, clapping hands together rapidly, wide innocent grin, eyes sparkling with unfiltered excitement, energy barely contained, pure uncomplicated happiness of youth"
+          },
+          {
+            "title": "TRIUMPH FIST PUMP",
+            "text": "Fist clenches and drives downward, face contorted in victorious yell, other arm bent at side, knees slightly bent in power stance, achievement celebrated with primal display"
+          },
+          {
+            "title": "WARM SMILE RECOGNITION",
+            "text": "Eyes light up recognizing someone, smile spreading naturally across face, slight head tilt of affection, warmth radiating from expression, genuine pleasure at seeing loved one"
+          },
+          {
+            "title": "LAUGHING FIT",
+            "text": "Person doubled over, arms wrapped around stomach, eyes watering, face reddened, gasping for breath between laughs, unable to stop, complete surrender to hilarity"
+          },
+          {
+            "title": "GRATEFUL RELIEF",
+            "text": "Eyes close, deep breath released, hand pressing against chest, tension draining from shoulders, small smile of profound thankfulness, weight lifted visible in posture change"
+          },
+          {
+            "title": "DANCING IN PLACE",
+            "text": "Person sways and bounces to unheard music, arms moving freely, silly smile, eyes closed, lost in moment of personal joy, spontaneous physical expression of happiness"
+          },
+          {
+            "title": "PROUD BEAM",
+            "text": "Chest swells, chin lifts slightly, broad satisfied smile, eyes bright with accomplishment, standing taller, basking in earned moment of pride, confidence radiating outward"
+          }
+        ]
+      },
+      {
+        "section": "emotion",
+        "category": "sadness",
+        "entries": [
+          {
+            "title": "QUIET WEEPING",
+            "text": "Tears roll down cheeks silently, eyes red and glistening, lips pressed tightly together, slight trembling, trying to contain emotion, private grief barely suppressed"
+          },
+          {
+            "title": "SOBBING BREAKDOWN",
+            "text": "Person's face crumples completely, shoulders shaking with sobs, hands covering face, body curling inward, gasping cries, complete emotional collapse and release"
+          },
+          {
+            "title": "DISTANT MELANCHOLY",
+            "text": "Eyes stare unfocused into distance, face slack, heavy lidded gaze, shoulders slumped, presence elsewhere in memory or thought, isolated within sadness"
+          },
+          {
+            "title": "FIGHTING TEARS",
+            "text": "Eyes well up, jaw clenched, rapid blinking to hold back, deep steadying breaths, refusing to let tears fall, struggling to maintain composure against rising emotion"
+          },
+          {
+            "title": "GRIEF OVERWHELM",
+            "text": "Person sinks to ground, arms wrapped around self, face buried in knees, rocking gently, world collapsed to bubble of pain, profound loss made physical"
+          },
+          {
+            "title": "BITTERSWEET SMILE",
+            "text": "Sad smile plays at lips, eyes shining with unshed tears, mixture of fondness and sorrow, remembering something precious that's gone, pain and love intertwined"
+          },
+          {
+            "title": "EXHAUSTED SORROW",
+            "text": "Person sits slumped, cried out, face drawn and pale, staring at nothing, beyond tears, emptied by grief, hollowed shell waiting for strength to return"
+          },
+          {
+            "title": "ACCEPTING RESIGNATION",
+            "text": "Deep sigh, eyes closing briefly then opening with clarity, shoulders settling, small nod to self, coming to terms with painful truth, surrender visible in release"
+          },
+          {
+            "title": "LONELY LONGING",
+            "text": "Hand reaches out toward empty space, face aching with want, imagining presence that isn't there, physical gesture toward absent comfort, yearning made visible"
+          },
+          {
+            "title": "SUPPRESSED PAIN",
+            "text": "Surface appears calm but micro-expressions betray turmoil, slight downturn of mouth, tension in jaw, carefully controlled exterior over deep interior hurt, mask barely holding"
+          }
+        ]
+      },
+      {
+        "section": "emotion",
+        "category": "anger",
+        "entries": [
+          {
+            "title": "EXPLOSIVE RAGE",
+            "text": "Face contorted in fury, veins prominent in neck and forehead, teeth bared, fists clenched at sides trembling, coiled violence barely restrained, volcanic pressure visible"
+          },
+          {
+            "title": "COLD FURY",
+            "text": "Expression utterly still, eyes hard as stone, voice would be quiet and measured, dangerous calm, anger compressed to deadly intensity, more frightening than shouting"
+          },
+          {
+            "title": "FRUSTRATED OUTBURST",
+            "text": "Hands thrown up in air, eyes rolling, exhale of exasperation, jaw tight, looking away in disbelief, boiling point reached after accumulated irritation"
+          },
+          {
+            "title": "SIMMERING RESENTMENT",
+            "text": "Lips pressed thin, eyes narrowed slightly, subtle tension in shoulders, anger contained but evident, watching with smoldering disapproval, banked coals of grudge"
+          },
+          {
+            "title": "RIGHTEOUS INDIGNATION",
+            "text": "Chin lifted, eyes blazing, stance squared and aggressive, fury born of injustice witnessed, moral outrage powering confrontational posture, anger justified and owned"
+          },
+          {
+            "title": "FRUSTRATED SELF-ANGER",
+            "text": "Person hits own forehead with palm, face scrunched in self-recrimination, head shaking, angry at own failure, disappointment in self manifest, internal critic externalized"
+          },
+          {
+            "title": "THREATENING ADVANCE",
+            "text": "Person steps forward aggressively, finger pointing, face set in warning, invading personal space, physical intimidation through posture and proximity, violence imminent"
+          },
+          {
+            "title": "BITTER SCOFF",
+            "text": "Sharp exhale through nose, mouth twisting in contempt, eye roll, dismissive head shake, anger expressed through mockery and rejection, scornful disdain"
+          },
+          {
+            "title": "TREMBLING RESTRAINT",
+            "text": "Entire body vibrating with suppressed rage, fists clenching and unclenching, deep breaths forced through gritted teeth, enormous effort to not act on fury"
+          },
+          {
+            "title": "WOUNDED ANGER",
+            "text": "Eyes bright with angry tears, voice would crack, hurt transmuting to rage, betrayal fueling fire, vulnerability protected by aggression, pain becoming weapon"
+          }
+        ]
+      },
+      {
+        "section": "emotion",
+        "category": "fear",
+        "entries": [
+          {
+            "title": "FROZEN TERROR",
+            "text": "Body completely rigid, eyes wide and unblinking, breath held, color drained from face, deer in headlights paralysis, mind overloaded by threat, unable to move"
+          },
+          {
+            "title": "PANICKED FLIGHT",
+            "text": "Eyes wild and darting, body already in motion backward, arms raised defensively, breath coming in gasps, desperate need to escape, survival instinct overriding thought"
+          },
+          {
+            "title": "CREEPING DREAD",
+            "text": "Slow turn of head toward source of unease, goosebumps visible, swallow of dry throat, dawning horror spreading across features, growing realization of danger"
+          },
+          {
+            "title": "STARTLED JUMP",
+            "text": "Body jerks violently, hands flying up, sharp intake of breath, eyes snapping wide, brief moment of shock before recognition, heart-racing surprise response"
+          },
+          {
+            "title": "TREMBLING ANTICIPATION",
+            "text": "Hands shaking visibly, unable to keep still, eyes fixed on threat source, small whimper escaping, knowing something bad approaches, powerless waiting"
+          },
+          {
+            "title": "CORNERED DESPERATION",
+            "text": "Back pressed against wall, hands up in surrender or defense, eyes searching for escape, breathing rapid and shallow, trapped animal energy, last resort approaching"
+          },
+          {
+            "title": "ANXIOUS SCANNING",
+            "text": "Head swiveling constantly, eyes never resting, hypervigilant posture, starting at small sounds, expecting threat from any direction, exhausting state of alertness"
+          },
+          {
+            "title": "HORRIFIED REALIZATION",
+            "text": "Moment of terrible understanding crossing face, blood draining from cheeks, hand rising slowly to mouth, eyes widening progressively, awful truth sinking in"
+          },
+          {
+            "title": "NIGHTMARISH RECOIL",
+            "text": "Body curling away from horror, face averted, hands pushing against unseen terror, disgust and fear mingled, visceral rejection of witnessed atrocity"
+          },
+          {
+            "title": "QUIET PARANOIA",
+            "text": "Eyes slide sideways without head moving, tension in shoulders, artificially casual pose, awareness of being watched, fear masked but not absent, careful facade"
+          }
+        ]
+      },
+      {
+        "section": "emotion",
+        "category": "surprise",
+        "entries": [
+          {
+            "title": "SHOCK FREEZE",
+            "text": "Body stops mid-motion, eyes wide, mouth slightly open, processing unexpected input, brain catching up to perception, moment of pure unfiltered reaction"
+          },
+          {
+            "title": "DELIGHTED GASP",
+            "text": "Hands fly to face, sharp intake of breath, eyes sparkling, smile beginning to form, positive shock at wonderful unexpected news, joy and surprise combined"
+          },
+          {
+            "title": "DOUBLE TAKE",
+            "text": "Head snaps back to something already passed, eyes narrowing then widening, disbelief requiring second look, brain rejecting first perception, confirmation sought"
+          },
+          {
+            "title": "SPEECHLESS STAMMER",
+            "text": "Mouth opens and closes, no words emerging, hands gesturing vaguely, overwhelmed by unexpected revelation, trying and failing to respond verbally"
+          },
+          {
+            "title": "COMICAL SPIT-TAKE",
+            "text": "Eyes bulge at information received, liquid sprays from mouth involuntarily, coughing and spluttering, shock overriding motor control, physical comedy of surprise"
+          },
+          {
+            "title": "AWE-STRUCK WONDER",
+            "text": "Head tilts back to take in something vast, mouth drops open, eyes wide and moving to encompass scale, overcome by magnificent unexpected sight"
+          },
+          {
+            "title": "BETRAYED DISBELIEF",
+            "text": "Shake of head, eyes searching other's face for joke, step backward, realization that truth is being spoken, world shifting on axis, certainties crumbling"
+          },
+          {
+            "title": "STUNNED BLINKING",
+            "text": "Rapid blinking, head slightly back, mouth forming words not spoken, brain rebooting after shock, slow return to normal processing, aftershock of surprise"
+          },
+          {
+            "title": "DRAMATIC FLINCH",
+            "text": "Whole body jerks backward, arms flying up defensively, face turning away, anticipating impact that may not come, exaggerated startle response"
+          },
+          {
+            "title": "CONFUSED SQUINT",
+            "text": "Eyes narrowing, head tilting, one eyebrow raised, trying to process unexpected information, suspicion that prank is occurring, skeptical surprise"
+          }
+        ]
+      },
+      {
+        "section": "emotion",
+        "category": "love",
+        "entries": [
+          {
+            "title": "ADORING GAZE",
+            "text": "Eyes soft and locked on beloved, slight smile playing at lips, complete attention and presence, rest of world fading away, devotion visible in every feature"
+          },
+          {
+            "title": "TENDER TOUCH",
+            "text": "Hand reaching to gently cup face, thumb brushing cheek, eyes full of warmth, protective affection flowing through careful contact, intimate gentle moment"
+          },
+          {
+            "title": "YEARNING REACH",
+            "text": "Arm extended toward distant beloved, fingers stretching, expression aching with want, physical manifestation of heart's pull, desire to close impossible distance"
+          },
+          {
+            "title": "COMFORTABLE LEAN",
+            "text": "Body relaxing against another, head finding shoulder, eyes closing in contentment, trust allowing vulnerability, perfect comfort in beloved's presence"
+          },
+          {
+            "title": "PROTECTIVE EMBRACE",
+            "text": "Arms wrapped around other tightly, chin resting on head, eyes scanning for threats, body positioned as shield, fierce love expressed through guarding stance"
+          },
+          {
+            "title": "FLIRTATIOUS GLANCE",
+            "text": "Eyes sliding sideways with knowing look, small smile hinting at secrets, subtle invitation, playful romantic energy, communication through loaded eye contact"
+          },
+          {
+            "title": "OVERFLOWING EMOTION",
+            "text": "Eyes filling with happy tears, hand pressed to heart, overwhelmed by depth of feeling, love too large to contain, beautiful pain of profound connection"
+          },
+          {
+            "title": "NERVOUS CONFESSION",
+            "text": "Eyes down then darting up, fidgeting hands, deep breath before words, vulnerability of offering heart, fear and hope in equal measure, moment before revelation"
+          },
+          {
+            "title": "REUNION RUSH",
+            "text": "Body leaning forward, about to run, face lit with recognition and joy, arms beginning to open, anticipation of embrace, love manifesting as kinetic energy"
+          },
+          {
+            "title": "CONTENTED SIGH",
+            "text": "Deep exhale, eyes closing, small smile, shoulders dropping in total relaxation, state of being loved and loving, perfect momentary peace, gratitude for connection"
+          }
+        ]
+      },
+      {
+        "section": "emotion",
+        "category": "confusion",
+        "entries": [
+          {
+            "title": "BEWILDERED STARE",
+            "text": "Eyes unfocused, mouth slightly open, head tilted, brain visibly churning to understand, complete lack of comprehension, lost in processing failure"
+          },
+          {
+            "title": "FRUSTRATED PUZZLEMENT",
+            "text": "Hands running through hair, grimace of effort, eyes squeezed shut then opened wide, problem defeating understanding, irritated confusion at mental block"
+          },
+          {
+            "title": "QUESTIONING TILT",
+            "text": "Head cocking to one side like curious dog, eyebrow raised, waiting for explanation that makes sense, polite confusion requesting clarity"
+          },
+          {
+            "title": "DAZED DISORIENTATION",
+            "text": "Swaying slightly, blinking rapidly, looking around without recognition, trouble locating self in space and time, fog of confusion clouding perception"
+          },
+          {
+            "title": "CONTRADICTED DOUBLE-CHECK",
+            "text": "Looking between two things that shouldn't both be true, shake of head, rubbing eyes, refusing to accept paradox, logic failing against reality"
+          },
+          {
+            "title": "OVERWHELMED OVERLOAD",
+            "text": "Hands pressing temples, eyes squeezed shut, too much information attacking at once, brain demanding pause, sensory or cognitive flooding visible"
+          },
+          {
+            "title": "SUSPICIOUS SCRUTINY",
+            "text": "Eyes narrowed, leaning forward slightly, something not adding up, searching for hidden meaning, confusion tinged with distrust, parsing for deception"
+          },
+          {
+            "title": "HELPLESS SHRUG",
+            "text": "Shoulders rising and staying raised, palms turned upward, mouth forming rueful expression, admitting complete lack of understanding, surrendering to confusion"
+          },
+          {
+            "title": "SCATTERED ATTENTION",
+            "text": "Eyes jumping between multiple points, mouth starting words then stopping, thoughts visibly fragmenting, unable to focus on single thread, mental chaos"
+          },
+          {
+            "title": "SLOW DAWNING",
+            "text": "Gradual change crossing face, confusion slowly resolving to understanding, eyes widening slightly, pieces connecting, fog lifting incrementally, clarity approaching"
+          }
+        ]
+      },
+      {
+        "section": "emotion",
+        "category": "contempt",
+        "entries": [
+          {
+            "title": "DISMISSIVE SNEER",
+            "text": "Upper lip curling on one side, eyes rolling upward briefly, chin lifting, complete disdain radiating outward, not worth full attention, beneath consideration"
+          },
+          {
+            "title": "CONDESCENDING SMILE",
+            "text": "Tight fake smile, eyes cold and pitying, head tilting in mock sympathy, superiority barely veiled, insulting kindness, domination through patronizing manner"
+          },
+          {
+            "title": "COLD SHOULDER TURN",
+            "text": "Head turning deliberately away, chin raising, physical dismissal of unworthy presence, denying existence through orientation, cutting rejection without words"
+          },
+          {
+            "title": "MOCKING SLOW CLAP",
+            "text": "Hands coming together in exaggerated slow applause, fake impressed expression, sarcasm dripping from every gesture, celebration of other's failure, cruel humor"
+          },
+          {
+            "title": "DISGUSTED ONCE-OVER",
+            "text": "Eyes traveling slowly from top to bottom, upper lip rising, finding lacking with every inch, assessment ending in dismissal, dissection through gaze"
+          },
+          {
+            "title": "BORED EXAMINATION",
+            "text": "Half-lidded eyes, stifled yawn, checked attention, other proves unstimulating, too dull to engage with, profound lack of interest communicated"
+          },
+          {
+            "title": "PITYING HEAD SHAKE",
+            "text": "Slow side-to-side head movement, slight smile of sad amusement, too pathetic to anger, inspiring only disappointed contempt, beyond redemption"
+          },
+          {
+            "title": "TRIUMPHANT SMIRK",
+            "text": "One corner of mouth raised, eyes bright with satisfaction, enjoying other's misfortune or defeat, contempt mixed with victory, superior position savored"
+          },
+          {
+            "title": "ICY POLITENESS",
+            "text": "Perfect formal posture, micro-smile, eyes dead, courtesy weaponized, contempt expressed through excessive correctness, passive aggressive chill"
+          },
+          {
+            "title": "SCOFFING DISBELIEF",
+            "text": "Sharp exhalation, head jerking back slightly, expression of finding something ridiculous, not worthy of serious response, contempt at absurdity"
+          }
+        ]
+      },
+      {
+        "section": "sfx",
+        "category": "transform",
+        "entries": [
+          {
+            "title": "WEREWOLF SHIFT",
+            "text": "Body contorting, bones cracking and reforming under skin, face elongating into snout, fur sprouting across flesh, clothing tearing, fingers becoming claws, painful metamorphosis"
+          },
+          {
+            "title": "AGING FORWARD",
+            "text": "Youth draining from face, wrinkles spreading like cracks, hair graying and thinning, posture stooping, decades passing in seconds, time ravaging form visibly"
+          },
+          {
+            "title": "STONE TO FLESH",
+            "text": "Gray stone surface warming to pink, rigidity becoming flexibility, details sharpening to living tissue, first breath expanding newly soft chest, statue awakening"
+          },
+          {
+            "title": "SIZE SHRINKING",
+            "text": "Body compressing, surroundings growing larger, clothes becoming loose then engulfing, perspective shifting as ground rises, diminishing into miniature scale"
+          },
+          {
+            "title": "GENDER MORPH",
+            "text": "Features smoothing then reforming, body proportions shifting, curves appearing or disappearing, face restructuring, complete physical transition between forms"
+          },
+          {
+            "title": "CYBORG REVELATION",
+            "text": "Skin peeling back to reveal machinery beneath, eye replaced by glowing lens, limb showing metallic endoskeleton, human facade falling away, hybrid nature exposed"
+          },
+          {
+            "title": "DISSOLVING TO PARTICLES",
+            "text": "Edges of form beginning to scatter, body breaking into millions of floating particles, consciousness distributed across cloud of self, losing cohesion gradually"
+          },
+          {
+            "title": "CLONE SPLITTING",
+            "text": "Form beginning to stretch and separate, single body dividing into two complete copies, moment of shared confusion, then independent existence, mitosis of self"
+          },
+          {
+            "title": "LIQUID METAL REFORM",
+            "text": "Body melting into quicksilver puddle, then rising and reshaping into different form, features flowing into new configuration, terminator-style reformation"
+          },
+          {
+            "title": "BUTTERFLY METAMORPHOSIS",
+            "text": "Cocoon wrapping around figure, pulsing with internal change, shell cracking and falling away, transformed being emerging with new appendages or form, beautiful rebirth"
+          }
+        ]
+      },
+      {
+        "section": "sfx",
+        "category": "magic",
+        "entries": [
+          {
+            "title": "SPELL CASTING GESTURE",
+            "text": "Hands weaving intricate patterns, arcane symbols tracing in glowing lines, energy building between palms, words of power shaping visible effect, magical working manifest"
+          },
+          {
+            "title": "SUMMONING CIRCLE",
+            "text": "Geometric pattern blazing on ground, entity forming from nothing at center, light building then coalescing, something answering the call, arrival from elsewhere"
+          },
+          {
+            "title": "PROTECTIVE BARRIER",
+            "text": "Dome of force expanding from gesture, impacts splashing against invisible surface, protected space established, attacks deflecting away, magical shield active"
+          },
+          {
+            "title": "ENCHANTMENT ANIMATION",
+            "text": "Ordinary object beginning to move independently, personality emerging in motion, brought to life by magical energy, inanimate becoming animate, spell breathing life"
+          },
+          {
+            "title": "POWER ABSORPTION",
+            "text": "Energy streaming from external source into person, body glowing with accumulated power, growing stronger visibly, draining from surroundings, vampiric magical feeding"
+          },
+          {
+            "title": "ASTRAL PROJECTION",
+            "text": "Translucent form rising from physical body, connected by silver thread, spirit self looking down at abandoned flesh, two versions existing simultaneously"
+          },
+          {
+            "title": "BANISHING FLASH",
+            "text": "Blinding burst of light, evil presence screaming and dissolving, holy or magical force overwhelming darkness, purifying radiance scouring clean, exorcism completed"
+          },
+          {
+            "title": "CURSE MANIFESTATION",
+            "text": "Dark energy coiling around victim, seeping into pores, visible change beginning, malicious magic taking hold, negative transformation starting, hex landing"
+          },
+          {
+            "title": "ILLUSION SHATTERING",
+            "text": "False reality cracking like glass, pieces falling away, truth revealed behind facade, everything believed suddenly shown as false, veil lifting violently"
+          },
+          {
+            "title": "MEMORY EXTRACTION",
+            "text": "Glowing strand being pulled from temple, containing visible images of past, thoughts made tangible and removable, mind violation for information, psychic theft"
+          }
+        ]
+      },
+      {
+        "section": "sfx",
+        "category": "glitch",
+        "entries": [
+          {
+            "title": "DIGITAL STUTTER",
+            "text": "Form freezing then jumping forward, frames skipping, position resetting slightly, reality buffering, existence lagging, temporal glitch in personal timeline"
+          },
+          {
+            "title": "CORRUPTED FEATURES",
+            "text": "Face scrambling into visual noise, features rearranging wrong, digital artifacts spreading, pixels scattering, identity losing coherence, data degradation"
+          },
+          {
+            "title": "REALITY TEAR",
+            "text": "Environment ripping like torn screen, void or different location visible through crack, edges of break flickering, fundamental error in existence, dimensional bug"
+          },
+          {
+            "title": "DUPLICATION ARTIFACT",
+            "text": "Afterimages trailing from movement, multiple copies existing briefly, ghost versions overlapping, motion blur taken literal, echo forms haunting"
+          },
+          {
+            "title": "COLOR CHANNEL SPLIT",
+            "text": "Form separating into RGB components, each color slightly offset, chromatic aberration made physical, visual identity fragmenting, perception error"
+          },
+          {
+            "title": "AUDIO DESYNC",
+            "text": "Mouth moving but expressions wrong for words that would come, visual leading or lagging sound, lip sync failure, temporal mismatch between senses"
+          },
+          {
+            "title": "CLIPPING ERROR",
+            "text": "Body passing through solid object incorrectly, embedded in wall or floor, phasing partially, collision detection failure, boundaries ignored wrongly"
+          },
+          {
+            "title": "TEXTURE POP",
+            "text": "Low resolution version suddenly snapping to high detail, features clarifying instantaneously, LOD switching visible, quality jumping without transition"
+          },
+          {
+            "title": "SCREEN TEAR",
+            "text": "Horizontal line cutting across form, portions offset from each other, sync failure visible, scanning error, reality frame rate showing"
+          },
+          {
+            "title": "RECURSIVE LOOP",
+            "text": "Same action repeating identically, stuck in cycle, attempting to proceed but resetting, broken record of existence, error state unescapable"
+          }
+        ]
+      },
+      {
+        "section": "sfx",
+        "category": "particle",
+        "entries": [
+          {
+            "title": "DUST MOTES FLOATING",
+            "text": "Millions of tiny particles drifting lazily in light beams, catching illumination, atmosphere made visible, dreamy suspended moment, air given substance"
+          },
+          {
+            "title": "EMBER RISE",
+            "text": "Glowing orange particles floating upward, heat made visible, fire's breath ascending, each spark briefly bright then fading, combustion's airborne children"
+          },
+          {
+            "title": "SNOW FALL",
+            "text": "White flakes descending in varied patterns, some swirling in eddies, accumulating on surfaces, cold beauty drifting down, winter particulate"
+          },
+          {
+            "title": "POLLEN BURST",
+            "text": "Cloud of particles exploding from source, spreading outward, catching light, hovering then slowly settling, reproductive dust dispersing, spring explosion"
+          },
+          {
+            "title": "SPARKLE TRAIL",
+            "text": "Glittering particles following motion, magical residue of movement, light catching countless points, fairy dust wake, enchanted particle stream"
+          },
+          {
+            "title": "ASH DRIFT",
+            "text": "Gray flakes falling and settling, remnants of destruction, coating everything with death, aftermath particles, devastation made tangible, burnt memory"
+          },
+          {
+            "title": "BUBBLE FLOAT",
+            "text": "Iridescent spheres drifting on currents, surfaces showing rainbow swirls, fragile and beautiful, popping or escaping, soap film particles ascending"
+          },
+          {
+            "title": "SAND STREAM",
+            "text": "Grains flowing like liquid, pouring between fingers or through hourglass, each particle distinct yet part of flow, time made visible, granular cascade"
+          },
+          {
+            "title": "SPORE CLOUD",
+            "text": "Organic particles puffing into air, mushroom or plant release, biological dispersal, alien or natural, propagation particles seeking new ground"
+          },
+          {
+            "title": "CONFETTI BURST",
+            "text": "Colorful paper pieces exploding outward, celebration materialized, slowly fluttering down, festive particle shower, joy expressed in paper rain"
+          }
+        ]
+      },
+      {
+        "section": "sfx",
+        "category": "light",
+        "entries": [
+          {
+            "title": "LENS FLARE SWEEP",
+            "text": "Hexagonal light artifacts streaming across frame, source moving, rainbow edges catching, cinema language of powerful light, optical system reacting visibly"
+          },
+          {
+            "title": "VOLUMETRIC GOD RAYS",
+            "text": "Solid beams of light cutting through atmosphere, dust making illumination visible, divine or dramatic lighting, shafts of radiance piercing darkness"
+          },
+          {
+            "title": "NEON GLOW PULSE",
+            "text": "Electric light intensifying then fading rhythmically, colored illumination breathing, urban artificial heartbeat, signage living, gas tube fluctuation"
+          },
+          {
+            "title": "BIOLUMINESCENCE WAVE",
+            "text": "Living light sweeping through organism or environment, natural glow spreading like fire, biological illumination, deep sea or alien light, organic radiance"
+          },
+          {
+            "title": "LIGHTNING STRIKE",
+            "text": "Brilliant branching bolt connecting sky to ground, momentary day from night, thunder implied, raw electrical discharge, nature's flash photography"
+          },
+          {
+            "title": "LASER BEAM CUT",
+            "text": "Intense coherent light slicing through space, material splitting in its path, perfect straight line of destruction, focused photon stream, industrial or weapon light"
+          },
+          {
+            "title": "HOLOGRAM FLICKER",
+            "text": "Three-dimensional light construct wavering, scan lines visible, transparency varying, technological ghost image, projected presence glitching, hard light struggling"
+          },
+          {
+            "title": "SUNRISE WARMTH",
+            "text": "Golden light spreading across scene, shadows retreating, colors warming, new day's first illumination, hope made visible, darkness yielding to dawn"
+          },
+          {
+            "title": "STROBE FLASH",
+            "text": "Rapid alternation of light and dark, motion frozen in staccato frames, disorienting pulse, each flash a still photograph, perception attacked by frequency"
+          },
+          {
+            "title": "BLACKLIGHT REVELATION",
+            "text": "Ultraviolet causing hidden things to glow, secret messages or substances revealed, invisible made visible, forensic or psychedelic illumination, hidden world exposed"
+          }
+        ]
+      },
+      {
+        "section": "sfx",
+        "category": "distortion",
+        "entries": [
+          {
+            "title": "HEAT SHIMMER",
+            "text": "Air rippling with thermal disturbance, background warping through convection, mirage effect localized, reality melting in hot air, vision swimming"
+          },
+          {
+            "title": "GRAVITATIONAL LENS",
+            "text": "Space bending around massive point, light curving around gravity well, background stretched and smeared, physics made visible, spacetime curvature"
+          },
+          {
+            "title": "REFLECTION WARP",
+            "text": "Mirror or water surface showing distorted version, funhouse stretching and compressing, identity twisted in reflection, warped double mocking"
+          },
+          {
+            "title": "FISHEYE BULGE",
+            "text": "Center expanding, edges compressing, extreme wide-angle distortion, spatial relationships warped, omnidirectional view cramped into frame"
+          },
+          {
+            "title": "MOTION BLUR STREAK",
+            "text": "Fast movement leaving smeared trail, form elongated in direction of travel, speed made visible through blur, temporal integration showing path"
+          },
+          {
+            "title": "PERSPECTIVE BREAK",
+            "text": "Impossible angles coexisting, Escher-like violation of viewpoint rules, multiple perspectives simultaneous, reality's geometry rebelling, visual paradox"
+          },
+          {
+            "title": "UNDERWATER RIPPLE",
+            "text": "Light bending through moving water surface, caustic patterns flowing, subaquatic vision wavering, refraction dancing, below surface perception"
+          },
+          {
+            "title": "SONIC BOOM WAVE",
+            "text": "Visible compression wave expanding from source, air itself reacting, pressure front distorting light passage, sound made visible through atmospheric impact"
+          },
+          {
+            "title": "DIMENSIONAL FOLD",
+            "text": "Space folding like paper, distant points suddenly adjacent, shortcuts through reality, origami universe, geometry cheating distance"
+          },
+          {
+            "title": "TIME DILATION ZONE",
+            "text": "Movement at different speeds in same frame, some things flowing normally while others crawl or race, temporal differential visible, time zones adjacent"
+          }
+        ]
+      },
+      {
+        "section": "sfx",
+        "category": "elemental",
+        "entries": [
+          {
+            "title": "FIRE ENGULF",
+            "text": "Flames spreading across surface, consuming and transforming, heat distortion visible, orange and yellow dancing, destruction beautiful and terrifying, combustion claiming"
+          },
+          {
+            "title": "ICE CRYSTALLIZATION",
+            "text": "Frost spreading from point of contact, surface crackling with cold, intricate crystal patterns forming, temperature dropping visibly, freeze claiming space"
+          },
+          {
+            "title": "WATER MANIPULATION",
+            "text": "Liquid rising against gravity, forming shapes mid-air, controlled by unseen force, flowing without container, element obeying will, aquatic defiance"
+          },
+          {
+            "title": "STONE ERUPTION",
+            "text": "Ground breaking upward, rock spears emerging, earth itself attacking, geological violence instant, tectonic power unleashed, ground becoming weapon"
+          },
+          {
+            "title": "WIND VORTEX",
+            "text": "Air becoming visible through debris spiral, pressure differential creating funnel, pulling and pushing, invisible made lethal, atmosphere weaponized"
+          },
+          {
+            "title": "ELECTRICITY ARC",
+            "text": "Blue-white crackling energy jumping between points, ionization visible, dangerous beautiful discharge, contained lightning, power barely controlled"
+          },
+          {
+            "title": "PLANT GROWTH SURGE",
+            "text": "Vegetation expanding rapidly, vines reaching and grasping, flowers blooming in seconds, nature accelerated, green reclaiming, life force overflowing"
+          },
+          {
+            "title": "METAL MAGNETISM",
+            "text": "Ferrous objects pulling toward point, iron filing patterns forming, magnetic force visualized, polarized attraction, invisible force made obvious"
+          },
+          {
+            "title": "SMOKE BILLOWING",
+            "text": "Dense clouds rolling outward, obscuring and choking, fire's dark companion, visibility dying, atmosphere thickening, combustion byproduct spreading"
+          },
+          {
+            "title": "LAVA FLOW",
+            "text": "Molten rock oozing forward, glowing orange cracks, surface cooling to black while interior burns, earth's blood emerging, slow unstoppable destruction"
+          }
+        ]
+      },
+      {
+        "section": "sfx",
+        "category": "destruction",
+        "entries": [
+          {
+            "title": "GLASS SHATTER",
+            "text": "Transparent surface fragmenting into thousands of pieces, each shard catching light, slow motion spray of fragments, previously solid now airborne, crystalline explosion"
+          },
+          {
+            "title": "BUILDING COLLAPSE",
+            "text": "Structure failing floor by floor, walls crumbling inward, dust cloud rising, engineering defeat, constructed order returning to chaos, urban demolition"
+          },
+          {
+            "title": "EXPLOSION BLAST",
+            "text": "Fireball expanding outward, shockwave visible in distorted air, debris ejecting in all directions, destructive energy released, violent expansion"
+          },
+          {
+            "title": "IMPACT CRATER",
+            "text": "Ground deforming from massive strike, material ejecting upward and outward, bowl forming in surface, evidence of tremendous force, geological instant scarring"
+          },
+          {
+            "title": "METAL TEAR",
+            "text": "Steel ripping like paper, impossible force shredding industrial material, jagged edges revealing failure, strength overcome, structural integrity violated"
+          },
+          {
+            "title": "WOOD SPLINTER",
+            "text": "Wooden object breaking along grain, fibers separating violently, organic material failing, natural structure overcome, botanical violence"
+          },
+          {
+            "title": "FABRIC RIP",
+            "text": "Cloth tearing along stress point, threads separating, material failing, controlled creation becoming chaos, textile destruction, weave undone"
+          },
+          {
+            "title": "CHAIN REACTION",
+            "text": "One destruction causing next, domino effect of failure, compounding damage spreading, initial incident multiplying, cascade of chaos"
+          },
+          {
+            "title": "DISINTEGRATION",
+            "text": "Object breaking into smaller pieces continuously, structure failing at every level, matter coming apart, existence ending through subdivision"
+          },
+          {
+            "title": "IMPLOSION CRUSH",
+            "text": "Form collapsing inward, external pressure overwhelming structure, shrinking violently to point, opposite of explosion, suction of destruction"
+          }
+        ]
+      },
+      {
+        "section": "sfx",
+        "category": "morph",
+        "entries": [
+          {
+            "title": "MORPH ORGANIQUE NATUREL",
+            "text": "A seamless organic morph transformation, soft biological textures flowing like living cells, gradual cellular dissolution and reformation, natural growth patterns, breathing tissue-like transitions, smooth gradient blending, no hard edges"
+          },
+          {
+            "title": "MORPH GÉOMÉTRIQUE INTELLIGENT",
+            "text": "Intelligent geometric morph utilizing shared shapes and contours between images, mathematically precise transformation, structural anchor points, elegant spatial evolution, smooth edge and curve transitions maintaining coherence"
+          },
+          {
+            "title": "MORPH MÉCANIQUE",
+            "text": "Mechanical morph with industrial precision, interlocking gears and sliding metallic panels, clockwork mechanisms, engineered transformation, sharp mechanical movements, synchronized robotic components clicking into place"
+          },
+          {
+            "title": "MORPH LIQUIDE",
+            "text": "Liquid morphing transformation, fluid dynamics, images dissolving like water and ink, ripples and waves, mercury-like flow, chromatic bleeding and blending"
+          },
+          {
+            "title": "MORPH PARTICULES",
+            "text": "Particle-based morph, disintegration into millions of particles, dust pixel atom swarm reorganization, controlled explosion and reformation, particle trails and energy fields"
+          },
+          {
+            "title": "MORPH GLITCH DIGITAL",
+            "text": "Digital glitch morph, datamoshing aesthetic, pixel sorting, RGB split, scan lines, corrupted data transition, compression artifacts, cybernetic noise"
+          },
+          {
+            "title": "MORPH INTELLIGENT",
+            "text": "Smooth and seamless morphing transition between two images. Gradual and natural transformation with intermediate frames carefully interpolating shapes colors and textures. Key elements elegantly dissolve and blend into corresponding elements. Visual coherence throughout, organic and fluid evolution, subtle cross-fading, progressive geometry transformation, harmonious color transitions, cinematic quality"
+          },
+          {
+            "title": "MORPH ARTY",
+            "text": "Artistic morphing transition with smooth metamorphosis. Elements flow and transform like liquid, shapes melt and reform naturally. Dreamlike quality, surreal but controlled transformation, maintaining aesthetic beauty throughout"
+          },
+          {
+            "title": "MORPH TEK",
+            "text": "Precise morphing with feature-matching. Corresponding elements align and transform smoothly, geometric consistency maintained, clean interpolation between keyframes, professional-grade morphing effect"
+          },
+          {
+            "title": "MORPH FRACTAL",
+            "text": "Fractal-based morphing transformation, recursive patterns emerging and dissolving, mathematical chaos beauty, infinite zoom feeling, self-similar structures bridging forms, Mandelbrot-inspired transition, organic mathematical evolution"
+          },
+          {
+            "title": "MORPH TEMPOREL",
+            "text": "Time-lapse morphing effect, aging or reverse-aging transformation, seasons passing through form, decay and growth cycles, temporal compression visible, years flowing like seconds, chronological metamorphosis"
+          },
+          {
+            "title": "MORPH HOLOGRAPHIQUE",
+            "text": "Holographic morph transition, light-based transformation, prismatic rainbow shifts, translucent overlay phases, scan line sweeps revealing new form, digital projection aesthetic, futuristic light dissolution"
+          },
+          {
+            "title": "MORPH DIMENSIONNEL",
+            "text": "Dimensional shift morph, 2D to 3D transformation or inverse, depth emerging from flatness, perspective warping, axis rotation revealing hidden dimension, spatial unfolding, reality layer peeling"
+          },
+          {
+            "title": "MORPH ÉNERGÉTIQUE",
+            "text": "Energy-based morph transformation, form dissolving into pure light or electricity, plasma state transition, aurora-like color flows, matter to energy to matter conversion, radiant metamorphosis"
+          },
+          {
+            "title": "MORPH ADN BIOLOGIQUE",
+            "text": "DNA helix inspired morph, double spiral unwinding and rewinding, genetic code rewriting visible, chromosome-level transformation, cellular mitosis aesthetic, biological blueprint shifting, evolution compressed"
+          }
+        ]
+      }
+    ],
+    "entryCount": 275
+  },
+  "dance": {
+    "categoryCount": 8,
+    "categories": [
+      {
+        "id": "classic",
+        "title": "Classic & Elegant",
+        "description": "Ballroom disasters · Ballet catastrophes · Courtly meltdowns",
+        "entries": [
+          {
+            "order": 1,
+            "title": "Lonely Waltz",
+            "text": "The subject dances a slow drunken waltz with an invisible partner, swaying dramatically, arms extended in embrace, stumbling yet strangely graceful, spinning slowly in wide circles."
+          },
+          {
+            "order": 2,
+            "title": "Tango with Lamppost",
+            "text": "The subject passionately dances tango with a street lamppost, dipping dramatically, embracing the pole, spinning around it with drunken elegance, stumbling but recovering with exaggerated pride."
+          },
+          {
+            "order": 3,
+            "title": "Clumsy Ballet",
+            "text": "The subject performs clumsy ballet moves, attempting pirouettes, losing balance mid-spin, arms raised gracefully then flailing wildly, stumbling forward with absurd dignity."
+          },
+          {
+            "order": 4,
+            "title": "Phantom Ballroom",
+            "text": "The subject waltzes alone with eyes closed, leading an invisible partner through elaborate ballroom steps, occasionally tripping but maintaining aristocratic composure, bowing to nobody."
+          },
+          {
+            "order": 5,
+            "title": "Swan Lake Disaster",
+            "text": "The subject attempts graceful swan arms, rising on tiptoes, wobbling dangerously, flapping arms for balance, collapsing to knees in slow motion, rising with trembling dignity to try again."
+          },
+          {
+            "order": 6,
+            "title": "Flamenco Fury",
+            "text": "The subject stomps aggressively in flamenco style, arms raised dramatically overhead, spinning with intense passion, stumbling mid-stomp, recovering with exaggerated pride and heel-click."
+          },
+          {
+            "order": 7,
+            "title": "Viennese Spin",
+            "text": "The subject spins continuously in elegant Viennese waltz circles, getting progressively dizzier, arms floating wide, stumbling outward, catching balance against a wall, resuming the eternal spin."
+          },
+          {
+            "order": 8,
+            "title": "Dying Swan",
+            "text": "The subject performs an overly dramatic dying swan routine, slowly sinking to the ground with trembling arms, collapsing gracefully, then suddenly springing back up to die again with more flair."
+          },
+          {
+            "order": 9,
+            "title": "Romantic Dip",
+            "text": "The subject dips an invisible partner deeper and deeper, losing balance, falling backward in slow motion, lying on ground still holding the romantic pose with serene expression."
+          },
+          {
+            "order": 10,
+            "title": "Minuet Madness",
+            "text": "The subject performs exaggerated courtly bows and minuet steps, hat-tipping gestures to nobody, small precise steps that become increasingly chaotic and unbalanced, bowing to the floor."
+          },
+          {
+            "order": 11,
+            "title": "Opera Grand Finale",
+            "text": "The subject performs a sweeping operatic curtain call, bowing deeply with one arm extended dramatically, overbalancing, crashing forward, rising to bow again to an invisible standing ovation."
+          },
+          {
+            "order": 12,
+            "title": "Cotillion Collapse",
+            "text": "The subject tries to lead a cotillion square dance solo, pointing partners into position, stepping through the geometry, losing track, circling back, apologizing to invisible couples mid-stumble."
+          },
+          {
+            "order": 13,
+            "title": "Pas de Deux Solo",
+            "text": "The subject attempts the male role of a pas de deux, miming lifting an invisible ballerina overhead, buckling under the phantom weight, staggering sideways, setting her down carefully, bowing."
+          },
+          {
+            "order": 14,
+            "title": "Quickstep Disaster",
+            "text": "The subject launches into a frantic quickstep, feet moving too fast for the body, running forward out of control, spinning to restart, zigzagging wildly across the space with a fixed ballroom smile."
+          },
+          {
+            "order": 15,
+            "title": "Foxtrot Fog",
+            "text": "The subject performs foxtrot slow-slow-quick-quick steps in the wrong rhythm, pausing to count out loud with fingers, starting over, getting the pattern right for two beats, then completely losing it."
+          },
+          {
+            "order": 16,
+            "title": "Jeté to Nowhere",
+            "text": "The subject leaps in a grand jeté, lands badly, rolls across the ground, springs back up into a pose with arms overhead, completely confident, launching into another even more ambitious leap."
+          },
+          {
+            "order": 17,
+            "title": "Mazurka Meltdown",
+            "text": "The subject stomps and hops in an accelerating mazurka, heel-clicking faster and faster, spinning out of control, dress or coat flying, clicking heels in midair before a spectacular crash landing."
+          },
+          {
+            "order": 18,
+            "title": "Reverence Ritual",
+            "text": "The subject sinks into a deep ballet reverence bow, slowly, too slowly, toppling forward onto hands, lying flat, rising with absolute composure as if this was the intended choreography all along."
+          },
+          {
+            "order": 19,
+            "title": "Polka Panic",
+            "text": "The subject polkas with invisible partner at increasing speed, skipping in circles, hopping side to side, the invisible partner clearly keeping up fine while the subject falls progressively behind and sideways."
+          },
+          {
+            "order": 20,
+            "title": "White Glove Salute",
+            "text": "The subject bows and extends a hand for a formal dance invitation to an empty chair, waits patiently, accepts the imaginary acceptance, leads the empty chair onto the floor for a solemn waltz."
+          }
+        ]
+      },
+      {
+        "id": "street",
+        "title": "Street & Urban",
+        "description": "Breakdance fails · Hip-hop swagger · B-boy catastrophes",
+        "entries": [
+          {
+            "order": 1,
+            "title": "Failed Moonwalk",
+            "text": "The subject attempts a clumsy moonwalk, sliding backward, losing balance, windmilling arms wildly, recovering with drunk confidence, trying again with even worse results each time."
+          },
+          {
+            "order": 2,
+            "title": "Breakdance Disaster",
+            "text": "The subject spins awkwardly on the ground attempting breakdance moves, struggles into a wobbly headstand, collapses, rolls over, gets up and tries a windmill that immediately sends them spinning offscreen."
+          },
+          {
+            "order": 3,
+            "title": "Popping Glitch",
+            "text": "The subject attempts popping and locking, body jerking in staccato motions, hitting poses then immediately losing them, muscles refusing to cooperate, entire body vibrating uncontrollably."
+          },
+          {
+            "order": 4,
+            "title": "Krump Explosion",
+            "text": "The subject bursts into aggressive krump moves, chest popping, arms swinging wildly, stomping hard, face contorted with intensity, stumbling from sheer force of movement, crashing and re-exploding."
+          },
+          {
+            "order": 5,
+            "title": "B-Boy Freeze Fail",
+            "text": "The subject attempts to hold a breakdance freeze pose, body shaking with effort, slowly tipping over, crashing down sideways, immediately trying another freeze position that also catastrophically fails."
+          },
+          {
+            "order": 6,
+            "title": "Hip Hop Swagger",
+            "text": "The subject bounces with exaggerated hip hop swagger, shoulders rolling, head nodding, arms gesturing coolly, then trips over own feet while maintaining a completely unbothered expression throughout."
+          },
+          {
+            "order": 7,
+            "title": "Worm Attempt",
+            "text": "The subject throws themselves to the ground attempting the worm, flopping pathetically like a dying fish, rolling sideways instead of forward, getting up dizzy, immediately trying again with identical results."
+          },
+          {
+            "order": 8,
+            "title": "Toprock Tumble",
+            "text": "The subject performs toprock footwork, stepping side to side with increasing speed, feet tangling together, spinning completely out of control, catching balance at the absolute last second."
+          },
+          {
+            "order": 9,
+            "title": "Tutting Tremors",
+            "text": "The subject attempts precise tutting hand movements, creating geometric shapes that immediately collapse, fingers bending wrong ways, giving up and just waving hands randomly with philosophical acceptance."
+          },
+          {
+            "order": 10,
+            "title": "Wave Malfunction",
+            "text": "The subject tries to do a body wave, the ripple getting stuck at the chest, body convulsing trying to push the wave through, ending up just shaking erratically from shoulder to shoulder."
+          },
+          {
+            "order": 11,
+            "title": "Nae Nae Nightmare",
+            "text": "The subject swings one arm up into a Nae Nae and the momentum carries the entire body into a spiral, spinning uncontrollably, arm still raised triumphantly as the rest of the body collapses."
+          },
+          {
+            "order": 12,
+            "title": "Griddy Overload",
+            "text": "The subject starts a Griddy celebration run, pumping arms and legs with intense focus, gradually drifting sideways, running into a wall, bouncing off, continuing the Griddy run in the new direction."
+          },
+          {
+            "order": 13,
+            "title": "Dab Vertigo",
+            "text": "The subject throws a dab so hard they spin around 180 degrees, see something behind them, dab that direction too, spinning each time, getting progressively dizzier with each triumphant dab."
+          },
+          {
+            "order": 14,
+            "title": "Shmoney Sway",
+            "text": "The subject bounces in shmoney dance, swaying hips in wide arcs, the sway getting bigger and bigger, center of gravity shifting dangerously, full commitment as they tip completely sideways."
+          },
+          {
+            "order": 15,
+            "title": "Stanky Leg Spiral",
+            "text": "The subject shakes one leg in stanky leg, the shake traveling up the body uncontrollably, entire torso oscillating, head bobbing, the vibration amplifying until they fall like a struck tuning fork."
+          },
+          {
+            "order": 16,
+            "title": "Harlem Shake Solo",
+            "text": "The subject stands perfectly still then suddenly explodes into full-body chaos, flailing every limb simultaneously, head jerking, torso convulsing, briefly pausing to stand still again before re-exploding."
+          },
+          {
+            "order": 17,
+            "title": "Jerk Gone Wrong",
+            "text": "The subject does the Jerk dance, popping their leg back sharply, the motion sending them stumbling backward, correcting forward, over-correcting, bouncing between invisible walls in a drunken pinball."
+          },
+          {
+            "order": 18,
+            "title": "Liquid Body Fail",
+            "text": "The subject attempts liquid dance, trying to move like water, body flowing in undulating waves, movements smooth for three seconds then completely glitching, freezing, restarting the liquid loop."
+          },
+          {
+            "order": 19,
+            "title": "Freeze Tag Champion",
+            "text": "The subject freezes in an impossible mid-dance pose — one leg up, arms at odd angles — holds it shaking violently, then slowly crumbles in stages like a condemned building, each section falling separately."
+          },
+          {
+            "order": 20,
+            "title": "Six-Step Stumble",
+            "text": "The subject attempts breakdance six-step footwork on the ground, legs cycling in the pattern, moving in the wrong direction, circling away from starting point, still cycling legs as they disappear offscreen."
+          }
+        ]
+      },
+      {
+        "id": "chaotic",
+        "title": "Chaotic & Punk",
+        "description": "Mosh pit anarchy · Thrash rage · Pure kinetic destruction",
+        "entries": [
+          {
+            "order": 1,
+            "title": "Invisible Mosh Pit",
+            "text": "The subject violently moshes alone, thrashing wildly, headbanging, shoving invisible people, stumbling and recovering with chaotic drunken energy, screaming silently at the ceiling."
+          },
+          {
+            "order": 2,
+            "title": "Anarchist Pogo",
+            "text": "The subject jumps erratically in place in chaotic pogo dance, fists pumping, mouth open screaming at the sky, pure drunken rage and joy alternating with each landing."
+          },
+          {
+            "order": 3,
+            "title": "Thrash Spiral",
+            "text": "The subject spins in tight circles while headbanging violently, hair whipping, arms flailing, getting dizzy, stumbling outward in an expanding spiral, crashing, returning to spin more."
+          },
+          {
+            "order": 4,
+            "title": "Punk Kick Line",
+            "text": "The subject kicks legs high in chaotic can-can style, alternating legs faster and faster, losing rhythm, kicking randomly, falling but still kicking aggressively from the ground."
+          },
+          {
+            "order": 5,
+            "title": "Wall of Death Solo",
+            "text": "The subject charges forward aggressively at nothing, crashes into an invisible wall of people, bounces back hard, shakes it off, charges again from a different angle with full commitment."
+          },
+          {
+            "order": 6,
+            "title": "Fury Stomp",
+            "text": "The subject stomps the ground repeatedly with increasing rage, jumping and landing hard, shaking fists at the sky, primal scream energy, exhausting themselves, collapsing, stomping again."
+          },
+          {
+            "order": 7,
+            "title": "Circle Pit Alone",
+            "text": "The subject runs in circles at full speed, pushing off invisible moshers, accelerating until losing control, wiping out completely, getting up immediately to run again without missing a beat."
+          },
+          {
+            "order": 8,
+            "title": "Stage Dive to Nothing",
+            "text": "The subject climbs an invisible stage, poses dramatically, leaps forward with arms spread expecting to be caught, crashes to ground, gets up triumphantly, climbs again, dives again without hesitation."
+          },
+          {
+            "order": 9,
+            "title": "Hardcore Tantrum",
+            "text": "The subject throws a full body tantrum, dropping to knees, pounding the ground, rolling around, screaming silently, jumping up to thrash arms wildly, collapsing again with total conviction."
+          },
+          {
+            "order": 10,
+            "title": "Two-Step Chaos",
+            "text": "The subject does aggressive hardcore two-step, swinging arms in wide arcs, kicking out randomly, spinning with fists extended, almost punching themselves in the face repeatedly."
+          },
+          {
+            "order": 11,
+            "title": "Windmill Crash",
+            "text": "The subject swings both arms simultaneously in giant windmill circles, accelerating uncontrollably, spinning the whole body, taking flight briefly, crashing into an invisible drum kit with total commitment."
+          },
+          {
+            "order": 12,
+            "title": "Pit Surfer",
+            "text": "The subject crowd surfs over invisible hands, riding the nonexistent crowd horizontally, paddling arms to stay afloat, slowly sinking through the imaginary crowd to the floor, sliding gracefully off."
+          },
+          {
+            "order": 13,
+            "title": "Mic Stand Assault",
+            "text": "The subject grabs an invisible mic stand, swings it dramatically, catches it, drops it, kicks it, picks it up again, does a full Pete Townshend smash motion, checks if it survived with concern."
+          },
+          {
+            "order": 14,
+            "title": "Skanking Spiral",
+            "text": "The subject skanks in ska style, pumping elbows and knees, moving faster and faster in tighter circles, a spinning dervish of plaid and elbows, finally flying outward and rolling to a stop."
+          },
+          {
+            "order": 15,
+            "title": "Feedback Loop",
+            "text": "The subject holds an invisible guitar up to an invisible amp, reacting to building feedback with full body convulsions, shaking the guitar, losing control as the imaginary sonic wall overwhelms them."
+          },
+          {
+            "order": 16,
+            "title": "Crowd Kill",
+            "text": "The subject swings arms in huge arcs through invisible crowd members, spinning with each hit, fighting the phantom crowd back, losing footing, sinking into the imaginary bodies around them."
+          },
+          {
+            "order": 17,
+            "title": "Neck Snap Loop",
+            "text": "The subject headbangs so violently their head seems to follow a different trajectory than the body, neck snapping forward and back, head circling, body trying to keep up, both going in separate directions."
+          },
+          {
+            "order": 18,
+            "title": "Stage Monitor Dive",
+            "text": "The subject runs toward invisible stage monitors, steps onto them, strikes a power pose facing the imaginary crowd, leans dangerously forward, tumbles off the front, bounces up playing air guitar."
+          },
+          {
+            "order": 19,
+            "title": "Oi Stomp",
+            "text": "The subject marches in place stomping with both feet alternately, pumping one fist, shouting at the ceiling, stomping faster, the whole body bouncing vertically until they've stomped themselves into the ground."
+          },
+          {
+            "order": 20,
+            "title": "Amp Stack Climb",
+            "text": "The subject climbs an invisible amp stack, placing hands and feet carefully, reaching the top, standing triumphantly with arms spread, swaying dangerously in the wind up there, slowly tipping backward."
+          }
+        ]
+      },
+      {
+        "id": "absurd",
+        "title": "Absurd & Surreal",
+        "description": "Physics defiance · Logic collapse · Existential choreography",
+        "entries": [
+          {
+            "order": 1,
+            "title": "Robot Malfunction",
+            "text": "The subject does jerky robot dance moves that glitch and break down, stiff mechanical movements becoming chaotic spasms, freezing mid-pose then restarting erratically with a different corrupted routine."
+          },
+          {
+            "order": 2,
+            "title": "Existential Disco",
+            "text": "The subject performs exaggerated disco moves alone, pointing dramatically at the sky then floor, doing wobbly hip thrusts, spinning with eyes half-closed in drunken existential ecstasy."
+          },
+          {
+            "order": 3,
+            "title": "Marionette Strings",
+            "text": "The subject moves as if controlled by invisible puppet strings, limbs jerking upward randomly, head lolling, walking in disconnected steps, collapsing entirely when the strings are cut."
+          },
+          {
+            "order": 4,
+            "title": "Slow Motion Fight",
+            "text": "The subject fights invisible enemies in extreme slow motion, throwing punches that take forever, dodging in long arcs, getting hit and falling dramatically slow, rising equally slowly to fight on."
+          },
+          {
+            "order": 5,
+            "title": "Invisible Limbo",
+            "text": "The subject does limbo under increasingly lower invisible bars, bending backward impossibly far, wobbling, crashing through the bar each time, lowering it and trying again with absolute determination."
+          },
+          {
+            "order": 6,
+            "title": "Tai Chi Drunk",
+            "text": "The subject performs extremely slow tai chi, movements becoming slower and slower, freezing mid-gesture for long beats, swaying, nearly falling, continuing in ultra slow motion with deep concentration."
+          },
+          {
+            "order": 7,
+            "title": "Mime Escape",
+            "text": "The subject desperately tries to escape an invisible box, pushing against walls that won't give, climbing, sliding down, panicking, finding a corner to squeeze through triumphantly into open space."
+          },
+          {
+            "order": 8,
+            "title": "Gravity Shifts",
+            "text": "The subject reacts to gravity shifting randomly, leaning hard left, stumbling right, pressing down against the ground, floating upward slightly, completely disoriented by physics failing."
+          },
+          {
+            "order": 9,
+            "title": "Time Loop",
+            "text": "The subject does a simple dance move, glitches, rewinds to starting position, does the same move slightly different, glitches again, stuck in a repeating loop with small variations each cycle."
+          },
+          {
+            "order": 10,
+            "title": "Victory Lap",
+            "text": "The subject runs in small circles with arms raised triumphantly, then breaks into chaotic celebratory dance, jumping, fist pumping, falling to knees, getting up dancing even harder than before."
+          },
+          {
+            "order": 11,
+            "title": "Magnetic Pull",
+            "text": "The subject is pulled by invisible magnetic forces from multiple directions, body stretching toward an invisible point, snapping to a new direction, being dragged sideways, pulled upward, fighting the pull."
+          },
+          {
+            "order": 12,
+            "title": "Echo Dance",
+            "text": "The subject makes a movement, then their body seems to echo it a half-second later, every gesture delayed and replayed, creating an uncanny self-following effect as they move through the space."
+          },
+          {
+            "order": 13,
+            "title": "Underwater Slow",
+            "text": "The subject moves as if submerged in invisible water, arms pushing through thick resistance, hair floating in slow arcs, turning in long languid circles, fighting the current, drifting helplessly."
+          },
+          {
+            "order": 14,
+            "title": "Invisible Wind",
+            "text": "The subject is blown by invisible gusts, leaning hard into the phantom wind, hair and clothes whipping dramatically, stumbling forward then pushed back, spinning in miniature tornado, anchoring to a post."
+          },
+          {
+            "order": 15,
+            "title": "Shadow Fight",
+            "text": "The subject battles their own shadow, throwing punches at it, jumping away from it, trying to stomp on it, furious when it keeps replicating the movements, finally surrendering to the shadow."
+          },
+          {
+            "order": 16,
+            "title": "Shrinking Space",
+            "text": "The subject dances normally then the invisible room starts shrinking, movements becoming smaller and more cramped, arms pressed inward, steps tiny, finally crouched in a micro-dance in invisible phone-booth size."
+          },
+          {
+            "order": 17,
+            "title": "Body Parts Revolt",
+            "text": "The subject's left arm dances differently from the right, legs going in opposite directions, head nodding counter to the beat, each body part following its own music, the entire figure in internal civil war."
+          },
+          {
+            "order": 18,
+            "title": "Static Charge",
+            "text": "The subject builds up invisible static electricity, hair rising, fingertips sparking imaginary bolts, body stiffening, jerking with each discharge, being launched sideways by phantom electric shocks."
+          },
+          {
+            "order": 19,
+            "title": "Floor is Lava",
+            "text": "The subject panics as the floor becomes invisible lava, hopping frantically between safe spots, leaping impossibly far to safe patches, wobbling on one foot, diving onto an invisible couch for safety."
+          },
+          {
+            "order": 20,
+            "title": "Double Speed Glitch",
+            "text": "The subject alternates between normal speed and double speed randomly within a single continuous dance, every few seconds snapping between fast and slow, body lurching with each speed transition."
+          }
+        ]
+      },
+      {
+        "id": "vintage",
+        "title": "Vintage & Retro",
+        "description": "Twist disasters · Jive collapses · Disco meltdowns",
+        "entries": [
+          {
+            "order": 1,
+            "title": "The Twist Malfunction",
+            "text": "The subject twists enthusiastically, hips rotating, arms pumping, sinking lower and lower doing the Twist, unable to stop descending, eventually twisting at floor level, trying to twist back up without success."
+          },
+          {
+            "order": 2,
+            "title": "Jive Gone Wild",
+            "text": "The subject jives with invisible partner, throwing them out on the arm, spinning them, pulling them back too hard, stumbling from the return force, both invisible partner and subject colliding catastrophically."
+          },
+          {
+            "order": 3,
+            "title": "Disco Pointing Crisis",
+            "text": "The subject does Saturday Night Fever pointing, first at sky, then floor, then sideways, getting confused about which direction is correct, pointing everywhere simultaneously, spinning in existential disco panic."
+          },
+          {
+            "order": 4,
+            "title": "Lindy Hop Disaster",
+            "text": "The subject does Lindy Hop solo, executing air steps with no partner, launching into aerial moves, landing badly, rolling across the floor, bouncing up into another aerial that sends them skidding away."
+          },
+          {
+            "order": 5,
+            "title": "Mashed Potato",
+            "text": "The subject does the Mashed Potato shuffle, feet dragging and stamping, getting progressively more vigorous, both feet leaving the ground simultaneously, landing askew, shuffling even harder with defiant energy."
+          },
+          {
+            "order": 6,
+            "title": "Hustle Overdrive",
+            "text": "The subject does the Hustle in slow motion, then normal speed, then double, caught in a speed loop, alternating wildly between tempos, arms and legs refusing to agree on which version they're performing."
+          },
+          {
+            "order": 7,
+            "title": "Charleston Chaos",
+            "text": "The subject does Charleston kicks, knees crossing and uncrossing rhythmically, kicking speed accelerating, kicks getting higher, legs crossing so fast they tangle, the subject hopping on one foot in confusion."
+          },
+          {
+            "order": 8,
+            "title": "Boogie Woogie Breakdown",
+            "text": "The subject busts out boogie woogie footwork, feet shuffling in complex patterns too fast to follow, losing the beat, feet moving independently of each other, creating accidental tap rhythms."
+          },
+          {
+            "order": 9,
+            "title": "Hitchhiker Loop",
+            "text": "The subject does the Hitchhiker move, thumb jabbing left, then right, then back, getting confused about which direction they're hitchhiking to, jabbing in all directions simultaneously in existential transport panic."
+          },
+          {
+            "order": 10,
+            "title": "Pony Gallop",
+            "text": "The subject does the Pony dance, galloping in place, galloping forward, galloping in circles, accelerating to a full sprint gallop, veering off-course, crashing through invisible furniture, galloping on."
+          },
+          {
+            "order": 11,
+            "title": "Hand Jive Convulsion",
+            "text": "The subject does elaborate hand jive patterns, slapping, crossing, pointing in sequence, the sequence speeding up until hands are a blur, then forgetting the next step and improvising wildly."
+          },
+          {
+            "order": 12,
+            "title": "The Frug Shrug",
+            "text": "The subject does the Frug, shimmying shoulders intensely, shaking head, the shake spreading down the body, entire torso vibrating, knees buckling, the full-body shimmy becoming uncontrollable."
+          },
+          {
+            "order": 13,
+            "title": "Watusi Wobble",
+            "text": "The subject does the Watusi, arms raising and lowering on alternating sides, hips swaying, the movement getting more and more exaggerated, arms reaching ceiling height, hips swinging like a pendulum."
+          },
+          {
+            "order": 14,
+            "title": "Locomotion Derail",
+            "text": "The subject does the Locomotion in a line with invisible people, pumping arms like a train, the locomotive gaining speed, derailing at a curve, cars piling up, climbing back on the invisible track."
+          },
+          {
+            "order": 15,
+            "title": "Swim Sink",
+            "text": "The subject does the Swim dance, doing freestyle stroke arms, breaststroke, butterfly, then sinking in slow motion through invisible water, still swimming as they descend, reaching the bottom, swimming along the floor."
+          },
+          {
+            "order": 16,
+            "title": "Freddie Flail",
+            "text": "The subject does the Freddie dance, jumping and swinging arms forward and back alternately, jumping getting higher, arms swinging wider, taking off briefly before a spectacular crash landing with arms still going."
+          },
+          {
+            "order": 17,
+            "title": "Funky Chicken Crisis",
+            "text": "The subject does the Funky Chicken, elbows flapping wildly, knees bending, becoming more and more aggressive, actual chicken noises implied, running around pecking the ground, completely committed to the bit."
+          },
+          {
+            "order": 18,
+            "title": "Robot Retro Crash",
+            "text": "The subject does precision 1970s Robot dance, locking perfectly, pointing mechanically, each joint moving independently, then the mechanisms fail one by one, each limb locking permanently until frozen mid-pose."
+          },
+          {
+            "order": 19,
+            "title": "Bump Collision",
+            "text": "The subject does the Bump dance, repeatedly hip-bumping an invisible partner, each bump sending both sideways, recovering, bumping again harder, getting bounced further each time, caroming across the floor."
+          },
+          {
+            "order": 20,
+            "title": "YMCA Architecture",
+            "text": "The subject constructs the YMCA letters with arms, getting the Y right, the M slightly wrong, the C backwards, the A completely confused, arms flailing trying every combination, crowd-pleasing incompetence."
+          }
+        ]
+      },
+      {
+        "id": "club",
+        "title": "Club & Electronic",
+        "description": "Rave meltdowns · Techno rituals · EDM convulsions",
+        "entries": [
+          {
+            "order": 1,
+            "title": "Bass Drop Collapse",
+            "text": "The subject anticipates an invisible bass drop, building tension, crouching lower and lower, the drop hits, they explode upward with arms spread, the shockwave sending them stumbling backward across the floor."
+          },
+          {
+            "order": 2,
+            "title": "Melbourne Shuffle Gone",
+            "text": "The subject shuffles in Melbourne Shuffle style, feet sliding in T-step patterns, getting faster, both feet sliding in opposite directions simultaneously, doing full splits by accident, shuffling from floor level."
+          },
+          {
+            "order": 3,
+            "title": "Techno Trance State",
+            "text": "The subject enters a techno trance, bouncing mechanically on both feet, arms rigid at sides, eyes closed, head slightly down, completely robotic, suddenly snapping out of it confused, then immediately returning."
+          },
+          {
+            "order": 4,
+            "title": "Glowstick Phantom",
+            "text": "The subject waves invisible glowsticks in elaborate rave patterns, hands tracing glowing figure eights, the invisible sticks getting longer and more elaborate, wrapping around the body, tangling, escaping."
+          },
+          {
+            "order": 5,
+            "title": "DJ Drop Moment",
+            "text": "The subject celebrates as if the DJ just dropped their favorite track, losing their mind completely, grabbing nearby people who aren't there, screaming silently, jumping on invisible strangers, pure euphoria."
+          },
+          {
+            "order": 6,
+            "title": "Hardstyle Kick",
+            "text": "The subject does hardstyle kicks, one leg punching forward on each beat, gaining force with each kick, the kicks sending them backward, recovering, kicking harder, propelling across the space in one direction."
+          },
+          {
+            "order": 7,
+            "title": "Poi Spin Collapse",
+            "text": "The subject spins invisible poi, arms windmilling in circles, the invisible balls gaining speed, one arm going faster than the other, both spiraling out of sync, the subject tangling in phantom poi chains."
+          },
+          {
+            "order": 8,
+            "title": "PLUR Overload",
+            "text": "The subject performs rave handshakes with invisible ravers, trading invisible kandi, each trade getting more elaborate, arms gesturing peace-love-unity-respect, getting overwhelmed by invisible kandi bracelets."
+          },
+          {
+            "order": 9,
+            "title": "Four-on-the-Floor",
+            "text": "The subject marches to an invisible four-to-the-floor techno beat, perfectly on time for three counts, adding body rolls that throw off the timing, trying to find the beat again, marching way off-tempo with confidence."
+          },
+          {
+            "order": 10,
+            "title": "Hands Up Anthem",
+            "text": "The subject throws both hands up as the anthem hits, holding them high triumphantly, arms getting tired, lowering slightly, trying to put them back up, arms too heavy now, standing with hands at half-mast."
+          },
+          {
+            "order": 11,
+            "title": "Dubstep Convulsion",
+            "text": "The subject dances smoothly to invisible music, the beat drops to dubstep wobble, entire body convulsing with each wobble sound, limbs jerking robotically, expression of surprise and surrender to the wub."
+          },
+          {
+            "order": 12,
+            "title": "Laser Show React",
+            "text": "The subject reacts to invisible laser lights sweeping the room, ducking under beams, reaching up to touch them, being blinded by a direct hit, stumbling, following laser patterns across the floor and ceiling."
+          },
+          {
+            "order": 13,
+            "title": "Strobe Freeze",
+            "text": "The subject moves in perfect synchrony with invisible strobe lights, appearing to freeze and jump between positions, moving in staccato bursts of motion, confused when the strobe stops, trying to recreate the effect alone."
+          },
+          {
+            "order": 14,
+            "title": "Smoke Machine Panic",
+            "text": "The subject gets engulfed in invisible smoke machine fog, dancing blindly, bumping into invisible people, losing orientation completely, swimming through the fog, emerging on the wrong side of the dancefloor."
+          },
+          {
+            "order": 15,
+            "title": "Subwoofer Resonance",
+            "text": "The subject stands near invisible subwoofers, the bass physically shaking their body, clothes rippling, cheeks vibrating, entire skeleton resonating, being gradually pushed backward by phantom low-frequency pressure."
+          },
+          {
+            "order": 16,
+            "title": "VIP Rope Confusion",
+            "text": "The subject dances their way toward an invisible VIP rope, smooth-talking the invisible bouncer, getting rejected, arguing, being let in, immediately getting lost in the invisible VIP area, dancing alone in wrong section."
+          },
+          {
+            "order": 17,
+            "title": "BPM Escalation",
+            "text": "The subject dances at normal tempo, the invisible BPM rising, movements getting faster, switching from house to techno to gabber speeds, moving at physically impossible speed, heart exploding, collapsing in heap."
+          },
+          {
+            "order": 18,
+            "title": "Phone Torch Wave",
+            "text": "The subject waves an invisible phone torch in the air during the emotional moment, swaying with eyes closed, lowering it to check the screen, texting someone about how good this is, torch back up, pure devotion."
+          },
+          {
+            "order": 19,
+            "title": "After-Party Zombie",
+            "text": "The subject dances on pure muscle memory at 6am, eyes barely open, movements slowing to quarter speed, still bouncing mechanically, nodding off mid-bounce, jerking awake, nodding off again, still dancing."
+          },
+          {
+            "order": 20,
+            "title": "Water Bottle Ritual",
+            "text": "The subject dances while dramatically drinking from an invisible water bottle, spilling it on themselves, continuing to dance while dripping, refilling from nowhere, offering it to invisible strangers, emptying it on their head."
+          }
+        ]
+      },
+      {
+        "id": "world",
+        "title": "World Traditions",
+        "description": "Folk disasters · Ritual collapses · Cultural meltdowns",
+        "entries": [
+          {
+            "order": 1,
+            "title": "Cossack Crouch",
+            "text": "The subject attempts Cossack kick-dance, squatting low and kicking legs forward alternately, getting too low, legs not strong enough to kick, toppling backward from squat position, still attempting kicks from the ground."
+          },
+          {
+            "order": 2,
+            "title": "Bollywood Arms",
+            "text": "The subject performs expressive Bollywood mudra arm gestures, each hand telling a different story, expressions shifting from joy to sorrow to surprise, the narrative getting so dramatic they fall to their knees weeping."
+          },
+          {
+            "order": 3,
+            "title": "Irish Reel Reel",
+            "text": "The subject performs rigid-armed Irish step dance, feet moving in precise reel patterns, arms locked at sides, face expressionless, feet getting faster and more chaotic while upper body maintains perfect noble stillness."
+          },
+          {
+            "order": 4,
+            "title": "Belly Roll Breakdown",
+            "text": "The subject attempts belly dance undulations, rolling the torso in waves, the wave getting stuck at the ribcage, trying to push it through, body convulsing, the wave finally breaking free and traveling too far upward."
+          },
+          {
+            "order": 5,
+            "title": "Haka Gone Wrong",
+            "text": "The subject performs an intense solo haka, stomping, sticking tongue out dramatically, eyes wide, slapping thighs, the intensity escalating until they're screaming at invisible opponents, collapsing from sheer ferocity."
+          },
+          {
+            "order": 6,
+            "title": "Samba Spiral",
+            "text": "The subject samba steps with exaggerated hip sways, hips rotating in enormous circles, the rotation gaining momentum, entire lower body orbiting, upper body trying to compensate, spinning around their own hips."
+          },
+          {
+            "order": 7,
+            "title": "Greek Circle Solo",
+            "text": "The subject does sirtaki solo, the Zorba the Greek circle dance alone, picking up speed with each circuit, arms spread wide, kicking higher, the circle getting faster until reaching a full sprint around nothing."
+          },
+          {
+            "order": 8,
+            "title": "Dervish Spin",
+            "text": "The subject spins as a Sufi whirling dervish, one arm up one arm down, spinning, spinning, the spiritual bliss becoming vertigo, the spinning going wrong, staggering sideways, still reaching transcendence mid-stumble."
+          },
+          {
+            "order": 9,
+            "title": "Dragon Boat Crew",
+            "text": "The subject paddles furiously in an invisible dragon boat, powerful synchronized strokes, the boat veering sideways, paddling harder on one side, overcorrecting, the phantom boat spinning in circles."
+          },
+          {
+            "order": 10,
+            "title": "Macarena Sequence Loss",
+            "text": "The subject starts the Macarena perfectly, right arm, left arm, right hip tap — losing the sequence, doing arms in wrong order, adding moves that aren't in the song, inventing a new Macarena with confidence."
+          },
+          {
+            "order": 11,
+            "title": "Capoeira Shadow",
+            "text": "The subject performs capoeira ginga with invisible partner, flowing in and out of combat range, executing kicks that miss by feet, cartwheel au that sends them rolling, getting back into ginga seamlessly."
+          },
+          {
+            "order": 12,
+            "title": "Tinikling Phantom",
+            "text": "The subject hops between invisible bamboo poles being clapped together, feet moving fast, catching an invisible pole, hopping over the phantom clap, timing getting worse, feet getting symbolically trapped."
+          },
+          {
+            "order": 13,
+            "title": "Line Dance Tangent",
+            "text": "The subject line dances in perfect step, grapevine right, kick-ball-change, turn — facing wrong direction, continuing confidently in wrong direction, executing steps perfectly while the invisible line goes the other way."
+          },
+          {
+            "order": 14,
+            "title": "Hora Hurricane",
+            "text": "The subject dances the Hora in a solo circle, hopping and kicking in the Israeli folk pattern, the circle getting tighter and faster, a miniature tornado, centrifugal force eventually launching them outward."
+          },
+          {
+            "order": 15,
+            "title": "Cumbia Catastrophe",
+            "text": "The subject does cumbia with partner hold position to nobody, hip sways and forward-backward footwork, leading invisible partner off the floor, apologizing to stepped-on invisible toes, continuing with deep regret."
+          },
+          {
+            "order": 16,
+            "title": "Tarantella Sting",
+            "text": "The subject performs the Italian tarantella, spinning frantically as if bitten by a spider, the cure being continuous dancing, getting more frantic, the venom seemingly winning, spinning on the floor, still going."
+          },
+          {
+            "order": 17,
+            "title": "Riverdance Malfunction",
+            "text": "The subject stomps in Riverdance style, perfectly rigid arms, high knees, feet hammering — face breaking into grin, arms escaping their rigid position, the entire Riverdance discipline crumbling into chaos."
+          },
+          {
+            "order": 18,
+            "title": "Floss Ancient",
+            "text": "The subject flosses with archaeological seriousness, explaining to nobody that this ancient ritual dance form carries deep cultural meaning, performing it with solemn gravity as arms swing and hips counter-swing."
+          },
+          {
+            "order": 19,
+            "title": "Kecak Choir Solo",
+            "text": "The subject performs solo kecak, making chak-chak-chak sounds, raised arms trembling like the Balinese fire dance chorus of one, narrating the Ramayana to themselves, voices and gestures multiplying impossibly."
+          },
+          {
+            "order": 20,
+            "title": "Gangnam Escape",
+            "text": "The subject does Gangnam Style invisible horse riding, bouncing on the invisible horse, the horse getting out of control, the subject clinging on, being thrown, landing badly, remounting, galloping into the distance."
+          }
+        ]
+      },
+      {
+        "id": "cinematic",
+        "title": "Cinematic & Genre",
+        "description": "Movie tropes · Action hero fails · Genre-specific disasters",
+        "entries": [
+          {
+            "order": 1,
+            "title": "Action Hero Landing",
+            "text": "The subject lands from a great height in a superhero three-point pose, cracks in the floor spreading from the impact, slowly rising with jacket billowing in invisible wind, immediately stumbling forward."
+          },
+          {
+            "order": 2,
+            "title": "Musical Number Regret",
+            "text": "The subject launches into a full show-tune production number, jazz hands, high kicks, big vocal arms — stopping to look around embarrassed, then launching back in with even more commitment than before."
+          },
+          {
+            "order": 3,
+            "title": "Slow Motion Run",
+            "text": "The subject runs toward camera in dramatic Baywatch slow-motion, hair bouncing, confident smile, hitting a divot, slowly tipping forward, the slow-motion fall taking forever, landing with slow-motion face plant."
+          },
+          {
+            "order": 4,
+            "title": "Training Montage",
+            "text": "The subject cycles through rapid-fire training montage poses — boxing, pull-ups, running in place — transitioning too fast, getting poses mixed up, boxing while doing pull-up arms, running while punching the air."
+          },
+          {
+            "order": 5,
+            "title": "Western Showdown",
+            "text": "The subject faces off at high noon, hand hovering over invisible holster, the world's slowest draw, finally pulling an invisible gun, discovering both hands reached for the same holster, reconsidering everything."
+          },
+          {
+            "order": 6,
+            "title": "Horror Retreat",
+            "text": "The subject backs away from invisible horror, stumbling over nothing, looking behind them while moving forward into another danger, the classic horror backing-away-and-falling-into-danger choreography."
+          },
+          {
+            "order": 7,
+            "title": "Sci-Fi Zero-G",
+            "text": "The subject floats in zero gravity, pushing off invisible walls, spinning slowly end over end, reaching for objects drifting past, completely unable to control trajectory, tumbling through invisible space station."
+          },
+          {
+            "order": 8,
+            "title": "Kung Fu Drunk Master",
+            "text": "The subject staggers forward in Drunken Fist style, stumbling becoming combat moves, falling turning into sweeps, the entire drunk walk being perfect martial arts form that defeats invisible attackers."
+          },
+          {
+            "order": 9,
+            "title": "Thriller Zombie",
+            "text": "The subject does Michael Jackson's Thriller zombie dance, arms extended, shuffling, then getting confused about which way the zombie line is going, shuffling toward camera, toward the audience, choosing chaos."
+          },
+          {
+            "order": 10,
+            "title": "Karate Kid Crane",
+            "text": "The subject strikes the crane pose on one leg, holding it with intense focus, wobbling, correcting, wobbling worse, arms spreading for balance, the other foot touching down repeatedly, crane refusing to stay."
+          },
+          {
+            "order": 11,
+            "title": "Matrix Dodge",
+            "text": "The subject dodges invisible bullets in slow motion, bending backward impossibly, time slowing around them, snapping back up, dodging left, right, completely losing orientation, matrix-running in wrong direction."
+          },
+          {
+            "order": 12,
+            "title": "Dirty Dancing Lift",
+            "text": "The subject runs toward invisible partner for the famous lift, partner not there, running through the space alone, arms spread dramatically, executing the lift alone held aloft by sheer belief, held triumphantly."
+          },
+          {
+            "order": 13,
+            "title": "Footloose Fence",
+            "text": "The subject performs the Footloose angry barn dance sequence, kicking and spinning in an empty space, the full teenage angst energy, performing for nobody, getting increasingly committed to the solo rebellion."
+          },
+          {
+            "order": 14,
+            "title": "Samurai Ready Stance",
+            "text": "The subject draws invisible katana from invisible scabbard in slow dramatic pull, holds warrior stance, the drawn-out wait for the invisible opponent, losing focus, checking if opponent is still there, resheathing to start over."
+          },
+          {
+            "order": 15,
+            "title": "Rocky Staircase",
+            "text": "The subject runs up invisible stairs triumphantly, arms pumping, cresting the top, doing the Rocky victory dance, raising fists, then realizing they're at street level, still doing the victory dance anyway."
+          },
+          {
+            "order": 16,
+            "title": "Wuxia Wire Fall",
+            "text": "The subject fights enemies while being lifted on invisible wire, running on invisible walls, floating mid-kick, the wire going slack suddenly, dropping unexpectedly, the wire pulling them sideways mid-speech."
+          },
+          {
+            "order": 17,
+            "title": "Risky Business Slide",
+            "text": "The subject slides across invisible floor in socks, arms spread for balance, gliding further than intended, hitting an invisible wall at speed, bouncing back, executing the lip-sync dance routine regardless."
+          },
+          {
+            "order": 18,
+            "title": "Villain Monologue Sway",
+            "text": "The subject delivers a silent villain monologue with dramatic gestures, pacing dramatically, stopping to make the key point, stumbling over invisible cat, recovering composure, the moment somewhat ruined, continuing anyway."
+          },
+          {
+            "order": 19,
+            "title": "Bollywood Chase",
+            "text": "The subject runs from invisible Bollywood villain, ducking, hiding behind invisible pillars, peeking out, running again, the chase suddenly becoming a spontaneous choreographed number mid-escape, villain joining in."
+          },
+          {
+            "order": 20,
+            "title": "Final Boss Dance-Off",
+            "text": "The subject faces off against invisible final boss in decisive dance battle, opening move destroyed by boss counter, escalating moves, the subject hitting their absolute best combination, waiting for the boss's verdict."
+          }
+        ]
+      }
+    ],
+    "entryCount": 160
+  },
+  "totalEntryCount": 435
+}

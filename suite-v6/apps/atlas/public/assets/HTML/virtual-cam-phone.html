@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#111514">
+  <title>BARZ Virtual Camera</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --ink: #f4efe8;
+      --muted: #a9b2b9;
+      --panel: #171c1b;
+      --raised: #202726;
+      --line: #35403e;
+      --signal: #f06645;
+      --live: #70d8bd;
+      --danger: #ea554b;
+    }
+    * { box-sizing: border-box; }
+    html, body { min-height: 100%; }
+    body {
+      margin: 0;
+      background: #0c100f;
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      overscroll-behavior: none;
+    }
+    button, input { font: inherit; }
+    button { -webkit-tap-highlight-color: transparent; }
+    .shell {
+      width: min(720px, 100%);
+      min-height: 100vh;
+      margin: 0 auto;
+      padding: max(20px, env(safe-area-inset-top)) 16px max(28px, env(safe-area-inset-bottom));
+    }
+    header { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 18px; }
+    h1 { margin: 0; color: var(--signal); font-size: clamp(22px, 7vw, 34px); letter-spacing: .025em; }
+    .connection { display: inline-flex; align-items: center; gap: 7px; color: var(--muted); font-size: 13px; }
+    .dot { width: 10px; height: 10px; border-radius: 50%; background: #57605f; box-shadow: 0 0 0 4px rgba(255,255,255,.04); }
+    .dot.live { background: var(--live); box-shadow: 0 0 18px color-mix(in srgb, var(--live) 75%, transparent); }
+    .viewfinder {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 16 / 9;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: #050707;
+    }
+    .viewfinder img { width: 100%; height: 100%; object-fit: contain; display: none; }
+    .viewfinder.has-frame img { display: block; }
+    .viewfinder.has-frame .empty { display: none; }
+    .empty { max-width: 270px; padding: 22px; color: #7f8a88; text-align: center; line-height: 1.45; }
+    .reticle { position: absolute; inset: 50% auto auto 50%; width: 34px; height: 34px; transform: translate(-50%, -50%); opacity: .52; pointer-events: none; }
+    .reticle::before, .reticle::after { content: ""; position: absolute; background: var(--signal); }
+    .reticle::before { left: 16px; top: 0; width: 2px; height: 34px; }
+    .reticle::after { left: 0; top: 16px; width: 34px; height: 2px; }
+    .status {
+      min-height: 42px;
+      margin: 12px 0;
+      padding: 11px 13px;
+      border-left: 3px solid var(--signal);
+      background: var(--panel);
+      color: var(--muted);
+      line-height: 1.4;
+    }
+    .status strong { color: var(--ink); }
+    .controls { display: grid; gap: 12px; }
+    .button-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    button {
+      min-height: 52px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: var(--raised);
+      color: var(--ink);
+      font-weight: 750;
+      cursor: pointer;
+    }
+    button:active { transform: translateY(1px); }
+    button.primary { border-color: var(--signal); background: var(--signal); color: #17110e; }
+    button.recording { border-color: var(--danger); background: var(--danger); color: #fff; }
+    button:disabled { opacity: .45; cursor: default; transform: none; }
+    .field {
+      display: grid;
+      grid-template-columns: 74px minmax(0, 1fr) 58px;
+      align-items: center;
+      gap: 10px;
+      padding: 13px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: var(--panel);
+    }
+    .field label { color: var(--muted); font-size: 14px; }
+    .field output { text-align: right; font-variant-numeric: tabular-nums; }
+    input[type="range"] { width: 100%; accent-color: var(--signal); }
+    .mode-row { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .mode-row button[aria-pressed="true"] { border-color: var(--signal); color: var(--signal); }
+    .help { margin: 16px 2px 0; color: #818d8b; font-size: 12px; line-height: 1.5; }
+    .help b { color: var(--muted); }
+    @media (max-width: 420px) {
+      .shell { padding-inline: 12px; }
+      .button-grid { grid-template-columns: 1fr; }
+      .field { grid-template-columns: 62px minmax(0, 1fr) 50px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <h1>Virtual Camera</h1>
+      <div class="connection"><span class="dot" id="dot"></span><span id="connectionText">Connecting…</span></div>
+    </header>
+
+    <section class="viewfinder" id="viewfinder" aria-label="Blocking Studio camera view">
+      <div class="empty">Choose <strong>App view</strong> to see the active Blocking Studio camera.</div>
+      <img id="frame" alt="Live Blocking Studio camera view">
+      <div class="reticle" aria-hidden="true"></div>
+    </section>
+
+    <p class="status" id="status"><strong>Ready.</strong> Enable motion to control the active camera.</p>
+
+    <section class="controls" aria-label="Virtual camera controls">
+      <div class="mode-row" aria-label="Viewfinder source">
+        <button id="phoneView" type="button" aria-pressed="true">Phone view</button>
+        <button id="appView" type="button" aria-pressed="false">App view</button>
+      </div>
+
+      <div class="button-grid">
+        <button class="primary" id="motion" type="button">Enable motion</button>
+        <button id="spatial" type="button">Start spatial 6DoF</button>
+        <button id="record" type="button">● REC</button>
+        <button id="neutral" type="button">Set neutral</button>
+      </div>
+
+      <div class="field">
+        <label for="zoom">Zoom</label>
+        <input id="zoom" type="range" min="18" max="200" step="1" value="50">
+        <output id="zoomValue" for="zoom">50mm</output>
+      </div>
+
+      <div class="field">
+        <label for="scale">Scale</label>
+        <input id="scale" type="range" min="0.05" max="10" step="0.05" value="1">
+        <output id="scaleValue" for="scale">1.0×</output>
+      </div>
+    </section>
+
+    <p class="help"><b>Keep this page open.</b> The phone and PC must stay on the same Wi‑Fi. Gyro mode controls rotation; spatial 6DoF also captures position when WebXR is available.</p>
+  </main>
+
+  <script>
+    const ui = Object.fromEntries(["dot", "connectionText", "viewfinder", "frame", "status", "phoneView", "appView", "motion", "spatial", "record", "neutral", "zoom", "zoomValue", "scale", "scaleValue"].map((id) => [id, document.getElementById(id)]));
+    let socket = null;
+    let motionEnabled = false;
+    let recording = false;
+    let xrSession = null;
+    let xrSpace = null;
+    let xrCanvas = null;
+    let xrGl = null;
+    let xrStarting = false;
+    let xrPoseSeen = false;
+    let xrPoseTimer = 0;
+    let lastOrientationSent = 0;
+    let wakeLock = null;
+
+    function setStatus(title, detail = "") {
+      ui.status.innerHTML = `<strong>${title}</strong>${detail ? ` ${detail}` : ""}`;
+    }
+
+    function send(payload) {
+      if (socket?.readyState === WebSocket.OPEN) socket.send(JSON.stringify(payload));
+    }
+
+    function connect() {
+      socket = new WebSocket(`wss://${location.host}/vcam?role=phone`);
+      socket.addEventListener("open", () => {
+        ui.dot.classList.add("live");
+        ui.connectionText.textContent = "Connected";
+        send({ type: "viewfinder", mode: ui.appView.getAttribute("aria-pressed") === "true" ? "app" : "phone" });
+        setStatus("Connected.", "Enable motion, then use the controls below.");
+      });
+      socket.addEventListener("message", (event) => {
+        let message;
+        try { message = JSON.parse(event.data); } catch { return; }
+        if (message.type === "frame" && typeof message.data === "string") {
+          ui.frame.src = message.data;
+          ui.viewfinder.classList.add("has-frame");
+        } else if (message.type === "recState") {
+          recording = Boolean(message.on);
+          ui.record.classList.toggle("recording", recording);
+          ui.record.textContent = recording ? "■ STOP" : "● REC";
+        } else if (message.type === "focalState" && Number.isFinite(message.focal)) {
+          ui.zoom.value = String(message.focal);
+          ui.zoomValue.textContent = `${Math.round(message.focal)}mm`;
+        } else if (message.type === "scaleState" && Number.isFinite(message.scale)) {
+          ui.scale.value = String(message.scale);
+          ui.scaleValue.textContent = `${Number(message.scale).toFixed(1)}×`;
+        }
+      });
+      socket.addEventListener("close", () => {
+        ui.dot.classList.remove("live");
+        ui.connectionText.textContent = "Reconnecting…";
+        setStatus("Connection lost.", "Keep the PC app open and stay on the same Wi‑Fi.");
+        setTimeout(connect, 1800);
+      });
+      socket.addEventListener("error", () => socket.close());
+    }
+
+    function orientation(event) {
+      if (!motionEnabled || xrSession) return;
+      const now = performance.now();
+      if (now - lastOrientationSent < 24) return;
+      if (![event.alpha, event.beta, event.gamma].some(Number.isFinite)) return;
+      lastOrientationSent = now;
+      send({
+        type: "orient",
+        a: Number(event.alpha) || 0,
+        b: Number(event.beta) || 0,
+        g: Number(event.gamma) || 0,
+        o: Number(screen.orientation?.angle ?? window.orientation) || 0
+      });
+    }
+
+    async function enableMotion() {
+      try {
+        if (typeof DeviceOrientationEvent?.requestPermission === "function") {
+          const permission = await DeviceOrientationEvent.requestPermission();
+          if (permission !== "granted") throw new Error("Motion permission was not granted.");
+        }
+        window.addEventListener("deviceorientation", orientation, true);
+        motionEnabled = true;
+        ui.motion.textContent = "Motion enabled";
+        ui.motion.disabled = true;
+        setStatus("Motion enabled.", "Hold the phone naturally, then tap Set neutral in Blocking Studio.");
+        try { wakeLock = await navigator.wakeLock?.request("screen"); } catch {}
+      } catch (error) {
+        setStatus("Motion unavailable.", error?.message || "Check the browser permission.");
+      }
+    }
+
+    async function startSpatial() {
+      if (xrStarting || xrSession) return;
+      if (!navigator.xr) return setStatus("Spatial mode unavailable.", "Chrome/ARCore does not expose WebXR on this phone.");
+      xrStarting = true;
+      ui.spatial.disabled = true;
+      setStatus("Starting spatial tracking…", "Accept the AR permission if Android asks for it.");
+      try {
+        const supported = await navigator.xr.isSessionSupported("immersive-ar");
+        if (!supported) throw new Error("Immersive AR is not supported by this browser/device. Update Chrome and Google Play Services for AR.");
+
+        // `local` is a reference-space type, not a feature descriptor. Requiring it
+        // in requestSession() makes Chrome reject the session before ARCore starts.
+        // local-floor is optional; plain local remains the widely-supported fallback.
+        xrSession = await navigator.xr.requestSession("immersive-ar", {
+          optionalFeatures: ["local-floor", "dom-overlay"],
+          domOverlay: { root: document.body }
+        });
+        // Immersive WebXR sessions need a real XRWebGLLayer before Chrome/ARCore
+        // exposes tracked viewer poses. Without this render state the session can
+        // open while getViewerPose() keeps returning null, which looks like a dead
+        // 6DoF button even though permission was granted.
+        xrCanvas = document.createElement("canvas");
+        xrCanvas.width = 1;
+        xrCanvas.height = 1;
+        xrCanvas.setAttribute("aria-hidden", "true");
+        Object.assign(xrCanvas.style, { position: "fixed", inset: "0", width: "1px", height: "1px", pointerEvents: "none", opacity: "0" });
+        document.body.append(xrCanvas);
+        xrGl = xrCanvas.getContext("webgl2", { xrCompatible: true, alpha: true, antialias: false })
+          || xrCanvas.getContext("webgl", { xrCompatible: true, alpha: true, antialias: false });
+        if (!xrGl || typeof XRWebGLLayer !== "function") throw new Error("WebXR rendering is unavailable in this browser.");
+        await xrGl.makeXRCompatible?.();
+        xrSession.updateRenderState({
+          baseLayer: new XRWebGLLayer(xrSession, xrGl, { alpha: true }),
+          depthNear: 0.01,
+          depthFar: 1000
+        });
+        try { xrSpace = await xrSession.requestReferenceSpace("local-floor"); }
+        catch { xrSpace = await xrSession.requestReferenceSpace("local"); }
+        xrPoseSeen = false;
+        send({ type: "mode", spatial: true });
+        ui.spatial.textContent = "Stop spatial 6DoF";
+        ui.spatial.disabled = false;
+        ui.spatial.setAttribute("aria-pressed", "true");
+        setStatus("Spatial 6DoF active.", "Move the phone, then tap Set neutral to define the camera origin.");
+        clearTimeout(xrPoseTimer);
+        xrPoseTimer = setTimeout(() => {
+          if (xrSession && !xrPoseSeen) setStatus("Spatial session active, but tracking is not ready.", "Move the phone slowly and make sure ARCore can see a textured, well-lit surface.");
+        }, 3000);
+        const onFrame = (time, frame) => {
+          if (!xrSession) return;
+          const layer = xrSession.renderState.baseLayer;
+          if (xrGl && layer) {
+            xrGl.bindFramebuffer(xrGl.FRAMEBUFFER, layer.framebuffer);
+            xrGl.viewport(0, 0, layer.framebufferWidth, layer.framebufferHeight);
+            xrGl.clearColor(0, 0, 0, 0);
+            xrGl.clear(xrGl.COLOR_BUFFER_BIT | xrGl.DEPTH_BUFFER_BIT);
+          }
+          const pose = frame.getViewerPose(xrSpace);
+          if (pose?.views?.[0]) {
+            const transform = pose.views[0].transform;
+            if (!xrPoseSeen) {
+              xrPoseSeen = true;
+              clearTimeout(xrPoseTimer);
+              setStatus("6DoF tracking live.", "Position and orientation are now reaching Blocking Studio.");
+            }
+            send({
+              type: "pose6dof",
+              pos: [transform.position.x, transform.position.y, transform.position.z],
+              quat: [transform.orientation.x, transform.orientation.y, transform.orientation.z, transform.orientation.w]
+            });
+          }
+          xrSession.requestAnimationFrame(onFrame);
+        };
+        xrSession.addEventListener("end", () => {
+          xrSession = null;
+          xrSpace = null;
+          xrGl = null;
+          xrCanvas?.remove();
+          xrCanvas = null;
+          clearTimeout(xrPoseTimer);
+          xrPoseSeen = false;
+          ui.spatial.textContent = "Start spatial 6DoF";
+          ui.spatial.disabled = false;
+          ui.spatial.setAttribute("aria-pressed", "false");
+          send({ type: "mode", spatial: false });
+          setStatus("Spatial mode stopped.", "Gyro mode remains available with Enable motion.");
+        }, { once: true });
+        xrSession.requestAnimationFrame(onFrame);
+      } catch (error) {
+        try { await xrSession?.end(); } catch {}
+        xrSession = null;
+        xrSpace = null;
+        xrGl = null;
+        xrCanvas?.remove();
+        xrCanvas = null;
+        clearTimeout(xrPoseTimer);
+        ui.spatial.textContent = "Start spatial 6DoF";
+        ui.spatial.setAttribute("aria-pressed", "false");
+        setStatus("Spatial mode unavailable.", error?.message || "Use Chrome on an ARCore-compatible Android phone.");
+      } finally {
+        xrStarting = false;
+        ui.spatial.disabled = false;
+      }
+    }
+
+    function chooseView(mode) {
+      const app = mode === "app";
+      ui.appView.setAttribute("aria-pressed", String(app));
+      ui.phoneView.setAttribute("aria-pressed", String(!app));
+      if (!app) ui.viewfinder.classList.remove("has-frame");
+      send({ type: "viewfinder", mode });
+    }
+
+    ui.motion.addEventListener("click", enableMotion);
+    ui.spatial.addEventListener("click", () => xrSession ? xrSession.end() : startSpatial());
+    ui.record.addEventListener("click", () => send({ type: "rec" }));
+    ui.neutral.addEventListener("click", () => send({ type: "neutral" }));
+    ui.phoneView.addEventListener("click", () => chooseView("phone"));
+    ui.appView.addEventListener("click", () => chooseView("app"));
+    ui.zoom.addEventListener("input", () => {
+      const focal = Number(ui.zoom.value);
+      ui.zoomValue.textContent = `${Math.round(focal)}mm`;
+      send({ type: "zoom", focal });
+    });
+    ui.scale.addEventListener("input", () => {
+      const scale = Number(ui.scale.value);
+      ui.scaleValue.textContent = `${scale.toFixed(1)}×`;
+      send({ type: "scale", scale });
+    });
+    document.addEventListener("visibilitychange", async () => {
+      if (document.visibilityState === "visible" && motionEnabled && !wakeLock) {
+        try { wakeLock = await navigator.wakeLock?.request("screen"); } catch {}
+      }
+    });
+    connect();
+  </script>
+</body>
+</html>

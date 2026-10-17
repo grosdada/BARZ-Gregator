@@ -1,0 +1,99 @@
+{
+  "schemaVersion": "1.0",
+  "id": "semantic-knolling-02",
+  "owner": "knolling",
+  "status": "pending-astra-review",
+  "approximateTokens": 3023,
+  "prompts": [
+    {
+      "id": "text-f0210ba3fc0c7e77cd1b",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "[MULTI_IMAGE_PLACEHOLDER]**360° PANORAMIC RECONSTRUCTION — 3×3 GRID** **METAPHOR:** A photographer stands still at one fixed point, takes a photo [IMG_1]= A1, the REFERENCE, then rotates 45° clockwise in place and shoots again (= A2), and so on for 8 photos total. Camera stays at the same height, perfectly horizontal, throughout. The 8 shots tile a complete 360° panorama around that spot. Panel C3 is a top-down map of the spot. **SOURCE:** The attached reference photo IS panel A1. Panels A2 → C2 show new directions from the SAME exact spot, INVENTED but coherent with the reference's architecture, materials, light, atmosphere. **OUTPUT:** 3×3 grid, 8 photorealistic rotation views + 1 overhead diagram (C3). **GRID — each panel = +45° clockwise yaw from A1:** - A1: REFERENCE (forward) - A2: 45° right of A1 - A3: 90° right (perpendicular right) - B1: 135° (behind-right) - B2: 180° — DIRECTLY OPPOSITE A1, what was BEHIND the photographer. NONE of A1's buildings appear here. - B3: 225° (behind-left) - C1: 270° (perpendicular left) - C2: 315° (45° left of A1) - C3: overhead camera map (diagram only) **CAMERA — IDENTICAL ACROSS A1 → C2:** - Single fixed pivot, never translates, only rotates. - YAW ONLY — horizontal body rotation in place. Lens axis parallel to ground. - Camera perfectly LEVEL. No pitch, no tilt, no roll, no Dutch angle. - FORBIDDEN: aerial, bird's-eye, top-down, drone, high-angle, low-angle, oblique. \"45°/90°\" refer ONLY to body rotation, NEVER to camera tilt. - Eye level (~160 cm). HFOV ~50°. Horizon locked at identical pixel height in all panels. - Focal length, exposure, white balance, color grading all locked to the reference. **LANDMARK ISOLATION — CRITICAL:** The reference's distinctive elements (most colorful/unique buildings, specific façade colors, dominant foreground mass) appear in A1 ONLY. Their outer edge may show at the inner borders of A2 and C2 (adjacent to A1). They do NOT appear in A3, B1, B2, B3, C1. B2 especially faces the opposite side of the world — show only what was BEHIND the photographer. **SEAMLESS EDGES:** The 8 panels tile one stitched 360° cylindrical panorama. Adjacent borders share content: A1 right → A2 left → A3 left → B1 left → B2 left → B3 left → C1 left → C2 left → A1 left (loop closes). Buildings, rooflines, roads, vegetation, mountain silhouettes touching a panel border MUST continue uninterrupted into the adjacent panel, as if you sliced one stitched panorama at arbitrary points. **EXTRAPOLATION — INVENT, DON'T COPY:** Read the reference for era, typology, materials, patina, density, vegetation, haze, palette, light direction, weather. Propagate the same vocabulary into invented directions. New buildings share era, materials, proportions with the reference — but are PLAUSIBLE NEW STRUCTURES, never mirrored copies. Urban density, street logic, mountains, sky, haze wrap coherently around the full 360°. NO anachronisms, NO foreign styles, NO modern signage, NO flipping or duplication of A1's buildings. **CLEANING:** Remove people, vehicles, stalls, signage, trash, animals. Keep only permanent architecture, roads, vegetation, terrain. Inpaint cleared zones with surrounding ground material. **LIGHT/ATMOSPHERE:** Preserve reference's palette, light direction, mood, exposure, white balance across all 8 panels. Haze increases consistently with distance. Sky and horizon continue coherently around the full 360°. **PANEL C3 — OVERHEAD MAP (diagram, not photo):** Top-down architectural diagram. Camera icon at geometric center. 8 arrows radiating outward, labeled A1 (0°), A2 (45°), A3 (90°), B1 (135°), B2 (180°), B3 (225°), C1 (270°), C2 (315°). Simplified building footprints consistent with each rotation view. Thin black lines on light neutral background, clean technical style. **FORMAT:** 3×3 grid, 9 panels of identical size, thin separator lines. A1 → C2 photorealistic. C3 technical diagram. No text except direction labels in C3. **VERIFY:** - All 8 views eye-level, perfectly horizontal — no aerial, no tilt, no Dutch. - A1's distinctive landmarks appear ONLY in A1 (and edges of A2/C2). - B2 = opposite side, no A1 features. - Same horizon height, light, exposure throughout. - Adjacent borders align as if cut from one stitched panorama.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 1990,
+          "column": 73,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f04b1c5b9b9a15bb3a1e",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "[MULTI_IMAGE_PLACEHOLDER]Based on this image: **DECOR EXTRACTION — 4 POV ROTATION** Remove ALL human figures. Generate 4 views rotating 90° from center. STRICT FIDELITY to source — do NOT invent or add elements. **CHARACTER REMOVAL:** - Remove all people/animals completely - Inpaint removed areas with environment already visible in source (extend floors, walls, patterns) - NO new furniture, NO new objects — only extend what's already visible - Maintain exact lighting from source **FIDELITY RULE — CRITICAL:** This is RECONSTRUCTION, not imagination. - Only show elements that are VISIBLE or PARTIALLY VISIBLE in source image - Extend existing patterns (floor tiles, wallpaper, moldings) — don't invent new ones - If an area is unknown, keep it simple: plain wall continuation, floor continuation - DO NOT add furniture, decorations, or objects not evidenced in source - When in doubt, leave it empty/plain rather than invent **CAMERA SETUP:** - Camera at room center, eye level (~160cm) - Pure 90° rotation between views (no zoom, no tilt change) - Same lens/focal length all views **4-VIEW OUTPUT (2x2 grid):** | VIEW 1: 0° (source direction) | VIEW 2: 90° right | | VIEW 3: 180° (behind camera) | VIEW 4: 270° left | - VIEW 1: Source angle, figures removed — this is your REFERENCE for accuracy - VIEW 2: 90° right — extend visible right-side elements, keep simple where unknown - VIEW 3: 180° — minimal invention, plain walls if not evidenced, extend floor only - VIEW 4: 270° left — extend visible left-side elements, keep simple where unknown **CONSISTENCY:** - SAME room, SAME lighting, SAME materials in all 4 views - Objects visible from multiple angles MUST match exactly - Floor/ceiling continuous and matching - Light direction consistent (sun position, shadows) **COLOR GRADING LOCK:** - EXACT color grade from source: temperature, contrast, saturation, exposure - Film grain/texture if present - No auto-correction — clone the grade **FORMAT:** - 2x2 GRID: 4 panels IDENTICAL size - Separator lines between panels - NO TEXT/LABELS",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2351,
+          "column": 66,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f242aa863708a2fb7eed",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Dresses a character [IMG_1] with clothing from a knolling board [IMG_2]. Adapts garments to the character's exact proportions and pose. Requires two images: the character and the knolling board.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 1214,
+          "column": 51,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f256f35801b6638dad09",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "[MULTI_IMAGE_PLACEHOLDER]Based on this image: **DECOR EXTRACTION — 9 FREE POV GRID** Remove ALL human figures from the scene. Generate 9 different camera angles exploring the environment cinematically. This is the SAME location shown from 9 different viewpoints. **CHARACTER REMOVAL:** - Remove all people, animals, moving figures completely - Fill removed areas with consistent environment (inpaint with matching textures, furniture, architectural elements) - Maintain lighting consistency where figures were removed - No ghosting, no artifacts, no blur — clean seamless removal **9 POV GRID (3x3):** **ROW 1 — HEIGHT VARIATIONS:** 1. **WORM'S EYE:** Camera on floor level (10-20cm) looking up — ceiling dominates composition, furniture towers above, dramatic perspective distortion, floor texture in immediate foreground 2. **EYE LEVEL:** Standard human height (~160cm) — neutral documentary feel, how a person standing would see the space, balanced perspective 3. **BIRD'S EYE:** Camera near ceiling looking down at 45-60° angle — floor plan becomes visible, tops of furniture, spatial relationships clear, architectural overview **ROW 2 — DISTANCE VARIATIONS:** 4. **EXTREME WIDE:** Maximum possible distance, entire space visible edge-to-edge, architectural context dominant, establishing shot feel, may require wider lens simulation 5. **MEDIUM SHOT:** Partial room visible, focus on key furniture grouping or functional area, context present but secondary, comfortable viewing distance 6. **INTIMATE CORNER:** Tight crop on one specific area — detail textures visible, object surfaces, a vignette of the space, almost macro feeling for environment **ROW 3 — CREATIVE ANGLES:** 7. **DUTCH ANGLE:** Camera tilted 15-25° off horizontal axis, creates tension and unease, dramatic and cinematic, same content as eye level but destabilized 8. **THROUGH FRAME:** Shot composed through a doorway, window frame, architectural arch, or furniture piece — creates depth layers, foreground/midground/background separation, voyeuristic quality 9. **REFLECTION VIEW:** If mirror or reflective surface exists in space, capture environment via that reflection; if no mirror, use low angle capturing floor reflection or window reflection — adds conceptual layer **ENVIRONMENT CONSISTENCY — CRITICAL:** - This is ONE location — every view must show the SAME room/space - SAME furniture pieces in SAME positions (visible from different angles) - SAME wall colors, floor materials, ceiling details - SAME props, decorations, objects — if a lamp is on a table in view 1, it's there in view 5 - SAME lighting setup: direction, color temperature, shadow behavior - SAME time of day, weather conditions visible through windows - Architecture must be geometrically consistent (room dimensions don't change) **COLOR GRADING LOCK — CRITICAL:** - EXACT same color grade as source image across all 9 panels - Match color temperature (warm/cool cast), saturation levels, contrast curve - Match exposure level, black point, white point, gamma - Match film stock look / digital sensor characteristics of source - If source has grain, match grain. If source is clean, stay clean. - No auto-correction, no \"enhancement\" — clone the exact color science **FORMAT:** - 3x3 GRID: 9 panels of IDENTICAL width and height - Visible thin separator lines between panels - NO TEXT, NO LABELS, NO NUMBERS anywhere on the image - All 9 panels must have same aspect ratio",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2215,
+          "column": 69,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f4ffc71cc58b533f8d25",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Based on these two images: - **[IMG_1]:** Character reference (body, pose, proportions) - **[IMG_2]:** Knolling board with clothing and accessories **DRESS CHARACTER — OUTFIT TRANSFER** Transfer the clothing from the knolling board [IMG_2] onto the character in [IMG_1], adapting every garment to fit the character's exact body proportions and current pose. [SUBJECT_PLACEHOLDER] **CHARACTER PRESERVATION — CRITICAL:** - KEEP exact face, hair, skin tone, body proportions from [IMG_1] - KEEP exact pose, gesture, body position from [IMG_1] - KEEP exact camera angle and framing from [IMG_1] - KEEP original background/environment from [IMG_1] - Only the CLOTHING changes — the person stays identical **CLOTHING ADAPTATION — CRITICAL:** - TAKE all garments from knolling board [IMG_2] - ADAPT each garment to fit [IMG_1] character's body shape and size - ADAPT clothing to [IMG_1] character's pose (stretch, fold, drape naturally) - MAINTAIN fabric behavior: how it wrinkles, falls, moves with the pose - PRESERVE exact colors, patterns, textures, logos, wear marks from [IMG_2] - Layer garments logically (underwear ? shirt ? jacket, etc.) **FITTING RULES:** - Sleeves follow arm positions from [IMG_1] - Pants/skirts follow leg positions from [IMG_1] - Collar sits naturally on character's neck - Shoulders align with character's shoulder width - Waistline matches character's waist position - Footwear fits character's feet in their current position **GARMENTS TO TRANSFER (from knolling board):** - All visible clothing: outerwear, tops, bottoms, footwear - Wearable accessories: hats, scarves, belts, jewelry, watches, glasses, bags [ACCESSORY_PLACEHOLDER] **TECHNICAL:** - Photorealistic integration — clothing must look naturally worn, not composited - Lighting on clothing matches [IMG_1] scene lighting - Shadows and folds respond to [IMG_1] pose - Fabric physics accurate to pose and movement implied **OUTPUT:** - Single image of [IMG_1] character wearing [IMG_2] outfit - Same framing, angle, background as [IMG_1] - Seamless, professional result Character from [IMG_1] now wearing complete outfit from [IMG_2] — perfectly fitted to their body and pose.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 1215,
+          "column": 71,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ]
+    }
+  ]
+}

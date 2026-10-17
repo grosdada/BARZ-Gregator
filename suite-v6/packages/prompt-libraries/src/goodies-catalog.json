@@ -1,0 +1,792 @@
+{
+  "schemaVersion": "1.0",
+  "id": "banana-helper",
+  "title": "BZ Goodies",
+  "suffix": " Preserve the uploaded subject identity or object design when a reference is provided. Use [Scene Description] as the scene details. No readable text, no captions, no labels, no watermark, unless the user explicitly asks for typography.",
+  "categories": [
+    {
+      "id": "1930s",
+      "title": "1930s",
+      "order": 0,
+      "count": 10
+    },
+    {
+      "id": "1940s",
+      "title": "1940s",
+      "order": 1,
+      "count": 10
+    },
+    {
+      "id": "1950s",
+      "title": "1950s",
+      "order": 2,
+      "count": 10
+    },
+    {
+      "id": "1960s",
+      "title": "1960s",
+      "order": 3,
+      "count": 10
+    },
+    {
+      "id": "1970s",
+      "title": "1970s",
+      "order": 4,
+      "count": 10
+    },
+    {
+      "id": "1980s",
+      "title": "1980s",
+      "order": 5,
+      "count": 10
+    },
+    {
+      "id": "2000s",
+      "title": "2000s",
+      "order": 6,
+      "count": 10
+    },
+    {
+      "id": "fun",
+      "title": "Fun",
+      "order": 7,
+      "count": 7
+    }
+  ],
+  "entries": [
+    {
+      "id": "goodies-1930s-art-deco-lobby-portrait",
+      "categoryId": "1930s",
+      "order": 0,
+      "title": "Art Deco Lobby Portrait",
+      "prompt": "Turn [Scene Description] into a 1930s Art Deco hotel lobby portrait: polished black marble, brass geometry, fan-shaped wall lights, elegant evening wear, hard glamour lighting, crisp studio shadows, nitrate film sheen.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-1930s-dust-bowl-documentary",
+      "categoryId": "1930s",
+      "order": 1,
+      "title": "Dust Bowl Documentary",
+      "prompt": "Render [Scene Description] as a 1930s Dust Bowl documentary photograph: windblown dust, worn cotton clothing, weathered hands, sparse farm horizon, honest social-realist framing, silver gelatin texture.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-1930s-noir-alley-setup",
+      "categoryId": "1930s",
+      "order": 2,
+      "title": "Noir Alley Setup",
+      "prompt": "Rebuild [Scene Description] as a late-1930s proto-noir alley: wet cobblestones, venetian blind shadows, cigarette haze, fedora silhouettes, one hard streetlamp, high-contrast monochrome.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-1930s-streamline-product-ad",
+      "categoryId": "1930s",
+      "order": 3,
+      "title": "Streamline Product Ad",
+      "prompt": "Transform [Scene Description] into a 1930s streamline moderne product advertisement image: chrome curves, aerodynamic composition, glossy enamel surfaces, theatrical studio rim light, premium catalog polish.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-1930s-cabaret-backstage",
+      "categoryId": "1930s",
+      "order": 4,
+      "title": "Cabaret Backstage",
+      "prompt": "Stage [Scene Description] inside a 1930s cabaret backstage room: velvet curtains, bulb mirrors, feather accessories, champagne glass reflections, decadent but slightly tired atmosphere, warm tungsten glow.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-1930s-expedition-news-photo",
+      "categoryId": "1930s",
+      "order": 5,
+      "title": "Expedition News Photo",
+      "prompt": "Make [Scene Description] look like a 1930s expedition press photograph: canvas tents, labeled crates without readable text, khaki fabric, field camera depth, harsh noon light, archival print grain.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-1930s-radio-drama-still",
+      "categoryId": "1930s",
+      "order": 6,
+      "title": "Radio Drama Still",
+      "prompt": "Create [Scene Description] as a 1930s radio studio drama still: ribbon microphones, acoustic panels, script pages turned away, intense actor pose, moody overhead light, black-and-white publicity photo.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-1930s-grand-train-terminal",
+      "categoryId": "1930s",
+      "order": 7,
+      "title": "Grand Train Terminal",
+      "prompt": "Place [Scene Description] in a 1930s grand train terminal: steam haze, monumental windows, tailored coats, polished luggage, cinematic scale, symmetrical composition, soft monochrome glow.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-1930s-circus-poster-photo",
+      "categoryId": "1930s",
+      "order": 8,
+      "title": "Circus Poster Photo",
+      "prompt": "Turn [Scene Description] into a 1930s traveling circus publicity photograph: canvas ring, painted props, practical costumes, dramatic footlights, slightly eerie joy, hand-tinted print feeling without text.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-1930s-society-magazine-spread",
+      "categoryId": "1930s",
+      "order": 9,
+      "title": "Society Magazine Spread",
+      "prompt": "Render [Scene Description] as a 1930s society magazine fashion spread: satin gowns or sharp tuxedos, mirrored salon, sculptural shadows, poised expression, luxe editorial composition.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-1940s-homefront-kitchen",
+      "categoryId": "1940s",
+      "order": 0,
+      "title": "Homefront Kitchen",
+      "prompt": "Convert [Scene Description] into a 1940s homefront kitchen scene: enamel appliances, checked cloth, ration-era simplicity, practical warm light, careful domestic composition, Kodachrome softness.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-1940s-wartime-factory-hero",
+      "categoryId": "1940s",
+      "order": 1,
+      "title": "Wartime Factory Hero",
+      "prompt": "Stage [Scene Description] as a 1940s wartime factory hero image: riveted metal, rolled sleeves, sparks, disciplined posture, strong diagonal composition, patriotic but text-free production still.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-1940s-noir-detective-office",
+      "categoryId": "1940s",
+      "order": 2,
+      "title": "Noir Detective Office",
+      "prompt": "Make [Scene Description] a 1940s detective office noir still: slatted window light, desk lamp, fogged glass door, cigarette smoke, trench coat silhouette, deep black shadows.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-1940s-victory-garden-portrait",
+      "categoryId": "1940s",
+      "order": 3,
+      "title": "Victory Garden Portrait",
+      "prompt": "Render [Scene Description] as a 1940s victory garden portrait: modest garden rows, practical clothing, tin watering can, optimistic restraint, gentle midday color, documentary realism.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-1940s-swing-club-night",
+      "categoryId": "1940s",
+      "order": 4,
+      "title": "Swing Club Night",
+      "prompt": "Place [Scene Description] in a 1940s swing club: polished dance floor, brass instruments, motion blur from dancers, smoky air, warm spotlight pools, lively but elegant frame.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-1940s-field-hospital-still",
+      "categoryId": "1940s",
+      "order": 5,
+      "title": "Field Hospital Still",
+      "prompt": "Turn [Scene Description] into a 1940s field hospital cinematic still: canvas walls, enamel instruments, cotton bandages, anxious faces, subdued olive palette, humane documentary texture.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-1940s-pulp-adventure-cover",
+      "categoryId": "1940s",
+      "order": 6,
+      "title": "Pulp Adventure Cover",
+      "prompt": "Rebuild [Scene Description] as a 1940s pulp adventure cover image without typography: dramatic cliff light, bold heroic pose, painted realism, saturated reds and yellows, exaggerated danger.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-1940s-blackout-street",
+      "categoryId": "1940s",
+      "order": 7,
+      "title": "Blackout Street",
+      "prompt": "Set [Scene Description] on a 1940s blackout street: covered windows, dim lantern pools, rain-soaked pavement, cautious figures, quiet suspense, silver nitrate contrast.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-1940s-utility-fashion-editorial",
+      "categoryId": "1940s",
+      "order": 8,
+      "title": "Utility Fashion Editorial",
+      "prompt": "Transform [Scene Description] into a 1940s utility fashion editorial: structured jackets, practical skirts or suits, clean studio backdrop, precise tailoring, sober elegance, soft film grain.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-1940s-technicolor-melodrama",
+      "categoryId": "1940s",
+      "order": 9,
+      "title": "Technicolor Melodrama",
+      "prompt": "Render [Scene Description] as a 1940s Technicolor melodrama frame: rich saturated fabrics, emotional close framing, painted interior light, theatrical color separation, polished studio finish.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-1950s-atomic-age-kitchen-ad",
+      "categoryId": "1950s",
+      "order": 0,
+      "title": "Atomic Age Kitchen Ad",
+      "prompt": "Turn [Scene Description] into a 1950s atomic-age kitchen advertisement image: pastel appliances, chrome trim, gleaming surfaces, cheerful product pose, optimistic studio lighting, no readable slogan.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-1950s-drive-in-movie-night",
+      "categoryId": "1950s",
+      "order": 1,
+      "title": "Drive-In Movie Night",
+      "prompt": "Place [Scene Description] at a 1950s drive-in theater: car interior foreground, giant screen glow, milkshake colors, summer night haze, romantic Americana mood.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-1950s-hollywood-glamour-headshot",
+      "categoryId": "1950s",
+      "order": 2,
+      "title": "Hollywood Glamour Headshot",
+      "prompt": "Render [Scene Description] as a 1950s Hollywood glamour headshot: sculpted key light, glossy hair, elegant wardrobe, soft focus edges, high contrast studio portrait.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-1950s-suburban-lawn-snapshot",
+      "categoryId": "1950s",
+      "order": 3,
+      "title": "Suburban Lawn Snapshot",
+      "prompt": "Make [Scene Description] a 1950s suburban lawn color snapshot: trimmed grass, sprinkler sparkle, ranch house background, clean family-photo composition, sun-faded Kodachrome warmth.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-1950s-rockabilly-stage",
+      "categoryId": "1950s",
+      "order": 4,
+      "title": "Rockabilly Stage",
+      "prompt": "Stage [Scene Description] as a 1950s rockabilly performance still: upright bass, checked floor, pompadour or swing dress styling, sharp spotlight, kinetic music energy.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-1950s-sci-fi-b-movie-lab",
+      "categoryId": "1950s",
+      "order": 5,
+      "title": "Sci-Fi B-Movie Lab",
+      "prompt": "Transform [Scene Description] into a 1950s sci-fi B-movie laboratory: blinking consoles, glass tubes, rubber-suit mood, practical props, colored gel lighting, playful tension.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-1950s-soda-fountain-scene",
+      "categoryId": "1950s",
+      "order": 6,
+      "title": "Soda Fountain Scene",
+      "prompt": "Place [Scene Description] inside a 1950s soda fountain: chrome stools, checkerboard floor, glass sundae cups, soft pastel palette, wholesome magazine-photo energy.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-1950s-pin-up-garage-calendar",
+      "categoryId": "1950s",
+      "order": 7,
+      "title": "Pin-Up Garage Calendar",
+      "prompt": "Render [Scene Description] as a 1950s garage calendar photo without text: polished tools, classic car fender, staged smile or confident pose, saturated studio flash.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-1950s-corporate-training-film",
+      "categoryId": "1950s",
+      "order": 8,
+      "title": "Corporate Training Film",
+      "prompt": "Make [Scene Description] look like a 1950s corporate training film still: clean office set, practical demonstration pose, neutral suits, bright flat lighting, educational sincerity.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-1950s-monster-matinee-still",
+      "categoryId": "1950s",
+      "order": 9,
+      "title": "Monster Matinee Still",
+      "prompt": "Turn [Scene Description] into a 1950s monster matinee still: foggy miniature street, theatrical frightened pose, practical creature-lighting feel, black-and-white high contrast.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-1960s-mod-fashion-studio",
+      "categoryId": "1960s",
+      "order": 0,
+      "title": "Mod Fashion Studio",
+      "prompt": "Render [Scene Description] as a 1960s mod fashion studio image: geometric set, bold color blocks, mini-dress or tailored suit energy, graphic composition, crisp flash.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-1960s-french-new-wave-street",
+      "categoryId": "1960s",
+      "order": 1,
+      "title": "French New Wave Street",
+      "prompt": "Place [Scene Description] in a 1960s French New Wave street frame: handheld black-and-white, cafe windows, cigarette mood, imperfect framing, youthful existential cool.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-1960s-space-age-catalog",
+      "categoryId": "1960s",
+      "order": 2,
+      "title": "Space Age Catalog",
+      "prompt": "Turn [Scene Description] into a 1960s space-age catalog photo: white plastic furniture, silver fabric, bubble forms, optimistic futurism, clean seamless studio light.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-1960s-psychedelic-poster-photo",
+      "categoryId": "1960s",
+      "order": 3,
+      "title": "Psychedelic Poster Photo",
+      "prompt": "Make [Scene Description] a 1960s psychedelic promo photo without typography: swirling projected colors, saturated gels, long hair or velvet styling, dreamy lens bloom.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-1960s-diner-kodachrome",
+      "categoryId": "1960s",
+      "order": 4,
+      "title": "Diner Kodachrome",
+      "prompt": "Stage [Scene Description] inside a 1960s roadside diner: red vinyl booths, chrome edge highlights, jukebox glow, Kodachrome color, slightly nostalgic everyday realism.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-1960s-spy-thriller-briefing",
+      "categoryId": "1960s",
+      "order": 5,
+      "title": "Spy Thriller Briefing",
+      "prompt": "Transform [Scene Description] into a 1960s spy thriller briefing room: maps turned abstract, tailored silhouettes, hidden tension, cool grey palette, sharp modernist lighting.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-1960s-pop-art-product-shot",
+      "categoryId": "1960s",
+      "order": 6,
+      "title": "Pop Art Product Shot",
+      "prompt": "Rebuild [Scene Description] as a 1960s pop-art product photograph: flat bright color backdrop, repeated shapes, playful consumer object styling, clean graphic shadow.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-1960s-beatnik-basement",
+      "categoryId": "1960s",
+      "order": 7,
+      "title": "Beatnik Basement",
+      "prompt": "Place [Scene Description] in a 1960s beatnik basement club: low ceiling, small stage, poetry-mic energy, black turtlenecks, smoky tungsten pools, intimate framing.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-1960s-desert-road-cinema",
+      "categoryId": "1960s",
+      "order": 8,
+      "title": "Desert Road Cinema",
+      "prompt": "Render [Scene Description] as a 1960s desert road cinema still: faded car, hard sun, motel sign shapes without readable words, dry colors, widescreen loneliness.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-1960s-swinging-london-editorial",
+      "categoryId": "1960s",
+      "order": 9,
+      "title": "Swinging London Editorial",
+      "prompt": "Turn [Scene Description] into a 1960s Swinging London editorial: street fashion, wet pavement, playful pose, compact cars, bright overcast light, magazine polish.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-1970s-wood-panel-apartment",
+      "categoryId": "1970s",
+      "order": 0,
+      "title": "Wood Panel Apartment",
+      "prompt": "Place [Scene Description] in a 1970s wood-panel apartment: amber lamps, shag carpet, houseplants, brown-orange palette, intimate domestic cinema, soft grain.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-1970s-disco-floor-flash",
+      "categoryId": "1970s",
+      "order": 1,
+      "title": "Disco Floor Flash",
+      "prompt": "Render [Scene Description] as a 1970s disco floor flash photo: mirror ball fragments, metallic fabric, sweaty motion, colored lights, energetic off-camera flash.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-1970s-polaroid-road-trip",
+      "categoryId": "1970s",
+      "order": 2,
+      "title": "Polaroid Road Trip",
+      "prompt": "Make [Scene Description] feel like a 1970s Polaroid road trip memory: sun-faded edges, motel pool, denim, warm haze, casual imperfect composition.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-1970s-giallo-corridor",
+      "categoryId": "1970s",
+      "order": 3,
+      "title": "Giallo Corridor",
+      "prompt": "Transform [Scene Description] into a 1970s giallo corridor still: saturated red and green gels, patterned wallpaper, gloved hand suspense, baroque shadow.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-1970s-vinyl-listening-room",
+      "categoryId": "1970s",
+      "order": 4,
+      "title": "Vinyl Listening Room",
+      "prompt": "Stage [Scene Description] in a 1970s vinyl listening room: stacked records, low sofa, hi-fi receiver glow, relaxed pose, dusty warm film texture.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-1970s-folk-festival-field",
+      "categoryId": "1970s",
+      "order": 5,
+      "title": "Folk Festival Field",
+      "prompt": "Turn [Scene Description] into a 1970s folk festival field image: canvas stage, sun hats, handmade clothing, golden hour, communal documentary mood.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-1970s-corporate-brown-office",
+      "categoryId": "1970s",
+      "order": 6,
+      "title": "Corporate Brown Office",
+      "prompt": "Render [Scene Description] as a 1970s corporate brown office still: beige phones, typewriter desk, boxy suits, fluorescent haze, quietly absurd professionalism.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-1970s-skate-magazine-shot",
+      "categoryId": "1970s",
+      "order": 7,
+      "title": "Skate Magazine Shot",
+      "prompt": "Make [Scene Description] a 1970s skate magazine action photo: empty pool concrete, fisheye lens, tube socks, sunburnt colors, freeze-frame grit.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-1970s-occult-paperback-scene",
+      "categoryId": "1970s",
+      "order": 8,
+      "title": "Occult Paperback Scene",
+      "prompt": "Rebuild [Scene Description] as a 1970s occult paperback cover image without text: candle smoke, velvet cloth, anxious faces, lurid painted-realism color.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-1970s-airport-lounge-glam",
+      "categoryId": "1970s",
+      "order": 9,
+      "title": "Airport Lounge Glam",
+      "prompt": "Place [Scene Description] in a 1970s airport lounge: smoked glass, chrome chairs, patterned carpet, stylish traveler posture, cinematic waiting-room melancholy.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-1980s-neon-mall-portrait",
+      "categoryId": "1980s",
+      "order": 0,
+      "title": "Neon Mall Portrait",
+      "prompt": "Turn [Scene Description] into an 1980s neon mall portrait: glossy tile, arcade glow, big hair or bold jacket, magenta-cyan reflections, consumer-dream atmosphere.",
+      "corrections": [
+        {
+          "kind": "grammar",
+          "before": "a 1980s",
+          "after": "an 1980s",
+          "reason": "The spoken decade begins with a vowel sound (eighties)."
+        }
+      ]
+    },
+    {
+      "id": "goodies-1980s-vhs-fitness-tape",
+      "categoryId": "1980s",
+      "order": 1,
+      "title": "VHS Fitness Tape",
+      "prompt": "Render [Scene Description] as an 1980s VHS fitness tape still: leotard colors, studio cyclorama, soft analog blur, tracking noise feeling, energetic pose.",
+      "corrections": [
+        {
+          "kind": "grammar",
+          "before": "a 1980s",
+          "after": "an 1980s",
+          "reason": "The spoken decade begins with a vowel sound (eighties)."
+        }
+      ]
+    },
+    {
+      "id": "goodies-1980s-corporate-power-shot",
+      "categoryId": "1980s",
+      "order": 2,
+      "title": "Corporate Power Shot",
+      "prompt": "Make [Scene Description] an 1980s corporate power portrait: glass tower lobby, shoulder pads, polished briefcase, hard flash, cool authority, high contrast.",
+      "corrections": [
+        {
+          "kind": "grammar",
+          "before": "a 1980s",
+          "after": "an 1980s",
+          "reason": "The spoken decade begins with a vowel sound (eighties)."
+        }
+      ]
+    },
+    {
+      "id": "goodies-1980s-synthwave-car-night",
+      "categoryId": "1980s",
+      "order": 3,
+      "title": "Synthwave Car Night",
+      "prompt": "Place [Scene Description] beside an 1980s synthwave car at night: wet asphalt, neon strip lights, smoky horizon, cinematic chrome reflections, moody hero framing.",
+      "corrections": [
+        {
+          "kind": "grammar",
+          "before": "a 1980s",
+          "after": "an 1980s",
+          "reason": "The spoken decade begins with a vowel sound (eighties)."
+        }
+      ]
+    },
+    {
+      "id": "goodies-1980s-horror-rental-cover",
+      "categoryId": "1980s",
+      "order": 4,
+      "title": "Horror Rental Cover",
+      "prompt": "Transform [Scene Description] into an 1980s horror rental cover image without typography: practical fog, flashlight beam, saturated blue shadows, lurid threat composition.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-1980s-teen-bedroom-poster",
+      "categoryId": "1980s",
+      "order": 5,
+      "title": "Teen Bedroom Poster",
+      "prompt": "Stage [Scene Description] in an 1980s teen bedroom: cassette deck, posters turned abstract, desk lamp, denim textures, warm nostalgic clutter.",
+      "corrections": [
+        {
+          "kind": "grammar",
+          "before": "a 1980s",
+          "after": "an 1980s",
+          "reason": "The spoken decade begins with a vowel sound (eighties)."
+        }
+      ]
+    },
+    {
+      "id": "goodies-1980s-music-video-freeze",
+      "categoryId": "1980s",
+      "order": 6,
+      "title": "Music Video Freeze",
+      "prompt": "Render [Scene Description] as an 1980s music video freeze-frame: Venetian blinds, colored smoke, dramatic pose, glossy skin highlights, overlit theatrical style.",
+      "corrections": [
+        {
+          "kind": "grammar",
+          "before": "a 1980s",
+          "after": "an 1980s",
+          "reason": "The spoken decade begins with a vowel sound (eighties)."
+        }
+      ]
+    },
+    {
+      "id": "goodies-1980s-arcade-cabinet-glow",
+      "categoryId": "1980s",
+      "order": 7,
+      "title": "Arcade Cabinet Glow",
+      "prompt": "Place [Scene Description] in an 1980s arcade: cabinet light on face, joystick foreground, saturated carpet, dark room, pixel-color glow, shallow depth.",
+      "corrections": [
+        {
+          "kind": "grammar",
+          "before": "a 1980s",
+          "after": "an 1980s",
+          "reason": "The spoken decade begins with a vowel sound (eighties)."
+        }
+      ]
+    },
+    {
+      "id": "goodies-1980s-cyberpunk-newsstand",
+      "categoryId": "1980s",
+      "order": 8,
+      "title": "Cyberpunk Newsstand",
+      "prompt": "Make [Scene Description] an 1980s cyberpunk newsstand still: rain, plastic ponchos, CRT glare, dense cables, hand-painted neon futurism, analog grit.",
+      "corrections": [
+        {
+          "kind": "grammar",
+          "before": "a 1980s",
+          "after": "an 1980s",
+          "reason": "The spoken decade begins with a vowel sound (eighties)."
+        }
+      ]
+    },
+    {
+      "id": "goodies-1980s-luxury-cologne-ad",
+      "categoryId": "1980s",
+      "order": 9,
+      "title": "Luxury Cologne Ad",
+      "prompt": "Turn [Scene Description] into an 1980s luxury cologne advertisement image: black glass, chrome, wind machine drama, tuxedo or silk styling, moody blue highlights.",
+      "corrections": [
+        {
+          "kind": "grammar",
+          "before": "a 1980s",
+          "after": "an 1980s",
+          "reason": "The spoken decade begins with a vowel sound (eighties)."
+        }
+      ]
+    },
+    {
+      "id": "goodies-2000s-y2k-chrome-portrait",
+      "categoryId": "2000s",
+      "order": 0,
+      "title": "Y2K Chrome Portrait",
+      "prompt": "Render [Scene Description] as an early-2000s Y2K chrome portrait: silver accessories, glossy plastic, blue-white light, low-rise futurism, compact digital camera flash.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-2000s-flip-phone-night-out",
+      "categoryId": "2000s",
+      "order": 1,
+      "title": "Flip Phone Night Out",
+      "prompt": "Place [Scene Description] in a 2000s night-out snapshot: flip phone glow, tiny purse details, club bathroom mirror light, flash glare, candid chaos.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-2000s-reality-tv-confessional",
+      "categoryId": "2000s",
+      "order": 2,
+      "title": "Reality TV Confessional",
+      "prompt": "Make [Scene Description] look like a 2000s reality TV confessional frame: soft sofa, practical lamp, shallow digital video depth, awkward direct address.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-2000s-nu-metal-warehouse",
+      "categoryId": "2000s",
+      "order": 3,
+      "title": "Nu-Metal Warehouse",
+      "prompt": "Transform [Scene Description] into a 2000s nu-metal warehouse promo shot: chain-link fence, cargo pants, hard sidelight, concrete texture, desaturated aggression.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-2000s-myspace-bedroom",
+      "categoryId": "2000s",
+      "order": 4,
+      "title": "MySpace Bedroom",
+      "prompt": "Stage [Scene Description] in a 2000s MySpace bedroom: fairy lights, webcam angle, messy desk, band posters abstracted, low-res digital nostalgia.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-2000s-luxury-tabloid-flash",
+      "categoryId": "2000s",
+      "order": 5,
+      "title": "Luxury Tabloid Flash",
+      "prompt": "Render [Scene Description] as a 2000s tabloid flash photo: hotel entrance, overexposed skin, black SUV reflections, paparazzi angle, chaotic glam.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-2000s-cyber-cafe-quest",
+      "categoryId": "2000s",
+      "order": 6,
+      "title": "Cyber Cafe Quest",
+      "prompt": "Place [Scene Description] in a 2000s cyber cafe: bulky monitors, blue fluorescent light, snack wrappers, wired headphones, compressed digital-photo realism.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-2000s-indie-sleaze-alley",
+      "categoryId": "2000s",
+      "order": 7,
+      "title": "Indie Sleaze Alley",
+      "prompt": "Make [Scene Description] an indie-sleaze alley photo: skinny jeans, leather jacket, cigarette glow, cheap flash, grainy digital point-and-shoot, messy cool.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-2000s-tech-product-launch",
+      "categoryId": "2000s",
+      "order": 8,
+      "title": "Tech Product Launch",
+      "prompt": "Turn [Scene Description] into a 2000s tech product launch image: glossy white stage, translucent plastic vibe, presenter silhouette, blue gradients, clean showroom light.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-2000s-skate-video-still",
+      "categoryId": "2000s",
+      "order": 9,
+      "title": "Skate Video Still",
+      "prompt": "Render [Scene Description] as a 2000s skate video still: fisheye curb angle, baggy clothes, blown highlights, DV camcorder texture, kinetic urban frame.",
+      "corrections": []
+    },
+    {
+      "id": "goodies-fun-character-design-sheet",
+      "categoryId": "fun",
+      "order": 0,
+      "title": "Character Design Sheet",
+      "prompt": "Generate a character design for me (Character Design). Proportion design (different height comparisons, head-to-body ratio, etc.). Three views (front, side, back). Expression design (Expression Sheet). Pose design (Pose Sheet) with various common poses. Costume design (Costume Design). [Scene Description] MANDATORY: No text on the image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "corrections": [
+        {
+          "kind": "grammar",
+          "before": "No text on image.",
+          "after": "No text on the image.",
+          "reason": "Restore the missing definite article."
+        },
+        {
+          "kind": "grammar",
+          "before": "Generate character design for me",
+          "after": "Generate a character design for me",
+          "reason": "Restore the missing indefinite article."
+        }
+      ]
+    },
+    {
+      "id": "goodies-fun-3d-action-figure",
+      "categoryId": "fun",
+      "order": 1,
+      "title": "3D Action Figure",
+      "prompt": "Create a 3D miniature figurine of this person, styled like a collectible toy. Position: standing with crossed arms and a confident smile. Texture: glossy plastic with subtle paint details, base with metallic accents. Lighting: soft studio spotlight, white background. [Scene Description] MANDATORY: No text on the image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "corrections": [
+        {
+          "kind": "grammar",
+          "before": "No text on image.",
+          "after": "No text on the image.",
+          "reason": "Restore the missing definite article."
+        }
+      ]
+    },
+    {
+      "id": "goodies-fun-character-combat",
+      "categoryId": "fun",
+      "order": 2,
+      "title": "Character Combat",
+      "prompt": "Have these two characters fight using dynamic action poses. Add appropriate visual backgrounds and scene interactions. Cinematic lighting. [Scene Description] MANDATORY: No text on the image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "corrections": [
+        {
+          "kind": "grammar",
+          "before": "No text on image.",
+          "after": "No text on the image.",
+          "reason": "Restore the missing definite article."
+        }
+      ]
+    },
+    {
+      "id": "goodies-fun-pet-as-human",
+      "categoryId": "fun",
+      "order": 3,
+      "title": "Pet as Human",
+      "prompt": "Create a photorealistic portrait of a human character that captures the character and vibe of this pet. Ensure that the expression of the human character matches the expression of the pet and keep its pose and attitude consistent. [Scene Description] MANDATORY: No text on the image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "corrections": [
+        {
+          "kind": "grammar",
+          "before": "No text on image.",
+          "after": "No text on the image.",
+          "reason": "Restore the missing definite article."
+        }
+      ]
+    },
+    {
+      "id": "goodies-fun-realistic-origami",
+      "categoryId": "fun",
+      "order": 4,
+      "title": "Realistic Origami",
+      "prompt": "Transform this image of this character into realistic origami art. Intricately folded white paper, with visible creases, edges, and layered folds. Simple, neutral background. [Scene Description] MANDATORY: No text on the image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "corrections": [
+        {
+          "kind": "grammar",
+          "before": "No text on image.",
+          "after": "No text on the image.",
+          "reason": "Restore the missing definite article."
+        }
+      ]
+    },
+    {
+      "id": "goodies-fun-food-explosion",
+      "categoryId": "fun",
+      "order": 5,
+      "title": "Food Explosion",
+      "prompt": "Create a dynamic, high-speed photograph of the meal in the uploaded photo in mid-explosion. Ingredients scattering outward. Liquids splashing vigorously. Lighting is sharp, highlighting textures. [Scene Description] MANDATORY: No text on the image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "corrections": [
+        {
+          "kind": "grammar",
+          "before": "No text on image.",
+          "after": "No text on the image.",
+          "reason": "Restore the missing definite article."
+        }
+      ]
+    },
+    {
+      "id": "goodies-fun-multiple-image-fusion",
+      "categoryId": "fun",
+      "order": 6,
+      "title": "Multiple Image Fusion",
+      "prompt": "Combine multiple images ([Image1], [Image2], [Image3], ...) into a single cohesive image. Keep all key subjects recognizable and maintain their proportions and details. Blend the images naturally with consistent lighting, shadows, perspective, and style. Photorealistic, high-resolution, seamless integration. [Scene Description] MANDATORY: No text on the image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "corrections": [
+        {
+          "kind": "grammar",
+          "before": "No text on image.",
+          "after": "No text on the image.",
+          "reason": "Restore the missing definite article."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1753 @@
+{
+  "schemaVersion": "1.0",
+  "status": "legacy-fixture-before-astra-review",
+  "sources": [
+    {
+      "owner": "realism-forge",
+      "path": "Barzy App/public/assets/HTML/realism-forge-v2.html",
+      "sha256": "8c3017ec438451907ca7e26faf6d0f8b236e72fa2affa48246fa030a7975e0eb"
+    },
+    {
+      "owner": "barz-beauty",
+      "path": "Barzy App/public/assets/HTML/md-beauty.html",
+      "sha256": "75700706709c344a69d97354e68f27592265208198b55ad7b11687f9ea6f70f2"
+    }
+  ],
+  "beauty": {
+    "categoryCount": 7,
+    "entryCount": 42,
+    "categories": [
+      {
+        "id": "selfie-f",
+        "entries": [
+          {
+            "title": "Selfie Mirror",
+            "text": "ultra-realistic smartphone mirror selfie of a woman late 20s–early 30s, indoor near window, daytime. Close-up framing collarbone to top of head. Phone partially covering face, slight downward gaze, calm neutral expression. Natural tied-back dark hair with flyaways, light grey cotton hoodie with clear fabric texture separation, small silver earrings. Skin realism focus: visible pores, fine micro-texture, organic acne marks (non-repeating), uneven pigmentation, subtle redness, natural oil sheen only on high points. No symmetry correction. Real daylight with slight warmth, accurate white balance, natural contrast. True-to-life colors. Phone-camera realism, subtle sensor grain, slight edge softness. No retouching, no smoothing, no beauty filters. Negatives: AI glow, plastic skin, skincare-ad look, cinematic lighting, studio light, pastel or faded colors, flat lighting, cartoon/3D style, logos or text."
+          },
+          {
+            "title": "Skin Close-Up",
+            "text": "Photorealistic close-up of a woman's cheek and lips, natural skin texture with visible pores, acne scars and redness. Bare skin, no makeup, soft side lighting emphasizing texture. Editorial realism, cinematic color grading, ultra-high resolution, unretouched beauty photography."
+          },
+          {
+            "title": "Eyes Close-Up",
+            "text": "Extreme close-up of a human eye and surrounding skin, ultra-realistic macro photography. Visible fine lines, pores, natural skin sheen, subtle under-eye texture. Soft diffused lighting, realistic shadows, high dynamic range. Editorial beauty photography, no airbrushing, hyper-detailed skin realism."
+          },
+          {
+            "title": "Hands Close-Up",
+            "text": "Ultra-realistic close-up of feminine hands holding a smartphone. Natural skin texture, visible veins and fine wrinkles. Long almond-shaped nails with red and white minimalist nail art. Soft natural light, realistic proportions, shallow depth of field. Photorealistic hand anatomy, high detail macro shot."
+          },
+          {
+            "title": "Navy Shirt Editorial",
+            "text": "Ultra-realistic close-up of Editorial 3x3 photo grid in a clean soft beige studio. Character (matches reference 100%) wearing lightweight dark navy shirt, ivory trousers, barefoot for raw simplicity. Lighting: large diffused key light directly front-right, silver reflector left, subtle rim from top. Shots to include: 1. extreme close-up of lips + cheekbone with blurred hand partially covering (85mm, f/1.8, razor-thin DOF); 2. tight crop on eyes looking into lens with reflection of light strip visible (85mm, f/2.0); 3. black & white close portrait resting chin on fist, face filling frame (50mm, f/2.2); 4. over-shoulder shot, blurred foreground fabric curtain framing half face (85mm, f/2.0); 5. very close frontal with hands overlapping face, light streak across eyes (50mm, f/2.5); 6. tight angled portrait showing hair falling into eyes, soft-focus background (85mm, f/2.2); 7. crop of hands touching jawline, eyes cropped out (50mm, f/3.2, detail-focused); 8. half-body seated sideways on low cube, head turned sharply away, blurred foreground (35mm, f/4.5); 9. intense close-up of profile with single tear-like water droplet, cinematic light slice across (85mm, f/1.9). Angles: mostly tight headshots with slight high/low tilts, maintaining variation. Capture RAW, professional muted grade, smooth tonal contrast, subtle cinematic grain. Mood: intimate, introspective, character-led editorial minimalism with delicate use of fabric as prop."
+          },
+          {
+            "title": "Knolling Board",
+            "text": "Ultra-realistic close-up of Editorial 3x3 photo grid in a clean soft beige studio. Character (matches reference 100%) wearing (knolling board ref). Lighting: large diffused key light directly front-right, silver reflector left, subtle rim from top. Shots to include: 1. extreme close-up of lips + cheekbone with blurred hand partially covering (85mm, f/1.8, razor-thin DOF); 2. tight crop on eyes looking into lens with reflection of light strip visible (85mm, f/2.0); 3. black & white close portrait resting chin on fist, face filling frame (50mm, f/2.2); 4. over-shoulder shot, blurred foreground fabric curtain framing half face (85mm, f/2.0); 5. very close frontal with hands overlapping face, light streak across eyes (50mm, f/2.5); 6. tight angled portrait showing hair falling into eyes, soft-focus background (85mm, f/2.2); 7. crop of hands touching jawline, eyes cropped out (50mm, f/3.2, detail-focused); 8. half-body seated sideways on low cube, head turned sharply away, blurred foreground (35mm, f/4.5); 9. intense close-up of profile with single tear-like water droplet, cinematic light slice across (85mm, f/1.9). Angles: mostly tight headshots with slight high/low tilts, maintaining variation. Capture RAW, professional muted grade, smooth tonal contrast, subtle cinematic grain. Mood: intimate, introspective, character-led editorial minimalism with delicate use of fabric as prop."
+          }
+        ]
+      },
+      {
+        "id": "selfie-m",
+        "entries": [
+          {
+            "title": "Selfie Mirror",
+            "text": "ultra-realistic smartphone mirror selfie of a man late 20s–early 30s, indoor near window, daytime. Close-up framing collarbone to top of head. Phone partially covering face, slight downward gaze, calm neutral expression. Natural short dark hair slightly tousled, light grey cotton hoodie with clear fabric texture separation, subtle stubble with individual hair variation. Skin realism focus: visible pores, fine micro-texture, organic acne marks (non-repeating), uneven pigmentation, subtle redness, natural oil sheen only on high points, visible razor micro-irritation on neck. No symmetry correction. Real daylight with slight warmth, accurate white balance, natural contrast. True-to-life colors. Phone-camera realism, subtle sensor grain, slight edge softness. No retouching, no smoothing, no beauty filters. Negatives: AI glow, plastic skin, skincare-ad look, cinematic lighting, studio light, pastel or faded colors, flat lighting, cartoon/3D style, logos or text."
+          },
+          {
+            "title": "Skin Close-Up",
+            "text": "Photorealistic close-up of a man's cheek and jawline, natural skin texture with visible pores, ingrown hair marks and subtle redness from shaving. Bare skin, no product, soft side lighting emphasizing texture. Visible stubble follicle pattern at varying growth stages. Editorial realism, cinematic color grading, ultra-high resolution, unretouched photography."
+          },
+          {
+            "title": "Eyes Close-Up",
+            "text": "Extreme close-up of a male human eye and surrounding skin, ultra-realistic macro photography. Visible fine lines, pores, natural skin sheen, subtle under-eye texture, faint brow hair detail. Thicker skin texture around orbital bone. Soft diffused lighting, realistic shadows, high dynamic range. Editorial beauty photography, no airbrushing, hyper-detailed skin realism."
+          },
+          {
+            "title": "Hands Close-Up",
+            "text": "Ultra-realistic close-up of masculine hands holding a smartphone. Natural skin texture, visible veins, tendons, and fine wrinkles. Short trimmed nails with natural nail bed texture, slight cuticle roughness. Soft natural light, realistic proportions, shallow depth of field. Photorealistic hand anatomy, high detail macro shot."
+          },
+          {
+            "title": "Navy Shirt Editorial",
+            "text": "Ultra-realistic close-up of Editorial 3x3 photo grid in a clean soft beige studio. Male character (matches reference 100%) wearing lightweight dark navy shirt, ivory trousers, barefoot for raw simplicity. Lighting: large diffused key light directly front-right, silver reflector left, subtle rim from top. Shots to include: 1. extreme close-up of lips + jawline stubble with blurred hand partially covering (85mm, f/1.8, razor-thin DOF); 2. tight crop on eyes looking into lens with reflection of light strip visible (85mm, f/2.0); 3. black & white close portrait resting chin on fist, face filling frame (50mm, f/2.2); 4. over-shoulder shot, blurred foreground fabric curtain framing half face (85mm, f/2.0); 5. very close frontal with hands overlapping face, light streak across eyes (50mm, f/2.5); 6. tight angled portrait showing hair falling across forehead, soft-focus background (85mm, f/2.2); 7. crop of hands touching jawline, eyes cropped out (50mm, f/3.2, detail-focused); 8. half-body seated sideways on low cube, head turned sharply away, blurred foreground (35mm, f/4.5); 9. intense close-up of profile with single tear-like water droplet, cinematic light slice across (85mm, f/1.9). Angles: mostly tight headshots with slight high/low tilts, maintaining variation. Capture RAW, professional muted grade, smooth tonal contrast, subtle cinematic grain. Mood: intimate, introspective, character-led editorial minimalism with delicate use of fabric as prop."
+          },
+          {
+            "title": "Knolling Board",
+            "text": "Ultra-realistic close-up of Editorial 3x3 photo grid in a clean soft beige studio. Male character (matches reference 100%) wearing (knolling board ref). Lighting: large diffused key light directly front-right, silver reflector left, subtle rim from top. Shots to include: 1. extreme close-up of lips + jawline stubble with blurred hand partially covering (85mm, f/1.8, razor-thin DOF); 2. tight crop on eyes looking into lens with reflection of light strip visible (85mm, f/2.0); 3. black & white close portrait resting chin on fist, face filling frame (50mm, f/2.2); 4. over-shoulder shot, blurred foreground fabric curtain framing half face (85mm, f/2.0); 5. very close frontal with hands overlapping face, light streak across eyes (50mm, f/2.5); 6. tight angled portrait showing hair falling across forehead, soft-focus background (85mm, f/2.2); 7. crop of hands touching jawline, eyes cropped out (50mm, f/3.2, detail-focused); 8. half-body seated sideways on low cube, head turned sharply away, blurred foreground (35mm, f/4.5); 9. intense close-up of profile with single tear-like water droplet, cinematic light slice across (85mm, f/1.9). Angles: mostly tight headshots with slight high/low tilts, maintaining variation. Capture RAW, professional muted grade, smooth tonal contrast, subtle cinematic grain. Mood: intimate, introspective, character-led editorial minimalism with delicate use of fabric as prop."
+          }
+        ]
+      },
+      {
+        "id": "portrait-f",
+        "entries": [
+          {
+            "title": "Natural Light Portrait",
+            "text": "ultra-realistic editorial portrait photograph of a woman late 20s–early 30s, indoor near window, daytime. Close-up framing collarbone to top of head. slight downward gaze, calm neutral expression. Natural tied-back dark hair with flyaways, light grey cotton hoodie with clear fabric texture separation, small silver earrings. Skin realism focus: visible pores, fine micro-texture, organic acne marks (non-repeating), uneven pigmentation, subtle redness, natural oil sheen only on high points. No symmetry correction. Real daylight with slight warmth, accurate white balance, natural contrast. True-to-life colors. Shot on medium format digital, natural grain, controlled depth of field. No retouching, no smoothing, no beauty filters. Negatives: AI glow, plastic skin, skincare-ad look, cinematic lighting, studio light, pastel or faded colors, flat lighting, cartoon/3D style, logos or text."
+          },
+          {
+            "title": "Skin Close-Up",
+            "text": "Photorealistic close-up of a woman's cheek and lips, natural skin texture with visible pores, acne scars and redness. Bare skin, no makeup, soft side lighting emphasizing texture. Editorial realism, cinematic color grading, ultra-high resolution, unretouched beauty photography."
+          },
+          {
+            "title": "Eyes Close-Up",
+            "text": "Extreme close-up of a human eye and surrounding skin, ultra-realistic macro photography. Visible fine lines, pores, natural skin sheen, subtle under-eye texture. Soft diffused lighting, realistic shadows, high dynamic range. Editorial beauty photography, no airbrushing, hyper-detailed skin realism."
+          },
+          {
+            "title": "Hands Close-Up",
+            "text": "Ultra-realistic close-up of feminine hands in a resting pose, fingers slightly interlaced. Natural skin texture, visible veins and fine wrinkles. Long almond-shaped nails with red and white minimalist nail art. Soft natural light, realistic proportions, shallow depth of field. Photorealistic hand anatomy, high detail macro shot."
+          },
+          {
+            "title": "Navy Shirt Editorial",
+            "text": "Ultra-realistic close-up of Editorial 3x3 photo grid in a clean soft beige studio. Character (matches reference 100%) wearing lightweight dark navy shirt, ivory trousers, barefoot for raw simplicity. Lighting: large diffused key light directly front-right, silver reflector left, subtle rim from top. Shots to include: 1. extreme close-up of lips + cheekbone with blurred hand partially covering (85mm, f/1.8, razor-thin DOF); 2. tight crop on eyes looking into lens with reflection of light strip visible (85mm, f/2.0); 3. black & white close portrait resting chin on fist, face filling frame (50mm, f/2.2); 4. over-shoulder shot, blurred foreground fabric curtain framing half face (85mm, f/2.0); 5. very close frontal with hands overlapping face, light streak across eyes (50mm, f/2.5); 6. tight angled portrait showing hair falling into eyes, soft-focus background (85mm, f/2.2); 7. crop of hands touching jawline, eyes cropped out (50mm, f/3.2, detail-focused); 8. half-body seated sideways on low cube, head turned sharply away, blurred foreground (35mm, f/4.5); 9. intense close-up of profile with single tear-like water droplet, cinematic light slice across (85mm, f/1.9). Angles: mostly tight headshots with slight high/low tilts, maintaining variation. Capture RAW, professional muted grade, smooth tonal contrast, subtle cinematic grain. Mood: intimate, introspective, character-led editorial minimalism with delicate use of fabric as prop."
+          },
+          {
+            "title": "Knolling Board",
+            "text": "Ultra-realistic close-up of Editorial 3x3 photo grid in a clean soft beige studio. Character (matches reference 100%) wearing (knolling board ref). Lighting: large diffused key light directly front-right, silver reflector left, subtle rim from top. Shots to include: 1. extreme close-up of lips + cheekbone with blurred hand partially covering (85mm, f/1.8, razor-thin DOF); 2. tight crop on eyes looking into lens with reflection of light strip visible (85mm, f/2.0); 3. black & white close portrait resting chin on fist, face filling frame (50mm, f/2.2); 4. over-shoulder shot, blurred foreground fabric curtain framing half face (85mm, f/2.0); 5. very close frontal with hands overlapping face, light streak across eyes (50mm, f/2.5); 6. tight angled portrait showing hair falling into eyes, soft-focus background (85mm, f/2.2); 7. crop of hands touching jawline, eyes cropped out (50mm, f/3.2, detail-focused); 8. half-body seated sideways on low cube, head turned sharply away, blurred foreground (35mm, f/4.5); 9. intense close-up of profile with single tear-like water droplet, cinematic light slice across (85mm, f/1.9). Angles: mostly tight headshots with slight high/low tilts, maintaining variation. Capture RAW, professional muted grade, smooth tonal contrast, subtle cinematic grain. Mood: intimate, introspective, character-led editorial minimalism with delicate use of fabric as prop."
+          }
+        ]
+      },
+      {
+        "id": "portrait-m",
+        "entries": [
+          {
+            "title": "Natural Light Portrait",
+            "text": "ultra-realistic editorial portrait photograph of a man late 20s–early 30s, indoor near window, daytime. Close-up framing collarbone to top of head. slight downward gaze, calm neutral expression. Natural short dark hair slightly tousled, light grey cotton hoodie with clear fabric texture separation, subtle stubble with individual hair variation. Skin realism focus: visible pores, fine micro-texture, organic acne marks (non-repeating), uneven pigmentation, subtle redness, natural oil sheen only on high points, visible razor micro-irritation on neck. No symmetry correction. Real daylight with slight warmth, accurate white balance, natural contrast. True-to-life colors. Shot on medium format digital, natural grain, controlled depth of field. No retouching, no smoothing, no beauty filters. Negatives: AI glow, plastic skin, skincare-ad look, cinematic lighting, studio light, pastel or faded colors, flat lighting, cartoon/3D style, logos or text."
+          },
+          {
+            "title": "Skin Close-Up",
+            "text": "Photorealistic close-up of a man's cheek and jawline, natural skin texture with visible pores, ingrown hair marks and subtle redness from shaving. Bare skin, no product, soft side lighting emphasizing texture. Visible stubble follicle pattern at varying growth stages. Editorial realism, cinematic color grading, ultra-high resolution, unretouched photography."
+          },
+          {
+            "title": "Eyes Close-Up",
+            "text": "Extreme close-up of a male human eye and surrounding skin, ultra-realistic macro photography. Visible fine lines, pores, natural skin sheen, subtle under-eye texture, faint brow hair detail. Thicker skin texture around orbital bone. Soft diffused lighting, realistic shadows, high dynamic range. Editorial beauty photography, no airbrushing, hyper-detailed skin realism."
+          },
+          {
+            "title": "Hands Close-Up",
+            "text": "Ultra-realistic close-up of masculine hands in a resting pose, fingers slightly interlaced. Natural skin texture, visible veins, tendons, and fine wrinkles. Short trimmed nails with natural nail bed texture, slight cuticle roughness. Soft natural light, realistic proportions, shallow depth of field. Photorealistic hand anatomy, high detail macro shot."
+          },
+          {
+            "title": "Navy Shirt Editorial",
+            "text": "Ultra-realistic close-up of Editorial 3x3 photo grid in a clean soft beige studio. Male character (matches reference 100%) wearing lightweight dark navy shirt, ivory trousers, barefoot for raw simplicity. Lighting: large diffused key light directly front-right, silver reflector left, subtle rim from top. Shots to include: 1. extreme close-up of lips + jawline stubble with blurred hand partially covering (85mm, f/1.8, razor-thin DOF); 2. tight crop on eyes looking into lens with reflection of light strip visible (85mm, f/2.0); 3. black & white close portrait resting chin on fist, face filling frame (50mm, f/2.2); 4. over-shoulder shot, blurred foreground fabric curtain framing half face (85mm, f/2.0); 5. very close frontal with hands overlapping face, light streak across eyes (50mm, f/2.5); 6. tight angled portrait showing hair falling across forehead, soft-focus background (85mm, f/2.2); 7. crop of hands touching jawline, eyes cropped out (50mm, f/3.2, detail-focused); 8. half-body seated sideways on low cube, head turned sharply away, blurred foreground (35mm, f/4.5); 9. intense close-up of profile with single tear-like water droplet, cinematic light slice across (85mm, f/1.9). Angles: mostly tight headshots with slight high/low tilts, maintaining variation. Capture RAW, professional muted grade, smooth tonal contrast, subtle cinematic grain. Mood: intimate, introspective, character-led editorial minimalism with delicate use of fabric as prop."
+          },
+          {
+            "title": "Knolling Board",
+            "text": "Ultra-realistic close-up of Editorial 3x3 photo grid in a clean soft beige studio. Male character (matches reference 100%) wearing (knolling board ref). Lighting: large diffused key light directly front-right, silver reflector left, subtle rim from top. Shots to include: 1. extreme close-up of lips + jawline stubble with blurred hand partially covering (85mm, f/1.8, razor-thin DOF); 2. tight crop on eyes looking into lens with reflection of light strip visible (85mm, f/2.0); 3. black & white close portrait resting chin on fist, face filling frame (50mm, f/2.2); 4. over-shoulder shot, blurred foreground fabric curtain framing half face (85mm, f/2.0); 5. very close frontal with hands overlapping face, light streak across eyes (50mm, f/2.5); 6. tight angled portrait showing hair falling across forehead, soft-focus background (85mm, f/2.2); 7. crop of hands touching jawline, eyes cropped out (50mm, f/3.2, detail-focused); 8. half-body seated sideways on low cube, head turned sharply away, blurred foreground (35mm, f/4.5); 9. intense close-up of profile with single tear-like water droplet, cinematic light slice across (85mm, f/1.9). Angles: mostly tight headshots with slight high/low tilts, maintaining variation. Capture RAW, professional muted grade, smooth tonal contrast, subtle cinematic grain. Mood: intimate, introspective, character-led editorial minimalism with delicate use of fabric as prop."
+          }
+        ]
+      },
+      {
+        "id": "skin",
+        "entries": [
+          {
+            "title": "Skin Realism",
+            "text": "skin has pores, fine lines, peach fuzz, slight imperfections, oil variation. Authentic human subsurface scattering. authentic human color complexity. real skin stretches, compressions, and shows micro-movements. avoid oversimplified subsurface scattering (skin looks too plastic or waxy), overly uniform texture (too smooth or too uniformly bumpy), incorrect specular response (too shiny everywhere or not shiny enough), lack of fine vascular detail, and missing the subtle translucency at edges like ears or nostrils."
+          },
+          {
+            "title": "Acne Realism",
+            "text": "Skin exhibits authentic acne presentation: mix of active inflamed papules with reddish-pink raised areas, closed comedones as small flesh-colored bumps under the surface, scattered blackheads in T-zone areas, occasional cystic nodule with deep redness and slight swelling. Post-inflammatory hyperpigmentation marks in various stages of healing — some dark brown, some fading pink. No two blemishes identical in size, shape, or color. Acne distribution follows realistic sebaceous gland density patterns — concentrated on cheeks, chin, forehead, sparse near eyes. Surrounding skin shows normal texture between breakouts. Subtle shine variation where oily zones meet dry patches. No symmetrical or pattern-based placement. No airbrushed halo around blemishes."
+          },
+          {
+            "title": "Aging Realism",
+            "text": "Authentic aging skin characteristics: fine crow's feet radiating from outer eye corners with asymmetric depth, nasolabial folds with natural shadow gradation, forehead lines varying in depth — some deep-set permanent, others faint dynamic lines. Subtle loss of volume in temples and under-eye hollows with visible orbital fat redistribution. Skin shows mixed texture: smoother on cheekbones, crepey under eyes, slightly rougher on jaw. Age spots and solar lentigines in sun-exposed areas — irregular in shape and color, not uniform dots. Visible capillary networks on nose and cheek areas. Slight skin laxity at jawline with micro-sagging. Pore size variation — enlarged on nose, finer on forehead. Thinning skin revealing underlying vein color on temples and hands. Natural hair graying with inconsistent salt-and-pepper distribution."
+          },
+          {
+            "title": "Latex Realism",
+            "text": "Hyper-realistic latex material surface: smooth with micro-ripple distortions where stretched over contours. High specular reflection with sharp glossy highlights following light source direction. Surface tension visible at seams and edges where material meets skin — slight bunching, micro-wrinkles at flex points. Color is deep saturated with characteristic latex translucency — underlying surface faintly visible at thin-stretched areas. Fingerprint smudges and contact marks disrupting perfect gloss. Powder residue traces in creased areas. Material responds to body heat with subtle condensation at contact zones. Realistic rubber thickness variation — thinner at stretched peaks, thicker in valleys. Edge curl where material terminates. No matte zones on glossy latex, no CG-perfect uniformity."
+          },
+          {
+            "title": "Wax Realism",
+            "text": "Hyper-realistic wax figure surface: characteristic waxy translucency with subsurface light diffusion giving skin an uncanny inner glow. Surface is ultra-smooth but not plastic — retains very subtle hand-sculpted tool marks at close inspection. Specular response is soft and broad, not sharp like plastic or latex. Slight color banding where pigment layers were built up — pinkish undertones visible at thin areas like nostrils and ear edges. Micro-cracks and hairline fissures in areas of thermal stress. Glass eyes with too-perfect iris detail and slightly mismatched specular highlights compared to skin. Hair insertion points visible where individual strands or clusters meet the wax scalp. Subtle dust accumulation in recessed areas. Temperature-affected surface — minor softening and fingerprint impressions near heat sources. Gravity effects: very slight droop or sag in unsupported thin areas over time."
+          },
+          {
+            "title": "Figurine — Painted Plastic",
+            "text": "Hyper-realistic painted plastic figurine surface: visible brush stroke direction in hand-painted areas, spray-coat smoothness on base layers with orange-peel micro-texture at close range. Paint accumulation in recessed details — eye sockets, nostrils, between fingers. Dry-brush highlighting on raised edges with slightly chalky finish. Subtle paint layer thickness visible at sharp edges where primer peeks through. Mold seam lines partially sanded but faintly visible along bilateral symmetry axis. Injection molding gate mark on hidden surface. Gloss variation between different paint types — matte skin, semi-gloss clothing, high-gloss eyes. Micro air bubbles in clear-coat. Slight color bleed where masked areas meet. Fingerprint in varnish layer. Scale-appropriate: pores and fine lines are sculpted, not real — visible tool marks. Eyes are decals or printed with slight registration offset. Plastic material reads through at thin unpainted edges."
+          }
+        ]
+      },
+      {
+        "id": "lighting",
+        "entries": [
+          {
+            "title": "Golden Hour Window",
+            "text": "Warm golden hour daylight streaming through large window, 3200K–4000K color temperature. Single natural key light from camera-left creating long soft shadows across face. No fill — deep natural shadows on opposite side with ambient bounce from light walls. Subtle light wrap around jawline. Dust particles visible in light beam. Window frame casting geometric shadow pattern on background wall. Authentic white balance, no orange push."
+          },
+          {
+            "title": "Overcast Soft Wrap",
+            "text": "Overcast daylight, large diffused sky acting as enormous softbox. 5500K neutral color temperature. Extremely soft shadows with gradual falloff. Light wraps evenly around all facial contours. Subtle downward directionality from overhead sky creating faint under-chin shadow and gentle eye socket shading. Skin reads with full tonal range and natural color accuracy. No harsh highlights, no specular hotspots. Ideal for revealing skin texture without masking in shadow."
+          },
+          {
+            "title": "Clamshell Beauty",
+            "text": "Classic clamshell beauty lighting: large octabox directly above and in front of subject angled down 45°, white reflector below chin bouncing fill upward. Creates butterfly shadow under nose, gentle shadow under lower lip, catchlights at 12 o'clock in both eyes. Even illumination across both cheekbones. Subtle falloff toward ears and hairline. White seamless background lit separately to medium grey. 5600K daylight-balanced strobes, 1/125s sync."
+          },
+          {
+            "title": "Rembrandt Dramatic",
+            "text": "Single hard light source 45° camera-right and slightly above eye level. Creates signature Rembrandt triangle of light on shadow-side cheek. Deep defined shadows on opposite side of face with minimal fill — shadow side at 3-4 stops under key. Nose shadow connects to cheek shadow. Strong jawline definition. Specular highlight on tip of nose, forehead, and cheekbone ridge. Background falls to near-black. Warm tungsten tone 3000K optional. Painterly chiaroscuro mood."
+          },
+          {
+            "title": "Ring Light Frontal",
+            "text": "On-axis ring light creating signature circular catchlights in both eyes. Completely flat frontal illumination eliminating almost all facial shadows. Even exposure across entire face. Subtle shadow outline around head and shoulders on background. Slight falloff at extreme edges of face. Reveals every pore and texture detail due to lack of shadow relief — ideal for skin-texture-focused work. Background receives spill, reads mid-grey. 5000K neutral."
+          },
+          {
+            "title": "Neon Gel Split",
+            "text": "Dual-source split lighting: saturated cyan/teal gel from camera-left, magenta/pink gel from camera-right. Each source at 90° creating hard split down center of face. Gel colors mix to near-white on nose bridge where both sources overlap. Deep color saturation in shadows — no neutral zones. Specular highlights take on gel color. Rim light or hair light optional in opposing gel color. Black negative-fill behind subject. Futuristic editorial mood, high color contrast."
+          }
+        ]
+      },
+      {
+        "id": "negatives",
+        "entries": [
+          {
+            "title": "Anti-AI Skin",
+            "text": "Negatives: AI glow, plastic skin, porcelain-doll finish, airbrushed texture, beauty-filter smoothing, uniform skin tone, symmetrical blemish placement, synthetic subsurface scattering, wax-figure sheen, uncanny valley skin, overly uniform pore pattern, CG skin shader, foundation-covered look."
+          },
+          {
+            "title": "Anti-AI Face",
+            "text": "Negatives: perfectly symmetrical face, uncanny valley proportions, dead eyes, lifeless stare, puppet-like expression, AI-typical vacant smile, merged facial features, blurred iris detail, distorted teeth, extra teeth rows, floating eyebrows, makeup that looks painted on, philtrum distortion, lip texture smearing."
+          },
+          {
+            "title": "Anti-AI Hands",
+            "text": "Negatives: extra fingers, fused fingers, missing fingers, wrong number of fingers, distorted knuckles, impossibly long fingers, webbed fingers, boneless-looking hands, fingernails on wrong side, floating hands, hands merging into objects, wrong thumb direction, mirrored hands, baby-sized hands on adult body."
+          },
+          {
+            "title": "Anti-AI Lighting",
+            "text": "Negatives: flat uniform lighting, multiple conflicting shadow directions, shadowless face, ambient occlusion artifacts, halo glow around subject, light source inside body, inconsistent specular highlights, bloom on skin, HDR tonemapping artifacts, over-processed look, nuclear-white highlights with zero gradation."
+          },
+          {
+            "title": "Anti-AI General",
+            "text": "Negatives: cartoon, 3D render, CGI, illustration, anime, painting, drawing, sketch, watercolor, low resolution, blurry, noisy, jpeg artifacts, watermark, signature, text, logo, banner, stock photo, oversaturated, desaturated, chromatic aberration, lens flare, vignette, Instagram filter, HDR, overprocessed, deepfake artifacts."
+          },
+          {
+            "title": "Anti-AI Body",
+            "text": "Negatives: distorted anatomy, elongated limbs, extra limbs, missing limbs, impossible joint angles, twisted torso, broken spine pose, merged body parts, floating clothing, clothing fused with skin, wrong body proportions, giant head, tiny hands, asymmetric shoulders unless intentional, mannequin body, doll joints visible."
+          }
+        ]
+      }
+    ]
+  },
+  "realism": {
+    "tabCount": 9,
+    "cardCount": 29,
+    "controls": {
+      "outfits": [
+        {
+          "v": "Oversized vintage band t-shirt, denim shorts, barefoot",
+          "l": "T-shirt band vintage + shorts"
+        },
+        {
+          "v": "Plain white tee, chain necklace, dark jeans",
+          "l": "T-shirt blanc + chaîne + jean"
+        },
+        {
+          "v": "Hoodie zipped halfway, joggers, beat-up sneakers",
+          "l": "Hoodie + jogging + baskets"
+        },
+        {
+          "v": "Floral summer dress, sandals, sun hat",
+          "l": "Robe à fleurs + sandales"
+        },
+        {
+          "v": "Leather jacket, black turtleneck, slim jeans, boots",
+          "l": "Perfecto + col roulé + bottes"
+        },
+        {
+          "v": "Hawaiian shirt unbuttoned over tank top, cargo shorts, flip flops",
+          "l": "Chemise hawaïenne + cargo"
+        },
+        {
+          "v": "Office shirt slightly untucked, loosened tie, rolled-up sleeves",
+          "l": "Chemise bureau débraillée"
+        },
+        {
+          "v": "Tracksuit, gold chain, fresh white sneakers",
+          "l": "Survêtement + baskets neuves"
+        },
+        {
+          "v": "Knitted oversized sweater, corduroy pants, wool socks",
+          "l": "Gros pull + velours côtelé"
+        },
+        {
+          "v": "Crop top, high-waisted mom jeans, chunky platform sneakers",
+          "l": "Crop top + mom jeans"
+        },
+        {
+          "v": "Flannel shirt open over graphic tee, beanie, worn jeans",
+          "l": "Flanelle + tee graphique + bonnet"
+        },
+        {
+          "v": "Suit jacket over plain white tee, no tie, smart casual",
+          "l": "Blazer décontracté + t-shirt"
+        },
+        {
+          "v": "Tank top, basketball shorts, flip flops",
+          "l": "Débardeur + short basket"
+        },
+        {
+          "v": "Puffy winter jacket, knit scarf, gloves, snow boots",
+          "l": "Doudoune + écharpe + bottes"
+        },
+        {
+          "v": "Bathrobe, messy hair, worn-out slippers",
+          "l": "Peignoir + chaussons"
+        },
+        {
+          "v": "Denim overalls over striped long-sleeve shirt",
+          "l": "Salopette jean + marinière"
+        },
+        {
+          "v": "Vintage 90s windbreaker, mom jeans, retro Nike sneakers",
+          "l": "Coupe-vent 90s + rétro"
+        },
+        {
+          "v": "Simple black dress, minimal silver jewelry, heels",
+          "l": "Petite robe noire + talons"
+        },
+        {
+          "v": "Work polo shirt with company logo, khaki pants, sneakers",
+          "l": "Uniforme travail (polo)"
+        },
+        {
+          "v": "Festival outfit: crochet top, denim cutoffs, body glitter, boots",
+          "l": "Tenue de festival"
+        },
+        {
+          "v": "Pajama pants, oversized sleep t-shirt, bare feet, messy hair",
+          "l": "Pyjama / tenue de nuit"
+        },
+        {
+          "v": "Graduation gown and cap, dress shirt underneath",
+          "l": "Toge de diplômé"
+        }
+      ],
+      "poses": [
+        {
+          "v": "Looking directly at camera, relaxed natural posture",
+          "l": "Regard caméra, détendu·e"
+        },
+        {
+          "v": "Sitting cross-legged on the floor, leaning slightly forward",
+          "l": "Assis·e en tailleur au sol"
+        },
+        {
+          "v": "Leaning against a wall, arms crossed, weight on one leg",
+          "l": "Adossé·e au mur, bras croisés"
+        },
+        {
+          "v": "Mid-laugh, head tilted back, eyes half-closed",
+          "l": "En plein fou rire"
+        },
+        {
+          "v": "Walking toward camera, mid-stride, candid movement blur",
+          "l": "En train de marcher (candid)"
+        },
+        {
+          "v": "Sitting on couch, legs tucked under, holding a mug",
+          "l": "Sur le canapé avec un mug"
+        },
+        {
+          "v": "Peace sign with one hand, leaning into frame, close to lens",
+          "l": "Signe peace, penché·e"
+        },
+        {
+          "v": "Looking away from camera, profile view, unaware of being photographed",
+          "l": "Profil, non posé·e"
+        },
+        {
+          "v": "Standing in a group, arm around friend's shoulder, all smiling",
+          "l": "En groupe, bras sur l'épaule"
+        },
+        {
+          "v": "Crouching down, elbows on knees, looking up at camera",
+          "l": "Accroupi·e, regard vers le haut"
+        },
+        {
+          "v": "Lying on grass, looking up at camera held above",
+          "l": "Allongé·e, plongée depuis le haut"
+        },
+        {
+          "v": "Dancing, blurred arms and hair, caught mid-motion",
+          "l": "En train de danser (flou)"
+        },
+        {
+          "v": "Eating or drinking, mouth full, caught off-guard by camera",
+          "l": "En train de manger (surprise)"
+        },
+        {
+          "v": "Selfie with arm extended, slightly too close to face, wide angle",
+          "l": "Selfie bras tendu"
+        },
+        {
+          "v": "Hunched over phone screen, face illuminated by glow",
+          "l": "Penché·e sur son téléphone"
+        },
+        {
+          "v": "Stiff awkward pose, forced smile, hands at sides",
+          "l": "Pose raide, sourire forcé"
+        },
+        {
+          "v": "Back to camera, looking over shoulder toward lens",
+          "l": "De dos, regard par-dessus l'épaule"
+        },
+        {
+          "v": "Mid-jump, feet off ground, hair floating",
+          "l": "En train de sauter"
+        },
+        {
+          "v": "Sitting on stairs or steps, chin resting on hand",
+          "l": "Assis·e dans un escalier"
+        },
+        {
+          "v": "Caught mid-blink, eyes half-shut, accidental unflattering timing",
+          "l": "Pris·e en clignant des yeux"
+        },
+        {
+          "v": "Holding a pet, looking down lovingly at the animal",
+          "l": "Avec un animal dans les bras"
+        },
+        {
+          "v": "Blowing out birthday candles, face lit from below by cake",
+          "l": "Soufflant des bougies"
+        }
+      ],
+      "locations": [
+        {
+          "v": "Messy bedroom at night, unmade bed visible, clothes on chair, poster on wall",
+          "l": "Chambre en désordre (nuit)"
+        },
+        {
+          "v": "House party, dim room, red solo cups, blurred people dancing in background",
+          "l": "Soirée / house party"
+        },
+        {
+          "v": "Kitchen under harsh fluorescent light, cluttered counter, fridge with magnets",
+          "l": "Cuisine (néon, bazar)"
+        },
+        {
+          "v": "Backyard barbecue, plastic lawn chairs, string lights, dusk sky",
+          "l": "Barbecue jardin (crépuscule)"
+        },
+        {
+          "v": "Beach at golden hour, waves in background, sand on skin and towel",
+          "l": "Plage (golden hour)"
+        },
+        {
+          "v": "City sidewalk at night, neon shop signs, wet pavement reflections",
+          "l": "Trottoir ville (nuit, néons)"
+        },
+        {
+          "v": "Dive bar interior, wood paneling, neon beer signs, dim warm light, sticky tables",
+          "l": "Bar / pub sombre"
+        },
+        {
+          "v": "Inside a car, window reflections, seatbelt visible, dashboard glow at night",
+          "l": "Intérieur de voiture"
+        },
+        {
+          "v": "Park bench, trees in background, dappled sunlight filtering through leaves",
+          "l": "Banc de parc (soleil filtré)"
+        },
+        {
+          "v": "Bathroom mirror, cluttered sink counter with products, harsh overhead light",
+          "l": "Miroir salle de bain"
+        },
+        {
+          "v": "School or university hallway, lockers, fluorescent lights, linoleum floor",
+          "l": "Couloir d'école / fac"
+        },
+        {
+          "v": "Office open space, computer screens glowing, coffee cups, stacked papers",
+          "l": "Bureau / open space"
+        },
+        {
+          "v": "Living room, couch, TV glowing in background, warm side lamp",
+          "l": "Salon (lumière tamisée, TV)"
+        },
+        {
+          "v": "Rooftop or balcony, city skyline in background, sunset light, wind",
+          "l": "Toit-terrasse (skyline)"
+        },
+        {
+          "v": "Restaurant table, plates of food half-eaten, candlelight, wine glasses",
+          "l": "Table de restaurant"
+        },
+        {
+          "v": "Subway or metro platform, harsh fluorescent tubes, tiled walls, crowd",
+          "l": "Station de métro"
+        },
+        {
+          "v": "Forest trail, green filtered light, dirt path, ferns and moss",
+          "l": "Sentier en forêt"
+        },
+        {
+          "v": "Concert crowd, colored stage lights bleeding through smoke, phone screens glowing",
+          "l": "Concert (foule)"
+        },
+        {
+          "v": "Gas station at night, harsh overhead fluorescent, parked car, wet asphalt",
+          "l": "Station-service (nuit)"
+        },
+        {
+          "v": "Wedding reception, decorated tables, dance floor, fairy lights and flowers",
+          "l": "Réception de mariage"
+        },
+        {
+          "v": "Swimming pool area, blue water reflections, wet concrete, towels, sunscreen",
+          "l": "Piscine"
+        },
+        {
+          "v": "Supermarket aisle, harsh lighting, shopping cart, colorful packaging",
+          "l": "Rayon de supermarché"
+        }
+      ],
+      "moods": [
+        {
+          "v": "candid",
+          "l": "Candide / naturel"
+        },
+        {
+          "v": "laughing with genuine joy",
+          "l": "Riant (vrai rire)"
+        },
+        {
+          "v": "serious, composed",
+          "l": "Sérieux"
+        },
+        {
+          "v": "surprised, eyes wide, mouth slightly open",
+          "l": "Surpris"
+        },
+        {
+          "v": "bored, glazed-over look",
+          "l": "Ennuyé"
+        },
+        {
+          "v": "emotional, teary-eyed",
+          "l": "Ému / larmes aux yeux"
+        },
+        {
+          "v": "angry, tense jaw",
+          "l": "En colère"
+        },
+        {
+          "v": "smirking, knowing half-smile",
+          "l": "Sourire en coin"
+        },
+        {
+          "v": "pensive, staring into middle distance",
+          "l": "Pensif / rêveur"
+        },
+        {
+          "v": "visibly exhausted, dark under-eyes",
+          "l": "Épuisé"
+        },
+        {
+          "v": "beaming with happiness",
+          "l": "Rayonnant de joie"
+        },
+        {
+          "v": "awkward, forced uncomfortable smile",
+          "l": "Gêné / mal à l'aise"
+        },
+        {
+          "v": "distracted, looking at something off-camera",
+          "l": "Distrait"
+        },
+        {
+          "v": "tipsy and happy, flushed cheeks, loose grin",
+          "l": "Éméché / joyeux"
+        },
+        {
+          "v": "scared, wide eyes, tense shoulders",
+          "l": "Effrayé"
+        },
+        {
+          "v": "proud, chin slightly raised, confident",
+          "l": "Fier / confiant"
+        },
+        {
+          "v": "sleepy, half-closed eyes, yawning",
+          "l": "Endormi"
+        },
+        {
+          "v": "deeply focused, furrowed brow",
+          "l": "Concentré"
+        },
+        {
+          "v": "flirtatious, playful eye contact",
+          "l": "Charmeur / joueur"
+        },
+        {
+          "v": "deadpan, completely neutral face",
+          "l": "Impassible / deadpan"
+        }
+      ]
+    },
+    "celebrityCounts": {
+      "female": 38,
+      "male": 39
+    },
+    "celebrities": {
+      "female": [
+        {
+          "v": "Scarlett Johansson",
+          "c": ""
+        },
+        {
+          "v": "Margot Robbie",
+          "c": ""
+        },
+        {
+          "v": "Florence Pugh",
+          "c": ""
+        },
+        {
+          "v": "Zendaya",
+          "c": ""
+        },
+        {
+          "v": "Ana de Armas",
+          "c": ""
+        },
+        {
+          "v": "Natalie Portman",
+          "c": ""
+        },
+        {
+          "v": "Cate Blanchett",
+          "c": ""
+        },
+        {
+          "v": "Lupita Nyong'o",
+          "c": ""
+        },
+        {
+          "v": "Jennifer Lawrence",
+          "c": ""
+        },
+        {
+          "v": "Saoirse Ronan",
+          "c": ""
+        },
+        {
+          "v": "Emma Stone",
+          "c": ""
+        },
+        {
+          "v": "Viola Davis",
+          "c": ""
+        },
+        {
+          "v": "Penélope Cruz",
+          "c": ""
+        },
+        {
+          "v": "Gal Gadot",
+          "c": ""
+        },
+        {
+          "v": "Anya Taylor-Joy",
+          "c": ""
+        },
+        {
+          "v": "Jenna Ortega",
+          "c": ""
+        },
+        {
+          "v": "Sydney Sweeney",
+          "c": ""
+        },
+        {
+          "v": "Michelle Yeoh",
+          "c": ""
+        },
+        {
+          "v": "Beyoncé",
+          "c": ""
+        },
+        {
+          "v": "Taylor Swift",
+          "c": ""
+        },
+        {
+          "v": "Rihanna",
+          "c": ""
+        },
+        {
+          "v": "Billie Eilish",
+          "c": ""
+        },
+        {
+          "v": "Dua Lipa",
+          "c": ""
+        },
+        {
+          "v": "Lady Gaga",
+          "c": ""
+        },
+        {
+          "v": "Adele",
+          "c": ""
+        },
+        {
+          "v": "FKA Twigs",
+          "c": ""
+        },
+        {
+          "v": "Rosalía",
+          "c": ""
+        },
+        {
+          "v": "SZA",
+          "c": ""
+        },
+        {
+          "v": "Doja Cat",
+          "c": ""
+        },
+        {
+          "v": "Bella Hadid",
+          "c": ""
+        },
+        {
+          "v": "Gigi Hadid",
+          "c": ""
+        },
+        {
+          "v": "Cara Delevingne",
+          "c": ""
+        },
+        {
+          "v": "Naomi Campbell",
+          "c": ""
+        },
+        {
+          "v": "Kendall Jenner",
+          "c": ""
+        },
+        {
+          "v": "Marilyn Monroe",
+          "c": "?"
+        },
+        {
+          "v": "Audrey Hepburn",
+          "c": "?"
+        },
+        {
+          "v": "Frida Kahlo",
+          "c": "?"
+        },
+        {
+          "v": "Princess Diana",
+          "c": "?"
+        }
+      ],
+      "male": [
+        {
+          "v": "Timothée Chalamet",
+          "c": ""
+        },
+        {
+          "v": "Oscar Isaac",
+          "c": ""
+        },
+        {
+          "v": "Pedro Pascal",
+          "c": ""
+        },
+        {
+          "v": "Ryan Gosling",
+          "c": ""
+        },
+        {
+          "v": "Keanu Reeves",
+          "c": ""
+        },
+        {
+          "v": "Brad Pitt",
+          "c": ""
+        },
+        {
+          "v": "Idris Elba",
+          "c": ""
+        },
+        {
+          "v": "Dev Patel",
+          "c": ""
+        },
+        {
+          "v": "Robert Downey Jr.",
+          "c": ""
+        },
+        {
+          "v": "Denzel Washington",
+          "c": ""
+        },
+        {
+          "v": "Tom Hardy",
+          "c": ""
+        },
+        {
+          "v": "Cillian Murphy",
+          "c": ""
+        },
+        {
+          "v": "Adam Driver",
+          "c": ""
+        },
+        {
+          "v": "Daniel Craig",
+          "c": ""
+        },
+        {
+          "v": "Jake Gyllenhaal",
+          "c": ""
+        },
+        {
+          "v": "Austin Butler",
+          "c": ""
+        },
+        {
+          "v": "Barry Keoghan",
+          "c": ""
+        },
+        {
+          "v": "Michael B. Jordan",
+          "c": ""
+        },
+        {
+          "v": "The Weeknd",
+          "c": ""
+        },
+        {
+          "v": "Frank Ocean",
+          "c": ""
+        },
+        {
+          "v": "Harry Styles",
+          "c": ""
+        },
+        {
+          "v": "Bad Bunny",
+          "c": ""
+        },
+        {
+          "v": "Tyler, the Creator",
+          "c": ""
+        },
+        {
+          "v": "Pharrell Williams",
+          "c": ""
+        },
+        {
+          "v": "David Bowie",
+          "c": ""
+        },
+        {
+          "v": "Jimi Hendrix",
+          "c": ""
+        },
+        {
+          "v": "Freddie Mercury",
+          "c": ""
+        },
+        {
+          "v": "Kendrick Lamar",
+          "c": ""
+        },
+        {
+          "v": "Post Malone",
+          "c": ""
+        },
+        {
+          "v": "Elon Musk",
+          "c": ""
+        },
+        {
+          "v": "Jeff Goldblum",
+          "c": "?"
+        },
+        {
+          "v": "Steve Buscemi",
+          "c": "?"
+        },
+        {
+          "v": "Danny DeVito",
+          "c": "?"
+        },
+        {
+          "v": "Bill Murray",
+          "c": "?"
+        },
+        {
+          "v": "Albert Einstein",
+          "c": "?"
+        },
+        {
+          "v": "James Dean",
+          "c": "?"
+        },
+        {
+          "v": "Muhammad Ali",
+          "c": "?"
+        },
+        {
+          "v": "Nikola Tesla",
+          "c": "?"
+        },
+        {
+          "v": "Che Guevara",
+          "c": "?"
+        }
+      ]
+    },
+    "sliders": [
+      {
+        "id": "flash",
+        "label": "Flash",
+        "left": "Naturel",
+        "right": "Flash direct",
+        "vals": [
+          {
+            "m": 10,
+            "t": "No flash, natural ambient light only"
+          },
+          {
+            "m": 30,
+            "t": "Subtle fill flash, barely visible"
+          },
+          {
+            "m": 50,
+            "t": "Moderate on-camera flash, balanced with ambient"
+          },
+          {
+            "m": 70,
+            "t": "Strong direct flash, hard shadows behind subject, specular skin highlights"
+          },
+          {
+            "m": 90,
+            "t": "Harsh flash, overexposed foreground, dark background falloff, strong red-eye"
+          },
+          {
+            "m": 100,
+            "t": "Maximum direct flash, blown-out highlights, pitch-black background, extreme red-eye"
+          }
+        ]
+      },
+      {
+        "id": "grain",
+        "label": "Grain / Bruit",
+        "left": "Propre",
+        "right": "Très grainé",
+        "vals": [
+          {
+            "m": 10,
+            "t": "virtually no grain, clean processing"
+          },
+          {
+            "m": 30,
+            "t": "subtle grain, ISO 100-200 equivalent"
+          },
+          {
+            "m": 50,
+            "t": "moderate film grain, ISO 400-800"
+          },
+          {
+            "m": 70,
+            "t": "heavy grain, ISO 1600, noise across all tones"
+          },
+          {
+            "m": 90,
+            "t": "extreme grain, ISO 3200+, detail obscured"
+          },
+          {
+            "m": 100,
+            "t": "maximum grain, ISO 6400+ dominating image"
+          }
+        ]
+      },
+      {
+        "id": "dof",
+        "label": "Profondeur de champ",
+        "left": "Tout net",
+        "right": "Flou extrême",
+        "vals": [
+          {
+            "m": 15,
+            "t": "deep focus f/11-f/16, everything sharp"
+          },
+          {
+            "m": 35,
+            "t": "moderate f/5.6-f/8, slight background softening"
+          },
+          {
+            "m": 55,
+            "t": "noticeable blur f/2.8-f/4, background separated"
+          },
+          {
+            "m": 75,
+            "t": "shallow f/1.8-f/2, visible bokeh circles"
+          },
+          {
+            "m": 90,
+            "t": "very shallow f/1.4, razor-thin focus plane"
+          },
+          {
+            "m": 100,
+            "t": "extremely shallow f/1.2, only eyes sharp"
+          }
+        ]
+      },
+      {
+        "id": "wear",
+        "label": "Usure / ge",
+        "left": "Neuf",
+        "right": "Très abîmé",
+        "vals": [
+          {
+            "m": 10,
+            "t": "fresh clean image"
+          },
+          {
+            "m": 30,
+            "t": "slight yellowing, minor fading"
+          },
+          {
+            "m": 50,
+            "t": "noticeable aging, faded colors, slight crease"
+          },
+          {
+            "m": 70,
+            "t": "heavily aged, curled edges, fingerprint marks, tape residue"
+          },
+          {
+            "m": 90,
+            "t": "very aged, torn corners, water stains, foxing"
+          },
+          {
+            "m": 100,
+            "t": "extreme damage, severe fading, cracking emulsion, brittle"
+          }
+        ]
+      },
+      {
+        "id": "imperf",
+        "label": "Imperfections",
+        "left": "Propre",
+        "right": "Accidenté",
+        "vals": [
+          {
+            "m": 10,
+            "t": "clean, no imperfections"
+          },
+          {
+            "m": 30,
+            "t": "minor dust speck, slight horizon tilt"
+          },
+          {
+            "m": 50,
+            "t": "dust on lens, finger at frame edge, minor light leak"
+          },
+          {
+            "m": 70,
+            "t": "thumb in frame, lens flare, off-center, double exposure bleed"
+          },
+          {
+            "m": 90,
+            "t": "significant light leaks, heavy vignetting, lens scratch, water damage"
+          },
+          {
+            "m": 100,
+            "t": "extreme: torn print, chemical stains, deep scratches across frame"
+          }
+        ]
+      }
+    ],
+    "tabs": [
+      {
+        "id": "disposable",
+        "label": "Jetable",
+        "intro": "Kodak FunSaver, Fujifilm QuickSnap, AGFA LeBox. Objectif plastique fixe, flash intégré, film 400-800 ISO. L'appareil des fêtes, des vacances, des mariages.",
+        "cards": [
+          {
+            "title": "Kodak FunSaver — Soirée",
+            "specs": [
+              "Kodak FunSaver",
+              "35mm",
+              "ISO 800",
+              "f/10",
+              "30mm plastique",
+              "Flash intégré"
+            ],
+            "template": {
+              "camera": "Shot on Kodak FunSaver disposable camera, 35mm Kodak MAX Versatility 800 film, fixed f/10 single-element plastic lens, 30mm focal length, 1/140s fixed shutter speed",
+              "lighting": "$flash, strong flash falloff creating pitch-dark background beyond 3m, harsh direct illumination on foreground subject, $grain",
+              "imperfections": "Visible ISO 800 film grain structure, red-eye effect on direct gaze, overexposed foreground from flash proximity, heavy corner vignetting from plastic lens, soft focus especially at edges, possible light leak along film door seal, $imperf"
+            }
+          },
+          {
+            "title": "Fujifilm QuickSnap — Plage",
+            "specs": [
+              "Fujifilm QuickSnap 400",
+              "35mm",
+              "Superia 400",
+              "f/10",
+              "32mm"
+            ],
+            "template": {
+              "camera": "Shot on Fujifilm QuickSnap Flash 400 disposable camera, 35mm Fujicolor Superia 400 film, fixed f/10 plastic lens, 32mm focal length",
+              "lighting": "Bright outdoor daylight, $flash, Fujifilm characteristic warm palette with boosted greens and vivid reds, $grain",
+              "imperfections": "Fuji vivid greens and warm skin tones, soft focus from single-element plastic lens, slight barrel distortion, film grain clearly visible in sky areas, possible sand or water droplet on lens, $imperf"
+            }
+          },
+          {
+            "title": "AGFA LeBox — Intérieur Nuit",
+            "specs": [
+              "AGFA LeBox Flash",
+              "35mm",
+              "ISO 400",
+              "f/9",
+              "Flash puissant"
+            ],
+            "template": {
+              "camera": "Shot on AGFA LeBox Flash disposable camera, 35mm AGFA Vista 400 film, fixed f/9 plastic lens, strong built-in flash unit with extended reach",
+              "lighting": "Indoor night setting, $flash, AGFA warm amber color rendering, powerful flash illuminating room, $grain",
+              "imperfections": "Heavy film grain, strong overexposure on subjects within 1m, deep impenetrable shadows beyond flash range, AGFA color shift in shadows, $imperf"
+            }
+          }
+        ]
+      },
+      {
+        "id": "polaroid",
+        "label": "Polaroid / Instant",
+        "intro": "Polaroid SX-70, 600, OneStep, Fujifilm Instax. Développement chimique instantané, palette unique, cadre blanc iconique. Doux, rêveur, imprécis.",
+        "cards": [
+          {
+            "title": "Polaroid 600 — Photo de groupe",
+            "specs": [
+              "Polaroid 600",
+              "Film intégral",
+              "106mm f/14.6",
+              "Flash auto",
+              "3.1\"×3.1\""
+            ],
+            "template": {
+              "camera": "Shot on Polaroid 600 OneStep camera, Polaroid 600 integral instant film, 106mm f/14.6 single-element plastic lens, automatic flash, 3.1×3.1 inch print area within white border frame",
+              "lighting": "$flash, Polaroid chemical color palette with cyan-shifted blues and warm yellow undertones, limited dynamic range, $grain",
+              "imperfections": "Uneven chemical spread creating slight color banding, soft dreamy overall focus, white iconic border frame, slight roller marks at print bottom, fingerprint smudge on glossy surface, $imperf"
+            }
+          },
+          {
+            "title": "Polaroid SX-70 — Portrait",
+            "specs": [
+              "Polaroid SX-70",
+              "SX-70 film",
+              "116mm f/8",
+              "SLR",
+              "Manual focus"
+            ],
+            "template": {
+              "camera": "Shot on Polaroid SX-70 folding SLR instant camera, SX-70 film cartridge, 116mm f/8 four-element glass lens, SLR viewfinder with manual focus ring",
+              "lighting": "$flash, SX-70 film with richer tones than 600, slightly warm nostalgic palette, $grain",
+              "imperfections": "SX-70 chemical development variations, better sharpness than 600 but still soft, square format with white border, slight border yellowing with age, $imperf"
+            }
+          },
+          {
+            "title": "Fujifilm Instax Mini — Entre amis",
+            "specs": [
+              "Instax Mini 12",
+              "60mm f/12.7",
+              "ISO 800",
+              "Auto",
+              "Format carte"
+            ],
+            "template": {
+              "camera": "Shot on Fujifilm Instax Mini 12, 60mm f/12.7 two-element lens, ISO 800 Instax Mini instant film, automatic exposure with built-in flash, credit-card sized print",
+              "lighting": "$flash, Instax cool pastel color rendering, slightly overexposed skin tones, $grain",
+              "imperfections": "Instax pastel palette, soft focus at close range, slight overexposure, tiny format with white border, off-center framing from viewfinder parallax, $imperf"
+            }
+          }
+        ]
+      },
+      {
+        "id": "vintage",
+        "label": "Début de siècle",
+        "intro": "Daguerréotypes, ferrotypes, Kodak Brownie, cartes de visite, Leica 60s. Temps de pose longs, procédés chimiques, tirages peints à la main. Les origines de la photographie.",
+        "cards": [
+          {
+            "title": "Daguerréotype — Portrait 1850s",
+            "specs": [
+              "Plaque cuivre argenté",
+              "Petzval f/3.6",
+              "Pose 10-60s",
+              "Mercure"
+            ],
+            "template": {
+              "camera": "Daguerreotype process on silvered copper plate, Petzval-type portrait lens f/3.6, 10 to 60 second exposure requiring absolute stillness, mercury vapor development",
+              "lighting": "Studio north-facing skylight, $flash, reflected light from white fabric screens, no electrical lighting, $grain",
+              "imperfections": "Slight motion blur despite head brace, tarnishing and oxidation at plate edges, mirror-like surface, stiff formal pose, hand-tinted color on cheeks and clothing, $imperf"
+            }
+          },
+          {
+            "title": "Kodak Brownie — 1920s-40s",
+            "specs": [
+              "Kodak Brownie",
+              "620 film",
+              "Ménisque f/11",
+              "Focus fixe",
+              "Visée poitrine"
+            ],
+            "template": {
+              "camera": "Shot on Kodak Brownie box camera, 620 roll film, single-element meniscus lens f/11, fixed focus at 10 feet, waist-level brilliant viewfinder",
+              "lighting": "Outdoor bright sunlight required, $flash, $grain",
+              "imperfections": "Severe softness from meniscus lens, strong corner vignetting, tilted horizon from waist-level guesswork, film curl causing uneven focus, black and white or sepia toning, $imperf"
+            }
+          },
+          {
+            "title": "Carte de visite — 1860s-1900s",
+            "specs": [
+              "Grand format",
+              "Collodion humide",
+              "Objectif laiton",
+              "Pose 3-15s"
+            ],
+            "template": {
+              "camera": "Large format wet plate collodion process, brass-mounted Petzval portrait lens f/4, glass plate negative, 3 to 15 second exposure, albumen print on carte de visite card mount",
+              "lighting": "Studio skylight with muslin diffusers, $flash, posing stand and head clamp, painted scenic backdrop, $grain",
+              "imperfections": "Wet collodion edge irregularities from hand-poured emulsion, slight blur on hands that moved, rigid formal pose, card mount with photographer studio imprint, foxing spots, $imperf"
+            }
+          },
+          {
+            "title": "Leica Street — Rue 1960s",
+            "specs": [
+              "Leica M3",
+              "Summicron 50mm f/2",
+              "Tri-X poussé",
+              "Télémétrique"
+            ],
+            "template": {
+              "camera": "Shot on Leica M3 rangefinder, Leitz Summicron 50mm f/2 collapsible, Kodak Tri-X 400 pushed to 1600, hand-processed in D-76",
+              "lighting": "Available street light, $flash, high contrast B&W from push processing, deep blacks, $grain",
+              "imperfections": "Heavy Tri-X grain from push processing, Leica smooth bokeh, slight rangefinder parallax error, developer marks on film rebate, uneven edge development, $imperf"
+            }
+          }
+        ]
+      },
+      {
+        "id": "film-slr",
+        "label": "Film SLR",
+        "intro": "Canon AE-1, Nikon FM2, Pentax K1000. Mise au point manuelle, vrai grain film, couleurs organiques. Chaque pellicule coûtait cher, chaque déclenchement comptait.",
+        "cards": [
+          {
+            "title": "Canon AE-1 + Portra 400",
+            "specs": [
+              "Canon AE-1",
+              "FD 50mm f/1.8",
+              "Portra 400",
+              "35mm"
+            ],
+            "template": {
+              "camera": "Shot on Canon AE-1 Program 35mm SLR, Canon FD 50mm f/1.8 wide open, Kodak Portra 400 color negative film",
+              "lighting": "$flash, Portra 400 pastel palette with exceptional skin rendering, warm highlights, soft shadows, $grain",
+              "imperfections": "Organic Portra fine grain, slightly soft manual focus, subtle light leak along film door, scanner dust specks, slight orange mask color cast, $imperf"
+            }
+          },
+          {
+            "title": "Nikon FM2 + Tri-X 400 N&B",
+            "specs": [
+              "Nikon FM2",
+              "Nikkor 50mm f/1.4",
+              "Tri-X 400",
+              "Mécanique"
+            ],
+            "template": {
+              "camera": "Shot on Nikon FM2 mechanical 35mm SLR, Nikkor 50mm f/1.4 AI-S, Kodak Tri-X 400 B&W film, manual exposure",
+              "lighting": "$flash, rich B&W tonal range, Tri-X punchy contrast, $grain",
+              "imperfections": "Beautiful Tri-X grain texture, deep blacks, slight halation on bright highlights, hand-developed marks and uneven agitation, $imperf"
+            }
+          },
+          {
+            "title": "Pentax K1000 + Superia 800",
+            "specs": [
+              "Pentax K1000",
+              "SMC 50mm f/2",
+              "Superia 800",
+              "Étudiant"
+            ],
+            "template": {
+              "camera": "Shot on Pentax K1000 35mm SLR (classic student camera), SMC Pentax 50mm f/2, Fujifilm Superia X-TRA 800",
+              "lighting": "$flash, Superia 800 warm saturated tones with green color shift, consumer film rendering, $grain",
+              "imperfections": "Coarse ISO 800 grain, amateur exposure errors, camera shake (no stabilization), possible light leak from worn seals, yellow-shifted whites, $imperf"
+            }
+          }
+        ]
+      },
+      {
+        "id": "digicam",
+        "label": "Compact Numérique",
+        "intro": "Canon PowerShot, Sony Cyber-shot, Nikon Coolpix. CCD, JPEG, mode auto. Le digicam 2000-2012 redevenu tendance.",
+        "cards": [
+          {
+            "title": "Canon PowerShot — Soirée flash",
+            "specs": [
+              "PowerShot A540",
+              "CCD 6MP",
+              "f/2.6",
+              "35-140mm eq.",
+              "Auto"
+            ],
+            "template": {
+              "camera": "Shot on Canon PowerShot A540, 6MP 1/2.5\" CCD sensor, f/2.6-5.5 zoom, 35-140mm equivalent, Auto mode, JPEG",
+              "lighting": "$flash, CCD limited dynamic range, slightly cool Canon white balance, $grain",
+              "imperfections": "JPEG compression blocking in shadows, CCD bloom and purple fringing, red-eye from flash, slow AF misfocus, date stamp burned in corner, $imperf"
+            }
+          },
+          {
+            "title": "Sony Cyber-shot — Sortie entre amis",
+            "specs": [
+              "DSC-W300",
+              "CCD 13.6MP",
+              "Carl Zeiss f/2.8",
+              "36-108mm eq."
+            ],
+            "template": {
+              "camera": "Shot on Sony Cyber-shot DSC-W300, 13.6MP 1/1.7\" CCD, Carl Zeiss Vario-Tessar f/2.8-5.5, 36-108mm equivalent",
+              "lighting": "$flash, Sony Vivid color mode, punchy CCD color science, $grain",
+              "imperfections": "CCD punchy saturated reds, JPEG artifacts in dark gradients, shutter lag capturing candid off-moment, boxy digital noise in shadows, $imperf"
+            }
+          },
+          {
+            "title": "Nikon Coolpix — Vacances",
+            "specs": [
+              "Coolpix S6200",
+              "CCD 16MP",
+              "10x Nikkor",
+              "VR"
+            ],
+            "template": {
+              "camera": "Shot on Nikon Coolpix S6200, 16MP 1/2.3\" CCD, Nikkor 10x zoom f/3.2-5.8, 25-250mm equivalent, VR",
+              "lighting": "Outdoor daylight, $flash, Nikon auto white balance, $grain",
+              "imperfections": "Motion blur despite VR, aggressive oversharpening halos, washed-out shadows, digital noise at full crop, chromatic aberration at zoom extremes, $imperf"
+            }
+          }
+        ]
+      },
+      {
+        "id": "phone",
+        "label": "Smartphone",
+        "intro": "Du iPhone 4 au Pixel 9. Deux époques : ancien (2010-2017) trahissant ses limites, et moderne (2018+) parfois trop computationnel.",
+        "cards": [
+          {
+            "title": "iPhone 6 — Soirée (2015)",
+            "specs": [
+              "iPhone 6",
+              "8MP",
+              "f/2.2",
+              "29mm eq.",
+              "Pas de stab."
+            ],
+            "template": {
+              "camera": "Shot on iPhone 6, 8MP iSight, f/2.2, 29mm equivalent, 1.5μm pixels, no OIS, JPEG",
+              "lighting": "$flash, limited dynamic range, blown highlights, crushed shadows, $grain",
+              "imperfections": "Heavy shadow noise, purple fringing, noise reduction watercolor smearing on skin, lens flare from lights, $imperf"
+            }
+          },
+          {
+            "title": "iPhone 15 Pro — Street (2024)",
+            "specs": [
+              "iPhone 15 Pro",
+              "48MP",
+              "f/1.78",
+              "24mm eq.",
+              "ProRAW"
+            ],
+            "template": {
+              "camera": "Shot on iPhone 15 Pro, 48MP, f/1.78, 24mm equivalent, sensor-shift OIS, Photonic Engine, Smart HDR 5",
+              "lighting": "$flash, Apple HDR tone mapping, natural color science, $grain",
+              "imperfections": "Computational sharpening halo on edges, HDR ghosting on movement, Portrait mode bokeh with hair edge detection errors, $imperf"
+            }
+          },
+          {
+            "title": "Samsung Galaxy S24 Ultra — Nuit",
+            "specs": [
+              "Galaxy S24 Ultra",
+              "200MP?12MP",
+              "f/1.7",
+              "Nightography"
+            ],
+            "template": {
+              "camera": "Shot on Samsung Galaxy S24 Ultra, 200MP binned to 12MP, f/1.7, 23mm equivalent, Nightography mode",
+              "lighting": "Night scene, $flash, Samsung AI noise reduction, oversaturated warm white balance, $grain",
+              "imperfections": "Samsung over-saturation and over-sharpening, motion ghosting from multi-frame stacking, watercolor smoothing in textures, $imperf"
+            }
+          }
+        ]
+      },
+      {
+        "id": "webcam",
+        "label": "Webcam / Surveillance",
+        "intro": "Webcams laptop, CCTV, Ring doorbell, dashcams. Qualité basse par design — c'est ce qui les rend crédibles.",
+        "cards": [
+          {
+            "title": "Webcam laptop 720p",
+            "specs": [
+              "Webcam laptop",
+              "720p",
+              "1.3MP",
+              "f/2.0",
+              "2.8mm"
+            ],
+            "template": {
+              "camera": "Shot on generic laptop webcam, 720p, 1.3MP CMOS, f/2.0 plastic lens, 2.8mm, 30fps, auto exposure",
+              "lighting": "Screen light from below creating upward shadows, $flash, poor mixed white balance, $grain",
+              "imperfections": "Heavy noise, lossy compression artifacts, washed colors, barrel distortion, motion blur at 1/30s, low resolution, unflattering chin angle, $imperf"
+            }
+          },
+          {
+            "title": "Caméra CCTV",
+            "specs": [
+              "CCTV",
+              "2MP",
+              "f/1.4",
+              "Varifocal",
+              "H.264",
+              "Timestamp"
+            ],
+            "template": {
+              "camera": "Still frame from CCTV security camera, 2MP 1/2.8\" CMOS, f/1.4 varifocal 2.8-12mm, H.264 compression, ceiling-mounted",
+              "lighting": "Harsh overhead fluorescent or IR night-vision, $flash, 45-degree downward angle, $grain",
+              "imperfections": "H.264 blocking artifacts, timestamp text overlay burned in (2024/03/15 22:47:33 CAM-03), barrel distortion, IR color cast, interlacing, $imperf"
+            }
+          },
+          {
+            "title": "Dashcam — Route",
+            "specs": [
+              "Dashcam",
+              "1080p",
+              "f/1.8",
+              "170° FOV",
+              "Loop"
+            ],
+            "template": {
+              "camera": "Still from dashboard camera, 1080p, 170° ultra-wide f/1.8, loop recording, windshield mount, speed overlay",
+              "lighting": "Through-windshield with reflections and glare, $flash, windshield dirt affecting exposure, $grain",
+              "imperfections": "Extreme fisheye distortion, windshield reflections, dashboard ghosting, dirty smudges, timestamp+speed overlay, motion blur, $imperf"
+            }
+          }
+        ]
+      },
+      {
+        "id": "camcorder",
+        "label": "Caméscope",
+        "intro": "VHS, VHS-C, Hi8, MiniDV. Frames extraits de vidéos familiales — entrelacement, artefacts de bande, flou de mouvement.",
+        "cards": [
+          {
+            "title": "VHS-C — Vidéo familiale 90s",
+            "specs": [
+              "VHS-C",
+              "CCD",
+              "240 lignes TV",
+              "Auto focus"
+            ],
+            "template": {
+              "camera": "Still frame from VHS-C camcorder (JVC/Panasonic circa 1992), CCD sensor, 240 TV lines, VHS format",
+              "lighting": "$flash, top-mounted camera light creating harsh overhead illumination, $grain",
+              "imperfections": "VHS interlacing lines, tape tracking noise at bottom, analog noise, color bleeding, REC indicator and date stamp overlay, motion blur, VHS generation loss, $imperf"
+            }
+          },
+          {
+            "title": "MiniDV Handycam — 2003",
+            "specs": [
+              "Sony Handycam",
+              "MiniDV",
+              "720×480",
+              "Carl Zeiss",
+              "CCD 1/6\""
+            ],
+            "template": {
+              "camera": "Still from Sony Handycam MiniDV camcorder, 1/6\" CCD, Carl Zeiss Vario-Tessar zoom, 720x480 DV, interlaced",
+              "lighting": "$flash, small CCD limited dynamic range, Sony Vivid color processing, $grain",
+              "imperfections": "DV compression blocking, interlace combing on movement, auto-focus hunting creating soft patches, 4:3 aspect ratio, possible anamorphic stretch, $imperf"
+            }
+          }
+        ]
+      },
+      {
+        "id": "tv-tube",
+        "label": "Caméra TV / Tube",
+        "intro": "Caméras à tube cathodique de télévision : Vidicon, Plumbicon, Saticon. Des plateaux TV des années 60 aux JT des années 2000. Entrelacement, persistence de phosphore, rendu unique de chaque décennie — le look \"vu à la télé\" est immédiatement reconnaissable.",
+        "cards": [
+          {
+            "title": "Caméra TV Studio — Années 60s",
+            "specs": [
+              "RCA TK-41",
+              "Tube Image Orthicon",
+              "4.5 MHz bande passante",
+              "525 lignes",
+              "Noir & blanc ou couleur précoce"
+            ],
+            "template": {
+              "camera": "Still frame from 1960s broadcast television studio camera (RCA TK-41 or similar), Image Orthicon tube sensor, 525-line NTSC resolution, 4.5 MHz bandwidth, interlaced 2:1 scanning, studio pedestal mount",
+              "lighting": "Bright studio flood lights and Fresnel spots, $flash, extremely flat high-key lighting to compensate for tube sensitivity limitations, visible heat from tungsten lamps, $grain",
+              "imperfections": "Image Orthicon tube characteristic halo/bloom around bright objects, visible scan lines, limited contrast ratio, slight geometric distortion from tube curvature, burn-in ghosting from static graphics, 4:3 aspect ratio with rounded screen corners, slight phosphor lag on movement, $imperf"
+            }
+          },
+          {
+            "title": "Actualités TV — Années 70s (ENG)",
+            "specs": [
+              "Ikegami HL-77",
+              "Plumbicon tube",
+              "Betacam",
+              "Portable ENG",
+              "NTSC/PAL"
+            ],
+            "template": {
+              "camera": "Still frame from 1970s Electronic News Gathering camera (Ikegami HL-77 or RCA TK-76), Plumbicon tube sensor, portable shoulder-mounted, recorded to 3/4\" U-matic tape, NTSC 525 lines",
+              "lighting": "Available outdoor light or harsh portable sun-gun lamp, $flash, high contrast from limited tube dynamic range, $grain",
+              "imperfections": "Plumbicon tube comet tailing on bright moving highlights, visible scan line structure, color fringing from tube registration errors (RGB tubes slightly misaligned), analog video noise, slight barrel distortion, U-matic tape dropout artifacts as horizontal white streaks, $imperf"
+            }
+          },
+          {
+            "title": "Plateau TV / Talk-show — Années 80s",
+            "specs": [
+              "Ikegami HK-357",
+              "Saticon tube",
+              "Betacam SP",
+              "Studio broadcast",
+              "NTSC/PAL"
+            ],
+            "template": {
+              "camera": "Still frame from 1980s television studio camera (Ikegami HK-357 or Sony BVP-360), Saticon tube sensors (3-tube RGB), Betacam SP recording, broadcast-quality 525/625 lines, studio configuration on heavy pedestal",
+              "lighting": "Professional multi-point studio lighting with strong key light, fill, and colored gels on backlight, $flash, characteristic 1980s TV warm color temperature and saturated look, $grain",
+              "imperfections": "Saticon tube slight image lag on fast movement, analog video noise in shadows, characteristic warm broadcast color grading of 1980s, slight RGB tube misregistration visible on high-contrast edges, studio monitor scanline texture, 4:3 aspect ratio, $imperf"
+            }
+          },
+          {
+            "title": "JT / News Broadcast — Années 90s",
+            "specs": [
+              "Sony BVP-700",
+              "CCD remplace les tubes",
+              "Betacam SP/Digital",
+              "16:9 début",
+              "NTSC/PAL"
+            ],
+            "template": {
+              "camera": "Still frame from early 1990s broadcast camera (Sony BVP-700 or Ikegami HK-388), transitional era from tube to CCD sensors, 3-CCD chip camera, Betacam SP or Digital Betacam recording, 4:3 broadcast standard",
+              "lighting": "Studio news desk lighting, $flash, cool fluorescent-mixed key light typical of 1990s news studios, $grain",
+              "imperfections": "Early CCD smear artifacts on bright highlights, interlaced field rendering creating comb effect on movement, Betacam tape compression, analog-to-digital transition artifacts, chroma subsampling visible on saturated colors, lower third graphics overlay area, 4:3 with possible letterbox, $imperf"
+            }
+          },
+          {
+            "title": "TV numérique SD — Années 2000s",
+            "specs": [
+              "Sony HDC-950",
+              "2/3\" CCD",
+              "DVCPRO HD / MPEG-2",
+              "480i/576i SD broadcast"
+            ],
+            "template": {
+              "camera": "Still frame from early 2000s standard definition digital broadcast camera (Sony HDC-950 or Panasonic AK-HC900), 2/3 inch 3-CCD sensor, MPEG-2 compression for broadcast, 480i/576i interlaced SD output, digital signal chain",
+              "lighting": "Mixed fluorescent and LED studio panels, $flash, cleaner digital color but still constrained by SD resolution, early digital color correction look, $grain",
+              "imperfections": "MPEG-2 compression macroblocking artifacts especially in dark or fast-moving areas, interlaced field combing, standard definition softness (720x480), digital noise reduction smearing fine detail, slight color banding in gradients from 8-bit broadcast, 4:3 or early 16:9 anamorphic, news ticker or channel logo watermark, $imperf"
+            }
+          }
+        ]
+      }
+    ],
+    "defaultOutputs": [
+      {
+        "tabId": "disposable",
+        "cardIndex": 0,
+        "title": "Kodak FunSaver — Soirée",
+        "output": "CAMERA: Shot on Kodak FunSaver disposable camera, 35mm Kodak MAX Versatility 800 film, fixed f/10 single-element plastic lens, 30mm focal length, 1/140s fixed shutter speed\n\nLIGHTING: No flash, natural ambient light only, strong flash falloff creating pitch-dark background beyond 3m, harsh direct illumination on foreground subject, subtle grain, ISO 100-200 equivalent\n\nDEPTH OF FIELD: moderate f/5.6-f/8, slight background softening\n\nIMPERFECTIONS: Visible ISO 800 film grain structure, red-eye effect on direct gaze, overexposed foreground from flash proximity, heavy corner vignetting from plastic lens, soft focus especially at edges, possible light leak along film door seal, minor dust speck, slight horizon tilt"
+      },
+      {
+        "tabId": "disposable",
+        "cardIndex": 1,
+        "title": "Fujifilm QuickSnap — Plage",
+        "output": "CAMERA: Shot on Fujifilm QuickSnap Flash 400 disposable camera, 35mm Fujicolor Superia 400 film, fixed f/10 plastic lens, 32mm focal length\n\nLIGHTING: Bright outdoor daylight, No flash, natural ambient light only, Fujifilm characteristic warm palette with boosted greens and vivid reds, subtle grain, ISO 100-200 equivalent\n\nDEPTH OF FIELD: moderate f/5.6-f/8, slight background softening\n\nIMPERFECTIONS: Fuji vivid greens and warm skin tones, soft focus from single-element plastic lens, slight barrel distortion, film grain clearly visible in sky areas, possible sand or water droplet on lens, minor dust speck, slight horizon tilt"
+      },
+      {
+        "tabId": "disposable",
+        "cardIndex": 2,
+        "title": "AGFA LeBox — Intérieur Nuit",
+        "output": "CAMERA: Shot on AGFA LeBox Flash disposable camera, 35mm AGFA Vista 400 film, fixed f/9 plastic lens, strong built-in flash unit with extended reach\n\nLIGHTING: Indoor night setting, No flash, natural ambient light only, AGFA warm amber color rendering, powerful flash illuminating room, subtle grain, ISO 100-200 equivalent\n\nDEPTH OF FIELD: moderate f/5.6-f/8, slight background softening\n\nIMPERFECTIONS: Heavy film grain, strong overexposure on subjects within 1m, deep impenetrable shadows beyond flash range, AGFA color shift in shadows, minor dust speck, slight horizon tilt"
+      },
+      {
+        "tabId": "polaroid",
+        "cardIndex": 0,
+        "title": "Polaroid 600 — Photo de groupe",
+        "output": "CAMERA: Shot on Polaroid 600 OneStep camera, Polaroid 600 integral instant film, 106mm f/14.6 single-element plastic lens, automatic flash, 3.1×3.1 inch print area within white border frame\n\nLIGHTING: No flash, natural ambient light only, Polaroid chemical color palette with cyan-shifted blues and warm yellow undertones, limited dynamic range, subtle grain, ISO 100-200 equivalent\n\nDEPTH OF FIELD: moderate f/5.6-f/8, slight background softening\n\nIMPERFECTIONS: Uneven chemical spread creating slight color banding, soft dreamy overall focus, white iconic border frame, slight roller marks at print bottom, fingerprint smudge on glossy surface, minor dust speck, slight horizon tilt"
+      },
+      {
+        "tabId": "polaroid",
+        "cardIndex": 1,
+        "title": "Polaroid SX-70 — Portrait",
+        "output": "CAMERA: Shot on Polaroid SX-70 folding SLR instant camera, SX-70 film cartridge, 116mm f/8 four-element glass lens, SLR viewfinder with manual focus ring\n\nLIGHTING: No flash, natural ambient light only, SX-70 film with richer tones than 600, slightly warm nostalgic palette, subtle grain, ISO 100-200 equivalent\n\nDEPTH OF FIELD: moderate f/5.6-f/8, slight background softening\n\nIMPERFECTIONS: SX-70 chemical development variations, better sharpness than 600 but still soft, square format with white border, slight border yellowing with age, minor dust speck, slight horizon tilt"
+      },
+      {
+        "tabId": "polaroid",
+        "cardIndex": 2,
+        "title": "Fujifilm Instax Mini — Entre amis",
+        "output": "CAMERA: Shot on Fujifilm Instax Mini 12, 60mm f/12.7 two-element lens, ISO 800 Instax Mini instant film, automatic exposure with built-in flash, credit-card sized print\n\nLIGHTING: No flash, natural ambient light only, Instax cool pastel color rendering, slightly overexposed skin tones, subtle grain, ISO 100-200 equivalent\n\nDEPTH OF FIELD: moderate f/5.6-f/8, slight background softening\n\nIMPERFECTIONS: Instax pastel palette, soft focus at close range, slight overexposure, tiny format with white border, off-center framing from viewfinder parallax, minor dust speck, slight horizon tilt"
+      },
+      {
+        "tabId": "vintage",
+        "cardIndex": 0,
+        "title": "Daguerréotype — Portrait 1850s",
+        "output": "CAMERA: Daguerreotype process on silvered copper plate, Petzval-type portrait lens f/3.6, 10 to 60 second exposure requiring absolute stillness, mercury vapor development\n\nLIGHTING: Studio north-facing skylight, No flash, natural ambient light only, reflected light from white fabric screens, no electrical lighting, subtle grain, ISO 100-200 equivalent\n\nDEPTH OF FIELD: moderate f/5.6-f/8, slight background softening\n\nIMPERFECTIONS: Slight motion blur despite head brace, tarnishing and oxidation at plate edges, mirror-like surface, stiff formal pose, hand-tinted color on cheeks and clothing, minor dust speck, slight horizon tilt"
+      },
+      {
+        "tabId": "vintage",
+        "cardIndex": 1,
+        "title": "Kodak Brownie — 1920s-40s",
+        "output": "CAMERA: Shot on Kodak Brownie box camera, 620 roll film, single-element meniscus lens f/11, fixed focus at 10 feet, waist-level brilliant viewfinder\n\nLIGHTING: Outdoor bright sunlight required, No flash, natural ambient light only, subtle grain, ISO 100-200 equivalent\n\nDEPTH OF FIELD: moderate f/5.6-f/8, slight background softening\n\nIMPERFECTIONS: Severe softness from meniscus lens, strong corner vignetting, tilted horizon from waist-level guesswork, film curl causing uneven focus, black and white or sepia toning, minor dust speck, slight horizon tilt"
+      },
+      {
+        "tabId": "vintage",
+        "cardIndex": 2,
+        "title": "Carte de visite — 1860s-1900s",
+        "output": "CAMERA: Large format wet plate collodion process, brass-mounted Petzval portrait lens f/4, glass plate negative, 3 to 15 second exposure, albumen print on carte de visite card mount\n\nLIGHTING: Studio skylight with muslin diffusers, No flash, natural ambient light only, posing stand and head clamp, painted scenic backdrop, subtle grain, ISO 100-200 equivalent\n\nDEPTH OF FIELD: moderate f/5.6-f/8, slight background softening\n\nIMPERFECTIONS: Wet collodion edge irregularities from hand-poured emulsion, slight blur on hands that moved, rigid formal pose, card mount with photographer studio imprint, foxing spots, minor dust speck, slight horizon tilt"
+      },
+      {
+        "tabId": "vintage",
+        "cardIndex": 3,
+        "title": "Leica Street — Rue 1960s",
+        "output": "CAMERA: Shot on Leica M3 rangefinder, Leitz Summicron 50mm f/2 collapsible, Kodak Tri-X 400 pushed to 1600, hand-processed in D-76\n\nLIGHTING: Available street light, No flash, natural ambient light only, high contrast B&W from push processing, deep blacks, subtle grain, ISO 100-200 equivalent\n\nDEPTH OF FIELD: moderate f/5.6-f/8, slight background softening\n\nIMPERFECTIONS: Heavy Tri-X grain from push processing, Leica smooth bokeh, slight rangefinder parallax error, developer marks on film rebate, uneven edge development, minor dust speck, slight horizon tilt"
+      },
+      {
+        "tabId": "film-slr",
+        "cardIndex": 0,
+        "title": "Canon AE-1 + Portra 400",
+        "output": "CAMERA: Shot on Canon AE-1 Program 35mm SLR, Canon FD 50mm f/1.8 wide open, Kodak Portra 400 color negative film\n\nLIGHTING: No flash, natural ambient light only, Portra 400 pastel palette with exceptional skin rendering, warm highlights, soft shadows, subtle grain, ISO 100-200 equivalent\n\nDEPTH OF FIELD: moderate f/5.6-f/8, slight background softening\n\nIMPERFECTIONS: Organic Portra fine grain, slightly soft manual focus, subtle light leak along film door, scanner dust specks, slight orange mask color cast, minor dust speck, slight horizon tilt"
+      },
+      {
+        "tabId": "film-slr",
+        "cardIndex": 1,
+        "title": "Nikon FM2 + Tri-X 400 N&B",
+        "output": "CAMERA: Shot on Nikon FM2 mechanical 35mm SLR, Nikkor 50mm f/1.4 AI-S, Kodak Tri-X 400 B&W film, manual exposure\n\nLIGHTING: No flash, natural ambient light only, rich B&W tonal range, Tri-X punchy contrast, subtle grain, ISO 100-200 equivalent\n\nDEPTH OF FIELD: moderate f/5.6-f/8, slight background softening\n\nIMPERFECTIONS: Beautiful Tri-X grain texture, deep blacks, slight halation on bright highlights, hand-developed marks and uneven agitation, minor dust speck, slight horizon tilt"
+      },
+      {
+        "tabId": "film-slr",
+        "cardIndex": 2,
+        "title": "Pentax K1000 + Superia 800",
+        "output": "CAMERA: Shot on Pentax K1000 35mm SLR (classic student camera), SMC Pentax 50mm f/2, Fujifilm Superia X-TRA 800\n\nLIGHTING: No flash, natural ambient light only, Superia 800 warm saturated tones with green color shift, consumer film rendering, subtle grain, ISO 100-200 equivalent\n\nDEPTH OF FIELD: moderate f/5.6-f/8, slight background softening\n\nIMPERFECTIONS: Coarse ISO 800 grain, amateur exposure errors, camera shake (no stabilization), possible light leak from worn seals, yellow-shifted whites, minor dust speck, slight horizon tilt"
+      },
+      {
+        "tabId": "digicam",
+        "cardIndex": 0,
+        "title": "Canon PowerShot — Soirée flash",
+        "output": "CAMERA: Shot on Canon PowerShot A540, 6MP 1/2.5\" CCD sensor, f/2.6-5.5 zoom, 35-140mm equivalent, Auto mode, JPEG\n\nLIGHTING: No flash, natural ambient light only, CCD limited dynamic range, slightly cool Canon white balance, subtle grain, ISO 100-200 equivalent\n\nDEPTH OF FIELD: moderate f/5.6-f/8, slight background softening\n\nIMPERFECTIONS: JPEG compression blocking in shadows, CCD bloom and purple fringing, red-eye from flash, slow AF misfocus, date stamp burned in corner, minor dust speck, slight horizon tilt"
+      },
+      {
+        "tabId": "digicam",
+        "cardIndex": 1,
+        "title": "Sony Cyber-shot — Sortie entre amis",
+        "output": "CAMERA: Shot on Sony Cyber-shot DSC-W300, 13.6MP 1/1.7\" CCD, Carl Zeiss Vario-Tessar f/2.8-5.5, 36-108mm equivalent\n\nLIGHTING: No flash, natural ambient light only, Sony Vivid color mode, punchy CCD color science, subtle grain, ISO 100-200 equivalent\n\nDEPTH OF FIELD: moderate f/5.6-f/8, slight background softening\n\nIMPERFECTIONS: CCD punchy saturated reds, JPEG artifacts in dark gradients, shutter lag capturing candid off-moment, boxy digital noise in shadows, minor dust speck, slight horizon tilt"
+      },
+      {
+        "tabId": "digicam",
+        "cardIndex": 2,
+        "title": "Nikon Coolpix — Vacances",
+        "output": "CAMERA: Shot on Nikon Coolpix S6200, 16MP 1/2.3\" CCD, Nikkor 10x zoom f/3.2-5.8, 25-250mm equivalent, VR\n\nLIGHTING: Outdoor daylight, No flash, natural ambient light only, Nikon auto white balance, subtle grain, ISO 100-200 equivalent\n\nDEPTH OF FIELD: moderate f/5.6-f/8, slight background softening\n\nIMPERFECTIONS: Motion blur despite VR, aggressive oversharpening halos, washed-out shadows, digital noise at full crop, chromatic aberration at zoom extremes, minor dust speck, slight horizon tilt"
+      },
+      {
+        "tabId": "phone",
+        "cardIndex": 0,
+        "title": "iPhone 6 — Soirée (2015)",
+        "output": "CAMERA: Shot on iPhone 6, 8MP iSight, f/2.2, 29mm equivalent, 1.5μm pixels, no OIS, JPEG\n\nLIGHTING: No flash, natural ambient light only, limited dynamic range, blown highlights, crushed shadows, subtle grain, ISO 100-200 equivalent\n\nDEPTH OF FIELD: moderate f/5.6-f/8, slight background softening\n\nIMPERFECTIONS: Heavy shadow noise, purple fringing, noise reduction watercolor smearing on skin, lens flare from lights, minor dust speck, slight horizon tilt"
+      },
+      {
+        "tabId": "phone",
+        "cardIndex": 1,
+        "title": "iPhone 15 Pro — Street (2024)",
+        "output": "CAMERA: Shot on iPhone 15 Pro, 48MP, f/1.78, 24mm equivalent, sensor-shift OIS, Photonic Engine, Smart HDR 5\n\nLIGHTING: No flash, natural ambient light only, Apple HDR tone mapping, natural color science, subtle grain, ISO 100-200 equivalent\n\nDEPTH OF FIELD: moderate f/5.6-f/8, slight background softening\n\nIMPERFECTIONS: Computational sharpening halo on edges, HDR ghosting on movement, Portrait mode bokeh with hair edge detection errors, minor dust speck, slight horizon tilt"
+      },
+      {
+        "tabId": "phone",
+        "cardIndex": 2,
+        "title": "Samsung Galaxy S24 Ultra — Nuit",
+        "output": "CAMERA: Shot on Samsung Galaxy S24 Ultra, 200MP binned to 12MP, f/1.7, 23mm equivalent, Nightography mode\n\nLIGHTING: Night scene, No flash, natural ambient light only, Samsung AI noise reduction, oversaturated warm white balance, subtle grain, ISO 100-200 equivalent\n\nDEPTH OF FIELD: moderate f/5.6-f/8, slight background softening\n\nIMPERFECTIONS: Samsung over-saturation and over-sharpening, motion ghosting from multi-frame stacking, watercolor smoothing in textures, minor dust speck, slight horizon tilt"
+      },
+      {
+        "tabId": "webcam",
+        "cardIndex": 0,
+        "title": "Webcam laptop 720p",
+        "output": "CAMERA: Shot on generic laptop webcam, 720p, 1.3MP CMOS, f/2.0 plastic lens, 2.8mm, 30fps, auto exposure\n\nLIGHTING: Screen light from below creating upward shadows, No flash, natural ambient light only, poor mixed white balance, subtle grain, ISO 100-200 equivalent\n\nDEPTH OF FIELD: moderate f/5.6-f/8, slight background softening\n\nIMPERFECTIONS: Heavy noise, lossy compression artifacts, washed colors, barrel distortion, motion blur at 1/30s, low resolution, unflattering chin angle, minor dust speck, slight horizon tilt"
+      },
+      {
+        "tabId": "webcam",
+        "cardIndex": 1,
+        "title": "Caméra CCTV",
+        "output": "CAMERA: Still frame from CCTV security camera, 2MP 1/2.8\" CMOS, f/1.4 varifocal 2.8-12mm, H.264 compression, ceiling-mounted\n\nLIGHTING: Harsh overhead fluorescent or IR night-vision, No flash, natural ambient light only, 45-degree downward angle, subtle grain, ISO 100-200 equivalent\n\nDEPTH OF FIELD: moderate f/5.6-f/8, slight background softening\n\nIMPERFECTIONS: H.264 blocking artifacts, timestamp text overlay burned in (2024/03/15 22:47:33 CAM-03), barrel distortion, IR color cast, interlacing, minor dust speck, slight horizon tilt"
+      },
+      {
+        "tabId": "webcam",
+        "cardIndex": 2,
+        "title": "Dashcam — Route",
+        "output": "CAMERA: Still from dashboard camera, 1080p, 170° ultra-wide f/1.8, loop recording, windshield mount, speed overlay\n\nLIGHTING: Through-windshield with reflections and glare, No flash, natural ambient light only, windshield dirt affecting exposure, subtle grain, ISO 100-200 equivalent\n\nDEPTH OF FIELD: moderate f/5.6-f/8, slight background softening\n\nIMPERFECTIONS: Extreme fisheye distortion, windshield reflections, dashboard ghosting, dirty smudges, timestamp+speed overlay, motion blur, minor dust speck, slight horizon tilt"
+      },
+      {
+        "tabId": "camcorder",
+        "cardIndex": 0,
+        "title": "VHS-C — Vidéo familiale 90s",
+        "output": "CAMERA: Still frame from VHS-C camcorder (JVC/Panasonic circa 1992), CCD sensor, 240 TV lines, VHS format\n\nLIGHTING: No flash, natural ambient light only, top-mounted camera light creating harsh overhead illumination, subtle grain, ISO 100-200 equivalent\n\nDEPTH OF FIELD: moderate f/5.6-f/8, slight background softening\n\nIMPERFECTIONS: VHS interlacing lines, tape tracking noise at bottom, analog noise, color bleeding, REC indicator and date stamp overlay, motion blur, VHS generation loss, minor dust speck, slight horizon tilt"
+      },
+      {
+        "tabId": "camcorder",
+        "cardIndex": 1,
+        "title": "MiniDV Handycam — 2003",
+        "output": "CAMERA: Still from Sony Handycam MiniDV camcorder, 1/6\" CCD, Carl Zeiss Vario-Tessar zoom, 720x480 DV, interlaced\n\nLIGHTING: No flash, natural ambient light only, small CCD limited dynamic range, Sony Vivid color processing, subtle grain, ISO 100-200 equivalent\n\nDEPTH OF FIELD: moderate f/5.6-f/8, slight background softening\n\nIMPERFECTIONS: DV compression blocking, interlace combing on movement, auto-focus hunting creating soft patches, 4:3 aspect ratio, possible anamorphic stretch, minor dust speck, slight horizon tilt"
+      },
+      {
+        "tabId": "tv-tube",
+        "cardIndex": 0,
+        "title": "Caméra TV Studio — Années 60s",
+        "output": "CAMERA: Still frame from 1960s broadcast television studio camera (RCA TK-41 or similar), Image Orthicon tube sensor, 525-line NTSC resolution, 4.5 MHz bandwidth, interlaced 2:1 scanning, studio pedestal mount\n\nLIGHTING: Bright studio flood lights and Fresnel spots, No flash, natural ambient light only, extremely flat high-key lighting to compensate for tube sensitivity limitations, visible heat from tungsten lamps, subtle grain, ISO 100-200 equivalent\n\nDEPTH OF FIELD: moderate f/5.6-f/8, slight background softening\n\nIMPERFECTIONS: Image Orthicon tube characteristic halo/bloom around bright objects, visible scan lines, limited contrast ratio, slight geometric distortion from tube curvature, burn-in ghosting from static graphics, 4:3 aspect ratio with rounded screen corners, slight phosphor lag on movement, minor dust speck, slight horizon tilt"
+      },
+      {
+        "tabId": "tv-tube",
+        "cardIndex": 1,
+        "title": "Actualités TV — Années 70s (ENG)",
+        "output": "CAMERA: Still frame from 1970s Electronic News Gathering camera (Ikegami HL-77 or RCA TK-76), Plumbicon tube sensor, portable shoulder-mounted, recorded to 3/4\" U-matic tape, NTSC 525 lines\n\nLIGHTING: Available outdoor light or harsh portable sun-gun lamp, No flash, natural ambient light only, high contrast from limited tube dynamic range, subtle grain, ISO 100-200 equivalent\n\nDEPTH OF FIELD: moderate f/5.6-f/8, slight background softening\n\nIMPERFECTIONS: Plumbicon tube comet tailing on bright moving highlights, visible scan line structure, color fringing from tube registration errors (RGB tubes slightly misaligned), analog video noise, slight barrel distortion, U-matic tape dropout artifacts as horizontal white streaks, minor dust speck, slight horizon tilt"
+      },
+      {
+        "tabId": "tv-tube",
+        "cardIndex": 2,
+        "title": "Plateau TV / Talk-show — Années 80s",
+        "output": "CAMERA: Still frame from 1980s television studio camera (Ikegami HK-357 or Sony BVP-360), Saticon tube sensors (3-tube RGB), Betacam SP recording, broadcast-quality 525/625 lines, studio configuration on heavy pedestal\n\nLIGHTING: Professional multi-point studio lighting with strong key light, fill, and colored gels on backlight, No flash, natural ambient light only, characteristic 1980s TV warm color temperature and saturated look, subtle grain, ISO 100-200 equivalent\n\nDEPTH OF FIELD: moderate f/5.6-f/8, slight background softening\n\nIMPERFECTIONS: Saticon tube slight image lag on fast movement, analog video noise in shadows, characteristic warm broadcast color grading of 1980s, slight RGB tube misregistration visible on high-contrast edges, studio monitor scanline texture, 4:3 aspect ratio, minor dust speck, slight horizon tilt"
+      },
+      {
+        "tabId": "tv-tube",
+        "cardIndex": 3,
+        "title": "JT / News Broadcast — Années 90s",
+        "output": "CAMERA: Still frame from early 1990s broadcast camera (Sony BVP-700 or Ikegami HK-388), transitional era from tube to CCD sensors, 3-CCD chip camera, Betacam SP or Digital Betacam recording, 4:3 broadcast standard\n\nLIGHTING: Studio news desk lighting, No flash, natural ambient light only, cool fluorescent-mixed key light typical of 1990s news studios, subtle grain, ISO 100-200 equivalent\n\nDEPTH OF FIELD: moderate f/5.6-f/8, slight background softening\n\nIMPERFECTIONS: Early CCD smear artifacts on bright highlights, interlaced field rendering creating comb effect on movement, Betacam tape compression, analog-to-digital transition artifacts, chroma subsampling visible on saturated colors, lower third graphics overlay area, 4:3 with possible letterbox, minor dust speck, slight horizon tilt"
+      },
+      {
+        "tabId": "tv-tube",
+        "cardIndex": 4,
+        "title": "TV numérique SD — Années 2000s",
+        "output": "CAMERA: Still frame from early 2000s standard definition digital broadcast camera (Sony HDC-950 or Panasonic AK-HC900), 2/3 inch 3-CCD sensor, MPEG-2 compression for broadcast, 480i/576i interlaced SD output, digital signal chain\n\nLIGHTING: Mixed fluorescent and LED studio panels, No flash, natural ambient light only, cleaner digital color but still constrained by SD resolution, early digital color correction look, subtle grain, ISO 100-200 equivalent\n\nDEPTH OF FIELD: moderate f/5.6-f/8, slight background softening\n\nIMPERFECTIONS: MPEG-2 compression macroblocking artifacts especially in dark or fast-moving areas, interlaced field combing, standard definition softness (720x480), digital noise reduction smearing fine detail, slight color banding in gradients from 8-bit broadcast, 4:3 or early 16:9 anamorphic, news ticker or channel logo watermark, minor dust speck, slight horizon tilt"
+      }
+    ],
+    "edgeFixture": {
+      "tabId": "disposable",
+      "cardIndex": 0,
+      "state": {
+        "desc": "a violinist waiting beside a rain-streaked bus shelter",
+        "celeb": "",
+        "outfit": "Oversized vintage band t-shirt, denim shorts, barefoot",
+        "outfitC": "",
+        "pose": "Mid-laugh, head tilted back, eyes half-closed",
+        "poseC": "",
+        "location": "City sidewalk at night, neon shop signs, wet pavement reflections",
+        "locationC": "",
+        "mood": "laughing with genuine joy"
+      },
+      "sliders": {
+        "flash": 100,
+        "grain": 100,
+        "dof": 0,
+        "wear": 100,
+        "imperf": 100
+      },
+      "output": "CAMERA: Shot on Kodak FunSaver disposable camera, 35mm Kodak MAX Versatility 800 film, fixed f/10 single-element plastic lens, 30mm focal length, 1/140s fixed shutter speed\n\nLIGHTING: Maximum direct flash, blown-out highlights, pitch-black background, extreme red-eye, strong flash falloff creating pitch-dark background beyond 3m, harsh direct illumination on foreground subject, maximum grain, ISO 6400+ dominating image\n\nDEPTH OF FIELD: deep focus f/11-f/16, everything sharp\n\nSUBJECT: a violinist waiting beside a rain-streaked bus shelter\n\nOUTFIT: Oversized vintage band t-shirt, denim shorts, barefoot\n\nPOSE: Mid-laugh, head tilted back, eyes half-closed, laughing with genuine joy expression\n\nLOCATION: City sidewalk at night, neon shop signs, wet pavement reflections\n\nIMPERFECTIONS: Visible ISO 800 film grain structure, red-eye effect on direct gaze, overexposed foreground from flash proximity, heavy corner vignetting from plastic lens, soft focus especially at edges, possible light leak along film door seal, extreme: torn print, chemical stains, deep scratches across frame\n\nPRINT AGING: extreme damage, severe fading, cracking emulsion, brittle"
+    }
+  }
+}

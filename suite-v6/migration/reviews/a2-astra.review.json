@@ -1,0 +1,1107 @@
+{
+  "schemaVersion": "1.0",
+  "bundleId": "a2-cinematic-shoot",
+  "bundleDigest": "d14c6c36f6ec7cf355af0fc2eae27a907a3f23ea298719e14b600f38af2c2041",
+  "status": "reviewed",
+  "reviewerModel": "gpt-6-astra",
+  "reviewedAt": "2026-09-11",
+  "scope": "All 162 bundle values read in full, all 41 recipe bodies matched to fixtures, source compiler and 57 omitted source literals reviewed. Runtime integration remains pending.",
+  "decisions": [
+    {
+      "id": "text-02015f8fdcd62fb89066",
+      "sourceIndex": 0,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-0563dd27225324cdf081",
+      "sourceIndex": 1,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-083ec36cc6984e6f3f31",
+      "sourceIndex": 2,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de recette, conservé pour la navigation et pour le thème de l'itération. L'exclusion du corps de prompt ne supprime ni le titre ni la recette."
+    },
+    {
+      "id": "text-091b98be4743533d6364",
+      "sourceIndex": 3,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-09ffe35d9cee7ed0521d",
+      "sourceIndex": 4,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-0b37d726253244d485a5",
+      "sourceIndex": 5,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-0ce9c1835f5483ac78b9",
+      "sourceIndex": 6,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-10b8ba1f9092971407bc",
+      "sourceIndex": 7,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de recette, conservé pour la navigation et pour le thème de l'itération. L'exclusion du corps de prompt ne supprime ni le titre ni la recette."
+    },
+    {
+      "id": "text-12ac4a4f85162f372305",
+      "sourceIndex": 8,
+      "action": "exclude-non-prompt",
+      "role": "ui-copy",
+      "reason": "Message, aide ou libellé d'interface ; conserver sa fonction d'interface hors prompt."
+    },
+    {
+      "id": "text-14df3053eb49e1300ede",
+      "sourceIndex": 9,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-1840b5d68e6e13c9c2c6",
+      "sourceIndex": 10,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-18a0d85eb8a2a2543e9f",
+      "sourceIndex": 11,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-19001fa23a108380d701",
+      "sourceIndex": 12,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-1d65584302706abcd281",
+      "sourceIndex": 13,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-1dac18ca4e893b823b59",
+      "sourceIndex": 14,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de recette, conservé pour la navigation et pour le thème de l'itération. L'exclusion du corps de prompt ne supprime ni le titre ni la recette."
+    },
+    {
+      "id": "text-1e1d96cbced541973417",
+      "sourceIndex": 15,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-1e3e9d63535df07cb68b",
+      "sourceIndex": 16,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-21c868540ec91f5820f2",
+      "sourceIndex": 17,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de recette, conservé pour la navigation et pour le thème de l'itération. L'exclusion du corps de prompt ne supprime ni le titre ni la recette."
+    },
+    {
+      "id": "text-2518365ca58e49929e89",
+      "sourceIndex": 18,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-25f453106b70b88f5897",
+      "sourceIndex": 19,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-26ada0a0d64cda8d68f2",
+      "sourceIndex": 20,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-28416897bba2bfab6b74",
+      "sourceIndex": 21,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de recette, conservé pour la navigation et pour le thème de l'itération. L'exclusion du corps de prompt ne supprime ni le titre ni la recette."
+    },
+    {
+      "id": "text-2896d54758f73ad46088",
+      "sourceIndex": 22,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-28d107329a9a7accdd31",
+      "sourceIndex": 23,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-292b374c9030e768c459",
+      "sourceIndex": 24,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-29ed8fb1e0d94da59807",
+      "sourceIndex": 25,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-2ae0da3138626cfc96c9",
+      "sourceIndex": 26,
+      "action": "preserve",
+      "role": "compiler-fragment",
+      "note": "Fragment à composer ; les corrections de logique de grille/substitution sont décrites séparément dans A2-ASTRA-HANDOFF.md."
+    },
+    {
+      "id": "text-2b87eb2d92f587b97c37",
+      "sourceIndex": 27,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de recette, conservé pour la navigation et pour le thème de l'itération. L'exclusion du corps de prompt ne supprime ni le titre ni la recette."
+    },
+    {
+      "id": "text-2e1cfa82b035c26cbbbd",
+      "sourceIndex": 28,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-2facb1e1209e7bd3d45c",
+      "sourceIndex": 29,
+      "action": "preserve",
+      "role": "compiler-fragment",
+      "note": "Fragment à composer ; les corrections de logique de grille/substitution sont décrites séparément dans A2-ASTRA-HANDOFF.md."
+    },
+    {
+      "id": "text-333cf92bbb2bb518aaf5",
+      "sourceIndex": 30,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-34449098fcb41bcc3524",
+      "sourceIndex": 31,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-3604e52d097215f24fea",
+      "sourceIndex": 32,
+      "action": "preserve",
+      "role": "compiler-fragment",
+      "note": "Fragment à composer ; les corrections de logique de grille/substitution sont décrites séparément dans A2-ASTRA-HANDOFF.md."
+    },
+    {
+      "id": "text-3de88f168f36a167b062",
+      "sourceIndex": 33,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-3f27cbe7e508cd34b8bb",
+      "sourceIndex": 34,
+      "action": "correct",
+      "correctedValue": "{\n  \"prompt_configuration\": {\n    \"type\": \"Cinematic 3x3 grid\",\n    \"aspect_ratio\": \"16:9\",\n    \"fidelity\": \"Preserve character design through steam\"\n  },\n  \"sequence\": [\n    \"1. Wide: Steam filled large kitchen\",\n    \"2. Medium: Tossing ingredients in wok\",\n    \"3. CU: Focused face in vapor\",\n    \"4. Low Angle: Stainless steel burners\",\n    \"5. High Angle: Plate preparation\",\n    \"6. Side: Heat sweat glistening\",\n    \"7. OTS: Other cooks in background\",\n    \"8. Dutch Angle: Kitchen rush\",\n    \"9. Macro: Knife slicing ingredients\"\n  ]\n} MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "reason": "Remplace le mot français accidentel 'cuistots' dans cette recette anglaise par 'cooks', sans modifier le plan ni son action."
+    },
+    {
+      "id": "text-3fc48a172fc0237f0fc4",
+      "sourceIndex": 35,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de recette, conservé pour la navigation et pour le thème de l'itération. L'exclusion du corps de prompt ne supprime ni le titre ni la recette."
+    },
+    {
+      "id": "text-4186cabd145d33392a6e",
+      "sourceIndex": 36,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-445322aa5630e2b45542",
+      "sourceIndex": 37,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de recette, conservé pour la navigation et pour le thème de l'itération. L'exclusion du corps de prompt ne supprime ni le titre ni la recette."
+    },
+    {
+      "id": "text-45571174e3f9ad6a2b1e",
+      "sourceIndex": 38,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de recette, conservé pour la navigation et pour le thème de l'itération. L'exclusion du corps de prompt ne supprime ni le titre ni la recette."
+    },
+    {
+      "id": "text-460441b5583f9ad5b38b",
+      "sourceIndex": 39,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-460b55a43980539677da",
+      "sourceIndex": 40,
+      "action": "exclude-non-prompt",
+      "role": "ui-copy",
+      "reason": "Message, aide ou libellé d'interface ; conserver sa fonction d'interface hors prompt."
+    },
+    {
+      "id": "text-486d1d97283953424f73",
+      "sourceIndex": 41,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-4975f73088afd1f8f92e",
+      "sourceIndex": 42,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-49d669a2677186dcbd9c",
+      "sourceIndex": 43,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-4abbffcbc1d6e9c77228",
+      "sourceIndex": 44,
+      "action": "preserve",
+      "role": "compiler-fragment",
+      "note": "Fragment à composer ; les corrections de logique de grille/substitution sont décrites séparément dans A2-ASTRA-HANDOFF.md."
+    },
+    {
+      "id": "text-4b3397df97a47421d71b",
+      "sourceIndex": 45,
+      "action": "exclude-non-prompt",
+      "role": "ui-copy",
+      "reason": "Message, aide ou libellé d'interface ; conserver sa fonction d'interface hors prompt."
+    },
+    {
+      "id": "text-4ce86ca068948b7419a8",
+      "sourceIndex": 46,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de recette, conservé pour la navigation et pour le thème de l'itération. L'exclusion du corps de prompt ne supprime ni le titre ni la recette."
+    },
+    {
+      "id": "text-4e13af0008a03246cdc5",
+      "sourceIndex": 47,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-51a85c6b56911fd8973f",
+      "sourceIndex": 48,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de recette, conservé pour la navigation et pour le thème de l'itération. L'exclusion du corps de prompt ne supprime ni le titre ni la recette."
+    },
+    {
+      "id": "text-5256b2a09c4d096ae2f0",
+      "sourceIndex": 49,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-55ddfc41e1a170de62ea",
+      "sourceIndex": 50,
+      "action": "preserve",
+      "role": "compiler-fragment",
+      "note": "Fragment à composer ; les corrections de logique de grille/substitution sont décrites séparément dans A2-ASTRA-HANDOFF.md."
+    },
+    {
+      "id": "text-58011877507671509ea9",
+      "sourceIndex": 51,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de recette, conservé pour la navigation et pour le thème de l'itération. L'exclusion du corps de prompt ne supprime ni le titre ni la recette."
+    },
+    {
+      "id": "text-5ac5130b499c7fcc435e",
+      "sourceIndex": 52,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-5b2946afc4502ee17423",
+      "sourceIndex": 53,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de recette, conservé pour la navigation et pour le thème de l'itération. L'exclusion du corps de prompt ne supprime ni le titre ni la recette."
+    },
+    {
+      "id": "text-5c053d63e1a3c54c8354",
+      "sourceIndex": 54,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-5defcca4770de00ae0eb",
+      "sourceIndex": 55,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de recette, conservé pour la navigation et pour le thème de l'itération. L'exclusion du corps de prompt ne supprime ni le titre ni la recette."
+    },
+    {
+      "id": "text-5ee01f9fea0891122f5c",
+      "sourceIndex": 56,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-62c3653bce6713a9b369",
+      "sourceIndex": 57,
+      "action": "preserve",
+      "role": "compiler-fragment",
+      "note": "Fragment à composer ; les corrections de logique de grille/substitution sont décrites séparément dans A2-ASTRA-HANDOFF.md."
+    },
+    {
+      "id": "text-62e401ea3947dbe60537",
+      "sourceIndex": 58,
+      "action": "correct",
+      "correctedValue": "IMG_1 is a reference for a practical puppet/figurine character. Photograph this exact figurine — with its exact proportions, head size, limb thickness, body shape — as-is in a real location. Do not apply realistic human anatomy. This is NOT a human, it is a sculpted character with intentional non-realistic proportions",
+      "reason": "Rétablit deux espaces manquants dans la consigne figurine : lieu réel et proportions volontairement non réalistes. Aucun changement de style ou d'anatomie."
+    },
+    {
+      "id": "text-667a5064bbd7d7632a99",
+      "sourceIndex": 59,
+      "action": "exclude-non-prompt",
+      "role": "ui-copy",
+      "reason": "Message, aide ou libellé d'interface ; conserver sa fonction d'interface hors prompt."
+    },
+    {
+      "id": "text-6828d55a6069c498e293",
+      "sourceIndex": 60,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de recette, conservé pour la navigation et pour le thème de l'itération. L'exclusion du corps de prompt ne supprime ni le titre ni la recette."
+    },
+    {
+      "id": "text-6fe9eb8f468b58433d5a",
+      "sourceIndex": 61,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-7119348159b5a719a028",
+      "sourceIndex": 62,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-7159f8d9408cbca07620",
+      "sourceIndex": 63,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de recette, conservé pour la navigation et pour le thème de l'itération. L'exclusion du corps de prompt ne supprime ni le titre ni la recette."
+    },
+    {
+      "id": "text-730a2546ed9310b9ed83",
+      "sourceIndex": 64,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-732705022cc4f09d060e",
+      "sourceIndex": 65,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de recette, conservé pour la navigation et pour le thème de l'itération. L'exclusion du corps de prompt ne supprime ni le titre ni la recette."
+    },
+    {
+      "id": "text-735c5f663a35ca8fef9f",
+      "sourceIndex": 66,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-7408aeaac44fcdcc352f",
+      "sourceIndex": 67,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-743edfa8b50b8d522d74",
+      "sourceIndex": 68,
+      "action": "preserve",
+      "role": "compiler-fragment",
+      "note": "Fragment à composer ; les corrections de logique de grille/substitution sont décrites séparément dans A2-ASTRA-HANDOFF.md."
+    },
+    {
+      "id": "text-74e85d93bf09cadd5bac",
+      "sourceIndex": 69,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-780110f2f5f097121db6",
+      "sourceIndex": 70,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-79e11f0a7ba1f243a6a0",
+      "sourceIndex": 71,
+      "action": "preserve",
+      "role": "compiler-fragment",
+      "note": "Fragment à composer ; les corrections de logique de grille/substitution sont décrites séparément dans A2-ASTRA-HANDOFF.md."
+    },
+    {
+      "id": "text-7d40e1722a0f2ec9ae85",
+      "sourceIndex": 72,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-7e18373f6b70cbb26bed",
+      "sourceIndex": 73,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-7f57af43a2b14795ad93",
+      "sourceIndex": 74,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-7f97fbc7a32a2e3b1586",
+      "sourceIndex": 75,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de recette, conservé pour la navigation et pour le thème de l'itération. L'exclusion du corps de prompt ne supprime ni le titre ni la recette."
+    },
+    {
+      "id": "text-803146bde734e7c5ca8f",
+      "sourceIndex": 76,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de recette, conservé pour la navigation et pour le thème de l'itération. L'exclusion du corps de prompt ne supprime ni le titre ni la recette."
+    },
+    {
+      "id": "text-81c403606683cbc0ffc6",
+      "sourceIndex": 77,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de recette, conservé pour la navigation et pour le thème de l'itération. L'exclusion du corps de prompt ne supprime ni le titre ni la recette."
+    },
+    {
+      "id": "text-82c8e7febe1fa4927f2a",
+      "sourceIndex": 78,
+      "action": "preserve",
+      "role": "compiler-fragment",
+      "note": "Fragment à composer ; les corrections de logique de grille/substitution sont décrites séparément dans A2-ASTRA-HANDOFF.md."
+    },
+    {
+      "id": "text-830f41de8589a8c85f00",
+      "sourceIndex": 79,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-84393add8c489d335693",
+      "sourceIndex": 80,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-855acb23e686b282afa6",
+      "sourceIndex": 81,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de recette, conservé pour la navigation et pour le thème de l'itération. L'exclusion du corps de prompt ne supprime ni le titre ni la recette."
+    },
+    {
+      "id": "text-87d818644b415eccacb2",
+      "sourceIndex": 82,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de recette, conservé pour la navigation et pour le thème de l'itération. L'exclusion du corps de prompt ne supprime ni le titre ni la recette."
+    },
+    {
+      "id": "text-8bcda584118e64d1e5c4",
+      "sourceIndex": 83,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de recette, conservé pour la navigation et pour le thème de l'itération. L'exclusion du corps de prompt ne supprime ni le titre ni la recette."
+    },
+    {
+      "id": "text-8c95652b8efae93a5cc0",
+      "sourceIndex": 84,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-8eb4da3e6b59508bef17",
+      "sourceIndex": 85,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de recette, conservé pour la navigation et pour le thème de l'itération. L'exclusion du corps de prompt ne supprime ni le titre ni la recette."
+    },
+    {
+      "id": "text-8fd738f8715a41288aec",
+      "sourceIndex": 86,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-96d04d12975fa2f6a29f",
+      "sourceIndex": 87,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-97b9e745df64e62156d0",
+      "sourceIndex": 88,
+      "action": "preserve",
+      "role": "compiler-fragment",
+      "note": "Fragment à composer ; les corrections de logique de grille/substitution sont décrites séparément dans A2-ASTRA-HANDOFF.md."
+    },
+    {
+      "id": "text-9987b9ee69e34dc8b9a7",
+      "sourceIndex": 89,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-9b8d7bd1734af3537743",
+      "sourceIndex": 90,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-9b921f4f088b83866b02",
+      "sourceIndex": 91,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de recette, conservé pour la navigation et pour le thème de l'itération. L'exclusion du corps de prompt ne supprime ni le titre ni la recette."
+    },
+    {
+      "id": "text-9d8a82d85374e12d6605",
+      "sourceIndex": 92,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de recette, conservé pour la navigation et pour le thème de l'itération. L'exclusion du corps de prompt ne supprime ni le titre ni la recette."
+    },
+    {
+      "id": "text-9e1aca8dda6fa859dcae",
+      "sourceIndex": 93,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-9f1b09ca82676497f0af",
+      "sourceIndex": 94,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de recette, conservé pour la navigation et pour le thème de l'itération. L'exclusion du corps de prompt ne supprime ni le titre ni la recette."
+    },
+    {
+      "id": "text-a2abe89760bedba3af74",
+      "sourceIndex": 95,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-a338eab1885881edf2c9",
+      "sourceIndex": 96,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-a3d256f06dc86691a283",
+      "sourceIndex": 97,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-a4cf0849eb60b3e994e2",
+      "sourceIndex": 98,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-a78a43aa509e72cf68e6",
+      "sourceIndex": 99,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-a7dc5d7867b28d4222af",
+      "sourceIndex": 100,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-a80224626fc80c2f17d8",
+      "sourceIndex": 101,
+      "action": "exclude-non-prompt",
+      "role": "ui-copy",
+      "reason": "Message, aide ou libellé d'interface ; conserver sa fonction d'interface hors prompt."
+    },
+    {
+      "id": "text-a8837bf076a80ddb7bcf",
+      "sourceIndex": 102,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-a8a6d89cbc49ec3e184f",
+      "sourceIndex": 103,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-a91af79b5b5fa9d77b49",
+      "sourceIndex": 104,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-a93a498a464dbe16e99f",
+      "sourceIndex": 105,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-a9fac00be0074193839f",
+      "sourceIndex": 106,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-ab551d7f6cf4e18c9997",
+      "sourceIndex": 107,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de recette, conservé pour la navigation et pour le thème de l'itération. L'exclusion du corps de prompt ne supprime ni le titre ni la recette."
+    },
+    {
+      "id": "text-ab80552ea93c8f663b22",
+      "sourceIndex": 108,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de recette, conservé pour la navigation et pour le thème de l'itération. L'exclusion du corps de prompt ne supprime ni le titre ni la recette."
+    },
+    {
+      "id": "text-aca3bc8e151229fa8a28",
+      "sourceIndex": 109,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-ad2a49d48ed602c700b2",
+      "sourceIndex": 110,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de recette, conservé pour la navigation et pour le thème de l'itération. L'exclusion du corps de prompt ne supprime ni le titre ni la recette."
+    },
+    {
+      "id": "text-ad75f7ab2afb506c59ab",
+      "sourceIndex": 111,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-ae6346d957e3acf1a245",
+      "sourceIndex": 112,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-af1c73e512785f3a216e",
+      "sourceIndex": 113,
+      "action": "exclude-non-prompt",
+      "role": "ui-copy",
+      "reason": "Message, aide ou libellé d'interface ; conserver sa fonction d'interface hors prompt."
+    },
+    {
+      "id": "text-affba1f02dd7d9a6877f",
+      "sourceIndex": 114,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-b1d670e8cb57707ec897",
+      "sourceIndex": 115,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de recette, conservé pour la navigation et pour le thème de l'itération. L'exclusion du corps de prompt ne supprime ni le titre ni la recette."
+    },
+    {
+      "id": "text-b33e28215f8b06bae5ec",
+      "sourceIndex": 116,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de recette, conservé pour la navigation et pour le thème de l'itération. L'exclusion du corps de prompt ne supprime ni le titre ni la recette."
+    },
+    {
+      "id": "text-b74ed74d47bc2d7a4388",
+      "sourceIndex": 117,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-b78c68460c881bc46367",
+      "sourceIndex": 118,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de recette, conservé pour la navigation et pour le thème de l'itération. L'exclusion du corps de prompt ne supprime ni le titre ni la recette."
+    },
+    {
+      "id": "text-b86d11b80331f579122c",
+      "sourceIndex": 119,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de recette, conservé pour la navigation et pour le thème de l'itération. L'exclusion du corps de prompt ne supprime ni le titre ni la recette."
+    },
+    {
+      "id": "text-bcf731bb37976952f8dc",
+      "sourceIndex": 120,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-bcfb117e90fd557d1f6c",
+      "sourceIndex": 121,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-c00afb20660c3bb2ce4f",
+      "sourceIndex": 122,
+      "action": "correct",
+      "correctedValue": "{\n  \"prompt_configuration\": { \"type\": \"Cinematic 3x3 grid\", \"aspect_ratio\": \"16:9\", \"theme\": \"Lost Temple Canopy\" },\n  \"fidelity\": \"Morphological Lock from @IMG_1\",\n  \"sequence\": [\n    \"1. EWS: Overgrown temple hidden in canopy\",\n    \"2. WS: Subject cutting through vines\",\n    \"3. Low Angle: Massive stone head statues\",\n    \"4. CU: Exotic butterfly landing on subject\",\n    \"5. Profile: Sweat-soaked face gaze\",\n    \"6. High Angle: River crossing view\",\n    \"7. Dutch Angle: Sudden spear trap\",\n    \"8. 3/4 MS: Explorer outfit with mud stains\",\n    \"9. Macro: Golden idol details near subject\"\n  ]\n} MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "reason": "Supprime le doublon accidentel 'trap' dans le plan 7 ; le piège et le cadrage restent identiques."
+    },
+    {
+      "id": "text-c06304be02db700e5e42",
+      "sourceIndex": 123,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-c09205e035565b7cce33",
+      "sourceIndex": 124,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-c2bd73c179e224766ae7",
+      "sourceIndex": 125,
+      "action": "preserve",
+      "role": "compiler-fragment",
+      "note": "Fragment à composer ; les corrections de logique de grille/substitution sont décrites séparément dans A2-ASTRA-HANDOFF.md."
+    },
+    {
+      "id": "text-c33279e0797fc82d61f4",
+      "sourceIndex": 126,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-c350424e3b503d2761b4",
+      "sourceIndex": 127,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-c7a3751c028742c473d1",
+      "sourceIndex": 128,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-c7fbe222b2e0c51a1d1f",
+      "sourceIndex": 129,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-c86db632e43e48de8115",
+      "sourceIndex": 130,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-c8adec1a67bcd71fceb3",
+      "sourceIndex": 131,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-c9b925b32adf8b10d200",
+      "sourceIndex": 132,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-cae89528278f0369aab3",
+      "sourceIndex": 133,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-cc6fd249b7c2a5c1dc5b",
+      "sourceIndex": 134,
+      "action": "preserve",
+      "role": "compiler-fragment",
+      "note": "Fragment à composer ; les corrections de logique de grille/substitution sont décrites séparément dans A2-ASTRA-HANDOFF.md."
+    },
+    {
+      "id": "text-cf8d33a015941eab302e",
+      "sourceIndex": 135,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-cffda221c5fa50dc028b",
+      "sourceIndex": 136,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-d142ef4190e343a1d1b7",
+      "sourceIndex": 137,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-d368245ef63dc49a5720",
+      "sourceIndex": 138,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de recette, conservé pour la navigation et pour le thème de l'itération. L'exclusion du corps de prompt ne supprime ni le titre ni la recette."
+    },
+    {
+      "id": "text-d48348c6db9bdb4930e7",
+      "sourceIndex": 139,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-d70ce90739d9422c736c",
+      "sourceIndex": 140,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-d9b35fac268aeb90fddf",
+      "sourceIndex": 141,
+      "action": "preserve",
+      "role": "compiler-fragment",
+      "note": "Fragment à composer ; les corrections de logique de grille/substitution sont décrites séparément dans A2-ASTRA-HANDOFF.md."
+    },
+    {
+      "id": "text-daa073fb68fbb43e9ae9",
+      "sourceIndex": 142,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-db8b92f3e0b9f30c82e2",
+      "sourceIndex": 143,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-de963ffee7e428d4f1c7",
+      "sourceIndex": 144,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-e291a607e6c155f5e7e7",
+      "sourceIndex": 145,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de recette, conservé pour la navigation et pour le thème de l'itération. L'exclusion du corps de prompt ne supprime ni le titre ni la recette."
+    },
+    {
+      "id": "text-e3316bcfeb95ee7ea51b",
+      "sourceIndex": 146,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de recette, conservé pour la navigation et pour le thème de l'itération. L'exclusion du corps de prompt ne supprime ni le titre ni la recette."
+    },
+    {
+      "id": "text-e4cccd81a261fb61eeda",
+      "sourceIndex": 147,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-ebf40b21b02ad8ef26c0",
+      "sourceIndex": 148,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-ec76ab8193adc36fc7a1",
+      "sourceIndex": 149,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de recette, conservé pour la navigation et pour le thème de l'itération. L'exclusion du corps de prompt ne supprime ni le titre ni la recette."
+    },
+    {
+      "id": "text-ec86830580e8ad7d7192",
+      "sourceIndex": 150,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de recette, conservé pour la navigation et pour le thème de l'itération. L'exclusion du corps de prompt ne supprime ni le titre ni la recette."
+    },
+    {
+      "id": "text-eca896bb9e5cc0dc3bb1",
+      "sourceIndex": 151,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-ed7002b439e9ac845f22",
+      "sourceIndex": 152,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-edd7df0ec6eff4de4d64",
+      "sourceIndex": 153,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-ee7fcc79e1911749f867",
+      "sourceIndex": 154,
+      "action": "exclude-non-prompt",
+      "role": "catalog-metadata",
+      "reason": "Titre de recette, conservé pour la navigation et pour le thème de l'itération. L'exclusion du corps de prompt ne supprime ni le titre ni la recette."
+    },
+    {
+      "id": "text-f070e998c906d154fefa",
+      "sourceIndex": 155,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-f5d50be334cd0c916267",
+      "sourceIndex": 156,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-f998fe06afa0cfbe73e0",
+      "sourceIndex": 157,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-f9c23a332ad1244574cd",
+      "sourceIndex": 158,
+      "action": "correct",
+      "correctedValue": "{\n  \"prompt_configuration\": {\n    \"type\": \"Cinematic 3x3 grid\",\n    \"aspect_ratio\": \"16:9\",\n    \"style\": \"Noir / Gritty\"\n  },\n  \"fidelity\": \"STRICT GEOMETRY: Preserve the reference character's distinctive angles precisely\",\n  \"sequence\": [\n    \"1. EWS: Rain-soaked city alleyway at night\",\n    \"2. WS: Subject under a flickering street lamp\",\n    \"3. MS: Flashing a detective badge\",\n    \"4. CU: Lighting a cigarette, smoke curling\",\n    \"5. Low Angle: Looking up at crime scene tape\",\n    \"6. High Angle: Subject examining evidence on floor\",\n    \"7. Side Profile: Shadowy face, sharp jawline\",\n    \"8. OTS: Looking at a suspect silhouette\",\n    \"9. Macro: Handcuffs clicking shut\"\n  ]\n} MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "reason": "'Farmhouse' est incohérent dans la contrainte de fidélité du personnage. La correction renvoie à ses angles distinctifs d'origine, conformément aux autres recettes, sans inventer une nouvelle morphologie."
+    },
+    {
+      "id": "text-fa82e2d4b15288707b73",
+      "sourceIndex": 159,
+      "action": "preserve",
+      "role": "prompt-body"
+    },
+    {
+      "id": "text-fb888f03af986649bf7b",
+      "sourceIndex": 160,
+      "action": "exclude-non-prompt",
+      "role": "runtime",
+      "reason": "Identifiant, clé DOM, classe CSS ou nom d'élément du code ; conserver sa fonction technique, sans l'envoyer comme texte créatif."
+    },
+    {
+      "id": "text-fca865c2cd42df1761e9",
+      "sourceIndex": 161,
+      "action": "preserve",
+      "role": "prompt-body"
+    }
+  ]
+}

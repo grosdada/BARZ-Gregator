@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0",
+  "defaultsVersion": "6.0.0-foundation.1",
+  "revision": 0,
+  "overlay": {
+    "workshopOverrides": {},
+    "toolOverrides": {},
+    "placementOverrides": {},
+    "removedDefaultPlacementIds": [],
+    "customWorkshops": [],
+    "customTools": [],
+    "customPlacements": [],
+    "customRecipes": []
+  }
+}

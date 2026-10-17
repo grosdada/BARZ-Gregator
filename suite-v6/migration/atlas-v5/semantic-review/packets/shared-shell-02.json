@@ -1,0 +1,1500 @@
+{
+  "schemaVersion": "1.0",
+  "id": "semantic-shared-shell-02",
+  "owner": "shared-shell",
+  "status": "pending-astra-review",
+  "approximateTokens": 1165,
+  "prompts": [
+    {
+      "id": "text-d11b0a557eba6d9c1c8a",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Sampling frame ${index + 1}/${times.length}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/prompt Atlas V2/app.js",
+          "line": 2862,
+          "column": 69,
+          "kind": "template-literal",
+          "functionName": "captureVideoAnalyzerFramesInBrowser",
+          "owners": [
+            "blocking-studio",
+            "image-analyzer",
+            "image-graber",
+            "paint-studio",
+            "video-analyzer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d13fb7ed41dc2e77c2bb",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "  - Camera: ${shot.camera}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/prompt Atlas V2/app.js",
+          "line": 3222,
+          "column": 19,
+          "kind": "template-literal",
+          "functionName": "videoAnalyzerShotRows",
+          "owners": [
+            "blocking-studio",
+            "image-analyzer",
+            "image-graber",
+            "paint-studio",
+            "video-analyzer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d178f9669534e921c24a",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Generate or write a prompt first",
+      "occurrences": [
+        {
+          "sourcePath": "public/js/app.js",
+          "line": 1373,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": "refine",
+          "owners": [
+            "image-analyzer",
+            "prompt-forge"
+          ]
+        },
+        {
+          "sourcePath": "public/js/aggregator-bridge.js",
+          "line": 15,
+          "column": 46,
+          "kind": "string-literal",
+          "functionName": "buildAggregatorPayload",
+          "owners": [
+            "image-analyzer",
+            "prompt-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d215d83af3936a282253",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "MODE = BIOLOGIQUE (build a world from the essence of the images): invent a coherent UNIVERS and an emergent narration from what the images radiate — layered environmental motion, organic atmosphere, a visual ecosystem that comes alive. You invent the 'why' and the 'where' from the images' essence.",
+      "occurrences": [
+        {
+          "sourcePath": "server.js",
+          "line": 532,
+          "column": 17,
+          "kind": "string-literal",
+          "functionName": "buildVideoDirectInstruction",
+          "owners": [
+            "blocking-studio",
+            "image-analyzer",
+            "prompt-forge",
+            "seedance",
+            "video-analyzer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d229583fe3b120b071bf",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Info: improves or repairs the source while protecting the original composition, identity, texture and lighting logic.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/barzy-theme.js",
+          "line": 287,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": "promptInfoSummary",
+          "owners": [
+            "acting-gen",
+            "banana-helper",
+            "barz-beauty",
+            "barz-designer",
+            "barz-enhancer",
+            "barzy-board",
+            "barzy-sheet",
+            "cccp",
+            "cinema-helper",
+            "cinematic-shoot",
+            "facs-sheet-generator",
+            "image-slicer",
+            "imperfection",
+            "knolling",
+            "multishot",
+            "realism-forge",
+            "seedance",
+            "veo-suite",
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d26d9840e04f452519ba",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "The sampled frames show the source subject, framing, camera perspective, visible action, environment, lighting, and scene rhythm.",
+      "occurrences": [
+        {
+          "sourcePath": "server.js",
+          "line": 702,
+          "column": 43,
+          "kind": "string-literal",
+          "functionName": "buildFallbackVideoPrompts",
+          "owners": [
+            "blocking-studio",
+            "image-analyzer",
+            "prompt-forge",
+            "seedance",
+            "video-analyzer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d2fffc589e957c661b83",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "User intent: ${intent || \"open creative exploration\"}.",
+      "occurrences": [
+        {
+          "sourcePath": "server.js",
+          "line": 421,
+          "column": 5,
+          "kind": "template-literal",
+          "functionName": "buildComposeInstruction",
+          "owners": [
+            "blocking-studio",
+            "image-analyzer",
+            "prompt-forge",
+            "seedance",
+            "video-analyzer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d35e3699c6eb87eb10b9",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "<track>${t.clips.map((c) => clipItem(c, true)).join(\"\")}<enabled>TRUE</enabled><locked>FALSE</locked></track>",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/prompt Atlas V2/app.js",
+          "line": 8642,
+          "column": 41,
+          "kind": "template-literal",
+          "functionName": "clipItem",
+          "owners": [
+            "blocking-studio",
+            "image-analyzer",
+            "image-graber",
+            "paint-studio",
+            "video-analyzer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d463b3eefa60b77e0bd4",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Source file: ${String(body.fileName || \"video\")}.",
+      "occurrences": [
+        {
+          "sourcePath": "server.js",
+          "line": 1764,
+          "column": 5,
+          "kind": "template-literal",
+          "functionName": "analyzeVideo",
+          "owners": [
+            "blocking-studio",
+            "image-analyzer",
+            "prompt-forge",
+            "seedance",
+            "video-analyzer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d4fdd5bd549f100b6409",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "soft cinematic haze",
+      "occurrences": [
+        {
+          "sourcePath": "public/js/apg-data.js",
+          "line": 18,
+          "column": 73,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "image-analyzer",
+            "prompt-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d5767c61a15d8d4f2b20",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "rgba(215, 163, 111, ${alpha})",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/prompt Atlas V2/app.js",
+          "line": 4268,
+          "column": 49,
+          "kind": "template-literal",
+          "functionName": "transparentizeColor",
+          "owners": [
+            "blocking-studio",
+            "image-analyzer",
+            "image-graber",
+            "paint-studio",
+            "video-analyzer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d5ca4e9b8401ac9f5630",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "${Math.max(0, Math.min(100 - left, width))}%",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/prompt Atlas V2/app.js",
+          "line": 2545,
+          "column": 44,
+          "kind": "template-literal",
+          "functionName": "syncVideoAnalyzerTrimControls",
+          "owners": [
+            "blocking-studio",
+            "image-analyzer",
+            "image-graber",
+            "paint-studio",
+            "video-analyzer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d729ebc033964c0e48e5",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Three.js blocking stage: posable mannequins, set primitives, real focal lengths (24/35/50/85mm) and a camera-move timeline that exports viewport snapshots, camera descriptions and Kling/Seedance trajectory wording to VMF or Camera Suite.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/prompt Atlas V2/app.js",
+          "line": 578,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "blocking-studio",
+            "image-analyzer",
+            "image-graber",
+            "paint-studio",
+            "video-analyzer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d81919aaac0cfb49e9aa",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "frame ${index + 1} at ${secondsLabel(frame.time)}",
+      "occurrences": [
+        {
+          "sourcePath": "server.js",
+          "line": 885,
+          "column": 28,
+          "kind": "template-literal",
+          "functionName": "buildLocalVideoResult",
+          "owners": [
+            "blocking-studio",
+            "image-analyzer",
+            "prompt-forge",
+            "seedance",
+            "video-analyzer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d905e4d6333da2dffb29",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "- [${checked}] Frame ${String(index + 1).padStart(2, \"0\")} | source ${formatTime(sourceStart)} -> ${formatTime(Math.max(sourceStart, sourceEnd))} | selected window +${formatTime(start)} -> +${formatTime(Math.max(start, end))}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/prompt Atlas V2/app.js",
+          "line": 3207,
+          "column": 7,
+          "kind": "template-literal",
+          "functionName": "videoAnalyzerFrameTimelineRows",
+          "owners": [
+            "blocking-studio",
+            "image-analyzer",
+            "image-graber",
+            "paint-studio",
+            "video-analyzer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d97045250889d60905d0",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "${check.latestVersion || \"New version\"} available from GitHub",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/prompt Atlas V2/app.js",
+          "line": 1497,
+          "column": 14,
+          "kind": "template-literal",
+          "functionName": "runGlobalUpdate",
+          "owners": [
+            "blocking-studio",
+            "image-analyzer",
+            "image-graber",
+            "paint-studio",
+            "video-analyzer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d9b4bb8f6190395284ff",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Montage loaded (${missingCount} missing media)",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/prompt Atlas V2/app.js",
+          "line": 8446,
+          "column": 47,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "blocking-studio",
+            "image-analyzer",
+            "image-graber",
+            "paint-studio",
+            "video-analyzer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d9b7fec6b7dbc5b44b64",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "MoGe model failed to load: ${e.message || e}",
+      "occurrences": [
+        {
+          "sourcePath": "server.js",
+          "line": 1367,
+          "column": 74,
+          "kind": "template-literal",
+          "functionName": "solverGeometry",
+          "owners": [
+            "blocking-studio",
+            "image-analyzer",
+            "prompt-forge",
+            "seedance",
+            "video-analyzer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-db19bab23c6717efe575",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "header, .tabs, .tab-content, table, thead, tbody, tr, td, th, .table-container, .multishot-item, .multishot-header, .multishot-content, .grid-selector, .toggle-container, .controls, .controls-row, .filter-controls",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/barzy-theme.js",
+          "line": 197,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": "applySandAppOverrides",
+          "owners": [
+            "acting-gen",
+            "banana-helper",
+            "barz-beauty",
+            "barz-designer",
+            "barz-enhancer",
+            "barzy-board",
+            "barzy-sheet",
+            "cccp",
+            "cinema-helper",
+            "cinematic-shoot",
+            "facs-sheet-generator",
+            "image-slicer",
+            "imperfection",
+            "knolling",
+            "multishot",
+            "realism-forge",
+            "seedance",
+            "veo-suite",
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-db636666551a5ad1bd6b",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Convert the idea into a detailed video-generation prompt.",
+      "occurrences": [
+        {
+          "sourcePath": "public/js/apg-data.js",
+          "line": 478,
+          "column": 30,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "image-analyzer",
+            "prompt-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-dd56eec34690e6c84635",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "${css.x}px",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/prompt Atlas V2/app.js",
+          "line": 4248,
+          "column": 35,
+          "kind": "template-literal",
+          "functionName": "updateEraserCursor",
+          "owners": [
+            "blocking-studio",
+            "image-analyzer",
+            "image-graber",
+            "paint-studio",
+            "video-analyzer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-dfca27f32d794aba146b",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Info: negative constraints protect the output from unwanted text, artifacts, wrong anatomy, style drift or extra objects.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/barzy-theme.js",
+          "line": 269,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": "promptInfoSummary",
+          "owners": [
+            "acting-gen",
+            "banana-helper",
+            "barz-beauty",
+            "barz-designer",
+            "barz-enhancer",
+            "barzy-board",
+            "barzy-sheet",
+            "cccp",
+            "cinema-helper",
+            "cinematic-shoot",
+            "facs-sheet-generator",
+            "image-slicer",
+            "imperfection",
+            "knolling",
+            "multishot",
+            "realism-forge",
+            "seedance",
+            "veo-suite",
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e213904b8b0b4d3fa853",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "video analysis prompt generation",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/prompt Atlas V2/app.js",
+          "line": 3606,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "blocking-studio",
+            "image-analyzer",
+            "image-graber",
+            "paint-studio",
+            "video-analyzer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e3dc0a2380b9e15e0d1f",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Simple prompt builder for cinematic actions, subjects, genres, backgrounds and verbalized prompts.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/prompt Atlas V2/app.js",
+          "line": 477,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "blocking-studio",
+            "image-analyzer",
+            "image-graber",
+            "paint-studio",
+            "video-analyzer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e4aeda16c63b0032d8ed",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "${engine} prompt generation failed.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/prompt Atlas V2/app.js",
+          "line": 3611,
+          "column": 54,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "blocking-studio",
+            "image-analyzer",
+            "image-graber",
+            "paint-studio",
+            "video-analyzer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e51d53bbd630cdde0031",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "${Math.max(220, Math.round(window.innerHeight - top - 4))}px",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/prompt Atlas V2/app.js",
+          "line": 2047,
+          "column": 25,
+          "kind": "template-literal",
+          "functionName": "sizeBlockingFrame",
+          "owners": [
+            "blocking-studio",
+            "image-analyzer",
+            "image-graber",
+            "paint-studio",
+            "video-analyzer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e642f9c3ee2755717b86",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "only ${total} pts under mask",
+      "occurrences": [
+        {
+          "sourcePath": "lib/blocking-fit.js",
+          "line": 90,
+          "column": 39,
+          "kind": "template-literal",
+          "functionName": "fitObject",
+          "owners": [
+            "blocking-studio",
+            "image-analyzer",
+            "prompt-forge",
+            "seedance",
+            "video-analyzer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e663ff5da3ee4adb78f2",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "${atlasGrid.cols}x${atlasGrid.rows}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cccp.html",
+          "line": 716,
+          "column": 31,
+          "kind": "template-literal",
+          "functionName": "adaptGridPrompt",
+          "owners": [
+            "cccp"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 579,
+          "column": 31,
+          "kind": "template-literal",
+          "functionName": "adaptGridPrompt",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e6b48b95c3dbe5642bbd",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Image context: ${imageContext}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/prompt Atlas V2/app.js",
+          "line": 1779,
+          "column": 47,
+          "kind": "template-literal",
+          "functionName": "askAtlasAdvisor",
+          "owners": [
+            "blocking-studio",
+            "image-analyzer",
+            "image-graber",
+            "paint-studio",
+            "video-analyzer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e72e20a9ee992d30eb3d",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "a red script page with no dialogue",
+      "occurrences": [
+        {
+          "sourcePath": "public/js/apg-data.js",
+          "line": 136,
+          "column": 131,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "image-analyzer",
+            "prompt-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ea3c18e220c839fc9087",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Create a Seedance 2.0 prompt from these sampled video frame analyses.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/prompt Atlas V2/app.js",
+          "line": 3566,
+          "column": 9,
+          "kind": "string-literal",
+          "functionName": "refineVideoFallbackPrompt",
+          "owners": [
+            "blocking-studio",
+            "image-analyzer",
+            "image-graber",
+            "paint-studio",
+            "video-analyzer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ea99a17a1f2d81b85fb7",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Write a video-generation prompt with subject, action, camera movement, pacing, scene evolution, lighting, texture, and sound/motion cues when useful.",
+      "occurrences": [
+        {
+          "sourcePath": "server.js",
+          "line": 408,
+          "column": 9,
+          "kind": "string-literal",
+          "functionName": "buildComposeInstruction",
+          "owners": [
+            "blocking-studio",
+            "image-analyzer",
+            "prompt-forge",
+            "seedance",
+            "video-analyzer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-eb82c396396da4429730",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "temporal flicker, morphing, unstable anatomy, deformed hands, identity drift, background drift, inconsistent physics, warped objects, compression artifacts, text deformation",
+      "occurrences": [
+        {
+          "sourcePath": "server.js",
+          "line": 720,
+          "column": 60,
+          "kind": "string-literal",
+          "functionName": "buildFallbackVideoPrompts",
+          "owners": [
+            "blocking-studio",
+            "image-analyzer",
+            "prompt-forge",
+            "seedance",
+            "video-analyzer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ed1b9ed8769b689b33a8",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "prompt-${promptId}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2894,
+          "column": 63,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1986,
+          "column": 53,
+          "kind": "template-literal",
+          "functionName": "getPromptTemplate",
+          "owners": [
+            "barzy-sheet"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 2288,
+          "column": 63,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ed36d1e68bbc8fdae673",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Create surprising but legible ideas with specific visual detail.",
+      "occurrences": [
+        {
+          "sourcePath": "server.js",
+          "line": 419,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": "buildComposeInstruction",
+          "owners": [
+            "blocking-studio",
+            "image-analyzer",
+            "prompt-forge",
+            "seedance",
+            "video-analyzer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ed6bfb099a74bdd0e4de",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "- Type: ${videoAnalyzer.fileType || videoAnalyzer.file?.type || \"unknown\"}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/prompt Atlas V2/app.js",
+          "line": 3245,
+          "column": 5,
+          "kind": "template-literal",
+          "functionName": "buildVideoAnalyzerAnalysisDoc",
+          "owners": [
+            "blocking-studio",
+            "image-analyzer",
+            "image-graber",
+            "paint-studio",
+            "video-analyzer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-eedb56c0ed050b814b53",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "----- BEGIN ${model.toUpperCase()} REFERENCE -----",
+      "occurrences": [
+        {
+          "sourcePath": "server.js",
+          "line": 523,
+          "column": 7,
+          "kind": "template-literal",
+          "functionName": "buildVideoDirectInstruction",
+          "owners": [
+            "blocking-studio",
+            "image-analyzer",
+            "prompt-forge",
+            "seedance",
+            "video-analyzer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f0d1b1081dd8035c2b7d",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Ignore references whose description AND image are both empty.",
+      "occurrences": [
+        {
+          "sourcePath": "server.js",
+          "line": 557,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "blocking-studio",
+            "image-analyzer",
+            "prompt-forge",
+            "seedance",
+            "video-analyzer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f117995df1151dce97f0",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "minmax(0, ${r}fr) 10px minmax(0, ${1 - r}fr)",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/prompt Atlas V2/app.js",
+          "line": 8296,
+          "column": 50,
+          "kind": "template-literal",
+          "functionName": "move",
+          "owners": [
+            "blocking-studio",
+            "image-analyzer",
+            "image-graber",
+            "paint-studio",
+            "video-analyzer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f1e269f4e580524f107a",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Analyze this image for ${appName} and return the requested JSON.",
+      "occurrences": [
+        {
+          "sourcePath": "server.js",
+          "line": 1117,
+          "column": 15,
+          "kind": "template-literal",
+          "functionName": "analyzeImage",
+          "owners": [
+            "blocking-studio",
+            "image-analyzer",
+            "prompt-forge",
+            "seedance",
+            "video-analyzer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f201c22593f401b00c29",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Image decode failed: ${e.message || e}",
+      "occurrences": [
+        {
+          "sourcePath": "server.js",
+          "line": 1653,
+          "column": 76,
+          "kind": "template-literal",
+          "functionName": "solverAutoblock",
+          "owners": [
+            "blocking-studio",
+            "image-analyzer",
+            "prompt-forge",
+            "seedance",
+            "video-analyzer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f2b92bda5abda88df685",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Cinematic Shoot",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 6,
+          "column": 10,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "cinematic-shoot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/cinematic_shoot.html",
+          "line": 401,
+          "column": 11,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "cinematic-shoot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/prompt Atlas V2/app.js",
+          "line": 417,
+          "column": 12,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "blocking-studio",
+            "image-analyzer",
+            "image-graber",
+            "paint-studio",
+            "video-analyzer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f342d8807b512574089a",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Context: ${item.context}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/prompt Atlas V2/app.js",
+          "line": 3595,
+          "column": 26,
+          "kind": "template-literal",
+          "functionName": "refineVideoFallbackPrompt",
+          "owners": [
+            "blocking-studio",
+            "image-analyzer",
+            "image-graber",
+            "paint-studio",
+            "video-analyzer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f36fe91fc741a8e7a382",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "You are the Image Analyzer inside ${appName}.",
+      "occurrences": [
+        {
+          "sourcePath": "server.js",
+          "line": 431,
+          "column": 5,
+          "kind": "template-literal",
+          "functionName": "buildImageAnalysisInstruction",
+          "owners": [
+            "blocking-studio",
+            "image-analyzer",
+            "prompt-forge",
+            "seedance",
+            "video-analyzer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f51844b3ef821b567664",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Transcribe any spoken dialogue, lyrics, and important vocal sounds for a short AI video prompt workflow.",
+      "occurrences": [
+        {
+          "sourcePath": "server.js",
+          "line": 1898,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": "transcribeVideoAudio",
+          "owners": [
+            "blocking-studio",
+            "image-analyzer",
+            "prompt-forge",
+            "seedance",
+            "video-analyzer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f6b4db4a5166e6383928",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "${grabber.fileName} - frame ${frame}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/prompt Atlas V2/app.js",
+          "line": 2117,
+          "column": 45,
+          "kind": "template-literal",
+          "functionName": "syncGrabberMeta",
+          "owners": [
+            "blocking-studio",
+            "image-analyzer",
+            "image-graber",
+            "paint-studio",
+            "video-analyzer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f70498c8063f09e2c581",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "${Math.max(12, Math.min(css.x + 10, paint.wrap.clientWidth - 180))}px",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/prompt Atlas V2/app.js",
+          "line": 4916,
+          "column": 34,
+          "kind": "template-literal",
+          "functionName": "showZContext",
+          "owners": [
+            "blocking-studio",
+            "image-analyzer",
+            "image-graber",
+            "paint-studio",
+            "video-analyzer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f833dafe6d9a4bfed82e",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Relance le serveur: la route image analyzer n'est pas chargee.",
+      "occurrences": [
+        {
+          "sourcePath": "public/js/app.js",
+          "line": 1144,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": "analyzeImage",
+          "owners": [
+            "image-analyzer",
+            "prompt-forge"
+          ]
+        },
+        {
+          "sourcePath": "public/js/app.js",
+          "line": 1174,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": "analyzeImage",
+          "owners": [
+            "image-analyzer",
+            "prompt-forge"
+          ]
+        },
+        {
+          "sourcePath": "public/js/app.js",
+          "line": 1189,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": "analyzeStyle",
+          "owners": [
+            "image-analyzer",
+            "prompt-forge"
+          ]
+        },
+        {
+          "sourcePath": "public/js/app.js",
+          "line": 1229,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": "analyzeStyle",
+          "owners": [
+            "image-analyzer",
+            "prompt-forge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f87e909d0a0f04f874bd",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "MoGe model missing at ${modelPath}",
+      "occurrences": [
+        {
+          "sourcePath": "server.js",
+          "line": 1319,
+          "column": 47,
+          "kind": "template-literal",
+          "functionName": "getMogeSession",
+          "owners": [
+            "blocking-studio",
+            "image-analyzer",
+            "prompt-forge",
+            "seedance",
+            "video-analyzer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f8f5b61ac0e3b54a26e7",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Use the user's intent as the anchor when present. Avoid replacing it with a random subject.",
+      "occurrences": [
+        {
+          "sourcePath": "server.js",
+          "line": 418,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": "buildComposeInstruction",
+          "owners": [
+            "blocking-studio",
+            "image-analyzer",
+            "prompt-forge",
+            "seedance",
+            "video-analyzer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-fa8596caaebbb1eebfc0",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "${providerLabel} ready - ${selected?.name || state.aiModel}${selected?.label ? ` (${selected.label})` : \"\"} - ${serverState}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/prompt Atlas V2/app.js",
+          "line": 1444,
+          "column": 9,
+          "kind": "template-literal",
+          "functionName": "refreshGlobalApiStatus",
+          "owners": [
+            "blocking-studio",
+            "image-analyzer",
+            "image-graber",
+            "paint-studio",
+            "video-analyzer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-fb0c12d2735207714a8e",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "No subject or background change was provided.",
+      "occurrences": [
+        {
+          "sourcePath": "server.js",
+          "line": 893,
+          "column": 7,
+          "kind": "string-literal",
+          "functionName": "buildLocalVideoResult",
+          "owners": [
+            "blocking-studio",
+            "image-analyzer",
+            "prompt-forge",
+            "seedance",
+            "video-analyzer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-fd15ef1bda68b4cdfaff",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Analyze the image and turn it into a strong generative media prompt.",
+      "occurrences": [
+        {
+          "sourcePath": "server.js",
+          "line": 432,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": "buildImageAnalysisInstruction",
+          "owners": [
+            "blocking-studio",
+            "image-analyzer",
+            "prompt-forge",
+            "seedance",
+            "video-analyzer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-fd5ba00963655f8d1110",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "${item.prompt} ${item.subject} ${item.context}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/prompt Atlas V2/app.js",
+          "line": 3625,
+          "column": 43,
+          "kind": "template-literal",
+          "functionName": "fallbackNegativePrompt",
+          "owners": [
+            "blocking-studio",
+            "image-analyzer",
+            "image-graber",
+            "paint-studio",
+            "video-analyzer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-fd77371980d982f775b8",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "../public/assets/HTML/motion-emulator/index.html?${params.toString()}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/prompt Atlas V2/app.js",
+          "line": 6217,
+          "column": 23,
+          "kind": "template-literal",
+          "functionName": "bootMotion",
+          "owners": [
+            "blocking-studio",
+            "image-analyzer",
+            "image-graber",
+            "paint-studio",
+            "video-analyzer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-fd9d0db6105b4e3a5d68",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Sketch-to-photo, body drawing and useful character-design prompt tools.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/prompt Atlas V2/app.js",
+          "line": 402,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": "categoryVars",
+          "owners": [
+            "blocking-studio",
+            "image-analyzer",
+            "image-graber",
+            "paint-studio",
+            "video-analyzer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-fdc7627df4a88a4f5a2b",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": " - File: ${(videoAnalyzer.file.size / (1024 * 1024)).toFixed(1)} MB",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/prompt Atlas V2/app.js",
+          "line": 2633,
+          "column": 47,
+          "kind": "template-literal",
+          "functionName": "syncVideoAnalyzerInfo",
+          "owners": [
+            "blocking-studio",
+            "image-analyzer",
+            "image-graber",
+            "paint-studio",
+            "video-analyzer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-fe2253305dd1f78dbe00",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "  - Thumbnail filename: ${videoAnalyzerSafeName(videoAnalyzer.fileName)}_thumbnail-${fileId}ms.jpg",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/prompt Atlas V2/app.js",
+          "line": 3208,
+          "column": 7,
+          "kind": "template-literal",
+          "functionName": "videoAnalyzerFrameTimelineRows",
+          "owners": [
+            "blocking-studio",
+            "image-analyzer",
+            "image-graber",
+            "paint-studio",
+            "video-analyzer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-fe311c4402f81fb504f8",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "You may use this CINE-DNA reference to better estimate the camera (focal/angle/height):",
+      "occurrences": [
+        {
+          "sourcePath": "server.js",
+          "line": 1201,
+          "column": 7,
+          "kind": "string-literal",
+          "functionName": "buildAutoBlockInstruction",
+          "owners": [
+            "blocking-studio",
+            "image-analyzer",
+            "prompt-forge",
+            "seedance",
+            "video-analyzer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-fe55243dff77170ceb86",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Return strict JSON with these keys only: prompt, subject, context, style.",
+      "occurrences": [
+        {
+          "sourcePath": "server.js",
+          "line": 435,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": "buildImageAnalysisInstruction",
+          "owners": [
+            "blocking-studio",
+            "image-analyzer",
+            "prompt-forge",
+            "seedance",
+            "video-analyzer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-feac1ec646d301c85127",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Info: sets the art direction through palette, material behavior, lighting mood, texture and genre references.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/barzy-theme.js",
+          "line": 290,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": "promptInfoSummary",
+          "owners": [
+            "acting-gen",
+            "banana-helper",
+            "barz-beauty",
+            "barz-designer",
+            "barz-enhancer",
+            "barzy-board",
+            "barzy-sheet",
+            "cccp",
+            "cinema-helper",
+            "cinematic-shoot",
+            "facs-sheet-generator",
+            "image-slicer",
+            "imperfection",
+            "knolling",
+            "multishot",
+            "realism-forge",
+            "seedance",
+            "veo-suite",
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ff5bff79c22ddaa1be0c",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Source duration: ${duration.toFixed(2)} seconds.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/prompt Atlas V2/app.js",
+          "line": 3590,
+          "column": 9,
+          "kind": "template-literal",
+          "functionName": "refineVideoFallbackPrompt",
+          "owners": [
+            "blocking-studio",
+            "image-analyzer",
+            "image-graber",
+            "paint-studio",
+            "video-analyzer"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,335 @@
+{
+  "schemaVersion": "1.0",
+  "id": "semantic-facs-sheet-generator-01",
+  "owner": "facs-sheet-generator",
+  "status": "pending-astra-review",
+  "approximateTokens": 847,
+  "prompts": [
+    {
+      "id": "text-00b44f7fe21ec0065948",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Create one complete FACS ACTION UNITS reference sheet as a flat 7x7 contact sheet, 49 equal portrait tiles. Use a portrait 3:4 or 4:5 canvas; 9:16 is acceptable only if the 7x7 board fills the image. No perspective, no rounded cards, no decorative frames, no thick white gutters, no outer margin, no watermark, no logo. Use thin dark separators or no visible gutters. Each cell must contain one centered medium close-up portrait in the upper 75% of the cell, with a small readable AU code and name in a narrow bottom label band. Subject lock: ",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 681,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": "buildCompactFACSBoardPrompt",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-288476f18421f84ed7ff",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": ". Same character identity, face structure, hairstyle, lens, crop, lighting and background in every tile; only the facial action changes. Critical gaze disambiguation: AU61 Eyes Turn Left means both pupils move toward image-left / viewer-left, not anatomical left; AU62 Eyes Turn Right means both pupils move toward image-right / viewer-right. AU61 and AU62 must be visibly opposite gaze directions and must never look the same way. Use these 49 tiles in this exact left-to-right, top-to-bottom order: ",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 681,
+          "column": 639,
+          "kind": "string-literal",
+          "functionName": "buildCompactFACSBoardPrompt",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-32ed779eaad1ec923e91",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "head turns toward subject left into a three-quarter view",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 315,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-42d40d6565992932ae21",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "head turns toward subject right into a three-quarter view",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 316,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-460d4f5abe327eb8fef6",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "head tilts toward the subject left shoulder",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 319,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-4cd7d6a4f4e081b1f091",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "medium close-up portrait, soft frontal key light, neutral studio background, consistent lens and crop across every tile",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 148,
+          "column": 32,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 345,
+          "column": 16,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-54f0d75b8b2bb1f738f1",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "<h2>FACS board not recognized</h2><p>The imported file could not be read as a usable image or is too small to cut into 49 cells.</p><p>Use <strong>Create Full FACS Board</strong>, choose a character, generate a visible 7x7 FACS board with Nano Banana, GPT Image 2, or your preferred image aggregator, then import the final image here. Any aspect ratio is OK as long as the 7x7 board is visible.</p>",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 408,
+          "column": 17,
+          "kind": "string-literal",
+          "functionName": "showFACSImportHelp",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-5f6c14edc654e49142e0",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "eyes turn to image-left / viewer-left: both pupils slide toward the left edge of both eyes while the head stays perfectly forward",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 323,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-65c4d1533fff94c730f8",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "<h2>Create Full FACS Board</h2><p>Best pipe: generate a flat 7x7 contact sheet in portrait <strong>3:4 or 4:5</strong>. 9:16 also works if the board fills the image and is not floating in a big empty poster.</p><p>Ask for: 49 equal cells, thin dark separators or no gutters, no thick white grid lines, no outer margin, one centered portrait per cell, labels kept in a narrow bottom band, same lens/crop/light/background across all tiles. Import that final board here; the app crops inside each cell and ignores the label band.</p><p>Important gaze lock: AU61 must look to <strong>image-left / viewer-left</strong>; AU62 must look to <strong>image-right / viewer-right</strong>. They must be visibly opposite, never mirrored into the same direction.</p>",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 414,
+          "column": 17,
+          "kind": "string-literal",
+          "functionName": "showFullFACSInfo",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-7d482f80b26ea3ce0f1c",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "medium close-up portrait, soft frontal key light, neutral studio background",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 677,
+          "column": 52,
+          "kind": "string-literal",
+          "functionName": "buildCompactFACSBoardPrompt",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-8ea1da99500779230b19",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Import a FACS board generated from Create Full FACS Board. Custom cards are stored locally; Save custom cards forces the current library to persist for the next app launch.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 186,
+          "column": 37,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-93f01c9b20ca83c2745d",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "head tilts strongly toward the subject right shoulder",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 320,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-980aa8af0a886684ad84",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "49 facial action buttons with stylized expression heads, real-time prompt output and direct send to BZ Board.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 137,
+          "column": 29,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-afcdad0138d8246eae01",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "[IMG_1], same character identity, same facial structure, same hairstyle, same proportions, photographed as a clean expression reference.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 144,
+          "column": 31,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 344,
+          "column": 15,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-bee2690d02691a4f4a19",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "eyes turn to image-right / viewer-right: both pupils slide toward the right edge of both eyes while the head stays perfectly forward",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 324,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ea738ab1fe955f850a78",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "head pushes forward toward camera, chin leading",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 314,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-fbf75608ef48a13a41be",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "head tilts toward the subject right shoulder",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 313,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ]
+    }
+  ]
+}

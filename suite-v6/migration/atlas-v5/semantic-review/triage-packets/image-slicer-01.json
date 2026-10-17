@@ -1,0 +1,218 @@
+{
+  "schemaVersion": "1.0",
+  "id": "triage-image-slicer-01",
+  "owner": "image-slicer",
+  "status": "pending-structural-triage",
+  "approximateTokens": 61,
+  "prompts": [
+    {
+      "id": "text-015c3f023b88ed7284e5",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "${sourceBaseName}_${prefix}_slices.zip",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/image-slicer.html",
+          "line": 1091,
+          "column": 21,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "image-slicer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-0b52f6441b1055ee4dd5",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "image/*",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/image-slicer.html",
+          "line": 724,
+          "column": 50,
+          "kind": "string-literal",
+          "functionName": "syncRows",
+          "owners": [
+            "image-slicer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-2da4f595a9db1cac5615",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "${sourceBaseName}_${prefix}_${tileNum}.${ext}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/image-slicer.html",
+          "line": 1062,
+          "column": 24,
+          "kind": "template-literal",
+          "functionName": "canvasToBlob",
+          "owners": [
+            "image-slicer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-74feac5eb8d98c340fa0",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Prefix",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/image-slicer.html",
+          "line": 504,
+          "column": 55,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "image-slicer"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-9514df11c4eeede6c0cd",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "WEBP",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/image-slicer.html",
+          "line": 502,
+          "column": 45,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "image-slicer"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-987ca4fe5e084aacd6aa",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "${sourceDirName}/ (source)",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/image-slicer.html",
+          "line": 758,
+          "column": 44,
+          "kind": "template-literal",
+          "functionName": "loadImage",
+          "owners": [
+            "image-slicer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-bdd54ea5167d06dccb5c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "/ grid slicing",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/image-slicer.html",
+          "line": 459,
+          "column": 9,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "image-slicer"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-be7e2f20129365c2899b",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Images",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/image-slicer.html",
+          "line": 724,
+          "column": 30,
+          "kind": "string-literal",
+          "functionName": "syncRows",
+          "owners": [
+            "image-slicer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-c660a47a1ea9971e22cc",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "image/${selectedFormat}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/image-slicer.html",
+          "line": 1044,
+          "column": 18,
+          "kind": "template-literal",
+          "functionName": "canvasToBlob",
+          "owners": [
+            "image-slicer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-d3ddcc35933bc372bd04",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "${cols * rows}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/image-slicer.html",
+          "line": 810,
+          "column": 76,
+          "kind": "template-literal",
+          "functionName": "updateGrid",
+          "owners": [
+            "image-slicer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-e139ac41841887cecf26",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "${atlasApiBase()}/api/tools/save-image-slice",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/image-slicer.html",
+          "line": 641,
+          "column": 32,
+          "kind": "template-literal",
+          "functionName": "saveBlobToSourceFolder",
+          "owners": [
+            "image-slicer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    }
+  ]
+}

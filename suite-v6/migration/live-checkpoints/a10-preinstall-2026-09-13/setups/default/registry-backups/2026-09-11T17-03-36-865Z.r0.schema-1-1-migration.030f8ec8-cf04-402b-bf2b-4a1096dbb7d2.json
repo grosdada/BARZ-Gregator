@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "1.1",
+  "defaultsVersion": "6.0.0-libraries.1",
+  "revision": 0,
+  "overlay": {
+    "workshopOverrides": {},
+    "toolOverrides": {},
+    "placementOverrides": {},
+    "removedDefaultPlacementIds": [],
+    "customWorkshops": [],
+    "customTools": [],
+    "customPlacements": [],
+    "customRecipes": [],
+    "customLibraries": [],
+    "libraryOverlays": {}
+  }
+}

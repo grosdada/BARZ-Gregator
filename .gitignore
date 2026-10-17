@@ -1,0 +1,33 @@
+node_modules/
+/data/*
+!/data/catalog.seed.json
+/suite-v6/apps/atlas/data/
+*.local.json
+*.log
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+
+# Local sessions, generated assets, and verification output.
+**/.runtime*/
+**/.tmp*/
+**/.verify*/
+/.codex-temp/
+/suite-v6/exports/
+/suite-v6/tmp/
+
+# The installer is built from the sources below; publish it as a GitHub release.
+/suite-v6/installer/payload/
+/suite-v6/installer/payload-stale-*/
+/suite-v6/installer/BARZ-Suite-6-Setup-*.exe
+/suite-v6/installer/BARZ-Suite-6-component-proof.exe
+
+# Independent projects with their own Git repositories.
+/suite-v6/vendor/library-editor-source/
+/suite-v6/installer/YT-Extractor-Win/
+
+# Private local artifacts.
+*.safetensors
+*.local
+

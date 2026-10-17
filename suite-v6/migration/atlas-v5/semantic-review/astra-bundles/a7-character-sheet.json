@@ -1,0 +1,846 @@
+{
+  "schemaVersion": "1.0",
+  "id": "a7-character-sheet",
+  "title": "A7 — BZ Sheet",
+  "owners": [
+    "barzy-sheet"
+  ],
+  "status": "pending-astra-review",
+  "policy": {
+    "preserveOriginalEnglish": true,
+    "noSilentNormalization": true,
+    "correctionsRequireReason": true,
+    "excludedTriageKinds": [
+      "ui-copy-candidate",
+      "runtime-identifier"
+    ]
+  },
+  "highConfidenceCount": 30,
+  "triageCount": 11,
+  "itemCount": 41,
+  "approximateTokens": 5696,
+  "digestAlgorithm": "sha256",
+  "bundleDigest": "049c4e94e5984b0f7ba1a3e36b5974500c966cace3815fa4a4503a1bd54a1f63",
+  "items": [
+    {
+      "id": "text-05813057d17e1623ddfa",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "{ \"reference\": { \"type\": \"uploaded_object\" }, \"layout\": { \"composition\": \"Product exploded view or multi-angle grid\", \"background\": \"[BG_COLOR_PLACEHOLDER] solid studio board\", \"grid\": \"3x2 orthographic projection system\" }, \"documentation\": { \"style\": \"Technical manual aesthetic\", \"callouts\": \"Minimal circle indicators with fine gray leader lines\", \"text\": \"Lowercase technical sans-serif labels for materials and joinery\" }, \"lighting\": \"Global illumination, zero hard shadows\", \"fidelity\": \"Maintain absolute geometric ratios of the source object.\" } [Scene Description]",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1191,
+          "column": 73,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "owner": "barzy-sheet"
+    },
+    {
+      "id": "text-0d068ade654adff54949",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "head tilts upward, chin raised",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1951,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "barzy-sheet"
+    },
+    {
+      "id": "text-1a29b0e1bd390a58ffe0",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "{ \"reference\": { \"type\": \"organic_entity_image\", \"target\": \"fruit, botanical subject, or organic specimen\" }, \"layout\": { \"primary\": \"Hero shot of the specimen in situ\", \"secondary\": [\"Cross-section view\", \"Microscopic texture detail\", \"Growth stage or skeletal structure\"], \"background\": \"[BG_COLOR_PLACEHOLDER] specimen board\" }, \"annotations\": { \"style\": \"Scientific Latinate labeling\", \"lines\": \"Hand-drawn ink look or precise technical hairlines\", \"content\": \"Focus on biological surfaces and internal anatomy visible in section.\" }, \"rendering\": \"Biological accuracy, detailed surface texture, clean studio-documentation readability.\" } [Scene Description]",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1229,
+          "column": 74,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "owner": "barzy-sheet"
+    },
+    {
+      "id": "text-1c14136ef2d76e6f5f11",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Based on this image: **FACIAL EXPRESSION BOARD — 2×4 GRID (8 EXPRESSIONS)** Generate a facial expression reference sheet with 8 different emotions, arranged in a 2×4 grid. Close-up head shots only. **IDENTITY LOCK — CRITICAL:** This is the SAME CHARACTER in ALL 8 expressions. NOT 8 different people. - CLONE exact face from reference: bone structure, nose, eyes, lips, skin texture, moles, scars - CLONE exact hair: color, style, length, texture (hair may move slightly with expression) - Age, ethnicity, facial features MUST be identical across all 8 panels - Only the EXPRESSION changes — the face itself stays the same **2×4 GRID LAYOUT:** **ROW 1 (4 expressions):** | NEUTRAL | HAPPY | SAD | ANGRY | 1. **NEUTRAL:** Relaxed, no emotion, baseline reference face, mouth closed, eyes forward 2. **HAPPY:** Genuine smile, crow's feet, raised cheeks, teeth may show, bright eyes 3. **SAD:** Downturned mouth, drooping eyelids, furrowed inner brows, dejected 4. **ANGRY:** Furrowed brows, tense jaw, flared nostrils, intense glare, clenched teeth **ROW 2 (4 expressions):** | SURPRISED | SCARED | DISGUSTED | CONTEMPT | 5. **SURPRISED:** Wide eyes, raised eyebrows, open mouth, shocked expression 6. **SCARED/FEAR:** Wide eyes, raised inner brows, tense mouth, looking alarmed 7. **DISGUSTED:** Wrinkled nose, raised upper lip, squinted eyes, repulsed 8. **CONTEMPT:** Slight smirk, one corner of mouth raised, dismissive, superior look **FRAMING:** - Head and upper shoulders visible in each panel - Face centered, same scale across all 8 panels - Consistent head angle (slight 3/4 or direct front — same in all) - Eyes at same height across the row **FORMAT — CRITICAL:** - 2×4 GRID: 8 panels of IDENTICAL width and height - Visible thin separator lines between panels - [BG_COLOR_PLACEHOLDER] background — consistent all panels - NO TEXT, NO LABELS, NO EMOTION NAMES - Same aspect ratio all panels **TECHNICAL:** - Consistent soft lighting across all 8 panels (same direction, intensity) - Sharp detail on facial features, skin texture, eyes - Expressions must be clear and readable - Match visual style of reference (realism level, rendering) SAME FACE in all 8 panels — only the expression changes.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1590,
+          "column": 77,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "owner": "barzy-sheet"
+    },
+    {
+      "id": "text-1cecdd0c745c194f7486",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "head turns left, gaze direction follows or counters the turn",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1949,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "barzy-sheet"
+    },
+    {
+      "id": "text-1e15eb3764bf2a4e0aa2",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "\n**FIGHTING POSE MODE — EMPTY HANDS:**\nAll 25 poses become fighting / combat poses with neutral bare hands. No weapon, no prop, no firearm. The hands stay clearly empty in every panel.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1859,
+          "column": 19,
+          "kind": "template-literal",
+          "functionName": "buildPoseWeaponText",
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "triageKind": "prose-candidate",
+      "owner": "barzy-sheet"
+    },
+    {
+      "id": "text-1e9aa4652926b1e0b77c",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Based on this image: **CHARACTER SHEET — SIMPLE 4-VIEW** Generate a character reference sheet with 4 essential views of this character. **IDENTITY LOCK — CRITICAL:** This is the SAME CHARACTER in all 4 views. NOT 4 different people. - CLONE exact face: bone structure, features, skin texture, expression - CLONE exact body: height, build, proportions - CLONE exact hair: color, style, length, texture - CLONE exact costume: every garment, color, pattern, accessory - Age, ethnicity, and all distinguishing features MUST be identical across views **4-VIEW LAYOUT (horizontal row):** | FRONT | LEFT SIDE | RIGHT SIDE | BACK | 1. **FRONT VIEW:** Facing camera directly, relaxed standing pose, arms slightly away from body 2. **LEFT SIDE VIEW:** Perfect 90° profile facing left, same pose 3. **RIGHT SIDE VIEW:** Perfect 90° profile facing right, same pose 4. **BACK VIEW:** Facing away from camera, same pose **POSE:** - Relaxed standing, weight evenly distributed - Arms slightly away from torso for silhouette clarity - Head straight, neutral expression - Same exact pose in all 4 views **FORMAT:** - Single horizontal row: 4 panels of IDENTICAL width/height - [BG_COLOR_PLACEHOLDER] background — consistent across all panels - Visible thin separator lines between panels - Character centered in each panel with padding - Same scale across all 4 views (heads at same height) - NO TEXT, NO LABELS **TECHNICAL:** - Even, soft lighting from front-top - Minimal shadows for clarity - Sharp details, clean edges - Print-ready quality SAME CHARACTER in all 4 views — faces and bodies must be identical.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1374,
+          "column": 73,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "owner": "barzy-sheet"
+    },
+    {
+      "id": "text-24661d534052725ab201",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "head pushes forward, face approaches camera with intent",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1948,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "owner": "barzy-sheet"
+    },
+    {
+      "id": "text-297e36f445d4b21cb4a6",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "head turns right, neck rotation visible",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1950,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "barzy-sheet"
+    },
+    {
+      "id": "text-2a2a82b497910ac82cfe",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "MASTER CHARACTER REFERENCE SHEET",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1257,
+          "column": 48,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "owner": "barzy-sheet"
+    },
+    {
+      "id": "text-2a726d840a58bf98ec14",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Builds a 2×4 expression board from 8 selected FACS action units. Use the FACS popup to choose the exact facial actions before copying.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1663,
+          "column": 51,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "owner": "barzy-sheet"
+    },
+    {
+      "id": "text-2b22dd59c5fdc6137875",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Create a single unified MASTER CHARACTER REFERENCE SHEET from these inputs: [STYLE]: [cinematic realism] [SUBJECT_DESCRIPTION]: [@IMG_1] Create the board in a 4:3 horizontal layout. The board layout, background, typography and spacing must be clean, neutral, minimal and technical, on a [BG_COLOR_PLACEHOLDER] background. Use clear section titles, readable English labels, balanced spacing, no clutter, no watermark, no logo. Apply [STYLE] only to the character and visual elements, not to the board layout or UI. All text must be clearly readable at normal viewing size. Avoid tiny or dense text. Infer all missing details from the subject description, including name, alias if suitable, role, age, personality, core theme, accent, wardrobe details, accessories, key prop if clearly relevant, visual notes and a fitting color palette. Use this layout: top row = left: title + horizontal info block, right: COLOR PALETTE center = large MAIN IDENTITY + SCALE SHEET as the biggest section right = EXPRESSION PROGRESSION + HEAD DETAIL SHEET + NEUTRAL BASELINE + POSTURE VARIATION + CLOSE-UP POSE bottom = WARDROBE / ACCESSORIES DETAILS + PROP + HAND GESTURES Include: Title: CHARACTER REFERENCE SHEET 1. TOP INFO BLOCK Name, Alias, Role, Age, Personality, Core Theme, Speech Accent 2. COLOR PALETTE Place this in the top-right header area. Show 6 to 8 minimal clean color swatches that match the subject's style, wardrobe, world and mood. Do not add labels. 3. MAIN IDENTITY + SCALE SHEET This must be the largest and most prominent section. Show the subject only, with no prop, no bag, no handheld object, no extra item interaction. Show: Front, 3/4 View, Side, Back Place the character views over subtle measurement guide lines, like a clean model sheet scale background with height marks. Also include a small SILHOUETTE GUIDE inside this same section: 2 small clean silhouette thumbnails, Neutral Stance and Profile Silhouette. Keep the silhouettes small and secondary, placed in a corner of the MAIN IDENTITY + SCALE SHEET. The subject should appear in a clean neutral presentation focused only on identity, body shape, outfit, silhouette and proportions. Add a few small notes for silhouette, posture, special traits, visual identity. 4. EXPRESSION PROGRESSION Show exactly 8 panels of the same subject: Neutral, Curious, Worried, Surprised, Afraid, Sad, Determined, Relieved MICRO EXPRESSIONS Show exactly 5 panels of the same subject: subtle eye tension, slight smirk, lip tension, micro fear, controlled breath These panels should function as both an expression sheet and a light emotional progression. 5. HEAD DETAIL SHEET Show several close-up head references of the same subject from different angles: 3/4 Headshot, Side Headshot, Top Angle, Low Angle, Diagonal Angle Keep facial structure, hairstyle, eyes, proportions and identity fully consistent. 6. NEUTRAL BASELINE 1 panel: fully relaxed, no emotion 7. POSTURE VARIATION 2-3 panels: relaxed, tense, confident 8. CLOSE-UP POSE Show exactly 1 cinematic close-up pose of the same subject from chest-up or shoulder-up. Use a natural expressive pose that best fits the subject's personality and story tone. This close-up should clearly show facial identity, hairstyle, expression, upper wardrobe detail and emotional presence. 9. WARDROBE / ACCESSORIES DETAILS Show exactly 4 close-up callouts for important styling details such as hairstyle, outerwear, footwear, accessories, fabric or material detail. 10. PROP Only include this section if a prop is clearly important to the subject. Show exactly 1 single clean isolated image of the prop only. Add a small info block: Object Name, Type, Traits 11. HAND GESTURES relaxed hand, tense fingers, pointing, gripping, subtle gesture near face",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1273,
+          "column": 78,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "owner": "barzy-sheet"
+    },
+    {
+      "id": "text-36691c80ac63d61afe5d",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Based on this image: **COMPLEX FACS EXPRESSION BOARD — 2×4 GRID (8 SELECTED FACIAL ACTIONS)** Generate a facial acting reference sheet with exactly 8 close-up portrait panels arranged in a 2×4 grid. Each panel shows the same character performing one selected FACS action unit or compound facial action. **IDENTITY LOCK — CRITICAL:** This is the SAME CHARACTER in ALL 8 panels. NOT 8 different people. - CLONE exact face from reference: bone structure, nose, eyes, lips, skin texture, moles, scars - CLONE exact hair: color, style, length, texture - Age, ethnicity, facial features and face volume MUST be identical across all 8 panels - Only the FACS facial action changes — no redesign, no beauty correction, no new hairstyle **SELECTED FACS ACTIONS — USE THESE 8 PANELS IN ORDER:** [FACS_SELECTION_PLACEHOLDER] **FACS EXECUTION RULES:** - Make each facial action readable but anatomically plausible - Keep all non-selected facial regions neutral unless they are naturally affected by the selected action - Do not exaggerate into cartoon unless the reference style is already cartoon - Preserve the same head angle, crop, lens, lighting and background across all panels **FRAMING:** - Head and upper shoulders visible in each panel - Face centered, same scale across all 8 panels - Consistent head angle, eyes at the same height across each row **FORMAT — CRITICAL:** - 2×4 GRID: 8 panels of IDENTICAL width and height - Visible thin separator lines between panels - [BG_COLOR_PLACEHOLDER] background — consistent all panels - NO TEXT, NO LABELS, NO AU CODES, NO WATERMARKS **TECHNICAL:** - Consistent soft lighting across all 8 panels - Sharp detail on facial features, skin texture, eyes and mouth shapes - The result must read like a professional FACS / facial acting reference board SAME FACE in all 8 panels — only the selected FACS action changes.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1664,
+          "column": 84,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "owner": "barzy-sheet"
+    },
+    {
+      "id": "text-4cf968583428bddf546d",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Generates a facial expression reference board with 8 core emotions in a 2×4 grid. Close-up head shots showing the character's acting range.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1589,
+          "column": 51,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "owner": "barzy-sheet"
+    },
+    {
+      "id": "text-4ec1520c75482a396820",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Builds a catalog-style board for a vehicle reference, mixing lifestyle presentation and technical drawings.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1157,
+          "column": 51,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "owner": "barzy-sheet"
+    },
+    {
+      "id": "text-5503a19171cb2340eb93",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "${selectedFacs.size} / 8 selected",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 2003,
+          "column": 26,
+          "kind": "template-literal",
+          "functionName": "updateFacsCount",
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "owner": "barzy-sheet"
+    },
+    {
+      "id": "text-59a813c1cfd2e8c81744",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "**ROW 1 — ARMED LOCOMOTION / APPROACH:**\n1. Guarded idle with [WEAPON_LABEL] | 2. Advancing step with [WEAPON_LABEL] | 3. Side-step with [WEAPON_LABEL] | 4. Low tactical run with [WEAPON_LABEL] | 5. Full sprint while controlling [WEAPON_LABEL]\n\n**ROW 2 — ATTACK / THREAT READABILITY:**\n1. Ready attack pose with [WEAPON_LABEL] | 2. Mid-swing or aim with [WEAPON_LABEL] | 3. Crouched fighting pose with [WEAPON_LABEL] | 4. Overhead / forward strike or aim with [WEAPON_LABEL] | 5. Victory / intimidation pose with [WEAPON_LABEL]\n\n**ROW 3 — WEAPON HANDLING:**\n1. [WEAPON_LABEL] aimed or presented forward | 2. [WEAPON_LABEL] aimed or presented side | 3. Two-hand control of [WEAPON_LABEL] | 4. Taking cover while keeping [WEAPON_LABEL] active | 5. Reloading, resetting grip, or recovering [WEAPON_LABEL]\n\n**ROW 4 — ARMED EXPRESSIONS / EMOTIONS:**\n1. Confident armed smile | 2. Wounded / dejected while holding [WEAPON_LABEL] | 3. Angry attack glare with [WEAPON_LABEL] | 4. Surprised reaction while keeping [WEAPON_LABEL] | 5. Fearful defensive pose with [WEAPON_LABEL]\n\n**ROW 5 — DEFENSE / IMPACT WITH WEAPON:**\n1. Fighting pose with [WEAPON_LABEL] | 2. Strike / shot / thrust with [WEAPON_LABEL] | 3. Evasive kick or body shift while holding [WEAPON_LABEL] | 4. Block / defend using [WEAPON_LABEL] | 5. Knocked back / hit reaction while retaining [WEAPON_LABEL]",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1826,
+          "column": 39,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "owner": "barzy-sheet"
+    },
+    {
+      "id": "text-5ad4d2a51acc0cbbbccc",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "\n**FIGHTING POSE MODE — WEAPON LOCK:**\nAll 25 poses become fighting / combat poses using ${label}. The selected weapon must appear consistently in every panel, with correct scale, grip, hand placement, weight, silhouette and continuity.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1860,
+          "column": 19,
+          "kind": "template-literal",
+          "functionName": "buildPoseWeaponText",
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "owner": "barzy-sheet"
+    },
+    {
+      "id": "text-5c3a71749a1fc2fdbaae",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Creates a clean product documentation board with a hero render, auxiliary views and precise callouts.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1116,
+          "column": 51,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "owner": "barzy-sheet"
+    },
+    {
+      "id": "text-62228bd0413bd6bb139b",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "[FACS_SELECTION_PLACEHOLDER]",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1998,
+          "column": 30,
+          "kind": "string-literal",
+          "functionName": "updateDynamicPromptPreviews",
+          "owners": [
+            "barzy-sheet"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 2312,
+          "column": 41,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate",
+      "owner": "barzy-sheet"
+    },
+    {
+      "id": "text-684a0474e0be9e89cf9f",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "${selectedFacs.size} selected",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 2007,
+          "column": 56,
+          "kind": "template-literal",
+          "functionName": "updateFacsCount",
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "owner": "barzy-sheet"
+    },
+    {
+      "id": "text-6ded0113cac522a7bcf7",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Based on this image: **OBJECT REFERENCE SHEET — 3×3 GRID (9 VIEWS)** Generate a professional product reference sheet with 9 views of this object on a [BG_COLOR_PLACEHOLDER] cyclorama, arranged in a 3×3 grid. **OBJECT CONSISTENCY — CRITICAL:** This is the SAME OBJECT in all 9 views. NOT 9 different objects. - CLONE exact shape, proportions, details from reference - CLONE exact materials, colors, textures, surface finish - CLONE all markings, logos, wear, imperfections - Scale and details MUST be identical across all views **3×3 GRID LAYOUT:** **ROW 1 — ORTHOGRAPHIC VIEWS:** | FRONT | LEFT SIDE | RIGHT SIDE | 1. **FRONT:** Direct front view, perpendicular to main face 2. **LEFT SIDE:** Perfect 90° profile, left side visible 3. **RIGHT SIDE:** Perfect 90° profile, right side visible opposite view of left side **ROW 2 — MORE ORTHOGRAPHIC + TOP/BOTTOM:** | BACK | TOP | BOTTOM | 4. **BACK:** Direct rear view, perpendicular to back face 5. **TOP:** Bird's eye view, looking straight down at object 6. **BOTTOM:** View of underside, object flipped/transparent ground **ROW 3 — NATURAL VIEWS + TECHNICAL:** | 3/4 FRONT | 3/4 BACK | TECHNICAL SPEC | 7. **3/4 FRONT:** 45° angle showing front + side, natural product shot angle 8. **3/4 BACK:** 45° angle showing back + side, reveals hidden details 9. **TECHNICAL BOARD:** Clean diagram view with: - Estimated dimensions (H × W × D) with dimension lines - Material callouts (metal, plastic, fabric, glass, etc.) - Key component labels if applicable - Scale reference indicator - Orthographic side view in black and white **LIGHTING — PRODUCT PHOTOGRAPHY STYLE:** - Soft diffuse lighting from multiple sources - No harsh shadows — gentle gradients only - Even illumination revealing all surface details - Subtle reflections on glossy/metallic surfaces - Studio product photography quality **FORMAT — CRITICAL:** - 3×3 GRID: 9 panels of IDENTICAL width and height - Visible thin separator lines between panels - [BG_COLOR_PLACEHOLDER] background — consistent all panels - Object centered in each panel with padding - Same scale across views 1-8 (technical panel may adjust for labels) - NO TEXT except in Technical Spec panel (panel 9) **TECHNICAL:** - Sharp detail on materials, textures, surface quality - Accurate color representation - Clean edges, professional product rendering - Match visual style of reference SAME OBJECT in all 9 views — consistent in every detail.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1033,
+          "column": 73,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "owner": "barzy-sheet"
+    },
+    {
+      "id": "text-6f0c7cf7252bf69036e4",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Based on this image: **CHARACTER POSE SHEET — 5×5 GRID (25 POSES)** Generate a pose reference sheet with 25 different poses of this character, arranged in a 5×5 grid. Each pose unique, same character throughout. **IDENTITY LOCK — CRITICAL:** This is the SAME CHARACTER in ALL 25 poses. NOT 25 different people. - CLONE exact face, body, hair, costume from reference - Identity MUST be recognizable in every single panel - Same clothing/outfit across all poses (adjusted for movement) - Age, ethnicity, features identical throughout [POSE_WEAPON_DIRECTIVE] **5×5 GRID LAYOUT:** [POSE_GRID_DIRECTIVE] **POSE REQUIREMENTS:** - Each pose distinct and readable at small size - Full body visible in each panel (head to toe) - Dynamic poses with clear silhouettes - Character fits within panel with padding - Action poses show peak moment of movement **FORMAT — CRITICAL:** - 5×5 GRID: 25 panels of IDENTICAL width and height - Visible thin separator lines between panels - [BG_COLOR_PLACEHOLDER] background — consistent all panels - NO TEXT, NO LABELS, NO NUMBERS - All panels same aspect ratio (square recommended) **TECHNICAL:** - Consistent lighting across all 25 panels - Same rendering style throughout - Sharp details, clean edges - Photorealistic matching reference style SAME CHARACTER in all 25 poses — identity must be unmistakable.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1529,
+          "column": 71,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "owner": "barzy-sheet"
+    },
+    {
+      "id": "text-73135006b020c7452a19",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Turns an uploaded object into a technical manual board with orthographic views, indicators and material notes.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1190,
+          "column": 51,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "owner": "barzy-sheet"
+    },
+    {
+      "id": "text-76a6b0615be74a4d3b85",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "poseWeaponSelect",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1842,
+          "column": 52,
+          "kind": "string-literal",
+          "functionName": "getWeaponLabel",
+          "owners": [
+            "barzy-sheet"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1850,
+          "column": 52,
+          "kind": "string-literal",
+          "functionName": "buildPoseWeaponText",
+          "owners": [
+            "barzy-sheet"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 2281,
+          "column": 33,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-sheet"
+    },
+    {
+      "id": "text-7c384bd265fafc31ce31",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "head tilts right while expression remains controlled",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1947,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "barzy-sheet"
+    },
+    {
+      "id": "text-8adbc612a8368885c728",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Based on this image: **CHARACTER SHEET — PROFESSIONAL REFERENCE** Create a professional character reference sheet. Match the EXACT visual style of the reference (realism level, rendering, texture, color treatment, aesthetic). **IDENTITY LOCK — CRITICAL:** This is the SAME CHARACTER across ALL 7 panels. NOT different people. - CLONE exact face: bone structure, features, skin, wrinkles, moles - CLONE exact body: height, build, proportions - CLONE exact hair: color, style, length, texture, hairline - CLONE exact costume: every garment, accessory, detail, wear marks - Age and ethnicity MUST match source exactly **LAYOUT — TWO ROWS:** **TOP ROW — 4 FULL-BODY VIEWS (horizontal):** | FRONT | LEFT PROFILE | RIGHT PROFILE | BACK | - FRONT: Facing camera, relaxed A-pose, arms 30-45° from body - LEFT PROFILE: Perfect 90° facing left, same A-pose - RIGHT PROFILE: Perfect 90° facing right, same A-pose - BACK: Facing away, same A-pose **BOTTOM ROW — 3 PORTRAIT CLOSE-UPS (centered below):** | FRONT PORTRAIT | LEFT PORTRAIT | RIGHT PORTRAIT | - FRONT PORTRAIT: Head and shoulders, facing camera, neutral expression - LEFT PORTRAIT: Head and shoulders, 90° profile facing left - RIGHT PORTRAIT: Head and shoulders, 90° profile facing right **ALIGNMENT REQUIREMENTS:** - Full-body views: heads at identical height, same scale - Portraits: faces at identical scale, same crop level - Portraits centered beneath full-body row - Even spacing between all panels - Clean panel separation with thin lines **TECHNICAL:** - [BG_COLOR_PLACEHOLDER] plain background - Consistent lighting across ALL panels (same direction, intensity, softness) - Natural controlled shadows — detail preservation, no dramatic mood - Sharp details, crisp edges, print-ready quality - Accurate anatomy, clear silhouettes - NO TEXT, NO LABELS SAME CHARACTER in all 7 panels — perfect identity consistency.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1439,
+          "column": 74,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "owner": "barzy-sheet"
+    },
+    {
+      "id": "text-90099c6683c6f29e4a91",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "prompt-posesheet",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1993,
+          "column": 57,
+          "kind": "string-literal",
+          "functionName": "updateDynamicPromptPreviews",
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate",
+      "owner": "barzy-sheet"
+    },
+    {
+      "id": "text-90c5264aebf6e2b415ce",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "{ \"reference_images\": { \"usage_rule\": \"Exact visual reference for body shape, proportions, chrome details. Do not modernize.\" }, \"layout\": { \"canvas\": { \"orientation\": \"vertical\", \"aspect_ratio\": \"3:4\", \"background\": \"[BG_COLOR_PLACEHOLDER] paper / studio surface\" } }, \"top_section\": { \"type\": \"lifestyle_hero\", \"environment\": { \"setting\": \"minimal architectural urban space\", \"lighting\": \"natural sunlight\" } }, \"bottom_section\": { \"type\": \"technical_specification_panel\", \"technical_drawings\": { \"style\": \"automotive technical line drawings\", \"views\": [\"front view\", \"side profile\", \"three-quarter structural\"], \"line_style\": { \"color\": \"muted turquoise\", \"weight\": \"fine\" } }, \"materials_panel\": { \"textures\": [\"painted metal body\", \"chrome trim\", \"interior upholstery\"] } } } [Scene Description]",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1158,
+          "column": 70,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "owner": "barzy-sheet"
+    },
+    {
+      "id": "text-90d8d59f80459314beb4",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Creates a unified 4:3 master character reference board with identity, scale views, expressions, head details, posture, wardrobe callouts, prop notes and hand gestures.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1272,
+          "column": 51,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "owner": "barzy-sheet"
+    },
+    {
+      "id": "text-a565be36186f89d13da9",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Generates a basic character reference sheet with 4 essential views. Clean and efficient for quick character documentation.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1373,
+          "column": 51,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "owner": "barzy-sheet"
+    },
+    {
+      "id": "text-c3382953f29551c6d624",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Generates a product reference sheet with 9 views including orthographic angles, natural 3/4 views, and a technical specification panel. Perfect for product design, 3D modeling reference, or catalog documentation.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1032,
+          "column": 51,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "owner": "barzy-sheet"
+    },
+    {
+      "id": "text-c50b62e027176a269574",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "prompt-complexexpressionboard",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1995,
+          "column": 57,
+          "kind": "string-literal",
+          "functionName": "updateDynamicPromptPreviews",
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate",
+      "owner": "barzy-sheet"
+    },
+    {
+      "id": "text-d4fad44624d761c81483",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "{ \"reference\": { \"type\": \"image\", \"usage\": \"Use the uploaded image as the sole source of truth. Do not assume product category in advance.\" }, \"scene\": { \"description\": \"A minimalist, premium product presentation layout inspired by high-end industrial design and product documentation.\", \"background\": \"[BG_COLOR_PLACEHOLDER], clean, distraction-free\" }, \"layout\": { \"top_left\": { \"content\": \"Brand name\", \"style\": \"Modern sans-serif typography\" }, \"left_column\": { \"content\": \"Multiple auxiliary product views\", \"views\": [\"Primary front\", \"Secondary side\", \"Alternate angle\", \"Detail view\"], \"arrangement\": \"Vertically stacked\" }, \"right_section\": { \"content\": \"Main hero product render\", \"style\": \"Large, dominant, photorealistic\", \"lighting\": \"Soft studio lighting\" } }, \"annotations\": { \"binding_rules\": [\"Each line points to one visible component\", \"Each label describes exact component function\", \"No marketing language\"], \"line_style\": { \"type\": \"Hairline-thin vector lines\", \"color\": \"Neutral light gray\" } }, \"visual_style\": { \"aesthetic\": \"Scandinavian, modern, industrial\", \"mood\": \"Calm, precise\" } } [Scene Description]",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1117,
+          "column": 77,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "owner": "barzy-sheet"
+    },
+    {
+      "id": "text-de3f63ebd149e593f7d6",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Generates a comprehensive 5×5 pose sheet with 25 different poses across 5 categories. Perfect for animation reference, game assets, or character acting range demonstration.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1528,
+          "column": 51,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "owner": "barzy-sheet"
+    },
+    {
+      "id": "text-e627c345f4ffacf6faef",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "**ROW 1 — LOCOMOTION (walk & run):**\n1. Standing idle | 2. Walk start | 3. Mid-walk stride | 4. Jog/light run | 5. Full sprint\n\n**ROW 2 — SPORT/ATHLETIC:**\n1. Stretching | 2. Jumping | 3. Crouching ready | 4. Throwing motion | 5. Victory/celebration pose\n\n**ROW 3 — ACTION / EMPTY-HAND:**\n1. Focused forward ready pose | 2. Alert side-ready pose | 3. Two-hand empty ready hold | 4. Taking cover | 5. Preparation / checking hands\n\n**ROW 4 — EXPRESSIONS/EMOTIONS:**\n1. Happy/smiling | 2. Sad/dejected | 3. Angry/aggressive | 4. Surprised/shocked | 5. Scared/fearful\n\n**ROW 5 — HAND-TO-HAND / IMPACT:**\n1. Neutral ready posture | 2. Punch thrown | 3. Kick motion | 4. Block/defend | 5. Knocked back/hit reaction",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1811,
+          "column": 38,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "owner": "barzy-sheet"
+    },
+    {
+      "id": "text-ebef0adc87d08b075f2f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "facsGrid",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 2012,
+          "column": 50,
+          "kind": "string-literal",
+          "functionName": "renderFacsGrid",
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-sheet"
+    },
+    {
+      "id": "text-f012a20e2e594372d050",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "openFacsPicker",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 2264,
+          "column": 33,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-sheet"
+    },
+    {
+      "id": "text-f2dd4c541a3529677b25",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "${unit.code} ${unit.name} ${unit.cat} ${FACS_VISIBLE[unit.code] || ''}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 2016,
+          "column": 39,
+          "kind": "template-literal",
+          "functionName": "renderFacsGrid",
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "owner": "barzy-sheet"
+    },
+    {
+      "id": "text-f44e9322f5c51f9fb87e",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "${index + 1}. **${unit.code.replace(/B$/, '')} — ${unit.name}:** ${FACS_VISIBLE[unit.code] || unit.name}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1977,
+          "column": 20,
+          "kind": "template-literal",
+          "functionName": "facsLine",
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "owner": "barzy-sheet"
+    },
+    {
+      "id": "text-fb13ac7864a20b103505",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Generates a professional character reference sheet with full-body turnaround and detailed portrait close-ups. Industry-standard layout for character design documentation.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy_sheet.html",
+          "line": 1438,
+          "column": 51,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-sheet"
+          ]
+        }
+      ],
+      "owner": "barzy-sheet"
+    }
+  ]
+}

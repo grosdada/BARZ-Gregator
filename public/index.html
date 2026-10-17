@@ -1,0 +1,1026 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark">
+    <title>BARZ Aggregator</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script type="module" src="/app.js"></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="Retour à l’accueil">
+        <span class="brand-mark" aria-hidden="true">BZ</span>
+        <span>Aggregator</span>
+      </a>
+      <div class="system-state">
+        <span class="status-light" aria-hidden="true"></span>
+        <span>Local</span>
+        <span class="quiet">Confirmation au-delà de 1,50 $US</span>
+      </div>
+      <button class="plain-button" id="settingsButton" type="button">Clés API</button>
+    </header>
+
+    <main class="workspace">
+      <aside class="media-rail" aria-label="Type de création">
+        <p class="rail-title">Créer</p>
+        <button class="media-tab" type="button" data-media="video">
+          <span class="tab-glyph">▶</span>
+          Vidéos
+        </button>
+        <button class="media-tab" id="directorButton" type="button">
+          <span class="tab-glyph director-glyph" aria-hidden="true">●</span>
+          Director
+        </button>
+        <button class="media-tab active" type="button" data-media="image">
+          <span class="tab-glyph">▧</span>
+          Images
+        </button>
+        <button class="media-tab" type="button" data-media="music">
+          <span class="tab-glyph">♪</span>
+          Musique
+        </button>
+        <button class="media-tab" id="assetsButton" type="button">
+          <svg class="tab-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3.5 6.5h6l2 2h9v9.5a2 2 0 0 1-2 2h-15z"></path>
+            <path d="M3.5 6.5v-1a2 2 0 0 1 2-2h4l2 2h7a2 2 0 0 1 2 2v1"></path>
+          </svg>
+          Assets
+        </button>
+        <button class="media-tab" id="spendingButton" type="button">
+          <span class="tab-glyph" aria-hidden="true">$</span>
+          Dépenses
+        </button>
+        <button class="media-tab" id="apiButton" type="button">
+          <span class="tab-glyph" aria-hidden="true">⌁</span>
+          API
+        </button>
+        <button class="media-tab" id="loraLabButton" type="button">
+          <span class="tab-glyph" aria-hidden="true">◈</span>
+          LoRA Lab
+        </button>
+        <button class="media-tab" id="uploadResourcesButton" type="button">
+          <svg class="tab-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 16V4"></path>
+            <path d="m7.5 8.5 4.5-4.5 4.5 4.5"></path>
+            <path d="M4 14v4a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-4"></path>
+          </svg>
+          Import ressource
+        </button>
+        <input class="hidden" id="resourceUploadInput" type="file" multiple
+          accept="image/*,video/*,audio/*">
+
+        <div class="rail-separator"></div>
+        <p class="rail-title">Passerelle</p>
+        <button class="media-tab" id="openImportButton" type="button">
+          <span class="tab-glyph">↓</span>
+          Importer
+        </button>
+
+        <a class="app-switch app-switch-atlas" href="http://127.0.0.1:4326/"
+          target="prompt-atlas-v6" aria-label="Ouvrir Prompt Atlas 6">
+          <span class="app-switch-mark" aria-hidden="true">PA</span>
+          <span>Prompt Atlas 6</span>
+        </a>
+        <div class="rail-foot">
+          <span>v0.25.0</span>
+          <strong>Pack image et vidéo</strong>
+        </div>
+      </aside>
+
+      <section class="composer" id="composer" aria-labelledby="composerTitle">
+        <div class="composer-heading">
+          <div>
+            <p class="context-line" id="mediaContext">Génération d’image</p>
+            <h1 id="composerTitle">Créer</h1>
+          </div>
+          <span class="draft-origin" id="draftOrigin">Saisie locale</span>
+        </div>
+
+        <nav class="video-mode-switch hidden" id="videoModeSwitch" aria-label="Mode vidéo">
+          <button class="active" type="button" data-video-mode="generation">Génération</button>
+          <button type="button" data-video-mode="motion-transfer">Motion Transfer</button>
+        </nav>
+
+        <form id="draftForm">
+          <label class="field prompt-field">
+            <span>Prompt</span>
+            <div class="prompt-editor">
+              <div class="prompt-highlights" id="promptHighlights" aria-hidden="true"></div>
+              <textarea id="promptInput" name="prompt" rows="9"
+                placeholder="Décris le sujet, le cadre, la lumière, la matière et le style…"
+                required></textarea>
+            </div>
+          </label>
+
+          <details class="negative-block">
+            <summary>Prompt négatif et exclusions</summary>
+            <label class="field">
+              <span class="sr-only">Prompt négatif</span>
+              <textarea id="negativePromptInput" name="negativePrompt" rows="3"
+                placeholder="Flicker, morphing, texte, dérive du décor…"></textarea>
+            </label>
+          </details>
+
+          <div class="control-strip">
+            <label class="compact-field model-family-field">
+              <span>Modèle</span>
+              <select id="modelFamilyInput" name="modelFamily" disabled>
+                <option>Aucun modèle vérifié</option>
+              </select>
+            </label>
+            <label class="compact-field model-mode-field">
+              <span>Mode</span>
+              <select id="modelInput" name="endpointId" disabled>
+                <option>Aucun mode disponible</option>
+              </select>
+            </label>
+            <label class="compact-field format-field">
+              <span>Format</span>
+              <select id="aspectRatioInput" name="aspectRatio">
+                <option value="16:9">16:9</option>
+                <option value="9:16">9:16</option>
+                <option value="1:1">1:1</option>
+                <option value="4:3">4:3</option>
+                <option value="3:2">3:2</option>
+              </select>
+            </label>
+            <label class="compact-field resolution-field">
+              <span>Résolution</span>
+              <select id="resolutionInput" name="resolution" disabled>
+                <option>Automatique</option>
+              </select>
+            </label>
+            <label class="compact-field duration-field hidden" id="durationField">
+              <span>Durée <output id="durationOutput">8 s</output></span>
+              <input id="durationInput" name="durationSeconds" type="range"
+                min="2" max="20" step="1" value="8">
+            </label>
+          </div>
+
+          <div class="model-options" id="modelOptions" aria-label="Options du modèle"></div>
+          <p class="model-reference-hint" id="modelReferenceHint"></p>
+          <div class="model-validation hidden" id="modelValidation" role="status">
+            <span id="modelValidationText"></span>
+            <button class="plain-button hidden" id="fixHeygen2kButton" type="button">Passer en 16:9</button>
+          </div>
+
+          <section class="reference-drop" id="referenceSlot" aria-label="Références"
+            aria-describedby="referenceEmpty">
+            <div class="reference-add">
+              <button class="reference-symbol" id="referenceAddButton" type="button"
+                aria-label="Ajouter un média de référence" aria-haspopup="menu"
+                aria-expanded="false">＋</button>
+              <div class="reference-add-menu hidden" id="referenceAddMenu" role="menu">
+                <button type="button" role="menuitem" data-reference-source="disk">
+                  Importer depuis le disque
+                </button>
+                <button type="button" role="menuitem" data-reference-source="assets">
+                  Choisir dans Assets
+                </button>
+                <button type="button" role="menuitem" data-reference-source="library">
+                  Bibliothèque en ligne
+                </button>
+              </div>
+              <input class="hidden" id="referenceUploadInput" type="file" multiple
+                accept="image/*,audio/mpeg,audio/wav,audio/x-wav,audio/mp4,audio/webm,video/mp4,video/webm,video/quicktime">
+            </div>
+            <div class="reference-content">
+              <div class="reference-heading">
+                <strong>Références</strong>
+                <div class="reference-heading-actions">
+                  <button class="reference-sets-trigger" id="referenceLibraryButton" type="button"
+                    aria-label="Ouvrir la bibliothèque de références en ligne">Bibliothèque</button>
+                  <span id="referenceCount">0 / 12</span>
+                  <button class="reference-sets-trigger" id="referenceSetsButton" type="button"
+                    aria-label="Sauvegarder ou charger un set de références">Sets</button>
+                </div>
+              </div>
+              <p id="referenceEmpty">Glisse ici des images ou des sons, ou choisis-les dans Assets.</p>
+              <div class="reference-list" id="referenceList"></div>
+            </div>
+          </section>
+
+          <section class="active-job-monitor hidden" id="activeJobMonitor" role="status" aria-live="polite">
+            <div class="active-job-heading">
+              <span class="active-job-pulse" id="activeJobPulse" aria-hidden="true"></span>
+              <div>
+                <small id="activeJobStatus">Rendu en cours</small>
+                <strong id="activeJobTitle"></strong>
+              </div>
+              <button class="plain-button" id="activeJobButton" type="button">Voir dans la file</button>
+            </div>
+            <div class="active-job-progress">
+              <div class="active-job-track" id="activeJobTrack" role="progressbar"
+                aria-valuemin="0" aria-valuemax="100">
+                <span id="activeJobBar"></span>
+              </div>
+              <strong class="active-job-percent" id="activeJobPercent"></strong>
+            </div>
+          </section>
+
+          <footer class="composer-actions">
+            <p id="formMessage" role="status">Le brouillon reste sur cette machine.</p>
+            <div>
+              <button class="secondary-button" id="saveDraftButton" type="submit">
+                Enregistrer le brouillon
+              </button>
+              <div class="generate-control">
+                <button class="generate-button" id="generateButton" type="button" disabled>
+                  <span>Générer</span>
+                  <strong id="generateCost">—</strong>
+                </button>
+                <button class="generate-help hidden" id="generateHelpButton" type="button"
+                  aria-label="Expliquer pourquoi la génération est indisponible">?</button>
+              </div>
+            </div>
+          </footer>
+
+          <section class="krea-lora-mixer hidden" id="kreaLoraMixer" aria-label="Mixeur de LoRA">
+            <header>
+              <div>
+                <strong>Mixeur de LoRA</strong>
+                <span id="kreaLoraCount">0 sélectionné</span>
+              </div>
+              <button class="secondary-button" id="importKreaLorasButton" type="button" title="Resynchroniser la bibliothèque et les miniatures depuis Krea">Reload LoRAs</button>
+            </header>
+            <p class="krea-lora-note" id="kreaLoraMessage">Krea2 est toujours exclu. Seuls les LoRA de même moteur peuvent être mélangés.</p>
+            <div class="krea-lora-selected" id="kreaLoraSelected"></div>
+            <div class="krea-lora-presets">
+              <input id="kreaLoraPresetName" type="text" maxlength="60" placeholder="Nom du preset de mix…">
+              <button class="secondary-button" id="saveKreaLoraPresetButton" type="button">Sauver</button>
+              <select id="kreaLoraPresetSelect" aria-label="Presets de mix LoRA"><option value="">Presets…</option></select>
+              <button class="secondary-button" id="loadKreaLoraPresetButton" type="button">Charger</button>
+              <button class="plain-button" id="deleteKreaLoraPresetButton" type="button">Supprimer</button>
+            </div>
+            <div class="krea-lora-filters">
+              <label><span>Source</span><select id="kreaLoraSourceFilter"><option value="all">Tous</option><option value="krea">Krea</option><option value="local">LoRA Lab / poids</option></select></label>
+              <label><input id="kreaLoraCompatibilityFilter" type="checkbox" checked> Compatibles uniquement</label>
+              <label><input id="kreaLoraFavoritesFilter" type="checkbox"> ★ Favoris uniquement</label>
+            </div>
+            <label class="krea-lora-search">
+              <span>Bibliothèque Krea + LoRA Lab</span>
+              <input id="kreaLoraSearch" type="search" placeholder="Rechercher un LoRA…">
+            </label>
+            <div class="krea-lora-library" id="kreaLoraLibrary"></div>
+          </section>
+        </form>
+      </section>
+
+      <section class="director-view hidden" id="directorView" aria-labelledby="directorTitle">
+        <header class="director-heading">
+          <div>
+            <p>Régie vidéo continue · WebRTC</p>
+            <h1 id="directorTitle">H3 Max Director</h1>
+          </div>
+          <span class="director-alpha">Alpha fal</span>
+        </header>
+
+        <div class="director-layout">
+          <section class="director-stage" aria-label="Flux Director">
+            <div class="director-screen">
+              <video id="directorVideo" autoplay playsinline controls></video>
+              <div class="director-screen-empty" id="directorScreenEmpty">
+                <span>LIVE</span>
+                <strong>Le flux apparaîtra ici</strong>
+                <small>La session ne démarre qu’après confirmation.</small>
+              </div>
+            </div>
+            <div class="director-telemetry">
+              <span class="director-state" id="directorState" data-state="idle">Prêt</span>
+              <time id="directorElapsed">00:00</time>
+              <strong id="directorRunningCost">0,00 $US</strong>
+            </div>
+            <p class="director-message" id="directorMessage" role="status">
+              Chaque session est enregistrée localement en WebM puis ajoutée à Assets › Ressources.
+            </p>
+            <div class="director-log" id="directorLog" aria-live="polite"></div>
+          </section>
+
+          <form class="director-console" id="directorForm">
+            <label class="field">
+              <span>Univers et continuité</span>
+              <textarea id="directorPrompt" rows="7" maxlength="50000"
+                placeholder="Décris le monde, les personnages et ce qui doit rester cohérent pendant toute la session…"
+                required></textarea>
+            </label>
+
+            <div class="director-options">
+              <label class="compact-field">
+                <span>Format</span>
+                <select id="directorAspectRatio">
+                  <option value="16:9">16:9</option>
+                  <option value="9:16">9:16</option>
+                  <option value="1:1">1:1</option>
+                </select>
+              </label>
+              <label class="compact-field">
+                <span>Résolution</span>
+                <select id="directorResolution">
+                  <option value="480p">480P</option>
+                  <option value="768p" selected>768P</option>
+                  <option value="1080p">1080P · ×2</option>
+                </select>
+              </label>
+              <label class="compact-field">
+                <span>Bloc</span>
+                <select id="directorChunkDuration">
+                  <option value="5">5 s</option>
+                  <option value="10" selected>10 s</option>
+                  <option value="15">15 s</option>
+                </select>
+              </label>
+              <label class="compact-field">
+                <span>Mémoire</span>
+                <input id="directorMemory" type="number" min="1" max="50" value="12">
+              </label>
+              <label class="compact-field">
+                <span>Seed</span>
+                <input id="directorSeed" type="number" step="1" placeholder="Aléatoire">
+              </label>
+              <label class="compact-field">
+                <span>Arrêt auto</span>
+                <select id="directorLimit">
+                  <option value="60" selected>1 min</option>
+                  <option value="120">2 min</option>
+                  <option value="300">5 min</option>
+                  <option value="600">10 min</option>
+                  <option value="900">15 min</option>
+                </select>
+              </label>
+            </div>
+
+            <section class="director-references" id="directorReferenceDrop"
+              aria-labelledby="directorReferencesTitle">
+              <div class="director-reference-copy">
+                <strong id="directorReferencesTitle">Ouverture de la session</strong>
+                <small>Dépose jusqu’à deux images ici. Elles restent aussi dans le deck Vidéo.</small>
+                <div class="director-reference-actions">
+                  <button class="plain-button" id="directorUploadReferenceButton" type="button">
+                    Depuis le disque
+                  </button>
+                  <button class="plain-button" id="directorAssetReferenceButton" type="button">
+                    Depuis Assets
+                  </button>
+                </div>
+                <input class="hidden" id="directorReferenceUploadInput" type="file" multiple
+                  accept="image/*">
+              </div>
+              <div class="director-reference-list" id="directorReferenceList"></div>
+            </section>
+
+            <div class="director-price">
+              <span>Coût estimé à la limite</span>
+              <strong id="directorMaximumCost">Chargement du tarif…</strong>
+              <small id="directorPriceNote">Minimum fal : 1,20 $ par session.</small>
+            </div>
+
+            <div class="director-session-actions">
+              <button class="generate-button" id="directorStartButton" type="submit">
+                Démarrer la régie
+              </button>
+              <button class="danger-button" id="directorStopButton" type="button" disabled>
+                Arrêter et sauvegarder
+              </button>
+            </div>
+
+            <section class="director-sequencer" aria-labelledby="directorCueTitle">
+              <header>
+                <div>
+                  <strong id="directorCueTitle">Séquence préparée</strong>
+                  <small>Director envoie le bloc suivant dès que le précédent est appliqué.</small>
+                </div>
+                <label class="director-cue-toggle">
+                  <input id="directorCueAuto" type="checkbox" checked>
+                  <span>Envoi auto</span>
+                </label>
+              </header>
+              <div class="director-cue-list" id="directorCueList"></div>
+              <footer>
+                <button class="plain-button" id="directorAddCueButton" type="button">+ Bloc</button>
+                <button class="plain-button" id="directorClearCuesButton" type="button">Effacer</button>
+                <span id="directorCueStatus">0 bloc prêt</span>
+              </footer>
+            </section>
+
+            <section class="director-storyboard" aria-labelledby="directorStoryboardTitle">
+              <header>
+                <div>
+                  <strong id="directorStoryboardTitle">Script natif · images-clés</strong>
+                  <small>La première image ouvre la session ; les suivantes sont des images finales exactes à l’heure indiquée.</small>
+                </div>
+                <label class="director-cue-toggle">
+                  <input id="directorStoryboardEnabled" type="checkbox">
+                  <span>Utiliser</span>
+                </label>
+              </header>
+              <div class="director-storyboard-actions">
+                <button class="plain-button" id="directorStoryboardUploadButton" type="button">
+                  Importer une suite
+                </button>
+                <button class="plain-button" id="directorStoryboardAssetButton" type="button">
+                  Depuis Assets
+                </button>
+                <button class="plain-button" id="directorStoryboardClearButton" type="button">
+                  Effacer
+                </button>
+                <input class="hidden" id="directorStoryboardUploadInput" type="file" multiple accept="image/*">
+                <span id="directorStoryboardStatus">Aucune image</span>
+              </div>
+              <div class="director-storyboard-list" id="directorStoryboardList"></div>
+            </section>
+
+            <fieldset class="director-live-controls" id="directorLiveControls" disabled>
+              <legend>Direction en direct</legend>
+              <label class="field">
+                <span>Prochaine action</span>
+                <textarea id="directorLivePrompt" rows="4" maxlength="50000"
+                  placeholder="Ex. La caméra suit le personnage qui ouvre la porte orange…"></textarea>
+              </label>
+              <button class="secondary-button" id="directorSendPromptButton" type="button">
+                Envoyer au prochain bloc
+              </button>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+
+      <section class="asset-library hidden" id="assetLibrary" aria-labelledby="assetTitle">
+        <header class="asset-library-heading">
+          <div class="asset-title-block">
+            <p>Bibliothèque locale</p>
+            <h1 id="assetTitle">Assets</h1>
+            <div class="asset-categories" aria-label="Catégorie de bibliothèque">
+              <button class="asset-category active" type="button"
+                data-asset-category="generated">Generated</button>
+              <button class="asset-category" type="button"
+                data-asset-category="resources">Ressources</button>
+            </div>
+          </div>
+          <div class="asset-filters" aria-label="Filtrer les médias">
+            <button class="asset-filter active" type="button" data-asset-filter="all">Tous</button>
+            <button class="asset-filter" type="button" data-asset-filter="image">Images</button>
+            <button class="asset-filter" type="button" data-asset-filter="video">Vidéos</button>
+            <button class="asset-filter" type="button" data-asset-filter="music">Sons</button>
+          </div>
+        </header>
+        <p class="resource-import-message" id="resourceImportMessage" role="status"></p>
+        <div class="asset-library-body">
+          <aside class="collection-panel" aria-labelledby="collectionTitle">
+            <div class="collection-heading">
+              <h2 id="collectionTitle">Collections</h2>
+              <button class="add-collection-button" id="addCollectionButton" type="button"
+                aria-label="Créer une collection" title="Créer une collection">＋</button>
+            </div>
+            <div class="collection-list" id="collectionList"></div>
+          </aside>
+          <div class="asset-gallery" id="assetGallery"></div>
+        </div>
+      </section>
+
+      <section class="spending-view hidden" id="spendingView"
+        aria-labelledby="spendingTitle">
+        <header class="spending-heading">
+          <div>
+            <p>Suivi local</p>
+            <h1 id="spendingTitle">Dépenses</h1>
+          </div>
+          <div class="spending-modes" aria-label="Regrouper les dépenses">
+            <button type="button" data-spending-mode="day">Jour</button>
+            <button class="active" type="button" data-spending-mode="month">Mois</button>
+            <button type="button" data-spending-mode="year">Année</button>
+          </div>
+        </header>
+
+        <section class="provider-credits" aria-labelledby="providerCreditsTitle">
+          <div class="provider-credits-heading">
+            <div>
+              <span id="providerCreditsTitle">Crédit API disponible</span>
+              <small id="providerCreditsMessage">Actualisé à l’ouverture</small>
+            </div>
+            <button id="refreshProviderCreditsButton" type="button"
+              aria-label="Actualiser les crédits API" title="Actualiser">↻</button>
+          </div>
+          <div class="provider-credit-list" id="providerCreditList"></div>
+        </section>
+
+        <div class="spending-layout">
+          <aside class="spending-calendar" aria-label="Calendrier des dépenses">
+            <div class="calendar-heading">
+              <button id="spendingPrevious" type="button"
+                aria-label="Période précédente">‹</button>
+              <strong id="spendingPeriodLabel"></strong>
+              <button id="spendingNext" type="button"
+                aria-label="Période suivante">›</button>
+            </div>
+            <div class="calendar-weekdays" aria-hidden="true">
+              <span>Lun</span><span>Mar</span><span>Mer</span><span>Jeu</span>
+              <span>Ven</span><span>Sam</span><span>Dim</span>
+            </div>
+            <div class="calendar-grid" id="spendingCalendar"></div>
+            <p class="spending-note">Coûts estimés des générations terminées.
+              Les échecs et requêtes non confirmées ne sont pas comptés.</p>
+          </aside>
+
+          <div class="spending-ledger">
+            <header class="spending-summary">
+              <div>
+                <span id="spendingScopeLabel">Ce mois</span>
+                <strong id="spendingTotal">0,00 $US</strong>
+              </div>
+              <p id="spendingCount">0 génération</p>
+            </header>
+            <div class="spending-list" id="spendingList"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="api-view hidden" id="apiView" aria-labelledby="apiTitle">
+        <header class="api-heading">
+          <div>
+            <p>Connexions partagées</p>
+            <h1 id="apiTitle">Clés API</h1>
+          </div>
+          <span class="api-vault-badge">Coffre local chiffré</span>
+        </header>
+        <div class="api-intro">
+          <strong>Une seule configuration pour toute la suite.</strong>
+          <p>Ces clés alimentent BARZ Aggregator et Prompt Atlas 6. Elles restent sur cette machine et ne sont jamais affichées après enregistrement.</p>
+        </div>
+        <p class="api-message" id="apiMessage" role="status"></p>
+        <div class="api-grid" id="apiProviderGrid"></div>
+      </section>
+
+      <section class="lora-lab-view hidden" id="loraLabView" aria-labelledby="loraLabTitle">
+        <header class="lora-lab-heading">
+          <div><p>Entraînement localement piloté · fal</p><h1 id="loraLabTitle">LoRA Lab</h1></div>
+          <span class="api-vault-badge">Poids téléchargeables</span>
+        </header>
+        <p class="lora-lab-intro">Importe un dataset, choisis le modèle de base, puis récupère le poids <code>.safetensors</code> et sa configuration. Krea 2 n’est jamais utilisé.</p>
+        <section class="krea-lab-library" id="kreaLabLibrary" aria-labelledby="kreaLabLibraryTitle">
+          <header>
+            <div>
+              <p>Bibliothèque existante</p>
+              <h2 id="kreaLabLibraryTitle">Mes LoRA Krea</h2>
+            </div>
+            <div class="krea-lab-library-actions">
+              <span id="kreaLabLibraryCount">0 LoRA récupéré</span>
+              <button class="secondary-button" id="importKreaLorasLabButton" type="button" title="Resynchroniser la bibliothèque et les miniatures depuis Krea">Reload LoRAs</button>
+              <button class="plain-button" id="openKreaGeneratorButton" type="button">Utiliser dans Images</button>
+            </div>
+          </header>
+          <p class="krea-lab-library-note">Cette action importe ta bibliothèque Krea dans BARZ pour utiliser et mixer les LoRA Flux/Krea 1. Krea 2 est exclu. L’API Krea ne fournit pas ici les fichiers <code>.safetensors</code> : les poids restent hébergés chez Krea.</p>
+          <p class="provider-message" id="kreaLabLibraryMessage" role="status"></p>
+          <label class="krea-lab-library-search"><span>Rechercher</span><input id="kreaLabLibrarySearch" type="search" placeholder="Nom ou modèle du LoRA…"></label>
+          <div class="krea-lab-library-grid" id="kreaLabLibraryGrid"></div>
+        </section>
+        <div class="lora-lab-layout">
+          <form class="lora-lab-form" id="loraLabForm">
+            <div class="lora-field-grid">
+              <label class="field"><span>Nom du LoRA</span><input id="loraName" maxlength="80" value="Mon LoRA" required></label>
+              <label class="field"><span>Modèle à entraîner</span><select id="loraTrainer"></select></label>
+              <label class="field"><span>Mot déclencheur</span><input id="loraTrigger" maxlength="80" value="ohwx"></label>
+              <label class="field"><span>Type</span><select id="loraMode"><option value="subject">Sujet / personnage</option><option value="style">Style</option><option value="content">Contenu</option><option value="balanced">Équilibré</option></select></label>
+              <label class="field"><span>Étapes</span><input id="loraSteps" type="number" min="100" max="10000" step="50" value="1000"></label>
+              <label class="field"><span>Learning rate</span><input id="loraLearningRate" type="number" min="0.000001" max="0.1" step="0.000001" value="0.00115"></label>
+            </div>
+            <label class="field"><span>Légende par défaut</span><input id="loraCaption" maxlength="500" placeholder="photo of ohwx…"></label>
+            <div class="lora-dataset" id="loraDatasetDrop">
+              <input class="hidden" id="loraDatasetInput" type="file" multiple accept="image/jpeg,image/png,image/webp">
+              <div><strong>Dataset</strong><small id="loraDatasetCount">0 image · 10 minimum · 500 maximum</small></div>
+              <button class="secondary-button" id="loraDatasetButton" type="button">Ajouter des images</button>
+              <div class="lora-dataset-grid" id="loraDatasetGrid"></div>
+            </div>
+            <div class="lora-cost-box">
+              <div><span>Estimation fal</span><strong id="loraEstimatedCost">À calculer</strong><small id="loraPricingNote">Aucune dépense sans confirmation.</small></div>
+              <button class="secondary-button" id="loraQuoteButton" type="button">Calculer le coût</button>
+            </div>
+            <label class="lora-confirm"><input id="loraConfirm" type="checkbox"><span>Je confirme l’entraînement payant au tarif affiché.</span></label>
+            <p class="lora-message" id="loraMessage" role="status"></p>
+            <button class="generate-button" id="loraTrainButton" type="submit" disabled>Lancer l’entraînement</button>
+          </form>
+          <section class="lora-jobs">
+            <header>
+              <h2>Mes entraînements</h2>
+              <div class="lora-job-actions">
+                <label>
+                  <span>Modèle du poids</span>
+                  <select id="loraImportBaseModel" aria-label="Modèle de base du LoRA importé"></select>
+                </label>
+                <input class="hidden" id="localLoraInput" type="file" multiple accept=".safetensors,.json,application/octet-stream,application/json">
+                <button class="secondary-button" id="importLocalLoraButton" type="button">Importer un LoRA local</button>
+                <button class="plain-button" id="refreshLoraJobsButton" type="button">Actualiser</button>
+              </div>
+            </header>
+            <p class="lora-import-note">Sélectionne un ou plusieurs poids <code>.safetensors</code>. Tu peux joindre les fichiers <code>.json</code> du même nom pour récupérer automatiquement le mot déclencheur.</p>
+            <div id="loraJobList"></div>
+          </section>
+        </div>
+      </section>
+
+      <aside class="activity-panel" id="activityPanel">
+        <div class="activity-heading">
+          <div>
+            <p>Sur cette machine</p>
+            <h2>Générations</h2>
+          </div>
+          <span class="count" id="draftCount">0</span>
+        </div>
+        <div class="draft-list" id="draftList"></div>
+        <section class="queue-panel" aria-labelledby="queueTitle">
+          <div class="queue-heading">
+            <h3 id="queueTitle">File locale</h3>
+            <span class="count" id="jobCount">0</span>
+          </div>
+          <div class="job-list" id="jobList"></div>
+        </section>
+      </aside>
+    </main>
+
+    <aside class="selection-tray hidden" id="selectionTray" aria-label="Actions de sélection">
+      <div class="selection-count">
+        <strong id="selectionCount">0</strong>
+        <span>sélection</span>
+      </div>
+      <label>
+        <span>Format du ZIP</span>
+        <select id="archiveFormat">
+          <option value="jpg">JPG</option>
+          <option value="png">PNG</option>
+          <option value="webm">WEBM</option>
+          <option value="original">Original</option>
+        </select>
+      </label>
+      <button class="secondary-button" id="downloadSelectionButton" type="button">
+        Télécharger .zip
+      </button>
+      <label class="rename-assets-field">
+        <span>Renommer la sélection</span>
+        <input id="renameAssetsInput" maxlength="80" placeholder="ex. monsieur">
+      </label>
+      <button class="secondary-button" id="renameAssetsButton" type="button">Renommer</button>
+      <span class="selection-divider" aria-hidden="true"></span>
+      <label>
+        <span>Déplacer vers</span>
+        <select id="moveCollectionInput"></select>
+      </label>
+      <button class="secondary-button" id="moveSelectionButton" type="button">Déplacer</button>
+      <button class="reference-action-button" id="sendSelectionToReferencesButton" type="button"
+        aria-label="Envoyer la sélection vers les références"
+        title="Envoyer vers les références">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 12h11"></path><path d="m11 8 4 4-4 4"></path>
+          <path d="M16 5h4v14h-4"></path>
+        </svg>
+      </button>
+      <button class="delete-resources-button hidden" id="deleteSelectedResourcesButton"
+        type="button" aria-label="Supprimer les ressources sélectionnées"
+        title="Supprimer les ressources sélectionnées">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 7h16"></path><path d="M9 7V4h6v3"></path>
+          <path d="m7 7 1 13h8l1-13"></path><path d="M10 11v5M14 11v5"></path>
+        </svg>
+      </button>
+      <button class="icon-button clear-selection" id="clearSelectionButton" type="button"
+        aria-label="Annuler la sélection">×</button>
+      <p id="selectionMessage" role="status"></p>
+    </aside>
+
+    <dialog id="importDialog" class="dialog">
+      <form method="dialog" class="dialog-shell" id="importForm">
+        <div class="dialog-heading">
+          <div>
+            <p>Passerelle locale</p>
+            <h2>Importer depuis Prompt Atlas</h2>
+          </div>
+          <button class="icon-button" value="cancel" aria-label="Fermer">×</button>
+        </div>
+        <p class="dialog-copy">Colle un paquet JSON conforme au contrat 1.0. Le futur bouton
+          « Send prompt to Aggregator » fera cette opération automatiquement.</p>
+        <label class="field">
+          <span>Paquet JSON</span>
+          <textarea id="importPayload" rows="14" spellcheck="false"></textarea>
+        </label>
+        <p class="error-message" id="importMessage" role="alert"></p>
+        <div class="dialog-actions">
+          <button class="plain-button" value="cancel">Annuler</button>
+          <button class="secondary-button" id="importButton" type="button">Importer</button>
+        </div>
+      </form>
+    </dialog>
+
+    <dialog id="settingsDialog" class="dialog compact-dialog">
+      <form method="dialog" class="dialog-shell" id="settingsForm">
+        <div class="dialog-heading">
+          <div>
+            <p>Connexions</p>
+            <h2>Fournisseurs</h2>
+          </div>
+          <button class="icon-button" value="cancel" aria-label="Fermer">×</button>
+        </div>
+        <section class="provider-connection">
+          <div class="provider-row">
+            <div><strong>fal</strong><small id="falAccount">Premier connecteur</small></div>
+            <span class="provider-status" id="falStatus">Non configuré</span>
+          </div>
+          <label class="field secret-field">
+            <span>Clé API fal · générations</span>
+            <div class="inline-control">
+              <input id="falApiKey" type="password" autocomplete="off"
+                placeholder="Colle la clé ici, uniquement sur ta machine">
+              <button class="secondary-button" id="connectFalButton" type="button">
+                Vérifier et enregistrer
+              </button>
+            </div>
+          </label>
+          <p class="provider-message" id="falMessage" role="status"></p>
+          <label class="field secret-field">
+            <span>Clé Admin fal · solde uniquement</span>
+            <div class="inline-control">
+              <input id="falAdminApiKey" type="password" autocomplete="off"
+                placeholder="Colle la clé Admin ici, uniquement sur ta machine">
+              <button class="secondary-button" id="connectFalAdminButton" type="button">
+                Vérifier le solde
+              </button>
+            </div>
+          </label>
+          <p class="provider-message" id="falAdminMessage" role="status"></p>
+        </section>
+
+        <section class="provider-connection">
+          <div class="provider-row">
+            <div><strong>HeyGen</strong><small id="heygenAccount">HeyGen Video 1</small></div>
+            <span class="provider-status" id="heygenStatus">Non configuré</span>
+          </div>
+          <label class="field secret-field">
+            <span>Clé API HeyGen</span>
+            <div class="inline-control">
+              <input id="heygenApiKey" type="password" autocomplete="off"
+                placeholder="Colle la clé ici, uniquement sur ta machine">
+              <button class="secondary-button" id="connectHeygenButton" type="button">
+                Vérifier et enregistrer
+              </button>
+            </div>
+          </label>
+          <p class="provider-message" id="heygenMessage" role="status"></p>
+        </section>
+
+        <section class="model-verification" id="modelVerification">
+          <h3>Ajouter un modèle fal</h3>
+          <p class="dialog-copy">Entre son identifiant exact. L’application vérifie son existence,
+            son schéma et son tarif sans lancer de génération.</p>
+          <label class="field">
+            <span>Identifiant de l’endpoint</span>
+            <div class="inline-control">
+              <input id="falEndpointId" type="text" autocomplete="off"
+                placeholder="Ex. fal-ai/…">
+              <button class="secondary-button" id="verifyFalModelButton" type="button">
+                Vérifier
+              </button>
+            </div>
+          </label>
+          <p class="provider-message" id="modelMessage" role="status"></p>
+          <div class="verified-models" id="verifiedModels"></div>
+        </section>
+
+        <p class="security-note">Les clés sont vérifiées directement auprès de leur fournisseur, puis
+          chiffrées dans le dossier local <code>data</code>. La clé Admin sert uniquement à
+          consulter le solde. Elles ne sont jamais renvoyées à la page.</p>
+      </form>
+    </dialog>
+
+    <dialog id="confirmationDialog" class="dialog compact-dialog">
+      <form method="dialog" class="dialog-shell">
+        <div class="dialog-heading">
+          <div>
+            <p>Dernière barrière</p>
+            <h2>Confirmer la génération</h2>
+          </div>
+          <button class="icon-button" value="cancel" aria-label="Fermer">×</button>
+        </div>
+        <div class="confirmation-summary" id="confirmationSummary"></div>
+        <details class="payload-details">
+          <summary>Voir le paquet envoyé au fournisseur</summary>
+          <pre id="confirmationPayload"></pre>
+        </details>
+        <p class="spending-warning">Le tarif sera revérifié avant l’envoi.
+          Si son montant a changé, la génération sera bloquée et une nouvelle confirmation
+          sera demandée.</p>
+        <p class="provider-message" id="confirmationMessage" role="alert"></p>
+        <div class="dialog-actions">
+          <button class="plain-button" value="cancel">Annuler</button>
+          <button class="generate-button compact-generate" id="submitJobButton" type="button">
+            Confirmer et générer
+          </button>
+        </div>
+      </form>
+    </dialog>
+
+    <dialog id="generationBlockersDialog" class="dialog compact-dialog">
+      <form method="dialog" class="dialog-shell">
+        <div class="dialog-heading">
+          <div>
+            <p>Génération indisponible</p>
+            <h2>Ce qu’il faut corriger</h2>
+          </div>
+          <button class="icon-button" value="cancel" aria-label="Fermer">×</button>
+        </div>
+        <div class="generation-blocker-list" id="generationBlockerList"></div>
+        <div class="dialog-actions">
+          <button class="plain-button" value="cancel">Fermer</button>
+          <button class="secondary-button hidden" id="generationBlockerFixButton" type="button">
+            Passer en 16:9
+          </button>
+        </div>
+      </form>
+    </dialog>
+
+    <dialog id="directorConfirmationDialog" class="dialog compact-dialog">
+      <form method="dialog" class="dialog-shell">
+        <div class="dialog-heading">
+          <div>
+            <p>Session temps réel payante</p>
+            <h2>Démarrer H3 Max Director ?</h2>
+          </div>
+          <button class="icon-button" value="cancel" aria-label="Fermer">×</button>
+        </div>
+        <div class="confirmation-summary" id="directorConfirmationSummary"></div>
+        <p class="spending-warning">fal facture au minimum 1,20 $ dès l’ouverture. La session
+          s’arrêtera automatiquement à la limite choisie, même si tu ne reviens pas sur cet écran.</p>
+        <p class="provider-message" id="directorConfirmationMessage" role="alert"></p>
+        <div class="dialog-actions">
+          <button class="plain-button" value="cancel">Annuler</button>
+          <button class="generate-button compact-generate" id="directorConfirmStartButton"
+            type="button">Confirmer et démarrer</button>
+        </div>
+      </form>
+    </dialog>
+
+    <dialog id="collectionDialog" class="dialog compact-dialog">
+      <form method="dialog" class="dialog-shell" id="collectionForm">
+        <div class="dialog-heading">
+          <div>
+            <p id="collectionDialogContext">Bibliothèque</p>
+            <h2 id="collectionDialogTitle">Créer une collection</h2>
+          </div>
+          <button class="icon-button" value="cancel" aria-label="Fermer">×</button>
+        </div>
+        <label class="field collection-name-field">
+          <span>Nom</span>
+          <input id="collectionNameInput" maxlength="60" autocomplete="off"
+            placeholder="Nom de la collection">
+        </label>
+        <p class="provider-message" id="collectionDialogMessage" role="alert"></p>
+        <div class="dialog-actions">
+          <button class="plain-button" value="cancel">Annuler</button>
+          <button class="secondary-button" id="saveCollectionButton" type="button">
+            Créer
+          </button>
+        </div>
+      </form>
+    </dialog>
+
+    <dialog id="referenceSetDialog" class="dialog compact-dialog">
+      <form method="dialog" class="dialog-shell" id="referenceSetForm">
+        <div class="dialog-heading">
+          <div>
+            <p>Références réutilisables</p>
+            <h2>Sauver ou charger un set</h2>
+          </div>
+          <button class="icon-button" value="cancel" aria-label="Fermer">×</button>
+        </div>
+        <p class="dialog-copy">Sauvegarde les références du lanceur actuel, puis recharge-les
+          dans Image ou Vidéo quand tu en as besoin.</p>
+        <label class="field">
+          <span>Nom du nouveau set</span>
+          <div class="inline-control">
+            <input id="referenceSetNameInput" maxlength="60" autocomplete="off"
+              placeholder="Ex. Personnage principal">
+            <button class="secondary-button" id="saveReferenceSetButton" type="button">
+              Sauvegarder
+            </button>
+          </div>
+        </label>
+        <p class="provider-message" id="referenceSetMessage" role="status"></p>
+        <div class="reference-set-list" id="referenceSetList"></div>
+      </form>
+    </dialog>
+
+    <div class="collection-context-menu hidden" id="collectionContextMenu" role="menu"
+      aria-label="Actions sur la collection">
+      <button type="button" role="menuitem" data-collection-action="rename">Renommer</button>
+      <button class="danger" type="button" role="menuitem"
+        data-collection-action="delete">Supprimer</button>
+    </div>
+
+    <div class="collection-context-menu resource-context-menu hidden" id="resourceContextMenu"
+      role="menu" aria-label="Actions sur la ressource">
+      <button class="danger" type="button" role="menuitem"
+        id="deleteResourceContextButton">Supprimer</button>
+    </div>
+
+    <div class="collection-context-menu reference-context-menu hidden" id="referenceContextMenu"
+      role="menu" aria-label="Remplacer la référence">
+      <button type="button" role="menuitem" data-reference-replace="disk">
+        Remplacer depuis le disque
+      </button>
+      <button type="button" role="menuitem" data-reference-replace="assets">
+        Remplacer depuis Assets
+      </button>
+      <button type="button" role="menuitem" id="revealReferenceButton">
+        Ouvrir l’emplacement du fichier
+      </button>
+    </div>
+    <input class="hidden" id="referenceReplaceUploadInput" type="file"
+      accept="image/*,audio/mpeg,audio/wav,audio/x-wav,audio/mp4,audio/webm,video/mp4,video/webm,video/quicktime">
+
+    <dialog id="deleteCollectionDialog" class="dialog compact-dialog">
+      <form method="dialog" class="dialog-shell">
+        <div class="dialog-heading">
+          <div>
+            <p>Action définitive</p>
+            <h2>Supprimer la collection ?</h2>
+          </div>
+          <button class="icon-button" value="cancel" aria-label="Fermer">×</button>
+        </div>
+        <p class="dialog-copy">La collection <strong id="deleteCollectionName"></strong> sera
+          supprimée. Ses médias ne seront pas effacés : ils retourneront dans
+          « Sans collection ».</p>
+        <p class="provider-message" id="deleteCollectionMessage" role="alert"></p>
+        <div class="dialog-actions">
+          <button class="plain-button" value="cancel">Annuler</button>
+          <button class="danger-button" id="confirmDeleteCollectionButton" type="button">
+            Supprimer la collection
+          </button>
+        </div>
+      </form>
+    </dialog>
+
+    <dialog id="deleteResourcesDialog" class="dialog compact-dialog">
+      <form method="dialog" class="dialog-shell">
+        <div class="dialog-heading">
+          <div>
+            <p>Suppression définitive</p>
+            <h2 id="deleteResourcesTitle">Supprimer la ressource ?</h2>
+          </div>
+          <button class="icon-button" value="cancel" aria-label="Fermer">×</button>
+        </div>
+        <p class="dialog-copy" id="deleteResourcesCopy"></p>
+        <ul class="delete-resource-list" id="deleteResourcesList"></ul>
+        <p class="provider-message" id="deleteResourcesMessage" role="alert"></p>
+        <div class="dialog-actions">
+          <button class="plain-button" value="cancel">Annuler</button>
+          <button class="danger-button" id="confirmDeleteResourcesButton" type="button">
+            Supprimer
+          </button>
+        </div>
+      </form>
+    </dialog>
+
+    <dialog id="jobDetailDialog" class="dialog generation-dialog">
+      <form method="dialog" class="dialog-shell">
+        <div class="dialog-heading">
+          <div>
+            <p>Génération locale</p>
+            <h2 id="jobDetailTitle">Détail du résultat</h2>
+          </div>
+          <button class="icon-button" value="cancel" aria-label="Fermer">×</button>
+        </div>
+        <div class="generation-detail-media" id="jobDetailMedia"></div>
+        <div class="generation-detail-meta" id="jobDetailMeta"></div>
+        <section class="generation-detail-prompt">
+          <div>
+            <h3>Prompt</h3>
+            <button class="copy-prompt-button" id="copyJobPromptButton" type="button"
+              aria-label="Copier le prompt" title="Copier le prompt">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="8" y="8" width="11" height="11" rx="1.5"></rect>
+                <path d="M16 8V5.5A1.5 1.5 0 0 0 14.5 4h-10A1.5 1.5 0 0 0 3 5.5v10A1.5 1.5 0 0 0 4.5 17H8"></path>
+              </svg>
+            </button>
+          </div>
+          <p id="jobDetailPrompt"></p>
+          <p class="provider-message" id="jobDetailMessage" role="status"></p>
+        </section>
+        <div class="dialog-actions">
+          <button class="plain-button" value="cancel">Fermer</button>
+          <a class="secondary-button action-link" id="downloadJobResultLink" download>
+            Télécharger
+          </a>
+          <button class="generate-button compact-generate" id="recreateJobButton"
+            type="button">Recreate</button>
+          <button class="secondary-button action-link" id="openJobResultLink"
+            type="button">Plein écran</button>
+        </div>
+      </form>
+    </dialog>
+
+    <dialog id="imagePreviewDialog" class="image-preview-dialog" aria-label="Aperçu de l’image">
+      <form method="dialog" class="image-preview-shell" id="imagePreviewShell">
+        <button class="image-preview-close" value="cancel" aria-label="Fermer l’aperçu">×</button>
+        <img id="imagePreview" alt="Image">
+      </form>
+    </dialog>
+  </body>
+</html>

@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Module de montage — note pour Codex</title>
+<style>
+:root{--fond:#16161a;--carte:#1f1f25;--trait:#2e2e36;--encre:#e9e7e2;--sourd:#9a978f;
+ --or:#e8b84a;--orange:#e0623a;--vert:#6fb36a;--bleu:#6aa3d8;--rouge:#d9655b;--code:#c9d6e8}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fond);color:var(--encre);
+ font:15px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:980px;margin:0 auto;padding:36px 22px 80px}
+h1{font-size:26px;margin:0 0 4px;letter-spacing:.01em}
+.sous{color:var(--sourd);margin:0 0 26px}
+h2{font-size:19px;margin:44px 0 10px;padding-top:14px;border-top:1px solid var(--trait);
+ color:var(--or)}
+h3{font-size:15.5px;margin:26px 0 6px}
+p{margin:8px 0}
+code,kbd{font:13px/1.4 ui-monospace,"Cascadia Code",Consolas,monospace;color:var(--code);
+ background:#262630;padding:1px 5px;border-radius:4px}
+kbd{border:1px solid var(--trait);color:var(--encre)}
+pre{background:#101014;border:1px solid var(--trait);border-radius:8px;padding:12px 14px;
+ overflow-x:auto;font:12.5px/1.5 ui-monospace,Consolas,monospace;color:var(--code)}
+pre code{background:none;padding:0}
+table{width:100%;border-collapse:collapse;margin:10px 0 14px;font-size:13.5px}
+th,td{border:1px solid var(--trait);padding:6px 9px;text-align:left;vertical-align:top}
+th{background:#24242b;color:var(--or);font-weight:600}
+td code{white-space:nowrap}
+.encart{background:var(--carte);border:1px solid var(--trait);border-left:4px solid var(--or);
+ border-radius:8px;padding:12px 16px;margin:14px 0}
+.encart.alerte{border-left-color:var(--rouge)}
+.encart.ok{border-left-color:var(--vert)}
+.encart b:first-child{color:var(--or)}
+.encart.alerte b:first-child{color:var(--rouge)}
+nav.toc{background:var(--carte);border:1px solid var(--trait);border-radius:8px;
+ padding:12px 18px;margin:18px 0 8px;columns:2;column-gap:28px;font-size:14px}
+nav.toc a{color:var(--encre);text-decoration:none;display:block;padding:2px 0;
+ break-inside:avoid}
+nav.toc a:hover{color:var(--or)}
+ul,ol{margin:6px 0 10px;padding-left:22px}
+li{margin:3px 0}
+.petit{font-size:13px;color:var(--sourd)}
+.tag{display:inline-block;font-size:11px;padding:1px 7px;border-radius:9px;
+ border:1px solid var(--trait);color:var(--sourd);margin-left:6px;vertical-align:2px}
+@media (max-width:700px){nav.toc{columns:1}td code{white-space:normal}}
+</style>
+</head>
+<body>
+<main>
+
+<h1>Le module de montage de Library Editor</h1>
+<p class="sous">Note pour Codex — à lire avant d'intégrer ce module dans BARZ Suite. Rédigée par Claude le
+1<sup>er</sup> octobre 2026, sur la version <b>1.3.10</b>. Elle couvre <b>le logiciel de montage et son
+interface</b> ; l'installeur, la mise à jour par GitHub et la mise en ligne (PHP) sont volontairement laissés
+de côté.</p>
+
+<div class="encart">
+<b>En bref.</b> Une page unique, <code>app.html</code> (9 525 lignes, JavaScript sans framework ni étape de
+build, 8 blocs <code>&lt;script&gt;</code>), et un serveur local, <code>serveur.py</code> (4 003 lignes, Python
+standard, aucune dépendance en dehors de <b>ffmpeg/ffprobe</b> ; Pillow est facultatif). La page fait tout le
+montage et l'aperçu dans le navigateur (canvas + éléments <code>&lt;video&gt;</code>) ; le serveur sert les médias,
+garde les séquences et fabrique le rendu final avec ffmpeg. <b>Règle centrale : ce que montre le moniteur est
+ce que sort le rendu</b> — chaque effet est écrit deux fois (canvas et ffmpeg) avec les mêmes calculs, et l'écart
+est mesuré.
+</div>
+
+<p><b>Où est le code.</b> Source de référence : <code>K:\Claude-projets\Library-Editor\template\_app\app.html</code>
+et <code>serveur.py</code>. Dépôt public : <a href="https://github.com/grosdada/Library-Editor"
+style="color:var(--bleu)">github.com/grosdada/Library-Editor</a>, dossier <code>template/_app/</code>. Essais
+dans <code>tests/</code>. Chaque bibliothèque installée en contient une copie dans son dossier <code>_app/</code>
+— ne pas les modifier, partir du dépôt.</p>
+
+<nav class="toc">
+<a href="#perimetre">1 · Ce qu'il faut prendre, ce qu'il faut laisser</a>
+<a href="#plan">2 · Plan du fichier app.html</a>
+<a href="#modele">3 · Le modèle de données</a>
+<a href="#moniteur">4 · Le moniteur</a>
+<a href="#timeline">5 · La timeline et l'édition</a>
+<a href="#reglages">6 · Le panneau de réglages</a>
+<a href="#effets">7 · Effets, masque, image figée, calques</a>
+<a href="#rendu">8 · Le rendu ffmpeg</a>
+<a href="#contrat">9 · Le contrat serveur</a>
+<a href="#formats">10 · Les formats JSON</a>
+<a href="#integrer">11 · Intégrer dans BARZ Suite</a>
+<a href="#pieges">12 · Pièges déjà payés</a>
+<a href="#limites">13 · Limites connues</a>
+<a href="#essais">14 · Essais et banc de parité</a>
+</nav>
+
+<h2 id="perimetre">1 · Ce qu'il faut prendre, ce qu'il faut laisser</h2>
+<table>
+<tr><th>À prendre (le montage)</th><th>À laisser (la bibliothèque et l'outillage)</th></tr>
+<tr><td>
+<ul>
+<li>Timeline multipiste (image V1, V2… ; son A1… ; musique M1…), outils, rognage, coupe, liens image/son,
+fondus et fondus enchaînés automatiques, aimant, lasso, marqueurs, points I/O, zoom.</li>
+<li>Moniteur composité (canvas), lecture synchronisée, cache de lecture.</li>
+<li>Panneau de réglages : transformation, opacité, vitesse signée, volume, images-clés, secousse, rack
+d'effets, copier/coller de réglages, saisie au clavier.</li>
+<li>Calques : couleur, texte, calque d'effet ; masque ; image figée ; capture du moniteur.</li>
+<li>Rendu ffmpeg (MP4, image seule, son seul) et exports JSON / XML Premiere-Resolve.</li>
+<li>Le « deck » (grille de rushes à glisser sur la timeline) dans sa forme minimale.</li>
+</ul></td><td>
+<ul>
+<li>Installeur, mise à jour depuis GitHub (<code>/api/maj</code>, <code>_maj.py</code>), version en ligne
+(<code>api.php</code>), comptes et porte d'entrée (<code>/api/comptes</code>, <code>/api/moi</code>).</li>
+<li>Gestion de projets sur disque : ouvrir/créer, scan, renommer, déplacer, corbeille, « Undo on disk »
+(<code>/api/annuler</code>), purge des manquants, import entre projets.</li>
+<li>Rangement virtuel (« My folders »), couleurs de filtre, favoris : utiles mais propres à la
+bibliothèque — à reprendre seulement si BARZ a besoin d'un classeur de médias.</li>
+<li><code>outils/monteur.py</code> (outil qui permet à Claude d'écrire des séquences) : à garder en tête comme
+preuve que le format de séquence s'écrit facilement à la main.</li>
+</ul></td></tr>
+</table>
+
+<h2 id="plan">2 · Plan du fichier app.html</h2>
+<p>Les blocs <code>&lt;script&gt;</code> sont des scripts classiques qui partagent la portée globale. Les
+fonctions d'un bloc ne sont appelées par les autres qu'à l'exécution ; l'ordre compte seulement pour le code
+exécuté au chargement (voir piège 6).</p>
+<table>
+<tr><th>Bloc</th><th>Lignes</th><th>Contenu</th></tr>
+<tr><td>1</td><td>859</td><td>État général (<code>pref</code> sur localStorage, <code>api()</code>, filtres), grille des rushes
+(<code>carte()</code>, <code>rendreGrille()</code>)</td></tr>
+<tr><td>2</td><td>1479</td><td>Interactions de la grille (aperçu, loupe ×6, menus), palette de couleurs, projets, colonne de gauche</td></tr>
+<tr><td>3</td><td>3268</td><td><b>Modèle de montage</b> (<code>PISTES</code>, <code>CLIPS</code>, <code>dur</code>, <code>fin</code>,
+<code>srcA</code>, fondus) et <b>rendu de la timeline</b> (<code>rendreTimeline</code>, <code>blocClip</code>, en-têtes, règle, minimap)</td></tr>
+<tr><td>4</td><td>4389</td><td>Historique (<code>memoriser</code>, Ctrl+Z), ajout et dépôt, aimant, déplacement, rognage, coupe</td></tr>
+<tr><td>5</td><td>5120</td><td>Masque (tracé, aperçu, image envoyée au rendu)</td></tr>
+<tr><td>6</td><td>5452</td><td>Menus contextuels, <b>panneau de réglages</b>, <b>lecture</b> (<code>dessiner</code>,
+<code>resynchroniser</code>), cache, <b>rack d'effets</b></td></tr>
+<tr><td>7</td><td>7792</td><td>Points I/O, clavier, saisie des valeurs, sauvegarde/ouverture des séquences</td></tr>
+<tr><td>8</td><td>9007</td><td>Exports (JSON, XML, commandes ffmpeg), lancement du rendu, démarrage</td></tr>
+</table>
+<p class="petit">Le code et ses commentaires sont en français, les libellés de l'interface en anglais. Les
+commentaires expliquent presque toujours <i>pourquoi</i> — beaucoup racontent un bug réel ; les lire avant de
+« simplifier ».</p>
+
+<h2 id="modele">3 · Le modèle de données</h2>
+<h3>Pistes — <code>PISTES</code></h3>
+<p><code>{id: 'V1', type: 'v'|'a'|'m', mute, solo, vol (0..2), onde}</code>. Les pistes image s'empilent
+<b>V1 en bas</b> ; <code>m</code> = musique, tenue à part des bruitages (<code>a</code>). <code>pistesOrdonnees()</code>
+donne l'ordre d'affichage.</p>
+
+<h3>Blocs — <code>CLIPS</code></h3>
+<table>
+<tr><th>Champ</th><th>Sens</th></tr>
+<tr><td><code>uid</code>, <code>piste</code></td><td>identifiant du bloc (entier, propre à la séquence), piste</td></tr>
+<tr><td><code>film</code></td><td>identifiant de la fiche du rush (12 hexa, stable). Au rechargement d'une séquence on le retrouve aussi par <code>pj</code> + <code>fichier</code></td></tr>
+<tr><td><code>t0</code></td><td>position sur la timeline (s)</td></tr>
+<tr><td><code>e</code>, <code>o</code></td><td>entrée et sortie dans la source (s). <b>Durée = (o − e) / vitesse</b> → <code>dur(c)</code>, <code>fin(c)</code></td></tr>
+<tr><td><code>vitesse</code>, <code>rev</code></td><td>vitesse toujours positive, sens porté par <code>rev</code> (le curseur affiche une vitesse signée −4…4, zone morte ±0,25)</td></tr>
+<tr><td><code>ech</code>, <code>dx</code>, <code>dy</code>, <code>mode</code></td><td>échelle, position (dx × largeur/200 px), cadrage <code>contain</code>|<code>cover</code></td></tr>
+<tr><td><code>opac</code>, <code>gain</code></td><td>opacité 0..1, volume 0..2 (au-delà de 1, seul le rendu amplifie)</td></tr>
+<tr><td><code>fi</code>, <code>fo</code></td><td>fondus d'ouverture et de fermeture (s). Les fondus enchaînés naissent du chevauchement de deux blocs (<code>recalculerFondus()</code>)</td></tr>
+<tr><td><code>lien</code></td><td><code>'L7'</code> : l'image et son son liés bougent ensemble (<code>groupeLie()</code>)</td></tr>
+<tr><td><code>couleur</code></td><td>couleur du bloc sur la timeline (0..5), sans effet sur l'image</td></tr>
+<tr><td><code>anim</code></td><td>images-clés : <code>{ech|dx|dy|opac|gain: [{t, v}]}</code>, <code>t</code> en s depuis le début du bloc (<code>ANIMABLES</code>, <code>valAnim()</code>)</td></tr>
+<tr><td><code>shk</code>, <code>shks</code></td><td>secousse : couches <code>{f (Hz), a (%), r (°), i, o, on}</code></td></tr>
+<tr><td><code>fx</code></td><td>rack d'effets : liste ordonnée <code>[{t, on, …réglages}]</code></td></tr>
+<tr><td><code>masque</code></td><td><code>{forme: 'libre'|'rect'|'ellipse', pts: [[x,y]…] en 0..1 du cadre, plume (% largeur), inv, on}</code></td></tr>
+<tr><td><code>gel</code></td><td>image figée : instant tenu, en s de source</td></tr>
+<tr><td><code>genre</code></td><td><code>''</code> rush · <code>'couleur'</code> (<code>fond</code>) · <code>'texte'</code> (<code>txt</code>, <code>police</code>, <code>taille</code> en % de la hauteur, <code>teinte</code>, <code>ombre</code>) · <code>'reglage'</code> (calque d'effet)</td></tr>
+<tr><td><code>_fIn</code>, <code>_xIn</code>…</td><td><b>tout champ qui commence par « _ » est calculé et jamais enregistré</b></td></tr>
+</table>
+<p>Temps de source d'un instant de timeline : <code>srcA(c, t)</code> (à l'envers : <code>o − (t − t0) × vitesse</code>).</p>
+
+<h3>Fiches de rushes (catalogue)</h3>
+<p><code>{id, nom, ext, dossier, rel, s (durée), w, h, fps, a (a du son), image, son_seul, absent, fav, coul,
+note, octets}</code> ; la page y ajoute <code>pj</code> (le projet). <code>PAR_ID[id]</code> les indexe.</p>
+
+<h3>Séquence — <code>PROJET</code></h3>
+<p><code>{nom, w, h, fps, pj}</code> + <code>tIn</code>/<code>tOut</code>, <code>MARQUEURS</code>, <code>PPS</code> (zoom en pixels par seconde).</p>
+
+<h2 id="moniteur">4 · Le moniteur</h2>
+<p><code>dessiner()</code> compose l'instant <code>tLect</code> sur un canvas, piste par piste de bas en haut, bloc
+par bloc. Pour chaque rush, dans cet ordre — le même qu'au rendu :</p>
+<ol>
+<li><b>Placement</b> : échelle de base (<code>contain</code>/<code>cover</code>) × <code>ech</code> × marge de secousse,
+position <code>dx</code>/<code>dy</code> + secousse, rotation autour du centre du cadre.</li>
+<li><b>Effets</b> sur une toile à part (<code>toileFx</code> → <code>appliquerFx</code>).</li>
+<li><b>Masque</b> (<code>appliquerMasque</code>, <code>destination-in</code>).</li>
+<li><b>Transparence</b> : <code>alpha(c, t)</code> (fondus et fondus enchaînés) × opacité, puis composition.</li>
+</ol>
+<p>Les calques couleur/texte passent par <code>dessinerSynth(c, cw, ch, g)</code> ; le calque d'effet
+(<code>reglageSur</code>) copie le moniteur déjà composé, le traite et le repose.</p>
+<h3>Les lecteurs</h3>
+<ul>
+<li><code>POOL</code> : un <code>&lt;video&gt;</code> par bloc, rangé par <code>uid</code>, qui porte le rush chargé dans
+<code>dataset.film</code> (voir piège 2). <code>viderPool()</code> au changement de séquence.</li>
+<li><code>resynchroniser()</code> pilote vitesse et position ; une dérive de plus de 0,28 s déclenche un saut.
+Les lecteurs des pistes image sont muets ; le son vient des blocs son (volume = gain × volume de piste × fondu,
+plafonné à 1 par le navigateur).</li>
+<li><b>Amorce</b> : les quatre blocs suivants sont posés sur leur entrée et lancés en sourdine juste avant la
+coupe, sinon le redémarrage d'un lecteur tombe pile sur la coupe.</li>
+<li>Un bloc à l'envers n'est pas lu (un <code>&lt;video&gt;</code> refuse une vitesse négative) : il avance image
+par image, muet. Un bloc figé reste en pause sur <code>gel</code>.</li>
+<li><code>GEL</code> : si un lecteur n'est pas prêt, on garde l'image précédente jusqu'à 250 ms plutôt que
+d'afficher un noir.</li>
+<li><b>Cache</b> (bouton ⚡) : chaque image de la plage I/O est rendue une fois en <code>ImageBitmap</code> ;
+<code>signeMontage()</code> l'invalide dès que le montage change.</li>
+</ul>
+
+<h2 id="timeline">5 · La timeline et l'édition</h2>
+<ul>
+<li><b>Outils</b> : <kbd>V</kbd> déplacer, <kbd>C</kbd> couper, <kbd>A</kbd> sélection de piste vers l'avant.
+<kbd>Maj</kbd> tenu : aimant (bords, coupes, tête de lecture) et lasso additif.</li>
+<li><b>Rognage</b> par les bords, borné par la source ; une image fixe, un calque ou un texte s'étirent
+librement. Les languettes jaunes en haut du bloc règlent les fondus.</li>
+<li><b>Clavier</b> : Espace lecture, <kbd>Suppr</kbd>, <kbd>Ctrl</kbd>+C / V / D / Z, flèches ← → image par image,
+↑ ↓ plage précédente/suivante, <kbd>I</kbd>/<kbd>O</kbd>, <kbd>L</kbd> boucle, <kbd>F</kbd> plein écran,
+<kbd>U</kbd> images ou secondes, <kbd>Ctrl</kbd>+molette zoom, <kbd>Alt</kbd>+molette hauteur des pistes,
+<kbd>Tab</kbd> tenu : le panneau de réglages en pop-up. Garde-fou : <code>saisieActive()</code> laisse les champs
+de saisie tranquilles.</li>
+<li><b>Clic droit</b> sur un bloc : lier/délier le son, dupliquer, renommer, « où sert ce rush », montrer dans le
+projet / sur le disque, image figée, cadrage, couleur du bloc, couleur de filtre du rush, vitesse, copier/coller,
+réinitialiser, supprimer.</li>
+</ul>
+<div class="encart alerte">
+<b>Règle d'or.</b> Toute modification du montage appelle <code>memoriser()</code> <i>avant</i> de toucher aux données :
+elle pousse un instantané dans l'historique (80 pas), lève <code>modifie</code> et vide le cache de lecture. La
+sauvegarde est continue : toutes les 4 s si <code>modifie</code>, et à chaque changement de séquence
+(<code>assurerSauvegarde()</code>). Un geste qui oublie <code>memoriser()</code> n'est ni annulable ni enregistré —
+c'est arrivé avec le bouton de mute des pistes (corrigé en 1.3.4).
+</div>
+
+<h2 id="reglages">6 · Le panneau de réglages</h2>
+<ul>
+<li><code>rendreReglages()</code> redessine le panneau à chaque sélection. Onglets <b>Transform</b> (échelle,
+position), <b>Effects</b> (opacité, vitesse, volume du bloc, rack), <b>Anim</b> (couches de secousse). Un bloc son
+n'a que volume et vitesse.</li>
+<li><b>Images-clés</b> : la flèche ▸ d'un réglage ouvre <code>panneauAnim()</code> ; quand le réglage est animé et
+la tête sur le bloc, le curseur déplace la clé de cet instant (<code>poserCle</code>).</li>
+<li><b>C / V</b> à côté de chaque curseur : copier un réglage (avec ses clés) et le poser sur toute la sélection.</li>
+<li><b>Double-clic sur un chiffre</b> : saisie au clavier. La valeur passe par le curseur lui-même
+(<code>poserValeurTapee</code> émet <code>input</code> puis <code>change</code>, avec le pas levé à <code>any</code>) :
+le code du curseur reste le seul à écrire dans le montage.</li>
+</ul>
+
+<h2 id="effets">7 · Effets, masque, image figée, calques</h2>
+<h3>Rack d'effets</h3>
+<p>Sept effets (<code>FX</code>, <code>FX_REGLAGES</code>) : flou (gaussien, directionnel, tilt-shift dans le même
+rack), couleur (exposition, contraste, saturation, température), N&amp;B / sépia / virage, vignette, grain,
+halation, aberration chromatique. Les tailles sont en % de la largeur du cadre. Préréglages enregistrés côté
+serveur (<code>/api/presets</code>, genre <code>fx</code>) plus « 16 mm » codé en dur (<code>FX_MAISON</code>).</p>
+<p>Correspondances <b>mesurées</b> entre canvas et ffmpeg (écart plancher 0,72/255) :</p>
+<table>
+<tr><th>Effet</th><th>Moniteur</th><th>Rendu</th></tr>
+<tr><td>Couleur, N&amp;B, virage</td><td>SVG <code>feColorMatrix</code>/<code>feComponentTransfer</code>, <code>color-interpolation-filters="sRGB"</code></td><td>les mêmes étapes en <code>lutrgb</code> / <code>colorchannelmixer</code>, bornées à [0,1]</td></tr>
+<tr><td>Flou gaussien</td><td><code>filter: blur(σ)</code></td><td><code>gblur=sigma=σ/0.93:steps=3</code> <b>en RVB</b> (<code>format=gbrp</code>)</td></tr>
+<tr><td>Flou directionnel</td><td>passes décalées</td><td><code>dblur</code>, rayon = σ/1,1</td></tr>
+<tr><td>Tilt-shift</td><td>masque en dégradé</td><td><code>geq</code> + <code>maskedmerge</code></td></tr>
+<tr><td>Vignette</td><td>cos⁴(angle × distance / demi-diagonale)</td><td><code>vignette</code> en rgb24</td></tr>
+<tr><td>Grain</td><td>bruit additif (réservoir <code>FX_BRUIT</code>)</td><td><code>noise=c0s=S</code> (écart-type 0,33 S)</td></tr>
+<tr><td>Halation</td><td>seuil → teinte → flou → écran</td><td><code>split</code> + <code>blend=screen</code></td></tr>
+<tr><td>Aberration</td><td>décalage R / B</td><td><code>rgbashift=rh=d:bh=-d:edge=smear</code></td></tr>
+</table>
+<h3>Masque</h3>
+<p>Un masque par bloc, dans le <b>cadre</b> (points 0..1 de l'image de sortie), tracé sur le moniteur au-dessus du
+canvas (calque SVG <code>#mqCalque</code>). Plume = écart-type du flou du bord. Il passe après les effets et avant
+l'opacité. Pour le rendu, la page trace le masque à la taille de sortie et l'envoie en PNG
+(<code>objetMontage(true)</code> → <code>masque_png</code>) : moniteur et rendu partagent la même image (écart mesuré
+0,98/255 sur un bord adouci).</p>
+<h3>Image figée</h3>
+<p><code>gel</code> : le bloc garde son rush, sa durée et ses réglages, le son lié continue. Au rendu, l'image vient
+d'une seconde lecture du même fichier (<code>-ss gel</code>, <code>trim=end_frame=1</code>,
+<code>tpad=stop_mode=clone</code>) : pas d'aller-retour en PNG, donc pas d'écart de couleur à la coupe.</p>
+<h3>Calques et capture</h3>
+<p>Calque de couleur, texte (polices de la bibliothèque via <code>/api/polices</code>), calque d'effet (son rack
+s'applique à tout ce qui est dessous pendant sa durée). Clic droit sur le moniteur : capture à la taille de la
+séquence (<code>imageMoniteur()</code> agrandit un instant la toile et redessine sans le cache), rangée par
+<code>/api/capture</code>.</p>
+
+<h2 id="rendu">8 · Le rendu ffmpeg</h2>
+<p><code>objetMontage(true)</code> → <code>POST /api/rendre</code> → <code>rendre()</code> dans un fil ; la page
+interroge <code>GET /api/rendu</code>.</p>
+<ol>
+<li><b>Piste de base</b> = la piste image <b>la plus basse</b> qui porte des plans.</li>
+<li>Chaque plan de la base devient un <b>segment normalisé</b> (<code>_segment</code> : découpe, vitesse,
+<code>reverse</code>, pose dans le cadre <code>_placement</code>, effets <code>_graphe_fx</code>, masque, opacité,
+fondus ; libx264 crf 18, AAC 48 kHz). Les trous deviennent du noir (<code>_noir</code>).</li>
+<li><code>_placement</code> pose le plan <b>exactement comme le moniteur</b> : réduit (contain/cover × échelle ×
+marge de secousse), posé par <code>overlay</code> sur un canevas noir (base) ou transparent (calque) à
+<code>(W−w)/2 + dx + secousse</code>, tourné autour du centre du cadre sur un canevas carré de la diagonale, puis
+recadré. La même fonction sert à la base et aux pistes du dessus.</li>
+<li><code>_assembler</code> : concaténation sur les coupes franches, <code>xfade</code> sur les chevauchements.</li>
+<li><code>_incruster</code> : <b>une seule passe</b> pour tout ce qui est au-dessus — calques, textes, calques
+d'effet, rushes des autres pistes (posés sur un canevas transparent plein cadre), chacun avec masque, alpha,
+fondus, puis <code>tpad</code> et <code>overlay</code>, de bas en haut.</li>
+<li><code>_mixer</code> : la musique et les sons non liés à la base, par <code>amix normalize=0
+duration=first</code> (sinon ajouter une piste baisserait tout le reste).</li>
+</ol>
+<p>Trois sorties : <code>mp4</code>, <code>video</code> (sans son), <code>audio</code> (.wav ou .m4a). Les chaînes de
+filtres sont du texte : elles se portent telles quelles dans un autre langage.</p>
+
+<h2 id="contrat">9 · Le contrat serveur</h2>
+<p>Ce que la page appelle pour <b>monter</b> (le reste concerne la bibliothèque). Toutes les réponses sont en
+JSON, les erreurs en <code>{erreur}</code> avec un code HTTP.</p>
+<table>
+<tr><th>Route</th><th>Rôle</th></tr>
+<tr><td><code>GET /api/projets</code></td><td>projets disponibles et <b>capacités annoncées</b> (<code>rangement</code>, <code>onde</code>, <code>reveler</code>, <code>ajout</code>, <code>captures</code>, <code>format</code>…). La page n'affiche une fonction que si le champ est présent : c'est le mécanisme à garder pour un serveur partiel.</td></tr>
+<tr><td><code>GET /api/catalogue?projet=</code></td><td>les fiches d'un projet</td></tr>
+<tr><td><code>GET /media/&lt;projet&gt;/&lt;rel&gt;</code></td><td>le fichier, <b>avec les requêtes Range</b> (sans elles, une vidéo ne peut pas sauter dans le temps)</td></tr>
+<tr><td><code>GET /posters/&lt;projet&gt;/&lt;id&gt;.jpg</code></td><td>vignettes</td></tr>
+<tr><td><code>GET /api/onde?projet=&amp;id=</code></td><td>forme d'onde : <code>{pas: 0.02, pics: [0..255]}</code></td></tr>
+<tr><td><code>GET /api/montages?projet=</code></td><td>liste des séquences <code>[{nom, projet, maj, octets}]</code></td></tr>
+<tr><td><code>GET|POST /api/montage</code></td><td>lire <code>{montage, nom, projet}</code> / écrire <code>{projet, nom, montage}</code> ; plus <code>/renommer</code>, <code>/effacer</code></td></tr>
+<tr><td><code>GET|POST /api/presets</code></td><td>préréglages par genre (<code>secousse</code>, <code>fx</code>, <code>categories</code>)</td></tr>
+<tr><td><code>GET /api/polices</code>, <code>/polices/&lt;f&gt;</code>, <code>POST /api/police</code></td><td>polices des textes</td></tr>
+<tr><td><code>POST /api/rendre</code>, <code>GET /api/rendu</code></td><td>lancer le rendu, suivre <code>{etat, fait, total, fichier, message}</code></td></tr>
+<tr><td><code>POST /api/texte</code></td><td>enregistrer un export (JSON, XML…)</td></tr>
+<tr><td><code>GET /api/usages?id=</code></td><td>dans quelles séquences sert un rush (facultatif)</td></tr>
+<tr><td><code>POST /api/capture</code></td><td>ranger une capture du moniteur (facultatif)</td></tr>
+</table>
+<div class="encart">
+<b>Concurrence.</b> Toutes les routes POST du serveur Python passent sous un seul verrou (<code>_agir</code> sous
+<code>_verrou</code>). Les dialogues natifs (sélecteurs de dossier ou de fichiers) sont traités <i>hors</i> du verrou,
+sinon le serveur entier attend que l'utilisateur ait choisi.
+</div>
+
+<h2 id="formats">10 · Les formats JSON</h2>
+<h3>Fichier de séquence — <code>objetProjet()</code>, version 5</h3>
+<pre><code>{ "version": 5, "genere": "…", "projet": {"nom", "w", "h", "fps"},
+  "hote": "&lt;projet ou est rangee la sequence&gt;",
+  "projets": ["&lt;projets dont elle a besoin&gt;"],
+  "tIn": null, "tOut": null, "PPS": 40, "marqueurs": [...],
+  "pistes": [ {"id":"V1","type":"v","mute":false,"solo":false}, ... ],
+  "clips":  [ {&lt;tous les champs du bloc sauf ceux en « _ »&gt;, "pj", "fichier"}, ... ] }</code></pre>
+<h3>Ce que reçoit le rendu — <code>objetMontage()</code></h3>
+<pre><code>{ "nom", "fps", "format": {"w","h"}, "entree", "sortie", "duree",
+  "pistes": [ {"id","type","mute","solo","vol"} ],
+  "plans":  [ {"piste","projet","fichier","genre","position","entree","sortie","duree",
+               "vitesse","rev","gain","opacite","anim","fx","masque","masque_png","gel",
+               "fondu_entree","fondu_sortie","lien",
+               "cadrage": {"mode","echelle","dx","dy","shk","shks"},
+               "fond","texte","police","ttf","taille","teinte","ombre"} ] }</code></pre>
+<p class="petit">Les plans sont déjà rognés aux points I/O. <code>masque_png</code> n'est joint que pour le rendu
+(data URL PNG à la taille de sortie).</p>
+
+<h2 id="integrer">11 · Intégrer dans BARZ Suite</h2>
+<p>D'après <code>suite-v6/README.md</code> : Node ≥ 20 en modules ES, serveurs locaux sur 127.0.0.1, runtime Node
+privé fourni par l'installeur, et une règle de sécurité — <i>le rendu des prompts passe par
+<code>textContent</code>, jamais par un <code>innerHTML</code> dynamique</i>. Trois points en découlent.</p>
+<ol>
+<li><b>Le serveur.</b> Deux voies : embarquer Python + <code>serveur.py</code>, ou <b>porter le contrat de la
+section 9 en Node</b> (recommandé, puisque la suite a déjà son runtime). Les routes sont simples (JSON, fichiers
+avec Range) ; le rendu se porte fonction par fonction (<code>_seg_filtre</code>, <code>_graphe_fx</code>,
+<code>_placement</code>, <code>_graphe_fx</code>, <code>_segment</code>, <code>_assembler</code>,
+<code>_incruster</code>, <code>_mixer</code>) en gardant
+<b>les mêmes chaînes de filtres au caractère près</b>, puis en rejouant les essais de <code>serveur_essais.py</code>
+et le banc de parité. ffmpeg et ffprobe restent nécessaires.</li>
+<li><b>La page.</b> Première étape conseillée : servir <code>app.html</code> tel quel dans une fenêtre ou une
+<code>iframe</code> isolée, branchée sur le contrat porté, et retirer ce qui relève de la bibliothèque (section 1) en
+s'appuyant sur les capacités annoncées par <code>/api/projets</code>. L'extraire en modules ne vient qu'ensuite.</li>
+<li><b>La sécurité.</b> <code>app.html</code> construit son interface en <code>innerHTML</code>, en échappant chaque
+chaîne venue de l'utilisateur (<code>echapHtml()</code>, <code>esc()</code> locaux). C'est incompatible avec la règle
+de BARZ si elle s'applique à tout le module : soit le module vit dans une origine isolée où la règle ne
+s'applique pas, soit il faut reprendre les points de rendu qui affichent des noms (cartes de la grille, colonne,
+blocs de la timeline, panneau de réglages, menus, boîtes de dialogue) en <code>textContent</code>.</li>
+</ol>
+<div class="encart ok">
+<b>Ce qui se garde tel quel.</b> Le modèle de blocs, les fonctions de temps (<code>dur</code>, <code>fin</code>,
+<code>srcA</code>), la boucle de lecture avec amorce, l'historique par instantanés, les correspondances canvas ↔
+ffmpeg et l'ordre des opérations (placement → effets → masque → alpha → fondus) : ce sont les parties qui ont coûté
+cher à mettre au point.
+</div>
+
+<h2 id="pieges">12 · Pièges déjà payés</h2>
+<ol>
+<li><b><code>memoriser()</code> partout</b> : sans lui, un geste n'est ni annulable ni enregistré (section 5).</li>
+<li><b>Lecteurs rangés par <code>uid</code></b> : deux séquences réutilisent les mêmes numéros ; sans la vérification
+<code>dataset.film</code>, le moniteur montrait le rush d'une autre séquence (14 blocs sur 42).</li>
+<li><b>Filtres SVG</b> : sans <code>color-interpolation-filters="sRGB"</code>, le navigateur calcule en RVB linéaire
+et la couleur ne correspond plus à ffmpeg.</li>
+<li><b>Flous ffmpeg en RVB</b> (<code>format=gbrp</code>) : en yuv420p l'écart montait à 10,5/255.</li>
+<li><b>CSS global <code>input{min-width:120px}</code></b> : il étire les cases à cocher et les sélecteurs de couleur
+des menus — remettre <code>min-width:0</code> localement.</li>
+<li><b>Blocs <code>&lt;script&gt;</code></b> : une <code>const</code> d'un bloc n'existe pas encore pendant l'exécution
+d'un bloc antérieur. L'état lu très tôt est déclaré en tête de bloc (ou en <code>var</code>).</li>
+<li><b>Verrou</b> : <code>_agir</code> tourne déjà sous <code>_verrou</code> ; le reprendre dans une route bloque le
+serveur (non réentrant).</li>
+<li><b><code>_incruster</code></b> : compter les entrées ffmpeg à part des étiquettes — un calque d'effet n'ajoute pas
+d'entrée, un masque en ajoute une.</li>
+<li><b>Piste de base</b> : la plus basse, jamais « la plus fournie », sinon V1 passe par-dessus V2.</li>
+<li><b>Poser, ne pas recadrer</b> : ramener l'image à la taille du cadre puis la recadrer (l'ancien
+<code>_seg_filtre</code>) plantait sous 100 %, ignorait la position et inversait la secousse — on déplaçait la
+fenêtre au lieu de l'image. Toujours poser le plan sur un canevas avec <code>overlay</code>.</li>
+<li><b>Image fixe</b> : pas de flux son, ne jamais mapper <code>[0:a]</code> sur une image.</li>
+<li><b>Curseurs et saisie</b> : un curseur arrondit à son pas ; lire la valeur dans le modèle, pas dans le
+curseur (le bouton « Reverse » arrondissait ×1,23 en ×1,25).</li>
+<li><b>Range</b> obligatoire sur les médias, sinon la vidéo ne peut pas sauter dans le temps.</li>
+</ol>
+
+<h2 id="limites">13 · Limites connues</h2>
+<ul>
+<li>Les images-clés d'échelle, de position et d'opacité ne sont <b>pas reproduites au rendu</b> (seul le volume
+animé l'est) : le rendu prend la valeur fixe du bloc.</li>
+<li>Le masque est fixé dans le cadre : il ne suit pas un bloc qui bouge ou qui tremble.</li>
+<li>Au moniteur, un bloc à l'envers avance image par image et sans son (le cache et le rendu le restituent).</li>
+<li>Au moniteur, le volume plafonne à 100 % (limite du navigateur) ; le rendu monte jusqu'à 200 %.</li>
+<li>L'export XML ne transporte ni masque, ni image figée, ni effets.</li>
+</ul>
+
+<h2 id="essais">14 · Essais et banc de parité</h2>
+<table>
+<tr><th>Fichier</th><th>Couvre</th></tr>
+<tr><td><code>tests/inverse.js</code></td><td>vitesse signée, lecture à l'envers, coupe et rognage à l'envers (26) — extrait le code d'<code>app.html</code> par ancres de texte</td></tr>
+<tr><td><code>tests/rangement.js</code></td><td>dossiers virtuels (18)</td></tr>
+<tr><td><code>tests/serveur_essais.py</code></td><td>le vrai serveur sur une bibliothèque : chaque effet du rack se rend, masques, rushes incrustés, image figée, captures, ajout de rushes, pose sur la piste de base (63) ; échoue si un seul fichier de rushes a changé</td></tr>
+</table>
+<p><b>Banc de parité</b> (manuel, à refaire après tout changement d'effet) : capturer le moniteur à l'instant
+<i>t</i> (canvas réduit à 64×36), extraire l'image <i>t</i> du rendu
+(<code>ffmpeg -ss t … -vf scale=64:36:flags=area -f rawvideo -pix_fmt rgb24</code>), comparer la moyenne des écarts
+absolus. Sur fond uni on attend moins de 1/255 ; une mire à bords nets donne davantage, par le seul effet des deux
+réductions d'image.</p>
+
+<p class="petit" style="margin-top:40px">Questions sur l'historique d'une décision : les commentaires du code et
+<code>CLAUDE.md</code> / <code>LIVRAISON-LIBRARY-EDITOR.html</code> à la racine du projet Library Editor (non publiés
+sur GitHub) racontent la plupart des choix et des bugs.</p>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,648 @@
+{
+  "schemaVersion": "1.0",
+  "status": "legacy-fixture-before-astra-review",
+  "source": {
+    "owner": "veo-suite",
+    "path": "Barzy App/public/assets/HTML/veo_precision.html",
+    "sha256": "6a4dd63fdb3f18ec0fec4ad0ef6acf08f0f6191d2414382c80bad401a770e0af"
+  },
+  "veoPrecision": {
+    "sectionCount": 7,
+    "cardCount": 22,
+    "promptCount": 110,
+    "uniqueKeyCount": 22,
+    "sections": [
+      {
+        "title": "Camera Movement",
+        "icon": ""
+      },
+      {
+        "title": "Handheld & Raw",
+        "icon": ""
+      },
+      {
+        "title": "Lenses & Optics",
+        "icon": ""
+      },
+      {
+        "title": "Aerial & Drone",
+        "icon": ""
+      },
+      {
+        "title": "Surveillance & Found",
+        "icon": ""
+      },
+      {
+        "title": "Film Stock & Era",
+        "icon": ""
+      },
+      {
+        "title": "Zoom & Focus",
+        "icon": ""
+      }
+    ],
+    "cards": [
+      {
+        "section": "Camera Movement",
+        "key": "dolly",
+        "title": "Dolly / Track",
+        "labels": [
+          "Micro Push",
+          "Slow Push-In",
+          "Lateral Track",
+          "Fast Dolly",
+          "Aggressive Rush"
+        ],
+        "prompts": [
+          "very subtle slow dolly push-in, barely perceptible forward motion, smooth and hypnotic, studio dolly track.",
+          "smooth dolly push-in, steady forward motion toward subject, cinematic dolly track on rails, slow and deliberate.",
+          "lateral tracking shot, smooth side-to-side dolly movement, subject moving parallel to camera, dolly on rails.",
+          "fast dolly push-in, dramatic forward camera rush toward subject, dynamic acceleration, cinematic urgency.",
+          "aggressive dolly rush, explosive forward camera movement, visceral speed, slamming into the subject, adrenaline impact."
+        ]
+      },
+      {
+        "section": "Camera Movement",
+        "key": "steadicam",
+        "title": "Steadicam / Gimbal",
+        "labels": [
+          "Locked Glide",
+          "Gentle Float",
+          "Walk & Talk",
+          "Prowl",
+          "Frenetic Chase"
+        ],
+        "prompts": [
+          "ultra-smooth steadicam glide, perfectly stabilized floating motion, weightless feel, no vibration, pristine gimbal.",
+          "gentle steadicam float, smooth organic movement with subtle body sway, cinematic stabilization, elegant drift.",
+          "steadicam walk-and-talk, following subject through space, smooth stabilized handheld, natural forward momentum.",
+          "prowling steadicam, low and predatory camera movement, creeping forward, sinister smooth motion, atmospheric tension.",
+          "frenetic steadicam chase, rapid stabilized pursuit through corridors, breathless speed, controlled chaos, visceral momentum."
+        ]
+      },
+      {
+        "section": "Camera Movement",
+        "key": "crane",
+        "title": "Crane / Jib",
+        "labels": [
+          "Gentle Rise",
+          "Sweeping Arc",
+          "Reveal Lift",
+          "Dramatic Boom",
+          "God's Eye Ascent"
+        ],
+        "prompts": [
+          "gentle crane rise, slow vertical lift revealing the scene, smooth jib arm movement, elegant and controlled.",
+          "sweeping crane arc, wide circular jib movement around subject, cinematic orbital motion, majestic reveal.",
+          "crane reveal lift, camera rises from ground level to reveal vast landscape, dramatic vertical unveiling, epic scope.",
+          "dramatic crane boom down, plunging downward from height to subject, powerful descending motion, cinematic impact.",
+          "god's eye crane ascent, extreme vertical pull-up from close-up to vast aerial view, dizzying scale shift, epic reveal."
+        ]
+      },
+      {
+        "section": "Camera Movement",
+        "key": "whip",
+        "title": "Whip Pan / Swish",
+        "labels": [
+          "Gentle Drift",
+          "Quick Snap",
+          "Swish Pan",
+          "Violent Whip",
+          "Seizure Cut"
+        ],
+        "prompts": [
+          "gentle horizontal camera drift, slow panning motion, smooth directional glide, contemplative movement.",
+          "quick snap pan, fast horizontal camera turn to new subject, snappy reframe, editorial precision.",
+          "swish pan, rapid horizontal camera whip with motion blur, dynamic scene transition, cinematic energy.",
+          "violent whip pan, extreme speed horizontal camera movement, heavy motion blur streaks, disorienting energy.",
+          "seizure-speed whip cuts, strobing rapid pans between subjects, extreme motion blur, chaotic frantic energy, overwhelming speed."
+        ]
+      },
+      {
+        "section": "Camera Movement",
+        "key": "static",
+        "title": "Static / Locked",
+        "labels": [
+          "Perfect Lock",
+          "Wes Anderson",
+          "Tableau Vivant",
+          "Security Static",
+          "Surveillance Lock"
+        ],
+        "prompts": [
+          "perfectly locked static camera, rock solid tripod, zero movement, clean composition, precise framing.",
+          "symmetrical static frame, centered composition, Wes Anderson style, meticulous geometric framing, pastel palette.",
+          "static tableau vivant, painterly locked frame, subjects arranged like a living painting, no camera motion.",
+          "static mounted camera, slightly off-axis composition, institutional feel, utilitarian framing, cold observation.",
+          "locked surveillance-style static camera, high corner mount, wide angle, cold impersonal observation, no movement."
+        ]
+      },
+      {
+        "section": "Handheld & Raw",
+        "key": "doc_shake",
+        "title": "Documentary Shake",
+        "labels": [
+          "Micro-Jitter",
+          "Subtle Organic",
+          "Natural Shake",
+          "War Reporter",
+          "Earthquake"
+        ],
+        "prompts": [
+          "extremely subtle handheld micro-jitter, almost imperceptible organic motion, steady documentary style, tripod-like but human.",
+          "subtle handheld camera, gentle organic sway, natural documentary cinematography, professional handheld technique.",
+          "handheld documentary footage, natural organic shake, slight focus hunting, realistic human camera movement, raw feel.",
+          "intense war reporter handheld, urgent shaking footage, heavy breathing motion, unstable desperate framing, visceral realism.",
+          "extreme earthquake handheld, violent camera shaking, chaotic unstable footage, impossible to stabilize, raw survival footage."
+        ]
+      },
+      {
+        "section": "Handheld & Raw",
+        "key": "smartphone",
+        "title": "Smartphone / UGC",
+        "labels": [
+          "Pro Mobile",
+          "Casual Walk",
+          "Story Mode",
+          "Panic Record",
+          "Disaster Footage"
+        ],
+        "prompts": [
+          "shot on smartphone, high-end stabilization, crisp 4K mobile sensor, modern mobile cinematic look, handheld but smooth.",
+          "casual smartphone video, walking pace, natural micro-shakes, authentic UGC feel, organic mobile footage.",
+          "instagram story style, vertical smartphone video, quick movements, authentic social media aesthetic, selfie angle motion.",
+          "panicked smartphone recording, shaky amateur footage, rapid movements, unfocused, chaotic handheld, raw upload quality.",
+          "disaster smartphone footage, extreme shaking, running while filming, heavy motion blur, unstable focus, raw citizen journalism."
+        ]
+      },
+      {
+        "section": "Handheld & Raw",
+        "key": "bodycam",
+        "title": "Bodycam / POV",
+        "labels": [
+          "Chest Mount",
+          "Helmet Cam",
+          "Action POV",
+          "Tactical POV",
+          "Chaos POV"
+        ],
+        "prompts": [
+          "chest-mounted bodycam, stable torso movement, slight vertical bob from walking, wide angle POV, body-worn camera.",
+          "helmet-mounted camera, head movement tracking, slight lag and wobble, action sports POV, first person view.",
+          "action POV camera, dynamic first-person perspective, GoPro style wide angle, immersive motion, activity footage.",
+          "tactical bodycam footage, rapid movement, weapon-mounted or chest perspective, night-capable, high contrast, tactical operation.",
+          "chaotic first-person POV, extreme motion, tumbling disoriented perspective, violent shaking, survival footage, raw terror."
+        ]
+      },
+      {
+        "section": "Lenses & Optics",
+        "key": "anamorphic",
+        "title": "Anamorphic",
+        "labels": [
+          "Subtle Squeeze",
+          "Classic Scope",
+          "Heavy Flares",
+          "Vintage Ana",
+          "Extreme Oval Bokeh"
+        ],
+        "prompts": [
+          "subtle anamorphic quality, gentle oval bokeh, faint horizontal flares, 2.39:1 widescreen, cinematic warmth.",
+          "classic anamorphic lens, 2.39:1 aspect ratio, oval bokeh, clean horizontal lens flares, cinematic widescreen scope.",
+          "heavy anamorphic flares, dramatic blue-gold horizontal streaks, oval bokeh, strong squeeze characteristics, cinematic grandeur.",
+          "vintage anamorphic glass, Kowa or Iscorama character, swirly oval bokeh, warm flares, organic imperfections, 70s cinema texture.",
+          "extreme anamorphic squeeze, exaggerated oval bokeh, massive horizontal flare streaks, heavy barrel distortion at edges, dreamlike."
+        ]
+      },
+      {
+        "section": "Lenses & Optics",
+        "key": "macro",
+        "title": "Macro / Close-Up",
+        "labels": [
+          "Tight Portrait",
+          "Close Detail",
+          "True Macro",
+          "Microscopic",
+          "Electron Micro"
+        ],
+        "prompts": [
+          "tight close-up, 85mm portrait lens, shallow depth of field, soft background separation, intimate framing.",
+          "extreme close-up, revealing fine detail and texture, very shallow depth of field, 100mm lens character.",
+          "true macro photography, 1:1 magnification, razor-thin depth of field, incredible surface detail, 100mm macro lens.",
+          "microscopic macro, extreme magnification revealing invisible details, paper-thin focus plane, alien textures, scientific lens.",
+          "electron microscope aesthetic, extreme nano-scale magnification, surreal surface topology, impossible detail, scientific imaging."
+        ]
+      },
+      {
+        "section": "Lenses & Optics",
+        "key": "fisheye",
+        "title": "Fisheye / Ultra-Wide",
+        "labels": [
+          "Mild Wide",
+          "Skate Wide",
+          "Full Fisheye",
+          "Circular Fish",
+          "Warped Reality"
+        ],
+        "prompts": [
+          "mild wide angle lens, subtle barrel distortion, expanded field of view, slight edge stretching, dynamic perspective.",
+          "skateboard fisheye, 16mm ultra-wide lens, noticeable barrel distortion, close-up low angle, action sports aesthetic.",
+          "full fisheye lens, 180-degree field of view, heavy barrel distortion, curved horizons, immersive spherical perspective.",
+          "circular fisheye, full 180° sphere visible in circular frame, extreme distortion, black circular vignette border, psychedelic.",
+          "warped reality fisheye, impossible ultra-wide distortion, bending space, hallucinatory perspective, surreal spatial warping."
+        ]
+      },
+      {
+        "section": "Lenses & Optics",
+        "key": "tiltshift",
+        "title": "Tilt-Shift / Lensbaby",
+        "labels": [
+          "Subtle Tilt",
+          "Miniature Effect",
+          "Dreamy Blur",
+          "Selective Slice",
+          "Surreal Warp"
+        ],
+        "prompts": [
+          "subtle tilt-shift, gentle selective focus plane, slightly tilted focus with soft edges, architectural photography style.",
+          "tilt-shift miniature effect, making real scenes look like tiny models, extreme shallow focus band, toylike perspective.",
+          "dreamy lensbaby blur, single sweet spot of focus surrounded by swirly blur, romantic soft-focus, ethereal atmosphere.",
+          "extreme selective focus slice, razor-thin horizontal band of sharpness, everything else dissolved in blur, surreal isolation.",
+          "surreal tilt-shift warp, impossible focus planes, melting blur zones, dreamlike spatial distortion, otherworldly perspective."
+        ]
+      },
+      {
+        "section": "Aerial & Drone",
+        "key": "drone_cine",
+        "title": "Cinematic Drone",
+        "labels": [
+          "Gentle Hover",
+          "Slow Reveal",
+          "Sweeping Vista",
+          "Dynamic Chase",
+          "Epic Pull-Back"
+        ],
+        "prompts": [
+          "gentle drone hover, near-static aerial shot, slight drift, high altitude observation, calm bird's eye view.",
+          "slow cinematic drone reveal, gradual forward movement unveiling landscape, smooth altitude, aerial establishing shot.",
+          "sweeping cinematic drone vista, wide arcing flight over landscape, golden hour aerial, majestic panoramic movement.",
+          "dynamic drone chase, following subject from above at speed, tracking aerial shot, cinematic pursuit, energetic motion.",
+          "epic drone pull-back reveal, starting close then rapidly ascending and pulling away to reveal massive scale, jaw-dropping scope."
+        ]
+      },
+      {
+        "section": "Aerial & Drone",
+        "key": "fpv",
+        "title": "FPV Racing",
+        "labels": [
+          "Smooth Glide",
+          "Proximity Flow",
+          "Gap Threading",
+          "Acro Freestyle",
+          "Terminal Velocity"
+        ],
+        "prompts": [
+          "smooth FPV drone glide, gentle flowing movement, wide angle, low altitude cinematic flight, stable and graceful.",
+          "proximity FPV flying, close to surfaces and structures, dynamic flow through environment, controlled speed, immersive.",
+          "FPV gap threading, flying through tight spaces and windows, precise high-speed navigation, thrilling proximity, narrow gaps.",
+          "freestyle FPV acrobatics, power loops and rolls, inverted flight, dynamic trick flying, aggressive maneuvers, disorienting spins.",
+          "terminal velocity FPV dive, extreme vertical plunge from altitude, sickening speed, aggressive pull-up, visceral G-force sensation."
+        ]
+      },
+      {
+        "section": "Surveillance & Found",
+        "key": "cctv",
+        "title": "CCTV / Security",
+        "labels": [
+          "Modern HD",
+          "Standard Feed",
+          "Low-Res Night",
+          "Degraded Signal",
+          "Corrupted Glitch"
+        ],
+        "prompts": [
+          "modern HD CCTV, clean security camera footage, high ceiling mount, wide angle, digital timestamp overlay, sharp image.",
+          "standard CCTV security footage, slight compression, fixed wide angle, institutional perspective, surveillance timestamp.",
+          "low-resolution CCTV, grainy night vision, green-tinted infrared, digital noise, monochrome surveillance, poor visibility.",
+          "degraded CCTV signal, heavy compression artifacts, blocky pixelation, intermittent signal, washed out, old system.",
+          "corrupted CCTV footage, extreme glitching, digital signal decay, flickering frame, VHS-era surveillance, horror aesthetic."
+        ]
+      },
+      {
+        "section": "Surveillance & Found",
+        "key": "dashcam",
+        "title": "Dashcam / Trail Cam",
+        "labels": [
+          "Clean Dashcam",
+          "Night Drive",
+          "Rain Dashcam",
+          "Trail Cam Day",
+          "Trail Cam Night IR"
+        ],
+        "prompts": [
+          "clean dashcam footage, wide angle windshield mount, daylight driving, dashboard camera perspective, timestamp overlay.",
+          "night dashcam footage, headlight illumination, lens flares from streetlights, dark surroundings, nighttime driving POV.",
+          "rain dashcam, water droplets on windshield, blurred wipers, refracted lights, wet road reflections, atmospheric driving.",
+          "trail camera footage, static wildlife cam, daytime trigger, slight motion blur on subject, timestamp, nature observation.",
+          "night trail cam, infrared flash, glowing animal eyes, monochrome green night vision, motion-triggered, eerie wildlife footage."
+        ]
+      },
+      {
+        "section": "Film Stock & Era",
+        "key": "super8",
+        "title": "Super 8 / 8mm",
+        "labels": [
+          "Clean Super8",
+          "Home Movie",
+          "Faded Memory",
+          "Damaged Print",
+          "Destroyed Film"
+        ],
+        "prompts": [
+          "clean Super 8mm film, fine grain texture, slightly warm tones, vintage but well-preserved, authentic film gate weave.",
+          "Super 8 home movie aesthetic, warm saturated colors, visible grain, slight overexposure, nostalgic family film feel.",
+          "faded Super 8 footage, washed-out colors, heavy grain, light leaks, aged and sun-bleached, memory-like deterioration.",
+          "damaged Super 8 film print, heavy scratches, splice marks, color shift, frame jitter, worn projector artifacts, archival decay.",
+          "destroyed 8mm film, extreme deterioration, melting emulsion, burned frames, heavy chemical damage, abstract film decay."
+        ]
+      },
+      {
+        "section": "Film Stock & Era",
+        "key": "film16mm",
+        "title": "16mm Film",
+        "labels": [
+          "Pristine 16mm",
+          "Indie Film",
+          "News Reel",
+          "Gritty 16mm",
+          "Grindhouse"
+        ],
+        "prompts": [
+          "pristine 16mm film stock, clean fine grain, accurate color reproduction, professional cinematography, film texture.",
+          "indie 16mm film, natural grain, slightly desaturated, available light cinematography, authentic independent cinema feel.",
+          "16mm news reel footage, documentary grain, slightly overlit, journalistic camera work, archival news film aesthetic.",
+          "gritty 16mm, pushed film stock, heavy visible grain, high contrast, raw texture, underground film aesthetic, lo-fi cinema.",
+          "grindhouse 16mm, extreme grain, missing frames, color bleeding, splice artifacts, exploitation film look, damaged projection."
+        ]
+      },
+      {
+        "section": "Film Stock & Era",
+        "key": "vhs",
+        "title": "VHS / Analog Video",
+        "labels": [
+          "Clean VHS",
+          "Recorded TV",
+          "Worn Tape",
+          "Tracking Error",
+          "Destroyed Tape"
+        ],
+        "prompts": [
+          "clean VHS video, slight analog softness, authentic video look, warm color cast, subtle scan lines, 480i resolution.",
+          "VHS recorded from TV, slight RF interference, channel bug remnant, analog broadcast texture, retro television quality.",
+          "worn VHS tape, degraded color, horizontal noise bands, soft and blurry, magnetic tape wear, generation loss artifacts.",
+          "VHS tracking error, heavy horizontal distortion bars, rolling image, color bleeding, unstable signal, analog glitch.",
+          "destroyed VHS tape, extreme magnetic deterioration, psychedelic color smearing, complete signal loss zones, abstract video decay."
+        ]
+      },
+      {
+        "section": "Film Stock & Era",
+        "key": "digital_cine",
+        "title": "Digital Cinema",
+        "labels": [
+          "ARRI Clean",
+          "RED Raw",
+          "Blackmagic",
+          "Early Digital",
+          "DV Camcorder"
+        ],
+        "prompts": [
+          "shot on ARRI Alexa, pristine digital cinema, beautiful color science, clean highlight roll-off, filmic digital sensor.",
+          "shot on RED camera, ultra high resolution digital, sharp detail, slightly cooler tones, cinematic RAW digital look.",
+          "shot on Blackmagic camera, rich digital film emulation, wide dynamic range, slightly organic digital texture, indie cinema.",
+          "early 2000s digital cinema, slightly sterile look, harsh highlights, early HD video feel, digital but not filmic.",
+          "miniDV camcorder footage, consumer digital video, interlaced artifacts, auto-exposure flicker, amateur digital video, 2003 aesthetic."
+        ]
+      },
+      {
+        "section": "Zoom & Focus",
+        "key": "zoom",
+        "title": "Zoom Movement",
+        "labels": [
+          "Slow Creep",
+          "Smooth Zoom",
+          "Snap Zoom",
+          "Crash Zoom",
+          "Vertigo Effect"
+        ],
+        "prompts": [
+          "extremely slow imperceptible zoom-in, creeping closer to subject, hypnotic gradual magnification, tension building.",
+          "smooth cinematic zoom-in, controlled magnification, elegant lens zoom, professional zoom movement.",
+          "snap zoom, rapid quick zoom punch-in to subject, sudden magnification, documentary energy, reactive camera work.",
+          "crash zoom, extreme rapid zoom-in, violent magnification, slamming focus onto subject, kung fu cinema energy.",
+          "dolly zoom vertigo effect, simultaneous dolly out and zoom in, background warping, Hitchcock perspective distortion, surreal."
+        ]
+      },
+      {
+        "section": "Zoom & Focus",
+        "key": "focus",
+        "title": "Focus Play",
+        "labels": [
+          "Deep Focus",
+          "Gentle Shift",
+          "Rack Focus",
+          "Focus Pull",
+          "Abstract Blur"
+        ],
+        "prompts": [
+          "deep focus, everything sharp from foreground to background, large depth of field, Citizen Kane style, all in focus.",
+          "gentle focus shift, subtle transition between focus planes, soft and organic focus breathing, cinematic.",
+          "rack focus, sharp focus transition from foreground to background subject, dramatic depth shift, narrative focus pull.",
+          "dramatic focus pull, rapid shift between extreme focus distances, aggressive depth of field change, disorienting.",
+          "abstract defocus, subject dissolving into pure bokeh and blur, loss of form, painterly abstraction, dream state."
+        ]
+      }
+    ],
+    "defaultState": {
+      "active": {},
+      "values": {
+        "dolly": 2,
+        "steadicam": 2,
+        "crane": 2,
+        "whip": 2,
+        "static": 2,
+        "doc_shake": 2,
+        "smartphone": 2,
+        "bodycam": 2,
+        "anamorphic": 2,
+        "macro": 2,
+        "fisheye": 2,
+        "tiltshift": 2,
+        "drone_cine": 2,
+        "fpv": 2,
+        "cctv": 2,
+        "dashcam": 2,
+        "super8": 2,
+        "film16mm": 2,
+        "vhs": 2,
+        "digital_cine": 2,
+        "zoom": 2,
+        "focus": 2
+      },
+      "collapsed": {
+        "Camera Movement": true,
+        "Handheld & Raw": true,
+        "Lenses & Optics": true,
+        "Aerial & Drone": true,
+        "Surveillance & Found": true,
+        "Film Stock & Era": true,
+        "Zoom & Focus": true
+      },
+      "incoming": ""
+    },
+    "defaultOutputs": [
+      {
+        "key": "dolly",
+        "label": "Lateral Track",
+        "prompt": "lateral tracking shot, smooth side-to-side dolly movement, subject moving parallel to camera, dolly on rails."
+      },
+      {
+        "key": "steadicam",
+        "label": "Walk & Talk",
+        "prompt": "steadicam walk-and-talk, following subject through space, smooth stabilized handheld, natural forward momentum."
+      },
+      {
+        "key": "crane",
+        "label": "Reveal Lift",
+        "prompt": "crane reveal lift, camera rises from ground level to reveal vast landscape, dramatic vertical unveiling, epic scope."
+      },
+      {
+        "key": "whip",
+        "label": "Swish Pan",
+        "prompt": "swish pan, rapid horizontal camera whip with motion blur, dynamic scene transition, cinematic energy."
+      },
+      {
+        "key": "static",
+        "label": "Tableau Vivant",
+        "prompt": "static tableau vivant, painterly locked frame, subjects arranged like a living painting, no camera motion."
+      },
+      {
+        "key": "doc_shake",
+        "label": "Natural Shake",
+        "prompt": "handheld documentary footage, natural organic shake, slight focus hunting, realistic human camera movement, raw feel."
+      },
+      {
+        "key": "smartphone",
+        "label": "Story Mode",
+        "prompt": "instagram story style, vertical smartphone video, quick movements, authentic social media aesthetic, selfie angle motion."
+      },
+      {
+        "key": "bodycam",
+        "label": "Action POV",
+        "prompt": "action POV camera, dynamic first-person perspective, GoPro style wide angle, immersive motion, activity footage."
+      },
+      {
+        "key": "anamorphic",
+        "label": "Heavy Flares",
+        "prompt": "heavy anamorphic flares, dramatic blue-gold horizontal streaks, oval bokeh, strong squeeze characteristics, cinematic grandeur."
+      },
+      {
+        "key": "macro",
+        "label": "True Macro",
+        "prompt": "true macro photography, 1:1 magnification, razor-thin depth of field, incredible surface detail, 100mm macro lens."
+      },
+      {
+        "key": "fisheye",
+        "label": "Full Fisheye",
+        "prompt": "full fisheye lens, 180-degree field of view, heavy barrel distortion, curved horizons, immersive spherical perspective."
+      },
+      {
+        "key": "tiltshift",
+        "label": "Dreamy Blur",
+        "prompt": "dreamy lensbaby blur, single sweet spot of focus surrounded by swirly blur, romantic soft-focus, ethereal atmosphere."
+      },
+      {
+        "key": "drone_cine",
+        "label": "Sweeping Vista",
+        "prompt": "sweeping cinematic drone vista, wide arcing flight over landscape, golden hour aerial, majestic panoramic movement."
+      },
+      {
+        "key": "fpv",
+        "label": "Gap Threading",
+        "prompt": "FPV gap threading, flying through tight spaces and windows, precise high-speed navigation, thrilling proximity, narrow gaps."
+      },
+      {
+        "key": "cctv",
+        "label": "Low-Res Night",
+        "prompt": "low-resolution CCTV, grainy night vision, green-tinted infrared, digital noise, monochrome surveillance, poor visibility."
+      },
+      {
+        "key": "dashcam",
+        "label": "Rain Dashcam",
+        "prompt": "rain dashcam, water droplets on windshield, blurred wipers, refracted lights, wet road reflections, atmospheric driving."
+      },
+      {
+        "key": "super8",
+        "label": "Faded Memory",
+        "prompt": "faded Super 8 footage, washed-out colors, heavy grain, light leaks, aged and sun-bleached, memory-like deterioration."
+      },
+      {
+        "key": "film16mm",
+        "label": "News Reel",
+        "prompt": "16mm news reel footage, documentary grain, slightly overlit, journalistic camera work, archival news film aesthetic."
+      },
+      {
+        "key": "vhs",
+        "label": "Worn Tape",
+        "prompt": "worn VHS tape, degraded color, horizontal noise bands, soft and blurry, magnetic tape wear, generation loss artifacts."
+      },
+      {
+        "key": "digital_cine",
+        "label": "Blackmagic",
+        "prompt": "shot on Blackmagic camera, rich digital film emulation, wide dynamic range, slightly organic digital texture, indie cinema."
+      },
+      {
+        "key": "zoom",
+        "label": "Snap Zoom",
+        "prompt": "snap zoom, rapid quick zoom punch-in to subject, sudden magnification, documentary energy, reactive camera work."
+      },
+      {
+        "key": "focus",
+        "label": "Rack Focus",
+        "prompt": "rack focus, sharp focus transition from foreground to background subject, dramatic depth shift, narrative focus pull."
+      }
+    ],
+    "configuredState": {
+      "active": {
+        "dolly": true,
+        "macro": true,
+        "super8": true,
+        "focus": true
+      },
+      "values": {
+        "dolly": 4,
+        "steadicam": 2,
+        "crane": 2,
+        "whip": 2,
+        "static": 2,
+        "doc_shake": 2,
+        "smartphone": 2,
+        "bodycam": 2,
+        "anamorphic": 2,
+        "macro": 0,
+        "fisheye": 2,
+        "tiltshift": 2,
+        "drone_cine": 2,
+        "fpv": 2,
+        "cctv": 2,
+        "dashcam": 2,
+        "super8": 3,
+        "film16mm": 2,
+        "vhs": 2,
+        "digital_cine": 2,
+        "zoom": 2,
+        "focus": 2
+      },
+      "incoming": "slow blocking move received from Blocking Studio"
+    },
+    "configuredComposite": "slow blocking move received from Blocking Studio, aggressive dolly rush, explosive forward camera movement, visceral speed, slamming into the subject, adrenaline impact., tight close-up, 85mm portrait lens, shallow depth of field, soft background separation, intimate framing., damaged Super 8 film print, heavy scratches, splice marks, color shift, frame jitter, worn projector artifacts, archival decay., rack focus, sharp focus transition from foreground to background subject, dramatic depth shift, narrative focus pull."
+  }
+}

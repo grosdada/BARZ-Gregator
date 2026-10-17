@@ -1,0 +1,1863 @@
+{
+  "schemaVersion": "1.0",
+  "id": "semantic-barz-designer-01",
+  "owner": "barz-designer",
+  "status": "pending-astra-review",
+  "approximateTokens": 7271,
+  "prompts": [
+    {
+      "id": "text-0697f890602f04382c77",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "IMG_1 is a reference for a practical puppet/figurine character.\nPhotograph this exact figurine — with its exact proportions,head size, limb thickness, body shape — as-is in a reallocation. Do not apply realistic human anatomy. This is NOTa human, it is a sculpted character with intentionalnon-realistic proportions.Full body shot, dancing in a L.A ghetto zone, sunny day.High key lighting. S16mm, 50mm. Alec Soth style. 16:9. MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 116,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-078064f929e43261d838",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Make it a photo with same pixel-perfect design replica Goal: apply photoreal textures and studio light onto the exact drawing, without changing any line. MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 62,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-0837d6d19118b59716c6",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Make this drawing a photo you must keep the exact same composition and the exact same weird and deformed design but with real realistic materials. It must look like 80 mm macro photo of hyperrealistic sculpture in the style of \" Ron Mueck\", handmade craft quality, subsurface scattering skin effect, tilt shift focus. You must strictly respect the head design even if it's weird and project the ultra realistic style on the exact lines and contour of the angular drawing, be very precise. In a plain subtil textured studio cyclorama background, hi quality professional diffuse lighting. MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 54,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-086ec0da446413720406",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Wax crayon texture on cheap white paper, heavy pressure marks, broken contour lines, colors outside the edges, accidental smudges, simple flat background.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 232,
+          "column": 251,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-09c5e56303cdb0120110",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "toy-like clay diorama: cute collectible proportions, polished but handmade, tiny set dressing, bright commercial tabletop lighting, playful catalog clarity.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 190,
+          "column": 74,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-0c414eb5cbfec315ac07",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Ben-Day dots, aged pulp paper, green/purple/orange accents, sharp shadow shapes, exaggerated hands and eyes, no cover text or speech balloons.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 222,
+          "column": 222,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-14ac1c193888df2c3ca2",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Builds or completes the body while preserving the head, stylized proportions and render continuity.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 267,
+          "column": 709,
+          "kind": "string-literal",
+          "functionName": "infoText",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-154c6acf3907c023de7a",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "No readable text, use abstract light panels instead of signs, black ink shadows, electric color accents, screentone rain, lens-like highlights and crowded depth.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 209,
+          "column": 195,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-1860376f167ee8ef99b1",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "modern cinematic graphic novel: painterly but ink-led finish, moody color script, grounded anatomy, expressive faces, prestige cover polish.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 218,
+          "column": 68,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-1bd5bae2764f504d498e",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "classic silver-age superhero comic: bold heroic anatomy, bright primary colors, confident contour inks, dramatic action pose, optimistic print energy.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 217,
+          "column": 68,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-21288a3615702367b14a",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Crayon plus marker, wobbly action lines, uneven speech-bubble-like shapes must stay blank or abstract, thick accidental outlines, off-register color fill, notebook-paper texture.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 241,
+          "column": 235,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-24c6fbbcd85dfad300d2",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "primitive sticker-book collage: naive cutout shapes, mismatched scale, cheerful weirdness, flat symbolic composition, playful paper-toy logic.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 240,
+          "column": 78,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-2514bfed02b961f3bed7",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "make a photorealistic picture inspired by this image, try to keep the same composition and the same design but with real realistic materials. it must look like 35 mm photo of wax figurines in a plain grey studio. [Scene Description] MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 66,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-2697e9aa207084e01985",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Uses the Original Drawing Weight slider: lower values let the style reshape the sketch, higher values keep the source geometry closer.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 267,
+          "column": 146,
+          "kind": "string-literal",
+          "functionName": "infoText",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-280fd195500343ea5950",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "[IMG_1] is a practical sculpted figurine/puppet character. Photograph this exact figurine — with its exact proportions, head size, limb thickness, body shape — as-is, physically present on location. Do not apply realistic human anatomy. This is NOT a human, it is a sculpted character with intentional non-realistic proportions. Do not correct or normalize proportions.\nFull body shot. [IMG_2 / ...description du décor...].\nThe character is physically present in the scene, not composited. Cast shadows from the character fall naturally on the ground surface, consistent with the sun angle and direction of the scene. The character's skin, clothing and materials pick up ambient light, bounce light and color cast from the environment. Color grade, contrast, saturation and film grain are uniform across the entire image — character and background share the same photographic treatment. No difference in sharpness, noise level or color temperature between the character and the environment.\n[...style cinéma : caméra, focale, réalisateur référence, ratio...]\nMANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 121,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-2e4d410f21e996157d3f",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "naive kindergarten crayon drawing: oversized head, uneven arms, simple dot eyes, awkward smile, sun-in-the-corner energy, charmingly wrong proportions.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 232,
+          "column": 96,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-2f0f712eeac3d5f02951",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "gekiga-inspired dramatic realism: grounded adult character design, social realist mood, expressive wrinkles, raw documentary framing.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 203,
+          "column": 66,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-306eee26526761669234",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "weird school notebook margin creature: restless doodle energy, strange hybrid anatomy, funny aggressive shapes, chaotic imagination.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 238,
+          "column": 90,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-32960f18f1e174a29ed9",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Crayon and pencil on slightly wrinkled paper, tape corners, uneven color pressure, simplified ground line, big sky area, crude but sincere face details.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 235,
+          "column": 233,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-37ac72516c8d98c9cc71",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "high-energy shonen manga: bold black ink, explosive pose emphasis, speed lines, impact bursts, sharp silhouettes, heroic readability.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 200,
+          "column": 83,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-38496c1763ba96796da8",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Economical shapes, expressive brows and hands, clean silhouette, small prop details, restrained shading, print-paper texture, no captions or speech bubbles.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 224,
+          "column": 215,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-39e8b4f213f68f3a5474",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Ready-to-copy utility prompt that can be enriched with scene details.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 267,
+          "column": 1207,
+          "kind": "string-literal",
+          "functionName": "infoText",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-3d03746450fb6212427f",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "psychological horror manga: obsessive line texture, warped expression, claustrophobic blacks, uncanny stillness, dread over gore.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 206,
+          "column": 86,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-3ddbd778c8382e80f956",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Generate a full-body character by strictly combining [IMG_1] and [IMG_2].\n\nAbsolute Head Preservation ([IMG_1]): The head from [IMG_1] must be preserved exactly as it is without any alterations. Do not change the facial features, expression, skin texture, or the specific directional lighting of the face. It must remain an exact, identical 1:1 match to the provided reference [IMG_1].\n\nStructure and Proportions ([IMG_2]): Use [IMG_2] as a strict structural reference for the body. Strictly respect the exact pose, the overall silhouette, the shape of the clothing, and the stylized head-to-body size ratio as drawn in the sketch. The dimensions and proportions of the sketch are sacred.\n\nBody and Lighting Adaptation: The generated body must seamlessly adapt its rendering, textures, and lighting to match the exact complex photographic lighting and hyper-realism of the head in [IMG_1]. The shadows, highlights, and material textures on the body and clothing must flawlessly align with the light source and environment implied by the head.\n\nFusion and Environment: Create a seamless, organic blend at the neck connecting the entirely unaltered head to the newly generated body. Place the final, cohesive full-body character against a clean, plain blue-grey cyclorama background (hex code #404135). MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 105,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-3f2eadd8f454d1247599",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "fashion editorial manga cover: elongated elegant silhouette, refined outfit detail, confident pose, glossy magazine color, stylish negative space.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 207,
+          "column": 67,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-3ffb44fbc7066b45c2d0",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Torn colored paper, crayon outlines, sticker-like eyes, glue shadows, rough scissors edges, flat tabletop scan feeling, deliberately simple shapes.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 240,
+          "column": 224,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-467bb2d2e4c9d79fe523",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Layered waxy texture, smeared blues and grays, uneven pressure, simple rain lines, small figure on a ground stripe, paper fibers visible.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 239,
+          "column": 211,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-47a2a1a579c0779f2a25",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "1970s-1980s television claymation: saturated colors, chunky rounded clay, cheerful oddness, simple stage backgrounds, analog studio charm.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 188,
+          "column": 88,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-47b1522bb118adada821",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Preserve Geometry (No Aesthetic Fixes)",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 45,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-4d29483d65cf41d8c97e",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Polish art-house puppet animation: surreal folk-modern shapes, poetic melancholy, handmade theatrical staging, muted poster colors, symbolic props, quiet uncanny mood.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 186,
+          "column": 71,
+          "kind": "string-literal",
+          "functionName": "sketchStylePrompt",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-4e00b7caa446b67ec218",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Generate a full-body character by using the red line sketches.\nAbsolute upper body Preservation: it  must be preserved exactly as it is without any alterations. Do not change the facial features, expression, skin texture, or the specific directional lighting of the face. It must remain an exact, identical 1:1 match to the provided reference.\n\nStructure and Proportions: Use the red line sketches as a strict structural reference for the lower body. Strictly respect the exact pose, the overall silhouette, the shape of the clothing, and the stylized head-to-body size ratio as drawn in the sketch. The dimensions and proportions of the sketch are sacred.\nImportant: Respect the weird  proportion, do not try to adapt real proportions.\n\n\"Body and Lighting Adaptation: The generated body must seamlessly adapt its rendering, textures, and lighting to match the exact complex photographic lighting and hyper-realism of the upper body. The shadows, highlights, and material textures on the new body parts and clothing must flawlessly align with the light source and environment implied by the upper body.\n\nIn a plain grey/blue background cyclorama\n\nFusion and Environment: Create a seamless, organic blend at the neck connecting the entirely unaltered head to the newly generated body. Place the final, cohesive full-body character against a clean, plain blue-grey cyclorama background (hex code #404135). MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.\"",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 77,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-4eab8bb94b05cc9ae711",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Bleeding marker edges, saturated primary colors, thick shaky contour, accidental ink pools, simple shapes, no polished rendering, keep it handmade and wrong.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 234,
+          "column": 254,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-543a47676d762ac9fdec",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Black spotted inks, limited amber/cyan/red palette, halftone grit, dramatic silhouette, low-angle staging if compatible with the sketch, no written signage.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 219,
+          "column": 206,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-569718cf8ab78a9405ed",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Turns a drawing or design into a finished image while keeping the original structure as needed.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 267,
+          "column": 972,
+          "kind": "string-literal",
+          "functionName": "infoText",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-5daebf5f125bb43e5c8b",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Smooth clay planes with subtle fingerprints, controlled seams, matte ceramic-clay skin, stylized fashion materials, cyclorama background, soft rim light and macro polish.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 193,
+          "column": 225,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-5f1743eecebeeeebde58",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "warm British claymation comedy: rounded plasticine forms, broad friendly faces, expressive brows, handmade miniature props, cozy practical set lighting, charming stop-motion imperfections.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 184,
+          "column": 93,
+          "kind": "string-literal",
+          "functionName": "sketchStylePrompt",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-64995737db2ca9a51676",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Clean ink, selective screentone, polished color flats, fabric folds and accessories emphasized, decorative typography-free cover composition.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 207,
+          "column": 217,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-655ba64e3f5132f56a31",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "kawaii chibi manga: tiny body, oversized head, simplified rounded shapes, cute expression, soft candy palette, toy-like charm.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 204,
+          "column": 89,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-695224efe7536c5c857f",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Hand-inked contour, watercolor or muted flat colors, small gestures, natural posture, modest background detail, visible paper texture.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 221,
+          "column": 211,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-6c8f864aae6ed4b2a75d",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Dense ink shadows, fine crosshatching, subtle screentones, textured paper grain, realistic hands and faces, low-key lighting, precise negative space.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 201,
+          "column": 206,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-702513d794ece967dc05",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Strong composition, controlled edges, layered color, subtle grain, realistic lighting simplified into graphic shadow blocks, source design readable but stylized.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 218,
+          "column": 212,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-728f5685b457c2921fb0",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "mature seinen noir: realistic anatomy, heavy blacks, controlled hatching, urban tension, cinematic rain/night mood, restrained emotion.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 201,
+          "column": 67,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-7311b98fce973a390f76",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "make it a black and white drawing, no shadows, just the pencil line. [Scene Description] MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 145,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-7433646f59ffe0874748",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "classic drawing-on-the-fridge look: innocent family-picture composition, stiff stick-like body logic, big symbolic shapes, cheerful emotional directness.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 235,
+          "column": 76,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-7459cd77f7875ea669d8",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "No hatching, no gradients, balanced cartoon figure against slightly more detailed environment, crisp contour, calm composition, clean color separations.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 216,
+          "column": 228,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-769b6445d01fca010f49",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Visible pencil grain, overlapping strokes, white gaps in the fill, hesitant outlines, erased marks, off-center composition, school-desk paper texture.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 233,
+          "column": 232,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-77397a63fd195efc4a87",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Blue ruled notebook paper, ballpoint pen plus colored pencil, scribbled shadows, crossed-out experiments, arrows or text-like marks must become abstract non-readable doodle marks.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 238,
+          "column": 226,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-78b640272b87e10b17ec",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Fine hair strands, light screentone gradients, petals, star textures, soft flowing costume edges, graceful proportions, dreamy white space.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 202,
+          "column": 227,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-7bf81624b1be5a5e3dfc",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "rainy-day wax crayon mood: soft childish melancholy, thick wax strokes, simple emotional weather, naive character design, cozy awkwardness.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 239,
+          "column": 68,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-8166f834d53c4788dfe7",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Plasticine color blocks, soft hand-sculpted contours, visible fingerprints, simple felt props, gentle tungsten lighting, slight stop-motion pose stiffness.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 188,
+          "column": 230,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-857ae93889a68869d844",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "shojo romance manga: elegant faces, delicate linework, luminous eyes, floral atmosphere, emotional softness, decorative sparkle fields.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 202,
+          "column": 88,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-85b89e62f593c84f86d0",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Use [IMG_1] as the source sketch and convert it into a finished image in this style.\nOriginal drawing weight: [DRAWING_WEIGHT]% ([DRAWING_WEIGHT_LABEL]).\nFidelity rule: preserve the source pose, silhouette, composition, main costume/object shapes, facial attitude, and readable identity according to this weight. At low weight, let the style reinterpret proportions and surface details. At high weight, keep the linework, landmarks, and proportions closer to the sketch.\nStyle priority: ${styleDirection}\nCraft details: ${craftDetails}\nLet the chosen style lead the materials, palette, lighting, anatomy simplification, and finishing. Avoid photorealism unless the style explicitly needs it. Avoid generic AI smoothness. MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure image only.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 164,
+          "column": 10,
+          "kind": "template-literal",
+          "functionName": "sketchStylePrompt",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-87611d64c167bcdae549",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sculpted clay figure on a miniature base, matte plasticine finish, clean contact shadows, tiny props, color-coded background, macro lens and crisp product-photo composition.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 190,
+          "column": 234,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-87f716ee54a54fbd2fad",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "newspaper strip cartoon: simple high-readability character, minimal background, confident black line, gag-strip clarity, warm limited color.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 224,
+          "column": 71,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-889391595831a4973ee1",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "weird felt-tip kid monster style: bright marker colors, strange teeth, too many eyes or fingers if the source suggests them, funny scary energy, naive invention.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 234,
+          "column": 89,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-8e9a7e820504e17accbe",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "[IMG_1] is a practical sculpted figurine/puppet character. Photograph this exact figurine with its exact proportions, head size, limb thickness, body shape as-is, physically present on location. Do not apply realistic human anatomy. This is NOT a human, it is a sculpted character with intentional non-realistic proportions. Do not correct or normalize proportions.\nFull body shot. [IMG_2 / ...description du decor...].\nThe character is physically present in the scene, not composited. Cast shadows from the character fall naturally on the ground surface, consistent with the sun angle and direction of the scene. The character skin, clothing and materials pick up ambient light, bounce light and color cast from the environment. Color grade, contrast, saturation and film grain are uniform across the entire image: character and background share the same photographic treatment. No difference in sharpness, noise level or color temperature between the character and the environment.\n[...style cinema: camera, focal length, director reference, ratio...]\nMANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 255,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-8fa523bdee50a6a36f6e",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Central European surreal stop-motion theatre: antique objects, dusty workshop palette, absurd transformations, carved puppet faces, eerie tactile realism.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 187,
+          "column": 74,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-9185ece69adf239070f0",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Keep the source identity readable but allow major proportion compression, clean ink outline, pastel color flats, tiny hands, glossy eyes, sticker-like clarity.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 204,
+          "column": 219,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-93528abeeea30f239633",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "overconfident kid comic drawing: heroic but badly proportioned figure, big action pose, exaggerated expression, chaotic fun, no adult polish.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 241,
+          "column": 90,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-955c6bf3c20ee4c50b4c",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Wobbly one-pass contour, mismatched eyes, uneven limbs, broken perspective, sparse color pencil fill, tiny mistakes preserved as the main style.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 236,
+          "column": 207,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-9a49af8b7f855602529b",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "make it a black and white drawing, no shadows, just the pencil line. MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 259,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-9aa9f56eb57c06846417",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Transform this exact sillustration into a photorealistic image by mapping ultra-realistic human skin, hair, clothing, and materials directly onto every precise line, contour, shape, and deformity of the original drawing as a strict blueprint—do not alter, interpret, smooth, correct, or modify any feature, proportion, asymmetry, or caricatural element, especially on the head, keep the exact same hard angle shape for the nose; faithfully reproduce every single detail pixel by pixel without any changes even if weird or deformed. Maintain identical composition, pose, and structure with absolute fidelity. Render as an 80mm macro photo of alive, real-life characters with tilt-shift focus for depth, natural features preserved exactly::1. Plain light beige studio background, high-quality professional studio lighting, hyper-detailed and sharp, no artistic liberty. MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 42,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-9ac38639c9016eae11ba",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Convert this drawing into an ultra-realistic photo with zero redesign. Pixel-lock the outer silhouette and all internal shapes—do not alter any line, angle, or proportion. HEADS MUST MATCH EXACTLY: keep the same skull volume, nose length, hairline, ear shape, mouth, eye position, wrinkles, and asymmetries. Do not fix anatomy or beautify. Keep identical composition, scale, perspective, pose, spacing, and framing. Only map realistic materials (leather, brocade textile, human skin, wood, metal) onto the original linework; textures must not cross or smooth the contours. No rounding, no smoothing, no reinterpretation of volumes; preserve all distortions and caricature features as drawn. Lighting: professional studio lighting on a plain light-beige background. Lens: 80 mm macro look with tilt-shift shallow depth of field (subject sharp, gentle bokeh). If uncertain, do not invent details—stay subtle and neutral. Structural fidelity > realism. If there’s a conflict, preserve the drawing lines. Lock the head silhouette and all facial landmarks (brow–nose–mouth–chin–ears) to the drawing. Any deviation is an error. MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 38,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-9ef9b6b3da312ac735d0",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Visible thumb-smoothed clay, tiny fingerprints, replacement-mouth feel, soft squash in the cheeks and hands, tactile fabric and clay seams, tabletop-scale depth of field.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 184,
+          "column": 285,
+          "kind": "string-literal",
+          "functionName": "sketchStylePrompt",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-9efc334836700493afb6",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "1980s mecha/sci-fi manga: mechanical line density, retro tech panels, heroic helmet shapes, cockpit drama, hard-surface detail.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 205,
+          "column": 63,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-9f8c61c906a6c1b4bacf",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "bad colored-pencil remake: sincere but clumsy drawing, uneven anatomy, wobbly outline, patchy coloring, strange color choices, lovable amateur confidence.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 233,
+          "column": 74,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-a37b98c363fa47a04406",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "pop-art comic poster: bold flat color, thick graphic outline, halftone dots, punchy design, high-impact commercial illustration.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 225,
+          "column": 92,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-a4870b649685fda78b74",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Locks non-human proportions and tells the model to respect the sculpted design instead of normalizing it.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 267,
+          "column": 371,
+          "kind": "string-literal",
+          "functionName": "infoText",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-a4d98fa4ccc60cc0aff8",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "European sci-fi bande dessinee: elegant alien architecture, clean technical detail, surreal landscape scale, refined color palette.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 223,
+          "column": 69,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-a7c1c8bc3f899f528c5d",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Precise ink line, flat-to-soft color blocks, intricate machinery and costumes, wide atmospheric composition, source sketch adapted into a polished adventure panel.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 223,
+          "column": 204,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ac39b5a1ea812e19cced",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Crisp inked machinery, screen-tone metal, speed-line background, cel-era color accents if color is used, angular armor and readable silhouette based on the sketch.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 205,
+          "column": 194,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ac5eebe23c19777aec92",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Wire-armature puppet logic, sculpted eyelids, spidery limbs, painted clay skin, miniature graveyard/cabinet textures, high-contrast blue-black lighting with warm candle accents.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 185,
+          "column": 252,
+          "kind": "string-literal",
+          "functionName": "sketchStylePrompt",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b2a29abcff03e35749b8",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "cyberpunk manga: neon city tension, techwear, cables, reflective rain, dense signage-free urban detail, high contrast ink.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 209,
+          "column": 69,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b478dbd9f47c618d0a97",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Thick black outlines, flat color separations, halftone paper texture, punchy rim shadows, clear muscles/folds where relevant, no text balloons or captions.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 217,
+          "column": 222,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b54d8008a386ab68751a",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "clay painting / bas-relief animation: the sketch becomes a flat sculpted clay image, painterly smears, raised edges, tactile color masses, frame-by-frame handmade texture.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 189,
+          "column": 72,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b8071afb58e5b36e76e0",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "No sharp edges, squashy clay hands and feet, clean colored backdrop, toy-scale props, softbox light, clear silhouette, charming imperfections without creepiness.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 192,
+          "column": 217,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-c1398699bcac500c0fca",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Construction-paper palette, crayon fill, glue-like collage edges where useful, thick black classroom marker outline, simple decorative border, handmade display feeling.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 237,
+          "column": 218,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-c13dafed38cdc442d0f7",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Transform this drawing into a photorealistic image. ABSOLUTE PRIORITY: Preserve every line, curve, and contour from the original drawing with ZERO interpretation. FACIAL FEATURES - NON-NEGOTIABLE: - Trace the nose EXACTLY as drawn - every bump, angle, length, and width must match perfectly - Follow the chin/jaw contours precisely - do not round or soften any angles - Match the exact distance ratios between features (eye spacing, nose length, etc.) - Keep all caricatural exaggerations and deformations INTACT - If a feature looks 'wrong' or 'too extreme' - that's correct, keep it PROCESS: 1. Overlay the drawing's linework as an absolute template 2. Apply ONLY realistic textures (skin pores, fabric weave, hair strands) onto these exact shapes 3. Do NOT adjust proportions for anatomical correctness or aesthetic appeal PHOTOGRAPHY: - 80mm macro with tilt-shift focus - Professional studio lighting on plain light beige background Remember: You are NOT redesigning or improving the character - you are purely converting drawing materials into photorealistic materials while maintaining IDENTICAL geometry. MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 46,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-c18e8df6f5ac5957bcbd",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Rugged ink, imperfect human faces, textured clothes, dense black areas, restrained screentone, gritty street or room atmosphere, serious stillness.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 203,
+          "column": 203,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-c2184707be5df23012a7",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "IMG_1 is a reference for a practical puppet/figurine character.\nPhotograph this exact figurine with its exact proportions, head size, limb thickness, body shape as-is in a reallocation. Do not apply realistic human anatomy. This is NOT a human, it is a sculpted character with intentional non-realistic proportions. MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 250,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-c26b7460dc951cc8b8d3",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Fine scratch lines, stippled shadows, distorted but controlled facial landmarks, black void backgrounds, paper grain, high-contrast eye and mouth details.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 206,
+          "column": 219,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-c31ca720268b15e6cc46",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Rough clay and papier-mache surfaces, hand-painted textures, visible seams, slightly asymmetrical puppet anatomy, shallow stage depth, simple spotlight and shadow play.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 186,
+          "column": 242,
+          "kind": "string-literal",
+          "functionName": "sketchStylePrompt",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-c40cd1fe9d6448a69850",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "CMYK-style color blocks, offset print texture, strong black contour, simplified shadows, source silhouette kept clear, no text, no typography.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 225,
+          "column": 224,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-c9a2910d860a4919868d",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Turn this drawing into a photograph—while maintaining the exact same composition and the exact same quirky, distorted design, you must use genuinely realistic materials (hair, fur, skin, fabric, glass, etc.). The result should look like an 80mm macro photo of real persons, with high-quality artisanal precision, uncanny valley vibe featuring highly detailed skin with exaggerated subsurface scattering, tilt-shift focus.\nIMPORTANT: You must strictly adhere to the head’s original design—even if it’s unusual—and project the ultra-realistic style precisely along the exact lines and contours of the angular drawing; be extremely meticulous. MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 50,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d152ab8fa12f8c882630",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Transform this exact sillustration into a photorealistic image by mapping ultra-realistic human skin, hair, clothing, and materials directly onto every precise line, contour, shape, and deformity of the original drawing as a strict blueprint—do not alter, interpret, smooth, correct, or modify any feature, proportion, asymmetry, or caricatural element, especially on the head, keep the exact same hard angle shape for the nose; faithfully reproduce every single detail pixel by pixel without any changes even if weird or deformed. Maintain identical composition, pose, and structure with absolute fidelity. Render as an 80mm macro photo of alive, real-life characters with tilt-shift focus for depth, natural features preserved exactly::1.  high-quality professional studio lighting, hyper-detailed and sharp, no artistic liberty.\nIMG_1 is a reference for a practical puppet/figurine character.\nPhotograph this exact figurine — with its exact proportions,head size, limb thickness, body shape — as-is in a reallocation. Do not apply realistic human anatomy. This is NOTa human, it is a sculpted character with intentionalnon-realistic proportions.\n\"Act as a professional color grader. apply a strict color match using [IMG_ 1] as the only palette reference. Perform a 'Luminance and Chrominance transfer' only: keep color temperature to perfectly align with the grading of [IMG_ 1]. Do not introduce any new elements.\" MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 34,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d53e32f2c21f70707031",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Mix clay, worn wood, metal scraps, thread, glass eyes, miniature drawers, patina, grime, practical overhead light, frame-by-frame object-animation feeling.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 187,
+          "column": 232,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d598448fc01d97a562f1",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Conversion / style transfer",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 173,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": "sketchStylePrompt",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d78ea704160399e877ea",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "premium clay editorial image: sculptural art-object finish, refined color palette, gallery lighting, elegant handmade puppet as a high-end design piece.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 193,
+          "column": 69,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d84265916b7728413c3b",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "gentle preschool clay animation: simple readable shapes, rounded safe forms, bright matte colors, soft smiles, friendly object-world design.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 192,
+          "column": 73,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-df5897a4eb72ddb91990",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "dark gothic clay fairytale: tall angular silhouettes, pale moonlit faces, crooked buildings, striped shadows, theatrical sadness, elegant macabre whimsy.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 185,
+          "column": 95,
+          "kind": "string-literal",
+          "functionName": "sketchStylePrompt",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e5e7a3aa50a63e744992",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Cracked clay, straw, wool, wood splinters, stitched fabric, waxy eyes, soot marks, rough finger-built surfaces, dramatic low practical lighting.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 191,
+          "column": 245,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e7f833d507769d3ba777",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Ron Mueck Sculpture Style",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 53,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e8a11ea9d7b4a0d21a40",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Black-and-white manga finish, strong contour hierarchy, screentone shadows, dynamic panel energy even in a single image, motion arcs, dramatic foreshortening where the source allows.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 200,
+          "column": 220,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e94f1d1d246c41457fe3",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Generate character design for me (Character Design). Proportion design (different height comparisons, head-to-body ratio, etc.). Three views (front, side, back). Expression design (Expression Sheet). Pose design (Pose Sheet) → various common poses. Costume design (Costume Design). [Scene Description] MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 125,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ee8a0a6271809254f93b",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Preserve the sketch structure under loose watercolor edges, visible paper texture, pale washes, fine line cleanup, soft backlight and airy composition.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 208,
+          "column": 199,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-efdebcd054dae8de0961",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "noir pulp comic: hard shadows, venetian-blind lighting, smoke, rain, trenchcoat mood, dangerous high-contrast atmosphere.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 219,
+          "column": 81,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-efee72debdd0253a3fa4",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Flattened clay pressed onto a board, palette-knife marks, soft smudged gradients, relief outlines following the original sketch, overhead rostrum-camera composition.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 189,
+          "column": 247,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f275612c6d405f7add0f",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "The head is locked and must remain completely untouched — do not alter, relight, rerender, or modify any way, not a single pixel. Only the drawn/sketched body below the head must be transformed into a fully photorealistic render. Preserve every aspect of the original drawing exactly as-is: body proportions, silhouette, pose, clothing design, accessories, and the size ratio between head and body. Replace only the sketch textures and materials with photorealistic fabric, skin, and material renders, fully consistent in lighting and tone with the existing head. The body must match the raw photographic quality of the head: real fabric weave, fabric wrinkles, worn material imperfections, skin with visible pores and texture on hands and arms, no CG smoothness, no illustration sheen. Lighting must be uneven and naturalistic, not studio-perfect. The neckline of the clothing must blend seamlessly into the existing neck and head — adjust the collar and fabric geometry to naturally receive the neck as-is, without generating any new neck geometry or skin. The transition between head and body must be seamless, with no visible cut, edge, or compositing artifact. The character stands in a seamless cyclorama studio with background color [BG_COLOR], with soft natural ground shadow beneath the feet and subtle curved wall-to-floor transition visible behind. Do not interpret, correct, or normalize any proportions — this is intentional character design. Same framing and crop as the original image. Do not correct or normalize proportions. MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 100,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f45fdc2dc89098e32b9d",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "elementary classroom art-show piece: bold simple subject, proud color blocking, paper-craft innocence, readable but not refined.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 237,
+          "column": 86,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-fa9ff8b6edaeed854ece",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Scratchy ink, xerox noise, uneven line weight, cut-and-paste feeling, limited two-color risograph palette, rough but intentional character exaggeration.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 220,
+          "column": 192,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-fb28c6282bed8ad8cff7",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Make this drawing a photo you must keep the exact same composition and the exact same weird and deformed design but with real realistic materials. It must look like 80 mm macro photo of real life alive characters with tilt shift focus. you must strictly respect the head design even if it's weird and project the ultra realistic style on the exact lines and contour of the design, be very precise. In a plain beige studio background, hi quality professional studio lighting MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 58,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-fc2314f5acc742674ba9",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "indie literary comic: soft human observation, quiet composition, simple expressive line, muted palette, emotionally honest atmosphere.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 221,
+          "column": 73,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-fd97ed8d6aee7ced62f5",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "folk-horror clay puppet style: rough rural materials, unsettling handmade face, candlelit miniatures, earthy palette, ritual objects, slow nightmare mood.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 191,
+          "column": 87,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ]
+    }
+  ]
+}

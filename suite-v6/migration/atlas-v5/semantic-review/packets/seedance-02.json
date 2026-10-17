@@ -1,0 +1,2855 @@
+{
+  "schemaVersion": "1.0",
+  "id": "semantic-seedance-02",
+  "owner": "seedance",
+  "status": "pending-astra-review",
+  "approximateTokens": 5192,
+  "prompts": [
+    {
+      "id": "text-ae200e3fea33613ffef8",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: medium [SUBJECT] backlit by golden light, [CONTEXT] monumental nature, [STYLE] handheld-inspired composition. Fragile.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1570,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ae547e605da8f90fde69",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 4 (06:00-08:00): wide dynamic tracking momentum, [SUBJECT] moving through [CONTEXT], [STYLE] color intensifying.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1804,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-afda146d554b3424c181",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "${subjectPart} ${contextPart} Use cause-and-effect staging, shared light direction, matching scale, and clear spatial contact so both references feel like one believable setup.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1929,
+          "column": 20,
+          "kind": "template-literal",
+          "functionName": "buildCoexistenceLine",
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b1ff64a0633e9a518285",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "${label}: ${description}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2371,
+          "column": 24,
+          "kind": "template-literal",
+          "functionName": "buildMovingDraftLines",
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b20dec97d53cd8197ab5",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: medium [SUBJECT] engaged with [CONTEXT], natural [STYLE] light, social moment authentic, no performance.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1700,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b24a10fc812d7fe76d8a",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: medium [SUBJECT] engaging [CONTEXT] element, [STYLE] time suggested through stillness. Spiritual.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1512,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b288741555ed9dc2dd73",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: close-up handheld-suggestion, [SUBJECT] detail magnified, [CONTEXT] out-of-focus background gritty, raw texture.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1636,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b2a476ed3c8d9f2c1c7a",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: wide frontal of [SUBJECT] centered in [CONTEXT], geometric grid composition, [STYLE] forensic clinical light. No movement.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1135,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b2ee17cb2a6217353c6d",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 1 (00:00-02:00): frontal wide, imperceptible camera movement (1-2mm), [STYLE] color slightly oversaturated, geometric frame holding.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1274,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b3c12fb3ebfddedbfd78",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: medium-close [SUBJECT], mundane action frozen, tungsten troubling, [STYLE] observation impassive, discomfort building.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1483,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b423ba1251ccd8ce27f8",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Step 1/3 — sending ${refCount} reference(s), mode \"${GO_MODE_LABELS[currentGoMode]}\", ${template.name} to ${atlasAiModel} for ${providerLabel}...",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2443,
+          "column": 31,
+          "kind": "template-literal",
+          "functionName": "aiDirectSequence",
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b4367b24ee9bd45b7101",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: medium [SUBJECT] engaging [CONTEXT], contre-jour golden, [STYLE] poetic composition. Graceful.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1573,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b559a09da75db3115526",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: extreme close-up detail visceral, [STYLE] practical light unforgiving, texture and grain, raw horror implication.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1639,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b5b23b2dbae1bc795059",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Context: ${vmfCells[i].context.trim()}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2158,
+          "column": 68,
+          "kind": "template-literal",
+          "functionName": "buildVmfReferences",
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b5b6adf88bdb6dc19074",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 7 (12:00-14:00): return extreme wide, imperceptible upward shift from Shot 1, [STYLE] light transformed golden, time revealed sacred. Transcendence complete.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1528,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b63ab6efa191ca3d5b17",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: extreme close-up contre-jour golden, [SUBJECT] detail transcendent-simple, [CONTEXT] nature blurred soft. Grace vulnerability.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1577,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b6d4556ec702aebbde63",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 5 (08:00-10:00): medium dynamic high-impact moment, [SUBJECT] center action energy, [STYLE] saturated color.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1805,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b701717e15a9bf98591d",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 3 (04:00-06:00): oblique angle, slow camera tilt revealing [CONTEXT] depth, neon light gradually illuminating edges, dreamy intensifying.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1245,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b7945789109d17690bc2",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "px;background:#23232b;border:1px solid rgba(255,255,255,0.18);border-radius:8px;padding:4px;box-shadow:0 10px 28px rgba(0,0,0,0.5);",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2614,
+          "column": 93,
+          "kind": "string-literal",
+          "functionName": "_showImgPasteMenu",
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b9560a961bdc096015d6",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: dynamic angle with oblique composition, neon [CONTEXT] light reflected on [SUBJECT], saturated color, dreamy quality. No movement.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1234,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ba3d351c79078b661828",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "7 shots • 14 seconds • neon color pulsing, statue-like rotations, light intensity crescendo, menace building",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1458,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ba5c56cf63626153d91b",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: medium [SUBJECT] positioned asymmetrically, [CONTEXT] balanced through [STYLE] color/light, golden or purple tone. Elegance.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1356,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ba6fd37f0a02fcca0632",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 3 (04:00-06:00): close-up, slow push-in with lens distortion increasing (fish-eye creeping in), [STYLE] color oversaturating, sensory climb.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1183,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ba72187090fda5a757a8",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "10 static stills. Aggressive neon red/violet, statue-like poses, menacing beauty, silence. No animation, no movement.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1443,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-bb032710a0354b758e5f",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Extend the main subject (${subject}) into the secondary context.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1925,
+          "column": 19,
+          "kind": "template-literal",
+          "functionName": "buildCoexistenceLine",
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-bb2936383b3a78e75c16",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: perfectly centered wide of [SUBJECT] in [CONTEXT], symmetry nearly obsessive, gothic black/white palette with one accent, [STYLE] color.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1197,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-bb35b219d49c74a1643d",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 1 (00:00-02:00): wide dynamic slow push forward, [SUBJECT] and [CONTEXT], [STYLE] rich color introducing spectacle.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1801,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-bc2f405d80e8cb5ebfc8",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: perfectly frontal dead-center wide of [SUBJECT] in [CONTEXT], mathematical composition, [STYLE] color hyper-saturated or unnaturally muted.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1259,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-bc4afe1675e04a2146ef",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: close-up detail [SUBJECT], practical light creating strong shadow, texture tactile visceral, [STYLE] grain heavy.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1633,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-bcff582638918ac29a9e",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: wide social documentary of [SUBJECT] in [CONTEXT], natural [STYLE] light, no artifice, human moment captured.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1693,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-bea32168eee9af047090",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Sequence shot 3 (04:00-06:00): close-up handheld suggestion, practical [STYLE] light source moving slightly, texture accumulating.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1648,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-bed973c8d766030ae2e9",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: wide master with [SUBJECT] and [CONTEXT], warm [STYLE] practical light, humanist perspective, epic scale.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1758,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-bef9df144b8be4368321",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 3 (04:00-06:00): close-up face, slow shift of neon color red to violet pulsing, [STYLE] intensity building, menace accumulating.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1462,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-c001327b41ff6a953eef",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Still photograph: overhead bird's-eye perspective of [SUBJECT] in [CONTEXT]. Geometric composition. No movement.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1111,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-c0267506fbc2b303391b",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: extreme wide, [SUBJECT] small in landscape, sacred geography suggested, [STYLE] light mystical. Time present.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1513,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-c15467fe2a290c3a8737",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: return similar to Shot 1, saturated colors deeper, neon/tungsten balanced differently, [STYLE] memory or distance suggested.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1237,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-c18e26a09cff4fe628c2",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 1 (00:00-02:00): wide social documentary handheld, [SUBJECT] in [CONTEXT], natural [STYLE] light flowing, authentic moment.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1708,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-c31371beeb08fa1a0d60",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: return wide, similar Shot 1 framing, [STYLE] light now deeper practical, documentary conclusion, gritty real.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1640,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-c3e3cc078146781516aa",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "10 static stills. Humanist composition, emotional clarity, warm practical lighting, epic intimacy. American spectacle.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1753,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-c46aa05cb90ed0473668",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 6 (10:00-12:00): medium slow zoom with symmetry maintained, [SUBJECT] growing centered, [STYLE] light symmetrical.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1620,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-c4838577d09ed9efbf7d",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: bird's-eye overhead centered, [SUBJECT] in [CONTEXT], geometric patterns emphasized, [STYLE] color treatment creating wrongness.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1265,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-c4be3d5591e9b0e52a5a",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Still photograph: right 45-degree angle, [SUBJECT] at rest in [CONTEXT]. Spatial depth visible. Immobile frame.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1106,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-c4da05041f915d9a6120",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 2 (02:00-04:00): symmetrical medium, slow zoom maintaining perfect geometry, [SUBJECT] centered, [STYLE] light clinical.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1616,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-c53e6014c4c486332fcc",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: extreme close-up detail, aggressive neon red, [SUBJECT] expression frozen, [STYLE] menacing beauty. Hypnotic.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1453,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-c6674d28dddc32b0d262",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 5 (08:00-10:00): centered framing slow rotation (frame stays centered on [SUBJECT]), [CONTEXT] geometry revealing symmetry.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1619,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-c66ac6422da7d0e47032",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 1 (00:00-02:00): wide, slow accumulation of motion blur (starts minimal, builds over 2 sec), [SUBJECT] slightly distorting, [STYLE] grain present.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1553,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-c7b69470a8d6551ff4d5",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 7 (12:00-14:00): return wide dynamic, fast momentum pull, [SUBJECT] and [CONTEXT], [STYLE] color ultimate spectacle. Blockbuster peak.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1807,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-c8fd796c8e573dd46c43",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: close-up [SUBJECT] hand or face, [CONTEXT] nature blurred poetic, [STYLE] light dream-like, memory suggested.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1729,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ca098e49cdccc841fd5b",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 1 (00:00-02:00): vast wide, imperceptible upward camera movement (aerial suggest), [SUBJECT] small in [CONTEXT], [STYLE] cool light holding.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1305,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ca1c17ef56ae52da5ae2",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 4 (06:00-08:00): wide elegant, imperceptible camera drift revealing [CONTEXT] balance, [STYLE] light golden hour deepening.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1370,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ca8689794ea132f83ff8",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 4 (06:00-08:00): wide symmetrical, neon colors reaching aggressive maximum, [SUBJECT] perfectly still center, architectural threat.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1463,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ca8f5b05149599857c46",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: wide dynamic master, [SUBJECT] and [CONTEXT] in high-impact composition, [STYLE] saturated color palette, spectacle.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1789,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-caaedd57bbe39a9b24cc",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: wide nature-dominant with [SUBJECT] small, [STYLE] golden hour suggesting time-of-day passage, meditative.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1727,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-caec67b5fecb5219e093",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 5 (08:00-10:00): medium-close, slow infinitesimal pan exploring detail, tungsten highlighting banal objects becoming ominous, [STYLE] malaise.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1495,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-cb49486642951a1a182c",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 1 (00:00-02:00): centered wide, slow lateral camera movement (subjects moving slightly within frame), [STYLE] gothic light theatrical, symmetry maintained.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1212,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-cb5bc749168adc0ec3ab",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: wide [SUBJECT] small against black void or fluorescent wash, composition oppressive, [CONTEXT] looming. Ecrasante.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1386,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-cbf54e2887f2785f4fb7",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 3 (04:00-06:00): close-up [SUBJECT] moment, handheld subtle movement, natural [STYLE] light intimate, dignity captured.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1710,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-cca3ca6027c8ca22e639",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 4 (06:00-08:00): symmetrical wide, slow reveal of mirrored elements becoming perfectly identical, [STYLE] light flat theatrical throughout.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1277,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-cd55b744e067a25b5a17",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: medium-wide symmetrical, [SUBJECT] framed by [CONTEXT] geometry, warm light deliberate shadows, ritualistic. Beauty ominous.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1329,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-cd9f36baf86488f6e32c",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: medium [SUBJECT] perfectly still, tungsten eerie shadows, [CONTEXT] ordinary but wrong. Discomfort.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1477,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-cdafbf151c0a37014ea6",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "10 static stills. Symmetry slightly broken, gothic contrast, theatrical lighting, miniature perspective. No movement, no animation.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1195,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ce080ad42728626a7f79",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: close-up [SUBJECT] face contre-jour rim-light halo, [STYLE] grace suggested, contemplative expression. Divine question.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1571,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-cebeeaf11b9b5e709157",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 4 (06:00-08:00): close-up, slow rotation 20 degrees, shallow bokeh color shifting neon purple to golden warm, ethereal beauty.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1246,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-cf11c1fee44a114257f0",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: return wide, identical Shot 1 framing, tungsten overtly troubling, [SUBJECT] surrounded uncanny banality. Eternal mystery.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1485,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-cfdb9cc0d1fe1c030481",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: extreme close-up [SUBJECT] with focus breathing effect frozen, detail morphing digital-like, [STYLE] noise overwhelming.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1540,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d04b3cb158529da469a7",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 2 (02:00-04:00): medium, slow push-in on [SUBJECT], focus breathing gentle, [STYLE] color saturating deeper, romantic mood building.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1244,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d09691f4285c69a3856a",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 3 (04:00-06:00): close-up face, imperceptible focus breathing, tungsten light wavering (hum effect), expression trapped neutral.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1493,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d0c7205236be84339a83",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 5 (08:00-10:00): wide float with [SUBJECT] off-center, colors bleeding and mixing, [STYLE] tungsten haze increasing, temporal suspension.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1247,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d29c42bf99bd9becbd95",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: vast wide of [SUBJECT] in monumental [CONTEXT], atmospheric haze, [STYLE] baroque light dramatic, scale epic.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1662,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d367db39787f43efd4b0",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "@image${loaded[0] + 1} setting",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2195,
+          "column": 20,
+          "kind": "template-literal",
+          "functionName": "vmfPrimaryContext",
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d392611d848254c104ac",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 1 (00:00-02:00): extreme wide, barely perceptible upward pan (5 degrees/2 sec), [SUBJECT] small, [STYLE] light cool holding, time present.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1522,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d3aa66dbc0e56a363c83",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: extreme wide establishing, [SUBJECT] perfectly centered, [CONTEXT] impossible geometric alignment, surreal order.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1607,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d46be46c5fafd1fdd514",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: medium dynamic [SUBJECT] posed for action, [STYLE] color rich dramatic, [CONTEXT] framed for impact.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1790,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d4a428caed8c9fbc1574",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "7 shots • 14 seconds • handheld movement, practical light shifts, documentary authenticity, raw viscerality",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1644,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d4d1f0786d6633d27949",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "7 shots • 14 seconds • dynamic momentum building, rich color intensifying, action-ready framing, spectacle crescendo",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1799,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d4d90f01fa9a34c495a8",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 6 (10:00-12:00): close-up detail, neon color pulsing extreme red, [STYLE] intensity menacing beautiful, hypnotic rhythm.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1465,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d627b2b903c9ad7dd155",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: extreme close-up of [SUBJECT], color solarized or inverted in [STYLE], overwhelming sensory saturation. Static detail.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1168,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d67806add542247095de",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 5 (08:00-10:00): symmetrical overview, slow push-in on [SUBJECT] while maintaining frame symmetry, dollhouse geometry holding, [STYLE] color deepening.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1216,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d6bfd1d4f1615a71d780",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: return wide, asymmetrical echoing Shot 1, [STYLE] light slightly cool shift, prestige conclusion. Mystery eternal.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1361,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d74698becf3f45ebdfc0",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Bring the secondary subject (${secondSubject}) into a logical relationship with the main subject (${subject}).",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1924,
+          "column": 19,
+          "kind": "template-literal",
+          "functionName": "buildCoexistenceLine",
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d7d1f98569af21baf850",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "${String(minutes).padStart(2, '0')}:${secs}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1936,
+          "column": 20,
+          "kind": "template-literal",
+          "functionName": "formatTimecode",
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d8af6d2505ca097225a3",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Still photograph: low floor-level angle looking up at [SUBJECT], geometric architectural [CONTEXT] lines converging. Oppressive geometry.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1142,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d91f5cee7a5e0bc5c204",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 6 (10:00-12:00): close-up detail, slow pan across texture, tungsten golden light shifting, bokeh depth dreamlike, sensual.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1434,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d9b8f6fdb99620f3497a",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 3 (04:00-06:00): extreme close-up, slow push-in into shadow, light/dark ratio shifting toward darkness, [STYLE] grain overwhelming.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1400,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d9c0b511499d39abd57f",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Wong Kar-wai: neon saturation, step-printed motion blur, longing melancholy, intimate close framings.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1824,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-daf17056cb6f107dcab8",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 6 (10:00-12:00): medium slow camera movement, monumental [CONTEXT] framing [SUBJECT], [STYLE] light deepening.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1682,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-db09c990177e3e4b2107",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: close-up [SUBJECT] face with unfathomable [CONTEXT] depth, meditation on time, transcendent-patient expression. Duration.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1514,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-dba2cdd75f70fdea20d0",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: wide geometric framing, [SUBJECT] within architectural [CONTEXT], perfect symmetry, [STYLE] desaturated cold. Immobile.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1138,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-dbc40b4b51d6f230a4df",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: low angle [SUBJECT] backlit against [CONTEXT], rim-light revealing contours, [STYLE] baroque silhouette drama.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1668,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-dc8e8c65f645527f0229",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: medium [SUBJECT] perfectly still pose, neon red light dominant, silhouette quality, aggressive beauty. Statue-like.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1446,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-dca2ace6a4343480ed78",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: close-up [SUBJECT] face, natural light from window or environment, expression authentic unperformed, [STYLE] dignity.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1695,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-dca6603c2f235ace888e",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: centered low angle with [SUBJECT] framed by [CONTEXT] geometry, vanishing point lead toward infinity, architectural.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1605,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-dcab5580970f9a579c24",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 2 (02:00-04:00): symmetrical medium, tilt-shift depth effect shifting (focus plane moving), warm light spreading, wrongness subtle.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1337,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-dcf1f5ebb5fb5738f664",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 4 (06:00-08:00): wide documentary pan revealing [CONTEXT] and [SUBJECT], practical light changing frame-to-frame, authentic.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1649,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ddf3bd70d81b0d3a8502",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: wide of [SUBJECT] in [CONTEXT], asymmetrical composition, [STYLE] golden hour or purple night light. Elegant restraint.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1352,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-de81beb70752aa4856f6",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: tilted extreme wide, [SUBJECT] dwarfed by [CONTEXT], saturated warm color, lens distortion dramatic. Vertiginous still.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1173,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-debad82893fd4c04e9e8",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: medium-close, golden anamorphic bokeh, [SUBJECT] expression intertwined with [STYLE] light, intensity. Choreography.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1421,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-dfc09c236f9c3e88747a",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: extreme close-up [SUBJECT] detail, [CONTEXT] vast blurred beyond, scale shift intimate. Personal within epic.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1297,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-dfccbd8a0f3e42644c3e",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 2 (02:00-04:00): medium, motion blur and digital morphing building together, [SUBJECT] features subtly shifting, grain intensifying.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1554,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e08449dd0f4e33c550ff",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: symmetrical framing, [SUBJECT] center, background/foreground mirrored nearly identically, uncanny order. Theatrical lighting.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1205,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e1719f03659edbb43374",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 7 (12:00-14:00): return vast wide, identical Shot 1, [SUBJECT] small settled, [STYLE] light deepened cool tone, epic conclusion. Silence.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1311,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e1fe50c8ebe0e2a10c9f",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "10 static stills. Geometric precision, clinical underlight, forensic detail. No movement, no animation, no camera.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1133,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e2231c899945eb2a1a99",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: medium dynamic framing creating momentum, [SUBJECT] center energy, [STYLE] saturated color action-ready.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1793,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e30ae7213d2cce201c3f",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Still photograph: extreme close-up [SUBJECT] details, warm light, miniature-like tilt-shift clarity, intimate grotesqueness. Static.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1323,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e4094f4211e640ee0d8b",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 2 (02:00-04:00): medium slow zoom on [SUBJECT], contre-jour rim-light intensifying, golden light blessing, [STYLE] ethereal movement.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1585,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e40b74b68b163918dc3c",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: return establishing, blur extreme frozen, [SUBJECT] more digitally morphed, grain overwhelming, [STYLE] glitch-beautiful. Transcendence.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1547,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e42a2a00031deb97995e",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 7 (12:00-14:00): return extreme wide, identical Shot 1 framing, light now predominantly blue-gold with cool shift, grace revealed lost. Transcendence temporal complete.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1590,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e4541816a73a03c485df",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: extreme close-up [SUBJECT] face sterile precision, clinical [STYLE] light, every detail mapped, cold capture.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1603,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e4e1ac668f1563157b83",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Still photograph: extreme close-up texture/detail, morphing effect frozen, blur extreme, [CONTEXT] implied through grain chaos.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1546,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e4e4943ac7dbafaf0dc7",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Still photograph: bird's-eye overhead of [SUBJECT] in [CONTEXT], geometric shadows from structure, grid patterns, surveillance aesthetic.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1140,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e51e789bcd17e001be61",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: wide establishing social space with [SUBJECT] and [CONTEXT], natural light documentary, realism unfiltered.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1696,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e53c22d306ac853a9097",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 1 (00:00-02:00): extreme wide, slow upward pan suggesting heaven, contre-jour light golden divine, [SUBJECT] small sacred, grace present.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1584,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e5e1293147670e05ed55",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: extreme close-up detail of [SUBJECT], textures and surfaces revealed. Static focus. No animation.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1108,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e725def791a648c12325",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: medium [SUBJECT] framed by architectural [CONTEXT], [STYLE] light baroque dramatic side-lighting, monumental.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1667,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e87942bb6aaabe1e4a05",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: wide symmetrical, [SUBJECT] center, [CONTEXT] mirrored, [STYLE] warm light, ritualistic atmosphere. Dark beauty.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1324,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e9bda7d2cd613ab6f844",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: frontal [SUBJECT] against stark minimal [CONTEXT], geometric perfection, [STYLE] color palette chosen wrong. Formal alienation.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1263,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ea517900432337cf19da",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 2 (02:00-04:00): medium off-center, slow rack focus from background to [SUBJECT], [STYLE] color contrast golden/purple shifting.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1368,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ea533ee2e5306723c758",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 2 (02:00-04:00): wide push-in very slowly on [SUBJECT], scale gradually shifting, negative space compressing, epic mood building.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1306,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-eacaf4444a07957bc5ce",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "${context}; secondary context: ${secondContext}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1918,
+          "column": 20,
+          "kind": "template-literal",
+          "functionName": "buildContextText",
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ed03f0e2eda20a1a1e8d",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: extreme close-up [SUBJECT] with [CONTEXT] depth behind blurred, intimate but surrounded vastness. Temporal disorientation.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1510,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ed46a10ef294c99095d9",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 7 (12:00-14:00): return wide, camera settling, colors now deeply saturated [STYLE] palette, neon/tungsten perfect balance. Romantic culmination.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1249,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-edcbd30ca2d7313752f7",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "7 Cinematic Sequence Shots • 14 Seconds • Kling wording",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2001,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": "setMode",
+          "owners": [
+            "seedance"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2015,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": "setMovingProvider",
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-edf12c3e2801b5e2bb69",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "7 cinematic shots • 14 seconds • 2 sec per shot • subtle movement and light shifts",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1117,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-eef227efec077fca1c25",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: wide [SUBJECT] asymmetrically positioned, [CONTEXT] background balanced, [STYLE] golden or cool tone. Elegant.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1358,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ef3841e921a59249a10a",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: close-up hand/detail showing [SUBJECT]'s life, [STYLE] natural light, texture of lived experience, dignity implied.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1698,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ef85c706a36c291a43a5",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 4 (06:00-08:00): extreme close-up slow pan across texture detail, [STYLE] baroque light revealing decay, obsessive.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1680,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-efe95e61d3b31377650e",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 6 (10:00-12:00): return to medium, gentle pullback movement, [SUBJECT] settling, [STYLE] light settling into warm tone.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1124,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f0685f4bfbe4e4580bbb",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 1 (00:00-02:00): wide geometric frontal, slow lateral tracking left, [SUBJECT] centered, [STYLE] clinical light precise.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1150,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f18662815d6c089e0303",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 3 (04:00-06:00): close-up shallow, slow pan revealing bokeh texture golden, tungsten light caressing [SUBJECT], sensual intensity.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1431,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f1b86574575408a7183b",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "AI directed · ${providerLabel} · ${modeLabel} · ${template.name} · ${settings.shotCount} shots · ${settings.duration}s · refs: ${refTags} · ${model}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2391,
+          "column": 30,
+          "kind": "template-literal",
+          "functionName": "renderAiDirectedPrompt",
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f1cfb9f7a76302d20104",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: close-up [SUBJECT] moment of impact, [STYLE] color intense saturated, emotional peak spectacle.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1794,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f1f575a787095a082363",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: medium [SUBJECT] engaged moment, [STYLE] warm light creating emotional resonance, [CONTEXT] supporting narrative.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1759,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f2018184863ef8b5ac26",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: symmetrical medium of [SUBJECT], warm practical lighting, grotesque details subtle in [CONTEXT]. Tableaux vivant.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1322,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f2437b3b0a40a0278dfd",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 7 (12:00-14:00): return extreme wide, imperceptible upward pan echo, [STYLE] golden-blue light, time passage revealed. Meditation complete.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1745,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f3586e131c3b0ac71864",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: wide with motion blur applied (frozen blur), [SUBJECT] distorted in captured movement, [STYLE] grain heavy, glitching. Cyber.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1538,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f488410be6193819106c",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 7 (12:00-14:00): return frontal wide, [STYLE] underlight now fully clinical blue-cold, [SUBJECT] isolated in geometric perfection. Surveillance complete.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1156,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f4bf3c57c395711823ed",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: wide of [SUBJECT] in [CONTEXT], hyper-saturated vibrant colors, tungsten/neon mixing, [STYLE] dreamy atmosphere. No movement.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1228,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f574711063ef17e27ffb",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: vast wide of [SUBJECT] small within monumental [CONTEXT], horizon dominant line, [STYLE] cool limited palette. Scale overwhelming.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1290,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f5928b58f86ffef4929a",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: extreme wide of [SUBJECT] in Thai [CONTEXT] landscape, [STYLE] golden light timeless, nature monumental, suspension.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1724,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f5ab57b7663eda30516c",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 7 (12:00-14:00): return vast wide, slow pullback completing cycle, [SUBJECT] surrounded mythology, epic conclusion.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1683,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f5f637db730aece2a637",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "7 shots • 14 seconds • asymmetrical tracking, rack focus moments, golden/purple light dance, sensual control",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1365,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f67f05360fcd5b66b487",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "7 shots • 14 seconds • symmetrical zoom, tilt-shift depth shifting, ritual light progression, dread building",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1334,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f7165fea4375cdfd249e",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: bird's-eye overhead symmetrical of [SUBJECT] in [CONTEXT], perfect geometric center, top-down oppression.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1604,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f724ead2efef85acdb3a",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 3 (04:00-06:00): overhead angle emerging through slow reveal, grid geometry of [CONTEXT] becoming visible, [STYLE] light grid-casting.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1152,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f73acf5a13c50a2f8862",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 5 (08:00-10:00): medium-close, slow subtle pose shift (hand movement millimeter-level), neon light tracking micro-geometry, controlled threat.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1464,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f7a44680f02ce7a61085",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 5 (08:00-10:00): medium-close, slow rack focus back to [CONTEXT], sensual [STYLE] light shifting purple night suggestion.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1371,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f93128940dbc2554197d",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: medium [SUBJECT] with blur trails frozen, [STYLE] digital corruption visible, grain texture heavy. Glitch.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1539,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f949124a9fb02792312a",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 5 (08:00-10:00): medium intense blur directional, [SUBJECT] distorted maximum, grain/digital layers compounding, hypnotic peak.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1557,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f96df04571fdf350db40",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: wide naturalistic [CONTEXT] element (rain, light, water), [SUBJECT] passive, [STYLE] color suggesting passage. Meditative.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1515,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f9d644229da658f170bd",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: wide showing [SUBJECT] amid miniature [CONTEXT], forced perspective scale confusion, playful macabre. Toy-like realism.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1204,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-fa733e4aa4ebd2aecdb4",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: wide documentary master capturing social [CONTEXT] and [SUBJECT], natural light, humanist perspective.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1699,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-fbf045d2790466fddfb7",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 4 (06:00-08:00): bird's-eye aerial perspective emerging through slow zoom, patterns of [CONTEXT] revealing, scale disorienting.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1308,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-fc97d8b90538629db81c",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: close-up [SUBJECT] face, warm [STYLE] light revealing emotion, [CONTEXT] depth supporting humanity, intimate.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1757,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-fd4979f6d3193cc6659d",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: close-up neon red/purple reflecting [SUBJECT] face, skin texture in violent light, still, aggressive beauty. Hypnotic.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1450,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-fe580f4ce1e11e5a7f37",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sequence shot 6 (10:00-12:00): close-up slow pan across [SUBJECT], warm [STYLE] light humanizing, emotion accumulating.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1775,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-fe8dc0136676ad073406",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "7 Cut-to video beats • Seedance wording • Same scene logic",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2000,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": "setMode",
+          "owners": [
+            "seedance"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 2014,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": "setMovingProvider",
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-feef48e49a0397e4fdec",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Still photograph: medium shot [SUBJECT] with soft-focus edges (subtle motion blur aesthetic applied statically), saturated [STYLE] color. Static.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/seedance_framing_final.html",
+          "line": 1229,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "seedance"
+          ]
+        }
+      ]
+    }
+  ]
+}

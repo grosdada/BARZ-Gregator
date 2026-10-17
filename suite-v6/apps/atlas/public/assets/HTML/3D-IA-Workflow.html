@@ -1,0 +1,2129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pose Transfer Lab</title>
+<style>
+:root {
+  --ink:        #101616;
+  --ink-2:      #1e2728;
+  --ink-3:      #151d1d;
+  --ink-4:      #0b1010;
+  --paper:      #f3e8dc;
+  --paper-dim:  #c9b8a6;
+  --paper-mute: #958b80;
+  --line:       rgba(243,232,220,0.14);
+  --line-hi:    rgba(215,163,111,0.38);
+  --signal:     #d7a36f;
+  --signal-2:   #f0b978;
+  --signal-dim: rgba(215,163,111,0.12);
+  --signal-glow:rgba(215,163,111,0.28);
+  --pose:       #4ad8b4;
+  --pose-dim:   rgba(74,216,180,0.10);
+  --pose-line:  rgba(74,216,180,0.35);
+  --hero:       #c9a8ff;
+  --hero-dim:   rgba(201,168,255,0.10);
+  --decor:      #f5c842;
+  --decor-dim:  rgba(245,200,66,0.10);
+  --mono:  'JetBrains Mono', ui-monospace, monospace;
+  --serif: 'Fraunces', 'Times New Roman', serif;
+  --radius: 4px;
+  --radius-lg: 8px;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+html, body { background: var(--ink); color: var(--paper); font-family: var(--mono); font-size: 14px; line-height: 1.5; min-height: 100vh; -webkit-font-smoothing: antialiased; }
+
+body::before {
+  content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+  background-image:
+    linear-gradient(to right, rgba(255,255,255,0.015) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.015) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+body::after {
+  content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.9 0 0 0 0 0.9 0 0 0 0 0.85 0 0 0 0.06 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.5;
+  mix-blend-mode: overlay;
+}
+
+.shell { position: relative; z-index: 1; max-width: 1280px; margin: 0 auto; padding: 32px 24px 80px; }
+
+/* HEADER */
+.hdr {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: end;
+  gap: 24px;
+  padding-bottom: 20px;
+  margin-bottom: 28px;
+  border-bottom: 1px solid var(--line);
+  position: relative;
+}
+.hdr::after {
+  content: ""; position: absolute; left: 0; bottom: -1px; height: 2px; width: 80px;
+  background: var(--signal);
+}
+.brand { display: flex; align-items: baseline; gap: 14px; }
+.brand-mark {
+  width: 42px; height: 42px;
+  background: var(--signal);
+  display: grid; place-items: center;
+  font-family: var(--mono); font-weight: 800; font-size: 18px;
+  color: var(--ink); letter-spacing: -0.02em;
+  position: relative;
+  transform: rotate(-2deg);
+}
+.brand-mark::after {
+  content: ""; position: absolute; inset: 3px; border: 1px solid var(--ink);
+  pointer-events: none;
+}
+.brand-text { display: flex; flex-direction: column; gap: 2px; }
+.brand-title {
+  font-family: var(--serif); font-weight: 500; font-style: italic;
+  font-size: 28px; color: var(--paper); letter-spacing: -0.02em;
+  line-height: 1;
+}
+.brand-sub {
+  font-family: var(--mono); font-size: 10px; font-weight: 500;
+  color: var(--paper-mute); letter-spacing: 0.18em; text-transform: uppercase;
+}
+.meta-block {
+  justify-self: end;
+  display: flex; gap: 24px;
+  font-family: var(--mono); font-size: 10px; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--paper-mute);
+}
+.meta-block span strong { display: block; color: var(--paper); font-weight: 500; font-size: 11px; margin-top: 2px; letter-spacing: 0.06em; }
+
+/* TABS */
+.tabs { display: flex; gap: 0; margin-bottom: 28px; border-bottom: 1px solid var(--line); }
+.tab {
+  flex: 0 0 auto;
+  padding: 14px 22px;
+  background: transparent; border: none;
+  font-family: var(--mono); font-weight: 500; font-size: 11px;
+  letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--paper-mute); cursor: pointer;
+  position: relative;
+  transition: color 0.15s ease;
+  display: flex; align-items: center; gap: 10px;
+}
+.tab .num {
+  font-family: var(--serif); font-style: italic; font-size: 16px;
+  color: var(--paper-dim); font-weight: 400;
+}
+.tab:hover { color: var(--paper); }
+.tab.active { color: var(--paper); }
+.tab.active::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: -1px;
+  height: 2px; background: var(--signal);
+}
+.tab.active .num { color: var(--signal); }
+
+/* SECTIONS */
+.section { display: none; }
+.section.active { display: block; animation: fadeIn 0.3s ease; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+
+/* PIPELINE */
+.pipeline {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr;
+  align-items: stretch;
+  gap: 0;
+  margin-bottom: 28px;
+  background: var(--ink-2);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+.node {
+  padding: 18px 20px;
+  display: flex; flex-direction: column; gap: 8px;
+  position: relative;
+}
+.node-tag {
+  font-family: var(--mono); font-size: 9px; font-weight: 700;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--paper-mute);
+  display: flex; align-items: center; gap: 6px;
+}
+.node-tag::before {
+  content: ""; width: 6px; height: 6px; border-radius: 50%;
+}
+.node-1 .node-tag::before { background: var(--pose); box-shadow: 0 0 8px var(--pose); }
+.node-2 .node-tag::before { background: var(--hero); box-shadow: 0 0 8px var(--hero); }
+.node-3 .node-tag::before { background: var(--decor); box-shadow: 0 0 8px var(--decor); }
+.node-1 .node-tag { color: var(--pose); }
+.node-2 .node-tag { color: var(--hero); }
+.node-3 .node-tag { color: var(--decor); }
+
+.node-title {
+  font-family: var(--serif); font-weight: 500; font-size: 18px;
+  color: var(--paper); letter-spacing: -0.01em; line-height: 1.2;
+}
+.node-desc {
+  font-family: var(--mono); font-size: 10.5px;
+  color: var(--paper-mute); line-height: 1.5;
+}
+.arrow {
+  display: grid; place-items: center;
+  background: var(--ink-3);
+  color: var(--paper-mute);
+  font-family: var(--mono); font-size: 18px; font-weight: 300;
+  border-left: 1px solid var(--line);
+  border-right: 1px solid var(--line);
+  min-width: 36px;
+}
+
+.decor-toggle {
+  display: inline-flex; align-items: center; gap: 8px;
+  margin-top: 6px;
+  font-family: var(--mono); font-size: 10px; font-weight: 500;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--paper-mute); cursor: pointer;
+  user-select: none;
+}
+.decor-toggle input { display: none; }
+.decor-switch {
+  width: 28px; height: 14px; background: var(--line); border-radius: 99px;
+  position: relative; transition: background 0.2s;
+}
+.decor-switch::after {
+  content: ""; position: absolute; top: 2px; left: 2px;
+  width: 10px; height: 10px; background: var(--paper-dim); border-radius: 50%;
+  transition: all 0.2s ease;
+}
+.decor-toggle input:checked ~ .decor-switch { background: var(--decor); }
+.decor-toggle input:checked ~ .decor-switch::after { left: 16px; background: var(--ink); }
+
+/* Background mode switch (Environment / Cyclorama) */
+.bg-mode-row {
+  display: flex; gap: 4px;
+  margin-top: 8px;
+}
+.bg-mode-row .mini-pill {
+  flex: 1;
+  font-size: 9px;
+  padding: 5px 8px;
+}
+
+/* Cyclorama swatches */
+.cyc-colors {
+  display: flex; gap: 6px;
+  margin-top: 8px;
+  padding: 6px;
+  background: var(--ink-3);
+  border-radius: var(--radius);
+}
+.cyc-swatch {
+  flex: 1;
+  aspect-ratio: 1;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.15s ease;
+  position: relative;
+}
+.cyc-swatch:hover { transform: scale(1.08); }
+.cyc-swatch.active {
+  border-color: var(--paper);
+  box-shadow: 0 0 0 2px var(--ink-3), 0 0 12px rgba(255,255,255,0.2);
+}
+
+.node-3.disabled { opacity: 0.4; }
+.node-3.disabled::before {
+  content: ""; position: absolute; inset: 0;
+  background: repeating-linear-gradient(
+    -45deg, transparent 0, transparent 6px, var(--ink-3) 6px, var(--ink-3) 8px
+  );
+  opacity: 0.3; pointer-events: none;
+}
+
+/* MODE SWITCH */
+.mode-row {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 16px; padding: 0 2px;
+  flex-wrap: wrap; gap: 12px;
+}
+.mode-label {
+  font-family: var(--mono); font-size: 10px; font-weight: 700;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--paper-mute);
+}
+.mode-label::before { content: "> "; color: var(--signal); }
+
+.mode-switch {
+  display: inline-flex;
+  background: var(--ink-2);
+  border: 1px solid var(--line);
+  border-radius: 99px;
+  padding: 3px;
+  gap: 2px;
+  position: relative;
+}
+.mode-pill {
+  padding: 8px 18px;
+  background: transparent; border: none;
+  font-family: var(--mono); font-size: 10px; font-weight: 600;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--paper-mute); cursor: pointer;
+  border-radius: 99px;
+  transition: all 0.2s ease;
+  position: relative; z-index: 1;
+}
+.mode-pill:hover:not(.active) { color: var(--paper); }
+.mode-pill.active { color: var(--ink); background: var(--signal); }
+
+/* CARD / FORM */
+.card {
+  background: var(--ink-2);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  position: relative;
+}
+.card-corner {
+  position: absolute; top: -1px; right: -1px;
+  background: var(--signal); color: var(--ink);
+  font-family: var(--mono); font-size: 9px; font-weight: 800;
+  letter-spacing: 0.12em; padding: 4px 10px;
+  border-bottom-left-radius: var(--radius);
+}
+
+.field-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+.field { display: flex; flex-direction: column; gap: 6px; }
+.field.span-2 { grid-column: 1 / -1; }
+
+.field-label {
+  font-family: var(--mono); font-size: 10px; font-weight: 600;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--paper-mute);
+  display: flex; align-items: center; gap: 6px;
+}
+.label-tag {
+  font-family: var(--mono); font-size: 9px; font-weight: 800;
+  padding: 2px 6px; border-radius: 3px; letter-spacing: 0.1em;
+}
+
+input[type="text"], textarea, select {
+  width: 100%;
+  background: var(--ink);
+  border: 1px solid var(--line);
+  color: var(--paper);
+  padding: 11px 12px;
+  font-family: var(--mono); font-size: 12.5px;
+  border-radius: var(--radius);
+  transition: all 0.15s ease;
+  resize: vertical;
+}
+input[type="text"]:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: var(--signal);
+  background: var(--ink-3);
+  box-shadow: 0 0 0 3px var(--signal-dim);
+}
+textarea { min-height: 70px; line-height: 1.5; }
+select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23b8b3a6' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 32px;
+  cursor: pointer;
+}
+optgroup { font-family: var(--serif); font-style: italic; color: var(--signal); }
+
+/* CHECKLIST */
+.checklist {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px;
+  background: var(--ink); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 10px;
+}
+.check {
+  display: flex; align-items: center; gap: 9px;
+  padding: 6px 8px;
+  font-family: var(--mono); font-size: 11px;
+  color: var(--paper-dim); cursor: pointer;
+  border-radius: var(--radius);
+  transition: all 0.15s ease;
+  user-select: none;
+}
+.check:hover { color: var(--paper); background: var(--ink-3); }
+.check input { display: none; }
+.check-box {
+  width: 14px; height: 14px; flex-shrink: 0;
+  border: 1px solid var(--line-hi);
+  border-radius: 2px; position: relative;
+  background: var(--ink-2);
+}
+.check input:checked ~ .check-box { background: var(--signal); border-color: var(--signal); }
+.check input:checked ~ .check-box::after {
+  content: ""; position: absolute; left: 4px; top: 1px;
+  width: 4px; height: 8px; border: solid var(--ink);
+  border-width: 0 2px 2px 0; transform: rotate(45deg);
+}
+.check input:checked ~ .check-text { color: var(--paper); }
+
+/* HELP */
+.help-strip {
+  margin-top: 14px;
+  background: var(--ink);
+  border: 1px dashed var(--line-hi);
+  border-radius: var(--radius);
+  font-family: var(--mono); font-size: 11px;
+  color: var(--paper-dim); line-height: 1.6;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+.help-strip summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 8px 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  user-select: none;
+  font-family: var(--mono); font-size: 10px;
+  letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--paper-mute);
+  transition: color 0.15s ease;
+}
+.help-strip summary::-webkit-details-marker { display: none; }
+.help-strip summary:hover { color: var(--paper); }
+.help-strip[open] summary { color: var(--paper); border-bottom: 1px dashed var(--line); padding-bottom: 10px; }
+.help-strip summary .icn {
+  display: grid; place-items: center;
+  width: 18px; height: 18px;
+  border-radius: 50%;
+  background: var(--signal); color: var(--ink);
+  font-family: var(--serif); font-style: italic; font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+}
+.help-strip .help-content {
+  padding: 12px 14px 14px;
+}
+.help-strip code {
+  background: var(--ink-3); padding: 1px 5px; border-radius: 2px;
+  color: var(--signal-2); font-size: 10.5px;
+}
+
+/* OUTPUT */
+.output-block {
+  margin-top: 24px;
+  background: var(--ink-2);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+.output-head {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 12px 16px;
+  background: var(--ink-3);
+  border-bottom: 1px solid var(--line);
+}
+.output-title {
+  font-family: var(--mono); font-size: 10px; font-weight: 700;
+  letter-spacing: 0.18em; text-transform: uppercase; color: var(--paper);
+  display: flex; align-items: center; gap: 10px;
+}
+.output-title::before {
+  content: ""; width: 7px; height: 7px; border-radius: 50%;
+  background: var(--signal); box-shadow: 0 0 8px var(--signal-glow);
+  animation: pulse 2s infinite;
+}
+@keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.4; } }
+.output-stats {
+  font-family: var(--mono); font-size: 10px;
+  color: var(--paper-mute); letter-spacing: 0.08em;
+}
+.output-stats span { color: var(--paper); }
+
+/* Prompt toolbar — gros bouton sticky en haut + switch mode */
+.prompt-toolbar {
+  position: sticky;
+  top: 8px;
+  z-index: 50;
+  margin-top: 24px;
+  margin-bottom: 14px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 14px;
+  align-items: center;
+  background: var(--ink);
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+}
+.prompt-mode-switch {
+  display: flex; align-items: center; gap: 4px;
+  font-family: var(--mono); font-size: 10px;
+  letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--paper-mute);
+}
+.mini-pill {
+  background: transparent;
+  border: 1px solid var(--line-hi);
+  color: var(--paper-mute);
+  font-family: var(--mono); font-weight: 600; font-size: 10px;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  padding: 6px 11px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.mini-pill:hover { color: var(--paper); border-color: var(--paper-mute); }
+.mini-pill.active { background: var(--paper); color: var(--ink); border-color: var(--paper); }
+.copy-sticky {
+  margin: 0;
+  padding: 14px 20px;
+  border-radius: var(--radius);
+}
+
+.output-body {
+  padding: 18px;
+  font-family: var(--mono); font-size: 12px;
+  line-height: 1.7;
+  color: var(--paper);
+  white-space: pre-wrap;
+  word-break: break-word;
+  max-height: 360px;
+  overflow-y: auto;
+}
+.output-body::-webkit-scrollbar { width: 8px; }
+.output-body::-webkit-scrollbar-track { background: var(--ink); }
+.output-body::-webkit-scrollbar-thumb { background: var(--line-hi); border-radius: 4px; }
+
+.output-body .tk-pose  { color: var(--pose); font-weight: 600; }
+.output-body .tk-hero  { color: var(--hero); font-weight: 600; }
+.output-body .tk-decor { color: var(--decor); font-weight: 600; }
+.output-body .tk-cam   { color: var(--signal-2); }
+
+.copy-btn {
+  width: 100%;
+  padding: 16px;
+  background: var(--signal);
+  color: var(--ink);
+  border: none;
+  font-family: var(--mono); font-weight: 700; font-size: 12px;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  display: flex; align-items: center; justify-content: center; gap: 12px;
+}
+.copy-btn:hover { background: var(--signal-2); }
+.copy-btn:active { transform: scale(0.99); }
+.copy-btn.done { background: var(--pose); }
+.copy-btn .arrow-icn {
+  font-family: var(--serif); font-style: italic; font-size: 16px; line-height: 1;
+}
+
+/* TOAST */
+.toast {
+  position: fixed; bottom: 24px; right: 24px;
+  background: var(--paper); color: var(--ink);
+  padding: 12px 18px;
+  font-family: var(--mono); font-size: 11px; font-weight: 600;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  border-radius: var(--radius);
+  transform: translateY(80px); opacity: 0;
+  transition: all 0.25s ease;
+  z-index: 100;
+}
+.toast.show { transform: translateY(0); opacity: 1; }
+
+/* FOOTER */
+.foot {
+  margin-top: 40px; padding-top: 18px;
+  border-top: 1px solid var(--line);
+  display: flex; justify-content: space-between; align-items: center;
+  font-family: var(--mono); font-size: 10px; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--paper-mute);
+}
+.foot strong { color: var(--paper); font-weight: 500; }
+
+
+/* WORKSPACE SWITCH */
+.workspace-tabs{display:flex;gap:8px;margin-bottom:24px;border-bottom:1px solid var(--line);padding-bottom:12px;flex-wrap:wrap}.workspace-tab{border:1px solid var(--line);background:var(--ink-3);color:var(--paper-dim);border-radius:var(--radius);padding:11px 16px;cursor:pointer;font-family:var(--mono);text-transform:uppercase;letter-spacing:.12em;font-size:11px;font-weight:800}.workspace-tab.active{background:var(--signal);color:var(--ink-4);border-color:var(--signal)}.workspace-view{display:none}.workspace-view.active{display:block;animation:fadeIn .25s ease}.transfer-intro{display:flex;align-items:end;justify-content:space-between;gap:18px;margin-bottom:18px;padding:18px;background:var(--ink-2);border:1px solid var(--line);border-radius:var(--radius-lg)}.transfer-intro h2{font-family:var(--serif);font-size:42px;line-height:.95;color:var(--paper);margin:0 0 8px}.transfer-intro p{color:var(--paper-mute);max-width:620px}.transfer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:12px}.transfer-card{background:var(--ink-2);border:1px solid var(--line);border-radius:var(--radius-lg);padding:14px;min-height:0;display:flex;flex-direction:column;gap:10px}.transfer-card.gold{border-color:rgba(245,200,66,.65)}.transfer-card.pink .transfer-title{color:#ff6aa9}.transfer-card.green .transfer-title{color:#4ad86e}.transfer-card-head{display:grid;grid-template-columns:1fr auto auto auto;gap:8px;align-items:start}.transfer-title{font-family:var(--serif);color:var(--paper);font-size:20px;line-height:1.15}.transfer-copy{border:1px solid var(--line-hi);background:var(--signal);color:var(--ink-4);border-radius:var(--radius);padding:8px 12px;font-family:var(--mono);font-weight:900;text-transform:uppercase;font-size:11px;cursor:pointer}.transfer-field{width:100%;min-height:42px;resize:vertical;background:var(--ink-4);color:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:10px;font-family:var(--mono);font-size:12px}.transfer-outfit{display:flex;gap:8px;align-items:center;color:var(--paper-dim);font-size:11px}.transfer-output{display:none;flex:initial;min-height:150px;max-height:320px;overflow:auto;background:var(--ink-4);color:var(--paper-dim);border:1px solid var(--line);border-radius:var(--radius);padding:12px;white-space:pre-wrap;font-family:var(--mono);font-size:11px;line-height:1.55}.transfer-card.open .transfer-output{display:block}.help-strip summary .info-label{margin-left:8px}
+.transfer-toggle,.transfer-info{width:32px;height:32px;border:1px solid var(--line-hi);background:var(--ink-3);color:var(--paper);border-radius:var(--radius);font-family:var(--mono);font-weight:900;cursor:pointer;display:grid;place-items:center;line-height:1}.transfer-toggle{font-size:22px;transition:transform .18s ease,background .18s ease,color .18s ease}.transfer-toggle[aria-expanded="true"]{transform:rotate(90deg);background:var(--signal);color:var(--ink-4);border-color:var(--signal)}.transfer-info{font-style:italic;font-size:14px}.transfer-info-wrap{position:relative;display:inline-grid}.transfer-info-pop{position:absolute;right:0;top:calc(100% + 8px);z-index:20;width:min(320px,78vw);padding:12px;border:1px solid var(--line-hi);border-radius:var(--radius);background:var(--ink-4);color:var(--paper);box-shadow:0 18px 40px rgba(0,0,0,.48);font-family:var(--mono);font-size:11px;line-height:1.55;opacity:0;transform:translateY(-4px);pointer-events:none;transition:opacity .16s ease,transform .16s ease}.transfer-info-wrap:hover .transfer-info-pop,.transfer-info:focus+.transfer-info-pop{opacity:1;transform:translateY(0);pointer-events:auto}html body .checklist,html body .help-strip,html body .prompt-toolbar{background:var(--ink-2)!important;color:var(--paper)!important;border-color:var(--line-hi)!important}html body .mini-pill.active{background:var(--signal)!important;color:var(--ink-4)!important;border-color:var(--signal)!important}
+body[data-barzy-theme="sand"]{--ink:#101616;--ink-2:#1e2728;--ink-3:#151d1d;--ink-4:#0b1010;--paper:#f3e8dc;--paper-dim:#c9b8a6;--paper-mute:#958b80;--line:rgba(243,232,220,.14);--line-hi:rgba(215,163,111,.38);--signal:#d7a36f;--signal-2:#f0b978;--signal-dim:rgba(215,163,111,.12)}body[data-barzy-theme="sand"]:before,body[data-barzy-theme="sand"]:after{opacity:.5}body[data-barzy-theme="sand"] input,body[data-barzy-theme="sand"] textarea,body[data-barzy-theme="sand"] select,body[data-barzy-theme="sand"] .output-body,body[data-barzy-theme="sand"] .transfer-output,body[data-barzy-theme="sand"] .transfer-field{background:var(--ink);color:var(--paper)}
+
+/* POSE TRANSFER LAB REFINEMENT */
+.brand-mark { display: none; }
+.brand-title {
+  font-family: var(--mono);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 18px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+}
+.tab {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--ink-3);
+  padding: 15px 24px;
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+.tab .num { display: none; }
+.tab.active {
+  background: var(--signal);
+  color: var(--ink-4);
+  border-color: var(--signal);
+}
+.tab.active::after { display: none; }
+.workflow-mode-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 4px 0 14px;
+}
+.mode-logo-3d {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line-hi);
+  background: var(--signal);
+  color: var(--ink-4);
+  font-family: var(--mono);
+  font-size: 18px;
+  font-weight: 900;
+  transform: rotate(-2deg);
+}
+.workflow-mode-title {
+  font-family: var(--mono);
+  font-size: 22px;
+  font-weight: 900;
+  color: var(--paper);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.workflow-mode-kicker {
+  color: var(--paper-mute);
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.pipeline-details {
+  margin-bottom: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: rgba(30, 39, 40, 0.72);
+  overflow: hidden;
+}
+.pipeline-details summary {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  cursor: pointer;
+  user-select: none;
+  color: var(--paper);
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.pipeline-details summary::-webkit-details-marker { display: none; }
+.pipeline-details .icn {
+  width: 24px;
+  height: 24px;
+  border: 1px solid var(--line-hi);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: var(--signal);
+}
+.pipeline-details .pipeline { margin: 0 12px 12px; }
+.environment-controls {
+  display: grid;
+  grid-template-columns: minmax(190px, 1fr) minmax(260px, auto) minmax(180px, auto);
+  align-items: center;
+  gap: 14px;
+  margin: 4px 0 22px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--ink-2);
+}
+.environment-controls .control-copy {
+  color: var(--paper-mute);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.environment-controls .control-copy strong {
+  display: block;
+  color: var(--paper);
+  font-size: 13px;
+  margin-top: 2px;
+  letter-spacing: 0.04em;
+}
+.environment-controls .bg-mode-row,
+.environment-controls .cyc-colors { margin: 0; min-width: 0; }
+@media (max-width: 880px) {
+  .environment-controls { grid-template-columns: 1fr; align-items: stretch; }
+}
+
+@media (max-width: 880px) {
+  .pipeline { grid-template-columns: 1fr; }
+  .arrow { border-left: none; border-right: none; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 4px; transform: rotate(90deg); min-width: 0; }
+  .field-grid { grid-template-columns: 1fr; }
+  .checklist { grid-template-columns: 1fr; }
+  .hdr { grid-template-columns: 1fr; }
+  .meta-block { justify-self: start; }
+  .mode-row { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .prompt-toolbar { grid-template-columns: 1fr; gap: 8px; }
+  .prompt-mode-switch { flex-wrap: wrap; }
+}
+</style>
+    <link rel="stylesheet" href="../barzy-theme.css?v=20260518-42">
+    <style>
+      body.barzy-themed .cyc-colors .cyc-swatch {
+        color: transparent !important;
+        border-color: rgba(255, 255, 255, 0.18) !important;
+        box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.24) !important;
+      }
+      body.barzy-themed .cyc-colors .cyc-swatch.active {
+        border-color: var(--paper) !important;
+        box-shadow: 0 0 0 2px var(--ink-3), 0 0 14px rgba(255,255,255,0.22), inset 0 0 0 1px rgba(0,0,0,0.22) !important;
+      }
+    </style>
+</head>
+<body>
+
+<div class="shell">
+
+  <header class="hdr">
+    <div class="brand">
+      <div class="brand-text">
+        <div class="brand-title">Pose Transfer Lab</div>
+        <div class="brand-sub">2D/3D Transfert workflow</div>
+      </div>
+    </div>
+    <div></div>
+    <div class="meta-block">
+      <span>Mode<strong id="hdr-mode">2D</strong></span>
+      <span>Source<strong id="hdr-source">BZ Helper</strong></span>
+      <span>Build<strong>2026.05</strong></span>
+    </div>
+  </header>
+
+  <nav class="workspace-tabs">
+    <button class="workspace-tab active" onclick="openWorkspace('transfer-2d', this)">2D Transfer</button>
+    <button class="workspace-tab" onclick="openWorkspace('transfer-3d', this)">3D Lab</button>
+  </nav>
+
+  <section id="transfer-2d" class="workspace-view active">
+    <div class="transfer-intro">
+      <div>
+        <div class="brand-sub">Transfer prompt library</div>
+        <h2>Pose Transfer 2D</h2>
+        <p>Transfer cards extracted from BZ Helper: morphology, pose, subject, style, background and reference color. Each card keeps its original logic and accepts scene details.</p>
+      </div>
+      <div class="meta-block"><span>Mode<strong>2D</strong></span><span>Source<strong>BZ Helper</strong></span></div>
+    </div>
+    <div class="transfer-grid" id="transfer2d-grid"></div>
+  </section>
+
+  <section id="transfer-3d" class="workspace-view">
+    <div class="workflow-mode-heading">
+      <div class="mode-logo-3d">3D</div>
+      <div>
+        <div class="workflow-mode-title">Pose Transfer 3D</div>
+        <div class="workflow-mode-kicker">3D source to AI image/video</div>
+      </div>
+    </div>
+  <nav class="tabs">
+    <button class="tab active" onclick="openTab('image', this)">
+      3D IM -> A.I IM
+    </button>
+    <button class="tab" onclick="openTab('video', this)">
+      3D VID -> A.I VID
+    </button>
+  </nav>
+
+  <!-- -------------------- IMAGE SECTION -------------------- -->
+  <section id="image" class="section active">
+
+    <details class="pipeline-details">
+      <summary><span class="icn">i</span><span>3D reference workflow</span></summary>
+    <div class="pipeline">
+      <div class="node node-1">
+        <span class="node-tag">[IMG_1] · Setup Driver</span>
+        <div class="node-title">3D Setup</div>
+        <div class="node-desc">[IMG_1] pilote <strong>le setup, la caméra, le cadrage, la pose et le placement</strong>. Apparence, textures et morphologie de la source 3D sont ignorées.</div>
+      </div>
+      <div class="arrow">-></div>
+      <div class="node node-2">
+        <span class="node-tag">[IMG_2] · Character</span>
+        <div class="node-title">Hero Identity</div>
+        <div class="node-desc"><strong>Priorité absolue</strong> : visage, costume, morphologie, proportions, textures. La pose s'adapte à cette anatomie, pas l'inverse.</div>
+      </div>
+      <div class="arrow">-></div>
+      <div class="node node-3" id="node-decor">
+        <span class="node-tag" id="node-decor-tag">[IMG_3] · Style</span>
+        <div class="node-title" id="node-decor-title">Style Reference</div>
+        <div class="node-desc" id="node-decor-desc">Référence visuelle uniquement : lumière, grain, couleur, contraste, texture photo. Ne copie jamais le lieu, le sujet, le cadrage ou la composition.</div>
+
+
+      </div>
+    </div>
+    </details>
+
+    <div class="mode-row">
+      <span class="mode-label">Target from [IMG_2]</span>
+      <div class="mode-switch" id="target-switch">
+        <button class="mode-pill active" onclick="setTargetType('character', this)">Character</button>
+        <button class="mode-pill" onclick="setTargetType('object', this)">Object</button>
+        <button class="mode-pill" onclick="setTargetType('scene', this)">Scene</button>
+      </div>
+    </div>
+
+    <div class="mode-row" id="character-kind-row">
+      <span class="mode-label">Character type</span>
+      <div class="mode-switch" id="character-kind-switch">
+        <button class="mode-pill active" onclick="setCharacterKind('puppet', this)">Puppet</button>
+        <button class="mode-pill" onclick="setCharacterKind('human', this)">Human</button>
+      </div>
+    </div>
+
+    <div class="mode-row">
+      <span class="mode-label">Type de source 3D pour [IMG_1]</span>
+      <div class="mode-switch" id="source-switch">
+        <button class="mode-pill" onclick="setMode('blocking', this)">Blocking</button>
+        <button class="mode-pill active" onclick="setMode('preview', this)">Preview</button>
+        <button class="mode-pill" onclick="setMode('render', this)">Render</button>
+      </div>
+    </div>
+
+    <div class="mode-row">
+      <span class="mode-label">Niveau de transfert depuis [IMG_1]</span>
+      <div class="mode-switch" id="transfer-switch">
+        <button class="mode-pill" onclick="setTransfer('pose', this)" title="Pose uniquement, libre cadrage">Pose only</button>
+        <button class="mode-pill" onclick="setTransfer('framing', this)" title="Pose + cadrage 2D">+ Framing</button>
+        <button class="mode-pill active" onclick="setTransfer('camera', this)" title="Pose + cadrage strict (default)">+ Framing + Pose</button>
+      </div>
+    </div>
+
+    <div class="environment-controls">
+      <div class="control-copy">Style mode<strong>[IMG_3] Style / Cyclorama</strong></div>
+      <div class="bg-mode-row">
+        <button class="mini-pill active" id="bg-env" onclick="setBgMode('env')">[IMG_3] Style</button>
+        <button class="mini-pill" id="bg-cyc" onclick="setBgMode('cyc')">Cyclorama</button>
+      </div>
+      <div class="cyc-colors" id="cyc-colors" style="display:none">
+        <button class="cyc-swatch active" data-color="#F2ECCA" data-name="white" style="background:#F2ECCA" onclick="setCycColor(this)" title="White · #F2ECCA"></button>
+        <button class="cyc-swatch" data-color="#B3A089" data-name="beige" style="background:#B3A089" onclick="setCycColor(this)" title="Beige · #B3A089"></button>
+        <button class="cyc-swatch" data-color="#766D63" data-name="taupe" style="background:#766D63" onclick="setCycColor(this)" title="Taupe · #766D63"></button>
+        <button class="cyc-swatch" data-color="#34383C" data-name="graphite" style="background:#34383C" onclick="setCycColor(this)" title="Graphite · #34383C"></button>
+        <button class="cyc-swatch" data-color="#515973" data-name="blue" style="background:#515973" onclick="setCycColor(this)" title="Blue · #515973"></button>
+        <button class="cyc-swatch" data-color="#496B6D" data-name="petrol" style="background:#496B6D" onclick="setCycColor(this)" title="Petrol · #496B6D"></button>
+        <button class="cyc-swatch" data-color="#DE7C68" data-name="pink" style="background:#DE7C68" onclick="setCycColor(this)" title="Pink · #DE7C68"></button>
+        <button class="cyc-swatch" data-color="#A66F5B" data-name="clay" style="background:#A66F5B" onclick="setCycColor(this)" title="Clay · #A66F5B"></button>
+        <button class="cyc-swatch" data-color="#A58A52" data-name="ochre" style="background:#A58A52" onclick="setCycColor(this)" title="Ochre · #A58A52"></button>
+        <button class="cyc-swatch" data-color="#6F7654" data-name="olive" style="background:#6F7654" onclick="setCycColor(this)" title="Olive · #6F7654"></button>
+        <button class="cyc-swatch" data-color="#7F9181" data-name="sage" style="background:#7F9181" onclick="setCycColor(this)" title="Sage · #7F9181"></button>
+        <button class="cyc-swatch" data-color="#777083" data-name="lavender" style="background:#777083" onclick="setCycColor(this)" title="Lavender · #777083"></button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-corner">A.I IMAGE</div>
+
+      <div class="field-grid">
+
+        <div class="field span-2">
+          <label class="field-label">Final subject / action</label>
+          <textarea id="img-subject" rows="2" placeholder="Ex: A futuristic soldier mid-leap, drawing a katana in a bioluminescent temple corridor..."></textarea>
+        </div>
+
+        <div class="field">
+          <label class="field-label">Caméra & objectif</label>
+          <select id="img-camera">
+            <optgroup label="Cinéma Large (Wide)">
+              <option value="shot on Arri Alexa 65, 14mm ultra-wide lens, deep depth of field">Arri Alexa 65 · 14mm Ultra-Wide</option>
+              <option value="shot on Red V-Raptor, 24mm wide angle lens, slight barrel distortion">Red V-Raptor · 24mm Wide</option>
+              <option value="GoPro Hero 12 Black, action-cam fish-eye perspective">GoPro · Fish-eye</option>
+              <option value="shot on DJI Inspire 3, Zenmuse X9-8K, 18mm aerial wide lens">DJI Inspire 3 · Drone Wide</option>
+            </optgroup>
+            <optgroup label="Cinéma Standard">
+              <option value="shot on Sony Venice 2, 35mm anamorphic lens, cinematic bokeh">Sony Venice 2 · 35mm Anamorphic</option>
+              <option value="shot on Panavision Millennium, 50mm prime lens, natural perspective">Panavision · 50mm Prime</option>
+              <option value="shot on Blackmagic URSA Mini Pro, 35mm prime, gritty cinematic texture">Blackmagic URSA · 35mm</option>
+              <option value="shot on Arri Alexa Mini LF, 40mm Cooke S7/i lens, natural skin tones">Arri Alexa Mini LF · 40mm Cooke</option>
+              <option value="Kodak 5219 500T 35mm film stock, 50mm Zeiss Master Prime">Kodak 5219 · 50mm Master Prime</option>
+            </optgroup>
+            <optgroup label="Portrait & Détail">
+              <option value="shot on Hasselblad H6D, 85mm medium format, creamy bokeh">Hasselblad · 85mm Portrait</option>
+              <option value="shot on Leica M11, 35mm Summilux lens, high micro-contrast">Leica M11 · 35mm Street</option>
+              <option value="shot with 100mm Macro lens, microscopic detail">Macro 100mm · Extreme Detail</option>
+              <option value="shot on Nikon Z9, 105mm f/2.8 lens, razor sharp focus">Nikon Z9 · 105mm Detail</option>
+              <option value="shot on Phase One IQ4, 200mm telephoto, extreme compression">Phase One IQ4 · 200mm</option>
+            </optgroup>
+            <optgroup label="Vintage & Retro">
+              <option value="vintage Super 8mm film, Kodak Vision3, heavy grain, warm colors">Super 8mm · Vintage Grain</option>
+              <option value="shot on Bolex H16, 16mm film, retro aesthetic, slight vignetting">Bolex H16 · 16mm Retro</option>
+              <option value="shot on VHS-C camcorder, 1990s tracking interference, low-fi magnetic tape look">VHS · 90s Low-Fi</option>
+              <option value="Polaroid SX-70, instant film aesthetic, soft focus, color shift">Polaroid SX-70 · Soft Focus</option>
+              <option value="vintage Lomography style, 32mm plastic lens, vignetting and light leaks">Lomography · 32mm Plastic</option>
+            </optgroup>
+            <optgroup label="Spécialité & Digital">
+              <option value="shot on iPhone 15 Pro, Cinematic Mode, 24mm, digital sharp rendering">iPhone 15 Pro · Cinematic</option>
+              <option value="CCTV security camera footage, grainy black and white, digital noise">CCTV · Security Cam</option>
+              <option value="Infrared thermal imaging camera, heat signature palette">Thermal · Heat Signature</option>
+              <option value="shot with 200mm telephoto lens, compressed perspective">Telephoto 200mm · Compressed</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <div class="field">
+          <label class="field-label">Matériaux & textures <span class="label-tag" style="background:var(--ink-3);color:var(--paper-mute);border:1px solid var(--line)">BLOCKING ABSTRAIT</span></label>
+          <select id="img-mat">
+            <option value="">— Aucun (utiliser textures de [IMG_2]) —</option>
+            <optgroup label="Organique & Peau">
+              <option value="hyper-realistic human skin with visible pores, subtle sweat, and subsurface scattering">Peau humaine (Ultra-détail / SSS)</option>
+              <option value="cybernetic synthetic silicone flesh with translucent layers">Peau synthétique (silicone)</option>
+              <option value="biophilic lush vertical moss and raw aged oak">Mousse & chêne (biophilique)</option>
+              <option value="iridescent beetle-shell chitin and organic exoskeleton">Chitine iridescente (insecte)</option>
+              <option value="high-density smart fabric with hexagonal nanotech patterns">Tissu nanotech (hexagonal)</option>
+            </optgroup>
+            <optgroup label="Minéral & Industriel">
+              <option value="polished white marble with intricate gold kintsugi veins">Marbre & kintsugi (or)</option>
+              <option value="weathered concrete, rusted iron, and peeling industrial paint">Béton & fer rouillé</option>
+              <option value="dark gothic basalt stone and volcanic obsidian">Basalte & obsidienne</option>
+              <option value="ancient eroded sandstone and desert limestone">Grès & calcaire ancien</option>
+              <option value="damascened steel with antique brass fittings">Acier damassé & laiton</option>
+            </optgroup>
+            <optgroup label="Futuriste">
+              <option value="brushed titanium, matte carbon fiber, and aerospace alloys">Titanium & carbone</option>
+              <option value="liquid iridescent metal and flowing mercury-like surfaces">Métal liquide / mercure</option>
+              <option value="translucent frosted glass and internal glowing neon filaments">Verre dépoli & néon</option>
+              <option value="retro-futuristic translucent plastic and polished chrome">Plastique rétro & chrome</option>
+              <option value="anodized space-grade aluminum with laser-etched details">Alu anodisé (laser)</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <div class="field">
+          <label class="field-label">Éclairage</label>
+          <select id="img-light">
+            <option value="__default__" id="light-default-opt">Default — guided by [IMG_3] style when active</option>
+            <optgroup label="Classique & Cinéma">
+              <option value="cinematic three-point lighting with strong key from camera-left, soft fill, hair light separating subject from background">Studio 3-Points · Cinématique</option>
+              <option value="cinematic volumetric lighting with harsh shadows">Cinématique (volumétrique)</option>
+              <option value="moody film noir, high contrast, rim lighting">Film noir · contraste</option>
+              <option value="Rembrandt lighting, dramatic portrait highlight">Rembrandt · portrait</option>
+              <option value="moody chiaroscuro low-key, single tungsten practical, deep blacks, rim light">Chiaroscuro · low-key</option>
+            </optgroup>
+            <optgroup label="Naturel & Heure du jour">
+              <option value="hard directional sunlight, deep crisp shadows, high contrast, no fill">Soleil dur · contraste</option>
+              <option value="overcast soft daylight, even diffused illumination, no harsh shadows">Overcast · daylight diffus</option>
+              <option value="golden hour, soft natural sunlight, long warm shadows, atmospheric haze">Golden Hour · chaud</option>
+              <option value="blue hour twilight, cool ambient, practical lights starting to dominate">Blue Hour · twilight</option>
+              <option value="dreamy pastel dawn, ethereal haziness">Aube pastel · rêve</option>
+              <option value="moonlight, cool blue ambient, silver highlights, deep blue shadows">Moonlight · bleu froid</option>
+              <option value="harsh desert noon, vertical shadows, heat haze">Zénith désert · chaleur</option>
+            </optgroup>
+            <optgroup label="Futuriste & Technique">
+              <option value="vibrant cyberpunk city glow, purple and teal neon">Cyberpunk · violet/teal</option>
+              <option value="cold sterile laboratory neon, blue clinical tones">Labo · froid bleu</option>
+              <option value="bioluminescent cyan cave glow and magenta shadows">Bioluminescence · cyan</option>
+              <option value="underground industrial flares and gritty smoke">Industriel · flares</option>
+              <option value="infrared thermal photography style, heat signatures">Infrared · thermique</option>
+              <option value="harsh top fluorescent, institutional flat green tint, no shadows">Fluorescent · institutionnel</option>
+              <option value="neon practicals only, mixed color temperature, magenta and cyan rim lights">Neon mix · cyberpunk</option>
+            </optgroup>
+            <optgroup label="Nature & Atmosphère">
+              <option value="mystical moonlight through thick morning fog">Lune & brouillard</option>
+              <option value="ethereal god-rays breaking through forest canopy">God-rays · forêt</option>
+              <option value="underwater caustic light patterns, deep blue">Subaquatique · caustiques</option>
+              <option value="dramatic stormy sky with lightning flashes">Orage & éclairs</option>
+              <option value="soft candlelight, warm amber flickering tones">Bougie · chaud</option>
+              <option value="firelight from below, warm flickering source, dramatic upward shadows">Firelight · feu de camp</option>
+              <option value="aurora borealis sky, green and purple ripples">Aurore boréale</option>
+              <option value="nuclear winter, pale grey lighting, fallout aesthetic">Hiver nucléaire · gris</option>
+              <option value="orange and teal blockbuster color grading">Orange & teal · blockbuster</option>
+              <option value="moonlit snow, cold blue reflections, crisp air">Neige & lune</option>
+            </optgroup>
+            <optgroup label="Effets spéciaux">
+              <option value="stark minimalist white void, high-key">White void · minimaliste</option>
+              <option value="long exposure light trails, motion blur">Longue expo · light trails</option>
+              <option value="polarized lens, saturated colors, no reflections">Polarisé · vif</option>
+              <option value="sepia 1920s vintage film grain">Vintage 1920s · sépia</option>
+              <option value="red emergency pulsing lights, warning atmosphere">Alerte rouge · pulsing</option>
+              <option value="sodium vapor street lighting, orange night haze">Sodium · urbain orange</option>
+              <option value="backlit silhouette, intense rim light">Contre-jour · silhouette</option>
+              <option value="old television screen flicker, erratic blue light">Écran TV · flicker</option>
+              <option value="strobe lighting, high frequency flashes">Stroboscope</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <div class="field span-2">
+          <label class="field-label">Réalisme physique <span class="label-tag" style="background:var(--ink-3);color:var(--paper-mute);border:1px solid var(--line)">PROMPT BOOST</span></label>
+          <div class="checklist">
+            <label class="check"><input type="checkbox" value="smooth continuous live-action motion, photographed in-camera, not animated"><span class="check-box"></span><span class="check-text">Live-action motion</span></label>
+            <label class="check"><input type="checkbox" value="35mm film grain texture, Kodak 5219 stock, organic celluloid look"><span class="check-box"></span><span class="check-text">35mm grain · Kodak 5219</span></label>
+            <label class="check"><input type="checkbox" checked value="natural skin texture with visible pores, micro-imperfections, subsurface scattering"><span class="check-box"></span><span class="check-text">Skin SSS naturel</span></label>
+            <label class="check"><input type="checkbox" checked value="real fabric drape and wrinkles, authentic material weight, natural cloth physics"><span class="check-box"></span><span class="check-text">Tissu réaliste</span></label>
+            <label class="check"><input type="checkbox" value="motion blur where appropriate, rolling shutter artifacts"><span class="check-box"></span><span class="check-text">Motion blur cohérent</span></label>
+            <label class="check"><input type="checkbox" value="atmospheric depth, volumetric haze, light scatter through air particles"><span class="check-box"></span><span class="check-text">Atmosphère volumétrique</span></label>
+            <label class="check"><input type="checkbox" checked value="no CG aesthetic, no plastic figurine look, no stop-motion puppet feel, no silicone or prosthetic appearance"><span class="check-box"></span><span class="check-text">Anti-CG / anti-puppet</span></label>
+            <label class="check"><input type="checkbox" checked value="shallow depth of field with creamy out-of-focus areas, lens character"><span class="check-box"></span><span class="check-text">DoF cinématique</span></label>
+          </div>
+        </div>
+
+      </div>
+
+      <details class="help-strip">
+        <summary><span class="icn">i</span><span class="info-label">Fonctionnement</span></summary>
+        <div class="help-content">
+          <strong style="color:var(--paper)">Architecture :</strong> <code>[IMG_1]</code> pilote le setup/cadrage/caméra, <code>[IMG_2]</code> pilote le sujet, <code>[IMG_3]</code> pilote uniquement le style visuel. Le prompt interdit explicitement à l'IA de copier le lieu, le sujet ou la composition de [IMG_3].<br><br>
+          <strong style="color:var(--paper)">Modes :</strong> <code>Compact</code> est le plus robuste pour Nano Banana. <code>Detailed</code> ajoute les garde-fous. <code>Edit [IMG_1]</code> sert aux workflows d'édition où [IMG_1] doit rester la base de cadrage.
+        </div>
+      </details>
+    </div>
+
+    <!-- Mode switch + gros bouton copier sticky -->
+    <div class="prompt-toolbar">
+      <div class="prompt-mode-switch">
+        <span class="mode-label" style="margin-right:10px">Mode prompt</span>
+        <button class="mini-pill active" onclick="setPromptMode('compact', this)" title="Court, role-first, recommandé">Compact</button>
+        <button class="mini-pill" onclick="setPromptMode('detailed', this)" title="Long, contrôle granulaire">Detailed</button>
+        <button class="mini-pill" onclick="setPromptMode('inpaint', this)" title="Edit setup from [IMG_1] while [IMG_2] supplies the subject and [IMG_3] supplies style only">Edit [IMG_1]</button>
+      </div>
+      <button class="copy-btn copy-sticky" id="copy-btn-img" onclick="copyPrompt('output-text','copy-btn-img')">
+        <span class="arrow-icn">-></span> Copy prompt
+      </button>
+    </div>
+
+    <div class="output-block">
+      <div class="output-head">
+        <span class="output-title" id="output-title-img">Prompt généré</span>
+        <span class="output-stats"><span id="char-count">0</span> caractères · <span id="word-count">0</span> mots</span>
+      </div>
+      <div class="output-body" id="output-text">Remplis les champs ci-dessus pour générer le prompt…</div>
+    </div>
+
+  </section>
+
+  <!-- -------------------- VIDEO SECTION -------------------- -->
+  <section id="video" class="section">
+
+    <div class="pipeline">
+      <div class="node node-1">
+        <span class="node-tag">@video_1 · Motion Driver</span>
+        <div class="node-title">3D Animation</div>
+        <div class="node-desc">Le rush 3D animé sert de <strong>guide de mouvement et de caméra</strong>. On en garde la trajectoire, le timing, l'action.</div>
+      </div>
+      <div class="arrow">-></div>
+      <div class="node node-2">
+        <span class="node-tag">@image_2 · Visual Reference</span>
+        <div class="node-title">Final Aesthetic</div>
+        <div class="node-desc">Final render from Nano Banana / Seedream. Defines the <strong>look, texture, and visual identity</strong> of the result.</div>
+      </div>
+      <div class="arrow">-></div>
+      <div class="node node-3" style="opacity:1">
+        <span class="node-tag" style="color:var(--signal)">A.I VIDEO</span>
+        <div class="node-title">Kling 3 / Seedance 2 / Veo / Gemini Omni</div>
+        <div class="node-desc">Output : vidéo photoréaliste qui anime @image_2 selon le mouvement de @video_1.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-corner">A.I VIDEO</div>
+
+      <div class="field-grid">
+        <div class="field">
+          <label class="field-label">Target model</label>
+          <select id="vid-model">
+            <option value="seedance2">Seedance 2 · multimodal sequence</option>
+            <option value="kling3">Kling 3 · short directed shot</option>
+            <option value="veo31">Veo 3.1 · Flow / Ingredients</option>
+            <option value="geminiOmni">Gemini Omni Flash · conversational edit</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label class="field-label">Mouvement de caméra</label>
+          <select id="vid-cam">
+            <option value="none (static camera shot, locked-off tripod)">Aucun · caméra fixe</option>
+            <option value="replicate the exact 3D camera trajectory of @video_1 with frame-by-frame precision, matching its tilt, pan, push, and movement timing">Copier caméra 3D · exact</option>
+            <optgroup label="Classiques">
+              <option value="slow cinematic dolly-in towards the subject">Dolly avant · zoom</option>
+              <option value="majestic slow pan from left to right, revealing the landscape">Pano gauche ? droite</option>
+              <option value="slow tilt-up from the ground to the subject, building mystery">Tilt-up · révélation</option>
+              <option value="360-degree majestic orbit shot around the center of the scene">Orbite 360°</option>
+            </optgroup>
+            <optgroup label="Dynamiques & Action">
+              <option value="dynamic handheld camera shake, following the action with high energy">Caméra épaule · action</option>
+              <option value="fast low-angle tracking shot, moving alongside the subject">Tracking · sol rapide</option>
+              <option value="jolt and vibration effect, mimicking a nearby explosion or heavy impact">Secousse · impact</option>
+              <option value="first-person bodycam perspective with realistic swaying and jitter">Bodycam · POV</option>
+            </optgroup>
+            <optgroup label="Spéciaux (Pro)">
+              <option value="vertigo effect (dolly zoom), background warps while subject remains still">Vertigo · dolly zoom</option>
+              <option value="top-down crane descent, slowly revealing details from above">Grue descendante · top-down</option>
+              <option value="parallax lateral slide, emphasizing depth and layering">Slide · parallaxe</option>
+              <option value="rising drone spiral shot, ascending while rotating">Drone spiral · ascendant</option>
+              <option value="rhythmic rack focus, shifting from foreground to background">Rack focus · point</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <div class="field">
+          <label class="field-label">Mode de mapping</label>
+          <select id="vid-precision">
+            <option value="strict">Strict · transfer 1:1 motion</option>
+            <option value="balanced">Balanced · respect mouvement + cohérence visuelle</option>
+            <option value="creative">Creative · A.I free interpretation</option>
+          </select>
+        </div>
+
+        <div class="field span-2">
+          <label class="field-label">Action / détails (optionnel)</label>
+          <input type="text" id="vid-action" placeholder="Ex: la fumée s'élève lentement, le personnage cligne des yeux, le tissu flotte au vent...">
+        </div>
+
+        <div class="field span-2">
+          <label class="field-label">Physique & dynamique <span class="label-tag" style="background:var(--ink-3);color:var(--paper-mute);border:1px solid var(--line)">PROMPT BOOST</span></label>
+          <div class="checklist">
+            <label class="check"><input type="checkbox" class="phys-check" checked value="strict 3D consistency across frames, no warping, no morphing, stable identity"><span class="check-box"></span><span class="check-text">Physique 3D stricte</span></label>
+            <label class="check"><input type="checkbox" class="phys-check" value="natural wind simulation on hair and fabric, secondary motion realism"><span class="check-box"></span><span class="check-text">Vent & tissus</span></label>
+            <label class="check"><input type="checkbox" class="phys-check" checked value="realistic momentum, weight, and inertia in body motion"><span class="check-box"></span><span class="check-text">Poids & inertie</span></label>
+            <label class="check"><input type="checkbox" class="phys-check" value="fluid dynamics for smoke, fire, water, and particulates"><span class="check-box"></span><span class="check-text">Fluides (fumée/feu)</span></label>
+            <label class="check"><input type="checkbox" class="phys-check" checked value="life-like organic micro-movements, breathing, subtle weight shifts, eye blinks"><span class="check-box"></span><span class="check-text">Vie organique</span></label>
+            <label class="check"><input type="checkbox" class="phys-check" checked value="no flickering, no temporal artifacts, VFX-grade frame stability"><span class="check-box"></span><span class="check-text">Anti-flicker / VFX-grade</span></label>
+          </div>
+        </div>
+
+      </div>
+
+      <details class="help-strip">
+        <summary><span class="icn">i</span><span class="info-label">Fonctionnement</span></summary>
+        <div class="help-content">
+          <strong style="color:var(--paper)">Video mapping :</strong> le prompt commence par un bloc d'attributions que tu peux adapter aux fichiers uploadés. Ensuite la grammaire change selon le modèle : <strong>Kling 3</strong> reste court et shot-oriented, <strong>Seedance 2</strong> utilise des rôles multimodaux + beats, <strong>Veo 3.1</strong> privilégie une prose cinéma Flow/Ingredients, <strong>Gemini Omni Flash</strong> fonctionne comme une consigne d'édition conversationnelle.
+        </div>
+      </details>
+    </div>
+
+    <div class="prompt-toolbar">
+      <div></div>
+      <button class="copy-btn copy-sticky" id="copy-btn-vid" onclick="copyPrompt('output-text-v','copy-btn-vid')">
+        <span class="arrow-icn">-></span> Copy for selected model
+      </button>
+    </div>
+
+    <div class="output-block">
+      <div class="output-head">
+        <span class="output-title">Prompt généré</span>
+        <span class="output-stats"><span id="char-count-v">0</span> caractères · <span id="word-count-v">0</span> mots</span>
+      </div>
+      <div class="output-body" id="output-text-v">Remplis les champs ci-dessus pour générer le prompt…</div>
+    </div>
+
+  </section>
+
+  </section>
+
+  <footer class="foot">
+    <span>Pose Transfer Lab - <strong>v2.8</strong></span>
+    <span>Multi-ref · <strong>Nano Banana Pro · Seedream · Flux Kontext · Kling · Seedance</strong></span>
+  </footer>
+
+</div>
+
+<div class="toast" id="toast">Prompt copié</div>
+
+<script>
+let currentMode = 'preview';
+let currentTransfer = 'camera';
+let currentPromptMode = 'compact';
+let currentTargetType = 'character';
+let currentCharacterKind = 'puppet';
+let bgMode = 'env';                    // 'env' or 'cyc'
+let cycColor = { hex: '#F2ECCA', name: 'white' };
+// Compat alias for existing code
+let decorOn = true;
+
+const transfer2DPrompts = [
+  {
+    "title": "Character Swap & Morphological Lock (Gold)",
+    "highlight": "gold",
+    "hasOutfitToggle": true,
+    "prompt": "RADICAL CHARACTER REPLACEMENT & MORPHOLOGICAL LOCK: Use identity, head design, and EXACT SKELETAL PROPORTIONS from [Character Reference @IMG_1] to REPLACE the subject in [Shot Reference @IMG_2] across ALL 9 FRAMES. @IMG_1 is a turnaround reference: analyze its full 3D body volume and unconventional limb-to-torso ratios. MANDATORY IDENTITY & BODY PURGE: Completely erase all facial features AND the original body type from @IMG_2. @IMG_2 is ONLY a wooden mannequin for pose and lighting. ABSOLUTE ANATOMICAL FIDELITY: Maintain character @IMG_1's unique distorted silhouette, specific curves, and weird anatomical proportions exactly; NO normalization to standard human anatomy. POSE LOCK: Character @IMG_1 MUST adopt the exact body pose from @IMG_2 while keeping its own @IMG_1 skeleton. LIGHTING INTEGRATION: Analyze @IMG_2's environment lighting and project it perfectly onto character @IMG_1. [OUTFIT_INSTRUCTION]\nSTRICT 9-FRAME 16:9 GRID LAYOUT (3x3):\nFrame 1: Extreme Wide Shot (subject tiny in large environment);\nFrame 2: Low-Angle Wide Shot (ground level, focusing on full body silhouette);\nFrame 3: Classic Medium Shot (Waist-up, looking at camera);\nFrame 4: Extreme High-Angle (looking vertically down at top of head);\nFrame 5: Profile Shot (Side view, elongated features);\nFrame 6: Dutch Angle (horizon tilted 30 degrees, cinematic tension);\nFrame 7: Over-the-shoulder shot (looking at a detail in environment);\nFrame 8: Three-quarter Medium-Close Up;\nFrame 9: Macro ECU (tightest detail on skin texture or eye). MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only."
+  },
+  {
+    "title": "Transfert Pose",
+    "highlight": "pink",
+    "prompt": "Operate a meticulous pose transfer. Reconstruct the target character from [IMG_1], preserving their complete identity, features, expression, and clothing. The character's entire physical posture, including skeletal alignment, joint angles, and limb positions, must be strictly mapped from the reference person in [IMG_2] (which may be a photo or a 3D previz). Integrate this newly posed character seamlessly back into the original composition, background, lighting scheme, and color grading of [IMG_1]. Ensure 100% structural fidelity of the scene and all elements except the character's pose. MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only."
+  },
+  {
+    "title": "Generate with REF image",
+    "prompt": "Generate an image of [DESCRIBE YOUR NEW SUBJECT HERE]. The image must not copy the subjects from [IMG_1], but must be entirely inspired by its strict color grading and overall vibe. Faithfully replicate the visual signature: the specific color palette, lighting mood, shadow density, contrast ratios, and cinematic texture found in the reference. The final result should look like it was shot on the same film stock and in the same artistic universe as the reference. MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only."
+  },
+  {
+    "title": "Transfert style from Ref",
+    "prompt": "Act as a professional color grader. Take the visual structure and subjects from [IMG_2] and apply a strict color match using [IMG_1] as the only palette reference. Perform a Luminance and Chrominance transfer only: keep every pixel shape from [IMG_2], but remap the shadows, highlights, and color temperature to perfectly align with the grading of [IMG_1]. Do not introduce any new elements. MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only."
+  },
+  {
+    "title": "Transfert Subject",
+    "prompt": "Operate a precision character replacement. Use [IMG_1] as the absolute visual base for composition, identical framing, specific pose, full lighting scheme, shadows, and color grading. Identify the subject in [IMG_1] and replace them entirely with the likeness, identity, and features of the person from [IMG_2]. Critically, the new character from [IMG_2] must adopt the exact pose of the person in [IMG_1] and must be seamlessly integrated using the existing environment lighting and shadowing found in [IMG_1]. There must be 100% fidelity to the original background, atmosphere, and colors of [IMG_1]. Focus heavily on aligning the facial angles and lighting interaction. MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only."
+  },
+  {
+    "title": "Transfert Background",
+    "prompt": "Operate a precision background replacement while maintaining the foreground subject. Use [IMG_1] solely to isolate and preserve the main subject, including their exact pose, expression, and position. Replace the entire background and environment of [IMG_1] with the scene and setting captured in [IMG_2]. Critically, perform a full Global Illumination and color cast match: the preserved subject must be completely relit by the new environmental light sources, reflections, and color temperature of [IMG_2]. Ensure the subject looks organically embedded in the new atmosphere of [IMG_2]. Focus heavily on the subject lighting interaction with the new surroundings, ensuring shadows and highlights match [IMG_2]. Ensure to keep the same framing of the subject in [IMG_1]. MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only."
+  }
+];
+function escapeTransferHtml(value){return String(value||'').replace(/[&<>"']/g,(char)=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));}
+function transfer2DInfo(item){
+  const title = String(item && item.title || '').toLowerCase();
+  if (title.includes('morphological')) return 'Transfers the full character identity and unusual anatomy from IMG_1 onto the pose and lighting of IMG_2. Use the arrow to open the complete prompt.';
+  if (title.includes('pose')) return 'Copies posture, limb angles, gesture, and skeletal alignment while preserving the target character identity. Use the arrow to open the complete prompt.';
+  if (title.includes('ref image')) return 'Uses IMG_1 as a style and grading reference without copying its subject. Use the arrow to open the complete prompt.';
+  if (title.includes('style')) return 'Transfers only the grading, luminance, contrast, and color mood from one image to another. Use the arrow to open the complete prompt.';
+  if (title.includes('subject')) return 'Replaces the subject while keeping the original framing, background, lighting, and pose logic. Use the arrow to open the complete prompt.';
+  if (title.includes('background')) return 'Keeps the foreground subject and swaps the environment, then relights the subject to match the new place. Use the arrow to open the complete prompt.';
+  return 'Use the arrow to open the complete prompt. This info button only explains the prompt function.';
+}
+function toggleTransfer2D(id){
+  const card = document.querySelector('[data-transfer-card="'+id+'"]');
+  if (!card) return;
+  const isOpen = card.classList.contains('open');
+  document.querySelectorAll('[data-transfer-card].open').forEach((openCard)=>{
+    openCard.classList.remove('open');
+    const btn = openCard.querySelector('.transfer-toggle');
+    if (btn) btn.setAttribute('aria-expanded','false');
+  });
+  if (!isOpen) {
+    card.classList.add('open');
+    const btn = card.querySelector('.transfer-toggle');
+    if (btn) btn.setAttribute('aria-expanded','true');
+  }
+}
+function renderTransfer2D(){
+  const grid=document.getElementById('transfer2d-grid');
+  if(!grid)return;
+  grid.innerHTML=transfer2DPrompts.map((item,index)=>{
+    const id='transfer2d-'+index;
+    const highlight=item.highlight?' '+item.highlight:'';
+    const outfit=item.hasOutfitToggle?'<label class="transfer-outfit"><input type="checkbox" id="outfit-'+id+'" checked onchange="updateTransfer2D('+index+')"> Match Shot Reference Outfit</label>':'';
+    return '<article class="transfer-card'+highlight+'" data-transfer-card="'+id+'"><div class="transfer-card-head"><div class="transfer-title">'+escapeTransferHtml(item.title)+'</div><button class="transfer-toggle" type="button" aria-expanded="false" aria-controls="prompt-'+id+'" title="Show prompt" onclick="toggleTransfer2D(\''+id+'\')">&rsaquo;</button><span class="transfer-info-wrap"><button class="transfer-info" type="button" aria-label="Prompt info">i</button><span class="transfer-info-pop">'+escapeTransferHtml(transfer2DInfo(item))+'</span></span><button class="transfer-copy" type="button" onclick="copyTransfer2D('+index+', this)">Copy</button></div><textarea class="transfer-field" id="scene-'+id+'" placeholder="Scene details..." oninput="updateTransfer2D('+index+')"></textarea>'+outfit+'<pre class="transfer-output" id="prompt-'+id+'"></pre></article>';
+  }).join('');
+  transfer2DPrompts.forEach((_,index)=>updateTransfer2D(index));
+}
+function buildTransfer2DPrompt(index){const item=transfer2DPrompts[index];const id='transfer2d-'+index;const scene=(document.getElementById('scene-'+id)?.value||'').trim()||'[Details]';let prompt=item.prompt||'';prompt=prompt.replaceAll('[Scene Description]',scene).replaceAll('[DESCRIBE YOUR NEW SUBJECT HERE]',scene).replaceAll('[Details]',scene);if(item.hasOutfitToggle){const enabled=document.getElementById('outfit-'+id)?.checked;const outfitText=enabled?'Match the clothing, costume, accessories, silhouette, fabric behavior, and outfit layout from [Shot Reference @IMG_2], tailored to [Character Reference @IMG_1] morphology.':'Keep the outfit, costume, accessories, and material identity from [Character Reference @IMG_1]. Do not copy the outfit from [Shot Reference @IMG_2].';prompt=prompt.replace('[OUTFIT_INSTRUCTION]',outfitText);}return prompt;}
+function updateTransfer2D(index){const id='transfer2d-'+index;const output=document.getElementById('prompt-'+id);if(output)output.textContent=buildTransfer2DPrompt(index);}
+function copyTransfer2D(index,btn){navigator.clipboard.writeText(buildTransfer2DPrompt(index)).then(()=>{const original=btn.textContent;btn.textContent='Copied';const toast=document.getElementById('toast');toast.textContent='Prompt copie';toast.classList.add('show');setTimeout(()=>{btn.textContent=original;toast.classList.remove('show');},1300);});}
+function openWorkspace(id,btn){document.querySelectorAll('.workspace-view').forEach((view)=>view.classList.toggle('active',view.id===id));document.querySelectorAll('.workspace-tab').forEach((tab)=>tab.classList.remove('active'));btn.classList.add('active');const modeEl=document.getElementById('hdr-mode');const sourceEl=document.getElementById('hdr-source');if(id==='transfer-2d'){modeEl.textContent='2D';sourceEl.textContent='BZ Helper';}else{const active3d=document.querySelector('#transfer-3d .section.active');modeEl.textContent=active3d&&active3d.id==='video'?'Video':'Image';sourceEl.textContent=modeMap[currentMode].label;}}
+
+
+const transferMap = {
+  pose: {
+    label: 'Pose only',
+    instr: 'POSE ONLY — Read [IMG_1] as a 3D scene, not a 2D silhouette. Extract the body pose, gesture, limb positioning, AND the full 3D orientation of the character: torso yaw (rotation around the vertical axis), head yaw and tilt, gaze direction, shoulder line, hip line, weight distribution. Preserve these 3D rotations exactly — do NOT flatten the character to a more readable profile or three-quarter view if [IMG_1] shows a different angle. Do NOT inherit the framing, the subject placement in the frame, the camera height, or the camera angle of [IMG_1]. The composition and shot framing of the final image are free.'
+  },
+  framing: {
+    label: 'Pose + Framing',
+    instr: 'POSE + FRAMING — Read [IMG_1] as a 3D scene, not a 2D silhouette. Extract from [IMG_1]: (1) the pose, gesture, and limb positioning; (2) the full 3D orientation of the character — torso yaw, head yaw and tilt, gaze direction, shoulder line, hip line, weight distribution — preserved exactly without flattening to a more readable angle; (3) the 2D framing — replicate exactly where the subject sits in the frame (left/right/center placement, vertical position, headroom, lead-room, foot-room), the proportion of the subject relative to the frame, the horizon line, and the same shot type (full / medium / close / wide). Do not recenter, do not normalize. The asymmetry, negative space, and any unusual framing choices of [IMG_1] are intentional and must be preserved.'
+  },
+  camera: {
+    label: 'Pose + Framing + Pose',
+    instr: 'POSE + FRAMING + POSE LOCK — Read [IMG_1] as a 3D scene, not a 2D silhouette. Extract everything spatial: (1) the pose, gesture, and limb positioning; (2) the full 3D orientation of the character — torso yaw (rotation around the vertical axis), head yaw and tilt, gaze direction, shoulder line, hip line, weight distribution — preserved EXACTLY without flattening to a more readable angle. If [IMG_1] shows the character at a 3/4 right with eyes off-camera-right, the final image must show the character at exactly 3/4 right with eyes off-camera-right, not in profile, not in three-quarter front; (3) the 2D framing — subject placement (left/right/center, vertical position, headroom, lead-room, foot-room), framing ratio, horizon line, and shot type. Do not recenter, do not normalize, do not "improve" the composition or rotate the character toward a more flattering angle — the framing AND the 3D orientation of [IMG_1] are the brief. Treat [IMG_1] like a director\'s storyboard: every spatial decision is intentional.'
+  }
+};
+
+const modeMap = {
+  blocking: {
+    label: '3D Blocking',
+    instruction: 'Treat [IMG_1] as a 3D BLOCKING reference — a rough greybox or mannequin posing pass with no textures, no lighting, no facial features, often in T-pose-derived rigging. Extract ONLY the body pose, gesture, limb positioning, weight distribution, and overall framing from [IMG_1]. Completely ignore its grey/untextured appearance, generic mannequin proportions, viewport overlays, gizmos, wireframes, and any rigging artifacts.'
+  },
+  preview: {
+    label: '3D Preview',
+    instruction: 'Treat [IMG_1] as a 3D PREVIEW / playblast reference — a low-quality realtime render with placeholder textures and basic viewport lighting. Extract ONLY the pose, action, body language, framing, and rough composition from [IMG_1]. Ignore its plastic shading, viewport-quality lighting, basic materials, aliasing, and any preview-render artifacts.'
+  },
+  render: {
+    label: '3D Render',
+    instruction: 'Treat [IMG_1] as a final 3D RENDER reference — a high-quality CG render with full lighting and textures. Extract ONLY the pose, framing, composition, and lighting direction from [IMG_1]. Ignore its CG aesthetic, ray-traced highlights, perfect surfaces, and anything that reads as "rendered" rather than "photographed". The final image must NOT inherit any CG look from [IMG_1] — it must look like real photography.'
+  }
+};
+
+function openTab(id, btn) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  btn.classList.add('active');
+  document.getElementById('hdr-mode').textContent = id === 'image' ? 'Image' : 'Vidéo';
+}
+
+function setMode(mode, btn) {
+  currentMode = mode;
+  document.querySelectorAll('#source-switch .mode-pill').forEach(p => p.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('hdr-source').textContent = modeMap[mode].label;
+  buildImage();
+}
+
+function setTransfer(level, btn) {
+  currentTransfer = level;
+  document.querySelectorAll('#transfer-switch .mode-pill').forEach(p => p.classList.remove('active'));
+  btn.classList.add('active');
+  buildImage();
+}
+
+function setTargetType(type, btn) {
+  currentTargetType = type;
+  document.querySelectorAll('#target-switch .mode-pill').forEach(p => p.classList.remove('active'));
+  btn.classList.add('active');
+  updateTargetUI();
+  buildImage();
+}
+
+function setCharacterKind(kind, btn) {
+  currentCharacterKind = kind;
+  document.querySelectorAll('#character-kind-switch .mode-pill').forEach(p => p.classList.remove('active'));
+  btn.classList.add('active');
+  updateTargetUI();
+  buildImage();
+}
+
+function setPromptMode(m, btn) {
+  currentPromptMode = m;
+  document.querySelectorAll('.prompt-mode-switch .mini-pill').forEach(p => p.classList.remove('active'));
+  btn.classList.add('active');
+  buildImage();
+}
+
+function setBgMode(mode) {
+  bgMode = mode;
+  decorOn = (mode === 'env');  // compat with existing code paths
+
+  const envBtn = document.getElementById('bg-env');
+  const cycBtn = document.getElementById('bg-cyc');
+  const cycColors = document.getElementById('cyc-colors');
+  const tag = document.getElementById('node-decor-tag');
+  const title = document.getElementById('node-decor-title');
+  const desc = document.getElementById('node-decor-desc');
+
+  if (mode === 'env') {
+    envBtn.classList.add('active');
+    cycBtn.classList.remove('active');
+    cycColors.style.display = 'none';
+    tag.textContent = '[IMG_3] · Style';
+    title.textContent = 'Style Reference';
+    desc.textContent = 'Visual treatment only: lighting mood, grain, color grade, contrast, texture. Do not copy IMG_3 location, subject, framing, or composition.';
+  } else {
+    envBtn.classList.remove('active');
+    cycBtn.classList.add('active');
+    cycColors.style.display = 'flex';
+    tag.textContent = 'Cyclorama';
+    title.textContent = 'Studio Backdrop';
+    desc.textContent = 'Fond uni de studio, parfait pour isoler le perso. La couleur définit l\'ambiance.';
+  }
+  buildImage();
+}
+
+function setCycColor(btn) {
+  cycColor = { hex: btn.dataset.color, name: btn.dataset.name };
+  document.querySelectorAll('.cyc-swatch').forEach(s => s.classList.remove('active'));
+  btn.classList.add('active');
+  buildImage();
+}
+
+function getChecks(selector) {
+  return Array.from(document.querySelectorAll(selector)).map(c => c.value);
+}
+
+function colorize(text) {
+  return text
+    .replace(/\[IMG_1\]/g, '<span class="tk-pose">[IMG_1]</span>')
+    .replace(/\[IMG_2\]/g, '<span class="tk-hero">[IMG_2]</span>')
+    .replace(/\[IMG_3\]/g, '<span class="tk-decor">[IMG_3]</span>')
+    .replace(/\[@video\]/g, '<span class="tk-pose">[@video]</span>')
+    .replace(/\[@image\]/g, '<span class="tk-hero">[@image]</span>')
+    .replace(/@video_1/g, '<span class="tk-pose">@video_1</span>')
+    .replace(/@image_1/g, '<span class="tk-hero">@image_1</span>')
+    .replace(/@image_2/g, '<span class="tk-hero">@image_2</span>')
+    .replace(/@image_3/g, '<span class="tk-decor">@image_3</span>')
+    .replace(/^([A-Z][A-Z &/]+):/gm, '<span class="tk-cam">$1:</span>')
+    .replace(/(• [A-Z][A-Z 0-9_\-—\[\]@]+)$/gm, '<span class="tk-cam">$1</span>');
+}
+
+function targetLabel() {
+  if (currentTargetType === 'object') return 'Object / Product';
+  if (currentTargetType === 'scene') return 'Scene / Set';
+  return currentCharacterKind === 'human' ? 'Human Character' : 'Puppet Character';
+}
+
+function updateTargetUI() {
+  const row = document.getElementById('character-kind-row');
+  if (row) row.style.display = currentTargetType === 'character' ? 'flex' : 'none';
+  const tag = document.querySelector('.node-2 .node-tag');
+  const title = document.querySelector('.node-2 .node-title');
+  const desc = document.querySelector('.node-2 .node-desc');
+  if (!tag || !title || !desc) return;
+  if (currentTargetType === 'object') {
+    tag.textContent = '[IMG_2] · Object';
+    title.textContent = 'Object Identity';
+    desc.innerHTML = '<strong>Priorité absolue</strong> : design, silhouette, proportions, matériaux, échelle. Le placement et la caméra viennent de [IMG_1].';
+  } else if (currentTargetType === 'scene') {
+    tag.textContent = '[IMG_2] · Scene';
+    title.textContent = 'Scene Identity';
+    desc.innerHTML = '<strong>Priorité absolue</strong> : architecture, layout, matériaux, ambiance. [IMG_1] sert de blocking/caméra, pas de personnage.';
+  } else {
+    tag.textContent = '[IMG_2] · Character';
+    title.textContent = currentCharacterKind === 'human' ? 'Human Identity' : 'Hero Identity';
+    desc.innerHTML = currentCharacterKind === 'human'
+      ? '<strong>Priorité absolue</strong> : visage, corps, costume, âge, proportions humaines réalistes. La pose reste anatomiquement crédible.'
+      : '<strong>Priorité absolue</strong> : visage, costume, morphologie, proportions, textures. La pose s\'adapte à cette anatomie, pas l\'inverse.';
+  }
+}
+
+function targetTransferShort() {
+  const map = {
+    character: {
+      pose: "the pose, gesture, and 3D body orientation (torso/head yaw, gaze)",
+      framing: "the pose, the 3D body orientation (torso/head yaw, gaze), AND the exact 2D framing — replicate [IMG_1]'s subject placement in the frame, character size relative to the frame, headroom, lead-room, and shot scale. Do not recenter or resize the character",
+      camera: "the pose, the full 3D body orientation (torso/head yaw, gaze), the exact 2D framing, subject placement, character size in frame, headroom, lead-room, horizon line, and shot scale. Do not recenter, resize, normalize, or rotate the pose"
+    },
+    object: {
+      pose: "the object's 3D orientation, rotation, tilt, contact points, silhouette angle, and spatial attitude",
+      framing: "the object's 3D orientation, rotation, tilt, contact points, exact placement in the frame, scale relative to the frame, negative space, and shot scale",
+      camera: "the object's 3D orientation, exact frame placement, scale relative to the frame, negative space, and shot scale"
+    },
+    scene: {
+      pose: "the spatial blocking, depth layout, major planes, object positions, and scene geometry",
+      framing: "the spatial blocking, depth layout, major planes, exact 2D framing, horizon line, negative space, and image composition",
+      camera: "the spatial blocking, depth layout, exact 2D framing, horizon line, negative space, and image composition"
+    }
+  };
+  return map[currentTargetType][currentTransfer];
+}
+
+function sourceInstructionForTarget() {
+  const modeLabel = modeMap[currentMode].label;
+  if (currentTargetType === 'object') {
+    return `Treat [IMG_1] as a ${modeLabel} reference for object staging. Extract only object orientation, rotation, tilt, scale, frame placement, contact logic, and camera perspective. Ignore any character/body/mannequin semantics, rig controls, viewport overlays, CG shading, and source materials.`;
+  }
+  if (currentTargetType === 'scene') {
+    return `Treat [IMG_1] as a ${modeLabel} reference for scene blocking and framing layout. Extract only spatial composition, horizon line, depth staging, negative space, and major scene geometry. Ignore any character identity, mannequin anatomy, CG shading, viewport overlays, and source materials.`;
+  }
+  if (currentCharacterKind === 'human') {
+    return `Treat [IMG_1] as a ${modeLabel} reference for human body staging. Extract only the pose, gesture, body orientation, frame placement, and camera perspective. Ignore viewport overlays, rig controls, CG shading, source materials, and source identity. Interpret the transferred body pose through realistic human anatomy, natural joint limits, believable balance, and a physically possible stance.`;
+  }
+  return modeMap[currentMode].instruction;
+}
+
+function sourceNoteForTarget() {
+  if (currentTargetType === 'object') {
+    return {
+      blocking: "Ignore [IMG_1]'s greybox/viewport look — only object placement, rotation, contact, and framing matter.",
+      preview: "Ignore [IMG_1]'s preview render quality — only object staging and framing matter.",
+      render: "Ignore [IMG_1]'s CG render aesthetic — only object staging and framing matter."
+    }[currentMode];
+  }
+  if (currentTargetType === 'scene') {
+    return {
+      blocking: "Ignore [IMG_1]'s greybox/viewport look — only spatial blocking and framing layout matter.",
+      preview: "Ignore [IMG_1]'s preview render quality — only spatial blocking and framing layout matter.",
+      render: "Ignore [IMG_1]'s CG render aesthetic — only spatial layout, lighting direction, and framing matter."
+    }[currentMode];
+  }
+  if (currentCharacterKind === 'human') {
+    return {
+      blocking: "Ignore [IMG_1]'s greybox/viewport look — only human pose, placement, balance, and framing matter.",
+      preview: "Ignore [IMG_1]'s preview render quality — only human pose, placement, balance, and framing matter.",
+      render: "Ignore [IMG_1]'s CG render look — only pose, framing, camera, and lighting direction matter."
+    }[currentMode];
+  }
+  return {
+    blocking: "Ignore [IMG_1]'s untextured 3D blocking look (greybox, T-pose mannequin, viewport grid).",
+    preview: "Ignore [IMG_1]'s low-quality 3D preview rendering.",
+    render: "Ignore [IMG_1]'s CG render look — the final image is photographic, not CG."
+  }[currentMode];
+}
+
+function targetIntroLine(decorEnabled) {
+  if (currentTargetType === 'object') {
+    return `[IMG_1] is the 3D staging reference. [IMG_2] is the object/product reference (design, silhouette, proportions, materials, and scale cues).${decorEnabled ? ' [IMG_3] is the visual style reference only.' : ''}`;
+  }
+  if (currentTargetType === 'scene') {
+    return `[IMG_1] is the 3D camera/blocking reference. [IMG_2] is the scene/set reference (architecture, layout, materials, atmosphere, and design language).${decorEnabled ? ' [IMG_3] is the visual style reference only.' : ''}`;
+  }
+  return `[IMG_1] is the pose reference. [IMG_2] is the ${currentCharacterKind === 'human' ? 'human character reference' : 'character reference (character sheet showing identity AND specific stylized proportions)'}.${decorEnabled ? ' [IMG_3] is the visual style reference only.' : ''}`;
+}
+
+function targetGenerateLine(decorEnabled, isCyc) {
+  const placement = decorEnabled ? ', using [IMG_3] only as visual style reference' : isCyc ? `, placed on a seamless studio cyclorama backdrop in solid ${cycColor.name} color (${cycColor.hex}) — clean infinity cove, no horizon line, no other objects` : '';
+  if (currentTargetType === 'object') {
+    return `Generate a single photoreal image of the object/product from [IMG_2]${placement}. From [IMG_1], take only ${targetTransferShort()}. ${sourceNoteForTarget()}`;
+  }
+  if (currentTargetType === 'scene') {
+    return `Generate a single photoreal image of the scene/set from [IMG_2]${placement}. Use [IMG_1] only to guide ${targetTransferShort()}. ${sourceNoteForTarget()}`;
+  }
+  return `Generate a single photoreal image of [IMG_2] performing the action of [IMG_1]${placement}. From [IMG_1], take only ${targetTransferShort()}. ${sourceNoteForTarget()}`;
+}
+
+function targetIdentityBlock() {
+  if (currentTargetType === 'object') {
+    return `[IMG_2] is the object/product reference. Preserve its exact design identity, silhouette, proportions, construction logic, materials, surface wear, scale cues, and recognizable details. Do not turn it into a person or creature. Do not add limbs, face, expression, or character anatomy unless explicitly requested. The spatial orientation from [IMG_1] adapts to the object's actual geometry.`;
+  }
+  if (currentTargetType === 'scene') {
+    return `[IMG_2] is the scene/set reference. Preserve its architecture, spatial layout, materials, scale, props, atmosphere, and design language. Do not invent a central character unless explicitly requested. Use [IMG_1] for camera/blocking/framing guidance only; the scene identity remains [IMG_2].`;
+  }
+  if (currentCharacterKind === 'human') {
+    return `[IMG_2] is a human character reference. Preserve the person's identity, face structure, age range, body type, clothing, hair, expression logic, and realistic human proportions. Transfer the pose from [IMG_1] through believable human anatomy: natural joints, correct balance, grounded weight, realistic hands, feet, shoulders, hips, neck, and spine. Keep the result grounded in live-action photographic human realism.`;
+  }
+  return `[IMG_2] is a reference for a practical puppet/figurine character. Photograph this exact figurine — with its exact proportions, head size, limb thickness, body shape — as-is in a real location. Do not apply realistic human anatomy. This is NOT a human, it is a sculpted character with intentional non-realistic proportions. The pose adapts to this figurine's anatomy, not the other way around.`;
+}
+
+function directiveSubject() {
+  if (currentTargetType === 'object') return 'the object/product from [IMG_2]';
+  if (currentTargetType === 'scene') return 'the scene/set from [IMG_2]';
+  return '[IMG_2]';
+}
+
+function stripPuppetParagraphs(prompt) {
+  return String(prompt || '')
+    .split('\n')
+    .filter(line => !/(practical puppet|puppet\/figurine|puppet|figurine|toy|doll|mannequin|NOT a human|sculpted character|Do not apply realistic human anatomy|non-realistic proportions)/i.test(line))
+    .join('\n')
+    .replace(/\n{3,}/g, '\n\n')
+    .trim();
+}
+
+function adaptPromptToTarget(prompt) {
+  let out = String(prompt || '');
+  if (currentTargetType === 'character' && currentCharacterKind === 'puppet') return out;
+
+  out = stripPuppetParagraphs(out);
+  const identity = targetIdentityBlock();
+
+  if (currentTargetType === 'character') {
+    out = out.replace(/\[IMG_2\] is the character reference[^\n]*/i, '[IMG_2] is the human character reference.');
+    return `${out}\n\nHUMAN CHARACTER RULE:\n${identity}`.trim();
+  }
+
+  if (currentTargetType === 'object') {
+    out = out
+      .replace(/Generate a single photoreal image of \[IMG_2\] performing the action of \[IMG_1\][^\n]*/i, targetGenerateLine(decorOn, bgMode === 'cyc'))
+      .replace(/\bcharacter\b/gi, 'object')
+      .replace(/\bCharacter\b/g, 'Object')
+      .replace(/\bbody pose\b/gi, 'object orientation')
+      .replace(/\banatomical shadow\b/gi, 'contact shadow');
+    return `${out}\n\nOBJECT RULE:\n${identity}`.trim();
+  }
+
+  out = out
+    .replace(/Generate a single photoreal image of \[IMG_2\] performing the action of \[IMG_1\][^\n]*/i, targetGenerateLine(decorOn, bgMode === 'cyc'))
+    .replace(/\bcharacter\b/gi, 'scene')
+    .replace(/\bCharacter\b/g, 'Scene')
+    .replace(/\bbody pose\b/gi, 'spatial blocking')
+    .replace(/\bpose\b/gi, 'spatial layout')
+    .replace(/\banatomical shadow\b/gi, 'environment contact shadow');
+  return `${out}\n\nSCENE RULE:\n${identity}`.trim();
+}
+
+// --- BUILDERS PAR MODE -------------------------------------------
+
+// Compact : style Chase Jarvis / Google officiel — court, role-first
+function buildCompact(ctx) {
+  const {transferLabel, sourceShortLabel, subject, camera, mat, lightLine, lightDir, decorOn, checks} = ctx;
+
+  const transferShort = {
+    pose:    "the pose, gesture, and 3D body orientation (torso/head yaw, gaze)",
+    framing: "the pose, the 3D body orientation (torso/head yaw, gaze), AND the exact 2D framing — replicate [IMG_1]'s subject placement in the frame (left/right/center, vertical position), character size relative to the frame, headroom, lead-room, and shot scale (wide/medium/full). Do not recenter or resize the character",
+    camera:  "the pose, the full 3D body orientation (torso/head yaw, gaze), the exact 2D framing, subject placement (left/right/center, vertical position), character size in frame, headroom, lead-room, horizon line, and shot scale. Do not recenter, resize, normalize, rotate, or 'improve' the composition"
+  }[currentTransfer];
+
+  const sourceNote = {
+    blocking: "Ignore [IMG_1]'s untextured 3D blocking look (greybox, T-pose mannequin, viewport grid).",
+    preview:  "Ignore [IMG_1]'s low-quality 3D preview rendering.",
+    render:   "Ignore [IMG_1]'s CG render look — the final image is photographic, not CG."
+  }[currentMode];
+
+  const isCyc = (bgMode === 'cyc');
+
+  let lines = [];
+  lines.push(targetIntroLine(decorOn));
+  lines.push('');
+  lines.push(`Generate a single photoreal image of [IMG_2] performing the action of [IMG_1]${decorOn ? ', using [IMG_3] only as visual style reference' : isCyc ? `, standing on a seamless studio cyclorama backdrop in solid ${cycColor.name} color (${cycColor.hex}) — clean infinity cove, no horizon line, no other objects` : ''}. From [IMG_1], take only ${transferShort}. ${sourceNote}`);
+  lines.push('');
+  // Identité + proportions — instruction puppet/figurine (reverse psychology)
+  lines.push(`[IMG_2] is a reference for a practical puppet/figurine character. Photograph this exact figurine — with its exact proportions, head size, limb thickness, body shape — as-is in a real location. Do not apply realistic human anatomy. This is NOT a human, it is a sculpted character with intentional non-realistic proportions. The pose adapts to this figurine's anatomy, not the other way around.`);
+
+  if (decorOn) {
+    lines.push('');
+    lines.push(`Light, lens, grain, and color grade come from [IMG_3]. Match [IMG_3]'s photographic quality — do not let [IMG_2]'s clean studio look bleed through. Cast an anatomical shadow at the character's feet matching [IMG_3]'s sun direction.`);
+  } else if (isCyc) {
+    lines.push('');
+    lines.push(`Studio lighting setup: soft key from upper-front, gentle fill, subtle rim light, professional commercial photography. The cyclorama is a clean ${cycColor.name} ${cycColor.hex} infinity backdrop — no shadows on the wall, soft contact shadow at the character's feet only.`);
+  }
+
+  if (subject) { lines.push(''); lines.push(`Action: ${subject}`); }
+
+  const techParts = [];
+  if (camera) techParts.push(camera);
+  if (!decorOn || lightLine.indexOf('Inherited') === -1) {
+    techParts.push(lightLine);
+  }
+  if (mat) techParts.push(`materials: ${mat}`);
+  if (techParts.length) {
+    lines.push('');
+    lines.push(`Camera & light: ${techParts.join('. ')}.`);
+  }
+
+  if (checks.length) {
+    const compactChecks = checks.slice(0, 3).map(c => c.split(',')[0]).join('; ');
+    lines.push('');
+    lines.push(`Look: ${compactChecks}.`);
+  }
+
+  return lines.join('\n');
+}
+
+// Legacy builder kept for compatibility; overridden below by role-first builders.
+function buildInpaint(ctx) {
+  const {subject, camera, mat, lightDir, decorOn, checks} = ctx;
+
+  if (!decorOn) {
+    return `WARNING: Le mode Inpaint nécessite [IMG_3] (Environment) activé.
+
+L'inpainting consiste à éditer une photo existante. En mode Cyclorama il n'y a pas d'image de base à éditer — bascule sur Environment dans le pipeline ci-dessus, ou choisis Compact / Detailed pour le mode Cyclorama.`;
+  }
+
+  const transferShort = {
+    pose:    "the pose, gesture, and 3D body orientation (torso/head yaw, gaze)",
+    framing: "the pose, the 3D body orientation, and where the character sits in the frame (subject placement, size in frame, shot scale)",
+    camera:  "the pose, the full 3D body orientation, where the character sits in the frame, the horizon line, and the shot scale"
+  }[currentTransfer];
+
+  const sourceNote = {
+    blocking: "Ignore [IMG_1]'s greybox blocking look — only its pose data matters.",
+    preview:  "Ignore [IMG_1]'s preview render quality — only its pose data matters.",
+    render:   "Ignore [IMG_1]'s CG aesthetic — only its pose, framing, and spatial placement matter."
+  }[currentMode];
+
+  let lines = [];
+
+  // Step 1 — analyser [IMG_1] pour le placement (avant tout)
+  if (currentTransfer === 'framing' || currentTransfer === 'camera') {
+    lines.push(`STEP 1 — Read [IMG_1]: identify where the character is positioned within [IMG_1]'s frame (horizontal position: left / center / right; vertical position; size relative to the frame; shot scale: wide / medium / full). These spatial values are the brief.`);
+    lines.push('');
+    lines.push(`STEP 2 — Use [IMG_1] as the setup reference. [IMG_3] remains style only and must not provide place, subject, or composition.`);
+    lines.push('');
+    lines.push(`STEP 3 — Place the character from [IMG_2] according to the EXACT position and size identified in STEP 1. If [IMG_1] shows the character small in a wide shot on the left side of the frame, the character must remain small on the left side of the generated frame. Do NOT center the character automatically. Do NOT resize the character to fit the foreground. The framing of [IMG_1] overrides all other references.`);
+    lines.push('');
+    lines.push(`STEP 4 — Pose the character exactly as in [IMG_1]. From [IMG_1], take ${transferShort}. ${sourceNote}`);
+  } else {
+    lines.push(`Use [IMG_1] as the setup reference. [IMG_3] remains style only and must not provide place, subject, or composition.`);
+    lines.push('');
+    lines.push(`Add the character from [IMG_2], posed exactly as in [IMG_1]. Use [IMG_3] only for visual treatment. From [IMG_1], take ${transferShort}. ${sourceNote}`);
+  }
+  lines.push('');
+
+  // Préservation absolue du décor
+  lines.push(`Keep everything else in [IMG_3] EXACTLY the same — same buildings, same graffiti, same fences, same wires, same sky, same shadows on the buildings, same perspective, same color grade, same film grain, same lens character, same atmospheric haze. The only changes allowed are the addition of the character and its cast shadow on the ground.`);
+  lines.push('');
+
+  // Identité + proportions — instruction puppet/figurine (reverse psychology)
+  lines.push(`Character identity & proportions: [IMG_2] is a reference for a practical puppet/figurine character. Photograph this exact figurine — with its exact proportions, head size, limb thickness, body shape — as-is in a real location. Do not apply realistic human anatomy. This is NOT a human, it is a sculpted character with intentional non-realistic proportions. The pose from [IMG_1] adapts to this figurine's anatomy, never the reverse.`);
+  lines.push('');
+
+  // Intégration physique
+  lines.push(`Photographic integration — the character must look like it was captured by the same camera, in the same light, on the same film as [IMG_3]: match [IMG_3]'s grain, micro-contrast, lens softness, color grade, and white balance exactly. Do NOT inherit [IMG_2]'s clean studio look — the character is softer and more photochemical than its turntable reference.`);
+  lines.push('');
+  lines.push(`Cast shadow on the ground at the character's feet — must be a true anatomical silhouette of the character (head, hair, shoulders, arms, torso, clothing hem, legs all readable in the shadow shape), NOT a generic blob, rectangle, or oval. Match the direction, length, and softness of the existing shadows visible in [IMG_3]. The ground at the character's feet may be modified to receive this shadow; everything else in [IMG_3] stays untouched.`);
+
+  if (subject) { lines.push(''); lines.push(`Action: ${subject}`); }
+  if (mat) { lines.push(''); lines.push(`Character materials override: ${mat}.`); }
+
+  return lines.join('\n');
+}
+
+// Detailed : version v2.3 longue
+function buildDetailed(ctx) {
+  const {sourceInstr, transferInstr, transferLabel, subject, camera, mat, lightLine, lightDir, decorOn, checks} = ctx;
+
+  const decorBlock = decorOn
+    ? `\n\n• ENVIRONMENT — [IMG_3]   ? LOCATION & PHOTOGRAPHIC GROUND TRUTH
+[IMG_3] is the absolute reference for photographic style only. The final image must borrow its light mood, grade, grain, contrast, and texture without copying its place, subject, framing, or composition.
+
+LIGHT CONFORMITY:
+  ${lightDir
+    ? `? [IMG_3] light setup: ${lightDir}. Re-light the character to match this exact setup. Override any pre-existing lighting on [IMG_2].`
+    : `Analyze [IMG_3]'s light: sun/key direction, hardness, sky color, bounce, time of day. Re-light the character to match exactly. Override [IMG_2]'s studio lighting.`}
+  ? Same shadow direction, same shadow softness, same color temperature, same atmospheric quality as [IMG_3].
+
+PHOTOCHEMICAL MATCH: Reduce the character's micro-contrast and edge sharpness to match [IMG_3] — NOT sharper than [IMG_3]. Soften specular highlights to match [IMG_3]'s diffused, slightly bloomed quality. Match [IMG_3]'s white balance, color grade, saturation, black point, highlight rolloff. Same film grain, same lens character, same DoF as [IMG_3].
+  ? [IMG_2] is shown as a clean studio reference for IDENTITY ONLY. Do NOT inherit [IMG_2]'s clean rendering quality.
+
+LOCATION INTEGRATION: Correct ground plane, scale, and contact shadow matching [IMG_3]'s existing shadows. Pick up subtle bounce light from [IMG_3]'s surfaces.
+
+MENTAL MODEL: Imagine you are a photographer using [IMG_1] as the storyboard, [IMG_2] as the subject, and [IMG_3] as a grading/style board. Generate that single photo.`
+    : (bgMode === 'cyc')
+    ? `\n\n• CYCLORAMA STUDIO BACKDROP
+The character stands on a seamless professional studio cyclorama in solid ${cycColor.name} color (${cycColor.hex}). Infinity cove, no horizon line, no objects, no props.
+
+LIGHTING: Soft commercial studio key from upper-front, gentle shadow fill, subtle rim light. No harsh shadows on the cyclorama wall, only a soft contact shadow at the character's feet.
+
+This is a clean isolation shot — treat as high-end product/character commercial photography.`
+    : '';
+
+  const subjectLine = subject ? `\n\nACTION:\n${subject}` : '';
+  const matLine = mat ? `\n\nMATERIALS & TEXTURES (override): ${mat}.` : '';
+  const techLine = `\n\nCAMERA & LENS: ${camera}.\nLIGHTING: ${lightLine}`;
+  const physicsLine = checks.length ? `\n\nPHYSICAL REALISM: ${checks.join('; ')}.` : '';
+
+  return `MULTI-REFERENCE POSE TRANSFER — generate a single photographic image.
+
+• POSE SOURCE — [IMG_1]
+${sourceInstr}
+
+TRANSFER LEVEL — ${transferLabel.toUpperCase()}:
+${transferInstr}
+
+• HERO IDENTITY & PROPORTIONS — [IMG_2]   ? ABSOLUTE PRIORITY
+[IMG_2] is a reference for a practical puppet/figurine character. Photograph this exact figurine — with its exact proportions, head size, limb thickness, body shape — as-is in a real location. Do not apply realistic human anatomy. This is NOT a human, it is a sculpted character with intentional non-realistic proportions.
+
+Do NOT inherit [IMG_2]'s clean studio lighting or render quality — the final character is re-photographed in the light and lens of the final scene${decorOn ? ' (i.e. [IMG_3])' : (bgMode === 'cyc') ? ` (i.e. ${cycColor.name} cyclorama studio)` : ''}.
+
+The pose from [IMG_1] adapts to this figurine's anatomy — never the reverse.${decorBlock}
+
+DIRECTIVE: Render [IMG_2] performing the pose of [IMG_1]${decorOn ? ' with [IMG_3] used only as visual style' : (bgMode === 'cyc') ? ` on a ${cycColor.name} (${cycColor.hex}) studio cyclorama` : ''}, using the framing and 3D orientation specified by the TRANSFER LEVEL. Pose, framing, camera, and 3D body orientation come from [IMG_1].${decorOn ? ' Grade, grain, contrast, and light mood come from [IMG_3] without copying its place.' : ''}${subjectLine}${matLine}${techLine}${physicsLine}
+
+OUTPUT: Photoreal, in-camera footage. No CG look. Single frame. ${decorOn ? 'A real photograph with [IMG_1] setup, [IMG_2] identity, and [IMG_3] style only.' : (bgMode === 'cyc') ? 'Clean studio commercial photography aesthetic.' : 'Seamless integration.'}`;
+}
+
+// --- ROLE-FIRST BUILDERS v4.2.3 ----------------------------------
+// Core contract:
+// [IMG_1] = setup / camera / framing / pose driver
+// [IMG_2] = target subject identity
+// [IMG_3] = visual style only, never location/composition/subject
+function targetLabel() {
+  if (currentTargetType === 'object') return 'object/product';
+  if (currentTargetType === 'scene') return 'scene/set';
+  return currentCharacterKind === 'human' ? 'human character' : 'stylized puppet/figurine character';
+}
+
+function setupDriverLine() {
+  const base = `[IMG_1] is the absolute setup driver. It controls ${targetTransferShort()}.`;
+  const limits = `Do not copy [IMG_1]'s subject identity, textures, render style, materials, colors, lighting grade, or CG/viewport artifacts.`;
+  return `${base} ${sourceNoteForTarget()} ${limits}`;
+}
+
+function targetIdentityLine() {
+  if (currentTargetType === 'object') {
+    return `[IMG_2] is the object/product identity reference. Preserve its exact design, silhouette, proportions, construction logic, materials, wear, scale cues, surface details, and recognizable features. Do not turn it into a character, creature, face, or humanized object unless the action field explicitly asks for it.`;
+  }
+  if (currentTargetType === 'scene') {
+    return `[IMG_2] is the scene/set identity reference. Preserve its architecture, spatial language, materials, prop families, atmosphere, scale, and design logic. Do not invent a central character unless the action field explicitly asks for one.`;
+  }
+  if (currentCharacterKind === 'human') {
+    return `[IMG_2] is the human character identity reference. Preserve the person's face structure, age range, body type, hair, clothing, expression logic, and realistic human proportions. Interpret the [IMG_1] pose through believable human anatomy, natural joint limits, grounded balance, and realistic weight. Do not describe or render the subject as a puppet, figurine, toy, doll, mannequin, or non-human object.`;
+  }
+  return `[IMG_2] is the stylized puppet/figurine character identity reference. Preserve the exact sculpted identity, head size, limb thickness, body shape, costume, materials, texture, and intentional non-realistic proportions. Do not normalize it into a realistic human body. The [IMG_1] pose adapts to this character's anatomy, never the reverse.`;
+}
+
+function styleReferenceLine() {
+  if (bgMode === 'cyc') {
+    return `No environment reference is active. Use a seamless studio cyclorama in solid ${cycColor.name} (${cycColor.hex}), clean infinity cove, no horizon line, no props unless requested. Lighting is clean commercial studio lighting with a soft contact shadow.`;
+  }
+  return `[IMG_3] is a VISUAL STYLE REFERENCE ONLY. Transfer only color grade, contrast, grain, film stock impression, lighting mood, atmospheric texture, weather/air feel, lens softness, black point, highlight rolloff, and overall photographic realism. Do NOT copy [IMG_3]'s location, landscape, road, room, architecture, background objects, subject, composition, camera angle, lens framing, or object placement.`;
+}
+
+function priorityBlock() {
+  return `Priority order:
+1. [IMG_1] controls setup, camera, framing, placement, scale, orientation, and pose/blocking according to the selected transfer level.
+2. [IMG_2] controls the target ${targetLabel()} identity and all recognizable subject details.
+3. [IMG_3] controls visual style only; never copy its place, subject, composition, or camera.`;
+}
+
+function targetOutputPhrase() {
+  if (currentTargetType === 'object') return 'the object/product from [IMG_2]';
+  if (currentTargetType === 'scene') return 'the scene/set from [IMG_2]';
+  if (currentCharacterKind === 'human') return 'the human character from [IMG_2]';
+  return 'the stylized puppet/figurine character from [IMG_2]';
+}
+
+function targetDirectiveVerb() {
+  if (currentTargetType === 'object') return 'stage and photograph';
+  if (currentTargetType === 'scene') return 'rebuild and photograph';
+  return 'pose and photograph';
+}
+
+function contextLine(subject) {
+  const action = subject ? `User action/details: ${subject}.` : '';
+  if (currentTargetType === 'scene') {
+    return action || 'Scene action/details: preserve the scene logic from [IMG_2] while applying [IMG_1] setup and [IMG_3] style.';
+  }
+  if (currentTargetType === 'object') {
+    return action || 'Object action/details: keep the product/object itself as the hero subject unless requested otherwise.';
+  }
+  return action || 'Character action/details: follow the pose/action implied by [IMG_1] unless the user field adds a more specific performance note.';
+}
+
+function lightArchitectureLine(lightLine) {
+  if (bgMode === 'cyc') return `Lighting: ${lightLine && lightLine !== 'Natural, scene-appropriate lighting.' ? lightLine : 'soft commercial studio lighting, controlled shadows, clean product-photo readability'}.`;
+  if (!lightLine || lightLine.indexOf('Guided by [IMG_3]') === 0) {
+    return `Lighting: guided by [IMG_3]'s lighting mood and contrast only. Do not copy [IMG_3]'s place or composition.`;
+  }
+  return `Lighting override: ${lightLine}. Keep [IMG_3] only for grade, grain, contrast, and photographic texture.`;
+}
+
+function materialLine(mat) {
+  if (!mat) return '';
+  if (currentTargetType === 'scene') return `Material/style override for the scene where relevant: ${mat}.`;
+  if (currentTargetType === 'object') return `Material override only where it does not break [IMG_2]'s product identity: ${mat}.`;
+  return `Material/texture override only where it does not break [IMG_2]'s character identity: ${mat}.`;
+}
+
+function checksLine(checks) {
+  if (!checks || !checks.length) return '';
+  let items = checks.slice();
+  if (currentTargetType === 'object') {
+    items = items
+      .filter(item => !/(skin|fabric|breathing|eye blinks|body motion|hair)/i.test(item))
+      .map(item => /anti|puppet|figurine|silicone/i.test(item) ? 'no CG viewport look, no plastic render artifacts, physically plausible product photography' : item);
+  } else if (currentTargetType === 'scene') {
+    items = items
+      .filter(item => !/(skin|fabric|breathing|eye blinks|body motion|hair|feet|character)/i.test(item))
+      .map(item => /anti|puppet|figurine|silicone/i.test(item) ? 'no CG viewport look, no plastic render artifacts, believable architectural/environment photography' : item);
+  } else if (currentCharacterKind === 'puppet') {
+    items = items.map(item => /anti|puppet|figurine|silicone/i.test(item) ? 'no CG viewport look, no rubbery AI deformation, photographed as a real practical sculpted character' : item);
+  }
+  items = Array.from(new Set(items.filter(Boolean)));
+  return items.length ? `Quality constraints: ${items.join('; ')}.` : '';
+}
+
+function buildCompact(ctx) {
+  const {subject, camera, mat, lightLine, checks} = ctx;
+  const chunks = [
+    `Create one photoreal image using three references with strict role separation.`,
+    priorityBlock(),
+    setupDriverLine(),
+    targetIdentityLine(),
+    styleReferenceLine(),
+    `Directive: ${targetDirectiveVerb()} ${targetOutputPhrase()} using [IMG_1]'s setup and [IMG_3]'s visual style only.`,
+    contextLine(subject),
+    `Camera/lens: ${camera}.`,
+    lightArchitectureLine(lightLine),
+    materialLine(mat),
+    checksLine(checks),
+    `Final guardrails: no text, no captions, no labels, no watermark. Do not "improve" or re-center [IMG_1]'s framing. Do not let [IMG_3]'s location override [IMG_1]'s setup.`
+  ].filter(Boolean);
+  return chunks.join('\n\n');
+}
+
+function buildInpaint(ctx) {
+  const {subject, camera, mat, lightLine, checks} = ctx;
+  const chunks = [
+    `EDIT / COMPOSITE WORKFLOW - keep [IMG_1] as the spatial setup reference, not as a visual style reference.`,
+    priorityBlock(),
+    `[IMG_1] is the editable setup base only if the tool supports image editing. Preserve its camera, framing, scale relationships, placement, horizon, viewpoint, and pose/blocking. Replace or rebuild the visible target using [IMG_2]. Do not preserve [IMG_1]'s CG look, placeholder textures, source character identity, or materials.`,
+    targetIdentityLine(),
+    styleReferenceLine(),
+    `Directive: ${targetDirectiveVerb()} ${targetOutputPhrase()} inside [IMG_1]'s setup. Apply [IMG_3] only as visual treatment and photographic finish.`,
+    contextLine(subject),
+    `Camera/lens: ${camera}. If this conflicts with [IMG_1], [IMG_1] wins for spatial setup and the camera option becomes photographic flavor only.`,
+    lightArchitectureLine(lightLine),
+    materialLine(mat),
+    checksLine(checks),
+    `Final guardrails: keep [IMG_1]'s setup logic, not its render look. Do not copy [IMG_3]'s location, subject, framing, road, room, landscape, or background props. No text, no labels, no watermark.`
+  ].filter(Boolean);
+  return chunks.join('\n\n');
+}
+
+function buildDetailed(ctx) {
+  const {sourceInstr, transferLabel, subject, camera, mat, lightLine, checks} = ctx;
+  const chunks = [
+    `MULTI-REFERENCE IMAGE TRANSFER - role-first architecture.`,
+    `REFERENCE ROLES:
+[IMG_1] = SETUP DRIVER. Camera, framing, viewpoint, placement, subject scale, pose/blocking, spatial relationships.
+[IMG_2] = TARGET IDENTITY. The subject that must be generated.
+[IMG_3] = STYLE ONLY. Color, light mood, grain, contrast, atmosphere, photographic texture. Never place or composition.`,
+    priorityBlock(),
+    `SETUP DRIVER - [IMG_1]:
+${sourceInstr}
+Selected transfer level: ${transferLabel}.
+Operational read: ${targetTransferShort()}
+Hard limit: ignore [IMG_1]'s render quality, source identity, surface colors, materials, textures, viewport overlays, and CG artifacts.`,
+    `TARGET IDENTITY - [IMG_2]:
+${targetIdentityLine()}`,
+    `STYLE REFERENCE - [IMG_3]:
+${styleReferenceLine()}`,
+    `DIRECTIVE:
+${targetDirectiveVerb()} ${targetOutputPhrase()} with [IMG_1]'s spatial setup and [IMG_2]'s identity. Apply [IMG_3] as photographic finish only.`,
+    contextLine(subject),
+    `CAMERA / LENS:
+${camera}
+If the selected camera conflicts with [IMG_1]'s framing setup, keep [IMG_1]'s spatial framing and use this camera option only as rendering/lens flavor.`,
+    lightArchitectureLine(lightLine),
+    materialLine(mat),
+    checksLine(checks),
+    `NEGATIVE CONSTRAINTS:
+- Do not copy [IMG_3]'s location, road, room, desert, landscape, architecture, background props, subject, camera, or composition.
+- Do not let [IMG_2]'s studio/reference background overwrite [IMG_1]'s setup.
+- Do not normalize [IMG_1]'s unusual framing, asymmetry, scale, or camera angle.
+- No text, no captions, no labels, no watermarks.`,
+    `OUTPUT:
+One photoreal in-camera image, spatially driven by [IMG_1], subject-driven by [IMG_2], style-driven by [IMG_3] only.`
+  ].filter(Boolean);
+  return chunks.join('\n\n');
+}
+
+function adaptPromptToTarget(prompt) {
+  return String(prompt || '').trim();
+}
+
+function videoModelName(model) {
+  return {
+    seedance2: 'Seedance 2',
+    kling3: 'Kling 3',
+    veo31: 'Veo 3.1 / Google Flow',
+    geminiOmni: 'Gemini Omni Flash'
+  }[model] || 'Selected video model';
+}
+
+function videoAttributionBlock(model) {
+  const platformNote = {
+    seedance2: 'Use these names exactly, or replace them with the upload labels used by your Seedance interface.',
+    kling3: 'Use these names exactly, or replace them with the upload labels used by your Kling interface.',
+    veo31: 'Use these names exactly, or replace them with Flow ingredient labels. If Flow does not accept a video reference, use @video_1 as a storyboard/keyframe reference and describe its motion verbally.',
+    geminiOmni: 'Use these names exactly, or replace them with Gemini file labels such as image_0, image_1, video_0.'
+  }[model] || 'Replace these names with your uploaded file labels if needed.';
+
+  return `REFERENCE ATTRIBUTIONS - fill/rename according to your uploaded files:
+Subject sheet / subject identity = @image_1
+Motion + camera driver = @video_1
+Visual identity / final look = @image_2
+Background / environment reference = @image_3 (optional)
+${platformNote}`;
+}
+
+function videoPrecisionLine(prec) {
+  return {
+    strict: 'Strict transfer: keep @video_1 timing, action beats, camera path, framing evolution, subject scale changes, velocity, rhythm, and cuts as close as possible.',
+    balanced: 'Balanced transfer: keep @video_1 as the main timing/camera/action guide, smoothing only what is needed for stable identity and believable motion.',
+    creative: 'Creative transfer: keep @video_1 motion intent, camera energy, rhythm, and key beats while allowing the model to simplify or beautify ambiguous movement.'
+  }[prec] || '';
+}
+
+function videoActionLine(act) {
+  return act ? `Additional action/details: ${act}.` : 'Additional action/details: follow the visible action and timing from @video_1.';
+}
+
+function videoPhysLine(phys) {
+  return phys.length ? `Motion/quality constraints: ${phys.join('; ')}.` : 'Motion/quality constraints: stable identity, believable physics, no flicker, no warping.';
+}
+
+function buildKling3Prompt(ctx) {
+  const {cam, prec, act, phys} = ctx;
+  return `${videoAttributionBlock('kling3')}
+
+KLING 3 PROMPT - short directed shot
+Use @image_2 as the visible visual identity / final look reference. Use @image_1 only to clarify subject identity details if @image_2 is not enough. Use @video_1 as the motion and camera reference. Use @image_3 only if a background/environment reference is actually provided.
+
+Single clear shot, one main action, one camera idea. ${videoPrecisionLine(prec)}
+
+Visible subject from @image_2 performs the motion from @video_1. Preserve the subject identity, proportions, costume/materials, and silhouette from @image_2 / @image_1. Preserve @video_1's camera behavior and timing without copying its CG/preview look. Camera: ${cam}. ${videoActionLine(act)}
+
+${videoPhysLine(phys)}
+
+Avoid: extra cuts, extra subjects, text overlays, logo distortion, jump cuts, identity drift, warped hands/body/object geometry, and copying @video_1's render style.`;
+}
+
+function buildSeedance2Prompt(ctx) {
+  const {cam, prec, act, phys} = ctx;
+  return `${videoAttributionBlock('seedance2')}
+
+SEEDANCE 2 PROMPT - multimodal continuity sequence
+Reference roles: @image_1 locks the subject sheet and identity details. @video_1 drives motion rhythm, timing, camera trajectory, framing changes, and performance beats. @image_2 defines final visual identity, materials, lighting style, color grade, and finish. @image_3, if provided, defines environment/background continuity only; if not provided, keep the background implied by @image_2.
+
+Continuity: same subject identity, same wardrobe/product shape/material logic, same visual style from @image_2, stable light direction, coherent background, no identity drift. ${videoPrecisionLine(prec)}
+
+Beat 1, opening: establish the subject from @image_2 / @image_1 in the starting framing suggested by @video_1.
+Beat 2, middle: follow @video_1's main action and camera path. Camera instruction: ${cam}.
+Beat 3, ending: land on the same final motion endpoint and framing intention as @video_1, with @image_2's final look preserved.
+
+${videoActionLine(act)}
+${videoPhysLine(phys)}
+
+Constraints: do not copy @video_1's placeholder subject, low-quality render, textures, lighting, or background unless explicitly requested. Do not replace @image_2's identity. No captions, no labels, no watermarks.`;
+}
+
+function buildVeo31Prompt(ctx) {
+  const {cam, prec, act, phys} = ctx;
+  return `${videoAttributionBlock('veo31')}
+
+VEO 3.1 / FLOW INGREDIENTS PROMPT - one continuous cinematic shot
+Using the provided ingredients, create one continuous photoreal video shot. @image_1 supplies the subject sheet and identity details. @image_2 supplies the final visible look, materials, color grade, and lighting mood. @image_3, if provided, supplies the background/environment ingredient. @video_1 supplies the intended motion path, camera movement, timing, and framing evolution; if the current Flow surface cannot attach video as an ingredient, use @video_1 as the storyboard reference and follow its motion description.
+
+${cam}. The subject from @image_2 / @image_1 performs the action timing from @video_1 with ${prec === 'strict' ? 'very close motion and camera fidelity' : prec === 'balanced' ? 'clean motion fidelity and believable visual continuity' : 'the same motion intention with cinematic interpretation'}. ${videoActionLine(act)}
+
+Style and ambiance: photoreal in-camera footage, final color and light mood from @image_2, optional environment continuity from @image_3, physically plausible movement, stable identity throughout. ${videoPhysLine(phys)}
+
+The shot contains no text overlays, no subtitles unless requested, no watermark, no extra subjects, and no visible artifacts from @video_1's original render style.`;
+}
+
+function buildGeminiOmniPrompt(ctx) {
+  const {cam, prec, act, phys} = ctx;
+  return `${videoAttributionBlock('geminiOmni')}
+
+GEMINI OMNI FLASH PROMPT - conversational multimodal edit
+Create or edit the video using the roles above. Preserve @video_1's camera path, timing, motion rhythm, composition changes, and action beats. Replace its visible subject/style with the identity and final look from @image_2, using @image_1 as the subject sheet when finer identity details are needed. Use @image_3 as the background/environment reference only if it is provided.
+
+What must stay the same: @video_1 motion timing, camera behavior, key action beats, spatial continuity, and framing evolution.
+What must change: the visible subject identity, materials, lighting style, grade, and final look should match @image_2 / @image_1 instead of @video_1.
+Camera: ${cam}. ${videoPrecisionLine(prec)}
+
+${videoActionLine(act)}
+${videoPhysLine(phys)}
+
+Do not show the original subject or render style from @video_1. Do not change protected subject identity from @image_2 / @image_1. Keep the result physically plausible, temporally stable, and coherent through the whole clip.`;
+}
+
+function buildImage() {
+  const subject = document.getElementById('img-subject').value.trim();
+  const camera  = document.getElementById('img-camera').value;
+  const matSel  = document.getElementById('img-mat');
+  const mat     = matSel.value;
+  const lightSel= document.getElementById('img-light');
+  const lightVal= lightSel.value;
+  const lightDir= '';
+  const checks  = getChecks('#image .checklist input:checked');
+
+  const sourceInstr   = sourceInstructionForTarget();
+  const transferInstr = targetTransferShort();
+  const transferLabel = transferMap[currentTransfer].label;
+  const sourceShortLabel = modeMap[currentMode].label;
+
+  // Lighting line
+  let lightLine;
+  if (lightVal === '__default__') {
+    if (decorOn) {
+      lightLine = `Guided by [IMG_3]'s lighting mood, contrast, color grade, grain, and photographic texture only. Do not copy [IMG_3]'s location, background, camera, or composition.`;
+    } else {
+      lightLine = `Natural, scene-appropriate lighting.`;
+    }
+  } else {
+    lightLine = lightVal;
+  }
+
+  const ctx = {
+    sourceInstr, transferInstr, transferLabel, sourceShortLabel,
+    subject, camera, mat, lightLine, lightDir, decorOn, checks
+  };
+
+  let prompt;
+  if (currentPromptMode === 'compact')        prompt = buildCompact(ctx);
+  else if (currentPromptMode === 'detailed')  prompt = buildDetailed(ctx);
+  else                                         prompt = buildInpaint(ctx);
+  prompt = adaptPromptToTarget(prompt);
+
+  // Title
+  const titleEl = document.getElementById('output-title-img');
+  if (titleEl) {
+    const titles = { compact: 'Prompt généré · Compact', detailed: 'Prompt généré · Detailed', inpaint: 'Prompt généré · Edit [IMG_1]' };
+    titleEl.textContent = titles[currentPromptMode];
+  }
+
+  document.getElementById('output-text').innerHTML = colorize(prompt);
+  document.getElementById('char-count').textContent = prompt.length;
+  document.getElementById('word-count').textContent = prompt.split(/\s+/).filter(Boolean).length;
+  document.getElementById('output-text').dataset.raw = prompt;
+}
+
+function buildVideo() {
+  const model = document.getElementById('vid-model').value;
+  const cam   = document.getElementById('vid-cam').value;
+  const prec  = document.getElementById('vid-precision').value;
+  const act   = document.getElementById('vid-action').value.trim();
+  const phys  = getChecks('#video .checklist input:checked');
+
+  const ctx = { model, cam, prec, act, phys };
+  const builders = {
+    seedance2: buildSeedance2Prompt,
+    kling3: buildKling3Prompt,
+    veo31: buildVeo31Prompt,
+    geminiOmni: buildGeminiOmniPrompt
+  };
+  const prompt = (builders[model] || buildSeedance2Prompt)(ctx);
+
+  const title = document.querySelector('#video .output-title');
+  if (title) title.textContent = `Prompt généré · ${videoModelName(model)}`;
+
+  document.getElementById('output-text-v').innerHTML = colorize(prompt);
+  document.getElementById('char-count-v').textContent = prompt.length;
+  document.getElementById('word-count-v').textContent = prompt.split(/\s+/).filter(Boolean).length;
+  document.getElementById('output-text-v').dataset.raw = prompt;
+}
+
+function copyPrompt(targetId, btnId) {
+  const raw = document.getElementById(targetId).dataset.raw || '';
+  if (!raw) return;
+  navigator.clipboard.writeText(raw).then(() => {
+    const btn = document.getElementById(btnId);
+    const toast = document.getElementById('toast');
+    const originalHTML = btn.innerHTML;
+    btn.classList.add('done');
+    btn.innerHTML = '<span class="arrow-icn">?</span> Copié dans le presse-papiers';
+    toast.classList.add('show');
+    setTimeout(() => {
+      btn.classList.remove('done');
+      btn.innerHTML = originalHTML;
+      toast.classList.remove('show');
+    }, 1800);
+  });
+}
+
+// Listeners IMAGE
+['img-subject','img-camera','img-mat','img-light'].forEach(id => {
+  const el = document.getElementById(id);
+  el.addEventListener('input', buildImage);
+  el.addEventListener('change', buildImage);
+});
+document.querySelectorAll('#image .checklist input').forEach(c => c.addEventListener('change', buildImage));
+
+// Listeners VIDEO
+['vid-model','vid-cam','vid-precision','vid-action'].forEach(id => {
+  const el = document.getElementById(id);
+  el.addEventListener('input', buildVideo);
+  el.addEventListener('change', buildVideo);
+});
+document.querySelectorAll('#video .checklist input').forEach(c => c.addEventListener('change', buildVideo));
+
+renderTransfer2D();
+updateTargetUI();
+buildImage();
+buildVideo();
+</script>
+
+    <script src="../barzy-theme.js?v=20260515-18"></script>
+</body>
+</html>
+

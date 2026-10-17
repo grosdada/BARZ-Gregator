@@ -1,0 +1,3989 @@
+{
+  "schemaVersion": "1.0",
+  "id": "semantic-workflow-3d-01",
+  "owner": "workflow-3d",
+  "status": "pending-astra-review",
+  "approximateTokens": 9951,
+  "prompts": [
+    {
+      "id": "text-00cd75a24b04ff810572",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "shot on Sony Venice 2, 35mm anamorphic lens, cinematic bokeh",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 873,
+          "column": 23,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-01f6e32a3c9401a3db65",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Operate a precision character replacement. Use [IMG_1] as the absolute visual base for composition, identical framing, specific pose, full lighting scheme, shadows, and color grading. Identify the subject in [IMG_1] and replace them entirely with the likeness, identity, and features of the person from [IMG_2]. Critically, the new character from [IMG_2] must adopt the exact pose of the person in [IMG_1] and must be seamlessly integrated using the existing environment lighting and shadowing found in [IMG_1]. There must be 100% fidelity to the original background, atmosphere, and colors of [IMG_1]. Focus heavily on aligning the facial angles and lighting interaction. MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1194,
+          "column": 15,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-039eb0b2083ae7bd8dd0",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Lighting: ${lightLine && lightLine !== 'Natural, scene-appropriate lighting.' ? lightLine : 'soft commercial studio lighting, controlled shadows, clean product-photo readability'}.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1790,
+          "column": 32,
+          "kind": "template-literal",
+          "functionName": "lightArchitectureLine",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-03dace86b2758eb0eb03",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "NEGATIVE CONSTRAINTS:\n- Do not copy [IMG_3]'s location, road, room, desert, landscape, architecture, background props, subject, camera, or composition.\n- Do not let [IMG_2]'s studio/reference background overwrite [IMG_1]'s setup.\n- Do not normalize [IMG_1]'s unusual framing, asymmetry, scale, or camera angle.\n- No text, no captions, no labels, no watermarks.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1887,
+          "column": 5,
+          "kind": "template-literal",
+          "functionName": "buildDetailed",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-047f7a435e5b55e5ec7e",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "the pose, the full 3D body orientation (torso/head yaw, gaze), the exact 2D framing, subject placement, character size in frame, headroom, lead-room, horizon line, and shot scale. Do not recenter, resize, normalize, or rotate the pose",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1410,
+          "column": 15,
+          "kind": "string-literal",
+          "functionName": "targetTransferShort",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-066ec19ad2c7d11a3ce5",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "[IMG_2] is the stylized puppet/figurine character identity reference. Preserve the exact sculpted identity, head size, limb thickness, body shape, costume, materials, texture, and intentional non-realistic proportions. Do not normalize it into a realistic human body. The [IMG_1] pose adapts to this character's anatomy, never the reverse.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1748,
+          "column": 10,
+          "kind": "template-literal",
+          "functionName": "targetIdentityLine",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-07acabed61b41462c322",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "the object's 3D orientation, rotation, tilt, contact points, exact placement in the frame, scale relative to the frame, negative space, and shot scale",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1414,
+          "column": 16,
+          "kind": "string-literal",
+          "functionName": "targetTransferShort",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-086671202886c6912dcf",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "the pose, the 3D body orientation (torso/head yaw, gaze), AND the exact 2D framing — replicate [IMG_1]'s subject placement in the frame (left/right/center, vertical position), character size relative to the frame, headroom, lead-room, and shot scale (wide/medium/full). Do not recenter or resize the character",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1558,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": "buildCompact",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-091b048fbb76fa014ede",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "rhythmic rack focus, shifting from foreground to background",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1092,
+          "column": 23,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-092fc075161b87f43f60",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "CAMERA / LENS:\n${camera}\nIf the selected camera conflicts with [IMG_1]'s framing setup, keep [IMG_1]'s spatial framing and use this camera option only as rendering/lens flavor.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1881,
+          "column": 5,
+          "kind": "template-literal",
+          "functionName": "buildDetailed",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-09d5b7394c2954ed98a0",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "the pose, the 3D body orientation, and where the character sits in the frame (subject placement, size in frame, shot scale)",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1620,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": "buildInpaint",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-0ac7877ec5ec41b4cae6",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "STEP 4 — Pose the character exactly as in [IMG_1]. From [IMG_1], take ${transferShort}. ${sourceNote}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1640,
+          "column": 16,
+          "kind": "template-literal",
+          "functionName": "buildInpaint",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-0b0dcb85082fd05ac28b",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Prompt généré · ${videoModelName(model)}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 2077,
+          "column": 34,
+          "kind": "template-literal",
+          "functionName": "buildVideo",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-0d2f8551124ebb5fc147",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": ", placed on a seamless studio cyclorama backdrop in solid ${cycColor.name} color (${cycColor.hex}) — clean infinity cove, no horizon line, no other objects",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1480,
+          "column": 95,
+          "kind": "template-literal",
+          "functionName": "targetGenerateLine",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-0d8b79d5852494312a99",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Camera & light: ${techParts.join('. ')}.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1596,
+          "column": 16,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-0eec1a47aabc6edbd2bb",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Treat [IMG_1] as a ${modeLabel} reference for human body staging. Extract only the pose, gesture, body orientation, frame placement, and camera perspective. Ignore viewport overlays, rig controls, CG shading, source materials, and source identity. Interpret the transferred body pose through realistic human anatomy, natural joint limits, believable balance, and a physically possible stance.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1435,
+          "column": 12,
+          "kind": "template-literal",
+          "functionName": "sourceInstructionForTarget",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-0f4c78f75ded18bc77db",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Ignore [IMG_1]'s preview render quality — only object staging and framing matter.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1444,
+          "column": 16,
+          "kind": "string-literal",
+          "functionName": "sourceNoteForTarget",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-0f90bf293fbf2b78578b",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "vertigo effect (dolly zoom), background warps while subject remains still",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1088,
+          "column": 23,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-10c5a475e51ce7c361fd",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "the same motion intention with cinematic interpretation",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1985,
+          "column": 237,
+          "kind": "string-literal",
+          "functionName": "buildVeo31Prompt",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-1198745fdd0509a06b71",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "[IMG_1] is the editable setup base only if the tool supports image editing. Preserve its camera, framing, scale relationships, placement, horizon, viewpoint, and pose/blocking. Replace or rebuild the visible target using [IMG_2]. Do not preserve [IMG_1]'s CG look, placeholder textures, source character identity, or materials.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1846,
+          "column": 5,
+          "kind": "template-literal",
+          "functionName": "buildInpaint",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-13b9ada74ab929076b44",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Camera/lens: ${camera}. If this conflicts with [IMG_1], [IMG_1] wins for spatial setup and the camera option becomes photographic flavor only.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1851,
+          "column": 5,
+          "kind": "template-literal",
+          "functionName": "buildInpaint",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-13f3d4a4d81b65b74f2a",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "<strong>Priorité absolue</strong> : design, silhouette, proportions, matériaux, échelle. Le placement et la caméra viennent de [IMG_1].",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1391,
+          "column": 22,
+          "kind": "string-literal",
+          "functionName": "updateTargetUI",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-17e8bc1bdd62dcf7ff50",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "shot on Arri Alexa 65, 14mm ultra-wide lens, deep depth of field",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 867,
+          "column": 23,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-182705f1e56752dcd9a0",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Use these names exactly, or replace them with Flow ingredient labels. If Flow does not accept a video reference, use @video_1 as a storyboard/keyframe reference and describe its motion verbally.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1915,
+          "column": 12,
+          "kind": "string-literal",
+          "functionName": "videoAttributionBlock",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-1850292312fac2435337",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Kling 3 · short directed shot",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1064,
+          "column": 36,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-18897d3499be95e6c4b1",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "motion blur where appropriate, rolling shutter artifacts",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 992,
+          "column": 57,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-19076d8c5cba0e29e253",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Copies posture, limb angles, gesture, and skeletal alignment while preserving the target character identity. Use the arrow to open the complete prompt.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1205,
+          "column": 38,
+          "kind": "string-literal",
+          "functionName": "transfer2DInfo",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-1bb5bba3fb75e39068ff",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Cast shadow on the ground at the character's feet — must be a true anatomical silhouette of the character (head, hair, shoulders, arms, torso, clothing hem, legs all readable in the shadow shape), NOT a generic blob, rectangle, or oval. Match the direction, length, and softness of the existing shadows visible in [IMG_3]. The ground at the character's feet may be modified to receive this shadow; everything else in [IMG_3] stays untouched.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1659,
+          "column": 14,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-1c99d6e10aa2c45db93c",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "infrared thermal photography style, heat signatures",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 955,
+          "column": 23,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-1ca9733ea5ffd53f7d66",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Generate a single photoreal image of the object/product from [IMG_2]${placement}. From [IMG_1], take only ${targetTransferShort()}. ${sourceNoteForTarget()}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1482,
+          "column": 12,
+          "kind": "template-literal",
+          "functionName": "targetGenerateLine",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-1fee1bdea9238cdeed98",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "POSE ONLY — Read [IMG_1] as a 3D scene, not a 2D silhouette. Extract the body pose, gesture, limb positioning, AND the full 3D orientation of the character: torso yaw (rotation around the vertical axis), head yaw and tilt, gaze direction, shoulder line, hip line, weight distribution. Preserve these 3D rotations exactly — do NOT flatten the character to a more readable profile or three-quarter view if [IMG_1] shows a different angle. Do NOT inherit the framing, the subject placement in the frame, the camera height, or the camera angle of [IMG_1]. The composition and shot framing of the final image are free.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1247,
+          "column": 12,
+          "kind": "string-literal",
+          "functionName": "openWorkspace",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-212b95335a8a72c70033",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "the pose, the full 3D body orientation, where the character sits in the frame, the horizon line, and the shot scale",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1621,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": "buildInpaint",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-215fda1f2e17cc2cdb00",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "${out}\n\nOBJECT RULE:\n${identity}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1537,
+          "column": 12,
+          "kind": "template-literal",
+          "functionName": "adaptPromptToTarget",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-223bbb3d63a508f3ea2c",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "long exposure light trails, motion blur",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 973,
+          "column": 23,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-22e6acb046516a142385",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Natural, scene-appropriate lighting.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1790,
+          "column": 72,
+          "kind": "string-literal",
+          "functionName": "lightArchitectureLine",
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 2030,
+          "column": 19,
+          "kind": "template-literal",
+          "functionName": "buildImage",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-2311a672e3ecc4e17ef4",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "the scene/set from [IMG_2]",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1505,
+          "column": 45,
+          "kind": "string-literal",
+          "functionName": "directiveSubject",
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1767,
+          "column": 45,
+          "kind": "string-literal",
+          "functionName": "targetOutputPhrase",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-24d33537835a4801803e",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "[IMG_1] is the 3D camera/blocking reference. [IMG_2] is the scene/set reference (architecture, layout, materials, atmosphere, and design language).${decorEnabled ? ' [IMG_3] is the visual style reference only.' : ''}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1474,
+          "column": 12,
+          "kind": "template-literal",
+          "functionName": "targetIntroLine",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-28342a182d9bf6732997",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": " Grade, grain, contrast, and light mood come from [IMG_3] without copying its place.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1716,
+          "column": 348,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-28d9270011cf61a19712",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Treat [IMG_1] as a ${modeLabel} reference for scene blocking and framing layout. Extract only spatial composition, horizon line, depth staging, negative space, and major scene geometry. Ignore any character identity, mannequin anatomy, CG shading, viewport overlays, and source materials.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1432,
+          "column": 12,
+          "kind": "template-literal",
+          "functionName": "sourceInstructionForTarget",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-28ec0f048d09df9cc305",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "3D Render",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1269,
+          "column": 12,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-28f957f1fc079bfc6a13",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "${videoAttributionBlock('seedance2')}\n\nSEEDANCE 2 PROMPT - multimodal continuity sequence\nReference roles: @image_1 locks the subject sheet and identity details. @video_1 drives motion rhythm, timing, camera trajectory, framing changes, and performance beats. @image_2 defines final visual identity, materials, lighting style, color grade, and finish. @image_3, if provided, defines environment/background continuity only; if not provided, keep the background implied by @image_2.\n\nContinuity: same subject identity, same wardrobe/product shape/material logic, same visual style from @image_2, stable light direction, coherent background, no identity drift. ${videoPrecisionLine(prec)}\n\nBeat 1, opening: establish the subject from @image_2 / @image_1 in the starting framing suggested by @video_1.\nBeat 2, middle: follow @video_1's main action and camera path. Camera instruction: ${cam}.\nBeat 3, ending: land on the same final motion endpoint and framing intention as @video_1, with @image_2's final look preserved.\n\n${videoActionLine(act)}\n${videoPhysLine(phys)}\n\nConstraints: do not copy @video_1's placeholder subject, low-quality render, textures, lighting, or background unless explicitly requested. Do not replace @image_2's identity. No captions, no labels, no watermarks.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1961,
+          "column": 10,
+          "kind": "template-literal",
+          "functionName": "buildSeedance2Prompt",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-2af7b2bdc3a72fb73cee",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "REFERENCE ATTRIBUTIONS - fill/rename according to your uploaded files:\nSubject sheet / subject identity = @image_1\nMotion + camera driver = @video_1\nVisual identity / final look = @image_2\nBackground / environment reference = @image_3 (optional)\n${platformNote}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1919,
+          "column": 10,
+          "kind": "template-literal",
+          "functionName": "videoAttributionBlock",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-2cd08d62263f9ef9756f",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Generate with REF image",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1185,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-301b237216c190226e10",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Ignore [IMG_1]'s untextured 3D blocking look (greybox, T-pose mannequin, viewport grid).",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1463,
+          "column": 15,
+          "kind": "string-literal",
+          "functionName": "sourceNoteForTarget",
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1563,
+          "column": 15,
+          "kind": "string-literal",
+          "functionName": "buildCompact",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-30f579618d3e131d0cbe",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Motion/quality constraints: stable identity, believable physics, no flicker, no warping.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1940,
+          "column": 76,
+          "kind": "string-literal",
+          "functionName": "videoPhysLine",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-3121bbd4948fe74f441a",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "rising drone spiral shot, ascending while rotating",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1091,
+          "column": 23,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-317d4157e9853e90f8da",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "no CG viewport look, no plastic render artifacts, believable architectural/environment photography",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1814,
+          "column": 66,
+          "kind": "string-literal",
+          "functionName": "checksLine",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-31ae25dbf2cea13331f8",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "shot with 100mm Macro lens, microscopic detail",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 882,
+          "column": 23,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-3368c6ca726fd314db3d",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "STEP 1 — Read [IMG_1]: identify where the character is positioned within [IMG_1]'s frame (horizontal position: left / center / right; vertical position; size relative to the frame; shot scale: wide / medium / full). These spatial values are the brief.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1634,
+          "column": 16,
+          "kind": "template-literal",
+          "functionName": "buildInpaint",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-33e9a10fcf53fee8aa2a",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Priority order:\n1. [IMG_1] controls setup, camera, framing, placement, scale, orientation, and pose/blocking according to the selected transfer level.\n2. [IMG_2] controls the target ${targetLabel()} identity and all recognizable subject details.\n3. [IMG_3] controls visual style only; never copy its place, subject, composition, or camera.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1759,
+          "column": 10,
+          "kind": "template-literal",
+          "functionName": "priorityBlock",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-34aa9f1b31db2fcbed52",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Action: ${subject}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1586,
+          "column": 45,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1661,
+          "column": 45,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-357af1eb0850b6ad1888",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "\n\nCAMERA & LENS: ${camera}.\nLIGHTING: ${lightLine}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1698,
+          "column": 20,
+          "kind": "template-literal",
+          "functionName": "buildDetailed",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-35d3d534c8835c0c743c",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": " [IMG_3] is the visual style reference only.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1471,
+          "column": 168,
+          "kind": "string-literal",
+          "functionName": "targetIntroLine",
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1474,
+          "column": 177,
+          "kind": "string-literal",
+          "functionName": "targetIntroLine",
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1476,
+          "column": 233,
+          "kind": "string-literal",
+          "functionName": "targetIntroLine",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-39d6f0402942a0ce899a",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": " (i.e. ${cycColor.name} cyclorama studio)",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1712,
+          "column": 200,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-3b565adc8dc1cf4a0ac3",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Scene action/details: preserve the scene logic from [IMG_2] while applying [IMG_1] setup and [IMG_3] style.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1781,
+          "column": 22,
+          "kind": "string-literal",
+          "functionName": "contextLine",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-3c3c5fd8e61bdd650531",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Material override only where it does not break [IMG_2]'s product identity: ${mat}.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1800,
+          "column": 46,
+          "kind": "template-literal",
+          "functionName": "materialLine",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-3c8858b2be626a0454d6",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "\n\nPHYSICAL REALISM: ${checks.join('; ')}.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1699,
+          "column": 39,
+          "kind": "template-literal",
+          "functionName": "buildDetailed",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-40910c0d19f95269deee",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Directive: ${targetDirectiveVerb()} ${targetOutputPhrase()} inside [IMG_1]'s setup. Apply [IMG_3] only as visual treatment and photographic finish.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1849,
+          "column": 5,
+          "kind": "template-literal",
+          "functionName": "buildInpaint",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-40c51c3f9e1a1b5fcef1",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "no CG aesthetic, no plastic figurine look, no stop-motion puppet feel, no silicone or prosthetic appearance",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 994,
+          "column": 65,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-41d022935626d8418c63",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "very close motion and camera fidelity",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1985,
+          "column": 114,
+          "kind": "string-literal",
+          "functionName": "buildVeo31Prompt",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-4219f31a77ca52fb648f",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "? [IMG_3] light setup: ${lightDir}. Re-light the character to match this exact setup. Override any pre-existing lighting on [IMG_2].",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1677,
+          "column": 7,
+          "kind": "template-literal",
+          "functionName": "buildDetailed",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-43094d0127d8f869f5ad",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Keep everything else in [IMG_3] EXACTLY the same — same buildings, same graffiti, same fences, same wires, same sky, same shadows on the buildings, same perspective, same color grade, same film grain, same lens character, same atmospheric haze. The only changes allowed are the addition of the character and its cast shadow on the ground.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1649,
+          "column": 14,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-44e01e9e5ed451375a7b",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "fast low-angle tracking shot, moving alongside the subject",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1083,
+          "column": 23,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-44ecb797d75faf3db8f8",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Hasselblad · 85mm Portrait",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 880,
+          "column": 88,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-4575bf308e515e861af1",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "realistic momentum, weight, and inertia in body motion",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1116,
+          "column": 84,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-46ff52b237c2267a2383",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "slow tilt-up from the ground to the subject, building mystery",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1078,
+          "column": 23,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-47165f1c77c31ccbc346",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "DIRECTIVE:\n${targetDirectiveVerb()} ${targetOutputPhrase()} with [IMG_1]'s spatial setup and [IMG_2]'s identity. Apply [IMG_3] as photographic finish only.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1878,
+          "column": 5,
+          "kind": "template-literal",
+          "functionName": "buildDetailed",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-4776b8b657b670ad1682",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Directive: ${targetDirectiveVerb()} ${targetOutputPhrase()} using [IMG_1]'s setup and [IMG_3]'s visual style only.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1830,
+          "column": 5,
+          "kind": "template-literal",
+          "functionName": "buildCompact",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-4aaf7a53321914f181b7",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Operate a precision background replacement while maintaining the foreground subject. Use [IMG_1] solely to isolate and preserve the main subject, including their exact pose, expression, and position. Replace the entire background and environment of [IMG_1] with the scene and setting captured in [IMG_2]. Critically, perform a full Global Illumination and color cast match: the preserved subject must be completely relit by the new environmental light sources, reflections, and color temperature of [IMG_2]. Ensure the subject looks organically embedded in the new atmosphere of [IMG_2]. Focus heavily on the subject lighting interaction with the new surroundings, ensuring shadows and highlights match [IMG_2]. Ensure to keep the same framing of the subject in [IMG_1]. MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1198,
+          "column": 15,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-4b3ffe6515ddea0a0ef5",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "REFERENCE ROLES:\n[IMG_1] = SETUP DRIVER. Camera, framing, viewpoint, placement, subject scale, pose/blocking, spatial relationships.\n[IMG_2] = TARGET IDENTITY. The subject that must be generated.\n[IMG_3] = STYLE ONLY. Color, light mood, grain, contrast, atmosphere, photographic texture. Never place or composition.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1864,
+          "column": 5,
+          "kind": "template-literal",
+          "functionName": "buildDetailed",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-52d0b7ee38e2fc3c3c9e",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "\n\nACTION:\n${subject}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1696,
+          "column": 33,
+          "kind": "template-literal",
+          "functionName": "buildDetailed",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-55e62212d9fec32a982c",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "${videoAttributionBlock('kling3')}\n\nKLING 3 PROMPT - short directed shot\nUse @image_2 as the visible visual identity / final look reference. Use @image_1 only to clarify subject identity details if @image_2 is not enough. Use @video_1 as the motion and camera reference. Use @image_3 only if a background/environment reference is actually provided.\n\nSingle clear shot, one main action, one camera idea. ${videoPrecisionLine(prec)}\n\nVisible subject from @image_2 performs the motion from @video_1. Preserve the subject identity, proportions, costume/materials, and silhouette from @image_2 / @image_1. Preserve @video_1's camera behavior and timing without copying its CG/preview look. Camera: ${cam}. ${videoActionLine(act)}\n\n${videoPhysLine(phys)}\n\nAvoid: extra cuts, extra subjects, text overlays, logo distortion, jump cuts, identity drift, warped hands/body/object geometry, and copying @video_1's render style.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1945,
+          "column": 10,
+          "kind": "template-literal",
+          "functionName": "buildKling3Prompt",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-56ed5087e17344cc1845",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Add the character from [IMG_2], posed exactly as in [IMG_1]. Use [IMG_3] only for visual treatment. From [IMG_1], take ${transferShort}. ${sourceNote}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1644,
+          "column": 16,
+          "kind": "template-literal",
+          "functionName": "buildInpaint",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-571777965b320fc01e34",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Use the arrow to open the complete prompt. This info button only explains the prompt function.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1210,
+          "column": 10,
+          "kind": "string-literal",
+          "functionName": "transfer2DInfo",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-5726930f5c353dfb46c5",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "[IMG_2] is the object/product identity reference. Preserve its exact design, silhouette, proportions, construction logic, materials, wear, scale cues, surface details, and recognizable features. Do not turn it into a character, creature, face, or humanized object unless the action field explicitly asks for it.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1740,
+          "column": 12,
+          "kind": "template-literal",
+          "functionName": "targetIdentityLine",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-58d45652fad1d0dc8dc6",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "EDIT / COMPOSITE WORKFLOW - keep [IMG_1] as the spatial setup reference, not as a visual style reference.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1844,
+          "column": 5,
+          "kind": "template-literal",
+          "functionName": "buildInpaint",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-5a4c2628c0473afca36b",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "the pose, the 3D body orientation (torso/head yaw, gaze), AND the exact 2D framing — replicate [IMG_1]'s subject placement in the frame, character size relative to the frame, headroom, lead-room, and shot scale. Do not recenter or resize the character",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1409,
+          "column": 16,
+          "kind": "string-literal",
+          "functionName": "targetTransferShort",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-5cae2acde4457a458385",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Lighting override: ${lightLine}. Keep [IMG_3] only for grade, grain, contrast, and photographic texture.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1794,
+          "column": 10,
+          "kind": "template-literal",
+          "functionName": "lightArchitectureLine",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-5cf79f183f3dbfeaf761",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "shot on VHS-C camcorder, 1990s tracking interference, low-fi magnetic tape look",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 889,
+          "column": 23,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-5d1541933866ede6e3b4",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "img-subject",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 2010,
+          "column": 43,
+          "kind": "string-literal",
+          "functionName": "buildImage",
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 2104,
+          "column": 2,
+          "kind": "string-literal",
+          "functionName": "copyPrompt",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-6101bcecf0d329baae69",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Character action/details: follow the pose/action implied by [IMG_1] unless the user field adds a more specific performance note.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1786,
+          "column": 20,
+          "kind": "string-literal",
+          "functionName": "contextLine",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-61512f2b30908182d4dc",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the spatial blocking, depth layout, exact 2D framing, horizon line, negative space, and image composition",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1420,
+          "column": 15,
+          "kind": "string-literal",
+          "functionName": "targetTransferShort",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-64a35a4790d8e501c88d",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "STEP 3 — Place the character from [IMG_2] according to the EXACT position and size identified in STEP 1. If [IMG_1] shows the character small in a wide shot on the left side of the frame, the character must remain small on the left side of the generated frame. Do NOT center the character automatically. Do NOT resize the character to fit the foreground. The framing of [IMG_1] overrides all other references.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1638,
+          "column": 16,
+          "kind": "template-literal",
+          "functionName": "buildInpaint",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-672ced1220a6cd9608d5",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Camera/lens: ${camera}.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1832,
+          "column": 5,
+          "kind": "template-literal",
+          "functionName": "buildCompact",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-67986b145d008b5b1459",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Quality constraints: ${items.join('; ')}.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1819,
+          "column": 25,
+          "kind": "template-literal",
+          "functionName": "checksLine",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-689aa85014890b28dce3",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "No environment reference is active. Use a seamless studio cyclorama in solid ${cycColor.name} (${cycColor.hex}), clean infinity cove, no horizon line, no props unless requested. Lighting is clean commercial studio lighting with a soft contact shadow.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1753,
+          "column": 12,
+          "kind": "template-literal",
+          "functionName": "styleReferenceLine",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-6a31fb5a578392f551d0",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Match the clothing, costume, accessories, silhouette, fabric behavior, and outfit layout from [Shot Reference @IMG_2], tailored to [Character Reference @IMG_1] morphology.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1238,
+          "column": 461,
+          "kind": "string-literal",
+          "functionName": "buildTransfer2DPrompt",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-6efd983669b0d01b317b",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "shot on Hasselblad H6D, 85mm medium format, creamy bokeh",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 880,
+          "column": 23,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-6f51b598a3bc03d01eec",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "[IMG_1] is the pose reference. [IMG_2] is the ${currentCharacterKind === 'human' ? 'human character reference' : 'character reference (character sheet showing identity AND specific stylized proportions)'}.${decorEnabled ? ' [IMG_3] is the visual style reference only.' : ''}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1476,
+          "column": 10,
+          "kind": "template-literal",
+          "functionName": "targetIntroLine",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-71449ad6e633d02ec30d",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Lighting: guided by [IMG_3]'s lighting mood and contrast only. Do not copy [IMG_3]'s place or composition.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1792,
+          "column": 12,
+          "kind": "template-literal",
+          "functionName": "lightArchitectureLine",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-7301aad9e49347f289fc",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "STYLE REFERENCE - [IMG_3]:\n${styleReferenceLine()}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1876,
+          "column": 5,
+          "kind": "template-literal",
+          "functionName": "buildDetailed",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-7319ed10ac24fb6fca54",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "${videoAttributionBlock('geminiOmni')}\n\nGEMINI OMNI FLASH PROMPT - conversational multimodal edit\nCreate or edit the video using the roles above. Preserve @video_1's camera path, timing, motion rhythm, composition changes, and action beats. Replace its visible subject/style with the identity and final look from @image_2, using @image_1 as the subject sheet when finer identity details are needed. Use @image_3 as the background/environment reference only if it is provided.\n\nWhat must stay the same: @video_1 motion timing, camera behavior, key action beats, spatial continuity, and framing evolution.\nWhat must change: the visible subject identity, materials, lighting style, grade, and final look should match @image_2 / @image_1 instead of @video_1.\nCamera: ${cam}. ${videoPrecisionLine(prec)}\n\n${videoActionLine(act)}\n${videoPhysLine(phys)}\n\nDo not show the original subject or render style from @video_1. Do not change protected subject identity from @image_2 / @image_1. Keep the result physically plausible, temporally stable, and coherent through the whole clip.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1994,
+          "column": 10,
+          "kind": "template-literal",
+          "functionName": "buildGeminiOmniPrompt",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-73ff38f6378170e7ce1a",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Final render from Nano Banana / Seedream. Defines the",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1046,
+          "column": 32,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-740206e1e1e8c1c69717",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Creative transfer: keep @video_1 motion intent, camera energy, rhythm, and key beats while allowing the model to simplify or beautify ambiguous movement.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1931,
+          "column": 15,
+          "kind": "string-literal",
+          "functionName": "videoPrecisionLine",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-7461830bdffb01d9b9bb",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Treat [IMG_1] as a ${modeLabel} reference for object staging. Extract only object orientation, rotation, tilt, scale, frame placement, contact logic, and camera perspective. Ignore any character/body/mannequin semantics, rig controls, viewport overlays, CG shading, and source materials.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1429,
+          "column": 12,
+          "kind": "template-literal",
+          "functionName": "sourceInstructionForTarget",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-75f2862de13e73134dbb",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "[IMG_1] is the 3D staging reference. [IMG_2] is the object/product reference (design, silhouette, proportions, materials, and scale cues).${decorEnabled ? ' [IMG_3] is the visual style reference only.' : ''}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1471,
+          "column": 12,
+          "kind": "template-literal",
+          "functionName": "targetIntroLine",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-774fb8e99d4b164698c3",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Object action/details: keep the product/object itself as the hero subject unless requested otherwise.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1784,
+          "column": 22,
+          "kind": "string-literal",
+          "functionName": "contextLine",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-7adb475223d12fd3e7b3",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Edit setup from [IMG_1] while [IMG_2] supplies the subject and [IMG_3] supplies style only",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1016,
+          "column": 76,
+          "kind": "html-attribute:title",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-7b369fa42e4a94fe097b",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "POSE + FRAMING — Read [IMG_1] as a 3D scene, not a 2D silhouette. Extract from [IMG_1]: (1) the pose, gesture, and limb positioning; (2) the full 3D orientation of the character — torso yaw, head yaw and tilt, gaze direction, shoulder line, hip line, weight distribution — preserved exactly without flattening to a more readable angle; (3) the 2D framing — replicate exactly where the subject sits in the frame (left/right/center placement, vertical position, headroom, lead-room, foot-room), the proportion of the subject relative to the frame, the horizon line, and the same shot type (full / medium / close / wide). Do not recenter, do not normalize. The asymmetry, negative space, and any unusual framing choices of [IMG_1] are intentional and must be preserved.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1251,
+          "column": 12,
+          "kind": "string-literal",
+          "functionName": "openWorkspace",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-7b55b1149fb1e8d35345",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "POSE + FRAMING + POSE LOCK — Read [IMG_1] as a 3D scene, not a 2D silhouette. Extract everything spatial: (1) the pose, gesture, and limb positioning; (2) the full 3D orientation of the character — torso yaw (rotation around the vertical axis), head yaw and tilt, gaze direction, shoulder line, hip line, weight distribution — preserved EXACTLY without flattening to a more readable angle. If [IMG_1] shows the character at a 3/4 right with eyes off-camera-right, the final image must show the character at exactly 3/4 right with eyes off-camera-right, not in profile, not in three-quarter front; (3) the 2D framing — subject placement (left/right/center, vertical position, headroom, lead-room, foot-room), framing ratio, horizon line, and shot type. Do not recenter, do not normalize, do not \"improve\" the composition or rotate the character toward a more flattering angle — the framing AND the 3D orientation of [IMG_1] are the brief. Treat [IMG_1] like a director's storyboard: every spatial decision is intentional.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1255,
+          "column": 12,
+          "kind": "string-literal",
+          "functionName": "openWorkspace",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-7e593dddeb14dd3de56b",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Generate a single photoreal image of [IMG_2] performing the action of [IMG_1]${decorOn ? ', using [IMG_3] only as visual style reference' : isCyc ? `, standing on a seamless studio cyclorama backdrop in solid ${cycColor.name} color (${cycColor.hex}) — clean infinity cove, no horizon line, no other objects` : ''}. From [IMG_1], take only ${transferShort}. ${sourceNote}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1573,
+          "column": 14,
+          "kind": "template-literal",
+          "functionName": "buildCompact",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-7e61f4baf2ee1963b602",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Generate an image of [DESCRIBE YOUR NEW SUBJECT HERE]. The image must not copy the subjects from [IMG_1], but must be entirely inspired by its strict color grading and overall vibe. Faithfully replicate the visual signature: the specific color palette, lighting mood, shadow density, contrast ratios, and cinematic texture found in the reference. The final result should look like it was shot on the same film stock and in the same artistic universe as the reference. MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1186,
+          "column": 15,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-7fdcddc68f142f556a47",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "TARGET IDENTITY - [IMG_2]:\n${targetIdentityLine()}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1874,
+          "column": 5,
+          "kind": "template-literal",
+          "functionName": "buildDetailed",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-82a54a04af5ee0f95733",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Prompt généré · Edit [IMG_1]",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 2050,
+          "column": 105,
+          "kind": "string-literal",
+          "functionName": "buildImage",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-82da4269d777b7357dd3",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Balanced transfer: keep @video_1 as the main timing/camera/action guide, smoothing only what is needed for stable identity and believable motion.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1930,
+          "column": 15,
+          "kind": "string-literal",
+          "functionName": "videoPrecisionLine",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-8740a2b6fc7b5a0f914f",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Generate a single photoreal image of [IMG_2] performing the action of [IMG_1]${placement}. From [IMG_1], take only ${targetTransferShort()}. ${sourceNoteForTarget()}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1487,
+          "column": 10,
+          "kind": "template-literal",
+          "functionName": "targetGenerateLine",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-8971d3e69cbfb5f7dd8c",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "[IMG_1] is the absolute setup driver. It controls ${targetTransferShort()}.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1733,
+          "column": 16,
+          "kind": "template-literal",
+          "functionName": "setupDriverLine",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-89e11c6b4896e0674c49",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "clean motion fidelity and believable visual continuity",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1985,
+          "column": 178,
+          "kind": "string-literal",
+          "functionName": "buildVeo31Prompt",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-8ac707e5b0cb1d9dae9f",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "WARNING: Le mode Inpaint nécessite [IMG_3] (Environment) activé.\n\nL'inpainting consiste à éditer une photo existante. En mode Cyclorama il n'y a pas d'image de base à éditer — bascule sur Environment dans le pipeline ci-dessus, ou choisis Compact / Detailed pour le mode Cyclorama.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1613,
+          "column": 12,
+          "kind": "template-literal",
+          "functionName": "buildInpaint",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-8cfb640347c767e99a1a",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "${out}\n\nHUMAN CHARACTER RULE:\n${identity}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1527,
+          "column": 12,
+          "kind": "template-literal",
+          "functionName": "adaptPromptToTarget",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-8e118f1c9b1867c22a8b",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "shot on Bolex H16, 16mm film, retro aesthetic, slight vignetting",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 888,
+          "column": 23,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-8ef59213d1446ce7827a",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Ignore [IMG_1]'s CG render aesthetic — only spatial layout, lighting direction, and framing matter.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1452,
+          "column": 15,
+          "kind": "string-literal",
+          "functionName": "sourceNoteForTarget",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-90a0c3eae69c10791b3b",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Transfers the full character identity and unusual anatomy from IMG_1 onto the pose and lighting of IMG_2. Use the arrow to open the complete prompt.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1204,
+          "column": 47,
+          "kind": "string-literal",
+          "functionName": "transfer2DInfo",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-932300a4b20f9320f645",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "\n\nMATERIALS & TEXTURES (override): ${mat}.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1697,
+          "column": 25,
+          "kind": "template-literal",
+          "functionName": "buildDetailed",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-93e08bf02522b5b95b71",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Character identity & proportions: [IMG_2] is a reference for a practical puppet/figurine character. Photograph this exact figurine — with its exact proportions, head size, limb thickness, body shape — as-is in a real location. Do not apply realistic human anatomy. This is NOT a human, it is a sculpted character with intentional non-realistic proportions. The pose from [IMG_1] adapts to this figurine's anatomy, never the reverse.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1653,
+          "column": 14,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-96778b9f9b6ff0125e9e",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Additional action/details: ${act}.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1936,
+          "column": 16,
+          "kind": "template-literal",
+          "functionName": "videoActionLine",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-97e329936b36b199e696",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "reste court et shot-oriented,",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1128,
+          "column": 230,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-9805c5a20a21a4b62723",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "RADICAL CHARACTER REPLACEMENT & MORPHOLOGICAL LOCK: Use identity, head design, and EXACT SKELETAL PROPORTIONS from [Character Reference @IMG_1] to REPLACE the subject in [Shot Reference @IMG_2] across ALL 9 FRAMES. @IMG_1 is a turnaround reference: analyze its full 3D body volume and unconventional limb-to-torso ratios. MANDATORY IDENTITY & BODY PURGE: Completely erase all facial features AND the original body type from @IMG_2. @IMG_2 is ONLY a wooden mannequin for pose and lighting. ABSOLUTE ANATOMICAL FIDELITY: Maintain character @IMG_1's unique distorted silhouette, specific curves, and weird anatomical proportions exactly; NO normalization to standard human anatomy. POSE LOCK: Character @IMG_1 MUST adopt the exact body pose from @IMG_2 while keeping its own @IMG_1 skeleton. LIGHTING INTEGRATION: Analyze @IMG_2's environment lighting and project it perfectly onto character @IMG_1. [OUTFIT_INSTRUCTION]\nSTRICT 9-FRAME 16:9 GRID LAYOUT (3x3):\nFrame 1: Extreme Wide Shot (subject tiny in large environment);\nFrame 2: Low-Angle Wide Shot (ground level, focusing on full body silhouette);\nFrame 3: Classic Medium Shot (Waist-up, looking at camera);\nFrame 4: Extreme High-Angle (looking vertically down at top of head);\nFrame 5: Profile Shot (Side view, elongated features);\nFrame 6: Dutch Angle (horizon tilted 30 degrees, cinematic tension);\nFrame 7: Over-the-shoulder shot (looking at a detail in environment);\nFrame 8: Three-quarter Medium-Close Up;\nFrame 9: Macro ECU (tightest detail on skin texture or eye). MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1177,
+          "column": 15,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-985238ad70c5ac5bab25",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Strict · transfer 1:1 motion",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1100,
+          "column": 36,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-988c3b4520ee001a7b14",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the object/product from [IMG_2]",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1504,
+          "column": 46,
+          "kind": "string-literal",
+          "functionName": "directiveSubject",
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1766,
+          "column": 46,
+          "kind": "string-literal",
+          "functionName": "targetOutputPhrase",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-989e9d4ad29047b33e67",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Motion/quality constraints: ${phys.join('; ')}.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1940,
+          "column": 24,
+          "kind": "template-literal",
+          "functionName": "videoPhysLine",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-9a7babf99b7afe6b14ac",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Ignore [IMG_1]'s CG render look — only pose, framing, camera, and lighting direction matter.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1459,
+          "column": 15,
+          "kind": "string-literal",
+          "functionName": "sourceNoteForTarget",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-9c3f2b3b8eda02721e70",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "character reference (character sheet showing identity AND specific stylized proportions)",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1476,
+          "column": 124,
+          "kind": "string-literal",
+          "functionName": "targetIntroLine",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-9fc682122ed5eba4f061",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "cinematic volumetric lighting with harsh shadows",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 936,
+          "column": 23,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-a0d107f4675616944ac9",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Final guardrails: keep [IMG_1]'s setup logic, not its render look. Do not copy [IMG_3]'s location, subject, framing, road, room, landscape, or background props. No text, no labels, no watermark.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1855,
+          "column": 5,
+          "kind": "template-literal",
+          "functionName": "buildInpaint",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-a137c1b671c2ad5e0c16",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Output : vidéo photoréaliste qui anime @image_2 selon le mouvement de @video_1.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1052,
+          "column": 32,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-a29619a5e9bfa046e2f3",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "cinematic three-point lighting with strong key from camera-left, soft fill, hair light separating subject from background",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 935,
+          "column": 23,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-a3eaa84282c969c493e3",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "scene-",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1238,
+          "column": 141,
+          "kind": "string-literal",
+          "functionName": "buildTransfer2DPrompt",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-a68995228244a0b5f0eb",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Ignore [IMG_1]'s CG render aesthetic — only object staging and framing matter.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1445,
+          "column": 15,
+          "kind": "string-literal",
+          "functionName": "sourceNoteForTarget",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-a6c242b3b12a2b0ba081",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Transfers only the grading, luminance, contrast, and color mood from one image to another. Use the arrow to open the complete prompt.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1207,
+          "column": 39,
+          "kind": "string-literal",
+          "functionName": "transfer2DInfo",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-a87068b70694d1f7dcf5",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "shot on iPhone 15 Pro, Cinematic Mode, 24mm, digital sharp rendering",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 894,
+          "column": 23,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-a8a976a60b0c87a5d991",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "scene/set",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1728,
+          "column": 45,
+          "kind": "string-literal",
+          "functionName": "targetLabel",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-a9337cd87cc377584639",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Material/texture override only where it does not break [IMG_2]'s character identity: ${mat}.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1801,
+          "column": 10,
+          "kind": "template-literal",
+          "functionName": "materialLine",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-aaf4f7e91e74df0cb66e",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "[IMG_2] is a reference for a practical puppet/figurine character. Photograph this exact figurine — with its exact proportions, head size, limb thickness, body shape — as-is in a real location. Do not apply realistic human anatomy. This is NOT a human, it is a sculpted character with intentional non-realistic proportions. The pose adapts to this figurine's anatomy, not the other way around.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1500,
+          "column": 10,
+          "kind": "template-literal",
+          "functionName": "targetIdentityBlock",
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1576,
+          "column": 14,
+          "kind": "template-literal",
+          "functionName": "buildCompact",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ab4c52adb0f408759315",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "${videoAttributionBlock('veo31')}\n\nVEO 3.1 / FLOW INGREDIENTS PROMPT - one continuous cinematic shot\nUsing the provided ingredients, create one continuous photoreal video shot. @image_1 supplies the subject sheet and identity details. @image_2 supplies the final visible look, materials, color grade, and lighting mood. @image_3, if provided, supplies the background/environment ingredient. @video_1 supplies the intended motion path, camera movement, timing, and framing evolution; if the current Flow surface cannot attach video as an ingredient, use @video_1 as the storyboard reference and follow its motion description.\n\n${cam}. The subject from @image_2 / @image_1 performs the action timing from @video_1 with ${prec === 'strict' ? 'very close motion and camera fidelity' : prec === 'balanced' ? 'clean motion fidelity and believable visual continuity' : 'the same motion intention with cinematic interpretation'}. ${videoActionLine(act)}\n\nStyle and ambiance: photoreal in-camera footage, final color and light mood from @image_2, optional environment continuity from @image_3, physically plausible movement, stable identity throughout. ${videoPhysLine(phys)}\n\nThe shot contains no text overlays, no subtitles unless requested, no watermark, no extra subjects, and no visible artifacts from @video_1's original render style.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1980,
+          "column": 10,
+          "kind": "template-literal",
+          "functionName": "buildVeo31Prompt",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ab83f8586690c5dba02e",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Light, lens, grain, and color grade come from [IMG_3]. Match [IMG_3]'s photographic quality — do not let [IMG_2]'s clean studio look bleed through. Cast an anatomical shadow at the character's feet matching [IMG_3]'s sun direction.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1580,
+          "column": 16,
+          "kind": "template-literal",
+          "functionName": "buildCompact",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-acd378520c882bb99b5c",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Ignore [IMG_1]'s greybox/viewport look — only object placement, rotation, contact, and framing matter.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1443,
+          "column": 17,
+          "kind": "string-literal",
+          "functionName": "sourceNoteForTarget",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-acf5d426cfee2e2a60f5",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Ignore [IMG_1]'s preview render quality — only human pose, placement, balance, and framing matter.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1458,
+          "column": 16,
+          "kind": "string-literal",
+          "functionName": "sourceNoteForTarget",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ad1dd71c917b37d1d72d",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "shot on Arri Alexa Mini LF, 40mm Cooke S7/i lens, natural skin tones",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 876,
+          "column": 23,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ad2472dfc1d80fefb5ac",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "[IMG_3] Style / Cyclorama",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 839,
+          "column": 51,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ae308c72660525dd51db",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "natural wind simulation on hair and fabric, secondary motion realism",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1115,
+          "column": 76,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-aef07aa31466c7a11135",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Transfer cards extracted from BZ Helper: morphology, pose, subject, style, background and reference color. Each card keeps its original logic and accepts scene details.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 751,
+          "column": 12,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-aff76f968a76ceba173d",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Material/style override for the scene where relevant: ${mat}.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1799,
+          "column": 45,
+          "kind": "template-literal",
+          "functionName": "materialLine",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b099683039272bb3c5e4",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Keep the outfit, costume, accessories, and material identity from [Character Reference @IMG_1]. Do not copy the outfit from [Shot Reference @IMG_2].",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1238,
+          "column": 635,
+          "kind": "string-literal",
+          "functionName": "buildTransfer2DPrompt",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b19ed4eb74906ad65e08",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "\" placeholder=\"Scene details...\" oninput=\"updateTransfer2D(",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1234,
+          "column": 714,
+          "kind": "string-literal",
+          "functionName": "renderTransfer2D",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b1f745f276bbee5e6e15",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Uses IMG_1 as a style and grading reference without copying its subject. Use the arrow to open the complete prompt.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1206,
+          "column": 43,
+          "kind": "string-literal",
+          "functionName": "transfer2DInfo",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b2376e6954c97eb043de",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Référence visuelle uniquement : lumière, grain, couleur, contraste, texture photo. Ne copie jamais le lieu, le sujet, le cadrage ou la composition.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 796,
+          "column": 53,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b27bcb55eaf02b9f3432",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "iPhone 15 Pro · Cinematic",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 894,
+          "column": 100,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b34e50248d4bededb1ea",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "SETUP DRIVER - [IMG_1]:\n${sourceInstr}\nSelected transfer level: ${transferLabel}.\nOperational read: ${targetTransferShort()}\nHard limit: ignore [IMG_1]'s render quality, source identity, surface colors, materials, textures, viewport overlays, and CG artifacts.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1869,
+          "column": 5,
+          "kind": "template-literal",
+          "functionName": "buildDetailed",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b4b3a2cdeda3d89059bb",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Transfert style from Ref",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1189,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b5b8da82b2ba4518043f",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Photographic integration — the character must look like it was captured by the same camera, in the same light, on the same film as [IMG_3]: match [IMG_3]'s grain, micro-contrast, lens softness, color grade, and white balance exactly. Do NOT inherit [IMG_2]'s clean studio look — the character is softer and more photochemical than its turntable reference.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1657,
+          "column": 14,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b632cb8385c494a9990b",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "[IMG_3] is a VISUAL STYLE REFERENCE ONLY. Transfer only color grade, contrast, grain, film stock impression, lighting mood, atmospheric texture, weather/air feel, lens softness, black point, highlight rolloff, and overall photographic realism. Do NOT copy [IMG_3]'s location, landscape, road, room, architecture, background objects, subject, composition, camera angle, lens framing, or object placement.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1755,
+          "column": 10,
+          "kind": "template-literal",
+          "functionName": "styleReferenceLine",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b63ea6b3cdf2a0d6b5cd",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "vintage Lomography style, 32mm plastic lens, vignetting and light leaks",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 891,
+          "column": 23,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b68d2be4c57174e219a0",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "\n\n• ENVIRONMENT — [IMG_3]   ? LOCATION & PHOTOGRAPHIC GROUND TRUTH\n[IMG_3] is the absolute reference for photographic style only. The final image must borrow its light mood, grade, grain, contrast, and texture without copying its place, subject, framing, or composition.\n\nLIGHT CONFORMITY:\n  ${lightDir\n    ? `? [IMG_3] light setup: ${lightDir}. Re-light the character to match this exact setup. Override any pre-existing lighting on [IMG_2].`\n    : `Analyze [IMG_3]'s light: sun/key direction, hardness, sky color, bounce, time of day. Re-light the character to match exactly. Override [IMG_2]'s studio lighting.`}\n  ? Same shadow direction, same shadow softness, same color temperature, same atmospheric quality as [IMG_3].\n\nPHOTOCHEMICAL MATCH: Reduce the character's micro-contrast and edge sharpness to match [IMG_3] — NOT sharper than [IMG_3]. Soften specular highlights to match [IMG_3]'s diffused, slightly bloomed quality. Match [IMG_3]'s white balance, color grade, saturation, black point, highlight rolloff. Same film grain, same lens character, same DoF as [IMG_3].\n  ? [IMG_2] is shown as a clean studio reference for IDENTITY ONLY. Do NOT inherit [IMG_2]'s clean rendering quality.\n\nLOCATION INTEGRATION: Correct ground plane, scale, and contact shadow matching [IMG_3]'s existing shadows. Pick up subtle bounce light from [IMG_3]'s surfaces.\n\nMENTAL MODEL: Imagine you are a photographer using [IMG_1] as the storyboard, [IMG_2] as the subject, and [IMG_3] as a grading/style board. Generate that single photo.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1672,
+          "column": 7,
+          "kind": "template-literal",
+          "functionName": "buildDetailed",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b6cf8243311eaea54461",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "shot on Nikon Z9, 105mm f/2.8 lens, razor sharp focus",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 883,
+          "column": 23,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b7e84f94b3b366814f6b",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Treat [IMG_1] as a final 3D RENDER reference — a high-quality CG render with full lighting and textures. Extract ONLY the pose, framing, composition, and lighting direction from [IMG_1]. Ignore its CG aesthetic, ray-traced highlights, perfect surfaces, and anything that reads as \"rendered\" rather than \"photographed\". The final image must NOT inherit any CG look from [IMG_1] — it must look like real photography.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1270,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b858fcd12e241345182c",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "no CG viewport look, no plastic render artifacts, physically plausible product photography",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1810,
+          "column": 66,
+          "kind": "string-literal",
+          "functionName": "checksLine",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b909576ff74b5f4f774a",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "shot on Red V-Raptor, 24mm wide angle lens, slight barrel distortion",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 868,
+          "column": 23,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ba0f77f8673c558e1166",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": ", using [IMG_3] only as visual style reference",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1480,
+          "column": 36,
+          "kind": "string-literal",
+          "functionName": "targetGenerateLine",
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1573,
+          "column": 104,
+          "kind": "string-literal",
+          "functionName": "buildCompact",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-baec87b9c320235520db",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "le prompt commence par un bloc d'attributions que tu peux adapter aux fichiers uploadés. Ensuite la grammaire change selon le modèle :",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1128,
+          "column": 70,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-bb5f9b7ff4aed622450a",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "materials: ${mat}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1593,
+          "column": 27,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-bbcf53d423fa083f6815",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "${base} ${sourceNoteForTarget()} ${limits}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1735,
+          "column": 10,
+          "kind": "template-literal",
+          "functionName": "setupDriverLine",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-bd3deb7dc5dbcaa1ad28",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Do not copy [IMG_1]'s subject identity, textures, render style, materials, colors, lighting grade, or CG/viewport artifacts.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1734,
+          "column": 18,
+          "kind": "template-literal",
+          "functionName": "setupDriverLine",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-bf0a95c8268f7081dade",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Ignore [IMG_1]'s preview render quality — only spatial blocking and framing layout matter.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1451,
+          "column": 16,
+          "kind": "string-literal",
+          "functionName": "sourceNoteForTarget",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-bf50aa873e8817b61cfc",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "OUTPUT:\nOne photoreal in-camera image, spatially driven by [IMG_1], subject-driven by [IMG_2], style-driven by [IMG_3] only.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1892,
+          "column": 5,
+          "kind": "template-literal",
+          "functionName": "buildDetailed",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-bf5fbd97af77d80ea2ce",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "CCTV security camera footage, grainy black and white, digital noise",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 895,
+          "column": 23,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-c0707b8eacf7c7f2f32c",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Create one photoreal image using three references with strict role separation.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1825,
+          "column": 5,
+          "kind": "template-literal",
+          "functionName": "buildCompact",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-c195149de41748da7caf",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "shot on Panavision Millennium, 50mm prime lens, natural perspective",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 874,
+          "column": 23,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-c255312c990df6ec15f8",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "shot on Blackmagic URSA Mini Pro, 35mm prime, gritty cinematic texture",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 875,
+          "column": 23,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-c3f1febf94d87be7846d",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "shot with 200mm telephoto lens, compressed perspective",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 897,
+          "column": 23,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-c4394743f73e07855549",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Ignore [IMG_1]'s preview render quality — only its pose data matters.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1626,
+          "column": 15,
+          "kind": "string-literal",
+          "functionName": "buildInpaint",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-c4c830108b1eaad948ec",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": " on a ${cycColor.name} (${cycColor.hex}) studio cyclorama",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1716,
+          "column": 134,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-c4df1e3692fdf8ee7b6e",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "the spatial blocking, depth layout, major planes, object positions, and scene geometry",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1418,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": "targetTransferShort",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-c5f67b02b84470e1a596",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Transfert Subject",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1193,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-c61c344420a72b105903",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "shot on Leica M11, 35mm Summilux lens, high micro-contrast",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 881,
+          "column": 23,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ca89cf8c4a699850f039",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Treat [IMG_1] as a 3D BLOCKING reference — a rough greybox or mannequin posing pass with no textures, no lighting, no facial features, often in T-pose-derived rigging. Extract ONLY the body pose, gesture, limb positioning, weight distribution, and overall framing from [IMG_1]. Completely ignore its grey/untextured appearance, generic mannequin proportions, viewport overlays, gizmos, wireframes, and any rigging artifacts.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1262,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-caef5b3ffebcb5ebc5be",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "the pose, the full 3D body orientation (torso/head yaw, gaze), the exact 2D framing, subject placement (left/right/center, vertical position), character size in frame, headroom, lead-room, horizon line, and shot scale. Do not recenter, resize, normalize, rotate, or 'improve' the composition",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1559,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": "buildCompact",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-cb271fa60ffdafc27089",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Studio lighting setup: soft key from upper-front, gentle fill, subtle rim light, professional commercial photography. The cyclorama is a clean ${cycColor.name} ${cycColor.hex} infinity backdrop — no shadows on the wall, soft contact shadow at the character's feet only.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1583,
+          "column": 16,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-cbdf36dd5bbf33ce28c7",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Keeps the foreground subject and swaps the environment, then relights the subject to match the new place. Use the arrow to open the complete prompt.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1209,
+          "column": 44,
+          "kind": "string-literal",
+          "functionName": "transfer2DInfo",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-cce77925b44f91dde72a",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "STEP 2 — Use [IMG_1] as the setup reference. [IMG_3] remains style only and must not provide place, subject, or composition.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1636,
+          "column": 16,
+          "kind": "template-literal",
+          "functionName": "buildInpaint",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-cdbc74c7fd1c92dc1118",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "none (static camera shot, locked-off tripod)",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1073,
+          "column": 21,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ceed7c228270f25904f0",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "pilote uniquement le style visuel. Le prompt interdit explicitement à l'IA de copier le lieu, le sujet ou la composition de [IMG_3].",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1004,
+          "column": 181,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d3031da11ea795dfc77c",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": " with [IMG_3] used only as visual style",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1716,
+          "column": 69,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d3c798d0f8a3425cc374",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Visual treatment only: lighting mood, grain, color grade, contrast, texture. Do not copy IMG_3 location, subject, framing, or composition.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1337,
+          "column": 24,
+          "kind": "string-literal",
+          "functionName": "setBgMode",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d771cbcc66801e883451",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "360-degree majestic orbit shot around the center of the scene",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1079,
+          "column": 23,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d8a55f9720df95288f82",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "[IMG_2] is the human character identity reference. Preserve the person's face structure, age range, body type, hair, clothing, expression logic, and realistic human proportions. Interpret the [IMG_1] pose through believable human anatomy, natural joint limits, grounded balance, and realistic weight. Do not describe or render the subject as a puppet, figurine, toy, doll, mannequin, or non-human object.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1746,
+          "column": 12,
+          "kind": "template-literal",
+          "functionName": "targetIdentityLine",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d90217f1f4198194d813",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Ignore [IMG_1]'s greybox blocking look — only its pose data matters.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1625,
+          "column": 15,
+          "kind": "string-literal",
+          "functionName": "buildInpaint",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-db339247e79f26eba2e2",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Treat [IMG_1] as a 3D PREVIEW / playblast reference — a low-quality realtime render with placeholder textures and basic viewport lighting. Extract ONLY the pose, action, body language, framing, and rough composition from [IMG_1]. Ignore its plastic shading, viewport-quality lighting, basic materials, aliasing, and any preview-render artifacts.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1266,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-db883dabaf51feb0e67a",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "A real photograph with [IMG_1] setup, [IMG_2] identity, and [IMG_3] style only.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1718,
+          "column": 77,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-dcea7fefe2750ecd7bc7",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "[IMG_2] is a human character reference. Preserve the person's identity, face structure, age range, body type, clothing, hair, expression logic, and realistic human proportions. Transfer the pose from [IMG_1] through believable human anatomy: natural joints, correct balance, grounded weight, realistic hands, feet, shoulders, hips, neck, and spine. Keep the result grounded in live-action photographic human realism.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1498,
+          "column": 12,
+          "kind": "template-literal",
+          "functionName": "targetIdentityBlock",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-de80637771f9282f8e8d",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Replaces the subject while keeping the original framing, background, lighting, and pose logic. Use the arrow to open the complete prompt.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1208,
+          "column": 41,
+          "kind": "string-literal",
+          "functionName": "transfer2DInfo",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-def9ec8d7d443e4db09b",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Generate a single photoreal image of the scene/set from [IMG_2]${placement}. Use [IMG_1] only to guide ${targetTransferShort()}. ${sourceNoteForTarget()}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1485,
+          "column": 12,
+          "kind": "template-literal",
+          "functionName": "targetGenerateLine",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-df97492c5c150fc28c5c",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Use [IMG_1] as the setup reference. [IMG_3] remains style only and must not provide place, subject, or composition.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1642,
+          "column": 16,
+          "kind": "template-literal",
+          "functionName": "buildInpaint",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e1a323127f19c3397103",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "\n\n• CYCLORAMA STUDIO BACKDROP\nThe character stands on a seamless professional studio cyclorama in solid ${cycColor.name} color (${cycColor.hex}). Infinity cove, no horizon line, no objects, no props.\n\nLIGHTING: Soft commercial studio key from upper-front, gentle shadow fill, subtle rim light. No harsh shadows on the cyclorama wall, only a soft contact shadow at the character's feet.\n\nThis is a clean isolation shot — treat as high-end product/character commercial photography.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1688,
+          "column": 7,
+          "kind": "template-literal",
+          "functionName": "buildDetailed",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e22ac65a76613b1ed8a0",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Default — guided by [IMG_3] style when active",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 933,
+          "column": 64,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e27e0966714ce91c3236",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "slow cinematic dolly-in towards the subject",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1076,
+          "column": 23,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e2ed7a23feaff873820e",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "dynamic handheld camera shake, following the action with high energy",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1082,
+          "column": 23,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e400afb03531bf361660",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "MULTI-REFERENCE IMAGE TRANSFER - role-first architecture.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1863,
+          "column": 5,
+          "kind": "template-literal",
+          "functionName": "buildDetailed",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e4ca7a374a9b8693bdc4",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Strict transfer: keep @video_1 timing, action beats, camera path, framing evolution, subject scale changes, velocity, rhythm, and cuts as close as possible.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1929,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": "videoPrecisionLine",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e5d0f1b9cd0b43ef1e1e",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Act as a professional color grader. Take the visual structure and subjects from [IMG_2] and apply a strict color match using [IMG_1] as the only palette reference. Perform a Luminance and Chrominance transfer only: keep every pixel shape from [IMG_2], but remap the shadows, highlights, and color temperature to perfectly align with the grading of [IMG_1]. Do not introduce any new elements. MANDATORY: No text on image. No captions, no labels, no watermarks, no overlays. Pure cinematic imagery only.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1190,
+          "column": 15,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e641231b80709a231fe3",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "smooth continuous live-action motion, photographed in-camera, not animated",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 988,
+          "column": 57,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e69ee093f2e799bd7144",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "shot on Phase One IQ4, 200mm telephoto, extreme compression",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 884,
+          "column": 23,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ea5c30ee62c045b27183",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "[IMG_2] is the object/product reference. Preserve its exact design identity, silhouette, proportions, construction logic, materials, surface wear, scale cues, and recognizable details. Do not turn it into a person or creature. Do not add limbs, face, expression, or character anatomy unless explicitly requested. The spatial orientation from [IMG_1] adapts to the object's actual geometry.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1492,
+          "column": 12,
+          "kind": "template-literal",
+          "functionName": "targetIdentityBlock",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-eb2779ed0a3b4651b666",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Ignore [IMG_1]'s CG render look — the final image is photographic, not CG.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1465,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": "sourceNoteForTarget",
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1565,
+          "column": 15,
+          "kind": "string-literal",
+          "functionName": "buildCompact",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-eb6da6ac375ef76fb8e1",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": ", standing on a seamless studio cyclorama backdrop in solid ${cycColor.name} color (${cycColor.hex}) — clean infinity cove, no horizon line, no other objects",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1573,
+          "column": 163,
+          "kind": "template-literal",
+          "functionName": "buildCompact",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ebfedf8dd029a7fbc5dc",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Use these names exactly, or replace them with Gemini file labels such as image_0, image_1, video_0.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1916,
+          "column": 17,
+          "kind": "string-literal",
+          "functionName": "videoAttributionBlock",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ef36703a400c6e36c0b4",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Final guardrails: no text, no captions, no labels, no watermark. Do not \"improve\" or re-center [IMG_1]'s framing. Do not let [IMG_3]'s location override [IMG_1]'s setup.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1836,
+          "column": 5,
+          "kind": "template-literal",
+          "functionName": "buildCompact",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f002e6e42ca2ce3d8fbf",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "replicate the exact 3D camera trajectory of @video_1 with frame-by-frame precision, matching its tilt, pan, push, and movement timing",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1074,
+          "column": 21,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f0438a5650c204db37dc",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "[IMG_2] is the scene/set reference. Preserve its architecture, spatial layout, materials, scale, props, atmosphere, and design language. Do not invent a central character unless explicitly requested. Use [IMG_1] for camera/blocking/framing guidance only; the scene identity remains [IMG_2].",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1495,
+          "column": 12,
+          "kind": "template-literal",
+          "functionName": "targetIdentityBlock",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f045a99ff74c00bb67c9",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Guided by [IMG_3]'s lighting mood, contrast, color grade, grain, and photographic texture only. Do not copy [IMG_3]'s location, background, camera, or composition.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 2028,
+          "column": 19,
+          "kind": "template-literal",
+          "functionName": "buildImage",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f157cec945e399fb7569",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Character materials override: ${mat}.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1662,
+          "column": 41,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f18dd37152d2f8c545b9",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "35mm film grain texture, Kodak 5219 stock, organic celluloid look",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 989,
+          "column": 57,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f2b7644c954040d03a8c",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "[IMG_2] is the scene/set identity reference. Preserve its architecture, spatial language, materials, prop families, atmosphere, scale, and design logic. Do not invent a central character unless the action field explicitly asks for one.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1743,
+          "column": 12,
+          "kind": "template-literal",
+          "functionName": "targetIdentityLine",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f615631ef357213fab15",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Analyze [IMG_3]'s light: sun/key direction, hardness, sky color, bounce, time of day. Re-light the character to match exactly. Override [IMG_2]'s studio lighting.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1678,
+          "column": 7,
+          "kind": "template-literal",
+          "functionName": "buildDetailed",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f836b350ceabc22d441b",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "the spatial blocking, depth layout, major planes, exact 2D framing, horizon line, negative space, and image composition",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1419,
+          "column": 16,
+          "kind": "string-literal",
+          "functionName": "targetTransferShort",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ]
+    }
+  ]
+}

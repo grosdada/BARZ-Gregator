@@ -1,0 +1,1412 @@
+{
+  "schemaVersion": "1.0",
+  "toolId": "imperfection",
+  "sourceSha256": "c47a1069bb0f19117b23771955e6f458db28f0c6b030fcc9c22ef903517cc010",
+  "purpose": "Legacy output baselines for the future V6 adapter. No V6 parity assertion yet.",
+  "method": "Execute only the reviewed generatePrompt and calculateRealismScore functions against cloned input states and an in-memory document stub. No full app, storage, network or paid provider calls.",
+  "cases": [
+    {
+      "id": "defaults",
+      "state": {
+        "sections": {
+          "camera": true,
+          "human": true
+        },
+        "camera": {
+          "device": "smartphone_handheld",
+          "handDrift": 2.5,
+          "driftFreq": 1.2,
+          "microShake": 1,
+          "afBreathing": 2,
+          "aeShift": 0.3,
+          "gazeBreaks": true,
+          "reframing": true,
+          "zoomHunting": false,
+          "whipPan": false,
+          "freeRoam": false,
+          "orbit": false,
+          "orbitSpeed": 2,
+          "orbitDirection": "clockwise",
+          "stopMotionVib": 0
+        },
+        "human": {
+          "activityLevel": "casual",
+          "breathSway": 3,
+          "weightShift": 2,
+          "blinkRate": 3,
+          "gripAdjust": true,
+          "postureShift": true,
+          "fidget": false,
+          "handGesture": false,
+          "microExpressions": true,
+          "eyeDart": true,
+          "lipMovement": false,
+          "swallow": false,
+          "naturalPause": false,
+          "breathBetween": false,
+          "umFiller": false,
+          "headNod": false
+        },
+        "antiGlitch": {
+          "noMorphing": true,
+          "consistentFingers": true,
+          "noFlicker": true,
+          "stableClothing": true,
+          "naturalMotion": true,
+          "consistentLighting": true,
+          "noTextWarp": false,
+          "stableBackground": false,
+          "naturalHair": false,
+          "eyeContact": false
+        }
+      },
+      "prompt": "[CAMERA]\nShot on handheld smartphone camera. Camera behavior: subtle hand drift of 2.5mm amplitude at 1.2 movements per second, barely perceptible micro-shake from human hand instability, subtle autofocus breathing and hunting, auto-exposure micro-adjustments of +/-0.3 stops. Operator behavior: brief gaze breaks lasting 0.2-0.4 seconds, subtle reframing adjustments.\n\n[SUBJECT]\nSubject in casual standing position. Body micro-motion: natural breathing sway in torso and shoulders, occasional weight shifts between feet, micro grip adjustments, subtle posture corrections. Facial micro-motion: 15-20 blinks per minute natural rate, subtle micro-expressions, natural eye saccades and micro-movements.\n\n[CONSTRAINTS]\nno face morphing or distortion. consistent finger count exactly five fingers per hand. no texture flickering or swimming artifacts. stable consistent clothing and accessories. physically plausible motion only. consistent lighting direction throughout.",
+      "legacyStats": {
+        "score": "95.5%",
+        "activeConstraints": "6 active"
+      }
+    },
+    {
+      "id": "preset-ugc",
+      "state": {
+        "sections": {
+          "camera": true,
+          "human": true
+        },
+        "camera": {
+          "device": "smartphone_handheld",
+          "handDrift": 3,
+          "driftFreq": 1.5,
+          "microShake": 2,
+          "afBreathing": 3,
+          "aeShift": 0.4,
+          "gazeBreaks": true,
+          "reframing": true,
+          "zoomHunting": false,
+          "whipPan": false,
+          "freeRoam": false,
+          "orbit": false,
+          "orbitSpeed": 2,
+          "orbitDirection": "clockwise",
+          "stopMotionVib": 0
+        },
+        "human": {
+          "activityLevel": "casual",
+          "breathSway": 3,
+          "weightShift": 2,
+          "blinkRate": 3,
+          "gripAdjust": true,
+          "postureShift": true,
+          "fidget": false,
+          "handGesture": true,
+          "microExpressions": true,
+          "eyeDart": true,
+          "lipMovement": false,
+          "swallow": false,
+          "naturalPause": true,
+          "breathBetween": true,
+          "umFiller": false,
+          "headNod": true
+        },
+        "antiGlitch": {
+          "noMorphing": true,
+          "consistentFingers": true,
+          "noFlicker": true,
+          "stableClothing": true,
+          "naturalMotion": true,
+          "consistentLighting": true,
+          "noTextWarp": false,
+          "stableBackground": false,
+          "naturalHair": false,
+          "eyeContact": false
+        }
+      },
+      "prompt": "[CAMERA]\nShot on handheld smartphone camera. Camera behavior: subtle hand drift of 3mm amplitude at 1.5 movements per second, slight micro-shake from human hand instability, natural autofocus breathing and hunting, auto-exposure micro-adjustments of +/-0.4 stops. Operator behavior: brief gaze breaks lasting 0.2-0.4 seconds, subtle reframing adjustments.\n\n[SUBJECT]\nSubject in casual standing position. Body micro-motion: natural breathing sway in torso and shoulders, occasional weight shifts between feet, micro grip adjustments, subtle posture corrections, natural hand gestures while speaking. Facial micro-motion: 15-20 blinks per minute natural rate, subtle micro-expressions, natural eye saccades and micro-movements. Speech patterns: natural pauses in speech, audible breaths between sentences, head nods for emphasis while speaking.\n\n[CONSTRAINTS]\nno face morphing or distortion. consistent finger count exactly five fingers per hand. no texture flickering or swimming artifacts. stable consistent clothing and accessories. physically plausible motion only. consistent lighting direction throughout.",
+      "legacyStats": {
+        "score": "100%",
+        "activeConstraints": "6 active"
+      }
+    },
+    {
+      "id": "preset-documentary",
+      "state": {
+        "sections": {
+          "camera": true,
+          "human": true
+        },
+        "camera": {
+          "device": "dslr_shoulder",
+          "handDrift": 1.5,
+          "driftFreq": 0.8,
+          "microShake": 1,
+          "afBreathing": 2,
+          "aeShift": 0.2,
+          "gazeBreaks": false,
+          "reframing": true,
+          "zoomHunting": false,
+          "whipPan": false,
+          "freeRoam": false,
+          "orbit": false,
+          "orbitSpeed": 2,
+          "orbitDirection": "clockwise",
+          "stopMotionVib": 0
+        },
+        "human": {
+          "activityLevel": "casual",
+          "breathSway": 3,
+          "weightShift": 3,
+          "blinkRate": 3,
+          "gripAdjust": true,
+          "postureShift": true,
+          "fidget": false,
+          "handGesture": false,
+          "microExpressions": true,
+          "eyeDart": true,
+          "lipMovement": false,
+          "swallow": true,
+          "naturalPause": true,
+          "breathBetween": true,
+          "umFiller": false,
+          "headNod": false
+        },
+        "antiGlitch": {
+          "noMorphing": true,
+          "consistentFingers": true,
+          "noFlicker": true,
+          "stableClothing": true,
+          "naturalMotion": true,
+          "consistentLighting": true,
+          "noTextWarp": false,
+          "stableBackground": false,
+          "naturalHair": false,
+          "eyeContact": false
+        }
+      },
+      "prompt": "[CAMERA]\nShot on DSLR camera shoulder-mounted documentary style. Camera behavior: subtle hand drift of 1.5mm amplitude at 0.8 movements per second, barely perceptible micro-shake from human hand instability, subtle autofocus breathing and hunting, auto-exposure micro-adjustments of +/-0.2 stops. Operator behavior: subtle reframing adjustments.\n\n[SUBJECT]\nSubject in casual standing position. Body micro-motion: natural breathing sway in torso and shoulders, periodic weight shifts between feet, micro grip adjustments, subtle posture corrections. Facial micro-motion: 15-20 blinks per minute natural rate, subtle micro-expressions, natural eye saccades and micro-movements, occasional swallow reflex. Speech patterns: natural pauses in speech, audible breaths between sentences.\n\n[CONSTRAINTS]\nno face morphing or distortion. consistent finger count exactly five fingers per hand. no texture flickering or swimming artifacts. stable consistent clothing and accessories. physically plausible motion only. consistent lighting direction throughout.",
+      "legacyStats": {
+        "score": "87.5%",
+        "activeConstraints": "6 active"
+      }
+    },
+    {
+      "id": "preset-found",
+      "state": {
+        "sections": {
+          "camera": true,
+          "human": true
+        },
+        "camera": {
+          "device": "smartphone_handheld",
+          "handDrift": 5,
+          "driftFreq": 2,
+          "microShake": 4,
+          "afBreathing": 4,
+          "aeShift": 0.6,
+          "gazeBreaks": true,
+          "reframing": true,
+          "zoomHunting": true,
+          "whipPan": true,
+          "freeRoam": false,
+          "orbit": false,
+          "orbitSpeed": 2,
+          "orbitDirection": "clockwise",
+          "stopMotionVib": 0
+        },
+        "human": {
+          "activityLevel": "nervous",
+          "breathSway": 4,
+          "weightShift": 4,
+          "blinkRate": 4,
+          "gripAdjust": true,
+          "postureShift": true,
+          "fidget": true,
+          "handGesture": true,
+          "microExpressions": true,
+          "eyeDart": true,
+          "lipMovement": true,
+          "swallow": true,
+          "naturalPause": true,
+          "breathBetween": true,
+          "umFiller": true,
+          "headNod": true
+        },
+        "antiGlitch": {
+          "noMorphing": true,
+          "consistentFingers": true,
+          "noFlicker": true,
+          "stableClothing": true,
+          "naturalMotion": true,
+          "consistentLighting": true,
+          "noTextWarp": false,
+          "stableBackground": false,
+          "naturalHair": false,
+          "eyeContact": false
+        }
+      },
+      "prompt": "[CAMERA]\nShot on handheld smartphone camera. Camera behavior: subtle hand drift of 5mm amplitude at 2 movements per second, pronounced micro-shake from human hand instability, visible autofocus breathing and hunting, auto-exposure micro-adjustments of +/-0.6 stops. Operator behavior: brief gaze breaks lasting 0.2-0.4 seconds, subtle reframing adjustments, occasional zoom hunting, spontaneous whip pans.\n\n[SUBJECT]\nSubject displaying nervous energy. Body micro-motion: visible breathing sway in torso and shoulders, frequent weight shifts between feet, micro grip adjustments, subtle posture corrections, idle fidgeting, natural hand gestures while speaking. Facial micro-motion: 20-25 blinks per minute frequent, subtle micro-expressions, natural eye saccades and micro-movements, lip micro-movements, occasional swallow reflex. Speech patterns: natural pauses in speech, audible breaths between sentences, occasional filler words um uh, head nods for emphasis while speaking.\n\n[CONSTRAINTS]\nno face morphing or distortion. consistent finger count exactly five fingers per hand. no texture flickering or swimming artifacts. stable consistent clothing and accessories. physically plausible motion only. consistent lighting direction throughout.",
+      "legacyStats": {
+        "score": "100%",
+        "activeConstraints": "6 active"
+      }
+    },
+    {
+      "id": "preset-dashcam",
+      "state": {
+        "sections": {
+          "camera": true,
+          "human": true
+        },
+        "camera": {
+          "device": "dashcam",
+          "handDrift": 0,
+          "driftFreq": 0.5,
+          "microShake": 0,
+          "afBreathing": 0,
+          "aeShift": 0.5,
+          "gazeBreaks": false,
+          "reframing": false,
+          "zoomHunting": false,
+          "whipPan": false,
+          "freeRoam": false,
+          "orbit": false,
+          "orbitSpeed": 2,
+          "orbitDirection": "clockwise",
+          "stopMotionVib": 0
+        },
+        "human": {
+          "activityLevel": "casual",
+          "breathSway": 2,
+          "weightShift": 1,
+          "blinkRate": 3,
+          "gripAdjust": false,
+          "postureShift": false,
+          "fidget": false,
+          "handGesture": false,
+          "microExpressions": true,
+          "eyeDart": true,
+          "lipMovement": false,
+          "swallow": false,
+          "naturalPause": false,
+          "breathBetween": false,
+          "umFiller": false,
+          "headNod": false
+        },
+        "antiGlitch": {
+          "noMorphing": true,
+          "consistentFingers": true,
+          "noFlicker": true,
+          "stableClothing": true,
+          "naturalMotion": true,
+          "consistentLighting": true,
+          "noTextWarp": false,
+          "stableBackground": false,
+          "naturalHair": false,
+          "eyeContact": false
+        }
+      },
+      "prompt": "[CAMERA]\nShot on fixed dashcam perspective. Camera behavior: auto-exposure micro-adjustments of +/-0.5 stops.\n\n[SUBJECT]\nSubject in casual standing position. Body micro-motion: subtle breathing sway in torso and shoulders, rare weight shifts between feet. Facial micro-motion: 15-20 blinks per minute natural rate, subtle micro-expressions, natural eye saccades and micro-movements.\n\n[CONSTRAINTS]\nno face morphing or distortion. consistent finger count exactly five fingers per hand. no texture flickering or swimming artifacts. stable consistent clothing and accessories. physically plausible motion only. consistent lighting direction throughout.",
+      "legacyStats": {
+        "score": "69%",
+        "activeConstraints": "6 active"
+      }
+    },
+    {
+      "id": "preset-vlog",
+      "state": {
+        "sections": {
+          "camera": true,
+          "human": true
+        },
+        "camera": {
+          "device": "smartphone_selfie",
+          "handDrift": 2,
+          "driftFreq": 1,
+          "microShake": 1,
+          "afBreathing": 2,
+          "aeShift": 0.3,
+          "gazeBreaks": true,
+          "reframing": true,
+          "zoomHunting": false,
+          "whipPan": false,
+          "freeRoam": false,
+          "orbit": false,
+          "orbitSpeed": 2,
+          "orbitDirection": "clockwise",
+          "stopMotionVib": 0
+        },
+        "human": {
+          "activityLevel": "casual",
+          "breathSway": 3,
+          "weightShift": 2,
+          "blinkRate": 3,
+          "gripAdjust": true,
+          "postureShift": true,
+          "fidget": false,
+          "handGesture": true,
+          "microExpressions": true,
+          "eyeDart": true,
+          "lipMovement": true,
+          "swallow": false,
+          "naturalPause": true,
+          "breathBetween": true,
+          "umFiller": true,
+          "headNod": true
+        },
+        "antiGlitch": {
+          "noMorphing": true,
+          "consistentFingers": true,
+          "noFlicker": true,
+          "stableClothing": true,
+          "naturalMotion": true,
+          "consistentLighting": true,
+          "noTextWarp": false,
+          "stableBackground": false,
+          "naturalHair": false,
+          "eyeContact": false
+        }
+      },
+      "prompt": "[CAMERA]\nShot on smartphone selfie cam front-facing. Camera behavior: subtle hand drift of 2mm amplitude at 1 movements per second, barely perceptible micro-shake from human hand instability, subtle autofocus breathing and hunting, auto-exposure micro-adjustments of +/-0.3 stops. Operator behavior: brief gaze breaks lasting 0.2-0.4 seconds, subtle reframing adjustments.\n\n[SUBJECT]\nSubject in casual standing position. Body micro-motion: natural breathing sway in torso and shoulders, occasional weight shifts between feet, micro grip adjustments, subtle posture corrections, natural hand gestures while speaking. Facial micro-motion: 15-20 blinks per minute natural rate, subtle micro-expressions, natural eye saccades and micro-movements, lip micro-movements. Speech patterns: natural pauses in speech, audible breaths between sentences, occasional filler words um uh, head nods for emphasis while speaking.\n\n[CONSTRAINTS]\nno face morphing or distortion. consistent finger count exactly five fingers per hand. no texture flickering or swimming artifacts. stable consistent clothing and accessories. physically plausible motion only. consistent lighting direction throughout.",
+      "legacyStats": {
+        "score": "94%",
+        "activeConstraints": "6 active"
+      }
+    },
+    {
+      "id": "preset-news",
+      "state": {
+        "sections": {
+          "camera": true,
+          "human": true
+        },
+        "camera": {
+          "device": "dslr_shoulder",
+          "handDrift": 2,
+          "driftFreq": 1.5,
+          "microShake": 2,
+          "afBreathing": 3,
+          "aeShift": 0.4,
+          "gazeBreaks": false,
+          "reframing": true,
+          "zoomHunting": true,
+          "whipPan": true,
+          "freeRoam": false,
+          "orbit": false,
+          "orbitSpeed": 2,
+          "orbitDirection": "clockwise",
+          "stopMotionVib": 0
+        },
+        "human": {
+          "activityLevel": "active",
+          "breathSway": 3,
+          "weightShift": 3,
+          "blinkRate": 3,
+          "gripAdjust": true,
+          "postureShift": true,
+          "fidget": false,
+          "handGesture": true,
+          "microExpressions": true,
+          "eyeDart": true,
+          "lipMovement": true,
+          "swallow": false,
+          "naturalPause": true,
+          "breathBetween": true,
+          "umFiller": false,
+          "headNod": true
+        },
+        "antiGlitch": {
+          "noMorphing": true,
+          "consistentFingers": true,
+          "noFlicker": true,
+          "stableClothing": true,
+          "naturalMotion": true,
+          "consistentLighting": true,
+          "noTextWarp": false,
+          "stableBackground": false,
+          "naturalHair": false,
+          "eyeContact": false
+        }
+      },
+      "prompt": "[CAMERA]\nShot on DSLR camera shoulder-mounted documentary style. Camera behavior: subtle hand drift of 2mm amplitude at 1.5 movements per second, slight micro-shake from human hand instability, natural autofocus breathing and hunting, auto-exposure micro-adjustments of +/-0.4 stops. Operator behavior: subtle reframing adjustments, occasional zoom hunting, spontaneous whip pans.\n\n[SUBJECT]\nSubject actively moving. Body micro-motion: natural breathing sway in torso and shoulders, periodic weight shifts between feet, micro grip adjustments, subtle posture corrections, natural hand gestures while speaking. Facial micro-motion: 15-20 blinks per minute natural rate, subtle micro-expressions, natural eye saccades and micro-movements, lip micro-movements. Speech patterns: natural pauses in speech, audible breaths between sentences, head nods for emphasis while speaking.\n\n[CONSTRAINTS]\nno face morphing or distortion. consistent finger count exactly five fingers per hand. no texture flickering or swimming artifacts. stable consistent clothing and accessories. physically plausible motion only. consistent lighting direction throughout.",
+      "legacyStats": {
+        "score": "93%",
+        "activeConstraints": "6 active"
+      }
+    },
+    {
+      "id": "preset-cinematic",
+      "state": {
+        "sections": {
+          "camera": true,
+          "human": true
+        },
+        "camera": {
+          "device": "dslr_handheld",
+          "handDrift": 1,
+          "driftFreq": 0.6,
+          "microShake": 1,
+          "afBreathing": 1,
+          "aeShift": 0.1,
+          "gazeBreaks": false,
+          "reframing": true,
+          "zoomHunting": false,
+          "whipPan": false,
+          "freeRoam": false,
+          "orbit": false,
+          "orbitSpeed": 2,
+          "orbitDirection": "clockwise",
+          "stopMotionVib": 0
+        },
+        "human": {
+          "activityLevel": "casual",
+          "breathSway": 3,
+          "weightShift": 2,
+          "blinkRate": 3,
+          "gripAdjust": true,
+          "postureShift": true,
+          "fidget": false,
+          "handGesture": false,
+          "microExpressions": true,
+          "eyeDart": true,
+          "lipMovement": false,
+          "swallow": true,
+          "naturalPause": false,
+          "breathBetween": false,
+          "umFiller": false,
+          "headNod": false
+        },
+        "antiGlitch": {
+          "noMorphing": true,
+          "consistentFingers": true,
+          "noFlicker": true,
+          "stableClothing": true,
+          "naturalMotion": true,
+          "consistentLighting": true,
+          "noTextWarp": false,
+          "stableBackground": false,
+          "naturalHair": false,
+          "eyeContact": false
+        }
+      },
+      "prompt": "[CAMERA]\nShot on DSLR handheld cinema camera. Camera behavior: subtle hand drift of 1mm amplitude at 0.6 movements per second, barely perceptible micro-shake from human hand instability, minimal autofocus breathing and hunting, auto-exposure micro-adjustments of +/-0.1 stops. Operator behavior: subtle reframing adjustments.\n\n[SUBJECT]\nSubject in casual standing position. Body micro-motion: natural breathing sway in torso and shoulders, occasional weight shifts between feet, micro grip adjustments, subtle posture corrections. Facial micro-motion: 15-20 blinks per minute natural rate, subtle micro-expressions, natural eye saccades and micro-movements, occasional swallow reflex.\n\n[CONSTRAINTS]\nno face morphing or distortion. consistent finger count exactly five fingers per hand. no texture flickering or swimming artifacts. stable consistent clothing and accessories. physically plausible motion only. consistent lighting direction throughout.",
+      "legacyStats": {
+        "score": "84%",
+        "activeConstraints": "6 active"
+      }
+    },
+    {
+      "id": "preset-musicvideo",
+      "state": {
+        "sections": {
+          "camera": true,
+          "human": true
+        },
+        "camera": {
+          "device": "dslr_handheld",
+          "handDrift": 4,
+          "driftFreq": 0.8,
+          "microShake": 2,
+          "afBreathing": 3,
+          "aeShift": 0.3,
+          "gazeBreaks": false,
+          "reframing": true,
+          "zoomHunting": true,
+          "whipPan": true,
+          "freeRoam": true,
+          "orbit": false,
+          "orbitSpeed": 2,
+          "orbitDirection": "clockwise",
+          "stopMotionVib": 0
+        },
+        "human": {
+          "activityLevel": "active",
+          "breathSway": 4,
+          "weightShift": 3,
+          "blinkRate": 3,
+          "gripAdjust": true,
+          "postureShift": true,
+          "fidget": false,
+          "handGesture": true,
+          "microExpressions": true,
+          "eyeDart": true,
+          "lipMovement": true,
+          "swallow": false,
+          "naturalPause": false,
+          "breathBetween": false,
+          "umFiller": false,
+          "headNod": true
+        },
+        "antiGlitch": {
+          "noMorphing": true,
+          "consistentFingers": true,
+          "noFlicker": true,
+          "stableClothing": true,
+          "naturalMotion": true,
+          "consistentLighting": true,
+          "noTextWarp": false,
+          "stableBackground": false,
+          "naturalHair": false,
+          "eyeContact": false
+        }
+      },
+      "prompt": "[CAMERA]\nShot on DSLR handheld cinema camera. Camera behavior: subtle hand drift of 4mm amplitude at 0.8 movements per second, slight micro-shake from human hand instability, natural autofocus breathing and hunting, auto-exposure micro-adjustments of +/-0.3 stops. Operator behavior: subtle reframing adjustments, occasional zoom hunting, spontaneous whip pans, free-roaming camera movement exploring subject from multiple angles, pushing in for details then pulling back, circling loosely, finding new perspectives organically.\n\n[SUBJECT]\nSubject actively moving. Body micro-motion: visible breathing sway in torso and shoulders, periodic weight shifts between feet, micro grip adjustments, subtle posture corrections, natural hand gestures while speaking. Facial micro-motion: 15-20 blinks per minute natural rate, subtle micro-expressions, natural eye saccades and micro-movements, lip micro-movements. Speech patterns: head nods for emphasis while speaking.\n\n[CONSTRAINTS]\nno face morphing or distortion. consistent finger count exactly five fingers per hand. no texture flickering or swimming artifacts. stable consistent clothing and accessories. physically plausible motion only. consistent lighting direction throughout.",
+      "legacyStats": {
+        "score": "99%",
+        "activeConstraints": "6 active"
+      }
+    },
+    {
+      "id": "preset-orbit",
+      "state": {
+        "sections": {
+          "camera": true,
+          "human": true
+        },
+        "camera": {
+          "device": "dslr_handheld",
+          "handDrift": 1.5,
+          "driftFreq": 0.8,
+          "microShake": 1,
+          "afBreathing": 2,
+          "aeShift": 0.2,
+          "gazeBreaks": false,
+          "reframing": false,
+          "zoomHunting": false,
+          "whipPan": false,
+          "freeRoam": false,
+          "orbit": true,
+          "orbitSpeed": 2,
+          "orbitDirection": "clockwise",
+          "stopMotionVib": 0
+        },
+        "human": {
+          "activityLevel": "casual",
+          "breathSway": 3,
+          "weightShift": 2,
+          "blinkRate": 3,
+          "gripAdjust": true,
+          "postureShift": true,
+          "fidget": false,
+          "handGesture": false,
+          "microExpressions": true,
+          "eyeDart": true,
+          "lipMovement": false,
+          "swallow": false,
+          "naturalPause": false,
+          "breathBetween": false,
+          "umFiller": false,
+          "headNod": false
+        },
+        "antiGlitch": {
+          "noMorphing": true,
+          "consistentFingers": true,
+          "noFlicker": true,
+          "stableClothing": true,
+          "naturalMotion": true,
+          "consistentLighting": true,
+          "noTextWarp": false,
+          "stableBackground": false,
+          "naturalHair": false,
+          "eyeContact": false
+        }
+      },
+      "prompt": "[CAMERA]\nShot on DSLR handheld cinema camera. Camera behavior: subtle hand drift of 1.5mm amplitude at 0.8 movements per second, barely perceptible micro-shake from human hand instability, subtle autofocus breathing and hunting, auto-exposure micro-adjustments of +/-0.2 stops. Operator behavior: smooth orbital camera movement circling around subject at medium pace, clockwise, maintaining consistent distance while tracking subject.\n\n[SUBJECT]\nSubject in casual standing position. Body micro-motion: natural breathing sway in torso and shoulders, occasional weight shifts between feet, micro grip adjustments, subtle posture corrections. Facial micro-motion: 15-20 blinks per minute natural rate, subtle micro-expressions, natural eye saccades and micro-movements.\n\n[CONSTRAINTS]\nno face morphing or distortion. consistent finger count exactly five fingers per hand. no texture flickering or swimming artifacts. stable consistent clothing and accessories. physically plausible motion only. consistent lighting direction throughout.",
+      "legacyStats": {
+        "score": "84.5%",
+        "activeConstraints": "6 active"
+      }
+    },
+    {
+      "id": "preset-stopmotion",
+      "state": {
+        "sections": {
+          "camera": true,
+          "human": true
+        },
+        "camera": {
+          "device": "dslr_handheld",
+          "handDrift": 0,
+          "driftFreq": 0.5,
+          "microShake": 0,
+          "afBreathing": 0,
+          "aeShift": 0,
+          "gazeBreaks": false,
+          "reframing": false,
+          "zoomHunting": false,
+          "whipPan": false,
+          "freeRoam": false,
+          "orbit": false,
+          "orbitSpeed": 2,
+          "orbitDirection": "clockwise",
+          "stopMotionVib": 2
+        },
+        "human": {
+          "activityLevel": "puppet_stopmotion",
+          "breathSway": 0,
+          "weightShift": 0,
+          "blinkRate": 1,
+          "gripAdjust": false,
+          "postureShift": false,
+          "fidget": false,
+          "handGesture": false,
+          "microExpressions": false,
+          "eyeDart": false,
+          "lipMovement": false,
+          "swallow": false,
+          "naturalPause": false,
+          "breathBetween": false,
+          "umFiller": false,
+          "headNod": false
+        },
+        "antiGlitch": {
+          "noMorphing": true,
+          "consistentFingers": true,
+          "noFlicker": true,
+          "stableClothing": true,
+          "naturalMotion": true,
+          "consistentLighting": true,
+          "noTextWarp": false,
+          "stableBackground": false,
+          "naturalHair": false,
+          "eyeContact": false
+        }
+      },
+      "prompt": "[CAMERA]\nShot on DSLR handheld cinema camera. Stop-motion effect: subtle frame-to-frame position jitter characteristic of stop-motion animation.\n\n[SUBJECT]\nSubject moves in stop-motion animation style at 12 frames per second, distinct stuttery motion with visible holds between poses, micro-jitter from animator touch, imperfect spacing between keyframes, slight position drift between frames, characteristic jerky puppet quality, movements have deliberate start-stop rhythm, subtle tremor artifacts from physical manipulation. Facial micro-motion: 5-10 blinks per minute sparse.\n\n[CONSTRAINTS]\nno face morphing or distortion. consistent finger count exactly five fingers per hand. no texture flickering or swimming artifacts. stable consistent clothing and accessories. physically plausible motion only. consistent lighting direction throughout.",
+      "legacyStats": {
+        "score": "55%",
+        "activeConstraints": "6 active"
+      }
+    },
+    {
+      "id": "camera-only",
+      "state": {
+        "sections": {
+          "camera": true,
+          "human": false
+        },
+        "camera": {
+          "device": "smartphone_handheld",
+          "handDrift": 2.5,
+          "driftFreq": 1.2,
+          "microShake": 1,
+          "afBreathing": 2,
+          "aeShift": 0.3,
+          "gazeBreaks": true,
+          "reframing": true,
+          "zoomHunting": false,
+          "whipPan": false,
+          "freeRoam": false,
+          "orbit": false,
+          "orbitSpeed": 2,
+          "orbitDirection": "clockwise",
+          "stopMotionVib": 0
+        },
+        "human": {
+          "activityLevel": "casual",
+          "breathSway": 3,
+          "weightShift": 2,
+          "blinkRate": 3,
+          "gripAdjust": true,
+          "postureShift": true,
+          "fidget": false,
+          "handGesture": false,
+          "microExpressions": true,
+          "eyeDart": true,
+          "lipMovement": false,
+          "swallow": false,
+          "naturalPause": false,
+          "breathBetween": false,
+          "umFiller": false,
+          "headNod": false
+        },
+        "antiGlitch": {
+          "noMorphing": false,
+          "consistentFingers": false,
+          "noFlicker": false,
+          "stableClothing": false,
+          "naturalMotion": false,
+          "consistentLighting": false,
+          "noTextWarp": false,
+          "stableBackground": false,
+          "naturalHair": false,
+          "eyeContact": false
+        }
+      },
+      "prompt": "[CAMERA]\nShot on handheld smartphone camera. Camera behavior: subtle hand drift of 2.5mm amplitude at 1.2 movements per second, barely perceptible micro-shake from human hand instability, subtle autofocus breathing and hunting, auto-exposure micro-adjustments of +/-0.3 stops. Operator behavior: brief gaze breaks lasting 0.2-0.4 seconds, subtle reframing adjustments.",
+      "legacyStats": {
+        "score": "85.5%",
+        "activeConstraints": "0 active"
+      }
+    },
+    {
+      "id": "subject-only",
+      "state": {
+        "sections": {
+          "camera": false,
+          "human": true
+        },
+        "camera": {
+          "device": "smartphone_handheld",
+          "handDrift": 2.5,
+          "driftFreq": 1.2,
+          "microShake": 1,
+          "afBreathing": 2,
+          "aeShift": 0.3,
+          "gazeBreaks": true,
+          "reframing": true,
+          "zoomHunting": false,
+          "whipPan": false,
+          "freeRoam": false,
+          "orbit": false,
+          "orbitSpeed": 2,
+          "orbitDirection": "clockwise",
+          "stopMotionVib": 0
+        },
+        "human": {
+          "activityLevel": "casual",
+          "breathSway": 3,
+          "weightShift": 2,
+          "blinkRate": 3,
+          "gripAdjust": true,
+          "postureShift": true,
+          "fidget": false,
+          "handGesture": false,
+          "microExpressions": true,
+          "eyeDart": true,
+          "lipMovement": false,
+          "swallow": false,
+          "naturalPause": false,
+          "breathBetween": false,
+          "umFiller": false,
+          "headNod": false
+        },
+        "antiGlitch": {
+          "noMorphing": false,
+          "consistentFingers": false,
+          "noFlicker": false,
+          "stableClothing": false,
+          "naturalMotion": false,
+          "consistentLighting": false,
+          "noTextWarp": false,
+          "stableBackground": false,
+          "naturalHair": false,
+          "eyeContact": false
+        }
+      },
+      "prompt": "[SUBJECT]\nSubject in casual standing position. Body micro-motion: natural breathing sway in torso and shoulders, occasional weight shifts between feet, micro grip adjustments, subtle posture corrections. Facial micro-motion: 15-20 blinks per minute natural rate, subtle micro-expressions, natural eye saccades and micro-movements.",
+      "legacyStats": {
+        "score": "85.5%",
+        "activeConstraints": "0 active"
+      }
+    },
+    {
+      "id": "constraints-only",
+      "state": {
+        "sections": {
+          "camera": false,
+          "human": false
+        },
+        "camera": {
+          "device": "smartphone_handheld",
+          "handDrift": 2.5,
+          "driftFreq": 1.2,
+          "microShake": 1,
+          "afBreathing": 2,
+          "aeShift": 0.3,
+          "gazeBreaks": true,
+          "reframing": true,
+          "zoomHunting": false,
+          "whipPan": false,
+          "freeRoam": false,
+          "orbit": false,
+          "orbitSpeed": 2,
+          "orbitDirection": "clockwise",
+          "stopMotionVib": 0
+        },
+        "human": {
+          "activityLevel": "casual",
+          "breathSway": 3,
+          "weightShift": 2,
+          "blinkRate": 3,
+          "gripAdjust": true,
+          "postureShift": true,
+          "fidget": false,
+          "handGesture": false,
+          "microExpressions": true,
+          "eyeDart": true,
+          "lipMovement": false,
+          "swallow": false,
+          "naturalPause": false,
+          "breathBetween": false,
+          "umFiller": false,
+          "headNod": false
+        },
+        "antiGlitch": {
+          "noMorphing": true,
+          "consistentFingers": true,
+          "noFlicker": true,
+          "stableClothing": true,
+          "naturalMotion": true,
+          "consistentLighting": true,
+          "noTextWarp": false,
+          "stableBackground": false,
+          "naturalHair": false,
+          "eyeContact": false
+        }
+      },
+      "prompt": "[CONSTRAINTS]\nno face morphing or distortion. consistent finger count exactly five fingers per hand. no texture flickering or swimming artifacts. stable consistent clothing and accessories. physically plausible motion only. consistent lighting direction throughout.",
+      "legacyStats": {
+        "score": "95.5%",
+        "activeConstraints": "6 active"
+      }
+    },
+    {
+      "id": "empty",
+      "state": {
+        "sections": {
+          "camera": false,
+          "human": false
+        },
+        "camera": {
+          "device": "smartphone_handheld",
+          "handDrift": 2.5,
+          "driftFreq": 1.2,
+          "microShake": 1,
+          "afBreathing": 2,
+          "aeShift": 0.3,
+          "gazeBreaks": true,
+          "reframing": true,
+          "zoomHunting": false,
+          "whipPan": false,
+          "freeRoam": false,
+          "orbit": false,
+          "orbitSpeed": 2,
+          "orbitDirection": "clockwise",
+          "stopMotionVib": 0
+        },
+        "human": {
+          "activityLevel": "casual",
+          "breathSway": 3,
+          "weightShift": 2,
+          "blinkRate": 3,
+          "gripAdjust": true,
+          "postureShift": true,
+          "fidget": false,
+          "handGesture": false,
+          "microExpressions": true,
+          "eyeDart": true,
+          "lipMovement": false,
+          "swallow": false,
+          "naturalPause": false,
+          "breathBetween": false,
+          "umFiller": false,
+          "headNod": false
+        },
+        "antiGlitch": {
+          "noMorphing": false,
+          "consistentFingers": false,
+          "noFlicker": false,
+          "stableClothing": false,
+          "naturalMotion": false,
+          "consistentLighting": false,
+          "noTextWarp": false,
+          "stableBackground": false,
+          "naturalHair": false,
+          "eyeContact": false
+        }
+      },
+      "prompt": "",
+      "legacyStats": {
+        "score": "85.5%",
+        "activeConstraints": "0 active"
+      }
+    },
+    {
+      "id": "orbit-clockwise",
+      "state": {
+        "sections": {
+          "camera": true,
+          "human": true
+        },
+        "camera": {
+          "device": "smartphone_handheld",
+          "handDrift": 2.5,
+          "driftFreq": 1.2,
+          "microShake": 1,
+          "afBreathing": 2,
+          "aeShift": 0.3,
+          "gazeBreaks": true,
+          "reframing": true,
+          "zoomHunting": false,
+          "whipPan": false,
+          "freeRoam": false,
+          "orbit": true,
+          "orbitSpeed": 4,
+          "orbitDirection": "clockwise",
+          "stopMotionVib": 0
+        },
+        "human": {
+          "activityLevel": "casual",
+          "breathSway": 3,
+          "weightShift": 2,
+          "blinkRate": 3,
+          "gripAdjust": true,
+          "postureShift": true,
+          "fidget": false,
+          "handGesture": false,
+          "microExpressions": true,
+          "eyeDart": true,
+          "lipMovement": false,
+          "swallow": false,
+          "naturalPause": false,
+          "breathBetween": false,
+          "umFiller": false,
+          "headNod": false
+        },
+        "antiGlitch": {
+          "noMorphing": true,
+          "consistentFingers": true,
+          "noFlicker": true,
+          "stableClothing": true,
+          "naturalMotion": true,
+          "consistentLighting": true,
+          "noTextWarp": false,
+          "stableBackground": false,
+          "naturalHair": false,
+          "eyeContact": false
+        }
+      },
+      "prompt": "[CAMERA]\nShot on handheld smartphone camera. Camera behavior: subtle hand drift of 2.5mm amplitude at 1.2 movements per second, barely perceptible micro-shake from human hand instability, subtle autofocus breathing and hunting, auto-exposure micro-adjustments of +/-0.3 stops. Operator behavior: brief gaze breaks lasting 0.2-0.4 seconds, subtle reframing adjustments, smooth orbital camera movement circling around subject at rapid pace, clockwise, maintaining consistent distance while tracking subject.\n\n[SUBJECT]\nSubject in casual standing position. Body micro-motion: natural breathing sway in torso and shoulders, occasional weight shifts between feet, micro grip adjustments, subtle posture corrections. Facial micro-motion: 15-20 blinks per minute natural rate, subtle micro-expressions, natural eye saccades and micro-movements.\n\n[CONSTRAINTS]\nno face morphing or distortion. consistent finger count exactly five fingers per hand. no texture flickering or swimming artifacts. stable consistent clothing and accessories. physically plausible motion only. consistent lighting direction throughout.",
+      "legacyStats": {
+        "score": "95.5%",
+        "activeConstraints": "6 active"
+      }
+    },
+    {
+      "id": "orbit-counterclockwise",
+      "state": {
+        "sections": {
+          "camera": true,
+          "human": true
+        },
+        "camera": {
+          "device": "smartphone_handheld",
+          "handDrift": 2.5,
+          "driftFreq": 1.2,
+          "microShake": 1,
+          "afBreathing": 2,
+          "aeShift": 0.3,
+          "gazeBreaks": true,
+          "reframing": true,
+          "zoomHunting": false,
+          "whipPan": false,
+          "freeRoam": false,
+          "orbit": true,
+          "orbitSpeed": 4,
+          "orbitDirection": "counterclockwise",
+          "stopMotionVib": 0
+        },
+        "human": {
+          "activityLevel": "casual",
+          "breathSway": 3,
+          "weightShift": 2,
+          "blinkRate": 3,
+          "gripAdjust": true,
+          "postureShift": true,
+          "fidget": false,
+          "handGesture": false,
+          "microExpressions": true,
+          "eyeDart": true,
+          "lipMovement": false,
+          "swallow": false,
+          "naturalPause": false,
+          "breathBetween": false,
+          "umFiller": false,
+          "headNod": false
+        },
+        "antiGlitch": {
+          "noMorphing": true,
+          "consistentFingers": true,
+          "noFlicker": true,
+          "stableClothing": true,
+          "naturalMotion": true,
+          "consistentLighting": true,
+          "noTextWarp": false,
+          "stableBackground": false,
+          "naturalHair": false,
+          "eyeContact": false
+        }
+      },
+      "prompt": "[CAMERA]\nShot on handheld smartphone camera. Camera behavior: subtle hand drift of 2.5mm amplitude at 1.2 movements per second, barely perceptible micro-shake from human hand instability, subtle autofocus breathing and hunting, auto-exposure micro-adjustments of +/-0.3 stops. Operator behavior: brief gaze breaks lasting 0.2-0.4 seconds, subtle reframing adjustments, smooth orbital camera movement circling around subject at rapid pace, counter-clockwise, maintaining consistent distance while tracking subject.\n\n[SUBJECT]\nSubject in casual standing position. Body micro-motion: natural breathing sway in torso and shoulders, occasional weight shifts between feet, micro grip adjustments, subtle posture corrections. Facial micro-motion: 15-20 blinks per minute natural rate, subtle micro-expressions, natural eye saccades and micro-movements.\n\n[CONSTRAINTS]\nno face morphing or distortion. consistent finger count exactly five fingers per hand. no texture flickering or swimming artifacts. stable consistent clothing and accessories. physically plausible motion only. consistent lighting direction throughout.",
+      "legacyStats": {
+        "score": "95.5%",
+        "activeConstraints": "6 active"
+      }
+    },
+    {
+      "id": "orbit-alternating",
+      "state": {
+        "sections": {
+          "camera": true,
+          "human": true
+        },
+        "camera": {
+          "device": "smartphone_handheld",
+          "handDrift": 2.5,
+          "driftFreq": 1.2,
+          "microShake": 1,
+          "afBreathing": 2,
+          "aeShift": 0.3,
+          "gazeBreaks": true,
+          "reframing": true,
+          "zoomHunting": false,
+          "whipPan": false,
+          "freeRoam": false,
+          "orbit": true,
+          "orbitSpeed": 4,
+          "orbitDirection": "alternating",
+          "stopMotionVib": 0
+        },
+        "human": {
+          "activityLevel": "casual",
+          "breathSway": 3,
+          "weightShift": 2,
+          "blinkRate": 3,
+          "gripAdjust": true,
+          "postureShift": true,
+          "fidget": false,
+          "handGesture": false,
+          "microExpressions": true,
+          "eyeDart": true,
+          "lipMovement": false,
+          "swallow": false,
+          "naturalPause": false,
+          "breathBetween": false,
+          "umFiller": false,
+          "headNod": false
+        },
+        "antiGlitch": {
+          "noMorphing": true,
+          "consistentFingers": true,
+          "noFlicker": true,
+          "stableClothing": true,
+          "naturalMotion": true,
+          "consistentLighting": true,
+          "noTextWarp": false,
+          "stableBackground": false,
+          "naturalHair": false,
+          "eyeContact": false
+        }
+      },
+      "prompt": "[CAMERA]\nShot on handheld smartphone camera. Camera behavior: subtle hand drift of 2.5mm amplitude at 1.2 movements per second, barely perceptible micro-shake from human hand instability, subtle autofocus breathing and hunting, auto-exposure micro-adjustments of +/-0.3 stops. Operator behavior: brief gaze breaks lasting 0.2-0.4 seconds, subtle reframing adjustments, smooth orbital camera movement circling around subject at rapid pace, alternating directions, maintaining consistent distance while tracking subject.\n\n[SUBJECT]\nSubject in casual standing position. Body micro-motion: natural breathing sway in torso and shoulders, occasional weight shifts between feet, micro grip adjustments, subtle posture corrections. Facial micro-motion: 15-20 blinks per minute natural rate, subtle micro-expressions, natural eye saccades and micro-movements.\n\n[CONSTRAINTS]\nno face morphing or distortion. consistent finger count exactly five fingers per hand. no texture flickering or swimming artifacts. stable consistent clothing and accessories. physically plausible motion only. consistent lighting direction throughout.",
+      "legacyStats": {
+        "score": "95.5%",
+        "activeConstraints": "6 active"
+      }
+    },
+    {
+      "id": "still",
+      "state": {
+        "sections": {
+          "camera": true,
+          "human": true
+        },
+        "camera": {
+          "device": "smartphone_handheld",
+          "handDrift": 2.5,
+          "driftFreq": 1.2,
+          "microShake": 1,
+          "afBreathing": 2,
+          "aeShift": 0.3,
+          "gazeBreaks": true,
+          "reframing": true,
+          "zoomHunting": false,
+          "whipPan": false,
+          "freeRoam": false,
+          "orbit": false,
+          "orbitSpeed": 2,
+          "orbitDirection": "clockwise",
+          "stopMotionVib": 0
+        },
+        "human": {
+          "activityLevel": "still",
+          "breathSway": 3,
+          "weightShift": 2,
+          "blinkRate": 3,
+          "gripAdjust": true,
+          "postureShift": true,
+          "fidget": false,
+          "handGesture": false,
+          "microExpressions": true,
+          "eyeDart": true,
+          "lipMovement": false,
+          "swallow": false,
+          "naturalPause": false,
+          "breathBetween": false,
+          "umFiller": false,
+          "headNod": false
+        },
+        "antiGlitch": {
+          "noMorphing": true,
+          "consistentFingers": true,
+          "noFlicker": true,
+          "stableClothing": true,
+          "naturalMotion": true,
+          "consistentLighting": true,
+          "noTextWarp": false,
+          "stableBackground": false,
+          "naturalHair": false,
+          "eyeContact": false
+        }
+      },
+      "prompt": "[CAMERA]\nShot on handheld smartphone camera. Camera behavior: subtle hand drift of 2.5mm amplitude at 1.2 movements per second, barely perceptible micro-shake from human hand instability, subtle autofocus breathing and hunting, auto-exposure micro-adjustments of +/-0.3 stops. Operator behavior: brief gaze breaks lasting 0.2-0.4 seconds, subtle reframing adjustments.\n\n[SUBJECT]\nSubject seated or still. Body micro-motion: natural breathing sway in torso and shoulders, occasional weight shifts between feet, micro grip adjustments, subtle posture corrections. Facial micro-motion: 15-20 blinks per minute natural rate, subtle micro-expressions, natural eye saccades and micro-movements.\n\n[CONSTRAINTS]\nno face morphing or distortion. consistent finger count exactly five fingers per hand. no texture flickering or swimming artifacts. stable consistent clothing and accessories. physically plausible motion only. consistent lighting direction throughout.",
+      "legacyStats": {
+        "score": "95.5%",
+        "activeConstraints": "6 active"
+      }
+    },
+    {
+      "id": "exhausted",
+      "state": {
+        "sections": {
+          "camera": true,
+          "human": true
+        },
+        "camera": {
+          "device": "smartphone_handheld",
+          "handDrift": 2.5,
+          "driftFreq": 1.2,
+          "microShake": 1,
+          "afBreathing": 2,
+          "aeShift": 0.3,
+          "gazeBreaks": true,
+          "reframing": true,
+          "zoomHunting": false,
+          "whipPan": false,
+          "freeRoam": false,
+          "orbit": false,
+          "orbitSpeed": 2,
+          "orbitDirection": "clockwise",
+          "stopMotionVib": 0
+        },
+        "human": {
+          "activityLevel": "exhausted",
+          "breathSway": 3,
+          "weightShift": 2,
+          "blinkRate": 3,
+          "gripAdjust": true,
+          "postureShift": true,
+          "fidget": false,
+          "handGesture": false,
+          "microExpressions": true,
+          "eyeDart": true,
+          "lipMovement": false,
+          "swallow": false,
+          "naturalPause": false,
+          "breathBetween": false,
+          "umFiller": false,
+          "headNod": false
+        },
+        "antiGlitch": {
+          "noMorphing": true,
+          "consistentFingers": true,
+          "noFlicker": true,
+          "stableClothing": true,
+          "naturalMotion": true,
+          "consistentLighting": true,
+          "noTextWarp": false,
+          "stableBackground": false,
+          "naturalHair": false,
+          "eyeContact": false
+        }
+      },
+      "prompt": "[CAMERA]\nShot on handheld smartphone camera. Camera behavior: subtle hand drift of 2.5mm amplitude at 1.2 movements per second, barely perceptible micro-shake from human hand instability, subtle autofocus breathing and hunting, auto-exposure micro-adjustments of +/-0.3 stops. Operator behavior: brief gaze breaks lasting 0.2-0.4 seconds, subtle reframing adjustments.\n\n[SUBJECT]\nSubject with low energy exhausted demeanor. Body micro-motion: natural breathing sway in torso and shoulders, occasional weight shifts between feet, micro grip adjustments, subtle posture corrections. Facial micro-motion: 15-20 blinks per minute natural rate, subtle micro-expressions, natural eye saccades and micro-movements.\n\n[CONSTRAINTS]\nno face morphing or distortion. consistent finger count exactly five fingers per hand. no texture flickering or swimming artifacts. stable consistent clothing and accessories. physically plausible motion only. consistent lighting direction throughout.",
+      "legacyStats": {
+        "score": "95.5%",
+        "activeConstraints": "6 active"
+      }
+    },
+    {
+      "id": "puppet_henson",
+      "state": {
+        "sections": {
+          "camera": true,
+          "human": true
+        },
+        "camera": {
+          "device": "smartphone_handheld",
+          "handDrift": 2.5,
+          "driftFreq": 1.2,
+          "microShake": 1,
+          "afBreathing": 2,
+          "aeShift": 0.3,
+          "gazeBreaks": true,
+          "reframing": true,
+          "zoomHunting": false,
+          "whipPan": false,
+          "freeRoam": false,
+          "orbit": false,
+          "orbitSpeed": 2,
+          "orbitDirection": "clockwise",
+          "stopMotionVib": 0
+        },
+        "human": {
+          "activityLevel": "puppet_henson",
+          "breathSway": 3,
+          "weightShift": 2,
+          "blinkRate": 3,
+          "gripAdjust": true,
+          "postureShift": true,
+          "fidget": false,
+          "handGesture": false,
+          "microExpressions": true,
+          "eyeDart": true,
+          "lipMovement": false,
+          "swallow": false,
+          "naturalPause": false,
+          "breathBetween": false,
+          "umFiller": false,
+          "headNod": false
+        },
+        "antiGlitch": {
+          "noMorphing": true,
+          "consistentFingers": true,
+          "noFlicker": true,
+          "stableClothing": true,
+          "naturalMotion": true,
+          "consistentLighting": true,
+          "noTextWarp": false,
+          "stableBackground": false,
+          "naturalHair": false,
+          "eyeContact": false
+        }
+      },
+      "prompt": "[CAMERA]\nShot on handheld smartphone camera. Camera behavior: subtle hand drift of 2.5mm amplitude at 1.2 movements per second, barely perceptible micro-shake from human hand instability, subtle autofocus breathing and hunting, auto-exposure micro-adjustments of +/-0.3 stops. Operator behavior: brief gaze breaks lasting 0.2-0.4 seconds, subtle reframing adjustments.\n\n[SUBJECT]\nSubject moves like a Jim Henson foam puppet, gentle bouncy sway originating from below, head bobs and tilts expressively during speech, arms swing loosely with slight delay, exaggerated mouth movements, soft floaty quality to all motion, occasional looking-around head movements, body gently rocks side to side, movements have warmth and personality of classic Muppet performance. Body micro-motion: natural breathing sway in torso and shoulders, occasional weight shifts between feet, micro grip adjustments, subtle posture corrections. Facial micro-motion: 15-20 blinks per minute natural rate, subtle micro-expressions, natural eye saccades and micro-movements.\n\n[CONSTRAINTS]\nno face morphing or distortion. consistent finger count exactly five fingers per hand. no texture flickering or swimming artifacts. stable consistent clothing and accessories. physically plausible motion only. consistent lighting direction throughout.",
+      "legacyStats": {
+        "score": "95.5%",
+        "activeConstraints": "6 active"
+      }
+    },
+    {
+      "id": "all-min",
+      "state": {
+        "sections": {
+          "camera": true,
+          "human": true
+        },
+        "camera": {
+          "device": "smartphone_handheld",
+          "handDrift": 0,
+          "driftFreq": 0.5,
+          "microShake": 0,
+          "afBreathing": 0,
+          "aeShift": 0,
+          "gazeBreaks": false,
+          "reframing": false,
+          "zoomHunting": false,
+          "whipPan": false,
+          "freeRoam": false,
+          "orbit": false,
+          "orbitSpeed": 1,
+          "orbitDirection": "clockwise",
+          "stopMotionVib": 0
+        },
+        "human": {
+          "activityLevel": "casual",
+          "breathSway": 0,
+          "weightShift": 0,
+          "blinkRate": 0,
+          "gripAdjust": false,
+          "postureShift": false,
+          "fidget": false,
+          "handGesture": false,
+          "microExpressions": false,
+          "eyeDart": false,
+          "lipMovement": false,
+          "swallow": false,
+          "naturalPause": false,
+          "breathBetween": false,
+          "umFiller": false,
+          "headNod": false
+        },
+        "antiGlitch": {
+          "noMorphing": false,
+          "consistentFingers": false,
+          "noFlicker": false,
+          "stableClothing": false,
+          "naturalMotion": false,
+          "consistentLighting": false,
+          "noTextWarp": false,
+          "stableBackground": false,
+          "naturalHair": false,
+          "eyeContact": false
+        }
+      },
+      "prompt": "[CAMERA]\nShot on handheld smartphone camera.\n\n[SUBJECT]\nSubject in casual standing position.",
+      "legacyStats": {
+        "score": "40%",
+        "activeConstraints": "0 active"
+      }
+    },
+    {
+      "id": "all-max",
+      "state": {
+        "sections": {
+          "camera": true,
+          "human": true
+        },
+        "camera": {
+          "device": "smartphone_handheld",
+          "handDrift": 10,
+          "driftFreq": 3,
+          "microShake": 5,
+          "afBreathing": 5,
+          "aeShift": 1,
+          "gazeBreaks": true,
+          "reframing": true,
+          "zoomHunting": true,
+          "whipPan": true,
+          "freeRoam": true,
+          "orbit": true,
+          "orbitSpeed": 4,
+          "orbitDirection": "clockwise",
+          "stopMotionVib": 4
+        },
+        "human": {
+          "activityLevel": "casual",
+          "breathSway": 5,
+          "weightShift": 5,
+          "blinkRate": 5,
+          "gripAdjust": true,
+          "postureShift": true,
+          "fidget": true,
+          "handGesture": true,
+          "microExpressions": true,
+          "eyeDart": true,
+          "lipMovement": true,
+          "swallow": true,
+          "naturalPause": true,
+          "breathBetween": true,
+          "umFiller": true,
+          "headNod": true
+        },
+        "antiGlitch": {
+          "noMorphing": true,
+          "consistentFingers": true,
+          "noFlicker": true,
+          "stableClothing": true,
+          "naturalMotion": true,
+          "consistentLighting": true,
+          "noTextWarp": true,
+          "stableBackground": true,
+          "naturalHair": true,
+          "eyeContact": true
+        }
+      },
+      "prompt": "[CAMERA]\nShot on handheld smartphone camera. Camera behavior: subtle hand drift of 10mm amplitude at 3 movements per second, heavy micro-shake from human hand instability, prominent autofocus breathing and hunting, auto-exposure micro-adjustments of +/-1 stops. Stop-motion effect: pronounced stop-motion tremor with noticeable inter-frame camera displacement. Operator behavior: brief gaze breaks lasting 0.2-0.4 seconds, subtle reframing adjustments, occasional zoom hunting, spontaneous whip pans, free-roaming camera movement exploring subject from multiple angles, pushing in for details then pulling back, circling loosely, finding new perspectives organically, smooth orbital camera movement circling around subject at rapid pace, clockwise, maintaining consistent distance while tracking subject.\n\n[SUBJECT]\nSubject in casual standing position. Body micro-motion: pronounced breathing sway in torso and shoulders, constant weight shifts between feet, micro grip adjustments, subtle posture corrections, idle fidgeting, natural hand gestures while speaking. Facial micro-motion: 25+ blinks per minute nervous rapid, subtle micro-expressions, natural eye saccades and micro-movements, lip micro-movements, occasional swallow reflex. Speech patterns: natural pauses in speech, audible breaths between sentences, occasional filler words um uh, head nods for emphasis while speaking.\n\n[CONSTRAINTS]\nno face morphing or distortion. consistent finger count exactly five fingers per hand. no texture flickering or swimming artifacts. stable consistent clothing and accessories. physically plausible motion only. consistent lighting direction throughout. no warping or morphing text or logos. stable non-morphing background elements. natural hair movement physics. maintain consistent eye contact direction.",
+      "legacyStats": {
+        "score": "100%",
+        "activeConstraints": "10 active"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1557 @@
+{
+  "schemaVersion": "1.0",
+  "id": "semantic-veo-suite-01",
+  "owner": "veo-suite",
+  "status": "pending-astra-review",
+  "approximateTokens": 2452,
+  "prompts": [
+    {
+      "id": "text-015e013f16a4707798da",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "gentle focus shift, subtle transition between focus planes, soft and organic focus breathing, cinematic.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 704,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-06ae81becfd549141b03",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "sweeping crane arc, wide circular jib movement around subject, cinematic orbital motion, majestic reveal.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 465,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-07156bc6ac5d3d1720e5",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "extremely slow imperceptible zoom-in, creeping closer to subject, hypnotic gradual magnification, tension building.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 692,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-08ae197adb39e9f78a2a",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "subtle handheld camera, gentle organic sway, natural documentary cinematography, professional handheld technique.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 503,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-0a95ddab860491dd970f",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "terminal velocity FPV dive, extreme vertical plunge from altitude, sickening speed, aggressive pull-up, visceral G-force sensation.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 604,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-0bca432df3025a3a28df",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "snap zoom, rapid quick zoom punch-in to subject, sudden magnification, documentary energy, reactive camera work.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 694,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-0d9b570ba4ae76a7544c",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "mild wide angle lens, subtle barrel distortion, expanded field of view, slight edge stretching, dynamic perspective.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 562,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-0e208ba5ceac2ebd2073",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Super 8 home movie aesthetic, warm saturated colors, visible grain, slight overexposure, nostalgic family film feel.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 644,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-11c90f20b9154ed1fea3",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "smooth dolly push-in, steady forward motion toward subject, cinematic dolly track on rails, slow and deliberate.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 443,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-170ee592bd32178ac131",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "ultra-smooth steadicam glide, perfectly stabilized floating motion, weightless feel, no vibration, pristine gimbal.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 453,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-1a472e6b7c0709fc243b",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "freestyle FPV acrobatics, power loops and rolls, inverted flight, dynamic trick flying, aggressive maneuvers, disorienting spins.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 603,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-1be5d02ef8aa28f79a18",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "heavy anamorphic flares, dramatic blue-gold horizontal streaks, oval bokeh, strong squeeze characteristics, cinematic grandeur.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 542,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-1e3e8dd22d684b73f104",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "prowling steadicam, low and predatory camera movement, creeping forward, sinister smooth motion, atmospheric tension.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 456,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-22343ef68b095d801905",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "subtle tilt-shift, gentle selective focus plane, slightly tilted focus with soft edges, architectural photography style.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 573,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-22a335fe945383d89478",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "clean Super 8mm film, fine grain texture, slightly warm tones, vintage but well-preserved, authentic film gate weave.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 643,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-23961e1828e4bf3d6ea5",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "handheld documentary footage, natural organic shake, slight focus hunting, realistic human camera movement, raw feel.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 504,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-2428f9b30ec249e2f31c",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "gritty 16mm, pushed film stock, heavy visible grain, high contrast, raw texture, underground film aesthetic, lo-fi cinema.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 657,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-242c47e167267ef4b322",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "action POV camera, dynamic first-person perspective, GoPro style wide angle, immersive motion, activity footage.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 526,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-2973dec99c3303bd7074",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "modern HD CCTV, clean security camera footage, high ceiling mount, wide angle, digital timestamp overlay, sharp image.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 616,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-2a0a72ae57307b922acc",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "smooth FPV drone glide, gentle flowing movement, wide angle, low altitude cinematic flight, stable and graceful.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 600,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-2c4ee49c1c08074e088d",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "chest-mounted bodycam, stable torso movement, slight vertical bob from walking, wide angle POV, body-worn camera.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 524,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-2e935db74cb3a6ed1399",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "lateral tracking shot, smooth side-to-side dolly movement, subject moving parallel to camera, dolly on rails.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 444,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-32783d452fe42d87b750",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "gentle crane rise, slow vertical lift revealing the scene, smooth jib arm movement, elegant and controlled.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 464,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-32d2fa6ae7fe092e1885",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "crane reveal lift, camera rises from ground level to reveal vast landscape, dramatic vertical unveiling, epic scope.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 466,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-35bb99e04ef2d80b27b2",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "tight close-up, 85mm portrait lens, shallow depth of field, soft background separation, intimate framing.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 551,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-383cf83b584bddaab4ae",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "FPV gap threading, flying through tight spaces and windows, precise high-speed navigation, thrilling proximity, narrow gaps.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 602,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-39f400527f3166ad05a3",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "gentle drone hover, near-static aerial shot, slight drift, high altitude observation, calm bird's eye view.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 589,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-3a10ae5a2dd0ba19d557",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "slow cinematic drone reveal, gradual forward movement unveiling landscape, smooth altitude, aerial establishing shot.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 590,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-3e128530c102c0dcba09",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "dolly zoom vertigo effect, simultaneous dolly out and zoom in, background warping, Hitchcock perspective distortion, surreal.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 696,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-45a3ed4ccd97564068d7",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "quick snap pan, fast horizontal camera turn to new subject, snappy reframe, editorial precision.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 476,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-46dc709f54d963089bd6",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "pristine 16mm film stock, clean fine grain, accurate color reproduction, professional cinematography, film texture.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 654,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-472d57a6ce805f388ccc",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "gentle steadicam float, smooth organic movement with subtle body sway, cinematic stabilization, elegant drift.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 454,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-47b7bb94d6e9aa1456a5",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "vintage anamorphic glass, Kowa or Iscorama character, swirly oval bokeh, warm flares, organic imperfections, 70s cinema texture.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 543,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-5ba64fcc9e9f15df2a94",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "chaotic first-person POV, extreme motion, tumbling disoriented perspective, violent shaking, survival footage, raw terror.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 528,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-5daa940d3c7afca5923e",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "gentle horizontal camera drift, slow panning motion, smooth directional glide, contemplative movement.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 475,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-5ee245d1b42e7319ab39",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "BZ Camera Suite - Bespoke Edition",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 6,
+          "column": 12,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-61b997844a1c4edef284",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "early 2000s digital cinema, slightly sterile look, harsh highlights, early HD video feel, digital but not filmic.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 679,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-658324af5967abaf21ab",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "epic drone pull-back reveal, starting close then rapidly ascending and pulling away to reveal massive scale, jaw-dropping scope.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 593,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-6834d7a4d08f216f5646",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "shot on smartphone, high-end stabilization, crisp 4K mobile sensor, modern mobile cinematic look, handheld but smooth.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 513,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-6f034a99ec449853ad0e",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "clean dashcam footage, wide angle windshield mount, daylight driving, dashboard camera perspective, timestamp overlay.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 627,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-6ff32ed563d04f52eefd",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "shot on RED camera, ultra high resolution digital, sharp detail, slightly cooler tones, cinematic RAW digital look.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 677,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-70b6fd3cfeae1a387034",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "fast dolly push-in, dramatic forward camera rush toward subject, dynamic acceleration, cinematic urgency.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 445,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-737ad306ef03a11e08d1",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "deep focus, everything sharp from foreground to background, large depth of field, Citizen Kane style, all in focus.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 703,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-784d6ca881ed87f7c1e4",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Composite Prompt — ${count} layer${count > 1 ? 's' : ''}${state.incoming ? ' (incl. Blocking Studio move)' : ''}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 834,
+          "column": 29,
+          "kind": "template-literal",
+          "functionName": "updateCompositeBar",
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-787c8ccafede366e157f",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "dreamy lensbaby blur, single sweet spot of focus surrounded by swirly blur, romantic soft-focus, ethereal atmosphere.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 575,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-7b9da07a5d802581d8bd",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "disaster smartphone footage, extreme shaking, running while filming, heavy motion blur, unstable focus, raw citizen journalism.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 517,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-7e94c245d42da5049264",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "instagram story style, vertical smartphone video, quick movements, authentic social media aesthetic, selfie angle motion.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 515,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-83e6e3f5769ec0cc78ad",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "static mounted camera, slightly off-axis composition, institutional feel, utilitarian framing, cold observation.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 489,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-876bb736181bd150f7ab",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "extremely subtle handheld micro-jitter, almost imperceptible organic motion, steady documentary style, tripod-like but human.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 502,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-8830539d053eac12bd36",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "helmet-mounted camera, head movement tracking, slight lag and wobble, action sports POV, first person view.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 525,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-8d67bac7801d1c0910ff",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "night trail cam, infrared flash, glowing animal eyes, monochrome green night vision, motion-triggered, eerie wildlife footage.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 631,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-8f28c79717db9e2ae111",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "shot on ARRI Alexa, pristine digital cinema, beautiful color science, clean highlight roll-off, filmic digital sensor.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 676,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-914fa222cfcb4adac917",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "smooth cinematic zoom-in, controlled magnification, elegant lens zoom, professional zoom movement.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 693,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-954e4be6ae1dfac8f5d6",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "dynamic drone chase, following subject from above at speed, tracking aerial shot, cinematic pursuit, energetic motion.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 592,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-955330232d7ecaa57803",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "locked surveillance-style static camera, high corner mount, wide angle, cold impersonal observation, no movement.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 490,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-9929df8920911d0ea230",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "tactical bodycam footage, rapid movement, weapon-mounted or chest perspective, night-capable, high contrast, tactical operation.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 527,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-9d321bf6abaefa3efed2",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "dramatic crane boom down, plunging downward from height to subject, powerful descending motion, cinematic impact.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 467,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-adb8c921831af757c211",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "aggressive dolly rush, explosive forward camera movement, visceral speed, slamming into the subject, adrenaline impact.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 446,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b0704eba2497e30cab7b",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "extreme close-up, revealing fine detail and texture, very shallow depth of field, 100mm lens character.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 552,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b094378468d47a3b2905",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "crash zoom, extreme rapid zoom-in, violent magnification, slamming focus onto subject, kung fu cinema energy.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 695,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b205a0d651ce43ec3032",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "16mm news reel footage, documentary grain, slightly overlit, journalistic camera work, archival news film aesthetic.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 656,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b7abf2bff239162389b4",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "perfectly locked static camera, rock solid tripod, zero movement, clean composition, precise framing.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 486,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-bb094f4d90fe09d7804c",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "trail camera footage, static wildlife cam, daytime trigger, slight motion blur on subject, timestamp, nature observation.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 630,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-bcdd3dd64ac53e42a0b2",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "sweeping cinematic drone vista, wide arcing flight over landscape, golden hour aerial, majestic panoramic movement.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 591,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-bee2be1fb40a68721e5a",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "intense war reporter handheld, urgent shaking footage, heavy breathing motion, unstable desperate framing, visceral realism.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 505,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-c11d8f5225168567721e",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "very subtle slow dolly push-in, barely perceptible forward motion, smooth and hypnotic, studio dolly track.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 442,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-c820f0bd1c3a1f04fdcf",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "swish pan, rapid horizontal camera whip with motion blur, dynamic scene transition, cinematic energy.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 477,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-c9c624425259e43f7681",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "extreme earthquake handheld, violent camera shaking, chaotic unstable footage, impossible to stabilize, raw survival footage.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 506,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-cb363b3b2fdd51cfd994",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "abstract defocus, subject dissolving into pure bokeh and blur, loss of form, painterly abstraction, dream state.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 707,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ce0e72d782358139f565",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Camera move received from Blocking Studio",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 871,
+          "column": 39,
+          "kind": "string-literal",
+          "functionName": "showToast",
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ced31e1a12861ea4718b",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "rack focus, sharp focus transition from foreground to background subject, dramatic depth shift, narrative focus pull.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 705,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d230968353753fe0db36",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "violent whip pan, extreme speed horizontal camera movement, heavy motion blur streaks, disorienting energy.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 478,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d38ef0d1d7e32388172d",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "classic anamorphic lens, 2.39:1 aspect ratio, oval bokeh, clean horizontal lens flares, cinematic widescreen scope.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 541,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d48416793e11baf37c14",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "subtle anamorphic quality, gentle oval bokeh, faint horizontal flares, 2.39:1 widescreen, cinematic warmth.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 540,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d6a7a704c60b7e9192fe",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "symmetrical static frame, centered composition, Wes Anderson style, meticulous geometric framing, pastel palette.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 487,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d9af9ca7d8cbc116d95e",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Bespoke Camera Motion · Optics · Film Stock",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 411,
+          "column": 27,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-de80e49c062fe9fd5a24",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "seizure-speed whip cuts, strobing rapid pans between subjects, extreme motion blur, chaotic frantic energy, overwhelming speed.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 479,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e112a6868723fef3a04e",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "destroyed VHS tape, extreme magnetic deterioration, psychedelic color smearing, complete signal loss zones, abstract video decay.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 669,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e189870dbe1afad7cb58",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "tilt-shift miniature effect, making real scenes look like tiny models, extreme shallow focus band, toylike perspective.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 574,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e3222977048be66deb14",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "god's eye crane ascent, extreme vertical pull-up from close-up to vast aerial view, dizzying scale shift, epic reveal.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 468,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e33f35e62de6776b7d28",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "clean VHS video, slight analog softness, authentic video look, warm color cast, subtle scan lines, 480i resolution.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 665,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e70129705ccb7454df2d",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "static tableau vivant, painterly locked frame, subjects arranged like a living painting, no camera motion.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 488,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f0eb6d7e7b3613b5f491",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "casual smartphone video, walking pace, natural micro-shakes, authentic UGC feel, organic mobile footage.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 514,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f4d5fa103f4b36107f90",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "steadicam walk-and-talk, following subject through space, smooth stabilized handheld, natural forward momentum.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 455,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f99841e8621b1efda03b",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "shot on Blackmagic camera, rich digital film emulation, wide dynamic range, slightly organic digital texture, indie cinema.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 678,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-fa77b6d54e43c0afb37b",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "VHS recorded from TV, slight RF interference, channel bug remnant, analog broadcast texture, retro television quality.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/veo_precision.html",
+          "line": 666,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "veo-suite"
+          ]
+        }
+      ]
+    }
+  ]
+}

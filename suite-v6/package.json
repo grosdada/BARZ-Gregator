@@ -1,0 +1,45 @@
+{
+  "name": "barz-suite-v6-foundation",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "3.5.1",
+    "onnxruntime-node": "1.21.0",
+    "qrcode": "^1.5.4",
+    "selfsigned": "^5.5.0",
+    "sharp": "0.35.5",
+    "ws": "^8.22.0"
+  },
+  "overrides": {
+    "sharp": "$sharp"
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "demo": "node examples/registry-demo.mjs",
+    "start:build": "node apps/atlas/server.js",
+    "prepare:semantic-review": "node migration/prepare-semantic-review.mjs",
+    "prepare:a1-fixtures": "node migration/reviews/prepare-a1-fixtures.mjs",
+    "prepare:a2-fixtures": "node migration/reviews/prepare-a2-fixtures.mjs",
+    "prepare:a3-fixtures": "node migration/reviews/prepare-a3-fixtures.mjs",
+    "prepare:a4-fixtures": "node migration/reviews/prepare-a4-fixtures.mjs",
+    "prepare:a5-fixtures": "node migration/reviews/prepare-a5-fixtures.mjs",
+    "prepare:a6-fixtures": "node migration/reviews/prepare-a6-fixtures.mjs",
+    "prepare:a7-fixtures": "node migration/reviews/prepare-a7-fixtures.mjs",
+    "prepare:a8-fixtures": "node migration/reviews/prepare-a8-fixtures.mjs",
+    "prepare:a9-fixtures": "node migration/reviews/prepare-a9-fixtures.mjs",
+    "prepare:a10-fixtures": "node migration/reviews/prepare-a10-fixtures.mjs",
+    "prepare:a11-fixtures": "node migration/reviews/prepare-a11-fixtures.mjs",
+    "prepare:a12-fixtures": "node migration/reviews/prepare-a12-fixtures.mjs",
+    "build:a12-catalog": "node migration/reviews/build-a12-runtime-catalog.mjs",
+    "prepare:astra-review": "node migration/reviews/prepare-astra-review-template.mjs",
+    "validate:astra-review": "node migration/reviews/validate-astra-review.mjs",
+    "build:installer": "node installer/build-installer.mjs"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}

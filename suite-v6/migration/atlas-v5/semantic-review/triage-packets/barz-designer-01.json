@@ -1,0 +1,2107 @@
+{
+  "schemaVersion": "1.0",
+  "id": "triage-barz-designer-01",
+  "owner": "barz-designer",
+  "status": "pending-structural-triage",
+  "approximateTokens": 723,
+  "prompts": [
+    {
+      "id": "text-00328cf3dd0f286c97a4",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Shonen Battle Ink",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 200,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-05b44f4aa0e1b1de75c4",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "manga",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 197,
+          "column": 12,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-05ecc2a0a8ee940965cc",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "soft watercolor manga poster: transparent washes, delicate ink, emotional atmosphere, light bloom, poetic color transitions.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 208,
+          "column": 71,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-06363555054de198a87c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "clay",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 181,
+          "column": 12,
+          "kind": "string-literal",
+          "functionName": "sketchStylePrompt",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-063d93f08be1b7d1c1fd",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "\" data-tab-key=\"",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 287,
+          "column": 216,
+          "kind": "string-literal",
+          "functionName": "renderSections",
+          "owners": [
+            "barz-designer"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 293,
+          "column": 431,
+          "kind": "string-literal",
+          "functionName": "renderSections",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-073c1634c496cdb649d1",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "status",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 310,
+          "column": 40,
+          "kind": "string-literal",
+          "functionName": "openGroup",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-0e6155d8dc4091a47e16",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Polish Puppet Animation",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 186,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": "sketchStylePrompt",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-0ea537b71a1d28a850be",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Classroom Art Show",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 237,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-0fc44fb940dafde1e24d",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Pop Halftone Poster Comic",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 225,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-1028bc24974e6683eae3",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Silver Age Superhero",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 217,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-11f47641c584f704490f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Luxury Clay Editorial",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 193,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-12715f6506e475ef3ee0",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Left-Hand Doodle",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 236,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-128df13c1e54ffaaafcc",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "hex",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 85,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 89,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 93,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 97,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-134a4d71c48152cfc391",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Conversion / fidelity",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 29,
+          "column": 15,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-1adfa6e61ed332a06348",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Photorealistic Conversion (No Correction)",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 41,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-1b57f1bef17def5ed084",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Kindergarten Crayon Portrait",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 232,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-1fe553c1829ea517fb6b",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Body Ref",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 103,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-234dc45c6cb0ee65b6d8",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Newspaper Strip Cartoon",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 224,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-2504108f05c11d19372f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "80s Mecha Manga",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 205,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-2dc01c1641cc6e08f605",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Dark Folk Clay Horror",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 191,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-2ec716e4dc4329cdd25b",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "kids",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 229,
+          "column": 12,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-31cbbb7c0d8c5bd7c18d",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Aardman-Style Clay Comedy",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 184,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": "sketchStylePrompt",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-38989589b329e53b44d8",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "\" style=\"background:",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 291,
+          "column": 289,
+          "kind": "string-literal",
+          "functionName": "renderSections",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-3c3d713c4f35347ddd0a",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Underground Zine",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 220,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-3dd918399a41216ce3e6",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": ".card.open",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 273,
+          "column": 53,
+          "kind": "string-literal",
+          "functionName": "togglePrompt",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-3e3251ac841f78198e50",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Sketch to Manga",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 198,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-49894a41e88907b0c4a1",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Franco-Belgian ligne claire: clean uniform outlines, flat vivid colors, precise readable shapes, elegant adventure-album clarity.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 216,
+          "column": 95,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-4cdc7682bd671f6df640",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Sketch to Clay",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 182,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": "sketchStylePrompt",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-5218b7871c6e9b91420a",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "has-tools",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 295,
+          "column": 346,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-53127f7da60899feefd4",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Czech Surreal Clay Theatre",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 187,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-53229cfca0c330be0d50",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Franco-Belgian Ligne Claire",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 216,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-565c68390b0caab0530b",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "[DRAWING_WEIGHT]",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 267,
+          "column": 119,
+          "kind": "string-literal",
+          "functionName": "infoText",
+          "owners": [
+            "barz-designer"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 268,
+          "column": 189,
+          "kind": "string-literal",
+          "functionName": "currentPrompt",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-566fb18fceef63536e79",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Sketch to Photo",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 28,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 177,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": "sketchStylePrompt",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-57ed41c6af5684e5c089",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Linework / body build",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 72,
+          "column": 15,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-5b7cda063a8fd65494e9",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "preserve Weird design",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 114,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 248,
+          "column": 12,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-5e5e76a9c29785e6ead6",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "\" aria-expanded=\"false\" aria-controls=\"prompt-",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 293,
+          "column": 216,
+          "kind": "string-literal",
+          "functionName": "renderSections",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-5f8f2d5a1f43b7a451fb",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Asset Lab",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 21,
+          "column": 52,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-601c022bb24af855bcbd",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Ultra-Realistic Photo Conversion (Strict Linework)",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 37,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-6039f6746952536ce242",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "comics",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 213,
+          "column": 12,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-6936bb8357c73f6c49ab",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Kids Naive Drawing",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 230,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-6ec183172dc0cd5bdee0",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Gekiga Documentary",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 203,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-6faede4166fe1493372e",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Primitive Sticker Book Collage",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 240,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-71bfbc149a7ba2ad1c46",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Fashion Manga Cover",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 207,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-799e805d253fa8af2f02",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "\" data-color-index=\"",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 291,
+          "column": 229,
+          "kind": "string-literal",
+          "functionName": "renderSections",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-7b520e30a787a1c657c8",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Vintage Horror Anthology",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 222,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-7d7eb94ec02c58bf0b68",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Noir Pulp Comic",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 219,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-82a3537ff0dbce7eec35",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "name",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 84,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 88,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 92,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 96,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-85325288060b2c17706a",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "style-led reinterpretation",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 266,
+          "column": 216,
+          "kind": "string-literal",
+          "functionName": "drawingWeightLabel",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-8559f1898fc3e59ca352",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Fridge Magnet Family Drawing",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 235,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-8859db7be657e22915df",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Modern Graphic Novel",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 218,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-8bfc3c5e7957d5be503c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "\" data-index=\"",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 291,
+          "column": 206,
+          "kind": "string-literal",
+          "functionName": "renderSections",
+          "owners": [
+            "barz-designer"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 293,
+          "column": 479,
+          "kind": "string-literal",
+          "functionName": "renderSections",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-8cd1085ab205e129c7d7",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Design prompts extracted from BZ Helper: sketch-to-photo conversion, body construction, puppet integration and production shortcuts.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 21,
+          "column": 104,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-8d3313d72bb12dbe43f3",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "balanced style freedom",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 266,
+          "column": 184,
+          "kind": "string-literal",
+          "functionName": "drawingWeightLabel",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-8d4d1a36385e61065f12",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "figurine",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 267,
+          "column": 352,
+          "kind": "string-literal",
+          "functionName": "infoText",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-8d4ea9569bea4c7328ec",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Pixel-Perfect Design Replica",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 61,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-8ed219f9a9e1942ad911",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "source-led style transfer",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 266,
+          "column": 136,
+          "kind": "string-literal",
+          "functionName": "drawingWeightLabel",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-8edba60b1e235419c9fa",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Sketch to Image",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 172,
+          "column": 10,
+          "kind": "string-literal",
+          "functionName": "sketchStylePrompt",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-934fd4b70f367e2a17f0",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Soft Preschool Clay World",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 192,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-9454aceb01170a7e460f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Cyberpunk Manga Panel",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 209,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-94590bfbe53511fceba7",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "underground zine comic: rough photocopied energy, rebellious hand-drawn imperfections, punk textures, expressive distortion.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 220,
+          "column": 64,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-98d6b1fd69d00dbe9160",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "hasColorChoice",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 81,
+          "column": 9,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-9ab886d16cdb0ae13ebc",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "deliberately left-hand naive doodle: unstable lines, awkward spacing, lopsided features, accidental charm, anti-polished sketchbook energy.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 236,
+          "column": 64,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-9ccad4bace02b930ddf3",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Rainy Day Wax Crayon",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 239,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-a358b3e2c0a901234299",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Body Draw",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 71,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-a4aaea28dcdd58ae0fe1",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Seinen Noir Realism",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 201,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-a4eacb01ff4fc42a5028",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Retro 80s Claymation",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 188,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-a62ed7b95a2fe9e8759c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "useful",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 109,
+          "column": 3,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 267,
+          "column": 1079,
+          "kind": "string-literal",
+          "functionName": "infoText",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-a659897100def6a4d339",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "\" data-color-group=\"",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 291,
+          "column": 263,
+          "kind": "string-literal",
+          "functionName": "renderSections",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-a7f40c75683839ca73fa",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "info-",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 272,
+          "column": 61,
+          "kind": "string-literal",
+          "functionName": "toggleInfo",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-a8425968532bbe2776d6",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Kawaii Chibi Redesign",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 204,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-a88d8aac9492a94a77d0",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Converts or rebuilds while treating the source lines, angles, volumes and silhouette as the main constraint.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 267,
+          "column": 565,
+          "kind": "string-literal",
+          "functionName": "infoText",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "prose-candidate"
+    },
+    {
+      "id": "text-ab3491d0d01b18ccec5c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "[BG_COLOR]",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 268,
+          "column": 125,
+          "kind": "string-literal",
+          "functionName": "currentPrompt",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-ab47e9c28e772d7f7312",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Pencil Line Drawing",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 144,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 258,
+          "column": 12,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-abbe03ba2ec4d95adb4b",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Puppeteer Convert",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 32,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-ac5430eecb32df6a692a",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Clay Painting Bas-Relief",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 189,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-b02f809d99616c608f18",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "1950s horror anthology comic: lurid color, dramatic fear expression, thick inks, graveyard/lab/candle mood, theatrical suspense.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 222,
+          "column": 90,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-b0a2a39b0b4952490673",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Useful Prompts",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 110,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-b11c64a28271b83db3a7",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "kicker",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 29,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 72,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 111,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-b157e2c5bf91bedc3038",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Miniature Clay Toy Diorama",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 190,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-b221fe64e72d83b43bd2",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Notebook Margin Creature",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 238,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-c33ab258e4b0f1107aed",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Production shortcuts",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 111,
+          "column": 15,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-c6587a4a3a6379c01efb",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "European Sci-Fi Album",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 223,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-c7cd0066a1e24b299cae",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Shojo Romance Sparkle",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 202,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-c8229e2db9f93b01c2ad",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Badly Drawn Colored Pencil",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 233,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-c83bc591c29cbfe9ea1e",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "B&W body Convert",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 80,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-ca5db34f3ab2095ceb22",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Horror Manga Etching",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 206,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-ccbdc7b3b8b1c1389645",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Uncanny Valley Conversion",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 49,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-cd75f05719dacbdefadd",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Overconfident Kid Comic",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 241,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-d198f3ec5f049ae81bde",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Watercolor Manga Poster",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 208,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-d4f5e7e7a7cd3f635b34",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "[DRAWING_WEIGHT_LABEL]",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 268,
+          "column": 248,
+          "kind": "string-literal",
+          "functionName": "currentPrompt",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-dd80f9c15a0ca44cec60",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Sketch to Comics",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 214,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-ddc7becaf91b599875de",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "strict source fidelity",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 266,
+          "column": 91,
+          "kind": "string-literal",
+          "functionName": "drawingWeightLabel",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-e009d44519839b85691e",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Body draw Line",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 75,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-e272ca64fe23b5217573",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "\" title=\"",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 291,
+          "column": 322,
+          "kind": "string-literal",
+          "functionName": "renderSections",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-ea3891c31353a80150d4",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Gothic Stop-Motion Fairytale",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 185,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": "sketchStylePrompt",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-ec89cd89b50795341c84",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Wax Figurine",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 65,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-f090376fb0b9817331ba",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": " MANDATORY:",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 268,
+          "column": 448,
+          "kind": "string-literal",
+          "functionName": "currentPrompt",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-f2dce1c94edf7425071b",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Weird Felt-Tip Monster",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 234,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-f3528c4da0d4b2f360bc",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Production shortcut for a recurring behavior: integration, sheet, combat, origami or quick conversion.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 267,
+          "column": 1095,
+          "kind": "string-literal",
+          "functionName": "infoText",
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-f3d42fba459ab10c5ad7",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Indie Slice-of-Life Comic",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 221,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-f4d75775cf9f906b8695",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "puppet integration",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 119,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 253,
+          "column": 12,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-f7ab4a84204400b97386",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "High-Fidelity Macro Conversion",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barz_designer.html",
+          "line": 57,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barz-designer"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    }
+  ]
+}

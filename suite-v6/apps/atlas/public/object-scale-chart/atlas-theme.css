@@ -1,0 +1,82 @@
+/* Prompt Atlas 6 integration skin. The chart's layout and functions remain unchanged. */
+html[data-theme="dark"] {
+  --accent: #ff5b3a;
+  --accent-light: #3b211b;
+  --line: #2b3230;
+  --muted: #999f9b;
+  --dark: #f0eee8;
+  background: #070909;
+}
+html[data-theme="dark"] body,
+html[data-theme="dark"] .studio { background: #0d1010; }
+html[data-theme="dark"] .app-header,
+html[data-theme="dark"] .panel,
+html[data-theme="dark"] .canvas-toolbar,
+html[data-theme="dark"] .canvas-footer,
+html[data-theme="dark"] .prompt-panel,
+html[data-theme="dark"] .scene-badge,
+html[data-theme="dark"] .popover,
+html[data-theme="dark"] dialog { background: #151918; }
+html[data-theme="dark"] .mode-tabs,
+html[data-theme="dark"] .count-badge,
+html[data-theme="dark"] .scene-thumbnail,
+html[data-theme="dark"] .prompt-options select,
+html[data-theme="dark"] .dimensions-summary,
+html[data-theme="dark"] .scale-ratio,
+html[data-theme="dark"] .ui-language { background: #1c211f; }
+html[data-theme="dark"] .preset-card,
+html[data-theme="dark"] .upload-zone,
+html[data-theme="dark"] .prompt-output,
+html[data-theme="dark"] .field input:not([type="range"]),
+html[data-theme="dark"] .field select { background: #101413; border-color: #2b3230; }
+html[data-theme="dark"] .preset-card:hover,
+html[data-theme="dark"] .scene-row:hover,
+html[data-theme="dark"] .scene-row.active,
+html[data-theme="dark"] .popover button:hover { background: #27221e; }
+html[data-theme="dark"] .ui-language button.active { background: #522117; color: #ff8a70; }
+html[data-theme="dark"] .brand-mark,
+html[data-theme="dark"] .primary { background: #ff5b3a; border-color: #ff5b3a; color: #070909; }
+html[data-theme="dark"] .primary:hover { background: #ff765a; }
+
+html[data-theme="light"] {
+  --accent: #b95c3e;
+  --accent-light: #ead1bc;
+  --line: #c8b494;
+  --muted: #655b4f;
+  --dark: #29221b;
+  background: #e8dbc7;
+}
+html[data-theme="light"] body,
+html[data-theme="light"] .studio { background: #e8dbc7; }
+html[data-theme="light"] .app-header,
+html[data-theme="light"] .panel,
+html[data-theme="light"] .canvas-toolbar,
+html[data-theme="light"] .canvas-footer,
+html[data-theme="light"] .prompt-panel,
+html[data-theme="light"] .scene-badge,
+html[data-theme="light"] .popover,
+html[data-theme="light"] dialog { background: #f4eadb; }
+html[data-theme="light"] .mode-tabs,
+html[data-theme="light"] .count-badge,
+html[data-theme="light"] .scene-thumbnail,
+html[data-theme="light"] .prompt-options select,
+html[data-theme="light"] .dimensions-summary,
+html[data-theme="light"] .scale-ratio,
+html[data-theme="light"] .ui-language { background: #dfcfb8; }
+html[data-theme="light"] .preset-card,
+html[data-theme="light"] .upload-zone,
+html[data-theme="light"] .prompt-output,
+html[data-theme="light"] .field input:not([type="range"]),
+html[data-theme="light"] .field select { background: #fff8ed; border-color: #c8b494; color: #29221b; }
+html[data-theme="light"] .preset-card:hover,
+html[data-theme="light"] .scene-row:hover,
+html[data-theme="light"] .scene-row.active,
+html[data-theme="light"] .popover button:hover { background: #ead1bc; }
+html[data-theme="light"] .brand-mark,
+html[data-theme="light"] .primary { background: #b95c3e; border-color: #b95c3e; color: #fff8ed; }
+html[data-theme="light"] .primary:hover { background: #9f4d34; }
+
+body[data-atlas-embedded="true"] .app-header { position: sticky; top: 0; }
+body[data-atlas-embedded="true"] .ui-language,
+body[data-atlas-embedded="true"] .ui-theme,
+body[data-atlas-embedded="true"] .update-button { display: none; }

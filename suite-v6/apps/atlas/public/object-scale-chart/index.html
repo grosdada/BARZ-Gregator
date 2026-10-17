@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f6fa">
+  <meta name="description" content="Un atelier local pour comparer les proportions et préparer vos références vidéo IA.">
+  <title>Échelle — Studio de proportions</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%235651db'/%3E%3Cpath d='M11 29V11h6M11 17h5M11 23h5M23 29V17h6M23 23h5' stroke='white' stroke-width='2.5' fill='none'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="atlas-theme.css">
+  <script defer src="catalogue.js"></script>
+  <script defer src="core.js"></script>
+  <script defer src="cutout.js"></script>
+  <script defer src="ai-cutout.js"></script>
+  <script defer src="subject-vectors.js"></script>
+  <script defer src="version.js"></script>
+  <script defer src="app.js"></script>
+  <script defer src="atlas-bridge.js"></script>
+</head>
+<body>
+  <header class="app-header">
+    <a class="brand" href="./" aria-label="Échelle, accueil"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M6 26V6h7M6 13h6M6 20h6M20 26V13h7M20 20h6"/></svg></span><span>échelle<span class="brand-dot">.</span></span></a>
+    <span class="brand-description">Studio de proportions</span>
+    <div class="header-actions"><div class="ui-language" aria-label="Langue de l’interface"><button type="button" data-ui-language="en">EN</button><button type="button" data-ui-language="fr">FR</button></div><button id="ui-theme-toggle" class="button subtle ui-theme" type="button">Night</button><button id="update-button" class="button subtle update-button" type="button">Update</button><span id="save-status" class="save-status"><i></i> Enregistré sur cet appareil</span><button id="project-menu-button" class="button subtle" aria-expanded="false" aria-controls="project-menu">Projet <span data-icon="chevron"></span></button><button id="export-button" class="button primary"><span data-icon="download"></span> Exporter <span class="hide-small">la référence</span></button></div>
+    <div id="project-menu" class="popover" hidden><button id="save-project"><span data-icon="download"></span> Enregistrer le projet (.json)</button><button id="load-project"><span data-icon="folder"></span> Ouvrir un projet</button><button id="new-project"><span data-icon="plus"></span> Nouveau tableau</button><button id="demo-project"><span data-icon="reset"></span> Charger la démonstration</button></div>
+  </header>
+  <main class="workspace">
+    <aside class="library panel">
+      <div class="panel-heading"><h1>Vos sujets</h1><span id="preset-count" class="count-badge">127 presets</span></div>
+      <div class="mode-tabs" role="tablist" aria-label="Source des sujets"><button id="preset-tab" class="active" role="tab" aria-selected="true" aria-controls="preset-panel"><span data-icon="grid"></span> Presets</button><button id="my-tab" role="tab" aria-selected="false" aria-controls="my-panel"><span data-icon="person"></span> My subjects</button><button id="import-tab" role="tab" aria-selected="false" aria-controls="import-panel" aria-haspopup="menu" aria-expanded="false"><span data-icon="upload"></span> Importer <span data-icon="chevron"></span></button></div>
+      <div id="import-source-menu" class="import-source-menu" role="menu" hidden>
+        <button type="button" role="menuitemradio" data-import-source="resources" aria-checked="true"><span class="source-check">✓</span><span><strong>Ressources</strong><small>Bibliothèque locale · choix par défaut</small></span></button>
+        <button type="button" role="menuitemradio" data-import-source="generated" aria-checked="false"><span class="source-check"></span><span><strong>Assets générés</strong><small>Images créées dans l’Aggregator</small></span></button>
+        <button type="button" role="menuitemradio" data-import-source="computer" aria-checked="false"><span class="source-check"></span><span><strong>Depuis cet ordinateur</strong><small>PNG, JPG ou WebP</small></span></button>
+      </div>
+      <section id="preset-panel" role="tabpanel" aria-labelledby="preset-tab">
+        <label class="search-box"><span data-icon="search"></span><input id="search" type="search" placeholder="Chercher une silhouette…" aria-label="Chercher une silhouette"><kbd>/</kbd></label>
+        <div id="categories" class="categories" aria-label="Catégories"></div>
+        <div class="library-caption"><span id="category-title">Personnages</span><span id="category-count">6 silhouettes</span></div>
+        <div id="preset-list" class="preset-list"></div>
+        <p class="library-note"><span data-icon="info"></span> Cliquez ou glissez sur le tableau.<br>Dimensions indicatives et modifiables.</p>
+      </section>
+      <section id="my-panel" role="tabpanel" aria-labelledby="my-tab" hidden>
+        <div class="personal-toolbar"><button id="choose-library-folder" class="button subtle full" type="button"><span data-icon="folder"></span> Choisir l’emplacement</button><p id="library-location" class="field-hint">Stockage local de l’application</p></div>
+        <div class="library-caption"><span>My subjects</span><span id="personal-count">0 sujet</span></div>
+        <div id="personal-list" class="preset-list personal-list"></div>
+        <p id="personal-empty" class="no-results">Les sujets importés enregistrés apparaîtront ici.</p>
+      </section>
+      <section id="import-panel" role="tabpanel" aria-labelledby="import-tab" hidden>
+        <form id="import-form">
+          <label class="upload-zone" id="upload-zone"><input id="subject-file" type="file" accept="image/png,image/jpeg,image/webp" hidden><span data-icon="image"></span><strong>Ajouter votre sujet</strong><span>Glissez une image ou <b>parcourir</b></span><small>PNG, JPG ou WebP · 15 Mo max.</small></label>
+          <div id="import-preview-wrap" class="import-preview-wrap" hidden><div class="preview-stage ground-preview"><img id="import-preview" alt="Aperçu du sujet importé"><i aria-hidden="true"></i><span id="cutout-working" class="cutout-working" hidden>Analyse de l’image…</span></div><div class="preview-actions"><button type="button" id="toggle-cutout" class="button tiny">Voir l’original</button><button type="button" id="change-image" class="button tiny">Changer d’image</button></div></div>
+          <p class="field-hint">Le sujet est détouré automatiquement sur votre appareil. Rien n’est envoyé en ligne.</p>
+          <label class="check-row cutout-switch"><input id="remove-background" type="checkbox" checked> Détourage automatique</label>
+          <label id="cutout-method-field" class="field">Moteur de détourage<select id="cutout-method"><option value="ai" selected>IA locale · haute précision</option><option value="fast">Couleur du fond · rapide</option></select><span class="field-hint">Le modèle IA est téléchargé une fois, puis l’analyse reste locale.</span></label>
+          <label id="tolerance-field" class="field">Précision du détourage <span class="range-row"><input id="background-tolerance" type="range" min="10" max="90" value="55"><output id="cutout-strength">55</output></span><span class="field-hint">Augmentez pour retirer davantage de fond, réduisez si une partie du sujet disparaît. Idéal quand le fond se distingue du sujet.</span></label>
+          <label class="field">Calage vertical au sol <span class="range-row"><input id="import-offset-y" type="range" min="-50" max="50" value="0"><output id="import-offset-value">0 %</output></span><span class="field-hint">Déplacez l’image jusqu’à ce que ses pieds ou sa base touchent la ligne.</span></label>
+          <p id="cutout-status" class="cutout-status" role="status"></p>
+          <label class="field">Nom du sujet<input id="import-name" required maxlength="60" placeholder="Ex. Aline, le dragon, le château…"></label>
+          <label class="field">Nature<select id="import-nature"><option value="human">Humain / personnage</option><option value="animal">Animal</option><option value="creature">Créature</option><option value="vehicle">Véhicule</option><option value="building">Bâtiment / monument</option><option value="object">Autre objet</option></select></label>
+          <label class="field">Dimension mesurée<select id="import-axis"><option value="height">Hauteur</option><option value="width">Longueur / largeur</option></select></label>
+          <div class="dimension-row"><label class="field">Taille<input id="import-size" type="number" min="0.000001" max="1000000" step="any" value="1.75" required></label><label class="field unit-field">Unité<select id="import-unit"><option value="m">m</option><option value="cm">cm</option><option value="mm">mm</option><option value="km">km</option></select></label></div>
+          <label class="check-row"><input id="save-to-library" type="checkbox" checked> Enregistrer dans My subjects</label>
+          <button id="add-import" class="button primary full" type="submit" disabled><span data-icon="plus"></span> Ajouter au tableau</button>
+          <p id="import-error" class="error-text" role="alert"></p>
+          <div class="local-note"><span data-icon="shield"></span><span>Vos images restent sur cet appareil.<br>Aucun compte, aucune API externe.</span></div>
+        </form>
+      </section>
+    </aside>
+    <section class="studio">
+      <div class="studio-heading"><div><div class="project-title-row"><input id="project-title" aria-label="Nom du tableau" value="Étude de proportions" maxlength="80"><span data-icon="edit"></span></div><p>Une même échelle. Toutes les proportions.</p></div><span class="scene-badge"><i></i><span id="subject-count">3 sujets</span></span></div>
+      <div class="canvas-toolbar"><div class="tool-group"><button id="undo-button" class="icon-button" title="Annuler (Ctrl+Z)" aria-label="Annuler"><span data-icon="undo"></span></button><button id="redo-button" class="icon-button" title="Rétablir (Ctrl+Maj+Z)" aria-label="Rétablir"><span data-icon="redo"></span></button><span class="toolbar-divider"></span><button id="arrange-button" class="button small" title="Espacer et aligner les sujets"><span data-icon="align"></span> Aligner</button></div><div class="tool-group"><button id="appearance-toggle" class="icon-button" title="Couleurs du tableau" aria-label="Couleurs du tableau" aria-expanded="false"><span data-icon="palette"></span></button><label class="grid-toggle"><input id="show-grid" type="checkbox" checked> Grille</label><span class="toolbar-divider"></span><button id="zoom-out" class="icon-button" aria-label="Dézoomer"><span data-icon="minus"></span></button><span id="zoom-label">100 %</span><button id="zoom-in" class="icon-button" aria-label="Zoomer"><span data-icon="plus"></span></button><button id="fit-button" class="icon-button" title="Ajuster au tableau" aria-label="Ajuster au tableau"><span data-icon="fit"></span></button></div></div>
+      <div id="appearance-panel" class="appearance-panel" hidden><label>Fond <input id="background-color" type="color" value="#ffffff" aria-label="Couleur du fond"></label><label>Graduations <input id="grid-color" type="color" value="#b9c6d8" aria-label="Couleur des graduations"></label><button id="theme-light" class="text-button">Clair</button><button id="theme-dark" class="text-button">Sombre</button><button id="theme-blueprint" class="text-button">Plan bleu</button></div>
+      <div id="board-wrap" class="board-wrap"><svg id="board" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tableau de comparaison à échelle réelle"></svg><div id="empty-board" class="empty-board" hidden><span data-icon="ruler"></span><h2>Tout commence par un sujet</h2><p>Choisissez une silhouette ou importez une image.<br>Le tableau s’adapte à ses dimensions.</p><button id="empty-add" class="button primary">Choisir un sujet</button></div><div class="board-watermark">échelle<span>.</span></div></div>
+      <div class="canvas-footer"><span><span class="scale-dot"></span> Échelle réelle <span id="scale-caption"></span></span><span id="board-help">Déplacer un sujet · Tirer une poignée pour redimensionner</span></div>
+      <div id="scale-warning" class="scale-warning" hidden></div>
+      <section class="prompt-panel"><div class="prompt-heading"><div class="prompt-title"><span class="prompt-icon" data-icon="spark"></span><div><h2>L’instruction de proportions</h2><p>Calculée à partir de votre tableau, prête à accompagner l’image.</p></div></div><button id="copy-prompt" class="button small"><span data-icon="copy"></span> Copier</button></div>
+        <div class="prompt-options"><label>Générateur<select id="prompt-model"><option>Universel</option><option>Seedance</option><option>MiniMax H3</option><option>Wan 3</option></select></label><label>Langue<select id="prompt-language"><option value="en">English</option><option value="fr">Français</option></select></label><label class="reference-option">Référence<select id="prompt-reference"></select></label><button id="prompt-settings-toggle" class="icon-button" aria-label="Options du prompt" title="Options du prompt" aria-expanded="false"><span data-icon="settings"></span></button></div>
+        <div id="prompt-settings" class="prompt-settings" hidden><label class="field">Action / scène souhaitée<input id="scene-action" maxlength="600" placeholder="Ex. Les personnages marchent à côté du gorille."></label><label class="check-row"><input id="lock-proportions" type="checkbox" checked> Maintenir les proportions pendant toute la vidéo</label><p class="field-hint">Les trois générateurs reçoivent les mêmes contraintes physiques. Joignez le tableau comme référence visuelle dans votre outil vidéo.</p></div>
+        <textarea id="prompt-output" class="prompt-output" aria-label="Prompt de proportions modifiable" spellcheck="false"></textarea><div class="prompt-footer"><span id="prompt-note"><i></i> Mis à jour avec vos sujets</span><button id="regenerate-prompt" class="text-button"><span data-icon="reset"></span> Recalculer</button></div>
+      </section>
+    </section>
+    <aside class="inspector panel"><div class="panel-heading"><h2>Dans le tableau</h2><span id="human-count" class="count-badge">2 / 15 humains</span></div><div id="scene-list" class="scene-list"></div><div class="inspector-divider"></div><div id="selection-empty" class="selection-empty" hidden><span data-icon="pointer"></span><p>Sélectionnez un sujet pour ajuster ses dimensions.</p></div><div id="inspector-content"></div><div class="inspector-tip"><span data-icon="ruler"></span><h3>Une référence cohérente</h3><p>Les silhouettes gardent leurs proportions. Noms et dimensions restent toujours sous les sujets.</p></div></aside>
+  </main>
+  <dialog id="export-dialog"><form method="dialog"><button class="dialog-close icon-button" aria-label="Fermer"><span data-icon="close"></span></button></form><div class="dialog-icon" data-icon="download"></div><h2>Votre scène, à la bonne échelle.</h2><p>Exportez le tableau puis joignez-le à votre prompt dans votre générateur vidéo.</p><label class="field">Résolution du PNG<select id="export-resolution"><option value="1920">1920 px — Standard</option><option value="3840" selected>3840 px — Haute définition</option></select></label><button id="download-png" class="button primary full"><span data-icon="image"></span> Télécharger l’image PNG</button><div class="export-secondary"><button id="download-svg" class="button subtle"><span data-icon="download"></span> SVG vectoriel</button><button id="download-prompt" class="button subtle"><span data-icon="text"></span> Prompt .txt</button></div><p class="field-hint">L’export inclut les graduations, les noms et les dimensions, sans les poignées de sélection.</p><p id="export-status" role="status"></p></dialog>
+  <dialog id="asset-picker-dialog" class="asset-picker-dialog">
+    <button id="asset-picker-close" class="dialog-close icon-button" type="button" aria-label="Fermer"><span data-icon="close"></span></button>
+    <div class="asset-picker-heading"><div><h2>Choisir dans les assets</h2><p>Sélectionnez une image à importer comme sujet.</p></div><button id="asset-picker-refresh" class="button subtle" type="button"><span data-icon="reset"></span> Actualiser</button></div>
+    <div class="asset-picker-tabs" role="tablist"><button type="button" data-asset-source="resources" class="active" role="tab" aria-selected="true">Ressources</button><button type="button" data-asset-source="generated" role="tab" aria-selected="false">Assets générés</button></div>
+    <p id="asset-picker-status" class="field-hint" role="status"></p>
+    <div id="asset-picker-grid" class="asset-picker-grid"></div>
+  </dialog>
+  <dialog id="confirm-dialog"><h2 id="confirm-title"></h2><p>Votre tableau actuel sera remplacé. Vous pourrez revenir en arrière avec Annuler.</p><div class="confirm-actions"><button id="confirm-cancel" class="button subtle">Annuler</button><button id="confirm-ok" class="button primary">Continuer</button></div></dialog>
+  <input id="project-file" type="file" accept=".json,application/json" hidden>
+  <div id="toast" class="toast" role="status" hidden></div>
+</body>
+</html>

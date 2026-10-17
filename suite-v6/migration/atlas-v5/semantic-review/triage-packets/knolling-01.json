@@ -1,0 +1,1056 @@
+{
+  "schemaVersion": "1.0",
+  "id": "triage-knolling-01",
+  "owner": "knolling",
+  "status": "pending-structural-triage",
+  "approximateTokens": 270,
+  "prompts": [
+    {
+      "id": "text-01707af221c1cd51b1e3",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Tattoo Character",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 1906,
+          "column": 48,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-029e74cb92237710b3e9",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "9 Variations — Auteur / State / Narrative",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 1426,
+          "column": 52,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-0426ea0407ce10435813",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Selected order",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2564,
+          "column": 25,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-07fcb750da27f1ddaa27",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "R hand",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2555,
+          "column": 105,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-089ce8bff14a47425212",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "R forearm",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2553,
+          "column": 108,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-0a5363a61323692e82e3",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "R thigh",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2557,
+          "column": 107,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-0cbec0813a6c0e79e2d1",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Photographic negative colors",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 1663,
+          "column": 69,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-130c420e4dafd445b876",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "9 Variations — Color Mutations",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 1563,
+          "column": 52,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-2a4934d817f716963e0b",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Extract Tattoo Board",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 1843,
+          "column": 48,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-3244665a1a5e94610151",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "[TATTOO_PLACE_IT_PLACEHOLDER]",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2915,
+          "column": 41,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-378d83808237a4459f23",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Chest",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2547,
+          "column": 145,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-3ba2375490b6e9b643ad",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Abdomen",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2551,
+          "column": 141,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-3c1eb64c0b577bc339ae",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Knolling Object",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 1289,
+          "column": 48,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-3c6985c6b2c369268198",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Accessory Mode",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 1267,
+          "column": 93,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-3e4fe041e035d659de49",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "L foot",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2560,
+          "column": 104,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-49fa04d909e8cce0a786",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Location Reconstruct",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2118,
+          "column": 48,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-4c3c468428e55eaddfe3",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "var1",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 1427,
+          "column": 50,
+          "kind": "html-attribute:data-prompt",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "runtime-identifier"
+    },
+    {
+      "id": "text-56a69832a13a0b56be58",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "panoCompact",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 1981,
+          "column": 46,
+          "kind": "html-attribute:data-prompt",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2904,
+          "column": 138,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "runtime-identifier"
+    },
+    {
+      "id": "text-5e49a960f1893a4b96f7",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Knolling Board Explorer",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 1404,
+          "column": 48,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-61a77e0eddfb1f9f70cf",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "tattooZoneSummary",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2816,
+          "column": 53,
+          "kind": "string-literal",
+          "functionName": "refreshTattooZoneUI",
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-69f6db09c417b8271e14",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "R calf",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2559,
+          "column": 113,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-6b27a97151bbf20fa8b0",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Neck",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2544,
+          "column": 138,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-75c4566da69fb06c8463",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Applies to both extraction prompts",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2413,
+          "column": 49,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-8419053a4e6a7a9b8a86",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "L forearm",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2552,
+          "column": 106,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-8533dd71d29229b8fa66",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "L hand",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2554,
+          "column": 103,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-85ae184ef5594bbc06db",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "L upper arm",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2549,
+          "column": 108,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-8d67103d96d3e7351ffc",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "R shoulder",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2546,
+          "column": 110,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-8efa24f998af361b8a16",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "tattoocharacter",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 1907,
+          "column": 46,
+          "kind": "html-attribute:data-prompt",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2918,
+          "column": 34,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "runtime-identifier"
+    },
+    {
+      "id": "text-923a1ed9807e75a9246f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "KNOLLING BOARD GENERATOR",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 1136,
+          "column": 17,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-97bd92a7d182c7b84cc6",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Knolling Outfit",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 1153,
+          "column": 48,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-9871b02f574702ce3df1",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Upper back",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2548,
+          "column": 134,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-9bb0aacc6d51f1408ed9",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Head",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2543,
+          "column": 136,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-9d52756a433bf1175711",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "R upper arm",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2550,
+          "column": 110,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-9e42f81901559d62ed63",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Systematic flat lay prompt engineering",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 1137,
+          "column": 33,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-a3c9cfc7be299047ee13",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "360° Panoramic Reconstruction — 3×3 Grid · Compact",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 1980,
+          "column": 48,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-a5f511892b461a550797",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "L calf",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2558,
+          "column": 111,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-abd909d16348f2b282c9",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "var2",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 1564,
+          "column": 50,
+          "kind": "html-attribute:data-prompt",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "runtime-identifier"
+    },
+    {
+      "id": "text-af45f07dcc4109b11496",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "L shoulder",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2545,
+          "column": 108,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-b6f23c0ea46d71ade549",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "explorerSource",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2732,
+          "column": 52,
+          "kind": "string-literal",
+          "functionName": "moveExplorerIntoGenerate",
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-b83f271f190f52135759",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Include non-wearable items from knolling board?",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 1268,
+          "column": 57,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-c0bfa0d8566229f146d7",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "L thigh",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2556,
+          "column": 105,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-caefabfcb402b3b6c311",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "panoFreePov",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2050,
+          "column": 46,
+          "kind": "html-attribute:data-prompt",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2904,
+          "column": 168,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "runtime-identifier"
+    },
+    {
+      "id": "text-cbc598900d2896a6f794",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "tattooextract",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 1844,
+          "column": 46,
+          "kind": "html-attribute:data-prompt",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2914,
+          "column": 34,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "runtime-identifier"
+    },
+    {
+      "id": "text-cef9515bb462e3b518b9",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Knolling Board Generator - systematic flat lay prompt engineering",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2531,
+          "column": 36,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-d795c4ac09a33b7668d2",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "var3",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 1702,
+          "column": 50,
+          "kind": "html-attribute:data-prompt",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "runtime-identifier"
+    },
+    {
+      "id": "text-db45d8bd017ba431eebd",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "9 Variations — Seasonal Shifts",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 1701,
+          "column": 52,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-e381109df2972212f391",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "R foot",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2561,
+          "column": 106,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-e4adf9aae6c76464e83f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Row 3 — Material Transformations",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 1676,
+          "column": 56,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-e78a4451a0981e6e784e",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "**Placement map:** Disabled. Do not include a body placement schema; output only the unfolded tattoo design board.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2645,
+          "column": 18,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "prose-candidate"
+    },
+    {
+      "id": "text-e810b7fdc251975a650f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "[TATTOO_ZONE_PLACEHOLDER]",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2919,
+          "column": 41,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-edfcf0a97ab47bb88fb1",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Extract A-Pose",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2432,
+          "column": 48,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-fa90530250da39262898",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Extract Acting",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 2479,
+          "column": 48,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-fb3a2d997ce950a44a7f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Dress Character",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/knolling-board-generator.html",
+          "line": 1200,
+          "column": 48,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "knolling"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    }
+  ]
+}

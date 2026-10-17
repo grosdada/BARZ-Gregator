@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ragdoll Studio</title>
+<style>
+  :root { color-scheme: dark; --bg:#080a0a; --panel:#101313; --line:#303636; --text:#f2eee7; --dim:#969d9a; --accent:#f06749; }
+  * { box-sizing: border-box; }
+  [hidden] { display:none !important; }
+  html, body { width:100%; height:100%; margin:0; overflow:hidden; }
+  body { background:var(--bg); color:var(--text); font:13px "Segoe UI",system-ui,sans-serif; }
+  button, input, select { font:inherit; color:inherit; }
+  button { border:1px solid var(--line); background:#171b1b; padding:8px 11px; cursor:pointer; }
+  button:hover, button.active { border-color:var(--accent); color:#fff; }
+  button.primary { background:var(--accent); color:#120807; border-color:var(--accent); font-weight:700; }
+  .app { display:grid; grid-template-columns:230px minmax(0,1fr) 270px; grid-template-rows:minmax(0,1fr); height:100%; }
+  aside { min-width:0; padding:16px; background:var(--panel); overflow:auto; }
+  aside:first-child { border-right:1px solid var(--line); }
+  aside:last-child { border-left:1px solid var(--line); }
+  h1 { margin:0; font-size:22px; }
+  h2 { margin:22px 0 8px; color:var(--dim); font-size:10px; letter-spacing:.16em; text-transform:uppercase; }
+  .eyebrow { color:var(--accent); font-weight:700; letter-spacing:.18em; font-size:10px; text-transform:uppercase; }
+  .hint { color:var(--dim); line-height:1.45; font-size:11px; }
+  .stack, .pose-grid { display:grid; gap:7px; }
+  .pose-grid { grid-template-columns:1fr 1fr; }
+  .mode-grid { display:grid; grid-template-columns:1fr 1fr; gap:7px; }
+  .mode-grid button { position:relative; }
+  .mode-grid button kbd { position:absolute; right:7px; top:6px; border:1px solid #46504f; border-radius:3px; padding:1px 4px; color:var(--dim); font-size:9px; }
+  .field { display:grid; gap:5px; }
+  .field input[type="text"] { width:100%; background:#090b0b; border:1px solid var(--line); padding:8px; }
+  .field select { width:100%; background:#090b0b; border:1px solid var(--line); padding:8px; }
+  .file-button { display:block; border:1px solid var(--line); background:#171b1b; padding:8px 11px; cursor:pointer; text-align:center; }
+  .file-button:hover { border-color:var(--accent); }
+  .file-button input { display:none; }
+  .drop-zone { border:1px dashed #596161; padding:12px; text-align:center; color:var(--dim); line-height:1.4; }
+  .drop-zone.over { border-color:var(--accent); background:rgba(240,103,73,.08); color:var(--text); }
+  .clip-row { display:grid; grid-template-columns:1fr auto; gap:6px; }
+  .clip-row select { min-width:0; }
+  .clip-scrub { width:100%; accent-color:var(--accent); }
+  .color-row { display:flex; gap:8px; align-items:center; }
+  .color-row input { width:58px; height:34px; padding:2px; background:#090b0b; border:1px solid var(--line); }
+  .stage { position:relative; min-width:0; min-height:0; overflow:hidden; }
+  .stage canvas { position:absolute; inset:0; display:block; width:100%; height:100%; }
+  .stage-head { position:absolute; z-index:1; inset:14px 14px auto 14px; display:flex; justify-content:space-between; pointer-events:none; }
+  .badge { padding:7px 9px; background:rgba(5,7,7,.82); border:1px solid var(--line); color:var(--dim); }
+  .pose-bank-item { display:grid; grid-template-columns:1fr auto; gap:6px; }
+  .pose-bank-item button:first-child { text-align:left; overflow:hidden; text-overflow:ellipsis; }
+  .toast { position:fixed; left:50%; bottom:20px; transform:translateX(-50%); background:#151919; border:1px solid var(--accent); padding:9px 14px; opacity:0; pointer-events:none; transition:.18s; }
+  .toast.show { opacity:1; }
+</style>
+</head>
+<body>
+<main class="app">
+  <aside>
+    <div class="eyebrow">BARZ · Pose tool</div>
+    <h1>Ragdoll Studio</h1>
+    <p class="hint">Click a joint, then pose it with the gizmo. Drag the background to orbit the camera.</p>
+    <h2>Rig mode</h2>
+    <div class="mode-grid"><button type="button" id="fkMode" class="active">FK</button><button type="button" id="ikMode">IK</button></div>
+    <h2>Transform</h2>
+    <div class="mode-grid"><button type="button" id="moveMode">Position <kbd>G</kbd></button><button type="button" id="rotateMode" class="active">Rotation <kbd>R</kbd></button></div>
+    <p class="hint" id="modeHint">FK rotates or moves the selected joint. IK position solves arms and legs from their end controls; pelvis and hips move directly.</p>
+    <h2>Pose presets</h2>
+    <div class="pose-grid" id="presetList"></div>
+    <h2>Joint</h2>
+    <div class="stack">
+      <div class="badge" id="jointLabel">No joint selected</div>
+      <button type="button" id="resetJoint">Reset selected joint</button>
+      <button type="button" id="resetPose">Reset complete pose</button>
+      <button type="button" id="clearScene">Clear Scene</button>
+    </div>
+  </aside>
+  <section class="stage" id="stage">
+    <div class="stage-head"><span class="badge">POSE CAMERA</span><span class="badge" id="transformStatus">Local rotation · FK mannequin</span></div>
+  </section>
+  <aside>
+    <h2 style="margin-top:0">Mannequin</h2>
+    <label class="field">Mode<select id="modelMode"><option value="schematic">Minimal · BARZ schematic</option><option value="studio">Studio · Quaternius CC0</option><option value="local">Studio · local GLB / FBX</option></select></label>
+    <label class="field" style="margin-top:9px">Display<select id="renderStyle"><option value="solid">Solid</option><option value="sketch">Sketch</option></select></label>
+    <div class="stack" id="advancedControls" hidden style="margin-top:9px">
+      <div class="drop-zone" id="modelDrop">Drop a rigged GLB, glTF or FBX here<br>ActionForge-compatible model or animation</div>
+      <label class="file-button">Load local mannequin<input id="modelFile" type="file" accept=".fbx,.glb,.gltf,model/gltf-binary"></label>
+      <label class="file-button">Load animation / pose<input id="poseFile" type="file" accept=".fbx,.glb,.gltf,model/gltf-binary"></label>
+      <div class="clip-row"><select id="clipSelect" aria-label="Animation clip"><option value="">No animation</option></select><button type="button" id="clipPlay" disabled>Play</button></div>
+      <input class="clip-scrub" id="clipScrub" type="range" min="0" max="1000" value="0" disabled aria-label="Animation time">
+      <a href="https://quaternius.itch.io/universal-animation-library" target="_blank" rel="noreferrer" class="file-button">Download the complete animation library</a>
+      <a href="https://quaternius.itch.io/universal-base-characters" target="_blank" rel="noreferrer" class="file-button">Download the character pack</a>
+      <p class="hint" id="modelStatus">Studio loads the embedded Quaternius mannequin and 45 CC0 animation clips. Imported textures are replaced with the selected flat color.</p>
+    </div>
+    <label class="field">Color<div class="color-row"><input type="color" id="color" value="#c8a870"><span id="colorValue">#c8a870</span></div></label>
+    <h2>Pose bank</h2>
+    <div class="field"><input type="text" id="poseName" placeholder="Pose name"><button type="button" id="savePose">Save current pose</button></div>
+    <div class="stack" id="poseBank"></div>
+    <h2>Outputs</h2>
+    <div class="stack">
+      <button type="button" class="primary" id="exportPng">Export image</button>
+      <button type="button" id="addReference">Add image to References</button>
+      <button type="button" id="sendBlocking">Send editable actor to Blocking</button>
+    </div>
+    <p class="hint">The embedded Studio mannequin and animations are CC0. “Send editable actor” transfers the active rigged model, current pose and selected animation to Blocking Studio.</p>
+  </aside>
+</main>
+<div class="toast" id="toast"></div>
+<script type="importmap">{"imports":{"three":"../vendor/three/three.module.min.js","three/addons/":"../vendor/three/addons/"}}</script>
+<script type="module">
+import * as THREE from "three";
+import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+import { TransformControls } from "three/addons/controls/TransformControls.js";
+import { FBXLoader } from "three/addons/loaders/FBXLoader.js";
+import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
+
+const stage = document.getElementById("stage");
+const renderer = new THREE.WebGLRenderer({ antialias:true, preserveDrawingBuffer:true, alpha:false });
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2)); renderer.shadowMap.enabled = true;
+renderer.outputColorSpace = THREE.SRGBColorSpace; stage.append(renderer.domElement);
+const scene = new THREE.Scene(); scene.background = new THREE.Color(0xb9b7b8);
+const camera = new THREE.PerspectiveCamera(40, 1, .01, 100); camera.position.set(3.2, 2.1, 4.6);
+const orbit = new OrbitControls(camera, renderer.domElement); orbit.target.set(0, .95, 0); orbit.enableDamping = true; orbit.minDistance = .55; orbit.maxDistance = 12;
+scene.add(new THREE.HemisphereLight(0xffffff, 0x55535a, 2.1));
+const key = new THREE.DirectionalLight(0xffffff, 3); key.position.set(3, 5, 4); key.castShadow = true; scene.add(key);
+const ground = new THREE.Mesh(new THREE.PlaneGeometry(18,18), new THREE.MeshStandardMaterial({ color:0x898789, roughness:1 }));
+ground.rotation.x = -Math.PI/2; ground.receiveShadow = true; scene.add(ground);
+const grid = new THREE.GridHelper(18,36,0x505050,0x737173); scene.add(grid);
+
+const material = new THREE.MeshStandardMaterial({ color:0xc8a870, roughness:.76, metalness:.02 });
+const outlineMaterial = new THREE.MeshBasicMaterial({ color:0x202a35, side:THREE.BackSide });
+const outlines = [];
+let renderStyle = "solid";
+let solidColor = "#c8a870";
+const jointColor = new THREE.Color(0xf06749);
+const selectedJointColor = new THREE.Color(0x59e391);
+const root = new THREE.Group(); scene.add(root); root.position.y = .02;
+const joints = {}; const pickers = [];
+function addMesh(parent, geometry, position) {
+  const mesh = new THREE.Mesh(geometry, material); mesh.position.fromArray(position); mesh.castShadow = true; parent.add(mesh);
+  const outline = new THREE.Mesh(geometry, outlineMaterial); outline.scale.setScalar(1.035); outline.visible = false; outline.renderOrder = -1; mesh.add(outline); outlines.push(outline);
+  return mesh;
+}
+function joint(name, parent, position) {
+  const node = new THREE.Group(); node.name = name; node.position.fromArray(position); node.rotation.order = "YXZ"; parent.add(node); joints[name] = node;
+  const picker = new THREE.Mesh(new THREE.SphereGeometry(.075,12,9), new THREE.MeshBasicMaterial({ color:jointColor, transparent:true, opacity:.34, depthTest:false }));
+  picker.userData.joint = name; picker.userData.target = node; picker.userData.model = "schematic"; picker.renderOrder = 9; node.add(picker); pickers.push(picker); return node;
+}
+function limb(parent, radius, length) { return addMesh(parent, new THREE.CapsuleGeometry(radius, Math.max(.02,length-radius*2),5,12), [0,-length/2,0]); }
+const hips = joint("hips", root, [0,1.05,0]); addMesh(hips,new THREE.BoxGeometry(.34,.22,.22),[0,-.02,0]);
+const spine = joint("spine", hips, [0,.1,0]); addMesh(spine,new THREE.CapsuleGeometry(.15,.38,5,12),[0,.26,0]);
+const neck = joint("neck", spine, [0,.52,0]); addMesh(neck,new THREE.CapsuleGeometry(.11,.13,5,12),[0,.15,0]);
+for (const side of ["L","R"]) {
+  const sign = side === "L" ? 1 : -1;
+  const shoulder = joint(`shoulder${side}`, spine, [sign*.23,.43,0]); limb(shoulder,.055,.31);
+  const elbow = joint(`elbow${side}`, shoulder, [0,-.31,0]); limb(elbow,.048,.28);
+  const wrist = joint(`wrist${side}`, elbow, [0,-.28,0]); addMesh(wrist,new THREE.SphereGeometry(.065,12,9),[0,-.04,0]);
+  const hip = joint(`hip${side}`, hips, [sign*.11,-.12,0]); limb(hip,.075,.43);
+  const knee = joint(`knee${side}`, hip, [0,-.43,0]); limb(knee,.06,.41);
+  const ankle = joint(`ankle${side}`, knee, [0,-.41,0]); addMesh(ankle,new THREE.BoxGeometry(.11,.08,.27),[0,-.035,.08]);
+}
+const schematicBaseTransforms = Object.fromEntries(Object.entries(joints).map(([name,node])=>[name,{rotation:node.rotation.toArray().slice(0,3),position:node.position.toArray()}]));
+const gizmo = new TransformControls(camera, renderer.domElement); gizmo.setMode("rotate"); gizmo.setSpace("local"); gizmo.setSize(.62); scene.add(gizmo.getHelper());
+gizmo.addEventListener("dragging-changed", (event) => { orbit.enabled = !event.value; });
+let manipulatingGizmo = false;
+gizmo.addEventListener("mouseDown",()=>{manipulatingGizmo=true;});
+gizmo.addEventListener("mouseUp",()=>{queueMicrotask(()=>{manipulatingGizmo=false;});});
+const ikTarget = new THREE.Object3D(); scene.add(ikTarget);
+const controlProxy = new THREE.Object3D(); scene.add(controlProxy);
+let selectedJoint = null;
+let selectedJointNode = null;
+let activeModel = "schematic";
+let advancedRoot = null;
+let advancedJoints = {};
+let advancedBaseTransforms = {};
+let advancedMixer = null;
+let advancedClips = [];
+let advancedAction = null;
+let clipPlaying = false;
+let advancedModelSource = null;
+const animationClock = new THREE.Clock();
+let rigMode = "fk";
+let transformMode = "rotate";
+const ikChains = {
+  wristL:["elbowL","shoulderL"], wristR:["elbowR","shoulderR"],
+  ankleL:["kneeL","hipL"], ankleR:["kneeR","hipR"]
+};
+const directIkControls = new Set(["hips","hipL","hipR"]);
+const ikPositionControls = new Set([...Object.keys(ikChains),...directIkControls]);
+function updateModeUi() {
+  document.getElementById("fkMode").classList.toggle("active",rigMode==="fk");
+  document.getElementById("ikMode").classList.toggle("active",rigMode==="ik");
+  document.getElementById("moveMode").classList.toggle("active",transformMode==="translate");
+  document.getElementById("rotateMode").classList.toggle("active",transformMode==="rotate");
+  const action=transformMode==="translate"?"position":"rotation";
+  document.getElementById("transformStatus").textContent=`Local ${action} · ${rigMode.toUpperCase()} mannequin`;
+}
+function worldToLocalPosition(node, worldPosition) {
+  return node.parent ? node.parent.worldToLocal(worldPosition.clone()) : worldPosition.clone();
+}
+function solveCcd(endNode, chainNames, targetPosition) {
+  const map=activeJointMap();
+  const end=new THREE.Vector3(), jointPosition=new THREE.Vector3(), towardEnd=new THREE.Vector3(), towardTarget=new THREE.Vector3();
+  const jointWorld=new THREE.Quaternion(), parentWorld=new THREE.Quaternion(), deltaWorld=new THREE.Quaternion();
+  for(let iteration=0;iteration<14;iteration+=1){
+    for(const name of chainNames){
+      const jointNode=map[name]; if(!jointNode)continue;
+      endNode.getWorldPosition(end); jointNode.getWorldPosition(jointPosition);
+      towardEnd.subVectors(end,jointPosition); towardTarget.subVectors(targetPosition,jointPosition);
+      if(towardEnd.lengthSq()<1e-10||towardTarget.lengthSq()<1e-10)continue;
+      towardEnd.normalize(); towardTarget.normalize(); deltaWorld.setFromUnitVectors(towardEnd,towardTarget);
+      jointNode.getWorldQuaternion(jointWorld); jointNode.parent?.getWorldQuaternion(parentWorld); parentWorld.invert();
+      jointNode.quaternion.copy(parentWorld.multiply(deltaWorld).multiply(jointWorld)).normalize();
+      jointNode.updateMatrixWorld(true);
+    }
+    endNode.getWorldPosition(end); if(end.distanceToSquared(targetPosition)<1e-7)break;
+  }
+}
+function applyIkTarget() {
+  if(rigMode!=="ik"||transformMode!=="translate"||!selectedJointNode)return;
+  if(ikChains[selectedJoint])solveCcd(selectedJointNode,ikChains[selectedJoint],ikTarget.position);
+  else if(directIkControls.has(selectedJoint)){selectedJointNode.position.copy(worldToLocalPosition(selectedJointNode,ikTarget.position));selectedJointNode.updateMatrixWorld(true);}
+}
+function applyControlProxy() {
+  if(gizmo.object!==controlProxy||!selectedJointNode)return;
+  if(transformMode==="translate")selectedJointNode.position.copy(worldToLocalPosition(selectedJointNode,controlProxy.position));
+  else{
+    const parentWorld=new THREE.Quaternion(); selectedJointNode.parent?.getWorldQuaternion(parentWorld);
+    selectedJointNode.quaternion.copy(parentWorld.invert().multiply(controlProxy.quaternion)).normalize();
+  }
+  selectedJointNode.updateMatrixWorld(true);
+}
+function refreshGizmoAttachment() {
+  gizmo.detach(); if(!selectedJointNode)return;
+  gizmo.setMode(transformMode); gizmo.setSpace(transformMode==="rotate"?"local":"world");
+  if(rigMode==="ik"&&transformMode==="translate"&&ikPositionControls.has(selectedJoint)){
+    selectedJointNode.getWorldPosition(ikTarget.position); ikTarget.quaternion.identity(); ikTarget.scale.set(1,1,1); ikTarget.updateMatrixWorld(true); gizmo.attach(ikTarget);
+  } else if(activeModel==="advanced"){
+    selectedJointNode.getWorldPosition(controlProxy.position); selectedJointNode.getWorldQuaternion(controlProxy.quaternion); controlProxy.scale.set(1,1,1); controlProxy.updateMatrixWorld(true); gizmo.attach(controlProxy);
+  } else gizmo.attach(selectedJointNode);
+}
+gizmo.addEventListener("objectChange",()=>{applyIkTarget();applyControlProxy();});
+function clearJointSelection() {
+  selectedJoint = null;
+  selectedJointNode = null;
+  gizmo.detach();
+  pickers.forEach((picker) => {
+    picker.material.color.copy(jointColor);
+    picker.material.opacity = .34;
+  });
+  document.getElementById("jointLabel").textContent = "No joint selected";
+}
+function selectJoint(name, node = null) {
+  selectedJoint = name;
+  selectedJointNode = node || activeJointMap()[name];
+  if (!selectedJointNode) return clearJointSelection();
+  refreshGizmoAttachment();
+  pickers.forEach((picker) => {
+    const active = picker.userData.joint === name;
+    picker.material.color.copy(active ? selectedJointColor : jointColor);
+    picker.material.opacity = active ? .95 : .34;
+  });
+  document.getElementById("jointLabel").textContent = name;
+}
+renderer.domElement.addEventListener("pointerdown", (event) => {
+  if (manipulatingGizmo || gizmo.dragging || gizmo.axis) return;
+  const rect = renderer.domElement.getBoundingClientRect(); const pointer = new THREE.Vector2((event.clientX-rect.left)/rect.width*2-1,-(event.clientY-rect.top)/rect.height*2+1);
+  const ray = new THREE.Raycaster(); ray.setFromCamera(pointer,camera); const hit = ray.intersectObjects(pickers,false)[0];
+  if (hit) selectJoint(hit.object.userData.joint, hit.object.userData.target); else clearJointSelection();
+});
+
+const humanoidBones = {
+  hips:/(hips|pelvis)$/i, spine:/(spine|spine_02|chest)$/i, neck:/(neck|neck_01)$/i,
+  shoulderL:/(leftarm|upperarm_l)$/i, elbowL:/(leftforearm|lowerarm_l)$/i, wristL:/(lefthand|hand_l)$/i,
+  shoulderR:/(rightarm|upperarm_r)$/i, elbowR:/(rightforearm|lowerarm_r)$/i, wristR:/(righthand|hand_r)$/i,
+  hipL:/(leftupleg|thigh_l)$/i, kneeL:/(leftleg|calf_l)$/i, ankleL:/(leftfoot|foot_l)$/i,
+  hipR:/(rightupleg|thigh_r)$/i, kneeR:/(rightleg|calf_r)$/i, ankleR:/(rightfoot|foot_r)$/i
+};
+function activeJointMap(){ return activeModel === "advanced" && advancedRoot ? advancedJoints : joints; }
+function activeBaseTransforms(){ return activeModel === "advanced" && advancedRoot ? advancedBaseTransforms : schematicBaseTransforms; }
+function flatShadeModel(model) {
+  model.traverse((node) => {
+    if (node.isMesh || node.isSkinnedMesh) {
+      node.material = material;
+      node.castShadow = true;
+      node.receiveShadow = true;
+    }
+  });
+}
+function setRenderStyle(style){
+  renderStyle=style==="sketch"?"sketch":"solid";
+  const sketch=renderStyle==="sketch";
+  material.color.set(sketch?0x93a3ba:solidColor); material.roughness=sketch?1:.76; material.metalness=0; material.flatShading=sketch; material.needsUpdate=true;
+  scene.background.set(sketch?0x19212b:0xb9b7b8); ground.material.color.set(sketch?0x19212b:0x898789);
+  const gridMaterials=Array.isArray(grid.material)?grid.material:[grid.material]; gridMaterials.forEach((entry,index)=>entry.color.set(sketch?(index?0x2b3948:0x42556a):(index?0x737173:0x505050)));
+  outlines.forEach((outline)=>outline.visible=sketch);
+  document.getElementById("renderStyle").value=renderStyle;
+}
+function clearAdvancedModel() {
+  if (!advancedRoot) return;
+  clearJointSelection();
+  advancedRoot.traverse((node) => {
+    if (node.userData?.ragdollPicker) {
+      const index = pickers.indexOf(node);
+      if (index >= 0) pickers.splice(index, 1);
+      node.geometry?.dispose?.(); node.material?.dispose?.();
+    }
+  });
+  scene.remove(advancedRoot);
+  advancedMixer?.stopAllAction();
+  advancedRoot = null; advancedJoints = {}; advancedBaseTransforms = {};
+  advancedMixer = null; advancedClips = []; advancedAction = null; clipPlaying = false;
+  advancedModelSource = null;
+  refreshClipUi();
+}
+function setupAdvancedModel(model, label, clips = [], source = null) {
+  clearAdvancedModel();
+  flatShadeModel(model);
+  model.updateMatrixWorld(true);
+  const sourceBox = new THREE.Box3().setFromObject(model);
+  const sourceHeight = Math.max(.001, sourceBox.max.y - sourceBox.min.y);
+  const scale = 1.78 / sourceHeight;
+  model.scale.multiplyScalar(scale);
+  model.updateMatrixWorld(true);
+  const box = new THREE.Box3().setFromObject(model);
+  const center = box.getCenter(new THREE.Vector3());
+  model.position.x -= center.x; model.position.z -= center.z; model.position.y -= box.min.y;
+  model.updateMatrixWorld(true);
+  const bones = []; model.traverse((node) => { if (node.isBone) bones.push(node); });
+  const markerRadius = sourceHeight * .023;
+  for (const [canonical, pattern] of Object.entries(humanoidBones)) {
+    const bone = bones.find((entry) => pattern.test(entry.name.replace(/^mixamorig[:_]?/i,"")));
+    if (!bone) continue;
+    advancedJoints[canonical] = bone;
+    advancedBaseTransforms[canonical] = {rotation:bone.rotation.toArray().slice(0,3),position:bone.position.toArray()};
+    const picker = new THREE.Mesh(new THREE.SphereGeometry(markerRadius,12,9), new THREE.MeshBasicMaterial({color:jointColor,transparent:true,opacity:.34,depthTest:false}));
+    picker.userData = { joint:canonical, target:bone, model:"advanced", ragdollPicker:true };
+    picker.renderOrder = 9; bone.add(picker); pickers.push(picker);
+  }
+  advancedRoot = model; advancedRoot.name = "Studio mannequin"; scene.add(advancedRoot);
+  advancedMixer = new THREE.AnimationMixer(advancedRoot);
+  advancedClips = clips;
+  advancedModelSource = source;
+  root.visible = false; activeModel = "advanced";
+  if (document.getElementById("modelMode").value === "schematic") document.getElementById("modelMode").value = "local";
+  document.getElementById("modelStatus").textContent = `${label} · ${bones.length} bones · flat color · ${Object.keys(advancedJoints).length} pose joints`;
+  refreshClipUi();
+  notify("Studio mannequin loaded");
+}
+async function parseModelFile(file) {
+  const buffer = await file.arrayBuffer();
+  if (/\.fbx$/i.test(file.name)) { const scene = new FBXLoader().parse(buffer, ""); return {scene, clips:scene.animations || [], buffer, fileName:file.name}; }
+  return await new Promise((resolve,reject)=>new GLTFLoader().parse(buffer,"",(gltf)=>resolve({scene:gltf.scene,clips:gltf.animations||[],buffer,fileName:file.name}),reject));
+}
+async function loadAdvancedModel(file) {
+  try { const parsed = await parseModelFile(file); setupAdvancedModel(parsed.scene, file.name, parsed.clips, {buffer:parsed.buffer,fileName:file.name}); }
+  catch (error) { console.error(error); notify("Could not load this mannequin"); }
+}
+function installAdvancedClips(source) {
+  const clips = source.clips || [];
+  if (!clips.length) throw new Error("No animation or pose clip found");
+  advancedClips = clips;
+  refreshClipUi();
+  selectClip(0, false);
+  notify(`${clips.length} animation clip${clips.length > 1 ? "s" : ""} imported`);
+}
+async function importAdvancedPose(file) {
+  if (!advancedRoot) { notify("Load a Studio mannequin first"); return; }
+  try {
+    const source = await parseModelFile(file);
+    installAdvancedClips(source);
+  } catch (error) { console.error(error); notify(error.message || "Could not import this pose"); }
+}
+async function loadGltfUrl(url) {
+  const response = await fetch(url);
+  if (!response.ok) throw new Error(`HTTP ${response.status}`);
+  const buffer = await response.arrayBuffer();
+  return await new Promise((resolve,reject)=>new GLTFLoader().parse(buffer,"",(gltf)=>resolve({scene:gltf.scene,clips:gltf.animations||[],buffer,fileName:url.split("/").pop()}),reject));
+}
+async function loadStudioMode() {
+  try {
+    document.getElementById("modelStatus").textContent = "Loading the embedded Quaternius mannequin…";
+    const model = await loadGltfUrl("../models/quaternius/superhero-male-flat.glb");
+    setupAdvancedModel(model.scene, "Quaternius Superhero Male · CC0", [], {buffer:model.buffer,fileName:model.fileName});
+    const library = await loadGltfUrl("../models/quaternius/UAL1_Standard.glb");
+    advancedClips = library.clips;
+    refreshClipUi();
+    document.getElementById("modelStatus").textContent = `Quaternius CC0 · ${advancedClips.length} animation clips · flat color`;
+  } catch (error) {
+    console.error(error);
+    document.getElementById("modelStatus").textContent = "The embedded Studio mannequin could not be loaded.";
+    notify("Studio assets could not be loaded");
+  }
+}
+function setModelMode(mode) {
+  activeModel = mode === "schematic" ? "schematic" : "advanced";
+  root.visible = activeModel === "schematic";
+  if (advancedRoot) advancedRoot.visible = activeModel === "advanced";
+  document.getElementById("advancedControls").hidden = activeModel !== "advanced";
+  clearJointSelection();
+  if (mode === "studio") loadStudioMode();
+  else if (mode === "local" && !advancedRoot) document.getElementById("modelFile").click();
+}
+function refreshClipUi() {
+  const select = document.getElementById("clipSelect");
+  select.innerHTML = '<option value="">No animation</option>';
+  advancedClips.forEach((clip,index)=>select.add(new Option(`${clip.name || `Clip ${index + 1}`} · ${clip.duration.toFixed(1)} s`,String(index))));
+  document.getElementById("clipPlay").disabled = !advancedClips.length;
+  document.getElementById("clipScrub").disabled = !advancedClips.length;
+}
+function selectClip(index, autoplay = clipPlaying) {
+  const clip = advancedClips[index];
+  if (!clip || !advancedMixer) return;
+  advancedMixer.stopAllAction();
+  advancedAction = advancedMixer.clipAction(clip);
+  advancedAction.reset().setLoop(THREE.LoopRepeat,Infinity).play();
+  advancedMixer.setTime(0);
+  clipPlaying = autoplay;
+  advancedAction.paused = !clipPlaying;
+  document.getElementById("clipSelect").value = String(index);
+  document.getElementById("clipScrub").value = "0";
+  document.getElementById("clipPlay").textContent = clipPlaying ? "Pause" : "Play";
+}
+function toggleClipPlayback() {
+  if (!advancedClips.length) return;
+  if (!advancedAction) selectClip(Number(document.getElementById("clipSelect").value || 0), true);
+  else { clipPlaying = !clipPlaying; advancedAction.paused = !clipPlaying; }
+  document.getElementById("clipPlay").textContent = clipPlaying ? "Pause" : "Play";
+}
+async function handleDroppedFile(file) {
+  if (!file || !/\.(fbx|glb|gltf)$/i.test(file.name)) { notify("Drop a GLB, glTF or FBX file"); return; }
+  try {
+    const parsed = await parseModelFile(file);
+    let hasRenderableModel = false;
+    parsed.scene.traverse((node)=>{if(node.isMesh||node.isSkinnedMesh)hasRenderableModel=true;});
+    if (hasRenderableModel) {
+      document.getElementById("modelMode").value = "local";
+      setupAdvancedModel(parsed.scene,file.name,parsed.clips,{buffer:parsed.buffer,fileName:file.name});
+    } else if (advancedRoot) installAdvancedClips(parsed);
+    else notify("This file contains animation only. Load a Studio mannequin first.");
+  } catch (error) { console.error(error); notify(error.message || "Could not load this file"); }
+}
+function setRigMode(mode){rigMode=mode==="ik"?"ik":"fk";refreshGizmoAttachment();updateModeUi();}
+function setTransformMode(mode){transformMode=mode==="translate"?"translate":"rotate";refreshGizmoAttachment();updateModeUi();}
+const presets = {
+  Neutral:{},
+  "A-pose":{shoulderL:[0,0,.48],shoulderR:[0,0,-.48]},
+  Walk:{shoulderL:[-.55,0,.08],shoulderR:[.38,0,-.08],elbowL:[-.42,0,0],elbowR:[-.56,0,0],hipL:[.42,0,0],hipR:[-.48,0,0],kneeL:[.28,0,0],kneeR:[.62,0,0]},
+  Run:{spine:[.2,0,0],shoulderL:[-.9,0,.12],shoulderR:[.72,0,-.12],elbowL:[-1.4,0,0],elbowR:[-1.4,0,0],hipL:[.75,0,0],hipR:[-.9,0,0],kneeL:[1.05,0,0],kneeR:[.45,0,0]},
+  Sit:{hipL:[-1.55,0,0],hipR:[-1.55,0,0],kneeL:[1.55,0,0],kneeR:[1.55,0,0],spine:[.12,0,0]},
+  Reach:{shoulderL:[-1.35,0,.12],elbowL:[-.12,0,0],shoulderR:[0,0,-.15]},
+  Hero:{spine:[-.12,0,0],shoulderL:[.12,0,.45],shoulderR:[.12,0,-.45],elbowL:[-.52,0,0],elbowR:[-.52,0,0],hipL:[.12,0,.12],hipR:[-.12,0,-.12]},
+  Crouch:{spine:[.45,0,0],hipL:[-1.35,.15,0],hipR:[-1.35,-.15,0],kneeL:[1.85,0,0],kneeR:[1.85,0,0],ankleL:[-.38,0,0],ankleR:[-.38,0,0]}
+};
+function poseData(relativeToBase=false) {
+  const base = activeBaseTransforms();
+  return Object.fromEntries(Object.entries(activeJointMap()).map(([name,node])=>{
+    const rotation=node.rotation.toArray().slice(0,3), position=node.position.toArray();
+    return [name,{rotation:relativeToBase?rotation.map((entry,index)=>entry-(base[name]?.rotation?.[index]||0)):rotation,position:relativeToBase?position.map((entry,index)=>entry-(base[name]?.position?.[index]||0)):position}];
+  }));
+}
+function rotationData(relativeToBase=false){return Object.fromEntries(Object.entries(poseData(relativeToBase)).map(([name,value])=>[name,value.rotation]));}
+function applyPose(data={}) {
+  const base=activeBaseTransforms();
+  Object.entries(activeJointMap()).forEach(([name,node])=>{const saved=data[name],rotation=Array.isArray(saved)?saved:saved?.rotation,position=Array.isArray(saved)?null:saved?.position;node.rotation.set(...(rotation||base[name]?.rotation||[0,0,0]));node.position.fromArray(position||base[name]?.position||[0,0,0]);});
+}
+function applyPreset(data={}) {
+  applyPose({}); const base=activeBaseTransforms();
+  Object.entries(data).forEach(([name,value])=>{const node=activeJointMap()[name];if(node)node.rotation.set(...value.map((entry,index)=>entry+(base[name]?.rotation?.[index]||0)));});
+}
+const presetList = document.getElementById("presetList");
+Object.entries(presets).forEach(([name,data])=>{ const button=document.createElement("button"); button.textContent=name; button.onclick=()=>applyPreset(data); presetList.append(button); });
+const storageKey="barz-ragdoll-poses-v1";
+function savedPoses(){ try{return JSON.parse(localStorage.getItem(storageKey)||"[]");}catch{return [];} }
+function renderPoseBank(){ const bank=document.getElementById("poseBank"); const poses=savedPoses(); bank.innerHTML=""; poses.forEach((pose,index)=>{ const row=document.createElement("div"); row.className="pose-bank-item"; const load=document.createElement("button"); load.textContent=pose.name; load.onclick=()=>applyPose(pose.joints); const del=document.createElement("button"); del.textContent="×"; del.onclick=()=>{poses.splice(index,1);localStorage.setItem(storageKey,JSON.stringify(poses));renderPoseBank();}; row.append(load,del); bank.append(row); }); }
+function notify(message){const el=document.getElementById("toast");el.textContent=message;el.classList.add("show");setTimeout(()=>el.classList.remove("show"),1800);}
+document.getElementById("savePose").onclick=()=>{const name=document.getElementById("poseName").value.trim()||`Pose ${savedPoses().length+1}`;const poses=savedPoses();poses.push({name,joints:poseData()});localStorage.setItem(storageKey,JSON.stringify(poses));renderPoseBank();notify("Pose saved");};
+document.getElementById("resetPose").onclick=()=>applyPose({}); document.getElementById("resetJoint").onclick=()=>{if(selectedJointNode){const base=activeBaseTransforms()[selectedJoint];selectedJointNode.rotation.set(...(base?.rotation||[0,0,0]));selectedJointNode.position.fromArray(base?.position||[0,0,0]);refreshGizmoAttachment();}};
+document.getElementById("clearScene").onclick=()=>{
+  clearAdvancedModel(); activeModel="schematic"; root.visible=true; applyPose({});
+  root.position.set(0,.02,0); root.rotation.set(0,0,0); root.scale.set(1,1,1);
+  document.getElementById("modelMode").value="schematic"; document.getElementById("advancedControls").hidden=true;
+  clearJointSelection(); notify("Scene cleared");
+};
+document.getElementById("modelMode").onchange=(event)=>setModelMode(event.target.value);
+document.getElementById("fkMode").onclick=()=>setRigMode("fk"); document.getElementById("ikMode").onclick=()=>setRigMode("ik");
+document.getElementById("moveMode").onclick=()=>setTransformMode("translate"); document.getElementById("rotateMode").onclick=()=>setTransformMode("rotate");
+window.addEventListener("keydown",(event)=>{if(event.target.matches("input,select,textarea")||event.ctrlKey||event.metaKey||event.altKey)return;if(event.key.toLowerCase()==="g"){event.preventDefault();setTransformMode("translate");}else if(event.key.toLowerCase()==="r"){event.preventDefault();setTransformMode("rotate");}});
+document.getElementById("modelFile").onchange=(event)=>event.target.files[0]&&loadAdvancedModel(event.target.files[0]);
+document.getElementById("poseFile").onchange=(event)=>event.target.files[0]&&importAdvancedPose(event.target.files[0]);
+document.getElementById("clipSelect").onchange=(event)=>{if(event.target.value!=="")selectClip(Number(event.target.value),false);};
+document.getElementById("clipPlay").onclick=toggleClipPlayback;
+document.getElementById("clipScrub").oninput=(event)=>{
+  const clip=advancedClips[Number(document.getElementById("clipSelect").value||0)];
+  if(!clip||!advancedMixer)return;
+  clipPlaying=false; if(advancedAction)advancedAction.paused=true;
+  advancedMixer.setTime(clip.duration*Number(event.target.value)/1000);
+  document.getElementById("clipPlay").textContent="Play";
+};
+const modelDrop=document.getElementById("modelDrop");
+[modelDrop,renderer.domElement].forEach((target)=>{
+  target.addEventListener("dragover",(event)=>{event.preventDefault();modelDrop.classList.add("over");});
+  target.addEventListener("dragleave",()=>modelDrop.classList.remove("over"));
+  target.addEventListener("drop",(event)=>{event.preventDefault();modelDrop.classList.remove("over");handleDroppedFile(event.dataTransfer?.files?.[0]);});
+});
+document.getElementById("renderStyle").onchange=(event)=>setRenderStyle(event.target.value);
+document.getElementById("color").oninput=(event)=>{solidColor=event.target.value;if(renderStyle==="solid")material.color.set(solidColor);document.getElementById("colorValue").textContent=event.target.value;};
+function snapshot(){ const wasHelper=gizmo.getHelper().visible; gizmo.getHelper().visible=false; pickers.forEach((picker)=>picker.visible=false); renderer.render(scene,camera); const dataUrl=renderer.domElement.toDataURL("image/png"); gizmo.getHelper().visible=wasHelper; pickers.forEach((picker)=>picker.visible=true); return dataUrl; }
+function snapshotBlob(){
+  const wasHelper=gizmo.getHelper().visible; gizmo.getHelper().visible=false; pickers.forEach((picker)=>picker.visible=false); renderer.render(scene,camera);
+  return new Promise((resolve)=>renderer.domElement.toBlob((blob)=>{gizmo.getHelper().visible=wasHelper;pickers.forEach((picker)=>picker.visible=true);resolve(blob);},"image/png"));
+}
+document.getElementById("exportPng").onclick=()=>{const link=document.createElement("a");link.download=`ragdoll-pose-${Date.now()}.png`;link.href=snapshot();link.click();notify("PNG exported");};
+document.getElementById("addReference").onclick=async()=>{
+  const blob=await snapshotBlob();
+  if(!blob){notify("Could not capture the pose");return;}
+  window.parent.postMessage({type:"barz:ragdoll-reference-blob",schemaVersion:"1.0",name:`ragdoll-pose-${Date.now()}.png`,mimeType:"image/png",blob},location.origin);
+  notify("Sending to References…");
+};
+document.getElementById("sendBlocking").onclick=()=>{
+  const actor={name:activeModel==="advanced"?"Studio pose":"Ragdoll actor",color:`#${material.color.getHexString()}`,joints:rotationData(activeModel==="advanced"),transforms:poseData(activeModel==="advanced"),transformSpace:activeModel==="advanced"?"relative":"absolute"};
+  const message={type:"barz:ragdoll-to-blocking",schemaVersion:"1.0",actor};
+  if(activeModel==="advanced"&&advancedModelSource?.buffer){
+    const buffer=advancedModelSource.buffer.slice(0);
+    const clipIndex=advancedClips.length?Number(document.getElementById("clipSelect").value||0):-1;
+    const clip=clipIndex>=0?advancedClips[clipIndex]:null;
+    message.model={fileName:advancedModelSource.fileName||"ragdoll-model.glb",buffer};
+    if(clip)message.animation={clip:THREE.AnimationClip.toJSON(clip),time:advancedMixer?.time||0,playing:clipPlaying,index:clipIndex};
+    window.parent.postMessage(message,location.origin,[buffer]);
+  }else window.parent.postMessage(message,location.origin);
+  notify(activeModel==="advanced"?"Sending rigged model and animation…":"Sending editable actor…");
+};
+function resize(){const rect=stage.getBoundingClientRect();renderer.setSize(rect.width,rect.height,false);camera.aspect=rect.width/Math.max(1,rect.height);camera.updateProjectionMatrix();}
+new ResizeObserver(resize).observe(stage); renderPoseBank(); updateModeUi(); setRenderStyle("solid"); resize();
+function animate(){requestAnimationFrame(animate);const delta=Math.min(animationClock.getDelta(),.1);if(advancedMixer&&clipPlaying){advancedMixer.update(delta);const clip=advancedClips[Number(document.getElementById("clipSelect").value||0)];if(clip)document.getElementById("clipScrub").value=String(Math.round((advancedMixer.time%clip.duration)/clip.duration*1000));}orbit.update();renderer.render(scene,camera);} animate();
+</script>
+<script src="../barzy-theme.js?v=5.2.3"></script>
+</body>
+</html>

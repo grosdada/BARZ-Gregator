@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "1.0",
+  "id": "semantic-image-slicer-01",
+  "owner": "image-slicer",
+  "status": "pending-astra-review",
+  "approximateTokens": 61,
+  "prompts": [
+    {
+      "id": "text-2cd0444cd5bd81b5d912",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "ZIP ready: ${zipFiles.length} files",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/image-slicer.html",
+          "line": 1093,
+          "column": 33,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "image-slicer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-35248d763d0cd32aa1ac",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "${count} / ${total} tiles...",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/image-slicer.html",
+          "line": 1086,
+          "column": 35,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "image-slicer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-88bcbaf58a52c909cc92",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "0 0 ${canvasWrap.offsetWidth} ${canvasWrap.offsetHeight}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/image-slicer.html",
+          "line": 828,
+          "column": 35,
+          "kind": "template-literal",
+          "functionName": "buildSvg",
+          "owners": [
+            "image-slicer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-8df87ef89864aeced366",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "${file.name} · ${(file.size/1024).toFixed(0)} KB",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/image-slicer.html",
+          "line": 781,
+          "column": 29,
+          "kind": "template-literal",
+          "functionName": "loadImage",
+          "owners": [
+            "image-slicer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b3010bf79579ce5a1946",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "${img.naturalWidth} × ${img.naturalHeight}px",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/image-slicer.html",
+          "line": 782,
+          "column": 30,
+          "kind": "template-literal",
+          "functionName": "loadImage",
+          "owners": [
+            "image-slicer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ecba90e40dbe547aa737",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "${total} files -> ${destLabel}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/image-slicer.html",
+          "line": 1096,
+          "column": 33,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "image-slicer"
+          ]
+        }
+      ]
+    }
+  ]
+}

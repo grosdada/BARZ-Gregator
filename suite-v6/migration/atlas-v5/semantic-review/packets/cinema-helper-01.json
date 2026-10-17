@@ -1,0 +1,5107 @@
+{
+  "schemaVersion": "1.0",
+  "id": "semantic-cinema-helper-01",
+  "owner": "cinema-helper",
+  "status": "pending-astra-review",
+  "approximateTokens": 9354,
+  "prompts": [
+    {
+      "id": "text-0079429fa53b0e0611b9",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject does a parkour vault",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1799,
+          "column": 30,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-007fa5af9458c3ae8fa4",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "the subject transforms",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1850,
+          "column": 26,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-0204317158f4fa17ca7b",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "[DOUGHMOTION PROMPT EXPANDER] - [SCENE_TITLE]\n\nVisual and Art Direction:\nCraft a scene in classic stop-motion claymation style, emphasizing 'step-frame' or 'jerky' animation quality. Feature matte, handmade textures with subtle fingerprints visible. Utilize a [COLOR_PALETTE_DESCRIPTION] color palette with [MAIN_COLORS] and [ACCENT_COLORS]. Lighting should be [LIGHTING_TYPE], [SHADOW_DESCRIPTION], to emphasize sculpted forms.\n\nEpisode Flow:\nA continuous [SHOT_TYPE] shot from [CAMERA_ANGLE], overlooking [MAIN_SETTING]. In foreground, [FOREGROUND_ELEMENTS]. Background features [DISTANT_ELEMENTS].\n\nPhase 1 ([PHASE_1_DURATION]): Shot begins with [INITIAL_SCENE_DESCRIPTION].\nPhase 2 ([PHASE_2_DURATION]): From [STARTING_POINT], [INITIAL_ACTION]. Forms [MOVEMENT_DESCRIPTION], taking on [FINAL_FORM_DESCRIPTION].\nPhase 3 ([PHASE_3_DURATION]): [FINAL_RESULT] stands fully formed, [FINAL_QUALITIES]. Visible clay textures prominent.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 2500,
+          "column": 23,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-022d50c9a4ac0c4c363a",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Panasonic Lumix GH5 camera - Hybrid mirrorless camera popular for video. 4K 60fps, in-body stabilization.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1668,
+          "column": 36,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-033403c4dd75da5a61e0",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject looks defeated",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1902,
+          "column": 30,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-0437001e2d9bfa300f1f",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "[EXPLOSIVE ORGANIZATION PROMPT] - [SCENE_TITLE]\n\nShot Setup:\n[SHOT_TYPE] of [LOCATION] with [CENTRAL_OBJECT] centered. [OBJECT_DESCRIPTION] starts [INITIAL_STATE].\n\nAction Sequence:\nPhase 1 - Release: Suddenly, [TRIGGER_SOUND]!, [OPENING_MECHANISM] with explosive force.\nPhase 2 - Mid-Air: As they fall, they [ORGANIZATION_BEHAVIOR]—each [CATEGORY_TYPE] grouping itself.\nPhase 3 - Landing: Items hit with [IMPACT_QUALITY] but settle [PRECISION_DESCRIPTION].\nPhase 4 - Final: Camera [CAMERA_MOVEMENT], revealing [FINAL_SCENE_DESCRIPTION].",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 2603,
+          "column": 23,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-050e5c7abcb2b4920a0c",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject swings a bat",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1842,
+          "column": 26,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-053d6d00306778dc2975",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject looks flirtatious",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1910,
+          "column": 33,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-054c394d24aeb33c923a",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "the subject twirls",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1852,
+          "column": 22,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-06364fa820c0203b6ccf",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Cool, blue-toned light just before sunrise or after sunset. Creates moody, atmospheric scenes. Great for cityscapes.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1717,
+          "column": 26,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-06656d4aefd0fc97e637",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject looks unhinged",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1943,
+          "column": 30,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-09c1e8e082e579f1f2e1",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Professional, carefully crafted lighting with depth and mood. Creates film-quality aesthetic.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1691,
+          "column": 35,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-0d2c3989e18ba2d52df8",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject looks arrogant",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1892,
+          "column": 30,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-0e280318f3e2705f6bd1",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Camera positioned behind one subject looking at another. Essential for dialogue scenes, creates spatial relationships between characters.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1589,
+          "column": 45,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-0e55d7bc3f70bbff3b40",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Light coming from below subject. Unnatural, creepy effect. Classic for horror or creating unsettling mood.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1687,
+          "column": 32,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-0ede7573c13145bbf92a",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "[ACTION IMPACT PROMPT] - [SCENE_TITLE]\n\nShot Setup:\n[SHOT_TYPE]: [FLOOR_DESCRIPTION] fades into [BACKGROUND_COLOR]. [LIGHTING_DESCRIPTION] reveals [TARGET_OBJECT], [OBJECT_STATE], [OBJECT_POSITION].\n\nAction Sequence:\nPhase 1 - Entry: From [ENTRY_DIRECTION] [CHARACTER_DESCRIPTION] [ENTRY_ACTION], [MOVEMENT_DETAILS].\nPhase 2 - Impact: [CHARACTER_ACTION]; [INITIAL_SOUND]. Instantly [DESTRUCTION_VERB]—[DESTRUCTION_DETAILS], [VISUAL_EFFECTS].\nPhase 3 - Aftermath: [CHARACTER_POST_IMPACT], [CHARACTER_CONDITION]. [DEBRIS_DESCRIPTION] lies on [FLOOR_CONDITION].",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 2525,
+          "column": 23,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-110f5ca1a60fb6b3086c",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject dances contemporary",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1758,
+          "column": 35,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-114cb7957b655003320f",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Light outlining the edge of subject from behind. Separates subject from background. Creates dimension and visual interest.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1729,
+          "column": 26,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-13123b720841d9981831",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "An 8k high resolution shot captured in thermal vision with a glowing heatmap palette",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 2479,
+          "column": 31,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-15569c8e58888e9822c7",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "On a soft rug in a child's bedroom lies a large illustrated picture book, closed and pristine. The camera hovers above it as the book suddenly flips open, and—boom!—a colorful arc of miniature castles, model towns, toy soldiers, trains, and dragons explodes outward. Buildings unfold mid-air, a drawbridge slams down, and a tiny hot air balloon spins before landing atop a storybook mountain. Plush animals bounce into place beside trees and toy tents. The motion is whimsical, elastic, full of playful energy. The camera glides through the scene, revealing a miniature dreamworld built from stories. The book stays open at the center, pages fluttering slightly in the breeze.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 4093,
+          "column": 33,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-15f993170b05c29c62a4",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Frames from chest up. Emphasizes facial expressions while showing some shoulder and upper body movement. Great for emotional scenes.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1585,
+          "column": 38,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-164f50a6242b3108730d",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "An animated time-lapse of growing agar art inside a petri dish, macro lens, showcasing intricate microbial and fungi colonies forming a detailed moving animated moving blooming flower. The agar highlights the textures and patterns of the microorganisms. evolving artwork. blooming fungi flower",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 4079,
+          "column": 34,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-166c54212991e34bb124",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject looks doubtful",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1907,
+          "column": 30,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-16d3df2647b5b6513012",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "american queen anne style architecture",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 3895,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-18980729b130f709dced",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Camera moves vertically downward on a fixed support. Follows descending action or changes viewpoint.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1631,
+          "column": 30,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-18b3d1551dc9af4b5417",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject picks up an object",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1800,
+          "column": 24,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-192a19c4393065e7b79a",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Extreme low angle from ground level looking up. Creates dramatic emphasis and makes subjects appear monumental or imposing.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1601,
+          "column": 32,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-195328b6d1f88b790488",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Blackmagic Pocket Cinema Camera 6K - Affordable cinema camera with RAW recording. Popular among indie filmmakers.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1665,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-1a30520304b4186948c3",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Camera positioned below the subject, looking up. Makes subjects appear powerful, intimidating, or heroic. Adds drama and authority.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1598,
+          "column": 31,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-1ae041dd5ed6c956c3c4",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject looks thoughtful",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1940,
+          "column": 32,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-1b07e41a45edfc9f0331",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject looks scared",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1931,
+          "column": 28,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-1bff99b03cc53ba4b749",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Film camera - Traditional celluloid film. Rich colors, organic grain, unmatched depth. The classic cinema look.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1674,
+          "column": 28,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-1c1a8b0b20d2192c5fc1",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject looks triumphant",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1942,
+          "column": 32,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-1d23d7435a9e640f69ed",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Build exactly 1 cinematic prompt sentence from this deck. Preserve the selected ingredients, improve grammar and visual intent, avoid extra commentary.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 4429,
+          "column": 36,
+          "kind": "string-literal",
+          "functionName": "showVerbalizedPrompt",
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-1d68513095518e806868",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Building a giant piggy bank shaped sand castle in a beach, natural colors, tele lens, shot in 35mm, dawn soft light",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 4099,
+          "column": 35,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-1e2616c6428d8106aef4",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject looks nervous",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1924,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-1fb890ff19e5f62e641e",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Vertical crane movement, camera rises or lowers. Often used for dramatic reveals or to show changing perspective.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1623,
+          "column": 26,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-2093d04b39ea9ebf5fe7",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject looks in pain",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1918,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-225a0d5afe0e27cf92a3",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Shot taken from aircraft or drone, high above the scene. Shows large-scale geography and movement. Creates spectacular establishing shots.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1607,
+          "column": 28,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-2351b195e9da6932f036",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "<p>${explanation}</p>",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 5206,
+          "column": 30,
+          "kind": "template-literal",
+          "functionName": "showInfo",
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-236ceb50a7de482739ed",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Point of View Shot (POV)",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1592,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-246a628227e205717673",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Camera follows subject through space. Maintains consistent framing while subject moves. Creates engagement and momentum.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1626,
+          "column": 28,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-249f9fadecab0c2d8638",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "An underwater scene of a large, slowly rotating Ferris wheel at a sunken carnival, with its lights still dimly flickering. The empty gondolas sway gently. The sound is muffled and deep, like a heavy blanket has been thrown over it. High-pitched frequencies are almost entirely absent, leaving only a low, resonant rumble and the creaking, groaning turn of the rusted machinery that's felt as much as heard.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 4087,
+          "column": 33,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-25ca5f2fe62d886f8eee",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Webcam - Consumer computer camera. Low quality, compressed image. Perfect for authentic video call or surveillance footage look.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1676,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-27678e4776d308348cf8",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject looks heartbroken",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1916,
+          "column": 33,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-28e51e9563b4d428d38f",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Lens magnifies to make subject larger without moving camera. Draws attention and creates focus. Can build tension or emphasize importance.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1614,
+          "column": 24,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-2b31627a72c816864661",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Frames the subject from waist up. The most common shot in filmmaking. Perfect for conversations and showing upper body gestures.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1584,
+          "column": 33,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-2c5dd57dc1e25dde1311",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Frames two subjects in the same shot. Shows their relationship and interaction. Common in conversations and romantic scenes.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1590,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-2cbdc56e145c896ad379",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Frames the face, filling most of the screen. Reveals detailed emotions and reactions. Creates intimacy and focuses viewer attention.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1586,
+          "column": 30,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-2d64803166ddaf3a4cc7",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject rolls their eyes",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1950,
+          "column": 26,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-2dff04f0e3eb633db175",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "[THERMAL VISION PROMPT] - [SCENE_TITLE]\n\nShot Setup:\n[RESOLUTION] [SHOT_TYPE] of [SUBJECT_ACTION] through [ENVIRONMENT], captured in thermal vision with [THERMAL_PALETTE_DESCRIPTION].\n\nThermal Elements:\nEnvironment: [MAIN_STRUCTURES] flaring in [COOL_COLORS] against [BACKGROUND_ELEMENTS] pulsing with [WARM_COLORS].\nSubject: [SUBJECT_BODY_PARTS], glowing in [SUBJECT_HEAT_COLOR], [SUBJECT_ACTIONS], leaving [HEAT_TRAIL_DESCRIPTION].\nDetails: [WILDLIFE_OR_OBJECTS] dart through frame [THERMAL_APPEARANCE].",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 2547,
+          "column": 23,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-2fd2301d79e81573a837",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject does a wall flip",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1858,
+          "column": 26,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-2ff4b5d1d836b2df6c2e",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Camera moves along a short track. Creates smooth lateral or forward movement. Adds production value to simple shots.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1635,
+          "column": 28,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-30bbf3ef29a7e90cbb4c",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": " Copied ${type === 'realistic' ? 'Neg-Realistic' : 'Neg-Anim'} prompt!",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 4286,
+          "column": 27,
+          "kind": "template-literal",
+          "functionName": "copyNegPrompt",
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-315e53b37281d85040c2",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject looks frustrated",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1913,
+          "column": 32,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-32028885d285159e7fa7",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Frames from mid-thigh up, named after Western films showing gun holsters. Popular in action scenes and character introductions.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1588,
+          "column": 28,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-3460a2874acb57903524",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject looks furious",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1914,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-36806e4172e12e3cb74b",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "[INFOMERCIAL PROMPT] - [SCENE_TITLE]\n\nShot Setup:\nTelevised [SHOW_TYPE] feature on [PRODUCT_DESCRIPTION]. [HOST_DESCRIPTION] introduces [PRODUCT_NAME]. [HOST_POSITION] next to [PRODUCT_PLACEMENT] on [SET_DESCRIPTION].\n\nPerformance:\nHost: [HOST_ACTION] while [DELIVERY_STYLE], [GESTURES_DESCRIPTION], [ENTHUSIASM_LEVEL].\nDemo: [DEMONSTRATION_ACTIONS], [VISUAL_PROOF].\nDialogue: [HOST_SPEECH_PATTERN] listing [FEATURES], \"[BENEFIT_1], [BENEFIT_2], [BENEFIT_3]!\"",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 2569,
+          "column": 23,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-3970160abe826fc709a2",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject rubs their eyes",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1951,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-398fa73d3c7693647e85",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Focuses on a character reacting to something. Shows emotional responses and helps tell the story through facial expressions.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1597,
+          "column": 30,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-39a6afff9a11f9f3bfcb",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject sword fights",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1843,
+          "column": 28,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-39b8372a3b20d17eaabd",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject looks crazed",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1900,
+          "column": 28,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-39f11c826ccd1544f9ab",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject looks puzzled",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1928,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-3a10d676ed3face4274e",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject looks insane",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1920,
+          "column": 28,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-3b8a0fb278147f37355c",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject dances salsa",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1760,
+          "column": 28,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-3c8d60e564ba72b27882",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "[POP-UP EXPANSION PROMPT] - [SCENE_TITLE]\n\nShot Setup:\nOn [SURFACE_DESCRIPTION] in [LOCATION] lies [CENTRAL_OBJECT], [INITIAL_STATE]. Camera [CAMERA_POSITION] as [TRIGGER_ACTION], and—[EXPLOSION_SOUND]!—[EJECTION_DESCRIPTION] explodes outward.\n\nExpansion:\nPhase 1 - Release: [ITEM_LIST] [LAUNCH_BEHAVIOR]. [TRANSFORMATION_DETAIL_1], [TRANSFORMATION_DETAIL_2].\nPhase 2 - Assembly: [ADDITIONAL_ELEMENTS] [SETTLING_ACTION] beside [ENVIRONMENTAL_DETAILS].\nPhase 3 - Reveal: Camera [CAMERA_MOVEMENT], revealing [FINAL_WORLD_DESCRIPTION].",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 2615,
+          "column": 23,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-3cdb17990038cbf3d4fa",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Visible light beams through atmosphere (fog, dust, smoke). Creates depth and atmosphere. Very cinematic.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1710,
+          "column": 36,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-3e830e86d6863a2f9b61",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject looks surprised",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1937,
+          "column": 31,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-3f431a252e9c45a67e78",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "the subject throws a ball",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1848,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-4047b89522889aba74fa",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Black and white cinematography with harsh contrast, dramatic shadows cast from venetian blinds, femme fatale aesthetic. 1940s noir styling with rain-slicked streets reflecting streetlights, cigarette smoke drifting through beams of light. Low-key lighting creating deep chiaroscuro. High contrast between light and shadow, moody atmosphere.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 2483,
+          "column": 26,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-430a2cdb80d1ab88242d",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "ARRI Alexa camera - Industry standard for cinema, used in major Hollywood productions. Known for exceptional color science and dynamic range.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1663,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-4349e237399c78062aae",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Instant cinematic style presets for your video prompts",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1214,
+          "column": 67,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-45579ad6f3bdd9024c38",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "DJI Osmo gimbal camera - Handheld stabilized camera. Smooth motion, great for travel and run-and-gun shooting.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1671,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-4559391532c1923f9dae",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "90s USA space archive footage of a satellite with the shape and color of a banana with solar panels floating in the void, real footage, natural light, 8mm film texture sharpness color and focus",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 4101,
+          "column": 31,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-45eccc4e1e01b1433815",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject bites their nails",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1867,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-466714d2603ef9a6cc92",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject walks slowly",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1857,
+          "column": 28,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-49dd24fe27ec7b7a5480",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Underwater Scene",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 2579,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 4087,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-4a17d214a84635038f40",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "iPhone camera - Modern iPhones shoot 4K video with computational photography. Accessible, always-in-pocket filmmaking.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1669,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-4acd18405e76450ed6bb",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject furrows their brow",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1875,
+          "column": 28,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-4af28520d29aacdd0571",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Wide, static shot: gray concrete floor fades into black. One soft overhead pool reveals a giant clear water-balloon, brim-full, hanging centimetres above the floor. From left darkness a masked Mexican wrestler sprints in, boots thudding, cape snapping. He lowers his shoulder and slams the balloon; latex tears with a rubbery snap-pop. Instantly the sphere detonates—WHUMP—thousands of litres hammer concrete in a deep splash, glittering droplets hissing like shrapnel. The luchador resurfaces, mask plastered, boots squeaking across ripples. Shredded latex lies on the soaked floor. Only water drip and his breathing survive in the hush.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 4077,
+          "column": 35,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-4c0421eb1caed18fbf97",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject looks repulsed",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1929,
+          "column": 30,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-4c2889e9f9ef1c509816",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject serves in tennis",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1813,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-4c5052224845299344f3",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": " Removed from deck: ${removed.item}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 4154,
+          "column": 23,
+          "kind": "template-literal",
+          "functionName": "removeFromDeck",
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-4f6d5349c9a9d298544a",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Frames the subject from knees up. Shows more detail than a wide shot while maintaining environmental context. Common in dialogue scenes.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1583,
+          "column": 39,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-4feca387e85652255b4b",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Complete customizable templates for video generation",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1209,
+          "column": 67,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-502bac5057cd38d0261b",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "${settings.deckColor}33",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 5570,
+          "column": 72,
+          "kind": "template-literal",
+          "functionName": "applySettingsToUI",
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-506b08f4c790a35af832",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Added to favorites: ${item}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 4718,
+          "column": 27,
+          "kind": "template-literal",
+          "functionName": "toggleFavorite",
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-50b9d38796a13e954995",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject looks contemptuous",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1899,
+          "column": 34,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-50fcb7ff6a8b7e8a6b0a",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "zbrush render",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 4031,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-52da01ebbb5b5f9bb4c6",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "[LIDAR SCAN PROMPT] - [SCENE_TITLE]\n\nShot Setup:\n[SCAN_TYPE] of [SUBJECT/ENVIRONMENT], surrounded by [VOID_DESCRIPTION], [VISUAL_STYLE].\n\nLIDAR Elements:\nVisualization: [POINT_CLOUD_DESCRIPTION] forming [STRUCTURE_DETAILS], [DENSITY_DESCRIPTION].\nAppearance: [COLOR_SCHEME], [WIREFRAME_DETAILS], [PARTICLE_BEHAVIOR].\nVoid: [BACKGROUND_TREATMENT] creating [DEPTH_EFFECT].",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 2558,
+          "column": 23,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-53c79139bbf92b300101",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject puts down an object",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1805,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-53dc94fcbce22ddadc06",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Camera rotates vertically on a fixed axis. Reveals height, follows vertical action, or shifts attention from ground to sky.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1613,
+          "column": 31,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-548e67b4fd86ed1c8abd",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "[ACTION SPORTS PROMPT] - [SCENE_TITLE]\n\nShot Setup:\n[SUBJECT_DESCRIPTION] [ACTIVITY_ACTION] [LOCATION_SPECIFIC], [LIGHTING_CONDITION], cinematic shot, shot in [FILM_FORMAT].\n\nSubject and Action:\nAthlete: [PHYSICAL_CHARACTERISTICS], [AGE_RANGE], [SKILL_LEVEL].\nAction: [SPECIFIC_MANEUVER], [POSITIONING_ON_EQUIPMENT], [BODY_LANGUAGE].\n\nEnvironment:\nLocation: [FAMOUS_SPOT_DETAILS], [WAVE_CHARACTERISTICS], [WATER_CONDITIONS].\nAtmospheric: [TIME_OF_DAY], [LIGHT_QUALITY], [SKY_DESCRIPTION].",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 2673,
+          "column": 23,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-5709dc712c709d26e77b",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "linear-gradient(135deg, ${settings.buttonsColor}, ${adjustColor(settings.buttonsColor, -20)})",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 5561,
+          "column": 39,
+          "kind": "template-literal",
+          "functionName": "applySettingsToUI",
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-57cc25c5694769d77348",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "An 8k high resolution shot of a fast-paced first-person shot of a woman sprinting through a dense forest, captured in thermal vision with a glowing heatmap palette. The camera jostles as it weaves between towering trees, their trunks flaring in cool blues and purples against a warm yellow-green canopy pulsing with heat. Undergrowth flares in streaks of orange and red as branches snap aside, while faint white-hot flickers of fleeing wildlife—like deer or birds—dart through the frame. The runner's hands, glowing in bright crimson, push past vines, leaving smears of heat in their wake. Shot in a high-energy, immersive style with a jittery handheld feel, vibrant thermal heatmap gradients, and a faint digital grain overlay for texture.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 4081,
+          "column": 31,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-5800547c2ba0351715dc",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject looks astonished",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1893,
+          "column": 32,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-58f053d1fee17530211d",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject dances hip-hop",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1759,
+          "column": 30,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-5b91bb2e41ffab7f8afb",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject looks exhausted",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1909,
+          "column": 31,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-5cda5f11d9352118b478",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Shows the entire subject from head to toe. The subject fills most of the frame. Used to show body language and physical actions clearly.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1582,
+          "column": 31,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-5ce56741fd518e941a32",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "VHS tape quality with interlaced scan lines, date stamp overlay in bottom corner showing 1990s date. Auto-focus hunting in and out, oversaturated colors bleeding slightly. Motion blur during quick movements, low resolution creating soft edges. Home video aesthetic with nostalgic compression artifacts, tracking distortion occasionally. Consumer-grade image quality.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 2491,
+          "column": 30,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-5e6aec84d0f2b125e5c3",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject looks melancholic",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1923,
+          "column": 33,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-5f3165edbfd09ee15b0e",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Handheld camera work with natural shake and movement, available natural lighting without artificial sources. Observational cinema vérité style capturing authentic moments. Real locations showing genuine wear and use, ambient environmental sound. 16mm film grain texture adding documentary feel, unstaged spontaneous moments. Fly-on-the-wall perspective maintaining distance.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 2488,
+          "column": 36,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-5f9a760d956436f18666",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject dances ballet",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1756,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-61106a2576f889c9a595",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "<p style=\"white-space: pre-wrap; line-height: 1.6;\">${example}</p>",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 5043,
+          "column": 30,
+          "kind": "template-literal",
+          "functionName": "showTemplateInfo",
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-612a47e44151bea5524a",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject does a somersault",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1830,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-629a912b2867fe441c61",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject narrows their eyes",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1946,
+          "column": 28,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-62d9b4d868fdee62904b",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Camera moves in a circular path around subject. Shows subject from multiple angles, creates dramatic effect, adds production value.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1621,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-63d77d3d6cd713ed9f6b",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Extremely fast pan creating motion blur. Used for transitions, sudden direction changes, or energetic effect.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1627,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-645ac8170ebd058f4a68",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject puffs their chest",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1948,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-65635525fbfd551482f3",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Camera physically moves away from subject. Reveals more context, creates distance, or shows isolation. Different feel than zoom out.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1617,
+          "column": 26,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-68971283841aecdf1da4",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Subject",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1084,
+          "column": 90,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 5583,
+          "column": 81,
+          "kind": "string-literal",
+          "functionName": "applySettingsToUI",
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-69ba6381b78582ddefc2",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject looks depressed",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1904,
+          "column": 31,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-6aaec562e42ca6157fa2",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject does a backflip",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1740,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-6b843791023c224d15d0",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Shows what a character sees from their perspective. Puts the audience in the character's position. Creates immersion and empathy.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1592,
+          "column": 41,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-6c9c628f39c2805734fd",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject looks pensive",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1925,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-6cf61ef21bf084e7b1e5",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "A continuous wide shot covering an entire scene. Provides spatial context and can be intercut with closer shots.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1595,
+          "column": 28,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-6d2fb2e71b607afb072e",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "90s USA space archive footage of a satellite with solar panels floating in the void, real footage, natural light, 8mm film texture sharpness color and focus",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 2482,
+          "column": 30,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-6eeab893f3d247acc387",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": " Copied deck (${deck.length} items)!",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 4269,
+          "column": 27,
+          "kind": "template-literal",
+          "functionName": "copyDeck",
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-6eec2a02b2d070d26c08",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "An animated time-lapse of growing agar art inside a petri dish, macro lens, showcasing intricate microbial and fungi colonies forming a detailed moving animated bacteria.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 2478,
+          "column": 33,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-6ef32f2593bdaae2b20b",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Dolly and zoom in opposite directions simultaneously. Creates disorienting effect. Famous in thriller and horror films.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1618,
+          "column": 44,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-70eed150bacfb3b2a75c",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Foreground and background move at different speeds. Creates depth and dimensionality. Very cinematic and engaging.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1640,
+          "column": 32,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-71c8a613dbe8d22d165d",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Shows a very small detail (eyes, mouth, hands, objects). Creates intense focus and dramatic emphasis. Often used for important plot details.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1587,
+          "column": 39,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-7297efadd97afe5e551c",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Surreal fantastical elements appearing in mundane everyday settings, vibrant saturated colors especially in textiles and nature. Dreamlike atmosphere where impossible things occur naturally, symbolic imagery woven throughout. Latin American aesthetic with colonial architecture, golden hour lighting creating warm glow. Poetic visual metaphors, blurred boundary between reality and fantasy.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 2490,
+          "column": 30,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-72e4347380456a254706",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Low light conditions after dark. Requires artificial lighting or high ISO. Creates mystery, danger, or intimate moods.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1704,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-739bef80ee48e23f9c9c",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Drone camera - Aerial cinematography platform. Sweeping establishing shots and unique perspectives impossible from ground.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1678,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-74234c6187ed8ba4e4c1",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Showing ${visible} of ${total} items",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 5283,
+          "column": 39,
+          "kind": "template-literal",
+          "functionName": "updateStats",
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-74c860349542350459ff",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "[STOP-MOTION ANIMATION PROMPT] - [SCENE_TITLE]\n\nShot Setup:\nStop-motion cinematic [SHOT_TYPE] captures [SCENE_DESCRIPTION]. [SUBJECT_DESCRIPTION], with [DISTINCTIVE_FEATURES], are [POSITIONING] on [SURFACE_DESCRIPTION].\n\nCraft Details:\nCharacter: [SUBJECTS] meticulously crafted, [MATERIAL_APPEARANCE] exhibiting subtle [STOP_MOTION_CHARACTERISTICS].\nAnimation: They [ACTION_1] and [ACTION_2], [SEQUENCE_PATTERN].\n\nVisual Treatment:\nLighting: [LIGHTING_QUALITY], as if from [LIGHT_SOURCE], casting [SHADOW_DESCRIPTION].\nColor: [COLOR_APPROACH], with [COLOR_1] of [ELEMENT_1] against [BACKGROUND_COLOR].",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 2637,
+          "column": 23,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-75fcf44c66f9a2160625",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Bolex H16 16mm film camera - Classic Swiss film camera. Distinctive vintage film aesthetic, used by students and artists.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1672,
+          "column": 26,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-76a21517a357ddadca78",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject looks amazed",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1889,
+          "column": 28,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-76f25c1e9e01263eaaf6",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Camera positioned above the subject, looking down. Makes subjects appear vulnerable, weak, or small. Creates sympathy or shows dominance.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1599,
+          "column": 32,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-7837cb6d1ca54286e2e5",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Camera at the subject's eye level. Most neutral and natural perspective. Creates equality between viewer and subject.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1603,
+          "column": 31,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-78d2d302da731cf3ec6e",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject looks sultry",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1936,
+          "column": 28,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-790c3faf63253b62ebb5",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject looks perplexed",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1926,
+          "column": 31,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-7ad97fb2b54286fbe69a",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "first person gopro image",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 4036,
+          "column": 187,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-7bfa6526b4ea68fe4914",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject wrinkles their nose",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1971,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-7c6d52668af7313709ff",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject gives a thumbs up",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1776,
+          "column": 31,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-7c6efb8121466aacba89",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject gazes adoringly",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1877,
+          "column": 31,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-7c7e733daec8253bcdfd",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Light coming from the side of subject. Creates strong shadows on one side. Dramatic, emphasizes texture and depth.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1730,
+          "column": 30,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-7dc553bf0d39e2a66db9",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject looks lovingly",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1922,
+          "column": 30,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-7ea20c2448d66124b8c5",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Camera completely still, no movement. Creates stability, allows focus on performance, or builds tension through stillness.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1633,
+          "column": 28,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-7ed4b8f638dfdd9683c7",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject clenches their fists",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1871,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-802b26914ddfda9ac2b3",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject looks terrified",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1939,
+          "column": 31,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-83880a279140cbf4d87d",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Directly overhead shot looking straight down. Provides a unique perspective, shows patterns, or creates disorientation. Very distinctive look.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1600,
+          "column": 32,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-841316db0d110a89471c",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "First-person handheld perspective with natural shake, shaky cam during moments of panic or running. Night vision mode showing green-tinted low-light footage, time code overlay in corner. Degraded video quality with digital artifacts, lens flares from direct light sources. Authentic panic captured, security camera angles showing wide surveillance views. Raw unedited feeling with abrupt cuts.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 2492,
+          "column": 30,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-8458c6d95a1162aa7481",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject looks skeptical",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1934,
+          "column": 31,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-85bae844e711558f69e9",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Camera follows characters walking and conversing. Common in TV and film, maintains energy during dialogue scenes.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1639,
+          "column": 30,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-85eedbdffcd11589286b",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Obese guy surfing a tube in teahupo'o wave dusk light cinematic shot shot in 35mm film",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 4103,
+          "column": 30,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-872731c67c658c2130a2",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Perfectly symmetrical composition with subjects centered in frame, pastel color palette of soft pinks, yellows, and blues. Whimsical production design with every object precisely placed, flat space camera movements tracking laterally. Quirky characters in vintage clothing, miniature aesthetic like a living dollhouse. Futura font for any text, meticulous attention to every visual detail. Deadpan performances.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 2487,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-876228fee36f7f719541",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Cloudy sky creates soft, even lighting. No harsh shadows, flattering for faces. Good for consistent outdoor lighting.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1728,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-8b92e82ef16f26b87a4a",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Camera positioned at hip height. Often used in Westerns and action scenes. Creates a grounded, ready-for-action feeling.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1604,
+          "column": 31,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-8ba4f95376daee50c939",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Lens widens to show more of the scene. Reveals context, creates distance, or shows isolation. Can create surprise reveals.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1615,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-8c758c7b621f0496f73d",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "the subject vanishes",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1854,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-8d86aed6d2595e495e41",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject dances the waltz",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1762,
+          "column": 28,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-8e168bc13a3e7a550338",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Light source behind subject, facing camera. Creates silhouettes or rim lighting. Dramatic and artistic effect.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1716,
+          "column": 24,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-8e5ccd8f9a419ba0eec3",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "linear-gradient(135deg, ${settings.bgColor1} 0%, ${settings.bgColor2} 100%)",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 5545,
+          "column": 46,
+          "kind": "template-literal",
+          "functionName": "applySettingsToUI",
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-8ea493a4f8fc28944d2b",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "General, overall light filling the scene. Base level illumination before adding dramatic lights.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1715,
+          "column": 30,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-8fdfd0694246a3eab20f",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Removed from favorites: ${item}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 4715,
+          "column": 27,
+          "kind": "template-literal",
+          "functionName": "toggleFavorite",
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-91fe175ed3c757e47dac",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject looks suspicious",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1938,
+          "column": 32,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-92f4a3d08094146a2b41",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Stabilized handheld camera movement. Smooth, flowing shots while following action. Combines mobility with stability.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1625,
+          "column": 31,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-93187adca0f27f6b834c",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject snaps their fingers",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1828,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-9334396fbd0c93208965",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject does a handstand",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1780,
+          "column": 26,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-94060eb9c99b0ad6a81f",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Extreme contrast between light and dark. Dramatic, artistic style from Renaissance painting. Very theatrical.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1690,
+          "column": 28,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-95c7a00a10880043dea8",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Light coming from directly above subject. Creates shadows in eye sockets and under nose. Can be eerie or unflattering.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1734,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-962538cef91047e8fc79",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "the subject trips",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1851,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-96ac164b3bcedc0e07a5",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "GoPro action camera - Ultra-wide angle, rugged action camera. Perfect for extreme sports and POV shots.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1670,
+          "column": 22,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-975eea24f33d01d57cc9",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "[TIME-LAPSE GROWTH PROMPT] - [SCENE_TITLE]\n\nShot Setup:\n[SHOT_TYPE] of [SUBJECT_DESCRIPTION] inside [CONTAINER/ENVIRONMENT], [LENS_TYPE], showcasing [GROWTH_SUBJECT] forming [FINAL_FORM].\n\nTime-Lapse Sequence:\nPhase 1 - Initial: [STARTING_CONDITION] with [INITIAL_APPEARANCE].\nPhase 2 - Growth: [GROWTH_DESCRIPTION] gradually [DEVELOPMENT_ACTION], [PATTERN_FORMATION], [COLOR_CHANGES].\nPhase 3 - Final: [COMPLETE_STRUCTURE] fully [FINAL_STATE], displaying [FINAL_VISUAL_DETAILS].",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 2536,
+          "column": 23,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-9774475a7adfcfb02796",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "A continuous cinematic shot begins in a dim studio. At the center, a tightly closed flowerbud formed from torn plaid flannel and black leather sits like a defiant sculpture. Its surface is rough—frayed seams, visible stitching, and embedded metal spikes and safety pins. As the bloom begins, the petals flex outward in slow, fluid arcs. Shredded fishnet petals stretch, overlapping with weathered denim folds patched with raw slogans and DIY embroidery. Chains and studs emerge between the layers, glinting under hard light. The camera glides around the structure as zippers unfurl like coiled stems, their chrome sheen contrasting with the worn textiles. At the heart of the bloom, a central petal opens to reveal a flattened patch of punk ephemera—shards of vinyl, band insignias, and scratched metal. The final frame lingers on the bloom in full—a radical, asymmetrical construction, blooming not from nature but from cultural friction and reclaimed rebellion.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 4089,
+          "column": 38,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-98282ba18db8556ccfb3",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Clear all ${deck.length} items from deck?",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 4696,
+          "column": 25,
+          "kind": "template-literal",
+          "functionName": "clearDeck",
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-991d272cb8ffd4e80346",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "High-angle static shot of a chaotic massive, huge, incredibly high arch of plus size men and women and pool floats, precariously stacked in a huge indoor swimming pool. The people's bodies are positioned upright, sideways, diagonally, and tilted at improbable angles. The image has a photorealistic 35mm film look and realistic shadows, saturated colors emphasizing the precarious nature of the structure. The vastness of the pool where the arch of people and pool floats is accentuates the absurdity and surreal nature of the image.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 4095,
+          "column": 33,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-9a1b2ca99ff40923e133",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Subject Icon",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1441,
+          "column": 32,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-9a1b3946791e3306d200",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject looks in love",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1917,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-9a30fbc42fe2fd0c13e7",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject does a cartwheel",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1745,
+          "column": 26,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-9ae80e52cc604a09f183",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Craft a scene in the distinct style of classic stop-motion claymation, emphasizing a subtly 'step-frame' or 'jerky' animation quality rather than smooth motion, to enhance the handcrafted feel. Feature matte, handmade textures and subtle fingerprints visible on all surfaces, giving it a tangible, sculpted feel. Utilize a diverse, slightly desaturated, yet clearly distinct and balanced color palette",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 2476,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-9e1f156af78d1e54c884",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "the subject throws an uppercut",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1853,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-9e3cce0f686628375401",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "A stop-motion cinematic close-up shot captures with jitter characteristic of stop-motion animation.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 2477,
+          "column": 28,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-9eec81b59d6773fb1ce4",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject looks anxious",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1891,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-9f7b190aa8f32f35c747",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Camera on motorized stabilizer. Allows smooth, flowing movement in any direction. Very versatile and cinematic.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1634,
+          "column": 28,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-9fd73e936a310dc7bee5",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject looks confident",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1897,
+          "column": 31,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-a05963226d9373b55eaa",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject looks indifferent",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1919,
+          "column": 33,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-a0cd935a4a79141037f7",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject looks frightened",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1912,
+          "column": 32,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-a275d8c09979f82fe381",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Send to Video Multi Framing",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1315,
+          "column": 125,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-a31c458cef3b6f7e9c4e",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject does a roundhouse kick",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1809,
+          "column": 32,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-a485ce1d4d5e9dc603e6",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "[ARCHIVAL SPACE FOOTAGE PROMPT] - [SCENE_TITLE]\n\nShot Setup:\n[DECADE/ERA] [COUNTRY/AGENCY] space archive footage of [SPACE_OBJECT] with shape and color of [OBJECT_COMPARISON] with [TECHNICAL_FEATURES] floating in [SPACE_ENVIRONMENT], real footage, [LIGHTING_SOURCE], [FILM_FORMAT] texture.\n\nSpace Object:\nDescription: [OBJECT_TYPE], [SHAPE_DETAILS], [COLOR_SCHEME], [SIZE_SCALE].\nTechnical: [EQUIPMENT_DETAILS], [FUNCTIONAL_ELEMENTS].\nMotion: [MOVEMENT_PATTERN], [ROTATION_DETAILS], [TRAJECTORY].",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 2662,
+          "column": 23,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-a562a70d4e2f05f20b3c",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Deck ingredients:\n${deckText}\n\nLocal phrase:\n${prompt}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 4428,
+          "column": 33,
+          "kind": "template-literal",
+          "functionName": "showVerbalizedPrompt",
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-a5a8d19fffb9891f7fa4",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Camera placed directly on the ground. Creates unusual perspective and can make ordinary objects appear larger.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1606,
+          "column": 34,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-a5f45b2ddd8696d4239f",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "REALISTIC, PHOTOREALISTIC, LIVE ACTION, PHOTOGRAPH, HIGH DETAIL SKIN, SKIN PORES, FILM GRAIN, RAW PHOTO, CAMERA ARTIFACTS, LENS DISTORTION, CHROMATIC ABERRATION, MOTION BLUR, DEPTH OF FIELD, BOKEH, NATURAL LIGHTING",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 4282,
+          "column": 26,
+          "kind": "string-literal",
+          "functionName": "copyNegPrompt",
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-a60520525a0f33b8b364",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject hangs their head",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1884,
+          "column": 26,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-a6fd485947f32b5a7df4",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "[UNDERWATER SCENE PROMPT] - [SCENE_TITLE]\n\nShot Setup:\nUnderwater scene of [MAIN_SUBJECT] at [LOCATION], with [VISUAL_FEATURE]. [MOVING_ELEMENTS] [MOVEMENT_DESCRIPTION].\n\nVisual Elements:\nSubject: [OBJECT_CONDITION], [MATERIAL_STATE], [SIZE_SCALE].\nWater: [WATER_CLARITY], [LIGHT_BEHAVIOR], [PARTICLE_EFFECTS].\nMovement: [PRIMARY_MOTION], [SECONDARY_MOTION].",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 2580,
+          "column": 23,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-a70190641a441682c55c",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Camera follows subject laterally, usually on tracks. Keeps subject in frame while showing movement through space. Very cinematic.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1619,
+          "column": 30,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-a74ed123cb0b79b165f4",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Camera movement that gradually shows previously hidden elements. Creates surprise, introduces new information dramatically.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1638,
+          "column": 28,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-a7d075d86a8c0d720835",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject scratches their head",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1952,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-a86c580004705dec27c5",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sony Venice camera - High-end cinema camera used in major productions. Dual ISO sensor for low light performance.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1666,
+          "column": 28,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-a86d5f0ecd6ec4d095ad",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "[BEACH CONSTRUCTION PROMPT] - [SCENE_TITLE]\n\nShot Setup:\n[ACTIVITY_DESCRIPTION] [STRUCTURE_DESCRIPTION] shaped [CONSTRUCTION_TYPE] at beach, [COLOR_TREATMENT], [LENS_TYPE], shot in [FILM_FORMAT], [LIGHTING_CONDITION].\n\nScene Elements:\nConstruction: [STRUCTURE_DETAILS], [SCALE_DESCRIPTION], [CRAFTSMANSHIP_LEVEL].\nEnvironment: [BEACH_SETTING], [SAND_QUALITY], [WATER_PROXIMITY].\nLighting: [TIME_OF_DAY] [LIGHT_QUALITY], [SHADOW_CHARACTERISTICS].",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 2651,
+          "column": 23,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-a951aaaa0d818a679436",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Camera circles completely around subject. Shows subject from all angles, creates dramatic emphasis or time passage effect.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1637,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-a9ba27d0f64e5992d7cb",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Slow dolly away from subject. Creates distance, reveals context, or shows isolation. Often used for emotional moments.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1629,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-a9d3795a2322c3f2a0f2",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject grits their teeth",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1882,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-aa1cccc53ee57e1cad6c",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "[IMPACT DESTRUCTION PROMPT] - [SCENE_TITLE]\n\nShot Setup:\n[SHOT_TYPE] over [FLOOR_SURFACE], set against [BACKGROUND_DESCRIPTION] with [LIGHTING_STYLE]. At center, [TARGET_OBJECT]—[OBJECT_CONDITION_DETAILS].\n\nImpact Sequence:\nPhase 1 - Pre-Impact: [STATIONARY_OBJECT_DESCRIPTION] positioned at [OBJECT_POSITION].\nPhase 2 - Incoming: From [ENTRY_DIRECTION], [PROJECTILE_DESCRIPTION] bursts in at [SPEED_DESCRIPTION]. Without slowing, it [IMPACT_APPROACH].\nPhase 3 - Impact: [TARGET_OBJECT] [DESTRUCTION_VERB] on impact. [DESTRUCTION_DETAILS]—[MATERIAL_BREAKAGE], [EJECTION_EFFECTS].\nPhase 4 - Exit: Exits frame to [EXIT_DIRECTION], leaving [AFTERMATH_DESCRIPTION]. Everything at [SPEED_TIMING]—captured in single shot.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 2513,
+          "column": 23,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ab1ccfa11e9752f28fa1",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "CCTV security camera - Surveillance camera aesthetic. Low resolution, wide angle, often black and white. Creates tension and voyeurism.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1677,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ac4c0dbf90b9754d5ccd",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Camera moves vertically upward on a fixed support. Follows rising action or changes perspective.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1630,
+          "column": 28,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ac849334a0cdcdecef3a",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject sweats nervously",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1964,
+          "column": 32,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ace116e8daf9b835b462",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Aaton LTR 16mm camera - French documentary camera. Lightweight, quiet, perfect for intimate documentary work.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1680,
+          "column": 26,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ad21b96f00554fb042c4",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject slumps their shoulders",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1956,
+          "column": 32,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ada1d4e4c3f0129d2870",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject tilts their head",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1966,
+          "column": 26,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ae2e188a5d2d9143f805",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Slow dolly toward subject. Builds tension, draws focus, or emphasizes emotion. More subtle than quick zoom.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1628,
+          "column": 24,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ae6da26fba8ed34d7d2b",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "RED Komodo camera - Compact cinema camera with 6K resolution. Popular for indie films and music videos. Netflix approved.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1664,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-af1c34e30b142e63cbd6",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Black and white high contrast imagery, title cards with ornate borders displaying dialogue. Exaggerated theatrical performances with dramatic gestures, hand-cranked camera effect creating slight speed variation. 18fps projection feel making movement slightly jerky, vignette around edges darkening corners. Film grain and scratches showing age, German Expressionist influence in set design. Score direction suggesting piano accompaniment.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 2493,
+          "column": 28,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-af6c1f351b91baad7edd",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Added ${addedCount} item${addedCount > 1 ? 's' : ''} to favorites!",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 4684,
+          "column": 27,
+          "kind": "template-literal",
+          "functionName": "addDeckToFavorites",
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b1965da9b7f404f058b4",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject blows a kiss",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1868,
+          "column": 26,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b22f7bc7d7fd122d69df",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Lurid saturated primary colors especially reds, yellows, and blues. Dramatic zooms into crucial details or faces, gloved killer POV shots stalking victims. Stylized theatrical violence with bright red blood, Italian horror aesthetic blending thriller and art film. Vibrant unrealistic color grading, psychological thriller elements with paranoia. Avant-garde editing with jarring cuts, prog-rock score direction with synthesizers.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 2494,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b2b45362cfb03a597977",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Wide desert landscape stretching to horizon, extreme close-ups of weathered eyes squinting. Dusty sepia and amber color palette, tumbleweeds rolling across barren ground. High noon showdown lighting casting stark shadows, Sergio Leone composition with dramatic zooms. Weathered leather and wood textures, desolate frontier atmosphere. Ennio Morricone-style dramatic tension.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 2485,
+          "column": 34,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b3026389078d2d785c88",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject bats their eyelashes",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1865,
+          "column": 30,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b32d2dd1c82aaa2dac05",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Camera rotates horizontally on a fixed axis. Follows action side to side or reveals environment. Smooth and natural movement.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1612,
+          "column": 33,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b3e00b42223451afaadf",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Super 8mm film camera - Vintage home movie format. Dreamy, nostalgic grain and color. Wes Anderson favorite.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1673,
+          "column": 26,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b5f3579ba8a152548583",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Desaturated color palette draining life from the scene, thick fog rolling through decrepit architecture. Practical lighting from candles and oil lanterns casting dancing shadows. High contrast between light and darkness, cold blue color temperature. Crumbling stone and rotting wood textures, eerie silence broken by sudden sounds. Dread-inducing composition suggesting unseen threats.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 2486,
+          "column": 30,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b699abf6a328eece0bd7",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject splits in two",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1833,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b8af0896adf080aa199c",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Cinematic Lighting",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1691,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b8f8d271d1a0ed81f9da",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Similar to wide shot, shows subject in full with significant environment. Emphasizes the relationship between character and setting.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1608,
+          "column": 31,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b9e3eb82a4de615d72f6",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject clutches a wound",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1872,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-b9e4291368109a3617c7",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Subject completely dark against bright background. No detail visible on subject. Mysterious, dramatic, or artistic.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1731,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ba51d03a5dd4a8972590",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Unpredictable, chaotic camera motion. Creates disorientation, panic, or documentary realism. Common in action scenes.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1632,
+          "column": 32,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-bc990b71bf834568b103",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Cinema Vérité style camera - Documentary realism approach. Handheld, natural light, observational style.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1681,
+          "column": 30,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-be03d85dce0a24c24c77",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject does a handspring",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1779,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-be78b999bca087b0d3c1",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "VHS Camcorder - 1980s-90s consumer video format. Lo-fi, nostalgic aesthetic with tracking artifacts and low resolution.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1675,
+          "column": 30,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-be7edbc02179e7fad1d0",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "[TRANSFORMATION BLOOM PROMPT] - [SCENE_TITLE]\n\nShot Setup:\nContinuous cinematic shot in [ENVIRONMENT_DESCRIPTION]. At center, [INITIAL_OBJECT_STATE] sits like [METAPHOR]. Surface is [TEXTURE_DESCRIPTION].\n\nTransformation:\nPhase 1 - Bloom: [FIRST_MOVEMENT] in [MOTION_QUALITY]. [MATERIAL_1] stretch, overlapping with [MATERIAL_2].\nPhase 2 - Unfold: [EMBEDDED_ELEMENTS] emerge between layers, [VISUAL_EFFECT] under [LIGHTING_CONDITION].\nPhase 3 - Core: At heart, [CENTER_ACTION] reveals [CORE_CONTENTS].\nPhase 4 - Final: Final frame lingers on [FINAL_FORM] in full—[AESTHETIC_DESCRIPTION].",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 2591,
+          "column": 23,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-bebfddafaf374fd5d427",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "${i+1}. ${n}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 5660,
+          "column": 80,
+          "kind": "template-literal",
+          "functionName": "loadPresetModal",
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-c00a03f168b3d99a464e",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Camera mounted on crane moves up, down, or sweeping. Creates dramatic reveals, shows scale, or provides unique perspectives.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1622,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-c26a1fdf2295da3798a0",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject looks ecstatic",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1908,
+          "column": 30,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-c5b600ede552837e8701",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "amd radeon software render",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 3973,
+          "column": 5,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-c65e0749163be3326549",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "${favorites.length} favorite${favorites.length !== 1 ? 's' : ''}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 4827,
+          "column": 33,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-c6f05f001f8f0f52e6c4",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Shows a vast landscape or environment. The subject is barely visible or very small in the frame. Used to establish location and scale. Perfect for epic, sweeping scenes.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1580,
+          "column": 40,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-cadef5b97a7fbc66f65f",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject laughs maniacally",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1887,
+          "column": 33,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-cbf2882955f61bd4d3c5",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject looks delighted",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1903,
+          "column": 31,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-cd00f6f069cdc49a4a9f",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject looks bewildered",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1895,
+          "column": 32,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-cd2ce81bd268548270f7",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject leans against a wall",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1788,
+          "column": 34,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ce00c184c9bf841bd46a",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": " Copied: \"${text.substring(0, 50)}${text.length > 50 ? '...' : ''}\"",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 5293,
+          "column": 27,
+          "kind": "template-literal",
+          "functionName": "copyToClipboard",
+          "owners": [
+            "cinema-helper"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 5313,
+          "column": 27,
+          "kind": "template-literal",
+          "functionName": "legacyCopyToClipboard",
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-cf5426038cddf6a75680",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject looks at their watch",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1894,
+          "column": 30,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d04e116035b42fcb70e8",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject licks their lips",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1888,
+          "column": 26,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d098448bc21c0cedc66e",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Wide frontal shot over a smooth concrete floor, set against a flat black background with harsh, directional lighting. At the center of the frame stands a standard blue portable toilet—weathered, dented, and visibly full, with warning stickers peeling at the edges. Suddenly, from the left, a full-size car bursts in at full speed—headlights off, engine roaring, tires barely gripping the concrete. Without slowing, it slams directly into the toilet. The structure explodes on impact. The plastic shell bursts apart instantly—walls collapse, the door blasts off, and the entire unit erupts into a violent spray of brown liquid, shredded paper, and blue chemical slosh. The car doesn't stop—it punches through the mess, dragging parts of the shell and loose debris with it, trailing a cloud of mist and foul residue. It exits frame to the right, its body streaked with filth, leaving behind a mangled heap of crushed plastic and fluid-covered concrete. Everything happens at real speed—brutal, fast, and final—captured in a single uninterrupted shot of spectacular chaos.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 4073,
+          "column": 32,
+          "kind": "template-literal",
+          "functionName": "psiloAddMissing",
+          "owners": [
+            "cinema-helper"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 4075,
+          "column": 34,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d105f3807d5ca63dd1ab",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "ARTIFACTS, SLOW, UGLY, BLURRY, DEFORMED, MULTIPLE LIMBS, CARTOON, ANIME, PIXELATED, STATIC, FOG, FLAT, UNCLEAR, DISTORTED, ERROR, STILL, LOW RESOLUTION, OVERSATURATED, GRAIN, BLUR, MORPHING, WARPING",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 4280,
+          "column": 26,
+          "kind": "string-literal",
+          "functionName": "copyNegPrompt",
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d106e1abfeff3b3d132a",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "A stop-motion cinematic close-up shot captures a charming scene. A trio of exquisite very fluffy and round baby snowy owlets, with their impossibly downy white feathers and enormous, endearing yellow eyes, are huddled together on a thick, snow-dusted tree branch. The owlets are meticulously crafted, their feathers appearing soft and exhibiting the subtle \"boil\" or jitter characteristic of stop-motion animation. The texture of the feathers should be palpable, almost like spun cotton. They blink slowly in unison and open their beaks to make gentle hoots, one owl at a time. The lighting is soft and ethereal, as if from a full moon, casting gentle shadows and highlighting the texture of their plumage and the rough bark of the branch. The color palette is subtle, with the pure white of the owlets and the dark greys and browns of the branch against a deep twilight-blue sky. The overall effect should be charming, whimsical, and slightly surreal, emphasizing the handcrafted nature of the stop-motion animation.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 4097,
+          "column": 38,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d14c9faa55ba728c6f95",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Shows the full subject and their surroundings. The subject is clearly visible but the environment is also important. Great for showing action and context.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1581,
+          "column": 31,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d4f402cfb3f3b5f32577",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Cinematic Genre Presets",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1213,
+          "column": 72,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-d87ddc5268b3123dd83b",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject dances the tango",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1761,
+          "column": 28,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-dd947331b14e1e67b269",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Panavision camera - Legendary cinema camera system. Used in countless Hollywood classics. Premium rental-only cameras.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1679,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ddf1cdf3610dec3b1937",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject raises their eyebrows",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1949,
+          "column": 31,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-df9fc3bbe898e1c50468",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject shakes their head",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1814,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e161e4dd724550b6951d",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "3D LIDAR scanner of a forest, the scanned forest is surounded by a deep black void, wireframe particle dot scanner",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 4083,
+          "column": 27,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e27dcd29b97e49117797",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Main, primary light source for the scene. Establishes the overall lighting direction and mood.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1699,
+          "column": 26,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e384fb42b8b1bfae0a2d",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject shoots a basketball",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1817,
+          "column": 33,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e3ec58f0eb4851169139",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject looks shocked",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1933,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e65ca0ed0bba59d0b928",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Sent to ${labels[target] || target}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 4464,
+          "column": 23,
+          "kind": "template-literal",
+          "functionName": "sendVerbalizedPrompt",
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e6698c9c85a841106498",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "the subject tiptoes",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1849,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e6b4ae897eac9a6690a8",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject looks confused",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1898,
+          "column": 30,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e6bca1a530e4a7a27cf2",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "${category}-stats",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 5281,
+          "column": 53,
+          "kind": "template-literal",
+          "functionName": "updateStats",
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e74c65d9a78ff8adde8c",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject does a frontflip",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1775,
+          "column": 26,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e82d27c163e3f75861b9",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "A close-up of an important object or detail. Draws attention to specific elements crucial to the story (a watch, letter, weapon, etc.).",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1593,
+          "column": 28,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-e9d9800c0e5a6e23f78a",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject catches a ball",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1747,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ea4d6167c2f8a2bf61cf",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "[SURREAL STACKING PROMPT] - [SCENE_TITLE]\n\nShot Setup:\n[SHOT_TYPE] of chaotic [STRUCTURE_DESCRIPTION] of [STACKED_ELEMENTS], precariously stacked in [LOCATION]. [ELEMENTS] are positioned [ORIENTATION_LIST], tilted at [ANGLE_DESCRIPTION].\n\nVisual Elements:\nStructure: [SCALE_DESCRIPTION], [FORMATION_SHAPE], [BALANCE_QUALITY].\nArrangement: [POSITIONING_DETAILS], [OVERLAP_DESCRIPTION], [DEFYING_PHYSICS].\nTreatment: Image has [AESTHETIC_STYLE] look and [LIGHTING_QUALITY].",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 2626,
+          "column": 23,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-eaae6647555090a009a0",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Intentional camera vibration or shaking. Simulates impact, explosion, earthquake, or adds intensity to action scenes.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1641,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-eb1ef82528ff54eae597",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Canon C300 Mark III camera - Professional cinema camera with excellent autofocus. Used for documentaries and commercial work.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1667,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ebd7b3b09221cf70b3dd",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject looks seductive",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1932,
+          "column": 31,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ebefca0b2accdc2f2d2d",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject looks disgusted",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1905,
+          "column": 31,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ec66ee3c84abb726df60",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Camera moves sideways, parallel to action. Similar to tracking but usually perpendicular to subject movement.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1620,
+          "column": 30,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-edb01b0c2dd772391c52",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Found footage style camera - Amateur camera aesthetic. Shaky, low quality, creates authenticity and immediacy.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1682,
+          "column": 30,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-edf7cdcd640d83d619e9",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject looks joyful",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1921,
+          "column": 28,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-ee996ab963eeeb6a0723",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject looks disinterested",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1906,
+          "column": 35,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f1b573f0c6f1f0709483",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject looks focused",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1911,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f300f36be50e2c2d0b37",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Camera held by operator without stabilization. Creates documentary feel, intensity, or chaos. Adds realism and energy.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1624,
+          "column": 32,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f30519dc32a28e13c089",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Camera physically moves closer to subject on tracks or wheels. More immersive than zoom. Creates intimacy or builds tension.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1616,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f56d869cf8febbcda38e",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "High contrast lighting emphasizing mood and emotion. Strong shadows and selective illumination.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1693,
+          "column": 34,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f5fd3c26512460da5a93",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Artificial lights designed to look natural or sourced. Light appears to come from logical source in scene.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1702,
+          "column": 35,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f61ccdea693fc7b7986d",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Random pick added for ${added} tabs",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 4500,
+          "column": 23,
+          "kind": "template-literal",
+          "functionName": "selectRandomForAllTabs",
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f6c9e6e644c53eac44e5",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Dramatic lighting with strong shadows and contrast. Creates mystery, drama, or danger. Common in noir and thrillers.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1700,
+          "column": 33,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f8156e77bad1bb7cc6e7",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject opens a door",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1798,
+          "column": 26,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f832a78e3fc47aae4d69",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the subject closes a door",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1751,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f83c7d4ff6f7fde155fd",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "A wide-angle shot of a laundry room with a standard top-load washing machine with no frontal door stands centered in the room. The white machine with no window starts alone and closed, Suddenly, bang!, the top lid blasts open with explosive force, and a vertical burst of clean laundry fires into the air like a firework. T-shirts, pants, socks, and underwear shoot upward in tight arcs. As they fall, they begin to sort mid-air—each type of clothing grouping itself: socks land together in a neat pile, pants stack onto pants, shirts collect in a row, and underwear drop cleanly into ordered and folded piles. Items hit with speed but settle precisely, forming clear, categorized piles. The motion is fast, elastic, and deliberate. The camera pulls back, revealing a pristine, organized laundry station. At the center, the washer top lip remains opens, at it's base, piles of perfectly neat and ordered clothes.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 4091,
+          "column": 39,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-f8fcb5002f9b50348692",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "#${category}-items .item",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 5229,
+          "column": 53,
+          "kind": "template-literal",
+          "functionName": "filterItems",
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-fa1eb4c10f373b1000af",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Camera on small crane or jib arm. Allows smooth vertical and arcing movements. More compact than full crane.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1636,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-fb4edcae5a120b83c2c5",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Usually a wide shot that shows the location and sets the scene. Tells the audience where and when the action takes place.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1594,
+          "column": 34,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-fbe3ee7e11f0e85d354a",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Camera positioned at knee height, looking slightly up. Makes subjects appear taller and more imposing.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1605,
+          "column": 32,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-fe97e484046629c05687",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Camera tilted on its axis, creating diagonal horizon lines. Suggests unease, tension, disorientation, or psychological distress.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/meat-dept-prompt-helper-Def.html",
+          "line": 1602,
+          "column": 43,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "cinema-helper"
+          ]
+        }
+      ]
+    }
+  ]
+}

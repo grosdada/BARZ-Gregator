@@ -1,0 +1,836 @@
+{
+  "schemaVersion": "1.0",
+  "id": "triage-facs-sheet-generator-01",
+  "owner": "facs-sheet-generator",
+  "status": "pending-structural-triage",
+  "approximateTokens": 238,
+  "prompts": [
+    {
+      "id": "text-120efdf43dde95fa0155",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Send selected to Motion",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 207,
+          "column": 71,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-1340c518c0fe44c21e19",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "\" alt=\"",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 514,
+          "column": 96,
+          "kind": "string-literal",
+          "functionName": "renderCustomGallery",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 521,
+          "column": 64,
+          "kind": "string-literal",
+          "functionName": "showLargeReference",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 800,
+          "column": 812,
+          "kind": "string-literal",
+          "functionName": "render",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-1c816d939149087d4a11",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Prompt output mode",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 167,
+          "column": 43,
+          "kind": "html-attribute:aria-label",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-2308dbbc25b33bb18297",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "outputTitle",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 705,
+          "column": 33,
+          "kind": "string-literal",
+          "functionName": "buildOutput",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 711,
+          "column": 33,
+          "kind": "string-literal",
+          "functionName": "buildOutput",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 715,
+          "column": 31,
+          "kind": "string-literal",
+          "functionName": "buildOutput",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 840,
+          "column": 31,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-293f8e9c32fa897fbfe5",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "FACS board creation",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 169,
+          "column": 77,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 705,
+          "column": 117,
+          "kind": "string-literal",
+          "functionName": "buildOutput",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-3124e7e5ab4b554c1076",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "customCardButton",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 382,
+          "column": 52,
+          "kind": "string-literal",
+          "functionName": "setReferenceMode",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 851,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-33b74583dc0ab75f3c4f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": " FACS board creation prompt",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 715,
+          "column": 75,
+          "kind": "string-literal",
+          "functionName": "buildOutput",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-36852fee4c5ec10bea69",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "FACS acting instructions",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 164,
+          "column": 36,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 705,
+          "column": 88,
+          "kind": "string-literal",
+          "functionName": "buildOutput",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-42fa761e22ca57d33c7b",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Full FACS board prompt - ",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 840,
+          "column": 60,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-44a0021ae9f17b19d219",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "FACS Acting instructions",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 168,
+          "column": 85,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-4b541f939de00679a118",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Prompt output",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 163,
+          "column": 30,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-4d0a25df5fa9c5a4d400",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "sendSelectedMotion",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 849,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-68cabeddc68a54ae8ba7",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Select expression buttons to build a FACS acting layer.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 703,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": "buildOutput",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-6ac9a32c0ca8e84e5bf0",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "cards",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 432,
+          "column": 74,
+          "kind": "string-literal",
+          "functionName": "openFACSDB",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 440,
+          "column": 35,
+          "kind": "string-literal",
+          "functionName": "loadCustomCards",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 441,
+          "column": 40,
+          "kind": "string-literal",
+          "functionName": "loadCustomCards",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 452,
+          "column": 35,
+          "kind": "string-literal",
+          "functionName": "persistCustomCards",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 453,
+          "column": 46,
+          "kind": "string-literal",
+          "functionName": "persistCustomCards",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 482,
+          "column": 35,
+          "kind": "string-literal",
+          "functionName": "deleteCustomCard",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 483,
+          "column": 24,
+          "kind": "string-literal",
+          "functionName": "deleteCustomCard",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-6b3ad69a8191c38080d8",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Select expression buttons to build a prompt pack.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 176,
+          "column": 24,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-6bc4783be42dfa8bed4c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "\" type=\"button\" aria-label=\"Select ",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 800,
+          "column": 724,
+          "kind": "string-literal",
+          "functionName": "render",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-79bfb0e2ba76b9d44760",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "anchor",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 663,
+          "column": 42,
+          "kind": "string-literal",
+          "functionName": "promptFor",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 676,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "buildCompactFACSBoardPrompt",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 876,
+          "column": 6,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-7d4b47cf84bb52b6cab5",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "wardrobe",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 664,
+          "column": 44,
+          "kind": "string-literal",
+          "functionName": "promptFor",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 678,
+          "column": 39,
+          "kind": "string-literal",
+          "functionName": "buildCompactFACSBoardPrompt",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 876,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-8c7384fff6789323e40c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "prompt-atlas-facs-cards",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 431,
+          "column": 40,
+          "kind": "string-literal",
+          "functionName": "openFACSDB",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-8fe1cbe37741be9fea3f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Framing / light",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 147,
+          "column": 30,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-9330eee4145283041cb3",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Select expression buttons to build FACS board creation prompts.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 704,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": "buildOutput",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-9af984eeb5954cfac75b",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Reference preview mode",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 208,
+          "column": 32,
+          "kind": "html-attribute:aria-label",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-9ed1afdf42375806c703",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": " chars",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 840,
+          "column": 104,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 844,
+          "column": 56,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-a42dd87dae80525fe53b",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Add ref FACS Image",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 180,
+          "column": 16,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-a7248eeb45eb1ce247f8",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Normal",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 209,
+          "column": 74,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-aeb982d4c67a623a15b4",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "head tips back, chin lifted upward",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 317,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-b30a4ce96db5be658bed",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "normalRefMode",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 381,
+          "column": 31,
+          "kind": "string-literal",
+          "functionName": "setReferenceMode",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 850,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-c852e54c39199dbf31d9",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "<h2>No custom cards yet</h2><p>Import a FACS sheet first, then save it here to keep it available after reopening the app.</p>",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 502,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": "saveAllCustomCards",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "prose-candidate"
+    },
+    {
+      "id": "text-ca13b21719f7d598024e",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": ". Framing lock: ",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 681,
+          "column": 608,
+          "kind": "string-literal",
+          "functionName": "buildCompactFACSBoardPrompt",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-cc079beb07da1dce4470",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Character anchor",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 143,
+          "column": 29,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-d0e08aeb9b7123222dd7",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": ". The result must read like a professional facial acting / expression reference chart that can be sliced into 49 clean cards.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 681,
+          "column": 1153,
+          "kind": "string-literal",
+          "functionName": "buildCompactFACSBoardPrompt",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-ef33f76c7b94204f9323",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": " FACS acting instruction",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 711,
+          "column": 77,
+          "kind": "string-literal",
+          "functionName": "buildOutput",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-f8a524125f73875602b5",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": " reference for ",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 800,
+          "column": 836,
+          "kind": "string-literal",
+          "functionName": "render",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    }
+  ]
+}

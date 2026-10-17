@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prompt Skills Update 2026-10-03 (Wan 3.0, MiniMax H3, FLUX 3, Kling 3)</title>
+<meta name="description" content="Companion update to prompt-engines-reference.html: four complete corrected engine prompt skills (wan30-prompt v2, minimax-h3-prompt v2, flux3-prompt v2, kling3-video-prompt v2), each with a change log against the previous version.">
+<meta name="date" content="2026-10-03">
+<meta name="companion-of" content="prompt-engines-reference.html">
+<style>
+:root{--bg:#fbfaf7;--fg:#1c1b19;--mut:#5f5b54;--line:#d9d4c9;--card:#fff;--acc:#8a3b12;--code:#f1eee7;--warn:#fff4d6;--warnl:#c9a227}
+@media (prefers-color-scheme:dark){:root{--bg:#161513;--fg:#ebe7df;--mut:#a39d92;--line:#3a3732;--card:#1e1d1a;--acc:#f0a070;--code:#24221f;--warn:#33290c;--warnl:#a8861c}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:1080px;margin:0 auto;padding:24px 16px 80px}
+h1{font-size:1.9rem;line-height:1.2;margin:.2em 0 .4em}
+h2{font-size:1.45rem;margin:2.4em 0 .5em;padding-top:.6em;border-top:2px solid var(--line)}
+h3{font-size:1.15rem;margin:1.8em 0 .4em;color:var(--acc)}
+h4{font-size:1rem;margin:1.3em 0 .3em}
+p,li{max-width:78ch}
+a{color:var(--acc)}
+code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.88em}
+code{background:var(--code);padding:.08em .32em;border-radius:4px}
+pre{background:var(--code);border:1px solid var(--line);border-radius:8px;padding:12px 14px;overflow-x:auto;white-space:pre-wrap;word-break:break-word;position:relative}
+pre code{background:none;padding:0}
+.tw{overflow-x:auto;margin:.8em 0}
+table{border-collapse:collapse;width:100%;font-size:.92rem;background:var(--card)}
+th,td{border:1px solid var(--line);padding:6px 9px;text-align:left;vertical-align:top}
+th{background:var(--code)}
+.note{background:var(--warn);border-left:4px solid var(--warnl);padding:10px 14px;border-radius:6px;margin:1em 0;max-width:82ch}
+.meta{color:var(--mut);font-size:.92rem}
+nav ol{columns:2;column-gap:32px;padding-left:1.3em}
+nav li{break-inside:avoid}
+@media (max-width:640px){nav ol{columns:1}}
+.copy{position:absolute;top:6px;right:6px;font:inherit;font-size:.75rem;padding:3px 8px;border:1px solid var(--line);border-radius:6px;background:var(--card);color:var(--fg);cursor:pointer}
+@media print{.copy,nav{display:none}body{background:#fff;color:#000}}
+</style>
+</head>
+<body>
+<main>
+
+<header>
+<h1>Prompt Skills Update 2026-10-03: Wan 3.0, MiniMax H3, FLUX 3, Kling 3</h1>
+<p class="meta">Companion to <code>prompt-engines-reference.html</code> (same date, same conventions). That file is unchanged. This file adds four complete, corrected engine skills. Load both.</p>
+</header>
+
+<section id="how-to-use">
+<h2>0. How to use this update (instructions for any LLM)</h2>
+<ol>
+<li>This document contains four <strong>engine skills</strong>. Each one is complete and self-contained: it replaces the earlier skill of the same name in full.</li>
+<li>When the user names one of these engines, follow the matching skill section here. Use <code>prompt-engines-reference.html</code> for cross-engine craft (directing, staging, photography, control techniques).</li>
+<li><strong>Precedence:</strong> if a rule here differs from an older copy of a skill named <code>wan30-prompt</code>, <code>minimax-h3-prompt</code>, <code>flux3-prompt</code> or <code>kling3-video-prompt</code>, this document wins. It does not contradict the reference file.</li>
+<li>Each skill starts with a change log: old rule, new rule, source tag. Read it first if you hold an older version.</li>
+</ol>
+<div class="tw"><table>
+<tr><th>Tag</th><th>Meaning</th></tr>
+<tr><td><code>[O]</code></td><td>Official vendor documentation, API reference or repository.</td></tr>
+<tr><td><code>[3P]</code></td><td>Third party: host platform schema, practitioner guide, independent test.</td></tr>
+<tr><td><code>[P]</code></td><td>Production practice from the author's own skills.</td></tr>
+<tr><td><code>[U]</code></td><td>Unverified or conflicting. Do not state as fact.</td></tr>
+</table></div>
+<h3 id="common-output">0.1 Output conventions shared by the four skills [P]</h3>
+<ul>
+<li>Deliver the prompt in an HTML widget with a copy-to-clipboard button. Plain code block as fallback.</li>
+<li>Prompt body in English. Surrounding commentary in the user's language.</li>
+<li>No em dashes in the prompt or the commentary.</li>
+<li>Never format the prompt itself with markdown.</li>
+<li>Below the prompt: one settings line (mode, duration, ratio, resolution, audio), then the reference load order, then the one or two shots most likely to fail with their fallback.</li>
+<li>Never name a real person, a brand or a protected character in a prompt. Describe features.</li>
+<li>Never name a fabrication technique (latex, puppet, prosthetic, miniature, CGI). Describe the visible result.</li>
+</ul>
+</section>
+
+<nav aria-label="Table of contents">
+<h2>Contents</h2>
+<ol>
+<li><a href="#skill-wan30">wan30-prompt v2 (Wan 3.0)</a></li>
+<li><a href="#skill-h3">minimax-h3-prompt v2 (MiniMax H3)</a></li>
+<li><a href="#skill-flux3">flux3-prompt v2 (FLUX 3 Video and FLUX 3 Image)</a></li>
+<li><a href="#skill-kling3">kling3-video-prompt v2 (Kling 3.0 and 3.0 Omni)</a></li>
+<li><a href="#update-sources">Sources</a></li>
+</ol>
+</nav>
+
+<!-- =================== WAN 3.0 =================== -->
+<section id="skill-wan30">
+<h2>1. Skill: wan30-prompt v2</h2>
+<p class="meta"><strong>Use for:</strong> Wan 3.0 (<code>wan3.0-video</code>, <code>wan3.0-video-prime</code>), 通义万相 3.0, "Wan 3", "Wan3". "Wan 3.5" and "Wan 3.6" do not exist: say so once, then write for Wan 3.0. <strong>Do not use for:</strong> Wan 2.6, Wan 2.7, Wan 2.2 local, or any other engine.</p>
+
+<h3 id="wan30-changes">1.0 Change log against v1</h3>
+<div class="tw"><table>
+<tr><th>Topic</th><th>v1 rule (now wrong or incomplete)</th><th>v2 rule</th><th>Tag</th></tr>
+<tr><td>Timestamps</td><td>"Hard timestamps are a Veo idiom and add nothing"</td><td>The official formula uses numbered shots with timestamps: <code>Shot 1 [0-3s]</code>. Station-then-move phrasing stays valid for one-takes.</td><td>[O]</td></tr>
+<tr><td>Exclusions</td><td>"Phrase exclusions positively only; no negatives"</td><td>No API parameter, but the official guide puts a negative list at the end of the prompt. Use both for critical exclusions.</td><td>[O]</td></tr>
+<tr><td>Citation token</td><td><code>Image1</code>, <code>Video1</code></td><td><code>Image 1</code>, <code>Video 1</code>, <code>Audio 1</code> with a space</td><td>[O]</td></tr>
+<tr><td>Multi-shot marker</td><td><code>Cut to.</code></td><td><code>Shot N [a-bs]</code> blocks; transitions named "hard cut" or "dissolve"</td><td>[O]</td></tr>
+<tr><td>Reference limits</td><td>"Whether several reference videos are accepted is unknown"</td><td>10 images, 5 videos (15 s total), 5 audio (15 s total), 1 file, 1 link, 20 materials</td><td>[O]</td></tr>
+<tr><td>Ratios</td><td>adaptive, 16:9, 4:3, 1:1, 3:4, 9:16</td><td>adds 21:9 (API reference)</td><td>[O]</td></tr>
+<tr><td>Modes</td><td>T2V, frame control, omni-reference, document</td><td>adds video editing and extension (forward, backward, both)</td><td>[O]</td></tr>
+<tr><td>Dialogue</td><td>"Dialogue in quotes with the speaker named"</td><td>Official form: character + speaking verb + colon + quoted line; voiceover, timbre reference, "Lip sync", "No dialogue"</td><td>[O]</td></tr>
+<tr><td>Prompt rewriting</td><td>not covered</td><td><code>prompt_extend</code> is on by default; turn it off for structured prompts</td><td>[O] / [3P]</td></tr>
+<tr><td>Status</td><td>"Public beta on application since 2026-08-06"</td><td>Released 2026-08-13; faster variant <code>wan3.0-video-prime</code></td><td>[O]</td></tr>
+<tr><td>Frame rate</td><td>not stated</td><td>30 fps fixed</td><td>[O]</td></tr>
+</table></div>
+
+<h3>1.1 Specs</h3>
+<div class="tw"><table>
+<tr><th>Parameter</th><th>Values</th><th>Default</th></tr>
+<tr><td><code>model</code></td><td><code>wan3.0-video</code>, <code>wan3.0-video-prime</code> (faster, same capabilities)</td><td></td></tr>
+<tr><td>Prompt</td><td>Chinese or English, up to 20,000 characters</td><td></td></tr>
+<tr><td>Media types</td><td><code>first_frame</code>, <code>last_frame</code>, <code>reference_image</code>, <code>reference_video</code>, <code>reference_audio</code>, <code>file</code>, <code>link</code></td><td></td></tr>
+<tr><td>Resolution</td><td>480P, 720P, 1080P</td><td>1080P</td></tr>
+<tr><td>Ratio</td><td>adaptive, 21:9, 16:9, 4:3, 1:1, 3:4, 9:16</td><td>adaptive</td></tr>
+<tr><td>Duration</td><td>2 to 30 seconds, or -1 for smart duration</td><td>5</td></tr>
+<tr><td>Frame rate</td><td>30 fps, fixed; MP4</td><td></td></tr>
+<tr><td>Audio</td><td>dialogue, music, effects; <code>audio=false</code> disables</td><td>on</td></tr>
+<tr><td><code>prompt_extend</code></td><td>true or false</td><td>true</td></tr>
+<tr><td>References</td><td>10 images (20 MB each), 5 videos (15 s total), 5 audio (15 s total), 1 file (100 MB, 50 pages), 1 link; 20 materials</td><td></td></tr>
+</table></div>
+<p class="meta">All rows [O]. Hard rules: first/last frame cannot be combined with references, files or links in one request. With a source video, input plus output stays within 30 s. No <code>negative_prompt</code> parameter. No open weights, no local inference, no 4K [P]. Do not quote a price.</p>
+
+<h3>1.2 Pick the mode</h3>
+<div class="tw"><table>
+<tr><th>User has</th><th>Mode</th><th>What the prompt carries</th></tr>
+<tr><td>Only an idea</td><td>Text-to-video</td><td>Everything</td></tr>
+<tr><td>One start image, or start and end images</td><td>Frame control</td><td>The journey between the frames, not the frames</td></tr>
+<tr><td>Characters, sets, clips, voices</td><td>Multimodal reference</td><td>Role citations, then shots</td></tr>
+<tr><td>A deck, a PDF, a web page</td><td>Document to video</td><td>Art direction only: palette, light, camera grammar, pacing</td></tr>
+<tr><td>A clip to change</td><td>Video editing</td><td>One instruction, plus "keep the rest unchanged"</td></tr>
+<tr><td>A clip to lengthen</td><td>Extension</td><td>Direction, restated character and scene details, new action</td></tr>
+<tr><td>A grey 3D render</td><td>Clay render reference</td><td>"Nothing changes except material and colour" plus the list of locked items</td></tr>
+<tr><td>An image with a red line drawn on it</td><td>Camera path reference</td><td>State that the red line is the camera path and must not appear in the output</td></tr>
+</table></div>
+
+<h3>1.3 Prompt architecture [O]</h3>
+<pre class="tpl"><code>[Overall description: format, genre, one sentence of intent.]
+[Reference citations with roles: "the face and build of Image 1", "the set dressing and palette of Image 2", "camera behaving as in Video 1".]
+
+Shot 1 [0-3s]: [subject] + [scene] + [motion] + [aesthetics: shot size, angle, light] + [dialogue] + [sound or BGM] + [style and mood].
+Shot 2 [3-7s]: hard cut. [the same man in the ochre jacket] + ...
+Shot 3 [7-10s]: ...
+
+No subtitles. No watermark. No slow motion.</code></pre>
+<ul>
+<li>Accepted shot markers: <code>Shot 1 [0-3s]</code>, <code>Segment 1 (00:00-00:03)</code>, <code>[00:00-00:03]</code>. Segments are contiguous. 2 to 5 seconds per segment.</li>
+<li>Subject lock in the first 25 words: age, build, face, hair, wardrobe with materials and colours. Restate the subject in one clause after every cut. [O] [P]</li>
+<li>Name light sources, shot size and angle. Short vague prompts are auto-cut into several stock-like shots. [3P]</li>
+<li>Put style as an intent sentence at the top, not as trailing adjectives ("cinematic, 8k, masterpiece" is noise). [P]</li>
+<li>Turn <code>prompt_extend</code> off (or "Auto Polish" on hosts) whenever the prompt has shot labels and timestamps. [3P]</li>
+</ul>
+<h4>One-take variant [O] [P]</h4>
+<pre class="tpl"><code>One continuous shot, no cuts.
+[Subject lock in 25 words.]
+The camera opens on [station A], holds two seconds, then [one move] toward [station B] as [action]. It settles on [station C] when [end state].
+[Environment and light.] [Audio.]
+No subtitles. No watermark.</code></pre>
+<p>Write "One continuous shot" or "Generate single shot" on the first line. For takes over 10 seconds, write the camera as one unbroken path with named stations. Use a fixed duration when the clip must fit an edit; use <code>-1</code> when the beats are written but pacing is uncertain.</p>
+
+<h3>1.4 References [O]</h3>
+<ul>
+<li>Token: <code>Image 1</code>, <code>Video 2</code>, <code>Audio 1</code>. No @. Images, videos and audio are numbered separately, each in upload order. Numbers must match upload order.</li>
+<li>A single material may be called "Reference image" or "Reference video".</li>
+<li>Always cite by role. A bare "Image 1" leaves the model to guess what to copy.</li>
+<li>The same material can be cited several times for different roles.</li>
+<li>When a reference audio drives lip-sync, do not also write the line as text. [P]</li>
+<li>OpenArt uses <code>@Image1</code> on its own interface. [3P]</li>
+</ul>
+
+<h3>1.5 Audio and dialogue [O]</h3>
+<div class="tw"><table>
+<tr><th>Need</th><th>Write</th></tr>
+<tr><td>A spoken line</td><td><code>The woman whispers: "We leave at dawn."</code></td></tr>
+<tr><td>Several speakers</td><td><code>Image 1 says: "..."; Image 2 replies: "..."</code>, each with a visible action anchor</td></tr>
+<tr><td>Voiceover</td><td><code>Voiceover: "..."</code></td></tr>
+<tr><td>Voice cloning</td><td>"voice timbre references Audio 1"</td></tr>
+<tr><td>Lip-sync</td><td>add "Lip sync"</td></tr>
+<tr><td>No speech</td><td>"No dialogue"</td></tr>
+<tr><td>No music</td><td>"No BGM, generate only ambient and action sounds"</td></tr>
+<tr><td>Sound effects</td><td>standalone sentences, optionally timed</td></tr>
+</table></div>
+<p>Budget about 2.5 seconds of speech per 5 seconds of clip. [3P]</p>
+
+<h3>1.6 Editing and extension [O]</h3>
+<pre class="tpl"><code>Edit the video: replace [X] in Video 1 with [Y], keep the rest unchanged.
+Edit the video: at 4-6s, change [X] to [Y]. Keep everything else unchanged.
+Edit the video: replace the line at 2-5s with: "[new line]", keep the same voice timbre.
+Extend Video 1 forward. [Restate character and scene details.] [New action.]</code></pre>
+<p>Change one thing per edit. Extension keywords: extend, continue, with a direction (forward, backward, both).</p>
+
+<h3>1.7 Exclusions</h3>
+<ul>
+<li>Official: a short negative list at the very end, not repeating positive content: "No subtitles. No watermark. No slow motion." [O]</li>
+<li>Production: for a critical exclusion, also state the wanted state positively inside the shot ("the laptop lid is bare brushed aluminium, unmarked"). [P]</li>
+<li>Vocabulary: write "static" or "locked off", not "tripod". [P]</li>
+</ul>
+
+<h3>1.8 Failure modes</h3>
+<ul>
+<li>Vendor-admitted: audio texture, exact on-screen text, word-exact lip-sync, very long action sequences, rapid scene changes. [O]</li>
+<li>High-frequency actions it cannot control: avoid. [O]</li>
+<li>Prompt enhancer rewriting labels and timestamps: turn it off. [3P]</li>
+<li>Independent adherence beyond 20 seconds is still thinly tested. Say so. [P]</li>
+</ul>
+
+<h3>1.9 Presets [P]</h3>
+<div class="tw"><table>
+<tr><th>Preset</th><th>Intent line</th><th>Camera default</th></tr>
+<tr><td>One-take music video</td><td>One continuous shot, no cuts, movement on the beat</td><td>Steadicam orbit, subject-locked</td></tr>
+<tr><td>Short drama</td><td>Television drama grammar, two to three cuts, performance-led</td><td>Shoulder height, slow push</td></tr>
+<tr><td>Product ad</td><td>Minimalist product film, macro to reveal</td><td>Locked macro, then slow rise</td></tr>
+<tr><td>Documentary</td><td>Observational, handheld, no score, diegetic sound only</td><td>Handheld, reframing</td></tr>
+<tr><td>Deadpan absurd</td><td>Static frontal tableau, deadpan, no reaction shots</td><td>Fixed wide frame</td></tr>
+<tr><td>Vintage found footage</td><td>Amateur 16mm, gate weave, slight underexposure, no score</td><td>Handheld, imprecise framing</td></tr>
+<tr><td>2D animation</td><td>Hand-drawn cel animation, sharp linework</td><td>Held frames</td></tr>
+</table></div>
+
+<h3>1.10 Checklist</h3>
+<ol>
+<li>Mode chosen; frame control not mixed with references.</li>
+<li>Duration 2 to 30 or -1; input plus output within 30 s for extension.</li>
+<li>Subject locked in the first 25 words and restated after each cut.</li>
+<li>Shots contiguous, 2 to 5 s each, timestamps sum to the duration.</li>
+<li>References cited as <code>Image N</code> with a role, numbers matching upload order.</li>
+<li>Dialogue in the official form; "No dialogue" or "No BGM" written when wanted.</li>
+<li>Negative list at the end; critical exclusions also stated positively.</li>
+<li><code>prompt_extend</code> off for structured prompts.</li>
+</ol>
+</section>
+
+<!-- =================== MINIMAX H3 =================== -->
+<section id="skill-h3">
+<h2>2. Skill: minimax-h3-prompt v2</h2>
+<p class="meta"><strong>Use for:</strong> MiniMax H3 (<code>MiniMax-H3</code>, <code>MiniMax-H3-Max</code>), also labelled "Hailuo 3.0" or "Hailuo 03" by third parties. <strong>Do not use for:</strong> Seedance, Kling, Wan, FLUX, Veo.</p>
+
+<h3 id="h3-changes">2.0 Change log against v1</h3>
+<div class="tw"><table>
+<tr><th>Topic</th><th>v1 rule</th><th>v2 rule</th><th>Tag</th></tr>
+<tr><td>Timecodes</td><td>"Does not use timecodes. H3 reads per-shot durations in prose."</td><td>The native format is <code>[Shot 1]</code>, then <code>[Shot N] At MM:SS.mmm, the camera cuts to ...</code>. "Shot N - X seconds" still works on hosts with the prompt expander.</td><td>[O]</td></tr>
+<tr><td>Prompt shape</td><td>Five custom blocks</td><td>Official fields: 3 in base mode, 6 in reference mode. The five-block form remains as the simple format.</td><td>[O]</td></tr>
+<tr><td>Reference tokens</td><td>Prose ordinals only ("Image 1")</td><td>Native tags <code>&lt;Picture N&gt;</code>, <code>&lt;Video N&gt;</code>, <code>&lt;Audio N&gt;</code>, <code>&lt;Subject N&gt;</code>. Write both where unsure.</td><td>[O] / [P]</td></tr>
+<tr><td>Preservation</td><td>Prose ("take motion only")</td><td>Retention tokens: <code>fully_preserved</code>, <code>partially_preserved</code>, <code>attribute_transfer</code>, <code>weak_reference</code></td><td>[O]</td></tr>
+<tr><td>Dialogue</td><td>Line in quotes with the speaker</td><td><code>Character (S1) says: &lt;d&gt;[English] line.&lt;/d&gt;</code></td><td>[O]</td></tr>
+<tr><td>Camera</td><td>Lens, support, movement</td><td>Add amplitude and speed, or moves come out minimal</td><td>[O] / [3P]</td></tr>
+<tr><td>Modes</td><td>t2va, i2va, r2va</td><td>adds last-frame only, video editing, video continuation, keyframe completion, audio reuse</td><td>[O]</td></tr>
+<tr><td>Resolution</td><td>2K; "768p mode announced"</td><td>768P or 2K; H3-Max 480P or 768P</td><td>[O]</td></tr>
+<tr><td>Frame plus references</td><td>not covered</td><td>Mutually exclusive in practice: one group is dropped silently and still billed</td><td>[P]</td></tr>
+<tr><td>Contact sheets</td><td>"Always split a grid into separate crops"</td><td>Objects: separate crops. Characters: one image holding three views can hold identity better. Test.</td><td>[P]</td></tr>
+</table></div>
+
+<h3>2.1 Specs [O]</h3>
+<ul>
+<li>Endpoint <code>POST /v2/video_generation</code>, asynchronous. Open weights announced 2026-08-03 (the Context-IR preprocessor and the 2K regeneration module are API-only).</li>
+<li>Duration 4 to 15 seconds, integers only (H3-Max 5 to 15). 24 fps. Stereo audio, 32 kHz.</li>
+<li>Resolution 768P or 2K. Ratios: adaptive, 21:9, 16:9, 4:3, 1:1, 3:4, 9:16.</li>
+<li>Prompt up to 7,000 characters. Reference-mode description target: 350 to 500 words.</li>
+<li>References: 9 images, 3 videos (2 to 15 s each, 15 s total), 3 audio (15 s total), 12 files, request up to 64 MB. Audio cannot be sent alone.</li>
+<li>Languages: Arabic, Chinese, English, French, German, Italian, Japanese, Korean, Portuguese, Russian, Spanish.</li>
+<li>No negative-prompt field. No seed continuity between 768P and 2K. [O/3P]</li>
+</ul>
+
+<h3>2.2 Pick the mode</h3>
+<div class="tw"><table>
+<tr><th>Mode</th><th>Input</th><th>Ratio rule</th><th>Use</th></tr>
+<tr><td>T2VA</td><td>prompt only</td><td>required, not adaptive</td><td>idea only</td></tr>
+<tr><td>I2VA</td><td>first frame</td><td>from the image</td><td>precise opening</td></tr>
+<tr><td>FL2VA</td><td>first and last frame</td><td>from the image</td><td>controlled A to B, 4 to 6 s, no multi-shot</td></tr>
+<tr><td>L2VA</td><td>last frame only</td><td>from the image</td><td>land on a packshot or a final pose</td></tr>
+<tr><td>Ref2VA</td><td>images, videos, audio</td><td>optional, default adaptive</td><td>consistency, motion transfer, voice, editing, continuation</td></tr>
+</table></div>
+<div class="note"><strong>Never fill frame slots and reference slots together.</strong> To lock an opening frame and also use references, put the frame among the reference images and call it the composition anchor. An accepted submission proves nothing: check the result. [P]</div>
+
+<h3>2.3 Native format [O]</h3>
+<h4>Base mode (T2VA, I2VA, FL2VA, L2VA): three fields in this order</h4>
+<pre class="tpl"><code>integrated_multimodal_description: [For frame modes, start with the image-alignment instruction.] [Shot 1] [subject, action, environment, light, camera with amplitude and speed]. [Shot 2] At 00:04.000, the camera cuts to [...]. The man (S1) says: &lt;d&gt;[English] We leave at dawn.&lt;/d&gt;
+
+overall_soundscape: [prose foley and ambience, in shot order; do not repeat the dialogue here]
+
+non_diegetic_music: N/A</code></pre>
+<h4>Reference mode (Ref2VA): six fields</h4>
+<pre class="tpl"><code>[reference generation]
+
+subject_definitions: &lt;Subject 1&gt; is DEXTER, attribute_transfer from &lt;Picture 1&gt;: face, hair and wardrobe only. &lt;Subject 2&gt; is the vehicle, attribute_transfer from &lt;Picture 2&gt;: shape, colour and materials.
+
+summary: [one or two sentences]
+
+retention_analysis: &lt;Video 1&gt; is fully_preserved for camera movement, blocking, timing and cut points. Take nothing else from it. &lt;Picture 3&gt; is weak_reference for colour grade and atmosphere. Ignore every reference backdrop and every reference's own lighting.
+
+detailed_description: [Shot 1] [...]. [Shot 2] At 00:03.500, the camera cuts to [...].
+
+overall_soundscape: [prose]
+
+non_diegetic_music: N/A</code></pre>
+<div class="tw"><table>
+<tr><th>Element</th><th>Syntax</th></tr>
+<tr><td>Task prefix</td><td><code>[keyframe completion]</code>, <code>[reference generation]</code>, <code>[video editing]</code>, <code>[video continuation]</code>, <code>[audio reuse]</code>, <code>[audio reference]</code>; combine with <code> + </code></td></tr>
+<tr><td>Reference tags</td><td><code>&lt;Subject N&gt;</code>, <code>&lt;Picture N&gt;</code>, <code>&lt;Video N&gt;</code>, <code>&lt;Audio N&gt;</code>. Video and audio number independently; a clip's own soundtrack can take an early audio slot [P].</td></tr>
+<tr><td>Visual retention</td><td><code>fully_preserved</code> (keep as is), <code>partially_preserved</code>, <code>attribute_transfer</code> (move traits onto a different target: the marker for character replacement), <code>weak_reference</code></td></tr>
+<tr><td>Audio retention</td><td><code>fully_copy</code>, <code>partially_copy</code>, <code>reference</code>, <code>weak_reference</code></td></tr>
+<tr><td>Shots</td><td><code>[Shot 1]</code> without timestamp; later shots with increasing <code>At MM:SS.mmm</code></td></tr>
+<tr><td>Dialogue</td><td><code>(S1) says: &lt;d&gt;[Language] line.&lt;/d&gt;</code>; <code>(S1,S2)</code> for joint speech; <code>&lt;cutoff&gt;</code> for truncated speech; <code>&lt;scenetrans&gt;</code> for a line across a cut; off-screen voiceover stated explicitly</td></tr>
+<tr><td>On-screen text</td><td>verbatim in quotes</td></tr>
+<tr><td>Camera</td><td>"the camera pushes in with small amplitude at slow speed". Verbs: Zoom In/Out, Push In/Out, Pan Left/Right, Truck Left/Right, Tilt Up/Down, Pedestal Up/Down, Arc Shot, Tracking Shot, Static Shot, Shake Slightly/Strongly, POV, Roll Clockwise/Counterclockwise</td></tr>
+</table></div>
+<div class="note"><strong>Angle brackets are tags on H3.</strong> Never write sound effects in angle brackets (a Seedance 2.5 habit): H3 tries to resolve them as references. Square brackets are reserved for <code>[Shot N]</code> and task prefixes: legacy bracketed camera directives such as <code>[Push in]</code> do not work. [P]</div>
+
+<h3>2.4 Simple block format [P]</h3>
+<p>Valid on hosted H3, where the platform expander rewrites it into the native format. On raw open weights, use 2.3.</p>
+<pre class="tpl"><code>Use Image 1 &lt;Picture 1&gt; as the locked design reference for [subject]. Preserve exactly: [3 to 8 hard traits: silhouette, part count, colour blocking, markings, wear]. The geometry stays rigid and identical in every shot. No morphing, no scale drift.
+Match the camera movement from Video 1 &lt;Video 1&gt;. Motion only, not the subject, not the location, not the palette.
+
+Style: [shooting situation: medium, era, who films and how], [light], [palette], natural grain. [Global rule for every shot.]
+
+Shot 1 - 3 seconds. Camera: 180mm telephoto, locked off, ground level, static. [One action.]
+Shot 2 - 2 seconds. Camera: 24mm, low, pushes in with large amplitude at fast speed. [One action.]
+Shot 3 - 2 seconds. Camera: 50mm, handheld, pans right with small amplitude at slow speed. [One action.]
+
+Audio, native stereo: NO MUSIC, none at any point. Diegetic sound only: [4 to 8 sounds tied to the shots, in order]. No voice, no dialogue.
+
+Settings: 21:9, 2K, 7 seconds.</code></pre>
+<ul>
+<li>Durations are whole seconds and sum exactly to the total. Practical floor 2 seconds. Give 3 seconds to the shot carrying the most information.</li>
+<li>For 15 seconds: 3x5 (contemplative), 5x3 (documentary standard), 6x2 plus 1x3 (reportage). More than 7 shots stops reading as cuts.</li>
+<li>One action per shot. Vary lens, support and movement between consecutive shots.</li>
+<li>Focal lengths work. F-stops, ISO and frame rates are ignored.</li>
+<li>Put the music prohibition first in the audio line.</li>
+<li>State what to ignore in each reference, not only what to take.</li>
+</ul>
+
+<h3>2.5 Editing and replacement [P]</h3>
+<pre class="tpl"><code>[video editing]
+Replace only [who, identified by what they are in the plate] in &lt;Video 1&gt; with the character in &lt;Picture 1&gt;.
+attribute_transfer from &lt;Picture 1&gt;: face, hair, outfit, body proportions, held for the whole clip.
+&lt;Video 1&gt; is fully_preserved for the background, the props, the camera path, framing, focus, motion blur, lighting, shadows, grain and the original edit.
+Maintain correct occlusion. Match scale and contact shadows. Add no camera movement of your own. Do not add new movement, objects, cuts, text or accessories.</code></pre>
+<ul>
+<li>Lead with a trigger verb (replace, remove, relight, restyle). Name the camera path, motion blur and grain in the preservation clause.</li>
+<li>Match the reference framing to the plate framing (full body to full body).</li>
+<li>Two edit passes at most: décor first, then cast.</li>
+</ul>
+
+<h3>2.6 Failure modes</h3>
+<div class="tw"><table>
+<tr><th>Symptom</th><th>Fix</th><th>Tag</th></tr>
+<tr><td>Unwanted cuts</td><td>One move per clip, no "then" chains, add "No cuts."</td><td>[3P]</td></tr>
+<tr><td>A slow dolly nobody asked for</td><td>"Preserve the camera path from &lt;Video 1&gt; exactly. Add no camera movement of your own."</td><td>[P]</td></tr>
+<tr><td>Camera move barely visible</td><td>State amplitude and speed</td><td>[3P]</td></tr>
+<tr><td>Line clipped</td><td>Early timecode, extra duration</td><td>[3P]</td></tr>
+<tr><td>Voices merge between speakers</td><td>Generate single-speaker shots separately</td><td>[P]</td></tr>
+<tr><td>Props or light drift across cuts</td><td>Restate them in identical wording in each shot</td><td>[3P]</td></tr>
+<tr><td>Rigid subject breathes against a sliding background</td><td>Small continuous motion plus a contact cue (shadow on the surface below)</td><td>[P]</td></tr>
+<tr><td>A second subject clones the referenced one</td><td>Describe it as explicitly different and simple</td><td>[P]</td></tr>
+<tr><td>Small text, logos, numerals mutate</td><td>Close short shot, or composite in post</td><td>[P]</td></tr>
+<tr><td>Small faces lose identity</td><td>Tighter framing</td><td>[3P]</td></tr>
+<tr><td>Uninvited score</td><td><code>non_diegetic_music: N/A</code>, or "NO MUSIC" first</td><td>[O] / [P]</td></tr>
+<tr><td>Output audio quiet</td><td>Raise the level in post</td><td>[3P]</td></tr>
+</table></div>
+
+<h3>2.7 Checklist</h3>
+<ol>
+<li>Mode stated. Frame slots and reference slots not both filled.</li>
+<li>Duration is an integer from 4 to 15; shot durations or timecodes consistent with it.</li>
+<li>Every reference cited by number with what to take and what to ignore.</li>
+<li>No angle brackets other than reference and dialogue tags.</li>
+<li>Camera moves carry amplitude and speed; one move per shot.</li>
+<li>Audio directed; music explicitly on or off.</li>
+<li>Exclusions written inline as constraint sentences.</li>
+</ol>
+</section>
+
+<!-- =================== FLUX 3 =================== -->
+<section id="skill-flux3">
+<h2>3. Skill: flux3-prompt v2</h2>
+<p class="meta"><strong>Use for:</strong> FLUX 3 Video and FLUX 3 Image (Black Forest Labs). <strong>Do not use for:</strong> FLUX.1 and FLUX.2 stills beyond the routing note in 3.9, or any other engine.</p>
+
+<h3 id="flux3-changes">3.0 Change log against v1</h3>
+<div class="tw"><table>
+<tr><th>Topic</th><th>v1 rule</th><th>v2 rule</th><th>Tag</th></tr>
+<tr><td>FLUX 3 Image</td><td>"Announced but not released. Say it is not live."</td><td>Launched 2026-10-01 as a preview (<code>POST /v1/flux-3-image</code>). Write real prompts for it: see 3.9.</td><td>[O]</td></tr>
+<tr><td>Resolution</td><td>"720p native or 1080p upsampled"</td><td>BFL classes hd, fhd, qhd, uhd (1280x704 up to 3840x2176 at 16:9). fal and Runware expose 720p and 1080p only.</td><td>[O] / [3P]</td></tr>
+<tr><td>Ratios</td><td>seven ratios</td><td>adds 9:21 and auto</td><td>[O]</td></tr>
+<tr><td>Editing</td><td>not covered</td><td>Separate tool, FLUX Video Edit: see 3.7</td><td>[O]</td></tr>
+<tr><td>Reference-to-video</td><td>not covered</td><td>Announced ("Omni Reference"), not confirmed live. No citation syntax. Do not promise it.</td><td>[U]</td></tr>
+<tr><td>Dialogue faults</td><td>partial</td><td>Repeated line, clipped last word, language mixing: fixes in 3.5</td><td>[O]</td></tr>
+<tr><td>Poster ratio</td><td>"No 2:3: shoot 3:4 and crop"</td><td>FLUX 3 Image has 2:3 natively</td><td>[O]</td></tr>
+</table></div>
+
+<h3>3.1 Specs [O]</h3>
+<ul>
+<li>Endpoint <code>/v1/flux-3-video</code>. Preview model. Duration 5 to 20 seconds in whole seconds, or auto. Continuation 5 to 15 seconds.</li>
+<li>24 fps: frame index = seconds x 24.</li>
+<li>Ratios: auto, 21:9, 2:1, 16:9, 4:3, 1:1, 3:4, 9:16, 9:21.</li>
+<li>Audio on by default: multilingual speech with lip-sync, effects, ambience.</li>
+<li>Keyframes: 1 image is the start frame, 2 are start and end, up to 10 timestamped. Positions by frame or by timestamp, all unique, none beyond the duration.</li>
+<li>Keyframes and continuation cannot share a request. [P]</li>
+<li>No negative-prompt parameter. No motion control. No 3D blockout input.</li>
+<li>No prompt limit on BFL; 10,000 characters on Runware [3P]. "Grounding" toggle on fal, on by default [3P].</li>
+<li>The model rewrites and expands the prompt: stated layers are respected, open layers are invented. [3P]</li>
+</ul>
+
+<h3>3.2 Pick the mode</h3>
+<div class="tw"><table>
+<tr><th>User has</th><th>Mode</th><th>What you write</th></tr>
+<tr><td>Only an idea</td><td>Text-to-video</td><td>Camera, subject, action, environment, supporting motion, look and sound</td></tr>
+<tr><td>One still</td><td>Image-to-video (first frame pinned)</td><td>Motion, camera, light evolution, audio. Say "Use this image as the first frame". Restate light and lens only.</td></tr>
+<tr><td>Start and end stills</td><td>First/last morph</td><td>The journey, plus "no cuts". Shared composition, angle and light work best.</td></tr>
+<tr><td>2 to 10 ordered stills</td><td>Keyframes</td><td>What happens between positions. Repeat subject wording verbatim.</td></tr>
+<tr><td>A packshot to land on</td><td>Last-frame pin</td><td>Motion into the final state</td></tr>
+<tr><td>A clip to lengthen</td><td>Continuation</td><td>From the final beat forward only</td></tr>
+<tr><td>A clip to change</td><td>FLUX Video Edit</td><td>One instruction (3.7)</td></tr>
+<tr><td>A single image</td><td>FLUX 3 Image</td><td>See 3.9</td></tr>
+</table></div>
+<p>Draft is a cheap first pass on text-to-video, not a mode. Fix every prompt problem at draft stage: enhance adds detail on the same seed and motion, it does not re-plan. [O] [P]</p>
+
+<h3>3.3 Prompt shapes [O]</h3>
+<ol>
+<li><strong>Short phrase:</strong> look development only.</li>
+<li><strong>One-liner (default):</strong> camera, subject, action, environment, supporting motion, look and sound, in one flowing sentence.</li>
+<li><strong>Labelled lines:</strong> camera / subject and action / depth of field / lighting / motion / audio / style. Best for changing one line per pass.</li>
+<li><strong>Timestep beats:</strong> <code>0.0-3.5s: ...</code> with <code>HARD CUT.</code> where a cut belongs.</li>
+</ol>
+<p>Complex sequences: core summary, scene, subject description, dynamic narrative (timecoded), audio, style and colour. Five elements to cover in any shape: subject and action, camera direction, scene and atmosphere, motion qualities, continuity constraints.</p>
+<ul>
+<li>Plain prose, concrete nouns and verbs. One framing term, one movement term, one clear action.</li>
+<li>About 5 to 7 seconds per beat. Each beat: starting state, one event, observable end state. [O] [P]</li>
+<li>Write the prompt body in English; quote dialogue in the language spoken. Check translation traps ("football", "chips", "veste"). [P]</li>
+<li>Naming a format or an era carries camera, light and editing grammar for free: "a 1987 local news report". [P]</li>
+</ul>
+
+<h3>3.4 Camera [O] [P]</h3>
+<ul>
+<li>Reliable moves: static or locked off, dolly or push in, pull back, pan or tilt, orbit, handheld tracking. Also documented: crane, whip pan, dolly zoom, Steadicam follow, snorricam, roll, arc, pedestal, trucking.</li>
+<li>Say the move and its duration: "camera pushes slowly forward from wide to close over six seconds".</li>
+<li>The default is a slow drift. For no movement write "camera locked at eye level".</li>
+<li>Lens character: "35mm, shallow depth of field", "70mm long lens, compressed background", "anamorphic, oval bokeh". Focus terms: rack focus, split diopter, tilt shift, deep focus.</li>
+</ul>
+
+<h3>3.5 Audio and dialogue [O]</h3>
+<ul>
+<li>Four layers: speech, ambience (named sources), effects (tied to visible actions), music (style, pace, mix position). The layer named first sits in front. [P]</li>
+<li>Speech: visible speaker + delivery + exact words in double quotes. Voiceover must be labelled "off-screen voiceover" or "narration".</li>
+<li>Voice direction: person (age, accent), register, recording perspective, delivery, guardrails ("no announcer delivery").</li>
+<li>Label the language per line; write "same voice" across a language switch.</li>
+<li>About ten words per four seconds. Allow 1 to 2 seconds before speech starts.</li>
+<li>Always add <code>no on-screen text, no subtitles</code> with dialogue.</li>
+<li>Do not ask for "silence": name the room tone, or write "No music. Room tone only."</li>
+<li>Effects as surface plus action: "boots on wet cobblestone". Abstract cues render thin. [P]</li>
+</ul>
+<div class="tw"><table>
+<tr><th>Fault</th><th>Fix</th></tr>
+<tr><td>Line repeated</td><td>"speaks exactly once, the complete sentence"</td></tr>
+<tr><td>Last word cut</td><td>Shorten the line or lengthen the clip</td></tr>
+<tr><td>Captions burned in</td><td>"no on-screen text, no subtitles"</td></tr>
+<tr><td>Languages mixed</td><td>Label the language per line</td></tr>
+<tr><td>Advertising cadence</td><td>"no announcer delivery", plus a recording perspective</td></tr>
+</table></div>
+
+<h3>3.6 Multi-shot [O]</h3>
+<pre class="tpl"><code>SHOT ONE: [framing and action]. HARD CUT.
+SHOT TWO: [new framing, angle or location]. HARD CUT.
+SHOT THREE: [closing beat].
+Music: [one bed for the whole sequence]. no on-screen text, no subtitles.</code></pre>
+<ul>
+<li><code>HARD CUT.</code> in capitals with a full stop. Two or three shots per generation.</li>
+<li>Adjacent shots must differ strongly in scale, angle, location or light.</li>
+<li>Cut on completed motion. Name the music bed once; name ambience per shot. [P]</li>
+<li>One take: "one continuous unbroken shot".</li>
+<li>Longer films: one generation per shot, an identical world-bible paragraph pasted verbatim, the same musical motif named each time.</li>
+</ul>
+
+<h3>3.7 FLUX Video Edit [O]</h3>
+<ul>
+<li>Separate endpoint (<code>/v1/flux-tools/video-edit-v1</code>). Operations: add, remove, replace, restyle, change dialogue.</li>
+<li>Source up to 15 seconds and 50 MiB, downscaled to 720p. Prompt 1 to 4,096 characters.</li>
+<li>No image, video or audio reference. No masks. No extension.</li>
+<li>Write one instruction: the target, the change, what stays.</li>
+</ul>
+
+<h3>3.8 Failure modes [O/3P]</h3>
+<ul>
+<li>Over-stuffed prompts reduce motion coherence: tighten.</li>
+<li>Complex multi-person coordinated action is hard; kinetic action is weaker than dialogue scenes.</li>
+<li>Multi-image storyboards struggle with large motion between keyframes.</li>
+<li>In-prompt exclusions help but are not guaranteed.</li>
+<li>Per-shot timings live in the prose only: uneven splits are a steer, not a guarantee. [P]</li>
+</ul>
+
+<h3 id="flux3-image">3.9 FLUX 3 Image [O]</h3>
+<ul>
+<li>Generation and editing in one endpoint. Up to 10 references (256x256 minimum, 16 MP maximum each).</li>
+<li>Sizes <code>768sq</code>, <code>1k</code> (default), <code>2k</code>, <code>4k</code>. Ratios: 21:9, 2:1, 16:9, 3:2, 7:5, 4:3, 5:4, 1:1, 4:5, 3:4, 5:7, 2:3, 9:16, 1:2, 9:21, plus auto (follows the first reference).</li>
+<li>No seed, width or upsampling field. The expanded prompt is returned.</li>
+<li>No negative prompt: rewrite positively.</li>
+</ul>
+<pre class="tpl"><code>[Image type or medium], [subject, specifically described], [action or pose], in [setting], [light: source, direction, quality, what it does], [framing and detail].</code></pre>
+<ul>
+<li>"Put first what matters most." For realism, describe what a camera records. One or two effects at most. No quality tags.</li>
+<li>References by position with roles: "image 1 is the subject, image 2 is the setting, image 3 is the style". Say how they relate.</li>
+<li>Edit: target, change, what stays: "Modify <code>&lt;ref_image_0&gt;</code> by replacing ... with ... Keep the rest unchanged."</li>
+<li>Text: exact words in quotation marks, placement, typography; <code>\n</code> for line breaks. Hero typography still belongs in post. [O] [P]</li>
+<li>Hex colour: <code>#RRGGBB</code> preceded by "color" or "hex", tied to one named object.</li>
+<li>Layout: caption cites element ids as <code>&lt;id&gt;</code> with JSON rows (<code>id</code>, <code>bbox</code>, <code>desc</code>) on a 0 to 1000 grid. Coordinate order is reported inconsistently: test before relying on it. [U]</li>
+<li>FLUX.2 remains the route when open weights, seeds or JSON prompts are needed.</li>
+</ul>
+
+<h3>3.10 Checklist</h3>
+<ol>
+<li>Video or image decided first. Mode legal for the assets.</li>
+<li>Duration 5 to 20 (5 to 15 for continuation), matched to the number of beats.</li>
+<li>Camera named with a duration, or explicitly locked.</li>
+<li>Every audio layer named; dialogue quoted with a visible speaker; subtitles refused.</li>
+<li>Multi-shot: <code>HARD CUT.</code>, contrasted shots, three at most, music named once.</li>
+<li>Keyframes: ten at most, unique positions, frame maths shown.</li>
+<li>No promise of reference-to-video.</li>
+</ol>
+</section>
+
+<!-- =================== KLING =================== -->
+<section id="skill-kling3">
+<h2>4. Skill: kling3-video-prompt v2</h2>
+<p class="meta"><strong>Use for:</strong> Kling 3.0 (<code>kling-video-v3_0</code>), Kling 3.0 Omni (<code>kling-video-v3_0_omni</code>, also called "Kling O3", "video-o3", 可灵o3). "Kling-03" is not an official name: read it as Kling 3.0 Omni. <strong>Do not use for:</strong> other engines.</p>
+
+<h3 id="kling-changes">4.0 Change log against v1</h3>
+<div class="tw"><table>
+<tr><th>Topic</th><th>v1 rule</th><th>v2 rule</th><th>Tag</th></tr>
+<tr><td>Motion intensity</td><td>"Kling responds well to motion intensity values from 0 to 3" in every shot</td><td>A third-party convention, not confirmed by Kling. Describe speed and energy in words. Keep the number only as an internal planning scale.</td><td>[U]</td></tr>
+<tr><td>Negative prompt</td><td>"Always include a negative prompt"</td><td>A real field only on the Kling 3.0 API (hosts such as fal). Not in the Kling web app or MCP. Not documented for Omni. Deliver it as a separate optional block.</td><td>[3P] / [O]</td></tr>
+<tr><td>Dialogue</td><td>"Audio or dialogue cues"</td><td>Official form: <code>Name (delivery): "line"</code></td><td>[O]</td></tr>
+<tr><td>References</td><td><code>@ElementName</code> only</td><td>Token depends on the platform: see 4.4</td><td>[O] / [3P]</td></tr>
+<tr><td>Omni</td><td>mentioned as a mode</td><td>Full limits and uses: see 4.1 and 4.5</td><td>[O]</td></tr>
+<tr><td>Frame rate</td><td>"4K / 60 fps for hero shots"</td><td>Output frame rate is not stated officially. Do not promise 60 fps.</td><td>[U]</td></tr>
+<tr><td>Prompt length</td><td>80 to 150 words</td><td>Unchanged as a target; hard cap 2,500 characters per prompt and per shot</td><td>[3P]</td></tr>
+<tr><td>Image-to-video</td><td>"Mention reference images at the start"</td><td>Describe motion out of the image, not the image</td><td>[3P]</td></tr>
+</table></div>
+
+<h3>4.1 Specs</h3>
+<div class="tw"><table>
+<tr><th>Item</th><th>Kling 3.0</th><th>Kling 3.0 Omni</th></tr>
+<tr><td>Modes</td><td>Text-to-video; image-to-video with first and optional tail frame; multi-shot; elements (up to 3 in image-to-video); motion control; native audio</td><td>Text-to-video; multi-image reference; image, video and voice-bound elements; first and tail frames; one reference video (as feature reference, or as base video for instruction editing); multi-shot; native audio</td></tr>
+<tr><td>Duration</td><td>3 to 15 s</td><td>3 to 15 s; typically 3 to 10 s with video input</td></tr>
+<tr><td>Ratios</td><td>16:9, 9:16, 1:1</td><td>16:9, 9:16, 1:1, auto</td></tr>
+<tr><td>Resolution</td><td colspan="2">720p (standard), 1080p (pro), 4K (members)</td></tr>
+<tr><td>References</td><td>frames and elements</td><td>7 images or elements without a video; 4 with a video; 1 video of 3 to 10 s (200 MB); up to 3 video elements</td></tr>
+<tr><td>Audio</td><td colspan="2">Chinese, English, Japanese, Korean, Spanish; dialects and code-switching. With video input on Omni, new audio generation is off (keep the original sound).</td></tr>
+<tr><td>Multi-shot</td><td colspan="2">Up to 6 shots within 15 s. "Multi-Shot" (automatic) or "Custom Multi-Shot" (per-shot prompt and duration). API: <code>multi_prompt</code> array, <code>shot_type</code> customize or intelligent.</td></tr>
+<tr><td>Negative prompt</td><td>API: <code>negative_prompt</code> (2,500 characters), <code>cfg_scale</code> 0 to 1, default 0.5</td><td>not documented</td></tr>
+</table></div>
+<p class="meta">[O] for modes, durations, ratios, resolutions, references, audio and multi-shot modes; [3P] for the 6-shot cap in API mirrors, prompt caps and negative-prompt parameters. Elements are built from 2 to 4 multi-angle images (front, side, back, detail) or a 3 to 8 second video, with an optional clean voice clip [O]. No extension mode and no 3D blockout input found for 3.0 [U].</p>
+
+<h3>4.2 Prompt anatomy</h3>
+<p>Order: scene and ambience, characters with fixed unique names, action and dialogue, camera, progression. [3P]. Cover seven elements [P]:</p>
+<ol>
+<li><strong>Subject:</strong> identity, visual traits, wardrobe, expression, props. In the first sentence.</li>
+<li><strong>Environment:</strong> location, weather, time of day.</li>
+<li><strong>Lighting:</strong> source, direction, quality, colour temperature.</li>
+<li><strong>Camera and framing:</strong> shot size, angle, lens feel, one movement.</li>
+<li><strong>Motion and physics:</strong> one action, its speed and energy in words ("barely moves", "walks slowly", "sprints"), weight and contact.</li>
+<li><strong>Style and mood:</strong> realism level, grade, texture. No mixed incompatible styles.</li>
+<li><strong>Audio:</strong> dialogue, ambience, foley, or silence.</li>
+</ol>
+<ul>
+<li>Unique consistent character labels. No pronouns. Bind every line to a speaker and an action. [3P]</li>
+<li>Describe subject behaviour and camera behaviour separately. [3P]</li>
+<li>Do not compress a narrative into one paragraph: use shots. [3P]</li>
+<li>Image-to-video: describe what moves and how the camera moves; do not re-describe the image. [3P]</li>
+</ul>
+
+<h3>4.3 Formats</h3>
+<h4>Single shot</h4>
+<pre class="tpl"><code>[Shot size] of [named subject with traits] in [environment]. [One action, with speed and energy in words.] Camera: [one movement], [angle], [framing progression]. Lighting: [source, direction, quality]. Style: [look, grade, mood]. Audio: [ambience, foley]. Mara (quietly, tired): "[line]"</code></pre>
+<h4>Custom multi-shot (up to 6 shots, total 15 s or less)</h4>
+<pre class="tpl"><code>Shot 1 (4s): [shot size], [named subject + environment + one action], [camera movement], [lighting and style].
+Shot 2 (3s): [shot size], [same named subject, new action], [camera movement].
+Shot 3 (5s): [shot size], [resolution], [camera movement]. Mara (softly, surprised): "[line]"</code></pre>
+<ul>
+<li>Each shot: number, duration, framing, one action, camera movement. Durations stated and summed.</li>
+<li>On the API, send each shot as one entry of <code>multi_prompt</code> with its own duration.</li>
+<li>Official Omni storyboard examples use time-range blocks per shot with shot type, action, dialogue and camera. [O]</li>
+</ul>
+<h4>Dialogue [O] [3P]</h4>
+<pre class="tpl"><code>Official: Mom (softly, surprised): "You're home early."
+Host variant (fal): [Mara: woman in her thirties, low calm voice]: "You're home early." Immediately, [Jon: tired, hoarse]: "I never left."</code></pre>
+<p>"Immediately," and "Pause," pace the turns. On fal, languages other than Chinese and English may be translated to English [3P].</p>
+
+<h3 id="kling-tokens">4.4 Reference tokens by platform</h3>
+<div class="tw"><table>
+<tr><th>Platform</th><th>Image</th><th>Element</th><th>Video</th><th>Voice</th><th>Tag</th></tr>
+<tr><td>Kling web app</td><td><code>@Image</code></td><td><code>@ElementName</code></td><td><code>@Video</code></td><td>bound to the element</td><td>[O]</td></tr>
+<tr><td>Kling MCP</td><td><code>图片1</code></td><td><code>&lt;&lt;&lt;element id&gt;&gt;&gt;</code></td><td><code>视频1</code></td><td></td><td>[O]</td></tr>
+<tr><td>fal</td><td><code>@Image1</code></td><td><code>@Element1</code></td><td><code>@Video1</code></td><td></td><td>[3P]</td></tr>
+<tr><td>Replicate, EvoLink</td><td><code>&lt;&lt;&lt;image_1&gt;&gt;&gt;</code></td><td><code>&lt;&lt;&lt;element_1&gt;&gt;&gt;</code></td><td><code>&lt;&lt;&lt;video_1&gt;&gt;&gt;</code></td><td><code>&lt;&lt;&lt;voice_1&gt;&gt;&gt;</code></td><td>[3P]</td></tr>
+</table></div>
+<p>Ask which platform before writing any token. Keep identity descriptors short and stable across shots. Do not redesign a reference unless asked. [P]</p>
+
+<h3>4.5 Omni patterns [O]</h3>
+<pre class="tpl"><code>Motion transfer: Animate the character in @Image1 with the same motion as the character in @Video1.
+Camera transfer: Follow the camera movement of @Video1. [New subject and scene.]
+Start and end: Take @Image1 as the start frame and @Image2 as the end frame. [Describe the change.]
+Instruction edit: In @Video1, replace [X] with [the object in @Image1]. Keep everything else unchanged.</code></pre>
+<ul>
+<li>With a reference video: at most 4 images or elements, and no new audio generation.</li>
+<li>A multi-angle element holds identity better than a single image: one image forces the model to guess unseen sides.</li>
+<li>Stable labels for several characters; three or more are supported.</li>
+</ul>
+
+<h3>4.6 Motion Control [O]</h3>
+<ul>
+<li>Inputs: a character image plus a motion video (3 to 30 s) or a library motion.</li>
+<li>"Matches Video": movement, expression, camera and orientation follow the reference. "Matches Image": motion follows the video, orientation follows the image, camera can be prompted.</li>
+<li>The prompt controls background and scene.</li>
+<li>Requirements: one character; body and head unobstructed; steady moderate motion; no cuts or camera moves in the driving video; framing matched (half body to half body, full to full).</li>
+</ul>
+
+<h3>4.7 Negative prompt (API hosts only) [P]</h3>
+<pre class="tpl"><code>General: temporal flicker, warping, morphing, unstable anatomy, floating objects, inconsistent physics, background drift, color banding
+Humans: deformed hands, incorrect finger count, asymmetrical face, unnatural joints, distorted eyes, rubber limbs, broken walking cycle, identity drift
+Products and text: logo distortion, text deformation, brand color shift, warped product geometry, unreadable labels
+Continuity: jump cuts inside a shot, inconsistent lighting direction, scale changes, object disappearance, unnatural occlusion</code></pre>
+<p>Tailor it to the subject. Where no negative field exists (web app, MCP, Omni), fold the two or three critical exclusions into the prompt as positive states: "hands relaxed, five fingers each, steady identity". Kling's own guidance suggests "morphing features" and "changing clothes" as secondary negatives [O].</p>
+
+<h3>4.8 Failure modes [3P]</h3>
+<ul>
+<li>Quality drops in the last seconds of 15 second clips: keep the key beat early, or cut shorter.</li>
+<li>Fine hand control, exact counts, complex physics are weak.</li>
+<li>Motion control dislikes fast or chaotic motion.</li>
+<li>Contradictory motion in one shot (slow and frantic): split into two shots. [P]</li>
+</ul>
+
+<h3>4.9 Output and checklist</h3>
+<pre class="tpl"><code>Kling 3 prompt:
+[positive prompt]
+
+Negative prompt (API hosts only):
+[negative prompt]
+
+Suggested settings:
+Model: [Kling 3.0 | Kling 3.0 Omni]   Mode: [text-to-video | image-to-video | multi-shot | Omni reference | motion control]
+Duration: [3 to 15 s]   Ratio: [16:9 | 9:16 | 1:1]   Resolution: [720p | 1080p | 4K]</code></pre>
+<ol>
+<li>Platform known, tokens in that platform's syntax.</li>
+<li>Subject in the first sentence or first shot; unique names, no pronouns.</li>
+<li>One action per shot; energy described in words.</li>
+<li>Six shots at most; durations sum to 15 seconds or less.</li>
+<li>Dialogue in the official form, bound to a speaker.</li>
+<li>Omni with a video: four images at most, original sound kept.</li>
+<li>Negative prompt delivered only as an optional API block.</li>
+<li>Iterate at 1080p; reserve 4K for selects. [P]</li>
+</ol>
+</section>
+
+<section id="update-sources">
+<h2>5. Sources</h2>
+<p class="meta">Consulted 2026-10-03.</p>
+<ul>
+<li><a href="https://www.alibabacloud.com/help/en/model-studio/wan3-video-generation-guide">Wan 3.0 how-to guide</a></li>
+<li><a href="https://help.aliyun.com/en/model-studio/wan3-video-generation-prompt-guide">Wan 3.0 prompt guide</a></li>
+<li><a href="https://www.alibabacloud.com/help/en/model-studio/wan3-video-generation-api-reference">Wan 3.0 API reference</a></li>
+<li><a href="https://www.alibabacloud.com/help/en/model-studio/wan3-0-video">wan3.0-video model information</a></li>
+<li><a href="https://blog.segmind.com/wan-3-prompt-guide-alibabas-official-formulas-tested/">Segmind: Wan 3 official formulas tested</a></li>
+<li><a href="https://openart.ai/blog/wan-3-prompt-guide/">OpenArt: Wan 3 prompt guide</a></li>
+<li><a href="https://platform.minimax.io/docs/guides/video-generation">MiniMax video generation guide</a></li>
+<li><a href="https://platform.minimax.io/docs/api-reference/video-generation-v2-create">MiniMax create video task API</a></li>
+<li><a href="https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/docs/VIDEO_PROMPT_WRITING_GUIDE_base_en.md">H3 prompt writing guide, base</a></li>
+<li><a href="https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/docs/VIDEO_PROMPT_WRITING_GUIDE_ref_en.md">H3 prompt writing guide, reference</a></li>
+<li><a href="https://github.com/MiniMax-AI/MiniMax-H3/blob/main/skills/h3-prompt-writing/SKILL.md">MiniMax H3 prompt-writing skill</a></li>
+<li><a href="https://fuser.studio/articles/minimax-h3-prompt-guide">Fuser: MiniMax H3 tests</a></li>
+<li><a href="https://docs.bfl.ai/flux_3/flux3_video">FLUX 3 Video</a></li>
+<li><a href="https://docs.bfl.ml/guides/prompting_video_text_to_video.md">BFL text-to-video guide</a></li>
+<li><a href="https://docs.bfl.ml/guides/prompting_video_audio.md">BFL audio and speech guide</a></li>
+<li><a href="https://docs.bfl.ml/cookbook/video_multishot_films.md">BFL multi-shot films cookbook</a></li>
+<li><a href="https://docs.bfl.ml/flux_tools/flux_video_edit.md">FLUX Video Edit</a></li>
+<li><a href="https://docs.bfl.ai/flux_3/flux3_image_overview">FLUX 3 Image</a></li>
+<li><a href="https://docs.bfl.ml/guides/prompting_layout.md">BFL layout prompts</a></li>
+<li><a href="https://docs.bfl.ai/release-notes">BFL release notes</a></li>
+<li><a href="https://runware.ai/docs/models/bfl-flux-3-video/guides/keyframes">Runware: FLUX 3 Video keyframes</a></li>
+<li><a href="https://kling.ai/quickstart/klingai-video-3-model-user-guide">Kling VIDEO 3.0 model guide</a></li>
+<li><a href="https://kling.ai/quickstart/klingai-video-3-omni-model-user-guide">Kling VIDEO 3.0 Omni guide</a></li>
+<li><a href="https://kling.ai/quickstart/motion-control-user-guide">Kling Motion Control guide</a></li>
+<li><a href="https://kling.ai/blog/kling-3-subject-binding-character-consistency">Kling 3.0 subject binding</a></li>
+<li><a href="https://blog.fal.ai/kling-3-0-prompting-guide/">fal: Kling 3.0 prompting guide</a></li>
+<li><a href="https://fal.ai/models/fal-ai/kling-video/v3/pro/image-to-video/api">fal: Kling v3 pro image-to-video API</a></li>
+<li><a href="https://replicate.com/kwaivgi/kling-v3-omni-video">Replicate: Kling 3.0 Omni</a></li>
+<li><a href="https://evolink.ai/docs/en/api-manual/video-series/kling/kling-o3-reference-to-video">EvoLink: Kling O3 reference-to-video</a></li>
+</ul>
+</section>
+
+</main>
+<script>
+document.querySelectorAll('pre.tpl').forEach(function(p){
+  var b=document.createElement('button');b.className='copy';b.type='button';b.textContent='Copy';
+  b.addEventListener('click',function(){
+    var t=p.querySelector('code').innerText;
+    (navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){b.textContent='Copied';},function(){
+      var r=document.createRange();r.selectNodeContents(p.querySelector('code'));var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Selected';
+    });
+    setTimeout(function(){b.textContent='Copy';},1500);
+  });
+  p.appendChild(b);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,3595 @@
+{
+  "schemaVersion": "1.0",
+  "id": "triage-workflow-3d-01",
+  "owner": "workflow-3d",
+  "status": "pending-structural-triage",
+  "approximateTokens": 1013,
+  "prompts": [
+    {
+      "id": "text-002b2f0dc684b40ca0f8",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Studio Backdrop",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1343,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": "setBgMode",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-00debf7e02b4e9453d8c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "3D Blocking",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1261,
+          "column": 12,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-07452a4135a8b5318590",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": ")\"></textarea>",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1234,
+          "column": 782,
+          "kind": "string-literal",
+          "functionName": "renderTransfer2D",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-07b6bb714a758be17a88",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Motion blur cohérent",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 992,
+          "column": 178,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-087157ca7273953626d8",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "pilote le sujet,",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1004,
+          "column": 143,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-09bb58d3b4c81f6008e7",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Telephoto 200mm · Compressed",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 897,
+          "column": 86,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-0c1e174f32f0f2392d6b",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Drone spiral · ascendant",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1091,
+          "column": 82,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-0dce8952b94cff26a6c3",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Long, contrôle granulaire",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1015,
+          "column": 77,
+          "kind": "html-attribute:title",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-11715a5cf0d094fbe6e7",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "guide de mouvement et de caméra",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1040,
+          "column": 65,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-11a2dbfa51449a6c6782",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Caméra & objectif",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 864,
+          "column": 38,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-11c54345121101478aed",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "img-camera",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 2011,
+          "column": 43,
+          "kind": "string-literal",
+          "functionName": "buildImage",
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 2104,
+          "column": 16,
+          "kind": "string-literal",
+          "functionName": "copyPrompt",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-151c6283f05ad43141df",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "est le plus robuste pour Nano Banana.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1005,
+          "column": 83,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-17d9c71b6b1779800c13",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Pose Transfer Lab -",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1153,
+          "column": 11,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-1814efaae14316eb9b74",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "polarized lens, saturated colors, no reflections",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 974,
+          "column": 23,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-182ef9ce8a176ceca7af",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Seedance 2",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1128,
+          "column": 269,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1904,
+          "column": 16,
+          "kind": "string-literal",
+          "functionName": "videoModelName",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-18ad0cb13417ad68ab6c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Le rush 3D animé sert de",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1040,
+          "column": 32,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-1f3916b3de5b6823ed43",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Infrared · thermique",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 955,
+          "column": 83,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-222412e67409d3bee3bd",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Prompt généré",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1025,
+          "column": 58,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1142,
+          "column": 36,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-22e07219bdf278d2baf5",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "inpaint",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1016,
+          "column": 58,
+          "kind": "html-event:onclick:string-literal",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-23fd82bbe15c88b490ab",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Modes :",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1005,
+          "column": 46,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-25c1789f4201bc8c41eb",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Multi-ref ·",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1154,
+          "column": 11,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-27707775225dbade66fe",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Seamless integration.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1718,
+          "column": 233,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-27cfe7680d30524e03d0",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "CCTV · Security Cam",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 895,
+          "column": 99,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-28b46b705b8c9e94019d",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": ".prompt-mode-switch .mini-pill",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1315,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": "setPromptMode",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-29cf234e50a9f9751cfa",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "GoPro · Fish-eye",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 869,
+          "column": 84,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-2ae7e7bf884256579462",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Clean studio commercial photography aesthetic.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1718,
+          "column": 182,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-2c091ef7d4880d9b4c59",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "[IMG_2] · Scene",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1393,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": "updateTargetUI",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-2eabbaece90d8bffeb33",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "vid-model",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 2061,
+          "column": 41,
+          "kind": "string-literal",
+          "functionName": "buildVideo",
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 2112,
+          "column": 2,
+          "kind": "string-literal",
+          "functionName": "copyPrompt",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-2eae256e21d0fed99b27",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "character-kind-row",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1382,
+          "column": 39,
+          "kind": "string-literal",
+          "functionName": "updateTargetUI",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-2f2d9de35f25e2c181e0",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "__default__",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 933,
+          "column": 21,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 2026,
+          "column": 20,
+          "kind": "string-literal",
+          "functionName": "buildImage",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-32917a33dce088697fc5",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "GoPro Hero 12 Black, action-cam fish-eye perspective",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 869,
+          "column": 23,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-345f2aab2bc23ea71923",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Inherited",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1590,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-367d73d1ae9005347e3b",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Lomography · 32mm Plastic",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 891,
+          "column": 103,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-3a3127f5ea0269b5c6cf",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "strict",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1100,
+          "column": 21,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1985,
+          "column": 103,
+          "kind": "string-literal",
+          "functionName": "buildVeo31Prompt",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-3ad8d0a4561eae1103b9",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Matériaux & textures",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 903,
+          "column": 38,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-3cf7d545b1ad5521f98c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "jolt and vibration effect, mimicking a nearby explosion or heavy impact",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1084,
+          "column": 23,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-3dae0132b7d8ed3b1f31",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "ref image",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1206,
+          "column": 22,
+          "kind": "string-literal",
+          "functionName": "transfer2DInfo",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-3f53bb68e7ce42ba5065",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Style Reference",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 795,
+          "column": 55,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1336,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": "setBgMode",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-4056610251072900ab23",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "utilise des rôles multimodaux + beats,",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1128,
+          "column": 288,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-40eaceef574690384dbc",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "coral red",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 848,
+          "column": 134,
+          "kind": "html-attribute:title",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-41d8e99e0e191e89d64e",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Polarisé · vif",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 974,
+          "column": 80,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-424db0b5b671b87712a3",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Super 8mm · Vintage Grain",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 887,
+          "column": 95,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-463e319dc9e15fa529fc",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "[IMG_3] · Style",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 794,
+          "column": 52,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1335,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": "setBgMode",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-4748d8d2856c12376493",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Prompt généré · Detailed",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 2050,
+          "column": 68,
+          "kind": "string-literal",
+          "functionName": "buildImage",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-477e5af2fd7e4472aad3",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Scene",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 808,
+          "column": 74,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1543,
+          "column": 32,
+          "kind": "string-literal",
+          "functionName": "adaptPromptToTarget",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-48fd21f4f3ecb91a1380",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "copy-btn-vid",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1135,
+          "column": 98,
+          "kind": "html-event:onclick:string-literal",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-4a5373f97fd1fdcf32f5",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Fond uni de studio, parfait pour isoler le perso. La couleur définit l'ambiance.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1344,
+          "column": 24,
+          "kind": "string-literal",
+          "functionName": "setBgMode",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-4aa2771f37c71a0650e0",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "khaki olive",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 847,
+          "column": 136,
+          "kind": "html-attribute:title",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-4aab0fde65f68960f42f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Remplis les champs ci-dessus pour générer le prompt…",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1028,
+          "column": 49,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1145,
+          "column": 51,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-4e4ac0c63b5401e28a8c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Edit [IMG_1]",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1005,
+          "column": 173,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1016,
+          "column": 175,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-4fb91b2b4e450779e240",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Mode prompt",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1013,
+          "column": 60,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-508fea23c1ae8e4e0813",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Copier caméra 3D · exact",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1074,
+          "column": 163,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-515d02d09573672b59d8",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "\" data-transfer-card=\"",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1234,
+          "column": 54,
+          "kind": "string-literal",
+          "functionName": "renderTransfer2D",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-523bc553ee5cacbd21d2",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Bolex H16 · 16mm Retro",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 888,
+          "column": 96,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-57022e2661c573ddaab6",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Final subject / action",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 859,
+          "column": 38,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-57c9af709ce004bdad2f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Transfert Pose",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1180,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-586459f3bb05afa9ffe8",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "+ Framing + Pose",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 834,
+          "column": 120,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-5a8d66258a50cf0430e7",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Rack focus · point",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1092,
+          "column": 91,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-5e7f159d2304404301fe",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "BLOCKING ABSTRAIT",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 903,
+          "column": 168,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-5f50e4e63e240b9819b9",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Macro 100mm · Extreme Detail",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 882,
+          "column": 78,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-6152aa3c028f147c85ba",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "DJI Inspire 3 · Drone Wide",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 870,
+          "column": 91,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-640fa00eb8b0e3cf8ff4",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "veo31",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1065,
+          "column": 21,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1980,
+          "column": 35,
+          "kind": "string-literal",
+          "functionName": "buildVeo31Prompt",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-65381060177660a83bf1",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Pose + Framing",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1250,
+          "column": 12,
+          "kind": "string-literal",
+          "functionName": "openWorkspace",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-65445a6d00e59ecea302",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "harsh top fluorescent, institutional flat green tint, no shadows",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 956,
+          "column": 23,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-6751dd51c73ef63d2650",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Physique & dynamique",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1112,
+          "column": 38,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-68633b16f88ccb4611dc",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "output-text",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1018,
+          "column": 82,
+          "kind": "html-event:onclick:string-literal",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 2054,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": "buildImage",
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 2057,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": "buildImage",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-69391733961a62d7c84c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "\" title=\"Show prompt\" onclick=\"toggleTransfer2D('",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1234,
+          "column": 280,
+          "kind": "string-literal",
+          "functionName": "renderTransfer2D",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-697ede74fa86c87d8029",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Fluorescent · institutionnel",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 956,
+          "column": 96,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-6a092d6435d567a7c558",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Pose + cadrage strict (default)",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 834,
+          "column": 80,
+          "kind": "html-attribute:title",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-6ad011635e57adbda4bb",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "output-title-img",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 2048,
+          "column": 43,
+          "kind": "string-literal",
+          "functionName": "buildImage",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-6b7ac75d5223401b8881",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "char-count",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 2055,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": "buildImage",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-6d46fcd50a63e430bb6f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Detailed",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1005,
+          "column": 128,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1015,
+          "column": 111,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-6d89eb7d093856493863",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Render",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 825,
+          "column": 69,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-6f755378f2825d23e014",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Cyclorama",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 842,
+          "column": 74,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1342,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": "setBgMode",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-744aeef2d133a047d3db",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Caméra épaule · action",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1082,
+          "column": 100,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-755d1fb27d0ff05d9e08",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "char-count-v",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 2080,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": "buildVideo",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-75c62df79610c9914ad9",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Thermal · Heat Signature",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 896,
+          "column": 87,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-769db99e541297e252f0",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Replace these names with your uploaded file labels if needed.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1917,
+          "column": 15,
+          "kind": "string-literal",
+          "functionName": "videoAttributionBlock",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-7877e65eaa7d48de1f9c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "the object's 3D orientation, rotation, tilt, contact points, silhouette angle, and spatial attitude",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1413,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": "targetTransferShort",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-7b261db11e8b7532b431",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Veo 3.1 / Google Flow",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1906,
+          "column": 12,
+          "kind": "string-literal",
+          "functionName": "videoModelName",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-7b3c1c1a5d2241c03b8e",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "img-light",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 2014,
+          "column": 43,
+          "kind": "string-literal",
+          "functionName": "buildImage",
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 2104,
+          "column": 39,
+          "kind": "string-literal",
+          "functionName": "copyPrompt",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-81af5ff36d68da05c527",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Additional action/details: follow the visible action and timing from @video_1.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1936,
+          "column": 55,
+          "kind": "string-literal",
+          "functionName": "videoActionLine",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-82eed91da1471c3aca33",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "A.I VIDEO",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1050,
+          "column": 60,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1057,
+          "column": 32,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-837aef8b73c112f39b09",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Tracking · sol rapide",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1083,
+          "column": 90,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-83da80444f25f6c96d4d",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Réalisme physique",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 986,
+          "column": 38,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-86a62dde347a4f2d35b8",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "privilégie une prose cinéma Flow/Ingredients,",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1128,
+          "column": 352,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-8736c86656b4df7ddf5d",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Phase One IQ4 · 200mm",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 884,
+          "column": 91,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-87b7bba78b331b8b4e64",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "[IMG_3] Style",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 841,
+          "column": 81,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-8899fe274c58c0116a68",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Panavision · 50mm Prime",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 874,
+          "column": 99,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-8a8b185e5b97939c26ac",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Vent & tissus",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1115,
+          "column": 209,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-8b835dbf1c9f50c776cd",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Studio 3-Points · Cinématique",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 935,
+          "column": 153,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-8b879bdd8510cca6fbff",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": ".node-2 .node-title",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1385,
+          "column": 40,
+          "kind": "string-literal",
+          "functionName": "updateTargetUI",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-8b90c31a3a82f2657b75",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Aucun · caméra fixe",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1073,
+          "column": 74,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-8bcb7d2221aca7aaeeca",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "pilote le setup/cadrage/caméra,",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1004,
+          "column": 90,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-8c00cc41e13514d73b39",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Gemini Omni Flash · conversational edit",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1066,
+          "column": 40,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-8f2aa13014a076b154de",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "img-mat",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 2012,
+          "column": 43,
+          "kind": "string-literal",
+          "functionName": "buildImage",
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 2104,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": "copyPrompt",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-8f6a788939ca730f2267",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "word-count",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 2056,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": "buildImage",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-8f81d119eeea77fce22d",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Leica M11 · 35mm Street",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 881,
+          "column": 90,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-926cdd1e0980b9e7dd46",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "PROMPT BOOST",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 986,
+          "column": 165,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1112,
+          "column": 168,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-93caa1632c3654fc428e",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "\" checked onchange=\"updateTransfer2D(",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1233,
+          "column": 110,
+          "kind": "string-literal",
+          "functionName": "renderTransfer2D",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-969db5f3c49e9c3e3361",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "caractères ·",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1026,
+          "column": 66,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1143,
+          "column": 68,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-977269d7babc89fe42cb",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "output-text-v",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1135,
+          "column": 82,
+          "kind": "html-event:onclick:string-literal",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 2079,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": "buildVideo",
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 2082,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": "buildVideo",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-98b3d589c4f2a88430af",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Longue expo · light trails",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 973,
+          "column": 71,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-99452646e34b69704c91",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Compact",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1005,
+          "column": 69,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1014,
+          "column": 121,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-9ae9a48a13b9c8b0a930",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Red V-Raptor · 24mm Wide",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 868,
+          "column": 100,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-9b518d0f421df0931073",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Blackmagic URSA · 35mm",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 875,
+          "column": 102,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-9df731af45e8d8939756",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "#video .output-title",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 2076,
+          "column": 40,
+          "kind": "string-literal",
+          "functionName": "buildVideo",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-a28cab4b0927ccbf7fc6",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "kling3",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1064,
+          "column": 21,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1945,
+          "column": 35,
+          "kind": "string-literal",
+          "functionName": "buildKling3Prompt",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-a741282906a429c2c797",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "3D Preview",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1265,
+          "column": 12,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-a75df610c771474bf3cc",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Creative · A.I free interpretation",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1102,
+          "column": 38,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-a788c94ff6050b36ed78",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "cyc",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 842,
+          "column": 66,
+          "kind": "html-event:onclick:string-literal",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1532,
+          "column": 147,
+          "kind": "string-literal",
+          "functionName": "adaptPromptToTarget",
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1541,
+          "column": 145,
+          "kind": "string-literal",
+          "functionName": "adaptPromptToTarget",
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1568,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": "buildCompact",
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1687,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": "buildDetailed",
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1712,
+          "column": 191,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1716,
+          "column": 125,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1718,
+          "column": 173,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1752,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": "styleReferenceLine",
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1790,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": "lightArchitectureLine",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-a8be749bec6d75854cbf",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Architecture :",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1004,
+          "column": 46,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-aabede05b5555e7727c5",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Live-action motion",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 988,
+          "column": 196,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-add02e9be6e5a239fbd2",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "the pose, gesture, and 3D body orientation (torso/head yaw, gaze)",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1408,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": "targetTransferShort",
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1557,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": "buildCompact",
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1619,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": "buildInpaint",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-b1bda48587a0b8397c62",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "warm sand",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 845,
+          "column": 141,
+          "kind": "html-attribute:title",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1168,
+          "column": 40,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-b423d37c744f951b049c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Balanced · respect mouvement + cohérence visuelle",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1101,
+          "column": 38,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-b53f694c1ea25760347a",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Style mode",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 839,
+          "column": 33,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-b6b54201f23d00f5b719",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "compact",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1014,
+          "column": 65,
+          "kind": "html-event:onclick:string-literal",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1164,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 2042,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": "buildImage",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-b734a5e17a3ba52fa259",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "transfer2d-",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1231,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": "renderTransfer2D",
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1238,
+          "column": 84,
+          "kind": "string-literal",
+          "functionName": "buildTransfer2DPrompt",
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1239,
+          "column": 43,
+          "kind": "string-literal",
+          "functionName": "updateTransfer2D",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-b7cd3a2e599630af8099",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "ajoute les garde-fous.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1005,
+          "column": 143,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-b823594e2f360211f91e",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Scene / Set",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1377,
+          "column": 45,
+          "kind": "string-literal",
+          "functionName": "targetLabel",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-bbb2f0aa5a1b6917146f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Arri Alexa Mini LF · 40mm Cooke",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 876,
+          "column": 100,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-be1440eeacbc4a46a19d",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Copy for selected model",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1136,
+          "column": 42,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-c0905088ba5b80677849",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "balanced",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1101,
+          "column": 21,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1985,
+          "column": 165,
+          "kind": "string-literal",
+          "functionName": "buildVeo31Prompt",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-c0e7a3b67ad0e23d324c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "User action/details: ${subject}.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1779,
+          "column": 28,
+          "kind": "template-literal",
+          "functionName": "contextLine",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-c0edd800f51d0c9774ad",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Prompt copié",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1159,
+          "column": 31,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-c190740ec92c8d77e4fb",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Video mapping :",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1128,
+          "column": 46,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-c1ef2477a82f6fca96fa",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Pose Transfer 2D",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 750,
+          "column": 13,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-c28a9eb93aaa1333a066",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "<strong>Priorité absolue</strong> : visage, costume, morphologie, proportions, textures. La pose s'adapte à cette anatomie, pas l'inverse.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1401,
+          "column": 9,
+          "kind": "string-literal",
+          "functionName": "updateTargetUI",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "prose-candidate"
+    },
+    {
+      "id": "text-c33aac43f1e774d3844a",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Transfer prompt library",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 749,
+          "column": 32,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-c79fa34c87bdf42ac789",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Scene Identity",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1394,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": "updateTargetUI",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-c8c589d01bf361c06969",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "mots",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1026,
+          "column": 110,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1143,
+          "column": 114,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-ca679c642e766edb1b14",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Veo 3.1 · Flow / Ingredients",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1065,
+          "column": 35,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-cb0bbdb8d3c88271a64d",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Look: ${compactChecks}.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1602,
+          "column": 16,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-cc4d4973a6d9b6d8c0e8",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "human character reference",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1476,
+          "column": 94,
+          "kind": "string-literal",
+          "functionName": "targetIntroLine",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-ccc088118cfa851a3ada",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "vid-cam",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 2062,
+          "column": 41,
+          "kind": "string-literal",
+          "functionName": "buildVideo",
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 2112,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": "copyPrompt",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-d32488dcc6057ba34739",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Use these names exactly, or replace them with the upload labels used by your Kling interface.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1914,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": "videoAttributionBlock",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "prose-candidate"
+    },
+    {
+      "id": "text-d5367d18e5f2ebe49df3",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Anti-CG / anti-puppet",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 994,
+          "column": 237,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-d70506d1adb5f3ec0d2e",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "3D Animation",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1039,
+          "column": 33,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-d85e99bc001d2cf37320",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Orbite 360°",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1079,
+          "column": 93,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-d95840dfafbc33f40a70",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "word-count-v",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 2081,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": "buildVideo",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-d9c237a50f55611ee549",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Kling 3 / Seedance 2 / Veo / Gemini Omni",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1051,
+          "column": 33,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-da1bb7eff5d32c57d6d0",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Prompt généré · Compact",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 2050,
+          "column": 31,
+          "kind": "string-literal",
+          "functionName": "buildImage",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-db19f11b7b8d5e196e62",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "geminiOmni",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1066,
+          "column": 21,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1994,
+          "column": 35,
+          "kind": "string-literal",
+          "functionName": "buildGeminiOmniPrompt",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-dea30bf795d9438acd4f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "atmospheric depth, volumetric haze, light scatter through air particles",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 993,
+          "column": 57,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-defe0f1a9dccbe97a3de",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Arri Alexa 65 · 14mm Ultra-Wide",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 867,
+          "column": 96,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-df1599a0ea2d6c345d6c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "slate gray",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 846,
+          "column": 135,
+          "kind": "html-attribute:title",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-e14b1d724fade385d5d5",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Nikon Z9 · 105mm Detail",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 883,
+          "column": 85,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-e31802797577573d16b8",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "VHS · 90s Low-Fi",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 889,
+          "column": 111,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-e50689e1c2493f11bde5",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Gemini Omni Flash",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1128,
+          "column": 407,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1907,
+          "column": 17,
+          "kind": "string-literal",
+          "functionName": "videoModelName",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-e78a1baa2bcc00f87718",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Poids & inertie",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1116,
+          "column": 203,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-e82f5f575a66a01304de",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Transfert Background",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1197,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-eb64749c307c2c22565b",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Prompt copie",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1240,
+          "column": 225,
+          "kind": "string-literal",
+          "functionName": "copyTransfer2D",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-ed955b881fac5f01c983",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "transfer2d-grid",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1228,
+          "column": 38,
+          "kind": "string-literal",
+          "functionName": "renderTransfer2D",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-ee1149caca2a0fbe73dc",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": ".node-2 .node-tag",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1384,
+          "column": 38,
+          "kind": "string-literal",
+          "functionName": "updateTargetUI",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-ee8fcda73f9369b88858",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Pose + Framing + Pose",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1254,
+          "column": 12,
+          "kind": "string-literal",
+          "functionName": "openWorkspace",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-f1c2ce00d94233071b21",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "copy-btn-img",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1018,
+          "column": 96,
+          "kind": "html-event:onclick:string-literal",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-f4d41c86fda06731d43b",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Use these names exactly, or replace them with the upload labels used by your Seedance interface.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1913,
+          "column": 16,
+          "kind": "string-literal",
+          "functionName": "videoAttributionBlock",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "prose-candidate"
+    },
+    {
+      "id": "text-f51c035f69c7c314cc3d",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "#image .checklist input:checked",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 2017,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": "buildImage",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-f634320daa9a472d65bb",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Sony Venice 2 · 35mm Anamorphic",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 873,
+          "column": 92,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-f9db509b4bf0d730bd4a",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "bone white",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 849,
+          "column": 135,
+          "kind": "html-attribute:title",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-fa953e54450da1c29e8e",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "object/product",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1727,
+          "column": 46,
+          "kind": "string-literal",
+          "functionName": "targetLabel",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-fb37f9872670b05206cc",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "seedance2",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1063,
+          "column": 21,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1961,
+          "column": 35,
+          "kind": "string-literal",
+          "functionName": "buildSeedance2Prompt",
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-fde1dc8acd013457c35f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Court, role-first, recommandé",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/3D-IA-Workflow.html",
+          "line": 1014,
+          "column": 83,
+          "kind": "html-attribute:title",
+          "functionName": null,
+          "owners": [
+            "workflow-3d"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    }
+  ]
+}

@@ -1,0 +1,4691 @@
+{
+  "schemaVersion": "1.0",
+  "id": "a4-facs-board",
+  "title": "A4 — FACS Sheet Generator + BZ Board",
+  "owners": [
+    "facs-sheet-generator",
+    "barzy-board"
+  ],
+  "status": "pending-astra-review",
+  "policy": {
+    "preserveOriginalEnglish": true,
+    "noSilentNormalization": true,
+    "correctionsRequireReason": true,
+    "excludedTriageKinds": [
+      "ui-copy-candidate",
+      "runtime-identifier"
+    ]
+  },
+  "highConfidenceCount": 56,
+  "triageCount": 119,
+  "itemCount": 175,
+  "approximateTokens": 2403,
+  "digestAlgorithm": "sha256",
+  "bundleDigest": "c56499d141b9c30bb61e0a94aa8dd1219d2caea34d0328e06b6e54be9fe2759d",
+  "items": [
+    {
+      "id": "text-01187ac5900048bcb6c8",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Import subject, style and action from the Story tab",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 437,
+          "column": 13,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-02231e2afd48b37a1429",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": " (ignore if not provided)",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 963,
+          "column": 99,
+          "kind": "string-literal",
+          "functionName": "buildStory",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1006,
+          "column": 78,
+          "kind": "string-literal",
+          "functionName": "buildMotion",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-0328f11bb00a47bd9a58",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "s-panels",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 807,
+          "column": 108,
+          "kind": "string-literal",
+          "functionName": "saveState",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 833,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": "loadState",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 943,
+          "column": 22,
+          "kind": "string-literal",
+          "functionName": "buildStory",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 994,
+          "column": 22,
+          "kind": "string-literal",
+          "functionName": "buildMotion",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1044,
+          "column": 82,
+          "kind": "string-literal",
+          "functionName": "regen",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-033955d469b620d6612c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Fill",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 715,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "refineWithGPT",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-05910f2b4962c421cd4a",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Fill the board first, then GPT can refine it.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 716,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": "refineWithGPT",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-05c66727f428f62ea55e",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "m-action",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 772,
+          "column": 43,
+          "kind": "string-literal",
+          "functionName": "applyFacsPayload",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 814,
+          "column": 75,
+          "kind": "string-literal",
+          "functionName": "saveState",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 990,
+          "column": 22,
+          "kind": "string-literal",
+          "functionName": "buildMotion",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1045,
+          "column": 134,
+          "kind": "string-literal",
+          "functionName": "regen",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1065,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": "regen",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1110,
+          "column": 32,
+          "kind": "string-literal",
+          "functionName": "copy",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-0ec0026dd89420695f23",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "s-output",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 714,
+          "column": 79,
+          "kind": "string-literal",
+          "functionName": "refineWithGPT",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1031,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": "regen",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1095,
+          "column": 95,
+          "kind": "string-literal",
+          "functionName": "copy",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1124,
+          "column": 58,
+          "kind": "string-literal",
+          "functionName": "copy",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-10def1babc7055094c99",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": " beats in order. Maintain shot logic and final pose.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1014,
+          "column": 121,
+          "kind": "string-literal",
+          "functionName": "buildMotion",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-112e4cc201d79c12c0e5",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": " for a ",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1014,
+          "column": 65,
+          "kind": "string-literal",
+          "functionName": "buildMotion",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-188f38f8ba0ec18c481e",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": " cinematic panels, focused on ",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 966,
+          "column": 60,
+          "kind": "string-literal",
+          "functionName": "buildStory",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-18d558d5c0507fb84c14",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": ". Distribute these cues across readable close-up and key-action panels: eyes/brows for reaction beats, mouth/jaw for speech or strain, head/neck for direction changes. Keep the expression changes visible but anatomically natural.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 754,
+          "column": 53,
+          "kind": "string-literal",
+          "functionName": "facsPromptBlock",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-19b87ac5ecb1afe2d7f3",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "pace",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 841,
+          "column": 74,
+          "kind": "string-literal",
+          "functionName": "loadState",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-1a479a3479a327fb1c82",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Action: ",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1022,
+          "column": 9,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-1e80bbc4f76e803a3913",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "ex: [IMG_3] = dancer in red coat; [IMG_4] = security guard; [IMG_5], [IMG_6] ignore if not provided",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 322,
+          "column": 36,
+          "kind": "html-attribute:placeholder",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-22775e051c94958e2da4",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": " as the main character reference and ",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 966,
+          "column": 145,
+          "kind": "string-literal",
+          "functionName": "buildStory",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-23d3c780aa4c2861bb60",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "s-facs-container",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 785,
+          "column": 59,
+          "kind": "string-literal",
+          "functionName": "applyFacsPayload",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1054,
+          "column": 84,
+          "kind": "string-literal",
+          "functionName": "regen",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1056,
+          "column": 112,
+          "kind": "string-literal",
+          "functionName": "regen",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1104,
+          "column": 16,
+          "kind": "string-literal",
+          "functionName": "copy",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1141,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-25083b27b4e5f279e215",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": " second(s).",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1024,
+          "column": 52,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-25381272224268b0f9f0",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "-beat sequence into ",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1019,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-2aa346215ffa46fdb776",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Veo 3.1 Prompt: Reference storyboard ",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1014,
+          "column": 16,
+          "kind": "string-literal",
+          "functionName": "buildMotion",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-2ef0a10f50a164a69af0",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Import from Story or fill the overrides...",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 543,
+          "column": 45,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 997,
+          "column": 56,
+          "kind": "string-literal",
+          "functionName": "buildMotion",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-30a4d74ce57ded1a9c01",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Environment: ",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 970,
+          "column": 47,
+          "kind": "string-literal",
+          "functionName": "buildStory",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1023,
+          "column": 9,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-3466aa5e62a729f16530",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Style of drawing: ",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 967,
+          "column": 9,
+          "kind": "string-literal",
+          "functionName": "buildStory",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-359563dab100dec9a909",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": " characters",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1032,
+          "column": 62,
+          "kind": "string-literal",
+          "functionName": "regen",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1036,
+          "column": 58,
+          "kind": "string-literal",
+          "functionName": "regen",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-3734272564b0c0475716",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "video motion prompt",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 727,
+          "column": 43,
+          "kind": "string-literal",
+          "functionName": "refineWithGPT",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-373bc878f6a21b9aa92c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Kling Prompt: Reference storyboard ",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1012,
+          "column": 16,
+          "kind": "string-literal",
+          "functionName": "buildMotion",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-3830a252745d7cfbe2b1",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": ". Use ",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 966,
+          "column": 128,
+          "kind": "string-literal",
+          "functionName": "buildStory",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-391fc76976e35766e696",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Create a ",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 966,
+          "column": 9,
+          "kind": "string-literal",
+          "functionName": "buildStory",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-39e42e3fed2d40d50bfa",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "GPT is refining the ",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 719,
+          "column": 17,
+          "kind": "string-literal",
+          "functionName": "refineWithGPT",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-3bc4df60f544ea8c12b5",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "the described action",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 966,
+          "column": 104,
+          "kind": "string-literal",
+          "functionName": "buildStory",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-3bd3e0c33494dc110baf",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "m-facs-search",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 785,
+          "column": 133,
+          "kind": "string-literal",
+          "functionName": "applyFacsPayload",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 911,
+          "column": 94,
+          "kind": "string-literal",
+          "functionName": "renderFACS",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1055,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": "regen",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1057,
+          "column": 166,
+          "kind": "string-literal",
+          "functionName": "regen",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-455a327ec0d0d5f78b97",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Global AI is off.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 661,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": "syncAtlasAI",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-4640816a9453a1880648",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "the character from the storyboard reference",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 998,
+          "column": 38,
+          "kind": "string-literal",
+          "functionName": "buildMotion",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-47278a3d7198198c6761",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "story-facs-body",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 860,
+          "column": 104,
+          "kind": "string-literal",
+          "functionName": "loadState",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-4ac3e122058bf67b287d",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "ai-motion",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1122,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": "copy",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-4d54dd76c51024a907c1",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": ". Keep the artwork lightweight, dynamic and unfinished - early choreography previs energy.\n\n",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 967,
+          "column": 53,
+          "kind": "string-literal",
+          "functionName": "buildStory",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-4f00d102adca390435bf",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "No annotations, no arrows, no overlays - clean storyboard panels only.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 956,
+          "column": 9,
+          "kind": "string-literal",
+          "functionName": "buildStory",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-4fc5e2a03cef0f3fca03",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "m-duration",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 813,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": "saveState",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 985,
+          "column": 24,
+          "kind": "string-literal",
+          "functionName": "buildMotion",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1045,
+          "column": 71,
+          "kind": "string-literal",
+          "functionName": "regen",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-50384ce624aab59a5f47",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "s-facs-search",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 785,
+          "column": 151,
+          "kind": "string-literal",
+          "functionName": "applyFacsPayload",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 911,
+          "column": 78,
+          "kind": "string-literal",
+          "functionName": "renderFACS",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1054,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": "regen",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1056,
+          "column": 164,
+          "kind": "string-literal",
+          "functionName": "regen",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-52fb9edc46449780982d",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "refBoard",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 841,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": "loadState",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-53ab0ab4d38156eaec4f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "REFERENCES:\n",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 960,
+          "column": 24,
+          "kind": "string-literal",
+          "functionName": "buildStory",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1003,
+          "column": 24,
+          "kind": "string-literal",
+          "functionName": "buildMotion",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-543d6ac8fbb4713b1c74",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Compress the full ",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1019,
+          "column": 9,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-572a3acfd983df5cac01",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Importe",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 715,
+          "column": 129,
+          "kind": "string-literal",
+          "functionName": "refineWithGPT",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-584e9dd1819644b58ceb",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "hypnotic loop, repetitive motion, rhythmic snap",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 486,
+          "column": 19,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-58b8991fd97aecc4fe6e",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "No text, no annotations, no timestamps, no watermark.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1025,
+          "column": 9,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-5b2053b220ac4ac3a584",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": " = main character",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 961,
+          "column": 17,
+          "kind": "string-literal",
+          "functionName": "buildStory",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1004,
+          "column": 17,
+          "kind": "string-literal",
+          "functionName": "buildMotion",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-5b6bb3cfb7ca648df44d",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "No timestamps, no watermark.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 975,
+          "column": 9,
+          "kind": "string-literal",
+          "functionName": "buildStory",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-5c8b6b3dddc9b913662b",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "s-action",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 772,
+          "column": 56,
+          "kind": "string-literal",
+          "functionName": "applyFacsPayload",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 806,
+          "column": 72,
+          "kind": "string-literal",
+          "functionName": "saveState",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 829,
+          "column": 74,
+          "kind": "string-literal",
+          "functionName": "loadState",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 938,
+          "column": 22,
+          "kind": "string-literal",
+          "functionName": "buildStory",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 990,
+          "column": 39,
+          "kind": "string-literal",
+          "functionName": "buildMotion",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1044,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": "regen",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1065,
+          "column": 51,
+          "kind": "string-literal",
+          "functionName": "regen",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1100,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": "copy",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-5d6c9b1945cfa0f33324",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Secondary characters: ",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 969,
+          "column": 9,
+          "kind": "string-literal",
+          "functionName": "buildStory",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1021,
+          "column": 9,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-609e5c0fe4da6d2d9dd7",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Prompt Atlas default",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 660,
+          "column": 62,
+          "kind": "string-literal",
+          "functionName": "syncAtlasAI",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-628575156b0b8963e322",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": " seconds. Each beat must appear clearly as a fast motion snapshot, not a full-length action. Pacing: ",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1019,
+          "column": 69,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-63bff83c5adf7ead5e7c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Character: ",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1020,
+          "column": 9,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-63dbd3cf760b62310b7c",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "BZ Board - Storyboard to Motion",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 6,
+          "column": 8,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-6433580f0811c918cdaf",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "storyboard prompt",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 727,
+          "column": 67,
+          "kind": "string-literal",
+          "functionName": "refineWithGPT",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-645b2a0b11294c0347c0",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "s-char",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1032,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": "regen",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-6720dd1b35929f120332",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": " as the setting reference.\n\n",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 966,
+          "column": 192,
+          "kind": "string-literal",
+          "functionName": "buildStory",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-68eb5e5bc8464db03c83",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": ". Every panel must contain visible motion and strong body momentum - avoid static standing poses.\n\n",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 971,
+          "column": 32,
+          "kind": "string-literal",
+          "functionName": "buildStory",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-6936e69679fbaf9b55a2",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Final beat holds for the last ",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1024,
+          "column": 9,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-698a8287a6e929759ca9",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Reference image: ",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 959,
+          "column": 53,
+          "kind": "string-literal",
+          "functionName": "buildStory",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-6a8622baf06c305f77c4",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "BZ Board writes the selected codes with their names and asks the storyboard to distribute them across readable close-up/key-action panels.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 421,
+          "column": 45,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-6ad95cc9a4b686cf260c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "refSecondary",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 841,
+          "column": 48,
+          "kind": "string-literal",
+          "functionName": "loadState",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-6bdcd44c608635047cd9",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Subject: ",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 968,
+          "column": 9,
+          "kind": "string-literal",
+          "functionName": "buildStory",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-6c58d5efa217acb69ef4",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "-second sequence following ",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1014,
+          "column": 84,
+          "kind": "string-literal",
+          "functionName": "buildMotion",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-6d4d4912394edcbd0574",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "End with: ",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 973,
+          "column": 22,
+          "kind": "string-literal",
+          "functionName": "buildStory",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-707a3c64c7c00e52ae88",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "cam",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 841,
+          "column": 130,
+          "kind": "string-literal",
+          "functionName": "loadState",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-751f5c9e14c0e2890146",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": ". Cinematography: ",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1023,
+          "column": 76,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-75fb39b345ad2c91eb80",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": " storyboard sheet with ",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 966,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": "buildStory",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-76c823b9b2b903f02b80",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Global AI is off. Turn AI on in the top-right Prompt Atlas controls.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 709,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": "refineWithGPT",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-777e312e52640ab30f03",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": ". Do not duplicate her/him.\n\n",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1020,
+          "column": 51,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-782a6d2471efe49e6b91",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "refEnv",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 841,
+          "column": 39,
+          "kind": "string-literal",
+          "functionName": "loadState",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-7e6671d618f3e359203a",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "m-subject",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 814,
+          "column": 22,
+          "kind": "string-literal",
+          "functionName": "saveState",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 988,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": "buildMotion",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1045,
+          "column": 108,
+          "kind": "string-literal",
+          "functionName": "regen",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1061,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": "regen",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1110,
+          "column": 6,
+          "kind": "string-literal",
+          "functionName": "copy",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-8057a97d4e99e69c02ef",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Seedance 2.0 Prompt: Use the storyboard reference ",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1010,
+          "column": 16,
+          "kind": "string-literal",
+          "functionName": "buildMotion",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-83330f1fc5cd16146f45",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "m-char",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1036,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": "regen",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-8536374096198f38376d",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Fill at least the subject, style or action to generate the prompt...",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 406,
+          "column": 45,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-85f856f7b94429e44ace",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "s-facs-clear",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1056,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": "regen",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-8712499478e06079ba9a",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "m-ref-env",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 812,
+          "column": 96,
+          "kind": "string-literal",
+          "functionName": "saveState",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 842,
+          "column": 77,
+          "kind": "string-literal",
+          "functionName": "loadState",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 983,
+          "column": 22,
+          "kind": "string-literal",
+          "functionName": "buildMotion",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1045,
+          "column": 41,
+          "kind": "string-literal",
+          "functionName": "regen",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1063,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": "regen",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1112,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": "copy",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-88ac44d5d6f8a784d5f9",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "use brow/eye AUs during reaction beats, mouth/jaw AUs during dialogue or exertion, and head AUs when the camera or character changes direction.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 557,
+          "column": 51,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-8d6a018a9c48f2e6b996",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "s-ref-char",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 806,
+          "column": 47,
+          "kind": "string-literal",
+          "functionName": "saveState",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 829,
+          "column": 42,
+          "kind": "string-literal",
+          "functionName": "loadState",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 937,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": "buildStory",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 982,
+          "column": 42,
+          "kind": "string-literal",
+          "functionName": "buildMotion",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1044,
+          "column": 16,
+          "kind": "string-literal",
+          "functionName": "regen",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1062,
+          "column": 53,
+          "kind": "string-literal",
+          "functionName": "regen",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1101,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": "copy",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-8f36171b8243a42c5b2d",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "rewrite as a production-ready BZ Board prompt, keep all concrete inputs and FACS cues, improve narrative sequence, camera logic, motion clarity, and prompt economy",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 728,
+          "column": 22,
+          "kind": "string-literal",
+          "functionName": "refineWithGPT",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-90290f40c0cfb1a224d2",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "optional extra style notes",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 367,
+          "column": 45,
+          "kind": "html-attribute:placeholder",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-93bc63b3aa926ccf81f2",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "classical fixed tripod, pans and tilts on axis only, controlled zooms",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 331,
+          "column": 19,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-96ff316209a6605c43db",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "BZ Board adds these cues as precise facial performance instructions, tied to the storyboard timing and visible close-up/key-action beats.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 558,
+          "column": 45,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-985ccdc78e40a143dc86",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "s-subject",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 806,
+          "column": 22,
+          "kind": "string-literal",
+          "functionName": "saveState",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 829,
+          "column": 11,
+          "kind": "string-literal",
+          "functionName": "loadState",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 936,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": "buildStory",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 988,
+          "column": 41,
+          "kind": "string-literal",
+          "functionName": "buildMotion",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1044,
+          "column": 4,
+          "kind": "string-literal",
+          "functionName": "regen",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1061,
+          "column": 52,
+          "kind": "string-literal",
+          "functionName": "regen",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1100,
+          "column": 6,
+          "kind": "string-literal",
+          "functionName": "copy",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-9cb3489da5a907297b7c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "s-annot",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 808,
+          "column": 119,
+          "kind": "string-literal",
+          "functionName": "saveState",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 837,
+          "column": 66,
+          "kind": "string-literal",
+          "functionName": "loadState",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 949,
+          "column": 26,
+          "kind": "string-literal",
+          "functionName": "buildStory",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1044,
+          "column": 149,
+          "kind": "string-literal",
+          "functionName": "regen",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-9f8e96c5268c2e3c2f4d",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Remplis",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 715,
+          "column": 97,
+          "kind": "string-literal",
+          "functionName": "refineWithGPT",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-a001f4f76973c0765bd6",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "m-import",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1060,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": "regen",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1070,
+          "column": 41,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-a0280ca5791ca60709fe",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Cinematography: ",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 971,
+          "column": 9,
+          "kind": "string-literal",
+          "functionName": "buildStory",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-a044f857a905d99876ea",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "m-ref-char",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 812,
+          "column": 71,
+          "kind": "string-literal",
+          "functionName": "saveState",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 842,
+          "column": 56,
+          "kind": "string-literal",
+          "functionName": "loadState",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 982,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": "buildMotion",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1045,
+          "column": 28,
+          "kind": "string-literal",
+          "functionName": "regen",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1062,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": "regen",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1111,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": "copy",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-a4d596fe40213ad0d319",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "barzy_board_v1",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 638,
+          "column": 23,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-a7522790638911290105",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Motion - two-step pipeline",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 269,
+          "column": 38,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-a77b048c957f9a75e895",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": " beats sequentially from left to right, top to bottom. Do not reinterpret the actions, poses, camera angles or emotional progression. Preserve shot order, movement logic, framing variety and final pose.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1010,
+          "column": 180,
+          "kind": "string-literal",
+          "functionName": "buildMotion",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-a8677b3c8cec8dfd99cf",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Include the color annotation system (red=body, blue=camera, green=framing, orange=light, violet=emotion, black=lens)",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 384,
+          "column": 28,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-a90c09e829643304fb4d",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "m-ref-secondary",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 812,
+          "column": 126,
+          "kind": "string-literal",
+          "functionName": "saveState",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 842,
+          "column": 103,
+          "kind": "string-literal",
+          "functionName": "loadState",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 984,
+          "column": 28,
+          "kind": "string-literal",
+          "functionName": "buildMotion",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1045,
+          "column": 53,
+          "kind": "string-literal",
+          "functionName": "regen",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1113,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": "copy",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-ac9592def8b6e66b1d93",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Subject / character (override)",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 498,
+          "column": 16,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-ad5bde4cbefcdc0901fa",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "GPT request failed",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 733,
+          "column": 49,
+          "kind": "string-literal",
+          "functionName": "refineWithGPT",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-af0144e9101911e4bcb1",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "motion-facs-body",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 860,
+          "column": 83,
+          "kind": "string-literal",
+          "functionName": "loadState",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-b00bf0b7f9b1dd6d1bbf",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "each selected AU becomes an acting cue in the Story prompt, so GPT knows which facial muscles and emotional beats to draw into the storyboard.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 419,
+          "column": 44,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-b48acac6f1eae147aa6b",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "m-final-hold",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 813,
+          "column": 70,
+          "kind": "string-literal",
+          "functionName": "saveState",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 842,
+          "column": 132,
+          "kind": "string-literal",
+          "functionName": "loadState",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 987,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": "buildMotion",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1045,
+          "column": 93,
+          "kind": "string-literal",
+          "functionName": "regen",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-b5ac45af273933aebc08",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "OpenAI connection failed. Local prompt is ready below.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 693,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": "readableAIError",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-b740856cc45235fcb746",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "m-audio",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 815,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "saveState",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 993,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": "buildMotion",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1045,
+          "column": 161,
+          "kind": "string-literal",
+          "functionName": "regen",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1110,
+          "column": 59,
+          "kind": "string-literal",
+          "functionName": "copy",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-b826a6d1236af8bdcb67",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": " prompt...",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 719,
+          "column": 45,
+          "kind": "string-literal",
+          "functionName": "refineWithGPT",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-bec75fb07d50487dbfcc",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "m-output",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 714,
+          "column": 66,
+          "kind": "string-literal",
+          "functionName": "refineWithGPT",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1034,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": "regen",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1096,
+          "column": 95,
+          "kind": "string-literal",
+          "functionName": "copy",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-bedb85a45948423a7bd0",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": " beats in order. Preserve composition, action and final pose.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1012,
+          "column": 156,
+          "kind": "string-literal",
+          "functionName": "buildMotion",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-c0f1779c16d26bac92c4",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "smooth",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 686,
+          "column": 44,
+          "kind": "string-literal",
+          "functionName": "showRefineOutput",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-c0f69e19ba252767f183",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "secondary",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 841,
+          "column": 103,
+          "kind": "string-literal",
+          "functionName": "loadState",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-c133f7e210e650389222",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "selected AUs become performance continuity notes for the motion prompt, helping the video model keep face, gaze, mouth, jaw and head action coherent.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 556,
+          "column": 44,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-c161ee3e0aec85bddc5a",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": ". Apply them on close-up and key-action beats so the face, gaze, mouth, jaw and head movement stay consistent with the storyboard timing.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 756,
+          "column": 53,
+          "kind": "string-literal",
+          "functionName": "facsPromptBlock",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-c2aee1cafac7b2d14026",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "finalHold",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 841,
+          "column": 81,
+          "kind": "string-literal",
+          "functionName": "loadState",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-c4287b24eb448979a04d",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": " as the complete visual and choreography source for a ",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1010,
+          "column": 78,
+          "kind": "string-literal",
+          "functionName": "buildMotion",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-c6aa6cfec50938cabb14",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "as described in storyboard",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1023,
+          "column": 46,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-c8a2afc19177a001c1a8",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Drawing style - describe",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 366,
+          "column": 16,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-c9429d99e8b1202674f9",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Annotation color system: red arrows = body movement; blue arrows = camera movement; green marks = framing / composition notes; orange marks = lighting direction; purple marks = vocal / emotional emphasis; black text = short lens notes and panel labels.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 955,
+          "column": 9,
+          "kind": "string-literal",
+          "functionName": "buildStory",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-caa79af4db67695cce51",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "duration",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 841,
+          "column": 63,
+          "kind": "string-literal",
+          "functionName": "loadState",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-cc5967b6a64b4daf7193",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "choose eye/brow AUs for reaction shots, mouth/jaw AUs for speech or effort, and head/neck AUs for direction changes. Place stronger FACS on close-ups or key panels, lighter FACS on transitions.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 420,
+          "column": 51,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-ce57a0afc562d684b6c6",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "refChar",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 841,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": "loadState",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-cf13b06683f266506a72",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Build a precise storyboard-to-motion prompt for AI generation. Preserve user fields, improve continuity, make the action readable, and keep the final prompt directly usable.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 729,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": "refineWithGPT",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-cfa225a4372512eaa337",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "m-ref-board",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 812,
+          "column": 44,
+          "kind": "string-literal",
+          "functionName": "saveState",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 842,
+          "column": 33,
+          "kind": "string-literal",
+          "functionName": "loadState",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 981,
+          "column": 24,
+          "kind": "string-literal",
+          "functionName": "buildMotion",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1045,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": "regen",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-d3450bd2b596b588dc1d",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "[IMG_3], [IMG_4], [IMG_5], [IMG_6] = secondary characters",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 963,
+          "column": 9,
+          "kind": "string-literal",
+          "functionName": "buildStory",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-d6a5d7526d1734abca50",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "perform the selected acting and facial action cues with clear readable movement",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 999,
+          "column": 36,
+          "kind": "string-literal",
+          "functionName": "buildMotion",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-dd5e8a4aef0d581b76fc",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Scene: ",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 970,
+          "column": 9,
+          "kind": "string-literal",
+          "functionName": "buildStory",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-dd7ec405d196133a278f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "m-facs-container",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 785,
+          "column": 38,
+          "kind": "string-literal",
+          "functionName": "applyFacsPayload",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1055,
+          "column": 84,
+          "kind": "string-literal",
+          "functionName": "regen",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1057,
+          "column": 113,
+          "kind": "string-literal",
+          "functionName": "regen",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1115,
+          "column": 16,
+          "kind": "string-literal",
+          "functionName": "copy",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1142,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-df4d0e89f0c67c883c93",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "[IMG_3], [IMG_4], [IMG_5], [IMG_6]",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 476,
+          "column": 49,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 984,
+          "column": 50,
+          "kind": "string-literal",
+          "functionName": "buildMotion",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1113,
+          "column": 54,
+          "kind": "string-literal",
+          "functionName": "copy",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-e0b908b9f83e4edccf55",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "m-model",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 812,
+          "column": 20,
+          "kind": "string-literal",
+          "functionName": "saveState",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 980,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": "buildMotion",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1037,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": "regen",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1039,
+          "column": 56,
+          "kind": "string-literal",
+          "functionName": "regen",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1045,
+          "column": 4,
+          "kind": "string-literal",
+          "functionName": "regen",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-e21e77b6d684aed9f617",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "@[drawing style ref] or leave empty",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 374,
+          "column": 44,
+          "kind": "html-attribute:placeholder",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-e3e23faf4fcf3f0bc247",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "m-cam",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 815,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": "saveState",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 992,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": "buildMotion",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1045,
+          "column": 153,
+          "kind": "string-literal",
+          "functionName": "regen",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1067,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1110,
+          "column": 51,
+          "kind": "string-literal",
+          "functionName": "copy",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-e6f546ceff5217dc2d2f",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Fill at least the main character, action, drawing style notes or secondary characters to generate the prompt...",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 952,
+          "column": 63,
+          "kind": "string-literal",
+          "functionName": "buildStory",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-e766fc154bfcd45d7d46",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "m-facs-clear",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1057,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": "regen",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-ee1e9fd092a62aa82af3",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "-second video. Follow all ",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1010,
+          "column": 144,
+          "kind": "string-literal",
+          "functionName": "buildMotion",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1012,
+          "column": 120,
+          "kind": "string-literal",
+          "functionName": "buildMotion",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-f021606a9d33e7383788",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Using global model: ${modelLabel(atlasAiModel) || 'Prompt Atlas default'}.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 660,
+          "column": 11,
+          "kind": "template-literal",
+          "functionName": "syncAtlasAI",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-f1c809c860af090d1497",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "ignore if not provided",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 969,
+          "column": 48,
+          "kind": "string-literal",
+          "functionName": "buildStory",
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1021,
+          "column": 48,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-f1e81bfa50e171d57c80",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "m-",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 843,
+          "column": 32,
+          "kind": "string-literal",
+          "functionName": "loadState",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-f29263255f685198cd46",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "ai-copy",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1123,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": "copy",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-f595c028b4b5c4b75d58",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "handheld arthouse, whip pans, orbit movement, overhead, extreme negative space",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 330,
+          "column": 19,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-f780059673c89f3b00ef",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "@[storyboard ref]",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 452,
+          "column": 45,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "barzy-board"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 981,
+          "column": 42,
+          "kind": "string-literal",
+          "functionName": "buildMotion",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-fc6afc31d33b02a18627",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": " as the visual and choreography source for a ",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1012,
+          "column": 63,
+          "kind": "string-literal",
+          "functionName": "buildMotion",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-ffe9d72aa9ab84d2fae7",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "ai-story",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/barzy-board.html",
+          "line": 1121,
+          "column": 27,
+          "kind": "string-literal",
+          "functionName": "copy",
+          "owners": [
+            "barzy-board"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "barzy-board"
+    },
+    {
+      "id": "text-00b44f7fe21ec0065948",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "Create one complete FACS ACTION UNITS reference sheet as a flat 7x7 contact sheet, 49 equal portrait tiles. Use a portrait 3:4 or 4:5 canvas; 9:16 is acceptable only if the 7x7 board fills the image. No perspective, no rounded cards, no decorative frames, no thick white gutters, no outer margin, no watermark, no logo. Use thin dark separators or no visible gutters. Each cell must contain one centered medium close-up portrait in the upper 75% of the cell, with a small readable AU code and name in a narrow bottom label band. Subject lock: ",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 681,
+          "column": 18,
+          "kind": "string-literal",
+          "functionName": "buildCompactFACSBoardPrompt",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "owner": "facs-sheet-generator"
+    },
+    {
+      "id": "text-1340c518c0fe44c21e19",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "\" alt=\"",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 514,
+          "column": 96,
+          "kind": "string-literal",
+          "functionName": "renderCustomGallery",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 521,
+          "column": 64,
+          "kind": "string-literal",
+          "functionName": "showLargeReference",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 800,
+          "column": 812,
+          "kind": "string-literal",
+          "functionName": "render",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "facs-sheet-generator"
+    },
+    {
+      "id": "text-2308dbbc25b33bb18297",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "outputTitle",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 705,
+          "column": 33,
+          "kind": "string-literal",
+          "functionName": "buildOutput",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 711,
+          "column": 33,
+          "kind": "string-literal",
+          "functionName": "buildOutput",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 715,
+          "column": 31,
+          "kind": "string-literal",
+          "functionName": "buildOutput",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 840,
+          "column": 31,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "facs-sheet-generator"
+    },
+    {
+      "id": "text-288476f18421f84ed7ff",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": ". Same character identity, face structure, hairstyle, lens, crop, lighting and background in every tile; only the facial action changes. Critical gaze disambiguation: AU61 Eyes Turn Left means both pupils move toward image-left / viewer-left, not anatomical left; AU62 Eyes Turn Right means both pupils move toward image-right / viewer-right. AU61 and AU62 must be visibly opposite gaze directions and must never look the same way. Use these 49 tiles in this exact left-to-right, top-to-bottom order: ",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 681,
+          "column": 639,
+          "kind": "string-literal",
+          "functionName": "buildCompactFACSBoardPrompt",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "owner": "facs-sheet-generator"
+    },
+    {
+      "id": "text-293f8e9c32fa897fbfe5",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "FACS board creation",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 169,
+          "column": 77,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 705,
+          "column": 117,
+          "kind": "string-literal",
+          "functionName": "buildOutput",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "facs-sheet-generator"
+    },
+    {
+      "id": "text-3124e7e5ab4b554c1076",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "customCardButton",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 382,
+          "column": 52,
+          "kind": "string-literal",
+          "functionName": "setReferenceMode",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 851,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "facs-sheet-generator"
+    },
+    {
+      "id": "text-32ed779eaad1ec923e91",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "head turns toward subject left into a three-quarter view",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 315,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "owner": "facs-sheet-generator"
+    },
+    {
+      "id": "text-33b74583dc0ab75f3c4f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": " FACS board creation prompt",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 715,
+          "column": 75,
+          "kind": "string-literal",
+          "functionName": "buildOutput",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "facs-sheet-generator"
+    },
+    {
+      "id": "text-36852fee4c5ec10bea69",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "FACS acting instructions",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 164,
+          "column": 36,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 705,
+          "column": 88,
+          "kind": "string-literal",
+          "functionName": "buildOutput",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "facs-sheet-generator"
+    },
+    {
+      "id": "text-42d40d6565992932ae21",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "head turns toward subject right into a three-quarter view",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 316,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "owner": "facs-sheet-generator"
+    },
+    {
+      "id": "text-42fa761e22ca57d33c7b",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Full FACS board prompt - ",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 840,
+          "column": 60,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "facs-sheet-generator"
+    },
+    {
+      "id": "text-460d4f5abe327eb8fef6",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "head tilts toward the subject left shoulder",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 319,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "owner": "facs-sheet-generator"
+    },
+    {
+      "id": "text-4cd7d6a4f4e081b1f091",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "medium close-up portrait, soft frontal key light, neutral studio background, consistent lens and crop across every tile",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 148,
+          "column": 32,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 345,
+          "column": 16,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "owner": "facs-sheet-generator"
+    },
+    {
+      "id": "text-4d0a25df5fa9c5a4d400",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "sendSelectedMotion",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 849,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "facs-sheet-generator"
+    },
+    {
+      "id": "text-54f0d75b8b2bb1f738f1",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "<h2>FACS board not recognized</h2><p>The imported file could not be read as a usable image or is too small to cut into 49 cells.</p><p>Use <strong>Create Full FACS Board</strong>, choose a character, generate a visible 7x7 FACS board with Nano Banana, GPT Image 2, or your preferred image aggregator, then import the final image here. Any aspect ratio is OK as long as the 7x7 board is visible.</p>",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 408,
+          "column": 17,
+          "kind": "string-literal",
+          "functionName": "showFACSImportHelp",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "owner": "facs-sheet-generator"
+    },
+    {
+      "id": "text-5f6c14edc654e49142e0",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "eyes turn to image-left / viewer-left: both pupils slide toward the left edge of both eyes while the head stays perfectly forward",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 323,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "owner": "facs-sheet-generator"
+    },
+    {
+      "id": "text-65c4d1533fff94c730f8",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "<h2>Create Full FACS Board</h2><p>Best pipe: generate a flat 7x7 contact sheet in portrait <strong>3:4 or 4:5</strong>. 9:16 also works if the board fills the image and is not floating in a big empty poster.</p><p>Ask for: 49 equal cells, thin dark separators or no gutters, no thick white grid lines, no outer margin, one centered portrait per cell, labels kept in a narrow bottom band, same lens/crop/light/background across all tiles. Import that final board here; the app crops inside each cell and ignores the label band.</p><p>Important gaze lock: AU61 must look to <strong>image-left / viewer-left</strong>; AU62 must look to <strong>image-right / viewer-right</strong>. They must be visibly opposite, never mirrored into the same direction.</p>",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 414,
+          "column": 17,
+          "kind": "string-literal",
+          "functionName": "showFullFACSInfo",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "owner": "facs-sheet-generator"
+    },
+    {
+      "id": "text-68cabeddc68a54ae8ba7",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Select expression buttons to build a FACS acting layer.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 703,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": "buildOutput",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "facs-sheet-generator"
+    },
+    {
+      "id": "text-6ac9a32c0ca8e84e5bf0",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "cards",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 432,
+          "column": 74,
+          "kind": "string-literal",
+          "functionName": "openFACSDB",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 440,
+          "column": 35,
+          "kind": "string-literal",
+          "functionName": "loadCustomCards",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 441,
+          "column": 40,
+          "kind": "string-literal",
+          "functionName": "loadCustomCards",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 452,
+          "column": 35,
+          "kind": "string-literal",
+          "functionName": "persistCustomCards",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 453,
+          "column": 46,
+          "kind": "string-literal",
+          "functionName": "persistCustomCards",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 482,
+          "column": 35,
+          "kind": "string-literal",
+          "functionName": "deleteCustomCard",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 483,
+          "column": 24,
+          "kind": "string-literal",
+          "functionName": "deleteCustomCard",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "facs-sheet-generator"
+    },
+    {
+      "id": "text-6bc4783be42dfa8bed4c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "\" type=\"button\" aria-label=\"Select ",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 800,
+          "column": 724,
+          "kind": "string-literal",
+          "functionName": "render",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "facs-sheet-generator"
+    },
+    {
+      "id": "text-79bfb0e2ba76b9d44760",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "anchor",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 663,
+          "column": 42,
+          "kind": "string-literal",
+          "functionName": "promptFor",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 676,
+          "column": 37,
+          "kind": "string-literal",
+          "functionName": "buildCompactFACSBoardPrompt",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 876,
+          "column": 6,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate",
+      "owner": "facs-sheet-generator"
+    },
+    {
+      "id": "text-7d482f80b26ea3ce0f1c",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "medium close-up portrait, soft frontal key light, neutral studio background",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 677,
+          "column": 52,
+          "kind": "string-literal",
+          "functionName": "buildCompactFACSBoardPrompt",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "owner": "facs-sheet-generator"
+    },
+    {
+      "id": "text-7d4b47cf84bb52b6cab5",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "wardrobe",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 664,
+          "column": 44,
+          "kind": "string-literal",
+          "functionName": "promptFor",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 678,
+          "column": 39,
+          "kind": "string-literal",
+          "functionName": "buildCompactFACSBoardPrompt",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 876,
+          "column": 25,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate",
+      "owner": "facs-sheet-generator"
+    },
+    {
+      "id": "text-8c7384fff6789323e40c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "prompt-atlas-facs-cards",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 431,
+          "column": 40,
+          "kind": "string-literal",
+          "functionName": "openFACSDB",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "facs-sheet-generator"
+    },
+    {
+      "id": "text-8ea1da99500779230b19",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "Import a FACS board generated from Create Full FACS Board. Custom cards are stored locally; Save custom cards forces the current library to persist for the next app launch.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 186,
+          "column": 37,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "owner": "facs-sheet-generator"
+    },
+    {
+      "id": "text-9330eee4145283041cb3",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Select expression buttons to build FACS board creation prompts.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 704,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": "buildOutput",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "facs-sheet-generator"
+    },
+    {
+      "id": "text-93f01c9b20ca83c2745d",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "head tilts strongly toward the subject right shoulder",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 320,
+          "column": 14,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "owner": "facs-sheet-generator"
+    },
+    {
+      "id": "text-980aa8af0a886684ad84",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "49 facial action buttons with stylized expression heads, real-time prompt output and direct send to BZ Board.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 137,
+          "column": 29,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "owner": "facs-sheet-generator"
+    },
+    {
+      "id": "text-9ed1afdf42375806c703",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": " chars",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 840,
+          "column": 104,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 844,
+          "column": 56,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "facs-sheet-generator"
+    },
+    {
+      "id": "text-aeb982d4c67a623a15b4",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "head tips back, chin lifted upward",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 317,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate",
+      "owner": "facs-sheet-generator"
+    },
+    {
+      "id": "text-afcdad0138d8246eae01",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "[IMG_1], same character identity, same facial structure, same hairstyle, same proportions, photographed as a clean expression reference.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 144,
+          "column": 31,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 344,
+          "column": 15,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "owner": "facs-sheet-generator"
+    },
+    {
+      "id": "text-b30a4ce96db5be658bed",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "normalRefMode",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 381,
+          "column": 31,
+          "kind": "string-literal",
+          "functionName": "setReferenceMode",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 850,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "facs-sheet-generator"
+    },
+    {
+      "id": "text-bee2690d02691a4f4a19",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "eyes turn to image-right / viewer-right: both pupils slide toward the right edge of both eyes while the head stays perfectly forward",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 324,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "owner": "facs-sheet-generator"
+    },
+    {
+      "id": "text-c852e54c39199dbf31d9",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "<h2>No custom cards yet</h2><p>Import a FACS sheet first, then save it here to keep it available after reopening the app.</p>",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 502,
+          "column": 19,
+          "kind": "string-literal",
+          "functionName": "saveAllCustomCards",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "prose-candidate",
+      "owner": "facs-sheet-generator"
+    },
+    {
+      "id": "text-ca13b21719f7d598024e",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": ". Framing lock: ",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 681,
+          "column": 608,
+          "kind": "string-literal",
+          "functionName": "buildCompactFACSBoardPrompt",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate",
+      "owner": "facs-sheet-generator"
+    },
+    {
+      "id": "text-d0e08aeb9b7123222dd7",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": ". The result must read like a professional facial acting / expression reference chart that can be sliced into 49 clean cards.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 681,
+          "column": 1153,
+          "kind": "string-literal",
+          "functionName": "buildCompactFACSBoardPrompt",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate",
+      "owner": "facs-sheet-generator"
+    },
+    {
+      "id": "text-ea738ab1fe955f850a78",
+      "classification": "review-candidate",
+      "reviewKind": "fragment-review",
+      "value": "head pushes forward toward camera, chin leading",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 314,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "owner": "facs-sheet-generator"
+    },
+    {
+      "id": "text-ef33f76c7b94204f9323",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": " FACS acting instruction",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 711,
+          "column": 77,
+          "kind": "string-literal",
+          "functionName": "buildOutput",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "facs-sheet-generator"
+    },
+    {
+      "id": "text-f8a524125f73875602b5",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": " reference for ",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 800,
+          "column": 836,
+          "kind": "string-literal",
+          "functionName": "render",
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate",
+      "owner": "facs-sheet-generator"
+    },
+    {
+      "id": "text-fbf75608ef48a13a41be",
+      "classification": "likely-prompt",
+      "reviewKind": "prompt-review",
+      "value": "head tilts toward the subject right shoulder",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/facs_sheet_generator.html",
+          "line": 313,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "facs-sheet-generator"
+          ]
+        }
+      ],
+      "owner": "facs-sheet-generator"
+    }
+  ]
+}

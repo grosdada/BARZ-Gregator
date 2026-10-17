@@ -1,0 +1,2344 @@
+{
+  "schemaVersion": "1.0",
+  "id": "triage-multishot-01",
+  "owner": "multishot",
+  "status": "pending-structural-triage",
+  "approximateTokens": 613,
+  "prompts": [
+    {
+      "id": "text-051f01f095a28b04433f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Track",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 448,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-0735e4f1553e117802f5",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Isolation, surveillance, god's view",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 436,
+          "column": 184,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-0772e5f961f8c3377b93",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "dutch-angle dynamic",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 536,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": "updateGridReadouts",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-0b11740f0fb71c39e6a3",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Iterate this BZ Multishot prompt. Keep the theme '",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1520,
+          "column": 36,
+          "kind": "string-literal",
+          "functionName": "bzIteratePrompt",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-0ea39ef6a9573eb0ea3b",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Multishot 01 - High-Fashion Beauty Editorial",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 617,
+          "column": 24,
+          "kind": "string-literal",
+          "functionName": "applyAtlasGrid",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-14c52f21e2fc612153b8",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "over-the-shoulder",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 531,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": "updateGridReadouts",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-1968034b13f84d0c3e44",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Angle",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 432,
+          "column": 64,
+          "kind": "string-literal",
+          "functionName": "bzPaintActiveTab",
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 433,
+          "column": 63,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 434,
+          "column": 63,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-1a17563e91249b771687",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Sudden attention shift, surprise, kinetic energy",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 450,
+          "column": 219,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-1a7d7548579a107c806b",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "3/4 front-right view",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 525,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": "updateGridReadouts",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-1c4f43afc2032901fb2e",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Neutral, equal, natural conversation",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 434,
+          "column": 157,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-2a585b5184a92a173a14",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": ".tab-btn.active",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 424,
+          "column": 49,
+          "kind": "string-literal",
+          "functionName": "bzPaintActiveTab",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-2bce1f4a654f7970df94",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Shots",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 311,
+          "column": 47,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 311,
+          "column": 33,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 428,
+          "column": 39,
+          "kind": "string-literal",
+          "functionName": "bzPaintActiveTab",
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 429,
+          "column": 47,
+          "kind": "string-literal",
+          "functionName": "bzPaintActiveTab",
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 430,
+          "column": 41,
+          "kind": "string-literal",
+          "functionName": "bzPaintActiveTab",
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 431,
+          "column": 42,
+          "kind": "string-literal",
+          "functionName": "bzPaintActiveTab",
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 432,
+          "column": 46,
+          "kind": "string-literal",
+          "functionName": "bzPaintActiveTab",
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 433,
+          "column": 45,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 434,
+          "column": 45,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 435,
+          "column": 48,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 436,
+          "column": 46,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 437,
+          "column": 34,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 438,
+          "column": 42,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 439,
+          "column": 46,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-2c7e63313045bbdff6db",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Creative",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 435,
+          "column": 66,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 436,
+          "column": 64,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 437,
+          "column": 52,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 438,
+          "column": 60,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 439,
+          "column": 64,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-2d142e9f36290f304b4d",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "multishotContainer",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1357,
+          "column": 55,
+          "kind": "string-literal",
+          "functionName": "initializeMultishots",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-2e1066bab54d206ac3ca",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Camera Angle",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 320,
+          "column": 35,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-2f79c94a3b02fc0ce6cd",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Grid Layout:",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 335,
+          "column": 24,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 347,
+          "column": 24,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-2fe2b971d833e427c6d1",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": " with a hard flash",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1375,
+          "column": 58,
+          "kind": "string-literal",
+          "functionName": "initializeMultishots",
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1426,
+          "column": 62,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1448,
+          "column": 66,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-31db336e6fd8477334d8",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Board-07 - Horror Creature Encounter",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1303,
+          "column": 24,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-39e89abad98402706bcc",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Suspense, anticipation, detail focus",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 430,
+          "column": 183,
+          "kind": "string-literal",
+          "functionName": "bzPaintActiveTab",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-3ecbc2d7f601dc2ea606",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Crane Up",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 444,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-40ce9c1b4cac5fc117bc",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Dynamic reveal, dramatic emphasis, confrontational energy",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 449,
+          "column": 167,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-453ba3c1d5345656bcb2",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Dutch Angle",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 438,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-46e09f164f49daba9e75",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "typeFilter",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 457,
+          "column": 55,
+          "kind": "string-literal",
+          "functionName": "renderCameraTable",
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 482,
+          "column": 33,
+          "kind": "string-literal",
+          "functionName": "renderCameraTable",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-48b33f0a99b0af9307b1",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Multishot 05 - 360° Product & Construction Detail",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 886,
+          "column": 24,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-49ba63e89af69e4d6d4c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Movement",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 440,
+          "column": 66,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 441,
+          "column": 63,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 442,
+          "column": 60,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 443,
+          "column": 61,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 444,
+          "column": 61,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 445,
+          "column": 56,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 447,
+          "column": 68,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 448,
+          "column": 58,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 449,
+          "column": 56,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 450,
+          "column": 61,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 451,
+          "column": 66,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 452,
+          "column": 63,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-4fa64562605c0cdc6b36",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Action Boards",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 300,
+          "column": 64,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-542581fd4df58a64f545",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "border-bottom-color",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 405,
+          "column": 40,
+          "kind": "string-literal",
+          "functionName": "bzPaintActiveTab",
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 410,
+          "column": 45,
+          "kind": "string-literal",
+          "functionName": "bzPaintActiveTab",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-55d4856620f1da90bffa",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Tension, disorientation, danger, instability",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 438,
+          "column": 171,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-5989b1d5200cc087bb97",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Mystery, drama, artistic, anonymous",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 439,
+          "column": 175,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-62a2ce9dde017566daae",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Intimacy, intensity, fear, vulnerability",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 429,
+          "column": 195,
+          "kind": "string-literal",
+          "functionName": "bzPaintActiveTab",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-64e8ba6cfdc6348c6260",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Building intensity, focusing attention, emphasis",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 442,
+          "column": 174,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-6772ee170dd9e6bda4ea",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Multishot Sequences",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 299,
+          "column": 62,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-6958044d7fdbe7cad2c7",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "multishot-item",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1362,
+          "column": 34,
+          "kind": "string-literal",
+          "functionName": "initializeMultishots",
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1465,
+          "column": 34,
+          "kind": "string-literal",
+          "functionName": "initializeActionBoards",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-6b3cd1325faa32b533c9",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "back view",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 528,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": "updateGridReadouts",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-6c4b5ec056209b40758a",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Connection, engagement, neutral conversation",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 428,
+          "column": 184,
+          "kind": "string-literal",
+          "functionName": "bzPaintActiveTab",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-6c6ad72e957cb833a988",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "full profile side view (right)",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 527,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": "updateGridReadouts",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-6ecbdce5667e355a38a8",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "full profile side view (left)",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 526,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": "updateGridReadouts",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-7291b1b6320fe0737cd6",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Arc",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 449,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-733b1604941504718417",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": " Image Board - Template",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 950,
+          "column": 24,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-7499c820e43053fe21c8",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Epic reveal, showing scale, transitioning",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 444,
+          "column": 182,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-75be4d0a917ad0436c60",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "high-angle shot",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 530,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": "updateGridReadouts",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-75f650451fd2a140706a",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Documentary realism, authenticity, intimate tension",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 447,
+          "column": 280,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-7a61886b667f63314ec8",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Silhouette Shot",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 439,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-7bb4e391215f2d68045a",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Board-06 - Heist Infiltration Sequence",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1255,
+          "column": 24,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-7d40c50d1898b03e8a45",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "3/4 front-left view",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 524,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": "updateGridReadouts",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-8210a30935b2954334e0",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Context reveal, scale, emotional distance",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 443,
+          "column": 173,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-87c23c775ac6dec1cf30",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Immersion, action, first-person experience",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 437,
+          "column": 166,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-884dff41b45a3858b8aa",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Board-02 - High-Speed Car Chase",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1063,
+          "column": 24,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-88ea6058d4337ba09a37",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "tableBody",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 465,
+          "column": 51,
+          "kind": "string-literal",
+          "functionName": "renderCameraTable",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-89455029266ccd943ba4",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Board-05 - Western Duel Showdown",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1207,
+          "column": 24,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-8be4d1919db9524d00cc",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Amat (Handheld)",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 447,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-8d39843f85bbe27d6d43",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Dramatic reveal, 360 showcase, hero moment",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 441,
+          "column": 165,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-93184af12b2c859f857d",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Medium Shot",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 431,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": "bzPaintActiveTab",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-93c613d1d5d00051c083",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "POV / detail insert",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 537,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": "updateGridReadouts",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-93fe35f50ffb4e18a98f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "MULTI-ANGLE",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 326,
+          "column": 50,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-95c59bacbdbffa113457",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Shock, urgency, dramatic punctuation, impact moment",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 452,
+          "column": 251,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-97747fedaa87f4ae68cb",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "multiAngleSubject",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 558,
+          "column": 57,
+          "kind": "string-literal",
+          "functionName": "buildMultiAnglePrompt",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-97ddfe19292a534f7669",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "#multishot-tab .grid-selector, #actionboard-tab .grid-selector",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 511,
+          "column": 39,
+          "kind": "string-literal",
+          "functionName": "updateGridReadouts",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-9b02e99ab9bd364b3ba5",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Board-03 - Romantic Intimate Moment",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1111,
+          "column": 24,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-9b9d49b29de9faf456af",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "wide establishing shot",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 522,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": "updateGridReadouts",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-9ca5626801e2bf3c0a19",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "bird's-eye top-down",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 535,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": "updateGridReadouts",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-9d6c5b2dc3224a8be9d1",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Product Orbit",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 451,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-9ee74825b8d86ad0e8ff",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Product showcase, 360 view, commercial presentation",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 451,
+          "column": 234,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-9fcdc592780fbbbc9ee9",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "#flashToggle-${data.id}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1442,
+          "column": 60,
+          "kind": "template-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-a1d0900d5cd69310c425",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Camera Angles",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 298,
+          "column": 66,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-a2e7ab9f1e28e11d3abc",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "close-up on face",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 533,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": "updateGridReadouts",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-a5657c5b5f73efd08ec8",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Initial Model Prompt",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 614,
+          "column": 29,
+          "kind": "string-literal",
+          "functionName": "applyAtlasGrid",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-a6e600a10fede40f648b",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Context",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 320,
+          "column": 84,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-a8991cbdbac102c27210",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Board-04 - Psychological Thriller/Suspense Investigation",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1159,
+          "column": 24,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-a9ccfd4631b9f2b0a869",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "extreme close-up (eyes/detail)",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 534,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": "updateGridReadouts",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-aa67c85fe24aba2ecb17",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Board-01 - Sci-Fi Alien Escape",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1009,
+          "column": 24,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-ac08a4a416ed031f5c6e",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "${atlasGrid.total}-frame",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 583,
+          "column": 55,
+          "kind": "template-literal",
+          "functionName": "adaptGridPrompt",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-ae94e594011efd27a65d",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "--bg",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1548,
+          "column": 94,
+          "kind": "string-literal",
+          "functionName": "apply",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-b33100ed0f9c5bf489d7",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "low-angle hero shot",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 529,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": "updateGridReadouts",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-b5f1c8d2e6469c24ce4f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "medium shot, chest up",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 532,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": "updateGridReadouts",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-b7bdf7a2d6e73e58d69a",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Distance",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 428,
+          "column": 57,
+          "kind": "string-literal",
+          "functionName": "bzPaintActiveTab",
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 429,
+          "column": 65,
+          "kind": "string-literal",
+          "functionName": "bzPaintActiveTab",
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 430,
+          "column": 59,
+          "kind": "string-literal",
+          "functionName": "bzPaintActiveTab",
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 431,
+          "column": 60,
+          "kind": "string-literal",
+          "functionName": "bzPaintActiveTab",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-baaddf70fb5d432b8bd9",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Type",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 320,
+          "column": 56,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-bfedd644b99d59a9eca1",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Environment reveal, following action, breadth",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 445,
+          "column": 159,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-d748c380530f0ee53958",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Over-the-Shoulder",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 435,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-d95d0b2246ab09332dfd",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "${i + 1}. ${angle}",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 561,
+          "column": 36,
+          "kind": "template-literal",
+          "functionName": "buildMultiAnglePrompt",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-dade38afd80e6a943b07",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Defeat, submission, vulnerability, weakness",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 432,
+          "column": 172,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-dda262fb64b5d5ebd676",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Isolation, context, establishing",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 431,
+          "column": 166,
+          "kind": "string-literal",
+          "functionName": "bzPaintActiveTab",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-e1146f006ab341fd87d7",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Filter:",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 308,
+          "column": 28,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-e6fc898c91f973440a0e",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Close-Up",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 428,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": "bzPaintActiveTab",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-e7e197c055b46f85717c",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Hero moment, authority, threat, dominance",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 433,
+          "column": 172,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-e8bb516c2e9c1eedea20",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Extreme Close-Up",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 429,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": "bzPaintActiveTab",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-e90abdc73fb200aad06a",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Multishot 03 - Accessories & Detail Showcase",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 764,
+          "column": 24,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-e9af67760537fd02023e",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "multishot-copy-btn-header",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1411,
+          "column": 54,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1484,
+          "column": 54,
+          "kind": "string-literal",
+          "functionName": "initializeActionBoards",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-ea2e6d497b7cf63aa3f7",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Copy Multi-Angle prompt",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 331,
+          "column": 104,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "ui-copy-candidate"
+    },
+    {
+      "id": "text-ee7a425e7320f39ea102",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "POV",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 437,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-ef71206f398d862a0d09",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Movements",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 312,
+          "column": 51,
+          "kind": "html-text",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 312,
+          "column": 33,
+          "kind": "html-attribute:value",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 440,
+          "column": 44,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 441,
+          "column": 41,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 442,
+          "column": 38,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 443,
+          "column": 39,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 444,
+          "column": 39,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 445,
+          "column": 34,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 447,
+          "column": 46,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 448,
+          "column": 36,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 449,
+          "column": 34,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 450,
+          "column": 39,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 451,
+          "column": 44,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        },
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 452,
+          "column": 41,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-facf4f34aee3dff0b6fa",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Macro Shot",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 430,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": "bzPaintActiveTab",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    },
+    {
+      "id": "text-fba0b7564fe077841b5f",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Empty prompt returned.",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 1526,
+          "column": 44,
+          "kind": "string-literal",
+          "functionName": "bzIteratePrompt",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "prompt-context-candidate"
+    },
+    {
+      "id": "text-fbc29029aadf57f1c4dd",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "full-body front view, eye-level",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 523,
+          "column": 13,
+          "kind": "string-literal",
+          "functionName": "updateGridReadouts",
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "unresolved-candidate"
+    },
+    {
+      "id": "text-fd92d952db92eff57586",
+      "classification": "review-candidate",
+      "reviewKind": "manual-triage",
+      "value": "Pan",
+      "occurrences": [
+        {
+          "sourcePath": "Barzy App/public/assets/HTML/MD Multishot.html",
+          "line": 445,
+          "column": 21,
+          "kind": "string-literal",
+          "functionName": null,
+          "owners": [
+            "multishot"
+          ]
+        }
+      ],
+      "triageKind": "short-atom-candidate"
+    }
+  ]
+}
