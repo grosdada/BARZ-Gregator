@@ -1081,7 +1081,7 @@
       <div class="bs-light-word" id="lightWord">-</div>
       <div class="acc-row" style="margin-top:8px">
         <button type="button" id="envSaveDefaultBtn" title="Save every Environment setting (light, GI, background, ground, grid) as the default for new / cleared scenes" style="flex:1">&#128190; Save as default</button>
-        <button type="button" id="envResetDefaultBtn" title="Forget the saved Environment default (revert to the built-in defaults)">Reset</button>
+        <button type="button" id="envResetDefaultBtn" title="Restore the built-in Environment settings and forget the saved default">Reset</button>
       </div>
     </section>
 
@@ -3337,6 +3337,12 @@ function syncLightUi() {
 
 /* ---------------- Environment "Save as default" (user-defined default env) ---------------- */
 const ENV_DEFAULT_KEY = "bs-env-default";
+const FACTORY_ENV_SETTINGS = {
+  light: { az: 35, el: 50, intensity: 100, softness: 3, shadows: true, gi: { enabled: false, intensity: 100 } },
+  sceneBg: "#c9c9c9", groundColor: "#bdbdbd", groundVisible: true,
+  groundCheck: true, groundTiling: 44,
+  grid: { show: true, size: 20, cell: 1 }
+};
 // Snapshot every Environment control from state (light + GI, background, ground, grid).
 function collectEnvSettings() {
   const gi = state.light.gi || { enabled: false, intensity: 100 };
@@ -4633,14 +4639,7 @@ function clearSceneToDefault() {
   setActiveCamera(state.activeCameraId || cameras[0]?.id);
   // Reset the environment AFTER the stage exists (applyEnvSettings → syncLightUi needs an
   // active camera). Saved default if the user set one, else the built-in default.
-  const envD = loadEnvDefault();
-  if (envD) applyEnvSettings(envD);
-  else {
-    state.groundVisible = true;
-    state.groundCheck = true;
-    state.groundTiling = 44;
-    applyGroundColor();
-  }
+  applyEnvSettings(loadEnvDefault() || FACTORY_ENV_SETTINGS);
   if (prims[0]) select({ kind: "prim", id: prims[0].id });
   renderTimelineUi(); refreshHud(); refreshSelectionUi(); syncLightUi(); refreshTrajectory({ force: true });
   scheduleAutosave(); toast("Scene cleared");
@@ -6801,18 +6800,16 @@ if (ui.groundVisibleToggle) ui.groundVisibleToggle.addEventListener("change", ()
 {
   const saveBtn = document.getElementById("envSaveDefaultBtn");
   const resetBtn = document.getElementById("envResetDefaultBtn");
-  const syncResetState = () => { if (resetBtn) resetBtn.disabled = !loadEnvDefault(); };
   if (saveBtn) saveBtn.addEventListener("click", () => {
     try { localStorage.setItem(ENV_DEFAULT_KEY, JSON.stringify(collectEnvSettings())); toast("Environment saved as default"); }
     catch { toast("Could not save (storage blocked)"); }
-    syncResetState();
   });
   if (resetBtn) resetBtn.addEventListener("click", () => {
     try { localStorage.removeItem(ENV_DEFAULT_KEY); } catch {}
-    toast("Environment default cleared");
-    syncResetState();
+    applyEnvSettings(FACTORY_ENV_SETTINGS);
+    scheduleAutosave();
+    toast("Environment reset to built-in defaults");
   });
-  syncResetState();
 }
 /* Viewport / timeline resize handle — drag to grow or shrink the timeline (item 8) */
 {

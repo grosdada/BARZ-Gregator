@@ -10,12 +10,12 @@ html[data-theme="light"] {
   --line-strong: #aa9786;
   --paper: #342f2a;
   --safe: #39755b;
-  --signal: #227ca8;
-  --signal-soft: #d5eaf4;
+  --signal: #437187;
+  --signal-soft: #dce7ec;
   --button-beige: #ad8b70;
   --button-beige-hover: #98745a;
-  --button-orange: #227ca8;
-  --button-orange-hover: #1a668d;
+  --button-orange: #437187;
+  --button-orange-hover: #365f73;
 }
 .rail-preferences { display: grid; grid-template-columns: 1fr 1fr; gap: 7px; width: 100%; margin-top: 9px; }
 .preference-switch { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); overflow: hidden; border: 1px solid var(--line-strong); border-radius: 4px; background: var(--panel); }
@@ -60,4 +60,44 @@ html[data-theme="light"] button[aria-pressed="true"],
 html[data-theme="light"] button[aria-selected="true"] { background: var(--button-orange) !important; color: #fff !important; border-color: var(--button-orange) !important; }
 html[data-theme="light"] .brand-mark,
 html[data-theme="light"] .app-switch-mark { color: #111; }
+html[data-theme="light"] .media-tab .tab-glyph,
+html[data-theme="light"] .media-tab .director-glyph { color: currentColor; text-shadow: none; }
+html[data-theme="light"] .media-tab .tab-icon { stroke: currentColor; }
+html[data-theme="light"] .activity-filter-modes { padding: 0; border: 0; border-radius: 0; background: transparent; }
+html[data-theme="light"] .active-job-monitor { color: #e4e8e9; border-color: #51595b; background: #111516; }
+html[data-theme="light"] .active-job-heading small { color: #aab3b6; }
+html[data-theme="light"] .active-job-track span,
+html[data-theme="light"] .job-progress-track span { background: #5f90a8; }
+html[data-theme="light"] .asset-library { color: var(--ink); background: var(--black); }
+html[data-theme="light"] .asset-tile { color: var(--ink); border-color: var(--line); background: var(--panel); }
+html[data-theme="light"] .asset-tile .result-frame { background: var(--panel-raised); }
+html[data-theme="light"] .asset-audio-preview { color: var(--ink); background: var(--panel-raised); }
+html[data-theme="light"] .api-view,
+html[data-theme="light"] .spending-view,
+html[data-theme="light"] .lora-lab-view { color: var(--ink); background: var(--black); }
+html[data-theme="light"] .api-card,
+html[data-theme="light"] .lora-lab-form,
+html[data-theme="light"] .lora-jobs,
+html[data-theme="light"] .lora-job,
+html[data-theme="light"] .krea-lab-library,
+html[data-theme="light"] .krea-lora-mixer { color: var(--ink); border-color: var(--line); background: var(--panel); }
+html[data-theme="light"] .lora-dataset,
+html[data-theme="light"] .lora-cost-box,
+html[data-theme="light"] .provider-mark,
+html[data-theme="light"] .provider-credit > a,
+html[data-theme="light"] .lora-job header > span,
+html[data-theme="light"] .lora-job header > span[data-state] { color: var(--ink); border-color: var(--line); background: var(--panel-raised); }
+html[data-theme="light"] .video-mode-switch,
+html[data-theme="light"] .spending-modes { padding: 0; border: 0; border-radius: 0; background: transparent; }
+html[data-theme="light"] .motion-reference-slot,
+html[data-theme="light"] .prompt-editor,
+html[data-theme="light"] .reference-image-shell,
+html[data-theme="light"] .selection-tray,
+html[data-theme="light"] .reference-set-card,
+html[data-theme="light"] .collection-context-menu { color: var(--ink); border-color: var(--line); background: var(--panel-raised); }
+html[data-theme="light"] .calendar-day:hover,
+html[data-theme="light"] .spending-entry:hover { background: var(--panel-raised); }
+html[data-theme="light"] .calendar-day.selected { color: var(--ink); border-color: var(--signal); background: var(--signal-soft); }
+html[data-theme="light"] .spending-entry { border-bottom-color: var(--line); }
+html[data-theme="light"] .payload-details pre { color: var(--ink); background: var(--panel-raised); }
 @media (max-width: 1080px) { .rail-preferences { width: 136px; flex: 0 0 136px; margin: 5px; } }

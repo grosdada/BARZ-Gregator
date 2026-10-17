@@ -100,9 +100,8 @@ function createUi() {
     <div class="global-ai-selectors">
       <details class="global-ai-picker" data-ai-picker>
         <summary>
-          <span data-ai-copy="provider">AI provider</span>
-          <strong data-ai-current-provider>OpenAI</strong>
-          <span class="global-ai-picker-chevron" aria-hidden="true">⌄</span>
+          <span data-ai-copy="model">AI model</span>
+          <strong data-ai-current-model>Choose model</strong>
         </summary>
         <div class="global-ai-picker-menu">
           <label><span data-ai-copy="provider">AI provider</span><select data-ai-provider aria-label="AI provider"></select></label>
@@ -204,7 +203,9 @@ function renderModels(root) {
     entry.id
   )));
   model.value = candidates.some((entry) => entry.id === state.preferences?.aiModel) ? state.preferences.aiModel : (candidates[0]?.id || "");
-  root.querySelector("[data-ai-current-provider]").textContent = providerNames[provider.value] || provider.value;
+  const currentModel = root.querySelector("[data-ai-current-model]");
+  currentModel.textContent = candidates.find((entry) => entry.id === model.value)?.name || t("Choose model", "Choisir un modèle");
+  currentModel.title = currentModel.textContent;
   root.querySelector("[data-ai-model-field]").hidden = !candidates.length;
 }
 

@@ -22,7 +22,7 @@ present in electron-builder's local cache:
 npm run build:installer
 ```
 
-This creates `BARZ-Suite-6-Setup-0.33.47.exe`. If a previous BARZ runtime is still
+This creates `BARZ-Suite-6-Setup-0.33.48.exe`. If a previous BARZ runtime is still
 active, the installer stops only that installed runtime before replacing it. Close
 the local applications before
 uninstalling so Windows can remove the bundled runtime immediately.

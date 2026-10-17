@@ -20,12 +20,15 @@
         <span>Local</span>
         <span class="quiet">Confirmation au-delà de 1,50 $US</span>
       </div>
-      <button class="plain-button" id="settingsButton" type="button">Clés API</button>
     </header>
 
     <main class="workspace">
       <aside class="media-rail" aria-label="Type de création">
         <p class="rail-title">Créer</p>
+        <button class="media-tab active" type="button" data-media="image">
+          <span class="tab-glyph">▧</span>
+          Images
+        </button>
         <button class="media-tab" type="button" data-media="video">
           <span class="tab-glyph">▶</span>
           Vidéos
@@ -33,10 +36,6 @@
         <button class="media-tab" id="directorButton" type="button">
           <span class="tab-glyph director-glyph" aria-hidden="true">●</span>
           Director
-        </button>
-        <button class="media-tab active" type="button" data-media="image">
-          <span class="tab-glyph">▧</span>
-          Images
         </button>
         <button class="media-tab" type="button" data-media="music">
           <span class="tab-glyph">♪</span>

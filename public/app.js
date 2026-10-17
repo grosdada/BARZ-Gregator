@@ -5461,9 +5461,6 @@ document.querySelector("#openImportButton").addEventListener("click", () => {
 });
 
 document.querySelector("#importButton").addEventListener("click", importPayload);
-document.querySelector("#settingsButton").addEventListener("click", () => {
-  if (!blockNavigationDuringDirector()) showApi();
-});
 document.querySelector("#connectFalButton").addEventListener("click", connectFal);
 document.querySelector("#connectFalAdminButton").addEventListener("click", connectFalAdmin);
 document.querySelector("#connectHeygenButton").addEventListener("click", connectHeygen);

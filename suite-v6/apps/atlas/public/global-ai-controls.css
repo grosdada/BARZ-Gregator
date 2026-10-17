@@ -1,14 +1,11 @@
-.global-ai-dock{position:fixed;z-index:1200;top:9px;right:18px;width:max-content;max-width:calc(100vw - 110px);font:13px/1.35 Inter,system-ui,sans-serif;color:var(--ink,#f5f1ee)}
-.global-ai-dock.is-aggregator{right:104px}
-.global-ai-dock.is-open{width:min(860px,calc(100vw - 110px))}
+.global-ai-dock{position:fixed;z-index:1200;top:9px;right:18px;width:max-content;max-width:calc(100vw - 36px);font:13px/1.35 Inter,system-ui,sans-serif;color:var(--ink,#f5f1ee)}
+.global-ai-dock.is-open{width:min(860px,calc(100vw - 36px))}
 .global-ai-selectors{display:flex;justify-content:flex-end;align-items:flex-start;gap:8px}
 .global-ai-picker{position:relative}
 .global-ai-picker summary{display:flex;align-items:center;gap:9px;min-height:40px;padding:0 12px;border:1px solid var(--line,#34383a);border-radius:999px;background:var(--graphite,#111516);box-shadow:0 8px 24px rgb(0 0 0/.18);cursor:pointer;list-style:none}
 .global-ai-picker summary::-webkit-details-marker{display:none}
 .global-ai-picker summary>span:first-child{font-size:10px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted,#9ba2a3)}
-.global-ai-picker summary strong{font-size:12px;white-space:nowrap}
-.global-ai-picker-chevron{color:var(--signal,#ef654b);font-size:16px;line-height:1;transition:transform .15s ease}
-.global-ai-picker[open] .global-ai-picker-chevron{transform:rotate(180deg)}
+.global-ai-picker summary strong{max-width:min(240px,calc(100vw - 182px));overflow:hidden;text-overflow:ellipsis;font-size:12px;white-space:nowrap}
 .global-ai-picker-menu{position:absolute;top:calc(100% + 7px);right:0;display:grid;gap:12px;width:min(290px,calc(100vw - 24px));padding:14px;border:1px solid var(--line-strong,#596063);border-radius:9px;background:var(--graphite,#111516);box-shadow:0 18px 45px rgb(0 0 0/.45)}
 .global-ai-picker-menu label{display:grid;gap:5px;color:var(--muted,#9ba2a3);font-size:11px}
 .global-ai-picker-menu label[hidden]{display:none}
@@ -36,6 +33,5 @@
 .global-ai-dock.is-offline select{opacity:.55}
 html[data-theme=light] .global-ai-picker summary,html[data-theme=light] .global-ai-picker-menu,html[data-theme=light] .global-ai-advisor{background:var(--graphite,#f4eadb);color:var(--ink,#29221b);border-color:var(--line,#c8b494)}html[data-theme=light] .global-ai-picker-menu select{background:var(--black,#e8dbc7);color:var(--ink,#29221b)}html[data-theme=light] .global-ai-advisor-toggle{background:color-mix(in srgb,var(--signal,#ef654b) 45%,var(--graphite,#f4eadb))!important;color:var(--ink,#29221b)!important;border-color:var(--signal,#ef654b)!important}html[data-theme=light] .global-ai-advisor-toggle[aria-expanded=true],html[data-theme=light] .global-ai-actions .is-primary{background:var(--signal,#ef654b)!important;color:#fff!important;border-color:var(--signal,#ef654b)!important}html[data-theme=light] .global-ai-actions button:not(.is-primary){background:var(--graphite,#f4eadb);color:var(--ink,#29221b)}html[data-theme=light] .global-ai-question textarea,html[data-theme=light] .global-ai-images,html[data-theme=light] .global-ai-answer{background:#fbf3e7;color:#2f2b27}
 html[data-theme=light] .global-ai-selectors select{color-scheme:light}html[data-theme=light] .global-ai-selectors select option{background:#fbf3e7;color:#2f2b27}
-@media(max-width:1050px){.global-ai-dock{top:7px;right:8px;max-width:calc(100vw - 90px)}.global-ai-dock.is-aggregator{right:88px}.global-ai-dock.is-open{width:calc(100vw - 90px)}.global-ai-advisor{grid-template-columns:1fr}.global-ai-answer{grid-column:1}.global-ai-advisor-title{display:none}}
-@media(max-width:650px){.global-ai-dock.is-aggregator{top:64px;right:8px}.global-ai-picker summary>span:first-child{display:none}.global-ai-picker summary{padding:0 10px}.global-ai-advisor-toggle{padding:0 10px}.global-ai-dock.is-open{width:calc(100vw - 16px)}}
-@media(prefers-reduced-motion:reduce){.global-ai-picker-chevron{transition:none}}
+@media(max-width:1050px){.global-ai-dock{top:7px;right:8px;max-width:calc(100vw - 16px)}.global-ai-dock.is-open{width:calc(100vw - 16px)}.global-ai-advisor{grid-template-columns:1fr}.global-ai-answer{grid-column:1}.global-ai-advisor-title{display:none}}
+@media(max-width:650px){.global-ai-dock.is-aggregator{top:64px;right:8px}.global-ai-picker summary>span:first-child{display:none}.global-ai-picker summary{padding:0 10px}.global-ai-advisor-toggle{padding:0 10px}}

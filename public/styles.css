@@ -1135,13 +1135,10 @@ textarea::placeholder { color: #606461; }
   gap: 10px;
   margin-top: 18px;
   padding: 13px 14px;
-  border: 1px solid #32617a;
+  border: 1px solid #42494b;
   border-radius: 9px;
-  background: linear-gradient(135deg, rgba(99, 185, 227, .13), rgba(17, 21, 21, .96) 55%);
-  box-shadow: inset 3px 0 0 var(--signal);
+  background: #111516;
 }
-.active-job-monitor.is-completed { border-color: #345e45; box-shadow: inset 3px 0 0 #66b67f; }
-.active-job-monitor.is-failed { border-color: #7b3a32; box-shadow: inset 3px 0 0 #e66552; }
 .active-job-heading { display: flex; align-items: center; gap: 11px; }
 .active-job-heading > div { display: grid; min-width: 0; gap: 2px; flex: 1 1 auto; }
 .active-job-heading small { color: var(--muted); font-size: 11px; }
@@ -1152,29 +1149,26 @@ textarea::placeholder { color: #606461; }
   height: 9px;
   flex: none;
   border-radius: 50%;
-  background: var(--signal);
-  box-shadow: 0 0 0 0 rgba(99, 185, 227, .46);
+  background: #879195;
+  box-shadow: 0 0 0 0 rgba(135, 145, 149, .35);
   animation: active-job-pulse 1.6s infinite;
 }
-.active-job-monitor.is-completed .active-job-pulse { background: #66b67f; animation: none; box-shadow: none; }
-.active-job-monitor.is-failed .active-job-pulse { background: #e66552; animation: none; box-shadow: none; }
+.active-job-monitor.is-completed .active-job-pulse,
+.active-job-monitor.is-failed .active-job-pulse { animation: none; box-shadow: none; }
 .active-job-progress { display: flex; align-items: center; gap: 10px; }
-.active-job-track { height: 7px; overflow: hidden; flex: 1 1 auto; border-radius: 999px; background: #292d2c; }
+.active-job-track { height: 9px; overflow: hidden; flex: 1 1 auto; border: 1px solid #495154; border-radius: 999px; background: #292d2f; }
 .active-job-track span {
   display: block;
   height: 100%;
   border-radius: inherit;
-  background: linear-gradient(90deg, #2d83ae, var(--signal));
-  box-shadow: 0 0 9px rgba(99, 185, 227, .34);
+  background: #4a9cc7;
   transition: width .45s ease;
 }
-.active-job-monitor.is-completed .active-job-track span { background: #66b67f; box-shadow: none; }
-.active-job-percent { min-width: 44px; color: var(--signal); font-size: 11px; text-align: right; }
-.active-job-monitor.is-completed .active-job-percent { color: #78c991; }
+.active-job-percent { min-width: 44px; color: #b6bec1; font-size: 11px; text-align: right; }
 
 @keyframes active-job-pulse {
-  70% { box-shadow: 0 0 0 7px rgba(99, 185, 227, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(99, 185, 227, 0); }
+  70% { box-shadow: 0 0 0 7px rgba(135, 145, 149, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(135, 145, 149, 0); }
 }
 
 .composer-actions {
@@ -1346,17 +1340,17 @@ textarea::placeholder { color: #606461; }
 .job-progress-track {
   position: relative;
   overflow: hidden;
-  height: 5px;
+  height: 7px;
   flex: 1 1 auto;
+  border: 1px solid #495154;
   border-radius: 999px;
-  background: #292d2c;
+  background: #292d2f;
 }
 .job-progress-track span {
   display: block;
   height: 100%;
   border-radius: inherit;
-  background: linear-gradient(90deg, #2d83ae, var(--signal));
-  box-shadow: 0 0 8px rgba(99, 185, 227, .32);
+  background: #4a9cc7;
   transition: width .45s ease;
 }
 .job-progress-value {
