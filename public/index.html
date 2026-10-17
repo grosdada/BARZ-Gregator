@@ -621,21 +621,32 @@
       </section>
 
       <aside class="activity-panel" id="activityPanel">
-        <div class="activity-heading">
-          <div>
-            <p>Sur cette machine</p>
-            <h2>Générations</h2>
+        <p class="activity-context">Sur cette machine</p>
+        <div class="activity-filters" id="activityFilters" aria-label="Filtrer l’historique">
+          <div class="activity-filter-modes" role="group" aria-label="Période de l’historique">
+            <button type="button" data-history-range="recent" aria-pressed="true">30 dernières</button>
+            <button type="button" data-history-range="all" aria-pressed="false">Tout</button>
+            <button type="button" data-history-range="dates" aria-pressed="false">Dates</button>
           </div>
-          <span class="count" id="draftCount">0</span>
+          <div class="activity-date-range" id="historyDates" hidden>
+            <label>Du <input id="historyFrom" type="date" aria-label="Date de début"></label>
+            <label>Au <input id="historyTo" type="date" aria-label="Date de fin"></label>
+          </div>
         </div>
-        <div class="draft-list" id="draftList"></div>
-        <section class="queue-panel" aria-labelledby="queueTitle">
-          <div class="queue-heading">
+        <details class="activity-section" id="draftHistory" open>
+          <summary class="activity-heading">
+            <h2>Générations</h2>
+            <span class="count" id="draftCount">0</span>
+          </summary>
+          <div class="draft-list" id="draftList"></div>
+        </details>
+        <details class="activity-section queue-panel" id="queueHistory" open>
+          <summary class="queue-heading">
             <h3 id="queueTitle">File locale</h3>
             <span class="count" id="jobCount">0</span>
-          </div>
+          </summary>
           <div class="job-list" id="jobList"></div>
-        </section>
+        </details>
       </aside>
     </main>
 

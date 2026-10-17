@@ -1,10 +1,14 @@
 # Mac build handoff for Codex
 
-Build the macOS edition from this repository's sources, not from the Windows installer or its generated `payload/`. Keep Prompt Atlas and Aggregator as separate local services connected by their existing versioned bridge. The current Windows product version is `0.33.46` (`suite-v6/installer/manifest.json`).
+Build the macOS edition from this repository's sources, not from the Windows installer or its generated `payload/`. Keep Prompt Atlas and Aggregator as separate local services connected by their existing versioned bridge. The current Windows product version is `0.33.47` (`suite-v6/installer/manifest.json`).
 
-## Scope of the 0.33.46 port
+## Scope of the 0.33.47 port
 
-Only port this release's branding changes: the `BARZ` mark and “Beyond Artificial Reality Zone” hover/focus label in both headers, blue Aggregator accents, orange Prompt Atlas accents, and the matching cross-app switch marks. The relevant source files are `public/index.html`, `public/styles.css`, `suite-v6/apps/atlas/public/index.html`, `suite-v6/apps/atlas/public/styles.css`, and the two Aggregator CSS overlays in `suite-v6/installer/aggregator-overlays/`. Update the Mac bundle's displayed version to `0.33.46` and verify both headers and the existing bridge. Leave all other features, APIs, data formats, and credentials unchanged; do not port Windows-only NSIS/VBScript packaging code.
+Port only this update: the two collapsible Aggregator history sections with Latest 30 / All / date-range filtering; the shared compact AI provider/model picker and accent-coloured Advisor toggle (blue in Aggregator, orange in Atlas); the black outlined inactive Image Slicer Pro tab; and “Send to prompt” copying only the prompt section, not starred settings or risk notes. The affected sources are `public/index.html`, `public/app.js`, `public/styles.css`, `suite-v6/installer/aggregator-overlays/suite-bridge.js`, `suite-v6/apps/atlas/public/global-ai-controls.js`, `global-ai-controls.css`, `styles.css`, and `suite-v6/apps/atlas/blocking-engine-v5.js`. Update the Mac bundle's displayed version to `0.33.47`; leave unrelated tools, APIs, data formats, and credentials untouched. Do not port Windows-only NSIS/VBScript packaging code.
+
+## Previous 0.33.46 branding handoff (already completed; do not repeat)
+
+The previous release changed the `BARZ` mark and “Beyond Artificial Reality Zone” hover/focus label in both headers, blue Aggregator accents, orange Prompt Atlas accents, and the cross-app switch marks. This paragraph is historical context only: do not rework that branding while porting 0.33.47.
 
 ## Known traps
 

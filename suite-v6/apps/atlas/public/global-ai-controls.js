@@ -94,11 +94,21 @@ function createUi() {
   if (document.querySelector(".global-ai-dock")) return null;
   const dock = document.createElement("section");
   dock.className = "global-ai-dock";
+  dock.classList.toggle("is-aggregator", isAggregator);
   dock.setAttribute("aria-label", "Global AI controls");
   dock.innerHTML = `
     <div class="global-ai-selectors">
-      <label><span data-ai-copy="provider">AI provider</span><select data-ai-provider aria-label="AI provider"></select></label>
-      <label><span data-ai-copy="model">AI model</span><select data-ai-model aria-label="AI model"></select></label>
+      <details class="global-ai-picker" data-ai-picker>
+        <summary>
+          <span data-ai-copy="provider">AI provider</span>
+          <strong data-ai-current-provider>OpenAI</strong>
+          <span class="global-ai-picker-chevron" aria-hidden="true">⌄</span>
+        </summary>
+        <div class="global-ai-picker-menu">
+          <label><span data-ai-copy="provider">AI provider</span><select data-ai-provider aria-label="AI provider"></select></label>
+          <label data-ai-model-field><span data-ai-copy="model">AI model</span><select data-ai-model aria-label="AI model"></select></label>
+        </div>
+      </details>
       <button type="button" class="global-ai-advisor-toggle" data-ai-advisor-toggle aria-expanded="false">Atlas Advisor</button>
     </div>
     <div class="global-ai-advisor" data-ai-advisor hidden>
@@ -194,6 +204,8 @@ function renderModels(root) {
     entry.id
   )));
   model.value = candidates.some((entry) => entry.id === state.preferences?.aiModel) ? state.preferences.aiModel : (candidates[0]?.id || "");
+  root.querySelector("[data-ai-current-provider]").textContent = providerNames[provider.value] || provider.value;
+  root.querySelector("[data-ai-model-field]").hidden = !candidates.length;
 }
 
 async function saveSelection(root) {
@@ -210,6 +222,18 @@ async function refreshPreferences(root) {
   if (state.preferences?.updatedAt === next.updatedAt) return;
   state.preferences = next;
   renderModels(root);
+}
+
+function copyReadyPrompt(answer) {
+  const lines = String(answer || "").replace(/\r\n?/g, "\n").split("\n");
+  const promptHeading = /^\s*(?:#{1,6}\s*)?(?:\*\*)?\s*(?:(?:final|image|video)\s+)?prompt(?:\s+final)?\s*[:：-]?\s*(?:\*\*)?\s*$/i;
+  const inlineHeading = /^\s*\*\*\s*(?:(?:final|image|video)\s+)?prompt(?:\s+final)?\s*(?:\*\*)?\s*[:：-]\s*(?:\*\*)?\s*(.+)$/i;
+  const start = lines.findIndex((line) => promptHeading.test(line) || inlineHeading.test(line));
+  const body = start < 0 ? lines : [inlineHeading.exec(lines[start])?.[1] || "", ...lines.slice(start + 1)];
+  const nextSection = /^\s*(?:\*\*[^*]{2,80}\*\*|#{1,6}\s+\S+)/;
+  const advisorNote = /^\s*(?:settings?|risks?|notes?|remarks?|recommendations?|negative prompt|parameters?|r[eé]glages?|risques?|remarques?|conseils?)\s*[:：]/i;
+  const end = body.findIndex((line) => nextSection.test(line) || advisorNote.test(line));
+  return (end < 0 ? body : body.slice(0, end)).join("\n").trim();
 }
 
 function renderAdvisorAnswer(root, value) {
@@ -244,11 +268,12 @@ function renderAdvisorAnswer(root, value) {
   send.addEventListener("click", () => {
     const blockingActive = document.querySelector(".runtime-tool-tab.is-active")?.textContent
       ?.toLowerCase().includes("blocking");
+    const prompt = copyReadyPrompt(responseText);
     const sent = state.lastBlockingScene && blockingActive
       ? (window.dispatchEvent(new CustomEvent("barz:load-blocking-scene", {
         detail: { plan: state.lastBlockingScene }
       })), true)
-      : writePrompt(activePromptTarget(), responseText);
+      : Boolean(prompt) && writePrompt(activePromptTarget(), prompt);
     send.textContent = sent ? t("Sent", "Envoyé") : t("No active prompt", "Aucun prompt actif");
     setTimeout(() => { send.textContent = t("Send to prompt", "Envoyer au prompt"); }, 1800);
   });
@@ -340,15 +365,22 @@ async function start() {
   updateCopy(root);
   const provider = root.querySelector("[data-ai-provider]");
   const model = root.querySelector("[data-ai-model]");
+  const picker = root.querySelector("[data-ai-picker]");
   const panel = root.querySelector("[data-ai-advisor]");
   const toggle = root.querySelector("[data-ai-advisor-toggle]");
   const file = root.querySelector("[data-ai-file]");
   const zone = root.querySelector("[data-ai-images]");
-  const show = (visible) => { panel.hidden = !visible; toggle.setAttribute("aria-expanded", String(visible)); };
+  const show = (visible) => {
+    panel.hidden = !visible;
+    root.classList.toggle("is-open", visible);
+    toggle.setAttribute("aria-expanded", String(visible));
+  };
   toggle.addEventListener("click", () => show(panel.hidden));
   root.querySelector("[data-ai-close]").addEventListener("click", () => show(false));
   provider.addEventListener("change", async () => { state.preferences.aiProvider = provider.value; renderModels(root); await saveSelection(root); });
-  model.addEventListener("change", saveSelection.bind(null, root));
+  model.addEventListener("change", async () => { await saveSelection(root); picker.open = false; });
+  document.addEventListener("pointerdown", (event) => { if (!picker.contains(event.target)) picker.open = false; });
+  picker.addEventListener("keydown", (event) => { if (event.key === "Escape") picker.open = false; });
   zone.addEventListener("click", () => file.click());
   zone.addEventListener("keydown", (event) => { if (["Enter", " "].includes(event.key)) { event.preventDefault(); file.click(); } });
   file.addEventListener("change", () => addFiles(root, file.files));

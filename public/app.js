@@ -108,6 +108,10 @@ const elements = {
   draftCount: document.querySelector("#draftCount"),
   jobCount: document.querySelector("#jobCount"),
   jobList: document.querySelector("#jobList"),
+  activityFilters: document.querySelector("#activityFilters"),
+  historyDates: document.querySelector("#historyDates"),
+  historyFrom: document.querySelector("#historyFrom"),
+  historyTo: document.querySelector("#historyTo"),
   draftOrigin: document.querySelector("#draftOrigin"),
   mediaContext: document.querySelector("#mediaContext"),
   promptInput: document.querySelector("#promptInput"),
@@ -1102,8 +1106,35 @@ function localDate(value) {
   }).format(new Date(value));
 }
 
+let historyRange = "recent";
+
+function historyTimestamp(value) {
+  const timestamp = Date.parse(value || "");
+  return Number.isFinite(timestamp) ? timestamp : 0;
+}
+
+function historyDay(value) {
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return "";
+  return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}-${String(date.getDate()).padStart(2, "0")}`;
+}
+
+function visibleHistory(items, dateField) {
+  const sorted = [...items].sort((a, b) => historyTimestamp(b[dateField]) - historyTimestamp(a[dateField]));
+  if (historyRange === "recent") return sorted.slice(0, 30);
+  if (historyRange === "all") return sorted;
+  const from = elements.historyFrom.value;
+  const to = elements.historyTo.value;
+  return sorted.filter((item) => {
+    const day = historyDay(item[dateField]);
+    return day && (!from || day >= from) && (!to || day <= to);
+  });
+}
+
 function renderDrafts() {
-  elements.draftCount.textContent = String(state.drafts.length);
+  const drafts = visibleHistory(state.drafts, "importedAt");
+  elements.draftCount.textContent = String(drafts.length);
+  elements.draftCount.title = `${state.drafts.length} au total`;
 
   if (!state.drafts.length) {
     elements.draftList.innerHTML = `
@@ -1112,7 +1143,7 @@ function renderDrafts() {
     return;
   }
 
-  elements.draftList.innerHTML = state.drafts.map((draft) => `
+  elements.draftList.innerHTML = drafts.length ? drafts.map((draft) => `
     <button class="draft-card ${draft.id === state.activeDraftId ? "active" : ""}"
       type="button" data-draft-id="${escapeHtml(draft.id)}">
       <header>
@@ -1121,7 +1152,7 @@ function renderDrafts() {
       </header>
       <p>${escapeHtml(draft.prompt)}</p>
     </button>
-  `).join("");
+  `).join("") : '<p class="empty-state compact-empty">Aucune génération sur cette période.</p>';
 }
 
 function formatJobCost(job) {
@@ -1158,8 +1189,10 @@ function resourceKey(resourceId) {
 }
 
 function renderJobs() {
-  const queueJobs = state.jobs.filter((job) => job.jobType !== "director-session");
+  const allQueueJobs = state.jobs.filter((job) => job.jobType !== "director-session");
+  const queueJobs = visibleHistory(allQueueJobs, "createdAt");
   elements.jobCount.textContent = String(queueJobs.length);
+  elements.jobCount.title = `${allQueueJobs.length} au total`;
   elements.jobList.innerHTML = queueJobs.length
     ? queueJobs.map((job) => `
       <article class="job-card" data-job-id="${escapeHtml(job.id)}">
@@ -1188,7 +1221,7 @@ function renderJobs() {
         ` : ""}
       </article>
     `).join("")
-    : '<p class="empty-state compact-empty">Aucune requête préparée.</p>';
+    : `<p class="empty-state compact-empty">${allQueueJobs.length ? "Aucune génération sur cette période." : "Aucune requête préparée."}</p>`;
   renderActiveJobMonitor();
 }
 
@@ -5401,6 +5434,25 @@ elements.draftList.addEventListener("click", (event) => {
   const button = event.target.closest("[data-draft-id]");
   if (button) selectDraft(button.dataset.draftId);
 });
+elements.activityFilters.addEventListener("click", (event) => {
+  const button = event.target.closest("[data-history-range]");
+  if (!button) return;
+  historyRange = button.dataset.historyRange;
+  elements.activityFilters.querySelectorAll("[data-history-range]").forEach((option) => {
+    option.setAttribute("aria-pressed", String(option === button));
+  });
+  elements.historyDates.hidden = historyRange !== "dates";
+  renderDrafts();
+  renderJobs();
+});
+for (const field of [elements.historyFrom, elements.historyTo]) {
+  field.addEventListener("change", () => {
+    if (historyRange === "dates") {
+      renderDrafts();
+      renderJobs();
+    }
+  });
+}
 
 document.querySelector("#openImportButton").addEventListener("click", () => {
   elements.importPayload.value = JSON.stringify(exampleImport, null, 2);

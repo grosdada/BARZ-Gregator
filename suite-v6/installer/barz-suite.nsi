@@ -3,7 +3,7 @@ Unicode True
 !include "Sections.nsh"
 
 Name "BARZ Suite 6"
-OutFile "BARZ-Suite-6-Setup-0.33.46.exe"
+OutFile "BARZ-Suite-6-Setup-0.33.47.exe"
 InstallDir "$LOCALAPPDATA\Programs\BARZ Suite 6"
 RequestExecutionLevel user
 SetCompressor /SOLID lzma
@@ -48,7 +48,7 @@ runtimeUnlocked:
   WriteUninstaller "$INSTDIR\Uninstall.exe"
   IfSilent coreDone
   WriteRegStr HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\BARZ Suite 6" "DisplayName" "BARZ Suite 6"
-  WriteRegStr HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\BARZ Suite 6" "DisplayVersion" "0.33.46"
+  WriteRegStr HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\BARZ Suite 6" "DisplayVersion" "0.33.47"
   WriteRegStr HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\BARZ Suite 6" "UninstallString" '$\"$INSTDIR\Uninstall.exe$\"'
   CreateDirectory "$SMPROGRAMS\BARZ Suite 6"
   CreateShortCut "$SMPROGRAMS\BARZ Suite 6\Désinstaller BARZ Suite 6.lnk" "$INSTDIR\Uninstall.exe"

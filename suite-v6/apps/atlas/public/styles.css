@@ -1088,12 +1088,13 @@ html[data-theme="light"] {
 .slicer-mode-tabs button {
   min-height: 40px;
   padding: 0 18px;
-  border: 1px solid transparent;
+  border: 1px solid var(--line-strong);
   border-radius: 8px;
-  background: var(--paper-warm, #d7c3ae);
-  color: #fff;
+  background: #080a0b;
+  color: var(--ink);
   font-weight: 700;
 }
+.slicer-mode-tabs button:not(.is-active):hover { border-color: var(--signal); }
 
 .slicer-mode-tabs button.is-active {
   border-color: var(--signal);
@@ -2939,6 +2940,15 @@ html[data-theme="light"] button:is(.is-active, .is-build, .active, .primary, .pr
 html[data-theme="light"] button[aria-pressed="true"]:hover,
 html[data-theme="light"] button[aria-selected="true"]:hover {
   background: var(--button-orange-hover) !important;
+}
+html[data-theme="light"] .slicer-mode-tabs button:not(.is-active),
+html[data-theme="light"] .slicer-mode-tabs button:not(.is-active):hover {
+  background: #080a0b !important;
+  color: #f0eee8 !important;
+  border-color: var(--line-strong) !important;
+}
+html[data-theme="light"] .slicer-mode-tabs button:not(.is-active):hover {
+  border-color: var(--signal) !important;
 }
 html[data-theme="light"] .analyzer-drop { background-color: #e2d3bf; background-image: linear-gradient(rgb(41 34 27 / 5%) 1px, transparent 1px), linear-gradient(90deg, rgb(41 34 27 / 5%) 1px, transparent 1px); }
 html[data-theme="light"] .analyzer-drop img,
