@@ -1,6 +1,10 @@
 # Mac build handoff for Codex
 
-Build the macOS edition from this repository's sources, not from the Windows installer or its generated `payload/`. Keep Prompt Atlas and Aggregator as separate local services connected by their existing versioned bridge. The current Windows product version is `0.33.45` (`suite-v6/installer/manifest.json`).
+Build the macOS edition from this repository's sources, not from the Windows installer or its generated `payload/`. Keep Prompt Atlas and Aggregator as separate local services connected by their existing versioned bridge. The current Windows product version is `0.33.46` (`suite-v6/installer/manifest.json`).
+
+## Scope of the 0.33.46 port
+
+Only port this release's branding changes: the `BARZ` mark and “Beyond Artificial Reality Zone” hover/focus label in both headers, blue Aggregator accents, orange Prompt Atlas accents, and the matching cross-app switch marks. The relevant source files are `public/index.html`, `public/styles.css`, `suite-v6/apps/atlas/public/index.html`, `suite-v6/apps/atlas/public/styles.css`, and the two Aggregator CSS overlays in `suite-v6/installer/aggregator-overlays/`. Update the Mac bundle's displayed version to `0.33.46` and verify both headers and the existing bridge. Leave all other features, APIs, data formats, and credentials unchanged; do not port Windows-only NSIS/VBScript packaging code.
 
 ## Known traps
 

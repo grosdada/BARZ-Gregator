@@ -68,13 +68,13 @@ async function integrateAggregatorSuiteBridge(aggregatorRoot) {
   serverSource = replaceRequired(
     serverSource,
     `version: "0.25.0"`,
-    `version: "0.33.45"`,
+    `version: "0.33.46"`,
     "Aggregator health version"
   );
   serverSource = replaceRequired(
     serverSource,
     `Version 0.25.0 — pont Prompt Atlas prêt.`,
-    `Version 0.33.45 — ActionForge GLB, transferts Ragdoll et panneaux redimensionnables.`,
+    `Version 0.33.46 — identite BARZ bleue pour Aggregator, orange pour Prompt Atlas.`,
     "Aggregator startup version"
   );
   serverSource = replaceRequired(
@@ -117,7 +117,7 @@ async function integrateAggregatorSuiteBridge(aggregatorRoot) {
 
   const indexPath = path.join(aggregatorRoot, "public", "index.html");
   let indexSource = await readFile(indexPath, "utf8");
-  indexSource = replaceRequired(indexSource, "v0.25.0", "v0.33.45", "Aggregator visible version");
+  indexSource = replaceRequired(indexSource, "v0.25.0", "v0.33.46", "Aggregator visible version");
   indexSource = replaceRequired(
     indexSource,
     "</head>",
@@ -142,7 +142,7 @@ async function integrateAggregatorSuiteBridge(aggregatorRoot) {
   await writeFile(indexPath, indexSource, "utf8");
   const packagePath = path.join(aggregatorRoot, "package.json");
   let packageSource = await readFile(packagePath, "utf8");
-  packageSource = replaceRequired(packageSource, `"version": "0.25.0"`, `"version": "0.33.45"`, "Aggregator package version");
+  packageSource = replaceRequired(packageSource, `"version": "0.25.0"`, `"version": "0.33.46"`, "Aggregator package version");
   await writeFile(packagePath, packageSource, "utf8");
   for (const localeFile of ["app.js", "spending.js", "job-progress.js"]) {
     const localePath = path.join(aggregatorRoot, "public", localeFile);
@@ -209,7 +209,7 @@ async function writeSuiteLauncher({ destination, expectedAtlasVersion }) {
     + `atlasReady = False\r\n`
     + `aggregatorReady = False\r\n`
     + `If atlasInstalled Then atlasReady = EndpointReady("http://127.0.0.1:4326/api/v1/health", "${expectedAtlasVersion}")\r\n`
-    + `If aggregatorInstalled Then aggregatorReady = EndpointReady("http://127.0.0.1:4317/api/health", "0.33.45")\r\n`
+    + `If aggregatorInstalled Then aggregatorReady = EndpointReady("http://127.0.0.1:4317/api/health", "0.33.46")\r\n`
     + `If atlasInstalled And Not atlasReady Then\r\n`
     + `  shell.Environment("PROCESS")("BARZ_SUITE_V6_DATA_DIR") = shell.ExpandEnvironmentStrings("%APPDATA%\\BARZ Suite 6\\Prompt Atlas")\r\n`
     + `  command = shell.ExpandEnvironmentStrings("%ComSpec%") & " /D /S /C " & Chr(34) & Chr(34) & nodePath & Chr(34) & " " & Chr(34) & atlasServer & Chr(34) & " >> " & Chr(34) & atlasLog & Chr(34) & " 2>&1" & Chr(34)\r\n`
@@ -227,7 +227,7 @@ async function writeSuiteLauncher({ destination, expectedAtlasVersion }) {
     + `End If\r\n`
     + `For attempt = 1 To 120\r\n`
     + `  If atlasInstalled Then atlasReady = EndpointReady("http://127.0.0.1:4326/api/v1/health", "${expectedAtlasVersion}")\r\n`
-    + `  If aggregatorInstalled Then aggregatorReady = EndpointReady("http://127.0.0.1:4317/api/health", "0.33.45")\r\n`
+    + `  If aggregatorInstalled Then aggregatorReady = EndpointReady("http://127.0.0.1:4317/api/health", "0.33.46")\r\n`
     + `  If (Not atlasInstalled Or atlasReady) And (Not aggregatorInstalled Or aggregatorReady) Then Exit For\r\n`
     + `  WScript.Sleep 250\r\n`
     + `Next\r\n`
@@ -308,7 +308,7 @@ export async function prepareProductPayload() {
     url: "http://127.0.0.1:4317/"
   });
   await writeFile(path.join(payloadDirectory, "aggregator", "component.json"), `${JSON.stringify({
-    id: "aggregator", title: "BZ Aggregator", required: false
+    id: "aggregator", title: "BARZ Aggregator", required: false
   }, null, 2)}\n`, "utf8");
 
   const atlasRoot = path.join(payloadDirectory, "atlas", "app");

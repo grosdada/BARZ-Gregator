@@ -2,7 +2,7 @@
   margin-top: 14px;
   padding: 14px;
   border: 1px solid #303635;
-  border-left: 3px solid #a74b37;
+  border-left: 3px solid var(--signal, #63b9e3);
   border-radius: 8px;
   background: #0b0e0e;
 }
@@ -28,7 +28,7 @@
   background: transparent;
   font-size: 11px;
 }
-.capture-dna-head button:hover { color: #ff7255; border-color: #704033; }
+.capture-dna-head button:hover { color: var(--signal, #63b9e3); border-color: #32617a; }
 .capture-dna-save { color: #d7d3c9; }
 .capture-dna-quiet { color: #777c78; }
 
@@ -45,7 +45,7 @@
   background: #070909;
   font-size: 12px;
 }
-.capture-dna-preset select { border-color: #624033; color: #f0eee8; }
+.capture-dna-preset select { border-color: #32617a; color: #f0eee8; }
 
 .capture-dna-chain {
   display: grid;
@@ -54,7 +54,7 @@
   align-items: end;
 }
 .capture-dna-chain label { display: grid; min-width: 0; gap: 6px; }
-.capture-dna-joint { align-self: end; padding-bottom: 8px; color: #6d3830; font-size: 18px; text-align: center; }
+.capture-dna-joint { align-self: end; padding-bottom: 8px; color: #527c93; font-size: 18px; text-align: center; }
 
 .capture-dna-output {
   justify-content: space-between;
@@ -76,7 +76,7 @@
 }
 .capture-dna-output p.empty { color: #626764; }
 .capture-dna-output > div { flex: 0 0 auto; gap: 9px; }
-.capture-dna-output span { max-width: 160px; color: #8f5b4d; font-size: 10px; text-align: right; }
+.capture-dna-output span { max-width: 160px; color: #779bb0; font-size: 10px; text-align: right; }
 .capture-dna-output .secondary-button { min-height: 34px; padding: 7px 11px; white-space: nowrap; }
 .capture-dna-output .secondary-button:disabled { opacity: .35; }
 
@@ -86,7 +86,7 @@
 
 html[data-theme="light"] .capture-dna {
   border-color: #c8b39e;
-  border-left-color: var(--button-orange, #ef654b);
+  border-left-color: var(--button-orange, #227ca8);
   background: #dfcdbb;
   color: #342a23;
 }

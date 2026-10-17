@@ -10,18 +10,19 @@ html[data-theme="light"] {
   --line-strong: #aa9786;
   --paper: #342f2a;
   --safe: #39755b;
-  --signal-soft: #efd0c3;
+  --signal: #227ca8;
+  --signal-soft: #d5eaf4;
   --button-beige: #ad8b70;
   --button-beige-hover: #98745a;
-  --button-orange: #ef654b;
-  --button-orange-hover: #db5239;
+  --button-orange: #227ca8;
+  --button-orange-hover: #1a668d;
 }
 .rail-preferences { display: grid; grid-template-columns: 1fr 1fr; gap: 7px; width: 100%; margin-top: 9px; }
 .preference-switch { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); overflow: hidden; border: 1px solid var(--line-strong); border-radius: 4px; background: var(--panel); }
 .preference-switch button { min-height: 32px; padding: 4px 6px; border: 0; border-right: 1px solid var(--line-strong); background: transparent; color: var(--dim); font-size: 11px; font-weight: 850; letter-spacing: .04em; }
 .preference-switch button:last-child { border-right: 0; }
 .preference-switch button:hover { color: var(--ink); background: var(--panel-raised); }
-.preference-switch button.is-active { color: #fff; background: var(--button-orange, var(--signal)); box-shadow: inset 0 -2px rgb(115 39 25 / 34%); }
+.preference-switch button.is-active { color: #fff; background: var(--button-orange, var(--signal)); box-shadow: inset 0 -2px rgb(10 58 83 / 34%); }
 html[data-theme="light"] body,
 html[data-theme="light"] .topbar,
 html[data-theme="light"] .media-rail,

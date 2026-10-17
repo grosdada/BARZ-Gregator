@@ -1725,9 +1725,12 @@ button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-
   border-right: 1px solid var(--line);
   padding: 20px 12px 14px;
 }
-.brand { display: flex; align-items: baseline; gap: 6px; padding: 0 10px 25px; font-size: 24px; letter-spacing: -.04em; }
-.brand span { font-weight: 800; }
-.brand b { color: var(--signal); font-size: 14px; }
+.brand { position: relative; display: flex; align-items: center; gap: 10px; padding: 0 5px 25px; color: var(--ink); font-family: var(--font); font-size: 18px; font-weight: 700; letter-spacing: -.02em; }
+.brand-mark { display: grid; width: 47px; height: 47px; flex: none; place-items: center; color: #0c0d0d; background: var(--signal); border-radius: 50% 50% 50% 12px; font-size: 13px; font-weight: 900; letter-spacing: -.065em; }
+.brand-product { white-space: nowrap; }
+.brand-acronym { position: absolute; z-index: 30; top: calc(100% - 17px); left: 5px; width: max-content; max-width: min(320px, calc(100vw - 24px)); padding: 9px 12px; border: 1px solid var(--line-strong); border-radius: 6px; color: var(--ink); background: var(--raised); box-shadow: 0 10px 28px rgb(0 0 0 / 38%); font-size: 12px; font-weight: 600; letter-spacing: 0; line-height: 1.35; opacity: 0; visibility: hidden; pointer-events: none; }
+.brand:hover .brand-acronym, .brand:focus-visible .brand-acronym { opacity: 1; visibility: visible; }
+.brand:focus-visible { outline: 2px solid var(--signal); outline-offset: 2px; }
 .navigation { display: grid; gap: 3px; }
 .nav-item {
   width: 100%;
@@ -1770,14 +1773,16 @@ button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-
 .suite-switch:hover { color: var(--ink); border-color: var(--cold); }
 .suite-switch:focus-visible { outline: 2px solid var(--signal); outline-offset: 2px; }
 .suite-switch-mark {
-  height: 24px;
+  width: 28px;
+  height: 28px;
   display: grid;
   place-items: center;
   color: var(--black);
   background: var(--cold);
-  font-size: 10px;
+  border-radius: 50% 50% 50% 7px;
+  font-size: 8px;
   font-weight: 900;
-  letter-spacing: -.04em;
+  letter-spacing: -.065em;
 }
 .rail-preferences { display: grid; grid-template-columns: 1fr 1fr; gap: 7px; margin-top: 9px; }
 .preference-switch { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); overflow: hidden; border: 1px solid var(--line); background: var(--graphite); }
@@ -2973,6 +2978,7 @@ html[data-theme="light"] .grabber-canvas-wrap { background: #181818; }
   .app-shell { grid-template-columns: 68px minmax(0, 1fr); }
   .atlas-rail { padding-inline: 7px; }
   .brand { padding-inline: 6px; justify-content: center; }
+  .brand-product { display: none; }
   .nav-item { grid-template-columns: 1fr; justify-items: center; padding-inline: 5px; }
   .nav-item span:last-child, .suite-switch span:last-child, .rail-status { display: none; }
   .suite-switch { grid-template-columns: 1fr; padding-inline: 5px; }
