@@ -45,6 +45,8 @@ Open `http://127.0.0.1:4317`.
 
 For a macOS build, see [the Codex Mac handoff](docs/MAC-BUILD-HANDOFF.md).
 
+Architecture discussion: [Desktop, web et protection du code](docs/BARZ-DESKTOP-WEB-ET-PROTECTION-DU-CODE.html) — base de réflexion, 17 octobre 2026.
+
 ## Model pack and generation feedback (0.22.1)
 
 HeyGen Video 1 is available in text-to-video, image-to-video and multi-reference

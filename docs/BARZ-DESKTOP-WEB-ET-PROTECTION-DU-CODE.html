@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Base de réflexion BARZ : comparaison desktop local et web, exposition actuelle du code et limites de sa protection à l’ère des assistants IA.">
+<title>BARZ — Desktop, web et protection du code</title>
+<style>
+:root{color-scheme:dark;--bg:#101719;--panel:#172125;--ink:#f1f4f0;--muted:#afbebc;--line:#344449;--blue:#88c7e8;--orange:#f28b61}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.7 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:var(--blue);text-underline-offset:4px}a:focus-visible{outline:3px solid var(--orange);outline-offset:5px}main,footer{max-width:1140px;margin:auto;padding:0 32px}header{padding:64px 0 32px;border-bottom:1px solid var(--line)}.brand{font-weight:850;letter-spacing:.12em;color:var(--blue)}.eyebrow{text-transform:uppercase;letter-spacing:.1em;font-size:.76rem;color:var(--muted);margin-top:24px}h1{max-width:900px;font-size:clamp(2.3rem,5vw,4.4rem);line-height:1.08;letter-spacing:-.045em;margin:16px 0 24px}h2{font-size:1.8rem;line-height:1.25;letter-spacing:-.025em;margin:0 0 22px}h3{font-size:1.1rem;margin:24px 0 8px}p{margin:0 0 18px}.lead{max-width:920px;font-size:1.2rem;color:#d8e3df}.meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:25px}.pill{border:1px solid var(--line);border-radius:99px;padding:5px 12px;font-size:.78rem;color:var(--muted)}nav{display:flex;flex-wrap:wrap;gap:10px 24px;padding:22px 0;border-bottom:1px solid var(--line);font-size:.85rem}section{padding:44px 0;border-bottom:1px solid var(--line);scroll-margin-top:24px}.callout{border-left:3px solid var(--orange);padding:20px 24px;background:var(--panel);border-radius:0 12px 12px 0;margin:24px 0}.callout p:last-child{margin:0}.note{font-size:.9rem;color:var(--muted)}.table-wrap{overflow-x:auto;margin:24px 0;border:1px solid var(--line);border-radius:12px}table{width:100%;border-collapse:collapse;font-size:.9rem;text-align:left}caption{text-align:left;padding:15px 18px;background:var(--panel);font-weight:650}th,td{padding:15px 18px;vertical-align:top;border-top:1px solid var(--line)}thead{background:var(--panel)}thead th{color:var(--blue)}tbody th{width:18%;font-weight:650}td{min-width:230px}tbody tr:nth-child(even){background:#ffffff03}ul,ol{padding-left:24px;margin:12px 0 22px}li{padding-left:4px;margin-bottom:10px}code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.86em;background:var(--panel);border-radius:4px;padding:2px 5px;overflow-wrap:anywhere}.verdict{font-size:1.25rem;font-weight:650;line-height:1.5;color:var(--blue)}.sources li{font-size:.92rem}.sources span{display:block;color:var(--muted);font-size:.84rem}footer{padding-top:28px;padding-bottom:48px;color:var(--muted);font-size:.8rem}.print{float:right;background:transparent;border:1px solid var(--line);border-radius:8px;color:var(--ink);padding:8px 12px;cursor:pointer;font:inherit;font-size:.8rem}.print:hover{border-color:var(--blue)}
+@media(max-width:600px){main,footer{padding-left:20px;padding-right:20px}header{padding-top:32px}body{font-size:16px}section{padding:32px 0}h2{font-size:1.5rem}.callout{padding:16px}.print{float:none;margin-bottom:15px}th,td{padding:12px}}
+@media print{:root{color-scheme:light;--bg:#fff;--panel:#f1f4f5;--ink:#152326;--muted:#46595d;--line:#c8d1d4;--blue:#15536b;--orange:#a1431f}body{font-size:10pt;line-height:1.5}main,footer{max-width:none;padding:0}header{padding-top:0}h1{font-size:30pt}h2{font-size:18pt;break-after:avoid}h3{break-after:avoid}section{padding:22px 0}nav,.print{display:none}.table-wrap{overflow:visible;border-radius:0}table{font-size:8pt}td{min-width:0}th,td{padding:8px}thead{display:table-header-group}tr,.callout{break-inside:avoid}a{color:inherit}footer{padding-top:20px}.sources a{word-break:break-word}@page{size:A4;margin:16mm}}
+</style>
+</head>
+<body>
+<main>
+<header>
+<button class="print" type="button" onclick="window.print()">Imprimer / enregistrer en PDF</button>
+<div class="brand">BARZ</div>
+<p class="eyebrow">Architecture &amp; stratégie produit · document de réflexion</p>
+<h1>Desktop, web et protection du code</h1>
+<p class="lead">Comparer une application qui exécute ses traitements sur l’ordinateur, avec des bibliothèques d’assets en ligne, à une application web. Évaluer ce que l’on peut réellement protéger lorsque le logiciel est distribué.</p>
+<div class="meta"><span class="pill">17 octobre 2026</span><span class="pill">Base inspectée : BARZ Suite 6 · 0.33.46</span><span class="pill">Aucune décision d’architecture actée</span></div>
+</header>
+<nav aria-label="Sommaire"><a href="#cadre">Le cadre</a><a href="#comparatif">Le comparatif</a><a href="#etat">État actuel du code</a><a href="#protection">Protections possibles</a><a href="#ia">Impact de l’IA</a><a href="#orientation">Orientation proposée</a><a href="#sources">Sources</a></nav>
+<section id="cadre">
+<h2>1. Le cadre de la réflexion</h2>
+<p>Le projet envisagé commence par quelques collaborateurs, chacun utilisant ses propres clés API, avec la possibilité de proposer ensuite un produit public sur abonnement. La version desktop reste un produit à conserver.</p>
+<p>Une version desktop qui garde les projets et les traitements sur la machine, à l’exception des bibliothèques d’assets en ligne, est une alternative crédible pour BARZ. Elle serait plus simple à lancer et moins coûteuse à exploiter côté hébergement. En contrepartie, elle expose davantage le code et demande plus de maintenance sur les ordinateurs des utilisateurs.</p>
+<div class="callout"><p><strong>« Local » ne signifie pas « sans transmission extérieure ».</strong> Les générations utilisant fal, OpenAI, HeyGen ou d’autres fournisseurs continuent à leur transmettre les données nécessaires. Les bibliothèques distantes et les fonctions en ligne restent dépendantes du réseau.</p></div>
+<p class="note">Ce document reprend le comparatif et l’analyse de protection discutés le 17 octobre 2026. Il ne constitue ni un audit de sécurité complet, ni un engagement de performances, ni un plan de migration déjà approuvé.</p>
+</section>
+<section id="comparatif">
+<h2>2. Desktop local ou application web ?</h2>
+<div class="table-wrap"><table>
+<caption>Comparaison appliquée à BARZ</caption>
+<thead><tr><th scope="col">Critère</th><th scope="col">Desktop local + assets en ligne</th><th scope="col">Web privée, puis publique</th></tr></thead>
+<tbody>
+<tr><th scope="row">Travail initial</th><td>Départ depuis l’app existante. Priorité à la fiabilité, aux mises à jour et à la distribution.</td><td>Adaptation des comptes, données, clés, fichiers et traitements à plusieurs utilisateurs.</td></tr>
+<tr><th scope="row">Hébergement</th><td>Principalement assets, téléchargements, comptes et éventuelles licences.</td><td>Application, base de données, médias et calculs partagés.</td></tr>
+<tr><th scope="row">Performances</th><td>Dépendent du processeur, de la mémoire et du GPU de chaque utilisateur.</td><td>Dépendent des serveurs, de leur dimensionnement et des traitements simultanés.</td></tr>
+<tr><th scope="row">Gros fichiers</th><td>Accès rapide aux disques locaux, avec peu de transferts.</td><td>Imports et téléchargements parfois longs selon la connexion.</td></tr>
+<tr><th scope="row">Confidentialité</th><td>Les projets et traitements locaux peuvent rester sur la machine ; les appels aux fournisseurs restent externes.</td><td>L’infrastructure du service héberge les données que l’utilisateur lui confie.</td></tr>
+<tr><th scope="row">Installation</th><td>Installation, permissions et compatibilité Mac/Windows à gérer.</td><td>Accès par navigateur, sans installer le moteur BARZ local.</td></tr>
+<tr><th scope="row">Mises à jour</th><td>Des versions différentes peuvent coexister chez les utilisateurs.</td><td>Mise à jour centrale du service.</td></tr>
+<tr><th scope="row">Collaboration</th><td>Partage et synchronisation à développer.</td><td>Plus naturel pour retrouver et partager des projets ; l’édition collaborative reste une fonction à construire.</td></tr>
+<tr><th scope="row">Hors ligne</th><td>Les outils locaux peuvent fonctionner ; les services IA et assets non disponibles localement restent inaccessibles.</td><td>Fonctionnement généralement dépendant du réseau.</td></tr>
+<tr><th scope="row">Support</th><td>Problèmes liés aux machines, pilotes, permissions et systèmes.</td><td>Environnement serveur maîtrisé, avec disponibilité, sauvegardes et exploitation à assurer.</td></tr>
+<tr><th scope="row">Abonnement</th><td>Possible pour l’app, les mises à jour et les bibliothèques. Un contrôle purement local peut être contourné.</td><td>Accès et quotas contrôlés sur le serveur.</td></tr>
+<tr><th scope="row">Protection du code</th><td>Le code nécessaire à l’exécution est livré au client.</td><td>Le code serveur reste sur l’infrastructure ; l’interface envoyée au navigateur reste accessible.</td></tr>
+</tbody></table></div>
+<p><strong>Pour le pilote avec quelques collaborateurs, le desktop constitue le chemin le plus court.</strong> Pour un produit accessible partout, avec projets partagés et administration centralisée, le web apporte davantage.</p>
+<p>Le coût réduit du desktop porte sur l’hébergement et les calculs centralisés. Il ne supprime pas les coûts de développement, de support, de distribution ou de maintenance.</p>
+</section>
+<section id="etat">
+<h2>3. État actuel de la protection de BARZ</h2>
+<p class="verdict">Dans l’installation Mac vérifiée, une grande partie du code est directement lisible. Il n’est pas nécessaire de décompiler l’application pour accéder à ces fichiers.</p>
+<p>Le paquet <code>.app</code> contient notamment le serveur Aggregator et ses connecteurs, les fichiers JavaScript de l’interface, le serveur et les outils Atlas, ainsi que les bibliothèques de prompts et ressources embarquées.</p>
+<p>Exemples de fichiers présents dans le paquet installé :</p>
+<ul><li><code>Contents/Resources/aggregator/server.js</code></li><li><code>Contents/Resources/aggregator/public/app.js</code></li><li><code>Contents/Resources/atlas/apps/atlas/server.js</code></li></ul>
+<p>Le lanceur natif est compilé, mais il démarre ces fichiers JavaScript. La signature locale sert à contrôler l’intégrité du paquet lorsqu’elle est vérifiée ; elle ne rend pas son contenu confidentiel. Apple distingue la signature et le chiffrement. <a href="https://developer.apple.com/documentation/technotes/tn3161-inside-code-signing-certificates">Référence Apple</a>.</p>
+<p>Le processus de packaging Windows inspecté copie lui aussi les sources dans son contenu d’installation. Aucun mécanisme de protection commerciale par abonnement ni d’obfuscation n’a été identifié dans ces chemins de distribution.</p>
+<div class="callout"><p><strong>Périmètre de cette constatation :</strong> installation Mac 0.33.46 et scripts de packaging inspectés, sur la base du commit <code>ce8ca2aec1e9fd3dcc24f7b5a392147623993610</code>. Le binaire Windows distribué n’a pas fait l’objet d’un audit complet. La lisibilité du code et la protection des données ou des clés sont des questions distinctes.</p></div>
+</section>
+<section id="protection">
+<h2>4. Ce que les protections apportent réellement</h2>
+<div class="table-wrap"><table>
+<caption>Des obstacles à la copie, sans promesse d’inviolabilité</caption>
+<thead><tr><th scope="col">Mesure</th><th scope="col">Apport</th><th scope="col">Limite</th></tr></thead>
+<tbody>
+<tr><th scope="row">Minification et obfuscation</th><td>Ralentissent la lecture et la modification.</td><td>Le programme reste analysable ; la maintenance et le diagnostic peuvent devenir plus difficiles.</td></tr>
+<tr><th scope="row">Compilation de certains modules</th><td>Rend l’analyse plus coûteuse.</td><td>N’empêche pas la rétro-ingénierie et ajoute une maintenance par plateforme.</td></tr>
+<tr><th scope="row">Signature et notarisation</th><td>Identité de l’éditeur, contrôle d’intégrité et distribution plus fiable selon le mécanisme.</td><td>Ne cachent pas le code.</td></tr>
+<tr><th scope="row">Licence vérifiée en ligne</th><td>Contrôle des accès légitimes et des services distants.</td><td>Une vérification exécutée uniquement chez le client peut être modifiée.</td></tr>
+<tr><th scope="row">Fonction conservée sur un serveur</th><td>Son implémentation n’est pas livrée à l’utilisateur.</td><td>Son comportement et ses résultats restent observables ; le serveur doit lui-même être protégé.</td></tr>
+</tbody></table></div>
+<p>Une archive Electron ASAR sert à empaqueter l’application et à masquer une inspection superficielle ; elle ne constitue pas un chiffrement du code source. Cette remarque concerne un éventuel packaging Electron, et non une protection actuellement présente dans le bundle Mac BARZ inspecté. <a href="https://github.com/electron/electron/blob/main/docs/tutorial/asar-archives.md">Documentation Electron</a>.</p>
+<p>Chiffrer un programme tout en livrant au même utilisateur les moyens de le déchiffrer et de l’exécuter peut compliquer l’extraction, mais ne garantit pas son secret. De même, une bibliothèque d’assets en ligne permet de contrôler les accès ; tout fichier téléchargé ou affiché chez l’utilisateur doit rester considéré comme potentiellement copiable.</p>
+</section>
+<section id="ia">
+<h2>5. À l’ère d’Astra, d’Opus et des assistants IA</h2>
+<p><strong>Considérer un code distribué comme inviolable serait illusoire.</strong> Cette limite existait avant les assistants IA. Ceux-ci rendent surtout son analyse et sa réutilisation plus accessibles.</p>
+<p>L’appréciation retenue ici est de raisonner en <strong>coût de copie</strong> plutôt qu’en impossibilité de copie : un assistant peut aider à comprendre un code obscurci ou à reproduire une fonction à partir de son comportement. Cela ne signifie pas qu’il reconstruit automatiquement et parfaitement une application complète.</p>
+<p>Cette analyse ne repose pas sur un benchmark comparatif d’Astra ou d’Opus et ne prétend pas mesurer leurs capacités respectives. Le principe de sécurité est plus général : l’utilisateur qui contrôle la machine d’exécution dispose de moyens pour observer et modifier le programme.</p>
+<p>L’OWASP indique que les techniques de protection contre la rétro-ingénierie augmentent l’effort nécessaire, sans arrêter une personne disposant de suffisamment de temps et de moyens. <a href="https://mas.owasp.org/MASTG/knowledge/generic/MASVS-RESILIENCE/MASTG-KNOW-0111/">Référence OWASP</a>.</p>
+<div class="callout"><p><strong>Le web protège la non-distribution du code serveur, pas une impossibilité générale de copie.</strong> L’interface reste accessible, les comportements peuvent être étudiés et les API doivent être protégées. Une méthode exécutée sur le serveur est moins directement exposée qu’une méthode livrée dans le desktop.</p></div>
+</section>
+<section id="orientation">
+<h2>6. Orientation proposée pour BARZ</h2>
+<ol><li><strong>Un desktop solide</strong>, avec traitements locaux, clés personnelles et gestion fiable des fichiers.</li><li><strong>Des bibliothèques d’assets et mises à jour en ligne</strong>, avec comptes et accès contrôlés.</li><li><strong>Une protection raisonnable du paquet</strong>, sans consacrer une part excessive du budget à l’obfuscation.</li><li><strong>Une version web progressive</strong> pour les usages qui en tirent une valeur réelle : partage, accès distant et collaboration.</li></ol>
+<p>La valeur durable de BARZ serait son ergonomie, ses outils intégrés, la qualité de ses bibliothèques, ses mises à jour et son support.</p>
+<p class="verdict">Si une méthode doit absolument rester secrète, son exécution devra rester sur un serveur contrôlé par l’éditeur. Pour le code distribué, l’objectif réaliste consiste à décourager et ralentir la copie.</p>
+<h3>Questions à trancher avant d’engager le développement</h3>
+<ul><li>Quelles fonctions doivent être disponibles sans réseau ?</li><li>Quels projets ou médias doivent rester exclusivement sur la machine ?</li><li>Quelle valeur récurrente justifierait l’abonnement : bibliothèques, mises à jour, services ou collaboration ?</li><li>Existe-t-il une méthode réellement stratégique qui mérite de rester côté serveur ?</li><li>Quel effort de protection accepte-t-on sans dégrader l’usage et la maintenance ?</li></ul>
+<p class="note">Cette orientation reste une proposition de réflexion. Elle n’annule pas le scénario de web privée discuté précédemment et ne déclenche aucun changement de l’application.</p>
+</section>
+<section id="sources">
+<h2>7. Sources et éléments vérifiés</h2>
+<ul class="sources">
+<li><a href="https://github.com/grosdada/BARZ-Gregator/tree/ce8ca2aec1e9fd3dcc24f7b5a392147623993610">Dépôt BARZ-Gregator — base de la version 0.33.46</a><span>Inspection des sources, de l’installation Mac et des scripts de packaging. Le portage Mac comporte également des adaptations locales qui n’étaient pas publiées dans ce commit.</span></li>
+<li><a href="https://developer.apple.com/documentation/technotes/tn3161-inside-code-signing-certificates">Apple — TN3161: Inside Code Signing: Certificates</a><span>Distinction entre signature et chiffrement.</span></li>
+<li><a href="https://github.com/electron/electron/blob/main/docs/tutorial/asar-archives.md">Electron — ASAR archives</a><span>Nature de l’archive et portée du masquage face à une inspection superficielle.</span></li>
+<li><a href="https://mas.owasp.org/MASTG/knowledge/generic/MASVS-RESILIENCE/MASTG-KNOW-0111/">OWASP — Obfuscation</a><span>Limites des techniques de résistance à la rétro-ingénierie.</span></li>
+</ul>
+<p class="note">Références consultées pendant la discussion du 17 octobre 2026. Les observations sur le produit sont limitées à la version inspectée ; les appréciations d’architecture et de stratégie restent des propositions.</p>
+</section>
+</main>
+<footer>BARZ · Beyond Artificial Reality Zone · Base de réflexion · 17 octobre 2026<br>Document HTML autonome : styles intégrés, aucune dépendance distante nécessaire pour sa lecture. Les liens de référence nécessitent une connexion.</footer>
+</body>
+</html>
