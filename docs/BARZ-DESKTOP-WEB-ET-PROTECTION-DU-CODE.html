@@ -20,9 +20,9 @@
 <p class="eyebrow">Architecture &amp; stratégie produit · document de réflexion</p>
 <h1>Desktop, web et protection du code</h1>
 <p class="lead">Comparer une application qui exécute ses traitements sur l’ordinateur, avec des bibliothèques d’assets en ligne, à une application web. Évaluer ce que l’on peut réellement protéger lorsque le logiciel est distribué.</p>
-<div class="meta"><span class="pill">17 octobre 2026</span><span class="pill">Base inspectée : BARZ Suite 6 · 0.33.46</span><span class="pill">Aucune décision d’architecture actée</span></div>
+<div class="meta"><span class="pill">Créé le 17 · complété le 18 octobre 2026</span><span class="pill">Base inspectée : BARZ Suite 6 · 0.33.46</span><span class="pill">Aucune décision d’architecture actée</span></div>
 </header>
-<nav aria-label="Sommaire"><a href="#cadre">Le cadre</a><a href="#comparatif">Le comparatif</a><a href="#etat">État actuel du code</a><a href="#protection">Protections possibles</a><a href="#ia">Impact de l’IA</a><a href="#orientation">Orientation proposée</a><a href="#sources">Sources</a></nav>
+<nav aria-label="Sommaire"><a href="#cadre">Le cadre</a><a href="#comparatif">Le comparatif</a><a href="#etat">État actuel du code</a><a href="#protection">Protections possibles</a><a href="#ia">Impact de l’IA</a><a href="#orientation">Orientation proposée</a><a href="#plan-web">Plan web privé</a><a href="#budget-web">Budget 100 €</a><a href="#jalons-web">Jalons</a><a href="#sources">Sources</a></nav>
 <section id="cadre">
 <h2>1. Le cadre de la réflexion</h2>
 <p>Le projet envisagé commence par quelques collaborateurs, chacun utilisant ses propres clés API, avec la possibilité de proposer ensuite un produit public sur abonnement. La version desktop reste un produit à conserver.</p>
@@ -94,8 +94,69 @@
 <ul><li>Quelles fonctions doivent être disponibles sans réseau ?</li><li>Quels projets ou médias doivent rester exclusivement sur la machine ?</li><li>Quelle valeur récurrente justifierait l’abonnement : bibliothèques, mises à jour, services ou collaboration ?</li><li>Existe-t-il une méthode réellement stratégique qui mérite de rester côté serveur ?</li><li>Quel effort de protection accepte-t-on sans dégrader l’usage et la maintenance ?</li></ul>
 <p class="note">Cette orientation reste une proposition de réflexion. Elle n’annule pas le scénario de web privée discuté précédemment et ne déclenche aucun changement de l’application.</p>
 </section>
+<section id="plan-web">
+<h2>7. Plan par étapes : lancer la version web privée</h2>
+<p><strong>Objectif proposé :</strong> ouvrir BARZ à cinq collaborateurs, puis éventuellement dix, avec accès sur invitation, clés API personnelles et maintien des applications desktop. La cible est de <strong>20 à 35 jours de développement</strong>, suivis de deux semaines d’observation en usage réel. Il s’agit d’une estimation de charge, à confirmer après les premières mesures.</p>
+<p>Le desktop conserve son fonctionnement local et ses données. Les comptes web sont individuels ; le fait d’inviter des collaborateurs ne rend pas leurs projets automatiquement partagés. La synchronisation automatique entre web et desktop et l’édition collaborative en temps réel restent des chantiers ultérieurs.</p>
+<h3>Étape 1 — Fixer le périmètre et mesurer les fonctions lourdes · 2 à 3 jours</h3>
+<p>Inventorier les fonctions et tester leur exécution sur Linux : FFmpeg, modèles ONNX, montage, bibliothèques et outils Python. Pour chaque outil, choisir entre exécution dans le navigateur, sur le serveur ou maintien temporaire dans le desktop. Définir les scénarios de référence : créer un prompt, transférer une image, lancer une génération, sauvegarder un projet et exporter une vidéo.</p>
+<p><strong>Critère de validation :</strong> une liste précise des fonctions disponibles au lancement, de leur lieu d’exécution et des éventuelles limites annoncées.</p>
+<h3>Étape 2 — Préparer une base commune au web et au desktop · 3 à 5 jours</h3>
+<p>Conserver l’interface et la logique métier communes. Séparer les fonctions dépendantes de l’environnement pour éviter deux produits qui divergent.</p>
+<div class="table-wrap"><table><caption>Adaptations selon l’environnement</caption><thead><tr><th scope="col">Fonction</th><th scope="col">Desktop</th><th scope="col">Web</th></tr></thead><tbody>
+<tr><th scope="row">Projets et réglages</th><td>Stockage local.</td><td>Base de données et espace personnel.</td></tr>
+<tr><th scope="row">Médias</th><td>Fichiers locaux.</td><td>Stockage privé en ligne.</td></tr>
+<tr><th scope="row">Clés API</th><td>Coffre local.</td><td>Coffre personnel sur le serveur.</td></tr>
+<tr><th scope="row">Choix d’un dossier</th><td>Fenêtre native.</td><td>Sélection autorisée par le navigateur.</td></tr>
+<tr><th scope="row">Traitements lourds</th><td>Ordinateur de l’utilisateur.</td><td>File de traitement sur le serveur.</td></tr>
+</tbody></table></div>
+<p>Un export/import des projets suffit au départ pour passer d’une version à l’autre. Les clés ne sont pas incluses dans les exports de projets.</p>
+<p><strong>Critère de validation :</strong> les scénarios de référence fonctionnent toujours sur le desktop, sans migration forcée de ses données.</p>
+<h3>Étape 3 — Créer les comptes et les coffres API personnels · 4 à 6 jours</h3>
+<ul><li>Invitations, connexion et gestion des sessions.</li><li>Espace privé pour chaque personne, avec contrôle des autorisations côté serveur.</li><li>Clés chiffrées, accessibles au serveur uniquement pour les appels autorisés ; secret de chiffrement conservé séparément des données chiffrées.</li><li>Vérification, remplacement et suppression de ses propres clés.</li><li>Maintien des confirmations de génération et estimations de coût d’Aggregator.</li></ul>
+<p>Chaque génération est associée au compte connecté et utilise sa clé. Le partage éventuel d’un projet ne partage jamais les identifiants. Le serveur doit pouvoir utiliser les clés pour les appels : il ne s’agit pas d’un chiffrement qui les rendrait inaccessibles à toute l’infrastructure.</p>
+<p><strong>Critère de validation :</strong> deux comptes de test ne peuvent consulter ni les projets, ni les médias, ni les clés de l’autre, y compris en modifiant directement une requête ou un identifiant.</p>
+<h3>Étape 4 — Adapter les sauvegardes et les traitements · 5 à 8 jours</h3>
+<p>Déplacer projets et historiques dans une base de données, médias dans un stockage privé, et opérations longues dans une file persistante. Les autorisations s’appliquent aussi aux téléchargements et aux références.</p>
+<p>Limites proposées pour tenir le budget du pilote :</p>
+<ul><li><strong>10 Go de médias par utilisateur.</strong></li><li><strong>Un traitement lourd simultané pour toute l’équipe.</strong></li><li>Limites de taille, durée et temps d’exécution à fixer après les mesures de l’étape 1.</li><li>Nettoyage automatique des fichiers temporaires, distinct des projets et résultats conservés.</li><li>Aucun GPU permanent ; un éventuel traitement GPU à la demande doit faire l’objet d’un budget explicite.</li></ul>
+<p>Les générations chez fal, HeyGen ou les autres fournisseurs restent facturées aux comptes personnels. Les calculs ONNX et FFmpeg hébergés par BARZ consomment les ressources du serveur.</p>
+<p><strong>Critère de validation :</strong> fermer l’onglet ou redémarrer le serveur ne perd pas une tâche enregistrée et ne déclenche pas une génération payante en double.</p>
+<h3>Étape 5 — Déployer et préparer la récupération · 3 à 5 jours</h3>
+<p>Installer les services derrière une adresse HTTPS unique sur un serveur européen. Pour le pilote, envisager un serveur unique pour Atlas, Aggregator et les traitements CPU, avec une base de données et des comptes gérés séparément. Prévoir sauvegardes indépendantes, journaux sans secrets, alertes et retour à la version précédente.</p>
+<p><strong>Critère de validation :</strong> restaurer réellement une sauvegarde et tester le retour à une ancienne version avant d’envoyer les invitations.</p>
+<h3>Étape 6 — Ouvrir progressivement · 3 à 5 jours de corrections</h3>
+<p>Commencer avec le propriétaire et une personne, puis passer à cinq collaborateurs. Observer pendant deux semaines les temps d’attente, la mémoire, le processeur, le stockage, les erreurs et les coûts. Passer à dix personnes uniquement si les mesures le permettent.</p>
+<p><strong>Critère de validation :</strong> les scénarios courants sont fiables, les données restent isolées, la file de traitements reste acceptable et le coût observé tient dans l’enveloppe.</p>
+<div class="callout"><p><strong>Charge et calendrier :</strong> les fourchettes des étapes représentent 20 à 32 jours ; une marge porte la cible de planification à 20–35 jours. Les deux semaines d’observation suivent la mise en service et ne correspondent pas à deux semaines supplémentaires de développement à temps plein.</p></div>
+</section>
+<section id="budget-web">
+<h2>8. Budget cible : 100 € par mois</h2>
+<p><strong>Enveloppe de fonctionnement du pilote, et non devis fournisseur.</strong> Les allocations ci-dessous excluent le développement, la maintenance humaine et les dépenses des clés API personnelles. Les montants en dollars et les taxes doivent être vérifiés avant souscription.</p>
+<div class="table-wrap"><table><caption>Allocation mensuelle proposée pour le pilote privé</caption><thead><tr><th scope="col">Poste</th><th scope="col">Enveloppe HT</th><th scope="col">Hypothèse</th></tr></thead><tbody>
+<tr><th scope="row">Serveur CPU et IPv4</th><td>20 €</td><td>Cible initiale de 16 Go ; Atlas, Aggregator et un traitement lourd à la fois. Dimensionnement à confirmer par les mesures.</td></tr>
+<tr><th scope="row">Base et comptes</th><td>25 €</td><td>Service géré pour la base de données et l’authentification.</td></tr>
+<tr><th scope="row">Médias privés</th><td>5 €</td><td>Quota initial de 10 Go par utilisateur, plus opérations de stockage.</td></tr>
+<tr><th scope="row">Sauvegardes indépendantes</th><td>5 €</td><td>Copies récupérables en dehors du serveur applicatif.</td></tr>
+<tr><th scope="row">Domaine, emails, surveillance</th><td>5 €</td><td>Budget mensualisé ; les factures peuvent être annuelles ou variables.</td></tr>
+<tr><th scope="row">Réserve</th><td>20 €</td><td>Variations de change, dépassements ou renforcement ciblé.</td></tr>
+<tr><th scope="row">Total provisionné</th><td><strong>80 € HT</strong></td><td><strong>96 € avec une TVA de 20 %, si elle s’applique.</strong></td></tr>
+</tbody></table></div>
+<p>Repères tarifaires consultés lors de la réflexion du 17 octobre 2026 : CX43 à 15,99 € HT/mois hors IPv4 chez <a href="https://docs.hetzner.com/general/infrastructure-and-availability/price-adjustment/">Hetzner</a>, Supabase Pro à partir de 25 $/mois chez <a href="https://supabase.com/pricing">Supabase</a>, et stockage standard à 0,015 $/Go/mois, plus opérations, chez <a href="https://developers.cloudflare.com/r2/pricing/">Cloudflare R2</a>. Ce sont des repères datés, pas une garantie de prix ni de capacité.</p>
+<p>Le budget repose sur un petit nombre d’utilisateurs, une utilisation modérée et des traitements lourds limités. Dix personnes exportant simultanément des vidéos ne représentent pas la même charge que dix personnes composant des prompts.</p>
+<ul><li>Suivre chaque semaine les dépenses, le volume de médias et les temps de traitement pendant le pilote.</li><li>Fixer une alerte budgétaire vers 70 € de coût mensuel prévisionnel, puis examiner l’usage avant d’entamer la réserve.</li><li>Appliquer des quotas et des plafonds techniques là où les fournisseurs le permettent. Une alerte de facturation ne constitue pas à elle seule un plafond garanti.</li><li>Ne pas ajouter automatiquement de machine ou de GPU payant. Tout dépassement prévisible du budget cible doit conduire à adapter les limites ou à décider d’une nouvelle enveloppe.</li></ul>
+<div class="callout"><p><strong>Clés personnelles :</strong> chaque utilisateur paie ses générations auprès de son fournisseur. Le budget BARZ finance l’accès au service, le stockage et les traitements exécutés sur l’infrastructure BARZ. L’usage de clés personnelles ne rend donc pas l’hébergement gratuit.</p></div>
+</section>
+<section id="jalons-web">
+<h2>9. Jalons de décision et maintien du desktop</h2>
+<ol><li><strong>Après l’audit :</strong> décider du périmètre exact du pilote et des outils qui restent temporairement desktop.</li><li><strong>Avant toute invitation :</strong> valider isolation des comptes, usage des bonnes clés, sauvegarde/restauration et absence de double facturation après reprise.</li><li><strong>Après deux semaines à cinq personnes :</strong> maintenir les limites, ouvrir à dix ou redimensionner explicitement selon les mesures.</li><li><strong>Avant le public :</strong> ouvrir un chantier séparé pour abonnements, droits d’accès, quotas, gestion des impayés, administration, protection contre les abus et tests de charge.</li></ol>
+<p>La version desktop continue à être testée et distribuée. Les changements communs passent les vérifications desktop et web ; les bibliothèques distantes peuvent être partagées entre produits sans imposer la synchronisation des projets ou des clés.</p>
+<p><strong>Premier livrable proposé :</strong> un audit court des fonctions et performances, puis une version privée avec comptes et coffres isolés. La facturation publique reste différée, tandis que la séparation des données est construite dès le départ.</p>
+<p class="note">Ce plan est une option à comparer au scénario desktop local des sections précédentes. Le présent document rassemble la réflexion ; il ne lance ni migration, ni abonnement d’hébergement, ni dépense.</p>
+</section>
+
 <section id="sources">
-<h2>7. Sources et éléments vérifiés</h2>
+<h2>10. Sources et éléments vérifiés</h2>
 <ul class="sources">
 <li><a href="https://github.com/grosdada/BARZ-Gregator/tree/ce8ca2aec1e9fd3dcc24f7b5a392147623993610">Dépôt BARZ-Gregator — base de la version 0.33.46</a><span>Inspection des sources, de l’installation Mac et des scripts de packaging. Le portage Mac comporte également des adaptations locales qui n’étaient pas publiées dans ce commit.</span></li>
 <li><a href="https://developer.apple.com/documentation/technotes/tn3161-inside-code-signing-certificates">Apple — TN3161: Inside Code Signing: Certificates</a><span>Distinction entre signature et chiffrement.</span></li>
@@ -105,6 +166,6 @@
 <p class="note">Références consultées pendant la discussion du 17 octobre 2026. Les observations sur le produit sont limitées à la version inspectée ; les appréciations d’architecture et de stratégie restent des propositions.</p>
 </section>
 </main>
-<footer>BARZ · Beyond Artificial Reality Zone · Base de réflexion · 17 octobre 2026<br>Document HTML autonome : styles intégrés, aucune dépendance distante nécessaire pour sa lecture. Les liens de référence nécessitent une connexion.</footer>
+<footer>BARZ · Beyond Artificial Reality Zone · Base de réflexion · 17 octobre 2026<br>Complété le 18 octobre 2026 : plan web privé et enveloppe de 100 €/mois.<br>Document HTML autonome : styles intégrés, aucune dépendance distante nécessaire pour sa lecture. Les liens de référence nécessitent une connexion.</footer>
 </body>
 </html>

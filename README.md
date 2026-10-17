@@ -45,7 +45,7 @@ Open `http://127.0.0.1:4317`.
 
 For a macOS build, see [the Codex Mac handoff](docs/MAC-BUILD-HANDOFF.md).
 
-Architecture discussion: [Desktop, web et protection du code](docs/BARZ-DESKTOP-WEB-ET-PROTECTION-DU-CODE.html) — base de réflexion, 17 octobre 2026.
+Architecture discussion: [Desktop, web et protection du code](docs/BARZ-DESKTOP-WEB-ET-PROTECTION-DU-CODE.html) — comparatif, protection du code, plan web privé et budget de 100 €/mois ; complété le 18 octobre 2026.
 
 ## Model pack and generation feedback (0.22.1)
 
