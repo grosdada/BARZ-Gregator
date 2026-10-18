@@ -40,7 +40,7 @@ export async function buildInstaller({ environment = process.env } = {}) {
     child.once("error", reject);
     child.once("exit", (code) => code === 0 ? resolve() : reject(new Error(`MakeNSIS exited with code ${code}`)));
   });
-  return path.join(installerDirectory, "BARZ-Suite-6-Setup-0.33.48.exe");
+  return path.join(installerDirectory, "BARZ-Suite-6-Setup-0.33.49.exe");
 }
 
 if (process.argv[1] && pathToFileURL(path.resolve(process.argv[1])).href === import.meta.url) {

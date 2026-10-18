@@ -108,16 +108,24 @@ function createUi() {
           <label data-ai-model-field><span data-ai-copy="model">AI model</span><select data-ai-model aria-label="AI model"></select></label>
         </div>
       </details>
-      <button type="button" class="global-ai-advisor-toggle" data-ai-advisor-toggle aria-expanded="false">Atlas Advisor</button>
+      <button type="button" class="global-ai-advisor-toggle" data-ai-advisor-toggle aria-expanded="false">Barz Advisor</button>
+      ${isAggregator ? '<button type="button" class="global-ai-update-toggle" data-ai-update-toggle aria-expanded="false" title="Check for updates">MAJ</button>' : ""}
     </div>
+    ${isAggregator ? `<div class="global-ai-update-panel" data-ai-update-panel hidden>
+      <header><strong data-ai-update-title>Mise à jour BARZ</strong><button type="button" data-ai-update-close aria-label="Close">×</button></header>
+      <p data-ai-update-message role="status"></p>
+      <progress data-ai-update-progress max="100" value="0" hidden></progress>
+      <button type="button" data-ai-update-install hidden></button>
+      <a data-ai-update-release href="https://github.com/grosdada/BARZ-Gregator/releases/latest" target="_blank" rel="noopener noreferrer" hidden></a>
+    </div>` : ""}
     <div class="global-ai-advisor" data-ai-advisor hidden>
-      <div class="global-ai-advisor-title"><b>ATLAS ADVISOR</b><span data-ai-copy="askline">Tell me what you want to build.</span></div>
+      <div class="global-ai-advisor-title"><b>BARZ ADVISOR</b><span data-ai-copy="askline">Tell me what you want to build.</span></div>
       <div class="global-ai-question">
         <textarea data-ai-prompt rows="3" placeholder="Ask about a prompt, a scene, a model, or drop images here..."></textarea>
         <div class="global-ai-images" data-ai-images role="button" tabindex="0" aria-label="Drop or choose images"><span>＋ IMG</span></div>
       </div>
       <div class="global-ai-actions">
-        <button type="button" class="is-primary" data-ai-ask>Ask Atlas</button>
+        <button type="button" class="is-primary" data-ai-ask>Ask Barz</button>
         <button type="button" data-ai-clear>Clear</button>
         <button type="button" data-ai-close aria-label="Close">×</button>
       </div>
@@ -149,7 +157,9 @@ function updateCopy(root) {
     "Ask about a prompt, a scene, a model, or drop images here...",
     "Pose une question sur un prompt, une scène, un modèle, ou dépose des images ici…"
   );
-  root.querySelector("[data-ai-ask]").textContent = t("Ask Atlas", "Interroger Atlas");
+  root.querySelector("[data-ai-ask]").textContent = t("Ask Barz", "Interroger Barz");
+  const updateTitle = root.querySelector("[data-ai-update-title]");
+  if (updateTitle) updateTitle.textContent = t("BARZ update", "Mise à jour BARZ");
   root.querySelector("[data-ai-clear]").textContent = t("Clear", "Effacer");
   root.querySelector("[data-ai-iteration-instruction]").placeholder = t(
     "Optional direction for the next version...", "Instruction facultative pour la prochaine version…"
@@ -358,7 +368,101 @@ async function ask(root) {
     state.lastQuestion = prompt;
     renderAdvisorAnswer(root, value);
   } catch (error) { answer.textContent = error.message; answer.classList.add("is-error"); }
-  finally { state.busy = false; button.disabled = false; button.textContent = t("Ask Atlas", "Interroger Atlas"); }
+  finally { state.busy = false; button.disabled = false; button.textContent = t("Ask Barz", "Interroger Barz"); }
+}
+
+function initUpdater(root, closeAdvisor) {
+  const toggle = root.querySelector("[data-ai-update-toggle]");
+  if (!toggle) return;
+  const panel = root.querySelector("[data-ai-update-panel]");
+  const message = root.querySelector("[data-ai-update-message]");
+  const progress = root.querySelector("[data-ai-update-progress]");
+  const install = root.querySelector("[data-ai-update-install]");
+  const release = root.querySelector("[data-ai-update-release]");
+  let update = null;
+  let launchedVersion = null;
+  let checking = false;
+
+  const setOpen = (open) => {
+    panel.hidden = !open;
+    toggle.setAttribute("aria-expanded", String(open));
+    root.classList.toggle("is-update-open", open);
+    if (open) closeAdvisor();
+  };
+  const render = (value) => {
+    update = value;
+    const phase = value.progress?.phase;
+    progress.hidden = phase !== "downloading";
+    if (!progress.hidden) progress.value = value.progress.totalBytes
+      ? Math.min(100, Math.round(100 * value.progress.downloadedBytes / value.progress.totalBytes)) : 0;
+    install.hidden = true;
+    release.hidden = true;
+    release.href = value.releaseUrl;
+    release.textContent = t("View releases", "Voir les versions");
+    if (phase === "downloading") {
+      message.textContent = t(`Downloading ${value.progress.version}: ${progress.value}%`, `Téléchargement ${value.progress.version} : ${progress.value} %`);
+    } else if (phase === "installing") {
+      message.textContent = t("Installing and restarting BARZ…", "Installation et redémarrage de BARZ…");
+    } else if (phase === "failed") {
+      message.textContent = value.progress.error || t("The update failed.", "La mise à jour a échoué.");
+      release.hidden = false;
+      if (value.updateAvailable && value.installed) {
+        install.textContent = t("Try again", "Réessayer");
+        install.hidden = false;
+        install.disabled = false;
+      }
+    } else if (launchedVersion && value.currentVersion === launchedVersion) {
+      window.location.reload();
+    } else if (value.checkError) {
+      message.textContent = value.checkError;
+      release.hidden = false;
+    } else if (!value.updateAvailable) {
+      message.textContent = t(`BARZ ${value.currentVersion} is up to date.`, `BARZ ${value.currentVersion} est à jour.`);
+    } else if (!value.installed) {
+      message.textContent = value.platform === "win32"
+        ? t(`Version ${value.latestVersion} available. Automatic update requires the installed app.`, `Version ${value.latestVersion} disponible. La mise à jour automatique nécessite l’application installée.`)
+        : t("Automatic updating is not yet available on this system.", "La mise à jour automatique n’est pas encore disponible sur ce système.");
+      release.hidden = false;
+    } else {
+      message.textContent = t(`Version ${value.latestVersion} is available (installed: ${value.currentVersion}).`, `Version ${value.latestVersion} disponible (installée : ${value.currentVersion}).`);
+      install.textContent = t(`Install ${value.latestVersion}`, `Installer ${value.latestVersion}`);
+      install.hidden = false;
+    }
+  };
+  const refresh = async (check = false) => {
+    if (checking) return;
+    checking = true;
+    try {
+      render(await api(`/api/update/status${check ? "?check=1" : ""}`));
+    } catch (error) {
+      message.textContent = launchedVersion
+        ? t("Restarting BARZ…", "Redémarrage de BARZ…") : error.message;
+    } finally { checking = false; }
+  };
+  toggle.addEventListener("click", () => {
+    const open = panel.hidden;
+    setOpen(open);
+    if (open) {
+      message.textContent = t("Checking for updates…", "Recherche des mises à jour…");
+      void refresh(true);
+    }
+  });
+  root.querySelector("[data-ai-update-close]").addEventListener("click", () => setOpen(false));
+  install.addEventListener("click", async () => {
+    if (!update?.updateAvailable || !update.installed) return;
+    install.disabled = true;
+    message.textContent = t("Starting update…", "Démarrage de la mise à jour…");
+    try {
+      await api("/api/update/start", {
+        method: "POST", headers: { "Content-Type": "application/json", "X-Barz-Update-Token": update.token }, body: "{}"
+      });
+      launchedVersion = update.latestVersion;
+      await refresh();
+    } catch (error) { message.textContent = error.message; install.disabled = false; }
+  });
+  panel.addEventListener("keydown", (event) => { if (event.key === "Escape") setOpen(false); });
+  window.addEventListener("barz:languagechange", () => { if (update) render(update); });
+  setInterval(() => { if (!panel.hidden && (launchedVersion || update?.progress?.phase === "downloading")) void refresh(); }, 1200);
 }
 
 async function start() {
@@ -376,7 +480,12 @@ async function start() {
     root.classList.toggle("is-open", visible);
     toggle.setAttribute("aria-expanded", String(visible));
   };
-  toggle.addEventListener("click", () => show(panel.hidden));
+  initUpdater(root, () => show(false));
+  toggle.addEventListener("click", () => {
+    const updatePanel = root.querySelector("[data-ai-update-panel]");
+    if (updatePanel && !updatePanel.hidden) root.querySelector("[data-ai-update-close]").click();
+    show(panel.hidden);
+  });
   root.querySelector("[data-ai-close]").addEventListener("click", () => show(false));
   provider.addEventListener("change", async () => { state.preferences.aiProvider = provider.value; renderModels(root); await saveSelection(root); });
   model.addEventListener("change", async () => { await saveSelection(root); picker.open = false; });

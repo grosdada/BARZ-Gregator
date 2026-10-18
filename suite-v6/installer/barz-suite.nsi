@@ -3,7 +3,7 @@ Unicode True
 !include "Sections.nsh"
 
 Name "BARZ Suite 6"
-OutFile "BARZ-Suite-6-Setup-0.33.48.exe"
+OutFile "BARZ-Suite-6-Setup-0.33.49.exe"
 InstallDir "$LOCALAPPDATA\Programs\BARZ Suite 6"
 RequestExecutionLevel user
 SetCompressor /SOLID lzma
@@ -46,10 +46,11 @@ runtimeUnlocked:
   File "payload\launch.vbs"
   File "assets\barz-suite.ico"
   WriteUninstaller "$INSTDIR\Uninstall.exe"
-  IfSilent coreDone
   WriteRegStr HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\BARZ Suite 6" "DisplayName" "BARZ Suite 6"
-  WriteRegStr HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\BARZ Suite 6" "DisplayVersion" "0.33.48"
+  WriteRegStr HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\BARZ Suite 6" "DisplayVersion" "0.33.49"
+  WriteRegStr HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\BARZ Suite 6" "InstallLocation" "$INSTDIR"
   WriteRegStr HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\BARZ Suite 6" "UninstallString" '$\"$INSTDIR\Uninstall.exe$\"'
+  IfSilent coreDone
   CreateDirectory "$SMPROGRAMS\BARZ Suite 6"
   CreateShortCut "$SMPROGRAMS\BARZ Suite 6\Désinstaller BARZ Suite 6.lnk" "$INSTDIR\Uninstall.exe"
   Delete "$DESKTOP\Prompt Atlas V6.lnk"
@@ -99,5 +100,12 @@ Function ComponentsLeave
   StrCmp $2 0 0 done
   MessageBox MB_ICONEXCLAMATION|MB_OK "Choisissez Prompt Atlas, Barz-Gregator, ou les deux."
   Abort
+done:
+FunctionEnd
+
+Function .onInit
+  IfSilent 0 done
+  SectionSetFlags ${SEC_ATLAS} ${SF_SELECTED}
+  SectionSetFlags ${SEC_AGGREGATOR} ${SF_SELECTED}
 done:
 FunctionEnd

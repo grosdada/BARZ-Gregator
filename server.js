@@ -46,6 +46,7 @@ import {
 } from "./src/lora-lab.js";
 import { validateSafetensorsFile } from "./src/lora-import.js";
 import { revealFileInExplorer } from "./src/windows-shell.js";
+import { createUpdateManager } from "./src/update-manager.js";
 
 const host = "127.0.0.1";
 const port = Number(process.env.BARZ_AGGREGATOR_PORT || 4317);
@@ -58,6 +59,7 @@ const uploadDirectory = path.join(dataDirectory, "uploads");
 const loraWeightsDirectory = path.join(dataDirectory, "lora-weights");
 const referenceIconDirectory = path.join(dataDirectory, "reference-icons");
 const store = new LocalStore(dataDirectory);
+const updateManager = createUpdateManager({ rootDirectory, dataDirectory });
 const vault = new SecretVault(sharedSecretsDirectory);
 const legacyVault = path.resolve(sharedSecretsDirectory) === path.resolve(dataDirectory)
   ? null
@@ -1102,6 +1104,27 @@ async function handleApi(request, response, url) {
       phase: "h3-max-director",
       paidGenerationEnabled: true
     });
+    return;
+  }
+
+  if (url.pathname === "/api/update/status") {
+    // This token must only be readable by the Aggregator's own page, not another localhost origin.
+    response.removeHeader("Access-Control-Allow-Origin");
+    if (request.method !== "GET") throw Object.assign(new Error("Méthode refusée."), { statusCode: 405 });
+    sendJson(response, 200, await updateManager.status({ check: url.searchParams.get("check") === "1" }));
+    return;
+  }
+
+  if (url.pathname === "/api/update/start") {
+    response.removeHeader("Access-Control-Allow-Origin");
+    if (request.method !== "POST") throw Object.assign(new Error("Méthode refusée."), { statusCode: 405 });
+    const origin = request.headers.origin;
+    if (![`http://127.0.0.1:${port}`, `http://localhost:${port}`].includes(origin) ||
+        request.headers["x-barz-update-token"] !== updateManager.token ||
+        !String(request.headers["content-type"] || "").startsWith("application/json")) {
+      throw Object.assign(new Error("Action locale non autorisée."), { statusCode: 403 });
+    }
+    sendJson(response, 202, await updateManager.start());
     return;
   }
 

@@ -417,6 +417,7 @@ function updateControls() {
   });
 }
 function applyPreferences(nextTheme, nextLanguage) {
+  const previousLanguage = language;
   theme = nextTheme === "light" ? "light" : "dark";
   language = nextLanguage === "fr" ? "fr" : "en";
   root.dataset.theme = theme;
@@ -427,6 +428,9 @@ function applyPreferences(nextTheme, nextLanguage) {
   applying = true;
   try { applyTree(document); } finally { applying = false; }
   updateControls();
+  if (language !== previousLanguage) {
+    window.dispatchEvent(new CustomEvent("barz:languagechange", { detail: { language } }));
+  }
 }
 async function writePreferences() {
   try {
