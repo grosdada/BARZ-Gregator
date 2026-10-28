@@ -424,7 +424,7 @@ export function createToolWorkspace({ api, toast, getWorkspace, toolsForWorkshop
   }
 
   function imageDataUrlToBlob(dataUrl) {
-    const match = /^data:(image\/(?:png|jpeg|webp));base64,([a-z0-9+/=\s]+)$/i.exec(String(dataUrl || ""));
+    const match = /^data:(image\/(?:png|jpeg|webp|gif));base64,([a-z0-9+/=\s]+)$/i.exec(String(dataUrl || ""));
     if (!match) throw new Error("L’image de référence est invalide.");
     const binary = atob(match[2].replace(/\s/g, ""));
     const bytes = new Uint8Array(binary.length);
@@ -527,7 +527,7 @@ export function createToolWorkspace({ api, toast, getWorkspace, toolsForWorkshop
       reader.onerror = () => reject(new Error(`Lecture impossible : ${file.name}.`));
       reader.onload = () => {
         const dataUrl = String(reader.result ?? "");
-        if (dataUrl.length > 2_500_000) reject(new Error(`${file.name} dépasse la limite locale de 2,5 Mo encodés.`));
+        if (dataUrl.length > 10_000_000) reject(new Error(`${file.name} dépasse la limite locale de 10 Mo encodés.`));
         else resolve(dataUrl);
       };
       reader.readAsDataURL(file);
@@ -3065,7 +3065,9 @@ export function createToolWorkspace({ api, toast, getWorkspace, toolsForWorkshop
   function seedanceReady(prompt) {
     const c = internal.configuration;
     const hasDescriptions = c.references.length > 0 || (c.subject.trim() && c.context.trim());
-    return Boolean(prompt.trim()) && prompt.length <= c.charLimit && hasDescriptions;
+    // The character limit is an editing warning. Aggregator accepts up to 40,000
+    // characters, so a long multi-shot video must still be transferable as a draft.
+    return Boolean(prompt.trim()) && prompt.length <= 40_000 && hasDescriptions;
   }
 
   async function seedanceImport(files, { slot } = {}) {
@@ -3077,13 +3079,13 @@ export function createToolWorkspace({ api, toast, getWorkspace, toolsForWorkshop
       if (slot) selected = [...files].slice(0, 1);
       else {
         const free = 9 - internal.configuration.references.length;
-        if (!free) return toast("Les neuf emplacements sont occupés.", true);
+        if (!free) { toast("Les neuf emplacements sont occupés.", true); return false; }
         selected = await chooseSeedanceFiles(files, free);
       }
-      if (!selected.length) return;
+      if (!selected.length) return false;
       const decoded = await Promise.all(selected.map(async (file) => ({ file, dataUrl: await readImageFile(file) })));
       if (internal.toolId !== toolId || activeSetupId() !== setupId || internal.seedanceMediaEpoch !== epoch) {
-        return toast("Import ignoré : le setup ou l’emplacement a changé.", true);
+        toast("Import ignoré : le setup ou l’emplacement a changé.", true); return false;
       }
       const next = [...internal.configuration.references];
       const freeSlots = Array.from({ length: 9 }, (_unused, index) => index + 1)
@@ -3106,9 +3108,208 @@ export function createToolWorkspace({ api, toast, getWorkspace, toolsForWorkshop
       markDirty();
       await renderSeedance();
       toast(`${decoded.length} référence(s) importée(s). Les descriptions remplacées ont été effacées.`);
+      return true;
     } catch (error) {
       toast(`Import annulé sans modification : ${error.message}`, true);
+      return false;
     }
+  }
+
+  async function seedanceImportRemote(url, name, slot) {
+    const response = await fetch(url);
+    if (!response.ok) throw new Error(`Image inaccessible (HTTP ${response.status}).`);
+    const blob = await response.blob();
+    const mime = blob.type.split(";", 1)[0].toLowerCase();
+    if (!["image/png", "image/jpeg", "image/webp", "image/gif"].includes(mime)) throw new Error("Ce format d’image n’est pas pris en charge.");
+    if (blob.size > 7_499_000) throw new Error("L’image dépasse la limite de 10 Mo une fois encodée.");
+    const extension = mime === "image/jpeg" ? "jpg" : mime.slice(6);
+    const safeName = String(name || "reference").replace(/[\\/:*?"<>|]+/g, "-").replace(/\.(png|jpe?g|webp|gif)$/i, "");
+    const imported = await seedanceImport([new File([blob], `${safeName}.${extension}`, { type: mime })], { slot });
+    if (!imported) throw new Error("L’image n’a pas été ajoutée au module.");
+  }
+
+  function seedanceImageResults(value, items = [], depth = 0) {
+    if (!value || depth > 6) return items;
+    if (Array.isArray(value)) { value.forEach((entry) => seedanceImageResults(entry, items, depth + 1)); return items; }
+    if (typeof value !== "object") return items;
+    if (typeof value.url === "string" && (!value.content_type || String(value.content_type).startsWith("image/"))) {
+      items.push(value);
+    } else Object.values(value).forEach((entry) => seedanceImageResults(entry, items, depth + 1));
+    return items;
+  }
+
+  function openSeedanceAssets(slot) {
+    const dialog = node("dialog", "runtime-dialog seedance-asset-dialog");
+    const heading = node("div", "seedance-asset-heading");
+    const title = node("h2", "", "Ajouter depuis Assets");
+    const close = button("×", "quiet-button");
+    close.setAttribute("aria-label", "Fermer");
+    close.addEventListener("click", () => dialog.close());
+    heading.append(title, close);
+    const tabs = node("div", "seedance-asset-tabs");
+    const grid = node("div", "seedance-asset-grid");
+    const status = node("p", "runtime-note");
+    let source = "resources";
+    let items = [];
+    const render = () => {
+      grid.replaceChildren();
+      tabs.querySelectorAll("button").forEach((control) => control.classList.toggle("is-active", control.dataset.source === source));
+      if (!items.length) { grid.append(node("p", "runtime-note", "Aucune image dans cette source.")); return; }
+      items.forEach((item) => {
+        const card = button("", "seedance-asset-card");
+        const image = document.createElement("img"); image.src = item.url; image.alt = ""; image.loading = "lazy";
+        card.append(image, node("span", "", item.name));
+        card.addEventListener("click", async () => {
+          card.disabled = true; status.textContent = `Import de ${item.name}…`;
+          try { await seedanceImportRemote(item.url, item.name, slot); dialog.close(); }
+          catch (error) { status.textContent = `Import impossible : ${error.message}`; card.disabled = false; }
+        });
+        grid.append(card);
+      });
+    };
+    const load = async () => {
+      status.textContent = "Chargement des images…";
+      try {
+        const response = await fetch("http://127.0.0.1:4317/api/state");
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const state = await response.json();
+        items = source === "resources"
+          ? (state.resources || []).filter((item) => item.mediaType === "image")
+            .map((item) => ({ name: item.name || item.originalName || "Ressource", url: `http://127.0.0.1:4317/api/resources/${encodeURIComponent(item.id)}/content` }))
+          : (state.jobs || []).filter((job) => job.status === "completed" && job.mediaType === "image")
+            .flatMap((job) => seedanceImageResults(job.result).map((_item, index) => ({
+              name: job.assetNames?.[String(index)] || job.modelLabel || `Image ${index + 1}`,
+              url: `http://127.0.0.1:4317/api/jobs/${encodeURIComponent(job.id)}/download/${index}`
+            })));
+        status.textContent = `${items.length} image(s) disponibles.`;
+        render();
+      } catch (error) { items = []; status.textContent = `Aggregator indisponible : ${error.message}`; render(); }
+    };
+    [["resources", "Ressources"], ["generated", "Images générées"]].forEach(([value, label]) => {
+      const tab = button(label); tab.dataset.source = value;
+      tab.addEventListener("click", () => { source = value; void load(); });
+      tabs.append(tab);
+    });
+    dialog.append(heading, tabs, status, grid);
+    document.body.append(dialog);
+    dialog.addEventListener("close", () => dialog.remove(), { once: true });
+    dialog.showModal();
+    void load();
+  }
+
+  const seedanceLibraryOrigin = "https://barz-ai-lib.placenta.tv";
+  let seedanceLibraryPopup = null;
+  let seedanceLibrarySlot = null;
+  let seedanceLibraryTimer = null;
+  const sendSeedanceLibraryHandshake = () => {
+    if (!seedanceLibraryPopup || seedanceLibraryPopup.closed) { clearInterval(seedanceLibraryTimer); return; }
+    seedanceLibraryPopup.postMessage({ type: "barz:library-handshake", schemaVersion: "1.0" }, seedanceLibraryOrigin);
+  };
+  function openSeedanceLibrary(slot) {
+    seedanceLibrarySlot = slot;
+    const url = new URL(`${seedanceLibraryOrigin}/AI-Asset-Lib-online/`);
+    url.searchParams.set("aggregatorOrigin", window.location.origin);
+    seedanceLibraryPopup = window.open(url.href, "barz-vmf-reference-library", "popup=yes,width=1440,height=920,resizable=yes,scrollbars=yes");
+    if (!seedanceLibraryPopup) return toast("La bibliothèque a été bloquée par le navigateur. Autorise les popups.", true);
+    clearInterval(seedanceLibraryTimer);
+    sendSeedanceLibraryHandshake();
+    seedanceLibraryTimer = setInterval(sendSeedanceLibraryHandshake, 500);
+    toast("Bibliothèque ouverte. Choisis une image puis clique sur « Import ref ». ");
+  }
+  window.addEventListener("message", async (event) => {
+    if (event.origin !== seedanceLibraryOrigin || event.source !== seedanceLibraryPopup) return;
+    const message = event.data;
+    if (message?.type === "barz:library-ready" && message.schemaVersion === "1.0" && message.source === "barz-ai-lib") {
+      clearInterval(seedanceLibraryTimer); seedanceLibraryTimer = null; return;
+    }
+    if (message?.type !== "barz:import-reference" || message.schemaVersion !== "1.0" ||
+        message.source !== "barz-ai-lib" || !message.requestId || !message.asset) return;
+    const reply = (result) => event.source.postMessage({ type: "barz:import-reference-result", schemaVersion: "1.0", requestId: message.requestId, ...result }, seedanceLibraryOrigin);
+    try {
+      const response = await fetch("http://127.0.0.1:4317/api/reference-imports/from-library", {
+        method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(message)
+      });
+      const payload = await response.json().catch(() => ({}));
+      if (!response.ok || !payload.resource?.id) throw new Error(payload.error || `HTTP ${response.status}`);
+      const resource = payload.resource;
+      await seedanceImportRemote(`http://127.0.0.1:4317/api/resources/${encodeURIComponent(resource.id)}/content`,
+        resource.originalName || resource.name, seedanceLibrarySlot);
+      reply({ ok: true, status: "imported", savedToAssets: true, message: "Référence ajoutée à Video Multi Framing." });
+    } catch (error) { reply({ ok: false, message: error.message }); toast(`Import depuis la bibliothèque impossible : ${error.message}`, true); }
+  });
+
+  function seedanceSourceMenu(slot, label = "Ajouter") {
+    const menu = document.createElement("details");
+    menu.className = "seedance-source-menu";
+    menu.append(node("summary", "quiet-button", label));
+    const choices = node("div", "seedance-source-choices");
+    [["Add from PC", () => {
+      const input = document.createElement("input"); input.type = "file"; input.accept = "image/*";
+      input.multiple = !slot; input.hidden = true;
+      input.addEventListener("change", () => { if (input.files.length) void seedanceImport(input.files, { slot }); input.remove(); }, { once: true });
+      document.body.append(input); input.click();
+    }], ["Add from assets", () => openSeedanceAssets(slot)], ["Add from librairie", () => openSeedanceLibrary(slot)]].forEach(([text, action]) => {
+      const control = button(text); control.addEventListener("click", () => { menu.open = false; action(); }); choices.append(control);
+    });
+    menu.append(choices);
+    return menu;
+  }
+
+  async function seedanceAnalyzeReference(reference, { replace = false } = {}) {
+    const settings = await api("/api/v1/image-analyzer/settings");
+    const preferred = settings.models.find((item) => item.id === settings.model && settings.keyStates[item.provider]);
+    const model = preferred || settings.models.find((item) => settings.keyStates[item.provider]);
+    if (!model) throw new Error("Configure une clé de modèle visuel dans l’onglet API avant la description automatique.");
+    const result = await api("/api/v1/image-analyzer/analyze", {
+      method: "POST", body: JSON.stringify({ imageDataUrl: reference.dataUrl, model: model.id, targetEngine: "Video Multi Framing" })
+    });
+    const current = internal.configuration.references.find((item) => item.imageId === reference.imageId);
+    if (!current) throw new Error("La référence a changé pendant l’analyse.");
+    const subject = String(result.seedance?.subject || "").trim();
+    const context = String(result.seedance?.context || "").trim();
+    if (!subject && !context) throw new Error("L’IA n’a pas renvoyé de sujet ni de contexte. Tu peux les saisir à la main.");
+    if (replace || !current.subject.trim()) current.subject = subject || current.subject;
+    if (replace || !current.context.trim()) current.context = context || current.context;
+    markDirty();
+    return result;
+  }
+
+  async function seedanceAnalyzeMissingReferences(onProgress = () => {}) {
+    const missing = internal.configuration.references.filter((item) => !item.subject.trim() || !item.context.trim());
+    for (const [index, reference] of missing.entries()) {
+      onProgress(index + 1, missing.length);
+      await seedanceAnalyzeReference(reference);
+    }
+  }
+
+  function parseSeedanceStillBatch(text, expectedIndices) {
+    const source = String(text || "").trim();
+    const starts = [...source.matchAll(/(?:^|\n)\s*(?:\[?Still\s*)?(\d{1,2})(?:\])?[.)\]:-]\s+/gim)];
+    const outputs = new Map();
+    starts.forEach((match, index) => {
+      const number = Number(match[1]);
+      if (!expectedIndices.includes(number)) return;
+      const bodyStart = match.index + match[0].length;
+      const bodyEnd = index + 1 < starts.length ? starts[index + 1].index : source.length;
+      const prompt = source.slice(bodyStart, bodyEnd).trim();
+      if (prompt) outputs.set(number, prompt);
+    });
+    return outputs;
+  }
+
+  function openSeedancePreview(reference, thumbnail) {
+    const dialog = node("dialog", "seedance-preview-dialog");
+    const close = button("×", "seedance-preview-close");
+    close.setAttribute("aria-label", "Fermer l’agrandissement");
+    close.addEventListener("click", () => dialog.close());
+    const image = document.createElement("img");
+    image.src = reference.dataUrl;
+    image.alt = reference.sourceName || `Référence ${reference.slot}`;
+    image.style.width = `${Math.max(320, Math.round(thumbnail.getBoundingClientRect().width * 4))}px`;
+    dialog.append(close, image, node("p", "", `${reference.sourceName || `@image${reference.slot}`} · agrandissement ×4`));
+    document.body.append(dialog);
+    dialog.addEventListener("close", () => dialog.remove(), { once: true });
+    dialog.showModal();
   }
 
   function seedanceSelect(labelText, value, options, onChange) {
@@ -3187,6 +3388,7 @@ export function createToolWorkspace({ api, toast, getWorkspace, toolsForWorkshop
     const catalog = internal.catalog.seedance;
     const c = internal.configuration;
     if (typeof c.storyline !== "string") c.storyline = "";
+    if (!Number.isInteger(c.stillCount)) c.stillCount = 10;
     if (!Array.isArray(c.secondarySubjects)) c.secondarySubjects = [];
     if (!Array.isArray(c.secondaryContexts)) c.secondaryContexts = [];
     const availableEngines = catalog.engines || [
@@ -3199,6 +3401,7 @@ export function createToolWorkspace({ api, toast, getWorkspace, toolsForWorkshop
     if (!availableEngines.some(({ id }) => id === c.provider)) c.provider = "kling";
     const engine = availableEngines.find(({ id }) => id === c.provider) || availableEngines[0];
     c.duration = Math.min(c.duration, engine.maxDuration);
+    c.shotCount = Math.min(c.shotCount, c.mode === "multiview" && ["seedance", "wan"].includes(c.provider) ? 60 : 30);
     const template = catalog.templates.find(({ id }) => id === c.templateId) ?? catalog.templates[0];
     host.replaceChildren(toolHeader(
       "Video Multi Framing",
@@ -3206,12 +3409,18 @@ export function createToolWorkspace({ api, toast, getWorkspace, toolsForWorkshop
     ));
 
     const mode = node("div", "mode-switch seedance-mode");
-    [["stills", "10 images fixes"], ["moving", "Séquence vidéo"]].forEach(([value, label]) => {
+    [["stills", "Multi still image"], ["moving", "Séquence vidéo"], ["multiview", "Multiview"]].forEach(([value, label]) => {
       const control = button(label);
       control.classList.toggle("is-active", c.mode === value);
       control.addEventListener("click", () => {
         if (c.mode === value) return;
         c.mode = value;
+        if (value === "multiview") {
+          c.provider = "seedance";
+          c.shotCount = 30;
+          c.duration = 15;
+          c.charLimit = Math.max(c.charLimit, 12_000);
+        } else if (value === "moving") c.shotCount = Math.min(c.shotCount, 30);
         markDirty();
         renderSeedance().catch((error) => toast(error.message, true));
       });
@@ -3243,22 +3452,34 @@ export function createToolWorkspace({ api, toast, getWorkspace, toolsForWorkshop
     const directorSkill = document.createElement("details");
     directorSkill.className = "seedance-director-skill";
     directorSkill.append(node("summary", "", "Skill de réalisation · chargé par l’IA"), node("p", "runtime-note", template.directorSkill || template.directorNote || template.name));
-    controls.append(directorField, node("p", "runtime-note", c.mode === "stills" ? template.stills.info : template.moving.info), directorSkill);
+    if (c.mode !== "multiview") controls.append(directorField, node("p", "runtime-note", c.mode === "stills" ? template.stills.info : template.moving.info), directorSkill);
+    else controls.append(node("p", "runtime-note", "Une succession de cadrages indépendants, séparés par des hard cuts, du décor source jusqu’à la Terre vue de l’espace."));
 
-    if (c.mode === "moving") {
+    if (c.mode === "stills") {
+      controls.append(seedanceSelect("Nombre d’images", String(c.stillCount),
+        Array.from({ length: 30 }, (_unused, index) => ({ value: String(index + 1), label: String(index + 1) })),
+        (value) => { c.stillCount = Number(value); markDirty(); renderSeedance().catch((error) => toast(error.message, true)); }));
+    }
+
+    if (c.mode === "moving" || c.mode === "multiview") {
       const row = node("div", "seedance-inline-controls");
       row.append(
         seedanceSelect("Moteur / dialecte", c.provider, availableEngines.map((item) => ({ value: item.id, label: `${item.label} · max ${item.maxDuration} s` })), (value) => {
           c.provider = value;
           const nextEngine = availableEngines.find((item) => item.id === value);
           if (nextEngine) c.duration = Math.min(c.duration, nextEngine.maxDuration);
+          c.shotCount = Math.min(c.shotCount, c.mode === "multiview" && ["seedance", "wan"].includes(value) ? 60 : 30);
           markDirty();
           renderSeedance().catch((error) => toast(error.message, true));
         }),
         seedanceSelect("Durée", String(c.duration), Array.from({ length: engine.maxDuration }, (_unused, index) => ({ value: String(index + 1), label: `${index + 1} s` })), (value) => { c.duration = Number(value); markDirty(); renderSeedance().catch((error) => toast(error.message, true)); }),
-        seedanceSelect("Plans", String(c.shotCount), Array.from({ length: 30 }, (_unused, index) => ({ value: String(index + 1), label: String(index + 1) })), (value) => { c.shotCount = Number(value); markDirty(); renderSeedance().catch((error) => toast(error.message, true)); })
+        seedanceSelect("Plans", String(c.shotCount), Array.from({ length: c.mode === "multiview" && ["seedance", "wan"].includes(c.provider) ? 60 : 30 }, (_unused, index) => ({ value: String(index + 1), label: String(index + 1) })), (value) => {
+          c.shotCount = Number(value);
+          if (c.mode === "multiview" && c.shotCount > 30) c.duration = Math.min(engine.maxDuration, Math.max(c.duration, Math.ceil(c.shotCount / 2)));
+          markDirty(); renderSeedance().catch((error) => toast(error.message, true));
+        })
       );
-      controls.append(row, node("p", "runtime-note seedance-engine-note", `${engine.label} · durée disponible jusqu’à ${engine.maxDuration} secondes.`));
+      controls.append(row, node("p", "runtime-note seedance-engine-note", `${engine.label} · durée disponible jusqu’à ${engine.maxDuration} secondes. ${c.mode === "multiview" ? "Le nombre de cuts demandé n’est pas garanti par le moteur vidéo." : ""}`));
     }
 
     const roleInputs = [];
@@ -3335,23 +3556,27 @@ export function createToolWorkspace({ api, toast, getWorkspace, toolsForWorkshop
     const limit = document.createElement("input");
     limit.type = "number";
     limit.min = "300";
-    limit.max = "12000";
+    limit.max = "20000";
     limit.step = "100";
     limit.value = String(c.charLimit);
     limit.addEventListener("change", () => {
-      c.charLimit = Math.max(300, Math.min(12_000, Math.round(Number(limit.value) || 2500)));
+      c.charLimit = Math.max(300, Math.min(20_000, Math.round(Number(limit.value) || 2500)));
       markDirty();
       renderSeedance().catch((error) => toast(error.message, true));
     });
     limitField.append(limit);
     controls.append(limitField);
 
-    const ai = button("GO ACTION · vérification IA…", "quiet-button");
+    const ai = button("GO ACTION · vérification IA…", "seedance-go-action");
     ai.disabled = true;
     ai.addEventListener("click", async () => {
       ai.disabled = true;
+      ai.classList.add("is-working");
       ai.textContent = "GO ACTION · réalisation en cours…";
       try {
+        if (c.mode === "stills" || c.mode === "multiview") {
+          await seedanceAnalyzeMissingReferences((index, total) => { ai.textContent = `Analyse des images ${index}/${total}…`; });
+        }
         const localPayload = await compile({ ignoreSaved: true });
         const localPrompt = localPayload.outputs[0].prompt;
         let result;
@@ -3375,24 +3600,50 @@ export function createToolWorkspace({ api, toast, getWorkspace, toolsForWorkshop
             })
           });
           c.finals[seedanceCurrentFinalKey()] = result.prompt || localPrompt;
+        } else if (c.mode === "multiview") {
+          c.finals[seedanceCurrentFinalKey()] = localPrompt;
+          result = { model: "analyse visuelle + plan de montage BARZ" };
         } else {
-          result = await api("/api/v1/ai/refine", {
-            method: "POST",
-            body: JSON.stringify({
-              prompt: localPrompt,
-              intent: [c.storyline, c.subject, c.context, c.style].filter(Boolean).join(". "),
-              outputType: "image",
-              targetEngine: "Image sequence",
-              transform: `Rewrite this as exactly 10 distinct production-ready still-image prompts. Apply this directing skill: ${template.directorSkill || template.directorNote || template.name}. ${c.storyline ? `Narrative spine: ${c.storyline}.` : ""} Preserve every @imageN reference and return only the numbered prompt list.`
-            })
-          });
-          c.finals[seedanceCurrentFinalKey()] = result.refined || localPrompt;
+          localPayload.individualOutputs.forEach((item) => { c.finals[item.finalKey] = item.prompt; });
+          markDirty();
+          let refinedCount = 0;
+          let lastModel = "";
+          const batches = [];
+          for (let offset = 0; offset < localPayload.individualOutputs.length; offset += 5) {
+            batches.push(localPayload.individualOutputs.slice(offset, offset + 5));
+          }
+          for (const [batchIndex, batch] of batches.entries()) {
+            ai.textContent = `GO ACTION · stills ${batchIndex + 1}/${batches.length}…`;
+            const expected = batch.map((item) => Number(item.id.slice(6)));
+            try {
+              const answer = await api("/api/v1/ai/refine", {
+                method: "POST",
+                body: JSON.stringify({
+                  prompt: batch.map((item) => `${item.label}: ${item.prompt}`).join("\n\n"),
+                  intent: [c.storyline, c.subject, c.context, c.style].filter(Boolean).join(". "),
+                  outputType: "image", targetEngine: "Image sequence",
+                  transform: `Refine exactly ${batch.length} distinct production-ready still-image prompts. Return a numbered list with the ORIGINAL numbers ${expected.join(", ")}, each on a new line. Do not omit or combine entries. Preserve @imageN references, the source identity and this directing skill: ${template.directorSkill || template.directorNote || template.name}. No introduction or commentary.`
+                })
+              });
+              lastModel = answer.model || lastModel;
+              for (const [number, prompt] of parseSeedanceStillBatch(answer.refined, expected)) {
+                const key = seedanceCurrentFinalKey(`still-${number}`);
+                if (prompt.length <= c.charLimit) { c.finals[key] = prompt; refinedCount += 1; }
+              }
+            } catch (error) { toast(`Lot ${batchIndex + 1} : ${error.message}. Les stills locales restent disponibles.`, true); }
+          }
+          c.finals[seedanceCurrentFinalKey()] = localPayload.individualOutputs
+            .map((item) => `${item.label}: ${c.finals[item.finalKey]}`).join("\n\n");
+          result = { model: lastModel || "composition BARZ", refinedCount };
         }
         markDirty();
         await renderSeedance();
-        toast(`GO ACTION terminé avec ${result.model}.`);
+        toast(c.mode === "stills"
+          ? `${c.stillCount} stills remplies · ${result.refinedCount} affinées par ${result.model}.`
+          : `GO ACTION terminé avec ${result.model}.`);
       } catch (error) {
         toast(error.message, true);
+        ai.classList.remove("is-working");
         await armAiButton(ai, "GO ACTION · IA");
       }
     });
@@ -3402,12 +3653,6 @@ export function createToolWorkspace({ api, toast, getWorkspace, toolsForWorkshop
     const refs = node("section", "seedance-references");
     const refsHead = node("div", "seedance-reference-head");
     refsHead.append(node("div", "", "Références 1–9 · bac compact"));
-    const fileInput = document.createElement("input");
-    fileInput.type = "file";
-    fileInput.accept = "image/*";
-    fileInput.multiple = true;
-    fileInput.hidden = true;
-    fileInput.addEventListener("change", () => fileInput.files.length && seedanceImport(fileInput.files));
     const folderInput = document.createElement("input");
     folderInput.type = "file";
     folderInput.accept = "image/*";
@@ -3415,28 +3660,26 @@ export function createToolWorkspace({ api, toast, getWorkspace, toolsForWorkshop
     folderInput.setAttribute("webkitdirectory", "");
     folderInput.hidden = true;
     folderInput.addEventListener("change", () => folderInput.files.length && seedanceImport(folderInput.files));
-    const addFiles = button("Importer des images", "quiet-button");
-    addFiles.addEventListener("click", () => fileInput.click());
     const addFolder = button("Importer un dossier", "text-button");
     addFolder.addEventListener("click", () => folderInput.click());
-    refsHead.append(addFiles, addFolder, fileInput, folderInput);
+    refsHead.append(seedanceSourceMenu(undefined, "Ajouter"), addFolder, folderInput);
     refs.append(refsHead);
     const refGrid = node("div", "seedance-reference-grid");
     for (let slot = 1; slot <= 9; slot += 1) {
       const reference = c.references.find((item) => item.slot === slot);
       const card = node("article", "seedance-reference-card");
       card.append(node("b", "seedance-reference-label", `@image${slot}`));
-      const slotInput = document.createElement("input");
-      slotInput.type = "file";
-      slotInput.accept = "image/*";
-      slotInput.hidden = true;
-      slotInput.addEventListener("change", () => slotInput.files[0] && seedanceImport(slotInput.files, { slot }));
       if (reference) {
         const image = document.createElement("img");
         image.src = reference.dataUrl;
         image.alt = reference.sourceName || `Référence ${slot}`;
-        const replace = button("Remplacer", "text-button");
-        replace.addEventListener("click", () => slotInput.click());
+        image.tabIndex = 0;
+        image.setAttribute("role", "button");
+        image.setAttribute("aria-label", `Agrandir ${image.alt} quatre fois`);
+        image.title = "Double-clic pour agrandir ×4";
+        image.addEventListener("dblclick", () => openSeedancePreview(reference, image));
+        image.addEventListener("keydown", (event) => { if (event.key === "Enter") openSeedancePreview(reference, image); });
+        const replace = seedanceSourceMenu(slot, "Remplacer");
         const remove = button("Retirer", "text-button warning-text");
         remove.addEventListener("click", () => {
           internal.seedanceMediaEpoch += 1;
@@ -3450,6 +3693,13 @@ export function createToolWorkspace({ api, toast, getWorkspace, toolsForWorkshop
         const details = document.createElement("details");
         details.className = "seedance-reference-details";
         details.append(node("summary", "", "Décrire la référence"));
+        const autoDescribe = button("Auto describe · IA", "seedance-auto-describe");
+        autoDescribe.addEventListener("click", async () => {
+          autoDescribe.disabled = true; autoDescribe.textContent = "Analyse en cours…";
+          try { await seedanceAnalyzeReference(reference, { replace: true }); await renderSeedance(); toast(`Sujet et contexte de @image${slot} remplis. Tu peux les modifier à la main.`); }
+          catch (error) { autoDescribe.disabled = false; autoDescribe.textContent = "Auto describe · IA"; toast(error.message, true); }
+        });
+        details.append(autoDescribe);
         [["subject", "Sujet de l’image"], ["context", "Contexte de l’image"]].forEach(([key, labelText]) => {
           const field = node("label", "runtime-field", labelText);
           const input = document.createElement("input");
@@ -3461,20 +3711,17 @@ export function createToolWorkspace({ api, toast, getWorkspace, toolsForWorkshop
         });
         card.append(details);
       } else {
-        const add = button("Ajouter", "quiet-button seedance-empty-slot");
-        add.addEventListener("click", () => slotInput.click());
-        card.append(node("span", "seedance-slot-placeholder", "Emplacement vide"), add);
+        card.append(node("span", "seedance-slot-placeholder", "Emplacement vide"), seedanceSourceMenu(slot));
       }
-      card.append(slotInput);
       refGrid.append(card);
     }
-    refs.append(refGrid, node("p", "runtime-note seedance-reference-note", "Les neuf références restent à portée en haut du module. Ouvre « Décrire la référence » seulement quand tu as besoin de préciser son rôle."));
+    refs.append(refGrid, node("p", "runtime-note seedance-reference-note", "Double-clique une image pour l’agrandir ×4. « Auto describe » remplit sujet et contexte, modifiables à la main."));
 
     const outputPanel = node("section", "runtime-output seedance-output");
     const outputKey = seedanceCurrentFinalKey();
     const editor = document.createElement("textarea");
     editor.className = "ccp-prompt-editor seedance-main-editor";
-    editor.rows = c.mode === "moving" ? 24 : 16;
+    editor.rows = c.mode === "stills" ? 16 : 24;
     editor.maxLength = 100_000;
     editor.placeholder = "Clique sur « Recompiler depuis les réglages » pour créer cette finale.";
     editor.value = c.finals[outputKey] ?? "";
@@ -3506,10 +3753,10 @@ export function createToolWorkspace({ api, toast, getWorkspace, toolsForWorkshop
       } catch (error) { toast(error.message, true); }
     });
     actions.append(copy, rebuild);
-    if (c.mode === "moving") {
+    if (c.mode === "moving" || c.mode === "multiview") {
       const send = button("Envoyer à l’agrégateur", "primary-action");
       send.disabled = !seedanceReady(editor.value);
-      send.title = send.disabled ? "Décris le sujet et le décor, puis respecte la limite de caractères." : "Le brouillon sera créé sans lancer de génération.";
+      send.title = send.disabled ? "Ajoute une référence ou décris le sujet et le décor avant l’envoi." : "Le brouillon et ses références seront créés sans lancer de génération.";
       const link = node("a", "aggregator-result-link", "Ouvrir le brouillon ↗");
       link.target = "barz-aggregator";
       link.hidden = true;
@@ -3518,8 +3765,11 @@ export function createToolWorkspace({ api, toast, getWorkspace, toolsForWorkshop
         try {
           const references = await uploadSeedanceReferences(c.references, uploadImageReference);
           const aggregatorPrompt = remapSeedancePromptForAggregator(editor.value, c.references);
-          await sendToAggregator(aggregatorPrompt, `Video Multi Framing · ${template.name}`, "video",
-            { durationSeconds: c.duration }, { modelFamily: engine.shortLabel || engine.label, modelHint: engine.label }, link, "", references);
+          const wanEndpoint = c.provider === "wan" ? (references.length
+            ? "alibaba/wan-3.0/reference-to-video" : "alibaba/wan-3.0/text-to-video") : "";
+          await sendToAggregator(aggregatorPrompt, c.mode === "multiview" ? "Video Multi Framing · Multiview" : `Video Multi Framing · ${template.name}`, "video",
+            { durationSeconds: c.duration }, { provider: wanEndpoint ? "fal" : "", endpointId: wanEndpoint,
+              modelFamily: engine.shortLabel || engine.label, modelHint: engine.label }, link, "", references);
         } catch (error) { toast(`Envoi impossible : ${error.message}`, true); }
         finally { send.textContent = previous; send.disabled = !seedanceReady(editor.value); }
       });
@@ -3527,22 +3777,49 @@ export function createToolWorkspace({ api, toast, getWorkspace, toolsForWorkshop
     }
     outputPanel.append(node("div", "ccp-prompt-head", "Finale enregistrée"), meta, editor, actions);
 
-    if (c.mode === "moving") {
+    if (c.mode === "moving" || c.mode === "multiview") {
       const warnings = node("div", "seedance-warnings");
-      if (c.shotCount > 7) warnings.append(node("p", "runtime-note", `Les 7 mouvements historiques seront répétés explicitement sur ${Math.ceil(c.shotCount / 7)} cycles.`));
+      if (c.mode === "moving" && c.shotCount > 7) warnings.append(node("p", "runtime-note", `Les 7 mouvements historiques seront répétés explicitement sur ${Math.ceil(c.shotCount / 7)} cycles.`));
       if (c.duration / c.shotCount < 0.5) warnings.append(node("p", "runtime-note warning-text", "Attention : durée moyenne inférieure à 0,5 s par plan."));
       outputPanel.append(warnings);
     } else {
       const stillActions = node("div", "ccp-stage-actions");
-      const copyAll = button("Copier la liste des 10 images", "quiet-button");
+      const copyAll = button(`Copier la liste des ${c.stillCount} images`, "quiet-button");
       copyAll.addEventListener("click", () => {
         const text = Array.from(outputPanel.querySelectorAll("[data-still-editor]")).map((item, index) => `[Still ${index + 1}]\n${item.value}`).join("\n\n");
-        copyText(text, "Liste des 10 images copiée.");
+        copyText(text, `Liste des ${c.stillCount} images copiée.`);
       });
-      stillActions.append(copyAll);
+      const exportQueue = button("Export queue to Aggregator", "primary-action");
+      const refreshExportQueue = () => {
+        const prompts = [...outputPanel.querySelectorAll("[data-still-editor]")].map((item) => item.value);
+        exportQueue.disabled = prompts.length !== c.stillCount || prompts.some((prompt) => !seedanceReady(prompt));
+        exportQueue.title = exportQueue.disabled ? "Remplis toutes les stills avec GO ACTION ou Recompiler avant l’export." : "Envoie les brouillons, sans lancer de génération payante.";
+      };
+      exportQueue.addEventListener("click", async () => {
+        exportQueue.disabled = true; exportQueue.textContent = "Export de la file…";
+        try {
+          const references = await uploadSeedanceReferences(c.references, uploadImageReference);
+          const items = [...outputPanel.querySelectorAll("[data-still-editor]")].map((field, index) => ({
+            schemaVersion: "1.0",
+            source: { app: "prompt-atlas", version: "6.0.0", module: `Video Multi Framing · Still ${index + 1}` },
+            mediaType: "image", prompt: remapSeedancePromptForAggregator(field.value, c.references),
+            negativePrompt: "", target: {}, settings: {}, references, createdAt: new Date().toISOString()
+          }));
+          const response = await fetch("http://127.0.0.1:4317/api/import-queues/image", {
+            method: "POST", headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ requestId: crypto.randomUUID(), items })
+          });
+          const payload = await response.json().catch(() => ({}));
+          if (!response.ok || payload.drafts?.length !== items.length) throw new Error(payload.error || `HTTP ${response.status}`);
+          openSuiteApp("aggregator", `http://127.0.0.1:4317/?draft=${encodeURIComponent(payload.drafts[0].id)}`);
+          toast(`${items.length} images ajoutées à la file de l’Aggregator. Aucune génération lancée.`);
+        } catch (error) { toast(`Export impossible : ${error.message}`, true); }
+        finally { exportQueue.textContent = "Export queue to Aggregator"; refreshExportQueue(); }
+      });
+      stillActions.append(copyAll, exportQueue);
       outputPanel.append(stillActions);
       const list = node("div", "seedance-still-list");
-      for (let index = 1; index <= 10; index += 1) {
+      for (let index = 1; index <= c.stillCount; index += 1) {
         const key = seedanceCurrentFinalKey(`still-${index}`);
         const details = document.createElement("details");
         details.className = "ccp-stage seedance-still-card";
@@ -3567,6 +3844,7 @@ export function createToolWorkspace({ api, toast, getWorkspace, toolsForWorkshop
           stillMeta.textContent = `${stillEditor.value.length} / ${c.charLimit} caractères`;
           stillMeta.classList.toggle("is-error", stillEditor.value.length > c.charLimit);
           stillSend.disabled = !seedanceReady(stillEditor.value);
+          refreshExportQueue();
           markDirty();
         };
         stillEditor.addEventListener("input", updateStill);
@@ -3586,6 +3864,7 @@ export function createToolWorkspace({ api, toast, getWorkspace, toolsForWorkshop
         list.append(details);
       }
       outputPanel.append(list);
+      refreshExportQueue();
     }
 
     layout.append(controls, outputPanel);

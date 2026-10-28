@@ -1324,6 +1324,14 @@ textarea::placeholder { color: #606461; }
 .queue-panel { margin-top: 18px; }
 .queue-heading { display: flex; align-items: center; gap: 10px; padding: 14px 4px 10px; }
 .queue-heading h3 { margin: 0; font-size: 13px; font-weight: 600; }
+.image-import-queue-list { display: grid; gap: 7px; max-height: 330px; overflow: auto; padding: 4px 2px 14px; }
+.image-queue-item { display: grid; grid-template-columns: 44px minmax(0,1fr); gap: 9px; width: 100%; padding: 9px; text-align: left; border: 1px solid var(--line); border-radius: 8px; background: var(--raised); color: var(--ink); cursor: pointer; }
+.image-queue-item:hover,.image-queue-item.active { border-color: var(--line-strong); }
+.image-queue-index { align-self: center; color: var(--signal); font-size: 11px; font-weight: 700; }
+.image-queue-copy { min-width: 0; }
+.image-queue-copy strong,.image-queue-copy small { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.image-queue-copy strong { font-size: 11px; }
+.image-queue-copy small { margin-top: 3px; color: var(--muted); font-size: 10px; }
 .job-list { display: grid; gap: 8px; }
 .job-card { padding: 12px 14px; border: 1px solid var(--line); border-radius: 8px; background: #111515; }
 .job-card header { display: flex; justify-content: space-between; gap: 10px; }

@@ -940,3 +940,45 @@ test("Video Multi Framing compiles explicit secondary subjects and settings with
   assert.match(compiled.outputs[0].prompt, /main subject \(@image1\)/);
   assert.match(compiled.outputs[0].prompt, /main setting \(@image2\)/);
 });
+
+test("Video Multi Framing fills the selected still count through 30", () => {
+  for (const count of [1, 10, 30]) {
+    const configuration = defaultToolConfiguration("seedance");
+    configuration.stillCount = count;
+    configuration.subject = "a spacecraft";
+    configuration.context = "an industrial city";
+    const compiled = compileSeedance(configuration, { ignoreSaved: true });
+    assert.equal(compiled.individualOutputs.length, count);
+    assert.deepEqual(compiled.individualOutputs.map((item) => item.id),
+      Array.from({ length: count }, (_unused, index) => `still-${index + 1}`));
+    assert.ok(compiled.individualOutputs.every((item) => item.prompt.length > 30));
+  }
+});
+
+test("Multiview creates an exact hard-cut plan up to 60 shots", () => {
+  for (const [provider, count, duration] of [["seedance", 30, 15], ["wan", 60, 30]]) {
+    const configuration = defaultToolConfiguration("seedance");
+    configuration.mode = "multiview";
+    configuration.provider = provider;
+    configuration.shotCount = count;
+    configuration.duration = duration;
+    configuration.charLimit = 20_000;
+    configuration.subject = "the pilot";
+    configuration.context = "the cockpit";
+    const compiled = compileSeedance(configuration, { ignoreSaved: true });
+    assert.equal(compiled.plan.length, count);
+    assert.equal((compiled.outputs[0].prompt.match(/^SHOT \d+ /gm) || []).length, count);
+    assert.equal((compiled.outputs[0].prompt.match(/^HARD CUT\.$/gm) || []).length, count - 1);
+    assert.equal(compiled.plan.at(-1).endTicks, duration * 100);
+    assert.equal(compiled.outputs[0].mediaType, "video");
+  }
+});
+
+test("Video Multi Framing accepts a reference up to 10 million encoded characters", () => {
+  const configuration = defaultToolConfiguration("seedance");
+  configuration.references = [{ ...a11Reference({ slot: 1, subject: "pilot", context: "cockpit" }),
+    dataUrl: `data:image/png;base64,${"A".repeat(2_500_001)}` }];
+  assert.doesNotThrow(() => validateToolConfiguration("seedance", configuration));
+  configuration.references[0].dataUrl = `data:image/png;base64,${"A".repeat(10_000_000)}`;
+  assert.throws(() => validateToolConfiguration("seedance", configuration), /under 10 MB/);
+});

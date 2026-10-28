@@ -675,6 +675,7 @@ export const DEFAULT_TOOL_CONFIGS = Object.freeze({
   }),
   seedance: Object.freeze({
     ...clone(a11Supplement.catalog.defaultState),
+    stillCount: 10,
     storyline: "",
     secondarySubjects: Object.freeze([]),
     secondaryContexts: Object.freeze([]),
@@ -1207,7 +1208,7 @@ export function validateMultishotConfiguration(value) {
 }
 
 function seedanceFinalKeyIsValid(key) {
-  return /^[a-z0-9_-]+__(?:stills|moving)__(?:kling|seedance|minimax-h3|flux-3|wan)__(?:all|still-(?:[1-9]|10))$/.test(key);
+  return /^[a-z0-9_-]+__(?:stills|moving|multiview)__(?:kling|seedance|minimax-h3|flux-3|wan)__(?:all|still-(?:[1-9]|[12]\d|30))$/.test(key);
 }
 
 export function seedanceFinalKey(configuration, outputId = "all") {
@@ -1217,18 +1218,20 @@ export function seedanceFinalKey(configuration, outputId = "all") {
 export function validateSeedanceConfiguration(value) {
   const path = "configuration";
   exactKeys(value, new Set([
-    "templateId", "mode", "provider", "duration", "shotCount", "charLimit", "style",
+    "templateId", "mode", "provider", "duration", "shotCount", "stillCount", "charLimit", "style",
     "subject", "context", "actionDirection", "storyline", "secondarySubjects", "secondaryContexts", "references", "finals"
   ]), path);
   if (!seedanceTemplateById.has(value.templateId)) fail("references an unknown director template", `${path}.templateId`);
-  if (!["stills", "moving"].includes(value.mode)) fail("must be stills or moving", `${path}.mode`);
+  if (!["stills", "moving", "multiview"].includes(value.mode)) fail("must be stills, moving or multiview", `${path}.mode`);
   const engine = videoMultiFramingEngineById.get(value.provider);
   if (!engine) fail("uses an unsupported provider dialect", `${path}.provider`);
   if (!Number.isInteger(value.duration) || value.duration < 1 || value.duration > engine.maxDuration) {
     fail(`must be an integer from 1 to ${engine.maxDuration} for ${engine.label}`, `${path}.duration`);
   }
-  if (!Number.isInteger(value.shotCount) || value.shotCount < 1 || value.shotCount > 30) fail("must be an integer from 1 to 30", `${path}.shotCount`);
-  if (!Number.isInteger(value.charLimit) || value.charLimit < 300 || value.charLimit > 12_000) fail("must be an integer from 300 to 12000", `${path}.charLimit`);
+  const shotMaximum = value.mode === "multiview" && ["seedance", "wan"].includes(value.provider) ? 60 : 30;
+  if (!Number.isInteger(value.shotCount) || value.shotCount < 1 || value.shotCount > shotMaximum) fail(`must be an integer from 1 to ${shotMaximum}`, `${path}.shotCount`);
+  if (value.stillCount !== undefined && (!Number.isInteger(value.stillCount) || value.stillCount < 1 || value.stillCount > 30)) fail("must be an integer from 1 to 30", `${path}.stillCount`);
+  if (!Number.isInteger(value.charLimit) || value.charLimit < 300 || value.charLimit > 20_000) fail("must be an integer from 300 to 20000", `${path}.charLimit`);
   for (const key of ["style", "subject", "context", "actionDirection", "storyline"]) validateText(value[key], `${path}.${key}`, 50_000);
   for (const key of ["secondarySubjects", "secondaryContexts"]) {
     if (!Array.isArray(value[key]) || value[key].length > 8) fail("must contain at most eight entries", `${path}.${key}`);
@@ -1243,8 +1246,8 @@ export function validateSeedanceConfiguration(value) {
     if (slots.has(reference.slot)) fail("must use a unique slot", `${referencePath}.slot`);
     slots.add(reference.slot);
     for (const key of ["imageId", "sourceName", "subject", "context"]) validateText(reference[key], `${referencePath}.${key}`, key === "sourceName" ? 260 : 50_000);
-    if (typeof reference.dataUrl !== "string" || !/^data:image\/(?:png|jpeg|webp|gif);base64,/i.test(reference.dataUrl) || reference.dataUrl.length > 2_500_000) {
-      fail("must be an embedded PNG, JPEG, WebP or GIF under 2.5 MB", `${referencePath}.dataUrl`);
+    if (typeof reference.dataUrl !== "string" || !/^data:image\/(?:png|jpeg|webp|gif);base64,/i.test(reference.dataUrl) || reference.dataUrl.length > 10_000_000) {
+      fail("must be an embedded PNG, JPEG, WebP or GIF under 10 MB", `${referencePath}.dataUrl`);
     }
   });
   if (!plainObject(value.finals) || Object.keys(value.finals).length > 1_000) fail("must contain at most 1000 saved finals", `${path}.finals`);
@@ -2051,6 +2054,127 @@ function seedanceFinal(configuration, outputId, canonical, ignoreSaved) {
   };
 }
 
+const EXTRA_STILL_FRAMINGS = Object.freeze([
+  "a low-angle three-quarter view with foreground depth", "a high-angle three-quarter view preserving the setting",
+  "a reverse view over the main subject's shoulder", "a symmetrical full-setting master shot",
+  "a long-lens profile with layered background", "an intimate close-up of a visible facial or surface detail",
+  "an overhead view that explains the spatial layout", "a ground-level view across a visible foreground element",
+  "a wide rear view revealing the subject's surroundings", "a side-lit medium shot with clear silhouette",
+  "a detail insert of a visible material or prop", "a diagonal view from the opposite side of the scene",
+  "a distant architectural frame around the subject", "a tight profile against the established background",
+  "a foreground-obscured view with the subject in focus", "a bird's-eye composition of the subject and environment",
+  "a low rear three-quarter composition", "a close view of a visible interaction or gesture",
+  "a wide frame emphasizing negative space", "a final establishing view from a new camera axis"
+]);
+
+const MULTIVIEW_SHOTS = Object.freeze([
+  "Wide master of the source environment, main subject in its starting position.",
+  "Closer two-shot of the subject and any visible companion.",
+  "Close-up of the companion, or a distinctive visible object when alone.",
+  "Extreme close-up of a real texture or feature in the source.",
+  "Tight view of the subject beside a visible prop.",
+  "Foreground subject with the established set receding behind.",
+  "Extreme close-up of a hand, mechanism, or other active detail.",
+  "Low angle across a foreground object toward the subject.",
+  "Side view preserving subject, props and screen direction.",
+  "Full-body wide shot within the same environment.",
+  "Close-up of a distinctive surface in the set.",
+  "Close-up of a second, different set detail.",
+  "Close-up of a light source, reflection or shadow detail.",
+  "Close-up of a structural junction or architectural texture.",
+  "Close-up of a final visible set detail, distinct from earlier inserts.",
+  "Close-up of the subject's face or identifying front feature.",
+  "Extreme close-up of an eye, sensor or other identifying detail.",
+  "Low view from beneath the main set piece.",
+  "Floor-level wide shot; subject small beyond the set piece.",
+  "The entire environment framed from its threshold or outer edge.",
+  "Outside-looking-in view through an opening or equivalent boundary.",
+  "Wider exterior of the structure containing the scene.",
+  "Entire structure and its immediate surroundings.",
+  "Top-down aerial of the surrounding blocks or terrain.",
+  "Very high aerial toward the horizon.",
+  "Satellite-like overhead of the region's larger pattern.",
+  "Graphic geographic view locating the scene in its region.",
+  "Wider geographic view revealing the surrounding continent.",
+  "Full world view with recognizable continents.",
+  "Planet Earth floating in black space, becoming tiny in the vast frame."
+]);
+
+const MULTIVIEW_INSERTS = Object.freeze([
+  "Reverse-angle master from the opposite side of the same set.",
+  "Tight profile of the main subject against the established background.",
+  "Insert of a second identifying feature on the visible companion or prop.",
+  "Macro view of a different surface detail, retaining source materials.",
+  "Over-shoulder view along the subject's established eyeline.",
+  "Oblique three-quarter view through a foreground layer.",
+  "Close view of a real contact point or mechanical connection.",
+  "Ground-level reverse angle across that foreground object.",
+  "Higher side angle resolving the same subject-and-prop geography.",
+  "Wide rear view of the subject within the set.",
+  "Raking-light insert of another unique set surface.",
+  "Shallow-depth insert of a repeated shape in the environment.",
+  "Reflected view of the established light source.",
+  "Macro angle on a corner, edge or seam in the set.",
+  "Silhouette detail against the environment's existing light.",
+  "Three-quarter facial or identifying-feature close-up.",
+  "Opposing extreme close-up of a different identifying detail.",
+  "Upward view beside the main set piece, not the earlier low angle.",
+  "Diagonal floor-level frame with a different foreground line.",
+  "Threshold view looking back into the same interior.",
+  "Exterior reverse angle showing the opening in context.",
+  "Oblique facade view with the scene's opening still visible.",
+  "Street- or terrain-level long shot of the entire structure.",
+  "Aerial oblique view showing nearby routes and rooflines.",
+  "Higher aerial with the neighborhood shrinking into the city.",
+  "Overhead regional view with the original location still traceable.",
+  "Map-like view highlighting the local district without labels.",
+  "Continental oblique view preserving the location marker.",
+  "Earth-limb view with the continent curving away.",
+  "Extreme wide from space with Earth smaller than in the preceding shot."
+]);
+
+function multiviewShotPlan(count) {
+  if (count <= 30) return Array.from({ length: count }, (_unused, index) =>
+    MULTIVIEW_SHOTS[count === 1 ? 0 : Math.round(index * 29 / (count - 1))]);
+  const extras = count - 30;
+  return MULTIVIEW_SHOTS.flatMap((shot, index) => [
+    shot,
+    ...(Math.floor((index + 1) * extras / 30) > Math.floor(index * extras / 30) ? [MULTIVIEW_INSERTS[index]] : [])
+  ]);
+}
+
+function compileMultiview(configuration, references, values) {
+  const count = configuration.shotCount;
+  const duration = configuration.duration;
+  const shots = multiviewShotPlan(count);
+  const source = references.map((reference) => `@image${reference.slot}`).join(", ") || "the described source scene";
+  const subject = values.SUBJECT;
+  const context = values.CONTEXT;
+  const style = values.STYLE;
+  const preamble = [
+    `Create an extremely fast-paced ${duration}-second sequence with EXACTLY ${count} DISTINCT SHOTS of ${source}.`,
+    `Source analysis: subject — ${subject}; environment — ${context}; visual style — ${style}. Preserve the same subject identity, real visible details, lighting logic and visual style in every shot. Use the supplied images as one coherent scene, not unrelated scenes.`,
+    ...(references.length ? [`Reference details:\n${references.map((reference) =>
+      `@image${reference.slot}: subject — ${reference.subject.trim() || "unspecified"}; environment — ${reference.context.trim() || "unspecified"}`).join("\n")}`] : []),
+    `Every shot is an independent camera setup. Separate adjacent shots by an INSTANT HARD CUT. No morphing, crossfades, seamless zooms, whip transitions or continuous camera travel between shots. Average shot length: ${(duration / count).toFixed(2)} seconds.`,
+    "Start intimately in the source environment. Expand the scale through its boundary, building or landscape, neighborhood, aerial geography, world and finally Earth seen from space. Infer unseen outer geography only where necessary; never replace the source subject."
+  ];
+  const plan = shots.map((description, index) => ({
+    label: `SHOT ${index + 1}`,
+    startTicks: Math.round(index * duration * 100 / count),
+    endTicks: Math.round((index + 1) * duration * 100 / count),
+    description
+  }));
+  const shotText = plan.map((shot, index) =>
+    `${shot.label} (${seedanceTime(shot.startTicks)}-${seedanceTime(shot.endTicks)}): ${shot.description}${index < count - 1 ? "\nHARD CUT." : ""}`);
+  const canonical = [
+    ...preamble,
+    ...shotText,
+    `EXACTLY ${count} SEPARATE SHOTS, ${count - 1} HARD CUTS, ${duration} SECONDS. Never skip or combine shots. Prioritize distinct editorial cuts over long shot duration.`
+  ].join("\n\n");
+  return { canonical, plan };
+}
+
 export function compileSeedance(configuration, { ignoreSaved = false } = {}) {
   validateSeedanceConfiguration(configuration);
   const template = seedanceTemplateById.get(configuration.templateId);
@@ -2112,7 +2236,27 @@ export function compileSeedance(configuration, { ignoreSaved = false } = {}) {
     preamble.push(`Coexistence logic: ${subjects} ${contexts} Use cause-and-effect staging, shared light direction, matching scale, and clear spatial contact so both references feel like one believable setup.`);
   }
 
-  const count = configuration.mode === "stills" ? 10 : configuration.shotCount;
+  const count = configuration.mode === "stills" ? (configuration.stillCount ?? 10) : configuration.shotCount;
+  if (configuration.mode === "multiview") {
+    const { canonical, plan } = compileMultiview(configuration, references, values);
+    const final = seedanceFinal(configuration, "all", canonical, ignoreSaved);
+    const unresolved = !references.length && (!configuration.subject.trim() || !configuration.context.trim());
+    const warnings = [
+      ...(configuration.duration / count < 0.5 ? ["VERY_SHORT_SHOTS"] : []),
+      ...(final.prompt.length > configuration.charLimit ? ["PROMPT_OVER_LIMIT"] : []),
+      ...(unresolved ? ["DESCRIPTIONS_REQUIRED"] : [])
+    ];
+    return {
+      outputs: [{ id: "multiview", label: "Multiview video sequence", mediaType: "video", prompt: final.prompt,
+        characterCount: final.prompt.length, overLimit: final.prompt.length > configuration.charLimit,
+        readyToSend: final.prompt.length <= configuration.charLimit && !unresolved, saved: final.saved, finalKey: final.key }],
+      plan, warnings, characterCount: final.prompt.length, overLimit: final.prompt.length > configuration.charLimit,
+      readyToSend: final.prompt.length <= configuration.charLimit && !unresolved,
+      mediaType: "video", individualOutputs: [], copyAll: "",
+      providerInfo: `${count} hard-cut shots - ${configuration.duration}s - ${engine.label}`,
+      engine: { ...engine }, directorSkill: "Instant hard cuts, fixed camera positions, escalating geographic scale."
+    };
+  }
   const plan = Array.from({ length: count }, (_unused, index) => {
     const sourceBeat = configuration.mode === "stills" ? index + 1 : (index % 7) + 1;
     const startTicks = Math.round(index * configuration.duration * 100 / count);
@@ -2126,7 +2270,8 @@ export function compileSeedance(configuration, { ignoreSaved = false } = {}) {
       ...(configuration.mode === "moving" ? { startTicks, endTicks } : {}),
       label,
       description: fill(configuration.mode === "stills"
-        ? template.stills.shots[index]
+        ? index < 10 ? template.stills.shots[index]
+          : `Use ${references.length ? `@image${references[0].slot}` : "the established scene"} as the exact visual reference. Create ${EXTRA_STILL_FRAMINGS[index - 10]} of [SUBJECT] in [CONTEXT]. Preserve [STYLE], identity, geometry and lighting; this is a still photograph, not motion.`
         : cleanSeedanceMovingShot(template.moving.shots[sourceBeat - 1]))
     };
   });
@@ -2157,7 +2302,7 @@ export function compileSeedance(configuration, { ignoreSaved = false } = {}) {
       finalKey: individual.key
     };
   }) : [];
-  const providerInfo = configuration.mode === "stills" ? "10 static stills"
+  const providerInfo = configuration.mode === "stills" ? `${count} static stills`
     : `${count} ${configuration.provider === "seedance" ? "cuts" : "shots"} - ${configuration.duration}s - ${({
       seedance: "Seedance 2.5 contiguous time ranges and motivated cuts",
       kling: "Kling 3.0 custom multi-shot wording",

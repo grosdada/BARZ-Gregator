@@ -106,6 +106,8 @@ const elements = {
   draftForm: document.querySelector("#draftForm"),
   draftList: document.querySelector("#draftList"),
   draftCount: document.querySelector("#draftCount"),
+  imageImportQueueCount: document.querySelector("#imageImportQueueCount"),
+  imageImportQueueList: document.querySelector("#imageImportQueueList"),
   jobCount: document.querySelector("#jobCount"),
   jobList: document.querySelector("#jobList"),
   activityFilters: document.querySelector("#activityFilters"),
@@ -1153,6 +1155,24 @@ function renderDrafts() {
       <p>${escapeHtml(draft.prompt)}</p>
     </button>
   `).join("") : '<p class="empty-state compact-empty">Aucune génération sur cette période.</p>';
+}
+
+function renderImageImportQueue() {
+  const queued = state.drafts.filter((draft) => draft.mediaType === "image" && draft.queueBatchId)
+    .sort((left, right) => (left.queueStatus === "pending" ? 0 : 1) - (right.queueStatus === "pending" ? 0 : 1)
+      || historyTimestamp(right.importedAt) - historyTimestamp(left.importedAt)
+      || left.queuePosition - right.queuePosition);
+  const pending = queued.filter((draft) => draft.queueStatus === "pending").length;
+  elements.imageImportQueueCount.textContent = String(pending);
+  elements.imageImportQueueCount.title = `${pending} image(s) prêtes à générer`;
+  elements.imageImportQueueList.innerHTML = queued.length ? queued.map((draft) => `
+    <button class="image-queue-item ${draft.id === state.activeDraftId ? "active" : ""}" type="button"
+      data-queue-draft-id="${escapeHtml(draft.id)}">
+      <span class="image-queue-index">${escapeHtml(String(draft.queuePosition))}/${escapeHtml(String(draft.queueTotal))}</span>
+      <span class="image-queue-copy"><strong>${escapeHtml(draft.source?.module || "Image fixe")}</strong>
+      <small>${draft.queueStatus === "submitted" ? "Génération envoyée" : "Prête à générer · cliquer pour ouvrir"}</small></span>
+    </button>
+  `).join("") : '<p class="empty-state compact-empty">Les séries d’images envoyées depuis Prompt Atlas apparaîtront ici.</p>';
 }
 
 function formatJobCost(job) {
@@ -4468,6 +4488,16 @@ async function submitActiveJob() {
     });
     state.monitoredJobId = body.job.id;
     replaceJob(body.job);
+    const queueDraft = state.drafts.find((draft) => draft.id === state.activeDraftId && draft.queueBatchId);
+    if (queueDraft && body.job.mediaType === "image") {
+      try {
+        const marked = await request("/api/import-queues/image/mark", {
+          method: "POST", body: JSON.stringify({ draftId: queueDraft.id, jobId: body.job.id })
+        });
+        Object.assign(queueDraft, marked.draft);
+        renderImageImportQueue();
+      } catch (error) { elements.formMessage.textContent = `Génération lancée, mais suivi de file non mis à jour : ${error.message}`; }
+    }
     if (elements.confirmationDialog.open) elements.confirmationDialog.close();
     state.activeJobId = null;
     state.preparedRequest = null;
@@ -4611,6 +4641,7 @@ function selectDraft(id) {
     ? `Brouillon chargé · ${localDate(draft.importedAt)} · modèle demandé « ${requestedModel} » indisponible : choisis un modèle compatible avant de générer.`
     : `Brouillon chargé · ${localDate(draft.importedAt)}`;
   renderDrafts();
+  renderImageImportQueue();
   renderCatalog();
   rememberGenerationSettings();
 }
@@ -4662,6 +4693,7 @@ async function refreshState() {
   applyServerDirectorDraft(localState.directorDraft);
   renderReferences();
   renderDrafts();
+  renderImageImportQueue();
   renderJobs();
   renderCatalog();
   renderKreaLabLibrary();
@@ -5434,6 +5466,10 @@ elements.draftList.addEventListener("click", (event) => {
   const button = event.target.closest("[data-draft-id]");
   if (button) selectDraft(button.dataset.draftId);
 });
+elements.imageImportQueueList.addEventListener("click", (event) => {
+  const item = event.target.closest("[data-queue-draft-id]");
+  if (item) { selectDraft(item.dataset.queueDraftId); renderImageImportQueue(); }
+});
 elements.activityFilters.addEventListener("click", (event) => {
   const button = event.target.closest("[data-history-range]");
   if (!button) return;
@@ -5443,12 +5479,14 @@ elements.activityFilters.addEventListener("click", (event) => {
   });
   elements.historyDates.hidden = historyRange !== "dates";
   renderDrafts();
+  renderImageImportQueue();
   renderJobs();
 });
 for (const field of [elements.historyFrom, elements.historyTo]) {
   field.addEventListener("change", () => {
     if (historyRange === "dates") {
       renderDrafts();
+      renderImageImportQueue();
       renderJobs();
     }
   });

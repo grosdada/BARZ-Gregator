@@ -359,6 +359,28 @@ test("MiniMax H3 Max resolution tiers follow the live 480P base price", () => {
   });
 });
 
+test("WAN 3 is a separate video family with text, image and multi-reference modes", () => {
+  const ids = ["alibaba/wan-3.0/text-to-video", "alibaba/wan-3.0/image-to-video",
+    "alibaba/wan-3.0/reference-to-video"];
+  for (const id of ids) {
+    const entry = builtinCatalog.find((item) => item.endpointId === id);
+    assert.ok(entry, `${id} is missing from the distributed catalog`);
+    assert.equal(entry.mediaType, "video");
+    assert.ok(entry.inputSchema);
+  }
+  assert.deepEqual(deriveFalResolutionPrices(ids[2], 0.05),
+    { "480p": 0.05, "720p": 0.10, "1080p": 0.20 });
+
+  const referenceModel = structuredClone(builtinCatalog.find((item) => item.endpointId === ids[2]));
+  referenceModel.pricing.tiersByResolution = deriveFalResolutionPrices(ids[2], referenceModel.pricing.unitPrice);
+  const preview = createGenerationPreview({ mediaType: "video", prompt: "Animate @image1",
+    references: [image(1)], settings: { durationSeconds: 15, resolution: "720p" } }, referenceModel);
+  assert.equal(preview.canSubmit, true);
+  assert.deepEqual(preview.providerInput.reference_image_urls, [image(1).url]);
+  assert.equal(preview.providerInput.duration, 15);
+  assert.equal(preview.estimatedCost, 1.5);
+});
+
 test("new settings survive draft normalization, including false audio and zero strength/seed", () => {
   const normalized = normalizePromptAtlasImport({ schemaVersion: "1.0", source: { app: "prompt-atlas" },
     mediaType: "image", prompt: "Reference portrait", settings: { numImages: 2, generateAudio: false,

@@ -630,7 +630,7 @@ export async function createBuildServer({
       assertLocalRequest(request, address, mutating);
 
       if (request.method === "GET" && url.pathname === "/api/v1/health") {
-        return sendJson(response, 200, { service: "prompt-atlas-build", version: "0.33.49" });
+        return sendJson(response, 200, { service: "prompt-atlas-build", version: "0.33.50" });
       }
       if (request.method === "GET" && url.pathname === "/api/vcam/info") {
         virtualCameraServicePromise ??= createVirtualCameraService(server);

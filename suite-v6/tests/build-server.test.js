@@ -50,7 +50,7 @@ test("serves the Build UI with restrictive local headers", async (t) => {
   assert.doesNotMatch(html, /Compose, ajuste et envoie un brouillon/);
   assert.match(html, /href="http:\/\/127\.0\.0\.1:4317\/"/);
   assert.match(html, /target="barz-aggregator"/);
-  assert.match(html, /aria-label="Ouvrir BZ Aggregator"/);
+  assert.match(html, /aria-label="Ouvrir BARZ Aggregator"/);
   assert.match(html, /id="library-editor"/);
   assert.match(html, /Nouvelle bibliothèque/);
   const runtime = await (await fetch(new URL("/tool-workspace.js", instance.url))).text();
@@ -871,7 +871,8 @@ test("A11 Video Multi Framing persists references and finals while reset restore
   assert.match(workspaceSource, /uploadSeedanceReferences\(c\.references, uploadImageReference\)/);
   assert.match(workspaceSource, /remapSeedancePromptForAggregator\(editor\.value, c\.references\)/);
   assert.match(workspaceSource, /slotToOrdinal\.get\(Number\(rawSlot\)\)/);
-  assert.match(workspaceSource, /\{ durationSeconds: c\.duration \}[^\n]+references\);/);
+  assert.match(workspaceSource, /\{ durationSeconds: c\.duration \}, \{ provider: wanEndpoint/);
+  assert.match(workspaceSource, /modelFamily: engine\.shortLabel \|\| engine\.label, modelHint: engine\.label \}, link, "", references\);/);
   assert.match(workspaceSource, /roleGroup\("context"[^\n]+"Décor principal"[^\n]+seedanceContextPresets\)/);
   assert.match(workspaceSource, /\+ \$\{secondaryLabel\}/);
   assert.match(workspaceSource, /"Pursuit \/ Chase — clear predator-prey geography and acceleration"/);

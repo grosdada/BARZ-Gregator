@@ -11,9 +11,9 @@ async function exists(filePath) {
   return access(filePath).then(() => true, () => false);
 }
 
-async function copyRequired(source, destination) {
+async function copyRequired(source, destination, options = {}) {
   if (!await exists(source)) throw new Error(`Missing installer source: ${source}`);
-  await cp(source, destination, { recursive: true, force: true });
+  await cp(source, destination, { recursive: true, force: true, ...options });
 }
 
 async function writeLauncher({ destination, dataVariable, dataDirectory, serverPath, url, healthUrl = url, expectedVersion }) {
@@ -64,17 +64,17 @@ function replaceRequired(source, search, replacement, label) {
 
 async function integrateAggregatorSuiteBridge(aggregatorRoot) {
   const serverPath = path.join(aggregatorRoot, "server.js");
-  let serverSource = await readFile(serverPath, "utf8");
+  let serverSource = (await readFile(serverPath, "utf8")).replace(/\r\n?/g, "\n");
   serverSource = replaceRequired(
     serverSource,
     `version: "0.25.0"`,
-    `version: "0.33.49"`,
+    `version: "0.33.50"`,
     "Aggregator health version"
   );
   serverSource = replaceRequired(
     serverSource,
     `Version 0.25.0 — pont Prompt Atlas prêt.`,
-    `Version 0.33.49 — mise à jour intégrée et Barz Advisor.`,
+    `Version 0.33.50 — Video Multi Framing et file image.`,
     "Aggregator startup version"
   );
   serverSource = replaceRequired(
@@ -117,7 +117,7 @@ async function integrateAggregatorSuiteBridge(aggregatorRoot) {
 
   const indexPath = path.join(aggregatorRoot, "public", "index.html");
   let indexSource = (await readFile(indexPath, "utf8")).replace(/\r\n?/g, "\n");
-  indexSource = replaceRequired(indexSource, "v0.25.0", "v0.33.49", "Aggregator visible version");
+  indexSource = replaceRequired(indexSource, "v0.25.0", "v0.33.50", "Aggregator visible version");
   indexSource = replaceRequired(
     indexSource,
     "</head>",
@@ -142,7 +142,7 @@ async function integrateAggregatorSuiteBridge(aggregatorRoot) {
   await writeFile(indexPath, indexSource, "utf8");
   const packagePath = path.join(aggregatorRoot, "package.json");
   let packageSource = await readFile(packagePath, "utf8");
-  packageSource = replaceRequired(packageSource, `"version": "0.25.0"`, `"version": "0.33.49"`, "Aggregator package version");
+  packageSource = replaceRequired(packageSource, `"version": "0.25.0"`, `"version": "0.33.50"`, "Aggregator package version");
   await writeFile(packagePath, packageSource, "utf8");
   for (const localeFile of ["app.js", "spending.js", "job-progress.js"]) {
     const localePath = path.join(aggregatorRoot, "public", localeFile);
@@ -209,7 +209,7 @@ async function writeSuiteLauncher({ destination, expectedAtlasVersion }) {
     + `atlasReady = False\r\n`
     + `aggregatorReady = False\r\n`
     + `If atlasInstalled Then atlasReady = EndpointReady("http://127.0.0.1:4326/api/v1/health", "${expectedAtlasVersion}")\r\n`
-    + `If aggregatorInstalled Then aggregatorReady = EndpointReady("http://127.0.0.1:4317/api/health", "0.33.49")\r\n`
+    + `If aggregatorInstalled Then aggregatorReady = EndpointReady("http://127.0.0.1:4317/api/health", "0.33.50")\r\n`
     + `If atlasInstalled And Not atlasReady Then\r\n`
     + `  shell.Environment("PROCESS")("BARZ_SUITE_V6_DATA_DIR") = shell.ExpandEnvironmentStrings("%APPDATA%\\BARZ Suite 6\\Prompt Atlas")\r\n`
     + `  command = shell.ExpandEnvironmentStrings("%ComSpec%") & " /D /S /C " & Chr(34) & Chr(34) & nodePath & Chr(34) & " " & Chr(34) & atlasServer & Chr(34) & " >> " & Chr(34) & atlasLog & Chr(34) & " 2>&1" & Chr(34)\r\n`
@@ -227,7 +227,7 @@ async function writeSuiteLauncher({ destination, expectedAtlasVersion }) {
     + `End If\r\n`
     + `For attempt = 1 To 120\r\n`
     + `  If atlasInstalled Then atlasReady = EndpointReady("http://127.0.0.1:4326/api/v1/health", "${expectedAtlasVersion}")\r\n`
-    + `  If aggregatorInstalled Then aggregatorReady = EndpointReady("http://127.0.0.1:4317/api/health", "0.33.49")\r\n`
+    + `  If aggregatorInstalled Then aggregatorReady = EndpointReady("http://127.0.0.1:4317/api/health", "0.33.50")\r\n`
     + `  If (Not atlasInstalled Or atlasReady) And (Not aggregatorInstalled Or aggregatorReady) Then Exit For\r\n`
     + `  WScript.Sleep 250\r\n`
     + `Next\r\n`
@@ -292,7 +292,12 @@ export async function prepareProductPayload() {
     "node_modules"
   ];
   for (const name of aggregatorSources) {
-    await copyRequired(path.join(projectDirectory, name), path.join(aggregatorRoot, name));
+    // The optional ElevenLabs SDK is not imported by either server or browser app.
+    // Its declaration paths exceed NSIS's Windows path limit when bundled.
+    const options = name === "node_modules" ? {
+      filter: (source) => !source.split(path.sep).includes("@elevenlabs")
+    } : {};
+    await copyRequired(path.join(projectDirectory, name), path.join(aggregatorRoot, name), options);
   }
   await mkdir(path.join(aggregatorRoot, "data"), { recursive: true });
   await copyRequired(

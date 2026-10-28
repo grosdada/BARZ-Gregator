@@ -479,6 +479,9 @@ const packLabels = {
   "minimax/h3-max/text-to-video": "MiniMax H3 Max · Texte → vidéo",
   "minimax/h3-max/image-to-video": "MiniMax H3 Max · Première / dernière image",
   "minimax/h3-max/reference-to-video": "MiniMax H3 Max · Multi-références",
+  "alibaba/wan-3.0/text-to-video": "Wan 3 · Texte → vidéo",
+  "alibaba/wan-3.0/image-to-video": "Wan 3 · Première / dernière image",
+  "alibaba/wan-3.0/reference-to-video": "Wan 3 · Multi-références",
   "fal-ai/ace-step/prompt-to-audio": "ACE-Step · Composition guidée",
   "fal-ai/ace-step": "ACE-Step · Paroles / chanson",
   "fal-ai/ace-step/audio-to-audio": "ACE-Step · Remix audio",
@@ -494,6 +497,7 @@ const groupedModelFamilies = [
   { prefix: "openai/gpt-image-2", id: "openai/gpt-image-2", label: "GPT Image 2.0" },
   { prefix: "xai/grok-imagine-image/v2.0/", id: "xai/grok-imagine-image/v2.0", label: "Grok Imagine 2.0" },
   { prefix: "alibaba/qwen-image-3/", id: "alibaba/qwen-image-3", label: "Qwen Image 3" },
+  { prefix: "alibaba/wan-3.0/", id: "alibaba/wan-3.0", label: "Wan 3" },
   { prefix: "bytedance/seedream/v5/", id: "bytedance/seedream/v5", label: "Seedream 5" },
   { prefix: "fal-ai/wan/v2.7/", id: "fal-ai/wan/v2.7", label: "Wan 2.7 Image" },
   { prefix: "fal-ai/flux-2-pro", id: "fal-ai/flux-2-pro", label: "FLUX.2 Pro" },
@@ -984,6 +988,12 @@ export function deriveFalFamily(endpointId, category) {
 }
 
 export function deriveFalResolutionPrices(endpointId, baseUnitPrice) {
+  if (endpointId.startsWith("alibaba/wan-3.0/")) {
+    const base = Number(baseUnitPrice);
+    if (!Number.isFinite(base)) return null;
+    return { "480p": Number(base.toFixed(8)), "720p": Number((base * 2).toFixed(8)),
+      "1080p": Number((base * 4).toFixed(8)) };
+  }
   if (endpointId.startsWith("bytedance/seedance-2.5/")) {
     const base = Number(baseUnitPrice);
     if (!Number.isFinite(base)) return null;

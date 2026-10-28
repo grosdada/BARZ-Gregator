@@ -159,6 +159,7 @@ const dictionary = new Map(Object.entries({
   "Sauvegarder": "Save",
   "Aucune image": "No image",
   "File locale": "Local queue",
+  "File d’images": "Image queue",
   "Générations": "Generations",
   "Sur cette machine": "On this machine",
   "Filtrer l’historique": "Filter history",

@@ -2770,6 +2770,65 @@ async function handleApi(request, response, url) {
     return;
   }
 
+  if (request.method === "POST" && url.pathname === "/api/import-queues/image") {
+    const body = await readJson(request);
+    if (!Array.isArray(body?.items) || body.items.length < 1 || body.items.length > 30 ||
+        !/^[a-f0-9-]{36}$/i.test(String(body.requestId || ""))) {
+      throw Object.assign(new Error("La file doit contenir entre 1 et 30 images et un identifiant valide."), { statusCode: 400 });
+    }
+    const imports = body.items.map((item) => normalizePromptAtlasImport(item));
+    if (imports.some((item) => item.mediaType !== "image")) {
+      throw Object.assign(new Error("Cette file accepte uniquement des images fixes."), { statusCode: 400 });
+    }
+    let drafts;
+    await store.update((state) => {
+      const existing = state.drafts.filter((draft) => draft.queueBatchId === body.requestId)
+        .sort((left, right) => left.queuePosition - right.queuePosition);
+      if (existing.length) {
+        if (existing.length !== imports.length) throw Object.assign(new Error("Cette file existe déjà avec un autre nombre d’images."), { statusCode: 409 });
+        drafts = existing;
+        return state;
+      }
+      const now = new Date();
+      drafts = imports.map((item, index) => ({
+        ...createLocalDraft(item, randomUUID(), now),
+        queueBatchId: body.requestId,
+        queuePosition: index + 1,
+        queueTotal: imports.length,
+        queueStatus: "pending",
+        queueJobId: null
+      }));
+      state.drafts.unshift(...drafts);
+      state.drafts = state.drafts.slice(0, 300);
+      state.activity.unshift({ id: randomUUID(), kind: "import",
+        message: `${drafts.length} images fixes ajoutées à la file depuis Prompt Atlas`, createdAt: now.toISOString() });
+      state.activity = state.activity.slice(0, 200);
+      return state;
+    });
+    sendJson(response, 201, { queueId: body.requestId, drafts });
+    return;
+  }
+
+  if (request.method === "POST" && url.pathname === "/api/import-queues/image/mark") {
+    const body = await readJson(request);
+    if (typeof body?.draftId !== "string" || typeof body?.jobId !== "string" ||
+        !/^[a-f0-9-]{36}$/i.test(body.draftId) || !/^[a-f0-9-]{36}$/i.test(body.jobId)) {
+      throw Object.assign(new Error("Identifiants de file invalides."), { statusCode: 400 });
+    }
+    let draft;
+    await store.update((state) => {
+      draft = state.drafts.find((item) => item.id === body.draftId && item.mediaType === "image" && item.queueBatchId);
+      if (!draft || !state.jobs.some((job) => job.id === body.jobId && job.mediaType === "image")) {
+        throw Object.assign(new Error("L’image ou sa génération est introuvable."), { statusCode: 404 });
+      }
+      draft.queueStatus = "submitted";
+      draft.queueJobId = body.jobId;
+      return state;
+    });
+    sendJson(response, 200, { draft });
+    return;
+  }
+
   if (request.method === "POST" && url.pathname === "/api/drafts") {
     const body = await readJson(request);
     const imported = normalizePromptAtlasImport({

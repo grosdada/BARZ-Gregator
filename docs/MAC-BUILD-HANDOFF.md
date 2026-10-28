@@ -1,6 +1,12 @@
 # Mac build handoff for Codex
 
-Build the macOS edition from this repository's sources, not from the Windows installer or its generated `payload/`. Keep Prompt Atlas and Aggregator as separate local services connected by their existing versioned bridge. The current Windows product version is `0.33.49` (`suite-v6/installer/manifest.json`).
+Build the macOS edition from this repository's sources, not from the Windows installer or its generated `payload/`. Keep Prompt Atlas and Aggregator as separate local services connected by their existing versioned bridge. The current Windows product version is `0.33.50` (`suite-v6/installer/manifest.json`).
+
+## Scope of the 0.33.50 port
+
+If 0.33.49 is already on Mac, apply only this delta. In Video Multi Framing, add the reference source menu (PC, Aggregator Assets, online Library), 10 MB encoded image limit, double-click ×4 preview, editable AI subject/context descriptions, 1–30 still count and the Multiview video tab with up to 60 requested hard-cut shots on Seedance 2.5/Wan 3.0. The centered, colored GO ACTION control and its busy state must be shared by Multi still image, Video sequence and Multiview. Filling stills must populate every selected still, including 11–30. Exporting the stills creates image drafts in Aggregator's visible image queue; it must not submit paid jobs automatically. Video sequence drafts must transfer prompts longer than the editor's 2,500-character advisory limit together with their uploaded reference images. The fal catalog now includes WAN 3 text-to-video, image-to-video and reference-to-video as a separate family from Wan Motion. Preserve the existing secured reference import path and same-origin checks for the online Library popup. Test a batch, a video draft over 2,500 characters with a real reference, and a manually edited description on Mac.
+
+Port only the source/UI/API delta; the Windows installer and generated payload remain Windows-specific. A video model may not obey every requested hard cut, so do not present the 60-shot plan as a guaranteed rendered outcome. Update the Mac bundle display version to `0.33.50`.
 
 ## Scope of the 0.33.49 port
 
@@ -8,7 +14,7 @@ If 0.33.48 is already on Mac, apply only this delta: rename the shared "Atlas Ad
 
 If 0.33.48 is not yet on Mac, also carry over that release's navigation order (Images, Videos, Director), compact model-name trigger without chevron, blue/grey job progress, muted blue and beige light theme across Assets/Spending/API/LoRA Lab, thin history and mode-switch borders, and working Blocking Studio Environment Reset. If 0.33.47 is also absent, carry over its collapsible histories with Latest 30 / All / calendar, blue/orange Advisor styling, inactive Image Slicer Pro outline, and prompt-only "Send to prompt" behavior.
 
-The proposed Q-Builder/ComfyUI "Cloud / Local" video mode is architecture work only in this release (`docs/LOCAL-QBUILDER-INTEGRATION.md`); do not expose a nonfunctional local-render button on Mac. Update the Mac bundle's displayed version to `0.33.49`. Leave unrelated tools, APIs, data formats, and credentials untouched. Do not port Windows-only NSIS/VBScript packaging code.
+The proposed Q-Builder/ComfyUI "Cloud / Local" video mode is architecture work only in this release (`docs/LOCAL-QBUILDER-INTEGRATION.md`); do not expose a nonfunctional local-render button on Mac. Leave unrelated tools, APIs, data formats, and credentials untouched. Do not port Windows-only NSIS/VBScript packaging code.
 
 ## Previous 0.33.46 branding handoff (already completed; do not repeat)
 
