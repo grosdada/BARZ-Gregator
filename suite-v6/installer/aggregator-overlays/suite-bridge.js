@@ -483,11 +483,11 @@ document.addEventListener("click", (event) => {
   const link = event.target.closest?.("a.app-switch-atlas");
   if (!link) return;
   event.preventDefault();
-  if (window.parent !== window) {
+  if (window.parent !== window && new URLSearchParams(location.search).get("embedded") === "1") {
     window.parent.postMessage({ type: "barz-suite:switch", app: "atlas", url: "http://127.0.0.1:4326/" }, SUITE_SHELL_ORIGIN);
     return;
   }
-  window.location.assign("http://127.0.0.1:4326/suite.html?app=atlas");
+  window.location.assign("http://127.0.0.1:4326/");
 }, true);
 
 window.addEventListener("message", async (event) => {

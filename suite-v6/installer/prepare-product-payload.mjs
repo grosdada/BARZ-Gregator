@@ -52,7 +52,7 @@ async function writeLauncher({ destination, dataVariable, dataDirectory, serverP
     + `If ready Then\r\n`
     + `  shell.Run "${launchUrl}", 1, False\r\n`
     + `Else\r\n`
-    + `  MsgBox "BARZ n'a pas pu démarrer la bonne version du serveur local. Fermez les anciennes fenêtres Atlas puis relancez ce raccourci.", 16, "BARZ Suite 6"\r\n`
+    + `  MsgBox "Placenta Studio n'a pas pu démarrer la bonne version du serveur local. Fermez les anciennes fenêtres Atlas puis relancez ce raccourci.", 16, "Placenta Studio"\r\n`
     + `End If\r\n`;
   await writeFile(destination, script, "utf8");
 }
@@ -68,13 +68,13 @@ async function integrateAggregatorSuiteBridge(aggregatorRoot) {
   serverSource = replaceRequired(
     serverSource,
     `version: "0.25.0"`,
-    `version: "0.33.50"`,
+    `version: "0.33.57"`,
     "Aggregator health version"
   );
   serverSource = replaceRequired(
     serverSource,
     `Version 0.25.0 — pont Prompt Atlas prêt.`,
-    `Version 0.33.50 — Video Multi Framing et file image.`,
+    `Version 0.33.57 — Icônes d’onglet BARZ et grand diaporama pendant l’installation.`,
     "Aggregator startup version"
   );
   serverSource = replaceRequired(
@@ -117,7 +117,7 @@ async function integrateAggregatorSuiteBridge(aggregatorRoot) {
 
   const indexPath = path.join(aggregatorRoot, "public", "index.html");
   let indexSource = (await readFile(indexPath, "utf8")).replace(/\r\n?/g, "\n");
-  indexSource = replaceRequired(indexSource, "v0.25.0", "v0.33.50", "Aggregator visible version");
+  indexSource = replaceRequired(indexSource, "v0.25.0", "v0.33.57", "Aggregator visible version");
   indexSource = replaceRequired(
     indexSource,
     "</head>",
@@ -142,7 +142,7 @@ async function integrateAggregatorSuiteBridge(aggregatorRoot) {
   await writeFile(indexPath, indexSource, "utf8");
   const packagePath = path.join(aggregatorRoot, "package.json");
   let packageSource = await readFile(packagePath, "utf8");
-  packageSource = replaceRequired(packageSource, `"version": "0.25.0"`, `"version": "0.33.50"`, "Aggregator package version");
+  packageSource = replaceRequired(packageSource, `"version": "0.25.0"`, `"version": "0.33.57"`, "Aggregator package version");
   await writeFile(packagePath, packageSource, "utf8");
   for (const localeFile of ["app.js", "spending.js", "job-progress.js"]) {
     const localePath = path.join(aggregatorRoot, "public", localeFile);
@@ -209,7 +209,7 @@ async function writeSuiteLauncher({ destination, expectedAtlasVersion }) {
     + `atlasReady = False\r\n`
     + `aggregatorReady = False\r\n`
     + `If atlasInstalled Then atlasReady = EndpointReady("http://127.0.0.1:4326/api/v1/health", "${expectedAtlasVersion}")\r\n`
-    + `If aggregatorInstalled Then aggregatorReady = EndpointReady("http://127.0.0.1:4317/api/health", "0.33.50")\r\n`
+    + `If aggregatorInstalled Then aggregatorReady = EndpointReady("http://127.0.0.1:4317/api/health", "0.33.57")\r\n`
     + `If atlasInstalled And Not atlasReady Then\r\n`
     + `  shell.Environment("PROCESS")("BARZ_SUITE_V6_DATA_DIR") = shell.ExpandEnvironmentStrings("%APPDATA%\\BARZ Suite 6\\Prompt Atlas")\r\n`
     + `  command = shell.ExpandEnvironmentStrings("%ComSpec%") & " /D /S /C " & Chr(34) & Chr(34) & nodePath & Chr(34) & " " & Chr(34) & atlasServer & Chr(34) & " >> " & Chr(34) & atlasLog & Chr(34) & " 2>&1" & Chr(34)\r\n`
@@ -227,7 +227,7 @@ async function writeSuiteLauncher({ destination, expectedAtlasVersion }) {
     + `End If\r\n`
     + `For attempt = 1 To 120\r\n`
     + `  If atlasInstalled Then atlasReady = EndpointReady("http://127.0.0.1:4326/api/v1/health", "${expectedAtlasVersion}")\r\n`
-    + `  If aggregatorInstalled Then aggregatorReady = EndpointReady("http://127.0.0.1:4317/api/health", "0.33.50")\r\n`
+    + `  If aggregatorInstalled Then aggregatorReady = EndpointReady("http://127.0.0.1:4317/api/health", "0.33.57")\r\n`
     + `  If (Not atlasInstalled Or atlasReady) And (Not aggregatorInstalled Or aggregatorReady) Then Exit For\r\n`
     + `  WScript.Sleep 250\r\n`
     + `Next\r\n`
@@ -238,7 +238,7 @@ async function writeSuiteLauncher({ destination, expectedAtlasVersion }) {
     + `ElseIf aggregatorReady Then\r\n`
     + `  shell.Run "http://127.0.0.1:4317/", 1, False\r\n`
     + `Else\r\n`
-    + `  MsgBox "BARZ Suite 6 n'a pas pu démarrer les composants installés.", 16, "BARZ Suite 6"\r\n`
+    + `  MsgBox "Placenta Studio n'a pas pu démarrer les composants installés.", 16, "Placenta Studio"\r\n`
     + `End If\r\n`
     + `\r\n`
     + `Function EndpointReady(endpoint, expectedText)\r\n`

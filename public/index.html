@@ -4,17 +4,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" content="dark">
-    <title>BARZ Aggregator</title>
+    <title>BARZ Aggregator — Placenta Studio</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="stylesheet" href="/styles.css">
     <script type="module" src="/app.js"></script>
   </head>
   <body>
     <header class="topbar">
-      <a class="brand" href="/" aria-label="BARZ Aggregator — Beyond Artificial Reality Zone. Retour à l’accueil">
-        <span class="brand-mark" aria-hidden="true">BARZ</span>
-        <span class="brand-product">Aggregator</span>
-        <span class="brand-acronym" aria-hidden="true">Beyond Artificial Reality Zone</span>
-      </a>
+      <div class="brand-stack">
+        <div class="suite-identity" aria-label="Placenta Studio">
+          <span class="suite-emblem" aria-hidden="true"></span>
+          <span class="suite-wordmark"><strong>PLACENTA</strong><small>STUDIO</small></span>
+        </div>
+        <a class="brand" href="/" aria-label="BARZ Aggregator — Beyond Artificial Reality Zone. Retour à l’accueil">
+          <span class="brand-mark" aria-hidden="true">BARZ</span>
+          <span class="brand-product">Aggregator</span>
+          <span class="brand-acronym" aria-hidden="true">Beyond Artificial Reality Zone</span>
+        </a>
+      </div>
       <div class="system-state">
         <span class="status-light" aria-hidden="true"></span>
         <span>Local</span>
@@ -79,9 +86,9 @@
         </button>
 
         <a class="app-switch app-switch-atlas" href="http://127.0.0.1:4326/"
-          target="prompt-atlas-v6" aria-label="Ouvrir Prompt Atlas 6">
+          aria-label="Ouvrir BARZ Prompt Atlas">
           <span class="app-switch-mark" aria-hidden="true">BARZ</span>
-          <span>Prompt Atlas 6</span>
+          <span>Prompt Atlas</span>
         </a>
         <div class="rail-foot">
           <span>v0.25.0</span>
@@ -104,6 +111,25 @@
         </nav>
 
         <form id="draftForm">
+          <section class="image-batch-banner hidden" id="imageBatchBanner" aria-live="polite">
+            <div class="image-batch-heading">
+              <div><span class="image-batch-indicator" aria-hidden="true"></span>
+                <strong id="imageBatchTitle">Série d’images</strong></div>
+              <span id="imageBatchProgress"></span>
+            </div>
+            <p id="imageBatchDescription"></p>
+            <div class="image-batch-pricing">
+              <span>Prix par image <strong id="imageBatchUnitCost">—</strong></span>
+              <span>Total de la file restante <strong id="imageBatchTotalCost">—</strong></span>
+            </div>
+            <details class="image-batch-items" id="imageBatchItems">
+              <summary>Voir les prompts de la série</summary>
+              <div class="image-batch-items-list" id="imageBatchItemsList"></div>
+            </details>
+            <button class="image-batch-launch" id="imageBatchLaunchButton" type="button" disabled>
+              Lancer toute la file
+            </button>
+          </section>
           <label class="field prompt-field">
             <span>Prompt</span>
             <div class="prompt-editor">
@@ -225,6 +251,9 @@
             <div>
               <button class="secondary-button" id="saveDraftButton" type="submit">
                 Enregistrer le brouillon
+              </button>
+              <button class="secondary-button" id="addToImageQueueButton" type="button">
+                Add to Queue
               </button>
               <div class="generate-control">
                 <button class="generate-button" id="generateButton" type="button" disabled>
@@ -456,6 +485,8 @@
                 data-asset-category="generated">Generated</button>
               <button class="asset-category" type="button"
                 data-asset-category="resources">Ressources</button>
+              <button class="asset-category" type="button"
+                data-asset-category="trash">Corbeille</button>
             </div>
           </div>
           <div class="asset-filters" aria-label="Filtrer les médias">
@@ -546,7 +577,7 @@
         </header>
         <div class="api-intro">
           <strong>Une seule configuration pour toute la suite.</strong>
-          <p>Ces clés alimentent BARZ Aggregator et Prompt Atlas 6. Elles restent sur cette machine et ne sont jamais affichées après enregistrement.</p>
+          <p>Ces clés alimentent BARZ Aggregator et BARZ Prompt Atlas. Elles restent sur cette machine et ne sont jamais affichées après enregistrement.</p>
         </div>
         <p class="api-message" id="apiMessage" role="status"></p>
         <div class="api-grid" id="apiProviderGrid"></div>
@@ -700,6 +731,15 @@
           <path d="m7 7 1 13h8l1-13"></path><path d="M10 11v5M14 11v5"></path>
         </svg>
       </button>
+      <button class="delete-resources-button" id="trashSelectionButton" type="button"
+        aria-label="Mettre les assets sélectionnés à la corbeille"
+        title="Mettre à la corbeille">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 7h16"></path><path d="M9 7V4h6v3"></path>
+          <path d="m7 7 1 13h8l1-13"></path><path d="M10 11v5M14 11v5"></path>
+        </svg>
+      </button>
+      <button class="secondary-button hidden" id="restoreSelectionButton" type="button">Restaurer</button>
       <button class="icon-button clear-selection" id="clearSelectionButton" type="button"
         aria-label="Annuler la sélection">×</button>
       <p id="selectionMessage" role="status"></p>

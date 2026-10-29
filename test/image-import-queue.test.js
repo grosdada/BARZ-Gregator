@@ -60,6 +60,61 @@ test("image import queue creates all drafts atomically without submitting jobs",
     assert.equal(state.drafts.filter((draft) => draft.queueBatchId === requestId).length, 3);
     assert.equal(state.jobs.length, 0);
 
+    const removed = await fetch(`${base}/api/import-queues/image/${payload.drafts[1].id}`, { method: "DELETE" });
+    assert.equal(removed.status, 200);
+    assert.equal((await removed.json()).deletedDraftId, payload.drafts[1].id);
+    assert.equal((await fetch(`${base}/api/import-queues/image/${payload.drafts[1].id}`, { method: "DELETE" })).status, 404);
+    const afterRemoval = await (await fetch(`${base}/api/state`)).json();
+    assert.deepEqual(afterRemoval.drafts.filter((draft) => draft.queueBatchId === requestId)
+      .map((draft) => draft.queuePosition), [1, 2]);
+    assert.equal(afterRemoval.jobs.length, 0);
+
+    const manualQueueId = randomUUID();
+    for (const prompt of ["First camera framing", "Second camera framing"]) {
+      const appended = await fetch(`${base}/api/import-queues/image/append`, {
+        method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ requestId: manualQueueId,
+          item: { mediaType: "image", prompt, settings: { aspectRatio: "auto" }, references: [] } })
+      });
+      assert.equal(appended.status, 201);
+    }
+    const manualState = await (await fetch(`${base}/api/state`)).json();
+    const manualDrafts = manualState.drafts.filter((draft) => draft.queueBatchId === manualQueueId)
+      .sort((left, right) => left.queuePosition - right.queuePosition);
+    assert.deepEqual(manualDrafts.map((draft) => draft.prompt),
+      ["First camera framing", "Second camera framing"]);
+    assert.deepEqual(manualDrafts.map((draft) => draft.queueTotal), [2, 2]);
+    assert.ok(manualDrafts.every((draft) => draft.queueStatus === "pending"));
+    assert.equal(manualState.jobs.length, 0);
+
+    const singleRequestId = randomUUID();
+    const singleImport = await fetch(`${base}/api/import-queues/image`, {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ requestId: singleRequestId, items: [{ schemaVersion: "1.0",
+        source: { app: "prompt-atlas", module: "Video Multi Framing · Still 1" },
+        mediaType: "image", prompt: "A blue square on a plain background", references: [] }] })
+    });
+    assert.equal(singleImport.status, 201);
+    const singleDraft = (await singleImport.json()).drafts[0];
+    const prepared = await fetch(`${base}/api/jobs/prepare`, {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ mediaType: "image", prompt: singleDraft.prompt,
+        endpointId: "fal-ai/flux-2/turbo", queueDraftId: singleDraft.id,
+        target: { provider: "fal", endpointId: "fal-ai/flux-2/turbo" },
+        settings: { aspectRatio: "16:9" }, references: [] })
+    });
+    const preparedBody = await prepared.json();
+    assert.equal(prepared.status, 201, JSON.stringify(preparedBody));
+    const preparedJob = preparedBody.job;
+    assert.equal(preparedJob.queueDraftId, singleDraft.id);
+    const deleteBeforeSubmit = await fetch(`${base}/api/import-queues/image/${singleDraft.id}`, { method: "DELETE" });
+    assert.equal(deleteBeforeSubmit.status, 200);
+    const staleSubmit = await fetch(`${base}/api/jobs/${preparedJob.id}/submit`, {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ confirm: true, estimatedCost: preparedJob.estimatedCost })
+    });
+    assert.equal(staleSubmit.status, 409);
+
     const png = Buffer.from("iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQIHWP4z8DwHwAFgAI/ScL/nwAAAABJRU5ErkJggg==", "base64");
     const uploaded = await fetch(`${base}/api/resources`, { method: "POST",
       headers: { "Content-Type": "image/png", "X-Barz-Filename": "shot-reference.png" }, body: png });
@@ -76,7 +131,8 @@ test("image import queue creates all drafts atomically without submitting jobs",
     const videoDraft = (await imported.json()).draft;
     assert.equal(videoDraft.prompt, longPrompt);
     assert.equal(videoDraft.references[0].id, `resource:${resourceId}`);
-    assert.equal((await (await fetch(`${base}/api/state`)).json()).jobs.length, 0);
+    assert.deepEqual((await (await fetch(`${base}/api/state`)).json()).jobs.map((job) => job.status),
+      ["awaiting_confirmation"]);
   } finally {
     child.kill();
     const resolved = path.resolve(dataDir);

@@ -555,6 +555,16 @@ export const DEFAULT_TOOL_CONFIGS = Object.freeze({
     selectedEntryId: GOODIES_CATALOG.entries[0].id,
     detailsByPrompt: Object.freeze({})
   }),
+  "mode-bank": Object.freeze({
+    category: "exterior",
+    group: "all",
+    searchQuery: "",
+    selectedId: "v03-ext-001",
+    subjectMode: "original",
+    puppetMode: false,
+    useWardrobePrompt: false,
+    favorites: Object.freeze([])
+  }),
   "barz-beauty": Object.freeze({
     activeCategory: BEAUTY_CATALOG.categories[0].id,
     selectedEntryId: BEAUTY_CATALOG.entries[0].id
@@ -1404,6 +1414,18 @@ export function validateToolConfiguration(toolId, value) {
     return value;
   }
   if (["barz-enhancer", "angle-3d", "relighting-3d"].includes(toolId)) return validateEnhancerConfiguration(value);
+  if (toolId === "mode-bank") {
+    exactKeys(value, new Set(["category", "group", "searchQuery", "selectedId", "subjectMode", "puppetMode", "useWardrobePrompt", "favorites"]), "configuration");
+    if (!["exterior", "interior", "studio", "conceptual", "collage", "tvshow", "scifi"].includes(value.category)) fail("unknown category", "configuration.category");
+    if (!["all", "urban", "nature", "interior", "studio", "object", "surreal", "analog", "cinema"].includes(value.group)) fail("unknown group", "configuration.group");
+    validateText(value.searchQuery, "configuration.searchQuery", 500);
+    validateText(value.selectedId, "configuration.selectedId", 120);
+    if (!["original", "ref", "female", "male"].includes(value.subjectMode)) fail("unknown subject mode", "configuration.subjectMode");
+    for (const key of ["puppetMode", "useWardrobePrompt"]) if (typeof value[key] !== "boolean") fail("must be a boolean", `configuration.${key}`);
+    if (!Array.isArray(value.favorites) || value.favorites.length > 1221 || new Set(value.favorites).size !== value.favorites.length) fail("invalid favorites", "configuration.favorites");
+    value.favorites.forEach((id, index) => validateText(id, `configuration.favorites.${index}`, 120));
+    return value;
+  }
   if (toolId === "banana-helper") return validateGoodiesConfiguration(value);
   if (toolId === "barz-beauty") return validateBeautyConfiguration(value);
   if (toolId === "realism-forge") return validateRealismConfiguration(value);
@@ -2067,6 +2089,36 @@ const EXTRA_STILL_FRAMINGS = Object.freeze([
   "a wide frame emphasizing negative space", "a final establishing view from a new camera axis"
 ]);
 
+// A still sequence is coverage of one scene, not ten variations of a director's
+// favourite composition. Keep these camera setups independent of the style bank:
+// several banks deliberately repeat the same angle for their original examples.
+const STILL_CAMERA_SETUPS = Object.freeze([
+  "frontal wide master; show the full shared setting and the subjects' spatial relationship",
+  "medium two-shot from camera-left at 45 degrees; preserve the established screen direction",
+  "close-up of the main subject from slightly below eye level; retain a recognizable set detail behind",
+  "wide profile from camera-right; make the two subjects' silhouettes and distance readable",
+  "over-the-shoulder view from the secondary subject toward the main subject and the central set piece",
+  "high-angle medium two-shot from the opposite side of the room; show a different shared gesture",
+  "low floor-level view across the subjects' feet or contact point toward the established background",
+  "tight side profile of the secondary subject with the main subject visible deeper in the same scene",
+  "reverse wide shot from the set entrance or far side; reveal geography absent from the opening view",
+  "rear three-quarter medium shot of both subjects framed against the main set feature",
+  ...EXTRA_STILL_FRAMINGS
+]);
+
+function stillCameraSetup(index, hasSecondary) {
+  if (hasSecondary) return STILL_CAMERA_SETUPS[index];
+  if (index === 1) return "medium three-quarter shot from camera-left at 45 degrees; preserve the established screen direction";
+  if (index === 4) return "over-the-shoulder view past a visible foreground prop toward the main subject and the central set piece";
+  if (index === 5) return "high-angle medium shot from the opposite side of the scene; show a different gesture";
+  if (index === 7) return "tight side profile of the main subject with the established setting visible deeper in frame";
+  return STILL_CAMERA_SETUPS[index]
+    .replace("the two subjects'", "the subject's")
+    .replace("the subjects'", "the subject's")
+    .replace("the two subjects", "the subject")
+    .replace("both subjects", "the subject");
+}
+
 const MULTIVIEW_SHOTS = Object.freeze([
   "Wide master of the source environment, main subject in its starting position.",
   "Closer two-shot of the subject and any visible companion.",
@@ -2087,17 +2139,17 @@ const MULTIVIEW_SHOTS = Object.freeze([
   "Extreme close-up of an eye, sensor or other identifying detail.",
   "Low view from beneath the main set piece.",
   "Floor-level wide shot; subject small beyond the set piece.",
-  "The entire environment framed from its threshold or outer edge.",
-  "Outside-looking-in view through an opening or equivalent boundary.",
-  "Wider exterior of the structure containing the scene.",
-  "Entire structure and its immediate surroundings.",
-  "Top-down aerial of the surrounding blocks or terrain.",
-  "Very high aerial toward the horizon.",
-  "Satellite-like overhead of the region's larger pattern.",
-  "Graphic geographic view locating the scene in its region.",
-  "Wider geographic view revealing the surrounding continent.",
-  "Full world view with recognizable continents.",
-  "Planet Earth floating in black space, becoming tiny in the vast frame."
+  "The entire environment framed from its threshold, outer edge or another supported boundary.",
+  "Reverse view across that boundary; look inside only if an opening exists.",
+  "Wider view of the structure or landscape feature containing the scene.",
+  "The full structure or local setting with its immediate surroundings.",
+  "High angle over the same site, keeping its layout and subject traceable.",
+  "Oblique view of the immediate surroundings, only if supported by the source scene.",
+  "Reverse exterior or adjacent-setting angle that keeps the original location identifiable.",
+  "Wider view along a nearby route, facade or landscape feature within the established setting.",
+  "Optional short orbit around the building or main set piece, if the scene supports it.",
+  "New ground-level angle looking back toward the original location.",
+  "Final wide master of the subject and its recognizable environment, still grounded at the same location."
 ]);
 
 const MULTIVIEW_INSERTS = Object.freeze([
@@ -2120,10 +2172,30 @@ const MULTIVIEW_INSERTS = Object.freeze([
   "Opposing extreme close-up of a different identifying detail.",
   "Upward view beside the main set piece, not the earlier low angle.",
   "Diagonal floor-level frame with a different foreground line.",
-  "Threshold view looking back into the same interior.",
-  "Exterior reverse angle showing the opening in context.",
-  "Oblique facade view with the scene's opening still visible.",
-  "Street- or terrain-level long shot of the entire structure.",
+  "Boundary view looking back into the same setting, if its edge is visible.",
+  "Reverse angle showing that boundary in its local context.",
+  "Oblique view of the facade or landscape feature framing the setting.",
+  "Street- or terrain-level long shot of the same local setting.",
+  "Oblique upper angle over the same site, preserving the subject's position.",
+  "Nearby reverse angle showing the adjacent routes or terrain without changing location.",
+  "High three-quarter view of the established structure or set piece.",
+  "Lateral exterior angle if an exterior exists; otherwise another distinct view of the set boundary.",
+  "Short orbit from the opposite side of the building or main set piece, if supported.",
+  "Foreground-framed view looking back toward the same subject and setting.",
+  "Closing alternate master of the recognizable source environment."
+]);
+
+const MULTIVIEW_PLANETARY_ENDING = Object.freeze([
+  "Top-down aerial of the surrounding blocks or terrain.",
+  "Very high aerial toward the horizon.",
+  "Satellite-like overhead of the region's larger pattern.",
+  "Graphic geographic view locating the scene in its region.",
+  "Wider geographic view revealing the surrounding continent.",
+  "Full world view with recognizable continents.",
+  "Planet Earth floating in black space, becoming tiny in the vast frame."
+]);
+
+const MULTIVIEW_PLANETARY_INSERTS = Object.freeze([
   "Aerial oblique view showing nearby routes and rooflines.",
   "Higher aerial with the neighborhood shrinking into the city.",
   "Overhead regional view with the original location still traceable.",
@@ -2133,20 +2205,27 @@ const MULTIVIEW_INSERTS = Object.freeze([
   "Extreme wide from space with Earth smaller than in the preceding shot."
 ]);
 
-function multiviewShotPlan(count) {
+function storyGuideRequestsPlanetaryView(storyline) {
+  return /(?:earth\s+from\s+space|terre\s+depuis\s+l['’]espace|planet\s+earth|plan[eè]te\s+terre|orbital\s+view|vue\s+orbitale|from\s+orbit|depuis\s+l['’]orbite|into\s+space|dans\s+l['’]espace|vers\s+l['’]espace|zoom.{0,80}(?:earth|terre|planet|plan[eè]te)|(?:earth|terre|planet|plan[eè]te).{0,80}zoom|world\s+map|carte\s+du\s+monde|continent|atmosph[eè]re|atmosphere)/i.test(storyline || "");
+}
+
+function multiviewShotPlan(count, planetaryEnding = false) {
+  const shots = planetaryEnding ? [...MULTIVIEW_SHOTS.slice(0, 23), ...MULTIVIEW_PLANETARY_ENDING] : MULTIVIEW_SHOTS;
+  const inserts = planetaryEnding ? [...MULTIVIEW_INSERTS.slice(0, 23), ...MULTIVIEW_PLANETARY_INSERTS] : MULTIVIEW_INSERTS;
   if (count <= 30) return Array.from({ length: count }, (_unused, index) =>
-    MULTIVIEW_SHOTS[count === 1 ? 0 : Math.round(index * 29 / (count - 1))]);
+    shots[count === 1 ? 0 : Math.round(index * 29 / (count - 1))]);
   const extras = count - 30;
-  return MULTIVIEW_SHOTS.flatMap((shot, index) => [
+  return shots.flatMap((shot, index) => [
     shot,
-    ...(Math.floor((index + 1) * extras / 30) > Math.floor(index * extras / 30) ? [MULTIVIEW_INSERTS[index]] : [])
+    ...(Math.floor((index + 1) * extras / 30) > Math.floor(index * extras / 30) ? [inserts[index]] : [])
   ]);
 }
 
 function compileMultiview(configuration, references, values) {
   const count = configuration.shotCount;
   const duration = configuration.duration;
-  const shots = multiviewShotPlan(count);
+  const planetaryEnding = storyGuideRequestsPlanetaryView(configuration.storyline);
+  const shots = multiviewShotPlan(count, planetaryEnding);
   const source = references.map((reference) => `@image${reference.slot}`).join(", ") || "the described source scene";
   const subject = values.SUBJECT;
   const context = values.CONTEXT;
@@ -2157,7 +2236,9 @@ function compileMultiview(configuration, references, values) {
     ...(references.length ? [`Reference details:\n${references.map((reference) =>
       `@image${reference.slot}: subject — ${reference.subject.trim() || "unspecified"}; environment — ${reference.context.trim() || "unspecified"}`).join("\n")}`] : []),
     `Every shot is an independent camera setup. Separate adjacent shots by an INSTANT HARD CUT. No morphing, crossfades, seamless zooms, whip transitions or continuous camera travel between shots. Average shot length: ${(duration / count).toFixed(2)} seconds.`,
-    "Start intimately in the source environment. Expand the scale through its boundary, building or landscape, neighborhood, aerial geography, world and finally Earth seen from space. Infer unseen outer geography only where necessary; never replace the source subject."
+    planetaryEnding
+      ? "The story guide explicitly requests a planetary expansion. Start in the source environment and widen through its surroundings toward the requested Earth or space view, preserving scene continuity."
+      : "Stay in the source environment and its immediate surroundings. If the scene supports it, step outside a building and make a short orbit around the structure or main set piece. Let the scene determine how far the camera can go. Do not invent a world map, planetary zoom-out or Earth-from-space ending."
   ];
   const plan = shots.map((description, index) => ({
     label: `SHOT ${index + 1}`,
@@ -2227,16 +2308,23 @@ export function compileSeedance(configuration, { ignoreSaved = false } = {}) {
     preamble.push(`Storyline: ${configuration.storyline.trim()}`);
   }
   if (secondarySubjects.length || secondaryContexts.length) {
-    const subjects = secondarySubjects.length
-      ? `Bring the ${legacyAutomaticRoles ? "secondary subject" : "secondary subjects"} (${secondarySubjects.join("; ")}) into a logical relationship with the main subject (${subject}).`
-      : `Extend the main subject (${subject}) into the secondary context.`;
-    const contexts = secondaryContexts.length
-      ? `Blend the ${legacyAutomaticRoles ? "secondary context" : "secondary settings"} (${secondaryContexts.join("; ")}) with the ${legacyAutomaticRoles ? "main context" : "main setting"} (${context}) as a motivated shared scene, not a collage.`
-      : `Keep the shared scene grounded in ${context}.`;
-    preamble.push(`Coexistence logic: ${subjects} ${contexts} Use cause-and-effect staging, shared light direction, matching scale, and clear spatial contact so both references feel like one believable setup.`);
+    if (configuration.mode === "stills") {
+      preamble.push("Coexistence logic: Stage the main and supporting subjects together in the chosen setting. Keep physical contact, matching scale, eyelines and light direction; never combine reference panels into a collage.");
+    } else {
+      const subjects = secondarySubjects.length
+        ? `Bring the ${legacyAutomaticRoles ? "secondary subject" : "secondary subjects"} (${secondarySubjects.join("; ")}) into a logical relationship with the main subject (${subject}).`
+        : `Extend the main subject (${subject}) into the secondary context.`;
+      const contexts = secondaryContexts.length
+        ? `Blend the ${legacyAutomaticRoles ? "secondary context" : "secondary settings"} (${secondaryContexts.join("; ")}) with the ${legacyAutomaticRoles ? "main context" : "main setting"} (${context}) as a motivated shared scene, not a collage.`
+        : `Keep the shared scene grounded in ${context}.`;
+      preamble.push(`Coexistence logic: ${subjects} ${contexts} Use cause-and-effect staging, shared light direction, matching scale, and clear spatial contact so both references feel like one believable setup.`);
+    }
   }
 
   const count = configuration.mode === "stills" ? (configuration.stillCount ?? 10) : configuration.shotCount;
+  if (configuration.mode === "stills") {
+    preamble.push(`Director aesthetic: ${template.name}. ${template.stills.info} Use its palette, atmosphere and texture; the numbered CAMERA SETUP controls the framing of each still.`);
+  }
   if (configuration.mode === "multiview") {
     const { canonical, plan } = compileMultiview(configuration, references, values);
     const final = seedanceFinal(configuration, "all", canonical, ignoreSaved);
@@ -2254,10 +2342,11 @@ export function compileSeedance(configuration, { ignoreSaved = false } = {}) {
       readyToSend: final.prompt.length <= configuration.charLimit && !unresolved,
       mediaType: "video", individualOutputs: [], copyAll: "",
       providerInfo: `${count} hard-cut shots - ${configuration.duration}s - ${engine.label}`,
-      engine: { ...engine }, directorSkill: "Instant hard cuts, fixed camera positions, escalating geographic scale."
+      engine: { ...engine }, directorSkill: "Instant hard cuts, fixed camera positions, source-grounded spatial coverage."
     };
   }
   const plan = Array.from({ length: count }, (_unused, index) => {
+    const cameraSetup = configuration.mode === "stills" ? stillCameraSetup(index, secondarySubjects.length > 0) : "";
     const sourceBeat = configuration.mode === "stills" ? index + 1 : (index % 7) + 1;
     const startTicks = Math.round(index * configuration.duration * 100 / count);
     const endTicks = Math.round((index + 1) * configuration.duration * 100 / count);
@@ -2269,9 +2358,11 @@ export function compileSeedance(configuration, { ignoreSaved = false } = {}) {
       cycle: configuration.mode === "stills" ? 1 : Math.floor(index / 7) + 1,
       ...(configuration.mode === "moving" ? { startTicks, endTicks } : {}),
       label,
+      ...(configuration.mode === "stills" ? {
+        cameraDirective: `CAMERA SETUP ${index + 1}/${count}: ${cameraSetup}.`
+      } : {}),
       description: fill(configuration.mode === "stills"
-        ? index < 10 ? template.stills.shots[index]
-          : `Use ${references.length ? `@image${references[0].slot}` : "the established scene"} as the exact visual reference. Create ${EXTRA_STILL_FRAMINGS[index - 10]} of [SUBJECT] in [CONTEXT]. Preserve [STYLE], identity, geometry and lighting; this is a still photograph, not motion.`
+        ? `Still photograph. ${cameraSetup}. Show [SUBJECT] in [CONTEXT]. Preserve [STYLE], the reference designs, wardrobe, set geography and lighting. Depict a distinct instant or gesture from the storyline where applicable; no collage, turnaround sheet, or duplicated framing.`
         : cleanSeedanceMovingShot(template.moving.shots[sourceBeat - 1]))
     };
   });
@@ -2285,10 +2376,14 @@ export function compileSeedance(configuration, { ignoreSaved = false } = {}) {
   if (final.prompt.length > configuration.charLimit) warnings.push("PROMPT_OVER_LIMIT");
   if (unresolved) warnings.push("DESCRIPTIONS_REQUIRED");
   const individualOutputs = configuration.mode === "stills" ? plan.map((item) => {
-    const opening = /\bShot 1\b/.test(item.description)
-      ? [`Opening framing reference (composition only): ${plan[0].description}`]
-      : [];
-    const individualCanonical = [...preamble, ...opening, item.description].join("\n\n");
+    const individualCanonical = [
+      item.cameraDirective,
+      ...preamble,
+      ...(configuration.subject.trim() || configuration.context.trim() || explicitSecondarySubjects.length
+        ? [`Scene roles: main ${configuration.subject.trim() || subject}; supporting ${explicitSecondarySubjects.join("; ") || (second ? `@image${second.slot}` : "none")}; setting ${configuration.context.trim() || context}.`]
+        : []),
+      "Photograph one distinct instant of the same scene. Preserve the reference designs, wardrobe, set geography and light direction. Reference turnarounds and grids are design sources, not the output layout."
+    ].join("\n\n");
     const individual = seedanceFinal(configuration, `still-${item.sourceBeat}`, individualCanonical, ignoreSaved);
     return {
       id: `still-${item.sourceBeat}`,
@@ -2299,7 +2394,8 @@ export function compileSeedance(configuration, { ignoreSaved = false } = {}) {
       overLimit: individual.prompt.length > configuration.charLimit,
       readyToSend: individual.prompt.length <= configuration.charLimit && !unresolved,
       saved: individual.saved,
-      finalKey: individual.key
+      finalKey: individual.key,
+      cameraDirective: item.cameraDirective
     };
   }) : [];
   const providerInfo = configuration.mode === "stills" ? `${count} static stills`

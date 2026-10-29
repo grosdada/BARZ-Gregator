@@ -32,6 +32,16 @@ async function jsonRequest(instance, pathname, method, body, origin = instance.u
   });
 }
 
+test("serves the blue and orange suite tab icons", async (t) => {
+  const instance = await fixture(t);
+  for (const [name, color] of [["aggregator", "#63b9e3"], ["atlas", "#ff6549"]]) {
+    const response = await fetch(new URL(`/favicon-${name}.svg`, instance.url));
+    assert.equal(response.status, 200);
+    assert.match(response.headers.get("content-type"), /image\/svg\+xml/);
+    assert.match(await response.text(), new RegExp(color));
+  }
+});
+
 test("serves the Build UI with restrictive local headers", async (t) => {
   const instance = await fixture(t);
   const response = await fetch(instance.url);
@@ -40,7 +50,8 @@ test("serves the Build UI with restrictive local headers", async (t) => {
   assert.match(response.headers.get("content-security-policy"), /media-src 'self' data: blob:/);
   assert.equal(response.headers.get("x-frame-options"), "SAMEORIGIN");
   const html = await response.text();
-  assert.match(html, /Prompt Atlas V6/);
+  assert.match(html, /BARZ Prompt Atlas — Placenta Studio/);
+  assert.match(html, /suite-identity/);
   assert.match(html, /<html lang="en" data-theme="dark" data-language="en">/);
   assert.match(html, /data-theme-choice="light"/);
   assert.match(html, /data-theme-choice="dark"/);
@@ -139,8 +150,24 @@ test("serves the Build UI with restrictive local headers", async (t) => {
   assert.match(shellRuntime, /initialParams\.get\("app"\) === "atlas" \? "atlas" : "aggregator"/);
   const bridge = await (await fetch(new URL("/suite-bridge.js", instance.url))).text();
   assert.match(bridge, /barz-suite:switch/);
-  assert.match(bridge, /suite\.html/);
+  assert.match(bridge, /window\.location\.assign\(destination\.href\)/);
+  assert.match(bridge, /get\("embedded"\) === "1"/);
   assert.doesNotMatch(bridge, /window\.open/);
+});
+
+test("The Mode Bank is available in Look Library and its corpus loads on demand", async (t) => {
+  const instance = await fixture(t);
+  const workspace = await (await fetch(new URL("/api/v1/registry", instance.url))).json();
+  assert.ok(workspace.registry?.placements?.some(({ toolId, targetId }) => toolId === "mode-bank" && targetId === "image-looks"));
+  const configuration = await fetch(new URL("/api/v1/tools/mode-bank/configuration?setupId=default", instance.url));
+  assert.equal(configuration.status, 200);
+  assert.equal((await configuration.json()).configuration.subjectMode, "original");
+  const moduleResponse = await fetch(new URL("/mode-bank.js", instance.url));
+  assert.equal(moduleResponse.status, 200);
+  assert.match(await moduleResponse.text(), /Use wardrobe prompt/);
+  const corpusResponse = await fetch(new URL("/mode-bank-prompts.json", instance.url));
+  assert.equal(corpusResponse.status, 200);
+  assert.equal((await corpusResponse.json()).prompts.length, 1221);
 });
 
 test("persists a shared theme and language contract for Aggregator synchronization", async (t) => {
@@ -1469,7 +1496,7 @@ test("global defaults reset restores tool controls while preserving personal pre
   });
   payload = await response.json();
   assert.deepEqual(payload.resetToolIds, [
-    "apg", "barz-enhancer", "angle-3d", "relighting-3d", "imperfection", "banana-helper", "barz-beauty", "realism-forge",
+    "apg", "barz-enhancer", "angle-3d", "relighting-3d", "imperfection", "banana-helper", "mode-bank", "barz-beauty", "realism-forge",
     "cinematic-shoot", "facs-sheet-generator", "barzy-board", "veo-suite", "cccp",
     "barzy-sheet", "barz-designer", "knolling", "multishot", "seedance", "cinema-helper",
     "image-slicer", "paint-studio", "image-grabber", "image-analyzer", "video-director", "motion-emulator", "video-editor", "blocking-studio", "object-scale-chart", "youtube-extractor", "workflow-3d", "acting-gen"

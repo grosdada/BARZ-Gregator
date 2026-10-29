@@ -22,6 +22,10 @@ __pycache__/
 /suite-v6/installer/payload-stale-*/
 /suite-v6/installer/BARZ-Suite-6-Setup-*.exe
 /suite-v6/installer/BARZ-Suite-6-component-proof.exe
+/suite-v6/installer/diaporama/
+/suite-v6/installer/diaporama-contact.jpg
+/suite-v6/installer/diaporama-preview.png
+/suite-v6/installer/assets/slideshow/
 
 # Independent projects with their own Git repositories.
 /suite-v6/vendor/library-editor-source/

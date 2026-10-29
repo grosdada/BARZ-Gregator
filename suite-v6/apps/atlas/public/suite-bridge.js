@@ -5,7 +5,7 @@ const APP_ORIGINS = Object.freeze({
 });
 
 export function isInsideSuiteShell() {
-  return window.parent !== window;
+  return window.parent !== window && new URLSearchParams(window.location.search).get("embedded") === "1";
 }
 
 export function openSuiteApp(app, url = APP_ORIGINS[app]) {
@@ -16,10 +16,7 @@ export function openSuiteApp(app, url = APP_ORIGINS[app]) {
     window.parent.postMessage({ type: "barz-suite:switch", app, url: destination.href }, SUITE_SHELL_ORIGIN);
     return;
   }
-  const shell = new URL("/suite.html", SUITE_SHELL_ORIGIN);
-  shell.searchParams.set("app", app);
-  shell.searchParams.set("url", destination.href);
-  window.location.assign(shell.href);
+  window.location.assign(destination.href);
 }
 
 if (window.top === window) window.name = "prompt-atlas-v6";

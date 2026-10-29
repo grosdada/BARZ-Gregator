@@ -46,13 +46,13 @@ test("refuses no app, unknown components, and a non-empty destination", async (t
 
 test("NSIS sections reference payload directories that exist", async () => {
   const script = await readFile(new URL("../installer/barz-suite.nsi", import.meta.url), "utf8");
-  assert.match(script, /Section "Prompt Atlas V6"/);
+  assert.match(script, /Section "BARZ Prompt Atlas"/);
   assert.match(script, /File \/r "payload\\atlas\\\*\.\*"/);
-  assert.match(script, /Section "Barz-Gregator"/);
+  assert.match(script, /Section "BARZ Aggregator"/);
   assert.match(script, /File \/r "payload\\aggregator\\\*\.\*"/);
   assert.match(script, /File "payload\\launch\.vbs"/);
   assert.equal((script.match(/CreateShortCut "\$DESKTOP/g) ?? []).length, 1);
-  assert.equal((script.match(/CreateShortCut "\$DESKTOP\\BARZ Suite 6\.lnk"/g) ?? []).length, 1);
+  assert.equal((script.match(/CreateShortCut "\$DESKTOP\\Placenta Studio\.lnk"/g) ?? []).length, 1);
   assert.doesNotMatch(script, /CreateShortCut "\$DESKTOP\\Prompt Atlas V6\.lnk"/);
   assert.doesNotMatch(script, /CreateShortCut "\$DESKTOP\\Barz-Gregator\.lnk"/);
   assert.match(script, /Delete "\$DESKTOP\\Prompt Atlas V6\.lnk"/);

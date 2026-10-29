@@ -8,8 +8,17 @@ import {
   deriveModelControls,
   findModelForImportTarget,
   modelFamily,
-  modelModeLabel
+  modelModeLabel,
+  nearestSupportedAspectRatio
 } from "../src/generation-plan.js";
+
+test("Auto follows the first image's ratio within the selected model's supported formats", () => {
+  const ratios = ["16:9", "9:16", "1:1", "4:3"];
+  assert.equal(nearestSupportedAspectRatio(2048, 1536, ratios), "4:3");
+  assert.equal(nearestSupportedAspectRatio(1024, 1792, ratios), "9:16");
+  assert.equal(nearestSupportedAspectRatio(1920, 1080, ratios), "16:9");
+  assert.equal(nearestSupportedAspectRatio(undefined, undefined, ratios), "16:9");
+});
 
 const model = {
   provider: "fal",

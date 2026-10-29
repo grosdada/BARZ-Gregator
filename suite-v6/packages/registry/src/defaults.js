@@ -156,6 +156,13 @@ const defaultRegistry = {
       origin: "builtin"
     },
     {
+      id: "mode-bank",
+      title: "The Mode Bank",
+      kind: "builtin",
+      adapterId: "mode-bank",
+      origin: "builtin"
+    },
+    {
       id: "barz-beauty",
       title: "Beauty Studio",
       kind: "builtin",
@@ -337,6 +344,13 @@ const defaultRegistry = {
       toolId: "banana-helper",
       targetId: "image-looks",
       order: 1,
+      origin: "builtin"
+    },
+    {
+      id: "mode-bank-in-looks",
+      toolId: "mode-bank",
+      targetId: "image-looks",
+      order: 4,
       origin: "builtin"
     },
     {

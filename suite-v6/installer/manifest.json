@@ -1,7 +1,7 @@
 {
   "schemaVersion": "2.0",
   "product": "BARZ Suite 6",
-  "version": "0.33.50",
+  "version": "0.33.57",
   "components": {
     "core": {
       "required": true,

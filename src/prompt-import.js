@@ -140,6 +140,7 @@ export function normalizePromptAtlasImport(payload) {
         ? { limitGenerations: payload.settings.limitGenerations }
         : {}),
       thinkingLevel: text(payload.settings?.thinkingLevel, 24),
+      reasoningLevel: text(payload.settings?.reasoningLevel, 24),
       systemPrompt: text(payload.settings?.systemPrompt, 4_000),
       bitrateMode: text(payload.settings?.bitrateMode, 24),
       ...(typeof payload.settings?.promptExpansionMode === "boolean"

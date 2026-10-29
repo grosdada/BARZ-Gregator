@@ -850,7 +850,7 @@ function a11Reference(reference) {
   };
 }
 
-test("A11 reproduces every reviewed Video Multi Framing oracle", async () => {
+test("A11 keeps reviewed moving sequences exact and gives stills independent camera coverage", async () => {
   const { buildA11Oracle } = await import("../migration/reviews/a11-output-oracle.mjs");
   const oracle = buildA11Oracle(a11Supplement.catalog.templates, a11Supplement.catalog.directorNotes);
   assert.equal(SEEDANCE_CATALOG.templates.length, 25);
@@ -862,6 +862,13 @@ test("A11 reproduces every reviewed Video Multi Framing oracle", async () => {
       references: (testCase.state.references ?? []).map(a11Reference)
     };
     const result = compileSeedance(configuration, { ignoreSaved: true });
+    if (configuration.mode === "stills") {
+      assert.equal(result.individualOutputs.length, configuration.stillCount ?? 10, testCase.caseId);
+      assert.equal(new Set(result.individualOutputs.map((item) => item.cameraDirective)).size,
+        result.individualOutputs.length, testCase.caseId);
+      assert.ok(result.individualOutputs.every((item) => item.prompt.startsWith(item.cameraDirective)), testCase.caseId);
+      continue;
+    }
     assert.equal(result.outputs[0].prompt, testCase.output, testCase.caseId);
     assert.equal(result.characterCount, testCase.characterCount, testCase.caseId);
     assert.deepEqual(result.warnings, testCase.warnings, testCase.caseId);
@@ -873,6 +880,33 @@ test("A11 reproduces every reviewed Video Multi Framing oracle", async () => {
       );
     }
   }
+});
+
+test("Multi still coverage varies the camera for an alien and astronaut in one command center", () => {
+  const configuration = defaultToolConfiguration("seedance");
+  configuration.templateId = "aster";
+  configuration.stillCount = 5;
+  configuration.storyline = "The alien and astronaut dance together in a command center with strange expressions.";
+  configuration.references = [
+    a11Reference({ slot: 1,
+      subject: "Pale multi-eyed alien organism with a triangular dome head, tapering winglike arms, long humanoid legs, and splayed clawed feet.",
+      context: "A clinical creature-design presentation on a neutral gray studio background, with four consistent turnaround views above and four anatomical close-ups below, separated by thin black panel borders and labeled detail bars." }),
+    a11Reference({ slot: 2,
+      subject: "Four-view photographic study of a retro-futurist astronaut in a weathered gray pressure suit with a clear spherical helmet and olive life-support pack.",
+      context: "A neutral studio turnaround presenting the astronaut from front, both side profiles, and back. The figure remains centered, upright, and identically scaled in each panel, revealing chest controls, hoses, pouches, gloves, boots, helmet construction, and backpack attachment points." }),
+    a11Reference({ slot: 3,
+      subject: "Nine-view study of a circular retro-futurist command center built around a glowing teal spherical machine.",
+      context: "A coherent interior set presented across a three-by-three grid: central control rotunda, framed entrance, illuminated modular corridor, server room, staircase detail, operator console, and overhead cutaway. The facility is orderly, unoccupied, and designed for technical monitoring." })
+  ];
+  const compiled = compileSeedance(configuration, { ignoreSaved: true });
+  assert.deepEqual(compiled.individualOutputs.map((item) => item.cameraDirective.split(": ")[1].split(";")[0].replace(/\.$/, "")), [
+    "frontal wide master", "medium two-shot from camera-left at 45 degrees",
+    "close-up of the main subject from slightly below eye level", "wide profile from camera-right",
+    "over-the-shoulder view from the secondary subject toward the main subject and the central set piece"
+  ]);
+  assert.ok(compiled.individualOutputs.every((item) => item.prompt.includes("The alien and astronaut dance")));
+  assert.ok(compiled.individualOutputs.every((item) => item.prompt.includes("@image3")));
+  assert.ok(compiled.individualOutputs.every((item) => item.prompt.length <= configuration.charLimit));
 });
 
 test("A11 keeps saved finals literal, rejects invalid media, and never truncates an over-limit prompt", () => {
@@ -971,7 +1005,27 @@ test("Multiview creates an exact hard-cut plan up to 60 shots", () => {
     assert.equal((compiled.outputs[0].prompt.match(/^HARD CUT\.$/gm) || []).length, count - 1);
     assert.equal(compiled.plan.at(-1).endTicks, duration * 100);
     assert.equal(compiled.outputs[0].mediaType, "video");
+    assert.doesNotMatch(compiled.outputs[0].prompt, /Planet Earth floating|Earth-limb view|Full world view/);
+    assert.match(compiled.plan.at(-1).description, /recognizable|source environment/i);
   }
+});
+
+test("Multiview only expands to Earth when the story guide explicitly requests it", () => {
+  const configuration = defaultToolConfiguration("seedance");
+  configuration.mode = "multiview";
+  configuration.provider = "seedance";
+  configuration.shotCount = 30;
+  configuration.duration = 15;
+  configuration.charLimit = 20_000;
+  configuration.subject = "a person";
+  configuration.context = "a room in an office building";
+  configuration.storyline = "The camera circles the building and returns to the room.";
+  const grounded = compileSeedance(configuration, { ignoreSaved: true });
+  assert.match(grounded.outputs[0].prompt, /short orbit around the building/i);
+  assert.doesNotMatch(grounded.outputs[0].prompt, /Planet Earth floating/i);
+  configuration.storyline = "After the building reveal, zoom out to planet Earth from space.";
+  const planetary = compileSeedance(configuration, { ignoreSaved: true });
+  assert.match(planetary.plan.at(-1).description, /Planet Earth floating/i);
 });
 
 test("Video Multi Framing accepts a reference up to 10 million encoded characters", () => {

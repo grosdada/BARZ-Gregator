@@ -1,6 +1,6 @@
 // Shared by the browser and server so the button and confirmation quote agree.
 const canonicalMappings = [
-  { source: "prompt", candidates: ["prompt", "tags", "additional_prompt"] },
+  { source: "prompt", candidates: ["prompt", "instruction", "tags", "additional_prompt"] },
   { source: "negativePrompt", candidates: ["negative_prompt"] },
   { source: "aspectRatio", candidates: ["aspect_ratio"] },
   { source: "durationSeconds", candidates: [
@@ -20,6 +20,7 @@ const canonicalMappings = [
   { source: "loras", candidates: ["loras"] },
   { source: "numImages", candidates: ["num_images"] },
   { source: "generateAudio", candidates: ["generate_audio"] },
+  { source: "reasoningLevel", candidates: ["reasoning_level"] },
   { source: "renderingSpeed", candidates: ["rendering_speed"] },
   { source: "outputFormat", candidates: ["output_format"] },
   { source: "quality", candidates: ["quality"] },
@@ -51,6 +52,20 @@ const imageSizePresets = {
   "16:9": { name: "landscape_16_9", label: "1024 × 576", width: 1024, height: 576 },
   "9:16": { name: "portrait_16_9", label: "576 × 1024", width: 576, height: 1024 }
 };
+
+export function nearestSupportedAspectRatio(width, height, ratios) {
+  const candidates = (ratios || []).filter((value) => /^\d+:\d+$/.test(value));
+  if (!candidates.length) return "16:9";
+  if (!(width > 0 && height > 0)) return candidates[0];
+  const source = width / height;
+  return candidates.reduce((best, candidate) => {
+    const distance = (value) => {
+      const [x, y] = value.split(":").map(Number);
+      return Math.abs(Math.log(source / (x / y)));
+    };
+    return distance(candidate) < distance(best) ? candidate : best;
+  });
+}
 
 const additionalImageSizePresets = {
   square: { name: "square", aspectRatio: "1:1", label: "512 × 512", width: 512, height: 512 }
@@ -106,6 +121,7 @@ function canonicalValues(draft) {
     loras: draft.settings?.loras,
     numImages: draft.settings?.numImages,
     generateAudio: draft.settings?.generateAudio,
+    reasoningLevel: draft.settings?.reasoningLevel,
     renderingSpeed: draft.settings?.renderingSpeed,
     outputFormat: draft.settings?.outputFormat,
     quality: draft.settings?.quality,
@@ -209,6 +225,19 @@ function buildProviderInput(draft, contract, model) {
     if (imageReferences[1] && "end_image_url" in contract.properties) {
       input.end_image_url = imageReferences[1].url;
     }
+  }
+  if (model.endpointId === "blackforestlabs/flux-3-max/keyframes-to-video" && imageReferences.length) {
+    const duration = Number(input.duration ?? draft.settings?.durationSeconds ?? contract.properties.duration?.default ?? 5);
+    const lastFrame = Math.max(1, Math.round(duration * 24));
+    input.keyframes = imageReferences.map((reference, index) => ({
+      frame_index: imageReferences.length === 1 ? 0 : Math.round(index * lastFrame / (imageReferences.length - 1)),
+      image_url: reference.url
+    }));
+    mapped.references = "keyframes";
+  }
+  if (model.endpointId === "bria/fibo-2/edit") {
+    if (imageReferences.length === 1) delete input.aspect_ratio;
+    if (input.instruction) input.instruction = input.instruction.replace(/@image(\d+)\b/gi, "<image_$1>");
   }
   const mapMediaReferences = (references, multipleCandidates, singleCandidates, mappedName) => {
     const multipleField = multipleCandidates.find((name) => name in contract.properties);
@@ -318,12 +347,14 @@ export function deriveModelControls(inputSchema, endpointId = "") {
   if (
     endpointId === "fal-ai/flux-2/turbo" ||
     endpointId.startsWith("fal-ai/flux-2-pro") ||
+    endpointId.startsWith("blackforestlabs/flux-3/klein/") ||
     endpointId.startsWith("alibaba/qwen-image-3/") ||
     endpointId.startsWith("fal-ai/z-image/turbo") ||
     endpointId.startsWith("ideogram/v4/")
   ) {
     const baseSizes = imageSizes.filter((item) => item.width && item.value !== "square");
-    const multipliers = endpointId === "ideogram/v4/image-to-image" ? [2, 4] : [2];
+    const multipliers = endpointId === "ideogram/v4/image-to-image" ||
+      endpointId.startsWith("blackforestlabs/flux-3/klein/") ? [2, 4] : [2];
     imageSizes.push(...baseSizes.flatMap((size) => multipliers.map((factor) => ({
       ...size, value: `custom_${size.width * factor}x${size.height * factor}`,
       label: `${size.width * factor} × ${size.height * factor}`,
@@ -387,7 +418,8 @@ export function deriveModelControls(inputSchema, endpointId = "") {
     if (group.singleField) return total + (group.kind === "image" && contract.properties.end_image_url ? 2 : 1);
     return total;
   }, 0), 12);
-  const referenceLimit = endpointId === "fal-ai/flux-2-pro/edit" ? 9
+  const referenceLimit = endpointId === "blackforestlabs/flux-3-max/keyframes-to-video" ? 10
+    : endpointId === "fal-ai/flux-2-pro/edit" ? 9
     : /^bytedance\/seedream\/v5\/(?:lite|pro)\/edit$/.test(endpointId) ? 10
       : endpointId === "alibaba/qwen-image-3/edit" ? 3
         : endpointId === "xai/grok-imagine-image/v2.0/edit" ? 5
@@ -396,7 +428,7 @@ export function deriveModelControls(inputSchema, endpointId = "") {
   const hasRequiredReference = referenceGroups.some((group) => (
     contract.required.includes(group.multiField) || contract.required.includes(group.singleField)
   ));
-  const minReferences = hasRequiredReference ||
+  const minReferences = endpointId === "blackforestlabs/flux-3-max/keyframes-to-video" || hasRequiredReference ||
     endpointId.endsWith("/edit") || endpointId.endsWith("/image-to-video") ||
     endpointId.endsWith("/reference-to-video") ? 1 : 0;
   return {
@@ -417,8 +449,8 @@ export function deriveModelControls(inputSchema, endpointId = "") {
     negativePrompt: Boolean(contract.properties.negative_prompt),
     maxReferences: referenceLimit,
     minReferences,
-    referenceKinds,
-    referenceRole: referenceGroups.some((group) => group.multiField)
+    referenceKinds: endpointId === "blackforestlabs/flux-3-max/keyframes-to-video" ? ["image"] : referenceKinds,
+    referenceRole: endpointId === "blackforestlabs/flux-3-max/keyframes-to-video" ? "references" : referenceGroups.some((group) => group.multiField)
       ? "references"
       : maxReferences === 2
         ? "first-last"
@@ -442,6 +474,11 @@ const packLabels = {
   "fal-ai/flux-2/turbo": "FLUX.2 Turbo · Texte → image",
   "fal-ai/flux-2-pro": "FLUX.2 Pro · Texte → image",
   "fal-ai/flux-2-pro/edit": "FLUX.2 Pro · Image → image",
+  "fal-ai/moss-image": "MOSS Image · Texte → image",
+  "blackforestlabs/flux-3/klein/text-to-image": "FLUX.3 Klein · Texte → image",
+  "blackforestlabs/flux-3/klein/edit-image": "FLUX.3 Klein · Image → image",
+  "bria/fibo-2/generate": "Fibo 2.0 · Texte → image",
+  "bria/fibo-2/edit": "Fibo 2.0 · Image → image",
   "bytedance/seedream/v5/lite/text-to-image": "Seedream 5 Lite · Texte → image",
   "bytedance/seedream/v5/lite/edit": "Seedream 5 Lite · Image → image",
   "bytedance/seedream/v5/pro/text-to-image": "Seedream 5 Pro · Texte → image",
@@ -473,6 +510,9 @@ const packLabels = {
   "blackforestlabs/flux-3/text-to-video/draft": "FLUX 3 Draft · Texte → vidéo",
   "blackforestlabs/flux-3/image-to-video": "FLUX 3 · Image → vidéo",
   "blackforestlabs/flux-3/image-to-video/draft": "FLUX 3 Draft · Image → vidéo",
+  "blackforestlabs/flux-3-max/text-to-video": "FLUX 3 Max · Texte → vidéo",
+  "blackforestlabs/flux-3-max/image-to-video": "FLUX 3 Max · Image → vidéo",
+  "blackforestlabs/flux-3-max/keyframes-to-video": "FLUX 3 Max · Images repères → vidéo",
   "minimax/h3/text-to-video": "MiniMax H3 · Texte → vidéo",
   "minimax/h3/image-to-video": "MiniMax H3 · Première / dernière image",
   "minimax/h3/reference-to-video": "MiniMax H3 · Multi-références",
@@ -493,6 +533,9 @@ const packLabels = {
 export function modelLabel(model) { return packLabels[model?.endpointId] || model?.displayName || "Modèle"; }
 
 const groupedModelFamilies = [
+  { prefix: "blackforestlabs/flux-3/klein/", id: "blackforestlabs/flux-3/klein", label: "FLUX.3 Klein" },
+  { prefix: "blackforestlabs/flux-3-max/", id: "blackforestlabs/flux-3-max", label: "FLUX 3 Max" },
+  { prefix: "bria/fibo-2/", id: "bria/fibo-2", label: "Fibo 2.0" },
   { prefix: "openai/gpt-image-2.5/", id: "openai/gpt-image-2.5", label: "GPT Image 2.5" },
   { prefix: "openai/gpt-image-2", id: "openai/gpt-image-2", label: "GPT Image 2.0" },
   { prefix: "xai/grok-imagine-image/v2.0/", id: "xai/grok-imagine-image/v2.0", label: "Grok Imagine 2.0" },
@@ -730,6 +773,23 @@ function effectivePricing(model, draft, input) {
   const imageCountPricing = (unitPrice) => ({
     ...model.pricing, unit: "images", unitPrice, selectedResolution: resolution
   });
+  if (model.endpointId.startsWith("blackforestlabs/flux-3/klein/")) {
+    const { width, height } = outputImageDimensions(draft, input);
+    const edge = model.endpointId.endsWith("/edit-image") && input.image_size === undefined
+      ? (draft.references || []).length === 1 ? 2048 : 1024
+      : Math.max(width, height);
+    const tiers = [
+      [768, 0.008], [1024, 0.009], [1536, 0.011], [2048, 0.014], [4096, 0.036]
+    ];
+    const closest = tiers.reduce((best, tier) => Math.abs(tier[0] - edge) < Math.abs(best[0] - edge) ? tier : best);
+    return imageCountPricing(closest[1]);
+  }
+  if (model.endpointId.startsWith("blackforestlabs/flux-3-max/")) {
+    const promo = Date.now() < Date.parse("2026-11-08T00:00:00Z");
+    const rates = promo ? { "720p": 0.0425, "1080p": 0.0725 } : { "720p": 0.17, "1080p": 0.29 };
+    return { ...model.pricing, unit: "seconds", unitPrice: rates[resolution] ?? null,
+      selectedResolution: resolution };
+  }
   if (model.endpointId.startsWith("fal-ai/flux-2-pro")) {
     const { width, height } = outputImageDimensions(draft, input);
     const outputMegapixels = Math.max(1, Math.ceil(width * height / 1_048_576));
@@ -931,6 +991,13 @@ export function createGenerationPreview(draft, model) {
   }
   if (model.endpointId.startsWith("openai/gpt-image-2")) {
     warnings.push("Estimation selon les tailles canoniques fal ; un prompt long ou plusieurs références peuvent augmenter le coût.");
+  }
+  if (model.endpointId.startsWith("blackforestlabs/flux-3/klein/")) {
+    warnings.push("Tarif FLUX.3 Klein indicatif selon les tailles publiées par fal ; confirme le prix avant génération.");
+  }
+  if (model.endpointId.startsWith("blackforestlabs/flux-3-max/") &&
+      Date.now() < Date.parse("2026-11-08T00:00:00Z")) {
+    warnings.push("Tarif promotionnel FLUX 3 Max annoncé par fal jusqu’au 7 novembre 2026.");
   }
   if (draft.references?.length && !mapped.references) {
     warnings.push(

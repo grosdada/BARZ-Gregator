@@ -4,7 +4,8 @@ import {
   inputContract,
   modelFamily,
   modelLabel,
-  modelModeLabel
+  modelModeLabel,
+  nearestSupportedAspectRatio
 } from "./generation-plan.js";
 import { isDisplayMedia } from "./media-result.js";
 import { generationTimeLabel, jobForMonitor, progressForJob } from "./job-progress.js";
@@ -39,6 +40,38 @@ const modelOptionValues = new Map(modelSettingsByEndpoint);
 const selectedModelsByMedia = new Map(Object.entries(initialGenerationPreferences.selected || {}));
 let renderedModelEndpoint = null;
 let loadedUrlDraftId = null;
+let lastImageReferenceSignature = "";
+let imageRatioAutoActive = false;
+const imageDimensionsByUrl = new Map();
+const resolvedImageDimensions = new Map();
+
+function measureImageReference(url) {
+  if (!url) return Promise.resolve(null);
+  if (imageDimensionsByUrl.has(url)) return imageDimensionsByUrl.get(url);
+  const pending = new Promise((resolve) => {
+    const image = new Image();
+    const timer = setTimeout(() => resolve(null), 5000);
+    image.onload = () => {
+      clearTimeout(timer);
+      const dimensions = image.naturalWidth && image.naturalHeight
+        ? { width: image.naturalWidth, height: image.naturalHeight } : null;
+      if (dimensions) resolvedImageDimensions.set(url, dimensions);
+      resolve(dimensions);
+    };
+    image.onerror = () => { clearTimeout(timer); resolve(null); };
+    image.src = url;
+  });
+  imageDimensionsByUrl.set(url, pending);
+  return pending;
+}
+
+function nearestSourceAspectRatio(model) {
+  const reference = currentReferences().find((item) => item.kind === "image" && !item.missing);
+  const dimensions = reference && resolvedImageDimensions.get(reference.url);
+  const allowed = model?.controls?.aspectRatios?.length
+    ? model.controls.aspectRatios : ["16:9", "9:16", "1:1", "4:3", "3:2"];
+  return nearestSupportedAspectRatio(dimensions?.width, dimensions?.height, allowed);
+}
 
 // Persist explicit interactions, not background refreshes. No reference media or prompts.
 function rememberGenerationSettings() {
@@ -59,6 +92,7 @@ function rememberGenerationSettings() {
 }
 
 function applyGenerationSettings(settings = {}) {
+  if (settings.aspectRatio) imageRatioAutoActive = settings.aspectRatio === "auto";
   selectOptionIfPresent(elements.aspectRatioInput, settings.aspectRatio);
   renderModelControls();
   selectOptionIfPresent(elements.resolutionInput, settings.resolution || settings.imageSize);
@@ -107,7 +141,18 @@ const elements = {
   draftList: document.querySelector("#draftList"),
   draftCount: document.querySelector("#draftCount"),
   imageImportQueueCount: document.querySelector("#imageImportQueueCount"),
+  imageImportQueue: document.querySelector("#imageImportQueue"),
   imageImportQueueList: document.querySelector("#imageImportQueueList"),
+  addToImageQueueButton: document.querySelector("#addToImageQueueButton"),
+  imageBatchBanner: document.querySelector("#imageBatchBanner"),
+  imageBatchItems: document.querySelector("#imageBatchItems"),
+  imageBatchItemsList: document.querySelector("#imageBatchItemsList"),
+  imageBatchTitle: document.querySelector("#imageBatchTitle"),
+  imageBatchProgress: document.querySelector("#imageBatchProgress"),
+  imageBatchDescription: document.querySelector("#imageBatchDescription"),
+  imageBatchUnitCost: document.querySelector("#imageBatchUnitCost"),
+  imageBatchTotalCost: document.querySelector("#imageBatchTotalCost"),
+  imageBatchLaunchButton: document.querySelector("#imageBatchLaunchButton"),
   jobCount: document.querySelector("#jobCount"),
   jobList: document.querySelector("#jobList"),
   activityFilters: document.querySelector("#activityFilters"),
@@ -340,6 +385,8 @@ const elements = {
   moveSelectionButton: document.querySelector("#moveSelectionButton"),
   sendSelectionToReferencesButton: document.querySelector("#sendSelectionToReferencesButton"),
   deleteSelectedResourcesButton: document.querySelector("#deleteSelectedResourcesButton"),
+  trashSelectionButton: document.querySelector("#trashSelectionButton"),
+  restoreSelectionButton: document.querySelector("#restoreSelectionButton"),
   renameAssetsInput: document.querySelector("#renameAssetsInput"),
   renameAssetsButton: document.querySelector("#renameAssetsButton"),
   collectionDialog: document.querySelector("#collectionDialog"),
@@ -394,6 +441,7 @@ const state = {
   loraFavorites: new Set(storedJson(loraFavoritesStorageKey, [])),
   loraMixPresets: storedJson(loraPresetsStorageKey, []),
   selectedAssets: new Set(),
+  trashedAssetKeys: new Set(),
   selectionFormatTouched: false,
   assetFilter: "all",
   assetCategory: "generated",
@@ -425,11 +473,14 @@ const state = {
   monitoredJobId: null,
   generationBlockers: [],
   activeDetailJobId: null,
+  previewQueueContext: null,
   refreshingJobs: new Set(),
   activeDraftId: null
 };
 
 let directorSession = null;
+let imageBatchPrepared = null;
+let imageBatchSending = false;
 let directorCombinedStream = null;
 let directorRecorder = null;
 let directorRecordedChunks = [];
@@ -564,19 +615,23 @@ function modelSupportsMotionTransfer(model) {
   return hasImage && hasVideo;
 }
 
-function renderModelControls() {
+function renderModelControls(preferredAspectRatio = null) {
   if (renderedModelEndpoint) modelOptionValues.set(renderedModelEndpoint, readModelOptions());
   const model = state.catalog.find((item) => item.endpointId === elements.modelInput.value);
   const remembered = renderedModelEndpoint !== model?.endpointId
     ? modelSettingsByEndpoint.get(model?.endpointId) : null;
   if (remembered) modelOptionValues.set(model.endpointId, remembered);
   const controls = model?.controls || {};
-  const previousAspectRatio = remembered?.aspectRatio || elements.aspectRatioInput.value;
-  const aspectRatios = controls.aspectRatios?.length
+  const hasImageReference = state.mediaType === "image" && currentReferences().some((item) => item.kind === "image");
+  const previousAspectRatio = preferredAspectRatio || (imageRatioAutoActive && hasImageReference ? "auto" :
+    remembered?.aspectRatio || elements.aspectRatioInput.value);
+  const supportedRatios = controls.aspectRatios?.length
     ? controls.aspectRatios
     : ["16:9", "9:16", "1:1", "4:3", "3:2"];
+  const aspectRatios = hasImageReference ? ["auto", ...supportedRatios] : supportedRatios;
   elements.aspectRatioInput.innerHTML = aspectRatios.map((value) => (
-    `<option value="${escapeHtml(value)}">${escapeHtml(value)}</option>`
+    `<option value="${escapeHtml(value)}">${escapeHtml(value === "auto"
+      ? `Auto · ${nearestSourceAspectRatio(model)}` : value)}</option>`
   )).join("");
   elements.aspectRatioInput.value = aspectRatios.includes(previousAspectRatio)
     ? previousAspectRatio
@@ -648,7 +703,7 @@ function renderModelControls() {
 const optionLabels = {
   horizontalAngle: "Azimuth (0–360°)", verticalAngle: "Elevation (−30–90°)",
   cameraZoom: "Camera zoom (0 wide · 10 close)", angleStrength: "Angle LoRA strength",
-  numImages: "Images", generateAudio: "Audio", renderingSpeed: "Qualité", outputFormat: "Fichier",
+  numImages: "Images", generateAudio: "Audio", reasoningLevel: "Raisonnement", renderingSpeed: "Qualité", outputFormat: "Fichier",
   quality: "Qualité", background: "Fond", outputCompression: "Compression",
   limitGenerations: "Limiter les générations", thinkingLevel: "Raisonnement",
   systemPrompt: "Instruction système",
@@ -1061,6 +1116,87 @@ function updateGenerateButton() {
   elements.generateButton.title = blockerSummary;
   elements.generateHelpButton.classList.toggle("hidden", state.generationBlockers.length === 0);
   elements.generateHelpButton.dataset.tooltip = blockerSummary;
+  renderImageBatchBanner();
+}
+
+function activeImageBatch() {
+  if (state.mediaType !== "image") return null;
+  const active = state.drafts.find((draft) => draft.id === state.activeDraftId && draft.queueBatchId);
+  if (!active) return null;
+  const drafts = state.drafts.filter((draft) => draft.mediaType === "image" && draft.queueBatchId === active.queueBatchId)
+    .sort((left, right) => left.queuePosition - right.queuePosition);
+  return { active, drafts, pending: drafts.filter((draft) => draft.queueStatus === "pending") };
+}
+
+function imageBatchRequest(draft, model, settings) {
+  const source = (draft.references || []).find((reference) => reference.kind === "image" && !reference.missing);
+  const dimensions = source && resolvedImageDimensions.get(source.url);
+  const ratios = model?.controls?.aspectRatios?.length
+    ? model.controls.aspectRatios : ["16:9", "9:16", "1:1", "4:3", "3:2"];
+  return {
+    mediaType: "image",
+    prompt: draft.prompt,
+    negativePrompt: draft.negativePrompt || "",
+    endpointId: model.endpointId,
+    queueDraftId: draft.id,
+    target: { provider: model.provider, endpointId: model.endpointId },
+    settings: elements.aspectRatioInput.value === "auto" && source
+      ? { ...settings, aspectRatio: nearestSupportedAspectRatio(dimensions?.width, dimensions?.height, ratios) }
+      : settings,
+    references: structuredClone(draft.references || [])
+  };
+}
+
+function imageBatchEstimate(batch, model) {
+  if (!model?.pricing) return null;
+  const settings = formSettings();
+  const items = batch.pending.map((draft) => {
+    const generationRequest = imageBatchRequest(draft, model, settings);
+    const preview = createGenerationPreview(generationRequest, model);
+    return { draft, generationRequest, preview };
+  });
+  if (items.some(({ preview, generationRequest }) => !preview.canSubmit || generationRequest.references.some((ref) => ref.missing))) return null;
+  return { items, total: Number(items.reduce((sum, item) => sum + item.preview.estimatedCost, 0).toFixed(6)) };
+}
+
+function renderImageBatchBanner() {
+  const batch = activeImageBatch();
+  elements.imageBatchBanner.classList.toggle("hidden", !batch);
+  elements.generateButton.querySelector("span").textContent = batch ? "Générer cette image" : "Générer";
+  if (!batch) return;
+  const model = state.catalog.find((item) => item.endpointId === elements.modelInput.value);
+  let estimate = null;
+  try { estimate = imageBatchEstimate(batch, model); } catch { /* Invalid settings are shown on the normal generate control. */ }
+  const displayed = estimate?.items.find((item) => item.draft.id === batch.active.id) || estimate?.items[0];
+  elements.imageBatchTitle.textContent = `Série d’images · ${batch.active.queueTotal} images`;
+  elements.imageBatchProgress.textContent = `${batch.pending.length} en attente · image ${batch.active.queuePosition}/${batch.active.queueTotal}`;
+  elements.imageBatchDescription.textContent = batch.pending.length
+    ? `Le modèle et les réglages affichés s’appliquent aux ${batch.pending.length} images restantes. Chaque image conserve son prompt et ses références.`
+    : "Toutes les images de cette série ont été envoyées ou retirées.";
+  elements.imageBatchItems.querySelector("summary").textContent = `Voir les ${batch.drafts.length} prompts de la série`;
+  elements.imageBatchItemsList.innerHTML = batch.drafts.map((draft) => `
+    <div class="image-batch-item ${draft.id === batch.active.id ? "active" : ""}">
+      <button class="image-batch-item-open" type="button" data-batch-draft-id="${escapeHtml(draft.id)}"
+        aria-label="Ouvrir l’image ${escapeHtml(String(draft.queuePosition))}">
+        <strong>Image ${escapeHtml(String(draft.queuePosition))} · ${draft.queueStatus === "pending" ? "en attente" : "envoyée"}</strong>
+        <span>${escapeHtml(draft.prompt)}</span>
+      </button>
+      ${draft.queueStatus === "pending" ? `<button class="image-batch-item-remove" type="button"
+        data-remove-queue-draft-id="${escapeHtml(draft.id)}"
+        aria-label="Retirer l’image ${escapeHtml(String(draft.queuePosition))} de la série"
+        title="Retirer cette image">×</button>` : ""}
+    </div>`).join("");
+  elements.imageBatchUnitCost.textContent = displayed
+    ? `≈ ${formatPreviewCost(displayed.preview)}`
+    : "—";
+  elements.imageBatchTotalCost.textContent = estimate
+    ? `≈ ${formatPreviewCost({ estimatedCost: estimate.total, currency: "USD" })}`
+    : "Estimation indisponible";
+  elements.imageBatchLaunchButton.textContent = imageBatchSending
+    ? "Envoi de la file…"
+    : `Lancer ${batch.pending.length} image${batch.pending.length > 1 ? "s" : ""} · devis total`;
+  elements.imageBatchLaunchButton.disabled = imageBatchSending || !batch.pending.length || !estimate
+    || !state.providers.some((provider) => provider.id === model?.provider && provider.configured);
 }
 
 function renderPromptHighlights() {
@@ -1083,7 +1219,8 @@ function formSettings() {
     ...readModelOptions(),
     ...(model?.provider === "krea" ? { styles: selectedKreaStyles() } : {}),
     ...(model?.loraBaseModel ? { loras: selectedFalLoras() } : {}),
-    aspectRatio: elements.aspectRatioInput.value,
+    aspectRatio: elements.aspectRatioInput.value === "auto"
+      ? nearestSourceAspectRatio(model) : elements.aspectRatioInput.value,
     ...(isImageSize ? { imageSize: resolution } : {}),
     ...(!isImageSize && resolution ? { resolution } : {}),
     ...(["video", "music"].includes(state.mediaType)
@@ -1166,13 +1303,16 @@ function renderImageImportQueue() {
   elements.imageImportQueueCount.textContent = String(pending);
   elements.imageImportQueueCount.title = `${pending} image(s) prêtes à générer`;
   elements.imageImportQueueList.innerHTML = queued.length ? queued.map((draft) => `
-    <button class="image-queue-item ${draft.id === state.activeDraftId ? "active" : ""}" type="button"
+    <div class="image-queue-row"><button class="image-queue-item ${draft.id === state.activeDraftId ? "active" : ""}" type="button"
       data-queue-draft-id="${escapeHtml(draft.id)}">
       <span class="image-queue-index">${escapeHtml(String(draft.queuePosition))}/${escapeHtml(String(draft.queueTotal))}</span>
       <span class="image-queue-copy"><strong>${escapeHtml(draft.source?.module || "Image fixe")}</strong>
       <small>${draft.queueStatus === "submitted" ? "Génération envoyée" : "Prête à générer · cliquer pour ouvrir"}</small></span>
-    </button>
+    </button>${draft.queueStatus === "pending" ? `<button class="image-queue-remove" type="button"
+      data-remove-queue-draft-id="${escapeHtml(draft.id)}" aria-label="Retirer l’image ${escapeHtml(String(draft.queuePosition))} de la file"
+      title="Retirer cette image de la file">×</button>` : ""}</div>
   `).join("") : '<p class="empty-state compact-empty">Les séries d’images envoyées depuis Prompt Atlas apparaîtront ici.</p>';
+  renderImageBatchBanner();
 }
 
 function formatJobCost(job) {
@@ -1356,11 +1496,12 @@ function restoreJobInComposer(id, origin = "Recreate") {
   }
   const restoredSettings = job.generationDraft?.settings || {
     seed: input.seed, numImages: input.num_images, generateAudio: input.generate_audio,
+    reasoningLevel: input.reasoning_level,
     renderingSpeed: input.rendering_speed, outputFormat: input.output_format,
     strength: input.strength, bitrateMode: input.bitrate_mode
   };
   restoreModelOptions(restoredSettings);
-  elements.promptInput.value = job.generationDraft?.prompt || input.prompt || input.additional_prompt || "";
+  elements.promptInput.value = job.generationDraft?.prompt || input.prompt || input.instruction || input.additional_prompt || "";
   renderPromptHighlights();
   elements.negativePromptInput.value = job.generationDraft?.negativePrompt || input.negative_prompt || "";
   elements.draftOrigin.textContent = `${origin} · ${modelLabel(job)}`;
@@ -1498,7 +1639,10 @@ function uploadedAssets() {
 }
 
 function categoryAssets() {
-  return state.assetCategory === "resources" ? uploadedAssets() : completedAssets();
+  const assets = state.assetCategory === "resources" ? uploadedAssets()
+    : state.assetCategory === "trash" ? [...completedAssets(), ...uploadedAssets()]
+      : completedAssets();
+  return assets.filter((asset) => state.trashedAssetKeys.has(asset.key) === (state.assetCategory === "trash"));
 }
 
 function selectedAssetRecords() {
@@ -1561,6 +1705,22 @@ function referencePreview(reference) {
 
 function renderReferences() {
   const references = currentReferences();
+  const imageReference = state.mediaType === "image"
+    ? references.find((reference) => reference.kind === "image" && !reference.missing) : null;
+  const imageReferenceSignature = imageReference?.id || "";
+  if (imageReferenceSignature !== lastImageReferenceSignature) {
+    lastImageReferenceSignature = imageReferenceSignature;
+    imageRatioAutoActive = Boolean(imageReference);
+    if (imageReference) {
+      measureImageReference(imageReference.url).then((dimensions) => {
+        if (dimensions && currentReferences().some((item) => item.id === imageReference.id) && imageRatioAutoActive) {
+          renderModelControls("auto");
+          updateGenerateButton();
+        }
+      });
+    }
+    renderModelControls(imageReference ? "auto" : null);
+  }
   const limit = referenceLimit();
   elements.referenceCount.textContent = `${references.length} / ${limit}`;
   elements.referenceAddButton.disabled = references.length >= limit;
@@ -2268,7 +2428,7 @@ function renderAssetTile(asset) {
         <strong>${escapeHtml(name)}</strong>
         <span>${escapeHtml(sourceCaption)} · ${escapeHtml(collection?.name || "Sans collection")}
           · ${escapeHtml(formatDetailDate(asset.createdAt))}</span>
-        ${asset.mediaType === "image" ? `
+        ${asset.mediaType === "image" && state.assetCategory !== "trash" ? `
           <button class="asset-reference-button" type="button"
             data-send-reference="${escapeHtml(asset.key)}"
             aria-label="${escapeHtml(referenceActionLabel)}"
@@ -2295,6 +2455,8 @@ function renderAssets() {
   const assets = categoryAssets().filter(assetMatchesFilters);
   elements.assetGallery.innerHTML = assets.length
     ? assets.map(renderAssetTile).join("")
+    : state.assetCategory === "trash"
+      ? '<p class="asset-empty">La corbeille est vide.</p>'
     : state.assetCategory === "resources" && state.resources.length === 0
       ? '<p class="asset-empty">Aucune ressource importée. Utilise « Import ressource » dans la barre de gauche.</p>'
       : '<p class="asset-empty">Aucun média ne correspond à ces filtres.</p>';
@@ -2304,6 +2466,9 @@ function renderAssets() {
 function renderSelectionTray() {
   const selected = selectedAssetRecords();
   elements.selectionTray.classList.toggle("hidden", selected.length === 0);
+  elements.selectionTray.classList.toggle("is-trash", state.assetCategory === "trash");
+  elements.trashSelectionButton.classList.toggle("hidden", state.assetCategory === "trash");
+  elements.restoreSelectionButton.classList.toggle("hidden", state.assetCategory !== "trash");
   elements.selectionCount.textContent = String(selected.length);
   elements.renameAssetsInput.placeholder = selected.length > 1
     ? "ex. monsieur → monsieur_001"
@@ -2323,7 +2488,7 @@ function renderSelectionTray() {
       ? "Sélectionne une seule image"
       : "Sélectionne uniquement des images";
   const resourcesOnly = selected.length > 0 && selected.every((asset) => asset.kind === "resource");
-  elements.deleteSelectedResourcesButton.classList.toggle("hidden", !resourcesOnly);
+  elements.deleteSelectedResourcesButton.classList.toggle("hidden", !resourcesOnly || state.assetCategory === "trash");
   const selectedOption = elements.archiveFormat.selectedOptions[0];
   if (!state.selectionFormatTouched && selected.length) {
     elements.archiveFormat.value = imageOnly ? "jpg" : noImages ? "webm" : "original";
@@ -4085,6 +4250,51 @@ async function moveSelection() {
   }
 }
 
+async function trashSelectedAssets() {
+  const selected = selectedAssetRecords().filter((asset) => !state.trashedAssetKeys.has(asset.key));
+  if (!selected.length) return;
+  const label = selected.length === 1 ? assetRecordName(selected[0]) : `${selected.length} assets`;
+  if (!confirm(`Mettre ${label} à la corbeille ? Tu pourras les restaurer depuis Assets > Corbeille.`)) return;
+  elements.trashSelectionButton.disabled = true;
+  try {
+    const body = await request("/api/assets/trash", {
+      method: "POST",
+      body: JSON.stringify({ selection: selected.map(selectionPayload) })
+    });
+    body.keys.forEach((key) => state.trashedAssetKeys.add(key));
+    state.selectedAssets.clear();
+    renderJobs();
+    renderAssets();
+    elements.resourceImportMessage.textContent = `${selected.length} asset(s) mis à la corbeille.`;
+  } catch (error) {
+    elements.selectionMessage.textContent = error.message;
+  } finally {
+    elements.trashSelectionButton.disabled = false;
+  }
+}
+
+async function restoreSelectedAssets() {
+  const keys = selectedAssetRecords().map((asset) => asset.key)
+    .filter((key) => state.trashedAssetKeys.has(key));
+  if (!keys.length) return;
+  elements.restoreSelectionButton.disabled = true;
+  try {
+    await request("/api/assets/restore", {
+      method: "POST",
+      body: JSON.stringify({ keys })
+    });
+    keys.forEach((key) => state.trashedAssetKeys.delete(key));
+    state.selectedAssets.clear();
+    renderJobs();
+    renderAssets();
+    elements.resourceImportMessage.textContent = `${keys.length} asset(s) restauré(s).`;
+  } catch (error) {
+    elements.selectionMessage.textContent = error.message;
+  } finally {
+    elements.restoreSelectionButton.disabled = false;
+  }
+}
+
 async function uploadResources(files) {
   const accepted = [...files].filter((file) => /^(image|video|audio)\//.test(file.type));
   if (!accepted.length) {
@@ -4409,15 +4619,48 @@ function openJobDetail(id) {
   elements.downloadJobResultLink.href = job.resourceId
     ? `/api/resources/${encodeURIComponent(job.resourceId)}/download`
     : `/api/jobs/${encodeURIComponent(job.id)}/download/0`;
-  elements.jobDetailDialog.showModal();
+  if (!elements.jobDetailDialog.open) elements.jobDetailDialog.showModal();
   return true;
 }
 
-function openImagePreview(url, alt = "Image") {
+function openImagePreview(url, alt = "Image", queueContext = null) {
   if (!url) return;
+  state.previewQueueContext = queueContext;
   elements.imagePreview.src = url;
   elements.imagePreview.alt = alt || "Image";
   if (!elements.imagePreviewDialog.open) elements.imagePreviewDialog.showModal();
+}
+
+function queueDetailJobs() {
+  return visibleHistory(state.jobs.filter((job) => job.jobType !== "director-session" &&
+    mediaResults(job.result).length > 0), "createdAt");
+}
+
+function queueImageEntries() {
+  return queueDetailJobs().flatMap((job) => mediaResults(job.result)
+    .filter((media) => String(media.contentType || "").startsWith("image/") ||
+      /\.(?:avif|gif|jpe?g|png|webp)(?:\?|$)/i.test(media.url))
+    .map((media) => ({ jobId: job.id, url: media.url, alt: modelLabel(job) })));
+}
+
+function navigateQueue(direction) {
+  if (elements.imagePreviewDialog.open && !state.previewQueueContext) return false;
+  if (elements.imagePreviewDialog.open && state.previewQueueContext) {
+    const entries = queueImageEntries();
+    const current = entries.findIndex((item) => item.jobId === state.previewQueueContext.jobId &&
+      item.url === state.previewQueueContext.url);
+    const next = entries[current + direction];
+    if (!next || current < 0) return false;
+    openImagePreview(next.url, next.alt, { jobId: next.jobId, url: next.url });
+    return true;
+  }
+  if (elements.jobDetailDialog.open) {
+    const jobs = queueDetailJobs();
+    const current = jobs.findIndex((job) => job.id === state.activeDetailJobId);
+    const next = jobs[current + direction];
+    return current >= 0 && Boolean(next) && openJobDetail(next.id);
+  }
+  return false;
 }
 
 function openSpendingJob(id) {
@@ -4442,6 +4685,7 @@ async function copyActiveJobPrompt() {
 function openJobConfirmation(id) {
   const job = state.jobs.find((item) => item.id === id);
   if (!job || job.status !== "awaiting_confirmation") return;
+  imageBatchPrepared = null;
   state.activeJobId = id;
   state.preparedRequest = null;
   state.preparedPreview = null;
@@ -4467,6 +4711,7 @@ function openJobConfirmation(id) {
 }
 
 async function submitActiveJob() {
+  if (imageBatchPrepared) return submitImageBatch();
   elements.submitJobButton.disabled = true;
   elements.submitJobButton.textContent = "Vérification du tarif…";
   elements.confirmationMessage.textContent = "";
@@ -4488,15 +4733,11 @@ async function submitActiveJob() {
     });
     state.monitoredJobId = body.job.id;
     replaceJob(body.job);
-    const queueDraft = state.drafts.find((draft) => draft.id === state.activeDraftId && draft.queueBatchId);
+    const queueDraft = state.drafts.find((draft) => draft.id === body.job.queueDraftId && draft.queueBatchId);
     if (queueDraft && body.job.mediaType === "image") {
-      try {
-        const marked = await request("/api/import-queues/image/mark", {
-          method: "POST", body: JSON.stringify({ draftId: queueDraft.id, jobId: body.job.id })
-        });
-        Object.assign(queueDraft, marked.draft);
-        renderImageImportQueue();
-      } catch (error) { elements.formMessage.textContent = `Génération lancée, mais suivi de file non mis à jour : ${error.message}`; }
+      queueDraft.queueStatus = "submitted";
+      queueDraft.queueJobId = body.job.id;
+      renderImageImportQueue();
     }
     if (elements.confirmationDialog.open) elements.confirmationDialog.close();
     state.activeJobId = null;
@@ -4515,6 +4756,46 @@ async function submitActiveJob() {
   } finally {
     elements.submitJobButton.disabled = false;
     elements.submitJobButton.textContent = "Confirmer et générer";
+  }
+}
+
+async function submitImageBatch() {
+  if (!imageBatchPrepared || imageBatchSending) return;
+  const preparedBatch = imageBatchPrepared;
+  imageBatchPrepared = null;
+  imageBatchSending = true;
+  elements.confirmationDialog.close();
+  renderImageBatchBanner();
+  let sent = 0;
+  try {
+    for (const item of preparedBatch.items) {
+      const draft = state.drafts.find((entry) => entry.id === item.draftId);
+      if (!draft || draft.queueStatus !== "pending") continue;
+      elements.formMessage.textContent = `Envoi de la série : ${sent + 1}/${preparedBatch.items.length}…`;
+      const { job } = await request("/api/jobs/prepare", {
+        method: "POST", body: JSON.stringify(item.generationRequest)
+      });
+      replaceJob(job);
+      if (job.estimatedCost !== item.estimatedCost) {
+        throw new Error(`Le tarif de l’image ${draft.queuePosition} a changé. La file est arrêtée avant cet envoi.`);
+      }
+      const result = await request(`/api/jobs/${encodeURIComponent(job.id)}/submit`, {
+        method: "POST", body: JSON.stringify({ confirm: true, estimatedCost: item.estimatedCost })
+      });
+      replaceJob(result.job);
+      state.monitoredJobId = result.job.id;
+      draft.queueStatus = "submitted";
+      draft.queueJobId = result.job.id;
+      sent++;
+      renderImageImportQueue();
+    }
+    elements.formMessage.textContent = `${sent} image${sent > 1 ? "s" : ""} envoyée${sent > 1 ? "s" : ""} à la file de génération.`;
+  } catch (error) {
+    elements.formMessage.textContent = `Série arrêtée après ${sent} envoi${sent > 1 ? "s" : ""} : ${error.message}`;
+    await refreshState();
+  } finally {
+    imageBatchSending = false;
+    renderImageImportQueue();
   }
 }
 
@@ -4581,6 +4862,7 @@ function selectVideoMode(mode) {
     button.classList.toggle("active", button.dataset.media === "video");
   });
   elements.composer?.classList?.toggle("motion-transfer-mode", mode === "motion-transfer");
+  elements.addToImageQueueButton.classList.add("hidden");
   elements.referenceEmpty.textContent = mode === "motion-transfer"
     ? "Ajoute une vidéo de mouvement et une image de personnage."
     : "Glisse ici des images ou des sons, ou choisis-les dans Assets.";
@@ -4608,6 +4890,7 @@ function selectMedia(mediaType) {
   elements.promptInput.placeholder = mediaCopy[mediaType].placeholder;
   elements.durationField.classList.toggle("hidden", !["video", "music"].includes(mediaType));
   elements.videoModeSwitch.classList.toggle("hidden", mediaType !== "video");
+  elements.addToImageQueueButton.classList.toggle("hidden", mediaType !== "image");
   elements.videoModeSwitch.querySelectorAll("[data-video-mode]").forEach((button) => {
     button.classList.toggle("active", button.dataset.videoMode === "generation");
   });
@@ -4687,6 +4970,7 @@ async function refreshState() {
   state.jobs = localState.jobs;
   state.collections = localState.collections || [];
   state.resources = localState.resources || [];
+  state.trashedAssetKeys = new Set(localState.trashedAssetKeys || []);
   state.referenceSets = localState.referenceSets || [];
   state.kreaStyles = (localState.kreaStyles || []).filter((style) => !isKrea2Lora(style));
   state.loraTrainingJobs = localState.loraTrainingJobs || [];
@@ -4915,6 +5199,50 @@ async function saveDraft(event) {
   }
 }
 
+async function addCurrentImageToQueue() {
+  if (state.mediaType !== "image") return;
+  const prompt = elements.promptInput.value.trim();
+  if (!prompt) {
+    elements.formMessage.textContent = "Écris un prompt avant de l’ajouter à la file.";
+    elements.promptInput.focus();
+    return;
+  }
+  const active = state.drafts.find((draft) => draft.id === state.activeDraftId &&
+    draft.queueBatchId && draft.queueStatus === "pending");
+  const manual = state.drafts.find((draft) => draft.source?.app === "barz-aggregator" &&
+    draft.queueBatchId && draft.queueStatus === "pending" &&
+    state.drafts.filter((item) => item.queueBatchId === draft.queueBatchId)
+      .every((item) => item.queueStatus === "pending"));
+  const requestId = active?.queueBatchId || manual?.queueBatchId || crypto.randomUUID();
+  const model = state.catalog.find((item) => item.endpointId === elements.modelInput.value);
+  elements.addToImageQueueButton.disabled = true;
+  try {
+    const body = await request("/api/import-queues/image/append", {
+      method: "POST",
+      body: JSON.stringify({ requestId, item: {
+        mediaType: "image", prompt,
+        negativePrompt: elements.negativePromptInput.value,
+        target: { provider: model?.provider || "", endpointId: model?.endpointId || "" },
+        settings: { ...formSettings(), aspectRatio: elements.aspectRatioInput.value },
+        references: currentReferences()
+      } })
+    });
+    const revisions = new Map(body.drafts.map((draft) => [draft.id, draft]));
+    state.drafts = [body.draft, ...state.drafts.filter((draft) => draft.id !== body.draft.id)
+      .map((draft) => revisions.get(draft.id) || draft)];
+    imageBatchPrepared = null;
+    selectDraft(body.draft.id);
+    renderImageImportQueue();
+    elements.imageImportQueue.open = true;
+    elements.imageImportQueue.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    elements.formMessage.textContent = `Image ${body.draft.queuePosition}/${body.draft.queueTotal} ajoutée à la file. Aucun rendu lancé.`;
+  } catch (error) {
+    elements.formMessage.textContent = `Ajout à la file impossible : ${error.message}`;
+  } finally {
+    elements.addToImageQueueButton.disabled = false;
+  }
+}
+
 function formatPreviewCost(preview) {
   if (preview.estimatedCost === null) return "Estimation indisponible";
   return Number(preview.estimatedCost).toLocaleString("fr-FR", {
@@ -4926,8 +5254,13 @@ function formatPreviewCost(preview) {
 }
 
 async function quoteGeneration() {
+  imageBatchPrepared = null;
   elements.formMessage.textContent = "Calcul du coût…";
   try {
+    if (state.mediaType === "image" && elements.aspectRatioInput.value === "auto") {
+      const source = currentReferences().find((item) => item.kind === "image" && !item.missing);
+      if (source) await measureImageReference(source.url);
+    }
     const selectedModel = state.catalog.find((item) => item.endpointId === elements.modelInput.value);
     const references = await prepareReferencesForProvider(selectedModel?.provider || "fal");
     const generationRequest = {
@@ -4935,6 +5268,8 @@ async function quoteGeneration() {
       prompt: generationPrompt(),
       negativePrompt: elements.negativePromptInput.value,
       endpointId: elements.modelInput.value,
+      ...(state.mediaType === "image" && state.drafts.some((draft) => draft.id === state.activeDraftId && draft.queueBatchId && draft.queueStatus === "pending")
+        ? { queueDraftId: state.activeDraftId } : {}),
       target: { provider: selectedModel?.provider || "fal", endpointId: elements.modelInput.value },
       settings: formSettings(),
       references
@@ -4987,6 +5322,66 @@ async function quoteGeneration() {
     elements.confirmationDialog.showModal();
   } catch (error) {
     elements.formMessage.textContent = error.message;
+  }
+}
+
+async function quoteImageBatch() {
+  const batch = activeImageBatch();
+  const model = state.catalog.find((item) => item.endpointId === elements.modelInput.value);
+  if (!batch?.pending.length || !model) return;
+  if (elements.aspectRatioInput.value === "auto") {
+    await Promise.all(batch.pending.map((draft) => {
+      const source = (draft.references || []).find((reference) => reference.kind === "image" && !reference.missing);
+      return source ? measureImageReference(source.url) : Promise.resolve(null);
+    }));
+  }
+  let estimate;
+  try { estimate = imageBatchEstimate(batch, model); } catch { /* The form reports invalid settings below. */ }
+  if (!estimate) {
+    elements.formMessage.textContent = "Le devis de la file est indisponible. Vérifie le modèle, les réglages et les références.";
+    return;
+  }
+  elements.imageBatchLaunchButton.disabled = true;
+  elements.imageBatchLaunchButton.textContent = "Vérification du prix total…";
+  elements.formMessage.textContent = `Vérification des ${estimate.items.length} images, sans lancer de génération…`;
+  try {
+    const quoted = await Promise.all(estimate.items.map(async ({ draft, generationRequest }) => {
+      const { preview } = await request("/api/generations/preview", {
+        method: "POST", body: JSON.stringify(generationRequest)
+      });
+      if (!preview.canSubmit || generationRequest.references.some((ref) => ref.missing)) {
+        throw new Error(`Image ${draft.queuePosition} : ${preview.validationErrors?.join(" ") || "référence manquante ou tarif indisponible"}`);
+      }
+      return { draftId: draft.id, generationRequest, estimatedCost: preview.estimatedCost, preview };
+    }));
+    if (quoted.some((item) => !state.drafts.some((draft) => draft.id === item.draftId && draft.queueStatus === "pending"))) {
+      throw new Error("La file a changé pendant le calcul du devis. Relance le devis avec les images restantes.");
+    }
+    const total = Number(quoted.reduce((sum, item) => sum + item.estimatedCost, 0).toFixed(6));
+    imageBatchPrepared = { queueBatchId: batch.active.queueBatchId, items: quoted, total };
+    state.preparedRequest = null;
+    state.preparedPreview = null;
+    state.activeJobId = null;
+    elements.confirmationSummary.innerHTML = `
+      <div class="preview-line"><span>Série</span><strong>${quoted.length} images à lancer</strong></div>
+      <div class="preview-line"><span>Modèle</span><strong>${escapeHtml(modelLabel(model))}</strong></div>
+      <div class="preview-line"><span>Prix de l’image affichée</span><strong>${escapeHtml(formatPreviewCost(quoted.find((item) => item.draftId === batch.active.id)?.preview || quoted[0].preview))}</strong></div>
+      <div class="preview-line"><span>Coût total estimé</span><strong>${escapeHtml(formatPreviewCost({ estimatedCost: total, currency: "USD" }))}</strong></div>
+      <div class="preview-line"><span>Action</span><strong>Envoi payant de ${quoted.length} images à ${escapeHtml(model.provider)}</strong></div>`;
+    elements.confirmationPayload.textContent = JSON.stringify(quoted.map((item, index) => ({
+      image: index + 1, estimatedCost: item.estimatedCost, providerInput: item.preview.providerInput
+    })), null, 2);
+    elements.confirmationMessage.textContent = "Chaque image sera envoyée séparément. La série s’arrête si un tarif change ou si une image échoue.";
+    elements.confirmationMessage.classList.remove("warning");
+    elements.submitJobButton.disabled = false;
+    elements.submitJobButton.textContent = `Confirmer les ${quoted.length} images`;
+    elements.formMessage.textContent = `Série de ${quoted.length} images · total estimé ${formatPreviewCost({ estimatedCost: total, currency: "USD" })}. Confirmation requise.`;
+    elements.confirmationDialog.showModal();
+  } catch (error) {
+    imageBatchPrepared = null;
+    elements.formMessage.textContent = `File non lancée : ${error.message}`;
+  } finally {
+    renderImageBatchBanner();
   }
 }
 
@@ -5418,6 +5813,7 @@ elements.promptInput.addEventListener("input", () => {
 });
 elements.promptInput.addEventListener("scroll", renderPromptHighlights);
 elements.aspectRatioInput.addEventListener("change", () => {
+  imageRatioAutoActive = elements.aspectRatioInput.value === "auto";
   renderModelControls();
   rememberGenerationSettings();
 });
@@ -5456,6 +5852,13 @@ elements.modelInput.addEventListener("change", () => {
 });
 
 elements.draftForm.addEventListener("submit", saveDraft);
+elements.addToImageQueueButton.addEventListener("click", addCurrentImageToQueue);
+elements.imageBatchItemsList.addEventListener("click", (event) => {
+  const remove = event.target.closest("[data-remove-queue-draft-id]");
+  if (remove) { removeImageQueueDraft(remove.dataset.removeQueueDraftId); return; }
+  const item = event.target.closest("[data-batch-draft-id]");
+  if (item) selectDraft(item.dataset.batchDraftId);
+});
 // The mixer is also part of the active engine's settings.
 for (const element of [elements.kreaLoraSelected, elements.kreaLoraLibrary,
   elements.loadKreaLoraPresetButton]) {
@@ -5467,9 +5870,45 @@ elements.draftList.addEventListener("click", (event) => {
   if (button) selectDraft(button.dataset.draftId);
 });
 elements.imageImportQueueList.addEventListener("click", (event) => {
+  const remove = event.target.closest("[data-remove-queue-draft-id]");
+  if (remove) {
+    removeImageQueueDraft(remove.dataset.removeQueueDraftId);
+    return;
+  }
   const item = event.target.closest("[data-queue-draft-id]");
   if (item) { selectDraft(item.dataset.queueDraftId); renderImageImportQueue(); }
 });
+
+async function removeImageQueueDraft(id) {
+  if (imageBatchSending) return;
+  const draft = state.drafts.find((item) => item.id === id);
+  if (!draft || draft.queueStatus !== "pending") return;
+  try {
+    const body = await request(`/api/import-queues/image/${encodeURIComponent(id)}`, { method: "DELETE" });
+    const revisions = new Map(body.drafts.map((item) => [item.id, item]));
+    state.drafts = state.drafts.filter((item) => item.id !== id)
+      .map((item) => revisions.get(item.id) || item);
+    imageBatchPrepared = null;
+    if (state.activeDraftId === id) {
+      const next = state.drafts.find((item) => item.queueBatchId === draft.queueBatchId && item.queueStatus === "pending");
+      if (next) selectDraft(next.id);
+      else {
+        state.activeDraftId = null;
+        elements.draftOrigin.textContent = "Saisie locale";
+        elements.promptInput.value = "";
+        state.referencesByMedia.image = [];
+        renderPromptHighlights();
+        renderReferences();
+        updateGenerateButton();
+      }
+    }
+    renderDrafts();
+    renderImageImportQueue();
+    elements.formMessage.textContent = `Image ${draft.queuePosition}/${draft.queueTotal} retirée de la file.`;
+  } catch (error) {
+    elements.formMessage.textContent = `Impossible de retirer cette image : ${error.message}`;
+  }
+}
 elements.activityFilters.addEventListener("click", (event) => {
   const button = event.target.closest("[data-history-range]");
   if (!button) return;
@@ -5504,6 +5943,11 @@ document.querySelector("#connectFalAdminButton").addEventListener("click", conne
 document.querySelector("#connectHeygenButton").addEventListener("click", connectHeygen);
 document.querySelector("#verifyFalModelButton").addEventListener("click", verifyFalModel);
 elements.generateButton.addEventListener("click", quoteGeneration);
+elements.imageBatchLaunchButton.addEventListener("click", quoteImageBatch);
+elements.confirmationDialog.addEventListener("close", () => {
+  imageBatchPrepared = null;
+  elements.submitJobButton.textContent = "Confirmer et générer";
+});
 elements.submitJobButton.addEventListener("click", submitActiveJob);
 elements.copyJobPromptButton.addEventListener("click", copyActiveJobPrompt);
 elements.recreateJobButton.addEventListener("click", recreateActiveJob);
@@ -5534,6 +5978,8 @@ elements.deleteSelectedResourcesButton.addEventListener("click", () => {
     .filter((asset) => asset.kind === "resource")
     .map((asset) => asset.resource.id));
 });
+elements.trashSelectionButton.addEventListener("click", trashSelectedAssets);
+elements.restoreSelectionButton.addEventListener("click", restoreSelectedAssets);
 elements.confirmDeleteResourcesButton.addEventListener("click", deleteResources);
 elements.referenceSetsButton.addEventListener("click", openReferenceSetDialog);
 elements.saveReferenceSetButton.addEventListener("click", saveReferenceSet);
@@ -5638,7 +6084,10 @@ document.addEventListener("click", (event) => {
   const trigger = event.target.closest("[data-preview-image-url]");
   if (!trigger) return;
   event.preventDefault();
-  openImagePreview(trigger.dataset.previewImageUrl, trigger.dataset.previewImageAlt);
+  const card = trigger.closest("#jobList .job-card");
+  const jobId = card?.dataset.jobId || (trigger.closest("#jobDetailDialog") ? state.activeDetailJobId : null);
+  openImagePreview(trigger.dataset.previewImageUrl, trigger.dataset.previewImageAlt,
+    jobId ? { jobId, url: trigger.dataset.previewImageUrl } : null);
 });
 elements.imagePreviewDialog.addEventListener("click", (event) => {
   if (event.target === elements.imagePreviewDialog || event.target === elements.imagePreviewShell) {
@@ -5647,6 +6096,7 @@ elements.imagePreviewDialog.addEventListener("click", (event) => {
 });
 elements.imagePreviewDialog.addEventListener("close", () => {
   elements.imagePreview.removeAttribute("src");
+  state.previewQueueContext = null;
 });
 elements.referenceList.addEventListener("click", (event) => {
   const motionSlot = event.target.closest("[data-motion-reference-kind]");
@@ -5695,6 +6145,9 @@ document.addEventListener("click", (event) => {
   if (!event.target.closest(".reference-add")) closeReferenceAddMenu();
 });
 document.addEventListener("keydown", (event) => {
+  if ((event.key === "ArrowUp" || event.key === "ArrowDown") && !event.altKey && !event.ctrlKey && !event.metaKey) {
+    if (navigateQueue(event.key === "ArrowDown" ? 1 : -1)) event.preventDefault();
+  }
   if (event.key === "Escape") {
     closeReferencePreviews();
     closeReferenceAddMenu();

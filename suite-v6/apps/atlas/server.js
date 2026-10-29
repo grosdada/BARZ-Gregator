@@ -83,7 +83,7 @@ const LIBRARY_GLB_HOST = "barz-ai-lib.placenta.tv";
 const LIBRARY_GLB_PREFIX = "/AI-Asset-Lib-online/media/";
 const LIBRARY_GLB_LIMIT = 96 * 1024 * 1024;
 const BUILTIN_TOOL_IDS = new Set([
-  "apg", "barz-enhancer", "angle-3d", "relighting-3d", "imperfection", "banana-helper", "barz-beauty", "realism-forge",
+  "apg", "barz-enhancer", "angle-3d", "relighting-3d", "imperfection", "banana-helper", "mode-bank", "barz-beauty", "realism-forge",
   "cinematic-shoot", "facs-sheet-generator", "barzy-board", "veo-suite", "cccp",
   "barzy-sheet", "barz-designer", "knolling", "multishot", "seedance", "cinema-helper",
   "image-slicer", "paint-studio", "image-grabber", "image-analyzer", "video-director", "motion-emulator", "video-editor", "blocking-studio", "object-scale-chart", "youtube-extractor", "workflow-3d"
@@ -92,6 +92,8 @@ const STATIC_FILES = new Map([
   ["/", ["index.html", "text/html; charset=utf-8"]],
   ["/index.html", ["index.html", "text/html; charset=utf-8"]],
   ["/suite.html", ["suite.html", "text/html; charset=utf-8"]],
+  ["/favicon-atlas.svg", ["favicon-atlas.svg", "image/svg+xml"]],
+  ["/favicon-aggregator.svg", ["favicon-aggregator.svg", "image/svg+xml"]],
   ["/suite-shell.js", ["suite-shell.js", "text/javascript; charset=utf-8"]],
   ["/suite-shell.css", ["suite-shell.css", "text/css; charset=utf-8"]],
   ["/suite-bridge.js", ["suite-bridge.js", "text/javascript; charset=utf-8"]],
@@ -100,6 +102,8 @@ const STATIC_FILES = new Map([
   ["/global-ai-controls.css", ["global-ai-controls.css", "text/css; charset=utf-8"]],
   ["/app.js", ["app.js", "text/javascript; charset=utf-8"]],
   ["/tool-workspace.js", ["tool-workspace.js", "text/javascript; charset=utf-8"]],
+  ["/mode-bank.js", ["mode-bank.js", "text/javascript; charset=utf-8"]],
+  ["/mode-bank-prompts.json", ["mode-bank-prompts.json", "application/json; charset=utf-8"]],
   ["/apg-studio.js", ["apg-studio.js", "text/javascript; charset=utf-8"]],
   ["/apg-data.js", ["apg-data.js", "text/javascript; charset=utf-8"]],
   ["/image-slicer.js", ["image-slicer.js", "text/javascript; charset=utf-8"]],
@@ -630,7 +634,7 @@ export async function createBuildServer({
       assertLocalRequest(request, address, mutating);
 
       if (request.method === "GET" && url.pathname === "/api/v1/health") {
-        return sendJson(response, 200, { service: "prompt-atlas-build", version: "0.33.50" });
+        return sendJson(response, 200, { service: "prompt-atlas-build", version: "0.33.57" });
       }
       if (request.method === "GET" && url.pathname === "/api/vcam/info") {
         virtualCameraServicePromise ??= createVirtualCameraService(server);

@@ -25,11 +25,11 @@ test("the V6 defaults contain five configurable workshops, integrated tools and 
   assert.equal(registry.workshops.length, 5);
   assert.deepEqual(registry.systemTabs.map(({ id }) => id), ["deck", "utilities", "build"]);
   assert.ok(registry.systemTabs.every((tab) => tab.mutable === false));
-  assert.equal(registry.tools.length, 32);
+  assert.equal(registry.tools.length, 33);
   assert.equal(registry.tools[0].adapterId, "apg");
   assert.equal(registry.tools[1].recipeId, "pilot-cinematic-shot-v1");
   assert.deepEqual(registry.tools.slice(2).map(({ adapterId }) => adapterId), [
-    "cinema-helper", "image-slicer", "paint-studio", "image-grabber", "image-analyzer", "angle-3d", "relighting-3d", "video-director", "motion-emulator", "video-editor", "blocking-studio", "object-scale-chart", "youtube-extractor", "barz-enhancer", "imperfection", "prompt-library", "barz-beauty", "realism-forge",
+    "cinema-helper", "image-slicer", "paint-studio", "image-grabber", "image-analyzer", "angle-3d", "relighting-3d", "video-director", "motion-emulator", "video-editor", "blocking-studio", "object-scale-chart", "youtube-extractor", "barz-enhancer", "imperfection", "prompt-library", "mode-bank", "barz-beauty", "realism-forge",
     "cinematic-shoot", "prompt-library", "facs-sheet-generator", "barzy-board", "cccp",
     "veo-suite", "barzy-sheet", "barz-designer", "knolling", "workflow-3d", "multishot", "seedance"
   ]);

@@ -26,6 +26,7 @@ const emptyState = Object.freeze({
   jobs: [],
   collections: [],
   resources: [],
+  trashedAssetKeys: [],
   referenceSets: [],
   directorDraft: null,
   kreaStyles: [],
@@ -76,6 +77,7 @@ function migrateState(value) {
     jobs,
     collections: Array.isArray(value.collections) ? value.collections : [],
     resources,
+    trashedAssetKeys: Array.isArray(value.trashedAssetKeys) ? value.trashedAssetKeys.filter((key) => typeof key === "string") : [],
     referenceSets: Array.isArray(value.referenceSets) ? value.referenceSets : [],
     kreaStyles: Array.isArray(value.kreaStyles) ? value.kreaStyles.filter((style) => !isKrea2Style(style)) : [],
     loraTrainingJobs: Array.isArray(value.loraTrainingJobs) ? value.loraTrainingJobs : []

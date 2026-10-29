@@ -7701,6 +7701,18 @@ document.getElementById("autoBlockBtn")?.addEventListener("click", runAutoBlock)
 
   // let scene/camera changes elsewhere keep the panel in sync when it is open
   window.__bpRefreshIfOpen = () => { if (panelOpen()) refresh(); };
+
+  // Headless Argile qualification uses the same scene reading and camera
+  // analysis as the visible Blocking Prompt panel.  This is deliberately
+  // gated by ?bstest=1 and does not expose or alter production state.
+  if (location.search.includes("bstest=1")) {
+    window.__bpTest = {
+      gather: () => gather().map((subject) => ({ ...subject })),
+      analyzeActiveCamera: () => analyzeCamera(activeCam()),
+      colorName,
+      refresh,
+    };
+  }
 }
 
 function play() {

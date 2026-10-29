@@ -5,6 +5,8 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 
 import { prepareProductPayload } from "./prepare-product-payload.mjs";
 import { generateInstallerAssets } from "./generate-installer-assets.mjs";
+import { generateSlideshow } from "./generate-slideshow.mjs";
+import { compileSlideshowHelper } from "./compile-slideshow-helper.mjs";
 
 const installerDirectory = path.dirname(fileURLToPath(import.meta.url));
 
@@ -33,6 +35,8 @@ export async function findMakeNsis(environment = process.env) {
 
 export async function buildInstaller({ environment = process.env } = {}) {
   await generateInstallerAssets();
+  await generateSlideshow();
+  await compileSlideshowHelper(environment);
   await prepareProductPayload();
   const executable = await findMakeNsis(environment);
   await new Promise((resolve, reject) => {
@@ -40,7 +44,7 @@ export async function buildInstaller({ environment = process.env } = {}) {
     child.once("error", reject);
     child.once("exit", (code) => code === 0 ? resolve() : reject(new Error(`MakeNSIS exited with code ${code}`)));
   });
-  return path.join(installerDirectory, "BARZ-Suite-6-Setup-0.33.50.exe");
+  return path.join(installerDirectory, "BARZ-Suite-6-Setup-0.33.57.exe");
 }
 
 if (process.argv[1] && pathToFileURL(path.resolve(process.argv[1])).href === import.meta.url) {

@@ -11,14 +11,19 @@ const mediaFields = [
 export async function stageReferenceMedia(input, readResource, uploadMedia) {
   const staged = structuredClone(input);
   const pending = new Map();
-  for (const field of mediaFields) {
-    if (staged[field] === undefined) continue;
-    for (const url of Array.isArray(staged[field]) ? staged[field] : [staged[field]]) {
-      const match = typeof url === "string" && url.match(localImage);
-      if (match && !pending.has(url)) pending.set(url, await readResource(match[1]));
-      else if (typeof url !== "string" || (!match && !url.startsWith("https://"))) {
-        throw new Error("Adresse de média de référence invalide.");
-      }
+  const keyframes = staged.keyframes;
+  if (keyframes !== undefined && (!Array.isArray(keyframes) || keyframes.some((item) => (
+    !item || !Number.isSafeInteger(item.frame_index) || item.frame_index < 0 ||
+    typeof item.image_url !== "string"
+  )))) throw new Error("Images repères invalides.");
+  const mediaUrls = mediaFields.flatMap((field) => staged[field] === undefined
+    ? [] : Array.isArray(staged[field]) ? staged[field] : [staged[field]]);
+  mediaUrls.push(...(keyframes || []).map((item) => item.image_url));
+  for (const url of mediaUrls) {
+    const match = typeof url === "string" && url.match(localImage);
+    if (match && !pending.has(url)) pending.set(url, await readResource(match[1]));
+    else if (typeof url !== "string" || (!match && !url.startsWith("https://"))) {
+      throw new Error("Adresse de média de référence invalide.");
     }
   }
   const uploaded = new Map();
@@ -27,6 +32,9 @@ export async function stageReferenceMedia(input, readResource, uploadMedia) {
     if (Array.isArray(staged[field])) staged[field] = staged[field].map((url) => uploaded.get(url) || url);
     else if (uploaded.has(staged[field])) staged[field] = uploaded.get(staged[field]);
   }
+  if (keyframes) staged.keyframes = keyframes.map((item) => ({
+    ...item, image_url: uploaded.get(item.image_url) || item.image_url
+  }));
   return staged;
 }
 

@@ -810,6 +810,12 @@ function resolveAssetSelection(state, item) {
   return { kind: "generated", job, asset, index, mediaType: job.mediaType };
 }
 
+function selectedAssetKey(asset) {
+  return asset.kind === "resource"
+    ? `resource:${asset.resource.id}`
+    : `generated:${asset.job.id}:${asset.index}`;
+}
+
 function normalizeAssetBaseName(value) {
   const name = typeof value === "string"
     ? value.trim().replace(/\.(jpe?g|png|webm|mp4|mov|wav|mp3)$/i, "")
@@ -1708,6 +1714,8 @@ async function handleApi(request, response, url) {
       await store.update((state) => {
         const remainingIds = new Set(resourceIds);
         state.resources = state.resources.filter((resource) => !remainingIds.has(resource.id));
+        state.trashedAssetKeys = (state.trashedAssetKeys || []).filter((key) =>
+          !resourceIds.some((id) => key === `resource:${id}`));
         const now = new Date().toISOString();
         state.activity.unshift({
           id: randomUUID(),
@@ -1728,6 +1736,41 @@ async function handleApi(request, response, url) {
     }
     await Promise.all(staged.map(({ stagedPath }) => unlink(stagedPath).catch(() => {})));
     sendJson(response, 200, { resources });
+    return;
+  }
+
+  if (request.method === "POST" && url.pathname === "/api/assets/trash") {
+    const body = await readJson(request);
+    if (!Array.isArray(body.selection) || body.selection.length < 1 || body.selection.length > 100) {
+      const error = new Error("Sélectionne entre 1 et 100 assets à mettre à la corbeille.");
+      error.statusCode = 400;
+      throw error;
+    }
+    const current = await store.read();
+    const keys = [...new Set(body.selection.map((item) => selectedAssetKey(resolveAssetSelection(current, item))))];
+    await store.update((state) => {
+      state.trashedAssetKeys = [...new Set([...(state.trashedAssetKeys || []), ...keys])];
+      return state;
+    });
+    sendJson(response, 200, { keys });
+    return;
+  }
+
+  if (request.method === "POST" && url.pathname === "/api/assets/restore") {
+    const body = await readJson(request);
+    if (!Array.isArray(body.keys) || body.keys.length < 1 || body.keys.length > 100 ||
+        body.keys.some((key) => typeof key !== "string" || !/^(?:resource|generated):[0-9a-f-]+(?::\d+)?$/i.test(key))) {
+      const error = new Error("Sélectionne entre 1 et 100 assets à restaurer.");
+      error.statusCode = 400;
+      throw error;
+    }
+    const keys = [...new Set(body.keys)];
+    await store.update((state) => {
+      const restored = new Set(keys);
+      state.trashedAssetKeys = (state.trashedAssetKeys || []).filter((key) => !restored.has(key));
+      return state;
+    });
+    sendJson(response, 200, { keys });
     return;
   }
 
@@ -2344,6 +2387,17 @@ async function handleApi(request, response, url) {
   if (request.method === "POST" && url.pathname === "/api/jobs/prepare") {
     const body = await readJson(request);
     const state = await store.read();
+    const queueDraftId = body.queueDraftId;
+    if (queueDraftId !== undefined) {
+      const queuedDraft = state.drafts.find((draft) => draft.id === queueDraftId && draft.mediaType === "image" && draft.queueBatchId);
+      if (!queuedDraft || queuedDraft.queueStatus !== "pending") {
+        throw Object.assign(new Error("Cette image n’est plus en attente dans la file."), { statusCode: 409 });
+      }
+      if (state.jobs.some((job) => job.queueDraftId === queueDraftId &&
+          (["submitting", "submitted", "queued", "running", "completed"].includes(job.status) || job.submissionUncertain))) {
+        throw Object.assign(new Error("Cette image possède déjà un envoi en cours ou incertain."), { statusCode: 409 });
+      }
+    }
     const requestedProvider = String(body.target?.provider || body.provider || "").trim();
     const model = state.catalog.find((item) => (
       item.endpointId === body.endpointId && (!requestedProvider || item.provider === requestedProvider)
@@ -2362,7 +2416,15 @@ async function handleApi(request, response, url) {
     validateGenerationReferences(state, imported.references, model.provider);
     if (!preview.canSubmit) throw Object.assign(new Error(preview.warnings.join(" ")), { statusCode: 400 });
     const job = createPreparedJob(preview, randomUUID());
+    if (queueDraftId !== undefined) job.queueDraftId = queueDraftId;
     await store.update((nextState) => {
+      if (queueDraftId !== undefined && !nextState.drafts.some((draft) => draft.id === queueDraftId && draft.queueStatus === "pending")) {
+        throw Object.assign(new Error("Cette image a été retirée de la file."), { statusCode: 409 });
+      }
+      if (queueDraftId !== undefined && nextState.jobs.some((existing) => existing.queueDraftId === queueDraftId &&
+          (["submitting", "submitted", "queued", "running", "completed"].includes(existing.status) || existing.submissionUncertain))) {
+        throw Object.assign(new Error("Cette image possède déjà un envoi en cours ou incertain."), { statusCode: 409 });
+      }
       nextState.jobs.unshift(job);
       nextState.jobs = nextState.jobs.slice(0, 100);
       nextState.activity.unshift({
@@ -2398,6 +2460,9 @@ async function handleApi(request, response, url) {
       const error = new Error("Cette requête n’attend plus de confirmation.");
       error.statusCode = 409;
       throw error;
+    }
+    if (job.queueDraftId && !state.drafts.some((draft) => draft.id === job.queueDraftId && draft.queueStatus === "pending")) {
+      throw Object.assign(new Error("Cette image n’est plus en attente dans la file."), { statusCode: 409 });
     }
     if (job.missingRequired?.length || job.validationErrors?.length || job.estimatedCost === null) {
       const error = new Error("Des paramètres obligatoires sont encore manquants.");
@@ -2466,6 +2531,16 @@ async function handleApi(request, response, url) {
         const error = new Error("Cette requête est déjà en cours de soumission.");
         error.statusCode = 409;
         throw error;
+      }
+      if (nextState.jobs[index].queueDraftId && !nextState.drafts.some((draft) => (
+        draft.id === nextState.jobs[index].queueDraftId && draft.queueStatus === "pending"
+      ))) {
+        throw Object.assign(new Error("Cette image n’est plus en attente dans la file."), { statusCode: 409 });
+      }
+      if (nextState.jobs[index].queueDraftId && nextState.jobs.some((other) => other.id !== job.id &&
+          other.queueDraftId === nextState.jobs[index].queueDraftId &&
+          (["submitting", "submitted", "queued", "running", "completed"].includes(other.status) || other.submissionUncertain))) {
+        throw Object.assign(new Error("Cette image possède déjà un envoi en cours ou incertain."), { statusCode: 409 });
       }
       claimedJob = transitionJob(nextState.jobs[index], "submitting", { error: null });
       nextState.jobs[index] = claimedJob;
@@ -2566,6 +2641,11 @@ async function handleApi(request, response, url) {
         }
       });
       nextState.jobs[index] = submittedJob;
+      if (submittedJob.queueDraftId) {
+        const queuedDraft = nextState.drafts.find((draft) => draft.id === submittedJob.queueDraftId);
+        queuedDraft.queueStatus = "submitted";
+        queuedDraft.queueJobId = submittedJob.id;
+      }
       return nextState;
     });
     sendJson(response, 202, { job: submittedJob });
@@ -2809,6 +2889,50 @@ async function handleApi(request, response, url) {
     return;
   }
 
+  if (request.method === "POST" && url.pathname === "/api/import-queues/image/append") {
+    const body = await readJson(request);
+    if (!/^[a-f0-9-]{36}$/i.test(String(body?.requestId || ""))) {
+      throw Object.assign(new Error("Identifiant de file invalide."), { statusCode: 400 });
+    }
+    const imported = normalizePromptAtlasImport({ ...body.item,
+      schemaVersion: "1.0", source: { app: "prompt-atlas", module: "Create Image" } });
+    if (imported.mediaType !== "image") {
+      throw Object.assign(new Error("Cette file accepte uniquement des images."), { statusCode: 400 });
+    }
+    let draft;
+    let drafts;
+    await store.update((state) => {
+      const existing = state.drafts.filter((item) => item.queueBatchId === body.requestId)
+        .sort((left, right) => left.queuePosition - right.queuePosition);
+      if (existing.some((item) => item.queueStatus !== "pending")) {
+        throw Object.assign(new Error("Cette série a déjà été lancée. Crée une nouvelle file."), { statusCode: 409 });
+      }
+      if (existing.length >= 30) {
+        throw Object.assign(new Error("Cette file contient déjà 30 images."), { statusCode: 400 });
+      }
+      const now = new Date();
+      draft = {
+        ...createLocalDraft(imported, randomUUID(), now),
+        source: { app: "barz-aggregator", module: "Create Image" },
+        queueBatchId: body.requestId,
+        queuePosition: existing.length + 1,
+        queueTotal: existing.length + 1,
+        queueStatus: "pending",
+        queueJobId: null
+      };
+      drafts = [...existing, draft];
+      drafts.forEach((item, index) => {
+        item.queuePosition = index + 1;
+        item.queueTotal = drafts.length;
+      });
+      state.drafts.unshift(draft);
+      state.drafts = state.drafts.slice(0, 300);
+      return state;
+    });
+    sendJson(response, 201, { queueId: body.requestId, draft, drafts });
+    return;
+  }
+
   if (request.method === "POST" && url.pathname === "/api/import-queues/image/mark") {
     const body = await readJson(request);
     if (typeof body?.draftId !== "string" || typeof body?.jobId !== "string" ||
@@ -2826,6 +2950,33 @@ async function handleApi(request, response, url) {
       return state;
     });
     sendJson(response, 200, { draft });
+    return;
+  }
+
+  const imageQueueDraftRoute = /^\/api\/import-queues\/image\/([a-f0-9-]{36})$/i.exec(url.pathname);
+  if (request.method === "DELETE" && imageQueueDraftRoute) {
+    const draftId = imageQueueDraftRoute[1];
+    let remainingDrafts = [];
+    await store.update((state) => {
+      const draft = state.drafts.find((item) => item.id === draftId && item.mediaType === "image" && item.queueBatchId);
+      if (!draft) throw Object.assign(new Error("Cette image de la file est introuvable."), { statusCode: 404 });
+      if (draft.queueStatus !== "pending") {
+        throw Object.assign(new Error("Une image déjà envoyée ne peut pas être retirée de la file."), { statusCode: 409 });
+      }
+      if (state.jobs.some((job) => job.queueDraftId === draftId &&
+          (["submitting", "submitted", "queued", "running", "completed"].includes(job.status) || job.submissionUncertain))) {
+        throw Object.assign(new Error("Un envoi en cours ou incertain empêche le retrait de cette image."), { statusCode: 409 });
+      }
+      state.drafts = state.drafts.filter((item) => item.id !== draftId);
+      remainingDrafts = state.drafts.filter((item) => item.queueBatchId === draft.queueBatchId)
+        .sort((left, right) => left.queuePosition - right.queuePosition);
+      remainingDrafts.forEach((item, index) => {
+        item.queuePosition = index + 1;
+        item.queueTotal = remainingDrafts.length;
+      });
+      return state;
+    });
+    sendJson(response, 200, { deletedDraftId: draftId, drafts: remainingDrafts });
     return;
   }
 

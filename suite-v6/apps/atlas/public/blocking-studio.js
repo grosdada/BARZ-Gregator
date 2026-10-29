@@ -24,8 +24,8 @@ export function mountBlockingStudio({ host, header, toast }) {
   const frame = document.createElement("iframe");
   frame.className = "blocking-studio-frame";
   frame.title = "Blocking Studio";
-  const blockingUrl = "/assets/HTML/blocking-studio.html?v=0.33.50&barzyTheme=atlas-studio";
-  const ragdollUrl = "/assets/HTML/ragdoll-studio.html?v=0.33.50&barzyTheme=atlas-studio";
+  const blockingUrl = "/assets/HTML/blocking-studio.html?v=0.33.57&barzyTheme=atlas-studio";
+  const ragdollUrl = "/assets/HTML/ragdoll-studio.html?v=0.33.57&barzyTheme=atlas-studio";
   const libraryOrigin = "https://barz-ai-lib.placenta.tv";
   const libraryUrl = `${libraryOrigin}/AI-Asset-Lib-online/`;
   let activeStudio = "blocking";

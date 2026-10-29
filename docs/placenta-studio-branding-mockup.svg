@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#111a1c"/><stop offset="1" stop-color="#070b0d"/></linearGradient><linearGradient id="blue" x2="1" y2="1"><stop stop-color="#5dc3ed"/><stop offset="1" stop-color="#257eaf"/></linearGradient><linearGradient id="orange" x2="1" y2="1"><stop stop-color="#ff875e"/><stop offset="1" stop-color="#e45535"/></linearGradient></defs>
+<rect width="1600" height="900" fill="url(#bg)"/>
+<text x="80" y="86" font-family="Arial, sans-serif" font-size="18" letter-spacing="5" fill="#78898c">IDENTITÉ PROPOSÉE</text>
+<text x="80" y="143" font-family="Arial, sans-serif" font-size="43" font-weight="700" fill="#edf2f1">Une suite, deux ateliers</text>
+<text x="80" y="182" font-family="Arial, sans-serif" font-size="21" fill="#a0adb0">Placenta Studio reste la marque de l’application. BARZ identifie chaque module.</text>
+<g transform="translate(74 230)">
+<rect width="710" height="565" rx="24" fill="#0d1214" stroke="#354044" stroke-width="2"/>
+<rect x="0" y="0" width="710" height="110" rx="24" fill="#141c20"/><rect x="0" y="88" width="710" height="23" fill="#141c20"/>
+<g transform="translate(30 23)"><circle cx="26" cy="28" r="25" fill="none" stroke="#b8c8c9" stroke-width="2"/><circle cx="26" cy="28" r="11" fill="#b8c8c9"/><path d="M26 2 C50 12 50 45 26 54 M26 2 C2 12 2 45 26 54" fill="none" stroke="#b8c8c9" stroke-width="2"/></g>
+<text x="101" y="55" font-family="Arial,sans-serif" font-size="28" font-weight="700" fill="#f2f4f2">PLACENTA</text><text x="102" y="78" font-family="Arial,sans-serif" font-size="15" letter-spacing="4" fill="#9aaeb2">STUDIO</text>
+<text x="34" y="158" font-family="Arial,sans-serif" font-size="14" letter-spacing="3" fill="#6e9cb0">MODULE IMAGE &amp; VIDÉO</text>
+<path d="M35 187 H672" stroke="#2d383b" stroke-width="2"/>
+<path d="M34 226 C34 200 54 186 79 186 C105 186 124 205 124 231 C124 256 105 274 80 274 C55 274 34 255 34 226" fill="url(#blue)"/>
+<text x="79" y="237" text-anchor="middle" font-family="Arial,sans-serif" font-size="21" font-weight="900" letter-spacing="-1" fill="#071216">BARZ</text>
+<text x="147" y="240" font-family="Arial,sans-serif" font-size="43" font-weight="700" fill="#edf3f4">Aggregator</text>
+<text x="36" y="316" font-family="Arial,sans-serif" font-size="18" fill="#9cadb0">Créez, pilotez et retrouvez vos générations.</text>
+<rect x="36" y="357" width="638" height="64" rx="12" fill="#17242a" stroke="#2f5e74"/><text x="59" y="397" font-family="Arial,sans-serif" font-size="22" fill="#dfecef">Images</text><circle cx="630" cy="389" r="7" fill="#58afe0"/>
+<rect x="36" y="434" width="638" height="64" rx="12" fill="#151c1f" stroke="#344044"/><text x="59" y="474" font-family="Arial,sans-serif" font-size="22" fill="#dfecef">Vidéos</text>
+</g>
+<g transform="translate(816 230)">
+<rect width="710" height="565" rx="24" fill="#0d1214" stroke="#354044" stroke-width="2"/>
+<rect x="0" y="0" width="710" height="110" rx="24" fill="#141c20"/><rect x="0" y="88" width="710" height="23" fill="#141c20"/>
+<g transform="translate(30 23)"><circle cx="26" cy="28" r="25" fill="none" stroke="#b8c8c9" stroke-width="2"/><circle cx="26" cy="28" r="11" fill="#b8c8c9"/><path d="M26 2 C50 12 50 45 26 54 M26 2 C2 12 2 45 26 54" fill="none" stroke="#b8c8c9" stroke-width="2"/></g>
+<text x="101" y="55" font-family="Arial,sans-serif" font-size="28" font-weight="700" fill="#f2f4f2">PLACENTA</text><text x="102" y="78" font-family="Arial,sans-serif" font-size="15" letter-spacing="4" fill="#9aaeb2">STUDIO</text>
+<text x="34" y="158" font-family="Arial,sans-serif" font-size="14" letter-spacing="3" fill="#c28e78">MODULE CONCEPTION</text>
+<path d="M35 187 H672" stroke="#2d383b" stroke-width="2"/>
+<path d="M34 226 C34 200 54 186 79 186 C105 186 124 205 124 231 C124 256 105 274 80 274 C55 274 34 255 34 226" fill="url(#orange)"/>
+<text x="79" y="237" text-anchor="middle" font-family="Arial,sans-serif" font-size="21" font-weight="900" letter-spacing="-1" fill="#18100e">BARZ</text>
+<text x="147" y="240" font-family="Arial,sans-serif" font-size="43" font-weight="700" fill="#edf3f4">Prompt Atlas</text>
+<text x="36" y="316" font-family="Arial,sans-serif" font-size="18" fill="#9cadb0">Explorez, écrivez et préparez vos directions.</text>
+<rect x="36" y="357" width="638" height="64" rx="12" fill="#2a1b16" stroke="#9e4c34"/><text x="59" y="397" font-family="Arial,sans-serif" font-size="22" fill="#f3e7e2">BackStage</text><circle cx="630" cy="389" r="7" fill="#f16a43"/>
+<rect x="36" y="434" width="638" height="64" rx="12" fill="#151c1f" stroke="#344044"/><text x="59" y="474" font-family="Arial,sans-serif" font-size="22" fill="#dfecef">Build</text>
+</g>
+<text x="80" y="853" font-family="Arial,sans-serif" font-size="17" fill="#68787c">Maquette d’identité · proposition, non appliquée</text>
+</svg>

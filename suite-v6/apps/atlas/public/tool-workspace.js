@@ -12,6 +12,7 @@ import { mountAngleRelightingStudio } from "./angle-relighting-studio.js";
 import { mountWorkflow3d } from "./workflow-3d.js";
 import { mountApgStudio } from "./apg-studio.js";
 import { openSuiteApp } from "./suite-bridge.js";
+import { mountModeBank } from "./mode-bank.js";
 
 const BUILTIN_PRESET_LABELS = {
   ugc: "UGC naturel",
@@ -248,7 +249,8 @@ export function createToolWorkspace({ api, toast, getWorkspace, toolsForWorkshop
     seedanceMediaEpoch: 0,
     paintIncoming: null,
     enhancerReference: null,
-    enhancerStudioDispose: null
+    enhancerStudioDispose: null,
+    modeBankReference: { image: null }
   };
   const picker = document.getElementById("runtime-tool-picker");
   const host = document.getElementById("runtime-tool-host");
@@ -1083,7 +1085,9 @@ export function createToolWorkspace({ api, toast, getWorkspace, toolsForWorkshop
     const catalog = internal.catalog.beauty;
     host.replaceChildren(toolHeader("Beauty Studio", "42 recettes relues pour les selfies, portraits, matières de peau, éclairages et contraintes anti-IA."));
     const categories = node("nav", "goodies-categories");
-    catalog.categories.forEach((category) => {
+    const displayCategories = [...catalog.categories]
+      .sort((left, right) => Number(right.id === "skin") - Number(left.id === "skin"));
+    displayCategories.forEach((category) => {
       const item = button("", "goodies-category");
       item.classList.toggle("is-active", category.id === internal.configuration.activeCategory);
       item.append(node("span", "", category.title), node("b", "", String(category.count)));
@@ -3622,13 +3626,15 @@ export function createToolWorkspace({ api, toast, getWorkspace, toolsForWorkshop
                   prompt: batch.map((item) => `${item.label}: ${item.prompt}`).join("\n\n"),
                   intent: [c.storyline, c.subject, c.context, c.style].filter(Boolean).join(". "),
                   outputType: "image", targetEngine: "Image sequence",
-                  transform: `Refine exactly ${batch.length} distinct production-ready still-image prompts. Return a numbered list with the ORIGINAL numbers ${expected.join(", ")}, each on a new line. Do not omit or combine entries. Preserve @imageN references, the source identity and this directing skill: ${template.directorSkill || template.directorNote || template.name}. No introduction or commentary.`
+                  transform: `Refine exactly ${batch.length} distinct production-ready still-image prompts. Return a numbered list with the ORIGINAL numbers ${expected.join(", ")}, each on a new line. Do not omit or combine entries. Every entry has a CAMERA SETUP directive: keep its camera distance, axis, elevation and composition exactly; never replace it with the same framing as another still. Vary the photographed instant or gesture while preserving the same scene, reference designs, wardrobe, set geography, light direction and @imageN roles. Treat turnaround sheets as design references, never as the output layout. Preserve this directing style: ${template.directorSkill || template.directorNote || template.name}. No introduction or commentary.`
                 })
               });
               lastModel = answer.model || lastModel;
               for (const [number, prompt] of parseSeedanceStillBatch(answer.refined, expected)) {
                 const key = seedanceCurrentFinalKey(`still-${number}`);
-                if (prompt.length <= c.charLimit) { c.finals[key] = prompt; refinedCount += 1; }
+                const setup = batch.find((item) => item.id === `still-${number}`)?.cameraDirective;
+                const refined = setup && !prompt.includes(setup) ? `${setup}\n\n${prompt}` : prompt;
+                if (refined.length <= c.charLimit) { c.finals[key] = refined; refinedCount += 1; }
               }
             } catch (error) { toast(`Lot ${batchIndex + 1} : ${error.message}. Les stills locales restent disponibles.`, true); }
           }
@@ -5046,6 +5052,23 @@ export function createToolWorkspace({ api, toast, getWorkspace, toolsForWorkshop
     });
   }
 
+  async function renderModeBank() {
+    if (internal.modeBankReference.setupId !== activeSetupId()) {
+      internal.modeBankReference = { setupId: activeSetupId(), image: null };
+    }
+    await mountModeBank({
+      host,
+      header: toolHeader("The Mode Bank", "1 221 image prompts · categories, random choice and subject modes."),
+      configuration: internal.configuration,
+      referenceState: internal.modeBankReference,
+      onDirty: markDirty,
+      copyText,
+      sendToAggregator,
+      uploadImageReference,
+      toast
+    });
+  }
+
   function renderObjectScaleChart() {
     internal.objectScaleDispose?.();
     internal.objectScaleDispose = mountObjectScaleChart({
@@ -5126,6 +5149,7 @@ export function createToolWorkspace({ api, toast, getWorkspace, toolsForWorkshop
       await loadConfiguration(toolId);
       const tool = getWorkspace().registry.tools.find(({ id }) => id === toolId);
       if (tool?.adapterId === "prompt-library") await renderPromptLibrary();
+      else if (toolId === "mode-bank") await renderModeBank();
       else if (toolId === "apg") renderApg();
       else if (toolId === "barz-enhancer") await renderEnhancer("cards", "BZ Enhancer");
       else if (toolId === "angle-3d") await renderEnhancer("angles", "Angle 3D");

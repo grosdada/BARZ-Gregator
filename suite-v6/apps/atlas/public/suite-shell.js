@@ -32,7 +32,9 @@ function showApp(app, url) {
     if (frames[app].src !== destination) frames[app].src = destination;
   }
   for (const [id, frame] of Object.entries(frames)) frame.hidden = id !== app;
-  document.title = app === "aggregator" ? "BZ Aggregator — BARZ Suite 6" : "Prompt Atlas 6 — BARZ Suite 6";
+  document.title = app === "aggregator" ? "BARZ Aggregator — Placenta Studio" : "BARZ Prompt Atlas — Placenta Studio";
+  document.getElementById("suiteFavicon").href = app === "aggregator"
+    ? "/favicon-aggregator.svg" : "/favicon-atlas.svg";
   frames[app].focus();
 }
 
