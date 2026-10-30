@@ -1638,10 +1638,18 @@ function uploadedAssets() {
   }));
 }
 
+function directorRecordingAsset(asset) {
+  if (asset.mediaType !== "video") return false;
+  return state.jobs.some((job) => (
+    job.jobType === "director-session" && job.resourceId === asset.resource.id
+  )) || /^h3-max-director-\d{4}-\d{2}-\d{2}T/i.test(asset.resource.name || "");
+}
+
 function categoryAssets() {
-  const assets = state.assetCategory === "resources" ? uploadedAssets()
+  const assets = state.assetCategory === "resources"
+    ? uploadedAssets().filter((asset) => !directorRecordingAsset(asset))
     : state.assetCategory === "trash" ? [...completedAssets(), ...uploadedAssets()]
-      : completedAssets();
+      : [...completedAssets(), ...uploadedAssets().filter(directorRecordingAsset)];
   return assets.filter((asset) => state.trashedAssetKeys.has(asset.key) === (state.assetCategory === "trash"));
 }
 
@@ -2401,7 +2409,7 @@ function renderAssetTile(asset) {
       : `<img src="${safeUrl}" alt="${label}" loading="lazy">`;
   const collection = state.collections.find((item) => item.id === asset.collectionId);
   const sourceCaption = asset.kind === "resource"
-    ? "Ressource locale"
+    ? directorRecordingAsset(asset) ? "H3 Max Director" : "Ressource locale"
     : job.assetNames?.[String(index)] ? modelLabel(job) : "Generated";
   const previewMarkup = !isVideo && !isAudio
     ? `<button class="asset-preview" type="button" data-preview-image-url="${safeUrl}"
@@ -3241,7 +3249,7 @@ async function saveDirectorRecording(sessionDetails) {
   if (existingIndex === -1) state.jobs.unshift(body.job);
   else state.jobs[existingIndex] = body.job;
   renderSpending();
-  appendDirectorLog(`Enregistrement ajouté à Assets : ${resource.name}.`);
+  appendDirectorLog(`Enregistrement ajouté à Assets › Generated : ${resource.name}.`);
   return resource;
 }
 
@@ -3284,7 +3292,7 @@ async function finalizeDirectorSession(message = "Session terminée.") {
   try {
     const resource = await saveDirectorRecording(sessionDetails);
     elements.directorMessage.textContent = resource
-      ? `${message} Enregistrement sauvegardé dans Assets › Ressources.` : message;
+      ? `${message} Enregistrement sauvegardé dans Assets › Generated.` : message;
   } catch (error) {
     elements.directorMessage.textContent = `${message} Sauvegarde locale impossible : ${error.message}`;
   }
